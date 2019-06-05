@@ -1,0 +1,446 @@
+/* ==========================================================================
+		About
+========================================================================== */
+
+.about { 
+	&__section {
+
+		&-inner {
+			padding-top: 80px;
+			padding-bottom: 80px;
+
+			@media screen and ( max-width: $media-tablet ) {
+				padding-top: 40px;
+				padding-bottom: 40px; 
+			}
+
+			p {
+				font-size: 16px;
+			}
+		}
+	}
+
+	&-title {
+		font-family: $cheilromanbold; 
+		margin-bottom: 170px;
+		text-align: center;
+
+		@media screen and ( max-width: $media-tablet ) {
+			margin-bottom: 50px;
+		}
+	}
+
+	&-subtitle {
+		font-family: $cheilromanextrabold;
+		margin-bottom: 40px;
+
+		@media screen and ( max-width: $media-tablet ) {
+			margin-bottom: 20px;
+		}
+		&.business-unusual {
+			margin-left: -1px;
+		}
+	}
+
+	&__row {
+		&:after {
+			content: '';
+			display: table;
+			clear: both;
+		}
+	}
+
+	&__cylndr {
+		color: $white;
+		align-items: center;
+
+		& > div {
+			width: 50%;
+			
+			@media screen and ( max-width: $media-tablet ) {
+				width: 100%;
+			}
+
+			@media screen and ( max-width: $media-tabletportrait ) {
+			}
+
+
+			&:first-child {
+				margin-bottom: 50px;
+
+				@media screen and ( min-width: $media-mobile ) {
+					margin-bottom: 0;
+				} 
+			}
+
+			&:last-child {
+				text-align: center;
+
+				img {
+					width: 80%;
+					margin-right: 155px;
+				}
+				@media screen and ( max-width: $media-mobile ) {
+					img {
+						margin-right: 0;
+					}
+				}
+			}  
+		}
+		
+
+	}
+
+	&__colm-50 {
+		width: 50%;
+		float: left;
+
+		@media screen and ( max-width: $media-tablet ) {
+			width: 100%;
+		}
+	}
+
+	&__about {
+		color: $black;
+
+		h3 {
+			margin-bottom: 30px;
+		}
+
+		&-title {
+			float: left;
+			@media screen and ( max-width: $media-tablet ) {
+				width: 100%;
+				float: none;
+				margin-bottom: 20px;
+			}
+		}
+
+		&-copy {
+			width: 75%;
+			max-width: 1200px;
+			float: right;
+			@media screen and ( max-width: $media-tablet ) {
+				width: 100%;
+				float: none;
+			}
+		}
+	}
+
+	&__work {
+		background: url(../assets/images/about/about-business-unusual.jpg) no-repeat center center;
+		background-size: cover;
+		color: $white;
+		
+		p {
+			max-width: 664px;
+		}
+
+		&-values {
+			
+			margin-top: 100px;
+
+			@media screen and ( max-width: $media-tablet ) {
+				margin-top: 30px;
+			}
+			
+
+			ul {
+				margin-bottom: 20px;
+				padding: 0;
+				display: flex;
+				justify-content: stretch;
+				flex-wrap: wrap;
+				flex-direction: column;
+				align-items: center;
+
+				@media screen and ( min-width: $media-mobile ) {
+						flex-direction: row;          
+						padding-left: 5%;
+						padding-right: 5%;
+				}
+				
+
+				@media screen and ( max-width: $media-tablet ) {
+				}
+
+			}
+
+			li {
+				margin-bottom: 10px;
+				font-family: $cheilromanbold;
+				padding: 20px 20px 20px 100px;
+				width: 100%;
+				display: flex;
+				align-items: center;
+				
+				@media screen and ( min-width: $media-mobilesmall ) {
+					width: 80%;
+				}
+
+				@media screen and ( min-width: $media-mobile ) {
+					padding: 20px 20px 20px 100px;
+					margin-bottom: 20px;
+					width: 50%;
+				}
+
+				@media screen and ( min-width: 900px ) {
+					width: calc(100% / 3);
+				}
+				
+
+				&.icon01 {
+					background: url(../assets/images/about/ico-voice-design.png) no-repeat left center;
+					//background-size: 30px;
+				}
+				&.icon02 {
+					background: url(../assets/images/about/ico-ecom.png) no-repeat left center;
+					//background-size: 30px;
+				}
+				&.icon03 {
+					background: url(../assets/images/about/ico-experiences.png) no-repeat left center;
+					//background-size: 30px;
+				}
+				&.icon04 {
+					background: url(../assets/images/about/ico-personalisation.png) no-repeat left center;
+					//background-size: 30px;
+				}
+				&.icon05 {
+					background: url(../assets/images/about/ico-design.png) no-repeat left center;
+					//background-size: 30px;
+				}
+				&.icon06 {
+					background: url(../assets/images/about/ico-dev.png) no-repeat left center;
+					//background-size: 30px;
+				}
+				&.icon07 {
+					background: url(../assets/images/about/ico-film.png) no-repeat left center;
+					//background-size: 30px;
+				}
+				&.icon08 {
+					background: url(../assets/images/about/ico-social.png) no-repeat left center;
+					//background-size: 30px;
+				}
+				&.icon09 {
+					background: url(../assets/images/about/ico-innovation.png) no-repeat left center;
+					//background-size: 30px;
+				}
+			} 
+			
+		}
+
+		&-cta {
+			text-align: center;
+			margin-top: 30px;
+		}
+	}
+
+	&__inhouse {  
+		color: $black;
+		overflow: hidden;
+		position: relative;
+		height: auto;
+		background-size: cover;
+		background-position: center center;
+		background-image: url(../assets/images/about/about-cylndr.jpg);
+		background-repeat: no-repeat;
+
+		@media screen and ( min-width: $media-mobile ) {
+			height: 500px;
+		}
+
+		.about__section-inner {
+			position: relative;
+			z-index: 1;
+			
+			@media screen and ( min-width: $media-mobile ) {
+				height: 100%;
+			}
+		} 
+
+		.about__cylndr {
+			display: flex;
+			flex-direction: column;
+	 
+			@media screen and ( min-width: $media-mobile ) {
+				flex-direction: row-reverse;
+			}
+		}
+
+		&-image {
+			text-align: right;
+		}
+
+	} 
+
+	&__shelf {
+		color: $white;
+		background: $dark-grey;
+
+		ul {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-items: center;
+            text-align: center;
+            margin-top: 50px;
+			@media screen and ( max-width: $media-mobile ) {
+				flex-direction: column;
+				flex-wrap: nowrap;
+				align-items: flex-start;
+			}
+			li {
+				width: 20%;
+				@media screen and ( max-width: $media-tablet ) {
+					width: 33.3%;
+				}
+				@media screen and ( max-width: $media-mobile ) {
+					width: 132px;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+				}
+			}
+
+            
+   
+
+
+			img {
+                width: 100%;
+                max-width: 230px;
+
+                @media screen and ( max-width: $media-tablet ) {
+                    max-width: 130px;
+                }
+			}
+
+			span {
+				margin-top: 30px;
+                display: block;
+                
+                @media screen and ( max-width: $media-tablet ) {
+                    margin-top: 10px;
+                }
+			}
+		}
+	} 
+
+	&__weAre {
+		color: $black;
+		background: #f4f4f4;
+		text-align: center;
+
+		&-title {
+			margin-bottom: 100px;
+			@media screen and ( max-width: $media-tablet ) {
+				margin-bottom: 40px;
+			}
+		}
+
+		.people {
+            display: flex;
+			text-align: left;
+			flex-wrap: wrap;
+
+          
+
+            @media screen and ( max-width: $media-mobile ) {
+                
+            }
+            
+            &-item {
+                padding: 30px 5%;
+				width: 25%;
+				@media screen and ( max-width: $media-tablet ) {
+					width: 33.3%;
+				}
+                @media screen and ( max-width: $media-mobile ) {
+					padding: 10px 10px 20px 10px;
+					width: 100%;
+                }
+            }
+
+			&-link {
+				color: $dark-grey;
+				&:hover {
+					color: $pink;
+				}
+			}
+
+			&-name {
+				display: block;
+				font-family: $cheilromanbold;
+				font-size: 24px;
+
+				@media screen and ( max-width: $media-tablet ) {
+                    font-size: 18px;
+				}
+					
+			}
+
+			&-role {
+				display: block;
+				
+			}
+		}
+	
+
+		&-action {
+            // margin-top: -100px;
+
+            // @media screen and ( max-width: $media-tablet ) {
+            //     margin-top: -10px;
+            // }
+
+			h3 {
+				max-width: 1200px;
+				margin: 100px auto;
+				
+				@media screen and ( max-width: $media-tablet ) {
+                    margin: 20px auto 50px auto;
+				}
+			}
+			
+		}
+	}
+
+	&__network {
+		color: $white;
+		background: $dark-grey;
+
+		&-title {
+			padding-left: 6%;
+
+			@media screen and ( max-width: $media-tablet ) {
+				padding-left: 0;
+			}
+		}
+
+		&-image { 
+
+			img {
+				width: 100%;
+				max-width: 700px;
+			}
+
+			@media screen and ( max-width: $media-tablet ) {
+				text-align: left;
+
+				img {
+					max-width: 300px;
+					margin-bottom: 30px;
+				}
+			}
+
+			@media screen and ( max-width: $media-mobile ) {
+                text-align: center;
+			}
+
+		}
+		
+	} 
+
+	
+}

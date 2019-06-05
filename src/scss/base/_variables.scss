@@ -1,0 +1,42 @@
+/* ==========================================================================
+	VARIABLES
+========================================================================== */
+
+/*
+	COLORS
+========================================================================== */
+
+/*Main colors*/
+$black:  #000;
+$white:  #fff;
+
+$light-grey:  #F4F4F4;
+$grey:        #d1d1d1;
+$dark-grey:   #202020;
+$caption-grey:   #979797;
+$medium-grey: #e6e6e6;
+
+$purple: #9999FF;
+$pink:   #EE3E80;
+$green:  #99CC33;
+$orange: #FF6633;
+$yellow: #FFFF00;
+$blue:   #0099FF;
+
+/* Hovers */
+// $link-color: #e9e9cd;
+// $link-hover: darken($link-color, 9%);
+
+// $alert-red: red;
+// $alert-green: #645564;
+// $alert-blue: blue;
+
+/*
+	MEDIA QUERIES
+========================================================================== */
+ 
+$media-tablet : '1200px';
+$media-phablet : 980px;
+$media-tabletportrait : '768px';
+$media-mobile : '660px';
+$media-mobilesmall : '400px';

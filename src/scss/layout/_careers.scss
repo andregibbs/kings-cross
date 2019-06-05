@@ -1,0 +1,330 @@
+/* ==========================================================================
+	Carrers
+========================================================================== */
+
+.careers { 
+  &__section {
+
+    &-inner {
+      padding-top: 80px;
+      padding-bottom: 80px;
+
+      @media screen and ( max-width: $media-tablet ) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &-title {
+    font-family: $cheilromanbold; 
+    margin-bottom: 170px;
+    text-align: center;
+
+    @media screen and ( max-width: $media-tablet ) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &-subtitle {
+    font-family: $cheilromanextrabold;
+    margin-bottom: 40px;
+
+    @media screen and ( max-width: $media-tablet ) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__row {
+    &:after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+  }
+
+  &__colm-50 {
+    width: 50%;
+    float: left;
+
+    @media screen and ( max-width: $media-tablet ) {
+      width: 100%;
+    }
+  }
+
+  &__culture {
+    color: $black;
+
+    h3 {
+      margin-bottom: 30px;
+    }
+
+    @media screen and ( max-width: 1800px ) {
+        br {
+            display: none;
+        }
+    }
+
+    &-title {
+      float: left;
+      @media screen and ( max-width: $media-tablet ) {
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+      }
+    }
+
+    &-copy {
+      width: 80%;
+      max-width: 1280px;
+      float: right;
+      @media screen and ( max-width: $media-tablet ) {
+        width: 100%;
+        float: none;
+      }
+    }
+  }
+
+  &__image { 
+    
+    .careers__section-inner {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; 
+
+      padding-bottom: 0;
+    }
+
+    &-item {
+      flex: 1;
+
+      &:nth-child(2) {
+        margin: 0 20px;
+      }
+
+      @media screen and ( max-width: $media-tablet ) {
+        &:nth-child(1),
+        &:nth-child(2) {
+          flex: 1 0 50%;
+        }
+
+        &:nth-child(2) {
+          margin: 0;
+        }
+
+        &:nth-child(3) {
+          flex: 0 1 100%; 
+        }
+      }
+
+    }
+
+    img {
+        display: inherit;
+        width: 100%;
+    }
+  }
+
+  &__envolve {
+    color: $white;
+    max-height: 700px;
+    background: #202020 url('../assets/images/careers/evolve.png') no-repeat bottom right;
+
+    .careers__section-inner {
+        display: flex;
+        align-items: center;
+
+        @media screen and ( max-width: $media-tablet ) {
+            flex-direction: column;
+        }
+    }
+
+    &-title {
+      padding-right: 100px;
+
+      @media screen and ( max-width: $media-tablet ) {
+        padding-right: 0;
+      }
+    }
+
+    &-image {
+      text-align: center; 
+      // float: right;
+
+      img {
+        text-align: center;
+        // width: 100%;
+        max-width: 700px;
+      }
+
+      @media screen and ( max-width: $media-tablet ) {
+        text-align: left;
+
+        img {
+          max-width: 300px;
+          margin-bottom: 30px;
+        }
+      }
+
+    }
+    
+  }
+
+  &__touch {
+    color: $white;
+    height: 500px;
+    overflow: hidden;
+    position: relative; 
+    background-size: cover;
+    background-position: center center;
+    background-image: url('../assets/images/careers/touch.jpg');
+
+    .careers__section-inner {
+      position: relative;
+      z-index: 1;
+      height: 100%;
+      // display: flow-root;
+    }
+    
+    &-title {
+      max-width: 500px;
+    }
+
+    &-image {
+      text-align: right;
+    }
+
+  } 
+
+  &__instagram {
+
+    .careers__section-inner {
+    //   display: flex; 
+    //   flex-wrap: wrap;
+    //   // height: 870px;
+    //   text-align: left;
+    }
+
+    .instagram-item {
+        margin: 0 10px;
+        position: relative;
+        width: 640px;
+        height: 640px;
+
+        @media screen and ( max-width: $media-tablet ) {
+            width: 340px;
+            height: 340px;
+        }
+
+        img {
+            width: 100%;
+        } 
+
+        &__feed {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.80);
+            color: $white;
+            padding: 20px;
+
+            transition: all 0.4s;
+            opacity: 0;
+            visibility: hidden;
+
+            &-container {
+                height: calc( 100% - 100px );
+                overflow: hidden;
+            }
+
+            &-likes {
+                background: url(../assets/images/careers/icon-instagram-heart.svg) no-repeat center left;
+                background-size: contain;
+                display: inline-block;
+                padding-left: 36px;
+                margin-bottom: 20px;
+            }
+
+            &-desc {
+                max-height: 267px;
+                overflow: hidden;
+            }
+
+            &-date {
+                position: absolute;
+                bottom: 20px;
+            }
+
+        }
+
+        &:hover {
+            .instagram-item {
+                &__feed {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+
+    }
+  }
+
+  &__perks {
+    color: $white;
+    text-align: center;
+    background-size: cover;
+    background-position: center center;
+    background-image: url('../assets/images/careers/careers-perks.jpg');
+    height: 440px;
+
+    @media screen and ( max-width: $media-tablet ) {
+        height: auto;
+    }
+
+    &-title {
+    //   margin-bottom: 100px;
+    }
+
+    .perk {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+
+      &-item {
+        // flex: 1 0 275px;
+        text-align: left;
+        margin-bottom: 100px;
+        width: 384px; 
+      }
+
+      &-name {
+        display: block;
+        font-family: $cheilromanbold;
+        font-size: 24px;
+        margin-bottom: 15px;
+      }
+    }
+
+    &-action {
+      h3 {
+        max-width: 1200px;
+        margin: 100 auto;
+      } 
+    }
+  }
+
+  &__join {
+    color: $black;
+    text-align: center;
+
+    .button {
+      margin-top: 40px;
+    }
+    
+  }
+
+}

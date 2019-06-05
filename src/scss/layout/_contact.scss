@@ -1,0 +1,64 @@
+/* ==========================================================================
+	Contact page
+========================================================================== */
+
+.contact {
+  color: $black;
+
+  &__content {
+    &-inner {
+      margin-top: 100px;
+      margin-bottom: 100px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap; 
+
+      @media screen and ( max-width: 880px ) {
+        flex-direction: column;
+        margin-top: 50px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &__colm { 
+
+    @media screen and ( max-width: 1400px ) {
+      margin-bottom: 50px;
+    }
+
+    @media screen and ( max-width: $media-tablet ) {
+      &-subheader{
+        margin-bottom: 30px;
+      }
+      margin-bottom: 10px;
+    }
+
+    &-item {
+      margin-bottom: 15px;
+    }
+
+    &-title {
+      color: $black; 
+      margin-top: 0;
+      margin-bottom: 30px;
+
+      @media screen and ( max-width: $media-tablet ) {
+        margin-bottom: 10px;
+      }
+    }
+
+    &-subheader {
+      @media screen and ( max-width: 1400px ) {
+        flex-basis: 100%;
+      }
+
+      @media screen and ( max-width: 880px ) {
+        flex-basis: auto;
+      }
+    }
+
+     
+  }
+}
+

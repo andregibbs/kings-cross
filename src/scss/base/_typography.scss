@@ -1,0 +1,145 @@
+/* ==========================================================================
+	 TYPOGRAPHY
+   ========================================================================== */
+
+
+/*
+	FONTS
+========================================================================== */
+
+$cheilromanlight: "cheilromanlight", "Open sans", sans-serif;
+$cheilromanmedium: "cheilromanmedium", "Open sans", sans-serif;
+$cheilromanregular: "cheilromanregular", "Open sans", sans-serif;
+$cheilromanbold: "cheilromanbold", "Open sans", sans-serif;
+$cheilromanextrabold: "cheilromanextrabold", "Open sans", sans-serif;
+
+$secondary-font: "Open sans", "Arial", sans-serif;
+
+/*
+some nice typographical defaults
+more here: http://www.newnet-soft.com/blog/csstypography
+*/
+
+html {
+  font-family: $cheilromanmedium;
+  font-weight: normal;
+  color: $dark-grey;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.7;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5 {
+	// font-family: $primary-font;
+  margin: 0;
+  line-height: 1.4;
+  
+  &-light {
+    font-family: $cheilromanlight;
+  }
+
+  &-regular {
+    font-family: $cheilromanregular;
+  }
+
+  &-medium {
+    font-family: $cheilromanmedium;
+  }
+
+  &-bold {
+    font-family: $cheilromanbold;
+  }
+
+  &-extra-bold {
+    font-family: $cheilromanextrabold;
+  }
+
+}
+
+h1, .h1 {
+  font-size: 80px;
+  font-family: $cheilromanextrabold;
+  
+  @media screen and ( max-width: $media-tablet ) {
+		font-size: 70px;
+  } 
+} 
+
+h2, .h2 {
+  font-size: 40px;
+  font-family: $cheilromanregular;
+  
+  @media screen and ( max-width: $media-tablet ) {
+		font-size: 30px;
+  } 
+}
+
+h3, .h3 {
+  font-size: 32px;
+  font-family: $cheilromanregular; 
+
+	@media screen and ( max-width: $media-tablet ) {
+		font-size: 24px;
+  } 
+}
+
+h4, .h4 {
+  font-size: 24px;
+  font-family: $cheilromanregular;
+  @media screen and ( max-width: $media-tablet ) {
+		font-size: 16px;
+  }
+}
+
+h5, .h5 {
+  font-size: 16px;
+  font-family: $cheilromanbold;
+}
+
+p {
+	font-family: $cheilromanmedium;
+  font-size: 16px;
+  
+  margin-top: 0;
+	margin-bottom: 15px;
+
+	&.small {
+		font-size: 16px;
+	}
+}
+
+span {
+	font-family: $cheilromanmedium;
+}
+
+/*
+	Links
+========================================================================== */
+
+a {
+  font-family: $cheilromanmedium;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  transition: color 0.5s;
+}
+
+.link {
+  color: $grey;
+
+  &:hover {
+    color: darken($grey, 30%);
+  }
+
+  &--pink {
+    color: $pink;
+    &:hover {
+      color: darken($pink, 30%);
+    }
+  }
+
+}
+

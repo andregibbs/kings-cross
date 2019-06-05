@@ -1,0 +1,73 @@
+/* ==========================================================================
+	Buttons
+========================================================================== */
+
+.button {  
+  position: relative;
+  display: inline-block; 
+  border-radius: 3px;
+  line-height: 1;
+  padding: 30px 40px;
+  z-index: 1;
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+  @media screen and ( max-width: $media-tablet) {
+    padding: 20px;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 12px;
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+    display: block;
+    visibility: hidden;
+    transition: all 0.1s ease-in-out;
+    opacity: .5;
+    z-index: -1;
+  }
+
+  &--white {
+    border: 2px solid $white;
+    color: $white;
+
+    &:before {
+      background-color: $white;
+    }
+
+    &:hover {
+      color: $black;
+    }
+  }
+
+  &--black {
+    border: 2px solid $black;
+    color: $black;
+
+    &:before {
+      background-color: $black;
+    }
+    
+    &:hover {
+      color: $white;
+    }
+  }  
+  
+  &:hover {
+    &:before {
+      display: block;
+      visibility: visible;
+      top: -1px;
+      bottom: -1px;
+      left: -1px;
+      right: -1px;
+      opacity: 1;
+      transition: all 0.1s ease-in-out;
+    }
+  }
+
+} 

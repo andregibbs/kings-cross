@@ -1,0 +1,22 @@
+body .parallax-bg {
+	position: relative;
+	
+	& > * {
+		z-index: 1;
+		position: relative;
+	}
+
+	&-window {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		width: 100%;
+		height: calc(100% + 100px);
+		transform: translate3d(-50%,-50%,0);
+		background-position: center;
+		background-size:cover;
+		background-repeat: no-repeat;
+		z-index: 0;
+		//transition: background-position .1s;
+	}
+}

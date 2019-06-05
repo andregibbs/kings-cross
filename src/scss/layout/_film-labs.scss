@@ -1,0 +1,421 @@
+/* ==========================================================================
+  FILM LABS
+========================================================================== */
+
+.lab { 
+  &__section {
+
+    &-inner {
+      padding-top: 80px;
+      padding-bottom: 80px;
+
+      @media screen and ( max-width: $media-tablet ) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &-title {
+    font-family: $cheilromanbold; 
+    margin-bottom: 170px;
+    text-align: center;
+
+    @media screen and ( max-width: $media-tablet ) {
+      margin-bottom: 50px;
+    }
+
+  }
+
+  &-subtitle {
+    font-family: $cheilromanextrabold;
+    margin-bottom: 40px;
+
+    @media screen and ( max-width: $media-tablet ) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &-role {
+    margin-bottom: 20px;
+    display: block;
+    font-size: 21px;
+  }
+
+  &__row {
+    &:after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+  }
+
+  &__colm-50 {
+    width: 50%;
+    float: left;
+
+    @media screen and ( max-width: $media-tablet ) {
+      width: 100%;
+    }
+  }
+
+  &__film {
+    color: $black;
+
+    h3 {
+      margin-bottom: 30px;
+    }
+
+    &-second {
+      padding-top: 30px;
+    }
+
+    &-title {
+      float: left;
+      @media screen and ( max-width: $media-tablet ) {
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+      }
+    }
+
+    &-copy {
+      width: 75%;
+      max-width: 1200px;
+      float: right;
+      @media screen and ( max-width: $media-tablet ) {
+        width: 100%;
+        float: none;
+      }
+    }
+  }
+
+  &__apply {
+    background: url(/assets/images/film-labs/film-labs-apply.jpg) no-repeat center center;
+    background-size: cover;
+    color: $white;
+
+    p {
+      // max-width: 664px;
+      max-width: 1000px;
+    }
+
+    a {
+      margin-top: 40px;
+    }
+    button {
+      background: transparent;
+      display: none;
+    }
+  }
+
+  &__judges {
+    color: $white;
+    background: $black;
+
+    .lab-subtitle {
+      margin-bottom: 0;
+    }
+
+    .lab__row {
+      margin: 87px 0;
+    }
+
+    .lab__colm-pad {
+      padding-left: 100px;
+
+      @media screen and ( max-width: $media-tablet ) {
+        padding-left: 0;
+      }
+    }
+
+    img {
+      width: 100%;
+      max-width: 520px;
+
+      @media screen and ( max-width: $media-tablet ) {
+        max-width: 300px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  &__talent {
+    color: $black;
+
+    &-title {
+      padding-right: 100px;
+
+      @media screen and ( max-width: $media-tablet ) {
+        padding-right: 0;
+      }
+    }
+
+    &-image {
+      text-align: right; 
+      float: right;
+
+      img {
+        text-align: right;
+        width: auto;
+        // max-width: 700px;
+        max-height: 585px;
+      }
+
+      @media screen and ( max-width: $media-tablet ) {
+        text-align: left;
+
+        img {
+          max-width: 300px;
+          margin-bottom: 30px;
+        }
+      }
+
+    }
+    
+  }
+
+  &__vid {
+    picture {
+        display: inline-grid;
+        width: 100%;
+    }
+
+    .lab__section-inner {
+      padding-bottom: 0;
+      cursor: pointer;
+      position: relative;
+      
+      &:after {
+        content: '\0025B6';
+        font-size: 30px;
+        color: white;
+        text-align: center;
+        line-height: 3.5;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        // margin-top: -50px;
+        margin-left: -50px;
+        transition: all 0.4s;
+        transform: scale(1);
+        transform-origin: center;
+        border-radius: 50%;
+        border: 2px solid $white;
+
+        @media screen and ( max-width: $media-tablet ) {
+          width: 50px;
+          height: 50px;
+          font-size: 20px;
+          line-height: 2.6;
+        }
+      }
+
+      &:hover {
+        &:after {
+          transform: scale(1.1);
+        } 
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .overlay {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: #000;
+      text-align: center;
+      z-index: 99;
+      display: none;
+
+      &__close {
+        top: -27px;
+        right: -40px;
+      }
+
+      &-iframe {
+        display: none;
+         width: 50%;
+         height: 50%;
+         z-index: 99; 
+      }
+
+      &__video {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+
+
+
+
+.mfp-content {
+  padding: 5% 0;
+  .mfp-close {
+    color: white!important;
+    cursor: pointer;
+  }
+  .white-popup{
+    display: block;
+    margin: 0 auto;
+    position: relative;
+
+    &#filmlabsFormPopup,
+    &#filmlabsThanksPopup {
+      background-color: black;
+      max-width: 800px;
+      padding:20px 60px 60px;
+
+      color: #fff;
+
+      display:block;
+      overflow:hidden;
+
+      * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+
+      form {
+        padding-top:0.5em;
+      }
+
+      .title {
+        padding-top:0.5em;
+      }
+
+      .thankyou {
+        padding-top:0.5em;
+        text-align:center;
+      }
+
+      .row {
+        float:left;
+      }
+      .halfwidth {
+        width:47.5%;
+      }
+      .gap {
+        width:5%;
+      }
+      .halfwidth {
+        &:nth-child(3) {
+          float: right;
+        }
+      }
+      .fullwidth {
+        width:100%;
+      }
+      .label {
+        padding: 10px 0;
+      }
+      .terms-check {
+        margin-bottom: 15px;
+        display: inline-block;
+        &:first-of-type {
+          margin-top: 50px;
+        }
+        &:last-of-type {
+          text-align: center;
+        }
+        input.check {
+          width: 5%;
+          margin-bottom: 0;
+        }
+        label {
+          width: 95%;
+          float: right;
+          font-size: 13px;
+        }
+        .submit-btn {
+          height: 80px;
+          padding: 30px 40px;
+          width: auto;
+          background: transparent;
+          border: 2px solid #fff;
+          color: #fff;
+          transition: all 0.1s ease-in-out;
+          text-align: center;
+          cursor: pointer;
+          margin-top: 25px;
+          border-radius: 3px;
+          &:focus {
+            outline: none;
+          }
+          &:hover {
+            background: white;
+            color: black;
+          }
+        }
+      }
+      input {
+        padding:10px;
+        font-size:16px;
+        width:100%;
+        margin-bottom:30px;
+        &.check {
+          width: initial;
+        }
+      }
+      .key {
+        font-size: 13px;
+        margin-bottom: 15px;
+      }
+      textarea {
+        padding:10px;
+        font-size:16px;
+        width:100%;
+        margin-bottom:30px;
+      }
+      button.mfp-close {
+        display: none;
+      }
+      .helper-close-btn {
+        top: 20px;
+        right: 20px;
+      }
+      @media only screen and (max-width: 640px) {
+        .terms-check {
+          label {
+           width: 90%;
+          }
+        }
+        padding:20px;
+
+        .halfwidth {
+          width:100%;
+        }
+        .gap {
+          display:none;
+        }
+        input {
+          margin-bottom:0;
+        }
+        textarea {
+          margin-bottom:0;
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+
