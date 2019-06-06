@@ -1,0 +1,15 @@
+/*=============================================
+=            Mixings - Convert px to vw            =
+=============================================*/
+
+@function get-desktop-vw($target) {
+	$calc: ($target/$media-desktop)*100;
+	@return $calc+vw;
+}
+
+@function get-mobile-vw($target) {
+	$calc: ($target/$media-mobile)*100;
+	@return $calc+vw;
+}
+
+/*=====  Mixings - Convert px to vw  ======*/

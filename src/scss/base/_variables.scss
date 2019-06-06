@@ -1,42 +1,46 @@
-/* ==========================================================================
-	VARIABLES
-========================================================================== */
+/*=============================================
+=            Variab;es            =
+=============================================*/
 
-/*
-	COLORS
-========================================================================== */
+/*----------  Colours  ----------*/
 
-/*Main colors*/
-$black:  #000;
-$white:  #fff;
+$samsungBlue: #172e9f;
+$samsungLightBlue: #1584d1;
+$offerBlue: #f2faff;
 
-$light-grey:  #F4F4F4;
-$grey:        #d1d1d1;
-$dark-grey:   #202020;
-$caption-grey:   #979797;
-$medium-grey: #e6e6e6;
+$black: #000000;
+$white: #ffffff;
+$red: #d93b30;
+$green: #098b49;
+$grey-100: #e5e5e5;
+$grey-200: #383838;
+$grey-300: #767676;
+$grey-400: #1f2324;
+$grey-500: #141414;
 
-$purple: #9999FF;
-$pink:   #EE3E80;
-$green:  #99CC33;
-$orange: #FF6633;
-$yellow: #FFFF00;
-$blue:   #0099FF;
+/*----------  Transitions  ----------*/
 
-/* Hovers */
-// $link-color: #e9e9cd;
-// $link-hover: darken($link-color, 9%);
+$transitionDefault: 0.4s;
+$transitionFast: 0.5s;
+$transitionFaster: 0.6s;
+$transitionSpeedy: .2s;
 
-// $alert-red: red;
-// $alert-green: #645564;
-// $alert-blue: blue;
+/*=============================================
+=            Spacings            =
+=============================================*/
 
-/*
-	MEDIA QUERIES
-========================================================================== */
- 
-$media-tablet : '1200px';
-$media-phablet : 980px;
-$media-tabletportrait : '768px';
-$media-mobile : '660px';
-$media-mobilesmall : '400px';
+/*----------  Paddings  ----------*/
+
+$paddingDefault: 20px;
+
+/*----------  Margins  ----------*/
+
+$marginDefault: 20px;
+
+/*----------  Media queries  ----------*/
+
+$media-desktop: 1440;
+$media-mobile: 768;
+$media-mobile-small: 480;
+
+/*=====  End of Variab;es  ======*/

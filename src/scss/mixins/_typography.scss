@@ -1,0 +1,12 @@
+/*=============================================
+=            Mixings - convert px to em            =
+=============================================*/
+
+$browser-context-desktop: 14; // Default
+$browser-context-mobile: 32;
+
+@function em($pixels, $context: $browser-context-desktop) {
+  @return #{$pixels/$context}em;
+}
+
+/*=====  Mixings - convert px to em  ======*/

@@ -26,17 +26,12 @@ var chalk = require('chalk')
 var path = require('path')
 var fs = require('fs')
 
-/* Pretty logs */
 var log = function( message, type ) {
 	return ( type === 'error' ) ? console.log( chalk.red( message ) ) : console.log( chalk.green( message ) )
 }
 
-/* Project name & output directory */
-var PROJECT_NAME = 'cheil-london-v2'
-
-/* Some globals to help us */
-var SITE = (argv.site != '' && typeof(argv.site) != "undefined" ? argv.site : "uk")
-var SUBFOLDER = (argv.subfolder != '' && typeof(argv.subfolder) != "undefined" ? PROJECT_NAME +"/"+ argv.subfolder : PROJECT_NAME)
+var SITE = 'uk';
+var SUBFOLDER = 'kx';
 
 /* Configuration */
 var config = {
@@ -49,9 +44,6 @@ var config = {
 
 	/* Content dam assets*/
 	ASSETS_FOLDER: path.join( __dirname, '/src/assets/'),
-
-	/* Content dam assets*/
-	BLOG_FOLDER: path.join( __dirname, '/src/blog/'),
 
 	/* Development source files */
 	SRC_FOLDER: path.join( __dirname, 'src'),
@@ -79,14 +71,8 @@ gulp.task('delete-build', function() {
 // Copy things into build folder
 gulp.task('copy-assets', function (cb) {
 
-    return gulp.src([config.ASSETS_FOLDER + '/**/*'])
-       .pipe(gulp.dest(config.ROOT_FOLDER + '/build/assets/')),
-
-   gulp.src([ config.SRC_FOLDER + '/favicon/**/*'])
-       .pipe(gulp.dest( config.ROOT_FOLDER + '/build/' )),
-
-    gulp.src([ config.SRC_FOLDER + '/pages/**/*'])
-        .pipe(gulp.dest( config.ROOT_FOLDER + '/build/' )),
+    return gulp.src([ config.ASSETS_FOLDER + '/**/*.{svg,png,gif,jpg}' ])
+       .pipe(gulp.dest( config.BUILD_FOLDER + '/content/dam/samsung/'  + SITE + '/' + SUBFOLDER + '/' )),
 
    gulp.src([ config.SRC_FOLDER + '/js/librarys/**/*.js' ])
        .pipe(gulp.dest( config.ROOT_FOLDER + '/build/js/librarys/' ))
@@ -127,7 +113,7 @@ gulp.task('scss', function() {
           browsers: ['last 2 versions'],
           cascade: false
       }))
-    	.pipe(gulp.dest( config.BUILD_FOLDER + '/css/' ))
+    	.pipe(gulp.dest( config.BUILD_FOLDER + SITE + '/' + SUBFOLDER + '/css' ))
     	.on('end', function() {
     		log('SCSS Compiled')
     	})
@@ -146,7 +132,7 @@ function compileJS( watch ) {
             // .pipe(uglify())
 			.pipe(sourcemaps.init({ loadMaps: true }))
             .pipe(sourcemaps.write('./'))
-            .pipe(gulp.dest( config.BUILD_FOLDER + '/js/' ))
+            .pipe(gulp.dest( config.BUILD_FOLDER + SITE + '/' + SUBFOLDER + '/js' ))
 
 	}
 
@@ -169,41 +155,7 @@ gulp.task('watchJS', function() { return watchJS() })
 
 /* Watch /src directory for changes & reload gulp */
 gulp.task('html', function () {
-
-	if ( fs.existsSync( path.join( config.SRC_FOLDER + '/copy/' + SITE + '/copy.json' ) ) && fs.existsSync( path.join( config.SRC_FOLDER + '/copy/default.json' ) ) ) {
-
-		var defaultCopyPath = path.join( config.SRC_FOLDER + '/copy/default.json' )
-		var copyPath = path.join( config.SRC_FOLDER + '/copy/' + SITE + '/copy.json' )
-
-		/* Check if copy doc exists in /src/copy/uk/copy.json */
-		var defaultCopyObject = JSON.parse(fs.readFileSync(defaultCopyPath, 'utf8'))
-		var localCopyObject= JSON.parse(fs.readFileSync(copyPath, 'utf8'))
-		var data = Object.assign(defaultCopyObject, localCopyObject)
-
-		return gulp.src(copyPath )
-			.pipe(through.obj(function (file, enc, cb) {
-				/* Data as JSON from Copy Doc */
-				gulp.src( config.SRC_FOLDER + '/*.{html,js,hbs}' )
-					.pipe(handlebars({
-							helpers: config.SRC_FOLDER + '/templates/helpers/handlebarsHelpers.js',
-							partials: config.SRC_FOLDER + '/templates/partials/*.{html,js,hbs}',
-							bustCache: true,
-							data: {
-								'dtgen': new Date(),
-								'site': SITE,
-								'subfolder': config.SRC_FOLDER + '/pages/**/*'
-							}
-						}).data( data )
-					)
-					.pipe(gulp.dest( config.BUILD_FOLDER ))
-					.on('error', function(err) { log('Error building HTML templates', 'error') })
-					.on('end', function(err) { log('Compiled HTML templates') })
-
-			}))
-
-	} else {
-
-console.log('this one');
+		var data = config.SRC_FOLDER + '/data/config.json'
 
 		/* No copy doc exists, just compile the templates as is */
 		return gulp.src( config.SRC_FOLDER + '/pages/**/*.{html,js,hbs}' )
@@ -211,38 +163,10 @@ console.log('this one');
 					helpers: config.SRC_FOLDER + '/templates/helpers/handlebarsHelpers.js',
 					partials: config.SRC_FOLDER + '/templates/partials/*.{html,js,hbs}',
 					bustCache: true,
-					data: {
-						'dtgen': new Date(),
-						'site': SITE,
-						'subfolder': config.SRC_FOLDER + '/pages/**/*',
-
-						"page":{
-							"form":{
-								"name":"Full Name",
-								"email":"Email address",
-								"url":"Your YouTube or Vimeo URL",
-								"title":"Title of submission",
-								"description":"Description of submission",
-								"skills":"Skills",
-								"experience":"Work experience",
-								"terms":"Terms",
-								"terms_long":"I accept and agree to comply with the <a class='link link--pink' target='_blank' href='http://stg.cheil.uk.s3-website.eu-west-2.amazonaws.com/legal/'>Cheil Website Terms of Use</a>.",
-								// "terms_long":"I accept and agree to comply with the <a class='link link--pink' target='_blank' href='http://cheilv2.cheil.com/legal/'>Cheil Website Terms of Use</a>",
-								"privacy":"Privacy",
-								"privacy_long":"I have read and understood the <a class='link link--pink' target='_blank' href='http://stg.cheil.uk.s3-website.eu-west-2.amazonaws.com/legal/'>Cheil Recruitment Privacy Notice</a> and the <a class='link link--pink' target='_blank' href='http://stg.cheil.uk.s3-website.eu-west-2.amazonaws.com/legal'>Cheil Website Privacy Notice</a> which will apply to the processing of any personal information I submit in connection with my application.",
-								// "privacy_long":"I have read and understood the <a class='link link--pink' target='_blank' href='http://cheilv2.cheil.com/legal/'>Cheil Recruitment Privacy Notice</a> and the <a class='link link--pink' target='_blank' href='http://cheilv2.cheil.com/legal'>Cheil Website Privacy Notice</a> which will apply to the processing of any personal information I submit in connection with my application",
-								"indemnity":"Indemnity",
-								"indemnity_long":"I warrant that the video I have uploaded is work created or developed solely by myself, except that where I have used another person’s work I have credited the use of that work."
-							}
-						}
-
-					}
+					data: data
 				})
 			)
-			.pipe(gulp.dest( config.BUILD_FOLDER ))
-			.on('error', function(err) { log('Error building HTML templates', 'error') })
-			.on('end', function(err) { log('Compiled HTML templates') })
-	}
+			.pipe(gulp.dest( config.BUILD_FOLDER + SITE + '/' + SUBFOLDER + '/' ))
 
 })
 
@@ -254,7 +178,7 @@ gulp.task('minify', () => {
         .pipe(htmlmin({
             useShortDoctype: true,
             collapseWhitespace: true,
-            removeComments: true,
+            removeComments: false,
             preserveLineBreaks: true,
             minifyCSS: true,
             minifyJS: true,
@@ -264,16 +188,6 @@ gulp.task('minify', () => {
             ignorePath: config.ROOT_FOLDER + '/build/assets'
         }))
         .pipe(gulp.dest( config.ROOT_FOLDER + '/build/' ))
-});
-
-gulp.task('sitemap', function () {
-    gulp.src('build/**/*.html', {
-            read: false
-        })
-        .pipe(sitemap({
-            siteUrl: 'https://cheil.uk/'
-        }))
-        .pipe(gulp.dest('./build'));
 });
 
 // Compress js

@@ -1,0 +1,106 @@
+{
+
+	"test":"Ting",
+
+	"seriesId":"W3DMW9HUAYM",
+	"LIVE___seriesId":"EAKJZBQWQAH",
+
+	"xxximgPath":"/content/dam/samsung/uk/kx/",
+	"imgPath":"https://images.samsung.com/is/image/samsung/p5/uk/kx/",
+
+	"wowEventsToShow": 3,
+	"filteredPerPage": 9,
+
+	"copy": {
+		"learnMore":"Learn More",
+		"whatsOn":"WHAT'S ON",
+		"seeAllEvents":"See all events",
+		"passionsTitle":"Follow your passion",
+		"filterToday":"Today",
+		"filterWeek":"Highlights",
+		"filterMonth":"Next 30 days",
+		"filterDatesTitle":"Filter by Date",
+		"filterPassionsTitle":"Filter by Passion",
+		"filterSuitablesTitle":"Suitable For"
+	},
+	"passions": [
+		{
+			"code":"fitness",
+			"name":"Health &amp; Fitness"
+		},
+		{
+			"code":"fashion",
+			"name":"Fashion"
+		},
+		{
+			"code":"food",
+			"name":"Food"
+		},
+		{
+			"code":"music",
+			"name":"Music &amp; Entertainment"
+		},
+		{
+			"code":"art",
+			"name":"Art &amp; Design"
+		},
+		{
+			"code":"tech",
+			"name":"Tech &amp; Science"
+		},
+		{
+			"code":"gaming",
+			"name":"Gaming"
+		}
+	],
+	"suitables": [
+		{
+			"code":"family",
+			"name":"Family"
+		},
+		{
+			"code":"cooking",
+			"name":"Cooking"
+		},
+		{
+			"code":"work",
+			"name":"Work"
+		},
+		{
+			"code":"starter",
+			"name":"Starter"
+		}
+	],
+
+	"homeCarousel": [
+		{
+	        "title": "Samsung KX",
+	        "desc": "A venue where you can attend great events, have one to one sessions or just grab a bite to eat",
+	        "link": "/uk/kx/discover/",
+	        "image": "https://images.samsung.com/is/image/samsung/p5/uk/kx/home-cdy-kv.jpg",
+	        "cta":"Discover"
+		}
+	],
+
+	"discoverCarousel": [
+		{
+	        "section": "Discover KX",
+	        "title": "title 1",
+	        "desc": "description 1",
+	        "link": "/uk/kx/services/",
+	        "image": "https://app.qudini.com/api/events/event/2698/banner-image.png",
+	        "cta":"GoGoGo"
+		},
+		{
+	        "section": "Discover KX",
+	        "title": "title 2",
+	        "desc": "description 2",
+	        "link": "/uk/kx/bookings/",
+	        "image": "https://app.qudini.com/api/events/event/2695/banner-image.png",
+	        "cta":"GoGoGo 2"
+		}
+	],
+
+	"end":"xxx"
+
+}
