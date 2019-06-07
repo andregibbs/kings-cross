@@ -1,5 +1,5 @@
 /* Components */
-// import ObjPolyfill from './components/objectFit-polyfill'
+import FetchData from './components/fetchData'
 // import Nav from './components/nav'
 // import Cookie from './components/cookie-popup'
 
@@ -8,7 +8,9 @@ $( document ).ready( function() {
 	// Your generic code
 	//
     // xxx.init();
-    // xxx.init();
+	// xxx.init();
+
+	FetchData.init()
 
 	switch ( window.location.pathname ) {
 		case '/':
