@@ -12,11 +12,13 @@ $black: #000000;
 $white: #ffffff;
 $red: #d93b30;
 $green: #098b49;
-$grey-100: #e5e5e5;
-$grey-200: #383838;
-$grey-300: #767676;
-$grey-400: #1f2324;
-$grey-500: #141414;
+
+$grey: #3B3B3B;
+$grey-light: #F7F7F7;
+$grey-100: #353535;
+
+// Links
+$blue-link: #0277C8;
 
 /*----------  Transitions  ----------*/
 
@@ -31,16 +33,22 @@ $transitionSpeedy: .2s;
 
 /*----------  Paddings  ----------*/
 
-$paddingDefault: 20px;
+$p-borders-desktop: 40px;
+$p-borders-mobile: 20px;
 
 /*----------  Margins  ----------*/
 
-$marginDefault: 20px;
+$m-borders-desktop: 90;
+$m-borders-mobile: 30;
 
 /*----------  Media queries  ----------*/
 
 $media-desktop: 1440;
 $media-mobile: 768;
 $media-mobile-small: 480;
+
+$desktop: 1440px;
+$mobile: 768px;
+$mobile-small: 480px;
 
 /*=====  End of Variab;es  ======*/

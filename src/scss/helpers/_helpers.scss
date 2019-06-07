@@ -3,3 +3,48 @@
 ========================================================================== */
 
 .helper {}
+
+.title {
+	&-small {
+
+	}
+
+	&-medium {
+
+	}
+
+	&-large {
+
+	}
+}
+
+.section {
+	width: 100%;
+	padding-left: $p-borders-desktop;
+	padding-right: $p-borders-desktop;
+
+	margin-top: get-desktop-vw($m-borders-desktop);
+	margin-bottom: get-desktop-vw($m-borders-desktop);
+
+	@media screen and ( max-width: $mobile ) {
+		padding-left: $p-borders-mobile;
+		padding-right: $p-borders-mobile;
+		margin-top: get-mobile-vw($m-borders-mobile);
+		margin-bottom: get-mobile-vw($m-borders-mobile);
+	}
+
+	&__inner {
+		width: 100%;
+		max-width: $desktop;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: $p-borders-desktop;
+		padding-bottom: $p-borders-desktop;
+	}
+}
+
+.link {
+	color: $blue-link;
+	text-decoration: underline;
+	font-size: 12px;
+}

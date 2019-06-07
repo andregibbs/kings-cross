@@ -1,0 +1,33 @@
+
+/*=============================================
+=            Nav            =
+=============================================*/
+
+.nav {
+	&__logo {
+		background: $grey-100;
+		text-align: center;
+		img {
+			width: 100%;
+			max-width: 100px;
+		}
+	}
+
+	&__navigation {
+		background: $grey;
+		padding: 20px;
+		ul {
+			display: flex;
+			justify-content: center;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+
+		li {
+			margin: 0 10px;
+		}
+	}
+}
+
+/*=====  End of Nav  ======*/
+

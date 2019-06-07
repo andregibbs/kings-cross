@@ -1,12 +1,9 @@
 {
-
-	"test":"Ting",
-
 	"seriesId":"W3DMW9HUAYM",
 	"LIVE___seriesId":"EAKJZBQWQAH",
 
-	"xxximgPath":"/content/dam/samsung/uk/kx/",
-	"imgPath":"https://images.samsung.com/is/image/samsung/p5/uk/kx/",
+	"imgPath":"/content/dam/samsung/uk/kings-cross/",
+	"aemImgPath":"https://images.samsung.com/is/image/samsung/p5/uk/kings-cross/",
 
 	"wowEventsToShow": 3,
 	"filteredPerPage": 9,
@@ -99,8 +96,6 @@
 	        "image": "https://app.qudini.com/api/events/event/2695/banner-image.png",
 	        "cta":"GoGoGo 2"
 		}
-	],
-
-	"end":"xxx"
+	]
 
 }

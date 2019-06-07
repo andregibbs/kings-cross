@@ -1,18 +1,24 @@
-@import 'base/variables';
+.cheil-static {
 
-// Mixins
-@import 'mixins/clearfix';
-@import 'mixins/typography';
-@import 'mixins/vw';
+	@import 'base/variables';
 
-// Base
-@import 'base/base';
-@import 'base/typography';
+	// Mixins
+	@import 'mixins/clearfix';
+	@import 'mixins/typography';
+	@import 'mixins/vw';
 
-// Helpers
-@import 'helpers/helpers';
+	// Base
+	@import 'base/base';
+	@import 'base/typography';
 
-// Components
+	// Helpers
+	@import 'helpers/helpers';
 
-// Pages
-@import 'pages/home';
+	// Components
+	@import 'components/nav';
+	@import 'components/find-kx';
+
+	// Pages
+	@import 'pages/home';
+
+}
