@@ -6,7 +6,7 @@
 // Font sizes
 // 14, 16, 18, 30, 36, 55
 
-.cheil-static{
+* {
 	font-size: calc(#{$browser-context-desktop}/#{$media-desktop} * 100vw);
 
 	@media screen and ( max-width: #{$media-mobile}px ) {
@@ -18,7 +18,7 @@
 	}
 
 	.fz55 {
-		font-size: em(55);
+		font-size: 12px;
 	}
 
 	.fz45 {
@@ -53,7 +53,6 @@
 		font-family: "SamsungSharpSans", arial, sans-serif;
 		line-height: 1;
 	}
-
 }
 
 /*=====  End of TYPOGRAPHY  ======*/

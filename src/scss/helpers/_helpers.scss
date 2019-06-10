@@ -20,15 +20,22 @@
 
 .section {
 	width: 100%;
-	padding-left: $p-borders-desktop;
-	padding-right: $p-borders-desktop;
+	padding-left: $p-borders-desktop + px;
+	padding-right: $p-borders-desktop + px;
 
-	margin-top: get-desktop-vw($m-borders-desktop);
-	margin-bottom: get-desktop-vw($m-borders-desktop);
+	margin-top: $m-borders-desktop + px;
+	margin-bottom: $m-borders-desktop + px;
+
+	@media screen and ( max-width: $desktop ) {
+		padding-left: $p-borders-desktop + px;
+		padding-right: $p-borders-desktop + px;
+		margin-top: get-desktop-vw($m-borders-desktop);
+		margin-bottom: get-desktop-vw($m-borders-desktop);
+	}
 
 	@media screen and ( max-width: $mobile ) {
-		padding-left: $p-borders-mobile;
-		padding-right: $p-borders-mobile;
+		padding-left: $p-borders-mobile + px;
+		padding-right: $p-borders-mobile + px;
 		margin-top: get-mobile-vw($m-borders-mobile);
 		margin-bottom: get-mobile-vw($m-borders-mobile);
 	}
@@ -38,8 +45,18 @@
 		max-width: $desktop;
 		margin-left: auto;
 		margin-right: auto;
-		padding-top: $p-borders-desktop;
-		padding-bottom: $p-borders-desktop;
+		padding-top: $p-borders-desktop + px;
+		padding-bottom: $p-borders-desktop + px;
+
+		@media screen and ( max-width: $desktop ) {
+			padding-top: get-desktop-vw($p-borders-desktop);
+			padding-bottom: get-desktop-vw($p-borders-desktop);
+		}
+
+		@media screen and ( max-width: $mobile ) {
+			padding-top: get-mobile-vw($p-borders-mobile);
+			padding-bottom: get-mobile-vw($p-borders-mobile);
+		}
 	}
 }
 

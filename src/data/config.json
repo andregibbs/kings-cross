@@ -23,6 +23,7 @@
 		"filterPassionsTitle":"Filter by Passion",
 		"filterSuitablesTitle":"Suitable For"
 	},
+
 	"passions": [
 		{
 			"code":"fitness",
