@@ -1,0 +1,19 @@
+<section class="section passionPoints">
+	<div class="section__inner">
+
+		<h2>Follow your passion</h2>
+
+		<div class="passionPoints__content">
+			{{!-- loop through a JSON of passions and generate the content --}}
+			{{#each config.passions}}
+				<div class="passion" data-code="{{ this.code }}">
+					<a href="/{{ @root.config.site }}/{{ @root.config.subfolder }}/whats-on?passions={{ this.code }}">
+						{{!-- <img class="passion-d-img" src="{{ @root.config.imgPath }}passion/{{ this.code }}-vertical.jpg" alt=""> --}}
+						<span>{{{ this.name }}}</span>
+					</a>
+				</div>
+			{{/each}}
+		</div>
+
+	</div>
+</section>

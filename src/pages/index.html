@@ -1,10 +1,12 @@
 <!--#include virtual="/uk/aem/header-pdp.html"-->
 
-	<section class="cheil-static">
+	<section class="cheil-static home">
 
-		<link rel="stylesheet" href="/{{ config.site }}/{{ config.subfolder }}/css/main.css">
+		{{>stylesheet}}
 
 		{{>nav }}
+
+		{{>whatIsKx }}
 
 		<section class="section">
 			<div class="section__inner">
@@ -53,9 +55,15 @@
 			</div>
 		</section>
 
+		{{>passionPoints }}
+
 		{{>findKx }}
 
 		{{>socialMedia }}
+
+		<div class="hello">
+			hello
+		</div>
 
 		{{>scripts }}
 

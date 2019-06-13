@@ -1,7 +1,12 @@
 /* Components */
-// import fetchData from './components/fetchData'
+import whatson from './components/whatson'
+import singleEvent from './components/singleEvent'
+import whatIsKx from './components/whatIsKx'
 
 $( document ).ready( function() {
+
+	// This will clear all unnecessary Samsung logs
+	console.clear()
 
 	// =================================================
 	// Global vars
@@ -93,7 +98,7 @@ $( document ).ready( function() {
 		}
 	}
 
-	function fetchData() {
+	function fetchData( callback ) {
 		$.get( apiUrl + seriesID, {
 			'timezone': "Europe/London",
 			'isoCurrentDate': isoCurrentDate.toISOString()
@@ -154,43 +159,48 @@ $( document ).ready( function() {
 				}
 
 			}
+		}).complete( function() {
+
+			// Logs all events
+			console.log( 'evetns', events )
+			console.log( 'evetns - wowEvents', wowEvents )
+			console.log( 'evetns - todayEvents', todayEvents )
+			console.log( 'evetns - futureEvents', futureEvents )
+			console.log( 'evetns - weekEvents', weekEvents )
+			console.log( 'evetns - monthEvents', monthEvents )
+			console.log( 'evetns - todayPromotedEvents', todayPromotedEvents )
+			console.log( 'evetns - weekPromotedEvents', weekPromotedEvents )
+			console.log( 'evetns - monthPromotedEvents', monthPromotedEvents )
+
+			// Callback function when all events are fetched
+			callback( events )
 		})
 
-		console.log( 'evetns - wowEvents', wowEvents )
-		console.log( 'evetns - todayEvents', todayEvents )
-		console.log( 'evetns - futureEvents', futureEvents )
-		console.log( 'evetns - weekEvents', weekEvents )
-		console.log( 'evetns - monthEvents', monthEvents )
-		console.log( 'evetns - todayPromotedEvents', todayPromotedEvents )
-		console.log( 'evetns - weekPromotedEvents', weekPromotedEvents )
-		console.log( 'evetns - monthPromotedEvents', monthPromotedEvents )
 	}
 
-	// =================================================
-	// Loads scripts dynamically
-	// =================================================
+	// =========================================================
+	// Loads scripts dynamically depending on which page you are
+	// =========================================================
 
 	switch ( window.location.pathname ) {
 		case '/uk/kings-cross/':
 			fetchData()
+			whatIsKx()
             break;
 
-		case "/uk/kings-cross/xxx":
+		case "/uk/kings-cross/discover/":
             // Your init here
             break;
 
-		case "/uk/kings-cross/yyy":
-            // Work.init();
+		case "/uk/kings-cross/whats-on/":
+			fetchData( whatson )
 			break;
 
-        case "/uk/kings-cross/iii":
-            // Legal.init();
+        case "/uk/kings-cross/whats-on/event/":
+            singleEvent()
             break;
 		default: {
-			// article
-			// if( window.location.pathname.indexOf("/blog/") > -1 ) {
-			// 	Blog.init();
-			// }
+			// Your init here
 		}
 	}
 
