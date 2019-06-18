@@ -2,6 +2,9 @@
 import whatson from './components/whatson'
 import singleEvent from './components/singleEvent'
 import whatIsKx from './components/whatIsKx'
+import repair from './components/repair'
+import oneToOne from './components/oneToOne'
+import slider from './components/slider'
 
 $( document ).ready( function() {
 
@@ -162,15 +165,15 @@ $( document ).ready( function() {
 		}).complete( function() {
 
 			// Logs all events
-			console.log( 'evetns', events )
-			console.log( 'evetns - wowEvents', wowEvents )
-			console.log( 'evetns - todayEvents', todayEvents )
-			console.log( 'evetns - futureEvents', futureEvents )
-			console.log( 'evetns - weekEvents', weekEvents )
-			console.log( 'evetns - monthEvents', monthEvents )
-			console.log( 'evetns - todayPromotedEvents', todayPromotedEvents )
-			console.log( 'evetns - weekPromotedEvents', weekPromotedEvents )
-			console.log( 'evetns - monthPromotedEvents', monthPromotedEvents )
+			// console.log( 'evetns', events )
+			// console.log( 'evetns - wowEvents', wowEvents )
+			// console.log( 'evetns - todayEvents', todayEvents )
+			// console.log( 'evetns - futureEvents', futureEvents )
+			// console.log( 'evetns - weekEvents', weekEvents )
+			// console.log( 'evetns - monthEvents', monthEvents )
+			// console.log( 'evetns - todayPromotedEvents', todayPromotedEvents )
+			// console.log( 'evetns - weekPromotedEvents', weekPromotedEvents )
+			// console.log( 'evetns - monthPromotedEvents', monthPromotedEvents )
 
 			// Callback function when all events are fetched
 			callback( events )
@@ -178,13 +181,53 @@ $( document ).ready( function() {
 
 	}
 
+	function testSlider() {
+		testSlider1()
+		testSlider2()
+	}
+
+	function testSlider1() {
+
+		const sliderConfig1 = {
+			lazyLoad: 'ondemand',
+			dots: false,
+			infinite: false,
+			speed: 500,
+			fade: false,
+			cssEase: 'linear'
+		}
+
+		slider( wowEvents, '.slider1', sliderConfig1, 'homeKv' )
+	}
+
+	function testSlider2() {
+
+		const dd = {
+			todayEvents,
+			monthPromotedEvents
+		}
+
+		const sliderConfig2 = {
+			slidesToShow: 3,
+			slidesToScroll: 3,
+			dots: true,
+			infinite: true,
+			speed: 500,
+			fade: false,
+			cssEase: 'linear',
+		}
+
+		slider( dd, '.upComing', sliderConfig2, 'upComing' )
+	}
+
+
 	// =========================================================
 	// Loads scripts dynamically depending on which page you are
 	// =========================================================
 
 	switch ( window.location.pathname ) {
 		case '/uk/kings-cross/':
-			fetchData()
+			fetchData( testSlider )
 			whatIsKx()
             break;
 
@@ -198,7 +241,15 @@ $( document ).ready( function() {
 
         case "/uk/kings-cross/whats-on/event/":
             singleEvent()
-            break;
+			break;
+
+		case "/uk/kings-cross/support/repair/":
+			repair()
+			break;
+
+		case "/uk/kings-cross/support/one-to-one/":
+			oneToOne()
+			break;
 		default: {
 			// Your init here
 		}

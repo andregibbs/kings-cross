@@ -161,7 +161,7 @@ gulp.task('html', function () {
 		return gulp.src( config.SRC_FOLDER + '/pages/**/*.{html,js,hbs}' )
 			.pipe(handlebars({
 					helpers: config.SRC_FOLDER + '/templates/helpers/handlebarsHelpers.js',
-					partials: config.SRC_FOLDER + '/templates/partials/*.{html,js,hbs}',
+					partials: config.SRC_FOLDER + '/templates/partials/**/*.{html,js,hbs}',
 					bustCache: true,
 					data: data
 				})

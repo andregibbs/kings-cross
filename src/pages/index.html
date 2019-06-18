@@ -4,68 +4,29 @@
 
 		{{>stylesheet}}
 
-		{{>nav }}
+		{{>components/nav }}
 
-		{{>whatIsKx }}
+		{{>components/homepageKV }}
 
-		<section class="section">
+		{{>templateScripts/slider/homeKv }}
+		<section class="section slider">
 			<div class="section__inner">
-				<h1 class="fz55">H1 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, quibusdam aperiam, maxime iusto quia voluptates expedita velit possimus obcaecati cupiditate facilis blanditiis corrupti sed commodi odit delectus, alias consequatur veritatis.</h1><br>
-				<h2>H2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, quibusdam aperiam, maxime iusto quia voluptates expedita velit possimus obcaecati cupiditate facilis blanditiis corrupti sed commodi odit delectus, alias consequatur veritatis.</h2><br>
-				<h3>H3 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, quibusdam aperiam, maxime iusto quia voluptates expedita velit possimus obcaecati cupiditate facilis blanditiis corrupti sed commodi odit delectus, alias consequatur veritatis.</h3><br>
-				<h4>H4 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, quibusdam aperiam, maxime iusto quia voluptates expedita velit possimus obcaecati cupiditate facilis blanditiis corrupti sed commodi odit delectus, alias consequatur veritatis.</h4><br>
-				<h5>H5 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, quibusdam aperiam, maxime iusto quia voluptates expedita velit possimus obcaecati cupiditate facilis blanditiis corrupti sed commodi odit delectus, alias consequatur veritatis.</h5><br>
-				<h6>H6 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, quibusdam aperiam, maxime iusto quia voluptates expedita velit possimus obcaecati cupiditate facilis blanditiis corrupti sed commodi odit delectus, alias consequatur veritatis.</h6><br>
-
-				<p>P Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam exercitationem sapiente tempore? Tempore expedita placeat totam eos inventore sapiente, quam necessitatibus laboriosam amet magnam at delectus corrupti velit vel recusandae?</p><br>
-
-				<a href="">this is a link</a><br>
-
-				<p>{{ @root.config.imgPath }}</p>
+				<div class="slider1"></div>
 			</div>
 		</section>
 
-		<section class="section">
-			<div class="section__inner">
-				<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, optio nisi qui dolorum cumque impedit. Totam earum esse beatae ad rem harum quos eum, saepe cum enim odio eveniet ab.</h1>
-			</div>
-		</section>
+		{{>components/upcomingSlider}}
 
-		<section class="section">
-			<div class="section__inner">
-				<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, optio nisi qui dolorum cumque impedit. Totam earum esse beatae ad rem harum quos eum, saepe cum enim odio eveniet ab.</h1>
-			</div>
-		</section>
+		{{>components/whatIsKx }}
 
-		<section class="section">
-			<div class="section__inner">
-				<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, optio nisi qui dolorum cumque impedit. Totam earum esse beatae ad rem harum quos eum, saepe cum enim odio eveniet ab.</h1>
-			</div>
-		</section>
+		{{>components/passionPoints }}
 
-		<section class="section">
-			<div class="section__inner">
-				<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, optio nisi qui dolorum cumque impedit. Totam earum esse beatae ad rem harum quos eum, saepe cum enim odio eveniet ab.</h1>
-			</div>
-		</section>
+		{{>components/findKx }}
 
-		<section class="section">
-			<div class="section__inner">
-				<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, optio nisi qui dolorum cumque impedit. Totam earum esse beatae ad rem harum quos eum, saepe cum enim odio eveniet ab.</h1>
-			</div>
-		</section>
-
-		{{>passionPoints }}
-
-		{{>findKx }}
-
-		{{>socialMedia }}
-
-		<div class="hello">
-			hello
-		</div>
+		{{>components/socialMedia }}
 
 		{{>scripts }}
+
 
 	</section>
 

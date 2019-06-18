@@ -1,0 +1,22 @@
+{{>templateScripts/slider/upComing }}
+
+<section class="section upComing">
+	<div class="section__inner">
+
+		<div class="upComing__header">
+			<div class="upComing__header-section header">
+				<div class="header-item"><h3>Upcoming Events</h3></div>
+				<div class="header-item header-click header--active" data-slider='today'><h3>Today</h3></div>
+				<div class="header-item header-click" data-slider='futured'><h3>Futured Events*</h3></div>
+			</div>
+			<div class="upComing__header-section">
+				<div class="header-item"><a href="/{{config.site}}/{{config.subfolder}}/whats-on/"><h3>See All Events</h3></a></div>
+			</div>
+		</div>
+
+		<div class="upComing__sliders slider">
+			<div class="slider-today slider-item slider--active"></div>
+			<div class="slider-futured slider-item"></div>
+		</div>
+	</div>
+</section>

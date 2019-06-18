@@ -1,0 +1,46 @@
+/*=============================================
+=            Slider - upcoming events            =
+=============================================*/
+
+.upComing {
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 50px;
+
+		&-section {
+			display: flex;
+		}
+
+		.header {
+			&-item {
+				margin-right: 10px;
+			}
+
+			&-click {
+				cursor: pointer;
+			}
+
+			&--active {
+				color: blue;
+			}
+		}
+	}
+
+	&__sliders {
+
+	}
+
+	.slider {
+
+		&-item {
+			display: none;
+		}
+
+		&--active {
+			display: block;
+		}
+	}
+}
+
+/*=====  End of Slider - upcoming events  ======*/

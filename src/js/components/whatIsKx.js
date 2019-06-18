@@ -12,7 +12,7 @@ export default function whatIsKx() {
 		let getScrollEl = $(this).data('scroll')
 
 		window.scroll({
-			top: getScrollEl.offset().top,
+			top: $('.scroll-'+ getScrollEl +'').offset().top,
 			left: 0,
 			behavior: 'smooth'
 		});
