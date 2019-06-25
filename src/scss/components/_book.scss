@@ -1,0 +1,16 @@
+
+/*=============================================
+=            Book section            =
+=============================================*/
+
+.book {
+	height: 0;
+	overflow: hidden;
+
+	&--active {
+		height: auto;
+	}
+}
+
+/*=====  End of Book section  ======*/
+
