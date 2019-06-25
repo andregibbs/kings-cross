@@ -3,13 +3,12 @@ import getUrlVars from './getUrlVars'
 
 export default function singleEvent(){
 	const isoCurrentDate = new Date();
-	const number = getUrlVars()["i"];
+	const eventId = getUrlVars()["i"];
 
-	$.get( 'https://bookings.qudini.com/booking-widget/event/event/'+ number +'', {
+	$.get( 'https://bookings.qudini.com/booking-widget/event/event/'+ eventId +'', {
 			'timezone': "Europe/London",
 			'isoCurrentDate': isoCurrentDate.toISOString()
 	}).success( function( data ) {
-
 		const options = {
 			identifier: data.identifier,
 			eventId: data.id,
@@ -19,9 +18,7 @@ export default function singleEvent(){
 			startTime: data.startTime,
 			passion: data.passions
 		}
-
 		$('.singleEvent .section__inner').append( handleTemplate( 'singleEvent', options ) )
-
 	})
 
 	// Booking functionality
@@ -42,11 +39,10 @@ export default function singleEvent(){
 
 		if( $('#book__form')[0].checkValidity() ) {
 
-            var form_name = document.getElementById("form-name");
-            var form_surname = document.getElementById("form-surname");
-            var form_tel = document.getElementById("form-tel");
-            var form_email = document.getElementById("form-email");
-
+            const form_name = $(".form-name").val();
+            const form_surname = $(".form-surname").val();
+            const form_tel = $(".form-tel").val();
+            const form_email = $(".form-email").val();
 
 			$.ajax({
 				type: "POST",
@@ -54,13 +50,13 @@ export default function singleEvent(){
 				dataType: "json",
 				contentType: "application/json; charset=utf-8",
 				data: JSON.stringify({
-					"firstName": form_name.value,
-					"lastName": form_surname.value,
-					"email": form_email.value,
-					"groupSize": tickets.value,
-					"mobileNumber": form_tel.value,
+					"firstName": form_name,
+					"lastName": form_surname,
+					"email": form_email,
+					"groupSize": tickets,
+					"mobileNumber": form_tel,
 					"subscribed": true,
-					"eventId": number,
+					"eventId": eventId,
 					"timezone": "Europe/London"
 				}),
 				success: function (data) {
