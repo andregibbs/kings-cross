@@ -221,6 +221,11 @@ $( document ).ready( function() {
 		slider( dd, '.upComing', sliderConfig2, 'upComing' )
 	}
 
+	// =========================================================
+	// Sticky nav
+	// =========================================================
+
+	nav()
 
 	// =========================================================
 	// Loads scripts dynamically depending on which page you are
@@ -228,7 +233,6 @@ $( document ).ready( function() {
 
 	switch ( window.location.pathname ) {
 		case '/uk/kings-cross/':
-			nav()
 			fetchData( testSlider )
 			whatIsKx()
             break;
