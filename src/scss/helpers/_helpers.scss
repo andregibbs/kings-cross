@@ -2,66 +2,69 @@
   HELPERS
 ========================================================================== */
 
-.helper {}
+.cheil-static {
 
-.title {
-	&-small {
+	.helper {}
 
+	.title {
+		&-small {
+
+		}
+
+		&-medium {
+
+		}
+
+		&-large {
+
+		}
 	}
 
-	&-medium {
-
-	}
-
-	&-large {
-
-	}
-}
-
-.section {
-	width: 100%;
-	padding-left: $p-borders-desktop + px;
-	padding-right: $p-borders-desktop + px;
-
-	margin-top: $m-borders-desktop + px;
-	margin-bottom: $m-borders-desktop + px;
-
-	@media screen and ( max-width: $desktop ) {
+	.section {
+		width: 100%;
 		padding-left: $p-borders-desktop + px;
 		padding-right: $p-borders-desktop + px;
-		margin-top: get-desktop-vw($m-borders-desktop);
-		margin-bottom: get-desktop-vw($m-borders-desktop);
-	}
 
-	@media screen and ( max-width: $mobile ) {
-		padding-left: $p-borders-mobile + px;
-		padding-right: $p-borders-mobile + px;
-		margin-top: get-mobile-vw($m-borders-mobile);
-		margin-bottom: get-mobile-vw($m-borders-mobile);
-	}
-
-	&__inner {
-		width: 100%;
-		max-width: $desktop;
-		margin-left: auto;
-		margin-right: auto;
-		padding-top: $p-borders-desktop + px;
-		padding-bottom: $p-borders-desktop + px;
+		padding-top: $m-borders-desktop + px;
+		padding-bottom: $m-borders-desktop + px;
 
 		@media screen and ( max-width: $desktop ) {
-			padding-top: get-desktop-vw($p-borders-desktop);
-			padding-bottom: get-desktop-vw($p-borders-desktop);
+			padding-left: $p-borders-desktop + px;
+			padding-right: $p-borders-desktop + px;
+			padding-top: get-desktop-vw($m-borders-desktop);
+			padding-bottom: get-desktop-vw($m-borders-desktop);
 		}
 
 		@media screen and ( max-width: $mobile ) {
-			padding-top: get-mobile-vw($p-borders-mobile);
-			padding-bottom: get-mobile-vw($p-borders-mobile);
+			padding-left: $p-borders-mobile + px;
+			padding-right: $p-borders-mobile + px;
+			padding-top: get-mobile-vw($m-borders-mobile);
+			padding-bottom: get-mobile-vw($m-borders-mobile);
+		}
+
+		&__inner {
+			width: 100%;
+			max-width: $desktop;
+			margin-left: auto;
+			margin-right: auto;
+			padding-top: $p-borders-desktop + px;
+			padding-bottom: $p-borders-desktop + px;
+
+			@media screen and ( max-width: $desktop ) {
+				padding-top: get-desktop-vw($p-borders-desktop);
+				padding-bottom: get-desktop-vw($p-borders-desktop);
+			}
+
+			@media screen and ( max-width: $mobile ) {
+				padding-top: get-mobile-vw($p-borders-mobile);
+				padding-bottom: get-mobile-vw($p-borders-mobile);
+			}
 		}
 	}
-}
 
-.link {
-	color: $blue-link;
-	text-decoration: underline;
-	font-size: 12px;
+	.link {
+		color: $blue-link;
+		text-decoration: underline;
+		font-size: 12px;
+	}
 }

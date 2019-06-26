@@ -2,21 +2,26 @@
   BASE
 ========================================================================== */
 
-*, *:after, *:before {
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-}
+.cheil-static {
+	background: $background;
+	color: $white;
 
-ul {
-  margin: 0;
-  padding: 0;
-}
+	*, *:after, *:before {
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+	}
 
-li {
-  list-style-type: none;
-}
+	ul {
+	margin: 0;
+	padding: 0;
+	}
 
-a {
-	color: $grey;
+	li {
+	list-style-type: none;
+	}
+
+	a {
+		color: $grey;
+	}
 }

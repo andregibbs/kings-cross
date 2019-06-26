@@ -1,14 +1,34 @@
 <script id='singleEvent' type='text/x-handlebars-template'>
-	<div class="single-event" data-eventId='[[ eventId ]]' data-eventIdentifier='[[ identifier ]]'>
-		<div class="eventTile__img img">
+	<div class="single-event" data-eventId='[[ eventId ]]' data-maxGroupSize='[[ groupSize ]]'  data-eventIdentifier='[[ identifier ]]'>
+
+		<section class="event__header section__inner">
+			<span class="event__header-date">[[ startDate ]] / [[ startTime ]]</span> <br><br>
+			<span class="event__header-title">[[ title ]]</span>
+		</section>
+
+		<div class="event__img">
 			<img src="[[ image ]]" alt="">
-			<span>[[ startDate ]] / [[ startTime ]]</span>
 		</div>
 
-		<div class="eventTile__content tile">
-			<span class="tile-title">[[ title ]]</span>
-			<span class="tile-passions">[[ passion ]]</span>
-			<a href="" class="tile-link">book now</a>
+		<div class="section event__content">
+			<div class="section__inner">
+				<section>
+					<span class="tile-desc">[[ description ]]</span> <br><br>
+				</section>
+				<section>
+					<div class="event__content-book action">
+						<span class="action-date">[[ startDate ]] / [[ startTime ]]</span> <br><br>
+						<span class="action-capacity">xxx</span> <br><br>
+						<a href="" class="action-btn">book now</a><br><br>
+						<span>*I am small print I can display crucial event information</span>
+					</div>
+					<div class="event__content-share share">
+						<h2>Share this event</h2>
+
+					</div>
+
+				</section>
+			</div>
 		</div>
 	</div>
 </script>

@@ -1,4 +1,5 @@
 /* Components */
+import nav from './components/nav'
 import whatson from './components/whatson'
 import singleEvent from './components/singleEvent'
 import whatIsKx from './components/whatIsKx'
@@ -227,6 +228,7 @@ $( document ).ready( function() {
 
 	switch ( window.location.pathname ) {
 		case '/uk/kings-cross/':
+			nav()
 			fetchData( testSlider )
 			whatIsKx()
             break;
