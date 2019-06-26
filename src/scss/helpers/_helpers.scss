@@ -4,22 +4,7 @@
 
 .cheil-static {
 
-	.helper {}
-
-	.title {
-		&-small {
-
-		}
-
-		&-medium {
-
-		}
-
-		&-large {
-
-		}
-	}
-
+	// This sets the values for each section
 	.section {
 		width: 100%;
 		padding-left: $p-borders-desktop + px;
@@ -62,9 +47,62 @@
 		}
 	}
 
+	// URL LINKS
 	.link {
 		color: $blue-link;
 		text-decoration: underline;
 		font-size: 12px;
+	}
+
+	.btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: 2px solid transparent;
+		border-radius: 100px;
+		font-weight: 600;
+		letter-spacing: 1px;
+		line-height: 1;
+		text-align: center;
+		text-transform: uppercase;
+		background: transparent;
+		transition: all $transitionDefault ease;
+		width: 240px;
+		height: 60px;
+
+		@media screen and ( max-width: $desktop ) {
+			width: get-desktop-vw(240);
+			height: get-desktop-vw(60);
+			padding: get-desktop-vw(12) get-desktop-vw(23);
+		}
+		@media screen and ( max-width: $mobile ) {
+			width: get-mobile-vw(240);
+			height: get-mobile-vw(60);
+			padding: get-mobile-vw(12) get-mobile-vw(23);
+		}
+
+		&--grey {
+			border-color: $grey;
+			color: #fff;
+			&:hover {
+				background: $grey;
+			}
+		}
+
+		&--blue {
+			border-color: $samsungBlue;
+			color: #fff;
+			&:hover {
+				background: $samsungBlue;
+			}
+		}
+
+		&--pink {
+			border-color: $pink;
+			color: #fff;
+			&:hover {
+				background:	$pink;
+			}
+		}
 	}
 }
