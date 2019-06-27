@@ -10,6 +10,20 @@
 	&--active {
 		height: auto;
 	}
+
+	&-action {
+		display: none;
+		&--active {
+			display: block;
+		}
+	}
+
+	&-confirmation {
+		display: none;
+		&--active {
+			display: block;
+		}
+	}
 }
 
 /*=====  End of Book section  ======*/

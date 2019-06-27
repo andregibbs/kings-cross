@@ -5,6 +5,8 @@ export default function whatson( events ){
 
 	events.forEach( function( event, index ) {
 
+		console.log( event )
+
 		const options = {
 			identifier: event.identifier,
 			eventId: event.id,
@@ -12,7 +14,7 @@ export default function whatson( events ){
 			title: event.title,
 			startDate: event.startDate,
 			startTime: event.startTime,
-			passion: event.passions
+			passion: event.extra.passions
 		}
 
 		if ( index <= 10 ) {

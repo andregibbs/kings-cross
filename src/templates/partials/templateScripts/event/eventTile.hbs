@@ -7,9 +7,11 @@
 			</div>
 
 			<div class="eventTile__content tile">
-				<span class="tile-title">[[ title ]]</span>
-				<span class="tile-passions">[[ passion ]]</span>
-				<a href="" class="tile-link">book now</a>
+				<span class="tile-title">[[ title ]]</span> <br><br>
+				[[#each passion ]]
+					<span class="tile-passions">[[ this ]]</span>
+				[[/each ]]<br><br>
+				<a href="" class="tile-link">book now</a> <br><br>
 			</div>
 		</a>
 	</div>

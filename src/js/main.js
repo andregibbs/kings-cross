@@ -1,4 +1,5 @@
 /* Components */
+import nav from './components/nav'
 import whatson from './components/whatson'
 import singleEvent from './components/singleEvent'
 import whatIsKx from './components/whatIsKx'
@@ -220,6 +221,11 @@ $( document ).ready( function() {
 		slider( dd, '.upComing', sliderConfig2, 'upComing' )
 	}
 
+	// =========================================================
+	// Sticky nav
+	// =========================================================
+
+	nav()
 
 	// =========================================================
 	// Loads scripts dynamically depending on which page you are

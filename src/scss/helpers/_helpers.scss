@@ -2,66 +2,123 @@
   HELPERS
 ========================================================================== */
 
-.helper {}
+.cheil-static {
 
-.title {
-	&-small {
-
-	}
-
-	&-medium {
-
-	}
-
-	&-large {
-
-	}
-}
-
-.section {
-	width: 100%;
-	padding-left: $p-borders-desktop + px;
-	padding-right: $p-borders-desktop + px;
-
-	margin-top: $m-borders-desktop + px;
-	margin-bottom: $m-borders-desktop + px;
-
-	@media screen and ( max-width: $desktop ) {
+	// This sets the values for each section
+	.section {
+		width: 100%;
 		padding-left: $p-borders-desktop + px;
 		padding-right: $p-borders-desktop + px;
-		margin-top: get-desktop-vw($m-borders-desktop);
-		margin-bottom: get-desktop-vw($m-borders-desktop);
-	}
 
-	@media screen and ( max-width: $mobile ) {
-		padding-left: $p-borders-mobile + px;
-		padding-right: $p-borders-mobile + px;
-		margin-top: get-mobile-vw($m-borders-mobile);
-		margin-bottom: get-mobile-vw($m-borders-mobile);
-	}
-
-	&__inner {
-		width: 100%;
-		max-width: $desktop;
-		margin-left: auto;
-		margin-right: auto;
-		padding-top: $p-borders-desktop + px;
-		padding-bottom: $p-borders-desktop + px;
+		padding-top: $m-borders-desktop + px;
+		padding-bottom: $m-borders-desktop + px;
 
 		@media screen and ( max-width: $desktop ) {
-			padding-top: get-desktop-vw($p-borders-desktop);
-			padding-bottom: get-desktop-vw($p-borders-desktop);
+			padding-left: $p-borders-desktop + px;
+			padding-right: $p-borders-desktop + px;
+			padding-top: get-desktop-vw($m-borders-desktop);
+			padding-bottom: get-desktop-vw($m-borders-desktop);
 		}
 
 		@media screen and ( max-width: $mobile ) {
-			padding-top: get-mobile-vw($p-borders-mobile);
-			padding-bottom: get-mobile-vw($p-borders-mobile);
+			padding-left: $p-borders-mobile + px;
+			padding-right: $p-borders-mobile + px;
+			padding-top: get-mobile-vw($m-borders-mobile);
+			padding-bottom: get-mobile-vw($m-borders-mobile);
+		}
+
+		&__inner {
+			width: 100%;
+			max-width: $desktop;
+			margin-left: auto;
+			margin-right: auto;
+			padding-top: $p-borders-desktop + px;
+			padding-bottom: $p-borders-desktop + px;
+
+			@media screen and ( max-width: $desktop ) {
+				padding-top: get-desktop-vw($p-borders-desktop);
+				padding-bottom: get-desktop-vw($p-borders-desktop);
+			}
+
+			@media screen and ( max-width: $mobile ) {
+				padding-top: get-mobile-vw($p-borders-mobile);
+				padding-bottom: get-mobile-vw($p-borders-mobile);
+			}
 		}
 	}
-}
 
-.link {
-	color: $blue-link;
-	text-decoration: underline;
-	font-size: 12px;
+	// URL LINKS
+	.link {
+		color: $blue-link;
+		text-decoration: underline;
+		font-size: 12px;
+	}
+
+	.btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: 2px solid transparent;
+		border-radius: 100px;
+		font-weight: 600;
+		letter-spacing: 1px;
+		line-height: 1;
+		text-align: center;
+		text-transform: uppercase;
+		background: transparent;
+		transition: all $transitionDefault ease;
+		width: 240px;
+		height: 60px;
+
+		@media screen and ( max-width: $desktop ) {
+			width: get-desktop-vw(240);
+			height: get-desktop-vw(60);
+			padding: get-desktop-vw(12) get-desktop-vw(23);
+		}
+		@media screen and ( max-width: $mobile ) {
+			width: get-mobile-vw(240);
+			height: get-mobile-vw(60);
+			padding: get-mobile-vw(12) get-mobile-vw(23);
+		}
+
+		&--primary {
+			border-color: $pink;
+			color: #fff;
+			&:hover {
+				background: $pink;
+			}
+		}
+
+		&--secondary {
+			border-color: $grey;
+			color: #fff;
+			&:hover {
+				background: $grey;
+			}
+		}
+
+		&--grey {
+			border-color: $grey;
+			color: #fff;
+			&:hover {
+				background: $grey;
+			}
+		}
+
+		&--blue {
+			border-color: $samsungBlue;
+			color: #fff;
+			&:hover {
+				background: $samsungBlue;
+			}
+		}
+
+		&--pink {
+			border-color: $pink;
+			color: #fff;
+			&:hover {
+				background:	$pink;
+			}
+		}
+	}
 }
