@@ -81,6 +81,22 @@
 			padding: get-mobile-vw(12) get-mobile-vw(23);
 		}
 
+		&--primary {
+			border-color: $pink;
+			color: #fff;
+			&:hover {
+				background: $pink;
+			}
+		}
+
+		&--secondary {
+			border-color: $grey;
+			color: #fff;
+			&:hover {
+				background: $grey;
+			}
+		}
+
 		&--grey {
 			border-color: $grey;
 			color: #fff;
