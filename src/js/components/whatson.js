@@ -1,27 +1,68 @@
 import handleTemplate from './handleTemplate'
+import slider from './slider'
+import getUrlVars from './getUrlVars'
 
 export default function whatson( events ){
 	// handleTemplate( 'eventTile', options )
 
-	events.forEach( function( event, index ) {
+	// =================================================
+	// Slider
+	// =================================================
 
-		console.log( event )
+	const sliderConfig = {
+		lazyLoad: 'ondemand',
+		dots: false,
+		infinite: false,
+		speed: 500,
+		fade: false,
+		cssEase: 'linear'
+	}
 
-		const options = {
-			identifier: event.identifier,
-			eventId: event.id,
-			image: event.imageURL,
-			title: event.title,
-			startDate: event.startDate,
-			startTime: event.startTime,
-			passion: event.extra.passions
-		}
+	slider( events, '.slider-whatson', sliderConfig, 'homeKv' )
 
-		if ( index <= 10 ) {
+
+	// =================================================
+	// Events
+	// =================================================
+
+	let counter = 0
+	const passion = getUrlVars()["passions"];
+
+	if( passion ) {
+		const eventsFiltered = events.filter( function( event ) {
+			return event.extra.passions.includes( passion )
+		} )
+
+		renderEventsIntoDom( eventsFiltered )
+	} else {
+		renderEventsIntoDom( events )
+	}
+
+	function renderEventsIntoDom( eventsToRender ) {
+
+		eventsToRender.forEach( function( event, index ) {
+
+			counter++
+
+			console.log( counter )
+
+			const options = {
+				identifier: event.identifier,
+				eventId: event.id,
+				image: event.imageURL,
+				title: event.title,
+				startDate: event.startDate,
+				startTime: event.startTime,
+				passion: event.extra.passions
+			}
+
 			$('.events .events__container').append( handleTemplate( 'eventTile', options ) )
-		} else {
-			return
-		}
-	})
+
+			if ( counter == 10 ) {
+				counter = 0
+			}
+		})
+	}
+
 
 }

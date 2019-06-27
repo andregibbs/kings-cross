@@ -6,18 +6,22 @@
 
 		{{>components/nav }}
 
-		<h1>WHAT"SON PAGE</h1>
-
-		<section class="section events">
+		<section class="section slider">
 			<div class="section__inner">
-
-				<div class="events__container">
-					{{>templateScripts/event/eventTile }}
-				</div>
-
+				<div class="slider-whatson"></div>
 			</div>
 		</section>
 
+		<section class="section events">
+			<div class="section__inner">
+				<div class="events__container">
+
+				</div>
+			</div>
+		</section>
+
+		{{>templateScripts/event/eventTile }}
+		{{>templateScripts/slider/homeKv }}
 		{{>scripts }}
 
 	</section>

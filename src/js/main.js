@@ -6,6 +6,7 @@ import whatIsKx from './components/whatIsKx'
 import repair from './components/repair'
 import oneToOne from './components/oneToOne'
 import slider from './components/slider'
+import discover from './components/discover'
 
 $( document ).ready( function() {
 
@@ -166,15 +167,15 @@ $( document ).ready( function() {
 		}).complete( function() {
 
 			// Logs all events
-			// console.log( 'evetns', events )
-			// console.log( 'evetns - wowEvents', wowEvents )
-			// console.log( 'evetns - todayEvents', todayEvents )
-			// console.log( 'evetns - futureEvents', futureEvents )
-			// console.log( 'evetns - weekEvents', weekEvents )
-			// console.log( 'evetns - monthEvents', monthEvents )
-			// console.log( 'evetns - todayPromotedEvents', todayPromotedEvents )
-			// console.log( 'evetns - weekPromotedEvents', weekPromotedEvents )
-			// console.log( 'evetns - monthPromotedEvents', monthPromotedEvents )
+			console.log( 'evetns', events )
+			console.log( 'evetns - wowEvents', wowEvents )
+			console.log( 'evetns - todayEvents', todayEvents )
+			console.log( 'evetns - futureEvents', futureEvents )
+			console.log( 'evetns - weekEvents', weekEvents )
+			console.log( 'evetns - monthEvents', monthEvents )
+			console.log( 'evetns - todayPromotedEvents', todayPromotedEvents )
+			console.log( 'evetns - weekPromotedEvents', weekPromotedEvents )
+			console.log( 'evetns - monthPromotedEvents', monthPromotedEvents )
 
 			// Callback function when all events are fetched
 			callback( events )
@@ -238,7 +239,7 @@ $( document ).ready( function() {
             break;
 
 		case "/uk/kings-cross/discover/":
-            // Your init here
+			fetchData( discover )
             break;
 
 		case "/uk/kings-cross/whats-on/":
