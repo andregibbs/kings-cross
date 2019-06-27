@@ -3,7 +3,7 @@ import whatson from './components/whatson'
 import singleEvent from './components/singleEvent'
 import whatIsKx from './components/whatIsKx'
 import repair from './components/repair'
-import oneToOne from './components/oneToOne'
+import calendar from './components/calendar'
 import slider from './components/slider'
 
 $( document ).ready( function() {
@@ -248,7 +248,9 @@ $( document ).ready( function() {
 			break;
 
 		case "/uk/kings-cross/support/one-to-one/":
-			oneToOne()
+			fetchData( (allEvents)=>{
+				calendar("https://bookings.qudini.com/booking-widget/booker/slots/73U8JNREMLS/2286/37437/0", "appointment", allEvents);
+			} )
 			break;
 		default: {
 			// Your init here

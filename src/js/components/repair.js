@@ -218,7 +218,7 @@ export default function repair() {
 	}
 
 	function handleNext() {
-		$(".calendar-next--btn").addEventListener("click", function () {
+		$(".calendar-next--btn")[0].addEventListener("click", function () {
 			if (this.classList.contains("active") && appointmentStartTime != "") {
 				main.switchTo("form");
 				$(".kx-services-book-date")[0].innerText = (new Date(appointmentStartTime)).toGMTString().slice(0, 16)
