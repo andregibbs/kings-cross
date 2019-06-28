@@ -54,6 +54,7 @@ export default function calendar(URL, type, allEvents) {
 		$.get(appointmentURL + dateString)
 			.success(function (data) {
 				populateWithAppointments(data);
+				handleScrollArrows();
 				$("#times_load")[0].style.display = "none";
 			})
 			.fail(function (err) {
@@ -153,6 +154,25 @@ export default function calendar(URL, type, allEvents) {
 			}
 		});
 	};
+
+	function handleScrollArrows(){
+		var h = $(".calendar__choice").outerHeight(true) * 2;
+		console.log("∆", h);
+		$(".load").each(function(ind, elm){
+			console.log(ind, elm);
+			$(elm).click(function(){
+				if(this.classList.contains("load--bot")){
+					$(this.previousElementSibling).animate({
+						scrollTop: '+=' + h
+					}, 1000);
+				} else {
+					$(this.nextElementSibling).animate({
+						scrollTop: '-=' + h
+					 }, 1000);
+				}
+			})
+		})
+	}
 	
 	//Incomplete, don't use
 	function populateWithEvents(data){

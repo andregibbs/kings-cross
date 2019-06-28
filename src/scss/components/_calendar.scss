@@ -52,12 +52,12 @@
             display: none;
         }
 
-        max-height: 260px;
+        max-height: 267px;
         overflow-y: scroll;
     }
 
     &__choice{
-        
+        transition: background-color 0.4s ease-in;
         text-align: center;
         border: 3px solid $pink;
         border-radius: 8px;
@@ -96,6 +96,18 @@
         }
     }
 
+    .load{
+        font-size: 4em;
+        line-height: 0.6em;
+        text-align: center;
+        cursor: pointer;
+        user-select: none;
+        transform: translateY(60%);
+
+        &--bot{
+            transform: scaleY(-1) translateY(60%);
+        }
+    }
 
     .arrow{
         position: absolute;
