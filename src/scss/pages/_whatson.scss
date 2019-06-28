@@ -3,11 +3,45 @@
 =============================================*/
 
 .events {
-	.eventTile {
-		// opacity: 0;
-		// animation: tileFadeIn;
-		// animation-duration: $transitionDefault;
-		// animation-delay: 4s;
+	&__container {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+
+.eventFilter {
+
+	.filters {
+
+		&__labels {
+			display: flex;
+			margin-top: 50px;
+		}
+
+		&__category {
+
+			&-items {
+				display: flex;
+				cursor: pointer;
+
+				span {
+					display: inline-block;
+				}
+
+				.checkmark {
+					width: 50px;
+					height: 50px;
+					border: 2px solid white;
+					&--active {
+						background: white;
+					}
+				}
+			}
+		}
+
+		&__results {
+			margin-top: 50px;
+		}
 	}
 }
 

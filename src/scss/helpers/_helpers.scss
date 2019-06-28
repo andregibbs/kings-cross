@@ -4,6 +4,16 @@
 
 .cheil-static {
 
+	// opacity 0 for fades
+	.op0 {
+		opacity: 0;
+		transition: opacity $transitionDefault ease;
+
+		&--fade {
+			opacity: 1;
+		}
+	}
+
 	// This sets the values for each section
 	.section {
 		width: 100%;
