@@ -1,6 +1,6 @@
-<section class="section calendar">
-    <h4>Select a Time</h4>
-    <div class="calendar-section">
+<section class="secztion calendar">
+    <h3 class="fz36">Select a Time</h3>
+    <div class="calendar__container">
         
         {{!-- Columns of dates --}}
             {{!-- First Slot is date --}}
@@ -23,6 +23,6 @@
     <button id="next">
         NEXT
     </button>
+    {{> templateScripts/calendar/slot }}
     {{> templateScripts/calendar/dateColumn }}
-            {{> templateScripts/calendar/slot }}
 </section>

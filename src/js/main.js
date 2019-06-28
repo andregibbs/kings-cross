@@ -6,8 +6,10 @@ import whatIsKx from './components/whatIsKx'
 import repair from './components/repair'
 import calendar from './components/calendar'
 import slider from './components/slider'
+import bookingRefFetcher from './components/bookingRefFetcher'
 
-$( document ).ready( function() {
+
+$(document).ready(function () {
 
 	// This will clear all unnecessary Samsung logs
 	console.clear()
@@ -55,7 +57,7 @@ $( document ).ready( function() {
 
 	sortDates()
 
-	function getDDMMYYYY( d ) {
+	function getDDMMYYYY(d) {
 		// 23/02/2019
 		var year = d.getFullYear(),
 			month = d.getMonth() + 1, // months are zero indexed
@@ -72,24 +74,24 @@ $( document ).ready( function() {
 	}
 
 	function sortDates() {
-		today = new Date( now.getFullYear(), now.getMonth(), now.getDate())
+		today = new Date(now.getFullYear(), now.getMonth(), now.getDate())
 		todayDDMMYYYY = getDDMMYYYY(today)
 
-		weekStart = new Date( today.getFullYear(), today.getMonth(), today.getDate() )
-		weekEnd = new Date( weekStart.getFullYear(), weekStart.getMonth(), weekStart.getDate())
-		weekEnd.setDate( weekEnd.getDate() + (7 - 1))
+		weekStart = new Date(today.getFullYear(), today.getMonth(), today.getDate())
+		weekEnd = new Date(weekStart.getFullYear(), weekStart.getMonth(), weekStart.getDate())
+		weekEnd.setDate(weekEnd.getDate() + (7 - 1))
 		weekStartDDMMYYYY = getDDMMYYYY(weekStart)
 		weekEndDDMMYYYY = getDDMMYYYY(weekEnd)
 
-		monthStart = new Date( today.getFullYear(), today.getMonth(), today.getDate() )
-		monthEnd = new Date( monthStart.getFullYear(), monthStart.getMonth(), monthStart.getDate() )
+		monthStart = new Date(today.getFullYear(), today.getMonth(), today.getDate())
+		monthEnd = new Date(monthStart.getFullYear(), monthStart.getMonth(), monthStart.getDate())
 
-		monthEnd.setDate( monthEnd.getDate() + (30 - 1))
+		monthEnd.setDate(monthEnd.getDate() + (30 - 1))
 		monthStartDDMMYYYY = getDDMMYYYY(monthStart)
 		monthEndDDMMYYYY = getDDMMYYYY(monthEnd)
 	}
 
-	function sortEventExtra ( event) {
+	function sortEventExtra(event) {
 		if (event.description) {
 			var bits = event.description.split("||");
 			event.description = bits[0];
@@ -102,11 +104,11 @@ $( document ).ready( function() {
 		}
 	}
 
-	function fetchData( callback ) {
-		$.get( apiUrl + seriesID, {
+	function fetchData(callback) {
+		$.get(apiUrl + seriesID, {
 			'timezone': "Europe/London",
 			'isoCurrentDate': isoCurrentDate.toISOString()
-		}).success( function( data ) {
+		}).success(function (data) {
 
 			for (var i = 0; i < data.length; i++) {
 				// MERGE JSON DATA HELD WITHIN description INTO FEED as 'extra' property !!!!!
@@ -117,11 +119,11 @@ $( document ).ready( function() {
 			// store the 'converted' data as events in main
 			events = data;
 
-			for ( var i = 0; i < events.length; i++ ) {
+			for (var i = 0; i < events.length; i++) {
 				var event = events[i];
 
-				if ( event.topic.title.toLowerCase() == wowTopic.toLowerCase()) {
-					if ( wowEvents.length < wowEventsToShow ) {
+				if (event.topic.title.toLowerCase() == wowTopic.toLowerCase()) {
+					if (wowEvents.length < wowEventsToShow) {
 						wowEvents.push(event);
 					}
 				}
@@ -132,21 +134,21 @@ $( document ).ready( function() {
 				event.expired = event.startISO < isoCurrentDate.toISOString();
 
 				// today
-				if ( eventStartDate.getTime() === today.getTime()) {
+				if (eventStartDate.getTime() === today.getTime()) {
 					todayEvents.push(event);
 
-					if ( event.extra && event.extra.promoted ) {
+					if (event.extra && event.extra.promoted) {
 						todayPromotedEvents.push(event);
 					}
 				}
 
 				// future
-				if ( eventStartDate.getTime() > today.getTime()) {
+				if (eventStartDate.getTime() > today.getTime()) {
 					futureEvents.push(event);
 				}
 
 				// this week
-				if ( eventStartDate.getTime() >= weekStart.getTime() && eventStartDate.getTime() <= weekEnd.getTime()) {
+				if (eventStartDate.getTime() >= weekStart.getTime() && eventStartDate.getTime() <= weekEnd.getTime()) {
 					weekEvents.push(event);
 
 					if (event.extra && event.extra.promoted) {
@@ -155,7 +157,7 @@ $( document ).ready( function() {
 				}
 
 				// this month
-				if ( eventStartDate.getTime() >= monthStart.getTime() && eventStartDate.getTime() <= monthEnd.getTime()) {
+				if (eventStartDate.getTime() >= monthStart.getTime() && eventStartDate.getTime() <= monthEnd.getTime()) {
 					monthEvents.push(event);
 					if (event.extra && event.extra.promoted) {
 						monthPromotedEvents.push(event);
@@ -163,7 +165,7 @@ $( document ).ready( function() {
 				}
 
 			}
-		}).complete( function() {
+		}).complete(function () {
 
 			// Logs all events
 			// console.log( 'evetns', events )
@@ -177,7 +179,7 @@ $( document ).ready( function() {
 			// console.log( 'evetns - monthPromotedEvents', monthPromotedEvents )
 
 			// Callback function when all events are fetched
-			callback( events )
+			callback(events)
 		})
 
 	}
@@ -198,7 +200,7 @@ $( document ).ready( function() {
 			cssEase: 'linear'
 		}
 
-		slider( wowEvents, '.slider1', sliderConfig1, 'homeKv' )
+		slider(wowEvents, '.slider1', sliderConfig1, 'homeKv')
 	}
 
 	function testSlider2() {
@@ -218,7 +220,7 @@ $( document ).ready( function() {
 			cssEase: 'linear',
 		}
 
-		slider( dd, '.upComing', sliderConfig2, 'upComing' )
+		slider(dd, '.upComing', sliderConfig2, 'upComing')
 	}
 
 	// =========================================================
@@ -231,22 +233,22 @@ $( document ).ready( function() {
 	// Loads scripts dynamically depending on which page you are
 	// =========================================================
 
-	switch ( window.location.pathname ) {
+	switch (window.location.pathname) {
 		case '/uk/kings-cross/':
-			fetchData( testSlider )
+			fetchData(testSlider)
 			whatIsKx()
-            break;
-
-		case "/uk/kings-cross/discover/":
-            // Your init here
-            break;
-
-		case "/uk/kings-cross/whats-on/":
-			fetchData( whatson )
 			break;
 
-        case "/uk/kings-cross/whats-on/event/":
-            singleEvent()
+		case "/uk/kings-cross/discover/":
+			// Your init here
+			break;
+
+		case "/uk/kings-cross/whats-on/":
+			fetchData(whatson)
+			break;
+
+		case "/uk/kings-cross/whats-on/event/":
+			singleEvent()
 			break;
 
 		case "/uk/kings-cross/support/repair/":
@@ -254,10 +256,15 @@ $( document ).ready( function() {
 			break;
 
 		case "/uk/kings-cross/support/one-to-one/":
-			fetchData( (allEvents)=>{
+			fetchData((allEvents) => {
 				calendar("https://bookings.qudini.com/booking-widget/booker/slots/73U8JNREMLS/2286/37437/0", "appointment", allEvents);
-			} )
+			})
 			break;
+
+		case "/uk/kings-cross/bookings/":
+			bookingRefFetcher()
+			break;
+
 		default: {
 			// Your init here
 		}

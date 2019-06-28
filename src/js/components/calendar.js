@@ -4,6 +4,7 @@ import getUrlVars from './getUrlVars'
 import handleTemplate from './handleTemplate'
 
 export default function calendar(URL, type, allEvents) {
+	
 	//For appointments:
 	//To get the proper appointmentsURL, go to Qudini admin panel, Venue information => details, and open the online booking widgets. Inside, use the browser network inspector to get the call which has the same structure to the one below:
 	//https://bookings.qudini.com/booking-widget/booker/slots/73U8JNREMLS/2286/37437/0
@@ -70,22 +71,22 @@ export default function calendar(URL, type, allEvents) {
 		console.log("µ", data);
 
 		//clear old data
-		while ($(".calendar-section")[0].lastChild) {
-			$(".calendar-section")[0].removeChild($(".calendar-section")[0].lastChild);
+		while ($(".calendar__container")[0].lastChild) {
+			$(".calendar__container")[0].removeChild($(".calendar__container")[0].lastChild);
 		}
 
 		const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 		const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
 		for (var dateInd = 0; dateInd < 5; dateInd++) {
-			
+			console.log($("#dateColumn"))
 			if (!data[dateInd].unAvailable) {
 
 				var date = new Date(data[dateInd].date);
 				var dateDisplayed = days[date.getDay()] + " " + date.getDate() + " " + months[date.getMonth()] + " " + date.getFullYear();
 
 				//Append the date column
-				$(".calendar-section").append( handleTemplate("dateColumn", {"date": dateDisplayed, "index":dateInd}));
+				$(".calendar__container").append( handleTemplate("dateColumn", {"date": dateDisplayed, "index":dateInd}));
 
 				for (var appointmentInd = 0; appointmentInd < data[dateInd].slots.length; appointmentInd++) {
 					
@@ -93,18 +94,18 @@ export default function calendar(URL, type, allEvents) {
 					var time = slotTime.getHours() + ":" + (String(slotTime.getMinutes()).length == 1 ? "0" + String(slotTime.getMinutes()) : String(slotTime.getMinutes()));
 
 					//Append the slot with template
-					$(".calendar-column-choices").last().append( handleTemplate("slot", {"time":time, "available": true}));
+					$(".calendar__choices").last().append( handleTemplate("slot", {"time":time, "available": true}));
 
 					//Attach the slot time to slot's data tag		
-					var slot = $(".calendar-column-choices-choice").last()
+					var slot = $(".calendar__choice").last()
 					slot.data("startTime", data[dateInd].slots[appointmentInd].start);
 
 					//Click handler
 					slot.click(function () {
-						$(".calendar-column-choices-choice").removeClass("selected");
-						$(".calendar-column-choices-choice").children("p").text("Available");
+						$(".calendar__choice").removeClass("calendar--selected");
+						$(".calendar__choice").children("p").text("Available");
 						appointmentStartTime = $(this).data("startTime");
-						this.classList.add("selected");
+						this.classList.add("calendar--selected");
 						this.getElementsByTagName("p")[0].innerText = "Selected";
 						console.log("selected", appointmentStartTime);
 					});
@@ -117,15 +118,16 @@ export default function calendar(URL, type, allEvents) {
 
 				var date = days[date.getDay()] + " " + date.getDate() + " " + months[date.getMonth()] + " " + date.getFullYear();
 
-				time.innerText = "No Slots Available"
-
-				$(".calendar-section").append( handleTemplate("dateColumn", {"date": date, "index":dateInd}));
+				$(".calendar__container").append( handleTemplate("dateColumn", {"date": date, "index":dateInd}));
 				
-				$(".calendar-section").append( handleTemplate("slot", {"time":"No slots", "available": false}));
+				$(".calendar__choices").last().append( handleTemplate("slot", {"time":"No slots", "available": false}));
 
-				$(".calendar-section")[0].appendChild(dateColumn);
+				$(".calendar__choice").last().addClass("calendar--unavailable");
+
 			}
 		}
+
+		console.log($("#dateColumn"))
 	}
 
 	function handleDateArrows() {
@@ -156,8 +158,8 @@ export default function calendar(URL, type, allEvents) {
 	
 	//Incomplete, don't use
 	function populateWithEvents(data){
-		while ($(".calendar-section")[0].lastChild) {
-			$(".calendar-section")[0].removeChild($(".calendar-section")[0].lastChild);
+		while ($(".calendar__container")[0].lastChild) {
+			$(".calendar__container")[0].removeChild($(".calendar__container")[0].lastChild);
 		}
 
 		const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
