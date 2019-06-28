@@ -33,6 +33,14 @@
 
 		a {
 			color: $white;
+			letter-spacing: 1px;
+			transition: all 0.4s ease;
+			transform: scale(1);
+			display: inline-block;
+			&:hover {
+				letter-spacing: 2px;
+				transform: scale(1.1);
+			}
 		}
 	}
 

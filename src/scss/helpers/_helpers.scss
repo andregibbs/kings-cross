@@ -4,6 +4,16 @@
 
 .cheil-static {
 
+	// opacity 0 for fades
+	.op0 {
+		opacity: 0;
+		transition: opacity $transitionDefault ease;
+
+		&--fade {
+			opacity: 1;
+		}
+	}
+
 	// This sets the values for each section
 	.section {
 		width: 100%;
@@ -83,17 +93,35 @@
 
 		&--primary {
 			border-color: $pink;
+			background: $pink;
 			color: #fff;
 			&:hover {
-				background: $pink;
+				background: $white;
+				border-color: $pink;
+				color: $pink;
+			}
+
+			&-notActive {
+				pointer-events: none;
+				background: $grey;
+				border-color: $grey;
+				color: $white;
 			}
 		}
 
 		&--secondary {
-			border-color: $grey;
+			border-color: $pink;
 			color: #fff;
 			&:hover {
+				border-color: $white;
+				color: $pink;
+			}
+
+			&-notActive {
 				background: $grey;
+				border-color: $grey;
+				color: $grey;
+				pointer-events: none;
 			}
 		}
 

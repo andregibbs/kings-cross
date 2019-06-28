@@ -1,6 +1,3 @@
-import '../librarys/calendar'
-import '../librarys/calendar-localised'
-
 export default function repair() {
 
 	// 62711 - for one to one page

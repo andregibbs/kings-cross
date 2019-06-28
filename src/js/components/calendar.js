@@ -1,5 +1,3 @@
-import '../librarys/calendar'
-import '../librarys/calendar-localised'
 import getUrlVars from './getUrlVars'
 import handleTemplate from './handleTemplate'
 
