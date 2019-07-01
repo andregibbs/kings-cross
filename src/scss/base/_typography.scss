@@ -4,7 +4,7 @@
 
 //
 // Font sizes
-// 14, 16, 18, 30, 36, 55
+// 14, 16, 18, 24, 30, 36, 55
 
 * {
 	font-size: calc(#{$browser-context-desktop}/#{$media-desktop} * 100vw);
@@ -31,6 +31,10 @@
 
 	.fz30 {
 		font-size: em(30);
+	}
+
+	.fz24 {
+		font-size: em(24);
 	}
 
 	.fz18 {

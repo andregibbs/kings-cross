@@ -1,0 +1,132 @@
+.calendar{
+    position: relative;
+    margin: 0 auto;
+    max-width: 1220px;
+    @media screen and ( max-width: $desktop ) {
+        max-width: get-desktop-vw(1220);
+    }
+
+    @media screen and ( max-width: $mobile ) {
+        max-width: get-mobile-vw(1220);
+    }
+    
+    h3{
+        text-align: center;
+        
+        margin: 52px 0;
+
+        @media screen and ( max-width: $desktop ) {
+            margin: get-desktop-vw(52) 0;
+        }
+
+        @media screen and ( max-width: $mobile ) {
+            margin: get-mobile-vw(52) 0;
+        }
+    }
+
+    &__container{
+        display: flex;
+        justify-content: center;
+    }
+
+    &__column{
+
+        margin: 0 4px;
+        @media screen and ( max-width: $desktop ) {
+            margin: 0 get-desktop-vw(4);
+        }
+
+        @media screen and ( max-width: $mobile ) {
+            margin: 0 get-mobile-vw(4);
+        }
+
+
+        &__date{
+            text-align: center;
+        }
+
+    }
+
+    &__choices{
+        &::-webkit-scrollbar{
+            display: none;
+        }
+
+        max-height: 267px;
+        overflow-y: scroll;
+    }
+
+    &__choice{
+        transition: background-color 0.4s ease-in;
+        text-align: center;
+        border: 3px solid $pink;
+        border-radius: 8px;
+        user-select: none;
+        cursor: pointer;
+
+        margin: 12px 20px;
+        padding: 10px 40px;
+
+        max-width: 160px;
+
+
+        @media screen and ( max-width: $desktop ) {
+            margin: get-desktop-vw(12) get-desktop-vw(20);
+            padding: get-desktop-vw(12) get-desktop-vw(46);
+        }
+
+        @media screen and ( max-width: $mobile ) {
+            margin: get-mobile-vw(12) get-mobile-vw(20);
+            padding: get-mobile-vw(12) get-mobile-vw(46);
+        }
+        
+    }
+
+    &--selected{
+        background-color: $pink;
+    }
+
+    &--unavailable{
+        border: 1px solid $grey;
+        & > h4{
+            font-size: em(18)
+        }
+        & > p{
+            display: none;
+        }
+    }
+
+    .load{
+        font-size: 4em;
+        line-height: 0.6em;
+        text-align: center;
+        cursor: pointer;
+        user-select: none;
+        transform: translateY(60%);
+
+        &--bot{
+            transform: scaleY(-1) translateY(60%);
+        }
+    }
+
+    .arrow{
+        position: absolute;
+        top: 50%;
+        
+        & > div{
+            font-size: 5em;
+            user-select: none;
+            cursor: pointer;
+        }
+
+        &.left{
+            left: 0;
+            
+        }
+
+        &.right{
+            right: 0;
+        }
+
+    }
+}

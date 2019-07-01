@@ -1,47 +1,28 @@
-<section class="section calendar">
-	<div class="section__inner">
-
-		<div class="calendar-times"></div>
-
-		<div class="calendar-arrow calendar-arrow--left"> &#60; </div>
-		<div class="calendar-arrow calendar-arrow--right"> &#62; </div>
-
-		<div class="calendar-loading" id="times_load" style="display: none">
-			<div class="loading__spinner">
-				<div class="loading__bounce loading__bounce1"></div>
-				<div class="loading__bounce loading__bounce2"></div>
-				<div class="loading__bounce loading__bounce3"></div>
-			</div>
-		</div>
-
-		<div class="calendar-next">
-			<button class="calendar-next--btn"> NEXT </button>
-		</div>
-
-		<div class="kx-services-book section-margin">
-            <h2>One To One Sessions</h2>
-            <p>Samsung KX Store</p>
-            <p class="kx-services-book-date">Tuesday, March 23 2019</p>
-            <p class="kx-services-book-time">10:00 am to 11:30 am</p>
-            <a id="booking-back">Change Time Slot</a>
-            <input type="text" placeholder="Name" id="name">
-            <input type="text" placeholder="Surname" id="surname">
-            <input type="tel" placeholder="Telephone" id="tel">
-            <input type="email" placeholder="Email" id="email">
-            <div class="kx-services-book-checkbox">
-                <label><input type="checkbox" id="service-checkbox">I do not want to receive reminders for this.</label>
-            </div>
-            <textarea placeholder="How can we help during this appointment?" id="notes"></textarea>
-            <button class="btn" id="book-appointment">BOOK NOW</button>
+<section class="secztion calendar">
+    <h3 class="fz36">Select a Time</h3>
+    <div class="calendar__container">
+        
+        {{!-- Columns of dates --}}
+            {{!-- First Slot is date --}}
+            {{!-- Container of slots in date --}}
+                {{!-- Slots --}}
+    </div>
+    <div class="arrow left">
+        <div> &#60; </div>
+    </div>
+    <div class="arrow right">
+        <div> &#62; </div>
+    </div>
+    <div class="loading" id="times_load" style="display: none">
+        <div class="loading__spinner">
+            <div class="loading__bounce loading__bounce1"></div>
+            <div class="loading__bounce loading__bounce2"></div>
+            <div class="loading__bounce loading__bounce3"></div>
         </div>
-
-		<div class="loading" id="confirmation_load" style="display: none">
-            <div class="loading__spinner">
-                <div class="loading__bounce loading__bounce1"></div>
-                <div class="loading__bounce loading__bounce2"></div>
-                <div class="loading__bounce loading__bounce3"></div>
-            </div>
-        </div>
-
-	</div>
+    </div>
+    <button id="next">
+        NEXT
+    </button>
+    {{> templateScripts/calendar/slot }}
+    {{> templateScripts/calendar/dateColumn }}
 </section>

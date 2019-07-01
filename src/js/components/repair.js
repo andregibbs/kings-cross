@@ -72,7 +72,7 @@ export default function repair() {
 
 					var arrow_container = document.createElement("div");
 					var arrow = document.createElement("div");
-					arrow_container.classList.add("cont");
+					arrow_container.classList.add("arrows");
 					arrow.classList.add("arrow");
 					arrow_container.appendChild(arrow);
 					dateContainer.appendChild(arrow_container);
@@ -90,12 +90,12 @@ export default function repair() {
 						this.addEventListener("scroll", function (e) {
 							//console.log(this, this.offsetHeight + this.scrollTop == this.scrollHeight);
 							if (this.offsetHeight + this.scrollTop == this.scrollHeight) {
-								if (this.nextElementSibling.classList.value == "cont") {
+								if (this.nextElementSibling.classList.value == "arrows") {
 									this.nextElementSibling.style.display = "none";
 								}
 							}
 							else {
-								if (this.nextElementSibling.classList.value == "cont") {
+								if (this.nextElementSibling.classList.value == "arrows") {
 									this.nextElementSibling.style.display = "";
 								}
 							}
@@ -215,7 +215,7 @@ export default function repair() {
 	}
 
 	function handleNext() {
-		$(".calendar-next--btn").addEventListener("click", function () {
+		$(".calendar-next--btn")[0].addEventListener("click", function () {
 			if (this.classList.contains("active") && appointmentStartTime != "") {
 				main.switchTo("form");
 				$(".kx-services-book-date")[0].innerText = (new Date(appointmentStartTime)).toGMTString().slice(0, 16)
