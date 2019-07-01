@@ -36,7 +36,7 @@
 
 						<div class="filters__category">
 							<h2 class="filters-title">Filter by Date</h2>
-							<div class="filters__category-items">
+							<div class="filters__category-group passions">
 								{{#each @root.config.passions}}
 									<span class="label" data-code="{{ this.code }}">
 										<span class="checkmark"></span>
@@ -44,7 +44,19 @@
 									</span>
 								{{/each}}
 							</div>
+
+							<button class="toggleSuitables toggleSuitables--active">toggle Suitables</button>
+
+							<div class="filters__category-group suitables">
+								{{#each @root.config.suitables}}
+									<span class="label" data-code="{{ this.code }}">
+										<span class="checkmark"></span>
+										<span>{{{ this.name }}}</span>
+									</span>
+								{{/each}}
+							</div>
 						</div>
+
 					</div>
 
 					<div class="filters__results">
