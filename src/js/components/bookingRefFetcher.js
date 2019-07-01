@@ -6,16 +6,28 @@ export default function bookingRefFetcher() {
         let ref = document.getElementById("bookingRef").value;
 
         $.get("https://bookings.qudini.com/booking-widget/event/attendee/" + ref)
-            .success((data) => {
+            .success((bookingData) => {
 
-                console.log(data);
+                console.log(bookingData);
 
-                $.get('https://bookings.qudini.com/booking-widget/event/event/' + data.eventId + '', {
+                $.get('https://bookings.qudini.com/booking-widget/event/event/' + bookingData.eventId + '', {
                     'timezone': "Europe/London",
                     'isoCurrentDate': isoCurrentDate.toISOString()
-                }).success(function (data) {
+                }).success(function (eventData) {
+                    console.log('Event details: ', eventData)
+                    document.getElementById("event-img").src = eventData.imageURL;
+                    document.getElementById("greetings").innerText = "Welcome " + bookingData.firstName + " " + bookingData.lastName;
+                    document.getElementById("title").innerText = eventData.title;
+                    document.getElementById("date").innerText = eventData.startDate;
+                    document.getElementById("time").innerText = eventData.startTime;
+                    document.getElementById("user-info").style.display="block";
 
-                    console.log('Event details: ', data)
+                    document.getElementById("cancel").addEventListener("click", ()=>{
+                        $.get("https://bookings.qudini.com/booking-widget/event/cancel/" + ref)
+                            .success(()=>{
+                                document.getElementById("cancelled").style.display = "inline-block";
+                            })
+                    })
                 });
 
             })

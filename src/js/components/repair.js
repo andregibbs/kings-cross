@@ -136,10 +136,10 @@ export default function repair() {
 					$(".calendar-times")[0].appendChild(dateContainer);
 				}
 			}
-			$("#times_load").style.display = "none";
+			$("#load-screen").style.display = "none";
 		})
 		.fail(function (err) {
-			$("#times_load").style.display = "";
+			$("#load-screen").style.display = "";
 			console.log(err);
 		})
 

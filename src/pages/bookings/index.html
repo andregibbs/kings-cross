@@ -1,17 +1,30 @@
 <!--#include virtual="/uk/aem/header-pdp.html"-->
 
-	<section class="cheil-static">
+<section class="cheil-static">
 
-		{{>stylesheet}}
+	{{>stylesheet}}
 
-		{{>components/nav }}
+	{{>components/nav }}
 
-		<h1>BOOKINGS PAGE</h1>
+	<h1>BOOKINGS PAGE</h1>
 
-		<input id="bookingRef" type="text" placeholder="Booking Reference"/>
-		<button id="eventFetcher" style="color: white;">See Event</button>
-
-		{{>scripts }}
+	<section class="section">
+		<form onsubmit="return false">
+			<input id="bookingRef" type="text" placeholder="Booking Reference" />
+			<button type="submit" id="eventFetcher" style="color: white;">See Event</button>
+		</form>
+		<div id="user-info" style="display: none">
+			<h4 id="greetings"></h4>
+			<img alt="Event Image" id="event-img" style="max-width: 400px"/>
+			<p id="title"></p>
+			<p id="date"></p>
+			<p id="time"></p>
+			<button id="cancel" style="color: white;">CANCEL BOOKING</button>
+			<p id="cancelled" style="display: none; color: red;">BOOKING CANCELLED</p>
+		</div>
 	</section>
+
+	{{>scripts }}
+</section>
 
 <!--#include virtual="/uk/aem/footer-pdp.html"-->
