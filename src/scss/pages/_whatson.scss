@@ -20,7 +20,7 @@
 
 		&__category {
 
-			&-items {
+			&-group {
 				display: flex;
 				cursor: pointer;
 
@@ -36,6 +36,20 @@
 						background: white;
 					}
 				}
+			}
+		}
+
+		.toggleSuitables {
+			display: none;
+			&--active {
+				display: block;
+			}
+		}
+
+		.suitables {
+			display: none;
+			&--active {
+				display: block;
 			}
 		}
 

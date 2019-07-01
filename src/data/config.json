@@ -72,35 +72,6 @@
 			"code":"starter",
 			"name":"Starter"
 		}
-	],
-
-	"homeCarousel": [
-		{
-	        "title": "Samsung KX",
-	        "desc": "A venue where you can attend great events, have one to one sessions or just grab a bite to eat",
-	        "link": "/uk/kx/discover/",
-	        "image": "https://images.samsung.com/is/image/samsung/p5/uk/kx/home-cdy-kv.jpg",
-	        "cta":"Discover"
-		}
-	],
-
-	"discoverCarousel": [
-		{
-	        "section": "Discover KX",
-	        "title": "title 1",
-	        "desc": "description 1",
-	        "link": "/uk/kx/services/",
-	        "image": "https://app.qudini.com/api/events/event/2698/banner-image.png",
-	        "cta":"GoGoGo"
-		},
-		{
-	        "section": "Discover KX",
-	        "title": "title 2",
-	        "desc": "description 2",
-	        "link": "/uk/kx/bookings/",
-	        "image": "https://app.qudini.com/api/events/event/2695/banner-image.png",
-	        "cta":"GoGoGo 2"
-		}
 	]
 
 }

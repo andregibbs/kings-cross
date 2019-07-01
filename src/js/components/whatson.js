@@ -2,52 +2,27 @@ import '../librarys/jquery-ui-1.12.1.custom/jquery-ui.min.js'
 
 import handleTemplate from './handleTemplate'
 import getUrlVars from './getUrlVars'
+import dataPicker from './dataPicker'
 
 export default function whatson( events ){
-	// handleTemplate( 'eventTile', options )
 
 	let counter = 0
-	const eventsToManipulate = events;
 	const passion = getUrlVars()["passions"];
+
+	let getPassions = []
+	let getSuitables = []
+
+	const eventsToManipulate = events
+	let eventsFilteredByPassion = []
+	let eventsFilteredBySuitables = []
 
 	// =================================================
 	// DataPicker and filters
 	// =================================================
-	function dataPicker() {
-		var dateFormat = "mm/dd/yy",
-		  from = $( "#from" )
-			.datepicker({
-			  defaultDate: "+1w",
-			  changeMonth: true,
-			  numberOfMonths: 3
-			})
-			.on( "change", function() {
-			  to.datepicker( "option", "minDate", getDate( this ) );
-			}),
-		  to = $( "#to" ).datepicker({
-			defaultDate: "+1w",
-			changeMonth: true,
-			numberOfMonths: 3
-		  })
-		  .on( "change", function() {
-			from.datepicker( "option", "maxDate", getDate( this ) );
-		  });
 
-		function getDate( element ) {
-		  var date;
-		  try {
-			date = $.datepicker.parseDate( dateFormat, element.value );
-		  } catch( error ) {
-			date = null;
-		  }
+	dataPicker()
 
-		  return date;
-		}
-	  }
-
-	  dataPicker()
-
-	$('.filters__category-items .label').click( function() {
+	$('.passions .label, .suitables .label').click( function() {
 		$(this)
 		.toggleClass('label--active')
 		.find('.checkmark')
@@ -55,20 +30,30 @@ export default function whatson( events ){
 	})
 
 	$('.filters__results .btn').click( function() {
-		let getLabels = []
 
-		$('.label--active').each( function() {
-			getLabels.push( $(this).data('code') )
+		$('.passions .label--active').each( function() {
+			getPassions.push( $(this).data('code') )
 		})
 
-		const eventsFiltered = eventsToManipulate.filter( function( event, index ) {
-			return Array.prototype.includes.apply(event.extra.passions, getLabels)
-		} )
+		console.log(getPassions)
 
-		if( eventsFiltered.length ) {
+		if( getPassions.length ) {
+
+			eventsFilteredByPassion = eventsToManipulate.filter( function( event ) {
+				return Array.prototype.includes.apply(event.extra.passions, getPassions)
+			} )
+
+			console.log( eventsFilteredByPassion )
+
+
 			$('.eventTile').remove()
-			renderEventsIntoDom( eventsFiltered )
+			renderEventsIntoDom( eventsFilteredByPassion )
 		}
+
+	})
+
+	$('.toggleSuitables').click( function() {
+		$('.suitables').toggleClass('suitables--active')
 	})
 
 	// =================================================
@@ -91,6 +76,7 @@ export default function whatson( events ){
 		} )
 
 		renderEventsIntoDom( eventsFiltered )
+
 	} else {
 
 		$('.passionImg')
