@@ -13,7 +13,6 @@ export default function whatson( events ){
 	let getSuitables = []
 
 	const eventsToManipulate = events
-	let eventsFilteredByPassion = []
 	let eventsFilteredBySuitables = []
 
 	// =================================================
@@ -31,24 +30,26 @@ export default function whatson( events ){
 
 	$('.filters__results .btn').click( function() {
 
+		getPassions = []
+		getSuitables = []
+
 		$('.passions .label--active').each( function() {
 			getPassions.push( $(this).data('code') )
 		})
 
-		console.log(getPassions)
+		console.log( eventsToManipulate )
+		console.log( getPassions )
 
-		if( getPassions.length ) {
+		const eventsFilteredByPassion = eventsToManipulate.filter( function( event ) {
+			event.extra.passions.filter(function( passion ) {
+				return passion.includes(getPassions)
+			})
+		} )
 
-			eventsFilteredByPassion = eventsToManipulate.filter( function( event ) {
-				return Array.prototype.includes.apply(event.extra.passions, getPassions)
-			} )
+		console.log( eventsFilteredByPassion )
 
-			console.log( eventsFilteredByPassion )
-
-
-			$('.eventTile').remove()
-			renderEventsIntoDom( eventsFilteredByPassion )
-		}
+		$('.eventTile').remove()
+		renderEventsIntoDom( eventsFilteredByPassion )
 
 	})
 
