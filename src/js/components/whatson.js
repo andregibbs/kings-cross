@@ -8,12 +8,7 @@ export default function whatson( events ){
 
 	let counter = 0
 	const passion = getUrlVars()["passions"];
-
-	let getPassions = []
-	let getSuitables = []
-
 	const eventsToManipulate = events
-	let eventsFilteredBySuitables = []
 
 	// =================================================
 	// DataPicker and filters
@@ -30,23 +25,38 @@ export default function whatson( events ){
 
 	$('.filters__results .btn').click( function() {
 
-		getPassions = []
-		getSuitables = []
+		var getPassions = []
+		var getSuitables = []
+		var eventsFilteredByPassion = []
+		var eventsFilteredBySuitables = []
 
 		$('.passions .label--active').each( function() {
 			getPassions.push( $(this).data('code') )
 		})
 
-		console.log( eventsToManipulate )
-		console.log( getPassions )
+		$('.suitables .label--active').each( function() {
+			getSuitables.push( $(this).data('code') )
+		})
 
-		const eventsFilteredByPassion = eventsToManipulate.filter( function( event ) {
-			event.extra.passions.filter(function( passion ) {
-				return passion.includes(getPassions)
-			})
-		} )
+		console.log( 'getPassions', getPassions )
+		console.log( 'getSuitables', getSuitables )
 
-		console.log( eventsFilteredByPassion )
+		eventsFilteredByPassion = eventsToManipulate.filter( function( event ) {
+			return event.extra.passions.filter(passion => getPassions.includes(passion)).length > 0
+		})
+
+		if ( eventsFilteredByPassion.length ) {
+			eventsFilteredBySuitables = eventsFilteredByPassion.filter( function( event ) {
+				return event.extra.suitables.filter(suitable => getSuitables.includes(suitable)).length > 0
+			} )
+
+			renderEventsIntoDom( eventsFilteredBySuitables )
+		} else {
+
+		}
+
+		console.log( 'eventsFilteredByPassion', eventsFilteredByPassion )
+		console.log( 'eventsFilteredBySuitables', eventsFilteredBySuitables )
 
 		$('.eventTile').remove()
 		renderEventsIntoDom( eventsFilteredByPassion )
@@ -112,7 +122,8 @@ export default function whatson( events ){
 				title: event.title,
 				startDate: event.startDate,
 				startTime: event.startTime,
-				passion: event.extra.passions
+				passion: event.extra.passions,
+				suitables: event.extra.suitables
 			}
 
 			$('.events .events__container').append( handleTemplate( 'eventTile', options ) )
