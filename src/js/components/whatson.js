@@ -27,6 +27,8 @@ export default function whatson( events ){
 
 		var getPassions = []
 		var getSuitables = []
+
+		var eventsFilteredByDate = []
 		var eventsFilteredByPassion = []
 		var eventsFilteredBySuitables = []
 
@@ -38,8 +40,15 @@ export default function whatson( events ){
 			getSuitables.push( $(this).data('code') )
 		})
 
-		console.log( 'getPassions', getPassions )
-		console.log( 'getSuitables', getSuitables )
+		// console.log( 'getPassions', getPassions )
+		// console.log( 'getSuitables', getSuitables )
+		// console.log( 'events', eventsToManipulate )
+		// console.log( $('#from').val() )
+		// console.log( $('#to').val() )
+
+		eventsFilteredByDate = eventsToManipulate.filter( function( event ) {
+			return event.startDate > $('#from').val() && event.startDate < $('#to').val()
+		})
 
 		eventsFilteredByPassion = eventsToManipulate.filter( function( event ) {
 			return event.extra.passions.filter(passion => getPassions.includes(passion)).length > 0
@@ -49,17 +58,20 @@ export default function whatson( events ){
 			eventsFilteredBySuitables = eventsFilteredByPassion.filter( function( event ) {
 				return event.extra.suitables.filter(suitable => getSuitables.includes(suitable)).length > 0
 			} )
-
-			renderEventsIntoDom( eventsFilteredBySuitables )
-		} else {
-
 		}
 
+		console.log( 'eventsFilteredByDate', eventsFilteredByDate )
 		console.log( 'eventsFilteredByPassion', eventsFilteredByPassion )
 		console.log( 'eventsFilteredBySuitables', eventsFilteredBySuitables )
 
+
 		$('.eventTile').remove()
-		renderEventsIntoDom( eventsFilteredByPassion )
+
+		if( eventsFilteredBySuitables.length ) {
+			renderEventsIntoDom( eventsFilteredBySuitables )
+		} else {
+			renderEventsIntoDom( eventsFilteredByPassion )
+		}
 
 	})
 
