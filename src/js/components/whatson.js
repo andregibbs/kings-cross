@@ -8,7 +8,14 @@ export default function whatson( events ){
 
 	let counter = 0
 	const passion = getUrlVars()["passions"];
+
+	var getPassions = []
+	var getSuitables = []
+
 	const eventsToManipulate = events
+	var eventsFilteredByDate = []
+	var eventsFilteredByPassion = []
+	var eventsFilteredBySuitables = []
 
 	// =================================================
 	// DataPicker and filters
@@ -21,16 +28,21 @@ export default function whatson( events ){
 		.toggleClass('label--active')
 		.find('.checkmark')
 		.toggleClass('checkmark--active')
+
+		if( !$(this).hasClass('label--active') ) {
+			getPassions.push( $(this).data('code') )
+		} else {
+			getPassions.filter( i => ![$(this).data('code')].includes( i ) )
+		}
+
+
+		console.log( 'getPassions', getPassions )
+		console.log( 'getSuitables', getSuitables )
+
+
 	})
 
 	$('.filters__results .btn').click( function() {
-
-		var getPassions = []
-		var getSuitables = []
-
-		var eventsFilteredByDate = []
-		var eventsFilteredByPassion = []
-		var eventsFilteredBySuitables = []
 
 		$('.passions .label--active').each( function() {
 			getPassions.push( $(this).data('code') )
@@ -46,9 +58,29 @@ export default function whatson( events ){
 		// console.log( $('#from').val() )
 		// console.log( $('#to').val() )
 
-		eventsFilteredByDate = eventsToManipulate.filter( function( event ) {
-			return event.startDate > $('#from').val() && event.startDate < $('#to').val()
-		})
+		if ( $('#from').val() && $('#to').val() ) {
+			eventsFilteredByDate = eventsToManipulate.filter( function( event ) {
+				return event.startDate > $('#from').val() && event.startDate < $('#to').val()
+			})
+
+
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 		eventsFilteredByPassion = eventsToManipulate.filter( function( event ) {
 			return event.extra.passions.filter(passion => getPassions.includes(passion)).length > 0
@@ -67,7 +99,7 @@ export default function whatson( events ){
 
 		$('.eventTile').remove()
 
-		if( eventsFilteredBySuitables.length ) {
+		if( eventsFilteredByDate.length ) {
 			renderEventsIntoDom( eventsFilteredBySuitables )
 		} else {
 			renderEventsIntoDom( eventsFilteredByPassion )
