@@ -49,8 +49,6 @@ export default function calendar(URL, type, allEvents) {
 
 		const dateString = date.getFullYear() + "-" + (String(date.getMonth() + 1).length == 1 ? "0" + String(date.getMonth() + 1) : String(date.getMonth() + 1)) + "-" + (String(date.getDate()).length == 1 ? "0" + String(date.getDate()) : String(date.getDate()))
 
-		var appointmentStartTime = "";
-
 		loadingScreen.style.display = "block";
 
 		$.get(appointmentURL + dateString)
@@ -76,17 +74,22 @@ export default function calendar(URL, type, allEvents) {
 		const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 		const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
+
+		//For every date
 		for (var dateInd = 0; dateInd < 5; dateInd++) {
 			if (!data[dateInd].unAvailable) {
 
+				//Format date
 				var date = new Date(data[dateInd].date);
 				var dateDisplayed = days[date.getDay()] + " " + date.getDate() + " " + months[date.getMonth()] + " " + date.getFullYear();
 
 				//Append the date column
 				$(".calendar__container").append( handleTemplate("dateColumn", {"date": dateDisplayed, "index":dateInd}));
 
+				//For every appointment in date
 				for (var appointmentInd = 0; appointmentInd < data[dateInd].slots.length; appointmentInd++) {
 					
+					//Format time
 					var slotTime = new Date(data[dateInd].slots[appointmentInd].start)
 					var time = slotTime.getHours() + ":" + (String(slotTime.getMinutes()).length == 1 ? "0" + String(slotTime.getMinutes()) : String(slotTime.getMinutes()));
 
@@ -157,7 +160,7 @@ export default function calendar(URL, type, allEvents) {
 			//Click To Scroll Animations
 			//They ensure that no matter how much and when you click, it will always snap to an element as long as the container is 350px
 			$(elm).click(function(){
-				var h = $(".calendar__choice").outerHeight(false) + parseInt($(".calendar__choice").css('marginTop'));
+				var h = $(elm).siblings().find(".calendar__choice").outerHeight(false) + parseFloat($(".calendar__choice").css('marginTop'));
 				console.log(h);
 				if(this.classList.contains("load--bot")){
 					if(this.previousElementSibling.scrollTop % h == 0){
@@ -222,6 +225,7 @@ export default function calendar(URL, type, allEvents) {
 				}
 			}
 			console.log("µ", matchingTopicEvents); //presorted in ascending order
+			populateWithEvents(matchingTopicEvents);
 		})
 	}
 
@@ -233,8 +237,22 @@ export default function calendar(URL, type, allEvents) {
 		const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 		const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
+		//Dates depend on events being presorted
+		var dates = [];
 
+		data.forEach((event)=>{
+			if(!dates.includes(event.startDate)){
+				dates.push(event.startDate);
+			}
+		})
 
+		console.log("∞", dates);
+		// var date = new Date(event.startDate);
+		// var dateDisplayed = days[date.getDay()] + " " + date.getDate() + " " + months[date.getMonth()] + " " + date.getFullYear();
+		// console.log(dateDisplayed);
+		dates.forEach((date)=>{
+			//
+		})
 	}
 
 }
