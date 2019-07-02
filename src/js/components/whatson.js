@@ -8,14 +8,10 @@ export default function whatson( events ){
 
 	let counter = 0
 	const passion = getUrlVars()["passions"];
-
-	var getPassions = []
-	var getSuitables = []
-
 	const eventsToManipulate = events
-	var eventsFilteredByDate = []
-	var eventsFilteredByPassion = []
-	var eventsFilteredBySuitables = []
+
+	let getPassions = []
+	let getSuitables = []
 
 	// =================================================
 	// DataPicker and filters
@@ -28,82 +24,51 @@ export default function whatson( events ){
 		.toggleClass('label--active')
 		.find('.checkmark')
 		.toggleClass('checkmark--active')
-
-		if( !$(this).hasClass('label--active') ) {
-			getPassions.push( $(this).data('code') )
-		} else {
-			getPassions.filter( i => ![$(this).data('code')].includes( i ) )
-		}
-
-
-		console.log( 'getPassions', getPassions )
-		console.log( 'getSuitables', getSuitables )
-
-
 	})
 
 	$('.filters__results .btn').click( function() {
 
-		$('.passions .label--active').each( function() {
-			getPassions.push( $(this).data('code') )
+		updateFilters()
+
+		var eventsToRender = []
+
+		var eventsFilteredByDate = []
+		var eventsFilteredByPassion = []
+		var eventsFilteredBySuitables = []
+
+		eventsToRender = eventsToManipulate.filter( function( event ) {
+			return event.startDate > $('#from').val() && event.startDate < $('#to').val()
 		})
 
-		$('.suitables .label--active').each( function() {
-			getSuitables.push( $(this).data('code') )
-		})
+		// eventsToRender = eventsToRender.filter( function( event ) {
+		// 	return event.extra.passions.filter(passion => getPassions.includes(passion)).length > 0
+		// })
 
-		// console.log( 'getPassions', getPassions )
-		// console.log( 'getSuitables', getSuitables )
-		// console.log( 'events', eventsToManipulate )
-		// console.log( $('#from').val() )
-		// console.log( $('#to').val() )
+		// eventsFilteredBySuitables = eventsFilteredByPassion.filter( function( event ) {
+		// 	return event.extra.suitables.filter(suitable => getSuitables.includes(suitable)).length > 0
+		// } )
 
-		if ( $('#from').val() && $('#to').val() ) {
-			eventsFilteredByDate = eventsToManipulate.filter( function( event ) {
-				return event.startDate > $('#from').val() && event.startDate < $('#to').val()
-			})
+		// if ( eventsFilteredByDate.length ) {
+		// 	eventsFilteredByPassion = eventsFilteredByDate.filter( function( event ) {
+		// 		return event.extra.passions.filter(passion => getPassions.includes(passion)).length > 0
+		// 	})
+		// } else {
+		// 	eventsFilteredByPassion = eventsToManipulate.filter( function( event ) {
+		// 		return event.extra.passions.filter(passion => getPassions.includes(passion)).length > 0
+		// 	})
+		// }
 
+		// if ( eventsFilteredByPassion.length ) {
+		// 	eventsFilteredBySuitables = eventsFilteredByPassion.filter( function( event ) {
+		// 		return event.extra.suitables.filter(suitable => getSuitables.includes(suitable)).length > 0
+		// 	} )
+		// }
 
-		}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-		eventsFilteredByPassion = eventsToManipulate.filter( function( event ) {
-			return event.extra.passions.filter(passion => getPassions.includes(passion)).length > 0
-		})
-
-		if ( eventsFilteredByPassion.length ) {
-			eventsFilteredBySuitables = eventsFilteredByPassion.filter( function( event ) {
-				return event.extra.suitables.filter(suitable => getSuitables.includes(suitable)).length > 0
-			} )
-		}
-
-		console.log( 'eventsFilteredByDate', eventsFilteredByDate )
-		console.log( 'eventsFilteredByPassion', eventsFilteredByPassion )
-		console.log( 'eventsFilteredBySuitables', eventsFilteredBySuitables )
+		console.log( 'eventsToRender', eventsToRender )
 
 
 		$('.eventTile').remove()
-
-		if( eventsFilteredByDate.length ) {
-			renderEventsIntoDom( eventsFilteredBySuitables )
-		} else {
-			renderEventsIntoDom( eventsFilteredByPassion )
-		}
+		renderEventsIntoDom( eventsToRender )
 
 	})
 
@@ -144,6 +109,26 @@ export default function whatson( events ){
 			.addClass('op0--fade')
 
 		renderEventsIntoDom( events )
+	}
+
+
+	// =================================================
+	// function to update passions and suitables arrays
+	// =================================================
+
+	function updateFilters() {
+
+		getPassions = []
+		getSuitables = []
+
+		$('.passions .label--active').each( function() {
+			getPassions.push( $(this).data('code') )
+		})
+
+		$('.suitables .label--active').each( function() {
+			getSuitables.push( $(this).data('code') )
+		})
+
 	}
 
 	// =================================================

@@ -24,11 +24,25 @@ export default function singleEvent(){
 			passion: data.passions,
 			description: data.description
 		}
+
 		$('.singleEvent').append( handleTemplate( 'singleEvent', options ) )
+
+		// Event out of stock
+		if( data.slotsAvailable == 0 ) {
+			$('.event__content-book .btn--primary').addClass('btn--primary-notActive')
+		}
 	})
 
+	$('.singleEvent').on('click', '.action-btn', function(e) {
+		e.preventDefault()
+
+		$('.book').addClass('book--active')
+		$('.book-action').addClass('book-action--active')
+	})
+
+	// =================================================
 	// Booking functionality
-	/////////////////////////
+	// =================================================
 
 	$('.book__tickets-minus').click(function(){
 		ticketQuantity = parseInt($('.book__tickets-tickets').val())
