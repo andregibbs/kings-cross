@@ -16,5 +16,4 @@ https://bookings.qudini.com/docs2/index.html#!/
 ## TODO
 
 - Split CSS for Data picker
-- add Polyfill for array.includes
 - improv the js file structure, change js pages to pages folder and small scirpts to components

@@ -169,15 +169,15 @@ $(document).ready(function () {
 		}).complete(function () {
 
 			// Logs all events
-			console.log( 'evetns', events )
-			console.log( 'evetns - wowEvents', wowEvents )
-			console.log( 'evetns - todayEvents', todayEvents )
-			console.log( 'evetns - futureEvents', futureEvents )
-			console.log( 'evetns - weekEvents', weekEvents )
-			console.log( 'evetns - monthEvents', monthEvents )
-			console.log( 'evetns - todayPromotedEvents', todayPromotedEvents )
-			console.log( 'evetns - weekPromotedEvents', weekPromotedEvents )
-			console.log( 'evetns - monthPromotedEvents', monthPromotedEvents )
+			console.log( 'events', events )
+			console.log( 'events - wowEvents', wowEvents )
+			console.log( 'events - todayEvents', todayEvents )
+			console.log( 'events - futureEvents', futureEvents )
+			console.log( 'events - weekEvents', weekEvents )
+			console.log( 'events - monthEvents', monthEvents )
+			console.log( 'events - todayPromotedEvents', todayPromotedEvents )
+			console.log( 'events - weekPromotedEvents', weekPromotedEvents )
+			console.log( 'events - monthPromotedEvents', monthPromotedEvents )
 
 			// Callback function when all events are fetched
 			callback(events)
