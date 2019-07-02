@@ -1,0 +1,17 @@
+<section class="section spaces">
+    <div class="section__inner">
+        <div class="spaces__content content">
+            {{#each config.discover.spaces}}
+            <div class="spaces__space">
+
+                <img src="{{ this.image }}" />
+
+                <h2>{{this.title}}</h2>
+
+                <p>{{this.description}}</p>
+
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</section>

@@ -56,6 +56,10 @@ export default function slider( data, element, sliderConfig, templateToRender ){
 			$('.upComing__sliders .slider-'+getSlider+'').show().slick(sliderConfig)
 		})
 
+	} else if( element == '.slider-discover' ) {
+
+		$(element).slick( sliderConfig )
+
 	} else {
 		$(element).slick( sliderConfig )
 		fetchSlickData()

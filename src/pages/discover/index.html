@@ -6,12 +6,13 @@
 
 		{{>components/nav }}
 
-		{{>templateScripts/slider/homeKv }}
-		<section class="section slider">
-			<div class="section__inner">
-				<div class="slider-discover"></div>
-			</div>
-		</section>
+		{{>components/discoverSlider slider='sliderOne' }}
+
+		{{>components/shopFloorplan }}
+
+		{{>components/spaces }}
+
+		{{>components/discoverSlider slider='sliderTwo' }}
 
 		{{>components/findKx}}
 
@@ -21,3 +22,4 @@
 	</section>
 
 <!--#include virtual="/uk/aem/footer-pdp.html"-->
+{{ config.seriesId }}
