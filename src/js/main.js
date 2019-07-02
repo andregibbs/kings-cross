@@ -253,7 +253,9 @@ $(document).ready(function () {
 			break;
 
 		case "/uk/kings-cross/support/repair/":
-			repair()
+			fetchData((allEvents) => {
+				calendar("https://bookings.qudini.com/booking-widget/booker/slots/73U8JNREMLS/2286/37437/0", "appointment", allEvents);
+			})
 			break;
 
 		case "/uk/kings-cross/support/one-to-one/":

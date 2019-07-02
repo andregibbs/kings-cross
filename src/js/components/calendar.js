@@ -20,8 +20,6 @@ export default function calendar(URL, type, allEvents) {
 		console.error("2nd parameter of calendar() should be a string.");
 	}
 
-	console.log(type);
-
 	switch (type) {
 		case "appointment":
 			getAppointmentDates(selectedDate);
@@ -40,34 +38,33 @@ export default function calendar(URL, type, allEvents) {
 			console.error('Calendar function used incorrectly. Expected "appointment" or "event", received', type);
 			break;
 	}
-
 	
 	handleDateArrows();
-
+	getEventDates();
 
 
 	function getAppointmentDates(date) {
+		var loadingScreen = document.getElementById("load-screen");
 		const appointmentURL = URL + "?startDate=";
+
 		const dateString = date.getFullYear() + "-" + (String(date.getMonth() + 1).length == 1 ? "0" + String(date.getMonth() + 1) : String(date.getMonth() + 1)) + "-" + (String(date.getDate()).length == 1 ? "0" + String(date.getDate()) : String(date.getDate()))
-		var appointmentStartTime = "";
-		$("#times_load")[0].style.display = "";
+
+		loadingScreen.style.display = "block";
+
 		$.get(appointmentURL + dateString)
 			.success(function (data) {
 				populateWithAppointments(data);
+				loadingScreen.style.display = "";
 				handleScrollArrows();
-				$("#times_load")[0].style.display = "none";
 			})
 			.fail(function (err) {
-				$("#times_load")[0].style.display = "";
+				loadingScreen.style.display = "";
 				console.log(err);
+				//ADD A HEADS UP TO THE USER
 			})
 	}
 
-	
-
 	function populateWithAppointments(data) {
-
-		console.log("µ", data);
 
 		//clear old data
 		while ($(".calendar__container")[0].lastChild) {
@@ -77,18 +74,22 @@ export default function calendar(URL, type, allEvents) {
 		const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 		const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
+
+		//For every date
 		for (var dateInd = 0; dateInd < 5; dateInd++) {
-			console.log($("#dateColumn"))
 			if (!data[dateInd].unAvailable) {
 
+				//Format date
 				var date = new Date(data[dateInd].date);
 				var dateDisplayed = days[date.getDay()] + " " + date.getDate() + " " + months[date.getMonth()] + " " + date.getFullYear();
 
 				//Append the date column
 				$(".calendar__container").append( handleTemplate("dateColumn", {"date": dateDisplayed, "index":dateInd}));
 
+				//For every appointment in date
 				for (var appointmentInd = 0; appointmentInd < data[dateInd].slots.length; appointmentInd++) {
 					
+					//Format time
 					var slotTime = new Date(data[dateInd].slots[appointmentInd].start)
 					var time = slotTime.getHours() + ":" + (String(slotTime.getMinutes()).length == 1 ? "0" + String(slotTime.getMinutes()) : String(slotTime.getMinutes()));
 
@@ -126,7 +127,6 @@ export default function calendar(URL, type, allEvents) {
 			}
 		}
 
-		console.log($("#dateColumn"))
 	}
 
 	function handleDateArrows() {
@@ -156,35 +156,57 @@ export default function calendar(URL, type, allEvents) {
 	};
 
 	function handleScrollArrows(){
-		var h = $(".calendar__choice").outerHeight(true) * 2;
-		console.log("∆", h);
 		$(".load").each(function(ind, elm){
-			console.log(ind, elm);
+			//Click To Scroll Animations
+			//They ensure that no matter how much and when you click, it will always snap to an element as long as the container is 350px
 			$(elm).click(function(){
+				var h = $(elm).siblings().find(".calendar__choice").outerHeight(false) + parseFloat($(".calendar__choice").css('marginTop'));
+				console.log(h);
 				if(this.classList.contains("load--bot")){
-					$(this.previousElementSibling).animate({
-						scrollTop: '+=' + h
-					}, 1000);
+					if(this.previousElementSibling.scrollTop % h == 0){
+						$(this.previousElementSibling).animate({
+							scrollTop: '+=' + h
+						}, 300);
+					}
+					else if(this.previousElementSibling.scrollTop % h > h/2){
+						var scrollBy = 2 * h - (this.previousElementSibling.scrollTop % h);
+						console.log(scrollBy);
+						$(this.previousElementSibling).animate({
+							scrollTop: '+=' + scrollBy
+						}, 300);
+					}
+					else{
+						var scrollBy = h - this.previousElementSibling.scrollTop % h;
+						console.log(scrollBy);
+						$(this.previousElementSibling).animate({
+							scrollTop: '+=' + scrollBy
+						}, 300);
+					}
+
 				} else {
-					$(this.nextElementSibling).animate({
-						scrollTop: '-=' + h
-					 }, 1000);
+					if(this.nextElementSibling.scrollTop % h == 0){
+						$(this.nextElementSibling).animate({
+							scrollTop: '-=' + h
+						}, 300);
+					}
+					else if(this.nextElementSibling.scrollTop % h > h/2){
+						var scrollBy = h + (this.nextElementSibling.scrollTop % h);
+						console.log(scrollBy);
+						$(this.nextElementSibling).animate({
+							scrollTop: '-=' + scrollBy
+						}, 300);
+					}
+					else{
+						var scrollBy = 2 * h + this.nextElementSibling.scrollTop % h;
+						console.log(scrollBy);
+						$(this.nextElementSibling).animate({
+							scrollTop: '-=' + scrollBy
+						}, 300);
+					}
 				}
 			})
+
 		})
-	}
-	
-	//Incomplete, don't use
-	function populateWithEvents(data){
-		while ($(".calendar__container")[0].lastChild) {
-			$(".calendar__container")[0].removeChild($(".calendar__container")[0].lastChild);
-		}
-
-		const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-		const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-
-
-
 	}
 
 	function getEventDates() {
@@ -202,8 +224,35 @@ export default function calendar(URL, type, allEvents) {
 					matchingTopicEvents.push(allEvents[eInd]);
 				}
 			}
-			console.log("µ", matchingTopicEvents);
+			console.log("µ", matchingTopicEvents); //presorted in ascending order
+			populateWithEvents(matchingTopicEvents);
 		})
 	}
-		
+
+	function populateWithEvents(data){
+		while ($(".calendar__container")[0].lastChild) {
+			$(".calendar__container")[0].removeChild($(".calendar__container")[0].lastChild);
+		}
+
+		const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+		const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+		//Dates depend on events being presorted
+		var dates = [];
+
+		data.forEach((event)=>{
+			if(!dates.includes(event.startDate)){
+				dates.push(event.startDate);
+			}
+		})
+
+		console.log("∞", dates);
+		// var date = new Date(event.startDate);
+		// var dateDisplayed = days[date.getDay()] + " " + date.getDate() + " " + months[date.getMonth()] + " " + date.getFullYear();
+		// console.log(dateDisplayed);
+		dates.forEach((date)=>{
+			//
+		})
+	}
+
 }
