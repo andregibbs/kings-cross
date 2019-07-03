@@ -8,6 +8,7 @@ import calendar from './components/calendar'
 import slider from './components/slider'
 import bookingRefFetcher from './components/bookingRefFetcher'
 import discover from './components/discover'
+import support from './components/support'
 
 
 $(document).ready(function () {
@@ -250,6 +251,13 @@ $(document).ready(function () {
 
 		case "/uk/kings-cross/whats-on/event/":
 			singleEvent()
+			break;
+
+		case "/uk/kings-cross/support/":
+			// fetchData((allEvents) => {
+			// 	calendar("https://bookings.qudini.com/booking-widget/booker/slots/73U8JNREMLS/2286/37437/0", "appointment", allEvents);
+			// })
+			support();
 			break;
 
 		case "/uk/kings-cross/support/repair/":
