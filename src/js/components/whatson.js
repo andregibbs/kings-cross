@@ -36,13 +36,21 @@ export default function whatson( events ){
 		var eventsFilteredByPassion = []
 		var eventsFilteredBySuitables = []
 
+		// eventsToRender = eventsToManipulate.filter( function( event ) {
+		// 	return event.startDate > $('#from').val() && event.startDate < $('#to').val()
+		// })
+
+
+
 		eventsToRender = eventsToManipulate.filter( function( event ) {
-			return event.startDate > $('#from').val() && event.startDate < $('#to').val()
+			return event.extra.passions.filter(passion => getPassions.includes(passion)).length > 0
 		})
 
-		// eventsToRender = eventsToRender.filter( function( event ) {
-		// 	return event.extra.passions.filter(passion => getPassions.includes(passion)).length > 0
-		// })
+		if ( getSuitables.length ) {
+			eventsToRender = eventsToRender.filter( function( event ) {
+				return event.extra.suitables.filter(suitable => getSuitables.includes(suitable)).length > 0
+			} )
+		}
 
 		// eventsFilteredBySuitables = eventsFilteredByPassion.filter( function( event ) {
 		// 	return event.extra.suitables.filter(suitable => getSuitables.includes(suitable)).length > 0
@@ -58,12 +66,9 @@ export default function whatson( events ){
 		// 	})
 		// }
 
-		// if ( eventsFilteredByPassion.length ) {
-		// 	eventsFilteredBySuitables = eventsFilteredByPassion.filter( function( event ) {
-		// 		return event.extra.suitables.filter(suitable => getSuitables.includes(suitable)).length > 0
-		// 	} )
-		// }
 
+		console.log( 'getPassions', getPassions )
+		console.log( 'getSuitables', getSuitables )
 		console.log( 'eventsToRender', eventsToRender )
 
 
