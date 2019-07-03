@@ -3,150 +3,242 @@
 ========================================================================== */
 
 .cheil-static {
+  // opacity 0 for fades
+  .op0 {
+    opacity: 0;
+    transition: opacity $transitionDefault ease;
 
-	// opacity 0 for fades
-	.op0 {
-		opacity: 0;
-		transition: opacity $transitionDefault ease;
+    &--fade {
+      opacity: 1;
+    }
+  }
 
-		&--fade {
-			opacity: 1;
-		}
-	}
+  // This sets the values for each section
+  .section {
+    width: 100%;
+    padding-left: $p-borders-desktop + px;
+    padding-right: $p-borders-desktop + px;
 
-	// This sets the values for each section
-	.section {
-		width: 100%;
-		padding-left: $p-borders-desktop + px;
-		padding-right: $p-borders-desktop + px;
+    padding-top: $m-borders-desktop + px;
+    padding-bottom: $m-borders-desktop + px;
 
-		padding-top: $m-borders-desktop + px;
-		padding-bottom: $m-borders-desktop + px;
+    @media screen and (max-width: $desktop) {
+      padding-left: $p-borders-desktop + px;
+      padding-right: $p-borders-desktop + px;
+      padding-top: get-desktop-vw($m-borders-desktop);
+      padding-bottom: get-desktop-vw($m-borders-desktop);
+    }
 
-		@media screen and ( max-width: $desktop ) {
-			padding-left: $p-borders-desktop + px;
-			padding-right: $p-borders-desktop + px;
-			padding-top: get-desktop-vw($m-borders-desktop);
-			padding-bottom: get-desktop-vw($m-borders-desktop);
-		}
+    @media screen and (max-width: $mobile) {
+      padding-left: $p-borders-mobile + px;
+      padding-right: $p-borders-mobile + px;
+      padding-top: get-mobile-vw($m-borders-mobile);
+      padding-bottom: get-mobile-vw($m-borders-mobile);
+    }
 
-		@media screen and ( max-width: $mobile ) {
-			padding-left: $p-borders-mobile + px;
-			padding-right: $p-borders-mobile + px;
-			padding-top: get-mobile-vw($m-borders-mobile);
-			padding-bottom: get-mobile-vw($m-borders-mobile);
-		}
+    &__inner {
+      width: 100%;
+      max-width: $desktop;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: $p-borders-desktop + px;
+      padding-bottom: $p-borders-desktop + px;
 
-		&__inner {
-			width: 100%;
-			max-width: $desktop;
-			margin-left: auto;
-			margin-right: auto;
-			padding-top: $p-borders-desktop + px;
-			padding-bottom: $p-borders-desktop + px;
+      @media screen and (max-width: $desktop) {
+        padding-top: get-desktop-vw($p-borders-desktop);
+        padding-bottom: get-desktop-vw($p-borders-desktop);
+      }
 
-			@media screen and ( max-width: $desktop ) {
-				padding-top: get-desktop-vw($p-borders-desktop);
-				padding-bottom: get-desktop-vw($p-borders-desktop);
-			}
+      @media screen and (max-width: $mobile) {
+        padding-top: get-mobile-vw($p-borders-mobile);
+        padding-bottom: get-mobile-vw($p-borders-mobile);
+      }
+    }
+  }
 
-			@media screen and ( max-width: $mobile ) {
-				padding-top: get-mobile-vw($p-borders-mobile);
-				padding-bottom: get-mobile-vw($p-borders-mobile);
-			}
-		}
-	}
+  // URL LINKS
+  .link {
+    color: $blue-link;
+    text-decoration: underline;
+    font-size: 12px;
+  }
 
-	// URL LINKS
-	.link {
-		color: $blue-link;
-		text-decoration: underline;
-		font-size: 12px;
-	}
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid transparent;
+    border-radius: 100px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    background: transparent;
+    transition: all $transitionDefault ease;
+    width: 240px;
+    height: 60px;
 
-	.btn {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		border: 2px solid transparent;
-		border-radius: 100px;
-		font-weight: 600;
-		letter-spacing: 1px;
-		line-height: 1;
-		text-align: center;
-		text-transform: uppercase;
-		background: transparent;
-		transition: all $transitionDefault ease;
-		width: 240px;
-		height: 60px;
+    @media screen and (max-width: $desktop) {
+      width: get-desktop-vw(240);
+      height: get-desktop-vw(60);
+      padding: get-desktop-vw(12) get-desktop-vw(23);
+    }
+    @media screen and (max-width: $mobile) {
+      width: get-mobile-vw(240);
+      height: get-mobile-vw(60);
+      padding: get-mobile-vw(12) get-mobile-vw(23);
+    }
 
-		@media screen and ( max-width: $desktop ) {
-			width: get-desktop-vw(240);
-			height: get-desktop-vw(60);
-			padding: get-desktop-vw(12) get-desktop-vw(23);
-		}
-		@media screen and ( max-width: $mobile ) {
-			width: get-mobile-vw(240);
-			height: get-mobile-vw(60);
-			padding: get-mobile-vw(12) get-mobile-vw(23);
-		}
+    &--primary {
+      border-color: $pink;
+      background: $pink;
+      color: #fff;
+      &:hover {
+        background: $white;
+        border-color: $pink;
+        color: $pink;
+      }
 
-		&--primary {
-			border-color: $pink;
-			background: $pink;
-			color: #fff;
-			&:hover {
-				background: $white;
-				border-color: $pink;
-				color: $pink;
-			}
+      &-notActive {
+        pointer-events: none;
+        background: $grey;
+        border-color: $grey;
+        color: $white;
+      }
+    }
 
-			&-notActive {
-				pointer-events: none;
-				background: $grey;
-				border-color: $grey;
-				color: $white;
-			}
-		}
+    &--secondary {
+      border-color: $pink;
+      color: #fff;
+      &:hover {
+        border-color: $white;
+        color: $pink;
+      }
 
-		&--secondary {
-			border-color: $pink;
-			color: #fff;
-			&:hover {
-				border-color: $white;
-				color: $pink;
-			}
+      &-notActive {
+        background: $grey;
+        border-color: $grey;
+        color: $grey;
+        pointer-events: none;
+      }
+    }
 
-			&-notActive {
-				background: $grey;
-				border-color: $grey;
-				color: $grey;
-				pointer-events: none;
-			}
-		}
+    &--grey {
+      border-color: $grey;
+      color: #fff;
+      &:hover {
+        background: $grey;
+      }
+    }
 
-		&--grey {
-			border-color: $grey;
-			color: #fff;
-			&:hover {
-				background: $grey;
-			}
-		}
+    &--blue {
+      border-color: $samsungBlue;
+      color: #fff;
+      &:hover {
+        background: $samsungBlue;
+      }
+    }
 
-		&--blue {
-			border-color: $samsungBlue;
-			color: #fff;
-			&:hover {
-				background: $samsungBlue;
-			}
-		}
+    &--pink {
+      border-color: $pink;
+      color: #fff;
+      &:hover {
+        background: $pink;
+      }
+    }
 
-		&--pink {
-			border-color: $pink;
-			color: #fff;
-			&:hover {
-				background:	$pink;
-			}
-		}
-	}
+    &--orange {
+      border-color: $orange;
+      background-color: $orange;
+      color: #fff;
+      &:hover {
+        background: white;
+        color: $orange;
+        border-color: $orange;
+      }
+    }
+
+    &--cyan {
+      border-color: $cyan;
+      background-color: $cyan;
+      color: #fff;
+      &:hover {
+        background: white;
+        color: $cyan;
+        border-color: $cyan;
+      }
+    }
+  }
+
+  .checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+
+    &__container {
+      display: block;
+      position: relative;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      padding-left: 35px;
+      margin-bottom: 12px;
+
+      &:hover input ~ .checkbox {
+        background-color: #ccc;
+      }
+
+      input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+      }
+
+      input:checked ~ .checkbox {
+        background-color: $orange;
+      }
+
+      input:checked ~ .checkbox__pink {
+        background-color: $pink;
+      }
+
+      input:checked ~ .checkbox__blue {
+        background-color: $samsungBlue;
+      }
+
+      input:checked ~ .checkbox__cyan {
+        background-color: $cyan;
+      }
+
+      input:checked ~ .checkbox:after {
+        display: block;
+      }
+
+      // .checkbox:after {
+      //   left: 9px;
+      //   top: 5px;
+      //   width: 5px;
+      //   height: 10px;
+      //   border: solid white;
+      //   border-width: 0 3px 3px 0;
+      //   -webkit-transform: rotate(45deg);
+      //   -ms-transform: rotate(45deg);
+      //   transform: rotate(45deg);
+      // }
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+  }
 }

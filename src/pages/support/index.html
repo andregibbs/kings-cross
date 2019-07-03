@@ -6,10 +6,88 @@
 
 	{{>components/nav }}
 
-	<h1>SUPPORT PAGE</h1>
+	<section class="section welcome__outer">
+		<div class="welcome">
+			<h2 class="welcome__title fz50">Support Lounge</h2>
+			<div class="welcome__tiles">
+				<div class="tile">
+					<h4 class="tile__headings fz36">One to one Tutorials</h4>
+					<p class="tile__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+						tempor.</p>
+					<button class="button btn btn--primary" id="btn-121">BOOK NOW</button>
+				</div>
+				<div class="tile">
+					<h4 class="tile__headings fz36">General Support</h4>
+					<p class="tile__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+						tempor.</p>
+					<button class="button btn btn--primary btn--cyan" id="btn-support">BOOK NOW</button>
+				</div>
+				<div class="tile">
+					<h4 class="tile__headings fz36">Repair</h4>
+					<p class="tile__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+						tempor.</p>
+					<button class="button btn btn--primary btn--orange" id="btn-repair">BOOK NOW</button>
+				</div>
+			</div>
+		</div>
+		<br>
+	</section>
 
-	<a href="./one-to-one/"> one to one </a>
-	<a href="./repair/"> repair </a>
+	<section class="section" id="device-info">
+		<div class="section__inner">
+
+		</div>
+	</section>
+
+	<section class="section" id="calendar">
+		<div class="section__inner">
+
+		</div>
+	</section>
+
+	<section class="section" id="details">
+		<div class="section__inner">
+			<h3 class="details__title">Appointment Details</h3>
+			<p id="slot-selected" class="details__time">10:00 - 11:30 | Tuesday 09 November 2019 | Samsung KX</p>
+			<form class="details__form">
+
+				<div class="details__fields">
+					<input class="details__input" placeholder="Name*" type="text">
+					<input class="details__input" placeholder="Surname*" type="text">
+					<input class="details__input" placeholder="Telephone*" type="tel">
+					<input class="details__input" placeholder="Email*" type="email">
+				</div>
+
+				<div class="" details__checkboxes>
+					<label class="checkbox__container fz16">
+						<input type="checkbox" name="checkbox">I would like to receive special offers, announcements,
+						push notifications and emails about Samsung’s King’s Cross store and related developments from
+						Samsung Electronics (UK) Ltd.*<span class="checkbox"></span>
+					</label>
+
+					<label class="checkbox__container fz16">
+						<input type="checkbox" name="age">I am over 13 years old.*<span class="checkbox"></span>
+					</label>
+
+					<label class="checkbox__container fz16">
+						<input type="checkbox" name="checkbox">I would like to receive special offers, announcements,
+						push notifications and emails about Samsung’s products and services from Samsung Electronics
+						(UK) Ltd.<span class="checkbox"></span>
+					</label>
+				</div>
+
+
+			</form>
+
+		</div>
+	</section>
+
+	<section class="section" id="confirmation">
+		<div class="section__inner">
+
+		</div>
+	</section>
+
 
 	{{> scripts }}
 </section>

@@ -1,0 +1,52 @@
+.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  padding: 0 100px;
+  @media screen and (max-width: $desktop) {
+    padding: 0 get-desktop-vw(100);
+  }
+
+  @media screen and (max-width: $mobile) {
+    padding: 0 get-mobile-vw(100);
+  }
+
+  &__outer {
+    background-image: url(../../../content/dam/samsung/uk/kings-cross/header/support-header.png);
+    background-position: center center; /* First value is from left and second is from top. You can use use number as well*/
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+
+  &__title {
+    margin-top: 300px;
+  }
+
+  &__tiles {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 0px;
+  }
+}
+
+.tile {
+  &:nth-child(2) {
+    margin: 0 200px;
+    @media screen and (max-width: $desktop) {
+      margin: 0 get-desktop-vw(200);
+    }
+
+    @media screen and (max-width: $mobile) {
+      margin: 0 get-mobile-vw(200);
+    }
+  }
+
+  &__desc{
+      margin: 24px 0px;
+  }
+
+}
