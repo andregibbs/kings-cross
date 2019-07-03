@@ -10,6 +10,9 @@ export default function whatson( events ){
 	const passion = getUrlVars()["passions"];
 	const eventsToManipulate = events
 
+	let getPassions = []
+	let getSuitables = []
+
 	// =================================================
 	// DataPicker and filters
 	// =================================================
@@ -25,53 +28,47 @@ export default function whatson( events ){
 
 	$('.filters__results .btn').click( function() {
 
-		var getPassions = []
-		var getSuitables = []
+		updateFilters()
+
+		var eventsToRender = []
 
 		var eventsFilteredByDate = []
 		var eventsFilteredByPassion = []
 		var eventsFilteredBySuitables = []
 
-		$('.passions .label--active').each( function() {
-			getPassions.push( $(this).data('code') )
-		})
-
-		$('.suitables .label--active').each( function() {
-			getSuitables.push( $(this).data('code') )
-		})
-
-		// console.log( 'getPassions', getPassions )
-		// console.log( 'getSuitables', getSuitables )
-		// console.log( 'events', eventsToManipulate )
-		// console.log( $('#from').val() )
-		// console.log( $('#to').val() )
-
-		eventsFilteredByDate = eventsToManipulate.filter( function( event ) {
+		eventsToRender = eventsToManipulate.filter( function( event ) {
 			return event.startDate > $('#from').val() && event.startDate < $('#to').val()
 		})
 
-		eventsFilteredByPassion = eventsToManipulate.filter( function( event ) {
-			return event.extra.passions.filter(passion => getPassions.includes(passion)).length > 0
-		})
+		// eventsToRender = eventsToRender.filter( function( event ) {
+		// 	return event.extra.passions.filter(passion => getPassions.includes(passion)).length > 0
+		// })
 
-		if ( eventsFilteredByPassion.length ) {
-			eventsFilteredBySuitables = eventsFilteredByPassion.filter( function( event ) {
-				return event.extra.suitables.filter(suitable => getSuitables.includes(suitable)).length > 0
-			} )
-		}
+		// eventsFilteredBySuitables = eventsFilteredByPassion.filter( function( event ) {
+		// 	return event.extra.suitables.filter(suitable => getSuitables.includes(suitable)).length > 0
+		// } )
 
-		console.log( 'eventsFilteredByDate', eventsFilteredByDate )
-		console.log( 'eventsFilteredByPassion', eventsFilteredByPassion )
-		console.log( 'eventsFilteredBySuitables', eventsFilteredBySuitables )
+		// if ( eventsFilteredByDate.length ) {
+		// 	eventsFilteredByPassion = eventsFilteredByDate.filter( function( event ) {
+		// 		return event.extra.passions.filter(passion => getPassions.includes(passion)).length > 0
+		// 	})
+		// } else {
+		// 	eventsFilteredByPassion = eventsToManipulate.filter( function( event ) {
+		// 		return event.extra.passions.filter(passion => getPassions.includes(passion)).length > 0
+		// 	})
+		// }
+
+		// if ( eventsFilteredByPassion.length ) {
+		// 	eventsFilteredBySuitables = eventsFilteredByPassion.filter( function( event ) {
+		// 		return event.extra.suitables.filter(suitable => getSuitables.includes(suitable)).length > 0
+		// 	} )
+		// }
+
+		console.log( 'eventsToRender', eventsToRender )
 
 
 		$('.eventTile').remove()
-
-		if( eventsFilteredBySuitables.length ) {
-			renderEventsIntoDom( eventsFilteredBySuitables )
-		} else {
-			renderEventsIntoDom( eventsFilteredByPassion )
-		}
+		renderEventsIntoDom( eventsToRender )
 
 	})
 
@@ -112,6 +109,26 @@ export default function whatson( events ){
 			.addClass('op0--fade')
 
 		renderEventsIntoDom( events )
+	}
+
+
+	// =================================================
+	// function to update passions and suitables arrays
+	// =================================================
+
+	function updateFilters() {
+
+		getPassions = []
+		getSuitables = []
+
+		$('.passions .label--active').each( function() {
+			getPassions.push( $(this).data('code') )
+		})
+
+		$('.suitables .label--active').each( function() {
+			getSuitables.push( $(this).data('code') )
+		})
+
 	}
 
 	// =================================================

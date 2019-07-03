@@ -1,0 +1,32 @@
+<section class="section slider">
+    <div class="section__inner">
+        <div class="slider-discover">
+
+            {{#ifCond slider "sliderOne"}}
+
+            {{#each config.discover.sliderOne }}
+            <div class="slider-discover__slide">
+                <h3 class="slider-discover__slide--title">{{ this.title }}</h3>
+                <p class="slider-discover__slide--description">{{ this.description }}</p>
+                <img src="{{ this.image }}" class="discover__img" alt={{ this.alt }}>
+            </div>
+
+            {{/each}}
+
+
+            {{else}}
+
+            {{#each config.discover.sliderTwo }}
+            <div class="slider-discover__slide">
+                <h3 class="slider-discover__slide--title">{{ this.title }}</h3>
+                <p class="slider-discover__slide--description">{{ this.description }}</p>
+                <img src="{{ this.image }}" class="discover__img" alt={{ this.alt }}>
+            </div>
+
+            {{/each}}
+
+            {{/ifCond}}
+
+        </div>
+    </div>
+</section>
