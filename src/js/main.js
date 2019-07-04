@@ -96,6 +96,9 @@ $(document).ready(function () {
 	function sortEventExtra(event) {
 		if (event.description) {
 			var bits = event.description.split("||");
+
+			console.log( 'bits', bits )
+
 			event.description = bits[0];
 			if (bits.length > 1) {
 				event.extra = JSON.parse(bits[1]);
@@ -250,7 +253,7 @@ $(document).ready(function () {
 			break;
 
 		case "/uk/kings-cross/whats-on/event/":
-			singleEvent()
+			fetchData(singleEvent)
 			break;
 
 		case "/uk/kings-cross/support/":

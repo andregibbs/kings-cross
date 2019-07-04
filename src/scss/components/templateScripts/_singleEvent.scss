@@ -15,8 +15,21 @@
 		}
 
 		&__img {
-			max-height: 900px;
+			width: 100%;
+			height: 650px;
 			overflow: hidden;
+
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;
+
+			@media screen and ( max-width: $desktop ) {
+				height: get-desktop-vw(650);
+			}
+
+			@media screen and ( max-width: $mobile ) {
+				height: get-mobile-vw(250);
+			}
 
 			img {
 				width: 100%;

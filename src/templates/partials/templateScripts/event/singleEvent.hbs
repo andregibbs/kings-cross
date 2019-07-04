@@ -6,20 +6,29 @@
 			<span class="event__header-title">[[ title ]]</span>
 		</section>
 
-		<div class="event__img">
-			<img src="[[ image ]]" alt="">
+		<div class="event__img" style="background-image:url( [[image]] )">
+			{{!-- <img src="[[ image ]]" alt=""> --}}
 		</div>
 
 		<div class="section event__content">
 			<div class="section__inner">
 				<section>
 					<span class="tile-desc">[[ description ]]</span> <br><br>
+					[[#if youtube ]]
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/[[ youtube ]]" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					[[/if]]
 				</section>
 				<section>
 					<div class="event__content-book action">
 						<span class="action-date">[[ startDate ]] / [[ startTime ]]</span> <br><br>
-						<span class="action-capacity">xxx</span> <br><br>
-						<button class="action-btn btn btn--primary">book now</button><br><br>
+						<span class="action-capacity">Max: [[ slotsAvailable ]]</span> <br><br>
+
+						[[#if externalbookinglink ]]
+							<a href="[[externalbookinglink]]" class="link-book btn btn--primary" target="_blank">book now</a><br><br>
+						[[else]]
+							<button class="action-btn btn btn--primary">book now</button><br><br>
+						[[/if]]
+
 						<span>*I am small print I can display crucial event information</span>
 					</div>
 					<div class="event__content-share share">

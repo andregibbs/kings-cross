@@ -46,7 +46,7 @@ export default function whatson( events ){
 			return event.extra.passions.filter(passion => getPassions.includes(passion)).length > 0
 		})
 
-		if ( getSuitables.length ) {
+		if ( getPassions.length && getSuitables.length ) {
 			eventsToRender = eventsToRender.filter( function( event ) {
 				return event.extra.suitables.filter(suitable => getSuitables.includes(suitable)).length > 0
 			} )
@@ -115,7 +115,6 @@ export default function whatson( events ){
 
 		renderEventsIntoDom( events )
 	}
-
 
 	// =================================================
 	// function to update passions and suitables arrays
