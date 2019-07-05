@@ -42,13 +42,17 @@ export default function whatson( events ){
 
 		if ( getPassions.length ) {
 			eventsToRender = eventsToRender.filter( function( event ) {
-				return event.extra.passions.filter(passion => getPassions.includes(passion)).length > 0
+				if( event.extra.passions ) {
+					return event.extra.passions.filter(passion => getPassions.includes(passion)).length > 0
+				}
 			} )
 		}
 
 		if ( getSuitables.length ) {
 			eventsToRender = eventsToRender.filter( function( event ) {
-				return event.extra.suitables.filter(suitable => getSuitables.includes(suitable)).length > 0
+				if( event.extra.suitables ) {
+					return event.extra.suitables.filter(suitable => getSuitables.includes(suitable)).length > 0
+				}
 			} )
 		}
 
