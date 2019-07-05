@@ -100,6 +100,28 @@
         color: $pink;
       }
 
+      &--orange {
+        border-color: $orange;
+        background-color: $orange;
+        color: #fff;
+        &:hover {
+          background: white;
+          color: $orange;
+          border-color: $orange;
+        }
+      }
+
+      &--cyan {
+        border-color: $cyan;
+        background-color: $cyan;
+        color: #fff;
+        &:hover {
+          background: white;
+          color: $cyan;
+          border-color: $cyan;
+        }
+      }
+
       &-notActive {
         pointer-events: none;
         background: $grey;
@@ -121,6 +143,25 @@
         border-color: $grey;
         color: $grey;
         pointer-events: none;
+      }
+
+      &--orange {
+        border-color: $orange;
+        color: #fff;
+        &:hover {
+          color: $orange;
+          border-color: $white;
+        }
+      }
+
+      &--cyan {
+        border-color: $cyan;
+        color: #fff;
+        &:hover {
+          background: white;
+          color: $cyan;
+          border-color: $white;
+        }
       }
     }
 
@@ -147,28 +188,6 @@
         background: $pink;
       }
     }
-
-    &--orange {
-      border-color: $orange;
-      background-color: $orange;
-      color: #fff;
-      &:hover {
-        background: white;
-        color: $orange;
-        border-color: $orange;
-      }
-    }
-
-    &--cyan {
-      border-color: $cyan;
-      background-color: $cyan;
-      color: #fff;
-      &:hover {
-        background: white;
-        color: $cyan;
-        border-color: $cyan;
-      }
-    }
   }
 
   .checkbox {
@@ -189,6 +208,10 @@
       user-select: none;
       padding-left: 35px;
       margin-bottom: 12px;
+
+      &.warn{
+        color: $warning;
+      }
 
       &:hover input ~ .checkbox {
         background-color: #ccc;

@@ -254,20 +254,21 @@ $(document).ready(function () {
 			break;
 
 		case "/uk/kings-cross/support/":
-			// fetchData((allEvents) => {
-			// 	calendar("https://bookings.qudini.com/booking-widget/booker/slots/73U8JNREMLS/2286/37437/0", "appointment", allEvents);
-			// })
+			fetchData(function(allEvents) {
+				calendar("https://bookings.qudini.com/booking-widget/booker/slots/73U8JNREMLS/2286/37437/0", "appointment", allEvents);
+			});
+			//Support goes last!
 			support();
 			break;
 
 		case "/uk/kings-cross/support/repair/":
-			fetchData((allEvents) => {
+			fetchData(function(allEvents) {
 				calendar("https://bookings.qudini.com/booking-widget/booker/slots/73U8JNREMLS/2286/37437/0", "appointment", allEvents);
 			})
 			break;
 
 		case "/uk/kings-cross/support/one-to-one/":
-			fetchData((allEvents) => {
+			fetchData(function(allEvents) {
 				calendar("https://bookings.qudini.com/booking-widget/booker/slots/73U8JNREMLS/2286/37437/0", "appointment", allEvents);
 			})
 			break;

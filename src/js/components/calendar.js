@@ -11,6 +11,12 @@ export default function calendar(URL, type, allEvents) {
 
 	//type ∈ {"appointment", "event"}
 
+	//The component relies on a button with id "next" to be around
+
+	var unlock = new CustomEvent("unlock");
+	var lock = new CustomEvent("lock");
+
+
 	var selectedDate = new Date();
 
 	try {
@@ -108,6 +114,8 @@ export default function calendar(URL, type, allEvents) {
 						this.classList.add("calendar--selected");
 						this.getElementsByTagName("p")[0].innerText = "Selected";
 						console.log("selected", appointmentStartTime);
+						$("#next").data("slot", appointmentStartTime);
+						document.getElementById("next").dispatchEvent(unlock);
 					});
 
 				}
@@ -133,6 +141,9 @@ export default function calendar(URL, type, allEvents) {
 		var next = document.getElementById("next");
 		document.getElementsByClassName("arrow right")[0].addEventListener("click", function () {
 			appointmentStartTime = "";
+			document.getElementById("next").dispatchEvent(lock);
+
+
 			next.classList.remove("active");
 			if (window.innerWidth > 768) {
 				selectedDate.setDate(selectedDate.getDate() + 5);
@@ -144,6 +155,8 @@ export default function calendar(URL, type, allEvents) {
 		});
 		document.getElementsByClassName("arrow left")[0].addEventListener("click", function () {
 			appointmentStartTime = "";
+			document.getElementById("next").dispatchEvent(lock);
+
 			next.classList.remove("active");
 			if (window.innerWidth > 768) {
 				selectedDate.setDate(selectedDate.getDate() - 5);
@@ -240,7 +253,7 @@ export default function calendar(URL, type, allEvents) {
 		//Dates depend on events being presorted
 		var dates = [];
 
-		data.forEach((event)=>{
+		data.forEach(function(event){
 			if(!dates.includes(event.startDate)){
 				dates.push(event.startDate);
 			}

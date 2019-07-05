@@ -1,4 +1,6 @@
 .calendar {
+  //default color scheme
+
   position: relative;
   margin: 0 auto;
   max-width: 1220px;
@@ -217,5 +219,42 @@
       -webkit-animation-delay: -0.16s;
       animation-delay: -0.16s;
     }
+  }
+}
+
+.calendar.orange{
+
+  .calendar__choice{
+    border: 3px solid $orange;
+    &:hover{
+      background-color: rgba($color: $orange, $alpha: 0.5);
+    }
+  }
+  .calendar--selected{
+    background-color: $orange;
+    &:hover {
+      background-color: $orange;
+    }
+  }
+  .loading__bounce{
+    border: 2px solid $orange;
+  }
+}
+
+.calendar.cyan{
+  .calendar__choice{
+    border: 3px solid $cyan;
+    &:hover{
+      background-color: rgba($color: $cyan, $alpha: 0.5);
+    }
+  }
+  .calendar--selected{
+    background-color: $cyan;
+    &:hover {
+      background-color: $cyan;
+    }
+  }
+  .loading__bounce{
+    border: 2px solid $cyan;
   }
 }

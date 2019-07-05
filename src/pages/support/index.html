@@ -11,62 +11,60 @@
 			<h2 class="welcome__title fz50">Support Lounge</h2>
 			<div class="welcome__tiles">
 				<div class="tile">
-					<h4 class="tile__headings fz36">One to one Tutorials</h4>
+					<h4 class="tile__heading fz36">One to one Tutorials</h4>
 					<p class="tile__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 						tempor.</p>
-					<button class="button btn btn--primary" id="btn-121">BOOK NOW</button>
+					<button class="button btn btn--primary" id="btn-oneToOne">BOOK NOW</button>
 				</div>
 				<div class="tile">
-					<h4 class="tile__headings fz36">General Support</h4>
+					<h4 class="tile__heading fz36">General Support</h4>
 					<p class="tile__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 						tempor.</p>
-					<button class="button btn btn--primary btn--cyan" id="btn-support">BOOK NOW</button>
+					<button class="button btn btn--primary btn--primary--cyan" id="btn-support">BOOK NOW</button>
 				</div>
 				<div class="tile">
-					<h4 class="tile__headings fz36">Repair</h4>
+					<h4 class="tile__heading fz36">Repair</h4>
 					<p class="tile__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 						tempor.</p>
-					<button class="button btn btn--primary btn--orange" id="btn-repair">BOOK NOW</button>
+					<button class="button btn btn--primary btn--primary--orange" id="btn-repair">BOOK NOW</button>
 				</div>
 			</div>
 		</div>
 		<br>
 	</section>
 
-	<section class="section" id="device-info">
-		<div class="section__inner">
+	<section class="section journey">
+
+		<div class="section__inner" id="device-info">
 
 		</div>
-	</section>
 
-	<section class="section" id="calendar">
-		<div class="section__inner">
-
+		<div class="section__inner" id="calendar">
+			{{>components/calendar }}
 		</div>
-	</section>
 
-	<section class="section" id="details">
-		<div class="section__inner">
-			<h3 class="details__title">Appointment Details</h3>
-			<p id="slot-selected" class="details__time">10:00 - 11:30 | Tuesday 09 November 2019 | Samsung KX</p>
-			<form class="details__form">
+		<div class="section__inner" id="details">
+			<h3 class="details__title fz50">Appointment Details</h3>
+			<p id="slot-selected" class="details__time fz24">10:00 - 11:30 | Tuesday 09 November 2019 | Samsung KX</p>
+			<form class="details__form" id="bookingForm">
 
 				<div class="details__fields">
-					<input class="details__input" placeholder="Name*" type="text">
-					<input class="details__input" placeholder="Surname*" type="text">
-					<input class="details__input" placeholder="Telephone*" type="tel">
-					<input class="details__input" placeholder="Email*" type="email">
+					<input class="details__input" name="name" placeholder="Name*" id="name" type="text" required>
+					<input class="details__input" name="surname" placeholder="Surname*" id="surname" type="text" required>
+					<br>
+					<input class="details__input" name="telephone" placeholder="Telephone*" id="tel" type="tel" required>
+					<input class="details__input" name="email" placeholder="Email*" id="email" type="email" required>
 				</div>
 
-				<div class="" details__checkboxes>
+				<div class="details__checkboxes">
 					<label class="checkbox__container fz16">
-						<input type="checkbox" name="checkbox">I would like to receive special offers, announcements,
+						<input type="checkbox" name="checkbox" required>I would like to receive special offers, announcements,
 						push notifications and emails about Samsung’s King’s Cross store and related developments from
 						Samsung Electronics (UK) Ltd.*<span class="checkbox"></span>
 					</label>
 
 					<label class="checkbox__container fz16">
-						<input type="checkbox" name="age">I am over 13 years old.*<span class="checkbox"></span>
+						<input type="checkbox" name="age" required>I am over 13 years old.*<span class="checkbox"></span>
 					</label>
 
 					<label class="checkbox__container fz16">
@@ -76,20 +74,37 @@
 					</label>
 				</div>
 
+				<p class="details__disclaimer">By submitting this form you acknowledge that your personal data will be
+					processed in accordance with our <a href="">Privacy Policy.</a></p>
 
 			</form>
 
 		</div>
-	</section>
 
-	<section class="section" id="confirmation">
-		<div class="section__inner">
-
+		<div class="section__inner" id="confirmation">
+			<h3>Repair booking confirmation</h3>
+			<p>Repair booking confirmation</p>
+			<div class="confirmation__reference">
+				<p>Reference code</p>
+				<p class="reference">ABCDEF</p>
+			</div>
+			<p class="confirmation__disclaimer">
+				Enter the reference code on the <a href="">My Bookings</a> page to view your booking information. Please
+				try to ensure you have a back up of any data stored on a device you wish to service.
+			</p>
 		</div>
+
+		<div class="navigation" id="navigation">
+			<button class="btn btn--secondary" id="back">BACK</button>
+			<button class="btn btn--primary btn--primary-notActive" id="next">NEXT</button>
+		</div>
+
 	</section>
 
+	{{> components/findKx }}
 
 	{{> scripts }}
+
 </section>
 
 <!--#include virtual="/uk/aem/footer-pdp.html"-->
