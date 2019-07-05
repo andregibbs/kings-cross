@@ -30,47 +30,27 @@ export default function whatson( events ){
 
 		updateFilters()
 
-		var eventsToRender = []
-
-		var eventsFilteredByDate = []
-		var eventsFilteredByPassion = []
-		var eventsFilteredBySuitables = []
-
-		// eventsToRender = eventsToManipulate.filter( function( event ) {
-		// 	return event.startDate > $('#from').val() && event.startDate < $('#to').val()
-		// })
+		var eventsToRender = eventsToManipulate
 
 
+		if ( $('#from').val() && $('#to').val() ) {
+			eventsToRender = eventsToRender.filter( function( event ) {
+				return event.startDate > $('#from').val() && event.startDate < $('#to').val()
+			})
+		}
 
-		eventsToRender = eventsToManipulate.filter( function( event ) {
-			return event.extra.passions.filter(passion => getPassions.includes(passion)).length > 0
-		})
 
-		if ( getPassions.length && getSuitables.length ) {
+		if ( getPassions.length ) {
+			eventsToRender = eventsToRender.filter( function( event ) {
+				return event.extra.passions.filter(passion => getPassions.includes(passion)).length > 0
+			} )
+		}
+
+		if ( getSuitables.length ) {
 			eventsToRender = eventsToRender.filter( function( event ) {
 				return event.extra.suitables.filter(suitable => getSuitables.includes(suitable)).length > 0
 			} )
 		}
-
-		// eventsFilteredBySuitables = eventsFilteredByPassion.filter( function( event ) {
-		// 	return event.extra.suitables.filter(suitable => getSuitables.includes(suitable)).length > 0
-		// } )
-
-		// if ( eventsFilteredByDate.length ) {
-		// 	eventsFilteredByPassion = eventsFilteredByDate.filter( function( event ) {
-		// 		return event.extra.passions.filter(passion => getPassions.includes(passion)).length > 0
-		// 	})
-		// } else {
-		// 	eventsFilteredByPassion = eventsToManipulate.filter( function( event ) {
-		// 		return event.extra.passions.filter(passion => getPassions.includes(passion)).length > 0
-		// 	})
-		// }
-
-
-		console.log( 'getPassions', getPassions )
-		console.log( 'getSuitables', getSuitables )
-		console.log( 'eventsToRender', eventsToRender )
-
 
 		$('.eventTile').remove()
 		renderEventsIntoDom( eventsToRender )
