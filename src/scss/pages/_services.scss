@@ -34,6 +34,10 @@
 }
 
 .tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   &:nth-child(2) {
     margin: 0 200px;
     @media screen and (max-width: $desktop) {
@@ -45,8 +49,125 @@
     }
   }
 
-  &__desc{
-      margin: 24px 0px;
+  &__heading{
+    flex-basis: 30%;
   }
 
+  &__desc {
+    margin: 24px 0px;
+  }
+}
+
+.journey {
+  & > div {
+    display: none;
+  }
+  padding-top: 0 !important;
+  .section__inner {
+    padding-top: 0 !important;
+  }
+
+  .details {
+    &__title,
+    &__time {
+      text-align: center;
+    }
+
+    &__time {
+      margin: 30px 0;
+      @media screen and (max-width: $desktop) {
+        margin: get-desktop-vw(30) 0;
+      }
+      @media screen and (max-width: $mobile) {
+        margin: get-mobile-vw(30) 0;
+      }
+    }
+
+    &__form {
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"] {
+        background-color: transparent;
+        color: white;
+        border: 1px solid $grey-form;
+        font-size: em(25);
+        flex-basis: 40%;
+        margin: 20px 20px;
+        @media screen and (max-width: $desktop) {
+          margin: get-desktop-vw(20) get-desktop-vw(20);
+        }
+        @media screen and (max-width: $mobile) {
+          margin: get-mobile-vw(20) get-mobile-vw(20);
+        }
+        padding: 12px 30px;
+        @media screen and (max-width: $desktop) {
+          padding: get-desktop-vw(12) get-desktop-vw(30);
+        }
+        @media screen and (max-width: $mobile) {
+          padding: get-mobile-vw(12) get-mobile-vw(30);
+        }
+
+        &.warn{
+          color: $warning;
+          border: 1px solid $warning; 
+        }
+
+        &.warn::placeholder{
+          color: $warning;
+        }
+
+      }
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+        
+    }
+    &__fields {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    &__checkboxes{
+      width: 650px;
+      margin: 0 50px;
+      @media screen and (max-width: $desktop) {
+        width: get-desktop-vw(650);
+        margin: 0 get-desktop-vw(50);
+      }
+      @media screen and (max-width: $mobile) {
+        width: get-mobile-vw(650);
+        margin: 0 get-mobile-vw(50);
+      }
+    }
+  }
+
+  &.pink {
+    a {
+      color: $pink;
+    }
+  }
+  &.cyan {
+    a {
+      color: $cyan;
+    }
+  }
+  &.orange {
+    a {
+      color: $orange;
+    }
+  }
+}
+
+.navigation {
+  justify-content: center;
+  button{
+    margin: 0 25px;
+    @media screen and (max-width: $desktop) {
+      margin: get-desktop-vw(0) get-desktop-vw(25);
+    }
+    @media screen and (max-width: $mobile) {
+      margin: get-mobile-vw(0) get-mobile-vw(25);
+    }
+  }
 }
