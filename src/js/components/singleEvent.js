@@ -1,10 +1,16 @@
 import handleTemplate from './handleTemplate'
+import instagram from './instagram'
 import getUrlVars from './getUrlVars'
 
-export default function singleEvent(){
+export default function singleEvent( events ){
 	const isoCurrentDate = new Date();
 	const eventId = getUrlVars()["i"];
 	let ticketQuantity = 1
+	let instagramHashTag = ''
+
+	// =================================================
+	// Populating event details from query string
+	// =================================================
 
 	$.get( 'https://bookings.qudini.com/booking-widget/event/event/'+ eventId +'', {
 			'timezone': "Europe/London",
@@ -12,6 +18,24 @@ export default function singleEvent(){
 	}).success( function( data ) {
 
 		console.log( 'Event details: ', data )
+
+		function sortEventExtra(event) {
+			if (event.description) {
+				var bits = event.description.split("||");
+
+				console.log( 'bits', bits )
+
+				event.description = bits[0];
+				if (bits.length > 1) {
+					event.extra = JSON.parse(bits[1]);
+				}
+				else {
+					event.extra = {};
+				}
+			}
+		}
+
+		sortEventExtra(data);
 
 		const options = {
 			identifier: data.identifier,
@@ -22,15 +46,26 @@ export default function singleEvent(){
 			startDate: data.startDate,
 			startTime: data.startTime,
 			passion: data.passions,
-			description: data.description
+			description: data.description,
+			slotsAvailable: data.slotsAvailable,
+			youtube: data.extra.youtubeid,
+			externalbookinglink: data.extra.externalbookinglink
+		}
+
+		if( data.extra.instagramhashtag ) {
+			instagramHashTag = data.extra.instagramhashtag
 		}
 
 		$('.singleEvent').append( handleTemplate( 'singleEvent', options ) )
 
-		// Event out of stock
-		if( data.slotsAvailable == 0 ) {
-			$('.event__content-book .btn--primary').addClass('btn--primary-notActive')
+		// Event out of stock or has expired
+		if( data.slotsAvailable == 0 || data.hasPassed ) {
+			$('.event__content-book .btn--primary')
+				.addClass('btn--primary-notActive')
+
+				data.slotsAvailable ? $('.event__content-book .btn--primary').text('Fully booked') : $('.event__content-book .btn--primary').text('Expired')
 		}
+
 	})
 
 	$('.singleEvent').on('click', '.action-btn', function(e) {
@@ -39,6 +74,39 @@ export default function singleEvent(){
 		$('.book').addClass('book--active')
 		$('.book-action').addClass('book-action--active')
 	})
+
+	// =================================================
+	// Instragram feed
+	// =================================================
+
+	instagram( instagramHashTag )
+
+	// =================================================
+	// Related Events
+	// =================================================
+
+	const populateRandomEvents = []
+
+	for( var i = 0; i < 6; i++ ) {
+		populateRandomEvents.push( events[ Math.floor(Math.random() * events.length) ] )
+	}
+
+	for( var i = 0; i < populateRandomEvents.length; i++ ) {
+
+		const options = {
+			identifier: populateRandomEvents[i].identifier,
+			groupSize: populateRandomEvents[i].maxGroupSize,
+			eventId: populateRandomEvents[i].id,
+			image: populateRandomEvents[i].imageURL,
+			title: populateRandomEvents[i].title,
+			startDate: populateRandomEvents[i].startDate,
+			startTime: populateRandomEvents[i].startTime,
+			passion: populateRandomEvents[i].passions,
+			description: populateRandomEvents[i].description
+		}
+
+		$('.relatedEvents__container').append( handleTemplate( 'eventTile', options ) )
+	}
 
 	// =================================================
 	// Booking functionality

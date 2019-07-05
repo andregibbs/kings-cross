@@ -1,0 +1,19 @@
+/*=============================================
+=            Event Page            =
+=============================================*/
+
+.relatedEvents {
+	&__container {
+		display: flex;
+	}
+
+	.eventTile {
+		flex: 1;
+		a {
+			display: inline-block;
+		}
+	}
+}
+
+/*=====  End of Event Page  ======*/
+
