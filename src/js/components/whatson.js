@@ -11,7 +11,7 @@ export default function whatson( events ){
 	const eventsToManipulate = events
 
 	let getPassions = []
-	let getSuitables = []
+	let getEventtype = []
 
 	// =================================================
 	// DataPicker and filters
@@ -48,10 +48,10 @@ export default function whatson( events ){
 			} )
 		}
 
-		if ( getSuitables.length ) {
+		if ( getEventtype.length ) {
 			eventsToRender = eventsToRender.filter( function( event ) {
-				if( event.extra.suitables ) {
-					return event.extra.suitables.filter(suitable => getSuitables.includes(suitable)).length > 0
+				if( event.extra.eventtype ) {
+					return event.extra.eventtype.filter(eventtype => getEventtype.includes(eventtype)).length > 0
 				}
 			} )
 		}
@@ -72,10 +72,6 @@ export default function whatson( events ){
 	if( passion ) {
 
 		$('.passionImg')
-			.find('h1')
-			.text( passion )
-
-		$('.passionImg')
 			.find('img')
 			.attr('src', `/content/dam/samsung/uk/kings-cross/passion-header/passion-header-${passion}.jpg`)
 			.addClass('op0--fade')
@@ -88,9 +84,6 @@ export default function whatson( events ){
 
 	} else {
 
-		$('.passionImg')
-			.find('h1')
-			.text( "GIVE ME COPY" )
 
 		$('.passionImg')
 			.find('img')
@@ -107,14 +100,14 @@ export default function whatson( events ){
 	function updateFilters() {
 
 		getPassions = []
-		getSuitables = []
+		getEventtype = []
 
 		$('.passions .label--active').each( function() {
 			getPassions.push( $(this).data('code') )
 		})
 
 		$('.suitables .label--active').each( function() {
-			getSuitables.push( $(this).data('code') )
+			getEventtype.push( $(this).data('code') )
 		})
 
 	}
@@ -135,13 +128,15 @@ export default function whatson( events ){
 			const options = {
 				identifier: event.identifier,
 				eventId: event.id,
-				image: event.imageURL,
+				image: event.imageURL ? event.imageURL : 'https://images.unsplash.com/photo-1560983719-c116f744352d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80',
 				title: event.title,
-				startDate: event.startDate,
+				startDate: moment(event.startDate).format("Do MMMM") ==  moment(Date.now()).format("Do MMMM") ? 'TODAY' : moment(event.startDate).format("Do MMMM") ,
 				startTime: event.startTime,
 				passion: event.extra.passions,
-				suitables: event.extra.suitables
+				suitables: event.extra.eventtype
 			}
+
+			console.log(options);
 
 			$('.events .events__container').append( handleTemplate( 'eventTile', options ) )
 
