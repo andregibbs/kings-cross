@@ -1,85 +1,89 @@
 <!--#include virtual="/uk/aem/header-pdp.html"-->
 
 <section class="cheil-static">
-
-		{{>stylesheet}}
-		<!-- CSS for dataPicker -->
-		<!-- <link rel="stylesheet" href="/{{ config.site }}/{{ config.subfolder }}/css/librarys/jquery-ui-1.12.1.custom/jquery-ui.min.css">
+  {{>stylesheet}}
+  <!-- CSS for dataPicker -->
+  <!-- <link rel="stylesheet" href="/{{ config.site }}/{{ config.subfolder }}/css/librarys/jquery-ui-1.12.1.custom/jquery-ui.min.css">
 		<link rel="stylesheet" href="/{{ config.site }}/{{ config.subfolder }}/css/librarys/jquery-ui-1.12.1.custom/jquery-ui.structure.min.css">
 		<link rel="stylesheet" href="/{{ config.site }}/{{ config.subfolder }}/css/librarys/jquery-ui-1.12.1.custom/jquery-ui.theme.min.css"> -->
 
-		{{>components/nav }}
+  {{>components/nav }}
 
-		<section class="section passionImg">
-			<div class="section__inner">
-				<!-- src and copy to be replaced with JS -->
-				<h1></h1>
-				<img class="op0" src="" alt="">
-			</div>
-		</section>
+  <section class="section passionImg">
+    <div class="section__inner">
+      <!-- src and copy to be replaced with JS -->
+      <img class="op0" src="" alt="" />
+    </div>
+  </section>
 
-		<section class="section eventFilter">
-			<div class="section__inner">
-				<div class="eventFilter__title">
-					<h2>What’s On filters*</h2>
-				</div>
-				<div class="eventFilter__filters filters">
+  <section class="section eventFilter">
+    <div class="section__inner">
+      <div class="eventFilter__header">
+        <div class="eventFilter__header__title">
+          <h2>Follow your Passion</h2>
+        </div>
+        <div class="eventFilter__header__toggle">
+		  <span>SHOW FILTERS</span>
+		  <a
+            href="#"
+           	class="eventFilter__header__toggle__btn_fold"
+		  >
+          </a>
+        </div>
+      </div>
 
-					<div class="filters__labels">
-						<div class="filters__date">
-							<h2 class="filters-title">Filter by Date</h2>
-							<label for="from">From</label>
-							<input type="text" id="from" name="from">
-							<label for="to">to</label>
-							<input type="text" id="to" name="to">
-						</div>
+      <div class="eventFilter__filters filters">
+        <div class="filters__labels">
+          <div class="filters__date">
+            <h2 class="filters-title">Filter by Date</h2>
+            <label for="from">From</label>
+            <input type="text" id="from" name="from" />
+            <label for="to">to</label>
+            <input type="text" id="to" name="to" />
+          </div>
 
-						<div class="filters__category">
-							<h2 class="filters-title">Filter by Date</h2>
-							<div class="filters__category-group passions">
-								{{#each @root.config.passions}}
-									<span class="label" data-code="{{ this.code }}">
-										<span class="checkmark"></span>
-										<span>{{{ this.name }}}</span>
-									</span>
-								{{/each}}
-							</div>
+          <div class="filters__category">
+            <h2 class="filters-title">Filter by Date</h2>
+            <div class="filters__category-group passions">
+              {{#each @root.config.passions}}
+              <span class="label" data-code="{{ this.code }}">
+                <span class="checkmark"></span>
+                <span>{{{ this.name }}}</span>
+              </span>
+              {{/each}}
+            </div>
 
-							<button class="toggleSuitables toggleSuitables--active">toggle Suitables</button>
+            <button class="toggleSuitables toggleSuitables--active">
+              toggle Suitables
+            </button>
 
-							<div class="filters__category-group suitables">
-								{{#each @root.config.suitables}}
-									<span class="label" data-code="{{ this.code }}">
-										<span class="checkmark"></span>
-										<span>{{{ this.name }}}</span>
-									</span>
-								{{/each}}
-							</div>
-						</div>
+            <div class="filters__category-group suitables">
+              {{#each @root.config.suitables}}
+              <span class="label" data-code="{{ this.code }}">
+                <span class="checkmark"></span>
+                <span>{{{ this.name }}}</span>
+              </span>
+              {{/each}}
+            </div>
+          </div>
+        </div>
 
-					</div>
+        <div class="filters__results">
+          <button class="button btn btn--primary">SEE RESULTS</button>
+        </div>
+      </div>
+    </div>
+  </section>
 
-					<div class="filters__results">
-						<button class="button btn btn--primary">SEE RESULTS</button>
-					</div>
+  <section class="section events">
+    <div class="section__inner">
+      <div class="events__container"></div>
+    </div>
+  </section>
 
-				</div>
-
-			</div>
-		</section>
-
-		<section class="section events">
-			<div class="section__inner">
-				<div class="events__container">
-
-				</div>
-			</div>
-		</section>
-
-		{{>templateScripts/event/eventTile }}
-		{{>templateScripts/slider/homeKv }}
-		{{>scripts }}
-
-	</section>
+  {{>templateScripts/event/eventTile }}
+  {{>templateScripts/slider/homeKv }}
+  {{>scripts }}
+</section>
 
 <!--#include virtual="/uk/aem/footer-pdp.html"-->
