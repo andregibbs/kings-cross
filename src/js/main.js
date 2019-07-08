@@ -20,8 +20,6 @@ $(document).ready(function () {
 	// Global vars
 	// =================================================
 
-	const seriesID = 'W3DMW9HUAYM' // Used for prod
-	const liveSeriesID = 'EAKJZBQWQAH' // Used for QA events
 	const apiUrl = 'https://bookings.qudini.com/booking-widget/event/events/'
 	const isoCurrentDate = new Date();
 
@@ -110,7 +108,7 @@ $(document).ready(function () {
 	}
 
 	function fetchData(callback) {
-		$.get(apiUrl + seriesID, {
+		$.get(apiUrl + kxConfig.seriesId, {
 			'timezone': "Europe/London",
 			'isoCurrentDate': isoCurrentDate.toISOString()
 		}).success(function (data) {

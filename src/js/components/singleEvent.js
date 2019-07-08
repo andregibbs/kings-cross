@@ -136,7 +136,7 @@ export default function singleEvent( events ){
 
 			$.ajax({
 				type: "POST",
-				url: "https://bookings.qudini.com/booking-widget/series/W3DMW9HUAYM/event/book",
+				url: "https://bookings.qudini.com/booking-widget/series/" + kxConfig.seriesId + "/event/book",
 				dataType: "json",
 				contentType: "application/json; charset=utf-8",
 				data: JSON.stringify({
