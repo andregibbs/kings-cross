@@ -4,7 +4,8 @@ import getUrlVars from './getUrlVars'
 
 export default function singleEvent( events ){
 	const isoCurrentDate = new Date();
-	const eventId = getUrlVars()["i"];
+	let eventId = '';
+	const id = getUrlVars()["id"];
 	let ticketQuantity = 1
 	let instagramHashTag = ''
 
@@ -12,7 +13,7 @@ export default function singleEvent( events ){
 	// Populating event details from query string
 	// =================================================
 
-	$.get( 'https://bookings.qudini.com/booking-widget/event/event/'+ eventId +'', {
+    $.get("https://bookings.qudini.com/booking-widget/event/eventId/" + id, {
 			'timezone': "Europe/London",
 			'isoCurrentDate': isoCurrentDate.toISOString()
 	}).success( function( data ) {
@@ -37,10 +38,12 @@ export default function singleEvent( events ){
 
 		sortEventExtra(data);
 
+		eventId = data.id;
+
 		const options = {
 			identifier: data.identifier,
 			groupSize: data.maxGroupSize,
-			eventId: data.id,
+			eventId: eventId,
 			image: data.imageURL,
 			title: data.title,
 			startDate: data.startDate,
