@@ -13,61 +13,84 @@ export default function singleEvent( events ){
 	// Populating event details from query string
 	// =================================================
 
-    $.get("https://bookings.qudini.com/booking-widget/event/eventId/" + id, {
-			'timezone': "Europe/London",
-			'isoCurrentDate': isoCurrentDate.toISOString()
-	}).success( function( data ) {
+    $.get("https://bookings.qudini.com/booking-widget/event/series/" + kxConfig.seriesId
+    ).success( function( seriesData ) {
 
-		console.log( 'Event details: ', data )
+    	// get the Integer value for the current series as this is returned by the event API - we need to check below that the event is valid for the series
+    	kxConfig.seriesIdAsInt = seriesData.id;
 
-		function sortEventExtra(event) {
-			if (event.description) {
-				var bits = event.description.split("||");
+	    $.get("https://bookings.qudini.com/booking-widget/event/eventId/" + id, {
+				'timezone': "Europe/London",
+				'isoCurrentDate': isoCurrentDate.toISOString()
+		}).success( function( data ) {
 
-				console.log( 'bits', bits )
+			console.log( 'Event details: ', data )
 
-				event.description = bits[0];
-				if (bits.length > 1) {
-					event.extra = JSON.parse(bits[1]);
-				}
-				else {
-					event.extra = {};
+			function sortEventExtra(event) {
+				if (event.description) {
+					var bits = event.description.split("||");
+
+					console.log( 'bits', bits )
+
+					event.description = bits[0];
+					if (bits.length > 1) {
+						event.extra = JSON.parse(bits[1]);
+					}
+					else {
+						event.extra = {};
+					}
 				}
 			}
-		}
 
-		sortEventExtra(data);
+			sortEventExtra(data);
 
-		eventId = data.id;
+			eventId = data.id;
 
-		const options = {
-			identifier: data.identifier,
-			groupSize: data.maxGroupSize,
-			eventId: eventId,
-			image: data.imageURL,
-			title: data.title,
-			startDate: data.startDate,
-			startTime: data.startTime,
-			passion: data.passions,
-			description: data.description,
-			slotsAvailable: data.slotsAvailable,
-			youtube: data.extra.youtubeid,
-			externalbookinglink: data.extra.externalbookinglink
-		}
+			// TODO need to check event is for the correct series
 
-		if( data.extra.instagramhashtag ) {
-			instagramHashTag = data.extra.instagramhashtag
-		}
+			console.log('xxxxx - ' + data.seriesId + ' ' + kxConfig.seriesId + ' ' + kxConfig.seriesIdAsInt);
 
-		$('.singleEvent').append( handleTemplate( 'singleEvent', options ) )
+			if (data.seriesId == kxConfig.seriesIdAsInt) {
 
-		// Event out of stock or has expired
-		if( data.slotsAvailable == 0 || data.hasPassed ) {
-			$('.event__content-book .btn--primary')
-				.addClass('btn--primary-notActive')
+				const options = {
+					identifier: data.identifier,
+					groupSize: data.maxGroupSize,
+					eventId: eventId,
+					image: data.imageURL,
+					title: data.title,
+					startDate: data.startDate,
+					startTime: data.startTime,
+					passion: data.passions,
+					description: data.description,
+					slotsAvailable: data.slotsAvailable,
+					youtube: data.extra.youtubeid,
+					externalbookinglink: data.extra.externalbookinglink
+				}
 
-				data.slotsAvailable ? $('.event__content-book .btn--primary').text('Fully booked') : $('.event__content-book .btn--primary').text('Expired')
-		}
+				if( data.extra.instagramhashtag ) {
+					instagramHashTag = data.extra.instagramhashtag
+				}
+
+				$('.singleEvent').append( handleTemplate( 'singleEvent', options ) )
+
+				// Event out of stock or has expired
+				if( data.slotsAvailable == 0 || data.hasPassed ) {
+					$('.event__content-book .btn--primary')
+						.addClass('btn--primary-notActive')
+
+						data.slotsAvailable ? $('.event__content-book .btn--primary').text('Fully booked') : $('.event__content-book .btn--primary').text('Expired')
+				}
+
+			}
+			else {
+				// redirect to whats-on page
+
+				var currentUrlSplitbySlash = window.location.href.split('/');
+				window.location.href = currentUrlSplitbySlash.slice(0, currentUrlSplitbySlash.length - 2).join("/") + "/";
+
+			}
+
+		})
 
 	})
 
@@ -87,6 +110,8 @@ export default function singleEvent( events ){
 	// =================================================
 	// Related Events
 	// =================================================
+
+// TODO - need to make a decision what to do when less than 6 related events
 
 	const populateRandomEvents = []
 
