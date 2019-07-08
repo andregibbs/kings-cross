@@ -2,7 +2,8 @@
 var kxConfig = {};
 kxConfig.seriesId = "{{ config.seriesId }}";
 kxConfig.LIVE___seriesId = "{{ config.LIVE___seriesId }}";
-if (window.location.hostname == 'www.samsung.com') {
+if (window.location.hostname == 'www.samsung.com' ||
+	window.location.hostname == 'kings-cross-live.samsung.com') {
 	kxConfig.seriesId = kxConfig.LIVE___seriesId;
 }
 </script>
