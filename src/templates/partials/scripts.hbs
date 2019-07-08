@@ -6,6 +6,14 @@ if (window.location.hostname == 'www.samsung.com' ||
 	window.location.hostname == 'kings-cross-live.samsung.com') {
 	kxConfig.seriesId = kxConfig.LIVE___seriesId;
 }
+kxConfig.passions = [];
+{{#each @root.passions}}
+	kxConfig.passions.push({"code":"{{ this.code }}","name":"{{{ this.name }}}"});
+{{/each}}
+kxConfig.suitables = [];
+{{#each @root.suitables}}
+	kxConfig.suitables.push({"code":"{{ this.code }}","name":"{{{ this.name }}}"});
+{{/each}}
 </script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js"></script>
 <script src="/{{ config.site }}/{{ config.subfolder }}/js/main.js" defer></script>
