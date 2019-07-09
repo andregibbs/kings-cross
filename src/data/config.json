@@ -117,7 +117,7 @@
 			"color":"#FFDA00"
 		},
 		{
-			"code":"food",
+			"code":"fooddrink",
 			"name":"Food",
 			"color": "#00B3E2"
 		},
@@ -145,20 +145,20 @@
 
 	"suitables": [
 		{
-			"code":"family",
-			"name":"Family"
+			"code":"productclass",
+			"name":"Product Class"
 		},
 		{
-			"code":"cooking",
-			"name":"Cooking"
+			"code":"childfriendly",
+			"name":"Child Friendly"
 		},
 		{
-			"code":"work",
-			"name":"Work"
+			"code":"talklecture",
+			"name":"Talk / Lecture"
 		},
 		{
-			"code":"starter",
-			"name":"Starter"
+			"code":"community",
+			"name":"Community"
 		}
 	]
 

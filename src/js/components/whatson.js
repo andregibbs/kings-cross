@@ -133,6 +133,7 @@ export default function whatson( events ){
 				startDate: moment(event.startDate).format("Do MMMM") ==  moment(Date.now()).format("Do MMMM") ? 'TODAY' : moment(event.startDate).format("Do MMMM") ,
 				startTime: event.startTime,
 				passion: event.extra.passions,
+				passionColor: event.extra.passionColor,
 				suitables: event.extra.eventtype
 			}
 
