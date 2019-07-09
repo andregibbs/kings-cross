@@ -35,8 +35,23 @@
 
 	<section class="section journey">
 
-		<div class="section__inner" id="device-info">
-
+		<div class="section__inner device-info" id="device-info">
+			<h3 class="fz50">Tell us a bit about your device</h3>
+			<div class="device-info__row">
+				<select id="model-selector">
+					<option>Choose Your Model*</option>
+				</select>
+				<select id="color-selector">
+					<option value="">Choose Your Colour*</option>
+				</select>
+			</div>
+			<div class="device-info__row">
+				<input type="text" id="imei" placeholder="Device IMEI Number ( Optional)" />
+				<a
+					href="https://www.samsung.com/uk/support/mobile-devices/how-do-i-find-the-imei-model-number-and-serial-number-for-samsung-galaxy-device/" target="_blank">Retrieve
+					IMEI number</a>
+			</div>
+			<textarea id="device-notes" placeholder="Additional Information ( Optional )"></textarea>
 		</div>
 
 		<div class="section__inner" id="calendar">
@@ -49,8 +64,8 @@
 			<form class="details__form" id="bookingForm">
 
 				<div class="details__fields">
-					<input class="details__input" name="name" placeholder="Name*" id="name" type="text" required>
-					<input class="details__input" name="surname" placeholder="Surname*" id="surname" type="text" required>
+					<input class="details__input" autocomplete="given-name" placeholder="Name*" id="name" type="text" required>
+					<input class="details__input" autocomplete="family-name" placeholder="Surname*" id="surname" type="text" required>
 					<br>
 					<input class="details__input" name="telephone" placeholder="Telephone*" id="tel" type="tel" required>
 					<input class="details__input" name="email" placeholder="Email*" id="email" type="email" required>
