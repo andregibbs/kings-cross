@@ -108,31 +108,38 @@
 	"passions": [
 		{
 			"code":"fitness",
-			"name":"Health &amp; Fitness"
+			"name":"Health &amp; Fitness",
+			"color":"#003DFF"
 		},
 		{
 			"code":"fashion",
-			"name":"Fashion"
+			"name":"Fashion",
+			"color":"#FFDA00"
 		},
 		{
 			"code":"food",
-			"name":"Food"
+			"name":"Food",
+			"color": "#00B3E2"
 		},
 		{
 			"code":"music",
-			"name":"Music &amp; Entertainment"
+			"name":"Music &amp; Entertainment",
+			"color": "#F37321"
 		},
 		{
 			"code":"art",
-			"name":"Art &amp; Design"
+			"name":"Art &amp; Design",
+			"color": "#FF4337"
 		},
 		{
 			"code":"tech",
-			"name":"Tech &amp; Science"
+			"name":"Tech &amp; Science",
+			"color": "#724C9E"
 		},
 		{
 			"code":"gaming",
-			"name":"Gaming"
+			"name":"Gaming",
+			"color": "#E24C9B"
 		}
 	],
 
