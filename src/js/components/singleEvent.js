@@ -8,6 +8,7 @@ export default function singleEvent( events ){
 	const id = getUrlVars()["id"];
 	let ticketQuantity = 1
 	let instagramHashTag = ''
+	let eventDetails = {};
 
 	// =================================================
 	// Populating event details from query string
@@ -25,6 +26,7 @@ export default function singleEvent( events ){
 		}).success( function( data ) {
 
 			console.log( 'Event details: ', data )
+
 
 			function sortEventExtra(event) {
 				if (event.description) {
@@ -52,6 +54,8 @@ export default function singleEvent( events ){
 
 			if (data.seriesId == kxConfig.seriesIdAsInt) {
 
+				
+
 				const options = {
 					identifier: data.identifier,
 					groupSize: data.maxGroupSize,
@@ -71,8 +75,19 @@ export default function singleEvent( events ){
 				if( data.extra.instagramhashtag ) {
 					instagramHashTag = data.extra.instagramhashtag
 				}
+				var startTime = moment(data.startISO).utc();
+				var bookOptions = {
 
+					startDate: moment(data.startDate).format("dddd Do MMMM YYYY") ==  moment(Date.now()).format("dddd Do MMMM YYYY") ? 'TODAY' : moment(data.startDate).format("dddd Do MMMM YYYY") ,
+					startTime: moment(startTime).format('LT'),
+					endTime: moment(startTime).add(data.durationMinutes, 'm').format('LT')
+		
+				};
+				$('.section.book').find('.book-action__description').text(bookOptions.startTime + ' - ' + bookOptions.endTime +' | '+ bookOptions.startDate + ' | Samsung KX');
 				$('.singleEvent').append( handleTemplate( 'singleEvent', options ) )
+				
+
+				
 
 				// Event out of stock or has expired
 				if( data.slotsAvailable == 0 || data.hasPassed ) {
@@ -97,10 +112,10 @@ export default function singleEvent( events ){
 
 	$('.singleEvent').on('click', '.action-btn', function(e) {
 		e.preventDefault();
-		var options = {
 
-		};
-		$('.section.book').append( handleTemplate( 'book', options ) )
+		
+
+		
 		$('.book').addClass('book--active')
 		$('.book-action').addClass('book-action--active')
 	});
@@ -155,15 +170,33 @@ export default function singleEvent( events ){
 
 	
 
-	$('.book__tickets-minus').click(function(){
+	$('.book__tickets-minus').click(function(e){
+
 		ticketQuantity = parseInt($('.book__tickets-tickets').val())
-		$('.book__tickets-tickets').val( ticketQuantity - 1 )
+		if(ticketQuantity - 1 !== 0) {
+			$('.book__tickets-tickets').val( ticketQuantity - 1 );
+		}
+		
 	})
 
-	$('.book__tickets-plus').click(function(){
+	$('.book__tickets-plus').click(function(e){
 		ticketQuantity = parseInt($('.book__tickets-tickets').val())
+		
+		
 		$('.book__tickets-tickets').val( ticketQuantity + 1 )
+		
 	})
+
+	$('.book__tickets__tc__selector').each(function() {
+
+		$(this).click(function() {
+			$(this).toggleClass('selected');
+		})
+
+
+
+
+	});
 
 	$('.book__form-submit').click(function(e){
 		e.preventDefault()
