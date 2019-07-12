@@ -132,7 +132,7 @@ $(document).ready(function () {
 			if (bits.length > 1) {
 				event.extra = JSON.parse(bits[1]);
 				event.extra['passionColor'] = getPassionColor(event.extra.passions[0]);
-				event.extra.eventtype = getSuitableName(event.extra.eventtype);
+				event.extra['eventtypeName'] = getSuitableName(event.extra.eventtype);
 			}
 			else {
 				event.extra = {};

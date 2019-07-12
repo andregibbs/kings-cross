@@ -6,9 +6,11 @@
 .book {
 	height: 0;
 	overflow: hidden;
+	display: none;
 
 	&--active {
 		height: auto;
+		display: block;
 	}
 
 	&-action {

@@ -56,12 +56,13 @@ export default function singleEvent( events ){
 					identifier: data.identifier,
 					groupSize: data.maxGroupSize,
 					eventId: eventId,
-					image: data.imageURL,
+					image: data.imageURL ? data.imageURL : 'https://images.unsplash.com/photo-1560983719-c116f744352d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80',
 					title: data.title,
-					startDate: data.startDate,
+					startDate: moment(data.startDate).format("Do MMMM") ==  moment(Date.now()).format("Do MMMM") ? 'TODAY' : moment(data.startDate).format("Do MMMM") ,
 					startTime: data.startTime,
 					passion: data.passions,
-					description: data.description,
+					description: data.description.replace(data.description.split('. ', 1)[0] + '. ', ''),
+					firstSentence: data.description.split('. ', 1)[0],
 					slotsAvailable: data.slotsAvailable,
 					youtube: data.extra.youtubeid,
 					externalbookinglink: data.extra.externalbookinglink
@@ -95,10 +96,17 @@ export default function singleEvent( events ){
 	})
 
 	$('.singleEvent').on('click', '.action-btn', function(e) {
-		e.preventDefault()
+		e.preventDefault();
+		var options = {
 
+		};
+		$('.section.book').append( handleTemplate( 'book', options ) )
 		$('.book').addClass('book--active')
 		$('.book-action').addClass('book-action--active')
+	});
+
+	$('.relatedEvents__header__see').click( function() {
+		window.location.href = "/uk/kings-cross/whats-on/";
 	})
 
 	// =================================================
@@ -115,7 +123,7 @@ export default function singleEvent( events ){
 
 	const populateRandomEvents = []
 
-	for( var i = 0; i < 6; i++ ) {
+	for( var i = 0; i < 4; i++ ) {
 		populateRandomEvents.push( events[ Math.floor(Math.random() * events.length) ] )
 	}
 
@@ -125,11 +133,14 @@ export default function singleEvent( events ){
 			identifier: populateRandomEvents[i].identifier,
 			groupSize: populateRandomEvents[i].maxGroupSize,
 			eventId: populateRandomEvents[i].id,
-			image: populateRandomEvents[i].imageURL,
+			image: populateRandomEvents[i].imageURL ? populateRandomEvents[i].imageURL : 'https://images.unsplash.com/photo-1560983719-c116f744352d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80',
 			title: populateRandomEvents[i].title,
-			startDate: populateRandomEvents[i].startDate,
+			startDate: moment(populateRandomEvents[i].startDate).format("Do MMMM") ==  moment(Date.now()).format("Do MMMM") ? 'TODAY' : moment(populateRandomEvents[i].startDate).format("Do MMMM") ,
 			startTime: populateRandomEvents[i].startTime,
 			passion: populateRandomEvents[i].passions,
+			suitables: populateRandomEvents[i].extra.eventtype,
+			suitablesName: populateRandomEvents[i].extra.eventtypeName,
+			passionColor: populateRandomEvents[i].extra.passionColor,
 			description: populateRandomEvents[i].description
 		}
 
@@ -139,6 +150,10 @@ export default function singleEvent( events ){
 	// =================================================
 	// Booking functionality
 	// =================================================
+
+	
+
+	
 
 	$('.book__tickets-minus').click(function(){
 		ticketQuantity = parseInt($('.book__tickets-tickets').val())

@@ -3,21 +3,103 @@ export default function dataPicker(  ) {
 
 	from = $( "#from" )
 	.datepicker({
+		dayNamesMin: [ "S", "M", "T", "W", "T", "F", "S" ],
 		defaultDate: "+1w",
-		changeMonth: true,
-		numberOfMonths: 3
-	})
-	.on( "change", function() {
-		to.datepicker( "option", "minDate", getDate( this ) );
+		changeMonth: false,
+		duration: "slow",
+		numberOfMonths: 1,
+		  beforeShowDay: function(date) {
+			var d = date.getTime();
+			if (to.datepicker("getDate") && d == to.datepicker("getDate").getTime()) {
+				return [true, 'ui-to', ''];
+			  }
+			if (from.datepicker("getDate") && to.datepicker("getDate") && d < to.datepicker("getDate").getTime() && d > from.datepicker("getDate").getTime()) {
+			  return [true, 'highlight-stay', ''];
+			} else {
+			  return [true, ''];
+			}
+		  },
+		  onSelect: function(selectedDate) {
+			var selectedDate = from.datepicker("getDate");
+			if (selectedDate != null) {
+			  to.datepicker('option', 'minDate', selectedDate).datepicker('refresh');
+			}
+		  }
 	}),
 	to = $( "#to" ).datepicker({
+		dayNamesMin: [ "S", "M", "T", "W", "T", "F", "S" ],
 		defaultDate: "+1w",
-		changeMonth: true,
-		numberOfMonths: 3
+		changeMonth: false,
+		duration: "fast",
+		numberOfMonths: 1,
+		beforeShow: function(input, inst) {
+			$("#ui-datepicker-div td").off();
+  
+			$(document).on("mouseenter", "#ui-datepicker-div td", function(e) {
+  
+			  $(this).parent().addClass("finalRow");
+			  $(".finalRow").parents('.ui-datepicker-group-last').parent().find('.ui-datepicker-group-first').find('tr').last().addClass("finalRowRangeOtherTable");
+			  $(".finalRowRangeOtherTable").find("td:not(.ui-datepicker-unselectable)").addClass("highlight");
+			  $(".finalRowRangeOtherTable").prevAll().find("td:not(.ui-datepicker-unselectable)").addClass("highlight");
+  
+			  $(".finalRow").prevAll().find("td:not(.ui-datepicker-unselectable)").addClass("highlight");
+			  $(this).prevAll("td:not(.ui-datepicker-unselectable)").addClass("highlight");
+			});
+  
+			$(document).on("mouseleave", "#ui-datepicker-div td", function(e) {
+  
+				$(this).parent().removeClass("finalRow");
+				$("#ui-datepicker-div td").removeClass("highlight");
+  
+				$(".finalRowRange").removeClass("finalRowRange").find('.highlight').removeClass("highlight");
+				$(".finalRowRangeOtherTable").removeClass("finalRowRangeOtherTable").find('.highlight').removeClass("highlight");
+  
+			});
+		},
+		beforeShowDay: function(date) {
+		  var d = date.getTime();
+		  if (from.datepicker("getDate") && d == from.datepicker("getDate").getTime()) {
+			return [true, 'ui-to', ''];
+		  }
+		  if (from.datepicker("getDate") && to.datepicker("getDate") && d < to.datepicker("getDate").getTime() && d > from.datepicker("getDate").getTime()) {
+			return [true, 'highlight-stay', ''];
+		  } else {
+			return [true, ''];
+		  }
+		},
+		onSelect: function(selectedDate) {
+			setTimeout(function () {
+				from.datepicker('option', 'maxDate', $(this).datepicker('getDate'));
+			}, 200);
+		 
+		  
+		  $("#ui-datepicker-div td").off();
+  
+		$(document).on("mouseenter", "#ui-datepicker-div td", function(e) {
+  
+			  $(this).parent().addClass("finalRow");
+			  $(".finalRow").parents('.ui-datepicker-group-last').parent().find('.ui-datepicker-group-first').find('tr').last().addClass("finalRowRangeOtherTable");
+			  $(".finalRowRangeOtherTable").find("td:not(.ui-datepicker-unselectable)").addClass("highlight");
+			  $(".finalRowRangeOtherTable").prevAll().find("td:not(.ui-datepicker-unselectable)").addClass("highlight");
+  
+			  $(".finalRow").prevAll().find("td:not(.ui-datepicker-unselectable)").addClass("highlight");
+			  $(this).prevAll("td:not(.ui-datepicker-unselectable)").addClass("highlight");
+			});
+  
+			$("#ui-datepicker-div td").on("mouseleave", function() {
+  
+				$(this).parent().removeClass("finalRow");
+				$("#ui-datepicker-div td").removeClass("highlight");
+  
+				$(".finalRowRange").removeClass("finalRowRange").find('.highlight').removeClass("highlight");
+				$(".finalRowRangeOtherTable").removeClass("finalRowRangeOtherTable").find('.highlight').removeClass("highlight");
+  
+			});
+  
+	  }
+  
 	})
-	.on( "change", function() {
-		from.datepicker( "option", "maxDate", getDate( this ) );
-	});
+
 
 	function getDate( element ) {
 		var date;
@@ -29,5 +111,9 @@ export default function dataPicker(  ) {
 
 		return date;
 	}
+
+	
+	
+	  
 
 }
