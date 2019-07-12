@@ -1,8 +1,11 @@
 import getUrlVars from './getUrlVars'
 import handleTemplate from './handleTemplate'
+import customevent from '../polyfill/customevent-polyfill'
 
 export default function calendar(URL, type, allEvents) {
-	
+
+	customevent();
+
 	//For appointments:
 	//To get the proper appointmentsURL, go to Qudini admin panel, Venue information => details, and open the online booking widgets. Inside, use the browser network inspector to get the call which has the same structure to the one below:
 	//https://bookings.qudini.com/booking-widget/booker/slots/73U8JNREMLS/2286/37437/0
@@ -16,37 +19,52 @@ export default function calendar(URL, type, allEvents) {
 	var unlock = new CustomEvent("unlock");
 	var lock = new CustomEvent("lock");
 
+	var URL = URL || "";
+
+	var appointmentStartTime = "";
+
+	const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+	const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+	const shortDays = days.map((a)=>a.slice(0,3))
+	const shortMonths = months.map((a)=>a.slice(0,3))
+
+	document.getElementById("calendar").addEventListener("changeURL", function (e) {
+		URL = e.detail.url;
+
+		try {
+			type = type.toLowerCase();
+		}
+		catch (err) {
+			console.error("2nd parameter of calendar() should be a string.");
+		}
+
+		switch (type) {
+			case "appointment":
+				getAppointmentDates(selectedDate);
+				appointmentStartTime = "";
+				break;
+			case "event":
+				getEventDates();
+				break;
+			case "debug":
+				console.warn("Debug");
+				getEventDates();
+				appointmentStartTime = "";
+				getAppointmentDates(selectedDate);
+			default:
+				console.info("!!!");
+				console.error('Calendar function used incorrectly. Expected "appointment" or "event", received', type);
+				break;
+		}
+	})
 
 	var selectedDate = new Date();
 
-	try {
-		type = type.toLowerCase();
-	}
-	catch (err) {
-		console.error("2nd parameter of calendar() should be a string.");
-	}
 
-	switch (type) {
-		case "appointment":
-			getAppointmentDates(selectedDate);
-			var appointmentStartTime = "";
-			break;
-		case "event":
-			getEventDates();
-			break;	
-		case "debug":
-			console.warn("Debug");
-			getEventDates();
-			var appointmentStartTime = "";
-			getAppointmentDates(selectedDate);
-		default:
-			console.info("!!!");
-			console.error('Calendar function used incorrectly. Expected "appointment" or "event", received', type);
-			break;
-	}
-	
+
 	handleDateArrows();
-	getEventDates();
+	// getEventDates();
 
 
 	function getAppointmentDates(date) {
@@ -77,8 +95,6 @@ export default function calendar(URL, type, allEvents) {
 			$(".calendar__container")[0].removeChild($(".calendar__container")[0].lastChild);
 		}
 
-		const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-		const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
 
 		//For every date
@@ -87,24 +103,25 @@ export default function calendar(URL, type, allEvents) {
 
 				//Format date
 				var date = new Date(data[dateInd].date);
-				var dateDisplayed = days[date.getDay()] + " " + date.getDate() + " " + months[date.getMonth()] + " " + date.getFullYear();
+				var dateFormatted = days[date.getDay()] + " " + date.getDate() + " " + months[date.getMonth()] + " " + date.getFullYear();
 
 				//Append the date column
-				$(".calendar__container").append( handleTemplate("dateColumn", {"date": dateDisplayed, "index":dateInd}));
+				$(".calendar__container").append(handleTemplate("dateColumn", { "dateFormatted": dateFormatted, "index": dateInd, "date": date.format("dd-MM-yyyy") }));
 
 				//For every appointment in date
 				for (var appointmentInd = 0; appointmentInd < data[dateInd].slots.length; appointmentInd++) {
-					
+
 					//Format time
 					var slotTime = new Date(data[dateInd].slots[appointmentInd].start)
 					var time = slotTime.getHours() + ":" + (String(slotTime.getMinutes()).length == 1 ? "0" + String(slotTime.getMinutes()) : String(slotTime.getMinutes()));
 
 					//Append the slot with template
-					$(".calendar__choices").last().append( handleTemplate("slot", {"time":time, "available": true}));
+					$(".calendar__choices").last().append(handleTemplate("slot", { "time": time, "available": true }));
 
 					//Attach the slot time to slot's data tag		
 					var slot = $(".calendar__choice").last()
 					slot.data("startTime", data[dateInd].slots[appointmentInd].start);
+					slot.data("queueId", data[dateInd].slots[appointmentInd].queueId);
 
 					//Click handler
 					slot.click(function () {
@@ -115,6 +132,7 @@ export default function calendar(URL, type, allEvents) {
 						this.getElementsByTagName("p")[0].innerText = "Selected";
 						console.log("selected", appointmentStartTime);
 						$("#next").data("slot", appointmentStartTime);
+						$("#next").data("queueId", $(this).data("queueId"));
 						document.getElementById("next").dispatchEvent(unlock);
 					});
 
@@ -124,11 +142,11 @@ export default function calendar(URL, type, allEvents) {
 			} else {
 				var date = new Date(data[dateInd].date);
 
-				var date = days[date.getDay()] + " " + date.getDate() + " " + months[date.getMonth()] + " " + date.getFullYear();
+				var dateFormatted = days[date.getDay()] + " " + date.getDate() + " " + months[date.getMonth()] + " " + date.getFullYear();
 
-				$(".calendar__container").append( handleTemplate("dateColumn", {"date": date, "index":dateInd}));
-				
-				$(".calendar__choices").last().append( handleTemplate("slot", {"time":"No slots", "available": false}));
+				$(".calendar__container").append(handleTemplate("dateColumn", { "dateFormatted": dateFormatted, "index": dateInd, "date": date.format("dd-MM-yyyy") }));
+
+				$(".calendar__choices").last().append(handleTemplate("slot", { "time": "No slots", "available": false }));
 
 				$(".calendar__choice").last().addClass("calendar--unavailable");
 
@@ -149,7 +167,7 @@ export default function calendar(URL, type, allEvents) {
 				selectedDate.setDate(selectedDate.getDate() + 5);
 				getAppointmentDates(selectedDate);
 			} else { //inefficient as calls are made when data is ready
-				selectedDate.setDate(selectedDate.getDate() + 1);
+				selectedDate.setDate(selectedDate.getDate() + 4);
 				getAppointmentDates(selectedDate);
 			}
 		});
@@ -162,33 +180,33 @@ export default function calendar(URL, type, allEvents) {
 				selectedDate.setDate(selectedDate.getDate() - 5);
 				getAppointmentDates(selectedDate);
 			} else {
-				selectedDate.setDate(selectedDate.getDate() - 1);
+				selectedDate.setDate(selectedDate.getDate() - 4);
 				getAppointmentDates(selectedDate);
 			}
 		});
 	};
 
-	function handleScrollArrows(){
-		$(".load").each(function(ind, elm){
+	function handleScrollArrows() {
+		$(".load").each(function (ind, elm) {
 			//Click To Scroll Animations
 			//They ensure that no matter how much and when you click, it will always snap to an element as long as the container is 350px
-			$(elm).click(function(){
+			$(elm).click(function () {
 				var h = $(elm).siblings().find(".calendar__choice").outerHeight(false) + parseFloat($(".calendar__choice").css('marginTop'));
 				console.log(h);
-				if(this.classList.contains("load--bot")){
-					if(this.previousElementSibling.scrollTop % h == 0){
+				if (this.classList.contains("load--bot")) {
+					if (this.previousElementSibling.scrollTop % h == 0) {
 						$(this.previousElementSibling).animate({
 							scrollTop: '+=' + h
 						}, 300);
 					}
-					else if(this.previousElementSibling.scrollTop % h > h/2){
+					else if (this.previousElementSibling.scrollTop % h > h / 2) {
 						var scrollBy = 2 * h - (this.previousElementSibling.scrollTop % h);
 						console.log(scrollBy);
 						$(this.previousElementSibling).animate({
 							scrollTop: '+=' + scrollBy
 						}, 300);
 					}
-					else{
+					else {
 						var scrollBy = h - this.previousElementSibling.scrollTop % h;
 						console.log(scrollBy);
 						$(this.previousElementSibling).animate({
@@ -197,19 +215,19 @@ export default function calendar(URL, type, allEvents) {
 					}
 
 				} else {
-					if(this.nextElementSibling.scrollTop % h == 0){
+					if (this.nextElementSibling.scrollTop % h == 0) {
 						$(this.nextElementSibling).animate({
 							scrollTop: '-=' + h
 						}, 300);
 					}
-					else if(this.nextElementSibling.scrollTop % h > h/2){
+					else if (this.nextElementSibling.scrollTop % h > h / 2) {
 						var scrollBy = h + (this.nextElementSibling.scrollTop % h);
 						console.log(scrollBy);
 						$(this.nextElementSibling).animate({
 							scrollTop: '-=' + scrollBy
 						}, 300);
 					}
-					else{
+					else {
 						var scrollBy = 2 * h + this.nextElementSibling.scrollTop % h;
 						console.log(scrollBy);
 						$(this.nextElementSibling).animate({
@@ -242,7 +260,7 @@ export default function calendar(URL, type, allEvents) {
 		})
 	}
 
-	function populateWithEvents(data){
+	function populateWithEvents(data) {
 		while ($(".calendar__container")[0].lastChild) {
 			$(".calendar__container")[0].removeChild($(".calendar__container")[0].lastChild);
 		}
@@ -253,8 +271,8 @@ export default function calendar(URL, type, allEvents) {
 		//Dates depend on events being presorted
 		var dates = [];
 
-		data.forEach(function(event){
-			if(!dates.includes(event.startDate)){
+		data.forEach(function (event) {
+			if (!dates.includes(event.startDate)) {
 				dates.push(event.startDate);
 			}
 		})
@@ -263,9 +281,26 @@ export default function calendar(URL, type, allEvents) {
 		// var date = new Date(event.startDate);
 		// var dateDisplayed = days[date.getDay()] + " " + date.getDate() + " " + months[date.getMonth()] + " " + date.getFullYear();
 		// console.log(dateDisplayed);
-		dates.forEach((date)=>{
+		dates.forEach((date) => {
 			//
 		})
 	}
+
+	function handleResize(){
+        if(window.innerWidth < 768){
+			console.log("Still mobile");
+			$("[date]").each(function(ind, elm){
+				// var a = new Date(elm.getAttribute("date"));
+				var a = Date.parseExact(elm.getAttribute("date"), 'd-M-yyyy')
+				elm.innerText = shortDays[a.getDay()] + " " + a.getDate() + " " + shortMonths[a.getMonth()];
+			})
+        }
+    }
+
+    handleResize();
+
+    window.addEventListener('resize', function(){
+        handleResize();
+    })
 
 }

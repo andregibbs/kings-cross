@@ -42,6 +42,9 @@
 
     @media screen and (max-width: $mobile) {
       margin: 0 get-mobile-vw(4);
+      &:last-of-type{
+        display: none;
+      }
     }
 
     &__date {
@@ -77,8 +80,8 @@
     }
 
     @media screen and (max-width: $mobile) {
-      margin: get-mobile-vw(12) get-mobile-vw(20);
-      padding: get-mobile-vw(12) get-mobile-vw(46);
+      margin: get-mobile-vw(12) get-mobile-vw(4);
+      padding: get-mobile-vw(24) get-mobile-vw(24);
     }
 
     &:hover {

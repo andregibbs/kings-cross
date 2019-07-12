@@ -1,6 +1,6 @@
 <script id='dateColumn' type='text/x-handlebars-template'>
     <div class="calendar__column">
-        <h4 class="calendar__column__date fz18">[[date]]</h4>
+        <h4 class="calendar__column__date fz18" date="[[date]]">[[dateFormatted]]</h4>
         <div class="load">^</div>
         <div id="[[index]]" class="calendar__choices">
             {{!-- Slot insert position --}}

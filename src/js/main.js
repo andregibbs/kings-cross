@@ -10,6 +10,9 @@ import bookingRefFetcher from './components/bookingRefFetcher'
 import discover from './components/discover'
 import support from './components/support'
 
+//experimental
+// import smoothScroll from './librarys/smoothscroll';
+
 
 $(document).ready(function () {
 
@@ -260,6 +263,7 @@ $(document).ready(function () {
 			});
 			//Support goes last!
 			support();
+			// smoothScroll();
 			break;
 
 		case "/uk/kings-cross/support/repair/":
