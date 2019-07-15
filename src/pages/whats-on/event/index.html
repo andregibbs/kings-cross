@@ -13,6 +13,8 @@
 	<section class="section book">
 			<div class="section__inner">
 
+					{{>components/loader }}
+
 					<div class="book-action">
 	
 						<h2>Ticket Options</h2>
@@ -20,10 +22,10 @@
 						<div class="book__form">
 							<form id='book__form'>
 								<div class="book__form__top">
-									<input class="book__form-name" required placeholder="Name" type="text" />
-								<input class="book__form-surname" required placeholder="Surname" type="text" />
-								<input class="book__form-tel" required placeholder="Telephone" type="tel" pattern="^\s*\(?(020[7,8]{1}\)?[ ]?[1-9]{1}[0-9{2}[ ]?[0-9]{4})|(0[1-8]{1}[0-9]{3}\)?[ ]?[1-9]{1}[0-9]{2}[ ]?[0-9]{3})\s*$" />
-								<input class="book__form-email" required placeholder="Email" type="email" />
+									<input class="book__form-name" required placeholder="Name*" type="text" />
+								<input class="book__form-surname" required placeholder="Surname*" type="text" />
+								<input class="book__form-tel" required placeholder="Telephone*" type="tel" pattern="^\s*\(?(020[7,8]{1}\)?[ ]?[1-9]{1}[0-9{2}[ ]?[0-9]{4})|(0[1-8]{1}[0-9]{3}\)?[ ]?[1-9]{1}[0-9]{2}[ ]?[0-9]{3})\s*$" />
+								<input class="book__form-email" required placeholder="Email*" type="email" />
 								</div>
 								<div class="book__form__middle"> <div class="book__tickets">
 							<h3>Tickets Requested</h3>
@@ -35,9 +37,9 @@
 						
 						</div>
 						<div class="book__terms">
-							<div class="book__tickets__tc"><input type="checkbox" required class="book__tickets__tc__selector" name="tc1" value="false"><span class="book__tickets__tc_text">I would like to receive special offers, announcements, push notifications and emails about Samsung’s King’s Cross store and related developments from Samsung Electronics (UK) Ltd.*</span></div>
-						 <div class="book__tickets__tc"><input type="checkbox" required class="book__tickets__tc__selector" name="tc2" value="false"><span class="book__tickets__tc_text">I am over 13 years old.*</span></div>
-						 <div class="book__tickets__tc"><input type="checkbox" required class="book__tickets__tc__selector" name="tc3" value="false"><span class="book__tickets__tc_text">I would like to receive special offers, announcements, push notifications and emails about Samsung’s products and services from Samsung Electronics (UK) Ltd.</span></div>
+							<div class="book__tickets__tc"><input type="checkbox" class="book__tickets__tc__selector" id="tc1" name="tc1" required  value="accepted"><span class="book__tickets__tc_text">I would like to receive special offers, announcements, push notifications and emails about Samsung’s King’s Cross store and related developments from Samsung Electronics (UK) Ltd.*</span></div>
+						 <div class="book__tickets__tc"><input type="checkbox" class="book__tickets__tc__selector" id="tc2" name="tc2" required  value="accepted"><span class="book__tickets__tc_text">I am over 13 years old.*</span></div>
+						 <div class="book__tickets__tc"><input type="checkbox" class="book__tickets__tc__selector" id="tc3" name="tc3" value="accepted" ><span class="book__tickets__tc_text">I would like to receive special offers, announcements, push notifications and emails about Samsung’s products and services from Samsung Electronics (UK) Ltd.</span></div>
 	
 						</div>
 						
@@ -51,28 +53,20 @@
 					</div>
 	
 					<div class="book-confirmation">
-						<div class="book-confirmation__header">
-							<h3>We'll see you soon.</h3>
-							<p>You will receive an email with your booking details. Thank you for booking tickets for:</p>
-						</div>
+						
 	
 						<div class="book-confirmation__summary order">
+							<div class="order__header">
+									<h2>Thank you for booking</h2>
+									<span class="order__time">xxx</span> 
+							</div>
 							<div class="order__summary">
-								<h4>Order Sumary</h4>
-								<span>Reference: <span class="order-reference">xxx</span></span>
-								<span>Qty. <span class="order-quantity">xxx</span></span>
-								<span class="order-name">xxx</span>
-								<span class="order-email">xxx</span>
-								<span class="order-tel">xxx</span>
+								<span>Reference code</span>
+								<h3 class="order-reference">xxx</h3>
 							</div>
 	
 							<div class="order__event">
-								<h3 class="order__event-title">xxx</h3>
-								<p class="order__event-date">xxx</p>
-								<p class="order__event-time">xxx</p>
-								<p class="order__event-duration"></p>
-								<p>Samsung KX Store</p>
-								<p>1 Some Address, X, King's Cross</p>
+								<p>Enter the reference code on the <a href="#" >My Bookings page</a> to view your booking information. Your etickets will be sent to the email address provided.</p>
 							</div>
 						</div>
 					</div>

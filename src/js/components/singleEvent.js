@@ -27,6 +27,8 @@ export default function singleEvent( events ){
 
 			console.log( 'Event details: ', data )
 
+			eventDetails = data;
+
 
 			function sortEventExtra(event) {
 				if (event.description) {
@@ -198,14 +200,34 @@ export default function singleEvent( events ){
 
 	});
 
+	function checkFormValidity( formID ) {
+
+
+		$(formID + ' input').each(function() {
+			$(this).off('invalid');
+			$(this).bind('invalid', function(e) {
+				$(this).toggleClass('invalid');
+				if($(this).attr('type') === 'checkbox') {
+					$(this).parent().toggleClass('invalid')
+				}
+			});
+		});
+
+		return $(formID)[0].checkValidity();
+
+
+	}
+
 	$('.book__form-submit').click(function(e){
 		e.preventDefault()
 
-		if( $('#book__form')[0].checkValidity() ) {
+		if( checkFormValidity('#book__form') ) {
             const form_name = $(".book__form-name").val();
             const form_surname = $(".book__form-surname").val();
             const form_tel = $(".book__form-tel").val();
-            const form_email = $(".book__form-email").val();
+			const form_email = $(".book__form-email").val();
+			$('.book__form-submit').attr("disabled", true);
+			$('.cm-configurator-loader').show();
 
 			$.ajax({
 				type: "POST",
@@ -223,23 +245,24 @@ export default function singleEvent( events ){
 					"timezone": "Europe/London"
 				}),
 				success: function (data) {
-					$('.book-action').removeClass('book-action--active')
-					$('.book-confirmation__summary .order-reference').text( data.refNumber )
-					$('.book-confirmation__summary .order-quantity').text( ticketQuantity )
-					$('.book-confirmation__summary .order-name').text( form_name + form_surname )
-					$('.book-confirmation__summary .order-email').text( form_email )
-					$('.book-confirmation__summary .order-tel').text( form_tel )
-					$('.order__event-title').text( form_tel )
-					$('.order__event-date').text( form_tel )
-					$('.order__event-time').text( form_tel )
+					$('.cm-configurator-loader').hide();
+					$('.book-action').removeClass('book-action--active');
+					$('.book--active').css({'background': 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('+ eventDetails.imageURL +')', 'background-repeat': 'no-repeat','background-position': 'center center', 'background-size': 'cover'})
+					$('.order-reference').text( data.refNumber )
+					var orderInfo =	$('.book-action__description').text();
+					$('.order__time').text(orderInfo);
 
 					$('.book-confirmation').addClass('book-confirmation--active')
 
 				},
 				fail: function (err) {
+					$('.book__form-submit').attr("disabled", false);
+					$('.cm-configurator-loader').hide();
 					console.log(err);
 				}
 			});
+		} else {
+
 		}
 	})
 
