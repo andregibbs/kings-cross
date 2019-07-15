@@ -107,32 +107,37 @@
 
 	"passions": [
 		{
-			"code":"fitness",
+			"code":"fitnesswellbeing",
 			"name":"Health &amp; Fitness",
 			"color":"#003DFF"
 		},
 		{
-			"code":"fashion",
+			"code":"fashionbeauty",
 			"name":"Fashion",
 			"color":"#FFDA00"
 		},
 		{
-			"code":"food",
+			"code":"fooddrink",
 			"name":"Food",
 			"color": "#00B3E2"
 		},
 		{
-			"code":"music",
-			"name":"Music &amp; Entertainment",
+			"code":"entertainment",
+			"name":"Entertainment",
 			"color": "#F37321"
 		},
 		{
-			"code":"art",
+			"code":"artdesign",
 			"name":"Art &amp; Design",
 			"color": "#FF4337"
 		},
 		{
-			"code":"tech",
+			"code":"photography",
+			"name":"Photography",
+			"color": "#FF4337"
+		},
+		{
+			"code":"sciencetechnology",
 			"name":"Tech &amp; Science",
 			"color": "#724C9E"
 		},
@@ -145,20 +150,20 @@
 
 	"suitables": [
 		{
-			"code":"family",
-			"name":"Family"
+			"code":"productclass",
+			"name":"Product Class"
 		},
 		{
-			"code":"cooking",
-			"name":"Cooking"
+			"code":"childfriendly",
+			"name":"Child Friendly"
 		},
 		{
-			"code":"work",
-			"name":"Work"
+			"code":"talklecture",
+			"name":"Talk / Lecture"
 		},
 		{
-			"code":"starter",
-			"name":"Starter"
+			"code":"community",
+			"name":"Community"
 		}
 	]
 

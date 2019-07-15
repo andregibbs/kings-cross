@@ -30,7 +30,7 @@
     display: flex;
     justify-content: center;
 
-    min-height: 350px; 
+    // min-height: 350px; 
 
   }
 
@@ -57,8 +57,15 @@
       display: none;
     }
 
-    max-height: 267px;
     overflow-y: scroll;
+    max-height: 267px;
+    @media screen and (max-width: $desktop) {
+      max-height: get-desktop-vw(287);
+    }
+
+    @media screen and (max-width: $mobile) {
+      max-height: get-mobile-vw(387);
+    }
   }
 
   &__choice {
@@ -136,11 +143,18 @@
     &.right {
       right: 0;
     }
-  }
 
-  //   Loading
-  #load-screen{
-      display: none;
+    @media screen and (max-width: $mobile){
+      top: 7.5%;
+
+      &.left{
+        left: -10px;
+      }
+      &.right{
+        right: -10px;
+      }
+    }
+
   }
 
   @-webkit-keyframes bouncedelay {
@@ -168,61 +182,6 @@
     }
   }
 
-  .loading {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 9999999;
-    text-align: center;
-    -webkit-transition: 0.4s opacity ease-in;
-    transition: 0.4s opacity ease-in;
-    &:before {
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      background-color: $background;
-      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=50)";
-      opacity: 0.5;
-      content: "";
-    }
-    &__spinner {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      margin: -9px 0 0 -33px;
-      font-size: 0;
-    }
-    &__bounce {
-      display: inline-block;
-      width: 18px;
-      height: 18px;
-      margin: 0 2px;
-      -webkit-border-radius: 50%;
-      border-radius: 50%;
-      background-color: white;
-      border: 2px solid $pink;
-      -webkit-animation: bouncedelay 1.4s infinite ease-in-out;
-      animation: bouncedelay 1.4s infinite ease-in-out;
-      -webkit-animation-fill-mode: both;
-      animation-fill-mode: both;
-    }
-    &__bounce1 {
-      -webkit-animation-delay: -0.48s;
-      animation-delay: -0.48s;
-    }
-    &__bounce2 {
-      -webkit-animation-delay: -0.32s;
-      animation-delay: -0.32s;
-    }
-    &__bounce3 {
-      -webkit-animation-delay: -0.16s;
-      animation-delay: -0.16s;
-    }
-  }
 }
 
 .calendar.orange{

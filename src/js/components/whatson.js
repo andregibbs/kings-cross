@@ -19,12 +19,28 @@ export default function whatson( events ){
 
 	dataPicker()
 
-	$('.passions .label, .suitables .label').click( function() {
+	$('.passions .switch, .suitables .switch').click( function() {
 		$(this)
+		.find('.label')
 		.toggleClass('label--active')
-		.find('.checkmark')
-		.toggleClass('checkmark--active')
-	})
+		$(this).find('.switch-button')
+		.toggleClass('selected')
+		$(this).toggleClass('active')
+	});
+
+	$('.eventFilter__header__toggle').click( function() {
+
+		$(this).find('a').toggleClass('unfold');
+		if($('.filters__labels').hasClass('closed')) {
+			
+			$('.filters__labels').slideDown();
+			$('.filters__labels').toggleClass('closed');
+		} else {
+			$('.filters__labels').slideUp();
+			$('.filters__labels').toggleClass('closed');
+		}
+
+	});
 
 	$('.filters__results .btn').click( function() {
 
@@ -61,9 +77,7 @@ export default function whatson( events ){
 
 	})
 
-	$('.toggleSuitables').click( function() {
-		$('.suitables').toggleClass('suitables--active')
-	})
+
 
 	// =================================================
 	// Events
@@ -102,11 +116,11 @@ export default function whatson( events ){
 		getPassions = []
 		getEventtype = []
 
-		$('.passions .label--active').each( function() {
+		$('.passions .switch.active').each( function() {
 			getPassions.push( $(this).data('code') )
 		})
 
-		$('.suitables .label--active').each( function() {
+		$('.suitables .switch.active').each( function() {
 			getEventtype.push( $(this).data('code') )
 		})
 
@@ -133,7 +147,9 @@ export default function whatson( events ){
 				startDate: moment(event.startDate).format("Do MMMM") ==  moment(Date.now()).format("Do MMMM") ? 'TODAY' : moment(event.startDate).format("Do MMMM") ,
 				startTime: event.startTime,
 				passion: event.extra.passions,
-				suitables: event.extra.eventtype
+				passionColor: event.extra.passionColor,
+				suitables: event.extra.eventtype,
+				suitablesName: event.extra.eventtypeName,
 			}
 
 			console.log(options);

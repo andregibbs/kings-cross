@@ -1,0 +1,34 @@
+.bookings {
+  background-image: url(../../../content/dam/samsung/uk/kings-cross/header/bookings-header.png);
+  background-position: center center; /* First value is from left and second is from top. You can use use number as well*/
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding: 180px 144px;
+  padding-right: 60%;
+  @media screen and (max-width: $desktop) {
+    padding: get-desktop-vw(180) get-desktop-vw(144);
+    padding-right: 60%;
+  }
+
+  @media screen and (max-width: $mobile) {
+    padding: get-mobile-vw(180) get-mobile-vw(144);
+    padding-right: 60%;
+  }
+
+  &__subtitle,
+  &__title,
+  &__input,
+  &__button {
+    margin: 15px 0px;
+
+    @media screen and (max-width: $desktop) {
+      margin: get-desktop-vw(15) 0px;
+    }
+
+    @media screen and (max-width: $mobile) {
+      margin: get-mobile-vw(15) 0px;
+    }
+
+  }
+}

@@ -11,6 +11,8 @@ export default function support() {
     const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
+    var viewport = "";
+
     var screens = {
         calendar: document.getElementById("calendar"),
         deviceInfo: document.getElementById("device-info"),
@@ -46,6 +48,7 @@ export default function support() {
         finalNotes: "",
         imei: "",//FILL ME IN CODE PLS
 
+        requestInit: false,
 
         journeys: {
             oneToOne: {
@@ -124,8 +127,8 @@ export default function support() {
             this.backBtn.classList.remove("btn--secondary--" + colors[this.category])
             screens.calendar.children[0].classList.remove(colors[this.category]);
             document.getElementsByClassName("journey")[0].classList.remove(colors[this.category]);
-            $(".checkbox").each(function (ind, elm) {
-                elm.classList.remove("checkbox__" + colors[this.category]);
+            $("span.checkbox").each(function (ind, elm) {
+                elm.classList.remove("checkbox__" + colors[state.category]);
             })
 
             $(".checkbox").siblings("input").prop("checked", false);
@@ -139,7 +142,86 @@ export default function support() {
             this.category = "";
             this.active = false;
             this.stage = 0;
+
+            document.getElementById("details").reset()
+            document.getElementById("device-info").reset()
             document.getElementsByClassName("close")[0].style.display = "";
+        },
+
+        makeBooking: function () {
+
+            if (!state.requestInit) {
+                state.requestInit = true;
+                //Loading thingy needed HERE
+
+                //Pls
+
+                var name = document.getElementById("name").value;
+                var surname = document.getElementById("surname").value;
+                var email = document.getElementById("email").value;
+                var phone = document.getElementById("tel").value;
+                var notes = "Model selected: " + state.deviceChosen + "; Colour: " + state.deviceColor + "; IMEI: " + state.imei + "; Customer Notes: " + state.deviceNotes;
+                var bookingData = {
+                    "name": name,
+                    "surname": surname,
+                    "email": email,
+                    "phone": phone,
+                    "time": (state.timeChosen.indexOf("+01:00") != -1) ? state.timeChosen.slice(0, -6) + "Z" : state.timeChosen,
+                    "notes": notes
+                };
+
+                document.getElementsByClassName("journey")[0].classList.add("progress");
+                sendLock();
+
+                $.ajax({
+                    method: "POST",
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    url: "https://bookings.qudini.com/booking-widget/booker/book",
+                    data: JSON.stringify(
+                        {
+                            'queueId': state.queueId,//Make dynamic
+                            'bookingStartTime': bookingData.time,
+                            'bookingStartTimeString': bookingData.time,
+                            'firstName': bookingData.name,
+                            'lastname': bookingData.surname,
+                            'email': bookingData.email,
+                            'phone': bookingData.phone, // has a backend check, has to be a legitimate number
+                            'notes': bookingData.notes,
+                            'productId': state.productId,//Make dynamic
+                            'bwIdentifier': "IZ0LYUJL6B0",
+                            "sendSms": true
+                        }
+                    ),
+                    success: function (data) {
+                        var successMessages = ["success", "ok"];
+                        document.getElementsByClassName("journey")[0].classList.remove("progress");
+                        if ((successMessages.indexOf(data ? data.status : "R@ND0M") != -1 || successMessages.indexOf(data.status) != -1) && data.bookingRef) {
+                            document.getElementById("ref").innerText = data.bookingRef;
+                            
+                            state.journeys[state.category][state.stage].style.display = "";
+                            state.stage++;
+                            state.journeys[state.category][state.stage].style.display = "block";
+                            
+                            
+                            state.nextBtn.innerText = "NEXT";
+                            state.navigation.style.display = "";
+                            sendUnlock();
+                            
+                        } else {
+                            alert("Fail :(");
+                            console.log(data);
+                            document.getElementsByClassName("journey")[0].classList.remove("progress");
+                            sendUnlock();
+                        }
+                    },
+                    fail: function (err) {
+                        document.getElementsByClassName("journey")[0].classList.remove("progress");
+                        console.log(err);
+                        sendUnlock();
+                    }
+                })
+            }
         }
 
     };
@@ -153,7 +235,8 @@ export default function support() {
             console.log($(this).data());
             console.log(state.timeChosen, state.queueId);
             var dateObject = new Date(state.timeChosen);
-            document.getElementById("slot-selected").innerText = (dateObject.toLocaleTimeString().slice(0, dateObject.toLocaleTimeString.length - 3)) + " | " + days[dateObject.getDay()] + " " + dateObject.getDate() + " " + months[dateObject.getMonth()] + " " + dateObject.format("yyyy") + " | Samsung KX"
+            var timeSlotText = (dateObject.toLocaleTimeString().slice(0, dateObject.toLocaleTimeString.length - 3)) + " | " + days[dateObject.getDay()] + " " + dateObject.getDate() + " " + months[dateObject.getMonth()] + " " + dateObject.format("yyyy") + " | Samsung KX";
+            $(".time-selected").text(timeSlotText);
         }
 
         this.classList.remove("btn--primary-notActive");
@@ -188,7 +271,7 @@ export default function support() {
                     }
                 }
             }
-            $('#bookingForm input').filter('[required]').each(function (i, el) {
+            $('#details input').filter('[required]').each(function (i, el) {
                 isValid(el);
                 if (formValid) {
                     sendUnlock();
@@ -196,7 +279,7 @@ export default function support() {
                     sendLock();
                 }
             })
-            $('#bookingForm input').filter('[required]').change(function () {
+            $('#details input').filter('[required]').change(function () {
                 isValid(this);
                 sendUnlock();
             })
@@ -204,93 +287,21 @@ export default function support() {
 
         if (!$(this).data("locked") || formValid) {//Button not locked and not final screen
             if (state.journeys[state.category][state.stage] == screens.details) {
-                console.log("IM HERE");
-                var requestInit = requestInit || false;
+                state.makeBooking();
 
-                if (!requestInit) {
-                    requestInit = true;
-                    //Loading thingy needed HERE
+            } else {
+                state.journeys[state.category][state.stage].style.display = "";
+                state.stage++;
+                var newScreen = state.journeys[state.category][state.stage];
+                newScreen.style.display = "block";
 
-                    //Pls
-
-                    var name = document.getElementById("name").value;
-                    var surname = document.getElementById("surname").value;
-                    var email = document.getElementById("email").value;
-                    var phone = document.getElementById("tel").value;
-                    var notes = "Model selected: " + state.deviceChosen + "; Colour: " + state.deviceColor + "; IMEI: " + state.imei + "; Customer Notes: " + state.deviceNotes;
-                    var bookingData = {
-                        "name": name,
-                        "surname": surname,
-                        "email": email,
-                        "phone": phone,
-                        "time": (state.timeChosen.indexOf("+01:00") != -1) ? state.timeChosen.slice(0, -6) + "Z" : state.timeChosen,
-                        "notes": notes
-                    };
-                    //bookingData example: 
-                    //{'name': 'John', 'surename': 'Smith', 'email': 'j.s@js.com', 'number': '07000000000', 'time': new Date(), 'notes': 'Pls fix my fone, fanks'};        
-                    //console.log(bookingData.phone);
-
-                    $.ajax({
-                        method: "POST",
-                        contentType: "application/json; charset=utf-8",
-                        dataType: "json",
-                        url: "https://bookings.qudini.com/booking-widget/booker/book",
-                        data: JSON.stringify(
-                            {
-                                'queueId': state.queueId,//Make dynamic
-                                'bookingStartTime': bookingData.time,
-                                'bookingStartTimeString': bookingData.time,
-                                'firstName': bookingData.name,
-                                'lastname': bookingData.surname,
-                                'email': bookingData.email,
-                                'phone': bookingData.phone, // has a backend check, has to be a legitimate number
-                                'notes': bookingData.notes,
-                                'productId': state.productId,//Make dynamic
-                                'bwIdentifier': "IZ0LYUJL6B0",
-                                "sendSms": true
-                            }
-                        ),
-                        success: function (data) {
-                            $("#error-popup").hide();
-                            //console.log(data);
-                            var successMessages = ["success", "ok"];
-                            if ((successMessages.indexOf(data ? data.status : "R@ND0M") != -1 || successMessages.indexOf(data.status) != -1) && data.bookingRef) {
-                                // _this.steps++;
-                                // _this.renderTemplate();
-                                // $(".booking-summary-bookingref").text(data.data.bookingRef);
-                                // $(".booking-summary-name").text(storeName);
-                                // $(".booking-summary-address").text(storeAddress);
-                                // $(".booking-summary-subject").text(_this.activeItems[0].innerText);
-                                // $(".booking-summary-telephone").text($('.sl-appointment-start').data("phone"));
-
-                                alert("Success!");
-                                console.log(data);
-
-                            } else {
-                                alert("Fail :(");
-                                console.log(data);
-                            }
-                        },
-                        fail: function (err) {
-                            console.log(err);
-                        }
-                    })
+                if (state.journeys[state.category][state.stage] != screens.details) {//If entering final screen
+                    sendLock();
                 }
 
-            }
-            state.journeys[state.category][state.stage].style.display = "";
-            state.stage++;
-            var newScreen = state.journeys[state.category][state.stage];
-            newScreen.style.display = "block";
-            if (state.journeys[state.category][state.stage] != screens.details) {//If entering final screen
-                sendLock();
-            }
-
-            if (newScreen == screens.details) {
-                state.nextBtn.innerText = "BOOK NOW";
-            } else if (newScreen == screens.confirmation) {
-                state.nextBtn.innerText = "NEXT";
-                state.navigation.style.display = "";
+                if (newScreen == screens.details) {
+                    state.nextBtn.innerText = "BOOK NOW";
+                }
             }
         }
 
@@ -298,6 +309,8 @@ export default function support() {
 
     })
     //Back: if current screen is Confirmation, change Next/Book to Next
+
+    //Models
 
     function initDeviceGrabs() {
         var url = "https://spreadsheets.google.com/feeds/list/1sVUkiE2351zGssyybR27Xb7vck3n5mZZCkZD6pb7zcc/1/public/values?alt=json";
@@ -347,11 +360,10 @@ export default function support() {
 
     $("#model-selector").change(function () {
         if (this.selectedIndex != 0) {
-            state.modelIsSelected = true;
             state.deviceChosen = this.children[this.selectedIndex].innerText;
             validateUnlock();
         } else {
-            state.modelIsSelected = false;
+            state.deviceChosen = "";
             validateUnlock();
         }
 
@@ -371,7 +383,7 @@ export default function support() {
 
         if (this.value == "Unlisted_device") {
             $("#color-selector").val("N/A");
-            state.colorChosen = true;
+            state.colorChosen = "N/A";
             validateUnlock();
         }
 
@@ -380,36 +392,27 @@ export default function support() {
 
     $("#color-selector").change(function () {
         if (this.selectedIndex != 0) {
-            state.colorIsSelected = true;
             state.colorChosen = this.options[this.selectedIndex].innerHTML;
             validateUnlock();
         } else {
-            state.colorIsSelected = false;
+            state.colorChosen = "";
             validateUnlock();
         }
     });
 
+    //Models
+
     function validateUnlock() {
         console.log("Validating");
 
-        switch (state.journeys[state.category][state.stage]) {
-            case screens.deviceInfo:
-                console.log("Validating Device Info");
-                if (state.colorChosen && state.deviceChosen) {
-                    console.log("UNLOCK sent");
-                    state.imei = document.getElementById("imei").value;
-                    state.deviceNotes = document.getElementById("device-notes").value;
-                    sendUnlock();
-                }
-                break;
-
-            case screens.calendar:
-                if ($(state.nextBtn).data("slot")) {
-                    sendUnlock();
-                }
-                break;
-
+        console.log("Validating Device Info");
+        if (state.colorChosen && state.deviceChosen) {
+            console.log("UNLOCK sent");
+            state.imei = document.getElementById("imei").value;
+            state.deviceNotes = document.getElementById("device-notes").value;
+            sendUnlock();
         }
+
     }
 
     function sendUnlock() {
@@ -421,7 +424,7 @@ export default function support() {
     }
 
 
-    
+
 
 
     var colorBox = document.getElementById("color-selector");
@@ -430,7 +433,7 @@ export default function support() {
     $("#btn-oneToOne").click(function () { state.startJourney("oneToOne") })
     $("#btn-support").click(function () { state.startJourney("support") })
     $("#btn-repair").click(function () { state.startJourney("repair") })
-    $(".close").click(function() { state.cancelJourney() })
+    $(".close").click(function () { state.cancelJourney() })
 
     state.backBtn.addEventListener("click", function () {
         if (state.stage <= 1) {
@@ -443,9 +446,36 @@ export default function support() {
             state.journeys[state.category][state.stage].style.display = "";
             state.stage--;
             var newScreen = state.journeys[state.category][state.stage];
-            newScreen.style.display = "block";
+            if (newScreen == screens.deviceInfo) {
+                newScreen.style.display = "flex";
+            } else {
+                newScreen.style.display = "block";
+            }
             sendUnlock();
         }
     })
-    
+
+    function handleResize() {
+
+        console.log('%c%s', 'color: #f2ceb6', "Tis logged");
+
+        if (window.innerWidth <= 768 && viewport != "mobile") {
+            console.log("Still mobile");
+            document.getElementById("model-selector").children[0].innerText = "Model*";
+            document.getElementById("color-selector").children[0].innerText = "Color*";
+            viewport = "mobile";
+        } else if (window.innerWidth > 768 && viewport != "desktop") {
+            document.getElementById("model-selector").children[0].innerText = "Choose Your Model*";
+            document.getElementById("color-selector").children[0].innerText = "Choose Your Colour*";
+            viewport = "desktop";
+        }
+    }
+
+
+    handleResize();
+
+    window.addEventListener('resize', function () {
+        handleResize();
+    })
+
 }

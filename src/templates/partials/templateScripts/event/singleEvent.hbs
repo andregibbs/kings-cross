@@ -2,8 +2,8 @@
 	<div class="single-event" data-eventId='[[ eventId ]]' data-maxGroupSize='[[ groupSize ]]'  data-eventIdentifier='[[ identifier ]]'>
 
 		<section class="event__header section__inner">
-			<span class="event__header-date">[[ startDate ]] / [[ startTime ]]</span> <br><br>
-			<span class="event__header-title">[[ title ]]</span>
+			<span class="event__header-date">[[ startDate ]] | [[ startTime ]]</span> 
+			<h2 class="event__header-title">[[ title ]]</h2>
 		</section>
 
 		<div class="event__img" style="background-image:url( [[image]] )">
@@ -13,23 +13,27 @@
 		<div class="section event__content">
 			<div class="section__inner">
 				<section>
-					<span class="tile-desc">[[ description ]]</span> <br><br>
+					<div class="tile_container">
+						<span class="tile-desc">[[ firstSentence ]]</span>
+					<span class="tile-desc--long">[[ description ]]</span>
+					</div>
+					
 					[[#if youtube ]]
 						<iframe width="560" height="315" src="https://www.youtube.com/embed/[[ youtube ]]" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					[[/if]]
 				</section>
 				<section>
 					<div class="event__content-book action">
-						<span class="action-date">[[ startDate ]] / [[ startTime ]]</span> <br><br>
-						<span class="action-capacity">Max: [[ slotsAvailable ]]</span> <br><br>
+						<span class="action-date">[[ startDate ]] | [[ startTime ]]</span> 
+						<span class="action-capacity">Max [[ slotsAvailable ]]</span> 
 
 						[[#if externalbookinglink ]]
 							<a href="[[externalbookinglink]]" class="link-book btn btn--primary" target="_blank">book now</a><br><br>
 						[[else]]
-							<button class="action-btn btn btn--primary">book now</button><br><br>
+							<button class="action-btn btn btn--primary">book tickets</button><br><br>
 						[[/if]]
 
-						<span>*I am small print I can display crucial event information</span>
+						<span class="action-crucial">*I am small print I can display crucial event information</span>
 					</div>
 					<div class="event__content-share share">
 						<h2>Share this event</h2>

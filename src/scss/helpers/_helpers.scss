@@ -209,7 +209,7 @@
       padding-left: 35px;
       margin-bottom: 12px;
 
-      &.warn{
+      &.warn {
         color: $warning;
       }
 
@@ -262,6 +262,92 @@
       content: "";
       position: absolute;
       display: none;
+    }
+  }
+
+  .loading {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999999;
+    text-align: center;
+    -webkit-transition: 0.4s opacity ease-in;
+    transition: 0.4s opacity ease-in;
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-color: $background;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=50)";
+      opacity: 0.5;
+      content: "";
+    }
+    &__spinner {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: -9px 0 0 -33px;
+      font-size: 0;
+    }
+    &__bounce {
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      margin: 0 2px;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      background-color: white;
+      border: 2px solid $pink;
+      -webkit-animation: bouncedelay 1.4s infinite ease-in-out;
+      animation: bouncedelay 1.4s infinite ease-in-out;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+    }
+    &__bounce1 {
+      -webkit-animation-delay: -0.48s;
+      animation-delay: -0.48s;
+    }
+    &__bounce2 {
+      -webkit-animation-delay: -0.32s;
+      animation-delay: -0.32s;
+    }
+    &__bounce3 {
+      -webkit-animation-delay: -0.16s;
+      animation-delay: -0.16s;
+    }
+  }
+
+  //Inputs
+  input[type="text"].input,
+  input[type="email"].input,
+  input[type="tel"].input,
+  select.input,
+  textarea.input {
+    background-color: transparent;
+    color: white;
+    border: 1px solid $grey-form;
+    font-size: em(25);
+
+    padding: 12px 30px;
+    @media screen and (max-width: $desktop) {
+      padding: get-desktop-vw(12) get-desktop-vw(30);
+    }
+    @media screen and (max-width: $mobile) {
+      padding: get-mobile-vw(12) get-mobile-vw(30);
+    }
+
+    &.warn {
+      color: $warning;
+      border: 1px solid $warning;
+    }
+
+    &.warn::placeholder {
+      color: $warning;
     }
   }
 }

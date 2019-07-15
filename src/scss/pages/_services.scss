@@ -27,7 +27,7 @@
     @media screen and (max-width: $mobile) {
       margin-top: get-mobile-vw(200);
       text-align: center;
-      font-size: get-mobile-vw(54)
+      font-size: get-mobile-vw(54);
     }
   }
 
@@ -35,10 +35,9 @@
     display: flex;
     justify-content: space-between;
     margin: 100px 0px;
-    @media screen and (max-width: $mobile){
+    @media screen and (max-width: $mobile) {
       flex-direction: column;
     }
-
   }
 }
 
@@ -60,7 +59,7 @@
 
   @media screen and (max-width: $mobile) {
     text-align: center;
-    button{
+    button {
       margin: 0 auto;
     }
   }
@@ -75,7 +74,6 @@
 }
 
 .journey {
-
   padding-top: 0 !important;
   position: relative;
 
@@ -84,41 +82,47 @@
   input[type="tel"],
   select,
   textarea {
-    background-color: transparent;
-    color: white;
-    border: 1px solid $grey-form;
-    font-size: em(25);
-    // flex-basis: 40%;
+    flex-basis: 40%;
+
     margin: 20px 20px;
-    @media screen and (max-width: $desktop) {
-      margin: get-desktop-vw(20) get-desktop-vw(20);
-    }
-    @media screen and (max-width: $mobile) {
-      margin: get-mobile-vw(20) get-mobile-vw(20);
-    }
     padding: 12px 30px;
     @media screen and (max-width: $desktop) {
+      margin: get-desktop-vw(20) get-desktop-vw(20);
       padding: get-desktop-vw(12) get-desktop-vw(30);
     }
     @media screen and (max-width: $mobile) {
+      margin: get-mobile-vw(8) get-mobile-vw(8);
       padding: get-mobile-vw(12) get-mobile-vw(30);
-    }
-
-    &.warn {
-      color: $warning;
-      border: 1px solid $warning;
-    }
-
-    &.warn::placeholder {
-      color: $warning;
+      flex-basis: unset;
+      width: 40%;
     }
   }
 
-  & > div {
+  & > div,
+  & > form {
     display: none;
   }
   .section__inner {
     padding-top: 0 !important;
+    &#confirmation {
+      position: relative;
+      padding: 40px !important;
+      text-align: center;
+
+      .time-selected {
+        margin-top: 35px;
+      }
+
+      .confirmation__reference {
+        margin: 70px 0;
+        @media screen and (max-width: $desktop) {
+          margin: get-desktop-vw(70) 0;
+        }
+        @media screen and (max-width: $mobile) {
+          margin: get-mobile-vw(70) 0;
+        }
+      }
+    }
   }
 
   .device-info {
@@ -135,7 +139,6 @@
       }
     }
 
-
     &__row {
       display: flex;
       align-items: center;
@@ -147,23 +150,32 @@
           margin: 0 get-desktop-vw(20);
         }
         @media screen and (max-width: $mobile) {
-          margin: 0 get-mobile-vw(20);
+          display: none;
         }
       }
 
       * {
         flex-basis: 40%;
+        @media screen and (max-width: $mobile) {
+          flex-basis: unset;
+          width: 40%;
+          flex-grow: 1;
+        }
       }
     }
 
     textarea {
       width: 83%;
+      height: 200px;
       margin: 20px auto;
       @media screen and (max-width: $desktop) {
         margin: get-desktop-vw(20) auto;
+        height: get-desktop-vw(200);
       }
       @media screen and (max-width: $mobile) {
-        margin: get-mobile-vw(20) auto;
+        margin: get-mobile-vw(8) get-mobile-vw(8);
+        height: get-mobile-vw(200);
+        width: auto;
       }
     }
   }
@@ -193,6 +205,7 @@
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
+      margin: 24px 0;
     }
     &__checkboxes {
       width: 650px;
@@ -212,15 +225,24 @@
     a {
       color: $pink;
     }
+    .line {
+      background-color: $pink;
+    }
   }
   &.cyan {
     a {
       color: $cyan;
     }
+    .line {
+      background-color: $cyan;
+    }
   }
   &.orange {
     a {
       color: $orange;
+    }
+    .line {
+      background-color: $orange;
     }
   }
 
@@ -230,45 +252,68 @@
     height: 32px;
     opacity: 0.5;
 
-    right: 256px;
+    right: 128px;
     top: 0px;
     // top: 32px;
 
     @media screen and (max-width: $desktop) {
-      right: get-desktop-vw(256);
+      right: get-desktop-vw(32);
       // top: get-desktop-vw(32);
     }
-  
+
     @media screen and (max-width: $mobile) {
       width: 16px;
       height: 16px;
       right: get-mobile-vw(32);
       // top: get-mobile-vw(32);
     }
-    
 
-    &:hover{
+    &:hover {
       opacity: 1;
     }
 
-    &:before, &:after{
+    &:before,
+    &:after {
       position: absolute;
       left: 7px;
-      content: ' ';
-      height: 16.5px;
+      content: " ";
+      height: 33px;
       width: 2px;
       background-color: white;
+      @media screen and (max-width: $mobile) {
+        height: 16.5px;
+        width: 2px;
+      }
     }
 
-    &:before{
+    &:before {
       transform: rotate(45deg);
     }
 
-    &:after{
+    &:after {
       transform: rotate(-45deg);
     }
   }
-  
+
+  .line {
+    width: 7680px;
+    height: 1px;
+    position: absolute;
+    background-color: $orange;
+    left: -3110px;
+
+    &--top {
+      top: -20px;
+    }
+
+    &--bot {
+      bottom: -20px;
+    }
+  }
+
+  &.progress {
+    cursor: progress;
+  }
 }
 
 .navigation {

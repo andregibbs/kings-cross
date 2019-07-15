@@ -76,6 +76,37 @@ $(document).ready(function () {
 		return str;
 	}
 
+	  // kxConfig holds passion details from json file - events only hold the passion code but we need to show the name, so convert here
+	function getPassionColor(code) {
+		var name = '';
+		for (var i = 0; i < kxConfig.passions.length; i++) {
+			
+			if (kxConfig.passions[i].code == code) {
+
+				name = kxConfig.passions[i].color;
+				
+			}
+		}
+		return name;
+	};
+	// kxConfig holds suitable details from json file - events only hold the suitable code but we need to show the name, so convert here
+	 function getSuitableName(code) {
+		var name = '';
+		var newEventTypes = [];
+		code.forEach(type => {
+			for (var i = 0; i < kxConfig.suitables.length; i++) {
+			
+				if (kxConfig.suitables[i].code == type) {
+					name = kxConfig.suitables[i].name;
+					newEventTypes.push(name)
+					
+				}
+			}
+		})
+		
+		return newEventTypes;
+	};
+
 	function sortDates() {
 		today = new Date(now.getFullYear(), now.getMonth(), now.getDate())
 		todayDDMMYYYY = getDDMMYYYY(today)
@@ -103,6 +134,8 @@ $(document).ready(function () {
 			event.description = bits[0];
 			if (bits.length > 1) {
 				event.extra = JSON.parse(bits[1]);
+				event.extra['passionColor'] = getPassionColor(event.extra.passions[0]);
+				event.extra['eventtypeName'] = getSuitableName(event.extra.eventtype);
 			}
 			else {
 				event.extra = {};
@@ -120,6 +153,7 @@ $(document).ready(function () {
 				// MERGE JSON DATA HELD WITHIN description INTO FEED as 'extra' property !!!!!
 				var event = data[i];
 				sortEventExtra(event);
+				console.log(event)
 			}
 
 			// store the 'converted' data as events in main

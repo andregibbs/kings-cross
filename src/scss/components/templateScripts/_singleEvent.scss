@@ -1,58 +1,111 @@
-
 /*=============================================
 =            SingleEvent            =
 =============================================*/
 
 .single-event {
+  * {
+    color: $white;
+  }
 
-	* {
-		color: $white;
-	}
+  .event {
+    &__header {
+      padding-left: 40px;
+      padding-right: 40px;
 
-	.event {
-		&__header {
+      &-date {
+        font-size: em(20);
+      }
+      &-title {
+        font-size: em(50);
+      }
+    }
 
-		}
+    &__img {
+      width: 100%;
+      height: 650px;
+      overflow: hidden;
 
-		&__img {
-			width: 100%;
-			height: 650px;
-			overflow: hidden;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
 
-			background-repeat: no-repeat;
-			background-size: cover;
-			background-position: center center;
+      @media screen and (max-width: $desktop) {
+        height: get-desktop-vw(650);
+      }
 
-			@media screen and ( max-width: $desktop ) {
-				height: get-desktop-vw(650);
-			}
+      @media screen and (max-width: $mobile) {
+        height: get-mobile-vw(250);
+      }
 
-			@media screen and ( max-width: $mobile ) {
-				height: get-mobile-vw(250);
-			}
+      img {
+        width: 100%;
+      }
+    }
 
-			img {
-				width: 100%;
-			}
-		}
+    &__content {
+      & > div {
+        display: flex;
+		justify-content: space-between;
+      }
 
-		&__content {
-			&>div {
-				display: flex;
-				justify-content: space-between;
-			}
+      .tile_container {
+
+        display: flex;
+        flex-direction: column;
+        max-width: 55%;
+
+      }
 
 
-			.tile-desc {
-				width: 100%;
-				max-width: 500px;
-				display: inline-block;
-			}
+        .tile-desc {
+          width: 100%;
+          max-width: 500px;
+      display: inline-block;
+      font-size: em(25);
+      font-weight: 700;
+      
+      &--long {
+        margin-top: 15px;
+        font-size: em(20);
+        font-weight: 400;
+  
+      }
 
-		}
-	}
+      }
+	  .action {
+		  display: flex;
+		  align-items: flex-end;
+		  justify-content: space-evenly;
+		  flex-direction: column;
 
+		  &-date {
+			  font-size: em(25);
+			  font-weight: 700;
+			margin-bottom: 15px;
+
+		  }
+
+		  &-capacity {
+			  font-size: em(20);
+			  font-weight: 400;
+			  margin-bottom: 20px;
+		  }
+		  &-crucial {
+			  font-size: em(15);
+			  font-weight: 400;
+			  max-width: 15em;
+			  text-align: right;
+			  margin-bottom: 15px;
+		  }
+	  }
+	  .share {
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-evenly;
+		flex-direction: column;
+	  }
+    }
+  }
 }
 
 /*=====  End of SingleEvent  ======*/
-

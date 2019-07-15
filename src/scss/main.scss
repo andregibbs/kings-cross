@@ -21,6 +21,7 @@
 	@import 'components/book';
 	@import 'components/calendar';
 
+
 	@import 'components/templateScripts/eventTile';
 	@import 'components/templateScripts/singleEvent';
 
@@ -29,8 +30,11 @@
 	@import 'pages/whatson';
 	@import 'pages/event';
 	@import 'pages/services';
+	@import 'pages/bookings';
 
 	// Vendor
 	@import 'vendor/jquery-ui-1.12.1.custom/jquery-ui.min';
 	@import 'vendor/jquery-ui-1.12.1.custom/jquery-ui.structure.min';
 	@import 'vendor/jquery-ui-1.12.1.custom/jquery-ui.theme.min';
+
+	@import 'components/datePicker';

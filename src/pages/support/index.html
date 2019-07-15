@@ -35,51 +35,57 @@
 
 	<section class="section journey">
 
-		<div class="section__inner device-info" id="device-info">
+		<form class="section__inner device-info" id="device-info">
 			<h3 class="fz50">Tell us a bit about your device</h3>
 			<div class="device-info__row">
-				<select id="model-selector">
+				<select class="input" id="model-selector">
 					<option>Choose Your Model*</option>
 				</select>
-				<select id="color-selector">
+				<select class="input" id="color-selector">
 					<option value="">Choose Your Colour*</option>
 				</select>
 			</div>
 			<div class="device-info__row">
-				<input type="text" id="imei" placeholder="Device IMEI Number ( Optional)" />
-				<a
-					href="https://www.samsung.com/uk/support/mobile-devices/how-do-i-find-the-imei-model-number-and-serial-number-for-samsung-galaxy-device/" target="_blank">Retrieve
+				<input class="input" type="text" id="imei" placeholder="Device IMEI Number ( Optional)" />
+				<a href="https://www.samsung.com/uk/support/mobile-devices/how-do-i-find-the-imei-model-number-and-serial-number-for-samsung-galaxy-device/"
+					target="_blank">Retrieve
 					IMEI number</a>
 			</div>
-			<textarea id="device-notes" placeholder="Additional Information ( Optional )"></textarea>
-		</div>
+			<textarea class="input" id="device-notes" placeholder="Additional Information ( Optional )"></textarea>
+		</form>
 
 		<div class="section__inner" id="calendar">
 			{{>components/calendar }}
 		</div>
 
-		<div class="section__inner" id="details">
+		<form class="section__inner" id="details">
 			<h3 class="details__title fz50">Appointment Details</h3>
-			<p id="slot-selected" class="details__time fz24">10:00 - 11:30 | Tuesday 09 November 2019 | Samsung KX</p>
-			<form class="details__form" id="bookingForm">
+			<p id="slot-selected" class="details__time fz24 time-selected">10:00 - 11:30 | Tuesday 09 November 2019 |
+				Samsung KX</p>
+			<div class="details__form" id="bookingForm">
 
 				<div class="details__fields">
-					<input class="details__input" autocomplete="given-name" placeholder="Name*" id="name" type="text" required>
-					<input class="details__input" autocomplete="family-name" placeholder="Surname*" id="surname" type="text" required>
+					<input class="input details__input" autocomplete="given-name" placeholder="Name*" id="name" type="text"
+						required>
+					<input class="input details__input" autocomplete="family-name" placeholder="Surname*" id="surname"
+						type="text" required>
 					<br>
-					<input class="details__input" name="telephone" placeholder="Telephone*" id="tel" type="tel" required>
-					<input class="details__input" name="email" placeholder="Email*" id="email" type="email" required>
+					<input class="input details__input" name="telephone" placeholder="Telephone*" id="tel" type="tel"
+						required>
+					<input class="input details__input" name="email" placeholder="Email*" id="email" type="email" required>
 				</div>
 
 				<div class="details__checkboxes">
 					<label class="checkbox__container fz16">
-						<input type="checkbox" name="checkbox" required>I would like to receive special offers, announcements,
+						<input type="checkbox" name="checkbox" required>I would like to receive special offers,
+						announcements,
 						push notifications and emails about Samsung’s King’s Cross store and related developments from
 						Samsung Electronics (UK) Ltd.*<span class="checkbox"></span>
 					</label>
 
 					<label class="checkbox__container fz16">
-						<input type="checkbox" name="age" required>I am over 13 years old.*<span class="checkbox"></span>
+						<input type="checkbox" name="age" required>I am over 13 years old.*<span
+							class="checkbox"></span>
 					</label>
 
 					<label class="checkbox__container fz16">
@@ -92,21 +98,24 @@
 				<p class="details__disclaimer">By submitting this form you acknowledge that your personal data will be
 					processed in accordance with our <a href="">Privacy Policy.</a></p>
 
-			</form>
+			</div>
 
-		</div>
+		</form>
 
 		<div class="section__inner" id="confirmation">
-			<h3>Repair booking confirmation</h3>
-			<p>Repair booking confirmation</p>
+			<div class="line line--top"></div>
+			<h3 class="fz50">Repair booking confirmation</h3>
+			<p class="time-selected fz24">Time Slot</p>
 			<div class="confirmation__reference">
-				<p>Reference code</p>
-				<p class="reference">ABCDEF</p>
+				<p class="fz24">Reference code</p>
+				<p class="reference fz50" id="ref">ABCDEF</p>
 			</div>
-			<p class="confirmation__disclaimer">
-				Enter the reference code on the <a href="">My Bookings</a> page to view your booking information. Please
+			<p class="confirmation__disclaimer fz16">
+				Enter the reference code on the <a href="./">My Bookings</a> page to view your booking information.
+				Please
 				try to ensure you have a back up of any data stored on a device you wish to service.
 			</p>
+			<div class="line line--bot"></div>
 		</div>
 
 		<div class="navigation" id="navigation">
