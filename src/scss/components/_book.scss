@@ -1,32 +1,225 @@
-
 /*=============================================
 =            Book section            =
 =============================================*/
 
 .book {
-	height: 0;
-	overflow: hidden;
+  height: 0;
+  overflow: hidden;
+  display: none;
+
+  h2 {
+    font-size: em(50);
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &--active {
+    height: auto;
+    display: block;
+  }
+
+  &__form {
+    padding: 0 7em 0em;
+
+    &__top {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center;
+      input {
+        background: transparent;
+        border: solid 1px rgba(77, 77, 79, 0.85);
+        color: #fff;
+        font-size: 1.42857em;
+        padding: 10px;
+        /* width: 35%; */
+        margin-bottom: 30px;
+		flex: 0 47%;
+		
+		&.invalid {
+			border-color: #FF4337;
+		}
+	  }
+	  
+    }
+    &__middle {
+      display: flex;
+      justify-content: space-evenly;
+      .book {
+        &__tickets {
+          flex: 0 47%;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+
+          h3 {
+            font-size: em(20);
+            text-align: center;
+            margin-bottom: 20px;
+          }
+
+          &__container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          &-tickets {
+            width: get-desktop-vw(40);
+            height: get-desktop-vw(40);
+            background: #fff;
+            border: solid 1px #dbdbdb;
+			text-align: center;
+			font-size: em(30);
+			font-weight: bold;
+          }
+          &-minus {
+			padding: 20px;
+			font-size: em(30);
+			font-weight: bold;
+			cursor: pointer;
+			user-select: none;
+          }
+          &-plus {
+			padding: 20px;
+			font-size: em(30);
+			font-weight: bold;
+			cursor: pointer;
+			user-select: none;
+		  }
+		  &__tc {
+
+			display: flex;
+			width: 100%;
+			align-items: center;
+			justify-content: space-between;
+			&.invalid {
+				span {
+					color: #FF4337;
+				}
+				
+			}
+			&__selector {
+				width: 10px;
+				height: 10px;
+				background: $white;
+				&.selected {
+					background: #E14D9A;
+				}
+
+			}
+
+			&_text {
+				font-size: em(12);
+				font-weight: 400;
+				width: 95%;
+			}
+			
+		}
+        }
+
+        &__terms {
+		  flex: 0 47%;
+		  display: flex;
+		  flex-direction: column;
+		  justify-content: space-evenly;
+		  align-items: flex-start;
+		}
+		
+      }
+	}
+	&__footer {
+		display: flex;
+		justify-content: center;
+		margin-top: 35px; 
+	}
+  }
+
+  &-action {
+    display: none;
+    &__description {
+      width: 100%;
+      font-size: em(20);
+      display: flex;
+      justify-content: center;
+      font-weight: 400;
+      margin-bottom: 35px;
+      text-align: center;
+    }
+    &--active {
+      display: block;
+    }
+  }
+
+  &-confirmation {
 	display: none;
+	
+	&__summary {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		padding: 20px;
 
-	&--active {
-		height: auto;
-		display: block;
-	}
+		.order {
+			&__header {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				h2 {
+					font-size: em(50);
+					font-weight: bold;
 
-	&-action {
-		display: none;
-		&--active {
-			display: block;
+					margin-bottom: 35px;
+					text-align: center;
+		
+				}
+
+				span {
+					font-size: em(25);
+					font-weight: 700;
+					text-align: center;
+	
+				}
+
+				margin-bottom: 45px;
+				
+			}
+			
+			&__summary {
+				text-align: center;
+				span {
+					font-size: em(25);
+				font-weight: 700;
+				margin-bottom: 15px;
+				}
+				h3 {
+					font-size: em(50);
+					font-weight: bold;
+				}
+				margin-bottom: 65px;
+			}
+
+			&__event {
+				p {
+					font-size: em(20);
+					font-weight: 400;
+					text-align: center;
+				}
+			}
 		}
-	}
+		
 
-	&-confirmation {
-		display: none;
-		&--active {
-			display: block;
-		}
 	}
+    &--active {
+      display: block;
+    }
+  }
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 /*=====  End of Book section  ======*/
-

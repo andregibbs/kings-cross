@@ -8,6 +8,7 @@ export default function singleEvent( events ){
 	const id = getUrlVars()["id"];
 	let ticketQuantity = 1
 	let instagramHashTag = ''
+	let eventDetails = {};
 
 	// =================================================
 	// Populating event details from query string
@@ -25,6 +26,9 @@ export default function singleEvent( events ){
 		}).success( function( data ) {
 
 			console.log( 'Event details: ', data )
+
+			eventDetails = data;
+
 
 			function sortEventExtra(event) {
 				if (event.description) {
@@ -52,6 +56,8 @@ export default function singleEvent( events ){
 
 			if (data.seriesId == kxConfig.seriesIdAsInt) {
 
+				
+
 				const options = {
 					identifier: data.identifier,
 					groupSize: data.maxGroupSize,
@@ -71,8 +77,19 @@ export default function singleEvent( events ){
 				if( data.extra.instagramhashtag ) {
 					instagramHashTag = data.extra.instagramhashtag
 				}
+				var startTime = moment(data.startISO).utc();
+				var bookOptions = {
 
+					startDate: moment(data.startDate).format("dddd Do MMMM YYYY") ==  moment(Date.now()).format("dddd Do MMMM YYYY") ? 'TODAY' : moment(data.startDate).format("dddd Do MMMM YYYY") ,
+					startTime: moment(startTime).format('LT'),
+					endTime: moment(startTime).add(data.durationMinutes, 'm').format('LT')
+		
+				};
+				$('.section.book').find('.book-action__description').text(bookOptions.startTime + ' - ' + bookOptions.endTime +' | '+ bookOptions.startDate + ' | Samsung KX');
 				$('.singleEvent').append( handleTemplate( 'singleEvent', options ) )
+				
+
+				
 
 				// Event out of stock or has expired
 				if( data.slotsAvailable == 0 || data.hasPassed ) {
@@ -97,10 +114,10 @@ export default function singleEvent( events ){
 
 	$('.singleEvent').on('click', '.action-btn', function(e) {
 		e.preventDefault();
-		var options = {
 
-		};
-		$('.section.book').append( handleTemplate( 'book', options ) )
+		
+
+		
 		$('.book').addClass('book--active')
 		$('.book-action').addClass('book-action--active')
 	});
@@ -155,24 +172,62 @@ export default function singleEvent( events ){
 
 	
 
-	$('.book__tickets-minus').click(function(){
+	$('.book__tickets-minus').click(function(e){
+
 		ticketQuantity = parseInt($('.book__tickets-tickets').val())
-		$('.book__tickets-tickets').val( ticketQuantity - 1 )
+		if(ticketQuantity - 1 !== 0) {
+			$('.book__tickets-tickets').val( ticketQuantity - 1 );
+		}
+		
 	})
 
-	$('.book__tickets-plus').click(function(){
+	$('.book__tickets-plus').click(function(e){
 		ticketQuantity = parseInt($('.book__tickets-tickets').val())
+		
+		
 		$('.book__tickets-tickets').val( ticketQuantity + 1 )
+		
 	})
+
+	$('.book__tickets__tc__selector').each(function() {
+
+		$(this).click(function() {
+			$(this).toggleClass('selected');
+		})
+
+
+
+
+	});
+
+	function checkFormValidity( formID ) {
+
+
+		$(formID + ' input').each(function() {
+			$(this).off('invalid');
+			$(this).bind('invalid', function(e) {
+				$(this).toggleClass('invalid');
+				if($(this).attr('type') === 'checkbox') {
+					$(this).parent().toggleClass('invalid')
+				}
+			});
+		});
+
+		return $(formID)[0].checkValidity();
+
+
+	}
 
 	$('.book__form-submit').click(function(e){
 		e.preventDefault()
 
-		if( $('#book__form')[0].checkValidity() ) {
+		if( checkFormValidity('#book__form') ) {
             const form_name = $(".book__form-name").val();
             const form_surname = $(".book__form-surname").val();
             const form_tel = $(".book__form-tel").val();
-            const form_email = $(".book__form-email").val();
+			const form_email = $(".book__form-email").val();
+			$('.book__form-submit').attr("disabled", true);
+			$('.cm-configurator-loader').show();
 
 			$.ajax({
 				type: "POST",
@@ -190,23 +245,24 @@ export default function singleEvent( events ){
 					"timezone": "Europe/London"
 				}),
 				success: function (data) {
-					$('.book-action').removeClass('book-action--active')
-					$('.book-confirmation__summary .order-reference').text( data.refNumber )
-					$('.book-confirmation__summary .order-quantity').text( ticketQuantity )
-					$('.book-confirmation__summary .order-name').text( form_name + form_surname )
-					$('.book-confirmation__summary .order-email').text( form_email )
-					$('.book-confirmation__summary .order-tel').text( form_tel )
-					$('.order__event-title').text( form_tel )
-					$('.order__event-date').text( form_tel )
-					$('.order__event-time').text( form_tel )
+					$('.cm-configurator-loader').hide();
+					$('.book-action').removeClass('book-action--active');
+					$('.book--active').css({'background': 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('+ eventDetails.imageURL +')', 'background-repeat': 'no-repeat','background-position': 'center center', 'background-size': 'cover'})
+					$('.order-reference').text( data.refNumber )
+					var orderInfo =	$('.book-action__description').text();
+					$('.order__time').text(orderInfo);
 
 					$('.book-confirmation').addClass('book-confirmation--active')
 
 				},
 				fail: function (err) {
+					$('.book__form-submit').attr("disabled", false);
+					$('.cm-configurator-loader').hide();
 					console.log(err);
 				}
 			});
+		} else {
+
 		}
 	})
 
