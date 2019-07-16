@@ -195,7 +195,7 @@ export default function singleEvent( events ){
 
 		ticketQuantity = parseInt($('.book__tickets-tickets').val())
 		if(ticketQuantity - 1 !== 0) {
-			ticketQuantity - 1;
+			ticketQuantity -= 1;
 			$('.book__tickets-tickets').val( ticketQuantity );
 		}
 		
@@ -203,7 +203,9 @@ export default function singleEvent( events ){
 
 	$('.book__tickets-plus').click(function(e){
 		ticketQuantity = parseInt($('.book__tickets-tickets').val())
-		ticketQuantity + 1;
+		ticketQuantity += 1;
+
+		console.log(ticketQuantity);
 		
 		$('.book__tickets-tickets').val( ticketQuantity );
 		
