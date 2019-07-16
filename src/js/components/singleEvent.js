@@ -117,9 +117,28 @@ export default function singleEvent( events ){
 
 		
 
+		$('.action .action-btn').attr("disabled", true);
+		$('.action .action-btn').toggleClass('btn--primary-notActive');
+		$('.book').addClass('book--active');
 		
-		$('.book').addClass('book--active')
-		$('.book-action').addClass('book-action--active')
+		$('.book-action').addClass('book-action--active');
+		$('.book').slideDown();
+	});
+
+	$('.close').on('click', function(e) {
+		e.preventDefault();
+		$('.book').slideUp();
+		$('.book').removeClass('book--active');
+		$('.book-action').removeClass('book-action--active');
+
+		$('.action .action-btn').attr("disabled", false);
+		$('.action .action-btn').toggleClass('btn--primary-notActive');
+
+	})
+
+	$('.singleEvent').on('click', '.share__container', function(e) {
+		e.preventDefault();
+		$('.share__social').toggleClass('share__social--active')
 	});
 
 	$('.relatedEvents__header__see').click( function() {
@@ -176,23 +195,24 @@ export default function singleEvent( events ){
 
 		ticketQuantity = parseInt($('.book__tickets-tickets').val())
 		if(ticketQuantity - 1 !== 0) {
-			$('.book__tickets-tickets').val( ticketQuantity - 1 );
+			ticketQuantity - 1;
+			$('.book__tickets-tickets').val( ticketQuantity );
 		}
 		
 	})
 
 	$('.book__tickets-plus').click(function(e){
 		ticketQuantity = parseInt($('.book__tickets-tickets').val())
+		ticketQuantity + 1;
 		
-		
-		$('.book__tickets-tickets').val( ticketQuantity + 1 )
+		$('.book__tickets-tickets').val( ticketQuantity );
 		
 	})
 
-	$('.book__tickets__tc__selector').each(function() {
+	$('.book__tickets__tc').each(function() {
 
 		$(this).click(function() {
-			$(this).toggleClass('selected');
+			$(this).find('input').toggleClass('selected');
 		})
 
 
@@ -226,7 +246,7 @@ export default function singleEvent( events ){
             const form_surname = $(".book__form-surname").val();
             const form_tel = $(".book__form-tel").val();
 			const form_email = $(".book__form-email").val();
-			$('.book__form-submit').attr("disabled", true);
+			$('.book__form-submit').attr("disabled", true).toggleClass('btn--primary-notActive');
 			$('.cm-configurator-loader').show();
 
 			$.ajax({

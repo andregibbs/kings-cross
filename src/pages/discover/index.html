@@ -6,13 +6,90 @@
 
 		{{>components/nav }}
 
-		{{>components/discoverSlider slider='sliderOne' }}
+		<section class="section kv">
+			<div class="section__inner">
+			  <h2>It’s everything<br /> a shop isn’t</h2>
+			</div>
+		  </section>
 
-		{{>components/shopFloorplan }}
+		  <section class="section copy">
+			<div class="section__inner">
+			  <p>Samsung KX is so much more than a shop. It’s a place to see things, learn stuff, push your limits and open your mind. Attend world-class events, get to grips with the latest tech, discover new experiences and connect with other Londoners.</p>
+			  <p>At Samsung KX, you can <span class="copy__hashtag">#DoWhatYouCant</span></p>
+			</div>
+		  </section>
 
-		{{>components/spaces }}
+		  <section class="section video">
+			<div class="section__inner">
+			 
+			</div>
+		  </section>
 
-		{{>components/discoverSlider slider='sliderTwo' }}
+		  <section class="section spaces">
+			<div class="section__inner">
+				<div class="spaces__header">
+					<h3>Create, make and innovate</h3>
+					<span>Experiences</span>
+					<p>Get hands on with some of our latest innovations. Discover up to 6 experiences, including an AR simulator, 3D printing and a DJ booth, that’ll help you do what you can’t.</p>
+				</div>
+				<div class="spaces__container">
+						{{>components/spaces }}
+				</div>
+			</div>
+		  </section>
+
+		  <section class="section neighbourhood">
+				<div class="section__inner">
+					<div class="neighbourhood__header">
+						<h3>Welcome to the neighbourhood</h3>
+						<span>Feel at home as we prepare to host you in various ways</span>
+					</div>
+					<div class="neighbourhood__container">
+							{{>components/discoverSlider slider='sliderOne' }}
+					</div>
+				</div>
+			  </section>
+
+
+			  <section class="section gallery">
+					<div class="section__inner">
+						<div class="gallery__header">
+							<h3>See the space</h3>
+							<span>Gallery</span>
+						</div>
+						<div class="neighbourhood__container">
+								{{>components/discoverSlider slider='sliderTwo' }}
+						</div>
+					</div>
+				  </section>
+
+
+				  <section class="section showcase">
+						<div class="section__inner">
+							<div class="showcase__help">
+								<img class="showcase__help__img" src="https://images.samsung.com/is/image/samsung/p5/uk/kings-cross/support-discover.png?$ORIGIN_PNG$" />
+								<div class="showcase__copy">
+									<h3 class="showcase__copy__title">A helping hand</h3>
+									<span class="showcase__copy__sub-title">Support Lounge</span>
+									<p class="showcase__copy__description">From getting set up to receiving repairs, the Support Lounge offers dedicated support from our expert technicians and product experts.</p>
+									<button class="btn btn--primary">FIND OUT MORE</button>
+								</div>
+							</div>
+							
+						</div>
+					  </section>
+
+					  <section class="section living">
+							<div class="section__inner">
+									<div class="living__copy">
+						<h3 class="living__copy__title">Live your best life</h3>
+						<span class="living__copy__sub-title">Connected living</span>
+						<p class="living__copy__description">Discover the living room and kitchen of tomorrow. Step inside our showcase of the connected technology that will change how you play, relax, cook and clean.</p>
+					</div>
+						<img src="https://images.samsung.com/is/image/samsung/p5/uk/kings-cross/connected-living.png?$ORIGIN_PNG$" />
+								
+					</section>
+
 
 		{{>components/findKx}}
 

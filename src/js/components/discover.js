@@ -4,7 +4,7 @@ export default function discover( events ) {
 
 	const sliderConfig = {
 		lazyLoad: 'ondemand',
-		dots: false,
+		dots: true,
 		infinite: false,
 		speed: 500,
 		fade: false,

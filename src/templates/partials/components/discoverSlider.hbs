@@ -6,9 +6,9 @@
 
             {{#each config.discover.sliderOne }}
             <div class="slider-discover__slide">
-                <h3 class="slider-discover__slide--title">{{ this.title }}</h3>
-                <p class="slider-discover__slide--description">{{ this.description }}</p>
+               
                 <img src="{{ this.image }}" class="discover__img" alt={{ this.alt }}>
+                 <p class="slider-discover__slide__description">{{ this.description }}</p>
             </div>
 
             {{/each}}
@@ -18,9 +18,9 @@
 
             {{#each config.discover.sliderTwo }}
             <div class="slider-discover__slide">
-                <h3 class="slider-discover__slide--title">{{ this.title }}</h3>
-                <p class="slider-discover__slide--description">{{ this.description }}</p>
+                
                 <img src="{{ this.image }}" class="discover__img" alt={{ this.alt }}>
+                <p class="slider-discover__slide__description">{{ this.description }}</p>
             </div>
 
             {{/each}}

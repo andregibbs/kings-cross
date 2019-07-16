@@ -16,7 +16,9 @@
 
   &--active {
     height: auto;
-    display: block;
+	padding-top: 0!important;
+	padding-bottom: 0!important;
+	box-shadow: inset 0px 15px 16px -6px #000;
   }
 
   &__form {
@@ -131,7 +133,16 @@
 	&__footer {
 		display: flex;
 		justify-content: center;
-		margin-top: 35px; 
+		align-items: center;
+		flex-direction: column;
+		width: 100%;
+		margin-top: 35px;
+
+		&__terms {
+			font-size: em(15);
+			font-weight: 400;
+			margin-top: 20px;
+		}
 	}
   }
 

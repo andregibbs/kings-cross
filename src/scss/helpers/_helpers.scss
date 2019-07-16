@@ -322,6 +322,52 @@
     }
   }
 
+  .close {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    opacity: 0.5;
+    z-index: 99;
+    right: 128px;
+    @media screen and (max-width: $desktop) {
+      right: get-desktop-vw(32);
+      // top: get-desktop-vw(32);
+    }
+
+    @media screen and (max-width: $mobile) {
+      width: 16px;
+      height: 16px;
+      right: get-mobile-vw(32);
+      // top: get-mobile-vw(32);
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:before,
+    &:after {
+      position: absolute;
+      left: 7px;
+      content: " ";
+      height: 33px;
+      width: 4px;
+      background-color: white;
+      @media screen and (max-width: $mobile) {
+        height: 16.5px;
+        width: 2px;
+      }
+    }
+
+    &:before {
+      transform: rotate(45deg);
+    }
+
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
+
   //Inputs
   input[type="text"].input,
   input[type="email"].input,

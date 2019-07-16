@@ -16,8 +16,10 @@
 					{{>components/loader }}
 
 					<div class="book-action">
-	
-						<h2>Ticket Options</h2>
+						<div class="book-action__header">
+							<div class="close"></div><h2>Ticket Options</h2> 
+						</div>
+						
 						<span  class="book-action__description"></span>
 						<div class="book__form">
 							<form id='book__form'>
@@ -45,7 +47,8 @@
 						
 						</div>
 								<div class="book__form__footer "><button class="book__form-submit action-btn btn btn--primary" type="submit" >Get Tickets</button>
-							   
+									<span class="book__form__footer__terms">By submitting this form you acknowledge that your personal data will be processed in accordance with our Privacy Policy.</span>
+								</div>
 	
 								
 							</form>
@@ -57,7 +60,7 @@
 	
 						<div class="book-confirmation__summary order">
 							<div class="order__header">
-									<h2>Thank you for booking</h2>
+								<div class="close"></div>	<h2>Thank you for booking</h2>
 									<span class="order__time">xxx</span> 
 							</div>
 							<div class="order__summary">
