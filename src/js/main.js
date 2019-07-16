@@ -9,6 +9,7 @@ import slider from './components/slider'
 import bookingRefFetcher from './components/bookingRefFetcher'
 import discover from './components/discover'
 import support from './components/support'
+import experience from './components/experience'
 
 //experimental
 // import smoothScroll from './librarys/smoothscroll';
@@ -315,6 +316,10 @@ $(document).ready(function () {
 		case "/uk/kings-cross/bookings/":
 			bookingRefFetcher()
 			break;
+
+		case "/uk/kings-cross/experience/":
+			experience();
+            break;
 
 		default: {
 			// Your init here
