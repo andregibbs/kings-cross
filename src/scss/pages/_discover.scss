@@ -7,6 +7,7 @@
   max-height: 700px;
   height: 57vh;
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: center center;
   display: flex;
   align-items: center;
@@ -42,14 +43,16 @@
     &-prev {
       border-right: 4px solid white;
       border-bottom: 4px solid white;
-      width: 15px;
-      height: 15px;
+      width: 30px;
+      height: 30px;
       transform: rotate(-225deg);
       left: 34px;
       z-index: 999;
       @media screen and (max-width: $mobile) {
         top: 25%;
         left: 17px;
+        width: 15px;
+      height: 15px;
     }
     }
     &-disabled {
