@@ -30,15 +30,27 @@
       transform: rotate(-45deg);
       right: 34px;
       z-index: 999;
+
+      @media screen and (max-width: $mobile) {
+          top: 25%;
+          right: 17px;
+          width: 15px;
+      height: 15px;
+      }
+      
     }
     &-prev {
       border-right: 4px solid white;
       border-bottom: 4px solid white;
-      width: 30px;
-      height: 30px;
+      width: 15px;
+      height: 15px;
       transform: rotate(-225deg);
       left: 34px;
       z-index: 999;
+      @media screen and (max-width: $mobile) {
+        top: 25%;
+        left: 17px;
+    }
     }
     &-disabled {
         opacity: .25;
@@ -70,6 +82,10 @@
         color: #969696;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+        @media screen and (max-width: $mobile) {
+           width: 15px;
+           height: 15px;
+        }
       }
       li.slick-active button:before {
         opacity: 0.75;
@@ -124,6 +140,10 @@
           margin-bottom: 30px;
           padding-left: 20%;
           padding-right: 20%;
+          @media screen and (max-width: $mobile) {
+            padding-left: 0;
+            padding-right: 0;
+        }
         }
       }
 
@@ -137,10 +157,18 @@
   background-position: center bottom;
   color: black;
 
+  @media screen and (max-width: $mobile) {
+    background: #fff;
+}
+
   &__help {
     display: flex;
     justify-content: center;
     align-items: center;
+    @media screen and (max-width: $mobile) {
+        flex-direction: column;
+    }
+    
 
     &__img {
       max-width: 600px;
@@ -152,6 +180,12 @@
     justify-content: space-evenly;
     flex-direction: column;
     margin-left: get-desktop-vw(80);
+    @media screen and (max-width: $mobile) {
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+        margin-top: 20px;
+    }
 
     &__title {
       font-size: em(50);
@@ -165,6 +199,9 @@
       font-size: em(20);
       font-weight: 400;
       margin-bottom: 30px;
+      @media screen and (max-width: $mobile) {
+        text-align: center;
+    }
     }
   }
 }
@@ -177,7 +214,7 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
-    
+
     h3 {
       font-size: em(50);
       font-weight: bold;
@@ -237,6 +274,9 @@
       font-weight: 400;
       padding-left: em(150);
       padding-right: em(150);
+      @media screen and (max-width: $mobile) {
+          padding: 0;
+      }
     }
   }
 
@@ -260,6 +300,10 @@
     align-items: flex-start;
     justify-content: space-between;
     margin-bottom: 2%;
+    @media screen and (max-width: $mobile) {
+        flex: 0 0 calc(50% - 2%);
+        height: 170px;
+    }
 
     h4 {
       font-size: em(40);
