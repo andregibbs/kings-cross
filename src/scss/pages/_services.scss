@@ -96,6 +96,10 @@
       flex-basis: unset;
       width: 40%;
     }
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 
   & > div,

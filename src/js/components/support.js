@@ -87,9 +87,24 @@ export default function support() {
 
                 document.getElementsByClassName("close")[0].style.display = "block";
 
-                this.navigation.style.display = "flex";
                 var nextScreen = this.journeys[cat][1]
-                nextScreen == screens.deviceInfo ? nextScreen.style.display = "flex" : nextScreen.style.display = "block";
+                if(nextScreen == screens.deviceInfo){
+                    $(nextScreen).slideDown({
+                        start: function () {
+                          $(this).css({
+                            display: "flex"
+                          });
+                          console.log("Start");
+                        },
+                        complete: function() {
+                            state.navigation.style.display = "flex";
+                        }
+                      });
+                } else {
+                    $(nextScreen).slideDown(400, function() { 
+                        state.navigation.style.display = "flex";
+                    });
+                }
 
                 switch (cat) {
                     case "oneToOne":
@@ -137,7 +152,11 @@ export default function support() {
             sendLock();
 
             this.navigation.style.display = "";
-            this.journeys[this.category][this.stage].style.display = "";
+            // this.journeys[this.category][this.stage].style.display = "";
+
+            $(this.journeys[this.category][this.stage]).slideUp(400, function() { 
+                state.navigation.style.display = "";
+            });
 
             this.category = "";
             this.active = false;
