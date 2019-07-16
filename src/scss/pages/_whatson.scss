@@ -178,6 +178,12 @@
 
     &__results {
       margin-top: 50px;
+      display: flex;
+      align-items: center;
+      button {
+        margin-right: 10px;
+      }
+      
     }
   }
 }
