@@ -1,0 +1,33 @@
+<!--#include virtual="/uk/aem/header-pdp.html"-->
+
+<section class="cheil-static">
+
+	{{>stylesheet}}
+
+	{{>components/nav }}
+
+	<h1>EXPERIENCE PAGE</h1>
+
+	<section class="section">
+
+		<form id="dataid" style="display:none;">
+		    <input type="text" name="id" value="" placeholder="id" />
+		</form>
+	    <div id="files">
+	    </div>
+
+<!--
+
+script needs to check for id query string parameter
+- if it doesn't exist or is invalid - redirect to kx home page
+- create a handlebars template to display the content ???
+
+-->
+
+	</section>
+
+	{{>scripts }}
+
+</section>
+
+<!--#include virtual="/uk/aem/footer-pdp.html"-->

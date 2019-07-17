@@ -44,6 +44,11 @@ export default function whatson( events ){
 
 	$('.filters__results .btn').click( function() {
 
+
+		if($(this).hasClass('btn--secondary')) {
+			resetFilters()
+		}
+
 		updateFilters()
 
 		var eventsToRender = eventsToManipulate
@@ -122,6 +127,27 @@ export default function whatson( events ){
 
 		$('.suitables .switch.active').each( function() {
 			getEventtype.push( $(this).data('code') )
+		})
+
+	}
+
+	// =================================================
+	// function to reset filters
+	// =================================================
+
+	function resetFilters() {
+
+		$('.passions .switch, .suitables .switch').each( function() {
+			$(this)
+			.find('.label')
+			.removeClass('label--active')
+			$(this).find('.switch-button')
+			.removeClass('selected')
+			$(this).removeClass('active')
+		});
+
+		$('.filters__date__container input').each(function() {
+			$(this).val('');
 		})
 
 	}

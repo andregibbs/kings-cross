@@ -9,6 +9,7 @@ import slider from './components/slider'
 import bookingRefFetcher from './components/bookingRefFetcher'
 import discover from './components/discover'
 import support from './components/support'
+import experience from './components/experience'
 
 //experimental
 // import smoothScroll from './librarys/smoothscroll';
@@ -41,6 +42,7 @@ $(document).ready(function () {
 	let todayPromotedEvents = []
 	let weekPromotedEvents = []
 	let monthPromotedEvents = []
+	let topics = []
 
 	let now = new Date()
 	let today = null
@@ -159,6 +161,17 @@ $(document).ready(function () {
 			// store the 'converted' data as events in main
 			events = data;
 
+			//get all the topic ids
+
+			events.forEach(event => {
+				if (topics.includes(event.topic.id)) {
+
+				} else {
+					topics.push(event.topic.id);
+				}
+				
+			});
+
 			for (var i = 0; i < events.length; i++) {
 				var event = events[i];
 
@@ -209,6 +222,7 @@ $(document).ready(function () {
 
 			// Logs all events
 			console.log( 'events', events )
+			console.log( 'topics', topics )
 			console.log( 'events - wowEvents', wowEvents )
 			console.log( 'events - todayEvents', todayEvents )
 			console.log( 'events - futureEvents', futureEvents )
@@ -315,6 +329,10 @@ $(document).ready(function () {
 		case "/uk/kings-cross/bookings/":
 			bookingRefFetcher()
 			break;
+
+		case "/uk/kings-cross/experience/":
+			experience();
+            break;
 
 		default: {
 			// Your init here
