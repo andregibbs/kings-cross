@@ -322,6 +322,113 @@
     }
   }
 
+  .close {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    opacity: 0.5;
+    z-index: 99;
+    right: 128px;
+    @media screen and (max-width: $desktop) {
+      right: get-desktop-vw(32);
+      // top: get-desktop-vw(32);
+    }
+
+    @media screen and (max-width: $mobile) {
+      width: 16px;
+      height: 16px;
+      right: get-mobile-vw(32);
+      // top: get-mobile-vw(32);
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:before,
+    &:after {
+      position: absolute;
+      left: 7px;
+      content: " ";
+      height: 33px;
+      width: 4px;
+      background-color: white;
+      @media screen and (max-width: $mobile) {
+        height: 16.5px;
+        width: 2px;
+      }
+    }
+
+    &:before {
+      transform: rotate(45deg);
+    }
+
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  .pop-up{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.4);
+    display: none;
+
+    &__body{
+      position: absolute;
+      height: 400px;
+      width: 800px;
+      
+      @media screen and (max-width: $desktop) {
+        height: get-desktop-vw(400);
+        width: get-desktop-vw(800);
+      }
+
+      @media screen and (max-width: $mobile) {
+        height: get-mobile-vw(400);
+        width: get-mobile-vw(800);
+      }
+
+      padding: 80px 120px;
+
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background: $background;
+      border: 5px solid $pink;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+    
+    }
+
+    &__title{
+      font-size: em(32);
+    }
+
+    &__text{
+      font-size: em(20);
+    }
+
+    &__buttons{
+      display: flex;
+      button{
+        margin: 0 20px;
+      }
+    }
+
+    .close{
+      top: 24px;
+      right: 24px;
+    }
+  }
+
   //Inputs
   input[type="text"].input,
   input[type="email"].input,

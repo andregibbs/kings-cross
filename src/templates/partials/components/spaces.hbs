@@ -1,17 +1,12 @@
-<section class="section spaces">
-    <div class="section__inner">
-        <div class="spaces__content content">
+
+      
             {{#each config.discover.spaces}}
-            <div class="spaces__space">
+            <div class="spaces__space" style="background: url('{{ this.image }}')">
 
-                <img src="{{ this.image }}" />
-
-                <h2>{{this.title}}</h2>
+                <h4>{{this.title}}</h4>
 
                 <p>{{this.description}}</p>
 
             </div>
             {{/each}}
-        </div>
-    </div>
-</section>
+

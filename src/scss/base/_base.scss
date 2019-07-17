@@ -36,4 +36,12 @@
 	button {
 		color: $white;
 	}
+
+	div.line{
+		background-color: #4D4D4F;
+		height: 2px;
+		width: 100%;
+		max-width: $desktop;
+		margin: 0 auto;
+	}
 }

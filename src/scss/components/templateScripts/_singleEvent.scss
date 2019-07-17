@@ -102,7 +102,38 @@
 		display: flex;
 		align-items: flex-end;
 		justify-content: space-evenly;
-		flex-direction: column;
+    flex-direction: column;
+
+
+    &__social {
+      display: none;
+      padding-top: 15px;
+    }
+
+    &__social--active {
+      display: flex;
+      align-items: center;
+      padding-top: 15px;
+
+    }
+
+    &__container {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      user-select: none;
+
+      h2 {
+        font-size: em(20);
+        font-weight: 700;
+      }
+
+    }
+    
+    &__icon {
+      width: get-desktop-vw(25);
+      margin-left: get-desktop-vw(10);
+    }
 	  }
     }
   }

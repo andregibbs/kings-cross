@@ -6,24 +6,62 @@
 
 	{{>components/nav }}
 
-	<section class="bookings">
-		<h2 class="bookings__title fz50">Find Your Booking</h2>
-		<p class="bookings__subtitle fz24">Enter the booking reference code you were shown and sent when you made a booking via the KX booking system.</p>
-		<form onsubmit="return false">
-			<input class="input bookings__input" id="bookingRef" type="text" placeholder="Booking Reference" />
-			<button class="button btn btn--primary bookings__button" type="submit" id="eventFetcher" style="color: white;">See Booking</button>
-		</form>
-		<p class="bookings__info fz18">Your reference code would also be on the confirmation email sent to the email address your provided when you booked event tickets or service appointments.<br><br/>Having trouble finding your booking? Give us a call: +44 2345 68 48 57</p>
-		<div id="user-info" style="display: none">
-			<h4 id="greetings"></h4>
-			<img alt="Event Image" id="event-img" style="max-width: 400px"/>
-			<p id="title"></p>
-			<p id="date"></p>
-			<p id="time"></p>
-			<button id="cancel" style="color: white;">CANCEL BOOKING</button>
-			<p id="cancelled" style="display: none; color: red;">BOOKING CANCELLED</p>
+	<section class="section bookings" id="booking-input">
+		<div class="section__inner bookings__inner">
+			<h2 class="bookings__inner__title fz50">Find Your Booking</h2>
+			<p class="bookings__inner__subtitle fz24">Enter the booking reference code you were shown and sent when you
+				made a booking via the KX booking system.</p>
+			<form onsubmit="return false">
+				<input class="input bookings__inner__input" id="bookingRef" type="text"
+					placeholder="Booking Reference" />
+				<button class="button btn btn--primary bookings__inner__button" type="submit" id="eventFetcher"
+					style="color: white;">See Booking</button>
+			</form>
+			<p class="bookings__inner__info fz18">Your reference code would also be on the confirmation email sent to
+				the email address your provided when you booked event tickets or service appointments.<br><br />Having
+				trouble finding your booking? Give us a call: +44 2345 68 48 57</p>
 		</div>
 	</section>
+	<section class="section request">
+		<div id="user-info" class="section__inner request__inner" style="display: none">
+			<p class="fz18" id="date"></p>
+			<h3 class="fz50" id="title"></h3>
+			<div class="request__content">
+				<div class="request__info">
+					<div class="request__event">
+						<a class="fz18">Entertainment Event</a>
+						<p class="request__mid fz18">Samsung KX, Stable St, Kings Cross, London N1C 4DQ</p>
+						<a class="fz18"
+							href="https://www.google.com/maps?saddr=My+Location&daddr=Three+Pancras+Square,+3+Pancras+Square,+Kings+Cross,+London">Get
+							Directions</a>
+					</div>
+					<div class="request__summary">
+						<h3 class="fz36">Order Summary</h3><br/>
+						<p class="fz18">Reference: <span id="booking-ref"></span></p><br/>
+						<p class="fz18">Quantity: <span id="quantity"></span></p>
+						<p class="fz18" id="name"></p>
+						<p class="fz18">Email: <span id="email"></span></p>
+						<p class="fz18" id="tel"></p>
+					</div>
+					<a class="fz18" href="#" id="cancel">CANCEL BOOKING</a>
+					<p id="cancelled" style="display: none; color: red;">BOOKING CANCELLED</p>
+				</div>
+				<img alt="Event Image" id="event-img" />
+			</div>
+		</div>
+	</section>
+
+	<div class="pop-up" id="cancel-popup">
+		<div class="pop-up__body">
+			<h4 class="pop-up__title">Are you sure you would like to cancel this booking?</h4>
+			<p class="pop-up__text">You will not be able to undo this action</p>
+			<div class="pop-up__buttons">
+				<button id="cancel-back" class="button btn btn--primary">BACK</button>
+				<button id="cancel-confirm" class="button btn btn--secondary">CANCEL BOOKING</button>
+			</div>
+			<div class="close"></div>
+		</div>
+	</div>
 
 	{{>components/findKx}}
 
