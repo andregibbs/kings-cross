@@ -42,6 +42,7 @@ $(document).ready(function () {
 	let todayPromotedEvents = []
 	let weekPromotedEvents = []
 	let monthPromotedEvents = []
+	let topics = []
 
 	let now = new Date()
 	let today = null
@@ -160,6 +161,17 @@ $(document).ready(function () {
 			// store the 'converted' data as events in main
 			events = data;
 
+			//get all the topic ids
+
+			events.forEach(event => {
+				if (topics.includes(event.topic.id)) {
+
+				} else {
+					topics.push(event.topic.id);
+				}
+				
+			});
+
 			for (var i = 0; i < events.length; i++) {
 				var event = events[i];
 
@@ -210,6 +222,7 @@ $(document).ready(function () {
 
 			// Logs all events
 			console.log( 'events', events )
+			console.log( 'topics', topics )
 			console.log( 'events - wowEvents', wowEvents )
 			console.log( 'events - todayEvents', todayEvents )
 			console.log( 'events - futureEvents', futureEvents )

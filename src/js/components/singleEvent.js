@@ -9,6 +9,7 @@ export default function singleEvent(events) {
   let ticketQuantity = 1;
   let instagramHashTag = "";
   let eventDetails = {};
+  let topicId = null;
 
   // =================================================
   // Populating event details from query string
@@ -19,7 +20,9 @@ export default function singleEvent(events) {
       kxConfig.seriesId
   ).success(function(seriesData) {
     // get the Integer value for the current series as this is returned by the event API - we need to check below that the event is valid for the series
-    kxConfig.seriesIdAsInt = seriesData.id;
+	kxConfig.seriesIdAsInt = seriesData.id;
+	
+
 
     $.get("https://bookings.qudini.com/booking-widget/event/eventId/" + id, {
       timezone: "Europe/London",
@@ -27,7 +30,9 @@ export default function singleEvent(events) {
     }).success(function(data) {
       console.log("Event details: ", data);
 
-      eventDetails = data;
+	  eventDetails = data;
+	  
+	  topicId = data.topic.id;
 
       function sortEventExtra(event) {
         if (event.description) {
@@ -121,7 +126,47 @@ export default function singleEvent(events) {
           data.slotsAvailable
             ? $(".event__content-book .btn--primary").text("Fully booked")
             : $(".event__content-book .btn--primary").text("Expired");
-        }
+		}
+		const populateRandomEvents = [];
+
+ 
+  console.log('populateRandomEvents', eventDetails);
+  
+
+
+  var filteredEvents = events.filter(x => x.topic.id === topicId);
+  for (var i = 0; i < 4; i++) {
+    populateRandomEvents.push(
+      filteredEvents[i]
+    );
+  }
+
+  
+ 
+  for (var i = 0; i < 4; i++) {
+    const options = {
+      identifier: populateRandomEvents[i].identifier,
+      groupSize: populateRandomEvents[i].maxGroupSize,
+      eventId: populateRandomEvents[i].id,
+      image: populateRandomEvents[i].imageURL
+        ? populateRandomEvents[i].imageURL
+        : "https://images.unsplash.com/photo-1560983719-c116f744352d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80",
+      title: populateRandomEvents[i].title,
+      startDate:
+        moment(populateRandomEvents[i].startDate).format("Do MMMM") ==
+        moment(Date.now()).format("Do MMMM")
+          ? "TODAY"
+          : moment(populateRandomEvents[i].startDate).format("Do MMMM"),
+      startTime: populateRandomEvents[i].startTime,
+      passion: populateRandomEvents[i].passions,
+      suitables: populateRandomEvents[i].extra.eventtype,
+      suitablesName: populateRandomEvents[i].extra.eventtypeName,
+      passionColor: populateRandomEvents[i].extra.passionColor,
+      description: populateRandomEvents[i].description
+    };
+
+    $(".relatedEvents__container").append(handleTemplate("eventTile", options));
+  }
       } else {
         // redirect to whats-on page
 
@@ -183,38 +228,7 @@ export default function singleEvent(events) {
 
   // TODO - need to make a decision what to do when less than 6 related events
 
-  const populateRandomEvents = [];
-
-  for (var i = 0; i < 4; i++) {
-    populateRandomEvents.push(
-      events[Math.floor(Math.random() * events.length)]
-    );
-  }
-
-  for (var i = 0; i < populateRandomEvents.length; i++) {
-    const options = {
-      identifier: populateRandomEvents[i].identifier,
-      groupSize: populateRandomEvents[i].maxGroupSize,
-      eventId: populateRandomEvents[i].id,
-      image: populateRandomEvents[i].imageURL
-        ? populateRandomEvents[i].imageURL
-        : "https://images.unsplash.com/photo-1560983719-c116f744352d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80",
-      title: populateRandomEvents[i].title,
-      startDate:
-        moment(populateRandomEvents[i].startDate).format("Do MMMM") ==
-        moment(Date.now()).format("Do MMMM")
-          ? "TODAY"
-          : moment(populateRandomEvents[i].startDate).format("Do MMMM"),
-      startTime: populateRandomEvents[i].startTime,
-      passion: populateRandomEvents[i].passions,
-      suitables: populateRandomEvents[i].extra.eventtype,
-      suitablesName: populateRandomEvents[i].extra.eventtypeName,
-      passionColor: populateRandomEvents[i].extra.passionColor,
-      description: populateRandomEvents[i].description
-    };
-
-    $(".relatedEvents__container").append(handleTemplate("eventTile", options));
-  }
+  
 
   // =================================================
   // Booking functionality
