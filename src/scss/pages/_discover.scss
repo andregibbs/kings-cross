@@ -3,7 +3,7 @@
 =============================================*/
 
 .kv {
-  background: url("https://images.samsung.com/is/image/samsung/p5/uk/kings-cross/DISCOVER-KV-2.png?$ORIGIN_PNG$");
+  background: url("https://images.samsung.com/is/image/samsung/p5/uk/kings-cross/discover-kv.png?$ORIGIN_PNG$");
   max-height: 700px;
   height: 57vh;
   background-repeat: no-repeat;
@@ -235,6 +235,7 @@
 }
 
 .gallery {
+    padding-top: 0!important;
   &__header {
     display: flex;
     justify-content: center;

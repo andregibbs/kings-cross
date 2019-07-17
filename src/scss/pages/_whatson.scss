@@ -21,6 +21,15 @@
 
     
   }
+  &__showMore {
+    font-size: em(20);
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+  }
 }
 
 .eventFilter {

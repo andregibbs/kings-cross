@@ -1,5 +1,6 @@
 import handleTemplate from "./handleTemplate";
 import instagram from "./instagram";
+import upcomingEvents from "./upcomingEvents";
 import getUrlVars from "./getUrlVars";
 
 export default function singleEvent(events) {
@@ -69,8 +70,8 @@ export default function singleEvent(events) {
           identifier: data.identifier,
           groupSize: data.maxGroupSize,
           eventId: eventId,
-          image: data.imageURL
-            ? data.imageURL
+          image: data.bannerImageURL
+            ? data.bannerImageURL
             : "https://images.unsplash.com/photo-1560983719-c116f744352d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80",
           title: data.title,
           startDate:
@@ -127,46 +128,7 @@ export default function singleEvent(events) {
             ? $(".event__content-book .btn--primary").text("Fully booked")
             : $(".event__content-book .btn--primary").text("Expired");
 		}
-		const populateRandomEvents = [];
-
- 
-  console.log('populateRandomEvents', eventDetails);
-  
-
-
-  var filteredEvents = events.filter(x => x.topic.id === topicId);
-  for (var i = 0; i < 4; i++) {
-    populateRandomEvents.push(
-      filteredEvents[i]
-    );
-  }
-
-  
- 
-  for (var i = 0; i < 4; i++) {
-    const options = {
-      identifier: populateRandomEvents[i].identifier,
-      groupSize: populateRandomEvents[i].maxGroupSize,
-      eventId: populateRandomEvents[i].id,
-      image: populateRandomEvents[i].imageURL
-        ? populateRandomEvents[i].imageURL
-        : "https://images.unsplash.com/photo-1560983719-c116f744352d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80",
-      title: populateRandomEvents[i].title,
-      startDate:
-        moment(populateRandomEvents[i].startDate).format("Do MMMM") ==
-        moment(Date.now()).format("Do MMMM")
-          ? "TODAY"
-          : moment(populateRandomEvents[i].startDate).format("Do MMMM"),
-      startTime: populateRandomEvents[i].startTime,
-      passion: populateRandomEvents[i].passions,
-      suitables: populateRandomEvents[i].extra.eventtype,
-      suitablesName: populateRandomEvents[i].extra.eventtypeName,
-      passionColor: populateRandomEvents[i].extra.passionColor,
-      description: populateRandomEvents[i].description
-    };
-
-    $(".relatedEvents__container").append(handleTemplate("eventTile", options));
-  }
+		upcomingEvents(events, topicId);
       } else {
         // redirect to whats-on page
 
@@ -209,7 +171,8 @@ export default function singleEvent(events) {
 
   $(".singleEvent").on("click", ".share__container", function(e) {
     e.preventDefault();
-    $(".share__social").toggleClass("share__social--active");
+	$(".share__social").toggleClass("share__social--active");
+	$(this).toggleClass("share__container--active");
   });
 
   $(".relatedEvents__header__see").click(function() {

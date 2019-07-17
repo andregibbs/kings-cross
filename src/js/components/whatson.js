@@ -1,8 +1,9 @@
 import '../librarys/jquery-ui-1.12.1.custom/jquery-ui.min.js'
-
 import handleTemplate from './handleTemplate'
 import getUrlVars from './getUrlVars'
-import dataPicker from './dataPicker'
+import dataPicker from './dataPicker';
+var renders = 0;
+var eventsToRender = [];
 
 export default function whatson( events ){
 
@@ -18,6 +19,11 @@ export default function whatson( events ){
 	// =================================================
 
 	dataPicker()
+
+	$('.events__showMore').click( function() {
+
+		renderEventsIntoDom( eventsToManipulate );
+	});
 
 	$('.passions .switch, .suitables .switch').click( function() {
 		$(this)
@@ -157,9 +163,37 @@ export default function whatson( events ){
 	// Accepts the events as parameter
 	// =================================================
 
-	function renderEventsIntoDom( eventsToRender ) {
+	function renderEventsIntoDom( allEventsToRender ) {
 
-		eventsToRender.forEach( function( event, index ) {
+	 
+
+		var i,j,temparray,chunk = 30, newEvents = [];
+for (i=0,j=allEventsToRender.length; i<j; i+=chunk) {
+	temparray = allEventsToRender.slice(i,i+chunk);
+	
+	newEvents.push(temparray);
+   
+}
+
+
+
+		if(renders >= newEvents.length) {
+			var newEventsToRender = eventsToRender;
+		} else {
+			var newEventsToRender = eventsToRender.concat(newEvents[renders]);
+		}
+		
+
+
+
+		
+
+		console.log(eventsToRender);
+		console.log(allEventsToRender);
+
+		console.log('renders',renders, renders, newEvents.length)
+
+		newEventsToRender.forEach( function( event, index ) {
 
 			counter++
 
@@ -186,6 +220,7 @@ export default function whatson( events ){
 				counter = 0
 			}
 		})
+		renders++
 	}
 
 
