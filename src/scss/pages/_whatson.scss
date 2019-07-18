@@ -19,7 +19,24 @@
     justify-content: flex-start;
     flex-wrap: wrap;
 
+    @media screen and (max-width: $mobile) {
+
+      justify-content: center;
+
+    }
+
     
+
+    
+  }
+  &__showMore {
+    font-size: em(20);
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
   }
 }
 
@@ -30,9 +47,18 @@
     justify-content: space-between;
     align-items: flex-end;
 
+    
+    @media screen and (max-width: $mobile) {
+      align-items: center;
+    }
+    
+
     &__title {
       h2 {
         font-size: em(50);
+        @media screen and (max-width: $mobile) {
+          font-size: em(20);
+        }
       }
     }
 
@@ -43,6 +69,9 @@
 
       span {
         font-size: em(20);
+        @media screen and (max-width: $mobile) {
+          font-size: em(15);
+        }
       }
 
       &__btn_fold {
@@ -90,7 +119,14 @@
 		display: flex;
 		flex-direction: column;
 		margin-top: 50px;
-		display: none;
+    display: none;
+
+    @media screen and (max-width: $mobile) {
+
+      margin-top: 25px;
+
+    }
+    
 		&.closed {
 			
 		}
@@ -99,15 +135,30 @@
 	&__lower {
 		display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: $mobile) {
+    flex-direction: column;
+    align-items: center;
+
+    }
 	}
 	
 	&-title {
 		font-size: em(30);
-			margin-bottom: 30px;
+      margin-bottom: 30px;
+      
+      @media screen and (max-width: $mobile) {
+
+        font-size: em(30);
+        font-weight: bold;
+      }
 	}
 
 	&__date {
-		width: 60%;
+    width: 60%;
+    @media screen and (max-width: $mobile) {
+      width: 100%;
+    }
 		&__container {
 			display: flex;
 			.hasDatepicker {
@@ -137,7 +188,13 @@
 		width: 60%;
 		flex-flow: row;
 		flex-wrap: wrap;
-		margin-bottom: 20px;
+    margin-bottom: 20px;
+    
+    @media screen and (max-width: $mobile) {
+
+      width: 100%;
+
+    }
 
         span {
           display: inline-block;
@@ -148,11 +205,23 @@
 			justify-content: flex-start;
 			align-items: center;
 			width: calc(100% / 4);
-			margin-bottom: get-desktop-vw(15);
+      margin-bottom: get-desktop-vw(15);
+      @media screen and (max-width: $mobile) {
+
+        width: calc(100% / 2);
+        margin-bottom: get-mobile-vw(33);
+      }
+      
 			.label {
 				font-size: em(20);
 				opacity: 0.5;
-				transition: opacity 0.2s ease;
+        transition: opacity 0.2s ease;
+        
+        @media screen and (max-width: $mobile) {
+          font-size: em(13);
+
+          font-weight: 700;
+        }
 
 				&--active {
 					opacity: 1;
@@ -166,7 +235,14 @@
     .toggleSuitables {
 		&__title{
 			font-size: em(30);
-			margin-bottom: 30px;
+      margin-bottom: 30px;
+      
+      @media screen and (max-width: $mobile) {
+
+        font-size: em(20);
+        font-weight: bold;
+
+      }
 
 		}
     }

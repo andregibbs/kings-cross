@@ -27,7 +27,7 @@
 			}
 
 			@media screen and ( max-width: $mobile ) {
-				margin: 0 get-mobile-vw(100);
+				margin: 0 get-mobile-vw(20);
 			}
 		}
 
@@ -36,7 +36,7 @@
 			letter-spacing: 1px;
 			transition: all 0.4s ease;
 			transform: scale(1);
-			display: inline-block;
+			display: flex;
 			&:hover {
 				letter-spacing: 2px;
 				transform: scale(1.1);

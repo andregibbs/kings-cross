@@ -10,6 +10,7 @@
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 22px;
+	
 
 	&__see {
 		cursor: pointer;
@@ -22,6 +23,11 @@
 	&__container {
 		display: flex;
 		justify-content: space-between;
+		@media screen and (max-width: $mobile) {
+			justify-content: space-evenly;
+			flex-wrap: wrap;
+			
+			}
 		.eventTile {
 			margin-left: 0;
 		}
