@@ -8,16 +8,77 @@
   }
 
   .event {
+    &__section {
+      @media screen and (max-width: $mobile) {
+      width: 100%;
+      }
+    }
     &__header {
       padding-left: 40px;
       padding-right: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+
+
+
+      @media screen and (max-width: $mobile) {
+
+        flex-direction: column-reverse;
+
+      }
+      
+      &__top {
+
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        width: 100%;
+        @media screen and (max-width: $mobile) {
+        margin-bottom: 17px;
+        }
+        
+
+        .action-btn {
+          display: none;
+          @media screen and (max-width: $mobile) {
+
+            display: block;
+
+          }
+        }
+
+        &__left {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          .action-capacity {
+            display: none;
+            @media screen and (max-width: $mobile) {
+              display: block;
+              font-size: em(20);
+          }
+          }
+        }
+
+      }
 
       &-date {
-        font-size: em(20);
+        font-size: em(30);
+        @media screen and (max-width: $mobile) {
+          font-size: em(25);
+          margin-top: 10px;
+        }
       }
       &-title {
         font-size: em(50);
-        margin-top: 15px;
+        margin-top: 10px;
+        @media screen and (max-width: $mobile) {
+          font-size: em(25);
+          margin-top: 0;
+        }
       }
     }
 
@@ -46,7 +107,13 @@
     &__content {
       & > div {
         display: flex;
-		justify-content: space-between;
+    justify-content: space-between;
+    @media screen and (max-width: $mobile) {
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+
+    }
       }
 
       .tile_container {
@@ -54,6 +121,12 @@
         display: flex;
         flex-direction: column;
         max-width: 55%;
+
+        @media screen and (max-width: $mobile) {
+
+          max-width: 100%;
+
+        }
 
       }
 
@@ -77,19 +150,49 @@
 		  display: flex;
 		  align-items: flex-end;
 		  justify-content: space-evenly;
-		  flex-direction: column;
+      flex-direction: column;
+
+      @media screen and (max-width: $mobile) {
+
+        display: none;
+
+      }
+      
+      .action-btn {
+
+        display: block;
+
+
+        @media screen and (max-width: $mobile) {
+
+          display: none;
+
+        }
+        
+      }
 
 		  &-date {
 			  font-size: em(25);
 			  font-weight: 700;
-			margin-bottom: 15px;
+      margin-bottom: 15px;
+      
+      @media screen and (max-width: $mobile) {
+
+        display: none;
+
+      }
 
 		  }
 
 		  &-capacity {
 			  font-size: em(20);
 			  font-weight: 400;
-			  margin-bottom: 20px;
+        margin-bottom: 20px;
+        @media screen and (max-width: $mobile) {
+
+          display: none;
+
+        }
 		  }
 		  &-crucial {
 			  font-size: em(15);
@@ -105,6 +208,8 @@
 		justify-content: space-evenly;
     flex-direction: column;
 
+    padding-bottom: 20px;
+
 
     &__social {
       opacity: 0;
@@ -114,6 +219,20 @@
       padding-top: 24px;
       width: get-desktop-vw(150);
       transition: opacity 0.4s;
+
+      @media screen and (max-width: $mobile) {
+        display: none;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-bottom: 11px;
+        width: 100%;
+        opacity: 0;
+        height: 0;
+        transition: opacity, height 0.4s;
+        user-select: none;
+        overflow: hidden;
+  
+        }
     }
 
     &__social--active {
@@ -124,6 +243,22 @@
       width: get-desktop-vw(150);
       opacity: 1;
       transition: opacity 0.4s;
+      @media screen and (max-width: $mobile) {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      padding-bottom: 11px;
+      width: 100%;
+      opacity: 1;
+      height: 57px;
+      transition: opacity, height 0.4s;
+      user-select: auto;
+
+      svg {
+        width: 70%;
+      }
+
+      }
 
     }
 
@@ -143,6 +278,10 @@
       h2 {
         font-size: em(20);
         font-weight: 700;
+
+        @media screen and (max-width: $mobile) {
+          font-size: em(25);
+        }
       }
 
     }
@@ -150,6 +289,13 @@
     &__icon {
       width: get-desktop-vw(25);
       margin-left: get-desktop-vw(10);
+
+      @media screen and (max-width: $mobile) {
+
+        width: get-mobile-vw(35);
+      margin-left: get-mobile-vw(10);
+
+      }
     }
 	  }
     }

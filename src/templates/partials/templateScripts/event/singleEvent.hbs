@@ -2,7 +2,11 @@
 	<div class="single-event" data-eventId='[[ eventId ]]' data-maxGroupSize='[[ groupSize ]]'  data-eventIdentifier='[[ identifier ]]'>
 
 		<section class="event__header section__inner">
-			<span class="event__header-date">[[ startDate ]] | [[ startTime ]]</span> 
+			<div class="event__header__top"><div class="event__header__top__left"><span class="event__header-date">[[ startDate ]] | [[ startTime ]]</span><span class="action-capacity">Spaces left [[ slotsAvailable ]]</span></div> [[#if externalbookinglink ]]
+							<a href="[[externalbookinglink]]" class="link-book btn btn--primary" target="_blank">book now</a>
+						[[else]]
+							<button class="action-btn btn btn--primary">book tickets</button>
+						[[/if]]</div>
 			<h2 class="event__header-title">[[ title ]]</h2>
 		</section>
 
@@ -22,7 +26,7 @@
 						<iframe width="560" height="315" src="https://www.youtube.com/embed/[[ youtube ]]" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					[[/if]]
 				</section>
-				<section>
+				<section class="event__section">
 					<div class="event__content-book action">
 						<span class="action-date">[[ startDate ]] | [[ startTime ]]</span> 
 						<span class="action-capacity">Spaces left [[ slotsAvailable ]]</span> 
@@ -33,7 +37,6 @@
 							<button class="action-btn btn btn--primary">book tickets</button><br><br>
 						[[/if]]
 
-						<span class="action-crucial">*I am small print I can display crucial event information</span>
 					</div>
 					<div class="event__content-share share">
 						<div class="share__container">

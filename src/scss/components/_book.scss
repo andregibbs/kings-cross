@@ -21,7 +21,12 @@
   }
 
   &__form {
-    padding: 0 7em 0em;
+	padding: 0 7em 0em;
+	@media screen and (max-width: $mobile) {
+
+		padding: 0;
+
+	}
 
     &__top {
       display: flex;
@@ -46,18 +51,34 @@
     }
     &__middle {
       display: flex;
-      justify-content: space-evenly;
+	  justify-content: space-evenly;
+	  
+	  @media screen and (max-width: $mobile) {
+
+		flex-direction: column;
+
+	  }
       .book {
         &__tickets {
           flex: 0 47%;
           display: flex;
           justify-content: center;
-          flex-direction: column;
+		  flex-direction: column;
+		  
+		  @media screen and (max-width: $mobile) {
+			align-items: center;
+			flex-direction: row;
+			margin-top: -30px;
+	
+		  }
 
           h3 {
             font-size: em(20);
             text-align: center;
-            margin-bottom: 20px;
+			margin-bottom: 20px;
+			@media screen and (max-width: $mobile) {
+				margin-bottom: 0;
+			}
           }
 
           &__container {
@@ -73,6 +94,14 @@
 			text-align: center;
 			font-size: em(30);
 			font-weight: bold;
+			@media screen and (max-width: $mobile) {
+
+
+				width: get-mobile-vw(40);
+				height:get-mobile-vw(40);
+				font-size: em(20);
+
+			}
           }
           &-minus {
 			padding: 20px;
@@ -104,6 +133,11 @@
 				width: 10px;
 				height: 10px;
 				background: $white;
+				@media screen and (max-width: $mobile) {
+
+				
+
+				}
 				&.selected {
 					background: #E14D9A;
 				}
