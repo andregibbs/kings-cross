@@ -1,6 +1,6 @@
 export default function bookingRefFetcher() {
     const isoCurrentDate = new Date();
-    
+
     let inputScreen = document.getElementById("booking-input");
     let bookingScreen = document.getElementById("user-info");
 
@@ -16,6 +16,7 @@ export default function bookingRefFetcher() {
         'date': document.getElementById("date"),
         'title': document.getElementById("title"),
         'img': document.getElementById("event-img"),
+        'zone': document.getElementById("zone")
     };
 
     document.getElementById("eventFetcher").addEventListener("click", function () {
@@ -42,24 +43,35 @@ export default function bookingRefFetcher() {
                     userDisplay.name.innerText = bookingData.firstName + " " + bookingData.lastName;
                     userDisplay.email.innerText = bookingData.email;
                     userDisplay.tel.innerText = bookingData.mobileNumber;
-
+                    
+                    if(eventData.locationName != ""){
+                        eventDisplay.zone.style.display = "block";
+                        eventDisplay.zone.innerText = eventData.locationName;
+                    }
+                    
                     inputScreen.style.display = "none";
-                    bookingScreen.style.display="block";
+                    bookingScreen.style.display = "block";
 
-                    document.getElementById("cancel").addEventListener("click", function(){
+                    document.getElementById("cancel").addEventListener("click", function () {
                         document.getElementById("cancel-popup").style.display = "block";
                     })
-                    
-                    $("#cancel-back, .close").click(function(){
+
+                    $("#cancel-back, .close").click(function () {
                         document.getElementById("cancel-popup").style.display = "";
                     })
 
-                    document.getElementById("cancel-confirm").addEventListener("click", function(){
+                    document.getElementById("cancel-confirm").addEventListener("click", function () {
                         document.getElementById("cancel-popup").style.display = "";
-                        
+                        document.getElementById("load-screen").style.display = "block";
                         $.get("https://bookings.qudini.com/booking-widget/event/cancel/" + ref)
-                            .success(()=>{
-                                document.getElementById("cancelled").style.display = "inline-block";
+                            .success(() => {
+
+                                document.getElementById("load-screen").style.display = "none";
+
+                                $(".line--vertical, .request__info p, .request__info a, #date, #title").hide();
+                                $(".request__info h3").html("Booking cancelled<br>"+eventData.title)
+                                $(".request__summary__content").append('<p class="fz18 request__cancel">You booking has been cancelled.</p><p class="fz18">Thanks for letting us know. If you would like to come to a different KX event go to the What’s on page or browse the upcoming events below.</p>');
+
                             })
                     })
 

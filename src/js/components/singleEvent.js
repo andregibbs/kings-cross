@@ -213,7 +213,7 @@ export default function singleEvent(events) {
   });
 
   $(".relatedEvents__header__see").click(function() {
-    window.location.href = "/uk/kings-cross/whats-on/";
+    window.location.href = "/uk/explore/kings-cross/whats-on/";
   });
 
   // =================================================

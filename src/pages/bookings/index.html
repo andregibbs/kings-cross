@@ -29,19 +29,23 @@
 			<div class="request__content">
 				<div class="request__info">
 					<div class="request__event">
-						<a class="fz18">Entertainment Event</a>
-						<p class="request__mid fz18">Samsung KX, Stable St, Kings Cross, London N1C 4DQ</p>
+						<a class="fz18">Entertainment Event</a><br><br>
+						<p class="request__zone fz18" id="zone"></p>
+						<p class="fz18">Samsung KX, Stable St, Kings Cross, London N1C 4DQ</p><br>
 						<a class="fz18"
 							href="https://www.google.com/maps?saddr=My+Location&daddr=Three+Pancras+Square,+3+Pancras+Square,+Kings+Cross,+London">Get
 							Directions</a>
 					</div>
 					<div class="request__summary">
-						<h3 class="fz36">Order Summary</h3><br/>
-						<p class="fz18">Reference: <span id="booking-ref"></span></p><br/>
-						<p class="fz18">Quantity: <span id="quantity"></span></p>
-						<p class="fz18" id="name"></p>
-						<p class="fz18">Email: <span id="email"></span></p>
-						<p class="fz18" id="tel"></p>
+						<div class="line--vertical"></div>
+						<div class="request__summary__content">
+							<h3 class="fz36">Order Summary</h3><br />
+							<p class="fz18">Reference: <span id="booking-ref"></span></p><br />
+							<p class="fz18">Quantity: <span id="quantity"></span></p>
+							<p class="fz18" id="name"></p>
+							<p class="fz18">Email: <span id="email"></span></p>
+							<p class="fz18" id="tel"></p>
+						</div>
 					</div>
 					<a class="fz18" href="#" id="cancel">CANCEL BOOKING</a>
 					<p id="cancelled" style="display: none; color: red;">BOOKING CANCELLED</p>
@@ -49,6 +53,13 @@
 				<img alt="Event Image" id="event-img" />
 			</div>
 		</div>
+		<div class="loading" id="load-screen" style="display: none">
+				<div class="loading__spinner">
+					<div class="loading__bounce loading__bounce1"></div>
+					<div class="loading__bounce loading__bounce2"></div>
+					<div class="loading__bounce loading__bounce3"></div>
+				</div>
+			</div>
 	</section>
 
 	<div class="pop-up" id="cancel-popup">
@@ -62,6 +73,8 @@
 			<div class="close"></div>
 		</div>
 	</div>
+
+	
 
 	{{>components/findKx}}
 

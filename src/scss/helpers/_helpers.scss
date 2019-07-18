@@ -37,6 +37,7 @@
     }
 
     &__inner {
+      position: relative;
       width: 100%;
       max-width: $desktop;
       margin-left: auto;
@@ -265,63 +266,6 @@
     }
   }
 
-  .loading {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 9999999;
-    text-align: center;
-    -webkit-transition: 0.4s opacity ease-in;
-    transition: 0.4s opacity ease-in;
-    &:before {
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      background-color: $background;
-      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=50)";
-      opacity: 0.5;
-      content: "";
-    }
-    &__spinner {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      margin: -9px 0 0 -33px;
-      font-size: 0;
-    }
-    &__bounce {
-      display: inline-block;
-      width: 18px;
-      height: 18px;
-      margin: 0 2px;
-      -webkit-border-radius: 50%;
-      border-radius: 50%;
-      background-color: white;
-      border: 2px solid $pink;
-      -webkit-animation: bouncedelay 1.4s infinite ease-in-out;
-      animation: bouncedelay 1.4s infinite ease-in-out;
-      -webkit-animation-fill-mode: both;
-      animation-fill-mode: both;
-    }
-    &__bounce1 {
-      -webkit-animation-delay: -0.48s;
-      animation-delay: -0.48s;
-    }
-    &__bounce2 {
-      -webkit-animation-delay: -0.32s;
-      animation-delay: -0.32s;
-    }
-    &__bounce3 {
-      -webkit-animation-delay: -0.16s;
-      animation-delay: -0.16s;
-    }
-  }
-
   .close {
     position: absolute;
     width: 32px;
@@ -335,8 +279,8 @@
     }
 
     @media screen and (max-width: $mobile) {
-      width: 16px;
-      height: 16px;
+      width: 21px;
+      height: 25px;
       right: get-mobile-vw(32);
       // top: get-mobile-vw(32);
     }
@@ -351,11 +295,11 @@
       left: 7px;
       content: " ";
       height: 33px;
-      width: 4px;
+      width: 2px;
       background-color: white;
       @media screen and (max-width: $mobile) {
-        height: 16.5px;
-        width: 2px;
+        height: 26px;
+        width: 4px;
       }
     }
 
@@ -368,20 +312,20 @@
     }
   }
 
-  .pop-up{
+  .pop-up {
     position: absolute;
     height: 100%;
     width: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
     display: none;
 
-    &__body{
+    &__body {
       position: absolute;
       height: 400px;
       width: 800px;
-      
+
       @media screen and (max-width: $desktop) {
         height: get-desktop-vw(400);
         width: get-desktop-vw(800);
@@ -405,27 +349,47 @@
       justify-content: space-between;
       align-items: center;
       text-align: center;
-    
     }
 
-    &__title{
+    &__title {
       font-size: em(32);
     }
 
-    &__text{
+    &__text {
       font-size: em(20);
     }
 
-    &__buttons{
+    &__buttons {
       display: flex;
-      button{
+      button {
         margin: 0 20px;
       }
     }
 
-    .close{
+    .close {
       top: 24px;
       right: 24px;
+    }
+  }
+
+  div.line {
+    background-color: #4d4d4f;
+    height: 2px;
+    width: 100%;
+    max-width: $desktop;
+    margin: 0 auto;
+
+    &--vertical {
+      height: 100%;
+      width: 1px;
+      background-color: #dbdbdb;
+      margin-right: 32px;
+      @media screen and (max-width: $desktop) {
+        margin-right: get-desktop-vw(32);
+      }
+      @media screen and (max-width: $mobile) {
+        margin-right: get-mobile-vw(32);
+      }
     }
   }
 

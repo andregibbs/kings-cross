@@ -288,24 +288,24 @@ $(document).ready(function () {
 	// =========================================================
 
 	switch (window.location.pathname) {
-		case '/uk/kings-cross/':
+		case '/uk/explore/kings-cross/':
 			fetchData(testSlider)
 			whatIsKx()
 			break;
 
-		case "/uk/kings-cross/discover/":
+		case "/uk/explore/kings-cross/discover/":
 			discover();
             break;
 
-		case "/uk/kings-cross/whats-on/":
+		case "/uk/explore/kings-cross/whats-on/":
 			fetchData(whatson)
 			break;
 
-		case "/uk/kings-cross/whats-on/event/":
+		case "/uk/explore/kings-cross/whats-on/event/":
 			fetchData(singleEvent)
 			break;
 
-		case "/uk/kings-cross/support/":
+		case "/uk/explore/kings-cross/support/":
 			fetchData(function(allEvents) {
 				calendar("https://bookings.qudini.com/booking-widget/booker/slots/IZ0LYUJL6B0/4375/62764/0", "appointment", allEvents);
 			});
@@ -314,23 +314,23 @@ $(document).ready(function () {
 			// smoothScroll();
 			break;
 
-		case "/uk/kings-cross/support/repair/":
+		case "/uk/explore/kings-cross/support/repair/":
 			fetchData(function(allEvents) {
 				calendar("https://bookings.qudini.com/booking-widget/booker/slots/73U8JNREMLS/2286/37437/0", "appointment", allEvents);
 			})
 			break;
 
-		case "/uk/kings-cross/support/one-to-one/":
+		case "/uk/explore/kings-cross/support/one-to-one/":
 			fetchData(function(allEvents) {
 				calendar("https://bookings.qudini.com/booking-widget/booker/slots/73U8JNREMLS/2286/37437/0", "appointment", allEvents);
 			})
 			break;
 
-		case "/uk/kings-cross/bookings/":
+		case "/uk/explore/kings-cross/bookings/":
 			bookingRefFetcher()
 			break;
 
-		case "/uk/kings-cross/experience/":
+		case "/uk/explore/kings-cross/experience/":
 			experience();
             break;
 

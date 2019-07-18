@@ -31,7 +31,7 @@ var log = function( message, type ) {
 }
 
 var SITE = 'uk';
-var SUBFOLDER = 'kings-cross';
+var SUBFOLDER = '/explore/kings-cross';
 
 /* Configuration */
 var config = {

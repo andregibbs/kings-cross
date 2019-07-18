@@ -10,7 +10,7 @@ folder where uploads are uploaded to (DO NOT TOUCH) - uploads
 
 the reason for button.html is because you can only 'download' content using teh download attribute if the page downloading is on the same domain as the asset being downloaded
 
-button.html will be / is the src of iframes on the samsung.com/uk/kings-cross/experience page
+button.html will be / is the src of iframes on the samsung.com/uk/explore/kings-cross/experience page
 
 the experience page is the destination sent to users that use the apps in the kx store
 

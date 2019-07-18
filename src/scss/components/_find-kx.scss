@@ -7,6 +7,7 @@
 	background: $background;
 	.section__inner{
 		display: flex;
+		justify-content: space-between;
 		
 		span{
 			font-weight: bold;
@@ -22,7 +23,7 @@
 			}
 		}
 		.findkx__map{
-			flex-grow: 1;
+			max-width: 50%;
 		}
 	}
 }

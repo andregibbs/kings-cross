@@ -1,12 +1,12 @@
 {
 	"site": "uk",
-	"subfolder": "kings-cross",
+	"subfolder": "explore/kings-cross",
 
 	"seriesId":"W3DMW9HUAYM",
 	"LIVE___seriesId":"EAKJZBQWQAH",
 
-	"imgPath":"/content/dam/samsung/uk/kings-cross/",
-	"aemImgPath":"https://images.samsung.com/is/image/samsung/p5/uk/kings-cross/",
+	"imgPath":"/content/dam/samsung/uk/explore/kings-cross/",
+	"aemImgPath":"https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/",
 
 	"wowEventsToShow": 3,
 	"filteredPerPage": 9,

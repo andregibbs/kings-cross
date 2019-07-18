@@ -13,7 +13,7 @@
   }
 
   &__outer {
-    background-image: url(../../../content/dam/samsung/uk/kings-cross/header/support-header.png);
+    background-image: url(../../../../content/dam/samsung/uk/kings-cross/header/support-header.png);
     background-position: center center; /* First value is from left and second is from top. You can use use number as well*/
     background-repeat: no-repeat;
     background-size: cover;
@@ -250,8 +250,7 @@
     }
   }
 
-
-  .line {
+  .booking-line {
     width: 7680px;
     height: 1px;
     position: absolute;
@@ -264,6 +263,19 @@
 
     &--bot {
       bottom: -20px;
+    }
+  }
+
+  .close{
+    top: 0px;
+    right: 256px;
+    @media screen and (max-width: $desktop) {
+      right: get-desktop-vw(64);
+    }
+
+    @media screen and (max-width: $mobile) {
+      right: get-mobile-vw(34);
+      top: 16px;
     }
   }
 

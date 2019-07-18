@@ -1,5 +1,5 @@
 .bookings {
-  background-image: url(../../../content/dam/samsung/uk/kings-cross/header/bookings-header_transparent.png);
+  background-image: url(../../../../content/dam/samsung/uk/kings-cross/header/bookings-header_transparent.png);
   background-position: center center; /* First value is from left and second is from top. You can use use number as well*/
   background-repeat: no-repeat;
   background-size: cover;
@@ -26,6 +26,12 @@
 
 .request {
 
+  position: relative;
+
+  &__zone{
+    display: none;
+  }
+
   &__mid{
     margin: 14px 0;
     @media screen and (max-width: $desktop) {
@@ -49,6 +55,14 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+
+  &__summary{
+    display: flex; 
+  }
+
+  &__cancel{
+    font-weight: bold;
   }
 
   img{
