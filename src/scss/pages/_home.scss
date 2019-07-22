@@ -42,6 +42,9 @@
     
             }
         }
+        &__building {
+            position: fixed!important;
+        }
         &__zeroOne {
             position: absolute!important;
             transform: translateY(0)!important;

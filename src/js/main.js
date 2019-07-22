@@ -20,6 +20,13 @@ $(document).ready(function () {
 	// This will clear all unnecessary Samsung logs
 	console.clear()
 
+	//scroll past Navbar
+
+
+	setTimeout(function () {
+	window.scrollTo($('.cheil-static').offset().top, 0);
+},500);
+
 	// =================================================
 	// Global vars
 	// =================================================
