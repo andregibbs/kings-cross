@@ -35,6 +35,7 @@ export default function whatIsKx(events) {
 		let children = $("#parallax__container").children();
 		let paratext = $("#parallax__container").find(".parallax__text");
 		let paraHight = ($("#parallax__container").outerHeight() + $("#parallax__container").offset().top);
+		let opacity = (1 - window.scrollY / paraHight * 4);
 
 		for (let i = 0; i < children.length; i++) {
 			children[i].style.transform =
@@ -42,8 +43,9 @@ export default function whatIsKx(events) {
 			  (window.pageYOffset / i ) / children.length * 2 +
 			  "px)";
 		  }
-
-		 paratext.css('opacity', (1 - window.scrollY / paraHight * 4));
+		
+		 paratext.css('opacity', opacity);
+		
 
 	}
 
