@@ -1,7 +1,8 @@
 import handleTemplate from "./handleTemplate";
 export default function upcomingEvents( events, topicId ) {
 
-    const populateRandomEvents = [];
+    var populateRandomEvents = [];
+    var filteredEvents = [];
 
  
   
@@ -10,16 +11,20 @@ export default function upcomingEvents( events, topicId ) {
 		var filteredEvents = events.filter(x => x.topic.id !== topicId);
 	} else {
 		var filteredEvents = events;
-	}
+  }
+  
+  console.log('filteredEvents', filteredEvents.length);
  
-  for (var i = 0; i < events.length; i++) {
+  for (var i = 0; i < 4; i++) {
     populateRandomEvents.push(
       filteredEvents[Math.floor(Math.random() * filteredEvents.length)]
     );
   }
 
-  
- 
+  var sorted_dates = populateRandomEvents.sort(function(a, b) {
+    return  new Date(a.startISO) - new Date(b.startISO);
+  });
+ console.log("sorted dates",sorted_dates);
   for (var i = 0; i < 4; i++) {
     const options = {
       identifier: populateRandomEvents[i].identifier,
