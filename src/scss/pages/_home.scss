@@ -16,10 +16,13 @@
             position: absolute;
             background-position: center !important;
             background-repeat: no-repeat!important;
-            background-size: cover!important;
+            
             transform: translateY(0px);
             height: 65vh;
             width: 100%;
+            @media screen and (max-width: $mobile) {
+            background-size: cover!important;
+            }
           }
       }
     
