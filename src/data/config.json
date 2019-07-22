@@ -123,43 +123,51 @@
 	"passions": [
 		{
 			"code":"fitnesswellbeing",
-			"name":"Health &amp; Fitness",
-			"color":"#003DFF"
+			"name":"Health & Fitness",
+			"color":"#003DFF",
+			"image": "/fitness-wellbeing.png"
 		},
 		{
 			"code":"fashionbeauty",
 			"name":"Fashion",
-			"color":"#FFDA00"
+			"color":"#FFDA00",
+			"image": "/fashion.png"
 		},
 		{
 			"code":"fooddrink",
 			"name":"Food",
-			"color": "#00B3E2"
+			"color": "#00B3E2",
+			"image": "/food-drink.png"
 		},
 		{
 			"code":"entertainment",
 			"name":"Entertainment",
-			"color": "#F37321"
+			"color": "#F37321",
+			"image": "/entertainment.png"
 		},
 		{
 			"code":"artdesign",
-			"name":"Art &amp; Design",
-			"color": "#FF4337"
+			"name":"Art & Design",
+			"color": "#FF4337",
+			"image": "/art-design.png"
 		},
 		{
 			"code":"photography",
 			"name":"Photography",
-			"color": "#FF4337"
+			"color": "#97D653",
+			"image": "/photography.png"
 		},
 		{
 			"code":"sciencetechnology",
-			"name":"Tech &amp; Science",
-			"color": "#724C9E"
+			"name":"Tech & Science",
+			"color": "#724C9E",
+			"image": "/science-technology.png"
 		},
 		{
 			"code":"gaming",
 			"name":"Gaming",
-			"color": "#E24C9B"
+			"color": "#E24C9B",
+			"image": "/gaming.png"
 		}
 	],
 

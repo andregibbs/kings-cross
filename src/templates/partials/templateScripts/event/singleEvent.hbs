@@ -34,7 +34,12 @@
 						[[#if externalbookinglink ]]
 							<a href="[[externalbookinglink]]" class="link-book btn btn--primary" target="_blank">book now</a><br><br>
 						[[else]]
+						[[#if reoccurring ]]
 							<button class="action-btn btn btn--primary">book tickets</button><br><br>
+							<button class="action-btn btn btn--secondary changeTime">Other Times</button><br><br>
+							[[else]]
+							<button class="action-btn btn btn--primary">book tickets</button><br><br>
+							[[/if]]
 						[[/if]]
 
 					</div>

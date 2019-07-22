@@ -97,8 +97,7 @@ export default function whatson( events ){
 	if( passion ) {
 
 		$('.passionImg')
-			.find('img')
-			.attr('src', `/content/dam/samsung/uk/kings-cross/passion-header/passion-header-${passion}.jpg`)
+			.find('img').attr('src', `/content/dam/samsung/uk/kings-cross/passion-header/passion-header-${passion}.jpg`)
 			.addClass('op0--fade')
 
 		const eventsFiltered = events.filter( function( event ) {
@@ -112,7 +111,7 @@ export default function whatson( events ){
 
 		$('.passionImg')
 			.find('img')
-			.attr('src', `/content/dam/samsung/uk/kings-cross/passion-header/passion-header-generic.jpg`)
+			.attr('src', `https://images.samsung.com/is/image/samsung/p5/uk/kings-cross/KX-whats-on-KV.jpg`)
 			.addClass('op0--fade')
 
 		renderEventsIntoDom( events )

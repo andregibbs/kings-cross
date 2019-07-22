@@ -5,6 +5,8 @@
 .relatedEvents {
 	box-shadow: 0px -15px 16px -6px #000;
 	padding-top: 0!important;
+	position: relative;
+	background: #0C0C0C;
 	&__header {
 		display: flex;
 	justify-content: space-between;

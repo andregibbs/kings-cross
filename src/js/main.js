@@ -133,12 +133,15 @@ $(document).ready(function () {
 
 			console.log( 'bits', bits )
 
+			
+
 			event.description = bits[0];
 			if (bits.length > 1) {
 				event.extra = JSON.parse(bits[1]);
 				event.extra['passionColor'] = getPassionColor(event.extra.passions[0]);
 				event.extra['eventtypeName'] = getSuitableName(event.extra.eventtype);
 			}
+			
 			else {
 				event.extra = {};
 			}
@@ -174,6 +177,8 @@ $(document).ready(function () {
 
 			for (var i = 0; i < events.length; i++) {
 				var event = events[i];
+
+				
 
 				if (event.topic.title.toLowerCase() == wowTopic.toLowerCase()) {
 					if (wowEvents.length < wowEventsToShow) {
@@ -289,7 +294,7 @@ $(document).ready(function () {
 
 	switch (window.location.pathname) {
 		case '/uk/explore/kings-cross/':
-			fetchData(testSlider)
+			fetchData(whatIsKx)
 			whatIsKx()
 			break;
 
