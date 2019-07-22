@@ -8,20 +8,59 @@
 
 		{{>components/homepageKV }}
 
-		{{>templateScripts/slider/homeKv }}
-		<section class="section slider">
-			<div class="section__inner">
-				<div class="slider1"></div>
-			</div>
-		</section>
+		<section class="section relatedEvents">
+				<div class="section__inner">
+					<div class="relatedEvents__header">
+							<h2>Upcoming Events</h2>
+							<h2 class="relatedEvents__header__see">See All Events</h2>
+					</div>
+					
+					<div class="relatedEvents__container">
+						<!-- To be populated with JS -->
+					</div>
+				</div>
+			</section>
 
-		{{>components/upcomingSlider}}
+			<section class="section video">
+					<div class="section__inner">
+							<video class="video__main" preload="none" poster="https://images.samsung.com/is/image/samsung/p5/uk/kings-cross/hype-video.jpg" src="https://images.samsung.com/is/content/samsung/p5/uk/kings-cross/kx_hype.mp4">
+								<source src="" type="video/mp4">
+								Your browser does not support the video tag.
+								</video>
+					</div>
+				  </section>
 
 		{{>components/passionPoints }}
+
+		<section class="section welcome__outer">
+				<div class="welcome">
+					<h2 class="welcome__title fz50">Get Support at Samsung KX</h2>
+					<div class="welcome__tiles">
+						<div class="tile">
+							<h4 class="tile__heading fz36">One to one Tutorials</h4>
+							<p class="tile__desc">Receive helpful tips, get your device setup or give it a health check.</p>
+							<button class="button btn btn--primary" id="btn-oneToOne">BOOK NOW</button>
+						</div>
+						<div class="tile">
+							<h4 class="tile__heading fz36">General Support</h4>
+							<p class="tile__desc">We’re here to help. Get dedicated support from our product experts.</p>
+							<button class="button btn btn--primary btn--primary--cyan" id="btn-support">BOOK NOW</button>
+						</div>
+						<div class="tile">
+							<h4 class="tile__heading fz36">Repair</h4>
+							<p class="tile__desc">Have your device repaired by one of our qualified technicians.</p>
+							<button class="button btn btn--primary btn--primary--orange" id="btn-repair">BOOK NOW</button>
+						</div>
+					</div>
+				</div>
+				<br>
+			</section>
 
 		{{>components/findKx }}
 
 		{{>components/socialMedia }}
+
+		{{>templateScripts/event/eventTile }}
 
 		{{>scripts }}
 

@@ -2,6 +2,7 @@ import handleTemplate from "./handleTemplate";
 import instagram from "./instagram";
 import upcomingEvents from "./upcomingEvents";
 import getUrlVars from "./getUrlVars";
+import createDropDown from "./createDropDown";
 
 export default function singleEvent(events) {
   const isoCurrentDate = new Date();
@@ -10,6 +11,7 @@ export default function singleEvent(events) {
   let ticketQuantity = 1;
   let instagramHashTag = "";
   let eventDetails = {};
+  let eventTimes = [];
   let topicId = null;
 
   // =================================================
@@ -21,25 +23,19 @@ export default function singleEvent(events) {
       kxConfig.seriesId
   ).success(function(seriesData) {
     // get the Integer value for the current series as this is returned by the event API - we need to check below that the event is valid for the series
-	kxConfig.seriesIdAsInt = seriesData.id;
-	
-
+    kxConfig.seriesIdAsInt = seriesData.id;
 
     $.get("https://bookings.qudini.com/booking-widget/event/eventId/" + id, {
       timezone: "Europe/London",
       isoCurrentDate: isoCurrentDate.toISOString()
     }).success(function(data) {
-      console.log("Event details: ", data);
+      eventDetails = data;
 
-	  eventDetails = data;
-	  
-	  topicId = data.topic.id;
+      topicId = data.topic.id;
 
       function sortEventExtra(event) {
         if (event.description) {
           var bits = event.description.split("||");
-
-          console.log("bits", bits);
 
           event.description = bits[0];
           if (bits.length > 1) {
@@ -70,6 +66,7 @@ export default function singleEvent(events) {
           identifier: data.identifier,
           groupSize: data.maxGroupSize,
           eventId: eventId,
+          reoccurring: data.topic.id !== 212 ? true : false,
           image: data.bannerImageURL
             ? data.bannerImageURL
             : "https://images.unsplash.com/photo-1560983719-c116f744352d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80",
@@ -116,6 +113,7 @@ export default function singleEvent(events) {
               bookOptions.startDate +
               " | Samsung KX"
           );
+        console.log(options);
         $(".singleEvent").append(handleTemplate("singleEvent", options));
 
         // Event out of stock or has expired
@@ -127,8 +125,79 @@ export default function singleEvent(events) {
           data.slotsAvailable
             ? $(".event__content-book .btn--primary").text("Fully booked")
             : $(".event__content-book .btn--primary").text("Expired");
-		}
-		upcomingEvents(events, topicId);
+        }
+        // =================================================
+        // Related Events
+        // =================================================
+
+        upcomingEvents(events, topicId);
+
+        // =================================================
+        // Find reocurring Events
+        // =================================================
+
+        eventTimes = events.filter(x => x.topic.id === topicId);
+
+        console.log(eventTimes);
+        var dates = {};
+        //get all dates
+        eventTimes.forEach(date => {
+          if (!dates[date.startDate]) {
+            dates[date.startDate] = [];
+          }
+        });
+        //fill date objects
+        eventTimes.forEach(event => {
+          dates[event.startDate].push(event);
+        });
+        console.log(dates);
+        //insert date options
+        for (var date in dates) {
+          $("#date__options").append(
+            new Option(moment(date).format("ddd D MMM"), date)
+          );
+        }
+        createDropDown("#date__options");
+        //watch for changes of select and build time slots based off of it
+        updateTimes(dates, dates[0]);
+        $(".styledSelect").on("DOMNodeInserted", function(e) {
+          $(".change__form-submit").attr("disabled", true);
+          $(".change__form-submit").addClass("btn--primary-notActive");
+          
+          setTimeout(function(){
+         
+        
+          updateTimes(dates, e.target.attributes.rel.value);
+        }, 200);
+        });
+        function updateTimes(dates, currentDate) {
+          console.log('current date', currentDate);
+          var times = null;
+          var currentSelection = $(".styledSelect").attr("rel");
+          if (!currentDate) {
+            times = dates[currentSelection];
+          } else {
+            times = dates[currentDate];
+          }
+
+          times.forEach(event => {
+            var slots =
+              event.slotsAvailable !== 0 ? "Available" : "Unavailable";
+
+            var html =
+              '<div class="change__time time ' +
+              slots +
+              '"data-id="'+ event.id +'">' +
+              '<h4 class="time__int">' +
+              event.startTime +
+              '</h4><span class="time__available">' +
+              slots +
+              " </span></div>";
+            console.log(html);
+            $(".change__times").empty();
+            $(".change__times").append(html);
+          });
+        }
       } else {
         // redirect to whats-on page
 
@@ -143,12 +212,16 @@ export default function singleEvent(events) {
 
   $(".singleEvent").on("click", ".action-btn", function(e) {
     e.preventDefault();
-
+   
     $(".action .action-btn").attr("disabled", true);
     $(".action .action-btn").toggleClass("btn--primary-notActive");
     $(".book").addClass("book--active");
-
-    $(".book-action").addClass("book-action--active");
+    if ($(this).hasClass("changeTime")) {
+      $(".change").addClass("change--active");
+    } else {
+      $(".book-action").addClass("book-action--active");
+    }
+    
     $(".book").slideDown();
   });
 
@@ -156,14 +229,19 @@ export default function singleEvent(events) {
     e.preventDefault();
     $(".book").slideUp();
     $(".book").removeClass("book--active");
+    $(".change").removeClass("change--active");
     $(".book-action").removeClass("book-action--active");
-    $(".book-confirmation").toggleClass("book-confirmation--active");
+    $(".book-confirmation").removeClass("book-confirmation--active");
     $("#book__form").trigger("reset");
     $(".book__tickets__tc").each(function() {
-      $(this).find("input").removeClass('selected')
+      $(this)
+        .find("input")
+        .removeClass("selected");
     });
-	$(".book").css("background", "");
-	$(".book__form-submit").attr("disabled", false).removeClass("btn--primary-notActive");
+    $(".book").css("background", "");
+    $(".book__form-submit")
+      .attr("disabled", false)
+      .removeClass("btn--primary-notActive");
 
     $(".action .action-btn").attr("disabled", false);
     $(".action .action-btn").toggleClass("btn--primary-notActive");
@@ -171,8 +249,8 @@ export default function singleEvent(events) {
 
   $(".singleEvent").on("click", ".share__container", function(e) {
     e.preventDefault();
-	$(".share__social").toggleClass("share__social--active");
-	$(this).toggleClass("share__container--active");
+    $(".share__social").toggleClass("share__social--active");
+    $(this).toggleClass("share__container--active");
   });
 
   $(".relatedEvents__header__see").click(function() {
@@ -191,11 +269,56 @@ export default function singleEvent(events) {
 
   // TODO - need to make a decision what to do when less than 6 related events
 
-  
-
   // =================================================
   // Booking functionality
   // =================================================
+
+  $(".book").on("click", ".change__time", function() {
+    //only one can be selected
+    $(".change__form-submit").attr("disabled", false);
+    $(".change__form-submit").removeClass("btn--primary-notActive");
+    $(".change__time").each(function() {
+      $(this).removeClass("selected");
+    });
+    $(this).addClass("selected");
+  });
+
+  $(".book").on("click", ".change__form-submit", function() {
+    //get the event we need to populate
+    eventId = $('.change__time.selected').data('id');
+
+    events.forEach(data => {
+      if(data.id === eventId) {
+
+        var startTime = moment(data.startISO).utc();
+        var bookOptions = {
+          startDate:
+            moment(data.startDate).format("dddd Do MMMM YYYY") ==
+            moment(Date.now()).format("dddd Do MMMM YYYY")
+              ? "TODAY"
+              : moment(data.startDate).format("dddd Do MMMM YYYY"),
+          startTime: moment(startTime).format("LT"),
+          endTime: moment(startTime)
+            .add(data.durationMinutes, "m")
+            .format("LT")
+        };
+        $(".section.book")
+          .find(".book-action__description")
+          .text(
+            bookOptions.startTime +
+              " - " +
+              bookOptions.endTime +
+              " | " +
+              bookOptions.startDate +
+              " | Samsung KX"
+          );
+
+          $(".change").removeClass("change--active");
+          $(".book-action").addClass("book-action--active");
+        
+      }
+    })
+  });
 
   $(".book__tickets-minus").click(function(e) {
     ticketQuantity = parseInt($(".book__tickets-tickets").val());
@@ -222,10 +345,18 @@ export default function singleEvent(events) {
     });
 
     $(this).click(function() {
-      if ($(this).find("input").hasClass("selected")) {
-        $(this).find("input").click();
+      if (
+        $(this)
+          .find("input")
+          .hasClass("selected")
+      ) {
+        $(this)
+          .find("input")
+          .click();
       } else {
-        $(this).find("input").click();
+        $(this)
+          .find("input")
+          .click();
       }
     });
   });
@@ -236,7 +367,9 @@ export default function singleEvent(events) {
       $(this).bind("invalid", function(e) {
         $(this).toggleClass("invalid");
         if ($(this).attr("type") === "checkbox") {
-          $(this).parent().toggleClass("invalid");
+          $(this)
+            .parent()
+            .toggleClass("invalid");
         }
       });
     });

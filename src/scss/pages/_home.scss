@@ -1,0 +1,109 @@
+.homepage-kv {
+    padding-top: 0!important;
+    padding-bottom: 0!important;
+    #parallax {
+        &__container {
+        display: block;
+        height: 65vh;
+        display: flex;
+        justify-content: center;
+        div {
+            position: fixed;
+            background-position: center !important;
+            background-repeat: no-repeat!important;
+            transform: translateY(0px);
+            height: 65vh;
+            width: 100%;
+          }
+      }
+    
+    }
+    
+    .parallax {
+        &__text {
+            width: 68%!important;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            z-index: 99999;
+            h2 {
+                font-size: em(80);
+                font-weight: bold;
+    
+            }
+            span {
+                font-size: em(30);
+    
+            }
+        }
+        &__zeroOne {
+            position: absolute!important;
+            transform: translateY(0)!important;
+        }
+    }
+
+}
+
+.relatedEvents {
+    box-shadow: none!important;
+}
+
+.video {
+    position: relative;
+    background: #0C0C0C;
+    padding-top: 0!important;
+}
+
+.passionPoints {
+	padding-top: 0!important;
+	position: relative;
+	background: #0C0C0C;
+	&__header {
+		display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 40px;
+	
+
+	&__see {
+		cursor: pointer;
+	}
+	
+	h2 {
+		font-size: em(30);
+	}
+	}
+	&__container {
+		display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+		@media screen and (max-width: $mobile) {
+			justify-content: space-evenly;
+			flex-wrap: wrap;
+			
+			}
+		.eventTile {
+            margin-left: 0;
+            a {
+                width: 100%;
+            }
+            
+        }
+        .tile-title {
+            margin-top: 18px;
+        }
+	}
+}
+
+.welcome {
+    &__title {
+        margin-top: 0!important;
+        text-align: center;
+    }
+    &__outer {
+        padding-top: 0!important;
+	position: relative;
+	background: #0C0C0C;
+    }
+}

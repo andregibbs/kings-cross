@@ -32,7 +32,7 @@ export default function bookingRefFetcher() {
                     'timezone': "Europe/London",
                     'isoCurrentDate': isoCurrentDate.toISOString()
                 }).success(function (eventData) {
-                    console.log('Event details: ', eventData)
+                    console.log('Event zzz: ', eventData)
 
                     eventDisplay.date.innerText = moment(eventData.startDate).format("Do MMMM") + " | " + moment(eventData.startTime, ["h:mm A"]).format("HH:mm") + " - " + moment(eventData.startTime, ["h:mm A"]).add(eventData.durationMinutes, eventData.durationUnit.toLowerCase()).format("HH:mm");
                     eventDisplay.title.innerText = eventData.title;
