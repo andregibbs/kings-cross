@@ -266,6 +266,15 @@
     }
   }
 
+  @keyframes flash__close {
+    50% {
+      background-color: red;
+    }
+    100% {
+      background-color: white;
+    }
+  }
+
   .close {
     position: absolute;
     width: 32px;
@@ -310,6 +319,13 @@
     &:after {
       transform: rotate(-45deg);
     }
+
+    &.flash{
+      &::before, &::after{
+        animation: flash__close 1s;
+      }
+    }
+
   }
 
   .pop-up {

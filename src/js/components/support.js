@@ -1,3 +1,5 @@
+import { BoundCallbackObservable } from "rxjs/observable/BoundCallbackObservable";
+
 // import customevent from '../polyfill/customevent-polyfill';
 
 export default function support() {
@@ -77,6 +79,8 @@ export default function support() {
                 this.category = cat;
                 this.stage = 1;
 
+                document.getElementById("btn-" + this.category).classList.add("btn--primary-notActive");
+
                 this.nextBtn.classList.add("btn--primary--" + colors[cat])
                 this.backBtn.classList.add("btn--secondary--" + colors[cat])
                 screens.calendar.children[0].classList.add(colors[cat])
@@ -134,39 +138,54 @@ export default function support() {
 
             } else {
                 console.error("A journey is already activated.")
+
+                $(".close").addClass('flash')
+                    .on("animationend", function () {
+                        $(this).removeClass('flash');
+                    });
+
+                $("#back").addClass('flash--' + colors[state.category])
+                    .on("animationend", function () {
+                        $(this).removeClass('flash--' + colors[state.category]);
+                    });
+
             };
         },
 
         cancelJourney: function () {
-            this.nextBtn.classList.remove("btn--primary--" + colors[this.category])
-            this.backBtn.classList.remove("btn--secondary--" + colors[this.category])
-            screens.calendar.children[0].classList.remove(colors[this.category]);
-            document.getElementsByClassName("journey")[0].classList.remove(colors[this.category]);
-            $("span.checkbox").each(function (ind, elm) {
-                elm.classList.remove("checkbox__" + colors[state.category]);
-            })
-
-            $(".checkbox").siblings("input").prop("checked", false);
-            $(".calendar--selected").removeClass("calendar--selected");
-            $("#next").removeData("slot");
-            sendLock();
-
-            this.navigation.style.display = "";
-            // this.journeys[this.category][this.stage].style.display = "";
 
             $(this.journeys[this.category][this.stage]).slideUp(400, function () {
                 state.navigation.style.display = "";
+                state.nextBtn.classList.remove("btn--primary--" + colors[state.category])
+                state.backBtn.classList.remove("btn--secondary--" + colors[state.category])
+                screens.calendar.children[0].classList.remove(colors[state.category]);
+                document.getElementsByClassName("journey")[0].classList.remove(colors[state.category]);
+                $("span.checkbox").each(function (ind, elm) {
+                    elm.classList.remove("checkbox__" + colors[state.category]);
+                });
+                ["oneToOne", "support", "repair"].forEach(function (category) {
+                    document.getElementById("btn-" + category).classList.remove("btn--primary-notActive");
+                });
+
+                $(".checkbox").siblings("input").prop("checked", false);
+                $(".calendar--selected").removeClass("calendar--selected");
+                $("#next").removeData("slot");
+                sendLock();
+
+                state.navigation.style.display = "";
+
+                clearState();
+
+                document.getElementById("details").reset()
+                document.getElementById("device-info").reset()
+                document.getElementsByClassName("close")[0].style.display = "";
+
+                window.history.replaceState({}, document.title, location.protocol + "//" + location.host + location.pathname);
+
+
             });
 
-            // this.category = "";
-            // this.active = false;
-            // this.stage = 0;
 
-            clearState();
-
-            document.getElementById("details").reset()
-            document.getElementById("device-info").reset()
-            document.getElementsByClassName("close")[0].style.display = "";
         },
 
         makeBooking: function () {
@@ -246,6 +265,121 @@ export default function support() {
         }
 
     };
+
+    var colorBox = document.getElementById("color-selector");
+
+    function getParam(param) {
+        var pageURL = window.location.search.substring(1);
+        var URLVariables = pageURL.split('&');
+        for (var i = 0; i < URLVariables.length; i++) {
+            var queryString = URLVariables[i].split('=');
+            if (queryString[0] == param) {
+                return queryString[1];
+            }
+        }
+    }
+
+    function initDeviceGrabs() {
+        var url = "https://spreadsheets.google.com/feeds/list/1sVUkiE2351zGssyybR27Xb7vck3n5mZZCkZD6pb7zcc/1/public/values?alt=json";
+        $.ajax({
+            url: url,
+            dataType: "jsonp",
+            success: function (data) {
+                var devices = [];
+                for (var x = 0; x < data.feed.entry.length; x++) {
+                    var entry = data.feed.entry[x];
+                    devices.push({
+                        name: entry.gsx$devicename.$t,
+                        model: entry.gsx$devicemodel.$t,
+                        screen: entry.gsx$screen.$t,
+                        rcamera: entry.gsx$rearcamera.$t,
+                        fcamera: entry.gsx$frontcamera.$t,
+                        battery: entry.gsx$battery.$t,
+                        usb: entry.gsx$usbconnector.$t,
+                        colors: entry.gsx$colour.$t
+                    });
+                }
+
+                var selectorList = document.getElementById("model-selector");
+
+                var current_device = document.createElement("option");
+                current_device.innerText = "Device not listed";
+                current_device.value = "Unlisted_device";
+                $(current_device).data("colors", "N/A");
+                selectorList.appendChild(current_device);
+
+
+                for (var device = 0; device < devices.length; device++) {
+                    current_device = document.createElement("option");
+                    current_device.innerText = devices[device].name;
+                    current_device.value = devices[device].model;
+                    $(current_device).data("colors", devices[device].colors);
+                    selectorList.appendChild(current_device);
+                }
+
+            },
+            error: function (err) {
+                //console.log(err);
+            }
+
+        });
+    }
+
+    function validateUnlock() {
+        console.log("Validating");
+
+        console.log("Validating Device Info");
+        if (state.colorChosen && state.deviceChosen) {
+            console.log("UNLOCK sent");
+            state.imei = document.getElementById("imei").value;
+            state.deviceNotes = document.getElementById("device-notes").value;
+            sendUnlock();
+        } else {
+            sendLock();
+        }
+
+    }
+
+    function sendUnlock() {
+        state.nextBtn.dispatchEvent(unlock);
+    }
+
+    function sendLock() {
+        state.nextBtn.dispatchEvent(lock);
+    }
+
+
+    function handleResize() {
+
+        console.log('%c%s', 'color: #f2ceb6', "Tis logged");
+
+        if (window.innerWidth <= 768 && viewport != "mobile") {
+            console.log("Still mobile");
+            document.getElementById("model-selector").children[0].innerText = "Model*";
+            document.getElementById("color-selector").children[0].innerText = "Color*";
+            viewport = "mobile";
+        } else if (window.innerWidth > 768 && viewport != "desktop") {
+            document.getElementById("model-selector").children[0].innerText = "Choose Your Model*";
+            document.getElementById("color-selector").children[0].innerText = "Choose Your Colour*";
+            viewport = "desktop";
+        }
+    }
+
+    function clearState() {
+        state.active = false;
+        state.category = "";
+        state.stage = 0;
+        state.modelIsSelected = false;
+        state.colorIsSelected = false;
+        state.timeChosen = "";
+        state.deviceChosen = "";
+        state.colorChosen = "";
+        state.deviceNotes = "";
+        state.finalNotes = "";
+        state.imei = "";
+        state.requestInit = false;
+
+    }
 
     state.nextBtn.addEventListener("unlock", function () {
         // if ($(this).data("slot")) {
@@ -331,131 +465,6 @@ export default function support() {
     })
     //Back: if current screen is Confirmation, change Next/Book to Next
 
-    //Models
-
-    function initDeviceGrabs() {
-        var url = "https://spreadsheets.google.com/feeds/list/1sVUkiE2351zGssyybR27Xb7vck3n5mZZCkZD6pb7zcc/1/public/values?alt=json";
-        $.ajax({
-            url: url,
-            dataType: "jsonp",
-            success: function (data) {
-                var devices = [];
-                for (var x = 0; x < data.feed.entry.length; x++) {
-                    var entry = data.feed.entry[x];
-                    devices.push({
-                        name: entry.gsx$devicename.$t,
-                        model: entry.gsx$devicemodel.$t,
-                        screen: entry.gsx$screen.$t,
-                        rcamera: entry.gsx$rearcamera.$t,
-                        fcamera: entry.gsx$frontcamera.$t,
-                        battery: entry.gsx$battery.$t,
-                        usb: entry.gsx$usbconnector.$t,
-                        colors: entry.gsx$colour.$t
-                    });
-                }
-
-                var selectorList = document.getElementById("model-selector");
-
-                var current_device = document.createElement("option");
-                current_device.innerText = "Device not listed";
-                current_device.value = "Unlisted_device";
-                $(current_device).data("colors", "N/A");
-                selectorList.appendChild(current_device);
-
-
-                for (var device = 0; device < devices.length; device++) {
-                    current_device = document.createElement("option");
-                    current_device.innerText = devices[device].name;
-                    current_device.value = devices[device].model;
-                    $(current_device).data("colors", devices[device].colors);
-                    selectorList.appendChild(current_device);
-                }
-
-            },
-            error: function (err) {
-                //console.log(err);
-            }
-
-        });
-    }
-
-    $("#model-selector").change(function () {
-        if (this.selectedIndex != 0) {
-            state.deviceChosen = this.children[this.selectedIndex].innerText;
-            validateUnlock();
-        } else {
-            state.deviceChosen = "";
-            validateUnlock();
-        }
-
-
-        while (colorBox.childElementCount > 1) {
-            colorBox.removeChild(colorBox.lastChild);
-        }
-
-        var deviceColors = $(this).find(":selected").data("colors").split(", ");
-
-        for (var clr = 0; clr < deviceColors.length; clr++) {
-            var color = document.createElement("option");
-            color.value = deviceColors[clr];
-            color.innerText = deviceColors[clr];
-            colorBox.appendChild(color);
-        }
-
-        if (this.value == "Unlisted_device") {
-            $("#color-selector").val("N/A");
-            state.colorChosen = "N/A";
-            validateUnlock();
-        }
-
-
-    });
-
-    $("#color-selector").change(function () {
-        if (this.selectedIndex != 0) {
-            state.colorChosen = this.options[this.selectedIndex].innerHTML;
-            validateUnlock();
-        } else {
-            state.colorChosen = "";
-            validateUnlock();
-        }
-    });
-
-    //Models
-
-    function validateUnlock() {
-        console.log("Validating");
-
-        console.log("Validating Device Info");
-        if (state.colorChosen && state.deviceChosen) {
-            console.log("UNLOCK sent");
-            state.imei = document.getElementById("imei").value;
-            state.deviceNotes = document.getElementById("device-notes").value;
-            sendUnlock();
-        }
-
-    }
-
-    function sendUnlock() {
-        state.nextBtn.dispatchEvent(unlock);
-    }
-
-    function sendLock() {
-        state.nextBtn.dispatchEvent(lock);
-    }
-
-
-
-
-
-    var colorBox = document.getElementById("color-selector");
-
-    initDeviceGrabs();
-    $("#btn-oneToOne").click(function () { state.startJourney("oneToOne") })
-    $("#btn-support").click(function () { state.startJourney("support") })
-    $("#btn-repair").click(function () { state.startJourney("repair") })
-    $(".close").click(function () { state.cancelJourney() })
-
     state.backBtn.addEventListener("click", function () {
         if (state.stage <= 1) {
             state.cancelJourney();
@@ -476,43 +485,71 @@ export default function support() {
         }
     })
 
-    function handleResize() {
-
-        console.log('%c%s', 'color: #f2ceb6', "Tis logged");
-
-        if (window.innerWidth <= 768 && viewport != "mobile") {
-            console.log("Still mobile");
-            document.getElementById("model-selector").children[0].innerText = "Model*";
-            document.getElementById("color-selector").children[0].innerText = "Color*";
-            viewport = "mobile";
-        } else if (window.innerWidth > 768 && viewport != "desktop") {
-            document.getElementById("model-selector").children[0].innerText = "Choose Your Model*";
-            document.getElementById("color-selector").children[0].innerText = "Choose Your Colour*";
-            viewport = "desktop";
+    $("#model-selector").change(function () {
+        
+        while (colorBox.childElementCount > 1) {
+            colorBox.removeChild(colorBox.lastChild);
         }
-    }
 
-    function clearState() {
-        state.active = false;
-        state.category = "";
-        state.stage = 0;
-        state.modelIsSelected = false;
-        state.colorIsSelected = false;
-        state.timeChosen = "";
-        state.deviceChosen = "";
-        state.colorChosen = "";
-        state.deviceNotes = "";
-        state.finalNotes = "";
-        state.imei = "";
-        state.requestInit = false;
+        var deviceColors = $(this).find(":selected").data("colors").split(", ");
 
-    }
+        for (var clr = 0; clr < deviceColors.length; clr++) {
+            var color = document.createElement("option");
+            color.value = deviceColors[clr];
+            color.innerText = deviceColors[clr];
+            colorBox.appendChild(color);
+        }
 
+        if (this.value == "Unlisted_device") {
+            $("#color-selector").val("N/A");
+            state.colorChosen = "N/A";
+            validateUnlock();
+        }
 
-    handleResize();
+        if (this.selectedIndex != 0) {
+            state.deviceChosen = this.children[this.selectedIndex].innerText;
+            validateUnlock();
+        } else {
+            state.deviceChosen = "";
+            validateUnlock();
+        }
+
+    });
+
+    $("#color-selector").change(function () {
+        if (this.selectedIndex != 0) {
+            state.colorChosen = this.options[this.selectedIndex].innerHTML;
+            validateUnlock();
+        } else {
+            state.colorChosen = "";
+            validateUnlock();
+        }
+    });
 
     window.addEventListener('resize', function () {
         handleResize();
     })
+
+    switch (getParam("journey")) {
+        case "one-to-one":
+            setTimeout(function () { state.startJourney("oneToOne") }, 200)
+            break;
+        case "support":
+            setTimeout(function () { state.startJourney("support") }, 200)
+            break;
+        case "repair":
+            setTimeout(function () { state.startJourney("repair") }, 200)
+            break;
+        default:
+            break;
+    }
+
+    initDeviceGrabs();
+    $("#btn-oneToOne").click(function () { state.startJourney("oneToOne") })
+    $("#btn-support").click(function () { state.startJourney("support") })
+    $("#btn-repair").click(function () { state.startJourney("repair") })
+    $(".close").click(function () { state.cancelJourney() })
+
+    handleResize();
 
 }

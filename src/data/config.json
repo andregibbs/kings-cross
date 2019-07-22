@@ -54,26 +54,20 @@
 		"sliderTwo": [{
 			"title": "Coal Drops Yard as a destination. Our neighbours… x",
 			"description": "This is an opportunity to sell users on the idea of Coal Drops Yard as a destination. Fusce venenatis libero quis augue placerat, eu scelerisque tortor volutpat. Etiam fringilla elit sodales elit lacinia pharetra. Sed lorem mi, ultrices eget odio vitae, ornare finibus est. Cras laoreet elit vitae vulputate fermentum.",
-			"image": "https://images.unsplash.com/photo-1560983719-c116f744352d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80",
-			"alt": "some image for kx"
+			"image": "discover-gallery1-desktop.jpg",
+			"alt": "A picture of Coal Drops Yard"
 		},
 		{
 			"title": "Coal Drops Yard as a destination. Our neighbours… xx",
 			"description": "This is an opportunity to sell users on the idea of Coal Drops Yard as a destination. Fusce venenatis libero quis augue placerat, eu scelerisque tortor volutpat. Etiam fringilla elit sodales elit lacinia pharetra. Sed lorem mi, ultrices eget odio vitae, ornare finibus est. Cras laoreet elit vitae vulputate fermentum.",
-			"image": "https://images.unsplash.com/photo-1560983719-c116f744352d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80",
-			"alt": "some image for kx"
+			"image": "discover-gallery2-desktop.jpg",
+			"alt": "A picture of Coal Drops Yard"
 		},
 		{
 			"title": "Coal Drops Yard as a destination. Our neighbours… xxx",
 			"description": "This is an opportunity to sell users on the idea of Coal Drops Yard as a destination. Fusce venenatis libero quis augue placerat, eu scelerisque tortor volutpat. Etiam fringilla elit sodales elit lacinia pharetra. Sed lorem mi, ultrices eget odio vitae, ornare finibus est. Cras laoreet elit vitae vulputate fermentum.",
-			"image": "https://images.unsplash.com/photo-1560983719-c116f744352d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80",
-			"alt": "some image for kx"
-		},
-		{
-			"title": "Coal Drops Yard as a destination. Our neighbours… xxxx",
-			"description": "This is an opportunity to sell users on the idea of Coal Drops Yard as a destination. Fusce venenatis libero quis augue placerat, eu scelerisque tortor volutpat. Etiam fringilla elit sodales elit lacinia pharetra. Sed lorem mi, ultrices eget odio vitae, ornare finibus est. Cras laoreet elit vitae vulputate fermentum.",
-			"image": "https://images.unsplash.com/photo-1560983719-c116f744352d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80",
-			"alt": "some image for kx"
+			"image": "discover-gallery3-desktop.jpg",
+			"alt": "A picture of Coal Drops Yard"
 		}],
 
 		"shopFloorplan": {

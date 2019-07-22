@@ -13,7 +13,7 @@
   }
 
   &__outer {
-    background-image: url(../../../../content/dam/samsung/uk/kings-cross/header/support-header.png);
+    background-image: url(/content/dam/samsung/uk/explore/kings-cross/header/support-header.png);
     background-position: center center; /* First value is from left and second is from top. You can use use number as well*/
     background-repeat: no-repeat;
     background-size: cover;
@@ -294,6 +294,37 @@
   }
 }
 
+@keyframes flash__btn--pink {
+  50% {
+    border-color: red;
+    color: red;
+  }
+  100% {
+    border-color: $pink;
+    color: white;
+  }
+}
+@keyframes flash__btn--cyan {
+  50% {
+    border-color: red;
+    color: red;
+  }
+  100% {
+    border-color: $cyan;
+    color: white;
+  }
+}
+@keyframes flash__btn--orange {
+  50% {
+    border-color: red;
+    color: red;
+  }
+  100% {
+    border-color: unset;
+    color: $orange;
+  }
+}
+
 .navigation {
   justify-content: center;
   button {
@@ -303,6 +334,15 @@
     }
     @media screen and (max-width: $mobile) {
       margin: get-mobile-vw(0) get-mobile-vw(25);
+    }
+    &.flash--pink{
+      animation: flash__btn--pink 1s;
+    }
+    &.flash--cyan{
+      animation: flash__btn--cyan 1s;
+    }
+    &.flash--orange{
+      animation: flash__btn--orange 1s;
     }
   }
 }
