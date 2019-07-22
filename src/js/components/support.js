@@ -88,20 +88,20 @@ export default function support() {
                 document.getElementsByClassName("close")[0].style.display = "block";
 
                 var nextScreen = this.journeys[cat][1]
-                if(nextScreen == screens.deviceInfo){
+                if (nextScreen == screens.deviceInfo) {
                     $(nextScreen).slideDown({
                         start: function () {
-                          $(this).css({
-                            display: "flex"
-                          });
-                          console.log("Start");
+                            $(this).css({
+                                display: "flex"
+                            });
+                            console.log("Start");
                         },
-                        complete: function() {
+                        complete: function () {
                             state.navigation.style.display = "flex";
                         }
-                      });
+                    });
                 } else {
-                    $(nextScreen).slideDown(400, function() { 
+                    $(nextScreen).slideDown(400, function () {
                         state.navigation.style.display = "flex";
                     });
                 }
@@ -154,13 +154,15 @@ export default function support() {
             this.navigation.style.display = "";
             // this.journeys[this.category][this.stage].style.display = "";
 
-            $(this.journeys[this.category][this.stage]).slideUp(400, function() { 
+            $(this.journeys[this.category][this.stage]).slideUp(400, function () {
                 state.navigation.style.display = "";
             });
 
-            this.category = "";
-            this.active = false;
-            this.stage = 0;
+            // this.category = "";
+            // this.active = false;
+            // this.stage = 0;
+
+            clearState();
 
             document.getElementById("details").reset()
             document.getElementById("device-info").reset()
@@ -168,7 +170,8 @@ export default function support() {
         },
 
         makeBooking: function () {
-
+            console.log("Got here");
+            console.log(state.requestInit);
             if (!state.requestInit) {
                 state.requestInit = true;
                 //Loading thingy needed HERE
@@ -217,16 +220,15 @@ export default function support() {
                         document.getElementsByClassName("journey")[0].classList.remove("progress");
                         if ((successMessages.indexOf(data ? data.status : "R@ND0M") != -1 || successMessages.indexOf(data.status) != -1) && data.bookingRef) {
                             document.getElementById("ref").innerText = data.bookingRef;
-                            
+
                             state.journeys[state.category][state.stage].style.display = "";
                             state.stage++;
                             state.journeys[state.category][state.stage].style.display = "block";
-                            
-                            
+
                             state.nextBtn.innerText = "NEXT";
                             state.navigation.style.display = "";
                             sendUnlock();
-                            
+
                         } else {
                             alert("Fail :(");
                             console.log(data);
@@ -488,6 +490,22 @@ export default function support() {
             document.getElementById("color-selector").children[0].innerText = "Choose Your Colour*";
             viewport = "desktop";
         }
+    }
+
+    function clearState() {
+        state.active = false;
+        state.category = "";
+        state.stage = 0;
+        state.modelIsSelected = false;
+        state.colorIsSelected = false;
+        state.timeChosen = "";
+        state.deviceChosen = "";
+        state.colorChosen = "";
+        state.deviceNotes = "";
+        state.finalNotes = "";
+        state.imei = "";
+        state.requestInit = false;
+
     }
 
 

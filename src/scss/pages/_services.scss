@@ -233,6 +233,9 @@
     .line {
       background-color: $pink;
     }
+    .booking-line {
+      background-color: $pink;
+    }
   }
   &.cyan {
     a {
@@ -241,12 +244,18 @@
     .line {
       background-color: $cyan;
     }
+    .booking-line {
+      background-color: $cyan;
+    }
   }
   &.orange {
     a {
       color: $orange;
     }
     .line {
+      background-color: $orange;
+    }
+    .booking-line {
       background-color: $orange;
     }
   }
