@@ -21,6 +21,13 @@
 				the email address your provided when you booked event tickets or service appointments.<br><br />Having
 				trouble finding your booking? Give us a call: +44 2345 68 48 57</p>
 		</div>
+		<div class="loading" id="load-screen" style="display: none">
+			<div class="loading__spinner">
+				<div class="loading__bounce loading__bounce1"></div>
+				<div class="loading__bounce loading__bounce2"></div>
+				<div class="loading__bounce loading__bounce3"></div>
+			</div>
+		</div>
 	</section>
 	<section class="section request">
 		<div id="user-info" class="section__inner request__inner" style="display: none">
@@ -39,7 +46,7 @@
 					<div class="request__summary">
 						<div class="line--vertical"></div>
 						<div class="request__summary__content">
-							<h3 class="fz36">Order Summary</h3><br />
+							<h3 class="fz36">Booking Summary</h3><br />
 							<p class="fz18">Reference: <span id="booking-ref"></span></p><br />
 							<p class="fz18">Quantity: <span id="quantity"></span></p>
 							<p class="fz18" id="name"></p>
@@ -54,27 +61,28 @@
 			</div>
 		</div>
 		<div class="loading" id="load-screen" style="display: none">
-				<div class="loading__spinner">
-					<div class="loading__bounce loading__bounce1"></div>
-					<div class="loading__bounce loading__bounce2"></div>
-					<div class="loading__bounce loading__bounce3"></div>
-				</div>
+			<div class="loading__spinner">
+				<div class="loading__bounce loading__bounce1"></div>
+				<div class="loading__bounce loading__bounce2"></div>
+				<div class="loading__bounce loading__bounce3"></div>
 			</div>
+		</div>
+
+		<div class="pop-up" id="cancel-popup">
+			<div class="pop-up__body">
+				<h4 class="pop-up__title">Are you sure you would like to cancel this booking?</h4>
+				<p class="pop-up__text">You will not be able to undo this action</p>
+				<div class="pop-up__buttons">
+					<button id="cancel-back" class="button btn btn--primary">BACK</button>
+					<button id="cancel-confirm" class="button btn btn--secondary">CANCEL BOOKING</button>
+				</div>
+				<div class="close"></div>
+			</div>
+		</div>
+
 	</section>
 
-	<div class="pop-up" id="cancel-popup">
-		<div class="pop-up__body">
-			<h4 class="pop-up__title">Are you sure you would like to cancel this booking?</h4>
-			<p class="pop-up__text">You will not be able to undo this action</p>
-			<div class="pop-up__buttons">
-				<button id="cancel-back" class="button btn btn--primary">BACK</button>
-				<button id="cancel-confirm" class="button btn btn--secondary">CANCEL BOOKING</button>
-			</div>
-			<div class="close"></div>
-		</div>
-	</div>
 
-	
 
 	{{>components/findKx}}
 

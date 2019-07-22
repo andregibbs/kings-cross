@@ -299,7 +299,7 @@
       background-color: white;
       @media screen and (max-width: $mobile) {
         height: 26px;
-        width: 4px;
+        width: 3px;
       }
     }
 
@@ -317,7 +317,9 @@
     height: 100%;
     width: 100%;
     top: 0;
+    bottom: 0;
     left: 0;
+    right: 0;
     background-color: rgba(0, 0, 0, 0.4);
     display: none;
 
@@ -338,6 +340,14 @@
 
       padding: 80px 120px;
 
+      @media screen and (max-width: $desktop) {
+        padding: get-desktop-vw(80) get-desktop-vw(120);
+      }
+
+      @media screen and (max-width: $mobile) {
+        padding: get-mobile-vw(80) get-mobile-vw(120);
+      }
+
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
@@ -357,6 +367,14 @@
 
     &__text {
       font-size: em(20);
+      margin: 24px 0;
+      @media screen and (max-width: $desktop) {
+        margin: get-desktop-vw(24) get-desktop-vw(0);
+      }
+
+      @media screen and (max-width: $mobile) {
+        margin: get-mobile-vw(24) get-mobile-vw(0);
+      }
     }
 
     &__buttons {
@@ -369,6 +387,15 @@
     .close {
       top: 24px;
       right: 24px;
+      @media screen and (max-width: $desktop) {
+        top: get-desktop-vw(24);
+        right: get-desktop-vw(24);
+      }
+
+      @media screen and (max-width: $mobile) {
+        top: get-mobile-vw(24);
+        right: get-mobile-vw(24);
+      }
     }
   }
 
@@ -380,7 +407,7 @@
     margin: 0 auto;
 
     &--vertical {
-      height: 100%;
+      // height: 100%;
       width: 1px;
       background-color: #dbdbdb;
       margin-right: 32px;
@@ -420,5 +447,8 @@
     &.warn::placeholder {
       color: $warning;
     }
+  }
+  input.invalid {
+    border-color: #ff4337;
   }
 }
