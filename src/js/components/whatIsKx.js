@@ -39,7 +39,7 @@ export default function whatIsKx(events) {
 		for (let i = 0; i < children.length; i++) {
 			children[i].style.transform =
 			  "translateY(-" +
-			  (window.pageYOffset / i) / children.length +
+			  (window.pageYOffset / i ) / children.length * 2 +
 			  "px)";
 		  }
 
