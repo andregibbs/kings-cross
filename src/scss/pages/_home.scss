@@ -1,5 +1,7 @@
 .homePage {
 
+
+
 .homepage-kv {
     padding-top: 0!important;
     padding-bottom: 0!important;
@@ -23,6 +25,7 @@
     
     .parallax {
         &__text {
+            position: absolute!important;
             width: 68%!important;
             display: flex;
             justify-content: center;
@@ -44,6 +47,25 @@
             transform: translateY(0)!important;
         }
     }
+
+}
+
+.copy {
+
+    position: relative;
+    background: #0C0C0C;
+    padding-top: 0!important;
+    padding-bottom: 0!important;
+
+    &__container {
+
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    }
+    
 
 }
 
