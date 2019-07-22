@@ -108,8 +108,8 @@ export default function support() {
 
                 switch (cat) {
                     case "oneToOne":
-                        var bookingURL = "https://bookings.qudini.com/booking-widget/booker/slots/IZ0LYUJL6B0/4375/50265/0";
-                        state.productId = "50265";
+                        var bookingURL = "https://bookings.qudini.com/booking-widget/booker/slots/IZ0LYUJL6B0/4375/62711/0";
+                        state.productId = "62711";
                         break;
 
                     case "support":
