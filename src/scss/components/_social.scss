@@ -2,7 +2,25 @@
 /*=============================================
 =            Social icons            =
 =============================================*/
-
+.footer {
+	&__container {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: flex-start;
+	}
+	&__left, &__right {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	
+}
+.spacer {
+	width: 1px;
+	background: #4D4D4F;
+	height: 150px;
+}
 .social {
 	display: flex;
 	flex-direction: column;

@@ -28,26 +28,20 @@
 
 		"sliderOne": [{
 			"title": "What makes KX unique? Tell the story.",
-			"description": "Tell that story here. Fusce venenatis libero quis augue placerat, eu scelerisque tortor volutpat. Etiam fringilla elit sodales elit lacinia pharetra. Sed lorem mi, ultrices eget odio vitae, ornare finibus est. Cras laoreet elit vitae vulputate fermentum.",
-			"image": "https://images.unsplash.com/photo-1520256321333-2b0a81327012?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+			"description": "Samsung KX x Origin. Offering the very best in speciality coffee.",
+			"image": "carousel-neigh-1.jpg",
 			"alt": "some image for kx"
 		},
 		{
 			"title": "What makes KX unique? Tell the story. another one",
-			"description": "Tell that story here. Fusce venenatis libero quis augue placerat, eu scelerisque tortor volutpat. Etiam fringilla elit sodales elit lacinia pharetra. Sed lorem mi, ultrices eget odio vitae, ornare finibus est. Cras laoreet elit vitae vulputate fermentum.",
-			"image": "https://images.unsplash.com/photo-1495313196544-7d1adf4e628f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80",
+			"description": "Experience an ever-changing menu of delicious filter coffees and feature espressos.",
+			"image": "carousel-neigh-2.jpg",
 			"alt": "some image for kx"
 		},
 		{
 			"title": "What makes KX unique? Tell the story. another one another one",
-			"description": "Tell that story here. Fusce venenatis libero quis augue placerat, eu scelerisque tortor volutpat. Etiam fringilla elit sodales elit lacinia pharetra. Sed lorem mi, ultrices eget odio vitae, ornare finibus est. Cras laoreet elit vitae vulputate fermentum.",
-			"image": "https://images.unsplash.com/photo-1516618317270-b99d1715c58d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
-			"alt": "some image for kx"
-		},
-		{
-			"title": "What makes KX unique? Tell the story. another one another one another one",
-			"description": "Tell that story here. Fusce venenatis libero quis augue placerat, eu scelerisque tortor volutpat. Etiam fringilla elit sodales elit lacinia pharetra. Sed lorem mi, ultrices eget odio vitae, ornare finibus est. Cras laoreet elit vitae vulputate fermentum.",
-			"image": "https://images.unsplash.com/photo-1508755032048-28bae16e864b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+			"description": "Enjoy a selection of delicious food, using local produce with quality and sustainability in mind.",
+			"image": "carousel-neigh-3.jpg",
 			"alt": "some image for kx"
 		}],
 
@@ -80,32 +74,32 @@
 
 			{
 				"title": "Digital Cockpit",
-				"image": "https://images.samsung.com/is/image/samsung/p5/uk/kings-cross/digital-cockpit.png?$ORIGIN_PNG$",
+				"image": "digital-cockpit.png",
 				"description": "Discover the future of driving"
 			},
 			{
 				"title": "Galaxy Graffiti",
-				"image": "https://images.samsung.com/is/image/samsung/p5/uk/kings-cross/graffiti.png?$ORIGIN_PNG$",
+				"image": "Tile-desk-galaxygraffiti.jpg",
 				"description": "Tag and draw with a Galaxy S10 spray can"
 			},
 			{
 				"title": "DJ Galaxy",
-				"image": "https://images.samsung.com/is/image/samsung/p5/uk/kings-cross/dj.png?$ORIGIN_PNG$",
+				"image": "Tile-desk-DJgalaxy.jpg",
 				"description": "Learn the art of music"
 			},
 			{
 				"title": "3D ME",
-				"image": "https://images.samsung.com/is/image/samsung/p5/uk/kings-cross/3d.png?$ORIGIN_PNG$",
+				"image": "Tile-desk-3Dme.jpg",
 				"description": "Create a mini 3D figure with the Galaxy S10"
 			},
 			{
 				"title": "Collage Me",
-				"image": "https://images.samsung.com/is/image/samsung/p5/uk/kings-cross/collage.png?$ORIGIN_PNG$",
+				"image": "Tile-desk-collageMe.jpg",
 				"description": "Turn your selfie into a unique collage"
 			},
 			{
 				"title": "AR Message Tree",
-				"image": "https://images.samsung.com/is/image/samsung/p5/uk/kings-cross/AR.jpg",
+				"image": "Tile-desk-message.jpg",
 				"description": "Fill the air with AR notes for others to unfold"
 			}
 

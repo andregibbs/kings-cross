@@ -92,6 +92,11 @@
     position: relative;
     background: #0C0C0C;
     padding-top: 0!important;
+
+    .section__inner {
+        display: flex;
+    justify-content: center;
+}
 }
 
 .passionPoints {

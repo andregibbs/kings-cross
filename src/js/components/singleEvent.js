@@ -78,10 +78,10 @@ export default function singleEvent(events) {
               : moment(data.startDate).format("Do MMMM"),
           startTime: data.startTime,
           passion: data.passions,
-          description: data.description.replace(
+          description:  data.description.split(". ", 1).length > 1 ? data.description.replace(
             data.description.split(". ", 1)[0] + ". ",
             ""
-          ),
+          ): '',
           firstSentence: data.description.split(". ", 1)[0],
           slotsAvailable: data.slotsAvailable,
           youtube: data.extra.youtubeid,
@@ -223,7 +223,14 @@ export default function singleEvent(events) {
     }
     
     $(".book").slideDown();
-  });
+    $("body,html").animate(
+      {
+        scrollTop: $(".book").offset().top - 40
+      },
+      800 //speed
+      );
+
+    });
 
   $(".close").on("click", function(e) {
     e.preventDefault();
@@ -330,11 +337,16 @@ export default function singleEvent(events) {
 
   $(".book__tickets-plus").click(function(e) {
     ticketQuantity = parseInt($(".book__tickets-tickets").val());
-    ticketQuantity += 1;
+    if(eventDetails.maxGroupSize !== ticketQuantity ) {
 
-    console.log(ticketQuantity);
+      ticketQuantity += 1;
+
+    console.log(eventDetails.maxGroupSize, ticketQuantity);
 
     $(".book__tickets-tickets").val(ticketQuantity);
+
+    }
+    
   });
 
   $(".book__tickets__tc").each(function() {

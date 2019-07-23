@@ -79,6 +79,7 @@ function lazyGetEvents(eventsToShow, numberOfEvents) {
 				},
 				800 //speed
 			  );
+			
 		} else {
 			$('.filters__labels').slideUp();
 			$('.filters__labels').toggleClass('closed');
