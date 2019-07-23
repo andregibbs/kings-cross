@@ -58,6 +58,11 @@ $(document).ready(function () {
 	let monthEnd = null
 	let monthEndDDMMYYYY = null
 
+	//Handlebars front end helpers
+	Handlebars.registerHelper('dash', function (str) {
+		return str.split(" ").join("-");
+	});
+
 	// =================================================
 	// Scripts to fetch the data
 	// =================================================
@@ -80,34 +85,34 @@ $(document).ready(function () {
 		return str;
 	}
 
-	  // kxConfig holds passion details from json file - events only hold the passion code but we need to show the name, so convert here
+	// kxConfig holds passion details from json file - events only hold the passion code but we need to show the name, so convert here
 	function getPassionColor(code) {
 		var name = '';
 		for (var i = 0; i < kxConfig.passions.length; i++) {
-			
+
 			if (kxConfig.passions[i].code == code) {
 
 				name = kxConfig.passions[i].color;
-				
+
 			}
 		}
 		return name;
 	};
 	// kxConfig holds suitable details from json file - events only hold the suitable code but we need to show the name, so convert here
-	 function getSuitableName(code) {
+	function getSuitableName(code) {
 		var name = '';
 		var newEventTypes = [];
 		code.forEach(type => {
 			for (var i = 0; i < kxConfig.suitables.length; i++) {
-			
+
 				if (kxConfig.suitables[i].code == type) {
 					name = kxConfig.suitables[i].name;
 					newEventTypes.push(name)
-					
+
 				}
 			}
 		})
-		
+
 		return newEventTypes;
 	};
 
@@ -133,9 +138,9 @@ $(document).ready(function () {
 		if (event.description) {
 			var bits = event.description.split("||");
 
-			
 
-			
+
+
 
 			event.description = bits[0];
 			if (bits.length > 1) {
@@ -143,7 +148,7 @@ $(document).ready(function () {
 				event.extra['passionColor'] = getPassionColor(event.extra.passions[0]);
 				event.extra['eventtypeName'] = getSuitableName(event.extra.eventtype);
 			}
-			
+
 			else {
 				event.extra = {};
 			}
@@ -174,13 +179,13 @@ $(document).ready(function () {
 				} else {
 					topics.push(event.topic.id);
 				}
-				
+
 			});
 
 			for (var i = 0; i < events.length; i++) {
 				var event = events[i];
 
-				
+
 
 				if (event.topic.title.toLowerCase() == wowTopic.toLowerCase()) {
 					if (wowEvents.length < wowEventsToShow) {
@@ -228,16 +233,16 @@ $(document).ready(function () {
 		}).complete(function () {
 
 			// Logs all events
-			console.log( 'events', events )
-			console.log( 'topics', topics )
-			console.log( 'events - wowEvents', wowEvents )
-			console.log( 'events - todayEvents', todayEvents )
-			console.log( 'events - futureEvents', futureEvents )
-			console.log( 'events - weekEvents', weekEvents )
-			console.log( 'events - monthEvents', monthEvents )
-			console.log( 'events - todayPromotedEvents', todayPromotedEvents )
-			console.log( 'events - weekPromotedEvents', weekPromotedEvents )
-			console.log( 'events - monthPromotedEvents', monthPromotedEvents )
+			console.log('events', events)
+			console.log('topics', topics)
+			console.log('events - wowEvents', wowEvents)
+			console.log('events - todayEvents', todayEvents)
+			console.log('events - futureEvents', futureEvents)
+			console.log('events - weekEvents', weekEvents)
+			console.log('events - monthEvents', monthEvents)
+			console.log('events - todayPromotedEvents', todayPromotedEvents)
+			console.log('events - weekPromotedEvents', weekPromotedEvents)
+			console.log('events - monthPromotedEvents', monthPromotedEvents)
 
 			// Callback function when all events are fetched
 			callback(events)
@@ -302,7 +307,7 @@ $(document).ready(function () {
 
 		case "/uk/explore/kings-cross/discover/":
 			discover();
-            break;
+			break;
 
 		case "/uk/explore/kings-cross/whats-on/":
 			fetchData(whatson)
@@ -313,7 +318,7 @@ $(document).ready(function () {
 			break;
 
 		case "/uk/explore/kings-cross/support/":
-			fetchData(function(allEvents) {
+			fetchData(function (allEvents) {
 				calendar("https://bookings.qudini.com/booking-widget/booker/slots/IZ0LYUJL6B0/4375/62764/0", "appointment", allEvents);
 			});
 			//Support goes last!
@@ -322,26 +327,26 @@ $(document).ready(function () {
 			break;
 
 		case "/uk/explore/kings-cross/support/repair/":
-			fetchData(function(allEvents) {
+			fetchData(function (allEvents) {
 				calendar("https://bookings.qudini.com/booking-widget/booker/slots/73U8JNREMLS/2286/37437/0", "appointment", allEvents);
 			})
 			break;
 
 		case "/uk/explore/kings-cross/support/one-to-one/":
-			fetchData(function(allEvents) {
+			fetchData(function (allEvents) {
 				calendar("https://bookings.qudini.com/booking-widget/booker/slots/73U8JNREMLS/2286/37437/0", "appointment", allEvents);
 			})
 			break;
 
 		case "/uk/explore/kings-cross/bookings/":
-			fetchData(function(allEvents){
+			fetchData(function (allEvents) {
 				bookingRefFetcher(allEvents);
 			})
 			break;
 
 		case "/uk/explore/kings-cross/experience/":
 			experience();
-            break;
+			break;
 
 		default: {
 			// Your init here

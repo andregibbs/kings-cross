@@ -163,7 +163,7 @@ export default function bookingRefFetcher(AllEvents) {
         $(".line--vertical, .request__info p, .request__info a, #date, #title, .request__event").hide();
         $(".request__info h3").html("Booking cancelled<br>" + eventData.title)
         $(".request__info").css("justify-content", "center");
-        $(".request__summary__content").append('<p class="fz18 request__cancel">Your booking has been cancelled.</p><br><p class="fz18">Thanks for letting us know. If you would like to come to a different KX event go to the <a class="fz18" href="//www.samsung.com/uk/explore/kings-cross/whats-on">What’s on</a> page or browse the upcoming events below.</p>');
+        $(".request__summary__content").append('<p class="fz18 request__cancel">Your booking has been cancelled.</p><br><p class="fz18">Thanks for letting us know. If you would like to come to a different KX event go to the <a ga-ca=“microsite” ga-ac=“feature” ga-la=“kings-cross:your-booking-has-been-cancelled_whats on” data-omni-type=“microsite” data-omni=“uk:kings-cross:whats-on” class="fz18" href="//www.samsung.com/uk/explore/kings-cross/whats-on">What’s on</a> page or browse the upcoming events below.</p>');
     }
 
 }
