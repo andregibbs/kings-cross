@@ -39,16 +39,16 @@
 					<option>Choose Your Model*</option>
 				</select>
 				<select class="input" id="color-selector">
-					<option value="">Choose Your Colour*</option>
+					<option value="">Choose Device Colour*</option>
 				</select>
 			</div>
 			<div class="device-info__row">
-				<input class="input" type="text" id="imei" placeholder="Device IMEI Number ( Optional)" />
+				<input class="input" type="text" id="imei" placeholder="Device IMEI Number (Optional)" />
 				<a href="https://www.samsung.com/uk/support/mobile-devices/how-do-i-find-the-imei-model-number-and-serial-number-for-samsung-galaxy-device/"
 					target="_blank">Retrieve
 					IMEI number</a>
 			</div>
-			<textarea class="input" id="device-notes" placeholder="Additional Information ( Optional )"></textarea>
+			<textarea class="input" id="device-notes" placeholder="Additional Information (Optional)"></textarea>
 		</form>
 
 		<div class="section__inner" id="calendar">
@@ -67,7 +67,7 @@
 					<input class="input details__input" autocomplete="family-name" placeholder="Surname*" id="surname"
 						type="text" required>
 					<br>
-					<input class="input details__input" name="telephone" placeholder="Telephone*" id="tel" type="tel"
+					<input class="input details__input" name="telephone" placeholder="Telephone*" id="tel" type="tel" pattern="^\s*\(?(020[7,8]{1}\)?[ ]?[1-9]{1}[0-9{2}[ ]?[0-9]{4})|(0[1-8]{1}[0-9]{3}\)?[ ]?[1-9]{1}[0-9]{2}[ ]?[0-9]{3})\s*$"
 						required>
 					<input class="input details__input" name="email" placeholder="Email*" id="email" type="email" required>
 				</div>
@@ -86,14 +86,14 @@
 					</label>
 
 					<label class="checkbox__container fz16">
-						<input type="checkbox" name="checkbox">I would like to receive special offers, announcements,
+						<input type="checkbox" name="checkbox" id="marketing">I would like to receive special offers, announcements,
 						push notifications and emails about Samsung’s products and services from Samsung Electronics
 						(UK) Ltd.<span class="checkbox"></span>
 					</label>
 				</div>
 
 				<p class="details__disclaimer">By submitting this form you acknowledge that your personal data will be
-					processed in accordance with our <a href="">Privacy Policy.</a></p>
+					processed in accordance with our <a href="https://www.samsung.com/uk/info/privacy/">Privacy Policy.</a></p>
 
 			</div>
 

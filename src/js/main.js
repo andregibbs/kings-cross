@@ -334,7 +334,9 @@ $(document).ready(function () {
 			break;
 
 		case "/uk/explore/kings-cross/bookings/":
-			bookingRefFetcher()
+			fetchData(function(allEvents){
+				bookingRefFetcher(allEvents);
+			})
 			break;
 
 		case "/uk/explore/kings-cross/experience/":

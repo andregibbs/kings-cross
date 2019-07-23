@@ -1,4 +1,5 @@
-export default function bookingRefFetcher() {
+import upcomingEvents from "./upcomingEvents";
+export default function bookingRefFetcher(AllEvents) {
     const isoCurrentDate = new Date();
 
     history.replaceState({ "reloadNeeded": false, "ref": "", "screen": 0 }, "My Bookings | Samsung King's Cross | Samsung UK", "");
@@ -11,11 +12,11 @@ export default function bookingRefFetcher() {
     };
 
     let loading = {
-        display: function () {
-            $(".loading").each(function () { this.style.display = "block" });
+        display: function (n) {
+            document.getElementsByClassName("loading")[n-1].style.display = "block";
         },
-        done: function () {
-            $(".loading").each(function () { this.style.display = "" });
+        done: function (n) {
+            document.getElementsByClassName("loading")[n-1].style.display = "";
         }
     }
 
@@ -36,10 +37,10 @@ export default function bookingRefFetcher() {
 
     ui.refButton.addEventListener("click", function () {
         let ref = document.getElementById("bookingRef").value;
-        loading.display();
+        loading.display(1);
         $.get("https://bookings.qudini.com/booking-widget/event/attendee/" + ref)
             .success(function (bookingData) {
-                loading.done();
+                loading.done(1);
                 console.log(bookingData);
 
                 $.get('https://bookings.qudini.com/booking-widget/event/event/' + bookingData.eventId + '', {
@@ -87,13 +88,16 @@ export default function bookingRefFetcher() {
                         }
                     })
 
+                    document.getElementById("upcoming").style.display = "block";
+                    upcomingEvents(AllEvents, eventData.topic.id);
+
                     document.getElementById("cancel-confirm").addEventListener("click", function () {
                         document.getElementById("cancel-popup").style.display = "";
-                        loading.display();
+                        loading.display(2);
                         $.get("https://bookings.qudini.com/booking-widget/event/cancel/" + ref)
                             .success(function () {
 
-                                loading.done();
+                                loading.done(2);
 
                                 showCancelled(eventData);
 
@@ -144,10 +148,12 @@ export default function bookingRefFetcher() {
             if (event.state.screen == 0) {
                 ui.inputScreen.style.display = "block";
                 ui.bookingScreen.style.display = "none";
+                document.getElementById("upcoming").style.display = "";
                 console.log("back");
             } else if (event.state.screen == 1 && !event.state.reloadNeeded) {
                 ui.inputScreen.style.display = "none";
                 ui.bookingScreen.style.display = "block";
+                document.getElementById("upcoming").style.display = "block";
                 console.log("forward");
             }
         }
@@ -157,7 +163,7 @@ export default function bookingRefFetcher() {
         $(".line--vertical, .request__info p, .request__info a, #date, #title, .request__event").hide();
         $(".request__info h3").html("Booking cancelled<br>" + eventData.title)
         $(".request__info").css("justify-content", "center");
-        $(".request__summary__content").append('<p class="fz18 request__cancel">You booking has been cancelled.</p><br><p class="fz18">Thanks for letting us know. If you would like to come to a different KX event go to the <a class="fz18" href="//www.samsung.com/uk/explore/kings-cross/whats-on">What’s on</a> page or browse the upcoming events below.</p>');
+        $(".request__summary__content").append('<p class="fz18 request__cancel">Your booking has been cancelled.</p><br><p class="fz18">Thanks for letting us know. If you would like to come to a different KX event go to the <a class="fz18" href="//www.samsung.com/uk/explore/kings-cross/whats-on">What’s on</a> page or browse the upcoming events below.</p>');
     }
 
 }

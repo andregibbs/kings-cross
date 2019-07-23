@@ -1,4 +1,3 @@
-import { BoundCallbackObservable } from "rxjs/observable/BoundCallbackObservable";
 
 // import customevent from '../polyfill/customevent-polyfill';
 
@@ -28,6 +27,8 @@ export default function support() {
         repair: "orange",
     };
 
+    //Main Object
+
     var state = {
         active: false,
         category: "",
@@ -48,7 +49,7 @@ export default function support() {
         colorChosen: "",
         deviceNotes: "",
         finalNotes: "",
-        imei: "",//FILL ME IN CODE PLS
+        imei: "",
 
         requestInit: false,
 
@@ -78,6 +79,9 @@ export default function support() {
                 this.active = true;
                 this.category = cat;
                 this.stage = 1;
+
+                console.log("???");
+                $("html, body").animate({ scrollTop: $('.journey').offset().top - 300 }, 600);
 
                 document.getElementById("btn-" + this.category).classList.add("btn--primary-notActive");
 
@@ -137,17 +141,11 @@ export default function support() {
 
 
             } else {
-                console.error("A journey is already activated.")
-
-                $(".close").addClass('flash')
-                    .on("animationend", function () {
-                        $(this).removeClass('flash');
-                    });
-
-                $("#back").addClass('flash--' + colors[state.category])
-                    .on("animationend", function () {
-                        $(this).removeClass('flash--' + colors[state.category]);
-                    });
+                console.log("")
+                this.cancelJourney();
+                setTimeout(function () {
+                    state.startJourney(cat);
+                }, 525)
 
             };
         },
@@ -155,33 +153,33 @@ export default function support() {
         cancelJourney: function () {
 
             $(this.journeys[this.category][this.stage]).slideUp(400, function () {
-                state.navigation.style.display = "";
-                state.nextBtn.classList.remove("btn--primary--" + colors[state.category])
-                state.backBtn.classList.remove("btn--secondary--" + colors[state.category])
-                screens.calendar.children[0].classList.remove(colors[state.category]);
-                document.getElementsByClassName("journey")[0].classList.remove(colors[state.category]);
-                $("span.checkbox").each(function (ind, elm) {
-                    elm.classList.remove("checkbox__" + colors[state.category]);
-                });
-                ["oneToOne", "support", "repair"].forEach(function (category) {
-                    document.getElementById("btn-" + category).classList.remove("btn--primary-notActive");
-                });
+                $(state.navigation).slideUp(75, function () {
+                    state.nextBtn.classList.remove("btn--primary--" + colors[state.category])
+                    state.backBtn.classList.remove("btn--secondary--" + colors[state.category])
+                    screens.calendar.children[0].classList.remove(colors[state.category]);
+                    document.getElementsByClassName("journey")[0].classList.remove(colors[state.category]);
+                    $("span.checkbox").each(function (ind, elm) {
+                        elm.classList.remove("checkbox__" + colors[state.category]);
+                    });
+                    ["oneToOne", "support", "repair"].forEach(function (category) {
+                        document.getElementById("btn-" + category).classList.remove("btn--primary-notActive");
+                    });
 
-                $(".checkbox").siblings("input").prop("checked", false);
-                $(".calendar--selected").removeClass("calendar--selected");
-                $("#next").removeData("slot");
-                sendLock();
+                    $(".checkbox").siblings("input").prop("checked", false);
+                    $(".calendar--selected").removeClass("calendar--selected");
+                    $("#next").removeData("slot");
+                    sendLock();
 
-                state.navigation.style.display = "";
+                    state.navigation.style.display = "";
 
-                clearState();
+                    clearState();
 
-                document.getElementById("details").reset()
-                document.getElementById("device-info").reset()
-                document.getElementsByClassName("close")[0].style.display = "";
+                    document.getElementById("details").reset()
+                    document.getElementById("device-info").reset()
+                    document.getElementsByClassName("close")[0].style.display = "";
 
-                window.history.replaceState({}, document.title, location.protocol + "//" + location.host + location.pathname);
-
+                    window.history.replaceState({}, document.title, location.protocol + "//" + location.host + location.pathname);
+                })
 
             });
 
@@ -201,12 +199,15 @@ export default function support() {
                 var surname = document.getElementById("surname").value;
                 var email = document.getElementById("email").value;
                 var phone = document.getElementById("tel").value;
-                var notes = "Model selected: " + state.deviceChosen + "; Colour: " + state.deviceColor + "; IMEI: " + state.imei + "; Customer Notes: " + state.deviceNotes;
+                var marketing = document.getElementById("marketing").checked;
+                var notes = "Model selected: " + state.deviceChosen + "; Colour: " + state.colorChosen + (state.imei ? "; IMEI: " + state.imei : "") + (state.deviceNotes ? "; Customer Notes: " + state.deviceNotes : "");
                 var bookingData = {
                     "name": name,
                     "surname": surname,
                     "email": email,
                     "phone": phone,
+                    "sendSms": true,
+                    "marketingOptInSMS": marketing,
                     "time": (state.timeChosen.indexOf("+01:00") != -1) ? state.timeChosen.slice(0, -6) + "Z" : state.timeChosen,
                     "notes": notes
                 };
@@ -231,7 +232,8 @@ export default function support() {
                             'notes': bookingData.notes,
                             'productId': state.productId,//Make dynamic
                             'bwIdentifier': "IZ0LYUJL6B0",
-                            "sendSms": true
+                            "marketingOptInSMS": bookingData.marketing,
+                            "sendSms": true,
                         }
                     ),
                     success: function (data) {
@@ -265,6 +267,8 @@ export default function support() {
         }
 
     };
+
+    //Main Object end
 
     var colorBox = document.getElementById("color-selector");
 
@@ -360,7 +364,7 @@ export default function support() {
             viewport = "mobile";
         } else if (window.innerWidth > 768 && viewport != "desktop") {
             document.getElementById("model-selector").children[0].innerText = "Choose Your Model*";
-            document.getElementById("color-selector").children[0].innerText = "Choose Your Colour*";
+            document.getElementById("color-selector").children[0].innerText = "Choose Device Colour*";
             viewport = "desktop";
         }
     }
@@ -486,7 +490,9 @@ export default function support() {
     })
 
     $("#model-selector").change(function () {
-        
+
+        state.colorChosen = "";
+
         while (colorBox.childElementCount > 1) {
             colorBox.removeChild(colorBox.lastChild);
         }
@@ -503,17 +509,20 @@ export default function support() {
         if (this.value == "Unlisted_device") {
             $("#color-selector").val("N/A");
             state.colorChosen = "N/A";
-            validateUnlock();
+            sendUnlock();
+            return false;
         }
+
+        console.log(this.selectedIndex);
 
         if (this.selectedIndex != 0) {
             state.deviceChosen = this.children[this.selectedIndex].innerText;
-            validateUnlock();
         } else {
             state.deviceChosen = "";
-            validateUnlock();
         }
 
+        validateUnlock();
+        
     });
 
     $("#color-selector").change(function () {

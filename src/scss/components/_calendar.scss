@@ -82,12 +82,12 @@
     max-width: 160px;
 
     @media screen and (max-width: $desktop) {
-      margin: get-desktop-vw(12) get-desktop-vw(20);
+      margin: get-desktop-vw(12) auto;
       padding: get-desktop-vw(12) get-desktop-vw(46);
     }
 
     @media screen and (max-width: $mobile) {
-      margin: get-mobile-vw(12) get-mobile-vw(4);
+      margin: get-mobile-vw(12) auto;
       padding: get-mobile-vw(24) get-mobile-vw(24);
     }
 
