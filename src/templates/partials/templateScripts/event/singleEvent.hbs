@@ -18,9 +18,13 @@
 			<div class="section__inner">
 				<section>
 					<div class="tile_container">
+						
+						<div class="event__header__top"><div class="event__header__top__left"><span class="event__header-date">[[ startDate ]] | [[ startTime ]]</span></div> </div>
+			<h2 class="event__header-title">[[ title ]]</h2>
 						<span class="tile-desc">[[ firstSentence ]]</span>
 					<span class="tile-desc--long">[[ description ]]</span>
-					</div>
+					<div class="action-capacity__container"><span class="action-capacity">Max Spaces [[ slotsAvailable ]] </span><span class="action-capacity">Spaces left [[ slotsAvailable ]]</span></div>
+					
 					
 					[[#if youtube ]]
 						<iframe width="560" height="315" src="https://www.youtube.com/embed/[[ youtube ]]" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -28,8 +32,6 @@
 				</section>
 				<section class="event__section">
 					<div class="event__content-book action">
-						<span class="action-date">[[ startDate ]] | [[ startTime ]]</span> 
-						<span class="action-capacity">Spaces left [[ slotsAvailable ]]</span> 
 
 						[[#if externalbookinglink ]]
 							<a href="[[externalbookinglink]]" class="link-book btn btn--primary" target="_blank">book now</a><br><br>
