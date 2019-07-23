@@ -8,6 +8,8 @@ export default function dataPicker(  ) {
 		changeMonth: false,
 		duration: "slow",
 		numberOfMonths: 1,
+		altFormat: "dd-mm-yy",
+		dateFormat: "dd/mm/yy",
 		  beforeShowDay: function(date) {
 			var d = date.getTime();
 			if (to.datepicker("getDate") && d == to.datepicker("getDate").getTime()) {
@@ -32,6 +34,8 @@ export default function dataPicker(  ) {
 		changeMonth: false,
 		duration: "fast",
 		numberOfMonths: 1,
+		altFormat: "dd-mm-yy",
+		dateFormat: "dd/mm/yy",
 		beforeShow: function(input, inst) {
 			$("#ui-datepicker-div td").off();
   

@@ -22,11 +22,6 @@ $(document).ready(function () {
 
 	//scroll past Navbar
 
-
-	setTimeout(function () {
-	window.scrollTo($('.cheil-static').offset().top, 0);
-},500);
-
 	// =================================================
 	// Global vars
 	// =================================================
@@ -138,7 +133,7 @@ $(document).ready(function () {
 		if (event.description) {
 			var bits = event.description.split("||");
 
-			console.log( 'bits', bits )
+			
 
 			
 

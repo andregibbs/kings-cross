@@ -116,22 +116,10 @@
 
 	"passions": [
 		{
-			"code":"fitnesswellbeing",
-			"name":"Health & Fitness",
-			"color":"#003DFF",
-			"image": "/fitness-wellbeing.png"
-		},
-		{
-			"code":"fashionbeauty",
-			"name":"Fashion",
-			"color":"#FFDA00",
-			"image": "/fashion.png"
-		},
-		{
-			"code":"fooddrink",
-			"name":"Food",
-			"color": "#00B3E2",
-			"image": "/food-drink.png"
+			"code":"artdesign",
+			"name":"Art & Design",
+			"color": "#FF4337",
+			"image": "/art-design.png"
 		},
 		{
 			"code":"entertainment",
@@ -140,10 +128,29 @@
 			"image": "/entertainment.png"
 		},
 		{
-			"code":"artdesign",
-			"name":"Art & Design",
-			"color": "#FF4337",
-			"image": "/art-design.png"
+			"code":"fashionbeauty",
+			"name":"Fashion",
+			"color":"#FFDA00",
+			"image": "/fashion.png"
+		},
+		{
+			"code":"fitnesswellbeing",
+			"name":"Health & Fitness",
+			"color":"#003DFF",
+			"image": "/fitness-wellbeing.png"
+		},
+
+		{
+			"code":"fooddrink",
+			"name":"Food & Drink",
+			"color": "#00B3E2",
+			"image": "/food-drink.png"
+		},
+		{
+			"code":"gaming",
+			"name":"Gaming",
+			"color": "#E24C9B",
+			"image": "/gaming.png"
 		},
 		{
 			"code":"photography",
@@ -153,35 +160,31 @@
 		},
 		{
 			"code":"sciencetechnology",
-			"name":"Tech & Science",
+			"name":"Science & Tech",
 			"color": "#724C9E",
 			"image": "/science-technology.png"
-		},
-		{
-			"code":"gaming",
-			"name":"Gaming",
-			"color": "#E24C9B",
-			"image": "/gaming.png"
 		}
 	],
 
 	"suitables": [
 		{
-			"code":"productclass",
-			"name":"Product Class"
-		},
-		{
 			"code":"childfriendly",
 			"name":"Child Friendly"
 		},
 		{
-			"code":"talklecture",
-			"name":"Talk / Lecture"
-		},
-		{
 			"code":"community",
 			"name":"Community"
+		},
+		{
+			"code":"productclass",
+			"name":"Product Class"
+		},
+		
+		{
+			"code":"talklecture",
+			"name":"Talk / Lecture"
 		}
+		
 	]
 
 }

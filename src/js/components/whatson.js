@@ -2,17 +2,46 @@ import '../librarys/jquery-ui-1.12.1.custom/jquery-ui.min.js'
 import handleTemplate from './handleTemplate'
 import getUrlVars from './getUrlVars'
 import dataPicker from './dataPicker';
-var renders = 0;
 var eventsToRender = [];
 
 export default function whatson( events ){
 
-	let counter = 0
+	let counter = 0;
 	const passion = getUrlVars()["passions"];
-	const eventsToManipulate = events
+	let numberEventsToShow = 30;
+	let maxEvents = events.length;
 
-	let getPassions = []
-	let getEventtype = []
+	let getPassions = [];
+	let getEventtype = [];
+	var eventsToManipulate = events;
+
+// =================================================
+// DataPicker and filters
+// =================================================
+
+function lazyGetEvents(eventsToShow, numberOfEvents) {
+	if(eventsToShow.length > 0) {
+		$('.events__showMore').removeClass('noMore');
+		let newEvents = [];
+	numberEventsToShow += numberOfEvents;
+	for(let i=0; i < numberEventsToShow; i++) {
+		newEvents.push(eventsToShow[i]);
+	}
+	$('.eventTile').remove();
+	renderEventsIntoDom( newEvents );
+
+	} else {
+		eventsToManipulate = [];
+		$('.eventTile').remove();
+		$('.events__showMore').addClass('noMore');
+	}
+	
+
+}
+
+
+
+	
 
 	// =================================================
 	// DataPicker and filters
@@ -21,8 +50,11 @@ export default function whatson( events ){
 	dataPicker()
 
 	$('.events__showMore').click( function() {
-
-		renderEventsIntoDom( eventsToManipulate );
+		lazyGetEvents(eventsToManipulate, 4);
+		if(numberEventsToShow + 4 > eventsToManipulate.length) {
+			$('.events__showMore').addClass('noMore');
+		}
+		
 	});
 
 	$('.passions .switch, .suitables .switch').click( function() {
@@ -41,6 +73,12 @@ export default function whatson( events ){
 			
 			$('.filters__labels').slideDown();
 			$('.filters__labels').toggleClass('closed');
+			$("body,html").animate(
+				{
+				  scrollTop: $(".eventFilter").offset().top
+				},
+				800 //speed
+			  );
 		} else {
 			$('.filters__labels').slideUp();
 			$('.filters__labels').toggleClass('closed');
@@ -57,12 +95,13 @@ export default function whatson( events ){
 
 		updateFilters()
 
-		var eventsToRender = eventsToManipulate
+		var eventsToRender = events;
+
 
 
 		if ( $('#from').val() && $('#to').val() ) {
 			eventsToRender = eventsToRender.filter( function( event ) {
-				return event.startDate > $('#from').val() && event.startDate < $('#to').val()
+				return event.startDate > moment($('#from').val(), "DD-MM-YYYY").format("MM/DD/YYYY") && event.startDate < moment($('#to').val(), "DD-MM-YYYY").format("MM/DD/YYYY") 
 			})
 		}
 
@@ -83,8 +122,12 @@ export default function whatson( events ){
 			} )
 		}
 
-		$('.eventTile').remove()
-		renderEventsIntoDom( eventsToRender )
+		eventsToManipulate = eventsToRender;
+
+
+
+		lazyGetEvents(eventsToRender, 0);
+		
 
 	})
 
@@ -104,7 +147,7 @@ export default function whatson( events ){
 			return event.extra.passions.includes( passion )
 		} )
 
-		renderEventsIntoDom( eventsFiltered )
+		lazyGetEvents( eventsFiltered, 0 );
 
 	} else {
 
@@ -114,7 +157,7 @@ export default function whatson( events ){
 			.attr('src', `https://images.samsung.com/is/image/samsung/p5/uk/kings-cross/KX-whats-on-KV.jpg`)
 			.addClass('op0--fade')
 
-		renderEventsIntoDom( events )
+		lazyGetEvents( events, 0 )
 	}
 
 	// =================================================
@@ -164,40 +207,11 @@ export default function whatson( events ){
 
 	function renderEventsIntoDom( allEventsToRender ) {
 
-	 
-
-		var i,j,temparray,chunk = 30, newEvents = [];
-for (i=0,j=allEventsToRender.length; i<j; i+=chunk) {
-	temparray = allEventsToRender.slice(i,i+chunk);
-	
-	newEvents.push(temparray);
-   
-}
-
-
-
-		if(renders >= newEvents.length) {
-			var newEventsToRender = eventsToRender;
-		} else {
-			var newEventsToRender = eventsToRender.concat(newEvents[renders]);
-		}
-		
-
-
-
-		
-
-		console.log(eventsToRender);
-		console.log(allEventsToRender);
-
-		console.log('renders',renders, renders, newEvents.length)
-
-		newEventsToRender.forEach( function( event, index ) {
+		allEventsToRender.forEach( function( event, index ) {
 
 			counter++
 
-			console.log( counter )
-
+			
 			const options = {
 				identifier: event.identifier,
 				eventId: event.id,
@@ -211,15 +225,14 @@ for (i=0,j=allEventsToRender.length; i<j; i+=chunk) {
 				suitablesName: event.extra.eventtypeName,
 			}
 
-			console.log(options);
-
+			
 			$('.events .events__container').append( handleTemplate( 'eventTile', options ) )
 
 			if ( counter == 10 ) {
 				counter = 0
 			}
 		})
-		renders++
+		
 	}
 
 
