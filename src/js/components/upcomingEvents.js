@@ -13,7 +13,6 @@ export default function upcomingEvents( events, topicId ) {
 		var filteredEvents = events;
   }
   
-  console.log('filteredEvents', filteredEvents.length);
  
   for (var i = 0; i < 4; i++) {
     populateRandomEvents.push(

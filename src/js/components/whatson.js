@@ -22,11 +22,13 @@ export default function whatson( events ){
 function lazyGetEvents(eventsToShow, numberOfEvents) {
 	if(eventsToShow.length > 0) {
 		$('.events__showMore').removeClass('noMore');
+		$('.events__noResults').removeClass('active');
 		let newEvents = [];
 	numberEventsToShow += numberOfEvents;
 	for(let i=0; i < numberEventsToShow; i++) {
 		newEvents.push(eventsToShow[i]);
 	}
+	
 	$('.eventTile').remove();
 	renderEventsIntoDom( newEvents );
 
@@ -34,6 +36,7 @@ function lazyGetEvents(eventsToShow, numberOfEvents) {
 		eventsToManipulate = [];
 		$('.eventTile').remove();
 		$('.events__showMore').addClass('noMore');
+		$('.events__noResults').addClass('active');
 	}
 	
 

@@ -45,18 +45,19 @@
 			"alt": "some image for kx"
 		}],
 
-		"sliderTwo": [{
+		"sliderTwo": [
+			{
+				"title": "Coal Drops Yard as a destination. Our neighbours… xx",
+				"description": "This is an opportunity to sell users on the idea of Coal Drops Yard as a destination. Fusce venenatis libero quis augue placerat, eu scelerisque tortor volutpat. Etiam fringilla elit sodales elit lacinia pharetra. Sed lorem mi, ultrices eget odio vitae, ornare finibus est. Cras laoreet elit vitae vulputate fermentum.",
+				"image": "discover-gallery2-desktop.jpg",
+				"alt": "A picture of Coal Drops Yard"
+			},{
 			"title": "Coal Drops Yard as a destination. Our neighbours… x",
 			"description": "This is an opportunity to sell users on the idea of Coal Drops Yard as a destination. Fusce venenatis libero quis augue placerat, eu scelerisque tortor volutpat. Etiam fringilla elit sodales elit lacinia pharetra. Sed lorem mi, ultrices eget odio vitae, ornare finibus est. Cras laoreet elit vitae vulputate fermentum.",
 			"image": "discover-gallery1-desktop.jpg",
 			"alt": "A picture of Coal Drops Yard"
 		},
-		{
-			"title": "Coal Drops Yard as a destination. Our neighbours… xx",
-			"description": "This is an opportunity to sell users on the idea of Coal Drops Yard as a destination. Fusce venenatis libero quis augue placerat, eu scelerisque tortor volutpat. Etiam fringilla elit sodales elit lacinia pharetra. Sed lorem mi, ultrices eget odio vitae, ornare finibus est. Cras laoreet elit vitae vulputate fermentum.",
-			"image": "discover-gallery2-desktop.jpg",
-			"alt": "A picture of Coal Drops Yard"
-		},
+		
 		{
 			"title": "Coal Drops Yard as a destination. Our neighbours… xxx",
 			"description": "This is an opportunity to sell users on the idea of Coal Drops Yard as a destination. Fusce venenatis libero quis augue placerat, eu scelerisque tortor volutpat. Etiam fringilla elit sodales elit lacinia pharetra. Sed lorem mi, ultrices eget odio vitae, ornare finibus est. Cras laoreet elit vitae vulputate fermentum.",

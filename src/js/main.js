@@ -19,8 +19,17 @@ $(document).ready(function () {
 
 	// This will clear all unnecessary Samsung logs
 	console.clear()
+	setTimeout(function () {
+	$("body,html").animate(
+		{
+		  scrollTop: $(".cheil-static").offset().top
+		},
+		800 //speed
+	  );
 
+    }, 2000);
 	//scroll past Navbar
+	
 
 	// =================================================
 	// Global vars
