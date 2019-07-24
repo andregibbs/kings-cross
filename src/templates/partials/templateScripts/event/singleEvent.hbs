@@ -3,9 +3,9 @@
 
 		<section class="event__header section__inner">
 			<div class="event__header__top"><div class="event__header__top__left"><span class="event__header-date">[[ startDate ]] | [[ startTime ]]</span><span class="action-capacity">Spaces left [[ slotsAvailable ]]</span></div> [[#if externalbookinglink ]]
-							<a ga-ca=“microsite” ga-ac=“feature” ga-la=“kings-cross:[[ title ]]_book-now” data-omni-type=“microsite” data-omni=“uk:kings-cross:event-page:[[ title ]]:book-now” href="[[externalbookinglink]]" class="link-book btn btn--primary" target="_blank">book now</a>
+							<a ga-ca=“microsite” ga-ac=“feature” ga-la=“kings-cross:[[ dash title ]]_book-now” data-omni-type=“microsite” data-omni=“uk:kings-cross:event-page:[[ dash title ]]:book-now” href="[[externalbookinglink]]" class="link-book btn btn--primary" target="_blank">book now</a>
 						[[else]]
-							<button class="action-btn btn btn--primary">book tickets</button>
+							<button ga-ca=“microsite” ga-ac=“feature” ga-la=“kings-cross:[[ dash title ]]_book-tickets” data-omni-type=“microsite” data-omni=“uk:kings-cross:event-page:[[ dash title ]]:book-tickets” class="action-btn btn btn--primary">book tickets</button>
 						[[/if]]</div>
 			<h2 class="event__header-title">[[ title ]]</h2>
 		</section>
@@ -37,10 +37,10 @@
 							<a ga-ca=“microsite” ga-ac=“feature” ga-la=“kings-cross:[[ title ]]_book-now” data-omni-type=“microsite” data-omni=“uk:kings-cross:event-page:[[ title ]]:book-now” href="[[externalbookinglink]]" class="link-book btn btn--primary" target="_blank">book now</a><br><br>
 						[[else]]
 						[[#if reoccurring ]]
-							<button class="action-btn btn btn--primary">book tickets</button><br><br>
-							<button class="action-btn btn btn--secondary changeTime">Other Times</button><br><br>
+							<button ga-ca=“microsite” ga-ac=“feature” ga-la=“kings-cross:[[ dash title ]]_book-tickets” data-omni-type=“microsite” data-omni=“uk:kings-cross:event-page:[[ dash title ]]:book-tickets” class="action-btn btn btn--primary">book tickets</button><br><br>
+							<button ga-ca=“microsite” ga-ac=“feature” ga-la=“kings-cross:[[ dash title ]]_other-times” data-omni-type=“microsite” data-omni=“uk:kings-cross:event-page:[[ dash title ]]:other-times” class="action-btn btn btn--secondary changeTime">Other Times</button><br><br>
 							[[else]]
-							<button class="action-btn btn btn--primary">book tickets</button><br><br>
+							<button ga-ca=“microsite” ga-ac=“feature” ga-la=“kings-cross:[[ dash title ]]_book-tickets” data-omni-type=“microsite” data-omni=“uk:kings-cross:event-page:[[ dash title ]]:book-tickets” class="action-btn btn btn--primary">book tickets</button><br><br>
 							[[/if]]
 						[[/if]]
 

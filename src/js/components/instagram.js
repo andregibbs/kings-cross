@@ -31,13 +31,13 @@ export default function instagram( htag ) {
 		dataType: 'jsonp',
 		success: function ( response ) {
 
-			console.log( response )
+			//console.log( response );
 
 			response.data.forEach(element => {
 				var date = new Date(parseInt(element.created_time) * 1000);
 				var locale = "en-GB"
 
-				console.log( 'instagram element ', element )
+				//console.log( 'instagram element ', element );
 
 			});
 

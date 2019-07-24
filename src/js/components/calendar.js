@@ -87,7 +87,7 @@ export default function calendar(URL, type, allEvents) {
 			})
 			.fail(function (err) {
 				loadingScreen.style.display = "";
-				console.log(err);
+				//console.log(err);
 				//ADD A HEADS UP TO THE USER
 			})
 	}
@@ -133,7 +133,7 @@ export default function calendar(URL, type, allEvents) {
 						appointmentStartTime = $(this).data("startTime");
 						this.classList.add("calendar--selected");
 						this.getElementsByTagName("p")[0].innerText = "Selected";
-						console.log("selected", appointmentStartTime);
+						//console.log("selected", appointmentStartTime);
 						$("#next").data("slot", appointmentStartTime);
 						$("#next").data("queueId", $(this).data("queueId"));
 						document.getElementById("next").dispatchEvent(unlock);
@@ -198,7 +198,7 @@ export default function calendar(URL, type, allEvents) {
 			//They ensure that no matter how much and when you click, it will always snap to an element as long as the container is 350px
 			$(elm).click(function () {
 				var h = $(elm).siblings().find(".calendar__choice").outerHeight(false) + parseFloat($(".calendar__choice").css('marginTop'));
-				console.log(h);
+				//console.log(h);
 				if (this.classList.contains("load--bot")) {
 					if (this.previousElementSibling.scrollTop % h == 0) {
 						$(this.previousElementSibling).animate({
@@ -207,14 +207,14 @@ export default function calendar(URL, type, allEvents) {
 					}
 					else if (this.previousElementSibling.scrollTop % h > h / 2) {
 						var scrollBy = 2 * h - (this.previousElementSibling.scrollTop % h);
-						console.log(scrollBy);
+						//console.log(scrollBy);
 						$(this.previousElementSibling).animate({
 							scrollTop: '+=' + scrollBy
 						}, 300);
 					}
 					else {
 						var scrollBy = h - this.previousElementSibling.scrollTop % h;
-						console.log(scrollBy);
+						//console.log(scrollBy);
 						$(this.previousElementSibling).animate({
 							scrollTop: '+=' + scrollBy
 						}, 300);
@@ -228,14 +228,14 @@ export default function calendar(URL, type, allEvents) {
 					}
 					else if (this.nextElementSibling.scrollTop % h > h / 2) {
 						var scrollBy = h + (this.nextElementSibling.scrollTop % h);
-						console.log(scrollBy);
+						//console.log(scrollBy);
 						$(this.nextElementSibling).animate({
 							scrollTop: '-=' + scrollBy
 						}, 300);
 					}
 					else {
 						var scrollBy = 2 * h + this.nextElementSibling.scrollTop % h;
-						console.log(scrollBy);
+						//console.log(scrollBy);
 						$(this.nextElementSibling).animate({
 							scrollTop: '-=' + scrollBy
 						}, 300);
@@ -255,13 +255,13 @@ export default function calendar(URL, type, allEvents) {
 			'timezone': "Europe/London",
 			'isoCurrentDate': isoCurrentDate.toISOString()
 		}).success(function (event) {
-			console.log(event.topic.title);
+			//console.log(event.topic.title);
 			for (var eInd = 0; eInd < allEvents.length; eInd++) {
 				if (allEvents[eInd].topic.title == event.topic.title) {
 					matchingTopicEvents.push(allEvents[eInd]);
 				}
 			}
-			console.log("µ", matchingTopicEvents); //presorted in ascending order
+			//console.log("µ", matchingTopicEvents); //presorted in ascending order
 			populateWithEvents(matchingTopicEvents);
 		})
 	}
@@ -283,10 +283,10 @@ export default function calendar(URL, type, allEvents) {
 			}
 		})
 
-		console.log("∞", dates);
+		//console.log("∞", dates);
 		// var date = new Date(event.startDate);
 		// var dateDisplayed = days[date.getDay()] + " " + date.getDate() + " " + months[date.getMonth()] + " " + date.getFullYear();
-		// console.log(dateDisplayed);
+		// //console.log(dateDisplayed);
 		// dates.forEach((date) => {
 		// 	//
 		// })
@@ -294,10 +294,10 @@ export default function calendar(URL, type, allEvents) {
 
 	function handleResize(){
   
-		console.log('%c%s', 'color: #f2ceb6', "Tis logged");
+		//console.log('%c%s', 'color: #f2ceb6', "Tis logged");
 
         if(window.innerWidth <= 768 && (viewport != "mobile" || calendarRestart)){
-			console.log("Still mobile");
+			//console.log("Still mobile");
 			$("[date]").each(function(ind, elm){
 				var a = new Date(elm.getAttribute("date"));
 				elm.innerText = shortDays[a.getDay()] + " " + a.getDate() + " " + shortMonths[a.getMonth()];

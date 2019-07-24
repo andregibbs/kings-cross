@@ -2,7 +2,7 @@
 // import customevent from '../polyfill/customevent-polyfill';
 
 export default function support() {
-    console.log("Support module loaded.");
+    //console.log("Support module loaded.");
 
     // customevent();
 
@@ -80,7 +80,7 @@ export default function support() {
                 this.category = cat;
                 this.stage = 1;
 
-                console.log("???");
+                //console.log("???");
                 $("html, body").animate({ scrollTop: $('.journey').offset().top - 300 }, 600);
 
                 document.getElementById("btn-" + this.category).classList.add("btn--primary-notActive");
@@ -102,7 +102,7 @@ export default function support() {
                             $(this).css({
                                 display: "flex"
                             });
-                            console.log("Start");
+                            //console.log("Start");
                         },
                         complete: function () {
                             state.navigation.style.display = "flex";
@@ -141,7 +141,7 @@ export default function support() {
 
 
             } else {
-                console.log("")
+                //console.log("")
                 this.cancelJourney();
                 setTimeout(function () {
                     state.startJourney(cat);
@@ -187,8 +187,8 @@ export default function support() {
         },
 
         makeBooking: function () {
-            console.log("Got here");
-            console.log(state.requestInit);
+            //console.log("Got here");
+            //console.log(state.requestInit);
             if (!state.requestInit) {
                 state.requestInit = true;
                 //Loading thingy needed HERE
@@ -252,14 +252,14 @@ export default function support() {
 
                         } else {
                             alert("Fail :(");
-                            console.log(data);
+                            //console.log(data);
                             document.getElementsByClassName("journey")[0].classList.remove("progress");
                             sendUnlock();
                         }
                     },
                     fail: function (err) {
                         document.getElementsByClassName("journey")[0].classList.remove("progress");
-                        console.log(err);
+                        //console.log(err);
                         sendUnlock();
                     }
                 })
@@ -323,18 +323,18 @@ export default function support() {
 
             },
             error: function (err) {
-                //console.log(err);
+                ////console.log(err);
             }
 
         });
     }
 
     function validateUnlock() {
-        console.log("Validating");
+        //console.log("Validating");
 
-        console.log("Validating Device Info");
+        //console.log("Validating Device Info");
         if (state.colorChosen && state.deviceChosen) {
-            console.log("UNLOCK sent");
+            //console.log("UNLOCK sent");
             state.imei = document.getElementById("imei").value;
             state.deviceNotes = document.getElementById("device-notes").value;
             sendUnlock();
@@ -355,10 +355,10 @@ export default function support() {
 
     function handleResize() {
 
-        console.log('%c%s', 'color: #f2ceb6', "Tis logged");
+        //console.log('%c%s', 'color: #f2ceb6', "Tis logged");
 
         if (window.innerWidth <= 768 && viewport != "mobile") {
-            console.log("Still mobile");
+            //console.log("Still mobile");
             document.getElementById("model-selector").children[0].innerText = "Model*";
             document.getElementById("color-selector").children[0].innerText = "Color*";
             viewport = "mobile";
@@ -388,11 +388,11 @@ export default function support() {
     state.nextBtn.addEventListener("unlock", function () {
         // if ($(this).data("slot")) {
         if ($(this).data("slot")) {
-            console.log($(this).data("slot"));
+            //console.log($(this).data("slot"));
             state.timeChosen = $(this).data("slot");
             state.queueId = $(this).data("queueId");
-            console.log($(this).data());
-            console.log(state.timeChosen, state.queueId);
+            //console.log($(this).data());
+            //console.log(state.timeChosen, state.queueId);
             var dateObject = new Date(state.timeChosen);
             var timeSlotText = (dateObject.toLocaleTimeString().slice(0, dateObject.toLocaleTimeString.length - 3)) + " | " + days[dateObject.getDay()] + " " + dateObject.getDate() + " " + months[dateObject.getMonth()] + " " + dateObject.format("yyyy") + " | Samsung KX";
             $(".time-selected").text(timeSlotText);
@@ -400,12 +400,12 @@ export default function support() {
 
         this.classList.remove("btn--primary-notActive");
         $(this).data("locked", false)
-        console.log("next unlocked")
+        //console.log("next unlocked")
         // }
     })
 
     state.nextBtn.addEventListener("lock", function () {
-        console.log("Next 'Locked'");
+        //console.log("Next 'Locked'");
         this.classList.add("btn--primary-notActive");
         $(this).data("locked", true)
     })
@@ -473,7 +473,7 @@ export default function support() {
         if (state.stage <= 1) {
             state.cancelJourney();
         } else {
-            console.log(state.journeys[state.category][state.stage], screens.details)
+            //console.log(state.journeys[state.category][state.stage], screens.details)
             if (state.journeys[state.category][state.stage] == screens.details) {
                 state.nextBtn.innerText = "NEXT";
             }
@@ -513,7 +513,7 @@ export default function support() {
             return false;
         }
 
-        console.log(this.selectedIndex);
+        //console.log(this.selectedIndex);
 
         if (this.selectedIndex != 0) {
             state.deviceChosen = this.children[this.selectedIndex].innerText;

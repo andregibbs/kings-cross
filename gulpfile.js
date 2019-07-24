@@ -27,7 +27,7 @@ var path = require('path')
 var fs = require('fs')
 
 var log = function( message, type ) {
-	return ( type === 'error' ) ? console.log( chalk.red( message ) ) : console.log( chalk.green( message ) )
+	return ( type === 'error' ) ? console.log( chalk.red( message ) ) : console.log( chalk.green( message ) );
 }
 
 var SITE = 'uk';

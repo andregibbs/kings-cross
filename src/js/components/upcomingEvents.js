@@ -13,7 +13,7 @@ export default function upcomingEvents( events, topicId ) {
 		var filteredEvents = events;
   }
   
-  console.log('filteredEvents', filteredEvents.length);
+  //console.log('filteredEvents', filteredEvents.length);
  
   for (var i = 0; i < 4; i++) {
     populateRandomEvents.push(
@@ -24,7 +24,7 @@ export default function upcomingEvents( events, topicId ) {
   var sorted_dates = populateRandomEvents.sort(function(a, b) {
     return  new Date(a.startISO) - new Date(b.startISO);
   });
- console.log("sorted dates",sorted_dates);
+ //console.log("sorted dates",sorted_dates);
   for (var i = 0; i < 4; i++) {
     const options = {
       identifier: populateRandomEvents[i].identifier,

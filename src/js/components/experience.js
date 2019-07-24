@@ -20,7 +20,7 @@ export default function experience(  ) {
 	// var s3domain = 'https://kxuploads-live.s3.eu-west-2.amazonaws.com/uploads/';
 
 	if (id) {
-        console.log('id in url - ' + id);
+        //console.log('id in url - ' + id);
 
         $('form#dataid [name=id]').val(id)
 
@@ -105,7 +105,7 @@ function getFile(file) {
 }
 
 function processFiles(data) {
-	console.log('xxxxx processFiles');
+	//console.log('xxxxx processFiles');
     var html = '';
     if (data.success) {
         if (data.files) {
@@ -239,11 +239,11 @@ function getParam(param) {
 
 $(document).ready(function () {
 
-	console.log('ready....');
+	//console.log('ready....');
     // check for id in url - if exists - load the data
     var idParam = getParam('id');
     if (idParam) {
-        console.log('id in url - ' + idParam);
+        //console.log('id in url - ' + idParam);
 
         $('form#dataid [name=id]').val(idParam)
 
