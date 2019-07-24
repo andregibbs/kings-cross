@@ -13,10 +13,10 @@ export default function bookingRefFetcher(AllEvents) {
 
     let loading = {
         display: function (n) {
-            document.getElementsByClassName("loading")[n-1].style.display = "block";
+            document.getElementsByClassName("loading")[n - 1].style.display = "block";
         },
         done: function (n) {
-            document.getElementsByClassName("loading")[n-1].style.display = "";
+            document.getElementsByClassName("loading")[n - 1].style.display = "";
         }
     };
 
@@ -74,7 +74,7 @@ export default function bookingRefFetcher(AllEvents) {
                     ui.bookingScreen.style.display = "block";
 
 
-                    if(bookingData.status == "CANCELLED"){
+                    if (bookingData.status == "CANCELLED") {
                         showCancelled(eventData);
                     }
 
@@ -103,7 +103,7 @@ export default function bookingRefFetcher(AllEvents) {
 
                             })
                             .fail(function (err) {
-                                loading.done();
+                                loading.done(2);
                                 //console.log(err);
                             });
                     });
@@ -113,7 +113,7 @@ export default function bookingRefFetcher(AllEvents) {
             })
             .fail(function (err) {
                 //console.log(err);
-                loading.done();
+                loading.done(1);
                 ui.bookingField.classList.add("warn");
             });
 
@@ -163,7 +163,10 @@ export default function bookingRefFetcher(AllEvents) {
         $(".line--vertical, .request__info p, .request__info a, #date, #title, .request__event").hide();
         $(".request__info h3").html("Booking cancelled<br>" + eventData.title);
         $(".request__info").css("justify-content", "center");
-        $(".request__summary__content").append('<p class="fz18 request__cancel">Your booking has been cancelled.</p><br><p class="fz18">Thanks for letting us know. If you would like to come to a different KX event go to the <a ga-ca=“microsite” ga-ac=“feature” ga-la=“kings-cross:your-booking-has-been-cancelled_whats on” data-omni-type=“microsite” data-omni=“uk:kings-cross:whats-on” class="fz18" href="//www.samsung.com/uk/explore/kings-cross/whats-on">What’s on</a> page or browse the upcoming events below.</p>');
+        $(".request__summary__content").append('<p class="fz18 request__cancel">Your booking has been cancelled.</p><br><p class="fz18">Thanks for letting us know. If you would like to come to a different KX event go to the <a ga-ca=“microsite” ga-ac=“feature” ga-la=“kings-cross:your-booking-has-been-cancelled_whats on” data-omni-type=“microsite” data-omni=“uk:kings-cross:whats-on” class="fz18" href="//www.samsung.com/uk/explore/kings-cross/whats-on">What’s on</a> page or browse the upcoming events below.</p><br/><a href="./"><button class="button btn btn--primary">Search for another event</button></a>');
+        $(".relatedEvents__header__see").click(function() {
+            window.location.href = "/uk/explore/kings-cross/whats-on/";
+          });
     }
 
 }

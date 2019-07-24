@@ -50,6 +50,7 @@ export default function support() {
         deviceNotes: "",
         finalNotes: "",
         imei: "",
+        imeiValid: true,
 
         requestInit: false,
 
@@ -333,7 +334,7 @@ export default function support() {
         //console.log("Validating");
 
         //console.log("Validating Device Info");
-        if (state.colorChosen && state.deviceChosen) {
+        if (state.colorChosen && state.deviceChosen && (state.imeiValid || !state.imei)) {
             //console.log("UNLOCK sent");
             state.imei = document.getElementById("imei").value;
             state.deviceNotes = document.getElementById("device-notes").value;
@@ -385,6 +386,42 @@ export default function support() {
 
     }
 
+    function checkIMEI(imei) {
+        var reg = /^\d{15}$/;
+
+        if (!reg.test(imei)) {
+            return false;
+        }
+
+        var sumOfFourteen = 0;
+
+        for (var i = 0; i < imei.length - 1; i++) {
+
+            if ((i + 1) % 2 == 0) {
+
+                if (imei[i] * 2 > 9) {
+                    var tempDigit = (parseInt(imei[i]) * 2).toString();
+                    sumOfFourteen += parseInt(tempDigit[0]) + parseInt(tempDigit[1]);
+                } else {
+                    sumOfFourteen += parseInt(imei[i]) * 2;
+                }
+
+            } else {
+                sumOfFourteen += parseInt(imei[i]);
+            }
+
+        }
+
+        if (imei[imei.length - 1] == (Math.ceil(sumOfFourteen / 10) * 10 - sumOfFourteen)) {
+            //console.log("Last digit correct");
+            return true;
+        } else {
+            //console.log("Last digit false");
+            return false;
+        }
+
+    };
+
     state.nextBtn.addEventListener("unlock", function () {
         // if ($(this).data("slot")) {
         if ($(this).data("slot")) {
@@ -394,7 +431,7 @@ export default function support() {
             //console.log($(this).data());
             //console.log(state.timeChosen, state.queueId);
             var dateObject = new Date(state.timeChosen);
-            var timeSlotText = (dateObject.toLocaleTimeString().slice(0, dateObject.toLocaleTimeString.length - 3)) + " | " + days[dateObject.getDay()] + " " + dateObject.getDate() + " " + months[dateObject.getMonth()] + " " + dateObject.format("yyyy") + " | Samsung KX";
+            var timeSlotText = moment(dateObject).format("h:mm A | dddd Do YYYY") + " | Samsung KX";
             $(".time-selected").text(timeSlotText);
         }
 
@@ -497,14 +534,16 @@ export default function support() {
             colorBox.removeChild(colorBox.lastChild);
         }
 
-        var deviceColors = $(this).find(":selected").data("colors").split(", ");
-
-        for (var clr = 0; clr < deviceColors.length; clr++) {
-            var color = document.createElement("option");
-            color.value = deviceColors[clr];
-            color.innerText = deviceColors[clr];
-            colorBox.appendChild(color);
+        if(this.selectedIndex != 0){
+            var deviceColors = $(this).find(":selected").data("colors").split(", ");
+            for (var clr = 0; clr < deviceColors.length; clr++) {
+                var color = document.createElement("option");
+                color.value = deviceColors[clr];
+                color.innerText = deviceColors[clr];
+                colorBox.appendChild(color);
+            }
         }
+
 
         if (this.value == "Unlisted_device") {
             $("#color-selector").val("N/A");
@@ -519,6 +558,7 @@ export default function support() {
             state.deviceChosen = this.children[this.selectedIndex].innerText;
         } else {
             state.deviceChosen = "";
+            state.colorChosen = "";
         }
 
         validateUnlock();
@@ -528,12 +568,24 @@ export default function support() {
     $("#color-selector").change(function () {
         if (this.selectedIndex != 0) {
             state.colorChosen = this.options[this.selectedIndex].innerHTML;
-            validateUnlock();
         } else {
             state.colorChosen = "";
-            validateUnlock();
         }
+        validateUnlock();
     });
+
+    $("#imei").change(function(){
+        state.imei = this.value;
+        state.imeiValid = checkIMEI(this.value);
+        if(state.imei && !state.imeiValid){
+            this.classList.add("warn");
+        } else {
+            if(this.classList.contains("warn")){
+                this.classList.remove("warn");  
+            }
+        }
+        validateUnlock();
+    })
 
     window.addEventListener('resize', function () {
         handleResize();
