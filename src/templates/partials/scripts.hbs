@@ -8,12 +8,13 @@ if (window.location.hostname == 'www.samsung.com' ||
 }
 kxConfig.passions = [];
 {{#each config.passions}}
-	kxConfig.passions.push({"code":"{{ this.code }}","name":"{{{ this.name }}}","color":"{{{ this.color }}}"});
+kxConfig.passions.push({"code":"{{ this.code }}","name":"{{{ this.name }}}","color":"{{{ this.color }}}"});
 {{/each}}
 kxConfig.suitables = [];
 {{#each config.suitables}}
 	
-	kxConfig.suitables.push({"code":"{{ this.code }}","name":"{{{ this.name }}}"});
+kxConfig.suitables.push({"code":"{{ this.code }}","name":"{{{ this.name }}}"});
+
 {{/each}}
 //console.log(kxConfig);
 </script>
