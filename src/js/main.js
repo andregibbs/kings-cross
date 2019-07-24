@@ -1,24 +1,22 @@
 /* Components */
-import nav from './components/nav'
-import whatson from './components/whatson'
-import singleEvent from './components/singleEvent'
-import whatIsKx from './components/whatIsKx'
-import repair from './components/repair'
-import calendar from './components/calendar'
-import slider from './components/slider'
-import bookingRefFetcher from './components/bookingRefFetcher'
-import discover from './components/discover'
-import support from './components/support'
-import experience from './components/experience'
+import nav from './components/nav';
+import whatson from './components/whatson';
+import singleEvent from './components/singleEvent';
+import whatIsKx from './components/whatIsKx';
+import repair from './components/repair';
+import calendar from './components/calendar';
+import slider from './components/slider';
+import bookingRefFetcher from './components/bookingRefFetcher';
+import discover from './components/discover';
+import support from './components/support';
+import experience from './components/experience';
 
 //experimental
 // import smoothScroll from './librarys/smoothscroll';
 
-
 $(document).ready(function () {
 
 	// This will clear all unnecessary Samsung logs
-	console.clear()
 	setTimeout(function () {
 	$("body,html").animate(
 		{
@@ -28,6 +26,9 @@ $(document).ready(function () {
 	  );
 
     }, 2000);
+
+	// console.clear();
+
 	//scroll past Navbar
 	
 
@@ -35,43 +36,48 @@ $(document).ready(function () {
 	// Global vars
 	// =================================================
 
-	const apiUrl = 'https://bookings.qudini.com/booking-widget/event/events/'
+	const apiUrl = 'https://bookings.qudini.com/booking-widget/event/events/';
 	const isoCurrentDate = new Date();
 
-	const standardTopic = "Standard Event"
-	const reoccurringTopic = "Re-occurring event"
-	const wowTopic = "WOW Event"
-	const wowEventsToShow = 3
-	const filteredPerPage = 9
+	const standardTopic = "Standard Event";
+	const reoccurringTopic = "Re-occurring event";
+	const wowTopic = "WOW Event";
+	const wowEventsToShow = 3;
+	const filteredPerPage = 9;
 
-	let events = []
-	let wowEvents = []
-	let todayEvents = []
-	let futureEvents = []
-	let weekEvents = []
-	let monthEvents = []
-	let todayPromotedEvents = []
-	let weekPromotedEvents = []
-	let monthPromotedEvents = []
-	let topics = []
+	let events = [];
+	let wowEvents = [];
+	let todayEvents = [];
+	let futureEvents = [];
+	let weekEvents = [];
+	let monthEvents = [];
+	let todayPromotedEvents = [];
+	let weekPromotedEvents = [];
+	let monthPromotedEvents = [];
+	let topics = [];
 
-	let now = new Date()
-	let today = null
-	let todayDDMMYYYY = null
-	let weekStart = null
-	let weekStartDDMMYYYY = null
-	let weekEnd = null
-	let weekEndDDMMYYYY = null
-	let monthStart = null
-	let monthStartDDMMYYYY = null
-	let monthEnd = null
-	let monthEndDDMMYYYY = null
+	let now = new Date();
+	let today = null;
+	let todayDDMMYYYY = null;
+	let weekStart = null;
+	let weekStartDDMMYYYY = null;
+	let weekEnd = null;
+	let weekEndDDMMYYYY = null;
+	let monthStart = null;
+	let monthStartDDMMYYYY = null;
+	let monthEnd = null;
+	let monthEndDDMMYYYY = null;
+
+	//Handlebars front end helpers
+	Handlebars.registerHelper('dash', function (str) {
+		return str.split(" ").join("-");
+	});
 
 	// =================================================
 	// Scripts to fetch the data
 	// =================================================
 
-	sortDates()
+	sortDates();
 
 	function getDDMMYYYY(d) {
 		// 23/02/2019
@@ -79,8 +85,8 @@ $(document).ready(function () {
 			month = d.getMonth() + 1, // months are zero indexed
 			day = d.getDate();
 
-		month = month < 10 ? "0" + month : month
-		day = day < 10 ? "0" + day : day
+		month = month < 10 ? "0" + month : month;
+		day = day < 10 ? "0" + day : day;
 
 		var str = day +
 			"/" + month +
@@ -89,62 +95,62 @@ $(document).ready(function () {
 		return str;
 	}
 
-	  // kxConfig holds passion details from json file - events only hold the passion code but we need to show the name, so convert here
+	// kxConfig holds passion details from json file - events only hold the passion code but we need to show the name, so convert here
 	function getPassionColor(code) {
 		var name = '';
 		for (var i = 0; i < kxConfig.passions.length; i++) {
-			
+
 			if (kxConfig.passions[i].code == code) {
 
 				name = kxConfig.passions[i].color;
-				
+
 			}
 		}
 		return name;
-	};
+	}
 	// kxConfig holds suitable details from json file - events only hold the suitable code but we need to show the name, so convert here
-	 function getSuitableName(code) {
+	function getSuitableName(code) {
 		var name = '';
 		var newEventTypes = [];
 		code.forEach(type => {
 			for (var i = 0; i < kxConfig.suitables.length; i++) {
-			
+
 				if (kxConfig.suitables[i].code == type) {
 					name = kxConfig.suitables[i].name;
-					newEventTypes.push(name)
-					
+					newEventTypes.push(name);
+
 				}
 			}
-		})
-		
+		});
+
 		return newEventTypes;
 	};
 
 	function sortDates() {
-		today = new Date(now.getFullYear(), now.getMonth(), now.getDate())
-		todayDDMMYYYY = getDDMMYYYY(today)
+		today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+		todayDDMMYYYY = getDDMMYYYY(today);
 
-		weekStart = new Date(today.getFullYear(), today.getMonth(), today.getDate())
-		weekEnd = new Date(weekStart.getFullYear(), weekStart.getMonth(), weekStart.getDate())
-		weekEnd.setDate(weekEnd.getDate() + (7 - 1))
-		weekStartDDMMYYYY = getDDMMYYYY(weekStart)
-		weekEndDDMMYYYY = getDDMMYYYY(weekEnd)
+		weekStart = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+		weekEnd = new Date(weekStart.getFullYear(), weekStart.getMonth(), weekStart.getDate());
+		weekEnd.setDate(weekEnd.getDate() + (7 - 1));
+		weekStartDDMMYYYY = getDDMMYYYY(weekStart);
+		weekEndDDMMYYYY = getDDMMYYYY(weekEnd);
 
-		monthStart = new Date(today.getFullYear(), today.getMonth(), today.getDate())
-		monthEnd = new Date(monthStart.getFullYear(), monthStart.getMonth(), monthStart.getDate())
+		monthStart = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+		monthEnd = new Date(monthStart.getFullYear(), monthStart.getMonth(), monthStart.getDate());
 
-		monthEnd.setDate(monthEnd.getDate() + (30 - 1))
-		monthStartDDMMYYYY = getDDMMYYYY(monthStart)
-		monthEndDDMMYYYY = getDDMMYYYY(monthEnd)
+		monthEnd.setDate(monthEnd.getDate() + (30 - 1));
+		monthStartDDMMYYYY = getDDMMYYYY(monthStart);
+		monthEndDDMMYYYY = getDDMMYYYY(monthEnd);
 	}
 
 	function sortEventExtra(event) {
 		if (event.description) {
 			var bits = event.description.split("||");
 
-			
 
-			
+
+
 
 			event.description = bits[0];
 			if (bits.length > 1) {
@@ -152,7 +158,7 @@ $(document).ready(function () {
 				event.extra['passionColor'] = getPassionColor(event.extra.passions[0]);
 				event.extra['eventtypeName'] = getSuitableName(event.extra.eventtype);
 			}
-			
+
 			else {
 				event.extra = {};
 			}
@@ -169,7 +175,7 @@ $(document).ready(function () {
 				// MERGE JSON DATA HELD WITHIN description INTO FEED as 'extra' property !!!!!
 				var event = data[i];
 				sortEventExtra(event);
-				console.log(event)
+				//console.log(event);
 			}
 
 			// store the 'converted' data as events in main
@@ -183,13 +189,13 @@ $(document).ready(function () {
 				} else {
 					topics.push(event.topic.id);
 				}
-				
+
 			});
 
-			for (var i = 0; i < events.length; i++) {
-				var event = events[i];
+			for (var j = 0; j < events.length; j++) {
+				var event = events[j];
 
-				
+
 
 				if (event.topic.title.toLowerCase() == wowTopic.toLowerCase()) {
 					if (wowEvents.length < wowEventsToShow) {
@@ -237,26 +243,26 @@ $(document).ready(function () {
 		}).complete(function () {
 
 			// Logs all events
-			console.log( 'events', events )
-			console.log( 'topics', topics )
-			console.log( 'events - wowEvents', wowEvents )
-			console.log( 'events - todayEvents', todayEvents )
-			console.log( 'events - futureEvents', futureEvents )
-			console.log( 'events - weekEvents', weekEvents )
-			console.log( 'events - monthEvents', monthEvents )
-			console.log( 'events - todayPromotedEvents', todayPromotedEvents )
-			console.log( 'events - weekPromotedEvents', weekPromotedEvents )
-			console.log( 'events - monthPromotedEvents', monthPromotedEvents )
+			//console.log('events', events);
+			//console.log('topics', topics);
+			//console.log('events - wowEvents', wowEvents);
+			//console.log('events - todayEvents', todayEvents);
+			//console.log('events - futureEvents', futureEvents);
+			//console.log('events - weekEvents', weekEvents);
+			//console.log('events - monthEvents', monthEvents);
+			//console.log('events - todayPromotedEvents', todayPromotedEvents);
+			//console.log('events - weekPromotedEvents', weekPromotedEvents);
+			//console.log('events - monthPromotedEvents', monthPromotedEvents);
 
 			// Callback function when all events are fetched
-			callback(events)
-		})
+			callback(events);
+		});
 
 	}
 
 	function testSlider() {
-		testSlider1()
-		testSlider2()
+		testSlider1();
+		testSlider2();
 	}
 
 	function testSlider1() {
@@ -268,9 +274,9 @@ $(document).ready(function () {
 			speed: 500,
 			fade: false,
 			cssEase: 'linear'
-		}
+		};
 
-		slider(wowEvents, '.slider1', sliderConfig1, 'homeKv')
+		slider(wowEvents, '.slider1', sliderConfig1, 'homeKv');
 	}
 
 	function testSlider2() {
@@ -278,7 +284,7 @@ $(document).ready(function () {
 		const dd = {
 			todayEvents,
 			monthPromotedEvents
-		}
+		};
 
 		const sliderConfig2 = {
 			slidesToShow: 3,
@@ -288,16 +294,16 @@ $(document).ready(function () {
 			speed: 500,
 			fade: false,
 			cssEase: 'linear',
-		}
+		};
 
-		slider(dd, '.upComing', sliderConfig2, 'upComing')
+		slider(dd, '.upComing', sliderConfig2, 'upComing');
 	}
 
 	// =========================================================
 	// Sticky nav
 	// =========================================================
 
-	nav()
+	nav();
 
 	// =========================================================
 	// Loads scripts dynamically depending on which page you are
@@ -305,24 +311,24 @@ $(document).ready(function () {
 
 	switch (window.location.pathname) {
 		case '/uk/explore/kings-cross/':
-			fetchData(whatIsKx)
-			whatIsKx()
+			fetchData(whatIsKx);
+			whatIsKx();
 			break;
 
 		case "/uk/explore/kings-cross/discover/":
 			discover();
-            break;
+			break;
 
 		case "/uk/explore/kings-cross/whats-on/":
-			fetchData(whatson)
+			fetchData(whatson);
 			break;
 
 		case "/uk/explore/kings-cross/whats-on/event/":
-			fetchData(singleEvent)
+			fetchData(singleEvent);
 			break;
 
 		case "/uk/explore/kings-cross/support/":
-			fetchData(function(allEvents) {
+			fetchData(function (allEvents) {
 				calendar("https://bookings.qudini.com/booking-widget/booker/slots/IZ0LYUJL6B0/4375/62764/0", "appointment", allEvents);
 			});
 			//Support goes last!
@@ -331,24 +337,26 @@ $(document).ready(function () {
 			break;
 
 		case "/uk/explore/kings-cross/support/repair/":
-			fetchData(function(allEvents) {
+			fetchData(function (allEvents) {
 				calendar("https://bookings.qudini.com/booking-widget/booker/slots/73U8JNREMLS/2286/37437/0", "appointment", allEvents);
-			})
+			});
 			break;
 
 		case "/uk/explore/kings-cross/support/one-to-one/":
-			fetchData(function(allEvents) {
+			fetchData(function (allEvents) {
 				calendar("https://bookings.qudini.com/booking-widget/booker/slots/73U8JNREMLS/2286/37437/0", "appointment", allEvents);
-			})
+			});
 			break;
 
 		case "/uk/explore/kings-cross/bookings/":
-			bookingRefFetcher()
+			fetchData(function (allEvents) {
+				bookingRefFetcher(allEvents);
+			});
 			break;
 
 		case "/uk/explore/kings-cross/experience/":
 			experience();
-            break;
+			break;
 
 		default: {
 			// Your init here

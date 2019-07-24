@@ -20,6 +20,11 @@
 
     padding-top: 0px !important;
     padding-bottom: 0px !important;
+
+    @media screen and (max-width: $mobile){
+      background-image: url(/content/dam/samsung/uk/explore/kings-cross/header/support-header-mobile.png);
+    }
+
   }
 
   &__title {
@@ -165,6 +170,12 @@
           flex-basis: unset;
           width: 40%;
           flex-grow: 1;
+        }
+      }
+
+      select{
+        option{
+          color: black;
         }
       }
     }

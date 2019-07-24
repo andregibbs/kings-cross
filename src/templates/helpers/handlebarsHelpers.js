@@ -6,7 +6,7 @@
 
 if (typeof module !== 'undefined') {
 	module.exports.register = function (Handlebars) {
-        
+
 		/**
 		 * If Divisible By
 		 *        Returns back the options passed to it if the number passed to it is divisible by the input passed to it.
@@ -80,45 +80,49 @@ if (typeof module !== 'undefined') {
 			}
 			return '';
 
-    });
+		});
 
 		Handlebars.registerHelper('if_eq', function (lvalue, rvalue, options) {
-		    if (arguments.length < 3)
-		        throw new Error("Handlebars Helper equal needs 2 parameters");
-		    if( lvalue!=rvalue ) {
-		        return options.inverse(this);
-		    } else {
-		        return options.fn(this);
-		    }
+			if (arguments.length < 3)
+				throw new Error("Handlebars Helper equal needs 2 parameters");
+			if (lvalue != rvalue) {
+				return options.inverse(this);
+			} else {
+				return options.fn(this);
+			}
 		});
 
-		Handlebars.registerHelper('ifCond', function(v1, v2, options) {
-			if(v1 === v2) {
-			  return options.fn(this);
+		Handlebars.registerHelper('ifCond', function (v1, v2, options) {
+			if (v1 === v2) {
+				return options.fn(this);
 			}
 			return options.inverse(this);
-		  });
+		});
 
-		Handlebars.registerHelper('times', function(n, block) {
-		    var accum = '';
-		    for(var i = 0; i < n; ++i)
-		        accum += block.fn(i);
-		    return accum;
+		Handlebars.registerHelper('times', function (n, block) {
+			var accum = '';
+			for (var i = 0; i < n; ++i)
+				accum += block.fn(i);
+			return accum;
+		});
+
+		Handlebars.registerHelper('dash', function (str) {
+			return str.replace(" ", "-");
 		});
 
 
-    Handlebars.registerHelper('renderPartial', function(partialName, options) {
-      if (!partialName) {
-          console.error('No partial name given.');
-          return '';
-      }
-      var partial = Handlebars.partials[partialName];
-      if (!partial) {
-          console.error('Couldnt find the compiled partial: ' + partialName);
-          return '';
-      }
-      return new Handlebars.SafeString( partial(options.hash) );
-  });
+		Handlebars.registerHelper('renderPartial', function (partialName, options) {
+			if (!partialName) {
+				console.error('No partial name given.');
+				return '';
+			}
+			var partial = Handlebars.partials[partialName];
+			if (!partial) {
+				console.error('Couldnt find the compiled partial: ' + partialName);
+				return '';
+			}
+			return new Handlebars.SafeString(partial(options.hash));
+		});
 
 	};
 }

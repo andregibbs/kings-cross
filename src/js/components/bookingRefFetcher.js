@@ -1,4 +1,5 @@
-export default function bookingRefFetcher() {
+import upcomingEvents from "./upcomingEvents";
+export default function bookingRefFetcher(AllEvents) {
     const isoCurrentDate = new Date();
 
     history.replaceState({ "reloadNeeded": false, "ref": "", "screen": 0 }, "My Bookings | Samsung King's Cross | Samsung UK", "");
@@ -11,13 +12,13 @@ export default function bookingRefFetcher() {
     };
 
     let loading = {
-        display: function () {
-            $(".loading").each(function () { this.style.display = "block" });
+        display: function (n) {
+            document.getElementsByClassName("loading")[n-1].style.display = "block";
         },
-        done: function () {
-            $(".loading").each(function () { this.style.display = "" });
+        done: function (n) {
+            document.getElementsByClassName("loading")[n-1].style.display = "";
         }
-    }
+    };
 
     let userDisplay = {
         'reference': document.getElementById("booking-ref"),
@@ -36,20 +37,20 @@ export default function bookingRefFetcher() {
 
     ui.refButton.addEventListener("click", function () {
         let ref = document.getElementById("bookingRef").value;
-        loading.display();
+        loading.display(1);
         $.get("https://bookings.qudini.com/booking-widget/event/attendee/" + ref)
             .success(function (bookingData) {
-                loading.done();
-                console.log(bookingData);
+                loading.done(1);
+                //console.log(bookingData);
 
                 $.get('https://bookings.qudini.com/booking-widget/event/event/' + bookingData.eventId + '', {
                     'timezone': "Europe/London",
                     'isoCurrentDate': isoCurrentDate.toISOString()
                 }).success(function (eventData) {
-                    console.log('Event details: ', eventData)
-                    console.log('param =', getParam("ref"));
+                    //console.log('Event details: ', eventData);
+                    //console.log('param =', getParam("ref"));
                     if (!getParam("ref")) {
-                        history.pushState({ "reloadNeeded": false, "ref": ui.bookingField.value, "screen": 1 }, eventData.title + " | Samsung King's Cross | Samsung UK", "?ref=" + bookingData.refNumber)
+                        history.pushState({ "reloadNeeded": false, "ref": ui.bookingField.value, "screen": 1 }, eventData.title + " | Samsung King's Cross | Samsung UK", "?ref=" + bookingData.refNumber);
                     }
 
                     eventDisplay.date.innerText = moment(eventData.startDate).format("Do MMMM") + " | " + moment(eventData.startTime, ["h:mm A"]).format("HH:mm") + " - " + moment(eventData.startTime, ["h:mm A"]).add(eventData.durationMinutes, "minutes").format("HH:mm");
@@ -79,48 +80,51 @@ export default function bookingRefFetcher() {
 
                     document.getElementById("cancel").addEventListener("click", function () {
                         document.getElementById("cancel-popup").style.display = "block";
-                    })
+                    });
 
                     $("#cancel-back, .close, .pop-up").click(function (e) {
                         if (e.target !== document.getElementsByClassName("pop-up__body")[0] && e.target.parentNode !== document.getElementsByClassName("pop-up__body")[0] || e.target.classList.contains("close")) {
                             document.getElementById("cancel-popup").style.display = "";
                         }
-                    })
+                    });
+
+                    document.getElementById("upcoming").style.display = "block";
+                    upcomingEvents(AllEvents, eventData.topic.id);
 
                     document.getElementById("cancel-confirm").addEventListener("click", function () {
                         document.getElementById("cancel-popup").style.display = "";
-                        loading.display();
+                        loading.display(2);
                         $.get("https://bookings.qudini.com/booking-widget/event/cancel/" + ref)
                             .success(function () {
 
-                                loading.done();
+                                loading.done(2);
 
                                 showCancelled(eventData);
 
                             })
                             .fail(function (err) {
                                 loading.done();
-                                console.log(err);
-                            })
-                    })
+                                //console.log(err);
+                            });
+                    });
 
                 });
 
             })
             .fail(function (err) {
-                console.log(err);
+                //console.log(err);
                 loading.done();
                 ui.bookingField.classList.add("warn");
-            })
+            });
 
 
-    })
+    });
 
     ui.bookingField.addEventListener("change", function () {
         if (this.classList.contains("warn")) {
-            this.classList.remove("warn"); ``
+            this.classList.remove("warn");
         }
-    })
+    });
 
     function getParam(param) {
         var pageURL = window.location.search.substring(1);
@@ -139,25 +143,27 @@ export default function bookingRefFetcher() {
     }
 
     window.onpopstate = function (event) {
-        console.log(event);
+        //console.log(event);
         if (event.state != null) {
             if (event.state.screen == 0) {
                 ui.inputScreen.style.display = "block";
                 ui.bookingScreen.style.display = "none";
-                console.log("back");
+                document.getElementById("upcoming").style.display = "";
+                //console.log("back");
             } else if (event.state.screen == 1 && !event.state.reloadNeeded) {
                 ui.inputScreen.style.display = "none";
                 ui.bookingScreen.style.display = "block";
-                console.log("forward");
+                document.getElementById("upcoming").style.display = "block";
+                //console.log("forward");
             }
         }
     };
 
     function showCancelled(eventData) {
         $(".line--vertical, .request__info p, .request__info a, #date, #title, .request__event").hide();
-        $(".request__info h3").html("Booking cancelled<br>" + eventData.title)
+        $(".request__info h3").html("Booking cancelled<br>" + eventData.title);
         $(".request__info").css("justify-content", "center");
-        $(".request__summary__content").append('<p class="fz18 request__cancel">You booking has been cancelled.</p><br><p class="fz18">Thanks for letting us know. If you would like to come to a different KX event go to the <a class="fz18" href="//www.samsung.com/uk/explore/kings-cross/whats-on">What’s on</a> page or browse the upcoming events below.</p>');
+        $(".request__summary__content").append('<p class="fz18 request__cancel">Your booking has been cancelled.</p><br><p class="fz18">Thanks for letting us know. If you would like to come to a different KX event go to the <a ga-ca=“microsite” ga-ac=“feature” ga-la=“kings-cross:your-booking-has-been-cancelled_whats on” data-omni-type=“microsite” data-omni=“uk:kings-cross:whats-on” class="fz18" href="//www.samsung.com/uk/explore/kings-cross/whats-on">What’s on</a> page or browse the upcoming events below.</p>');
     }
 
 }

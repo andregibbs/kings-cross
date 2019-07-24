@@ -52,14 +52,14 @@ export default function singleEvent(events) {
 
       // TODO need to check event is for the correct series
 
-      console.log(
-        "xxxxx - " +
-          data.seriesId +
-          " " +
-          kxConfig.seriesId +
-          " " +
-          kxConfig.seriesIdAsInt
-      );
+      //console.log(
+      //   "xxxxx - " +
+      //     data.seriesId +
+      //     " " +
+      //     kxConfig.seriesId +
+      //     " " +
+      //     kxConfig.seriesIdAsInt
+      // );
 
       if (data.seriesId == kxConfig.seriesIdAsInt) {
         const options = {
@@ -113,7 +113,7 @@ export default function singleEvent(events) {
               bookOptions.startDate +
               " | Samsung KX"
           );
-        console.log(options);
+        //console.log(options);
         $(".singleEvent").append(handleTemplate("singleEvent", options));
 
         // Event out of stock or has expired
@@ -138,7 +138,7 @@ export default function singleEvent(events) {
 
         eventTimes = events.filter(x => x.topic.id === topicId);
 
-        console.log(eventTimes);
+        //console.log(eventTimes);
         var dates = {};
         //get all dates
         eventTimes.forEach(date => {
@@ -150,7 +150,7 @@ export default function singleEvent(events) {
         eventTimes.forEach(event => {
           dates[event.startDate].push(event);
         });
-        console.log(dates);
+        //console.log(dates);
         //insert date options
         for (var date in dates) {
           $("#date__options").append(
@@ -171,7 +171,7 @@ export default function singleEvent(events) {
         }, 200);
         });
         function updateTimes(dates, currentDate) {
-          console.log('current date', currentDate);
+          //console.log('current date', currentDate);
           var times = null;
           var currentSelection = $(".styledSelect").attr("rel");
           if (!currentDate) {
@@ -193,7 +193,7 @@ export default function singleEvent(events) {
               '</h4><span class="time__available">' +
               slots +
               " </span></div>";
-            console.log(html);
+            //console.log(html);
             $(".change__times").empty();
             $(".change__times").append(html);
           });
@@ -324,7 +324,7 @@ export default function singleEvent(events) {
           $(".book-action").addClass("book-action--active");
         
       }
-    })
+    });
   });
 
   $(".book__tickets-minus").click(function(e) {
@@ -341,7 +341,7 @@ export default function singleEvent(events) {
 
       ticketQuantity += 1;
 
-    console.log(eventDetails.maxGroupSize, ticketQuantity);
+    //console.log(eventDetails.maxGroupSize, ticketQuantity);
 
     $(".book__tickets-tickets").val(ticketQuantity);
 
@@ -441,7 +441,7 @@ export default function singleEvent(events) {
         fail: function(err) {
           $(".book__form-submit").attr("disabled", false);
           $(".cm-configurator-loader").hide();
-          console.log(err);
+          //console.log(err);
         }
       });
     } else {

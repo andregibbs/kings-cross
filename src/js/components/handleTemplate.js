@@ -1,13 +1,13 @@
 export default function handleTemplate ( id, options ) {
 
-	var element = document.getElementById( id ).innerHTML
+	var element = document.getElementById( id ).innerHTML;
 
 	element = multiReplace(element, '[', '{');
 	element = multiReplace(element, ']', '}');
 
 	var template = Handlebars.compile( element );
 
-	return template( options )
+	return template( options );
 
 }
 

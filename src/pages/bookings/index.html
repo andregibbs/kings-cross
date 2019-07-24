@@ -9,17 +9,18 @@
 	<section class="section bookings" id="booking-input">
 		<div class="section__inner bookings__inner">
 			<h2 class="bookings__inner__title fz50">Find Your Booking</h2>
-			<p class="bookings__inner__subtitle fz24">Enter the booking reference code you were shown and sent when you
-				made a booking via the KX booking system.</p>
+			<p class="bookings__inner__subtitle fz24">Enter your booking reference for your event or appointment. You
+				can find this in your confirmation email.</p>
 			<form onsubmit="return false">
 				<input class="input bookings__inner__input" id="bookingRef" type="text"
 					placeholder="Booking Reference" />
-				<button class="button btn btn--primary bookings__inner__button" type="submit" id="eventFetcher"
+				<button ga-ca=“microsite” ga-ac=“feature” ga-la=“kings-cross:find-your-booking_see-booking” data-omni-type=“microsite” data-omni=“uk:kings-cross:my-bookings:find-booking” class="button btn btn--primary bookings__inner__button" type="submit" id="eventFetcher"
 					style="color: white;">See Booking</button>
 			</form>
-			<p class="bookings__inner__info fz18">Your reference code would also be on the confirmation email sent to
-				the email address your provided when you booked event tickets or service appointments.<br><br />Having
-				trouble finding your booking? Give us a call: +44 2345 68 48 57</p>
+			<!-- <p class="bookings__inner__info fz18">Your reference code would also be on the confirmation email sent to
+				the email address your provided when you booked event tickets or service appointments.</p><br/><br/> -->
+			<p class="bookings__inner__info fz18"><br/>Having trouble finding your booking? Give us a call: <a class="fz18"
+					href="tel:+443307260059">0330 726 0059</a></p>
 		</div>
 		<div class="loading" id="load-screen" style="display: none">
 			<div class="loading__spinner">
@@ -36,10 +37,10 @@
 			<div class="request__content">
 				<div class="request__info">
 					<div class="request__event">
-						<a class="fz18">Entertainment Event</a><br><br>
+						<!-- <a class="fz18">Entertainment Event</a><br><br> -->
 						<p class="request__zone fz18" id="zone"></p>
 						<p class="fz18">Samsung KX, Stable St, Kings Cross, London N1C 4DQ</p><br>
-						<a class="fz18"
+						<a class="fz18" ga-ca=“microsite” ga-ac=“feature” ga-la=“kings-cross:my booking_get directions” data-omni-type=“microsite” data-omni=“uk:kings-cross:my bookings:get directions”
 							href="https://www.google.com/maps?saddr=My+Location&daddr=Three+Pancras+Square,+3+Pancras+Square,+Kings+Cross,+London">Get
 							Directions</a>
 					</div>
@@ -54,8 +55,7 @@
 							<p class="fz18" id="tel"></p>
 						</div>
 					</div>
-					<a class="fz18" href="#" id="cancel">CANCEL BOOKING</a>
-					<p id="cancelled" style="display: none; color: red;">BOOKING CANCELLED</p>
+					<a ga-ca=“microsite” ga-ac=“feature” ga-la=“kings-cross:my-bookings_cancel-booking” data-omni-type=“microsite” data-omni=“uk:kings-cross:my-bookings:cancel-booking” class="fz18" href="#" id="cancel">CANCEL BOOKING</a>
 				</div>
 				<img alt="Event Image" id="event-img" />
 			</div>
@@ -73,8 +73,8 @@
 				<h4 class="pop-up__title">Are you sure you would like to cancel this booking?</h4>
 				<p class="pop-up__text">You will not be able to undo this action</p>
 				<div class="pop-up__buttons">
-					<button id="cancel-back" class="button btn btn--primary">BACK</button>
-					<button id="cancel-confirm" class="button btn btn--secondary">CANCEL BOOKING</button>
+					<button ga-ca=“microsite” ga-ac=“feature” ga-la=“kings-cross:cancelling-booking_back” data-omni-type=“microsite” data-omni=“uk:kings-cross:my-bookings:cancel-back” id="cancel-back" class="button btn btn--primary">BACK</button>
+					<button ga-ca=“microsite” ga-ac=“feature” ga-la=“kings-cross:cancelling-booking_cancel-confirm” data-omni-type=“microsite” data-omni=“uk:kings-cross:my-bookings:cancel-confirm” id="cancel-confirm" class="button btn btn--secondary">CANCEL BOOKING</button>
 				</div>
 				<div class="close"></div>
 			</div>
@@ -82,7 +82,19 @@
 
 	</section>
 
+	<section id="upcoming" class="section relatedEvents">
+		<div class="section__inner">
+			<div class="relatedEvents__header">
+				<h2>Upcoming Events</h2>
+				<h2 class="relatedEvents__header__see">
+					See All Events
+				</h2>
+			</div>
+			<div class="relatedEvents__container"></div>
+		</div>
+	</section>
 
+	{{>templateScripts/event/eventTile }}
 
 	{{>components/findKx}}
 	{{>components/socialMedia }}
