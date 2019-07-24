@@ -1,9 +1,16 @@
 
-import getUrlVars from './getUrlVars'
+import getUrlVars from './getUrlVars';
+import slider from './slider';
 
 export default function experience(  ) {
 
-	const id = getUrlVars()["id"];
+    const id = getUrlVars()["id"];
+    var options = {
+        djgalaxy: [],
+        galaxygraffiti: [],
+        collageme: [],
+        messagetree: []
+    }
 
 	// LOCAL
 	// var server = 'http://kx-content-sharing-server.samsung.com/';
@@ -57,8 +64,12 @@ function getFile(file) {
     var filename = file.name;
     var fileexperience = file.experience;
 
-    var ext = filename.substr(filename.lastIndexOf('.') + 1); 
-    var html = '<div class="container _' + fileexperience + '">';
+    var ext = filename.substr(filename.lastIndexOf('.') + 1);
+
+   
+
+    console.log(fileexperience);
+    var html = '';
     switch(ext.toLowerCase()) {
         case 'jpg':
         case 'png':
@@ -95,32 +106,47 @@ function getFile(file) {
                 '</div>';
             break;
     }
-    html += '</div>';
+   // html += '</div>';
 
-    html += '<div class="download">';
-    html += '<iframe src="' + s3domain + 'download/button.html?id=' + filename + '" scrolling="no" frameborder="0"></iframe>';
-    html += '</div>';
+   // html += '<div class="download">';
+    //html += '<iframe src="' + s3domain + 'download/button.html?id=' + filename + '" scrolling="no" frameborder="0"></iframe>';
+   // html += '</div>';
 
-    return html;
+    var fileConfig = {
+        filename: filename,
+        fileexperience: fileexperience,
+        ext: ext,
+        s3domain: s3domain,
+        html: html
+    }
+    if(fileexperience !== '3dme') {
+        options[fileexperience].push(fileConfig);
+    } else {
+        
+    }
+   
+
 }
 
 function processFiles(data) {
 	//console.log('xxxxx processFiles');
-    var html = '';
+    var message = '';
     if (data.success) {
         if (data.files) {
             for (var i=0; i<data.files.length; i++) {
-                html += getFile(data.files[i]);
+                getFile(data.files[i]);
             }
         }
         else {
-            html = 'no files';
+            message = 'no files';
         }
     }
     else {
-        html = 'no data';
+        message = 'no data';
     }
-    $('#files').html(html);
+
+    //pass data to handlebars
+    console.log(options);
 }
 
 

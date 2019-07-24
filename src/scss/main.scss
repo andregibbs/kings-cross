@@ -1,43 +1,43 @@
+@import "base/variables";
 
-	@import 'base/variables';
+// Mixins
+@import "mixins/clearfix";
+@import "mixins/typography";
+@import "mixins/vw";
 
-	// Mixins
-	@import 'mixins/clearfix';
-	@import 'mixins/typography';
-	@import 'mixins/vw';
+// Base
+@import "base/base";
+@import "base/typography";
 
-	// Base
-	@import 'base/base';
-	@import 'base/typography';
+// Helpers
+@import "helpers/helpers";
 
-	// Helpers
-	@import 'helpers/helpers';
+.cheil-static {
+  @import "components/nav";
+  @import "components/find-kx";
+  @import "components/social";
+  @import "components/upcomingSlider";
+  @import "components/book";
+  @import "components/calendar";
+  @import "components/loader";
 
-	// Components
-	@import 'components/nav';
-	@import 'components/find-kx';
-	@import 'components/social';
-	@import 'components/upcomingSlider';
-	@import 'components/book';
-	@import 'components/calendar';
-	@import 'components/loader';
+  @import "components/templateScripts/eventTile";
+  @import "components/templateScripts/singleEvent";
 
+  // Pages
+  @import "pages/home";
+  @import "pages/discover";
+  @import "pages/whatson";
+  @import "pages/event";
+  @import "pages/services";
+  @import "pages/bookings";
+  @import "pages/experience";
+}
+// Components
 
-	@import 'components/templateScripts/eventTile';
-	@import 'components/templateScripts/singleEvent';
+// Vendor
+@import "vendor/jquery-ui-1.12.1.custom/jquery-ui.min";
+@import "vendor/jquery-ui-1.12.1.custom/jquery-ui.structure.min";
+@import "vendor/jquery-ui-1.12.1.custom/jquery-ui.theme.min";
 
-	// Pages
-	@import 'pages/home';
-	@import 'pages/discover';
-	@import 'pages/whatson';
-	@import 'pages/event';
-	@import 'pages/services';
-	@import 'pages/bookings';
-	@import 'pages/experience';
-
-	// Vendor
-	@import 'vendor/jquery-ui-1.12.1.custom/jquery-ui.min';
-	@import 'vendor/jquery-ui-1.12.1.custom/jquery-ui.structure.min';
-	@import 'vendor/jquery-ui-1.12.1.custom/jquery-ui.theme.min';
-
-	@import 'components/datePicker';
+@import "components/datePicker";
