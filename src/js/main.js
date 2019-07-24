@@ -10,6 +10,8 @@ import bookingRefFetcher from './components/bookingRefFetcher';
 import discover from './components/discover';
 import support from './components/support';
 import experience from './components/experience';
+import loadingScreen from './components/loadingScreen';
+import loadingScreenAnimation from '../data/loadingScreen.json';
 
 //experimental
 // import smoothScroll from './librarys/smoothscroll';
@@ -17,15 +19,7 @@ import experience from './components/experience';
 $(document).ready(function () {
 
 	// This will clear all unnecessary Samsung logs
-	setTimeout(function () {
-	$("body,html").animate(
-		{
-		  scrollTop: $(".cheil-static").offset().top
-		},
-		800 //speed
-	  );
-
-    }, 2000);
+	
 
 	// console.clear();
 
@@ -311,8 +305,14 @@ $(document).ready(function () {
 
 	switch (window.location.pathname) {
 		case '/uk/explore/kings-cross/':
+				
+			
 			fetchData(whatIsKx);
+			var container = document.getElementById('loadingScreen__animation');
+			loadingScreen(container, loadingScreenAnimation);
 			whatIsKx();
+		
+		
 			break;
 
 		case "/uk/explore/kings-cross/discover/":

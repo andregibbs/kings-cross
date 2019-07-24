@@ -1,35 +1,49 @@
 <!--#include virtual="/uk/aem/header-pdp.html"-->
 
 <section class="cheil-static">
+  {{>stylesheet}}
 
-	{{>stylesheet}}
+  {{>components/nav }}
 
-	{{>components/nav }}
+  <section class="section experienceIntro">
+		<div class="section__inner">
+			<span class="experienceIntro__copy">Relive your experience at Samsung KX. Download all of the amazing things you created below.</span>
+		</div>
+  </section>
 
-	<h1>EXPERIENCE PAGE</h1>
+  <section class="section messageTree">
+    <div class="section__inner">
+      <form id="dataid" style="display:none;">
+        <input type="text" name="id" value="" placeholder="id" />
+      </form>
+	  <div class="slider-experience"></div>
+	</div>
+  </section>
+	<section class="section galaxyGraffiti">
+			<div class="section__inner">
+			  <div class="slider-experience"></div>
+			</div>
 
-	<section class="section">
+			</section>
 
-		<form id="dataid" style="display:none;">
-		    <input type="text" name="id" value="" placeholder="id" />
-		</form>
-	    <div id="files">
-	    </div>
+			<section class="section djGalaxy">
+					<div class="section__inner">
+					  <div class="slider-experience"></div>
+					</div>
+					</section>
 
-<!--
+    <!--
 
 script needs to check for id query string parameter
 - if it doesn't exist or is invalid - redirect to kx home page
 - create a handlebars template to display the content ???
 
 -->
+  </section>
+  {{>components/findKx}}
+  {{>components/socialMedia }}
 
-	</section>
-	{{>components/findKx}}
-	{{>components/socialMedia }}
-
-	{{>scripts }}
-
+  {{>scripts }}
 </section>
 
 <!--#include virtual="/uk/aem/footer-pdp.html"-->

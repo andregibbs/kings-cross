@@ -36,7 +36,7 @@
             justify-content: center;
             align-items: flex-start;
             flex-direction: column;
-            z-index: 99999;
+            z-index: 9;
             h2 {
                 font-size: em(80);
                 font-weight: bold;
@@ -87,7 +87,7 @@
     box-shadow: none!important;
 }
 
-.video {
+.kx-video {
     position: relative;
     background: #0C0C0C;
     padding-top: 0!important;
