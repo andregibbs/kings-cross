@@ -158,7 +158,7 @@ function lazyGetEvents(eventsToShow, numberOfEvents) {
 
 		$('.passionImg')
 			.find('img')
-			.attr('src', `https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/KX-whats-on-KV.jpg`)
+			.attr('src', `/content/dam/samsung/uk/explore/kings-cross/passion-header/passion-header-generic.jpg`)
 			.addClass('op0--fade')
 
 		lazyGetEvents( events, 0 )
