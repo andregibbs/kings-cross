@@ -144,7 +144,7 @@ function lazyGetEvents(eventsToShow, numberOfEvents) {
 	if( passion ) {
 
 		$('.passionImg')
-			.find('img').attr('src', `/content/dam/samsung/uk/kings-cross/passion-header/passion-header-${passion}.jpg`)
+			.find('img').attr('src', `/content/dam/samsung/uk/explore/kings-cross/passion-header/passion-header-${passion}.jpg`)
 			.addClass('op0--fade')
 
 		const eventsFiltered = events.filter( function( event ) {
@@ -158,7 +158,7 @@ function lazyGetEvents(eventsToShow, numberOfEvents) {
 
 		$('.passionImg')
 			.find('img')
-			.attr('src', `https://images.samsung.com/is/image/samsung/p5/uk/kings-cross/KX-whats-on-KV.jpg`)
+			.attr('src', `https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/KX-whats-on-KV.jpg`)
 			.addClass('op0--fade')
 
 		lazyGetEvents( events, 0 )

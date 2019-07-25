@@ -48,6 +48,11 @@ export default function upcomingEvents( events, topicId ) {
     };
 
     $(".relatedEvents__container").append(handleTemplate("eventTile", options));
+
 }
+
+$(".relatedEvents__header__see").click(function() {
+  window.location.href = "/uk/explore/kings-cross/whats-on/";
+});
 
 }

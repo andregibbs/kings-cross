@@ -2,6 +2,18 @@
 
 &.homePage {
 
+    .kx-video {
+        position: relative;
+        background: #0C0C0C;
+        padding-top: 0!important;
+        padding-bottom: 0!important ;
+    
+        .section__inner {
+            display: flex;
+        justify-content: center;
+    }
+    }
+
     .homepage-kv {
         padding-top: 0!important;
         padding-bottom: 0!important;
@@ -101,18 +113,10 @@
     
     .relatedEvents {
         box-shadow: none!important;
+        z-index: 13;
     }
     
-    .kx-video {
-        position: relative;
-        background: #0C0C0C;
-        padding-top: 0!important;
-    
-        .section__inner {
-            display: flex;
-        justify-content: center;
-    }
-    }
+   
     
     .passionPoints {
         padding-top: 0!important;
