@@ -1,6 +1,7 @@
 import smoothscroll from '../polyfill/smoothscroll-polyfill';
 import upcomingEvents from "./upcomingEvents";
 import newParallax from './parallax';
+import atvImg from './atvImg';
 
 export default function whatIsKx(events) {
 
@@ -61,4 +62,9 @@ export default function whatIsKx(events) {
 				this.paused ? this.play() : this.pause();
 			}
 		});
+
+
+		//passion point images
+
+		atvImg();
 }
