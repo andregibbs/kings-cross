@@ -5,6 +5,7 @@
     .homepage-kv {
         padding-top: 0!important;
         padding-bottom: 0!important;
+        max-width: unset!important;
         #parallax {
             &__container {
             display: block;
@@ -16,7 +17,6 @@
                 position: absolute;
                 background-position: center !important;
                 background-repeat: no-repeat!important;
-                
                 transform: translateY(0px);
                 height: 65vh;
                 width: 100%;
@@ -26,7 +26,15 @@
               }
               #parallax__orangex {
                   z-index: 9;
+                  animation-delay: 100ms;
               }
+              #parallax__building {
+                animation-delay: 150ms;
+              }
+              #parallax__purplex {
+                  animation-delay: 50ms;
+              }
+
           }
         
         }
@@ -39,6 +47,8 @@
                 align-items: flex-start;
                 flex-direction: column;
                 z-index: 9;
+                opacity: 0;
+                animation-delay: 1s;
                 h2 {
                     font-size: em(80);
                     font-weight: bold;
@@ -72,6 +82,10 @@
         background: #0C0C0C;
         padding-top: 0!important;
         padding-bottom: 0!important;
+        @media screen and (max-width: $mobile) {
+            padding-bottom: 3.90625vw!important;
+        }
+
     
         &__container {
     

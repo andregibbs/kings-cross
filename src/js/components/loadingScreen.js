@@ -15,6 +15,7 @@ export default function loadingScreen(element, animation) {
         $('#parallax__building').addClass('animated fadeInRightBig');
         $('#parallax__yellowx').addClass('animated fadeInLeftBig');
         $('#parallax__purplex').addClass('animated fadeInLeftBig');
+        $('.parallax__text').addClass('animated fadeIn');
     $('.loadingScreen').addClass('done');
     setTimeout(function () {
       
@@ -33,9 +34,10 @@ export default function loadingScreen(element, animation) {
         $('#parallax__building').removeClass('animated fadeInRightBig');
         $('#parallax__yellowx').removeClass('animated fadeInLeftBig');
         $('#parallax__purplex').removeClass('animated fadeInLeftBig');
+        $('.parallax__text').removeClass('animated fadeIn');
   
   
-          }, 1000);
+          }, 1500);
         
   }
 
