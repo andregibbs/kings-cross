@@ -5,15 +5,15 @@
 .findkx {
   background: $background;
   position: relative;
-  padding-top: 0!important;
+  padding-top: 0 !important;
   .section__inner {
     display: flex;
     justify-content: space-between;
 
     @media screen and (max-width: $mobile) {
-		flex-direction: column;
-		align-items: center;
-	  }
+      flex-direction: column;
+      align-items: center;
+    }
 
     span {
       font-weight: bold;
@@ -26,44 +26,88 @@
       justify-content: space-between;
       h4 {
         margin: 12px 0;
-	  }
+        @media screen and (max-width: $desktop) {
+          margin: get-desktop-vw(12) 0;
+        }
+        @media screen and (max-width: $mobile) {
+          margin: get-mobile-vw(12) 0;
+        }
+      }
 
-	  @media screen and (max-width: $mobile) {
-		order: 1;
-		width: 100%;
-		flex-direction: row;
-		justify-content: space-between;
-	  }
+      @media screen and (max-width: $mobile) {
+        order: 1;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+      }
     }
     .findkx__map {
-	  max-width: 70%;
-	  @media screen and (max-width: $mobile) {
-		max-width: unset;
-		width: 100%;
-		margin: get-mobile-vw(32) 0;
-	  }
+      max-width: 70%;
+
+      &--mobile{
+        display: none;
+      }
+
+      @media screen and (max-width: $mobile) {
+        max-width: unset;
+        width: 100%;
+        margin: get-mobile-vw(32) 0;
+
+        img {
+          height: 60vh;
+          min-height: 315px;
+          max-height: 400px;
+          object-fit: cover;
+        }
+      }
+
+      @media screen and (max-width: 425px) {
+        &--desktop{
+          display: none;
+        }
+        &--mobile{
+          display: block;
+          height: unset !important;
+          max-height: unset !important;
+          object-fit: scale-down !important;
+        }
+      }
     }
   }
 
-  &__block-1{
-	  display: flex;
-	  flex-direction: column;
-	  justify-content: space-between;
+  &__block-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .findkx__call {
+      display: none;
+      @media screen and (max-width: $mobile) {
+        display: block;
+      }
+    }
+  }
+
+  &__block-2 {
+    display: block;
+    @media screen and (max-width: $mobile) {
+      display: none;
+    }
   }
 
   &__title {
-	&--desktop {
-	  @media screen and (max-width: $mobile) {
-		display: none;
-	  }
-	}
-	&--mobile {
-	  display: none;
-	  @media screen and (max-width: $mobile) {
-		display: block;
-		align-self: flex-start;
-	  }
-	}
+    &--desktop {
+      @media screen and (max-width: $mobile) {
+        display: none;
+      }
+    }
+    &--mobile {
+      display: none;
+      @media screen and (max-width: $mobile) {
+        display: block;
+        align-self: flex-start;
+      }
+    }
   }
 }
 

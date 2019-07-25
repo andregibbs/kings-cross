@@ -2,10 +2,18 @@
 =            SingleEvent            =
 =============================================*/
 .event__content {
-  padding-bottom: 0!important;
-  .section__inner {
-    padding-bottom: 0px!important;
+  padding-bottom: 0 !important;
+  padding-top: 20px;
+  @media screen and (max-width: $desktop){
+    padding-top: get-desktop-vw(20);
   };
+  @media screen and (max-width: $mobile){
+    padding-top: get-mobile-vw(20);
+  };
+
+  .section__inner {
+    padding-bottom: 0px !important;
+  }
 }
 .single-event {
   * {
@@ -22,13 +30,12 @@
       display: none;
       padding-left: 40px;
       padding-right: 40px;
-      
 
       @media screen and (max-width: $mobile) {
         display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
         flex-direction: column-reverse;
       }
 

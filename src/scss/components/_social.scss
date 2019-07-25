@@ -7,12 +7,19 @@
 		display: flex;
 		justify-content: space-evenly;
 		align-items: flex-start;
+		@media screen and (max-width: $mobile){
+			flex-direction: column-reverse;
+			align-items: center;
+		}
 	}
 	&__left, &__right {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		@media screen and (max-width: $mobile){
+			margin: get-mobile-vw(48) 0;
+		}
 	}
 	
 }
@@ -20,6 +27,9 @@
 	width: 1px;
 	background: #4D4D4F;
 	height: 150px;
+	@media screen and (max-width: $mobile){
+		display: none;
+	}
 }
 .social {
 	display: flex;

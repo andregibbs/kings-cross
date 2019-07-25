@@ -1,36 +1,35 @@
-
-
 <section class="section passionPoints">
-				<div class="section__inner">
-					<div class="passionPoints__header">
-							<h2>Follow your Passion</h2>
-							
+	<div class="section__inner">
+		<div class="passionPoints__header">
+			<h2>Follow your Passion</h2>
+
+		</div>
+
+		<div class="passionPoints__container">
+			{{#each config.passions}}
+
+			<div class="eventTile" data-code="{{ this.code }}"
+				style='background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.75) 100%), url({{ @root.config.imgPath }}{{ this.image }}) no-repeat center center;background-size: cover;border-top: solid 11px {{ this.color }}'>
+				<a ga-ca=“microsite” ga-ac=“feature” ga-la=“kings-cross:passion-points_{{ this.name }}”
+					data-omni-type=“microsite” data-omni=“uk:kings-cross:passion-tile:{{ this.name }}”
+					href="/{{ @root.config.site }}/{{ @root.config.subfolder }}/whats-on?passions={{ this.code }}">
+
+
+
+					<div class="eventTile__content tile">
+						<div class="eventTile__content__top">
+
+							<h3 class="tile-title">{{ this.name }}</h3>
+						</div>
+
 					</div>
-					
-					<div class="passionPoints__container">
-						{{#each config.passions}}
-
-						<div class="eventTile" data-code="{{ this.code }}" style='background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.75) 100%), url({{ @root.config.imgPath }}{{ this.image }}) no-repeat center center;background-size: cover;border-top: solid 11px {{ this.color }}'>
-		<a ga-ca=“microsite” ga-ac=“feature” ga-la=“kings-cross:passion-points_{{ this.name }}” data-omni-type=“microsite” data-omni=“uk:kings-cross:passion-tile:{{ this.name }}” href="/{{ @root.config.site }}/{{ @root.config.subfolder }}/whats-on?passions={{ this.code }}">
-
-
-
-			<div class="eventTile__content tile">
-				<div class="eventTile__content__top">
-					
-				<h3 class="tile-title">{{ this.name }}</h3> 
-				</div>
-
-				</div>
-				</div>
-				
-				
-			{{/each}}
-				
 			</div>
+
+
+			{{/each}}
+
+		</div>
 		</a>
 	</div>
-						
-					</div>
-				</div>
-			</section>
+
+</section>
