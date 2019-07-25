@@ -55,7 +55,8 @@ function lazyGetEvents(eventsToShow, numberOfEvents) {
 	$('.events__showMore').click( function() {
 		lazyGetEvents(eventsToManipulate, 4);
 		if(numberEventsToShow + 4 > eventsToManipulate.length) {
-			$('.events__showMore').addClass('noMore');
+			// $('.events__showMore').addClass('noMore');
+			$('.events__showMore').hide();
 		}
 		
 	});
@@ -70,8 +71,15 @@ function lazyGetEvents(eventsToShow, numberOfEvents) {
 	});
 
 	$('.eventFilter__header__toggle').click( function() {
-
 		$(this).find('a').toggleClass('unfold');
+		var spantext = document.getElementsByClassName("eventFilter__header__toggle")[0].getElementsByTagName("span")[0];
+
+		if(this.getElementsByTagName("a")[0].classList.contains("unfold")) {
+			spantext.innerText = "HIDE FILTERS";
+		} else {
+			spantext.innerText = "SHOW FILTERS";
+		}
+
 		if($('.filters__labels').hasClass('closed')) {
 			
 			$('.filters__labels').slideDown();
@@ -105,7 +113,7 @@ function lazyGetEvents(eventsToShow, numberOfEvents) {
 
 		if ( $('#from').val() && $('#to').val() ) {
 			eventsToRender = eventsToRender.filter( function( event ) {
-				return event.startDate > moment($('#from').val(), "DD-MM-YYYY").format("MM/DD/YYYY") && event.startDate < moment($('#to').val(), "DD-MM-YYYY").format("MM/DD/YYYY") 
+				return event.startDate >= moment($('#from').val(), "DD-MM-YYYY").format("MM/DD/YYYY") && event.startDate <= moment($('#to').val(), "DD-MM-YYYY").format("MM/DD/YYYY") 
 			})
 		}
 
