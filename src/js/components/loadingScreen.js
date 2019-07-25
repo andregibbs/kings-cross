@@ -11,11 +11,32 @@ export default function loadingScreen(element, animation) {
   animation.addEventListener('complete', animationDone);
 
   function animationDone() {
+    $('#parallax__orangex').addClass('animated fadeInRightBig');
+        $('#parallax__building').addClass('animated fadeInRightBig');
+        $('#parallax__yellowx').addClass('animated fadeInLeftBig');
+        $('#parallax__purplex').addClass('animated fadeInLeftBig');
     $('.loadingScreen').addClass('done');
     setTimeout(function () {
+      
         $('.loadingScreen').hide();
-    
+        
+
+        
+
+
         }, 400);
+        setTimeout(function () {
+
+          
+  
+          $('#parallax__orangex').removeClass('animated fadeInRightBig');
+        $('#parallax__building').removeClass('animated fadeInRightBig');
+        $('#parallax__yellowx').removeClass('animated fadeInLeftBig');
+        $('#parallax__purplex').removeClass('animated fadeInLeftBig');
+  
+  
+          }, 1000);
+        
   }
 
 }

@@ -24,13 +24,15 @@
                 background-size: cover!important;
                 }
               }
+              #parallax__orangex {
+                  z-index: 9;
+              }
           }
         
         }
         
         .parallax {
             &__text {
-                position: relative!important;
                 width: 70% !important;
                 display: flex;
                 justify-content: center;
