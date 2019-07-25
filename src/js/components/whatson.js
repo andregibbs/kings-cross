@@ -4,7 +4,7 @@ import getUrlVars from './getUrlVars'
 import dataPicker from './dataPicker';
 var eventsToRender = [];
 
-export default function whatson( events ){
+export default function whatson(events) {
 
 	let counter = 0;
 	const passion = getUrlVars()["passions"];
@@ -13,38 +13,54 @@ export default function whatson( events ){
 
 	let getPassions = [];
 	let getEventtype = [];
-	var eventsToManipulate = events;
+	let eventsToManipulate = events;
 
-// =================================================
-// DataPicker and filters
-// =================================================
+	let filterOpen = false;
 
-function lazyGetEvents(eventsToShow, numberOfEvents) {
-	if(eventsToShow.length > 0) {
-		$('.events__showMore').removeClass('noMore');
-		$('.events__noResults').removeClass('active');
-		let newEvents = [];
-	numberEventsToShow += numberOfEvents;
-	for(let i=0; i < numberEventsToShow; i++) {
-		newEvents.push(eventsToShow[i]);
+	let spantext = document.getElementsByClassName("eventFilter__header__toggle")[0].getElementsByTagName("span")[0];
+
+	// =================================================
+	// DataPicker and filters
+	// =================================================
+	
+	if (passion) {
+		var passionSwitch = $('[data-code="' + passion + '"]');
+		if (!passionSwitch.hasClass("active")) {
+			passionSwitch.addClass("active");
+			passionSwitch.find(".label").addClass("label--active");
+			passionSwitch.find(".switch-button").addClass("selected");
+		}
 	}
-	
-	$('.eventTile').remove();
-	renderEventsIntoDom( newEvents );
 
-	} else {
-		eventsToManipulate = [];
-		$('.eventTile').remove();
-		$('.events__showMore').addClass('noMore');
-		$('.events__noResults').addClass('active');
+	function lazyGetEvents(eventsToShow, numberOfEvents) {
+		if (eventsToShow.length > 0) {
+			$('.events__showMore').removeClass('noMore');
+			$('.events__noResults').removeClass('active');
+			let newEvents = [];
+			numberEventsToShow += numberOfEvents;
+			for (let i = 0; i < numberEventsToShow; i++) {
+				newEvents.push(eventsToShow[i]);
+			}
+
+			$('.eventTile').remove();
+			renderEventsIntoDom(newEvents);
+
+		} else {
+			eventsToManipulate = [];
+			$('.eventTile').remove();
+			$('.events__showMore').addClass('noMore');
+			$('.events__noResults').addClass('active');
+			if (!filterOpen) {
+				$('.eventFilter__header__toggle').click();
+			}
+		}
+
+
 	}
-	
-
-}
 
 
 
-	
+
 
 	// =================================================
 	// DataPicker and filters
@@ -52,45 +68,46 @@ function lazyGetEvents(eventsToShow, numberOfEvents) {
 
 	dataPicker()
 
-	$('.events__showMore').click( function() {
+	$('.events__showMore').click(function () {
 		lazyGetEvents(eventsToManipulate, 4);
-		if(numberEventsToShow + 4 > eventsToManipulate.length) {
+		if (numberEventsToShow + 4 > eventsToManipulate.length) {
 			// $('.events__showMore').addClass('noMore');
 			$('.events__showMore').hide();
 		}
-		
+
 	});
 
-	$('.passions .switch, .suitables .switch').click( function() {
+	$('.passions .switch, .suitables .switch').click(function () {
 		$(this)
-		.find('.label')
-		.toggleClass('label--active')
+			.find('.label')
+			.toggleClass('label--active')
 		$(this).find('.switch-button')
-		.toggleClass('selected')
+			.toggleClass('selected')
 		$(this).toggleClass('active')
 	});
 
-	$('.eventFilter__header__toggle').click( function() {
+	$('.eventFilter__header__toggle').click(function () {
 		$(this).find('a').toggleClass('unfold');
-		var spantext = document.getElementsByClassName("eventFilter__header__toggle")[0].getElementsByTagName("span")[0];
 
-		if(this.getElementsByTagName("a")[0].classList.contains("unfold")) {
+		if (this.getElementsByTagName("a")[0].classList.contains("unfold")) {
 			spantext.innerText = "HIDE FILTERS";
+			filterOpen = true;
 		} else {
 			spantext.innerText = "SHOW FILTERS";
+			filterOpen = false;
 		}
 
-		if($('.filters__labels').hasClass('closed')) {
-			
+		if ($('.filters__labels').hasClass('closed')) {
+
 			$('.filters__labels').slideDown();
 			$('.filters__labels').toggleClass('closed');
 			$("body,html").animate(
 				{
-				  scrollTop: $(".eventFilter").offset().top
+					scrollTop: $(".eventFilter").offset().top
 				},
 				800 //speed
-			  );
-			
+			);
+
 		} else {
 			$('.filters__labels').slideUp();
 			$('.filters__labels').toggleClass('closed');
@@ -98,10 +115,10 @@ function lazyGetEvents(eventsToShow, numberOfEvents) {
 
 	});
 
-	$('.filters__results .btn').click( function() {
+	$('.filters__results .btn').click(function () {
 
 
-		if($(this).hasClass('btn--secondary')) {
+		if ($(this).hasClass('btn--secondary')) {
 			resetFilters()
 		}
 
@@ -111,27 +128,27 @@ function lazyGetEvents(eventsToShow, numberOfEvents) {
 
 
 
-		if ( $('#from').val() && $('#to').val() ) {
-			eventsToRender = eventsToRender.filter( function( event ) {
-				return event.startDate >= moment($('#from').val(), "DD-MM-YYYY").format("MM/DD/YYYY") && event.startDate <= moment($('#to').val(), "DD-MM-YYYY").format("MM/DD/YYYY") 
+		if ($('#from').val() && $('#to').val()) {
+			eventsToRender = eventsToRender.filter(function (event) {
+				return event.startDate >= moment($('#from').val(), "DD-MM-YYYY").format("MM/DD/YYYY") && event.startDate <= moment($('#to').val(), "DD-MM-YYYY").format("MM/DD/YYYY")
 			})
 		}
 
 
-		if ( getPassions.length ) {
-			eventsToRender = eventsToRender.filter( function( event ) {
-				if( event.extra.passions ) {
+		if (getPassions.length) {
+			eventsToRender = eventsToRender.filter(function (event) {
+				if (event.extra.passions) {
 					return event.extra.passions.filter(passion => getPassions.includes(passion)).length > 0
 				}
-			} )
+			})
 		}
 
-		if ( getEventtype.length ) {
-			eventsToRender = eventsToRender.filter( function( event ) {
-				if( event.extra.eventtype ) {
+		if (getEventtype.length) {
+			eventsToRender = eventsToRender.filter(function (event) {
+				if (event.extra.eventtype) {
 					return event.extra.eventtype.filter(eventtype => getEventtype.includes(eventtype)).length > 0
 				}
-			} )
+			})
 		}
 
 		eventsToManipulate = eventsToRender;
@@ -139,7 +156,7 @@ function lazyGetEvents(eventsToShow, numberOfEvents) {
 
 
 		lazyGetEvents(eventsToRender, 0);
-		
+
 
 	})
 
@@ -149,17 +166,17 @@ function lazyGetEvents(eventsToShow, numberOfEvents) {
 	// Events
 	// =================================================
 
-	if( passion ) {
+	if (passion) {
 
 		$('.passionImg')
 			.find('img').attr('src', `/content/dam/samsung/uk/kings-cross/passion-header/passion-header-${passion}.jpg`)
 			.addClass('op0--fade')
 
-		const eventsFiltered = events.filter( function( event ) {
-			return event.extra.passions.includes( passion )
-		} )
+		const eventsFiltered = events.filter(function (event) {
+			return event.extra.passions.includes(passion)
+		})
 
-		lazyGetEvents( eventsFiltered, 0 );
+		lazyGetEvents(eventsFiltered, 0);
 
 	} else {
 
@@ -169,7 +186,7 @@ function lazyGetEvents(eventsToShow, numberOfEvents) {
 			.attr('src', `https://images.samsung.com/is/image/samsung/p5/uk/kings-cross/KX-whats-on-KV.jpg`)
 			.addClass('op0--fade')
 
-		lazyGetEvents( events, 0 )
+		lazyGetEvents(events, 0)
 	}
 
 	// =================================================
@@ -181,12 +198,12 @@ function lazyGetEvents(eventsToShow, numberOfEvents) {
 		getPassions = []
 		getEventtype = []
 
-		$('.passions .switch.active').each( function() {
-			getPassions.push( $(this).data('code') )
+		$('.passions .switch.active').each(function () {
+			getPassions.push($(this).data('code'))
 		})
 
-		$('.suitables .switch.active').each( function() {
-			getEventtype.push( $(this).data('code') )
+		$('.suitables .switch.active').each(function () {
+			getEventtype.push($(this).data('code'))
 		})
 
 	}
@@ -197,16 +214,16 @@ function lazyGetEvents(eventsToShow, numberOfEvents) {
 
 	function resetFilters() {
 
-		$('.passions .switch, .suitables .switch').each( function() {
+		$('.passions .switch, .suitables .switch').each(function () {
 			$(this)
-			.find('.label')
-			.removeClass('label--active')
+				.find('.label')
+				.removeClass('label--active')
 			$(this).find('.switch-button')
-			.removeClass('selected')
+				.removeClass('selected')
 			$(this).removeClass('active')
 		});
 
-		$('.filters__date__container input').each(function() {
+		$('.filters__date__container input').each(function () {
 			$(this).val('');
 		})
 
@@ -217,19 +234,19 @@ function lazyGetEvents(eventsToShow, numberOfEvents) {
 	// Accepts the events as parameter
 	// =================================================
 
-	function renderEventsIntoDom( allEventsToRender ) {
+	function renderEventsIntoDom(allEventsToRender) {
 
-		allEventsToRender.forEach( function( event, index ) {
+		allEventsToRender.forEach(function (event, index) {
 
 			counter++
 
-			
+
 			const options = {
 				identifier: event.identifier,
 				eventId: event.id,
 				image: event.imageURL ? event.imageURL : 'https://images.unsplash.com/photo-1560983719-c116f744352d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80',
 				title: event.title,
-				startDate: moment(event.startDate).format("Do MMMM") ==  moment(Date.now()).format("Do MMMM") ? 'TODAY' : moment(event.startDate).format("Do MMMM") ,
+				startDate: moment(event.startDate).format("Do MMMM") == moment(Date.now()).format("Do MMMM") ? 'TODAY' : moment(event.startDate).format("Do MMMM"),
 				startTime: event.startTime,
 				passion: event.extra.passions,
 				passionColor: event.extra.passionColor,
@@ -237,14 +254,14 @@ function lazyGetEvents(eventsToShow, numberOfEvents) {
 				suitablesName: event.extra.eventtypeName,
 			}
 
-			
-			$('.events .events__container').append( handleTemplate( 'eventTile', options ) )
 
-			if ( counter == 10 ) {
+			$('.events .events__container').append(handleTemplate('eventTile', options))
+
+			if (counter == 10) {
 				counter = 0
 			}
 		})
-		
+
 	}
 
 
