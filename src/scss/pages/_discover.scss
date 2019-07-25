@@ -273,7 +273,8 @@
 }
 
 .spaces {
-    padding-top: 0!important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
   &__header {
     display: flex;
     justify-content: center;

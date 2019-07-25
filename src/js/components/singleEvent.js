@@ -78,11 +78,12 @@ export default function singleEvent(events) {
               : moment(data.startDate).format("Do MMMM"),
           startTime: data.startTime,
           passion: data.passions,
-          description:  data.description.split(". ", 1).length > 1 ? data.description.replace(
-            data.description.split(". ", 1)[0] + ". ",
+          description:  data.description.split(". ", 2).length > 1 ? data.description.replace(
+            data.description.split(". ", 2)[0] + ". ",
             ""
           ): '',
-          firstSentence: data.description.split(". ", 1)[0],
+          firstSentence: data.description.split(". ", 1)[0] + ".",
+          maxReservations: data.maxReservations,
           slotsAvailable: data.slotsAvailable,
           youtube: data.extra.youtubeid,
           externalbookinglink: data.extra.externalbookinglink
@@ -232,7 +233,7 @@ export default function singleEvent(events) {
 
     });
 
-  $(".close").on("click", function(e) {
+  $(".close, .change__close").on("click", function(e) {
     e.preventDefault();
     $(".book").slideUp();
     $(".book").removeClass("book--active");

@@ -1,4 +1,3 @@
-
 // import customevent from '../polyfill/customevent-polyfill';
 
 export default function support() {

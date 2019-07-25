@@ -43,6 +43,7 @@ $(select).each(function () {
     // Show the unordered list when the styled div is clicked (also hides it if the div is clicked again)
     $styledSelect.click(function (e) {
         e.stopPropagation();
+        console.log("XXXXX");
         $('div.styledSelect.active').each(function () {
             $(this).removeClass('active').next('ul.options').hide();
         });
