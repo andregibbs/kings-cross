@@ -1,67 +1,91 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
 
-<title>download</title>
+    <title>download</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 
-<style>
-body {
-    padding:0;
-    margin:0;
-}
-a {
-    display:block;
-    overflow:hidden;
-    background-color:blue;
-    color:white;
-    text-decoration:none;
-    height:100vh;
-    line-height:100vh;
-    text-align:center;
-    font-family:tahoma;
-    font-size:20px; /* needs to be proporational */
-}
-</style>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+      }
+      a {
+        display: block;
+        overflow: hidden;
+        background-color: blue;
+        color: white;
+        text-decoration: none;
+        height: 100vh;
+        line-height: 100vh;
+        text-align: center;
+        font-family: tahoma;
+        font-size: 20px; /* needs to be proporational */
+      }
+      .btn {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        border: 2px solid transparent;
+        border-radius: 100px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        line-height: 1;
+        text-align: center;
+        text-transform: uppercase;
+        background: transparent;
+        -webkit-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+        width: 100vh;
+        height: 100vw;
+      }
+     
+  
+      .btn--secondary {
+        border-color: #e14d9a;
+        color: #fff;
+      }
+      .btn--secondary:hover {
+        border-color: #fff;
+        color: #e14d9a;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <a class="button btn btn--secondary" href="" target="_blank" download>
+        download
+      </a>
+    </div>
 
-</head>
-<body>
-
-<div class="wrapper">
-
-<a href="" target="_blank" download>
-download
-</a>
-
-</div>
-
-<script type="text/javascript">
-
-function getParam(param) {
-    var pageURL = window.location.search.substring(1);
-    var URLVariables = pageURL.split('&');
-    for (var i = 0; i < URLVariables.length; i++) {
-        var queryString = URLVariables[i].split('=');
-        if (queryString[0] == param) {
+    <script type="text/javascript">
+      function getParam(param) {
+        var pageURL = window.location.search.substring(1);
+        var URLVariables = pageURL.split("&");
+        for (var i = 0; i < URLVariables.length; i++) {
+          var queryString = URLVariables[i].split("=");
+          if (queryString[0] == param) {
             return queryString[1];
+          }
         }
-    }
-}
+      }
 
-$(document).ready(function() {
-    var idParam = getParam('id');
-    if (idParam) {
-    	$('.wrapper a').attr('href', '/uploads/' + idParam);
-    }
-})
-
-</script>
-
-</body>
+      $(document).ready(function() {
+        var idParam = getParam("id");
+        if (idParam) {
+          $(".wrapper a").attr("href", "/uploads/" + idParam);
+        }
+      });
+    </script>
+  </body>
 </html>
-
-

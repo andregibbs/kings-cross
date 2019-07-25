@@ -2,9 +2,22 @@
 
 &.homePage {
 
+    .kx-video {
+        position: relative;
+        background: #0C0C0C;
+        padding-top: 0!important;
+        padding-bottom: 0!important ;
+    
+        .section__inner {
+            display: flex;
+        justify-content: center;
+    }
+    }
+
     .homepage-kv {
         padding-top: 0!important;
         padding-bottom: 0!important;
+        max-width: unset!important;
         #parallax {
             &__container {
             display: block;
@@ -16,7 +29,6 @@
                 position: absolute;
                 background-position: center !important;
                 background-repeat: no-repeat!important;
-                
                 transform: translateY(0px);
                 height: 65vh;
                 width: 100%;
@@ -24,19 +36,31 @@
                 background-size: cover!important;
                 }
               }
+              #parallax__orangex {
+                  z-index: 9;
+                  animation-delay: 100ms;
+              }
+              #parallax__building {
+                animation-delay: 150ms;
+              }
+              #parallax__purplex {
+                  animation-delay: 50ms;
+              }
+
           }
         
         }
         
         .parallax {
             &__text {
-                position: relative!important;
                 width: 70% !important;
                 display: flex;
                 justify-content: center;
                 align-items: flex-start;
                 flex-direction: column;
                 z-index: 9;
+                opacity: 0;
+                animation-delay: 1s;
                 h2 {
                     font-size: em(80);
                     font-weight: bold;
@@ -70,6 +94,10 @@
         background: #0C0C0C;
         padding-top: 0!important;
         padding-bottom: 0!important;
+        @media screen and (max-width: $mobile) {
+            padding-bottom: 3.90625vw!important;
+        }
+
     
         &__container {
     
@@ -85,18 +113,10 @@
     
     .relatedEvents {
         box-shadow: none!important;
+        z-index: 13;
     }
     
-    .kx-video {
-        position: relative;
-        background: #0C0C0C;
-        padding-top: 0!important;
-    
-        .section__inner {
-            display: flex;
-        justify-content: center;
-    }
-    }
+   
     
     .passionPoints {
         padding-top: 0!important;
@@ -114,7 +134,7 @@
         }
         
         h2 {
-            font-size: em(30);
+            font-size: em(50);
         }
         }
         &__container {

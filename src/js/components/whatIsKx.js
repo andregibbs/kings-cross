@@ -1,5 +1,6 @@
 import smoothscroll from '../polyfill/smoothscroll-polyfill';
 import upcomingEvents from "./upcomingEvents";
+import newParallax from './parallax';
 
 export default function whatIsKx(events) {
 
@@ -21,52 +22,24 @@ export default function whatIsKx(events) {
 			behavior: 'smooth'
 		});
 	})
-	parllax();
+	var testParallax =  new newParallax('.para');
+	parllaxText();
 	$(document).scroll(function() {
-		parllax();
+		parllaxText();
 
 
 
 	})
 
-	function parllax() {
-		var doc = document.documentElement;
-		var topPos = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
-        var wHeight = $(window).height();
-
-		let parent = $("#parallax__container");
-		let children = $("#parallax__container").children();
+	function parllaxText() {
+		
 		let paratext = $("#parallax__container").find(".parallax__text");
 		let paraHight = ($("#parallax__container").outerHeight() + $("#parallax__container").offset().top);
 		let opacity = (1 - window.scrollY / paraHight * 4);
-
-		
-		$("#parallax__container").children().each(function(index) {
-			parallaxObj($(this), wHeight, topPos, index);
-		})
-		
-		
 		 paratext.css('opacity', opacity);
+
 		
 
-	}
-
-	function parallaxObj(elm, wHeight, topPos, index) {
-        
-		var $objToScroll = $(elm);
-
-		var objOffset = $objToScroll.offset();
-		
-
-		var middleOfPage = topPos + (wHeight / 2 );
-		var newY = ((middleOfPage - objOffset.top) / wHeight) * 200 * index;
-		
-
-		if( ((topPos + wHeight)  > objOffset.top) && ( topPos < (objOffset.top + $objToScroll.height() ) ) ) { // set the CSS only if the object is in the viewport
-			console.log(newY)
-		  $objToScroll.css('transform', 'translate3d(0, ' + newY + 'px,0)');
-		}
-		
 
 	}
 

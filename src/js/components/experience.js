@@ -1,6 +1,7 @@
 
 import getUrlVars from './getUrlVars';
 import slider from './slider';
+import handleTemplate from "./handleTemplate";
 
 export default function experience(  ) {
 
@@ -9,7 +10,8 @@ export default function experience(  ) {
         djgalaxy: [],
         galaxygraffiti: [],
         collageme: [],
-        messagetree: []
+        messagetree: [],
+        threeDme: []
     }
 
 	// LOCAL
@@ -122,7 +124,7 @@ function getFile(file) {
     if(fileexperience !== '3dme') {
         options[fileexperience].push(fileConfig);
     } else {
-        
+        options.threeDme.push(fileConfig);
     }
    
 
@@ -147,6 +149,25 @@ function processFiles(data) {
 
     //pass data to handlebars
     console.log(options);
+    for(var key in options) {
+        if(options[key].length > 0) {
+            options[key].forEach(slide => {
+                $('.'+key).append(handleTemplate("experience", slide))
+            })
+            const sliderConfig = {
+                lazyLoad: 'ondemand',
+                dots: true,
+                infinite: false,
+                speed: 500,
+                fade: false,
+                cssEase: 'linear'
+            }
+            slider( 'experience-page', '.'+key, sliderConfig, 'experience' );
+            
+        }
+    }
+   
+    
 }
 
 

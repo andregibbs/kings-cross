@@ -41,3 +41,34 @@ audio {
 	width: 100%;
 }
 
+.sliders {
+	.section__inner{
+		display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+
+	.expSlider {
+		width: get-desktop-vw(600);
+		height: get-desktop-vw(600);
+		
+		&.djgalaxy {
+
+		}
+		&.galaxygraffiti {
+
+		}
+		&.collageme {
+
+		}
+		&.messagetree {
+
+		}
+		&.threeDme {
+
+		}
+	}
+}
+}
+

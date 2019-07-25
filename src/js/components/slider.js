@@ -60,6 +60,10 @@ export default function slider( data, element, sliderConfig, templateToRender ){
 
 		$(element).slick( sliderConfig )
 
+	} else if( templateToRender == 'experience' ) {
+
+		$(element).slick( sliderConfig )
+
 	} else {
 		$(element).slick( sliderConfig )
 		fetchSlickData()

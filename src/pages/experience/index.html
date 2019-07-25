@@ -11,26 +11,19 @@
 		</div>
   </section>
 
-  <section class="section messageTree">
+  <section class="section sliders">
     <div class="section__inner">
       <form id="dataid" style="display:none;">
         <input type="text" name="id" value="" placeholder="id" />
       </form>
-	  <div class="slider-experience"></div>
+	  <div class="expSlider djgalaxy"></div>
+	  <div class="expSlider galaxygraffiti"></div>
+	  <div class="expSlider collageme"></div>
+	  <div class="expSlider messagetree"></div>
+	  <div class="expSlider threeDme"></div>
 	</div>
   </section>
-	<section class="section galaxyGraffiti">
-			<div class="section__inner">
-			  <div class="slider-experience"></div>
-			</div>
 
-			</section>
-
-			<section class="section djGalaxy">
-					<div class="section__inner">
-					  <div class="slider-experience"></div>
-					</div>
-					</section>
 
     <!--
 
@@ -39,9 +32,11 @@ script needs to check for id query string parameter
 - create a handlebars template to display the content ???
 
 -->
-  </section>
+  
   {{>components/findKx}}
   {{>components/socialMedia }}
+
+  {{>templateScripts/experience/experience }}
 
   {{>scripts }}
 </section>

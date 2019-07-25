@@ -260,9 +260,7 @@ export default function singleEvent(events) {
     $(this).toggleClass("share__container--active");
   });
 
-  $(".relatedEvents__header__see").click(function() {
-    window.location.href = "/uk/explore/kings-cross/whats-on/";
-  });
+
 
   // =================================================
   // Instragram feed

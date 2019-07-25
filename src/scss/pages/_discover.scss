@@ -12,22 +12,32 @@
   display: flex;
   align-items: center;
 
+  @media screen and (max-width: $mobile) {
+  height: 30vh;
+
+  }
+
   h2 {
     font-size: em(74);
     font-weight: bold;
     width: 50%;
     line-height: em(17);
+    @media screen and (max-width: $mobile) {
+      font-size: em(45);
+    }
   }
 }
 
 .kx-video {
+  position: relative;
+  background: #0C0C0C;
+  padding-top: 0!important;
+  padding-bottom: 20px !important;
+
   .section__inner {
-
-    display: flex;
+      display: flex;
   justify-content: center;
-
-  }
-  
+}
 }
 
 .slider {
@@ -43,10 +53,7 @@
       z-index: 999;
 
       @media screen and (max-width: $mobile) {
-          top: 25%;
-          right: 17px;
-          width: 15px;
-      height: 15px;
+        opacity: 0;
       }
       
     }
@@ -59,14 +66,14 @@
       left: 34px;
       z-index: 999;
       @media screen and (max-width: $mobile) {
-        top: 25%;
-        left: 17px;
-        width: 15px;
-      height: 15px;
+        opacity: 0;
     }
     }
     &-disabled {
         opacity: .25;
+        @media screen and (max-width: $mobile) {
+          opacity: 0;
+      }
     }
     &-next::before,
     &-prev::before {
@@ -314,6 +321,9 @@
     align-items: flex-start;
     justify-content: space-between;
     margin-bottom: 2%;
+    background-position: center!important;
+    background-size: contain!important;
+    background-repeat: no-repeat!important;
     @media screen and (max-width: $mobile) {
         flex: 0 0 calc(50% - 2%);
         height: 170px;
@@ -333,18 +343,19 @@
 
 .copy {
   padding-top: 0 !important;
+  padding-bottom: 0!important;
   p {
-    font-size: em(30);
+    font-size: em(20);
     text-align: center;
-    font-weight: 700;
+    font-weight: 400;
     margin-bottom: 25px;
     &.copy--last{
       margin-bottom: 0px;
     }
   }
   &__hashtag {
-    font-size: em(12);
-    font-weight: 700;
+    font-size: em(14);
+    font-weight: bold;
     color: #00b3e2;
   }
 }
