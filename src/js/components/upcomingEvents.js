@@ -8,9 +8,9 @@ export default function upcomingEvents( events, topicId ) {
   
 		//if standard event
 	if(topicId !== 212) {
-		var filteredEvents = events.filter(x => x.topic.id !== topicId);
+		  filteredEvents = events.filter(x => x.topic.id !== topicId);
 	} else {
-		var filteredEvents = events;
+		  filteredEvents = events;
   }
   
   //console.log('filteredEvents', filteredEvents.length);

@@ -36,7 +36,7 @@ export default function whatIsKx(events) {
 		
 		let paratext = $("#parallax__container").find(".parallax__text");
 		let paraHight = ($("#parallax__container").outerHeight() + $("#parallax__container").offset().top);
-		let opacity = (1 - window.scrollY / paraHight * 4);
+		let opacity = (1 - window.scrollY / paraHight * 2);
 		 paratext.css('opacity', opacity);
 
 		
@@ -46,22 +46,22 @@ export default function whatIsKx(events) {
 
 	//video
 
-		$("video").click(function(e){
+		// $("video").click(function(e){
 
-			// handle click if not Firefox (Firefox supports this feature natively)
-			if (typeof InstallTrigger === 'undefined') {
+		// 	// handle click if not Firefox (Firefox supports this feature natively)
+		// 	if (typeof InstallTrigger === 'undefined') {
 		
-				// get click position 
-				var clickY = (e.pageY - $(this).offset().top);
-				var height = parseFloat( $(this).height() );
+		// 		// get click position 
+		// 		var clickY = (e.pageY - $(this).offset().top);
+		// 		var height = parseFloat( $(this).height() );
 		
-				// avoids interference with controls
-				if (clickY > 0.82*height) return;
+		// 		// avoids interference with controls
+		// 		if (clickY > 0.82*height) return;
 		
-				// toggles play / pause
-				this.paused ? this.play() : this.pause();
-			}
-		});
+		// 		// toggles play / pause
+		// 		this.paused ? this.play() : this.pause();
+		// 	}
+		// });
 
 
 		//passion point images

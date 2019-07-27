@@ -74,6 +74,10 @@
         
                 }
             }
+            &__gradient {
+                background: linear-gradient(0deg, rgba(12, 12, 12, 1) 0%, rgba(0,0,0,0) 30%);
+                z-index: 13;
+            }
             &__building {
                 @media screen and (max-width: $mobile) {
                     position: absolute!important;
@@ -139,7 +143,7 @@
         }
         &__container {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-evenly;
             flex-wrap: wrap;
             @media screen and (max-width: $mobile) {
                 justify-content: space-evenly;
@@ -179,7 +183,26 @@
         }
     }
 
+     
+    .cover__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 300px;
+        flex: 0 0 calc(25% - 1%);
+        height: 300px;
+        margin-bottom: 20px;
 
+        margin-left: get-desktop-vw(20);
+  
+    margin-bottom: 2%;
+    @media screen and (max-width: $mobile) {
+    height: 150px;
+
+    }
+
+        
+    }
     .cover {
         display: inline-block;
         height: 300px;

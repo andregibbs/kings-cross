@@ -52,9 +52,7 @@ var config = {
 gulp.task('browser-sync', function() {
   browserSync.init({
 			watch: true,
-			server: {
-				baseDir: "./build"
-			}
+			proxy: "kx.samsung.com",
   });
 });
 
@@ -214,4 +212,4 @@ gulp.task('watch', function () {
 
 gulp.task('production', sequence('delete-build', 'copy-assets', 'scss', 'buildJS', 'html') )
 gulp.task('development', sequence('copy-assets', 'scss', 'buildJS', 'html', 'minify') )
-gulp.task('default', ['watch', 'development', 'watchJS'])
+gulp.task('default', ['watch', 'development', 'watchJS', 'browser-sync'])

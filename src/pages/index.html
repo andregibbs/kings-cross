@@ -32,7 +32,7 @@
 
 	<section class="section kx-video">
 		<div class="section__inner">
-			<video class="video__main" preload="none"
+			<video class="video__main" preload="none" controls="true" onclick="if(this.paused) { this.play() }else{this.pause()}"
 				poster="https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/video_poster.jpg">
 				<source src="https://images.samsung.com/is/content/samsung/p5/uk/kings-cross/kx_hype.mp4" type="video/mp4">
 				Your browser does not support the video tag.
