@@ -168,7 +168,10 @@ export default function whatson(events) {
 
 	if (passion) {
 
-		$('.whatsOn__kv').css('background','url(/content/dam/samsung/uk/explore/kings-cross/passion-header/passion-header-'+passion+'.jpg)')
+		$('.whatsOn__kv').css('background','url(/content/dam/samsung/uk/explore/kings-cross/passion-header/passion-header-'+passion+'.jpg)');
+		var passionName = getPassionName(passion);
+		console.log(passionName);
+		$('.whatsOn__kv h2').text(passionName);
 
 		const eventsFiltered = events.filter(function (event) {
 			return event.extra.passions.includes(passion)
@@ -222,6 +225,23 @@ export default function whatson(events) {
 			$(this).val('');
 		})
 
+	}
+
+	// =================================================
+	// function to get passion point name
+	// =================================================
+
+	function getPassionName(code) {
+		var name = '';
+		for (var i = 0; i < kxConfig.passions.length; i++) {
+
+			if (kxConfig.passions[i].code == code) {
+
+				name = kxConfig.passions[i].name;
+
+			}
+		}
+		return name;
 	}
 
 	// =================================================

@@ -102,6 +102,7 @@ $(document).ready(function () {
 		}
 		return name;
 	}
+	
 	// kxConfig holds suitable details from json file - events only hold the suitable code but we need to show the name, so convert here
 	function getSuitableName(code) {
 		var name = '';
@@ -148,7 +149,7 @@ $(document).ready(function () {
 
 			event.description = bits[0];
 			if (bits.length > 1) {
-				event.extra = JSON.parse(bits[1]);
+				event.extra = IsJsonString(bits[1]) ? IsJsonString(bits[1]) : {};
 				event.extra['passionColor'] = getPassionColor(event.extra.passions[0]);
 				event.extra['eventtypeName'] = getSuitableName(event.extra.eventtype);
 			}
@@ -291,6 +292,15 @@ $(document).ready(function () {
 		};
 
 		slider(dd, '.upComing', sliderConfig2, 'upComing');
+	}
+
+	function IsJsonString(str) {
+		try {
+			JSON.parse(str);
+		} catch (e) {
+			return false;
+		}
+		return JSON.parse(str);
 	}
 
 	// =========================================================
