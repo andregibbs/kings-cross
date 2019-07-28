@@ -25,13 +25,13 @@ export default function calendar(URL, type, allEvents) {
 	var URL = URL || "";
 
 	var appointmentStartTime = "";
-	
+
 
 	const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 	const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
-	const shortDays = days.map((a)=>a.slice(0,3))
-	const shortMonths = months.map((a)=>a.slice(0,3))
+	const shortDays = days.map((a) => a.slice(0, 3))
+	const shortMonths = months.map((a) => a.slice(0, 3))
 
 	document.getElementById("calendar").addEventListener("changeURL", function (e) {
 		URL = e.detail.url;
@@ -84,6 +84,9 @@ export default function calendar(URL, type, allEvents) {
 				populateWithAppointments(data);
 				loadingScreen.style.display = "";
 				handleScrollArrows();
+				$(".calendar__choices").each(function(){
+					this.scrollTop = 0;
+				});
 			})
 			.fail(function (err) {
 				loadingScreen.style.display = "";
@@ -106,10 +109,13 @@ export default function calendar(URL, type, allEvents) {
 
 				//Format date
 				var date = new Date(data[dateInd].date);
-				var dateFormatted = days[date.getDay()] + " " + date.getDate() + " " + months[date.getMonth()] + " " + date.getFullYear();
+				// var dateFormatted = days[date.getDay()] + " " + date.getDate() + " " + months[date.getMonth()] + " " + date.getFullYear();
+				var dateFormatted = moment(date).format('dddd Do MMMM YYYY');
+
+				console.log(dateFormatted);
 
 				//Append the date column
-				$(".calendar__container").append(handleTemplate("dateColumn", { "dateFormatted": dateFormatted, "index": dateInd, "date": date.format("MM-dd-yyyy") }));
+				$(".calendar__container").append(handleTemplate("dateColumn", { "dateFormatted": dateFormatted, "index": dateInd, "date": date.format("yyyy-MM-dd") }));
 
 				//For every appointment in date
 				for (var appointmentInd = 0; appointmentInd < data[dateInd].slots.length; appointmentInd++) {
@@ -145,9 +151,11 @@ export default function calendar(URL, type, allEvents) {
 			} else {
 				var date = new Date(data[dateInd].date);
 
-				var dateFormatted = days[date.getDay()] + " " + date.getDate() + " " + months[date.getMonth()] + " " + date.getFullYear();
+				// var dateFormatted = days[date.getDay()] + " " + date.getDate() + " " + months[date.getMonth()] + " " + date.getFullYear();
 
-				$(".calendar__container").append(handleTemplate("dateColumn", { "dateFormatted": dateFormatted, "index": dateInd, "date": date.format("MM-dd-yyyy") }));
+				var dateFormatted = moment(date).format('dddd Do MMMM YYYY');
+
+				$(".calendar__container").append(handleTemplate("dateColumn", { "dateFormatted": dateFormatted, "index": dateInd, "date": date.format("yyyy-MM-dd") }));
 
 				$(".calendar__choices").last().append(handleTemplate("slot", { "time": "No slots", "available": false }));
 
@@ -197,7 +205,11 @@ export default function calendar(URL, type, allEvents) {
 			//Click To Scroll Animations
 			//They ensure that no matter how much and when you click, it will always snap to an element as long as the container is 350px
 			$(elm).click(function () {
-				var h = $(elm).siblings().find(".calendar__choice").outerHeight(false) + parseFloat($(".calendar__choice").css('marginTop'));
+				// var h = $(elm).siblings().find(".calendar__choice").outerHeight(false) + parseFloat($(".calendar__choice").css('marginTop'));
+				var elementHeights = $('.calendar__choice').map(function () {
+					return $(this).outerHeight(true);
+				});
+				var h = Math.max.apply(null, elementHeights);
 				//console.log(h);
 				if (this.classList.contains("load--bot")) {
 					if (this.previousElementSibling.scrollTop % h == 0) {
@@ -292,33 +304,35 @@ export default function calendar(URL, type, allEvents) {
 		// })
 	}
 
-	function handleResize(){
-  
+	function handleResize() {
+
 		//console.log('%c%s', 'color: #f2ceb6', "Tis logged");
 
-        if(window.innerWidth <= 768 && (viewport != "mobile" || calendarRestart)){
+		if (window.innerWidth <= 768 && (viewport != "mobile" || calendarRestart)) {
 			//console.log("Still mobile");
-			$("[date]").each(function(ind, elm){
+			$("[date]").each(function (ind, elm) {
 				var a = new Date(elm.getAttribute("date"));
-				elm.innerText = shortDays[a.getDay()] + " " + a.getDate() + " " + shortMonths[a.getMonth()];
-			})
+				// elm.innerText = shortDays[a.getDay()] + " " + a.getDate() + " " + shortMonths[a.getMonth()];
+				elm.innerText = moment(a).format('ddd Do MMM YYYY');
+			});
 			viewport = "mobile";
 			calendarRestart = false;
-        } else if(window.innerWidth >= 768 && (viewport != "desktop"|| calendarRestart)){
-			$("[date]").each(function(ind, elm){
+		} else if (window.innerWidth >= 768 && (viewport != "desktop" || calendarRestart)) {
+			$("[date]").each(function (ind, elm) {
 				var a = new Date(elm.getAttribute("date"));
-				elm.innerText = days[a.getDay()] + " " + a.getDate() + " " + months[a.getMonth()] + " " + a.getFullYear();
-			})
+				// elm.innerText = days[a.getDay()] + " " + a.getDate() + " " + months[a.getMonth()] + " " + a.getFullYear();
+				elm.innerText = moment(a).format('dddd Do MMMM YYYY');
+			});
 			viewport = "desktop";
 			calendarRestart = false;
 		}
 	}
 
 
-    handleResize();
+	handleResize();
 
-    window.addEventListener('resize', function(){
-        handleResize();
-    })
+	window.addEventListener('resize', function () {
+		handleResize();
+	})
 
 }
