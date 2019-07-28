@@ -168,9 +168,7 @@ export default function whatson(events) {
 
 	if (passion) {
 
-		$('.passionImg')
-			.find('img').attr('src', `/content/dam/samsung/uk/explore/kings-cross/passion-header/passion-header-${passion}.jpg`)
-			.addClass('op0--fade')
+		$('.whatsOn__kv').css('background','url(/content/dam/samsung/uk/explore/kings-cross/passion-header/passion-header-'+passion+'.jpg)')
 
 		const eventsFiltered = events.filter(function (event) {
 			return event.extra.passions.includes(passion)
@@ -181,10 +179,7 @@ export default function whatson(events) {
 	} else {
 
 
-		$('.passionImg')
-			.find('img')
-			.attr('src', `/content/dam/samsung/uk/explore/kings-cross/passion-header/passion-header-generic.jpg`)
-			.addClass('op0--fade')
+			$('.whatsOn__kv').css('background','url(/content/dam/samsung/uk/explore/kings-cross/passion-header/passion-header-generic.jpg)')
 
 		lazyGetEvents(events, 0)
 	}

@@ -6,8 +6,17 @@
         position: relative;
         background: #0C0C0C;
         padding-top: 0!important;
-        padding-bottom: 0!important ;
-    
+        padding-bottom: 0!important;
+        
+        .video__main {
+            padding: 0!important;
+            margin: 0!important;
+            display: block;
+            @media screen and (max-width: $mobile) {
+                max-height: 30vh;
+            }
+            
+        }
         .section__inner {
             display: flex;
         justify-content: center;
