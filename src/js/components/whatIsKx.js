@@ -37,10 +37,9 @@ export default function whatIsKx(events) {
 		let paratext = $("#parallax__container").find(".parallax__text");
 		let paraHight = ($("#parallax__container").outerHeight() + $("#parallax__container").offset().top);
 		let opacity = (1 - window.scrollY / paraHight * 2);
-		 paratext.css('opacity', opacity);
-
-		
-
+		// paratext.css('opacity', opacity);
+		console.log(paratext);
+		paratext[0].style.opacity = opacity;
 
 	}
 

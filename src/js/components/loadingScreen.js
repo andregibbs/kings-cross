@@ -1,5 +1,15 @@
 export default function loadingScreen(element, animation) {
-  if (document.referrer.includes("explore/kings-cross")) {
+  console.log("called");
+  // if(!document.referrer){
+  //   console.log("OK?");
+  //   animationDone();
+  //   return;
+  // } else {
+  //   console.log("document referrer exists");
+  //   console.log(document.referrer);
+  // }
+
+  if (document.referrer.indexOf("explore/kings-cross") != -1) {
     animationDone();
   } else {
     var animation = lottie.loadAnimation({

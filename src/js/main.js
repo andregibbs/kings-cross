@@ -19,12 +19,12 @@ import loadingScreenAnimation from '../data/loadingScreen.json';
 $(document).ready(function () {
 
 	// This will clear all unnecessary Samsung logs
-	
+
 
 	// console.clear();
 
 	//scroll past Navbar
-	
+
 
 	// =================================================
 	// Global vars
@@ -305,14 +305,14 @@ $(document).ready(function () {
 
 	switch (window.location.pathname) {
 		case '/uk/explore/kings-cross/':
-				
-			
-			fetchData(whatIsKx);
+
+
 			var container = document.getElementById('loadingScreen__animation');
 			loadingScreen(container, loadingScreenAnimation);
-			whatIsKx();
-		
-		
+			fetchData(whatIsKx);
+			// whatIsKx();
+
+
 			break;
 
 		case "/uk/explore/kings-cross/discover/":

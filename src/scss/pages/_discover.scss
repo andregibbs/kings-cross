@@ -212,7 +212,8 @@
   &__copy {
     display: flex;
     align-items: flex-start;
-    justify-content: space-evenly;
+              justify-content: space-around;
+          justify-content: space-evenly;
     flex-direction: column;
     margin-left: get-desktop-vw(80);
     @media screen and (max-width: $mobile) {
@@ -321,7 +322,8 @@
 
   &__container {
     display: flex;
-    justify-content: space-evenly;
+              justify-content: space-around;
+          justify-content: space-evenly;
     align-items: center;
     margin-top: 50px;
     flex-wrap: wrap;

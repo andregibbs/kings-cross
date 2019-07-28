@@ -52,7 +52,7 @@ var config = {
 gulp.task('browser-sync', function() {
   browserSync.init({
 			watch: true,
-			proxy: "kx.samsung.com",
+			proxy: "kings-cross.samsung.com",
   });
 });
 

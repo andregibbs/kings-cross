@@ -156,7 +156,8 @@
       .action {
         display: flex;
         align-items: flex-end;
-        justify-content: space-evenly;
+                  justify-content: space-around;
+          justify-content: space-evenly;
         flex-direction: column;
 
         @media screen and (max-width: $mobile) {
@@ -207,7 +208,8 @@
       .share {
         display: flex;
         align-items: flex-end;
-        justify-content: space-evenly;
+                  justify-content: space-around;
+          justify-content: space-evenly;
         flex-direction: column;
 
         padding-bottom: 20px;
@@ -228,7 +230,8 @@
           @media screen and (max-width: $mobile) {
             display: none;
             align-items: center;
-            justify-content: space-evenly;
+                      justify-content: space-around;
+          justify-content: space-evenly;
             padding-bottom: 11px;
             width: 100%;
             opacity: 0;
@@ -250,7 +253,8 @@
           @media screen and (max-width: $mobile) {
             display: flex;
             align-items: center;
-            justify-content: space-evenly;
+                      justify-content: space-around;
+          justify-content: space-evenly;
             padding-bottom: 11px;
             width: 100%;
             opacity: 1;

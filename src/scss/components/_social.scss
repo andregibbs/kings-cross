@@ -5,7 +5,8 @@
 .footer {
 	&__container {
 		display: flex;
-		justify-content: space-evenly;
+		          justify-content: space-around;
+          justify-content: space-evenly;
 		align-items: flex-start;
 		@media screen and (max-width: $mobile){
 			flex-direction: column-reverse;

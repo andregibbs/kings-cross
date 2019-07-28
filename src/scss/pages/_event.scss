@@ -26,7 +26,8 @@
 		display: flex;
 		justify-content: space-between;
 		@media screen and (max-width: $mobile) {
-			justify-content: space-evenly;
+			          justify-content: space-around;
+          justify-content: space-evenly;
 			flex-wrap: wrap;
 			
 			}
