@@ -48,7 +48,7 @@
       flex-direction: column;
       justify-content: space-between;
       flex-basis: 30%;
-      min-height: 180px;
+      min-height: 190px;
     
       &:nth-child(2) {
         margin: 0 200px;
@@ -220,6 +220,7 @@
       align-items: center;
     }
     &__fields {
+      width: 100%;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;

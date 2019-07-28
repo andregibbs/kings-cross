@@ -56,6 +56,11 @@
     &::-webkit-scrollbar {
       display: none;
     }
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     overflow-y: scroll;
     max-height: 267px;
@@ -76,18 +81,18 @@
     user-select: none;
     cursor: pointer;
 
-    margin: 12px 20px;
+    margin: 7px 20px;
     padding: 10px 40px;
 
     max-width: 160px;
 
     @media screen and (max-width: $desktop) {
-      margin: get-desktop-vw(12) auto;
+      margin: get-desktop-vw(7) auto;
       padding: get-desktop-vw(12) get-desktop-vw(46);
     }
 
     @media screen and (max-width: $mobile) {
-      margin: get-mobile-vw(12) auto;
+      margin: get-mobile-vw(7) auto;
       padding: get-mobile-vw(24) get-mobile-vw(24);
     }
 
