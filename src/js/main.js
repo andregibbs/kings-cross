@@ -173,8 +173,15 @@ $(document).ready(function () {
 				//console.log(event);
 			}
 
-			// store the 'converted' data as events in main
-			events = data;
+
+			// store the 'converted' data as events in main and filter out events with no extra info
+			events = data.filter(event => event.extra);
+
+			
+
+			console.warn('KX logs: We are not showing these events due to and error in the description', data.filter(event => !(event.extra)))
+
+			console.log(events)
 
 			//get all the topic ids
 
@@ -186,6 +193,8 @@ $(document).ready(function () {
 				}
 
 			});
+
+		
 
 			for (var j = 0; j < events.length; j++) {
 				var event = events[j];

@@ -1,3 +1,67 @@
+
+.experience {
+	&__kv {
+	position: relative;
+	max-height: 58vh;
+	}
+	&__text-container {
+		opacity: 0;
+		display: inline-block;
+		position: absolute;
+		z-index: 21;
+		left: 0;
+		right: 0;
+		width: 64vw;
+		margin: 0 auto;
+		padding-right: 10vw;
+		top: 40%;
+		animation: fadeIn 2s ease-in-out 1s forwards;
+		transition: transform 1s forwards;
+
+
+		h2 {
+	
+			font-size: em(35);
+			font-weight: 700;
+
+
+		}
+		h1 {
+			font-size: em(50);
+			font-weight: 700;
+		
+		}
+	
+	
+	}
+
+	&__kv-bot {
+		height: 100%;
+		min-height: 830px;
+		background-image: url(//images.samsung.com/is/image/samsung/p5/uk/kings-cross/register/KX-KV-layer-bottom-D.jpg);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	&__kv-top {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+    transition: transform 0.1s forwards;
+	}
+	&__copy {
+		&__container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		font-size: em(25);
+		font-weight: 400;
+		text-align: center;
+	}
+}
 .container {
 	display:block;
     overflow:hidden;
@@ -23,13 +87,7 @@
 	background-color:orange;
 }
 
-img,
-video,
-audio {
-    // max-width: 100%;
-    width: 100%;
-    height: auto;
-}
+
 
 .download {
 	display:block;
@@ -51,8 +109,16 @@ audio {
 	width: 100%;
 
 	.expSlider {
-		width: get-desktop-vw(600);
-		height: get-desktop-vw(600);
+		max-width: get-desktop-vw(600);
+		height: auto;
+		margin-bottom: 20px;
+
+		.experience__slide__download {
+			display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+		}
 		
 		&.djgalaxy {
 
@@ -68,6 +134,12 @@ audio {
 		}
 		&.threeDme {
 
+		}
+		&__container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
 		}
 	}
 }

@@ -217,6 +217,7 @@ export default function singleEvent(events) {
     $(".action .action-btn").attr("disabled", true);
     $(".action .action-btn").toggleClass("btn--primary-notActive");
     $(".book").addClass("book--active");
+    $('.book__form__footer__error').css('opacity', 0);
     if ($(this).hasClass("changeTime")) {
       $(".change").addClass("change--active");
     } else {
@@ -375,12 +376,20 @@ export default function singleEvent(events) {
   function checkFormValidity(formID) {
     $(formID + " input").each(function() {
       $(this).off("invalid");
-      $(this).bind("invalid", function(e) {
-        $(this).toggleClass("invalid");
+      $('.book__form__footer__error').css('opacity', 0);
+      $(this).removeClass("invalid");
         if ($(this).attr("type") === "checkbox") {
           $(this)
             .parent()
-            .toggleClass("invalid");
+            .removeClass("invalid");
+        }
+      $(this).bind("invalid", function(e) {
+        $(this).addClass("invalid");
+        $('.book__form__footer__error').css('opacity', 1);
+        if ($(this).attr("type") === "checkbox") {
+          $(this)
+            .parent()
+            .addClass("invalid");
         }
       });
     });

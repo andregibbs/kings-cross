@@ -156,8 +156,11 @@ function processFiles(data) {
             })
             const sliderConfig = {
                 lazyLoad: 'ondemand',
-                dots: true,
+                dots: false,
+                centerMode: true,
+                centerPadding: '60px',
                 infinite: false,
+                arrows: false,
                 speed: 500,
                 fade: false,
                 cssEase: 'linear'

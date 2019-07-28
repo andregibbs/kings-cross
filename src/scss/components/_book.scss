@@ -361,6 +361,13 @@
       width: 100%;
       margin-top: 35px;
 
+      &__error {
+        font-size: em(15);
+        font-weight: 400;
+        margin-bottom: 15px;
+        color: #ff4337;
+      }
+
       &__terms {
         font-size: em(15);
         font-weight: 400;
