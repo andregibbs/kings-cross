@@ -155,15 +155,15 @@ function processFiles(data) {
                 $('.'+key).append(handleTemplate("experience", slide))
             })
             const sliderConfig = {
-                lazyLoad: 'ondemand',
-                dots: false,
-                infinite: false,
-                arrows: false,
-                speed: 500,
-                fade: false,
-                cssEase: 'linear'
+                // lazyLoad: 'ondemand',
+                // dots: false,
+                // infinite: false,
+                // arrows: false,
+                // speed: 500,
+                // fade: false,
+                // cssEase: 'linear'
             }
-            slider( 'experience-page', '.'+key, sliderConfig, 'experience' );
+            slider( 'experience-page', '.'+key, 'experience' );
             
         }
     }
