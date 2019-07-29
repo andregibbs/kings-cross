@@ -252,7 +252,7 @@ export default function support() {
                             'bookingStartTime': bookingData.time,
                             'bookingStartTimeString': bookingData.time,
                             'firstName': bookingData.name,
-                            'lastname': bookingData.surname,
+                            'lastName': bookingData.surname,
                             'emailAddress': bookingData.email,
                             'mobileNumber': bookingData.phone, // has a backend check, has to be a legitimate number
                             'notes': bookingData.notes,
