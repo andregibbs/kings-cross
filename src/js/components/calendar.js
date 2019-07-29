@@ -65,7 +65,9 @@ export default function calendar(URL, type, allEvents) {
 		// 		console.error('Calendar function used incorrectly. Expected "appointment" or "event", received', type);
 		// 		break;
 		// }
-	})
+	});
+
+	document.getElementById("calendar").setAttribute("ready", "true");
 
 	var selectedDate = new Date();
 
