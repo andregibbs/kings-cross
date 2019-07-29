@@ -33,34 +33,38 @@ export default function calendar(URL, type, allEvents) {
 	const shortDays = days.map((a) => a.slice(0, 3))
 	const shortMonths = months.map((a) => a.slice(0, 3))
 
+	console.log("???");
+
 	document.getElementById("calendar").addEventListener("changeURL", function (e) {
 		URL = e.detail.url;
 
-		try {
-			type = type.toLowerCase();
-		}
-		catch (err) {
-			console.error("2nd parameter of calendar() should be a string.");
-		}
+		console.log("got activated");
 
-		switch (type) {
-			case "appointment":
-				getAppointmentDates(selectedDate);
-				appointmentStartTime = "";
-				break;
-			case "event":
-				getEventDates();
-				break;
-			case "debug":
-				console.warn("Debug");
-				getEventDates();
-				appointmentStartTime = "";
-				getAppointmentDates(selectedDate);
-			default:
-				console.info("!!!");
-				console.error('Calendar function used incorrectly. Expected "appointment" or "event", received', type);
-				break;
-		}
+		// try {
+		// 	type = type.toLowerCase();
+		// }
+		// catch (err) {
+		// 	console.error("2nd parameter of calendar() should be a string.");
+		// }
+
+		// switch (type) {
+		// 	case "appointment":
+		getAppointmentDates(selectedDate);
+		appointmentStartTime = "";
+		// 		break;
+		// 	case "event":
+		// 		getEventDates();
+		// 		break;
+		// 	case "debug":
+		// 		console.warn("Debug");
+		// 		getEventDates();
+		// 		appointmentStartTime = "";
+		// 		getAppointmentDates(selectedDate);
+		// 	default:
+		// 		console.info("!!!");
+		// 		console.error('Calendar function used incorrectly. Expected "appointment" or "event", received', type);
+		// 		break;
+		// }
 	})
 
 	var selectedDate = new Date();
@@ -81,25 +85,28 @@ export default function calendar(URL, type, allEvents) {
 
 		$.get(appointmentURL + dateString)
 			.success(function (data) {
+				console.log("Got data");
 				populateWithAppointments(data);
 				loadingScreen.style.display = "";
 				handleScrollArrows();
-				$(".calendar__choices").each(function(){
+				$(".calendar__choices").each(function () {
 					this.scrollTop = 0;
 				});
 			})
 			.fail(function (err) {
 				loadingScreen.style.display = "";
-				//console.log(err);
+				console.error(err);
 				//ADD A HEADS UP TO THE USER
 			})
 	}
 
 	function populateWithAppointments(data) {
+		console.log("populating with data");
 		//clear old data
 		while ($(".calendar__container")[0].lastChild) {
 			$(".calendar__container")[0].removeChild($(".calendar__container")[0].lastChild);
 		}
+		console.log("Children cleared");
 
 
 

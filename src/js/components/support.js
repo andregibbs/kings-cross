@@ -5,6 +5,8 @@ export default function support() {
 
     // customevent();
 
+    var bookingURL = "";
+
     var unlock = new CustomEvent("unlock");
     var lock = new CustomEvent("lock");
 
@@ -80,7 +82,7 @@ export default function support() {
                 this.category = cat;
                 this.stage = 1;
 
-                //console.log("???");
+                console.log("???");
                 $("html, body").animate({ scrollTop: $('.journey').offset().top - 300 }, 600);
 
                 document.getElementById("btn-" + this.category).classList.add("btn--primary-notActive");
@@ -95,12 +97,40 @@ export default function support() {
 
                 document.getElementsByClassName("close")[0].style.display = "block";
 
+                switch (cat) {
+                    case "oneToOne":
+                        bookingURL = "https://bookings.qudini.com/booking-widget/booker/slots/IZ0LYUJL6B0/4375/62711/0";
+                        state.productId = "62711";
+                        break;
+
+                    case "support":
+                        bookingURL = "https://bookings.qudini.com/booking-widget/booker/slots/IZ0LYUJL6B0/4375/37437/0";
+                        state.productId = "37437";
+                        break;
+
+                    case "repair":
+                        bookingURL = "https://bookings.qudini.com/booking-widget/booker/slots/IZ0LYUJL6B0/4375/62764/0";
+                        state.productId = "62764";
+                        break;
+                    default:
+                        console.error("Incorrect category");
+                        return;
+                }
+
+                console.log("Booking URL", bookingURL);
+
+                var changeURL = new CustomEvent("changeURL", {
+                    detail: {
+                        url: bookingURL
+                    }
+                });
+
                 var nextScreen = this.journeys[cat][1]
                 if (nextScreen == screens.deviceInfo) {
                     $(nextScreen).slideDown({
                         start: function () {
                             $(this).css({
-                                display: "flex"
+                                display: "block"
                             });
                             //console.log("Start");
                         },
@@ -114,29 +144,6 @@ export default function support() {
                     });
                 }
 
-                switch (cat) {
-                    case "oneToOne":
-                        var bookingURL = "https://bookings.qudini.com/booking-widget/booker/slots/IZ0LYUJL6B0/4375/62711/0";
-                        state.productId = "62711";
-                        break;
-
-                    case "support":
-                        var bookingURL = "https://bookings.qudini.com/booking-widget/booker/slots/IZ0LYUJL6B0/4375/37437/0";
-                        state.productId = "37437";
-                        break;
-
-                    case "repair":
-                        var bookingURL = "https://bookings.qudini.com/booking-widget/booker/slots/IZ0LYUJL6B0/4375/62764/0";
-                        state.productId = "62764";
-                        break;
-                }
-
-                var changeURL = new CustomEvent("changeURL", {
-                    detail: {
-                        url: bookingURL,
-                    }
-                });
-
                 screens.calendar.dispatchEvent(changeURL);
 
 
@@ -145,9 +152,9 @@ export default function support() {
                 this.cancelJourney();
                 setTimeout(function () {
                     state.startJourney(cat);
-                }, 525)
+                }, 525);
 
-            };
+            }
         },
 
         cancelJourney: function () {
@@ -174,12 +181,15 @@ export default function support() {
 
                     clearState();
 
-                    document.getElementById("details").reset()
-                    document.getElementById("device-info").reset()
+                    document.getElementById("details").reset();
+                    document.getElementById("device-info").reset();
                     document.getElementsByClassName("close")[0].style.display = "";
 
                     window.history.replaceState({}, document.title, location.protocol + "//" + location.host + location.pathname);
-                })
+                    // while ($(".calendar__container")[0].lastChild) {
+                    //     $(".calendar__container")[0].removeChild($(".calendar__container")[0].lastChild);
+                    // }
+                });
 
             });
 
@@ -419,7 +429,7 @@ export default function support() {
             return false;
         }
 
-    };
+    }
 
     state.nextBtn.addEventListener("unlock", function () {
         // if ($(this).data("slot")) {
@@ -438,15 +448,26 @@ export default function support() {
         $(this).data("locked", false)
         //console.log("next unlocked")
         // }
-    })
+    });
 
     state.nextBtn.addEventListener("lock", function () {
         //console.log("Next 'Locked'");
         this.classList.add("btn--primary-notActive");
         $(this).data("locked", true)
-    })
+    });
 
     state.nextBtn.addEventListener("click", function () {
+
+        if (state.journeys[state.category][state.stage + 1] == screens.calendar) {
+            console.log("TRUE");
+            var changeURL = new CustomEvent("changeURL", {
+                detail: {
+                    url: bookingURL
+                }
+            });
+
+            screens.calendar.dispatchEvent(changeURL);
+        }
 
         if (state.journeys[state.category][state.stage] == screens.details) {
             var formValid = true;
@@ -533,7 +554,7 @@ export default function support() {
             colorBox.removeChild(colorBox.lastChild);
         }
 
-        if(this.selectedIndex != 0){
+        if (this.selectedIndex != 0) {
             var deviceColors = $(this).find(":selected").data("colors").split(", ");
             for (var clr = 0; clr < deviceColors.length; clr++) {
                 var color = document.createElement("option");
@@ -561,7 +582,7 @@ export default function support() {
         }
 
         validateUnlock();
-        
+
     });
 
     $("#color-selector").change(function () {
@@ -573,14 +594,14 @@ export default function support() {
         validateUnlock();
     });
 
-    $("#imei").change(function(){
+    $("#imei").change(function () {
         state.imei = this.value;
         state.imeiValid = checkIMEI(this.value);
-        if(state.imei && !state.imeiValid){
+        if (state.imei && !state.imeiValid) {
             this.classList.add("warn");
         } else {
-            if(this.classList.contains("warn")){
-                this.classList.remove("warn");  
+            if (this.classList.contains("warn")) {
+                this.classList.remove("warn");
             }
         }
         validateUnlock();
@@ -592,13 +613,13 @@ export default function support() {
 
     switch (getParam("journey")) {
         case "one-to-one":
-            setTimeout(function () { state.startJourney("oneToOne") }, 200)
+            setTimeout(function () { state.startJourney("oneToOne"); }, 300);
             break;
         case "support":
-            setTimeout(function () { state.startJourney("support") }, 200)
+            setTimeout(function () { state.startJourney("support"); }, 300);
             break;
         case "repair":
-            setTimeout(function () { state.startJourney("repair") }, 200)
+            setTimeout(function () { state.startJourney("repair"); }, 300);
             break;
         default:
             break;
