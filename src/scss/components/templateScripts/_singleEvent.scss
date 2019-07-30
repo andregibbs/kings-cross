@@ -13,6 +13,9 @@
 
   .section__inner {
     padding-bottom: 0px !important;
+    .event__section_detail {
+      width: 100%;
+    }
   }
 }
 .single-event {
@@ -22,6 +25,7 @@
 
   .event {
     &__section {
+      flex-shrink: 0;
       @media screen and (max-width: $mobile) {
         width: 100%;
       }
@@ -66,7 +70,7 @@
           justify-content: center;
           align-items: flex-start;
           .action-capacity {
-            display: none;  
+            display: none;
             @media screen and (max-width: $mobile) {
               display: block;
               font-size: em(20);
