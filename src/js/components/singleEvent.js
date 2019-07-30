@@ -20,15 +20,15 @@ export default function singleEvent(events) {
 
   $.get(
     "https://bookings.qudini.com/booking-widget/event/series/" +
-      kxConfig.seriesId
-  ).success(function(seriesData) {
+    kxConfig.seriesId
+  ).success(function (seriesData) {
     // get the Integer value for the current series as this is returned by the event API - we need to check below that the event is valid for the series
     kxConfig.seriesIdAsInt = seriesData.id;
 
     $.get("https://bookings.qudini.com/booking-widget/event/eventId/" + id, {
       timezone: "Europe/London",
       isoCurrentDate: isoCurrentDate.toISOString()
-    }).success(function(data) {
+    }).success(function (data) {
       eventDetails = data;
 
       topicId = data.topic.id;
@@ -73,15 +73,15 @@ export default function singleEvent(events) {
           title: data.title,
           startDate:
             moment(data.startDate).format("Do MMMM") ==
-            moment(Date.now()).format("Do MMMM")
+              moment(Date.now()).format("Do MMMM")
               ? "TODAY"
               : moment(data.startDate).format("Do MMMM"),
-          startTime: data.startTime,
+          startTime: (data.startTime[0] == '0' ? data.startTime.substr(1) : data.startTime),
           passion: data.passions,
-          description:  data.description.split(". ", 2).length > 1 ? data.description.replace(
+          description: data.description.split(". ", 2).length > 1 ? data.description.replace(
             data.description.split(". ", 2)[0] + ". ",
             ""
-          ): '',
+          ) : '',
           firstSentence: data.description.split(". ", 1)[0] + ".",
           maxReservations: data.maxReservations,
           slotsAvailable: data.slotsAvailable,
@@ -96,24 +96,40 @@ export default function singleEvent(events) {
         var bookOptions = {
           startDate:
             moment(data.startDate).format("dddd Do MMMM YYYY") ==
-            moment(Date.now()).format("dddd Do MMMM YYYY")
+              moment(Date.now()).format("dddd Do MMMM YYYY")
               ? "TODAY"
               : moment(data.startDate).format("dddd Do MMMM YYYY"),
           startTime: moment(startTime).format("LT"),
           endTime: moment(startTime)
             .add(data.durationMinutes, "m")
-            .format("LT")
+            .format("LT"),
+          maxGroupSize: data.maxGroupSize,
+          slotsAvailable: data.slotsAvailable
         };
         $(".section.book")
           .find(".book-action__description")
           .text(
             bookOptions.startTime +
-              " - " +
-              bookOptions.endTime +
-              " | " +
-              bookOptions.startDate +
-              " | Samsung KX"
+            " - " +
+            bookOptions.endTime +
+            " | " +
+            bookOptions.startDate +
+            " | Samsung KX"
           );
+        $(".book__tickets-tickets").attr({
+          "max": bookOptions.maxGroupSize,
+          "min": 1
+        });
+        $(".book__tickets-tickets").change(function (e) {
+          if(this.value > bookOptions.maxGroupSize || this.value > bookOptions.slotsAvailable){
+            this.classList.add("flash");
+            setTimeout(function(){
+              $(".book__tickets-tickets").removeClass("flash");
+            }, 500);
+            console.log(bookOptions.maxGroupSize, bookOptions.slotsAvailable);
+            this.value = Math.min.apply(null, [bookOptions.maxGroupSize, bookOptions.slotsAvailable]);
+          }
+        });
         //console.log(options);
         $(".singleEvent").append(handleTemplate("singleEvent", options));
 
@@ -123,9 +139,11 @@ export default function singleEvent(events) {
             "btn--primary-notActive"
           );
 
-          data.slotsAvailable
-            ? $(".event__content-book .btn--primary").text("Fully booked")
-            : $(".event__content-book .btn--primary").text("Expired");
+          if (data.hasPassed) {
+            $(".event__content-book .btn--primary").text("Expired")
+          } else {
+            $(".event__content-book .btn--primary").text("Fully booked")
+          }
         }
         // =================================================
         // Related Events
@@ -161,16 +179,17 @@ export default function singleEvent(events) {
         createDropDown("#date__options");
         //watch for changes of select and build time slots based off of it
         updateTimes(dates, dates[0]);
-        $(".styledSelect").on("DOMNodeInserted", function(e) {
+        $(".styledSelect").on("DOMNodeInserted", function (e) {
           $(".change__form-submit").attr("disabled", true);
           $(".change__form-submit").addClass("btn--primary-notActive");
-          
-          setTimeout(function(){
-         
-        
-          updateTimes(dates, e.target.attributes.rel.value);
-        }, 200);
+
+          setTimeout(function () {
+
+
+            updateTimes(dates, e.target.attributes.rel.value);
+          }, 200);
         });
+
         function updateTimes(dates, currentDate) {
           //console.log('current date', currentDate);
           var times = null;
@@ -188,7 +207,7 @@ export default function singleEvent(events) {
             var html =
               '<div class="change__time time ' +
               slots +
-              '"data-id="'+ event.id +'">' +
+              '"data-id="' + event.id + '">' +
               '<h4 class="time__int">' +
               event.startTime +
               '</h4><span class="time__available">' +
@@ -211,9 +230,9 @@ export default function singleEvent(events) {
     });
   });
 
-  $(".singleEvent").on("click", ".action-btn", function(e) {
+  $(".singleEvent").on("click", ".action-btn", function (e) {
     e.preventDefault();
-   
+
     $(".action .action-btn").attr("disabled", true);
     $(".action .action-btn").toggleClass("btn--primary-notActive");
     $(".book").addClass("book--active");
@@ -223,18 +242,18 @@ export default function singleEvent(events) {
     } else {
       $(".book-action").addClass("book-action--active");
     }
-    
+
     $(".book").slideDown();
     $("body,html").animate(
       {
         scrollTop: $(".book").offset().top - 40
       },
       800 //speed
-      );
+    );
 
-    });
+  });
 
-  $(".close, .change__close").on("click", function(e) {
+  $(".close, .change__close").on("click", function (e) {
     e.preventDefault();
     $(".book").slideUp();
     $(".book").removeClass("book--active");
@@ -242,7 +261,7 @@ export default function singleEvent(events) {
     $(".book-action").removeClass("book-action--active");
     $(".book-confirmation").removeClass("book-confirmation--active");
     $("#book__form").trigger("reset");
-    $(".book__tickets__tc").each(function() {
+    $(".book__tickets__tc").each(function () {
       $(this)
         .find("input")
         .removeClass("selected");
@@ -256,7 +275,7 @@ export default function singleEvent(events) {
     $(".action .action-btn").toggleClass("btn--primary-notActive");
   });
 
-  $(".singleEvent").on("click", ".share__container", function(e) {
+  $(".singleEvent").on("click", ".share__container", function (e) {
     e.preventDefault();
     $(".share__social").toggleClass("share__social--active");
     $(this).toggleClass("share__container--active");
@@ -280,54 +299,65 @@ export default function singleEvent(events) {
   // Booking functionality
   // =================================================
 
-  $(".book").on("click", ".change__time", function() {
+  $(".book").on("click", ".change__time", function () {
     //only one can be selected
     $(".change__form-submit").attr("disabled", false);
     $(".change__form-submit").removeClass("btn--primary-notActive");
-    $(".change__time").each(function() {
+    $(".change__time").each(function () {
       $(this).removeClass("selected");
     });
     $(this).addClass("selected");
   });
 
-  $(".book").on("click", ".change__form-submit", function() {
+  $(".book").on("click", ".change__form-submit", function () {
     //get the event we need to populate
     eventId = $('.change__time.selected').data('id');
 
     events.forEach(data => {
-      if(data.id === eventId) {
+      if (data.id === eventId) {
 
         var startTime = moment(data.startISO).utc();
         var bookOptions = {
-          startDate:
-            moment(data.startDate).format("dddd Do MMMM YYYY") ==
-            moment(Date.now()).format("dddd Do MMMM YYYY")
-              ? "TODAY"
-              : moment(data.startDate).format("dddd Do MMMM YYYY"),
+          startDate: (moment(data.startDate).format("dddd Do MMMM YYYY") == moment(Date.now()).format("dddd Do MMMM YYYY")) ? "TODAY" : moment(data.startDate).format("dddd Do MMMM YYYY"),
           startTime: moment(startTime).format("LT"),
           endTime: moment(startTime)
             .add(data.durationMinutes, "m")
-            .format("LT")
+            .format("LT"),
+          maxGroupSize: data.maxGroupSize,
+          slotsAvailable: data.slotsAvailable
         };
         $(".section.book")
           .find(".book-action__description")
           .text(
             bookOptions.startTime +
-              " - " +
-              bookOptions.endTime +
-              " | " +
-              bookOptions.startDate +
-              " | Samsung KX"
+            " - " +
+            bookOptions.endTime +
+            " | " +
+            bookOptions.startDate +
+            " | Samsung KX"
           );
+        $(".book__tickets-tickets").attr({
+          "max": bookOptions.maxGroupSize,
+          "min": 1
+        });
+        $(".book__tickets-tickets").change(function (e) {
+          if(this.value > bookOptions.maxGroupSize || this.value > bookOptions.slotsAvailable){
+            this.classList.add("flash");
+            setTimeout(function(){
+              $(".book__tickets-tickets").removeClass("flash");
+            }, 500);
+            console.log(bookOptions.maxGroupSize, bookOptions.slotsAvailable);
+            this.value = Math.min.apply(null, [bookOptions.maxGroupSize, bookOptions.slotsAvailable]);
+          }
+        });
+        $(".change").removeClass("change--active");
+        $(".book-action").addClass("book-action--active");
 
-          $(".change").removeClass("change--active");
-          $(".book-action").addClass("book-action--active");
-        
       }
     });
   });
 
-  $(".book__tickets-minus").click(function(e) {
+  $(".book__tickets-minus").click(function (e) {
     ticketQuantity = parseInt($(".book__tickets-tickets").val());
     if (ticketQuantity - 1 !== 0) {
       ticketQuantity -= 1;
@@ -335,28 +365,28 @@ export default function singleEvent(events) {
     }
   });
 
-  $(".book__tickets-plus").click(function(e) {
+  $(".book__tickets-plus").click(function (e) {
     ticketQuantity = parseInt($(".book__tickets-tickets").val());
-    if(eventDetails.maxGroupSize !== ticketQuantity ) {
+    if (eventDetails.maxGroupSize !== ticketQuantity) {
 
       ticketQuantity += 1;
 
-    //console.log(eventDetails.maxGroupSize, ticketQuantity);
+      //console.log(eventDetails.maxGroupSize, ticketQuantity);
 
-    $(".book__tickets-tickets").val(ticketQuantity);
+      $(".book__tickets-tickets").val(ticketQuantity);
 
     }
-    
+
   });
 
-  $(".book__tickets__tc").each(function() {
+  $(".book__tickets__tc").each(function () {
     var $this = $(this);
 
-    $this.find("input").bind("change", function() {
+    $this.find("input").bind("change", function () {
       $(this).toggleClass("selected");
     });
 
-    $(this).click(function() {
+    $(this).click(function () {
       if (
         $(this)
           .find("input")
@@ -374,16 +404,16 @@ export default function singleEvent(events) {
   });
 
   function checkFormValidity(formID) {
-    $(formID + " input").each(function() {
+    $(formID + " input").each(function () {
       $(this).off("invalid");
       $('.book__form__footer__error').css('opacity', 0);
       $(this).removeClass("invalid");
-        if ($(this).attr("type") === "checkbox") {
-          $(this)
-            .parent()
-            .removeClass("invalid");
-        }
-      $(this).bind("invalid", function(e) {
+      if ($(this).attr("type") === "checkbox") {
+        $(this)
+          .parent()
+          .removeClass("invalid");
+      }
+      $(this).bind("invalid", function (e) {
         $(this).addClass("invalid");
         $('.book__form__footer__error').css('opacity', 1);
         if ($(this).attr("type") === "checkbox") {
@@ -397,7 +427,7 @@ export default function singleEvent(events) {
     return $(formID)[0].checkValidity();
   }
 
-  $(".book__form-submit").click(function(e) {
+  $(".book__form-submit").click(function (e) {
     e.preventDefault();
 
     if (checkFormValidity("#book__form")) {
@@ -428,7 +458,7 @@ export default function singleEvent(events) {
           eventId: eventId,
           timezone: "Europe/London"
         }),
-        success: function(data) {
+        success: function (data) {
           $(".cm-configurator-loader").hide();
           $(".book-action").removeClass("book-action--active");
           $(".book--active").css({
@@ -446,7 +476,7 @@ export default function singleEvent(events) {
 
           $(".book-confirmation").addClass("book-confirmation--active");
         },
-        fail: function(err) {
+        fail: function (err) {
           $(".book__form-submit").attr("disabled", false);
           $(".cm-configurator-loader").hide();
           //console.log(err);

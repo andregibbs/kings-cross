@@ -115,14 +115,16 @@ export default function bookingRefFetcher(AllEvents) {
                 //console.log(err);
                 loading.done(1);
                 ui.bookingField.classList.add("warn");
+                document.getElementsByClassName("bookings__inner__invalid")[0].style.opacity = "1";
             });
-
-
-    });
-
-    ui.bookingField.addEventListener("change", function () {
-        if (this.classList.contains("warn")) {
-            this.classList.remove("warn");
+            
+            
+        });
+        
+        ui.bookingField.addEventListener("change", function () {
+            if (this.classList.contains("warn")) {
+                this.classList.remove("warn");
+                document.getElementsByClassName("bookings__inner__invalid")[0].style.opacity = "0";
         }
     });
 

@@ -24,6 +24,12 @@
         margin: get-mobile-vw(15) 0px;
       }
     }
+    &__invalid{
+      display: block;
+      opacity: 0;
+      margin-left: 8px;
+      color: red;
+    }
   }
 
   a {

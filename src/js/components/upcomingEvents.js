@@ -53,7 +53,8 @@ export default function upcomingEvents( events, topicId ) {
         moment(Date.now()).format("Do MMMM")
           ? "TODAY"
           : moment(sorted_dates[i].startDate).format("Do MMMM"),
-      startTime: sorted_dates[i].startTime,
+      // startTime: sorted_dates[i].startTime,
+      startTime: (sorted_dates[i].startTime[0] == '0' ?  sorted_dates[i].startTime.substr(1) : sorted_dates[i].startTime),
       passion: sorted_dates[i].passions,
       suitables: sorted_dates[i].extra.eventtype,
       suitablesName: sorted_dates[i].extra.eventtypeName,

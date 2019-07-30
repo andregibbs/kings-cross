@@ -210,7 +210,8 @@
       padding-left: 35px;
       margin-bottom: 12px;
 
-      &.warn, &.invalid {
+      &.warn,
+      &.invalid {
         color: $warning;
       }
 
@@ -266,9 +267,22 @@
     }
   }
 
+  @keyframes flash {
+    50% {
+      background-color: pink;
+    }
+    100% {
+      background-color: white;
+    }
+  }
+
+  .flash {
+    animation: flash 0.5s ease-in-out;
+  }
+
   @keyframes flash__close {
     50% {
-      background-color: red;
+      background-color: pink;
     }
     100% {
       background-color: white;
@@ -320,12 +334,12 @@
       transform: rotate(-45deg);
     }
 
-    &.flash{
-      &::before, &::after{
+    &.flash {
+      &::before,
+      &::after {
         animation: flash__close 1s;
       }
     }
-
   }
 
   .pop-up {
@@ -410,7 +424,6 @@
 
       @media screen and (max-width: $mobile) {
         top: get-mobile-vw(24);
-       
       }
     }
   }

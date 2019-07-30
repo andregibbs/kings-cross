@@ -62,7 +62,7 @@ export default function experience(  ) {
 
 
 function getFile(file) {
-
+    console.log(file);
     var filename = file.name;
     var fileexperience = file.experience;
 
