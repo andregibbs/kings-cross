@@ -12,17 +12,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
- 
+
     -webkit-transition: 0.4s opacity ease-in;
     transition: 0.4s opacity ease-in;
     @media screen and (max-width: $mobile) {
       padding: 20px;
     }
+
+    &__animation {
+      width: 966px;
+    }
     &.done {
       opacity: 0;
       -webkit-transition: 0.4s opacity ease-in;
     transition: 0.4s opacity ease-in;
-    
+
     }
   }
   .loading {
