@@ -7,13 +7,17 @@
 	* {
 		color: $white;
 	}
-		width: get-desktop-vw(300);
+		width: get-desktop-vw(320);
 		max-width: 320px;
 		height: get-desktop-vw(550);
 		max-height: 550px;
 		margin-left: get-desktop-vw(15);
 		margin-bottom: get-desktop-vw(15);
 		font-weight: 500;
+
+		@media screen and (max-width: 1440px) {
+			width: get-desktop-vw(300);
+		}
 
 		@media screen and (max-width: $mobile) {
 			width: get-mobile-vw(165);
