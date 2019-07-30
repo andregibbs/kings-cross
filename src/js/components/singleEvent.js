@@ -126,7 +126,7 @@ export default function singleEvent(events) {
             setTimeout(function(){
               $(".book__tickets-tickets").removeClass("flash");
             }, 500);
-            console.log(bookOptions.maxGroupSize, bookOptions.slotsAvailable);
+            //console.log(bookOptions.maxGroupSize, bookOptions.slotsAvailable);
             this.value = Math.min.apply(null, [bookOptions.maxGroupSize, bookOptions.slotsAvailable]);
           }
         });

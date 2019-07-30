@@ -102,7 +102,7 @@ $(document).ready(function () {
 		}
 		return name;
 	}
-	
+
 	// kxConfig holds suitable details from json file - events only hold the suitable code but we need to show the name, so convert here
 	function getSuitableName(code) {
 		var name = '';
@@ -177,11 +177,11 @@ $(document).ready(function () {
 			// store the 'converted' data as events in main and filter out events with no extra info
 			events = data.filter(event => event.extra);
 
-			
+
 
 			console.warn('KX logs: We are not showing these events due to and error in the description', data.filter(event => !(event.extra)))
 
-			console.log(events)
+			//console.log(events)
 
 			//get all the topic ids
 
@@ -194,7 +194,7 @@ $(document).ready(function () {
 
 			});
 
-		
+
 
 			for (var j = 0; j < events.length; j++) {
 				var event = events[j];

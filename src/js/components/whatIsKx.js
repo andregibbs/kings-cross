@@ -33,12 +33,12 @@ export default function whatIsKx(events) {
 	})
 
 	function parllaxText() {
-		
+
 		let paratext = $("#parallax__container").find(".parallax__text");
 		let paraHight = ($("#parallax__container").outerHeight() + $("#parallax__container").offset().top);
 		let opacity = (1 - window.scrollY / paraHight * 2);
 		// paratext.css('opacity', opacity);
-		console.log(paratext);
+		//console.log(paratext);
 		paratext[0].style.opacity = opacity;
 
 	}
@@ -49,14 +49,14 @@ export default function whatIsKx(events) {
 
 		// 	// handle click if not Firefox (Firefox supports this feature natively)
 		// 	if (typeof InstallTrigger === 'undefined') {
-		
-		// 		// get click position 
+
+		// 		// get click position
 		// 		var clickY = (e.pageY - $(this).offset().top);
 		// 		var height = parseFloat( $(this).height() );
-		
+
 		// 		// avoids interference with controls
 		// 		if (clickY > 0.82*height) return;
-		
+
 		// 		// toggles play / pause
 		// 		this.paused ? this.play() : this.pause();
 		// 	}

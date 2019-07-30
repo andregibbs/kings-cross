@@ -22,7 +22,7 @@ export default function whatson(events) {
 	// =================================================
 	// DataPicker and filters
 	// =================================================
-	
+
 	if (passion) {
 		var passionSwitch = $('[data-code="' + passion + '"]');
 		if (!passionSwitch.hasClass("active")) {
@@ -170,7 +170,7 @@ export default function whatson(events) {
 
 		$('.whatsOn__kv').css('background','url(/content/dam/samsung/uk/explore/kings-cross/passion-header/passion-header-'+passion+'.jpg)');
 		var passionName = getPassionName(passion);
-		console.log(passionName);
+		//console.log(passionName);
 		$('.whatsOn__kv h2').text(passionName);
 
 		const eventsFiltered = events.filter(function (event) {

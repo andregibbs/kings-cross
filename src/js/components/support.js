@@ -82,7 +82,7 @@ export default function support() {
                 this.category = cat;
                 this.stage = 1;
 
-                console.log("???");
+                //console.log("???");
                 $("html, body").animate({ scrollTop: $('.journey').offset().top - 300 }, 600);
 
                 document.getElementById("btn-" + this.category).classList.add("btn--primary-notActive");
@@ -95,7 +95,7 @@ export default function support() {
                     elm.classList.add("checkbox__" + colors[cat]);
                 })
 
-                console.log("init successful");
+                //console.log("init successful");
 
                 document.getElementsByClassName("close")[0].style.display = "block";
 
@@ -119,7 +119,7 @@ export default function support() {
                         return;
                 }
 
-                console.log("Booking URL", bookingURL);
+                //console.log("Booking URL", bookingURL);
 
                 var changeURL = new CustomEvent("changeURL", {
                     detail: {
@@ -150,9 +150,12 @@ export default function support() {
                     setTimeout(function () {
                         if (screens.calendar.getAttribute("ready") == 'true') {
                             screens.calendar.dispatchEvent(changeURL);
-                            console.log("Event dispatched.");
+                            //console.log("Event dispatched.");
                         } else {
-                            setTimeout(function () {sendEvent(); console.log("not ready")}, 200);
+                            setTimeout(function () {
+                              sendEvent();
+                              //console.log("not ready")
+                            }, 200);
                         }
                     }, 200);
                 };

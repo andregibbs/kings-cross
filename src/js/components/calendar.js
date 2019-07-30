@@ -33,12 +33,12 @@ export default function calendar(URL, type, allEvents) {
 	const shortDays = days.map((a) => a.slice(0, 3))
 	const shortMonths = months.map((a) => a.slice(0, 3))
 
-	console.log("???");
+	//console.log("???");
 
 	document.getElementById("calendar").addEventListener("changeURL", function (e) {
 		URL = e.detail.url;
 
-		console.log("got activated");
+		//console.log("got activated");
 
 		// try {
 		// 	type = type.toLowerCase();
@@ -87,7 +87,7 @@ export default function calendar(URL, type, allEvents) {
 
 		$.get(appointmentURL + dateString)
 			.success(function (data) {
-				console.log("Got data");
+				//console.log("Got data");
 				populateWithAppointments(data);
 				loadingScreen.style.display = "";
 				handleScrollArrows();
@@ -97,18 +97,18 @@ export default function calendar(URL, type, allEvents) {
 			})
 			.fail(function (err) {
 				loadingScreen.style.display = "";
-				console.error(err);
+				//console.error(err);
 				//ADD A HEADS UP TO THE USER
 			})
 	}
 
 	function populateWithAppointments(data) {
-		console.log("populating with data");
+		//console.log("populating with data");
 		//clear old data
 		while ($(".calendar__container")[0].lastChild) {
 			$(".calendar__container")[0].removeChild($(".calendar__container")[0].lastChild);
 		}
-		console.log("Children cleared");
+		//console.log("Children cleared");
 
 
 
@@ -121,7 +121,7 @@ export default function calendar(URL, type, allEvents) {
 				// var dateFormatted = days[date.getDay()] + " " + date.getDate() + " " + months[date.getMonth()] + " " + date.getFullYear();
 				var dateFormatted = moment(date).format('dddd Do MMMM YYYY');
 
-				console.log(dateFormatted);
+				//console.log(dateFormatted);
 
 				//Append the date column
 				$(".calendar__container").append(handleTemplate("dateColumn", { "dateFormatted": dateFormatted, "index": dateInd, "date": date.format("yyyy-MM-dd") }));
@@ -136,7 +136,7 @@ export default function calendar(URL, type, allEvents) {
 					//Append the slot with template
 					$(".calendar__choices").last().append(handleTemplate("slot", { "time": time, "available": true }));
 
-					//Attach the slot time to slot's data tag		
+					//Attach the slot time to slot's data tag
 					var slot = $(".calendar__choice").last()
 					slot.data("startTime", data[dateInd].slots[appointmentInd].start);
 					slot.data("queueId", data[dateInd].slots[appointmentInd].queueId);
