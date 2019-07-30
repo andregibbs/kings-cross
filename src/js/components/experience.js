@@ -14,14 +14,16 @@ export default function experience(  ) {
         threeDme: []
     }
 
-	// LOCAL
-	// var server = 'http://kx-content-sharing-server.samsung.com/';
-	// ONLINE
-	// var server = 'https://kxuploads-test.herokuapp.com/';
-	// SEBN staging
-	// var server = 'https://sebnapi.sebnstaging.nl/uk/kx/';
-	// SEBN live
-	var server = 'https://sebnapi.nl/uk/kx/';
+    // LOCAL
+    // var server = 'https://kx-content-sharing-server.samsung.com/';
+    // ONLINE
+    // var server = 'https://kxuploads-test.herokuapp.com/';
+    // SEBN staging
+    // var server = 'https://sebnapi.sebnstaging.nl/uk/kx/';
+    // var server = 'https://stg.samsung-kx.com/uk/kx/';
+    // SEBN live
+    // var server = 'https://sebnapi.nl/uk/kx/';
+    var server = 'https://samsung-kx.com/uk/kx/';
 
 	// needs to be https ...
 	var s3domain = 'https://kxuploads.s3.eu-west-2.amazonaws.com/';
@@ -65,10 +67,12 @@ function getFile(file) {
     //console.log(file);
     var filename = file.name;
     var fileexperience = file.experience;
+    var thumb = filename;
+    if (file.thumb) {
+        thumb = file.thumb;
+    }
 
     var ext = filename.substr(filename.lastIndexOf('.') + 1);
-
-
 
     //console.log(fileexperience);
     var html = '';
@@ -116,6 +120,7 @@ function getFile(file) {
 
     var fileConfig = {
         filename: filename,
+        thumb: thumb,
         fileexperience: fileexperience,
         ext: ext,
         s3domain: s3domain,
