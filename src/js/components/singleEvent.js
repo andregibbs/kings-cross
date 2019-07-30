@@ -340,7 +340,9 @@ export default function singleEvent(events) {
           "max": bookOptions.maxGroupSize,
           "min": 1
         });
+
         $(".book__tickets-tickets").change(function (e) {
+
           if(this.value > bookOptions.maxGroupSize || this.value > bookOptions.slotsAvailable){
             this.classList.add("flash");
             setTimeout(function(){
@@ -350,6 +352,7 @@ export default function singleEvent(events) {
             this.value = Math.min.apply(null, [bookOptions.maxGroupSize, bookOptions.slotsAvailable]);
           }
         });
+
         $(".change").removeClass("change--active");
         $(".book-action").addClass("book-action--active");
 
@@ -377,6 +380,16 @@ export default function singleEvent(events) {
 
     }
 
+  });
+
+  // update ticketQuantity on change
+  $(".book__tickets-tickets").on('change', function (e) {
+    ticketQuantity = this.value
+    if (ticketQuantity > eventDetails.maxGroupSize) {
+      $(".book__tickets-tickets").val(eventDetails.maxGroupSize)
+    } else if (ticketQuantity <= 0) {
+      $(".book__tickets-tickets").val(1)
+    }
   });
 
   $(".book__tickets__tc").each(function () {
