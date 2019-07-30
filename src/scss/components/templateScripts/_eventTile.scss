@@ -7,7 +7,7 @@
 	* {
 		color: $white;
 	}
-		width: get-desktop-vw(320);
+		width: get-desktop-vw(300);
 		max-width: 320px;
 		height: get-desktop-vw(550);
 		max-height: 550px;
@@ -26,7 +26,7 @@
 		flex-basis: 48%;
 		border-top-width: 5px!important;
 		}
-  
+
 		&__content {
 		  padding-top: get-desktop-vw(8);
 		  padding-bottom: get-desktop-vw(15);
@@ -44,7 +44,7 @@
 		  padding-left: get-mobile-vw(9);
 
 		  }
-  
+
 		  .tile {
 			&-date {
 			  font-size: em(20);
@@ -70,8 +70,7 @@
 			}
 		  }
 		}
-	  
+
 }
 
 /*=====  End of EventTile  ======*/
-
