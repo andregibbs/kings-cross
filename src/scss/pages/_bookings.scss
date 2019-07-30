@@ -95,9 +95,12 @@
     font-weight: bold;
   }
 
-  img {
+  &__img {
     max-width: 50%;
     min-height: 400px;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
 
     @media screen and (max-width: $desktop) {
       min-height: get-desktop-vw(400);
@@ -108,6 +111,8 @@
       max-width: unset;
       width: unset;
       max-height: 50vh;
+      height: 400px;
+      width: 100%;
     }
 
     object-fit: cover;

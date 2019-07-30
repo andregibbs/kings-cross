@@ -55,7 +55,7 @@ export default function bookingRefFetcher(AllEvents) {
 
                     eventDisplay.date.innerText = moment(eventData.startDate).format("Do MMMM") + " | " + moment(eventData.startTime, ["h:mm A"]).format("HH:mm") + " - " + moment(eventData.startTime, ["h:mm A"]).add(eventData.durationMinutes, "minutes").format("HH:mm");
                     eventDisplay.title.innerText = eventData.title;
-                    eventDisplay.img.src = eventData.bannerImageURL;
+                    eventDisplay.img.style.backgroundImage = eventData.bannerImageURL ? 'url('+eventData.bannerImageURL+')' : 'url('+eventData.imageURL+')';
 
                     userDisplay.reference.innerText = bookingData.refNumber;
                     userDisplay.quantity.innerText = bookingData.groupSize;
@@ -117,10 +117,10 @@ export default function bookingRefFetcher(AllEvents) {
                 ui.bookingField.classList.add("warn");
                 document.getElementsByClassName("bookings__inner__invalid")[0].style.opacity = "1";
             });
-            
-            
+
+
         });
-        
+
         ui.bookingField.addEventListener("change", function () {
             if (this.classList.contains("warn")) {
                 this.classList.remove("warn");
