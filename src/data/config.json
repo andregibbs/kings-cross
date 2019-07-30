@@ -3,7 +3,7 @@
 	"subfolder": "explore/kings-cross",
 
 	"seriesId":"W3DMW9HUAYM",
-	"LIVE___seriesId":"EAKJZBQWQAH",
+	"LIVE___seriesId":"U3OWDF3I0JF",
 
 	"imgPath":"/content/dam/samsung/uk/explore/kings-cross/",
 	"aemImgPath":"https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/",
@@ -57,7 +57,7 @@
 			"image": "discover-gallery1-desktop.jpg",
 			"alt": "A picture of Coal Drops Yard"
 		},
-		
+
 		{
 			"title": "Coal Drops Yard as a destination. Our neighbours… xxx",
 			"description": "This is an opportunity to sell users on the idea of Coal Drops Yard as a destination. Fusce venenatis libero quis augue placerat, eu scelerisque tortor volutpat. Etiam fringilla elit sodales elit lacinia pharetra. Sed lorem mi, ultrices eget odio vitae, ornare finibus est. Cras laoreet elit vitae vulputate fermentum.",
@@ -174,12 +174,12 @@
 			"code":"productclass",
 			"name":"Product Class"
 		},
-		
+
 		{
 			"code":"talklecture",
 			"name":"Talk / Lecture"
 		}
-		
+
 	]
 
 }
