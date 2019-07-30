@@ -54,17 +54,18 @@
 			  font-size: em(20);
 			  text-transform: uppercase;
 			  @media screen and (max-width: $mobile) {
-
-				font-size: em(12);
+					font-size: em(12);
 			  }
 			}
 			&-title {
 			  font-size: em(32);
 			  margin-top: 5px;
-
 			  @media screen and (max-width: $mobile) {
-				font-size: em(20);
+					font-size: em(14);
 			  }
+				@media screen and (max-width: $mobile-small) {
+					font-size: em(22);
+				}
 			}
 			&-suitable {
 			  padding: 5px;
