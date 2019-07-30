@@ -318,6 +318,10 @@
               height: get-mobile-vw(40);
               font-size: em(20);
             }
+            &.invalid{
+              border: 1px solid red;
+              outline: 1px solid red;
+            }
           }
           &-minus {
             padding: 20px;

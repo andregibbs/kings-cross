@@ -36,7 +36,8 @@ export default function slider( data, element, sliderConfig, templateToRender ){
 				image: item.imageURL,
 				title: item.title,
 				startDate: item.startDate,
-				startTime: item.startTime,
+				// startTime: item.startTime,
+				startTime: (item.startTime[0] == '0' ?  item.startTime.substr(1) : item.startTime),
 				passion: item.passions
 			}
 

@@ -22,7 +22,7 @@ export default function whatson(events) {
 	// =================================================
 	// DataPicker and filters
 	// =================================================
-	
+
 	if (passion) {
 		var passionSwitch = $('[data-code="' + passion + '"]');
 		if (!passionSwitch.hasClass("active")) {
@@ -170,7 +170,7 @@ export default function whatson(events) {
 
 		$('.whatsOn__kv').css('background','url(/content/dam/samsung/uk/explore/kings-cross/passion-header/passion-header-'+passion+'.jpg)');
 		var passionName = getPassionName(passion);
-		console.log(passionName);
+		//console.log(passionName);
 		$('.whatsOn__kv h2').text(passionName);
 
 		const eventsFiltered = events.filter(function (event) {
@@ -262,7 +262,8 @@ export default function whatson(events) {
 				image: event.imageURL ? event.imageURL : 'https://images.unsplash.com/photo-1560983719-c116f744352d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80',
 				title: event.title,
 				startDate: moment(event.startDate).format("Do MMMM") == moment(Date.now()).format("Do MMMM") ? 'TODAY' : moment(event.startDate).format("Do MMMM"),
-				startTime: event.startTime,
+				// startTime: event.startTime,
+				startTime: (event.startTime[0] == '0' ?  event.startTime.substr(1) : event.startTime),
 				passion: event.extra.passions,
 				passionColor: event.extra.passionColor,
 				suitables: event.extra.eventtype,

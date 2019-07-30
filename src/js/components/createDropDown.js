@@ -19,7 +19,7 @@ $(select).each(function () {
     var $styledSelect = $this.next('div.styledSelect');
 
     // Show the first select option in the styled div
- 
+
 
     // Insert an unordered list after the styled div and also cache the list
     var $list = $('<ul />', {
@@ -43,7 +43,7 @@ $(select).each(function () {
     // Show the unordered list when the styled div is clicked (also hides it if the div is clicked again)
     $styledSelect.click(function (e) {
         e.stopPropagation();
-        console.log("XXXXX");
+        //console.log("XXXXX");
         $('div.styledSelect.active').each(function () {
             $(this).removeClass('active').next('ul.options').hide();
         });

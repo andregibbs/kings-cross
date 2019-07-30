@@ -1,5 +1,5 @@
 export default function loadingScreen(element, animation) {
-  console.log("called");
+  //console.log("called");
   // if(!document.referrer){
   //   console.log("OK?");
   //   animationDone();

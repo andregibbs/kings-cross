@@ -82,7 +82,7 @@ export default function support() {
                 this.category = cat;
                 this.stage = 1;
 
-                console.log("???");
+                //console.log("???");
                 $("html, body").animate({ scrollTop: $('.journey').offset().top - 300 }, 600);
 
                 document.getElementById("btn-" + this.category).classList.add("btn--primary-notActive");
@@ -95,9 +95,11 @@ export default function support() {
                     elm.classList.add("checkbox__" + colors[cat]);
                 })
 
+                //console.log("init successful");
+
                 document.getElementsByClassName("close")[0].style.display = "block";
 
-                switch (cat) {
+                switch (this.category) {
                     case "oneToOne":
                         bookingURL = "https://bookings.qudini.com/booking-widget/booker/slots/IZ0LYUJL6B0/4375/62711/0";
                         state.productId = "62711";
@@ -117,7 +119,7 @@ export default function support() {
                         return;
                 }
 
-                console.log("Booking URL", bookingURL);
+                //console.log("Booking URL", bookingURL);
 
                 var changeURL = new CustomEvent("changeURL", {
                     detail: {
@@ -144,7 +146,24 @@ export default function support() {
                     });
                 }
 
-                screens.calendar.dispatchEvent(changeURL);
+                var sendEvent = sendEvent || function () {
+                    setTimeout(function () {
+                        if (screens.calendar.getAttribute("ready") == 'true') {
+                            screens.calendar.dispatchEvent(changeURL);
+                            //console.log("Event dispatched.");
+                        } else {
+                            setTimeout(function () {
+                              sendEvent();
+                              //console.log("not ready")
+                            }, 200);
+                        }
+                    }, 200);
+                };
+
+                sendEvent();
+
+
+
 
 
             } else {
@@ -236,9 +255,9 @@ export default function support() {
                             'bookingStartTime': bookingData.time,
                             'bookingStartTimeString': bookingData.time,
                             'firstName': bookingData.name,
-                            'lastname': bookingData.surname,
-                            'email': bookingData.email,
-                            'phone': bookingData.phone, // has a backend check, has to be a legitimate number
+                            'lastName': bookingData.surname,
+                            'emailAddress': bookingData.email,
+                            'mobileNumber': bookingData.phone, // has a backend check, has to be a legitimate number
                             'notes': bookingData.notes,
                             'productId': state.productId,//Make dynamic
                             'bwIdentifier': "IZ0LYUJL6B0",

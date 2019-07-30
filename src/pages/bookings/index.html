@@ -14,6 +14,7 @@
 			<form onsubmit="return false">
 				<input class="input bookings__inner__input" id="bookingRef" type="text"
 					placeholder="Booking Reference" />
+				<p class="bookings__inner__invalid">Invalid booking reference</p>
 				<button ga-ca=“microsite” ga-ac=“feature” ga-la=“kings-cross:find-your-booking_see-booking”
 					data-omni-type=“microsite” data-omni=“uk:kings-cross:my-bookings:find-booking”
 					class="button btn btn--primary bookings__inner__button" type="submit" id="eventFetcher"
@@ -41,7 +42,7 @@
 					<div class="request__event">
 						<!-- <a class="fz18">Entertainment Event</a><br><br> -->
 						<p class="request__zone fz18" id="zone"></p>
-						<p class="fz18">Samsung KX, Stable St, Kings Cross, London N1C 4DQ</p><br>
+						<p class="fz18">Samsung KX, Coal Drops Yard, King’s Cross, London N1C 4DQ</p><br>
 						<a class="fz18" ga-ca=“microsite” ga-ac=“feature” ga-la=“kings-cross:my booking_get directions”
 							data-omni-type=“microsite” data-omni=“uk:kings-cross:my bookings:get directions”
 							href="https://www.google.com/maps?saddr=My+Location&daddr=Three+Pancras+Square,+3+Pancras+Square,+Kings+Cross,+London">Get
@@ -62,7 +63,7 @@
 						data-omni-type=“microsite” data-omni=“uk:kings-cross:my-bookings:cancel-booking” class="fz18"
 						href="#" id="cancel">CANCEL BOOKING</a>
 				</div>
-				<img alt="Event Image" id="event-img" />
+				<div class="request__img" id="event-img"></div>
 			</div>
 		</div>
 		<div class="loading" id="load-screen" style="display: none">

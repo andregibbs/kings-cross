@@ -53,7 +53,7 @@ export default function experience(  ) {
             error: function () {
                 alert("error");
             }
-        }); 
+        });
 	}
 
 
@@ -62,22 +62,22 @@ export default function experience(  ) {
 
 
 function getFile(file) {
-
+    //console.log(file);
     var filename = file.name;
     var fileexperience = file.experience;
 
     var ext = filename.substr(filename.lastIndexOf('.') + 1);
 
-   
 
-    console.log(fileexperience);
+
+    //console.log(fileexperience);
     var html = '';
     switch(ext.toLowerCase()) {
         case 'jpg':
         case 'png':
         case 'gif':
             // image - jpg, png, gif
-            html += '<div class="image">' + 
+            html += '<div class="image">' +
                 '<img src="' + s3domain + 'uploads/' + filename + '"/>' +
                 '</div>';
             break;
@@ -126,7 +126,7 @@ function getFile(file) {
     } else {
         options.threeDme.push(fileConfig);
     }
-   
+
 
 }
 
@@ -148,7 +148,7 @@ function processFiles(data) {
     }
 
     //pass data to handlebars
-    console.log(options);
+    //console.log(options);
     for(var key in options) {
         if(options[key].length > 0) {
             options[key].forEach(slide => {
@@ -167,8 +167,8 @@ function processFiles(data) {
             
         }
     }
-   
-    
+
+
 }
 
 
@@ -214,14 +214,14 @@ function getFile(file) {
     var filename = file.name;
     var fileexperience = file.experience;
 
-    var ext = filename.substr(filename.lastIndexOf('.') + 1); 
+    var ext = filename.substr(filename.lastIndexOf('.') + 1);
     var html = '<div class="container _' + fileexperience + '">';
     switch(ext.toLowerCase()) {
         case 'jpg':
         case 'png':
         case 'gif':
             // image - jpg, png, gif
-            html += '<div class="image">' + 
+            html += '<div class="image">' +
                 '<img src="' + s3domain + filename + '"/>' +
                 '</div>';
             break;
@@ -272,7 +272,7 @@ function processFiles(data) {
         html = 'no data';
     }
     $('#files').html(html);
-}    
+}
 
 function getParam(param) {
     var pageURL = window.location.search.substring(1);
@@ -315,7 +315,7 @@ $(document).ready(function () {
             error: function () {
                 alert("error");
             }
-        }); 
+        });
 
     }
 });

@@ -1,18 +1,26 @@
 import handleTemplate from "./handleTemplate";
+
+let upcomingEventsPopulated = false
 export default function upcomingEvents( events, topicId ) {
+
+  // dont want to recall & populate events
+  if (upcomingEventsPopulated) {
+    return
+  }
+  upcomingEventsPopulated = true
 
     var populateRandomEvents = [];
     var filteredEvents = [];
 
- 
-  
+
+
 		//if standard event
 	if(topicId !== 212) {
 		  filteredEvents = events.filter(x => x.topic.id !== topicId);
 	} else {
 		  filteredEvents = events;
   }
-  
+
   //console.log('filteredEvents', filteredEvents.length);
  if(window.location.pathname === "/uk/explore/kings-cross/") {
   //homepage
@@ -21,7 +29,7 @@ export default function upcomingEvents( events, topicId ) {
       filteredEvents[i]
     );
   }
-   
+
 
 
  } else {
@@ -33,7 +41,7 @@ export default function upcomingEvents( events, topicId ) {
   }
 
  }
-  
+
 
   var sorted_dates = populateRandomEvents.sort(function(a, b) {
     return  new Date(a.startISO) - new Date(b.startISO);
@@ -53,7 +61,8 @@ export default function upcomingEvents( events, topicId ) {
         moment(Date.now()).format("Do MMMM")
           ? "TODAY"
           : moment(sorted_dates[i].startDate).format("Do MMMM"),
-      startTime: sorted_dates[i].startTime,
+      // startTime: sorted_dates[i].startTime,
+      startTime: (sorted_dates[i].startTime[0] == '0' ?  sorted_dates[i].startTime.substr(1) : sorted_dates[i].startTime),
       passion: sorted_dates[i].passions,
       suitables: sorted_dates[i].extra.eventtype,
       suitablesName: sorted_dates[i].extra.eventtypeName,
