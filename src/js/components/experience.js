@@ -82,7 +82,7 @@ function getFile(file) {
         case 'gif':
             // image - jpg, png, gif
             html += '<div class="image">' +
-                '<img src="' + s3domain + 'uploads/' + filename + '"/>' +
+                '<img src="' + s3domain + 'uploads/' + thumb + '"/>' +
                 '</div>';
             break;
         case 'mp4':
@@ -158,6 +158,7 @@ function processFiles(data) {
         if(options[key].length > 0) {
             options[key].forEach(slide => {
                 $('.'+key).append(handleTemplate("experience", slide))
+                $('.'+key+'_title').show();
             })
             const sliderConfig = {
                 lazyLoad: 'ondemand',
@@ -167,7 +168,8 @@ function processFiles(data) {
                 speed: 500,
                 fade: false,
                 cssEase: 'linear'
-            }
+            };
+
             slider( 'experience-page', '.'+key, sliderConfig, 'experience' );
             
         }

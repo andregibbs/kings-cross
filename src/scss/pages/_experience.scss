@@ -136,6 +136,13 @@
 	}
 }
 
+.expTitle {
+	display: none;
+	font-weight: 700;
+	font-size: em(35);
+	margin-bottom: 40px;
+}
+
 .sliders {
 	background: #0C0C0C;
     position: relative;
@@ -145,6 +152,7 @@
 	align-items: center;
 	flex-direction: column;
 	width: 100%;
+
 
 	.expSlider {
 		max-width: get-desktop-vw(600);
