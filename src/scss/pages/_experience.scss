@@ -149,13 +149,42 @@
 	.expSlider {
 		max-width: get-desktop-vw(600);
 		height: auto;
-		margin-bottom: 20px;
+		margin-bottom: 25vh;
+
+		@media screen and (max-width: $mobile) {
+			max-width: 90vw;
+		}
+
+		.experience__video {
+			display: flex;
+			justify-content: center;
+		}
+
+		video {
+			height: 60vh;
+		}
+
+		.image {
+			display: flex;
+			justify-content: center;
+			img {
+				height: 60vh;
+				width: auto;
+			}
+		}
 
 		.experience__slide__download {
 			display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+	margin-top: 30px;
+		width: 100%;
+			iframe {
+
+				width: 28vh;
+	height: 53px;
+
+			}
 		}
 		
 		&.djgalaxy {
