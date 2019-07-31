@@ -1,11 +1,20 @@
+.section.experienceIntro,
+.section.sliders {
+	padding-top: 5vw;
+	padding-bottom: 2vw;
+	@media screen and (max-width: $desktop) {
+		padding-top: 5vw;
+		padding-bottom: 2vw;
+	}
+}
 
 .experience {
 	&__kv {
-	position: relative;
-	max-height: 58vh;
-	@media screen and (max-width: $mobile) {
-		max-height: 48vh;
-	}
+		position: relative;
+		height: 28vw;
+		@media screen and (max-width: $mobile) {
+			height: 75vw;
+		}
 	}
 	&__text-container {
 		opacity: 0;
@@ -17,66 +26,53 @@
 		width: 64vw;
 		margin: 0 auto;
 		padding-right: 10vw;
-		top: 40%;
+		top: 9vw;
 		animation: fadeIn 2s ease-in-out 1s forwards;
 		transition: transform 1s forwards;
-
-
 		h2 {
-	
 			font-size: em(35);
 			font-weight: 700;
 			margin-bottom: 10px;
-
-
 		}
 		h1 {
 			font-size: em(50);
 			font-weight: 700;
-			
-		
 		}
-
 		@media screen and (max-width: $mobile) {
-
-			top: 45%;
-
+			top: 22vw;
 			opacity: 0;
-    display: inline-block;
-    position: absolute;
-    z-index: 21;
-    left: 0;
-    right: 0;
-    width: 100%;
-	text-align: center;
-	padding-right: 0;
-
-   
-			
+			display: inline-block;
+			position: absolute;
+			z-index: 21;
+			left: 0;
+			right: 0;
+			width: 100%;
+			text-align: center;
+			padding-right: 0;
 		}
-	
-	
 	}
-
 	&__kv-bot {
 		height: 100%;
-		min-height: 830px;
+		// min-height: 830px;
+		min-height: 20vw;
 		background-image: url(//images.samsung.com/is/image/samsung/p5/uk/kings-cross/register/KX-KV-layer-bottom-D.jpg);
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
+		@media screen and (max-width: $mobile) {
+			min-height: 30vh;
+		}
 	}
 	&__kv-top {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 20;
-	transition: transform 0.1s forwards;
-	@media screen and (max-width: $mobile) {
-		height: 100%;
-		width: unset;
-	}
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 20;
+		transition: transform 0.1s forwards;
+		@media screen and (max-width: $mobile) {
+			height: 73vw;
+		}
 	}
 	&__copy {
 		&__container {
@@ -89,50 +85,53 @@
 		text-align: center;
 	}
 }
+
 .container {
-	display:block;
-    overflow:hidden;
-    max-width: 200px;
-    max-height: 200px;
-    padding: 5px;
-	background-color:#e0e0e0;
+	display: block;
+	overflow: hidden;
+	max-width: 200px;
+	max-height: 200px;
+	padding: 5px;
+	background-color: #e0e0e0;
 }
 
 ._3dme {
-	background-color:yellow;
+	background-color: yellow;
 }
+
 ._collageme {
-	background-color:red;
+	background-color: red;
 }
+
 ._djgalaxy {
-	background-color:green;
+	background-color: green;
 }
+
 ._galaxygraffiti {
-	background-color:blue;
+	background-color: blue;
 }
+
 ._messagetree {
-	background-color:orange;
+	background-color: orange;
 }
-
-
 
 .download {
-	display:block;
-    overflow:hidden;
-    max-width: 200px;
-    max-height: 50px;
+	display: block;
+	overflow: hidden;
+	max-width: 200px;
+	max-height: 50px;
 }
+
 .download iframe {
 	height: 50px;
 	width: 100%;
 }
 
 .experienceIntro {
-	
 	@media screen and (max-width: $mobile) {
 		background: #0C0C0C;
-	position: relative;
-		background: linear-gradient(0deg, rgba(12,12,12,1) 0%, rgba(12,12,12,0) 62%, rgba(12,12,12,0) 100%);
+		position: relative;
+		background: linear-gradient(0deg, rgba(12, 12, 12, 1) 0%, rgba(12, 12, 12, 0) 62%, rgba(12, 12, 12, 0) 100%);
 	}
 }
 
@@ -140,83 +139,106 @@
 	display: none;
 	font-weight: 700;
 	font-size: em(35);
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 }
 
 .sliders {
 	background: #0C0C0C;
-    position: relative;
-	.section__inner{
-		display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	width: 100%;
+	position: relative;
 
-
-	.expSlider {
-		max-width: get-desktop-vw(600);
-		height: auto;
-		margin-bottom: 25vh;
-
+	.slick-dots {
+		bottom: -5vw;
 		@media screen and (max-width: $mobile) {
-			max-width: 90vw;
+			bottom: -6vh;
 		}
+	}
+	.slick-dots li button:before {
+		color: white;
+		font-size: 12px;
+	}
 
-		.experience__video {
-			display: flex;
-			justify-content: center;
-		}
-
-		video {
-			height: 60vh;
-		}
-
-		.image {
-			display: flex;
-			justify-content: center;
-			img {
-				height: 60vh;
-				width: auto;
-			}
-		}
-
-		.experience__slide__download {
-			display: flex;
-    justify-content: center;
-    align-items: center;
-	margin-top: 30px;
+	.section__inner {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
 		width: 100%;
-			iframe {
 
-				width: 28vh;
-	height: 53px;
-
+		.expSlider {
+			// max-width: get-desktop-vw(600);
+			width: 100%;
+			height: auto;
+			margin-bottom: 10vw;
+			@media screen and (max-width: $mobile) {
+				margin-bottom: 30vw;
 			}
-		}
-		
-		&.djgalaxy {
+			&:empty {
+				display: none;
+			}
+			.experience__video {
+				display: flex;
+				justify-content: center;
+			}
+			video {
+				// height: 60vh;
+				width: 100%;
+			}
+			.image,
+			.audio,
+			.experience__video,
+			.link {
+				margin-top: auto;
+				margin-bottom: auto;
+			}
+			.image {
+				display: flex;
+				justify-content: center;
+				img {
+					// height: 60vh;
+					width: 100%;
+				}
+			}
+			.audio {
+				width: 80%;
+				audio {
+					width: 100%;
+				}
+			}
+			.experience__slide {
+				height: 40vw;
 
-		}
-		&.galaxygraffiti {
+				display: flex;
+				align-items: center;
+				flex-direction: column;
+				justify-content: center;
 
-		}
-		&.collageme {
-
-		}
-		&.messagetree {
-
-		}
-		&.threeDme {
-
-		}
-		&__container {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
+				@media screen and (max-width: $mobile) {
+					min-height: 55vh;
+				}
+			}
+			.experience__slide__download {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 100%;
+				padding-top: 5vh;
+				iframe {
+					width: 60%;
+					height: 53px;
+				}
+			}
+			&.djgalaxy {}
+			&.galaxygraffiti {}
+			&.collageme {}
+			&.messagetree {}
+			&.threeDme {}
+			&__container {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				width: 100%;
+			}
 		}
 	}
 }
-}
-

@@ -80,6 +80,7 @@ function getFile(file) {
         case 'jpg':
         case 'png':
         case 'gif':
+        case 'svg':
             // image - jpg, png, gif
             html += '<div class="image">' +
                 '<img src="' + s3domain + 'uploads/' + thumb + '"/>' +
@@ -164,14 +165,25 @@ function processFiles(data) {
                 lazyLoad: 'ondemand',
                 dots: false,
                 infinite: false,
+                slidesToShow: 3,
                 arrows: false,
+                dots: true,
                 speed: 500,
                 fade: false,
-                cssEase: 'linear'
+                cssEase: 'linear',
+                responsive: [
+                  {
+                    breakpoint: 768,
+                    settings: {
+                      slidesToShow: 1,
+                      dots: true,
+                    }
+                  }
+                ]
             };
 
             slider( 'experience-page', '.'+key, sliderConfig, 'experience' );
-            
+
         }
     }
 
