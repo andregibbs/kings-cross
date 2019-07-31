@@ -127,10 +127,14 @@ function getFile(file) {
         s3domain: s3domain,
         html: html
     }
-    if(fileexperience !== '3dme') {
-        options[fileexperience].push(fileConfig);
-    } else {
+    if(fileexperience == '3dme') {
         options.threeDme.push(fileConfig);
+        
+    } else if (fileexperience == 'default'){
+
+
+    } else {
+        options[fileexperience].push(fileConfig);
     }
 
 
@@ -160,6 +164,7 @@ function processFiles(data) {
             options[key].forEach(slide => {
                 $('.'+key).append(handleTemplate("experience", slide))
                 $('.'+key+'_title').show();
+                $('.'+key).show();
             })
             const sliderConfig = {
                 lazyLoad: 'ondemand',

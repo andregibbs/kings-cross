@@ -144,7 +144,20 @@
 
 .sliders {
 	background: #0C0C0C;
-	position: relative;
+    position: relative;
+	.section__inner{
+		display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+
+
+	.expSlider {
+		max-width: get-desktop-vw(600);
+		height: auto;
+		display: none;
+		margin-bottom: 25vh;
 
 	.slick-dots {
 		bottom: -5vw;
