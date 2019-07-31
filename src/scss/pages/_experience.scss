@@ -157,6 +157,7 @@
 	.expSlider {
 		max-width: get-desktop-vw(600);
 		height: auto;
+		display: none;
 		margin-bottom: 25vh;
 
 		@media screen and (max-width: $mobile) {
