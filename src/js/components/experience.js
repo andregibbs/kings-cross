@@ -91,7 +91,7 @@ function getFile(file) {
         case 'webm':
             // video - mp4, ogv, webm
             html += '<div class="experience__video">' +
-                '<video controls>' +
+                '<video controls poster="'+s3domain+'uploads/'+thumb+'">' +
                 '<source src="' + s3domain + 'uploads/' + filename + '" type="video/' + (ext == 'ogv' ? 'ogg' : ext) + '">' +
                 'Your browser does not support the video tag.' +
                 '</video>' +
