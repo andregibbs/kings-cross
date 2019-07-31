@@ -127,12 +127,14 @@ function getFile(file) {
         s3domain: s3domain,
         html: html
     }
+
+    // fix for broken graffiti experience name
+    if (fileexperience == 'default') {
+      fileexperience = 'galaxygraffiti'
+    }
+
     if(fileexperience == '3dme') {
         options.threeDme.push(fileConfig);
-        
-    } else if (fileexperience == 'default'){
-
-
     } else {
         options[fileexperience].push(fileConfig);
     }
