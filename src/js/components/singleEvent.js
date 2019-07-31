@@ -204,12 +204,14 @@ export default function singleEvent(events) {
             var slots =
               event.slotsAvailable !== 0 ? "Available" : "Unavailable";
 
+            var formattedStartTime = (event.startTime[0] == '0' ? event.startTime.substr(1) : event.startTime)
+
             var html =
               '<div class="change__time time ' +
               slots +
               '"data-id="' + event.id + '">' +
               '<h4 class="time__int">' +
-              event.startTime +
+              formattedStartTime +
               '</h4><span class="time__available">' +
               slots +
               " </span></div>";

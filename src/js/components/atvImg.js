@@ -59,23 +59,23 @@ export default function atvImg() {
 
     if (supportsTouch) {
       win.preventScroll = false;
-
-      (function(_thisImg, _layers, _totalLayers, _shine) {
-        thisImg.addEventListener("touchmove", function(e) {
-          if (win.preventScroll) {
-            e.preventDefault();
-          }
-          processMovement(e, true, _thisImg, _layers, _totalLayers, _shine);
-        });
-        thisImg.addEventListener("touchstart", function(e) {
-          win.preventScroll = true;
-          processEnter(e, _thisImg);
-        });
-        thisImg.addEventListener("touchend", function(e) {
-          win.preventScroll = false;
-          processExit(e, _thisImg, _layers, _totalLayers, _shine);
-        });
-      })(thisImg, layers, totalLayerElems, shineHTML);
+      // Disabling for touch devices
+      // (function(_thisImg, _layers, _totalLayers, _shine) {
+      //   thisImg.addEventListener("touchmove", function(e) {
+      //     if (win.preventScroll) {
+      //       e.preventDefault();
+      //     }
+      //     processMovement(e, true, _thisImg, _layers, _totalLayers, _shine);
+      //   });
+      //   thisImg.addEventListener("touchstart", function(e) {
+      //     win.preventScroll = true;
+      //     processEnter(e, _thisImg);
+      //   });
+      //   thisImg.addEventListener("touchend", function(e) {
+      //     win.preventScroll = false;
+      //     processExit(e, _thisImg, _layers, _totalLayers, _shine);
+      //   });
+      // })(thisImg, layers, totalLayerElems, shineHTML);
     } else {
       (function(_thisImg, _layers, _totalLayers, _shine) {
         thisImg.addEventListener("mousemove", function(e) {
