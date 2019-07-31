@@ -144,20 +144,7 @@
 
 .sliders {
 	background: #0C0C0C;
-    position: relative;
-	.section__inner{
-		display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	width: 100%;
-
-
-	.expSlider {
-		max-width: get-desktop-vw(600);
-		height: auto;
-		display: none;
-		margin-bottom: 25vh;
+	position: relative;
 
 	.slick-dots {
 		bottom: -5vw;
@@ -207,8 +194,9 @@
 				display: flex;
 				justify-content: center;
 				img {
-					// height: 60vh;
-					width: 100%;
+					height: 100%;
+			    width: 100%;
+			    object-fit: contain;
 				}
 			}
 			.audio {
