@@ -97,19 +97,24 @@ export default function calendar(URL, type, allEvents) {
 			})
 			.fail(function (err) {
 				loadingScreen.style.display = "";
-				//console.error(err);
+				// console.error(err);
+				showCalendarError(err)
 				//ADD A HEADS UP TO THE USER
 			})
+	}
+
+	function showCalendarError(error) {
+		$('.calendar__container').empty().append('Error Collecting Appointments')
 	}
 
 	function populateWithAppointments(data) {
 		//console.log("populating with data");
 		//clear old data
-		while ($(".calendar__container")[0].lastChild) {
-			$(".calendar__container")[0].removeChild($(".calendar__container")[0].lastChild);
-		}
+		// while ($(".calendar__container")[0].lastChild) {
+		// 	$(".calendar__container")[0].removeChild($(".calendar__container")[0].lastChild);
+		// }
+		$('.calendar__container').empty()
 		//console.log("Children cleared");
-
 
 
 		//For every date
@@ -288,9 +293,10 @@ export default function calendar(URL, type, allEvents) {
 	}
 
 	function populateWithEvents(data) {
-		while ($(".calendar__container")[0].lastChild) {
-			$(".calendar__container")[0].removeChild($(".calendar__container")[0].lastChild);
-		}
+		// while ($(".calendar__container")[0].lastChild) {
+		// 	$(".calendar__container")[0].removeChild($(".calendar__container")[0].lastChild);
+		// }
+		$('.calendar__container').empty()
 
 		const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 		const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
