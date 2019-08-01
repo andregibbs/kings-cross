@@ -258,7 +258,6 @@ export default function whatson(events) {
 
 			counter++
 
-			console.log(event)
 			const options = {
 				identifier: event.identifier,
 				eventId: event.id,
