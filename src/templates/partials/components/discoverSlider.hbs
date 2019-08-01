@@ -6,8 +6,8 @@
 
             {{#each config.discover.sliderOne }}
             <div class="slider-discover__slide">
-               
-                <img src="{{ @root.config.imgPath }}{{ this.image }}" class="discover__img" alt={{ this.alt }}>
+
+                <img src="{{ @root.config.imgPath }}{{ this.image }}" class="discover__img" alt="{{ this.alt }}">
                  <p class="slider-discover__slide__description">{{ this.description }}</p>
             </div>
 
@@ -18,7 +18,7 @@
 
             {{#each config.discover.sliderTwo }}
             <div class="slider-discover__slide">
-                <img src="{{ @root.config.imgPath }}{{ this.image }}" class="discover__img" alt={{ this.alt }}>
+                <img src="{{ @root.config.imgPath }}{{ this.image }}" class="discover__img" alt="{{ this.alt }}">
             </div>
 
             {{/each}}
