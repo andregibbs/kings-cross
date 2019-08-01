@@ -251,11 +251,14 @@ export default function whatson(events) {
 
 	function renderEventsIntoDom(allEventsToRender) {
 
+		// filter empty events
+		allEventsToRender = allEventsToRender.filter(Boolean)
+
 		allEventsToRender.forEach(function (event, index) {
 
 			counter++
 
-
+			console.log(event)
 			const options = {
 				identifier: event.identifier,
 				eventId: event.id,
