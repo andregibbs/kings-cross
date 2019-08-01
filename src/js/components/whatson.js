@@ -101,12 +101,12 @@ export default function whatson(events) {
 
 			$('.filters__labels').slideDown();
 			$('.filters__labels').toggleClass('closed');
-			$("body,html").animate(
-				{
-					scrollTop: $(".eventFilter").offset().top
-				},
-				800 //speed
-			);
+			// $("body,html").animate(
+			// 	{
+			// 		scrollTop: $(".eventFilter").offset().top
+			// 	},
+			// 	800 //speed
+			// );
 
 		} else {
 			$('.filters__labels').slideUp();
