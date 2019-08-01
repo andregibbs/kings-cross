@@ -12,12 +12,12 @@
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 22px;
-	
+
 
 	&__see {
 		cursor: pointer;
 	}
-	
+
 	h2 {
 		font-size: em(30);
 	}
@@ -29,8 +29,12 @@
 			          justify-content: space-around;
           justify-content: space-evenly;
 			flex-wrap: wrap;
-			
+
 			}
+
+		&--fewerThanFourEvents {
+			justify-content: space-evenly;
+		}
 		.eventTile {
 			margin-left: 0;
 		}
@@ -39,4 +43,3 @@
 }
 
 /*=====  End of Event Page  ======*/
-
