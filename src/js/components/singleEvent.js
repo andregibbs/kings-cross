@@ -493,7 +493,7 @@ export default function singleEvent(events) {
           if (ga) {
             var gaId= (location.host == 'qaweb-shop.samsung.com')? "UA-101298876-1":"UA-100137701-12";
             ga("create", gaId, {name: "gtm9999", cookieExpires: "33696000", cookieDomain: "auto"})
-            ga("gtm9999.send", {hitType: "event", eventCategory: "repair", eventAction: "booking", eventLabel: "complete", dimension22: data.refNumber});
+            ga("gtm9999.send", {hitType: "event", eventCategory: "microsite", eventAction: "feature", eventLabel: "kings-cross:event_get-tickets", dimension22: data.refNumber});
           }
 
           $(".book-confirmation").addClass("book-confirmation--active");
