@@ -45,24 +45,77 @@
 			"alt": "some image for kx"
 		}],
 
-		"sliderTwo": [
-			{
-				"title": "Coal Drops Yard as a destination. Our neighbours… xx",
-				"description": "This is an opportunity to sell users on the idea of Coal Drops Yard as a destination. Fusce venenatis libero quis augue placerat, eu scelerisque tortor volutpat. Etiam fringilla elit sodales elit lacinia pharetra. Sed lorem mi, ultrices eget odio vitae, ornare finibus est. Cras laoreet elit vitae vulputate fermentum.",
-				"image": "discover-gallery2-desktop.jpg",
-				"alt": "A picture of Coal Drops Yard"
-			},{
-			"title": "Coal Drops Yard as a destination. Our neighbours… x",
-			"description": "This is an opportunity to sell users on the idea of Coal Drops Yard as a destination. Fusce venenatis libero quis augue placerat, eu scelerisque tortor volutpat. Etiam fringilla elit sodales elit lacinia pharetra. Sed lorem mi, ultrices eget odio vitae, ornare finibus est. Cras laoreet elit vitae vulputate fermentum.",
-			"image": "discover-gallery1-desktop.jpg",
-			"alt": "A picture of Coal Drops Yard"
+		"sliderTwo": [{
+			"title": "Kissing Rooftops at Night",
+			"description": "ASS",
+			"image": "see-the-space/1-d-Outside-Kissing-Rooftops-night-3.png",
+			"alt": "Kissing Rooftops at Night"
 		},
-
 		{
-			"title": "Coal Drops Yard as a destination. Our neighbours… xxx",
-			"description": "This is an opportunity to sell users on the idea of Coal Drops Yard as a destination. Fusce venenatis libero quis augue placerat, eu scelerisque tortor volutpat. Etiam fringilla elit sodales elit lacinia pharetra. Sed lorem mi, ultrices eget odio vitae, ornare finibus est. Cras laoreet elit vitae vulputate fermentum.",
-			"image": "discover-gallery3-desktop.jpg",
-			"alt": "A picture of Coal Drops Yard"
+			"title": "Kissing Rooftops at Night",
+			"description": "",
+			"image": "see-the-space/1-d-Outside-Kissing-Rooftops-night-2.png",
+			"alt": "Kissing Rooftops at Night"
+		},
+		{
+			"title": "Screenmax Seating Area",
+			"description": "",
+			"image": "see-the-space/d-0-Screenmax-Seating-Area-wide.png",
+			"alt": "Screenmax Seating Area"
+		},
+		{
+			"title": "Sound Lounge Cafe",
+			"description": "",
+			"image": "see-the-space/d-1-Sound-Lounge-Cafe-Hero.png",
+			"alt": "Sound Lounge Cafe"
+		},
+		{
+			"title": "Connected Kitchen Supper Club",
+			"description": "",
+			"image": "see-the-space/d-2-Connected-Kitchen-Supper-Club-Hero.png",
+			"alt": "Connected Kitchen Supper Club"
+		},
+		{
+			"title": "Kissing Rooftops",
+			"description": "",
+			"image": "see-the-space/d-3-Kissing-Rooftops-high.png",
+			"alt": "Kissing Rooftops"
+		},
+		{
+			"title": "The Wall",
+			"description": "",
+			"image": "see-the-space/d-4-4K-The-Wall.png",
+			"alt": "The Wall"
+		},
+		{
+			"title": "Digital Cockpit",
+			"description": "",
+			"image": "see-the-space/d-5-Digital-Cockpit-1.png",
+			"alt": "Digital Cockpit"
+		},
+		{
+			"title": "Centre Stage",
+			"description": "",
+			"image": "see-the-space/d-6-Full-Centre-Stage.png",
+			"alt": "Centre Stage"
+		},
+		{
+			"title": "Support Lounge",
+			"description": "",
+			"image": "see-the-space/d-7-Support-Lounge.png",
+			"alt": "Support Lounge"
+		},
+		{
+			"title": "Screenmax Seating",
+			"description": "",
+			"image": "see-the-space/d-8-Screenmax-Seating.png",
+			"alt": "Screenmax Seating"
+		},
+		{
+			"title": "Kissing Rooftops",
+			"description": "",
+			"image": "see-the-space/d-9-Kissing-Rooftops-night-4.png",
+			"alt": "Kissing Rooftops"
 		}],
 
 		"shopFloorplan": {
@@ -75,32 +128,32 @@
 
 			{
 				"title": "Digital Cockpit",
-				"image": "digital-cockpit.png",
+				"image": "spaces/Digital_Cockpit.png",
 				"description": "Discover the future of driving"
 			},
 			{
 				"title": "Galaxy Graffiti",
-				"image": "Tile-desk-galaxygraffiti.png",
+				"image": "spaces/Galaxy_Graffiti.png",
 				"description": "Tag and draw with a Galaxy S10 spray can"
 			},
 			{
 				"title": "DJ Galaxy",
-				"image": "Tile-desk-DJgalaxy.png",
+				"image": "spaces/Dj_Galaxy.png",
 				"description": "Learn the art of music"
 			},
 			{
 				"title": "3D ME",
-				"image": "Tile-desk-3Dme.png",
+				"image": "spaces/3D_Me.png",
 				"description": "Create a mini 3D figure with the Galaxy S10"
 			},
 			{
 				"title": "Collage Me",
-				"image": "Tile-desk-collageMe.png",
+				"image": "spaces/Collage_Me.png",
 				"description": "Turn your selfie into a unique collage"
 			},
 			{
 				"title": "AR Message Tree",
-				"image": "Tile-desk-message.png",
+				"image": "spaces/AR_Tree.png",
 				"description": "Fill the air with AR notes for others to unfold"
 			}
 
