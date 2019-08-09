@@ -43,6 +43,12 @@
 			"description": "Enjoy a selection of delicious food, using local produce with quality and sustainability in mind.",
 			"image": "carousel-neigh-3.jpg",
 			"alt": "some image for kx"
+		},
+		{
+			"title": "What makes KX unique? Tell the story. another one another one",
+			"description": "Powered by the perfect blend of passion, precision, curiosity and caffeine, the Origin Roastery is where knowledge and instinct unite.",
+			"image": "carousel-neigh-4.jpg",
+			"alt": "some image for kx"
 		}],
 
 		"sliderTwo": [{
