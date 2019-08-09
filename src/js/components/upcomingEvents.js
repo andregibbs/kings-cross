@@ -1,6 +1,13 @@
 import handleTemplate from "./handleTemplate";
 
 let upcomingEventsPopulated = false
+
+// https://css-tricks.com/snippets/javascript/shuffle-array/
+function ShuffleArray(o) {
+	for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+	return o;
+};
+
 export default function upcomingEvents( events, topicId ) {
 
   // dont want to recall & populate events
@@ -21,25 +28,23 @@ export default function upcomingEvents( events, topicId ) {
 		  filteredEvents = events;
   }
 
-  //console.log('filteredEvents', filteredEvents.length);
+  // if there are less than 4 events that can be applied here. prevents duplicate events appearing
+  var maxEvents = Math.min(filteredEvents.length, 4)
  if(window.location.pathname === "/uk/explore/kings-cross/") {
   //homepage
-  for (var i = 0; i < 4; i++) {
+  for (var i = 0; i < maxEvents; i++) {
     populateRandomEvents.push(
       filteredEvents[i]
     );
   }
-
-
-
  } else {
-
-  for (var i = 0; i < 4; i++) {
+  // shuffle here, instead of within loop. prevents posibility that the same element will be picked twice
+  filteredEvents = ShuffleArray(filteredEvents)
+  for (var i = 0; i < maxEvents; i++) {
     populateRandomEvents.push(
-      filteredEvents[Math.floor(Math.random() * filteredEvents.length)]
+      filteredEvents[i]
     );
   }
-
  }
 
  // get newest events & filter out any falsy elements
