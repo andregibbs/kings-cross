@@ -77,6 +77,7 @@ export default function singleEvent(events) {
               ? "TODAY"
               : moment(data.startDate).format("Do MMMM"),
           startTime: (data.startTime[0] == '0' ? data.startTime.substr(1) : data.startTime),
+          endTime: moment(data.startISO).utc().add(data.durationMinutes, 'minutes').format("LT"),
           passion: data.passions,
           description: data.description.split(". ", 2).length > 1 ? data.description.replace(
             data.description.split(". ", 2)[0] + ". ",
