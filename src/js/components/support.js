@@ -279,6 +279,12 @@ export default function support() {
                             state.navigation.style.display = "";
                             sendUnlock();
 
+                            if (ga) {
+                              var gaId = (location.host == 'qaweb-shop.samsung.com')? "UA-101298876-1":"UA-100137701-12";
+                              ga("create", gaId, {name: "gtm9999", cookieExpires: "33696000", cookieDomain: "auto"})
+                              ga("gtm9999.send", {hitType: "event", eventCategory: "microsite", eventAction: "feature", eventLabel: `kings-cross:complete_${state.category.toLowerCase()}`, dimension22: data.bookingRef});
+                            }
+
                         } else {
                             alert("Fail :(");
                             //console.log(data);
