@@ -82,7 +82,7 @@ export default function singleEvent(events) {
             data.description.split(". ", 2)[0] + ". ",
             ""
           ) : '',
-          firstSentence: data.description.split(". ", 1)[0] + ".",
+          firstSentence: data.description.split(". ", 1)[0].replace(/(\r\n|\n|\r)/gm, '<br>') + ".",
           maxReservations: data.maxReservations,
           slotsAvailable: data.slotsAvailable,
           youtube: data.extra.youtubeid,
