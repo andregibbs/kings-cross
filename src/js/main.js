@@ -143,15 +143,18 @@ $(document).ready(function () {
 		if (event.description) {
 			var bits = event.description.split("||");
 
-
-
-
-
 			event.description = bits[0];
+
 			if (bits.length > 1) {
-				event.extra = IsJsonString(bits[1]) ? IsJsonString(bits[1]) : {};
-				event.extra['passionColor'] = getPassionColor(event.extra.passions[0]);
-				event.extra['eventtypeName'] = getSuitableName(event.extra.eventtype);
+				event.extra = {}
+				// check if string is valid json
+				if (IsJsonString(bits[1])) {
+					event.extra = IsJsonString(bits[1])
+					event.extra['passionColor'] = getPassionColor(event.extra.passions[0]);
+					event.extra['eventtypeName'] = getSuitableName(event.extra.eventtype);
+				} else {
+					event.extra = false
+				}
 			}
 
 			else {
