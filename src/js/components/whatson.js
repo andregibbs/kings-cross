@@ -8,7 +8,7 @@ export default function whatson(events) {
 
 	let counter = 0;
 	const passion = getUrlVars()["passions"];
-	let numberEventsToShow = 30;
+	let numberEventsToShow = 24;
 	let maxEvents = events.length;
 
 	let getPassions = [];
@@ -69,8 +69,8 @@ export default function whatson(events) {
 	dataPicker()
 
 	$('.events__showMore').click(function () {
-		lazyGetEvents(eventsToManipulate, 4);
-		if (numberEventsToShow + 4 > eventsToManipulate.length) {
+		lazyGetEvents(eventsToManipulate, 12);
+		if (numberEventsToShow + 12 > eventsToManipulate.length) {
 			// $('.events__showMore').addClass('noMore');
 			$('.events__showMore').hide();
 		}
