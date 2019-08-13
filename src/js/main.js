@@ -12,6 +12,8 @@ import support from './components/support';
 import experience from './components/experience';
 import loadingScreen from './components/loadingScreen';
 import loadingScreenAnimation from '../data/loadingScreen.json';
+import doLogFunction from './dev/doLog';
+var doLog = doLogFunction();
 
 //experimental
 // import smoothScroll from './librarys/smoothscroll';
@@ -65,6 +67,9 @@ $(document).ready(function () {
 	//Handlebars front end helpers
 	Handlebars.registerHelper('dash', function (str) {
 		return str.split(" ").join("-");
+	});
+	Handlebars.registerHelper('capitalize', function (str) {
+		return str.charAt(0).toUpperCase() + str.slice(1);
 	});
 
 	// =================================================
@@ -146,14 +151,16 @@ $(document).ready(function () {
 			event.description = bits[0];
 
 			if (bits.length > 1) {
-				event.extra = {}
+				event.extra = {};
+				bits[1] = bits[1].replace(/“/gi, '"').replace(/”/gi, '"');
 				// check if string is valid json
 				if (IsJsonString(bits[1])) {
-					event.extra = IsJsonString(bits[1])
+					event.extra = IsJsonString(bits[1]);
 					event.extra['passionColor'] = getPassionColor(event.extra.passions[0]);
 					event.extra['eventtypeName'] = getSuitableName(event.extra.eventtype);
 				} else {
-					event.extra = false
+					doLog("Rejected", bits[1]);
+					event.extra = false;
 				}
 			}
 
@@ -173,18 +180,19 @@ $(document).ready(function () {
 				// MERGE JSON DATA HELD WITHIN description INTO FEED as 'extra' property !!!!!
 				var event = data[i];
 				sortEventExtra(event);
-				//console.log(event);
+				doLog(event);
 			}
 
 
 			// store the 'converted' data as events in main and filter out events with no extra info
+			doLog(data.filter(event => !event.extra));
+			
 			events = data.filter(event => event.extra);
 
 
+			// console.warn('KX logs: We are not showing these events due to and error in the description', data.filter(event => !(event.extra)))
 
-			console.warn('KX logs: We are not showing these events due to and error in the description', data.filter(event => !(event.extra)))
-
-			//console.log(events)
+			doLog(events)
 
 			//get all the topic ids
 
@@ -250,16 +258,16 @@ $(document).ready(function () {
 		}).complete(function () {
 
 			// Logs all events
-			//console.log('events', events);
-			//console.log('topics', topics);
-			//console.log('events - wowEvents', wowEvents);
-			//console.log('events - todayEvents', todayEvents);
-			//console.log('events - futureEvents', futureEvents);
-			//console.log('events - weekEvents', weekEvents);
-			//console.log('events - monthEvents', monthEvents);
-			//console.log('events - todayPromotedEvents', todayPromotedEvents);
-			//console.log('events - weekPromotedEvents', weekPromotedEvents);
-			//console.log('events - monthPromotedEvents', monthPromotedEvents);
+			doLog('events', events);
+			doLog('topics', topics);
+			doLog('events - wowEvents', wowEvents);
+			doLog('events - todayEvents', todayEvents);
+			doLog('events - futureEvents', futureEvents);
+			doLog('events - weekEvents', weekEvents);
+			doLog('events - monthEvents', monthEvents);
+			doLog('events - todayPromotedEvents', todayPromotedEvents);
+			doLog('events - weekPromotedEvents', weekPromotedEvents);
+			doLog('events - monthPromotedEvents', monthPromotedEvents);
 
 			// Callback function when all events are fetched
 			callback(events);

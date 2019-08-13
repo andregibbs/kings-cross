@@ -2,6 +2,8 @@ import smoothscroll from '../polyfill/smoothscroll-polyfill';
 import upcomingEvents from "./upcomingEvents";
 import newParallax from './parallax';
 import atvImg from './atvImg';
+import doLogFunction from '../dev/doLog';
+var doLog = doLogFunction();
 
 export default function whatIsKx(events) {
 
@@ -38,7 +40,7 @@ export default function whatIsKx(events) {
 		let paraHight = ($("#parallax__container").outerHeight() + $("#parallax__container").offset().top);
 		let opacity = (1 - window.scrollY / paraHight * 2);
 		// paratext.css('opacity', opacity);
-		//console.log(paratext);
+		doLog(paratext);
 		paratext[0].style.opacity = opacity;
 
 	}

@@ -2,6 +2,8 @@
 import getUrlVars from './getUrlVars';
 import slider from './slider';
 import handleTemplate from "./handleTemplate";
+import doLogFunction from '../dev/doLog';
+var doLog = doLogFunction();
 
 export default function experience(  ) {
 
@@ -31,7 +33,7 @@ export default function experience(  ) {
 	// var s3domain = 'https://kxuploads-live.s3.eu-west-2.amazonaws.com/uploads/';
 
 	if (id) {
-        //console.log('id in url - ' + id);
+        doLog('id in url - ' + id);
 
         $('form#dataid [name=id]').val(id)
 
@@ -64,7 +66,7 @@ export default function experience(  ) {
 
 
 function getFile(file) {
-    //console.log(file);
+    doLog(file);
     var filename = file.name;
     var fileexperience = file.experience;
     var thumb = filename;
@@ -74,7 +76,7 @@ function getFile(file) {
 
     var ext = filename.substr(filename.lastIndexOf('.') + 1);
 
-    //console.log(fileexperience);
+    doLog(fileexperience);
     var html = '';
     switch(ext.toLowerCase()) {
         case 'jpg':
@@ -143,7 +145,7 @@ function getFile(file) {
 }
 
 function processFiles(data) {
-	//console.log('xxxxx processFiles');
+	doLog('xxxxx processFiles');
     var message = '';
     if (data.success) {
         if (data.files) {
@@ -160,7 +162,7 @@ function processFiles(data) {
     }
 
     //pass data to handlebars
-    //console.log(options);
+    doLog(options);
     for(var key in options) {
         if(options[key].length > 0) {
             options[key].forEach(slide => {
@@ -313,11 +315,11 @@ function getParam(param) {
 
 $(document).ready(function () {
 
-	//console.log('ready....');
+	doLog('ready....');
     // check for id in url - if exists - load the data
     var idParam = getParam('id');
     if (idParam) {
-        //console.log('id in url - ' + idParam);
+        doLog('id in url - ' + idParam);
 
         $('form#dataid [name=id]').val(idParam)
 

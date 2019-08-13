@@ -1,3 +1,5 @@
+import doLogFunction from '../dev/doLog';
+var doLog = doLogFunction();
 export default function repair() {
 
 	// 62711 - for one to one page
@@ -20,7 +22,7 @@ export default function repair() {
 			//I present the most complicated for loop you possibly ever seen
 			//change to dateInd < data.length for ensuring only 5 available dates load
 			for (var dateInd = 0, availableDays = 0; availableDays < 5 && dateInd < 5; (data[dateInd].unAvailable != true ? availableDays++ : availableDays), dateInd++) {
-				// //console.log(data[dateInd]);
+				// doLog(data[dateInd]);
 				if (!data[dateInd].unAvailable) {
 					var date = new Date(data[dateInd].date);
 
@@ -36,7 +38,7 @@ export default function repair() {
 					cheekyContainer.classList.add("calendar-times-date-choices")
 
 					for (var appointmentInd = 0; appointmentInd < data[dateInd].slots.length; appointmentInd++) {
-						// //console.log(appointmentInd);
+						// doLog(appointmentInd);
 						var slot = document.createElement("div");
 						slot.classList.add("calendar-times-date-choices-choice");
 
@@ -88,7 +90,7 @@ export default function repair() {
 					$(".calendar-times-date-choices").each(function () {
 
 						this.addEventListener("scroll", function (e) {
-							////console.log(this, this.offsetHeight + this.scrollTop == this.scrollHeight);
+							//doLog(this, this.offsetHeight + this.scrollTop == this.scrollHeight);
 							if (this.offsetHeight + this.scrollTop == this.scrollHeight) {
 								if (this.nextElementSibling.classList.value == "arrows") {
 									this.nextElementSibling.style.display = "none";
@@ -140,7 +142,7 @@ export default function repair() {
 		})
 		.fail(function (err) {
 			$("#load-screen").style.display = "";
-			//console.log(err);
+			doLog(err);
 		})
 
 	handleSubmit()
@@ -204,7 +206,7 @@ export default function repair() {
 						}
 					},
 					fail: function (err) {
-						//console.log(err);
+						doLog(err);
 						document.getElementsByClassName("loading")[0].style.display = "none";
 					}
 
@@ -231,7 +233,7 @@ export default function repair() {
 		window.onpopstate = function (event) {
 			if (document.getElementsByClassName("kx-services-book")[0].style.display == "block") {
 				history.back;
-				//console.log("Works");
+				doLog("Works");
 				main.switchTo("times");
 			}
 		};

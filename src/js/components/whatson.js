@@ -3,6 +3,8 @@ import handleTemplate from './handleTemplate'
 import getUrlVars from './getUrlVars'
 import dataPicker from './dataPicker';
 var eventsToRender = [];
+import doLogFunction from '../dev/doLog';
+var doLog = doLogFunction();
 
 export default function whatson(events) {
 
@@ -130,8 +132,16 @@ export default function whatson(events) {
 
 		if ($('#from').val() && $('#to').val()) {
 			eventsToRender = eventsToRender.filter(function (event) {
-				return event.startDate >= moment($('#from').val(), "DD-MM-YYYY").format("MM/DD/YYYY") && event.startDate <= moment($('#to').val(), "DD-MM-YYYY").format("MM/DD/YYYY")
-			})
+				return event.startDate >= moment($('#from').val(), "DD-MM-YYYY").format("MM/DD/YYYY") && event.startDate <= moment($('#to').val(), "DD-MM-YYYY").format("MM/DD/YYYY");
+			});
+		} else if ($('#from').val()) {
+			eventsToRender = eventsToRender.filter(function (event) {
+				return event.startDate >= moment($('#from').val(), "DD-MM-YYYY").format("MM/DD/YYYY");
+			});
+		} else if ($('#to').val()) {
+			eventsToRender = eventsToRender.filter(function (event) {
+				return event.startDate <= moment($('#to').val(), "DD-MM-YYYY").format("MM/DD/YYYY");
+			});
 		}
 
 
@@ -168,9 +178,9 @@ export default function whatson(events) {
 
 	if (passion) {
 
-		$('.whatsOn__kv').css('background','url(/content/dam/samsung/uk/explore/kings-cross/passion-header/passion-header-'+passion+'.jpg)');
+		$('.whatsOn__kv').css('background', 'url(/content/dam/samsung/uk/explore/kings-cross/passion-header/passion-header-' + passion + '.jpg)');
 		var passionName = getPassionName(passion);
-		//console.log(passionName);
+		doLog(passionName);
 		$('.whatsOn__kv h2').text(passionName);
 
 		const eventsFiltered = events.filter(function (event) {
@@ -182,7 +192,7 @@ export default function whatson(events) {
 	} else {
 
 
-			$('.whatsOn__kv').css('background','url(/content/dam/samsung/uk/explore/kings-cross/passion-header/passion-header-generic.jpg)')
+		$('.whatsOn__kv').css('background', 'url(/content/dam/samsung/uk/explore/kings-cross/passion-header/passion-header-generic.jpg)')
 
 		lazyGetEvents(events, 0)
 	}
@@ -265,7 +275,7 @@ export default function whatson(events) {
 				title: event.title,
 				startDate: moment(event.startDate).format("Do MMMM") == moment(Date.now()).format("Do MMMM") ? 'TODAY' : moment(event.startDate).format("Do MMMM"),
 				// startTime: event.startTime,
-				startTime: (event.startTime[0] == '0' ?  event.startTime.substr(1) : event.startTime),
+				startTime: (event.startTime[0] == '0' ? event.startTime.substr(1) : event.startTime),
 				passion: event.extra.passions,
 				passionColor: event.extra.passionColor,
 				suitables: event.extra.eventtype,

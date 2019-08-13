@@ -1,3 +1,6 @@
+import doLogFunction from '../dev/doLog';
+var doLog = doLogFunction();
+
 export default function createDropDown( select ) {
 // Iterate over each select element
 $(select).each(function () {
@@ -43,11 +46,17 @@ $(select).each(function () {
     // Show the unordered list when the styled div is clicked (also hides it if the div is clicked again)
     $styledSelect.click(function (e) {
         e.stopPropagation();
-        //console.log("XXXXX");
-        $('div.styledSelect.active').each(function () {
-            $(this).removeClass('active').next('ul.options').hide();
-        });
-        $(this).toggleClass('active').next('ul.options').toggle();
+        if($styledSelect.hasClass("active")){
+            $styledSelect.removeClass('active');
+            $list.hide();
+        }
+        else{
+            doLog("XXXXX");
+            $('div.styledSelect.active').each(function () {
+                $(this).removeClass('active').next('ul.options').hide();
+            });
+            $(this).toggleClass('active').next('ul.options').toggle();
+        }
     });
 
     // Hides the unordered list when a list item is clicked and updates the styled div to show the selected list item

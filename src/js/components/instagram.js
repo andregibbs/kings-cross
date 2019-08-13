@@ -1,3 +1,5 @@
+import doLogFunction from '../dev/doLog';
+var doLog = doLogFunction();
 export default function instagram( htag ) {
 
 	const data = {
@@ -31,13 +33,13 @@ export default function instagram( htag ) {
 		dataType: 'jsonp',
 		success: function ( response ) {
 
-			//console.log( response );
+			doLog( response );
 
 			response.data.forEach(element => {
 				var date = new Date(parseInt(element.created_time) * 1000);
 				var locale = "en-GB"
 
-				//console.log( 'instagram element ', element );
+				doLog( 'instagram element ', element );
 
 			});
 

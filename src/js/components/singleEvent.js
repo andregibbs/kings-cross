@@ -3,6 +3,8 @@ import instagram from "./instagram";
 import upcomingEvents from "./upcomingEvents";
 import getUrlVars from "./getUrlVars";
 import createDropDown from "./createDropDown";
+import doLogFunction from '../dev/doLog';
+var doLog = doLogFunction();
 
 export default function singleEvent(events) {
   const isoCurrentDate = new Date();
@@ -39,6 +41,7 @@ export default function singleEvent(events) {
 
           event.description = bits[0];
           if (bits.length > 1) {
+            bits[1] = bits[1].replace(/“/gi, '"').replace(/”/gi, '"');
             event.extra = JSON.parse(bits[1]);
           } else {
             event.extra = {};
@@ -52,7 +55,7 @@ export default function singleEvent(events) {
 
       // TODO need to check event is for the correct series
 
-      //console.log(
+      // doLog(
       //   "xxxxx - " +
       //     data.seriesId +
       //     " " +
@@ -87,8 +90,17 @@ export default function singleEvent(events) {
           maxReservations: data.maxReservations,
           slotsAvailable: data.slotsAvailable,
           youtube: data.extra.youtubeid,
-          externalbookinglink: data.extra.externalbookinglink
+          externalbookinglink: data.extra.externalbookinglink,
+          sponsor: "" || data.extra.sponsor
         };
+
+        if (options.sponsor == "timeout") {
+          console.log("TIMEOUT");
+        } else if (options.sponsor == "guardian") {
+          console.log("GUARDIAN");
+        } else {
+          console.log("Unsponsored");
+        }
 
         if (data.extra.instagramhashtag) {
           instagramHashTag = data.extra.instagramhashtag;
@@ -122,17 +134,48 @@ export default function singleEvent(events) {
           "min": 1
         });
         $(".book__tickets-tickets").change(function (e) {
-          if(this.value > bookOptions.maxGroupSize || this.value > bookOptions.slotsAvailable){
+          if (this.value > bookOptions.maxGroupSize || this.value > bookOptions.slotsAvailable) {
             this.classList.add("flash");
-            setTimeout(function(){
+            setTimeout(function () {
               $(".book__tickets-tickets").removeClass("flash");
             }, 500);
-            //console.log(bookOptions.maxGroupSize, bookOptions.slotsAvailable);
+            doLog(bookOptions.maxGroupSize, bookOptions.slotsAvailable);
             this.value = Math.min.apply(null, [bookOptions.maxGroupSize, bookOptions.slotsAvailable]);
           }
         });
-        //console.log(options);
+        doLog(options);
         $(".singleEvent").append(handleTemplate("singleEvent", options));
+
+        // SPONSORS
+        // If sponsor recognised, replace text with image
+        if(options.sponsor){
+          var sponsorContainer = document.getElementById("sponsor");
+          // var sponsorContainerMobile = document.getElementById("sponsor-mobile");
+          switch (options.sponsor.toLowerCase()) {
+            case "timeout":
+              var sponsorImg = new Image();
+              sponsorImg.src = 'https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/external-logos/timeout.png';
+              sponsorContainer.innerHTML = "";
+              sponsorContainer.appendChild(sponsorImg);
+              // var mobileImg = sponsorImg.cloneNode();
+              // sponsorContainerMobile.innerHTML = "";
+              // sponsorContainerMobile.appendChild(mobileImg);
+              break;
+              case "guardian":
+                var sponsorImg = new Image();
+                sponsorImgsrc = 'https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/external-logos/guardian.png';
+                document.getElementById("sponsor").
+                sponsorContainer.innerHTML = "";
+                sponsorContainer.appendChild(sponsorImg);
+                // var mobileImg = sponsorImg.cloneNode();
+                // sponsorContainerMobile.innerHTML = "";
+                // sponsorContainerMobile.appendChild(mobileImg);
+              break;
+            default:
+              break;
+          }
+        }
+        
 
         // Event out of stock or has expired
         if (data.slotsAvailable == 0 || data.hasPassed) {
@@ -158,7 +201,7 @@ export default function singleEvent(events) {
 
         eventTimes = events.filter(x => x.topic.id === topicId);
 
-        //console.log(eventTimes);
+        doLog(eventTimes);
         var dates = {};
         //get all dates
         eventTimes.forEach(date => {
@@ -170,7 +213,7 @@ export default function singleEvent(events) {
         eventTimes.forEach(event => {
           dates[event.startDate].push(event);
         });
-        //console.log(dates);
+        doLog(dates);
         //insert date options
         for (var date in dates) {
           $("#date__options").append(
@@ -192,7 +235,7 @@ export default function singleEvent(events) {
         });
 
         function updateTimes(dates, currentDate) {
-          //console.log('current date', currentDate);
+          doLog('current date', currentDate);
           var times = null;
           var currentSelection = $(".styledSelect").attr("rel");
           if (!currentDate) {
@@ -216,7 +259,7 @@ export default function singleEvent(events) {
               '</h4><span class="time__available">' +
               slots +
               " </span></div>";
-            //console.log(html);
+            doLog(html);
             $(".change__times").empty();
             $(".change__times").append(html);
           });
@@ -346,9 +389,9 @@ export default function singleEvent(events) {
 
         $(".book__tickets-tickets").change(function (e) {
 
-          if(this.value > bookOptions.maxGroupSize || this.value > bookOptions.slotsAvailable){
+          if (this.value > bookOptions.maxGroupSize || this.value > bookOptions.slotsAvailable) {
             this.classList.add("flash");
-            setTimeout(function(){
+            setTimeout(function () {
               $(".book__tickets-tickets").removeClass("flash");
             }, 500);
             console.log(bookOptions.maxGroupSize, bookOptions.slotsAvailable);
@@ -377,7 +420,7 @@ export default function singleEvent(events) {
 
       ticketQuantity += 1;
 
-      //console.log(eventDetails.maxGroupSize, ticketQuantity);
+      doLog(eventDetails.maxGroupSize, ticketQuantity);
 
       $(".book__tickets-tickets").val(ticketQuantity);
 
@@ -492,9 +535,9 @@ export default function singleEvent(events) {
 
           // send booking reference to ga
           if (ga) {
-            var gaId= (location.host == 'qaweb-shop.samsung.com')? "UA-101298876-1":"UA-100137701-12";
-            ga("create", gaId, {name: "gtm9999", cookieExpires: "33696000", cookieDomain: "auto"})
-            ga("gtm9999.send", {hitType: "event", eventCategory: "microsite", eventAction: "feature", eventLabel: "kings-cross:event_get-tickets", dimension22: data.refNumber});
+            var gaId = (location.host == 'qaweb-shop.samsung.com') ? "UA-101298876-1" : "UA-100137701-12";
+            ga("create", gaId, { name: "gtm9999", cookieExpires: "33696000", cookieDomain: "auto" })
+            ga("gtm9999.send", { hitType: "event", eventCategory: "microsite", eventAction: "feature", eventLabel: "kings-cross:event_get-tickets", dimension22: data.refNumber });
           }
 
           $(".book-confirmation").addClass("book-confirmation--active");
@@ -502,7 +545,7 @@ export default function singleEvent(events) {
         fail: function (err) {
           $(".book__form-submit").attr("disabled", false);
           $(".cm-configurator-loader").hide();
-          //console.log(err);
+          doLog(err);
         }
       });
     } else {

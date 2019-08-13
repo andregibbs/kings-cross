@@ -4,17 +4,19 @@
 .event__content {
   padding-bottom: 0 !important;
   padding-top: 20px;
-  @media screen and (max-width: $desktop){
+  @media screen and (max-width: $desktop) {
     padding-top: get-desktop-vw(20);
-  };
-  @media screen and (max-width: $mobile){
-    padding-top: get-mobile-vw(20);
-  };
+  }
+  @media screen and (max-width: $mobile) {
+    padding-top: get-mobile-vw(10);
+  }
 
   .section__inner {
     padding-bottom: 0px !important;
     .event__section_detail {
       width: 100%;
+      display: flex;
+      justify-content: space-between;
     }
   }
 }
@@ -32,12 +34,18 @@
     }
     &__header {
       display: none;
-      padding-left: 40px;
-      padding-right: 40px;
-
-      &__buttons{
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 40px;
+      &__buttons {
         display: flex;
         flex-direction: column;
+        @media screen and (max-width: $mobile) {
+          display: none;
+          button:last-of-type {
+            margin-top: get-mobile-vw(4);
+          }
+        }
       }
 
       @media screen and (max-width: $mobile) {
@@ -46,6 +54,9 @@
         justify-content: center;
         align-items: flex-start;
         flex-direction: column-reverse;
+        .event__header-title {
+          margin-bottom: get-mobile-vw(8);
+        }
       }
 
       &__top {
@@ -69,50 +80,66 @@
           flex-direction: column;
           justify-content: center;
           align-items: flex-start;
+          @media screen and (max-width: $mobile) {
+            height: 100%;
+            justify-content: flex-start;
+          }
           .action-capacity {
             display: none;
             @media screen and (max-width: $mobile) {
               display: block;
-              font-size: em(20);
+              font-size: em(16);
             }
           }
         }
       }
 
       &-date {
-        font-size: em(30);
+        font-size: em(20);
+        font-weight: bold;
         @media screen and (max-width: $mobile) {
-          font-size: em(25);
-          &:last-of-type{
+          font-size: em(20);
+          &:last-of-type {
             display: none;
           }
         }
       }
+
+      &-sponsor,
+      .event__header__top {
+        img {
+          height: 60px;
+          width: auto;
+          @media screen and (max-width: $desktop) {
+            height: get-desktop-vw(60);
+          }
+          @media screen and (max-width: $mobile) {
+            height: get-mobile-vw(60);
+          }
+        }
+      }
+
       &-title {
         font-size: em(50);
-        margin-top: 10px;
+        // margin-top: 10px;
         @media screen and (max-width: $mobile) {
           font-size: em(25);
           margin-top: 0;
-          &:last-of-type{
-            display: none;
-          }
+          // &:last-of-type {
+          //   display: none;
+          // }
         }
       }
     }
 
     &__img {
       width: 100%;
-      height: 650px;
+      height: 450px;
       overflow: hidden;
 
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center;
-
-      @media screen and (max-width: $desktop) {
-        height: get-desktop-vw(650);
-      }
 
       @media screen and (max-width: $mobile) {
         height: get-mobile-vw(250);
@@ -127,8 +154,8 @@
       & > div {
         display: flex;
         justify-content: space-between;
+        flex-direction: column;
         @media screen and (max-width: $mobile) {
-          flex-direction: column;
           align-items: center;
           justify-content: center;
         }
@@ -138,6 +165,36 @@
         display: flex;
         flex-direction: column;
         max-width: 100%;
+        flex-basis: 75%;
+        @media screen and (max-width: $mobile) {
+          flex-basis: 100%;
+
+          .event__header-title {
+            display: none;
+          }
+        }
+      }
+
+      .event_details {
+        text-align: right;
+        @media screen and (max-width: $mobile) {
+          display: none;
+        }
+
+        .event__header-date {
+          margin-top: 0px;
+        }
+
+        .event__header-sponsor ~ .event__header-date {
+          margin-top: 30px;
+
+          @media screen and (max-width: $desktop) {
+            margin-top: calc(#{em(36)} + #{get-desktop-vw(40)} - #{get-desktop-vw(60)});
+          }
+          @media screen and (max-width: $mobile) {
+            margin-top: 0;
+          }
+        }
       }
 
       .tile-desc {
@@ -145,7 +202,11 @@
         display: inline-block;
         font-size: em(20);
         font-weight: 400;
-        margin-top: 8%;
+        // margin-top: 8%;
+        margin-top: 40px;
+        @media screen and (max-width: $desktop) {
+          margin-top: get-desktop-vw(40);
+        }
         @media screen and (max-width: $mobile) {
           margin-top: 0;
         }
@@ -159,20 +220,19 @@
 
       .action {
         display: flex;
-        align-items: flex-end;
-                  justify-content: space-around;
-          justify-content: space-evenly;
-        flex-direction: column;
-
-        @media screen and (max-width: $mobile) {
-          display: none;
-        }
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-top: 40px;
+        margin-bottom: 80px;
+        // justify-content: space-around;
+        // justify-content: space-evenly;
+        // flex-direction: column;
 
         .action-btn {
           display: block;
 
-          @media screen and (max-width: $mobile) {
-            display: none;
+          &:nth-of-type(2) {
+            margin: 0 20px;
           }
         }
 
@@ -180,17 +240,16 @@
           font-size: em(25);
           font-weight: 700;
           margin-bottom: 15px;
-
           @media screen and (max-width: $mobile) {
             display: none;
           }
         }
 
         &-capacity {
-          font-size: em(15);
+          font-size: em(16);
           font-weight: 400;
-          margin-bottom: 20px;
-          margin-right: 10px;
+          // margin-bottom: 20px;
+          // margin-right: 10px;
           @media screen and (max-width: $mobile) {
             display: none;
           }
@@ -211,15 +270,26 @@
       }
       .share {
         display: flex;
-        align-items: flex-end;
-                  justify-content: space-around;
-          justify-content: space-evenly;
+        align-items: center;
+        // align-items: flex-end;
+        // justify-content: space-around;
+        // justify-content: space-evenly;
+        justify-content: center;
         flex-direction: column;
+        margin-left: auto;
+        padding-top: 18px;
 
-        padding-bottom: 20px;
+        // padding-top: 10px;
+
+        // padding-bottom: 50px;
+
+        @media screen and (max-width: $desktop) {
+          padding-top: get-desktop-vw(16);
+        }
 
         @media screen and (max-width: $mobile) {
           align-items: center;
+          padding-top: get-mobile-vw(12);
         }
 
         &__social {
@@ -234,8 +304,8 @@
           @media screen and (max-width: $mobile) {
             display: none;
             align-items: center;
-                      justify-content: space-around;
-          justify-content: space-evenly;
+            justify-content: space-around;
+            justify-content: space-evenly;
             padding-bottom: 11px;
             width: 100%;
             opacity: 0;
@@ -249,22 +319,37 @@
         &__social--active {
           display: flex;
           align-items: center;
-          justify-content: space-between;
+          justify-content: center;
           padding-top: 24px;
           width: get-desktop-vw(150);
           opacity: 1;
           transition: opacity 0.4s;
+
+          li {
+            margin: 0 8px;
+          }
+
+          @media screen and (max-width: $desktop) {
+            li {
+              margin: 0 get-desktop-vw(4);
+            }
+          }
+
           @media screen and (max-width: $mobile) {
             display: flex;
             align-items: center;
-                      justify-content: space-around;
-          justify-content: space-evenly;
+            justify-content: space-around;
+            justify-content: space-evenly;
             padding-bottom: 11px;
             width: 100%;
             opacity: 1;
             height: 57px;
             transition: opacity, height 0.4s;
             user-select: auto;
+
+            li {
+              margin: 0 get-mobile-vw(4);
+            }
 
             svg {
               width: 70%;
@@ -290,7 +375,7 @@
             font-weight: 700;
 
             @media screen and (max-width: $mobile) {
-              font-size: em(25);
+              font-size: em(18);
             }
           }
         }

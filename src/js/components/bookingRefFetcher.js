@@ -1,4 +1,8 @@
 import upcomingEvents from "./upcomingEvents";
+import doLogFunction from '../dev/doLog';
+var doLog = doLogFunction();
+
+
 export default function bookingRefFetcher(AllEvents) {
     const isoCurrentDate = new Date();
 
@@ -41,14 +45,14 @@ export default function bookingRefFetcher(AllEvents) {
         $.get("https://bookings.qudini.com/booking-widget/event/attendee/" + ref)
             .success(function (bookingData) {
                 loading.done(1);
-                //console.log(bookingData);
+                doLog(bookingData);
 
                 $.get('https://bookings.qudini.com/booking-widget/event/event/' + bookingData.eventId + '', {
                     'timezone': "Europe/London",
                     'isoCurrentDate': isoCurrentDate.toISOString()
                 }).success(function (eventData) {
-                    //console.log('Event details: ', eventData);
-                    //console.log('param =', getParam("ref"));
+                    doLog('Event details: ', eventData);
+                    doLog('param =', getParam("ref"));
                     if (!getParam("ref")) {
                         history.pushState({ "reloadNeeded": false, "ref": ui.bookingField.value, "screen": 1 }, eventData.title + " | Samsung King's Cross | Samsung UK", "?ref=" + bookingData.refNumber);
                     }
@@ -104,7 +108,7 @@ export default function bookingRefFetcher(AllEvents) {
                             })
                             .fail(function (err) {
                                 loading.done(2);
-                                //console.log(err);
+                                doLog(err);
                             });
                     });
 
@@ -112,7 +116,7 @@ export default function bookingRefFetcher(AllEvents) {
 
             })
             .fail(function (err) {
-                //console.log(err);
+                doLog(err);
                 loading.done(1);
                 ui.bookingField.classList.add("warn");
                 document.getElementsByClassName("bookings__inner__invalid")[0].style.opacity = "1";
@@ -145,18 +149,18 @@ export default function bookingRefFetcher(AllEvents) {
     }
 
     window.onpopstate = function (event) {
-        //console.log(event);
+        doLog(event);
         if (event.state != null) {
             if (event.state.screen == 0) {
                 ui.inputScreen.style.display = "block";
                 ui.bookingScreen.style.display = "none";
                 document.getElementById("upcoming").style.display = "";
-                //console.log("back");
+                doLog("back");
             } else if (event.state.screen == 1 && !event.state.reloadNeeded) {
                 ui.inputScreen.style.display = "none";
                 ui.bookingScreen.style.display = "block";
                 document.getElementById("upcoming").style.display = "block";
-                //console.log("forward");
+                doLog("forward");
             }
         }
     };

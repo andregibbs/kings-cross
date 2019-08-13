@@ -542,6 +542,6 @@ export default function smoothScroll () {
 		addEvent("load", init);
 	}
 
-	//console.log('%c Smooth Scroll activated! ', 'background: #222; color: #bada55');
+	doLog('%c Smooth Scroll activated! ', 'background: #222; color: #bada55');
 
 }

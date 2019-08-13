@@ -1,4 +1,6 @@
 import handleTemplate from "./handleTemplate";
+import doLogFunction from '../dev/doLog';
+var doLog = doLogFunction();
 
 let upcomingEventsPopulated = false
 
@@ -28,8 +30,8 @@ export default function upcomingEvents( events, topicId ) {
 		  filteredEvents = events;
   }
 
-  // if there are less than 4 events that can be applied here. prevents duplicate events appearing
-  var maxEvents = Math.min(filteredEvents.length, 4)
+  // if there are less than 5 events that can be applied here. prevents duplicate events appearing
+  var maxEvents = Math.min(filteredEvents.length, 5)
  if(window.location.pathname === "/uk/explore/kings-cross/") {
   //homepage
   for (var i = 0; i < maxEvents; i++) {
@@ -59,11 +61,11 @@ export default function upcomingEvents( events, topicId ) {
     // assuming all related events are within a container with classes .section & .relatedEvents
     $(".section.relatedEvents").hide();
   } else {
-    // if there are less than 4 events, add different layout style to container
-    if (sorted_dates.length < 4) {
+    // if there are less than 5 events, add different layout style to container
+    if (sorted_dates.length < 5) {
       $(".relatedEvents__container").addClass('relatedEvents__container--fewerThanFourEvents');
     }
-    for (var i = 0; i < 4; i++) {
+    for (var i = 0; i < 5; i++) {
       // if element doesnt exist continue (shouldnt happen with filtering above ^^)
       if (!sorted_dates[i]) {
         continue;

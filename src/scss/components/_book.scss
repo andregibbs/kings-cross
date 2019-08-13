@@ -15,6 +15,9 @@
     cursor: pointer;
     display: inline-block;
     position: relative;
+    @media screen and (max-width: $mobile){
+      width: get-mobile-vw(300);
+    }
   }
   .styledSelect {
     position: absolute;
@@ -41,6 +44,9 @@
     justify-content: center;
     align-items: center;
     text-align-last: center;
+    @media screen and (max-width: $mobile){
+      padding: 0;
+    }
   }
   .styledSelect:after {
     content: "";
@@ -49,11 +55,11 @@
     border: 5px solid transparent;
     border-color: white transparent transparent transparent;
     position: absolute;
-    top: 22px;
-    right: 15px;
-    @media screen and (max-width: $mobile) {
-      top: 45%;
-    }
+    top: 45%;
+    right: 10%;
+    // @media screen and (max-width: $mobile) {
+    //   top: 45%;
+    // }
   }
   .active.styledSelect:after {
     transform: scaleY(-1) translateY(5px);
@@ -143,7 +149,7 @@
       width: 1px;
       background: #4d4d4f;
       position: relative;
-      @media screen and (max-width: $mobile-small) {
+      @media screen and (max-width: $mobile) {
         display: none;
       }
     }
@@ -172,7 +178,7 @@
       height: 70px;
 
       @media screen and (max-width: $mobile) {
-        height: 52px;
+        height: get-mobile-vw(100);
         width: 55%;
     margin-top: 20px;
       }

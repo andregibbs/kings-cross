@@ -1,5 +1,7 @@
+import doLogFunction from '../dev/doLog';
+var doLog = doLogFunction();
 export default function loadingScreen(element, animation) {
-  //console.log("called");
+  doLog("called");
   // if(!document.referrer){
   //   console.log("OK?");
   //   animationDone();

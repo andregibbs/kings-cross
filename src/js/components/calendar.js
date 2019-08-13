@@ -1,6 +1,8 @@
-import getUrlVars from './getUrlVars'
-import handleTemplate from './handleTemplate'
-import customevent from '../polyfill/customevent-polyfill'
+import getUrlVars from './getUrlVars';
+import handleTemplate from './handleTemplate';
+import customevent from '../polyfill/customevent-polyfill';
+import doLogFunction from '../dev/doLog';
+var doLog = doLogFunction();
 
 export default function calendar(URL, type, allEvents) {
 
@@ -33,12 +35,12 @@ export default function calendar(URL, type, allEvents) {
 	const shortDays = days.map((a) => a.slice(0, 3))
 	const shortMonths = months.map((a) => a.slice(0, 3))
 
-	//console.log("???");
+	doLog("???");
 
 	document.getElementById("calendar").addEventListener("changeURL", function (e) {
 		URL = e.detail.url;
 
-		//console.log("got activated");
+		doLog("got activated");
 
 		// try {
 		// 	type = type.toLowerCase();
@@ -87,7 +89,7 @@ export default function calendar(URL, type, allEvents) {
 
 		$.get(appointmentURL + dateString)
 			.success(function (data) {
-				//console.log("Got data");
+				doLog("Got data");
 				populateWithAppointments(data);
 				loadingScreen.style.display = "";
 				handleScrollArrows();
@@ -108,13 +110,13 @@ export default function calendar(URL, type, allEvents) {
 	}
 
 	function populateWithAppointments(data) {
-		//console.log("populating with data");
+		doLog("populating with data");
 		//clear old data
 		// while ($(".calendar__container")[0].lastChild) {
 		// 	$(".calendar__container")[0].removeChild($(".calendar__container")[0].lastChild);
 		// }
 		$('.calendar__container').empty()
-		//console.log("Children cleared");
+		doLog("Children cleared");
 
 
 		//For every date
@@ -126,7 +128,7 @@ export default function calendar(URL, type, allEvents) {
 				// var dateFormatted = days[date.getDay()] + " " + date.getDate() + " " + months[date.getMonth()] + " " + date.getFullYear();
 				var dateFormatted = moment(date).format('dddd Do MMMM YYYY');
 
-				//console.log(dateFormatted);
+				doLog(dateFormatted);
 
 				//Append the date column
 				$(".calendar__container").append(handleTemplate("dateColumn", { "dateFormatted": dateFormatted, "index": dateInd, "date": date.format("yyyy-MM-dd") }));
@@ -153,7 +155,7 @@ export default function calendar(URL, type, allEvents) {
 						appointmentStartTime = $(this).data("startTime");
 						this.classList.add("calendar--selected");
 						this.getElementsByTagName("p")[0].innerText = "Selected";
-						//console.log("selected", appointmentStartTime);
+						doLog("selected", appointmentStartTime);
 						$("#next").data("slot", appointmentStartTime);
 						$("#next").data("queueId", $(this).data("queueId"));
 						document.getElementById("next").dispatchEvent(unlock);
@@ -224,7 +226,7 @@ export default function calendar(URL, type, allEvents) {
 					return $(this).outerHeight(true);
 				});
 				var h = Math.max.apply(null, elementHeights);
-				//console.log(h);
+				doLog(h);
 				if (this.classList.contains("load--bot")) {
 					if (this.previousElementSibling.scrollTop % h == 0) {
 						$(this.previousElementSibling).animate({
@@ -233,14 +235,14 @@ export default function calendar(URL, type, allEvents) {
 					}
 					else if (this.previousElementSibling.scrollTop % h > h / 2) {
 						var scrollBy = 2 * h - (this.previousElementSibling.scrollTop % h);
-						//console.log(scrollBy);
+						doLog(scrollBy);
 						$(this.previousElementSibling).animate({
 							scrollTop: '+=' + scrollBy
 						}, 300);
 					}
 					else {
 						var scrollBy = h - this.previousElementSibling.scrollTop % h;
-						//console.log(scrollBy);
+						doLog(scrollBy);
 						$(this.previousElementSibling).animate({
 							scrollTop: '+=' + scrollBy
 						}, 300);
@@ -254,14 +256,14 @@ export default function calendar(URL, type, allEvents) {
 					}
 					else if (this.nextElementSibling.scrollTop % h > h / 2) {
 						var scrollBy = h + (this.nextElementSibling.scrollTop % h);
-						//console.log(scrollBy);
+						doLog(scrollBy);
 						$(this.nextElementSibling).animate({
 							scrollTop: '-=' + scrollBy
 						}, 300);
 					}
 					else {
 						var scrollBy = 2 * h + this.nextElementSibling.scrollTop % h;
-						//console.log(scrollBy);
+						doLog(scrollBy);
 						$(this.nextElementSibling).animate({
 							scrollTop: '-=' + scrollBy
 						}, 300);
@@ -281,13 +283,13 @@ export default function calendar(URL, type, allEvents) {
 			'timezone': "Europe/London",
 			'isoCurrentDate': isoCurrentDate.toISOString()
 		}).success(function (event) {
-			//console.log(event.topic.title);
+			doLog(event.topic.title);
 			for (var eInd = 0; eInd < allEvents.length; eInd++) {
 				if (allEvents[eInd].topic.title == event.topic.title) {
 					matchingTopicEvents.push(allEvents[eInd]);
 				}
 			}
-			//console.log("µ", matchingTopicEvents); //presorted in ascending order
+			doLog("µ", matchingTopicEvents); //presorted in ascending order
 			populateWithEvents(matchingTopicEvents);
 		})
 	}
@@ -310,10 +312,10 @@ export default function calendar(URL, type, allEvents) {
 			}
 		})
 
-		//console.log("∞", dates);
+		doLog("∞", dates);
 		// var date = new Date(event.startDate);
 		// var dateDisplayed = days[date.getDay()] + " " + date.getDate() + " " + months[date.getMonth()] + " " + date.getFullYear();
-		// //console.log(dateDisplayed);
+		// doLog(dateDisplayed);
 		// dates.forEach((date) => {
 		// 	//
 		// })
@@ -321,10 +323,10 @@ export default function calendar(URL, type, allEvents) {
 
 	function handleResize() {
 
-		//console.log('%c%s', 'color: #f2ceb6', "Tis logged");
+		doLog('%c%s', 'color: #f2ceb6', "Tis logged");
 
 		if (window.innerWidth <= 768 && (viewport != "mobile" || calendarRestart)) {
-			//console.log("Still mobile");
+			doLog("Still mobile");
 			$("[date]").each(function (ind, elm) {
 				var a = new Date(elm.getAttribute("date"));
 				// elm.innerText = shortDays[a.getDay()] + " " + a.getDate() + " " + shortMonths[a.getMonth()];
