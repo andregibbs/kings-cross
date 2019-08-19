@@ -39,6 +39,7 @@ export default function support() {
         navigation: document.getElementById("navigation"),
         nextBtn: document.getElementById("next"),
         backBtn: document.getElementById("back"),
+        close: document.getElementsByClassName("close")[0],
 
         modelIsSelected: false,
         colorIsSelected: false,
@@ -89,9 +90,15 @@ export default function support() {
 
                 document.getElementById("btn-" + this.category).classList.add("btn--primary-notActive");
 
-                this.nextBtn.classList.add("btn--primary--" + colors[cat])
-                this.backBtn.classList.add("btn--secondary--" + colors[cat])
-                screens.calendar.children[0].classList.add(colors[cat])
+                this.nextBtn.setAttribute("ga-la", "kings-cross:" + this.category.toLowerCase() + "_next");
+                this.nextBtn.setAttribute("data-omni", "uk:kings-cross:support:" + this.category.toLowerCase() + ":next");
+
+                this.backBtn.setAttribute("ga-la", "kings-cross:" + this.category.toLowerCase() + "_back");
+                this.backBtn.setAttribute("data-omni", "uk:kings-cross:support:" + this.category.toLowerCase() + ":back");
+
+                this.nextBtn.classList.add("btn--primary--" + colors[cat]);
+                this.backBtn.classList.add("btn--secondary--" + colors[cat]);
+                screens.calendar.children[0].classList.add(colors[cat]);
                 document.getElementsByClassName("journey")[0].classList.add(colors[cat]);
                 $(".checkbox").each(function (ind, elm) {
                     elm.classList.add("checkbox__" + colors[cat]);
@@ -99,7 +106,6 @@ export default function support() {
 
                 doLog("init successful");
 
-                document.getElementsByClassName("close")[0].style.display = "block";
 
                 switch (this.category) {
                     case "oneToOne":
@@ -129,7 +135,9 @@ export default function support() {
                     }
                 });
 
-                var nextScreen = this.journeys[cat][1]
+                state.navigation.style.visibility = 'visible';
+
+                var nextScreen = this.journeys[cat][1];
                 if (nextScreen == screens.deviceInfo) {
                     $(nextScreen).slideDown({
                         start: function () {
@@ -139,12 +147,23 @@ export default function support() {
                             doLog("Start");
                         },
                         complete: function () {
-                            state.navigation.style.display = "flex";
+                            // state.navigation.style.display = "flex";
+                            state.navigation.style.opacity = 1;
+                            state.navigation.style.height = 'auto';
+                            state.navigation.style.visibility = "visible";
+
+                            state.close.style.visibility = "visible";
+                            state.close.style.opacity = 1;
                         }
                     });
                 } else {
                     $(nextScreen).slideDown(400, function () {
-                        state.navigation.style.display = "flex";
+                        state.close.style.visibility = "visible";
+                        state.close.style.opacity = 1;
+
+                        state.navigation.style.height = 'auto';
+                        state.navigation.style.opacity = 1;
+                        state.navigation.style.visibility = "visible";
                     });
                 }
 
@@ -179,11 +198,26 @@ export default function support() {
         },
 
         cancelJourney: function () {
+            state.close.style.visibility = "hidden";
+            state.close.style.opacity = 0;
 
-            $(this.journeys[this.category][this.stage]).slideUp(400, function () {
+            $(this.journeys[this.category][this.stage]).slideUp({duration: 400, start: function () {
+                state.navigation.style.visibility = 'hidden';
+
                 $(state.navigation).slideUp(75, function () {
-                    state.nextBtn.classList.remove("btn--primary--" + colors[state.category])
-                    state.backBtn.classList.remove("btn--secondary--" + colors[state.category])
+                    state.navigation.style.height = 0;
+                    state.navigation.style.opacity = 0;
+                    state.navigation.style.visibility = 'hidden';
+
+                    state.nextBtn.classList.remove("btn--primary--" + colors[state.category]);
+                    state.backBtn.classList.remove("btn--secondary--" + colors[state.category]);
+                    state.nextBtn.setAttribute("ga-la", "kings-cross:navigation_next");
+                    state.nextBtn.setAttribute("data-omni", "uk:kings-cross:support:navigation:next");
+
+                    state.backBtn.setAttribute("ga-la", "kings-cross:navigation_back");
+                    state.backBtn.setAttribute("data-omni", "uk:kings-cross:support:navigation:back");
+
+
                     screens.calendar.children[0].classList.remove(colors[state.category]);
                     document.getElementsByClassName("journey")[0].classList.remove(colors[state.category]);
                     $("span.checkbox").each(function (ind, elm) {
@@ -198,13 +232,11 @@ export default function support() {
                     $("#next").removeData("slot");
                     sendLock();
 
-                    state.navigation.style.display = "";
 
                     clearState();
 
                     document.getElementById("details").reset();
                     document.getElementById("device-info").reset();
-                    document.getElementsByClassName("close")[0].style.display = "";
 
                     window.history.replaceState({}, document.title, location.protocol + "//" + location.host + location.pathname);
                     // while ($(".calendar__container")[0].lastChild) {
@@ -212,7 +244,10 @@ export default function support() {
                     // }
                 });
 
-            });
+            }, complete: function(){
+                state.navigation.style.display = '';
+                state.nextBtn.innerText = "NEXT";
+            }});
 
 
         },
@@ -257,7 +292,7 @@ export default function support() {
                             'bookingStartTime': bookingData.time,
                             'bookingStartTimeString': bookingData.time,
                             'firstName': bookingData.name,
-                            'lastName': bookingData.surname,
+                            'surname': bookingData.surname,
                             'emailAddress': bookingData.email,
                             'mobileNumber': bookingData.phone, // has a backend check, has to be a legitimate number
                             'notes': bookingData.notes,
@@ -278,7 +313,11 @@ export default function support() {
                             state.journeys[state.category][state.stage].style.display = "block";
 
                             state.nextBtn.innerText = "NEXT";
-                            state.navigation.style.display = "";
+
+                            state.navigation.style.height = 0;
+                            state.navigation.style.opacity = 0;
+                            state.navigation.style.visibility = 'hidden';
+
                             sendUnlock();
 
                             if (ga) {

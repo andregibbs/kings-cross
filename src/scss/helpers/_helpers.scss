@@ -291,12 +291,15 @@
   }
 
   .close {
+    visibility: hidden;
+    cursor: pointer;
     position: absolute;
     width: 32px;
     height: 32px;
-    opacity: 0.5;
     z-index: 99;
     right: 128px;
+    opacity: 0;
+    transition: opacity ease-in-out 0.5s;
     @media screen and (max-width: $desktop) {
       right: get-desktop-vw(32);
       // top: get-desktop-vw(32);

@@ -311,6 +311,7 @@
   }
 
   .close{
+    display: block !important;
     top: 0px;
     right: 256px;
     @media screen and (max-width: $desktop) {
@@ -359,8 +360,13 @@
   }
 }
 
-.navigation {
+#navigation {
   justify-content: center;
+  opacity: 0;
+  height: 0;
+  visibility: hidden;
+  display: flex;
+  transition: opacity ease-in-out 0.5s;
   button {
     margin: 0 25px;
     @media screen and (max-width: $desktop) {
