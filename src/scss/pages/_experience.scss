@@ -212,7 +212,6 @@
 				}
 			}
 			.experience__slide {
-				height: 40vw;
 
 				display: flex;
 				align-items: center;
@@ -240,6 +239,7 @@
 			&.collageme {}
 			&.messagetree {}
 			&.threeDme {}
+			&.yourselfieyourartwork {}
 			&__container {
 				display: flex;
 				flex-direction: column;

@@ -13,7 +13,8 @@ export default function experience(  ) {
         galaxygraffiti: [],
         collageme: [],
         messagetree: [],
-        threeDme: []
+        threeDme: [],
+        yourselfieyourartwork: []
     }
 
     // LOCAL
