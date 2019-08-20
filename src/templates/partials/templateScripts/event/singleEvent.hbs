@@ -7,7 +7,10 @@
 		</div>
 
 		<section class="event__header section__inner">
-			<div class="event__header__top"><div class="event__header__top__left"><span class="event__header-date">[[ startDate ]] | [[ startTime ]]</span><span class="action-capacity">Max spaces [[ maxReservations ]] | Spaces left [[ slotsAvailable ]] </span></div>
+			
+			<div class="event__header__top">[[#unless externalbookinglink ]]<div class="event__header__top__left"><span class="event__header-date">[[ startDate ]] | [[ startTime ]]</span><span class="action-capacity">Max spaces [[ maxReservations ]] | Spaces left [[ slotsAvailable ]] </span></div>[[/unless]]
+			
+
 				{{!-- [[#if sponsor]]<span id="sponsor-mobile">Brought to you by [[ capitalize sponsor ]]</span>[[/if]] --}}
 				[[#if externalbookinglink ]]
 					{{!-- <a ga-ca=“microsite” ga-ac=“feature” ga-la=“kings-cross:[[ dash title ]]_book-now” data-omni-type=“microsite” data-omni=“uk:kings-cross:event-page:[[ dash title ]]:book-now” href="[[externalbookinglink]]" class="link-book btn btn--primary" target="_blank">book now</a> --}}
@@ -42,7 +45,9 @@
 					<div class="event_details">
 						[[#if sponsor ]]<div class="event__header-sponsor"><span id="sponsor">Brought to you by [[ capitalize sponsor ]]</span></div>[[/if]]
 						<p class="event__header-date">[[ startDate ]]<br>[[ startTime ]] - [[ endTime ]]</p>
+						[[#unless externalbookinglink ]]
 						<div class="action-capacity fz14">Max Spaces [[ maxReservations ]] | Spaces left [[ slotsAvailable ]]</div>
+						[[/unless]]
 					</div>
 				</section>
 				<section class="event__section">

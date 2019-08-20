@@ -275,7 +275,8 @@ export default function support() {
                     "sendSms": true,
                     "marketingOptInSMS": marketing,
                     "time": (state.timeChosen.indexOf("+01:00") != -1) ? state.timeChosen.slice(0, -6) + "Z" : state.timeChosen,
-                    "notes": notes
+                    "notes": notes,
+                    "postCode": ((document.getElementById("kx").checked ? "KX," : "") + (document.getElementById("seuk").checked ? "SEUK," : "") + (document.getElementById("age").checked ? "Over13" : "")).split(",").join(" ")
                 };
 
                 document.getElementsByClassName("journey")[0].classList.add("progress");
@@ -300,6 +301,7 @@ export default function support() {
                             'bwIdentifier': "IZ0LYUJL6B0",
                             "marketingOptInSMS": bookingData.marketing,
                             "sendSms": true,
+                            'postCode': bookingData.postCode
                         }
                     ),
                     success: function (data) {

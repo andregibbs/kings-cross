@@ -6,8 +6,17 @@
     display: flex;
     justify-content: space-around;
     justify-content: space-evenly;
+
+    @supports (-ms-flow-from: thingy) {
+      /* Edge only */
+
+      & {
+        justify-content: space-around;
+      }
+    }
+
     align-items: flex-start;
-	align-items: center;
+    align-items: center;
     @media screen and (max-width: $mobile) {
       flex-direction: column-reverse;
     }
@@ -63,6 +72,10 @@
     color: #fff;
     margin: 0 30px;
     transition: 0.5s;
+
+    &.signup {
+      width: 180px;
+    }
 
     @media screen and (max-width: $mobile) {
       width: 50px;
@@ -142,9 +155,10 @@
   }
 
   ul li a em {
-	font-style: normal;
-	font-family: 'SamsungOne';
-	font-weight: 700;
+    font-style: normal;
+    font-family: "SamsungOne";
+    font-weight: 700;
+    font-size: 0.6em;
   }
 
   .facebook:hover {

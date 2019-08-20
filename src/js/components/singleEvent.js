@@ -148,7 +148,7 @@ export default function singleEvent(events) {
 
         // SPONSORS
         // If sponsor recognised, replace text with image
-        if(options.sponsor){
+        if (options.sponsor) {
           var sponsorContainer = document.getElementById("sponsor");
           // var sponsorContainerMobile = document.getElementById("sponsor-mobile");
           switch (options.sponsor.toLowerCase()) {
@@ -161,21 +161,21 @@ export default function singleEvent(events) {
               // sponsorContainerMobile.innerHTML = "";
               // sponsorContainerMobile.appendChild(mobileImg);
               break;
-              case "guardian":
-                var sponsorImg = new Image();
-                sponsorImgsrc = 'https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/external-logos/guardian.png';
-                document.getElementById("sponsor").
+            case "guardian":
+              var sponsorImg = new Image();
+              sponsorImgsrc = 'https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/external-logos/guardian.png';
+              document.getElementById("sponsor").
                 sponsorContainer.innerHTML = "";
-                sponsorContainer.appendChild(sponsorImg);
-                // var mobileImg = sponsorImg.cloneNode();
-                // sponsorContainerMobile.innerHTML = "";
-                // sponsorContainerMobile.appendChild(mobileImg);
+              sponsorContainer.appendChild(sponsorImg);
+              // var mobileImg = sponsorImg.cloneNode();
+              // sponsorContainerMobile.innerHTML = "";
+              // sponsorContainerMobile.appendChild(mobileImg);
               break;
             default:
               break;
           }
         }
-        
+
 
         // Event out of stock or has expired
         if (data.slotsAvailable == 0 || data.hasPassed) {
@@ -501,10 +501,7 @@ export default function singleEvent(events) {
 
       $.ajax({
         type: "POST",
-        url:
-          "https://bookings.qudini.com/booking-widget/series/" +
-          kxConfig.seriesId +
-          "/event/book",
+        url: "https://bookings.qudini.com/booking-widget/series/" + kxConfig.seriesId + "/event/book",
         dataType: "json",
         contentType: "application/json; charset=utf-8",
         data: JSON.stringify({
@@ -515,7 +512,8 @@ export default function singleEvent(events) {
           mobileNumber: form_tel,
           subscribed: true,
           eventId: eventId,
-          timezone: "Europe/London"
+          timezone: "Europe/London",
+          "postCode": ((document.getElementById("tc1").checked ? "KX," : "") + (document.getElementById("tc3").checked ? "SEUK," : "") + (document.getElementById("tc2").checked ? "Over13" : "")).split(",").join(" ")
         }),
         success: function (data) {
           $(".cm-configurator-loader").hide();
