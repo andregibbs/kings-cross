@@ -5,7 +5,11 @@
   background-size: cover;
 
   &__inner {
-    padding-right: 45%;
+    padding-right: 820px;
+
+    @media screen and (max-width: $desktop){
+      padding-right: 45%;
+    }
     @media screen and (max-width: $mobile) {
       padding-right: 0;
       margin-top: get-mobile-vw(256);
