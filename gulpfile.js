@@ -203,7 +203,7 @@ gulp.task('compress', function (cb) {
 gulp.task('watch', function () {
 	gulp.watch( config.SRC_FOLDER + '/scss/**/*.scss', ['scss'] )
 	gulp.watch( config.SRC_FOLDER + '/js/**/*.js', ['watchJS'] )
-    gulp.watch( config.SRC_FOLDER + '/templates/partials/*.hbs', ['html'] )
+    gulp.watch( config.SRC_FOLDER + '/templates/partials/**/*.hbs', ['html'] )
     gulp.watch( config.SRC_FOLDER + '/pages/**/*.html', ['html'] )
 
 	log('Watching src for changes... ')

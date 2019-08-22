@@ -201,53 +201,55 @@ export default function support() {
             state.close.style.visibility = "hidden";
             state.close.style.opacity = 0;
 
-            $(this.journeys[this.category][this.stage]).slideUp({duration: 400, start: function () {
-                state.navigation.style.visibility = 'hidden';
-
-                $(state.navigation).slideUp(75, function () {
-                    state.navigation.style.height = 0;
-                    state.navigation.style.opacity = 0;
+            $(this.journeys[this.category][this.stage]).slideUp({
+                duration: 400, start: function () {
                     state.navigation.style.visibility = 'hidden';
 
-                    state.nextBtn.classList.remove("btn--primary--" + colors[state.category]);
-                    state.backBtn.classList.remove("btn--secondary--" + colors[state.category]);
-                    state.nextBtn.setAttribute("ga-la", "kings-cross:navigation_next");
-                    state.nextBtn.setAttribute("data-omni", "uk:kings-cross:support:navigation:next");
+                    $(state.navigation).slideUp(75, function () {
+                        state.navigation.style.height = 0;
+                        state.navigation.style.opacity = 0;
+                        state.navigation.style.visibility = 'hidden';
 
-                    state.backBtn.setAttribute("ga-la", "kings-cross:navigation_back");
-                    state.backBtn.setAttribute("data-omni", "uk:kings-cross:support:navigation:back");
+                        state.nextBtn.classList.remove("btn--primary--" + colors[state.category]);
+                        state.backBtn.classList.remove("btn--secondary--" + colors[state.category]);
+                        state.nextBtn.setAttribute("ga-la", "kings-cross:navigation_next");
+                        state.nextBtn.setAttribute("data-omni", "uk:kings-cross:support:navigation:next");
+
+                        state.backBtn.setAttribute("ga-la", "kings-cross:navigation_back");
+                        state.backBtn.setAttribute("data-omni", "uk:kings-cross:support:navigation:back");
 
 
-                    screens.calendar.children[0].classList.remove(colors[state.category]);
-                    document.getElementsByClassName("journey")[0].classList.remove(colors[state.category]);
-                    $("span.checkbox").each(function (ind, elm) {
-                        elm.classList.remove("checkbox__" + colors[state.category]);
+                        screens.calendar.children[0].classList.remove(colors[state.category]);
+                        document.getElementsByClassName("journey")[0].classList.remove(colors[state.category]);
+                        $("span.checkbox").each(function (ind, elm) {
+                            elm.classList.remove("checkbox__" + colors[state.category]);
+                        });
+                        ["oneToOne", "support", "repair"].forEach(function (category) {
+                            document.getElementById("btn-" + category).classList.remove("btn--primary-notActive");
+                        });
+
+                        $(".checkbox").siblings("input").prop("checked", false);
+                        $(".calendar--selected").removeClass("calendar--selected");
+                        $("#next").removeData("slot");
+                        sendLock();
+
+
+                        clearState();
+
+                        document.getElementById("details").reset();
+                        document.getElementById("device-info").reset();
+
+                        window.history.replaceState({}, document.title, location.protocol + "//" + location.host + location.pathname);
+                        // while ($(".calendar__container")[0].lastChild) {
+                        //     $(".calendar__container")[0].removeChild($(".calendar__container")[0].lastChild);
+                        // }
                     });
-                    ["oneToOne", "support", "repair"].forEach(function (category) {
-                        document.getElementById("btn-" + category).classList.remove("btn--primary-notActive");
-                    });
 
-                    $(".checkbox").siblings("input").prop("checked", false);
-                    $(".calendar--selected").removeClass("calendar--selected");
-                    $("#next").removeData("slot");
-                    sendLock();
-
-
-                    clearState();
-
-                    document.getElementById("details").reset();
-                    document.getElementById("device-info").reset();
-
-                    window.history.replaceState({}, document.title, location.protocol + "//" + location.host + location.pathname);
-                    // while ($(".calendar__container")[0].lastChild) {
-                    //     $(".calendar__container")[0].removeChild($(".calendar__container")[0].lastChild);
-                    // }
-                });
-
-            }, complete: function(){
-                state.navigation.style.display = '';
-                state.nextBtn.innerText = "NEXT";
-            }});
+                }, complete: function () {
+                    state.navigation.style.display = '';
+                    state.nextBtn.innerText = "NEXT";
+                }
+            });
 
 
         },
@@ -265,15 +267,14 @@ export default function support() {
                 var surname = document.getElementById("surname").value;
                 var email = document.getElementById("email").value;
                 var phone = document.getElementById("tel").value;
-                var marketing = document.getElementById("marketing").checked;
-                var notes = "Model selected: " + state.deviceChosen + "; Colour: " + state.colorChosen + (state.imei ? "; IMEI: " + state.imei : "") + (state.deviceNotes ? "; Customer Notes: " + state.deviceNotes : "");
+                var notes = (state.deviceChosen ? "Model selected: " + state.deviceChosen + "; " : "") + (state.colorChosen ? "Colour: " + state.colorChosen + "; ": "") + (state.imei ? "IMEI: " + state.imei : "") + (state.deviceNotes ? "; Customer Notes: " + state.deviceNotes : "");
                 var bookingData = {
                     "name": name,
                     "surname": surname,
                     "email": email,
                     "phone": phone,
                     "sendSms": true,
-                    "marketingOptInSMS": marketing,
+                    "marketingOptInSMS": true,
                     "time": (state.timeChosen.indexOf("+01:00") != -1) ? state.timeChosen.slice(0, -6) + "Z" : state.timeChosen,
                     "notes": notes,
                     "postCode": ((document.getElementById("kx").checked ? "KX," : "") + (document.getElementById("seuk").checked ? "SEUK," : "") + (document.getElementById("age").checked ? "Over13" : "")).split(",").join(" ")
@@ -299,7 +300,7 @@ export default function support() {
                             'notes': bookingData.notes,
                             'productId': state.productId,//Make dynamic
                             'bwIdentifier': "IZ0LYUJL6B0",
-                            "marketingOptInSMS": bookingData.marketing,
+                            "marketingOptInSMS": true,
                             "sendSms": true,
                             'postCode': bookingData.postCode
                         }
@@ -430,10 +431,7 @@ export default function support() {
         state.nextBtn.dispatchEvent(lock);
     }
 
-
     function handleResize() {
-
-        doLog('%c%s', 'color: #f2ceb6', "Tis logged");
 
         if (window.innerWidth <= 768 && viewport != "mobile") {
             doLog("Still mobile");
@@ -701,5 +699,7 @@ export default function support() {
     $(".close").click(function () { state.cancelJourney() })
 
     handleResize();
+
+
 
 }

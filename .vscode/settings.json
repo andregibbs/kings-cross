@@ -1,3 +1,7 @@
 {
-    "sassVariablesHelper.route": "'/src/scss/base/_variables.scss'"
+    "sassVariablesHelper.route": "/src/scss/base/_variables.scss",
+    "workbench.colorCustomizations": {
+        "titleBar.activeBackground": "#E14D9A",
+        "titleBar.inactiveBackground": "#E14D9A"
+    }
 }

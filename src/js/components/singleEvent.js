@@ -513,7 +513,7 @@ export default function singleEvent(events) {
           subscribed: true,
           eventId: eventId,
           timezone: "Europe/London",
-          "postCode": ((document.getElementById("tc1").checked ? "KX," : "") + (document.getElementById("tc3").checked ? "SEUK," : "") + (document.getElementById("tc2").checked ? "Over13" : "")).split(",").join(" ")
+          postcode: ((document.getElementById("tc1").checked ? "KX," : "") + (document.getElementById("tc3").checked ? "SEUK," : "") + (document.getElementById("tc2").checked ? "Over13" : "")).split(",").join(" ")
         }),
         success: function (data) {
           $(".cm-configurator-loader").hide();
@@ -521,7 +521,7 @@ export default function singleEvent(events) {
           $(".book--active").css({
             background:
               "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(" +
-              eventDetails.imageURL +
+              eventDetails.bannerImageURL +
               ")",
             "background-repeat": "no-repeat",
             "background-position": "center center",

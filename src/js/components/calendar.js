@@ -8,16 +8,6 @@ export default function calendar(URL, type, allEvents) {
 
 	customevent();
 
-	//For appointments:
-	//To get the proper appointmentsURL, go to Qudini admin panel, Venue information => details, and open the online booking widgets. Inside, use the browser network inspector to get the call which has the same structure to the one below:
-	//https://bookings.qudini.com/booking-widget/booker/slots/73U8JNREMLS/2286/37437/0
-	//For events:
-	//https://bookings.qudini.com/booking-widget/event/event/ + eventID
-
-	//type ∈ {"appointment", "event"}
-
-	//The component relies on a button with id "next" to be around
-
 	var unlock = new CustomEvent("unlock");
 	var lock = new CustomEvent("lock");
 
@@ -126,9 +116,9 @@ export default function calendar(URL, type, allEvents) {
 				//Format date
 				var date = new Date(data[dateInd].date);
 				// var dateFormatted = days[date.getDay()] + " " + date.getDate() + " " + months[date.getMonth()] + " " + date.getFullYear();
-				var dateFormatted = moment(date).format('dddd Do MMMM YYYY');
+				var dateFormatted = moment(date).format('dddd Do <br> MMMM YYYY');
 
-				doLog(dateFormatted);
+				doLog("Formatted date", dateFormatted);
 
 				//Append the date column
 				$(".calendar__container").append(handleTemplate("dateColumn", { "dateFormatted": dateFormatted, "index": dateInd, "date": date.format("yyyy-MM-dd") }));
@@ -300,8 +290,8 @@ export default function calendar(URL, type, allEvents) {
 		// }
 		$('.calendar__container').empty()
 
-		const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-		const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+		// const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+		// const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
 		//Dates depend on events being presorted
 		var dates = [];
@@ -323,7 +313,6 @@ export default function calendar(URL, type, allEvents) {
 
 	function handleResize() {
 
-		doLog('%c%s', 'color: #f2ceb6', "Tis logged");
 
 		if (window.innerWidth <= 768 && (viewport != "mobile" || calendarRestart)) {
 			doLog("Still mobile");
