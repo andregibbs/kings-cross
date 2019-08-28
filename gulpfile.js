@@ -212,4 +212,4 @@ gulp.task('watch', function () {
 
 gulp.task('production', sequence('delete-build', 'copy-assets', 'scss', 'buildJS', 'html') )
 gulp.task('development', sequence('copy-assets', 'scss', 'buildJS', 'html', 'minify') )
-gulp.task('default', ['watch', 'development', 'watchJS', 'browser-sync'])
+gulp.task('default', ['watch', 'development', 'watchJS'])

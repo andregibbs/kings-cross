@@ -175,7 +175,7 @@ $(document).ready(function () {
 			'timezone': "Europe/London",
 			'isoCurrentDate': isoCurrentDate.toISOString()
 		}).success(function (data) {
-
+			doLog("All events:", data);
 			for (var i = 0; i < data.length; i++) {
 				// MERGE JSON DATA HELD WITHIN description INTO FEED as 'extra' property !!!!!
 				var event = data[i];

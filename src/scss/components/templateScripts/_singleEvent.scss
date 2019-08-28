@@ -231,7 +231,7 @@
         .action-btn {
           display: block;
 
-          &:nth-of-type(2) {
+          &:nth-of-type(2), &.changeTime {
             margin: 0 20px;
           }
         }

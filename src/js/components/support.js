@@ -109,7 +109,7 @@ export default function support() {
 
                 switch (this.category) {
                     case "oneToOne":
-                        bookingURL = "https://bookings.qudini.com/booking-widget/booker/slots/IZ0LYUJL6B0/4375/62711/0";
+                        bookingURL = "https://bookings.qudini.com/booking-widget/booker/slots/ZP4CQAQ5F6R/4375/64732/0";
                         state.productId = "62711";
                         break;
 

@@ -82,11 +82,13 @@ export default function singleEvent(events) {
           startTime: (data.startTime[0] == '0' ? data.startTime.substr(1) : data.startTime),
           endTime: moment(data.startISO).utc().add(data.durationMinutes, 'minutes').format("LT"),
           passion: data.passions,
-          description: data.description.split(". ", 2).length > 1 ? data.description.replace(
-            data.description.split(". ", 2)[0] + ". ",
-            ""
-          ) : '',
-          firstSentence: data.description.split(". ", 1)[0].replace(/(\r\n|\n|\r)/gm, '<br>') + ".",
+          // description: data.description.split(/(\.\s)/gm, 2).length > 1 ? data.description.replace(
+          //   data.description.split(/(\.\s)/gm, 2)[0] + ". ",
+          //   ""
+          // ) : '',
+          // firstSentence: data.description.split(/(\.\s)/gm, 1)[0].replace(/(\r\n|\n|\r)/gm, '<br>') + ".",
+          description: data.description,
+          firstSentence: "",
           maxReservations: data.maxReservations,
           slotsAvailable: data.slotsAvailable,
           youtube: data.extra.youtubeid,
@@ -145,6 +147,9 @@ export default function singleEvent(events) {
         });
         doLog(options);
         $(".singleEvent").append(handleTemplate("singleEvent", options));
+
+        $(".tile-desc--long").html($(".tile-desc--long").html().split(/(\r\n|\n|\r)/gm).filter(a => a.length > 1).join('<br><br>'));
+        // $(".tile-desc--long").html($(".tile-desc--long").html().split(/(\r\n|\n|\r)/gm).join('<br>'));
 
         // SPONSORS
         // If sponsor recognised, replace text with image
@@ -253,7 +258,7 @@ export default function singleEvent(events) {
             var html =
               '<div class="change__time time ' +
               slots +
-              '"data-id="' + event.id + '">' +
+              '"data-id="' + event.id + '" data-link="' + event.extra.externalbookinglink + '" >' +
               '<h4 class="time__int">' +
               formattedStartTime +
               '</h4><span class="time__available">' +
@@ -357,53 +362,62 @@ export default function singleEvent(events) {
 
   $(".book").on("click", ".change__form-submit", function () {
     //get the event we need to populate
+
     eventId = $('.change__time.selected').data('id');
 
-    events.forEach(data => {
-      if (data.id === eventId) {
+    doLog(eventDetails.extra.externalbookinglink);
+    if (eventDetails.extra.externalbookinglink && $('.change__time.selected').data('link')) {
+      window.open($('.change__time.selected').data('link'), '_blank');
+      return;
+    } else {
 
-        var startTime = moment(data.startISO).utc();
-        var bookOptions = {
-          startDate: (moment(data.startDate).format("dddd Do MMMM YYYY") == moment(Date.now()).format("dddd Do MMMM YYYY")) ? "TODAY" : moment(data.startDate).format("dddd Do MMMM YYYY"),
-          startTime: moment(startTime).format("LT"),
-          endTime: moment(startTime)
-            .add(data.durationMinutes, "m")
-            .format("LT"),
-          maxGroupSize: data.maxGroupSize,
-          slotsAvailable: data.slotsAvailable
-        };
-        $(".section.book")
-          .find(".book-action__description")
-          .text(
-            bookOptions.startTime +
-            " - " +
-            bookOptions.endTime +
-            " | " +
-            bookOptions.startDate +
-            " | Samsung KX"
-          );
-        $(".book__tickets-tickets").attr({
-          "max": bookOptions.maxGroupSize,
-          "min": 1
-        });
+      events.forEach(data => {
+        if (data.id === eventId) {
 
-        $(".book__tickets-tickets").change(function (e) {
+          var startTime = moment(data.startISO).utc();
+          var bookOptions = {
+            startDate: (moment(data.startDate).format("dddd Do MMMM YYYY") == moment(Date.now()).format("dddd Do MMMM YYYY")) ? "TODAY" : moment(data.startDate).format("dddd Do MMMM YYYY"),
+            startTime: moment(startTime).format("LT"),
+            endTime: moment(startTime)
+              .add(data.durationMinutes, "m")
+              .format("LT"),
+            maxGroupSize: data.maxGroupSize,
+            slotsAvailable: data.slotsAvailable
+          };
+          $(".section.book")
+            .find(".book-action__description")
+            .text(
+              bookOptions.startTime +
+              " - " +
+              bookOptions.endTime +
+              " | " +
+              bookOptions.startDate +
+              " | Samsung KX"
+            );
+          $(".book__tickets-tickets").attr({
+            "max": bookOptions.maxGroupSize,
+            "min": 1
+          });
 
-          if (this.value > bookOptions.maxGroupSize || this.value > bookOptions.slotsAvailable) {
-            this.classList.add("flash");
-            setTimeout(function () {
-              $(".book__tickets-tickets").removeClass("flash");
-            }, 500);
-            console.log(bookOptions.maxGroupSize, bookOptions.slotsAvailable);
-            this.value = Math.min.apply(null, [bookOptions.maxGroupSize, bookOptions.slotsAvailable]);
-          }
-        });
+          $(".book__tickets-tickets").change(function (e) {
 
-        $(".change").removeClass("change--active");
-        $(".book-action").addClass("book-action--active");
+            if (this.value > bookOptions.maxGroupSize || this.value > bookOptions.slotsAvailable) {
+              this.classList.add("flash");
+              setTimeout(function () {
+                $(".book__tickets-tickets").removeClass("flash");
+              }, 500);
+              console.log(bookOptions.maxGroupSize, bookOptions.slotsAvailable);
+              this.value = Math.min.apply(null, [bookOptions.maxGroupSize, bookOptions.slotsAvailable]);
+            }
+          });
 
-      }
-    });
+          $(".change").removeClass("change--active");
+          $(".book-action").addClass("book-action--active");
+
+        }
+      });
+
+    }
   });
 
   $(".book__tickets-minus").click(function (e) {

@@ -71,10 +71,13 @@ export default function whatson(events) {
 	dataPicker()
 
 	$('.events__showMore').click(function () {
-		lazyGetEvents(eventsToManipulate, 12);
 		if (numberEventsToShow + 12 > eventsToManipulate.length) {
-			// $('.events__showMore').addClass('noMore');
+			doLog("Events to show", numberEventsToShow);
+			doLog("Events to manipulate", eventsToManipulate);
+			lazyGetEvents(eventsToManipulate, eventsToManipulate.length - numberEventsToShow);
 			$('.events__showMore').hide();
+		} else {
+			lazyGetEvents(eventsToManipulate, 12);
 		}
 
 	});
@@ -122,9 +125,21 @@ export default function whatson(events) {
 
 		if ($(this).hasClass('btn--secondary')) {
 			resetFilters()
+		} else {
+			$("body,html").animate(
+				{
+					scrollTop: $(".section.events").offset().top
+				},
+				400);
 		}
+		numberEventsToShow = 24;
+		$('.events__showMore').show();
+
+
 
 		updateFilters()
+
+
 
 		var eventsToRender = events;
 
@@ -194,7 +209,7 @@ export default function whatson(events) {
 
 		$('.whatsOn__kv').css('background', 'url(/content/dam/samsung/uk/explore/kings-cross/passion-header/passion-header-generic.jpg)')
 
-		lazyGetEvents(events, 0)
+		lazyGetEvents(events, 0);
 	}
 
 	// =================================================

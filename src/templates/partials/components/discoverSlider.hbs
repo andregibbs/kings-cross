@@ -14,7 +14,7 @@
             {{/each}}
 
 
-            {{else}}
+            {{else ifCond slider "sliderTwo"}}
 
             {{#each config.discover.sliderTwo }}
             <div class="slider-discover__slide">
@@ -22,6 +22,23 @@
             </div>
 
             {{/each}}
+
+            {{else ifCond slider "mainSlider"}}
+
+            {{!-- {{#each config.discover.mainSlider}} --}}
+             <div class="slider-discover__slide">
+                 <video class="video__main" preload="none" playsinline onclick="if(this.paused) { this.play() }else{this.pause()}" poster="https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/video_poster.jpg">
+                    <source src="https://images.samsung.com/is/content/samsung/p5/uk/kings-cross/kx_hype.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="slider-discover__slide">
+                <div style="position: relative">
+                    <img class="discover__img" src="//images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/discover/KX_Carousel_Samsung-KX50_1152x648.jpg"/>
+                    <a target="_blank" class="button btn btn--primary slider-discover__cta" href="//images.samsung.com/is/content/samsung/p5/uk/explore/kings-cross/discover/SamsungKX50-The_Future_in_Focus_-_report.pdf">Learn More</a>
+                </div>
+            </div>
+            {{!-- {{/each}} --}}
 
             {{/ifCond}}
 
