@@ -13,6 +13,16 @@ export default function discover( events ) {
 
 	slider( events, '.slider-discover', sliderConfig, 'homeKv' );
 
+	window.$( document ).ready(function() {
+		setTimeout(function(){
+			if(window.location.hash == "#whitepaper") {
+				$("#slick-slide01").click();
+			}
+		},300);
+	});
+
+	
+
 	//video
 
 	// $("video").click(function(e){

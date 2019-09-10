@@ -10,13 +10,13 @@ function ShuffleArray(o) {
 	return o;
 };
 
-export default function upcomingEvents( events, topicId ) {
+export default function upcomingEvents( events, topicId, currentEvent ) {
 
   // dont want to recall & populate events
   if (upcomingEventsPopulated) {
-    return
+    return;
   }
-  upcomingEventsPopulated = true
+  upcomingEventsPopulated = true;
 
     var populateRandomEvents = [];
     var filteredEvents = [];
@@ -43,9 +43,13 @@ export default function upcomingEvents( events, topicId ) {
   // shuffle here, instead of within loop. prevents posibility that the same element will be picked twice
   filteredEvents = ShuffleArray(filteredEvents)
   for (var i = 0; i < maxEvents; i++) {
-    populateRandomEvents.push(
-      filteredEvents[i]
-    );
+    if(filteredEvents[i] != currentEvent){
+      populateRandomEvents.push(
+        filteredEvents[i]
+      );
+    } else {
+      maxEvents++;//try again
+    }
   }
  }
 

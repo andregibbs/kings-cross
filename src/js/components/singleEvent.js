@@ -198,7 +198,7 @@ export default function singleEvent(events) {
         // Related Events
         // =================================================
 
-        upcomingEvents(events, topicId);
+        upcomingEvents(events, topicId, eventDetails);
 
         // =================================================
         // Find reocurring Events
