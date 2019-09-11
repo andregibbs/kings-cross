@@ -168,9 +168,8 @@ export default function singleEvent(events) {
               break;
             case "guardian":
               var sponsorImg = new Image();
-              sponsorImgsrc = 'https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/external-logos/guardian.png';
-              document.getElementById("sponsor").
-                sponsorContainer.innerHTML = "";
+              sponsorImg.src = 'https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/external-logos/guardian.png';
+              sponsorContainer.innerHTML = "";
               sponsorContainer.appendChild(sponsorImg);
               // var mobileImg = sponsorImg.cloneNode();
               // sponsorContainerMobile.innerHTML = "";
@@ -294,7 +293,11 @@ export default function singleEvent(events) {
       $(".book-action").addClass("book-action--active");
     }
 
-    $(".book").slideDown();
+    $(".book").slideDown({
+      complete: function () {
+        $(".close, .change__close").css({"visibility": "visible","opacity": 1});
+      }
+    });
     $("body,html").animate(
       {
         scrollTop: $(".book").offset().top - 40
@@ -306,7 +309,11 @@ export default function singleEvent(events) {
 
   $(".close, .change__close").on("click", function (e) {
     e.preventDefault();
-    $(".book").slideUp();
+    $(".book").slideUp({
+      complete: function () {
+        $(".close, .change__close").css({"visibility": "hidden","opacity": 0});
+      }
+    });
     $(".book").removeClass("book--active");
     $(".change").removeClass("change--active");
     $(".book-action").removeClass("book-action--active");

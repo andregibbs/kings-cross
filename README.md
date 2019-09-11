@@ -85,12 +85,12 @@ ben@qudini.com
 # ***NB***
 Common Bug:
 Sometimes when you use the scrapper tool, the JS scrapped might come out looking like this:
-![Alt text](common-bug.png?raw=true "Bug Demo: the first non-comment line var kxConfig=... is inline when it shouldn't be")
+![Alt text](./readme/common-bug.png?raw=true "Bug Demo: the first non-comment line var kxConfig=... is inline when it shouldn't be")
 
 The error originates in [the script handlebar file](../src/templates/partials/scripts.hbs).
 If you open the file, save it again, and run gulp, it should fix itself, but if not, you can manually edit the scrapped version, and make it look like:
 
-![Alt text](bug-correction.png?raw=true "Inline separated into multi-lines")
+![Alt text](./readme/bug-correction.png?raw=true "Inline separated into multi-lines")
 <details>
   <summary>Fixed Code</summary>
    
@@ -139,4 +139,5 @@ Notes:
 
 - Events can be cancelled using API calls, appointments can't as of September 2019
 - Qudini isn't very flexible, so when creating events, we attach a json format text at the end of the description of the event (i.e. [desc] || {...}), which we then process when passing data to the event handlebar template
+- To imitate live events load on local, set your vhost path as kings-cross-live.samsung.com
 
