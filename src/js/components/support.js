@@ -91,6 +91,10 @@ export default function support() {
                 document.getElementById("btn-" + this.category).classList.add("btn--primary-notActive");
 
                 this.nextBtn.setAttribute("ga-la", "kings-cross:" + this.category.toLowerCase() + "_next");
+                this.nextBtn.setAttribute("ga-ac", "feature");
+                this.nextBtn.setAttribute("ga-ca", "microsite");
+
+                this.nextBtn.setAttribute("ga-la", "kings-cross:" + this.category.toLowerCase() + "_next");
                 this.nextBtn.setAttribute("data-omni", "uk:kings-cross:support:" + this.category.toLowerCase() + ":next");
 
                 this.backBtn.setAttribute("ga-la", "kings-cross:" + this.category.toLowerCase() + "_back");
@@ -583,6 +587,9 @@ export default function support() {
 
                 if (newScreen == screens.details) {
                     state.nextBtn.innerText = "BOOK NOW";
+                    $(state.nextBtn).removeAttr("ga-ca");
+                    $(state.nextBtn).removeAttr("ga-ac");
+                    $(state.nextBtn).removeAttr("ga-la");
                 }
             }
         }
