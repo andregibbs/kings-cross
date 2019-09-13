@@ -152,7 +152,7 @@ $(document).ready(function () {
 
 			if (bits.length > 1) {
 				event.extra = {};
-				bits[1] = bits[1].replace(/“/gi, '"').replace(/”/gi, '"');
+				bits[1] = bits[1].replace(/"/gi, '"').replace(/"/gi, '"');
 				// check if string is valid json
 				if (IsJsonString(bits[1])) {
 					event.extra = IsJsonString(bits[1]);

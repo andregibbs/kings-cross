@@ -55,6 +55,7 @@
         padding-bottom: get-mobile-vw($p-borders-mobile);
       }
     }
+
   }
 
   // URL LINKS
@@ -484,4 +485,10 @@
   input.invalid {
     border-color: #ff4337;
   }
+
+  .no-vert-padding{
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
 }

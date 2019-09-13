@@ -3,7 +3,7 @@
 =============================================*/
 
 .kv {
-  background: url("https://images.samsung.com/is/image/samsung/p5/uk/kings-cross/discover-kv.png?$ORIGIN_PNG$");
+  background: url("https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/discover-kv_promo.jpg?$ORIGIN_JPG$");
   max-height: 700px;
   height: 57vh;
   background-repeat: no-repeat;
@@ -20,12 +20,28 @@
   h2 {
     font-size: em(50);
     font-weight: bold;
-    width: 50%;
+    width: 80%;
     line-height: em(17);
+    text-shadow: 2px 2px 12px #000000;
     @media screen and (max-width: $mobile) {
-      font-size: em(45);
+      font-size: em(40);
     }
   }
+  
+  p{
+    text-shadow: 2px 2px 12px #000000;
+    margin: get-desktop-vw(10) 0px;
+    font-size: em(18);
+    @media screen and (max-width: $mobile){
+      margin: get-mobile-vw(15) 0px;
+    }
+  }
+
+  a{
+    box-shadow: 2px 2px 12px black;
+  }
+  
+
 }
 
 // .kx-video {

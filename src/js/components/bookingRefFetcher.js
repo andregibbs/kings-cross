@@ -173,7 +173,7 @@ export default function bookingRefFetcher(AllEvents) {
         $(".line--vertical, .request__info p, .request__info a, #date, #title, .request__event").hide();
         $(".request__info h3").html("Booking cancelled<br>" + eventData.title);
         $(".request__info").css("justify-content", "center");
-        $(".request__summary__content").append('<p class="fz18 request__cancel">Your booking has been cancelled.</p><br><p class="fz18">Thanks for letting us know. If you would like to come to a different Samsung KX event go to the <a ga-ca=“microsite” ga-ac=“feature” ga-la=“kings-cross:your-booking-has-been-cancelled_whats on” data-omni-type=“microsite” data-omni=“uk:kings-cross:whats-on” style="font-size: 1em;" href="//www.samsung.com/uk/explore/kings-cross/whats-on">What’s on</a> page or browse the upcoming events below.</p><br/><a href="./"><button class="button btn btn--primary">Search for another event</button></a>');
+        $(".request__summary__content").append('<p class="fz18 request__cancel">Your booking has been cancelled.</p><br><p class="fz18">Thanks for letting us know. If you would like to come to a different Samsung KX event go to the <a ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:your-booking-has-been-cancelled_whats on" data-omni-type="microsite" data-omni="uk:kings-cross:whats-on" style="font-size: 1em;" href="//www.samsung.com/uk/explore/kings-cross/whats-on">What’s on</a> page or browse the upcoming events below.</p><br/><a href="./"><button class="button btn btn--primary">Search for another event</button></a>');
         $(".relatedEvents__header__see").click(function() {
             window.location.href = "/uk/explore/kings-cross/whats-on/";
           });

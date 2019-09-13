@@ -289,6 +289,96 @@
   }
 }
 
+.dailyEvents {
+  &__inner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 32px;
+
+    @media screen and (min-width: $mobile + 1) {
+      flex-direction: row;
+      height: 120px;
+    }
+  }
+
+  &__box {
+    position: relative;
+    height: 10vh;
+    width: 100%;
+    max-width: 500px;
+    max-height: 120px;
+    margin: 10px 0;
+
+    @media screen and (min-width: $desktop) {
+      margin: 0px 10px;
+      width: 500px;
+      height: 120px;
+    }
+
+    @media screen and (min-width: $mobile + 1) {
+      margin: 0px 10px;
+      height: 8.3vw;
+      width: 34vw;
+    }
+
+    h4 {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 5;
+      text-align: center;
+      width: 100%;
+      font-size: 2em;
+    }
+
+    &::after {
+      content: "";
+      opacity: 0.35;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: 0;
+    }
+
+    &--purple {
+      border-top: solid 11px $purple;
+      &::after {
+        background: url(https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/product-classes.png);
+        background-position: center center;
+      }
+    }
+    &--pink {
+      border-top: solid 11px $pink;
+      &::after {
+        background: url(https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/gaming-sessions.png);
+        background-position: center center;
+      }
+    }
+    &--blue {
+      border-top: solid 11px $cyan;
+      &::after {
+        background: url(https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/connected-kitchen-demo.png);
+        background-position: center center;
+      }
+    }
+  }
+
+  p {
+    font-size: em(20);
+    text-align: center;
+    margin-top: get-desktop-vw(30);
+    @media screen and (max-width: $mobile) {
+      margin-top: get-desktop-vw(30);
+      margin-bottom: get-desktop-vw(15);
+    }
+  }
+}
+
 @keyframes tileFadeIn {
   from {
     opacity: 0;

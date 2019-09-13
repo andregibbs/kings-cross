@@ -217,6 +217,11 @@ export default function support() {
                         state.nextBtn.classList.remove("btn--primary--" + colors[state.category]);
                         state.backBtn.classList.remove("btn--secondary--" + colors[state.category]);
                         state.nextBtn.setAttribute("ga-la", "kings-cross:navigation_next");
+
+                        state.nextBtn.setAttribute("ga-ac", "feature");
+                        state.nextBtn.setAttribute("ga-ca", "microsite");
+
+
                         state.nextBtn.setAttribute("data-omni", "uk:kings-cross:support:navigation:next");
 
                         state.backBtn.setAttribute("ga-la", "kings-cross:navigation_back");
@@ -601,6 +606,9 @@ export default function support() {
 
     state.backBtn.addEventListener("click", function () {
         state.nextBtn.setAttribute("ga-la", 'kings-cross:navigation_next');
+        state.nextBtn.setAttribute("ga-ac", "feature");
+        state.nextBtn.setAttribute("ga-ca", "microsite");
+        
         if (state.stage <= 1) {
             state.cancelJourney();
         } else {

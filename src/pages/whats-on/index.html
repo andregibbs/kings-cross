@@ -12,10 +12,10 @@
 
   <section class="section whatsOn__kv">
     <div class="section__inner">
-    <h1 class="h1-hidden">Follow Your Passion</h1>
-    <h2>What's on at Samsung KX</h2>
+      <h1 class="h1-hidden">Follow Your Passion</h1>
+      <h2>What's on at Samsung KX</h2>
     </div>
-    </section>
+  </section>
 
   <section class="section eventFilter">
     <div class="section__inner">
@@ -25,11 +25,8 @@
           <h2>Follow Your Passion</h2>
         </div>
         <div class="eventFilter__header__toggle">
-		  <span>SHOW FILTERS</span>
-		  <a
-            href="#"
-           	class="eventFilter__header__toggle__btn_fold"
-		  >
+          <span>SHOW FILTERS</span>
+          <a href="#" class="eventFilter__header__toggle__btn_fold">
           </a>
         </div>
       </div>
@@ -40,60 +37,87 @@
 
           <div class="filters__category">
             <div class="filters__category-group passions">
-			  {{#each @root.config.passions}}
-			  <div class="switch" data-code="{{ this.code }}">
+              {{#each @root.config.passions}}
+              <div class="switch" data-code="{{ this.code }}">
 
-					<div class="toggle_switch">
-							<div class="switch-button" style="background-color: {{ this.color }}4D"><div class="before" ></div><div class="after" style="background-color: {{ this.color }}" ></div></div>
-						</div>
+                <div class="toggle_switch">
+                  <div class="switch-button" style="background-color: {{ this.color }}4D">
+                    <div class="before"></div>
+                    <div class="after" style="background-color: {{ this.color }}"></div>
+                  </div>
+                </div>
 
-						<div class="label">
-								<span>{{{ this.name }}}</span>
-						</div>
+                <div class="label">
+                  <span>{{{ this.name }}}</span>
+                </div>
 
-			  </div>
+              </div>
 
               {{/each}}
             </div>
 
             <h3 class="toggleSuitables__title">
               Event Types
-			</h3>
+            </h3>
 
             <div class="filters__category-group suitables">
               {{#each @root.config.suitables}}
               <div class="switch" data-code="{{ this.code }}">
 
-					<div class="toggle_switch">
-							<div class="switch-button"><div class="before" ></div><div class="after"></div></div>
-						</div>
+                <div class="toggle_switch">
+                  <div class="switch-button">
+                    <div class="before"></div>
+                    <div class="after"></div>
+                  </div>
+                </div>
 
-						<div class="label">
-								<span>{{{ this.name }}}</span>
-						</div>
+                <div class="label">
+                  <span>{{{ this.name }}}</span>
+                </div>
 
-			  </div>
+              </div>
               {{/each}}
             </div>
-		  </div>
-		  <div class="filters__lower">
-				<div class="filters__date">
-						<h2 class="filters-title">Date Range</h2>
-						<div class="filters__date__container">
-								<input type="text" autocomplete="off" placeholder="Start" id="from" name="from" />
-								<input type="text" autocomplete="off" placeholder="End" id="to" name="to" />
-						</div>
-					  </div>
-				<div class="filters__results">
-            <button ga-ca=“microsite” ga-ac=“feature” ga-la=“kings-cross:filter_reset-filter” data-omni-type=“microsite” data-omni=“uk:kings-cross:whats-on:reset-filter” class="button btn btn--secondary">RESET FILTERS</button>	<button ga-ca=“microsite” ga-ac=“feature” ga-la=“kings-cross:filter_apply-filters” data-omni-type=“microsite” data-omni=“uk:kings-cross:whats-on:apply-filters” class="button btn btn--primary">APPLY FILTERS</button>
-					  </div>
-		  </div>
+          </div>
+          <div class="filters__lower">
+            <div class="filters__date">
+              <h2 class="filters-title">Date Range</h2>
+              <div class="filters__date__container">
+                <input type="text" autocomplete="off" placeholder="Start" id="from" name="from" />
+                <input type="text" autocomplete="off" placeholder="End" id="to" name="to" />
+              </div>
+            </div>
+            <div class="filters__results">
+              <button ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:filter_reset-filter"
+                data-omni-type="microsite" data-omni="uk:kings-cross:whats-on:reset-filter"
+                class="button btn btn--secondary">RESET FILTERS</button> <button ga-ca="microsite" ga-ac="feature"
+                ga-la="kings-cross:filter_apply-filters" data-omni-type="microsite"
+                data-omni="uk:kings-cross:whats-on:apply-filters" class="button btn btn--primary">APPLY FILTERS</button>
+            </div>
+          </div>
 
 
         </div>
 
 
       </div>
+    </div>
+  </section>
+
+  <section class="section no-vert-padding">
+    <div class="section__inner no-vert-padding dailyEvents">
+      <div class="dailyEvents__inner">
+        <div class="dailyEvents__box dailyEvents__box--purple">
+          <h4>Product Classes</h4>
+        </div>
+        <div class="dailyEvents__box dailyEvents__box--pink">
+          <h4>Gaming Sessions</h4>
+        </div>
+        <div class="dailyEvents__box dailyEvents__box--blue">
+          <h4>Connected Kitchen Demo</h4>
+        </div>
+      </div>
+      <p>Visit Samsung KX to attend one of our daily drop-in events above or get tickets to our bookable events below</p>
     </div>
   </section>
 
@@ -107,7 +131,7 @@
 
   {{>components/findKx }}
 
-	{{>components/socialMedia }}
+  {{>components/socialMedia }}
 
   {{>templateScripts/event/eventTile }}
   {{>templateScripts/slider/homeKv }}

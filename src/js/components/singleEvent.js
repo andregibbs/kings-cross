@@ -41,7 +41,7 @@ export default function singleEvent(events) {
 
           event.description = bits[0];
           if (bits.length > 1) {
-            bits[1] = bits[1].replace(/“/gi, '"').replace(/”/gi, '"');
+            bits[1] = bits[1].replace(/"/gi, '"').replace(/"/gi, '"');
             event.extra = JSON.parse(bits[1]);
           } else {
             event.extra = {};
@@ -168,7 +168,7 @@ export default function singleEvent(events) {
               break;
             case "guardian":
               var sponsorImg = new Image();
-              sponsorImg.src = 'https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/external-logos/guardian.png';
+              sponsorImg.src = 'https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/external-logos/guardian_v2-white.png';
               sponsorContainer.innerHTML = "";
               sponsorContainer.appendChild(sponsorImg);
               // var mobileImg = sponsorImg.cloneNode();

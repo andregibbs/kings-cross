@@ -50,6 +50,10 @@ https://aem-eu-shop.samsung.com/assets.html/content/dam/samsung/uk/explore/kings
 # Qudini FAQ:
 
 
+Qudini Structure:
+
+
+
 ## **Qudini API Documentation:**
 https://bookings.qudini.com/docs2/index.html#!/
 
@@ -81,6 +85,11 @@ When events are created, they start of in [TEST] series, and if they show up on 
 ### Contact at Qudini:
 **Ben Abbitt** (Customer Success Manager)
 ben@qudini.com
+
+
+### Login:
+cheil-dev
+Cheil321
 
 # ***NB***
 Common Bug:
@@ -140,4 +149,3 @@ Notes:
 - Events can be cancelled using API calls, appointments can't as of September 2019
 - Qudini isn't very flexible, so when creating events, we attach a json format text at the end of the description of the event (i.e. [desc] || {...}), which we then process when passing data to the event handlebar template
 - To imitate live events load on local, set your vhost path as kings-cross-live.samsung.com
-
