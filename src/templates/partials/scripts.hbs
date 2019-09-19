@@ -1,16 +1,16 @@
 <script type="text/javascript">
 var kxConfig = {};
-kxConfig.seriesId = "{{ config.seriesId }}";
-kxConfig.LIVE___seriesId = "{{ config.LIVE___seriesId }}";
+kxConfig['seriesId'] = "{{ config.seriesId }}";
+kxConfig['LIVE___seriesId'] = "{{ config.LIVE___seriesId }}";
 if (window.location.hostname == 'www.samsung.com' ||
     window.location.hostname == 'kings-cross-live.samsung.com') {
     kxConfig.seriesId = kxConfig.LIVE___seriesId;
 }
-kxConfig.passions = [];
+kxConfig['passions'] = [];
 {{#each config.passions}}
 kxConfig.passions.push({"code":"{{ this.code }}","name":"{{{ this.name }}}","color":"{{{ this.color }}}"});
 {{/each}}
-kxConfig.suitables = [];
+kxConfig['suitables'] = [];
 {{#each config.suitables}}
 kxConfig.suitables.push({"code":"{{ this.code }}","name":"{{{ this.name }}}"});
 {{/each}}

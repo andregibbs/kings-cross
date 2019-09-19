@@ -169,12 +169,7 @@
 			"color": "#FF4337",
 			"image": "/art-design.png"
 		},
-		{
-			"code":"entertainment",
-			"name":"Entertainment",
-			"color": "#F37321",
-			"image": "/entertainment.png"
-		},
+		
 		{
 			"code":"fashionbeauty",
 			"name":"Fashion & Beauty",
@@ -186,6 +181,12 @@
 			"name":"Fitness & Wellbeing",
 			"color":"#003DFF",
 			"image": "/fitness-wellbeing.png"
+		},
+		{
+			"code":"entertainment",
+			"name":"Entertainment & Lifestyle",
+			"color": "#F37321",
+			"image": "/entertainment.png"
 		},
 
 		{
