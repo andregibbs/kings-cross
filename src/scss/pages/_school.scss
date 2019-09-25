@@ -27,4 +27,16 @@
       }
     }
   }
+  .school-icons {
+    .icons {
+      display: flex;
+      .icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+      }
+    }
+  }
+
   

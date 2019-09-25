@@ -1,6 +1,6 @@
 import doLogFunction from '../dev/doLog';
 var doLog = doLogFunction();
-export default function loadingScreen(element, animation) {
+export default function lottieAnim(element, animation) {
   doLog("called");
   // if(!document.referrer){
   //   console.log("OK?");
@@ -12,24 +12,34 @@ export default function loadingScreen(element, animation) {
   // }
 
   if (document.referrer.indexOf("explore/kings-cross") != -1) {
-    animationDone();
+    
+    //Specific for Loading
+    if (element === 'loadingScreen__animation') {      
+      animationDone();
+    }
+    
+    
   } else {
+     var container = document.getElementById(element);
     var animation = lottie.loadAnimation({
-      container: element,
+      container: container,
       renderer: "svg",
       loop: false,
       autoplay: true,
       animationData: animation
     });
 
-    animation.addEventListener("complete", animationDone);
-
-    $('body').css({ 'height': '100%', 'overflow': 'hidden' })
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
+    //Specific for Loading
+    if (element === 'loadingScreen__animation') {
+      animation.addEventListener("complete", animationDone);
+      $('body').css({ 'height': '100%', 'overflow': 'hidden' })
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }        
   }
-
+ 
   function animationDone() {
+    console.log('element is', element)
     $("#parallax__orangex").addClass("animated fadeInRightBig");
     $("#parallax__building").addClass("animated fadeInRightBig");
     $("#parallax__yellowx").addClass("animated fadeInLeftBig");

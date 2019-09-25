@@ -10,8 +10,9 @@ import bookingRefFetcher from './components/bookingRefFetcher';
 import discover from './components/discover';
 import support from './components/support';
 import experience from './components/experience';
-import loadingScreen from './components/loadingScreen';
+import lottieAnim from './components/lottieAnim';
 import loadingScreenAnimation from '../data/loadingScreen.json';
+import critical from '../data/critical_thinking.json';
 import doLogFunction from './dev/doLog';
 var doLog = doLogFunction();
 
@@ -337,8 +338,8 @@ $(document).ready(function () {
 		case '/uk/explore/kings-cross/':
 
 
-			var container = document.getElementById('loadingScreen__animation');
-			loadingScreen(container, loadingScreenAnimation);
+			
+			lottieAnim('loadingScreen__animation', loadingScreenAnimation);
 			fetchData(whatIsKx);
 			// whatIsKx();
 
@@ -386,6 +387,13 @@ $(document).ready(function () {
 
 		case "/uk/explore/kings-cross/experience/":
 			experience();
+			break;
+
+			case "/uk/explore/kings-cross/not-at-school/":
+			lottieAnim('uno', critical);
+			lottieAnim('dos', critical);
+			lottieAnim('tres', critical);
+			lottieAnim('four', critical);
 			break;
 
 		default: {
