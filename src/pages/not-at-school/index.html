@@ -1,0 +1,53 @@
+<!--#include virtual="/uk/aem/header-pdp.html"-->
+
+<section class="cheil-static">
+	{{>stylesheet}}
+  
+	{{>components/nav }}
+  
+   
+  
+	<section class="section school__kv">
+		<div class="section__inner">
+		  <!-- <h1 class="">Follow Your Passion</h1> -->
+		  <h2>Not a School</h2>
+		</div>
+	  </section>
+
+	  <section class="section copy">
+		<div class="section__inner">
+		  <p>Samsung KX is so much more than a shop. It’s a place to see things, learn stuff, push your limits and open your mind. Attend world-class events, get to grips with the latest tech, discover new experiences and connect with other Londoners.</p>
+		</div>
+	  </section>
+  
+  <section class="section kx-video">
+	<div class="section__inner">
+		<video class="video__main" preload="none" playsinline onclick="if(this.paused) { this.play() }else{this.pause()}"
+			poster="https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/school/dummy_vid_frame.png?$ORIGIN_PNG$">
+			<source src="https://images.samsung.com/is/content/samsung/p5/uk/explore/kings-cross/kx-launch-highlight.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+	</div>
+</section>
+  
+
+  
+  
+	  <!--
+  
+  script needs to check for id query string parameter
+  - if it doesn't exist or is invalid - redirect to kx home page
+  - create a handlebars template to display the content ???
+  
+  -->
+	
+	{{>components/findKx}}
+	{{>components/socialMedia }}
+  
+	{{>templateScripts/experience/experience }}
+  
+	{{>scripts }}
+  </section>
+  
+  <!--#include virtual="/uk/aem/footer-pdp.html"-->
+  

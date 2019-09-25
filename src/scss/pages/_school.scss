@@ -1,0 +1,30 @@
+/*=============================================
+=            WHATSON PAGE            =
+=============================================*/
+
+  
+  .school__kv {
+    max-height: 450px;
+    height: 57vh;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    display: flex;
+    background: url(https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/school/Group1624.png);
+    align-items: center;
+  
+    @media screen and (max-width: $mobile) {
+      height: 30vh;
+    }
+  
+    h2 {
+      font-size: em(50);
+      font-weight: bold;
+      width: 50%;
+      line-height: em(17);
+      @media screen and (max-width: $mobile) {
+        font-size: em(45);
+      }
+    }
+  }
+  
