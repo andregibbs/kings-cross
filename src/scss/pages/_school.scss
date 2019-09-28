@@ -1,7 +1,10 @@
 /*=============================================
 =            WHATSON PAGE            =
 =============================================*/
-
+@mixin width {
+  width: 100%;
+  padding-left: 100px;
+}
   
   .school__kv {
     max-height: 450px;
@@ -59,7 +62,14 @@
       }
     }
     &__content {
-      width: 100%;
-      padding-left: 100px;
+      @include width;
+    }
+  }
+  .speakers {
+    display: flex;
+    @include width;
+    &__speaker {
+      flex:1 1 auto;
+     padding:5px;  /* and that, will result in a 10px gap */
     }
   }
