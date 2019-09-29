@@ -33,11 +33,23 @@
   .school-icons {
     .icons {
       display: flex;
+      @media screen and (max-width: 768px) {
+        
+        flex-direction: column;
+      }
       .icon {
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: center;
+        @media screen and (max-width: 768px) {        
+          flex-direction: row;
+        }
+        .content {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+        }
       }
     }
   }
@@ -71,5 +83,55 @@
     &__speaker {
       flex:1 1 auto;
      padding:5px;  /* and that, will result in a 10px gap */
+    }
+  }
+
+  .leader {
+    &__content {
+      display: flex;
+    }
+    &__image {
+      width: 30%;
+      max-width: 380px;
+    }
+    &__copy {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-left: 20px;
+      width: 70%;
+      .copy {        
+        p {
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  .follow {
+    &__content {
+      display: flex;
+    }
+    &__copy {
+      width: 50%;
+    }
+    &__icons {
+      width: 50%;
+      display: flex;
+    }
+    &__icon {
+      margin-right: 20px;
+    }
+  }
+
+  .promo-banner {
+    &__inner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: solid 1px white;
+    }
+    &__logo {
+      padding: 0 5%;
     }
   }
