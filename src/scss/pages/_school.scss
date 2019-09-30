@@ -15,6 +15,9 @@
     display: flex;
     background: url(https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/school/Group1624.png);
     align-items: center;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    
   
     @media screen and (max-width: $mobile) {
       height: 30vh;
@@ -31,8 +34,11 @@
     }
   }
   .school-icons {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
     .icons {
       display: flex;
+      justify-content: center;
       @media screen and (max-width: 768px) {
         
         flex-direction: column;
@@ -41,14 +47,30 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         text-align: center;
+        width: 100%;
         @media screen and (max-width: 768px) {        
           flex-direction: row;
+        }
+        .icon-lottie {
+          width: 113px;
+          margin-bottom: 20px;
         }
         .content {
           display: flex;
           justify-content: center;
           flex-direction: column;
+
+          .title {
+            margin-bottom: 20px;
+          }
+          .sub-copy {
+            font-weight: 400;
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+          }
         }
       }
     }
@@ -62,8 +84,34 @@
     }
   }
 
+  .course {
+    margin-bottom: 7%;
+  }
+
   .challenge {
     display: flex;
+    &__title {
+
+      &__number {
+        text-transform: uppercase;
+        font-weight: 400;
+        letter-spacing: 0;
+        margin-bottom: 10px;
+      }
+      &__cat {
+
+        font-weight: bold;
+        letter-spacing: 0;
+        margin-bottom: 10px;
+      }
+      &__date {
+        letter-spacing: 0;
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+
+
+    }
     &__left {
       width: 30%;
     }
@@ -75,6 +123,19 @@
     }
     &__content {
       @include width;
+      &__copy {
+        font-weight: 800;
+        letter-spacing: 0;
+        line-height: 18px;
+        margin-top: 11px;
+
+        &--sub {
+          font-weight: 400;
+          letter-spacing: 0;
+        line-height: 18px;
+        margin-top: 11px;
+        }
+      }
     }
   }
   .speakers {
@@ -87,6 +148,8 @@
   }
 
   .leader {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
     &__content {
       display: flex;
     }
@@ -99,8 +162,28 @@
       flex-direction: column;
       justify-content: space-between;
       padding-left: 20px;
+      padding-top: 5px;
+      padding-bottom: 5px;
       width: 70%;
-      .copy {        
+      &__title {
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+      }
+      &__name {
+        font-weight: bold;
+
+      }
+      &__quote {
+        font-weight: bold;
+        line-height: 38px;
+
+      }
+      &__info {
+        line-height: 18px;
+        font-weight: 400;
+      }
+      .copy {
         p {
           text-align: left;
         }
@@ -109,22 +192,36 @@
   }
 
   .follow {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
     &__content {
       display: flex;
+      justify-content: center;
+      align-items: center;
     }
     &__copy {
       width: 50%;
+      &__title {
+        margin-bottom: 10px;
+      }
+      &__sub {
+        font-weight: 400;
+      }
     }
     &__icons {
       width: 50%;
       display: flex;
+      align-items: center;
+      justify-content: flex-start;
     }
     &__icon {
-      margin-right: 20px;
+      margin-right: 25px;
     }
   }
 
   .promo-banner {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
     &__inner {
       display: flex;
       justify-content: center;
