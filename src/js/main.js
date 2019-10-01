@@ -12,7 +12,10 @@ import support from './components/support';
 import experience from './components/experience';
 import lottieAnim from './components/lottieAnim';
 import loadingScreenAnimation from '../data/loadingScreen.json';
-import critical from '../data/critical_thinking.json';
+import create from '../data/Create.json';
+import colab from '../data/Colab.json';
+import coms from '../data/Coms.json';
+import critical from '../data/Crit_think.json';
 import doLogFunction from './dev/doLog';
 var doLog = doLogFunction();
 
@@ -390,10 +393,10 @@ $(document).ready(function () {
 			break;
 
 			case "/uk/explore/kings-cross/not-at-school/":
-			lottieAnim('uno', critical);
-			lottieAnim('dos', critical);
-			lottieAnim('tres', critical);
-			lottieAnim('four', critical);
+			lottieAnim('colab', colab);
+			lottieAnim('coms', coms);
+			lottieAnim('crit', critical);
+			lottieAnim('create', create);
 			break;
 
 		default: {

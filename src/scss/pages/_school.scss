@@ -13,7 +13,7 @@
     background-size: cover !important;
     background-position: center center !important;
     display: flex;
-    background: url(https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/school/Group1624.png);
+    background: url(https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/school/school-kv-new.png);
     align-items: center;
     padding-top: 0 !important;
     padding-bottom: 0 !important;
@@ -80,7 +80,16 @@
     height: 14px;
     width: 100%;
     &.yellow {
-      background: yellow;
+      background: #F8EB4D;
+    }
+    &.red {
+      background: #EB3B50;
+    }
+    &.green {
+      background: #64E7E2;
+    }
+    &.purple {
+      background: #C97BD7;
     }
   }
 
