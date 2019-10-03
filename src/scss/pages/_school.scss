@@ -312,6 +312,13 @@ background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(253,187,45,0) 100%);
     }
     &__logo {
       padding: 0 5%;
+      &:first-of-type {
+        @media screen and (max-width: 768px) {
+          padding-left: 20%;
+        }
+      }
+      
+      
     }
     .copy {
      padding: 0 10%;
@@ -385,4 +392,18 @@ background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(253,187,45,0) 100%);
     }
   }
 
-  
+
+  .star {
+    visibility: hidden;
+}
+
+.fadeIn {
+    -webkit-animation: animat_show 0.8s;
+    animation: animat_show 0.8s;
+    visibility: visible !important;
+}
+
+@-webkit-keyframes animat_show{
+    0%{opacity:0}
+    100%{opacity:1}
+}
