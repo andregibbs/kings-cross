@@ -13,7 +13,7 @@
     background-size: cover !important;
     background-position: center center !important;
     display: flex;
-    background: url(https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/school/school-kv-new.png);
+    background: url(https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/school/Kx_NAS_header_v3.jpg);
     align-items: center;
     padding-top: 0 !important;
     padding-bottom: 0 !important;
@@ -21,21 +21,37 @@
   
     @media screen and (max-width: $mobile) {
       height: 30vh;
+      padding: 0!important;
     }
-  
+    .section__inner {
+      @media screen and (max-width: $mobile) {
+        height: 100%;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(253,187,45,0) 100%);
+      }
+    }
     h2 {
       font-size: em(50);
       font-weight: bold;
       width: 50%;
       line-height: em(17);
       @media screen and (max-width: $mobile) {
-        font-size: em(45);
+        font-size: em(75);
+        width: 100%;
+        text-align: center;
       }
     }
   }
   .school-icons {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
+    .section__inner {
+      padding-top: 0 !important;
+    }
     .icons {
       display: flex;
       justify-content: center;
@@ -64,6 +80,7 @@
 
           .title {
             margin-bottom: 20px;
+            letter-spacing: .08em;
           }
           .sub-copy {
             font-weight: 400;
@@ -108,10 +125,11 @@
         margin-bottom: 10px;
       }
       &__cat {
-
+        text-transform: capitalize;
         font-weight: bold;
         letter-spacing: 0;
         margin-bottom: 10px;
+        letter-spacing: .08em;
       }
       &__date {
         letter-spacing: 0;
@@ -123,15 +141,25 @@
     }
     &__left {
       width: 30%;
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
     }
     &__right {
       width: 70%;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
       p {
         text-align: left;
+        line-height: 1.5em;
       }
     }
     &__content {
       @include width;
+      @media screen and (max-width: 768px) {
+        padding-left: 0;
+      }
       &__copy {
         font-weight: 800;
         letter-spacing: 0;
@@ -149,10 +177,12 @@
   }
   .speakers {
     display: flex;
-    @include width;
+    align-items: center;
+    margin-top: 20px;
+    // @include width;
     &__speaker {
-      flex:1 1 auto;
-     padding:5px;  /* and that, will result in a 10px gap */
+    margin-right: 20px;
+    max-width: 250px;
     }
   }
 
@@ -164,7 +194,7 @@
     }
     &__image {
       width: 30%;
-      max-width: 380px;
+      max-width: 310px;
     }
     &__copy {
       display: flex;
@@ -181,15 +211,24 @@
       }
       &__name {
         font-weight: bold;
+        letter-spacing: 0.09em;
 
       }
       &__quote {
         font-weight: bold;
         line-height: 38px;
+        letter-spacing: .05em;
+        @media screen and (max-width: 768px) {
+          border-bottom: solid 1px white;
+          padding: 0 10px 10px 10px;
+          margin-bottom: 10px;
+          text-align: center;
+          line-height: 25px;
+        }
 
       }
       &__info {
-        line-height: 18px;
+        line-height: 1.5em;
         font-weight: 400;
       }
       .copy {
@@ -207,11 +246,22 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 40px;
+        }
     }
     &__copy {
       width: 50%;
+      align-items: center;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        margin-bottom: 20px;
+        }
       &__title {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
       }
       &__sub {
         font-weight: 400;
@@ -222,10 +272,30 @@
       display: flex;
       align-items: center;
       justify-content: flex-start;
+      
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
     }
     &__icon {
       margin-right: 25px;
+      max-width: 60px;
+      transition: all 0.23s ease-in-out;
+      // img {
+      //   transition: all 0.23s ease-in-out;
+      // }
+      &:hover {
+        transform: scale(1.05);
+        // img {
+        //   border-radius: 10%;
+        // }
+      }
     }
+  
   }
 
   .promo-banner {
@@ -240,4 +310,73 @@
     &__logo {
       padding: 0 5%;
     }
+    .copy {
+     padding: 0 10%;
+      margin-top: 30px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .bold {
+        font-weight: 700;
+        margin-bottom: 0;
+      }
+    }
   }
+
+  .findout {
+    text-align: center;
+    
+    &__inner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &__logo {
+      margin: 20px;
+    }
+  }
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: initial;
+  }
+  @media screen and (max-width: 768px) {        
+   .mobile {
+     display: initial;
+   }
+   .desktop {
+     display: none;
+   }
+  }
+
+  
+  .course-structure {
+    padding-bottom: 0;
+    padding-top: 0;
+    .section__inner {
+      padding-bottom: 0;
+    }
+  }
+
+  .copy-main {
+    text-align: center;
+    padding-top: 100px;
+    @media screen and (max-width: 768px) {
+      padding-top: 30px!important;
+    }
+    h2 {
+      margin-bottom: 20px;
+      letter-spacing: 0.09em;
+      line-height: 38px;
+    letter-spacing: .05em;
+    @media screen and (max-width: 768px) {
+      line-height: 1.5em;
+    }
+    }
+  }
+
+  

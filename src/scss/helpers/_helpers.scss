@@ -130,6 +130,16 @@
         border-color: $grey;
         color: $white;
       }
+      &--black {
+        border-color: white;
+        background-color: black;
+        color: #fff;
+        &:hover {
+          color: $orange;
+          border-color: $white;
+        }
+      }
+      
     }
 
     &--secondary {

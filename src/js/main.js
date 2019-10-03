@@ -392,11 +392,14 @@ $(document).ready(function () {
 			experience();
 			break;
 
-			case "/uk/explore/kings-cross/not-at-school/":
-			lottieAnim('colab', colab);
-			lottieAnim('coms', coms);
-			lottieAnim('crit', critical);
-			lottieAnim('create', create);
+		case "/uk/explore/kings-cross/not-a-school/":
+
+				lottieAnim('colab', colab);
+				lottieAnim('coms', coms);
+				lottieAnim('crit', critical);
+				lottieAnim('create', create);	
+
+					
 			break;
 
 		default: {
