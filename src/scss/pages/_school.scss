@@ -18,11 +18,40 @@
     padding-top: 0 !important;
     padding-bottom: 0 !important;
     
-  
-    @media screen and (max-width: $mobile) {
-      height: 30vh;
-      padding: 0!important;
+    &-signpost {
+      background: url(https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/school/Kx_NAS_signpost.png);
+      max-height: 450px;
+      height: 57vh;
+      background-repeat: no-repeat !important;
+      background-size: cover !important;
+      background-position: center center !important;
+      display: flex;      
+      align-items: center;
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+      position: relative;
+      margin-bottom: 100px;
+      margin-top: -100px;
+      .section__inner {
+        position: absolute;
+        bottom: -25%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        padding-bottom: 80px;
+        @media screen and (max-width: $mobile) {
+          bottom: -50%;
+          
+        }
+      }
+      @media screen and (max-width: $mobile) {
+        height: 30vh;
+        padding: 0!important;     
+        background: url(https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/school/mob-signpost.png);
+        background-size: contain !important;
+        margin-top: 0;
+      }
     }
+   
     .section__inner {
       @media screen and (max-width: $mobile) {
         height: 100%;
@@ -337,7 +366,7 @@ background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(253,187,45,0) 100%);
 
   .findout {
     text-align: center;
-    
+    width: 100vw;
     &__inner {
       display: flex;
       flex-direction: column;
@@ -348,7 +377,8 @@ background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(253,187,45,0) 100%);
       }
     }
     &__logo {
-      margin: 20px;
+      margin: 30px;
+      width: 100vw;
     }
   }
   .mobile {

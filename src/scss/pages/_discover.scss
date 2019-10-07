@@ -344,8 +344,15 @@
       padding-right: em(150);
       @media screen and (max-width: $mobile) {
           padding: 0;
-      }
+      }    
     }
+    a {
+      margin-top: 20px;
+    }
+    // &-sign {
+    //   padding-top: 500px;
+    // }
+    
   }
 
   &__container {

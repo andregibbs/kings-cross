@@ -392,7 +392,7 @@ $(document).ready(function () {
 			experience();
 			break;
 
-		case "/uk/explore/kings-cross/not-at-school/":
+		case "/uk/explore/kings-cross/not-a-school/":
 
 				lottieAnim('colab', colab);
 				lottieAnim('coms', coms);
