@@ -446,6 +446,9 @@
     }
     
   }
+  @media screen and (max-width: $mobile) {
+    padding: 0;
+  }
 }
 
 @keyframes fadein {
