@@ -116,7 +116,14 @@
 			"description": "",
 			"image": "see-the-space/d-9-Kissing-Rooftops-night-4.png",
 			"alt": "Kissing Rooftops"
-		}],
+		},		
+		{
+			"title": "What makes KX unique? Tell the story. another one another one",
+			"description": "Powered by the perfect blend of passion, precision, curiosity and caffeine, the Origin Roastery is where knowledge and instinct unite.",
+			"image": "carousel-neigh-4.jpg",
+			"alt": "some image for kx"
+		}
+	],
 
 		"shopFloorplan": {
 			"title": "Shop floorplan with sections and accessibility information (exits, toilets etc.) Interactive?",

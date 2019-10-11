@@ -2,6 +2,7 @@
 import nav from './components/nav';
 import whatson from './components/whatson';
 import singleEvent from './components/singleEvent';
+import places from './components/places';
 import whatIsKx from './components/whatIsKx';
 import repair from './components/repair';
 import calendar from './components/calendar';
@@ -351,6 +352,7 @@ $(document).ready(function () {
 
 		case "/uk/explore/kings-cross/discover/":
 			discover();
+			// places();
 			break;
 
 		case "/uk/explore/kings-cross/whats-on/":
