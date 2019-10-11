@@ -49,6 +49,19 @@ export default function singleEvent(events) {
         }
       }
 
+      //simple percentage calculation
+      function per(current, orig) {
+        return (current/orig*100)
+      }
+
+      //if limited, return true
+      function limited(percentage) {
+        return percentage < 30 ? true : false;
+      }
+
+      console.log('percentage',per(7, 20) )
+      console.log('less than thirty?', limited(per(7, 20)))
+
       sortEventExtra(data);
 
       eventId = data.id;
@@ -65,6 +78,8 @@ export default function singleEvent(events) {
       // );
 
       if (data.seriesId == kxConfig.seriesIdAsInt) {
+        console.log("all spaces", data.maxReservations);
+          console.log("slotsAvailable", data.slotsAvailable);
         const options = {
           identifier: data.identifier,
           groupSize: data.maxGroupSize,
@@ -91,6 +106,9 @@ export default function singleEvent(events) {
           firstSentence: "",
           maxReservations: data.maxReservations,
           slotsAvailable: data.slotsAvailable,
+          
+          // limitedAvailability: limited(per(data.slotsAvailable, data.maxReservations)) ? "limited tickets remaining" : "",
+          limitedAvailability: limited(per(29, 100)) ? "limited tickets remaining" : "",
           youtube: data.extra.youtubeid,
           externalbookinglink: data.extra.externalbookinglink,
           sponsor: "" || data.extra.sponsor
@@ -102,6 +120,7 @@ export default function singleEvent(events) {
           console.log("GUARDIAN");
         } else {
           console.log("Unsponsored");
+
         }
 
         if (data.extra.instagramhashtag) {
