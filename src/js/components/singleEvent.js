@@ -105,10 +105,10 @@ export default function singleEvent(events) {
           description: data.description,
           firstSentence: "",
           maxReservations: data.maxReservations,
-          slotsAvailable: data.slotsAvailable,
-          
-          // limitedAvailability: limited(per(data.slotsAvailable, data.maxReservations)) ? "limited tickets remaining" : "",
-          limitedAvailability: limited(per(29, 100)) ? "limited tickets remaining" : "",
+          slotsAvailable: data.slotsAvailable,          
+          limitedAvailability: limited(per(data.slotsAvailable, data.maxReservations)) ? "limited tickets remaining" : "",
+          //TEST BELOW
+          // limitedAvailability: limited(per(29, 100)) ? "limited tickets remaining" : "",
           youtube: data.extra.youtubeid,
           externalbookinglink: data.extra.externalbookinglink,
           sponsor: "" || data.extra.sponsor
