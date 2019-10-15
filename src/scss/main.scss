@@ -43,3 +43,40 @@
 @import "vendor/animate/animate";
 
 @import "components/datePicker";
+
+
+.star {
+  visibility: hidden;
+  &__recently {
+    &.fadeIn {
+      -webkit-animation: animat_show-recently 1.2s;
+      animation: animat_show-recently 1.2s;
+    }
+    
+  }
+}
+
+
+
+.fadeIn {
+  -webkit-animation: animat_show 0.8s;
+  animation: animat_show 0.8s;
+  visibility: visible !important;
+
+}
+
+@-webkit-keyframes animat_show{
+  0%{opacity:0}
+  100%{opacity:1}
+}
+@-webkit-keyframes animat_show-recently{
+  0%{
+    opacity:0;
+    transform: translate(0, -20%);
+  }
+  
+  100%{
+    opacity:1;
+    transform: translate(-20%, 0);
+  }
+}

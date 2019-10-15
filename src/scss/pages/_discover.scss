@@ -416,4 +416,46 @@
   }
 }
 
+.recently {
+  display: flex;
+  &__container {
+    display: flex;
+  }
+  &__images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    img {
+      margin-bottom: 10%;
+    }
+  }
+  &__content {
+    position: relative;
+    width: 75%;
+    img {
+      max-width: 300px;
+    }
+  }
+}
+
+.floating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  &__image {
+    transform: translate(-20%, 0);
+    width: 30%;
+  }
+  &__content {
+    width: 70%;
+  }
+}
+
 /*=====  End of Discover  ======*/
