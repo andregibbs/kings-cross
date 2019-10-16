@@ -102,6 +102,17 @@
         color: $pink;
       }
 
+      &--transparent {
+        border-color: white;
+        background-color: transparent;
+        color: #fff;
+        &:hover {
+          background: white;
+          color: $orange;
+          border-color: $orange;
+        }
+      }
+
       &--orange {
         border-color: $orange;
         background-color: $orange;

@@ -3,15 +3,18 @@
 =============================================*/
 
 .kv {
-  background: url("https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/DISCOVER-KV-2.png");
-  max-height: 700px;
+  background: url("https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/Halloween_header.png");
+  // max-height: 700px;
+  //below height temp for halloween
+  max-height: 450px;
   height: 57vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   display: flex;
   align-items: center;
-
+ 
+ 
   @media screen and (max-width: $mobile) {
   height: 30vh;
 
@@ -23,6 +26,7 @@
     width: 80%;
     line-height: em(17);
     text-shadow: 2px 2px 12px #000000;
+    margin-bottom: 1%;
     @media screen and (max-width: $mobile) {
       font-size: em(40);
     }
