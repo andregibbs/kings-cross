@@ -12,6 +12,7 @@ import discover from './components/discover';
 import support from './components/support';
 import experience from './components/experience';
 import lottieAnim from './components/lottieAnim';
+import loadingScreen from './components/loadingScreen';
 import loadingScreenAnimation from '../data/loadingScreen.json';
 import create from '../data/Create.json';
 import colab from '../data/Colab.json';
@@ -343,9 +344,12 @@ $(document).ready(function () {
 
 
 			
-			lottieAnim('loadingScreen__animation', loadingScreenAnimation);
+			// lottieAnim('loadingScreen__animation', loadingScreenAnimation);
 			fetchData(whatIsKx);
 			// whatIsKx();
+			var container = document.getElementById('loadingScreen__animation');
+		   loadingScreen(container, loadingScreenAnimation);
+			
 
 
 			break;
@@ -416,7 +420,7 @@ $(document).ready(function () {
 			experience();
 			break;
 
-		case "/uk/explore/kings-cross/not-at-school/":
+		case "/uk/explore/kings-cross/not-a-school/":
 
 				lottieAnim('colab', colab);
 				lottieAnim('coms', coms);
