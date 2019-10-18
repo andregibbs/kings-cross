@@ -8,10 +8,30 @@ var doLog = doLogFunction();
 
 export default function places() {
 
-  $.get(
-    "https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=Museum%20of%20Contemporary%20Art%20Australia&inputtype=textquery&fields=photos,formatted_address,name,rating,opening_hours,geometry&key=AIzaSyBu9auy0x9Og1YGPl__MkoxswdFd6vxB7M"
-  ).success(function (data) {
-    
-    console.log('places', data)
+   let placeId = 'ChIJWxPGhs8bdkgRzKDWW8BKbSk';
+   let requiredData = 'opening_hours';
+   let apiKey = 'AIzaSyBu9auy0x9Og1YGPl__MkoxswdFd6vxB7M';
+   let sebnPlacesApiurl =  'https://sebnapi.nl/uk/kings-cross-google-apis/places-api/?placeId='+placeId+'&fields='+requiredData+'&apiKey='+apiKey;
+
+
+  //https://sebnapi.nl/uk/kings-cross-google-apis/places-api/?placeId=ChIJWxPGhs8bdkgRzKDWW8BKbSk&fields=opening_hours&apiKey=AIzaSyBu9auy0x9Og1YGPl__MkoxswdFd6vxB7M
+	
+  $.get(sebnPlacesApiurl).success(function (data) { 
+      
+      let openingTimeHtml = '<h4 class="fz18">Opening Hours:</h4>';
+      
+      if( data.data.status ==  "OK" ) {
+      	
+      	let storeOpeningTimes = data.data.result.opening_hours.weekday_text;
+
+      	$.each(storeOpeningTimes, function(index, storeOpeningTime) {
+      		openingTimeHtml += '<p class="fz18">'+storeOpeningTime+'</p>';
+      	});
+
+      	$('.findkx__openings').html(openingTimeHtml);
+      	
+      }
+      
+
   });
 }
