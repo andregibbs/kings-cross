@@ -360,6 +360,7 @@ $(document).ready(function () {
 
 		case "/uk/explore/kings-cross/whats-on/":
 			fetchData(whatson);
+			places();
 			break;
 
 		case "/uk/explore/kings-cross/whats-on/event/":
