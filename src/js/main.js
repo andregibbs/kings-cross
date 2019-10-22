@@ -347,6 +347,7 @@ $(document).ready(function () {
 			
 			
 			fetchData(whatIsKx);
+			places();
 			// whatIsKx();
 
 			var container = document.getElementById('loadingScreen__animation');
@@ -355,7 +356,7 @@ $(document).ready(function () {
 
 		case "/uk/explore/kings-cross/discover/":
 			discover();
-			// places();
+		    places();
 			break;
 
 		case "/uk/explore/kings-cross/whats-on/":
@@ -365,6 +366,7 @@ $(document).ready(function () {
 
 		case "/uk/explore/kings-cross/whats-on/event/":
 			fetchData(singleEvent);
+			places();
 			break;
 
 		case "/uk/explore/kings-cross/support/":
@@ -373,6 +375,7 @@ $(document).ready(function () {
 			});
 			//Support goes last!
 			support();
+			places();
 			// smoothScroll();
 			break;
 
@@ -392,10 +395,12 @@ $(document).ready(function () {
 			fetchData(function (allEvents) {
 				bookingRefFetcher(allEvents);
 			});
+			places();
 			break;
 
 		case "/uk/explore/kings-cross/experience/":
 			experience();
+			places();
 			break;
 
 		case "/uk/explore/kings-cross/not-a-school/":
@@ -404,6 +409,7 @@ $(document).ready(function () {
 				lottieAnim('coms', coms);
 				lottieAnim('crit', critical);
 				lottieAnim('create', create);	
+				places();
 				
 				function showImages(el) {
 					var windowHeight = jQuery( window ).height();
