@@ -22,16 +22,23 @@ export default function places() {
       
       if( data.data.status ==  "OK" ) {
       	
-      	let storeOpeningTimes = data.data.result.opening_hours.weekday_text;
+        let storeOpeningTimes = data.data.result.opening_hours.weekday_text;
+        // let openingAltered = storeOpeningTimes.replace(":00", "");
+        console.log('store', storeOpeningTimes);
 
       	$.each(storeOpeningTimes, function(index, storeOpeningTime) {
-      		openingTimeHtml += '<p class="fz18">'+storeOpeningTime+'</p>';
+          let spaceless = storeOpeningTime.trim();
+          console.log(spaceless.toString().trim())
+          let altered = storeOpeningTime.trim().replace('AM', 'am').replace('PM', 'pm')
+          // storeOpeningTime.replace(":00", "")
+      		openingTimeHtml += '<p class="fz18">'+altered+'</p>';
       	});
 
       	$('.findkx__openings').html(openingTimeHtml);
       	
       }
       
+
 
   });
 }
