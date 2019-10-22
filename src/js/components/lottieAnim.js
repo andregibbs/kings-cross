@@ -1,23 +1,8 @@
 import doLogFunction from '../dev/doLog';
 var doLog = doLogFunction();
 export default function lottieAnim(element, animation) {
-  doLog("called");
-  // if(!document.referrer){
-  //   console.log("OK?");
-  //   animationDone();
-  //   return;
-  // } else {
-  //   console.log("document referrer exists");
-  //   console.log(document.referrer);
-  // }
 
-  if ((document.referrer.indexOf("explore/kings-cross") != -1) && (element === 'loadingScreen__animation')) {
-       
-      animationDone();
-  
-
-    
-  } else {
+ 
      var container = document.getElementById(element);
     var animation = lottie.loadAnimation({
       container: container,
@@ -56,4 +41,4 @@ export default function lottieAnim(element, animation) {
       $(".parallax__text").removeClass("animated fadeIn");
     }, 1500);
   }
-}
+

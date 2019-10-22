@@ -1,15 +1,6 @@
 import doLogFunction from '../dev/doLog';
 var doLog = doLogFunction();
 export default function loadingScreen(element, animation) {
-  doLog("called");
-  // if(!document.referrer){
-  //   console.log("OK?");
-  //   animationDone();
-  //   return;
-  // } else {
-  //   console.log("document referrer exists");
-  //   console.log(document.referrer);
-  // }
 
   if (document.referrer.indexOf("explore/kings-cross") != -1) {
     animationDone();

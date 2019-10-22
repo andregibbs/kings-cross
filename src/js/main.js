@@ -344,14 +344,15 @@ $(document).ready(function () {
 
 
 			
-			// lottieAnim('loadingScreen__animation', loadingScreenAnimation);
+			
 			fetchData(whatIsKx);
 			// whatIsKx();
 			var container = document.getElementById('loadingScreen__animation');
 		   loadingScreen(container, loadingScreenAnimation);
 			
 
-
+			var container = document.getElementById('loadingScreen__animation');
+			loadingScreen(container, loadingScreenAnimation);
 			break;
 
 		case "/uk/explore/kings-cross/discover/":
@@ -383,6 +384,7 @@ $(document).ready(function () {
 
 		case "/uk/explore/kings-cross/whats-on/":
 			fetchData(whatson);
+			places();
 			break;
 
 		case "/uk/explore/kings-cross/whats-on/event/":
@@ -439,15 +441,39 @@ $(document).ready(function () {
 						}
 					});
 				}
+				function showVidSvg(el) {
+					var windowHeight = jQuery( window ).height();
+					
+					$(el).each(function(){
+						var thisPos = $(this).offset().top;
+			
+						var topOfWindow = $(window).scrollTop();
+						if (topOfWindow + windowHeight - 200 > thisPos ) {
+							$(this).addClass("fadevid");
+						}
+					});
+				}
 			
 				// if the image in the window of browser when the page is loaded, show that image
 				$(document).ready(function(){
 						showImages('.star');
+						showVidSvg('.vidstar');
+						if(window.location.href.indexOf("?week=one") > -1) {
+							
+							// setTimeout(function(){$('html, body').animate({
+							// 	scrollTop: $("#scrollto").offset().top-10
+							// }, 1000); }, 2000);		
+							setTimeout(function(){$('html, body').animate({
+								scrollTop: $("#scrollto").offset().top-10
+							}, 500); }, 2000);							
+						 }
+
 				});
 			
 				// if the image in the window of browser when scrolling the page, show that image
 				$(window).scroll(function() {
 						showImages('.star');
+						showVidSvg('.vidstar');
 				});
 					
 			break;
