@@ -23,22 +23,18 @@ export default function places() {
       if( data.data.status ==  "OK" ) {
       	
         let storeOpeningTimes = data.data.result.opening_hours.weekday_text;
-        // let openingAltered = storeOpeningTimes.replace(":00", "");
-        console.log('store', storeOpeningTimes);
 
       	$.each(storeOpeningTimes, function(index, storeOpeningTime) {
-          let spaceless = storeOpeningTime.trim();
-          console.log(spaceless.toString().trim())
-          let altered = storeOpeningTime.trim().replace('AM', 'am').replace('PM', 'pm')
-          // storeOpeningTime.replace(":00", "")
-      		openingTimeHtml += '<p class="fz18">'+altered+'</p>';
+
+          let spaceless = storeOpeningTime.replace(/\s/g, '').replace('AM', 'am').replace('PM', 'pm').replace('-', ' - ')     
+          let altered = spaceless.replace(/:00/g, "").split('–').join(' – ').replace(':', ': ');
+          console.log('naooo')
+      		openingTimeHtml += ' <p><span class="fz18 bold">'+altered.substr(0, altered.indexOf(':'))+': </span><span class="fz18">'+altered.split(': ').pop()+'</span></p>';
       	});
 
       	$('.findkx__openings').html(openingTimeHtml);
       	
       }
-      
-
 
   });
 }
