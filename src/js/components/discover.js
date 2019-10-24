@@ -75,4 +75,28 @@ export default function discover( events ) {
 	});
 
 
+	var tabTriggerBtns = document.querySelectorAll('.tab-item');
+
+    tabTriggerBtns.forEach(function(tabTriggerBtn, index){
+     tabTriggerBtn.addEventListener('click', function(){
+		var flyout = document.querySelectorAll('.flyout');
+		
+        var currentTabData = document.querySelector('.tab-content[data-tab-content="' + this.dataset.tabTrigger + '"]');
+
+		// add fade out animation and remove 
+		
+
+		
+        // remove classess
+        document.querySelector('.tab-content.is-open').classList.remove('is-open');
+        document.querySelector('.is-active').classList.remove('is-active');
+        // add classes
+		currentTabData.classList.add('is-open', 'flyout__on');
+		flyout.classList.add('flyout__on');
+		this.classList.add('flyout', 'is-active');
+		// this.classList.add('flyout__on');
+    });
+});
+
+
 }

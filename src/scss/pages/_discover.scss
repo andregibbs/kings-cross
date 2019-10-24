@@ -502,4 +502,39 @@
 .gallery__header {
   margin-bottom: 5%;
 }
+
+
+.is-active {
+  border: solid 2px yellow;
+}
+
+
+.tab-content {
+  display: none;
+}
+.tab-content.is-open {
+  display: block;
+  // background-color: yellow;
+}
+
+.flyout {
+  &__on {
+    -webkit-animation: flyout 0.8s!important;
+    animation: flyout 0.8s!important;
+  }
+}
+
+@-webkit-keyframes flyout{
+  0%{
+    opacity:1;
+    transform: translateX(0);
+  }
+
+  100%{
+    opacity:0;
+    transform: translateX(10px);
+    
+
+  }
+}
 /*=====  End of Discover  ======*/
