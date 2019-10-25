@@ -545,3 +545,16 @@
   }
 }
 /*=====  End of Discover  ======*/
+
+.slick-slide > img {
+  transform: scale(.5);
+  transition: transform .3s cubic-bezier(.4,0,.2,1);
+}
+.slick-center > img {
+  transform: scale(1.5);
+}
+.slider__item > img {
+  width: 100%;
+  height: 400px!important
+  ;
+}
