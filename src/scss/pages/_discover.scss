@@ -434,8 +434,10 @@
     justify-content: center;
     align-items: center;
     width: 25%;
+    cursor: pointer;
     img {
       margin-bottom: 10%;
+      max-width: 300px;
     }
   }
   &__content {
@@ -443,6 +445,7 @@
     width: 75%;
     img {
       max-width: 300px;
+      width: 300px;
     }
   }
 }
@@ -504,9 +507,9 @@
 }
 
 
-.is-active {
-  border: solid 2px yellow;
-}
+// .is-active {
+//    box-shadow: 0 19px 38px rgba(164,89,156,.30), 0 15px 12px rgba(164,89,156,.22);
+// }
 
 
 .tab-content {
@@ -519,8 +522,9 @@
 
 .flyout {
   &__on {
-    -webkit-animation: flyout 0.8s!important;
-    animation: flyout 0.8s!important;
+    -webkit-animation: flyout 2s!important;
+    animation: flyout 2s!important;
+
   }
 }
 
@@ -530,11 +534,14 @@
     transform: translateX(0);
   }
 
-  100%{
+  50%{
     opacity:0;
     transform: translateX(10px);
-    
+  }
 
+  100%{
+    opacity:1;
+    transform: translateX(0);
   }
 }
 /*=====  End of Discover  ======*/

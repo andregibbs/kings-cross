@@ -49,8 +49,8 @@
   visibility: hidden;
   &__recently {
     &.fadeIn {
-      -webkit-animation: animat_show-recently 1.2s;
-      animation: animat_show-recently 1.2s;
+      -webkit-animation: animat_show-recently 1s;
+      animation: animat_show-recently 1s;
     }
     
   }
