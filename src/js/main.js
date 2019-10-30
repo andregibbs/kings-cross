@@ -13,11 +13,8 @@ import support from './components/support';
 import experience from './components/experience';
 import lottieAnim from './components/lottieAnim';
 import loadingScreen from './components/loadingScreen';
-<<<<<<< HEAD
-=======
 import getParam from './components/getParam';
 
->>>>>>> 1b16fcb2a2ffdfd5d21f9d37517de80d40c243c3
 import loadingScreenAnimation from '../data/loadingScreen.json';
 import create from '../data/Create.json';
 import colab from '../data/Colab.json';
@@ -363,7 +360,6 @@ $(document).ready(function () {
 
 		case "/uk/explore/kings-cross/discover/":
 			discover();
-<<<<<<< HEAD
 			function showImages(el) {
 				var windowHeight = jQuery( window ).height();
 				
@@ -387,9 +383,6 @@ $(document).ready(function () {
 					showImages('.star');
 			});
 			// places();
-=======
-		    places();
->>>>>>> 1b16fcb2a2ffdfd5d21f9d37517de80d40c243c3
 			break;
 
 		case "/uk/explore/kings-cross/whats-on/":
