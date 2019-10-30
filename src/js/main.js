@@ -13,6 +13,7 @@ import support from './components/support';
 import experience from './components/experience';
 import lottieAnim from './components/lottieAnim';
 import loadingScreen from './components/loadingScreen';
+import getParam from './components/getParam';
 
 import loadingScreenAnimation from '../data/loadingScreen.json';
 import create from '../data/Create.json';
@@ -441,15 +442,31 @@ $(document).ready(function () {
 						showImages('.star');
 						showVidSvg('.vidstar');
 						//week url parameter
-						if(window.location.href.indexOf("?week=one") > -1) {
+						console.log(getParam('week'))
+						const week = getParam('week')
+						const navBarHeight = $('section>.nav').innerHeight()
+						console.log(navBarHeight)
+						switch(week){
+							case "one":
+								setTimeout(function(){$('html, body').animate({
+									scrollTop: $("#weekOne").offset().top-parseInt(navBarHeight)
+								}, 500); }, 2000);	
+								break;
+							case "two":
+								setTimeout(function(){$('html, body').animate({
+									scrollTop: $("#weekTwo").offset().top-parseInt(navBarHeight)
+								}, 500); }, 2000);	
+								break;
+							default:
+								break;
+						}
+						// if(window.location.href.indexOf("?week=one") > -1) {
 							
-							// setTimeout(function(){$('html, body').animate({
-							// 	scrollTop: $("#scrollto").offset().top-10
-							// }, 1000); }, 2000);		
-							setTimeout(function(){$('html, body').animate({
-								scrollTop: $("#scrollto").offset().top-10
-							}, 500); }, 2000);							
-						 }
+						// 	// setTimeout(function(){$('html, body').animate({
+						// 	// 	scrollTop: $("#scrollto").offset().top-10
+						// 	// }, 1000); }, 2000);		
+													
+						//  }
 
 				});
 			
