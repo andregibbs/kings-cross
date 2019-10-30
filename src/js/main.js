@@ -440,6 +440,7 @@ $(document).ready(function () {
 				$(document).ready(function(){
 						showImages('.star');
 						showVidSvg('.vidstar');
+						//week url parameter
 						if(window.location.href.indexOf("?week=one") > -1) {
 							
 							// setTimeout(function(){$('html, body').animate({
