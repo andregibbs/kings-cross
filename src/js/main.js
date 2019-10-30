@@ -13,6 +13,11 @@ import support from './components/support';
 import experience from './components/experience';
 import lottieAnim from './components/lottieAnim';
 import loadingScreen from './components/loadingScreen';
+<<<<<<< HEAD
+=======
+import getParam from './components/getParam';
+
+>>>>>>> 1b16fcb2a2ffdfd5d21f9d37517de80d40c243c3
 import loadingScreenAnimation from '../data/loadingScreen.json';
 import create from '../data/Create.json';
 import colab from '../data/Colab.json';
@@ -346,6 +351,7 @@ $(document).ready(function () {
 			
 			
 			fetchData(whatIsKx);
+			places();
 			// whatIsKx();
 			var container = document.getElementById('loadingScreen__animation');
 		   loadingScreen(container, loadingScreenAnimation);
@@ -357,6 +363,7 @@ $(document).ready(function () {
 
 		case "/uk/explore/kings-cross/discover/":
 			discover();
+<<<<<<< HEAD
 			function showImages(el) {
 				var windowHeight = jQuery( window ).height();
 				
@@ -380,6 +387,9 @@ $(document).ready(function () {
 					showImages('.star');
 			});
 			// places();
+=======
+		    places();
+>>>>>>> 1b16fcb2a2ffdfd5d21f9d37517de80d40c243c3
 			break;
 
 		case "/uk/explore/kings-cross/whats-on/":
@@ -389,6 +399,7 @@ $(document).ready(function () {
 
 		case "/uk/explore/kings-cross/whats-on/event/":
 			fetchData(singleEvent);
+			places();
 			break;
 
 		case "/uk/explore/kings-cross/support/":
@@ -397,6 +408,7 @@ $(document).ready(function () {
 			});
 			//Support goes last!
 			support();
+			places();
 			// smoothScroll();
 			break;
 
@@ -416,10 +428,12 @@ $(document).ready(function () {
 			fetchData(function (allEvents) {
 				bookingRefFetcher(allEvents);
 			});
+			places();
 			break;
 
 		case "/uk/explore/kings-cross/experience/":
 			experience();
+			places();
 			break;
 
 		case "/uk/explore/kings-cross/not-a-school/":
@@ -428,6 +442,7 @@ $(document).ready(function () {
 				lottieAnim('coms', coms);
 				lottieAnim('crit', critical);
 				lottieAnim('create', create);	
+				places();
 				
 				function showImages(el) {
 					var windowHeight = jQuery( window ).height();
@@ -458,15 +473,32 @@ $(document).ready(function () {
 				$(document).ready(function(){
 						showImages('.star');
 						showVidSvg('.vidstar');
-						if(window.location.href.indexOf("?week=one") > -1) {
+						//week url parameter
+						console.log(getParam('week'))
+						const week = getParam('week')
+						const navBarHeight = $('section>.nav').innerHeight()
+						console.log(navBarHeight)
+						switch(week){
+							case "one":
+								setTimeout(function(){$('html, body').animate({
+									scrollTop: $("#weekOne").offset().top-parseInt(navBarHeight)
+								}, 500); }, 2000);	
+								break;
+							case "two":
+								setTimeout(function(){$('html, body').animate({
+									scrollTop: $("#weekTwo").offset().top-parseInt(navBarHeight)
+								}, 500); }, 2000);	
+								break;
+							default:
+								break;
+						}
+						// if(window.location.href.indexOf("?week=one") > -1) {
 							
-							// setTimeout(function(){$('html, body').animate({
-							// 	scrollTop: $("#scrollto").offset().top-10
-							// }, 1000); }, 2000);		
-							setTimeout(function(){$('html, body').animate({
-								scrollTop: $("#scrollto").offset().top-10
-							}, 500); }, 2000);							
-						 }
+						// 	// setTimeout(function(){$('html, body').animate({
+						// 	// 	scrollTop: $("#scrollto").offset().top-10
+						// 	// }, 1000); }, 2000);		
+													
+						//  }
 
 				});
 			
