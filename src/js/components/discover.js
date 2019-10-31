@@ -155,33 +155,52 @@ export default function discover(events) {
     }
 
     function swapActiveTab(newTab, oldTab){
-        // if(tabs[oldTab].slot === 1){
-            let swapOutDest = tabs[newTab].slot;
-            console.log('oldtab ', oldTab, 'newTab ', newTab, 'swap out destination slot: ', swapOutDest);
-            console.log(tabs[oldTab], tabs[newTab])
-            tabs[oldTab].slot = swapOutDest;
-            tabs[newTab].slot = 1
-            return swapOutDest
-        // }
-        
+        let swapOutDest = tabs[newTab].slot;
+        tabs[oldTab].slot = swapOutDest;
+        tabs[newTab].slot = 1
+        return swapOutDest
     }
-
 
     tabTriggerBtns.forEach(function(tabTriggerBtn, index) {
         tabTriggerBtn.addEventListener('click', function() {
-            let oldActiveTabIndex = getActiveTabIndex()
-            console.log('oldActiveTabIndex: ', oldActiveTabIndex)
-            console.log('trigger: ', this.dataset.tabTrigger)
-            let newActiveTabIndex = getTabIndexBySlot(this.dataset.tabTrigger)
-            console.log('newActiveTabIndex: ', newActiveTabIndex)
-            
-            let destination = swapActiveTab(newActiveTabIndex, oldActiveTabIndex)
+            const slot1 = $(SLOTS[1])
+            const slot2 = $(SLOTS[2])
+            const slot3 = $(SLOTS[3])
+            const slotArray = [slot1, slot2, slot3]
+            const floating_content = $('#floating__content')
 
-            console.log(tabs)
-            $('#floating__content').html(tabs[newActiveTabIndex].content)
-            $('#slot_1').attr('src', tabs[newActiveTabIndex].img.src)
+            const oldActiveTabIndex = getActiveTabIndex()
+            const newActiveTabIndex = getTabIndexBySlot(this.dataset.tabTrigger)
+            const destination = swapActiveTab(newActiveTabIndex, oldActiveTabIndex)
+            
+            //Fade all out
+            slotArray.map((slot)=>{slot.removeClass('flyout');slot.removeClass('fadeIn')})
+            floating_content.removeClass('flyout')
+            floating_content.removeClass('fadeIn')
+
+            //Swap content
+            floating_content.children('.tab-content').html(tabs[newActiveTabIndex].content)
+            slot1.children('img').attr('src', tabs[newActiveTabIndex].img.src)
             $(SLOTS[destination]).attr('src', tabs[getTabIndexBySlot(destination)].img.src)
-            Object.keys(tabs).map((key)=>{console.log('index: ', key, 'slot: ', tabs[key].slot)})
+
+            //Fade Slots 2 and 3 in
+            setTimeout(()=> {
+                slot2.addClass('fadeIn')
+               // floating_content.addClass('flyout__on')
+            }, 300);
+            setTimeout(()=> {
+                slot3.addClass('fadeIn')
+            }, 600);
+            //Fade slot 1 in
+            setTimeout(()=> {
+                slot1.addClass('fadeIn')
+            }, 500);
+            setTimeout(()=> {
+                
+                //floating_content.addClass('flyout')
+                floating_content.addClass('fadeIn')
+            }, 600);
+            
             // var currentTabData = document.querySelector('.tab-content[data-tab-content="' + activeTab + '"]');
             
             
