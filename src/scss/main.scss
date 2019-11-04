@@ -47,47 +47,104 @@
 
 .star {
   visibility: hidden;
+
   &__recently {
     &.fadeIn {
       -webkit-animation: animat_show-recently 1s;
       animation: animat_show-recently 1s;
     }
+  }
+  &#slot_1.fadeOut {
+    -webkit-animation: animat_hide-recently-slot1 0.7s;
+    animation: animat_hide-recently-slot1 0.7s;
     
   }
+
+
+  &#slot_2.fadeOut {
+    -webkit-animation: animat_hide-recently-slot2 0.7s;
+    animation: animat_hide-recently-slot2 0.7s;
+   
+  }
+  &#slot_3.fadeOut {
+    -webkit-animation: animat_hide-recently-slot3 0.7s;
+    animation: animat_hide-recently-slot3 0.7s;
+   
+  }
+    
 }
-
-
 
 .fadeIn {
   -webkit-animation: animat_show 0.8s;
   animation: animat_show 0.8s;
-  visibility: visible !important;
+  visibility: visible ;
 
+}
+
+.fadeOut {
+   -webkit-animation: animat_hide 0.35s;
+   animation: animat_hide 0.35s;
+  visibility: visible ;
 }
 
 @-webkit-keyframes animat_show{
   0%{opacity:0}
   100%{opacity:1}
 }
-// @-webkit-keyframes animat_show-recently{
-//   0%{
-//     opacity:0;
-//     transform: translate(-60%, -20%);
-//   }
-  
-//   100%{
-//     opacity:1;
-//     transform: translate(-20%, 0);
-//   }
-// }
+
 @-webkit-keyframes animat_show-recently{
   0%{
     opacity:0;
-    transform: translate(0, -20%);
+    transform: translate(-15%, 0%);
   }
   
   100%{
     opacity:1;
     transform: translate(-20%, 0);
+  }
+}
+
+@-webkit-keyframes animat_hide{
+  0%{opacity:1; visibility: visible;}
+  100%{opacity:0; visibility: hidden;}
+}
+
+@-webkit-keyframes animat_hide-recently-slot1{
+  0%{
+    opacity:1;
+    transform: translate(-20%, 0);
+    visibility: visible;
+  }
+  
+  100%{
+    opacity:0;
+    transform: translate(-15%, 0);
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes animat_hide-recently-slot2{
+  0%{
+    opacity:1;
+    transform: translate(0%, 0);
+    visibility: visible;
+  }
+  
+  100%{
+    opacity:0;
+    transform: translate(0%, -5%);
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes animat_hide-recently-slot3{
+  0%{
+    opacity:1;
+    transform: translate(0%, 0%);
+    visibility: visible;
+  }
+  
+  100%{
+    opacity:0;
+    transform: translate(0%, 5%);
+    visibility: hidden;
   }
 }

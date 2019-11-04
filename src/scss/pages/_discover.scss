@@ -429,6 +429,18 @@
   &__container {
     display: flex;
   }
+  &__header {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-top: 4%;
+    opacity: inherit;
+    visibility: inherit;
+    h3 {
+      font-size: em(40);
+      margin-bottom: 20px;
+    }
+  }
   &__images {
     display: flex;
     flex-direction: column;
@@ -447,6 +459,16 @@
     img {
       max-width: 300px;
       width: 300px;
+    }
+    &__header {
+      margin-bottom: 3%;
+      font-size: em(20);
+    }
+    button {
+      margin: 1.4em 0;
+      text-transform: uppercase;
+      opacity: inherit;
+      visibility: inherit;
     }
   }
 }
@@ -469,22 +491,15 @@
   }
 }
 
-
 .slick-slide:not(.slick-center) img {
   display: block;
   padding: 5%;  
-  opacity: 0.3;
+  opacity: 0.5;
   z-index: -1;
   position: relative;
 
 }
-// .slick-slide {
-//   width:300px;
-// }
 
-// .slick-slide img {
-//   width: 100%;
-// }
 .slider {
   //height: 470px!important;
   width: auto;
@@ -507,17 +522,15 @@
     position: relative;
   }
 }
-// .slider img {
-//   height: 370px;
-//   width: auto;
-// }
+
+.slick-track {
+  padding: 50px 0;
+}
+
 .gallery__header {
   margin-bottom: 5%;
 }
 
-.slick-list {
-  //overflow: visible;
-}
 
 // .is-active {
 //    box-shadow: 0 19px 38px rgba(164,89,156,.30), 0 15px 12px rgba(164,89,156,.22);
@@ -526,10 +539,15 @@
 
 .tab-content {
   display: none;
+  margin-top: 4.5em;
+  p{
+    font-size: em(14)
+  }
+  
 }
 .tab-content.is-open {
   display: block;
-  // background-color: yellow;
+ 
 }
 
 .flyout {
