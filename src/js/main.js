@@ -482,6 +482,11 @@ $(document).ready(function () {
 									scrollTop: $("#weekTwo").offset().top-parseInt(navBarHeight)
 								}, 500); }, 2000);	
 								break;
+							case "three":
+								setTimeout(function(){$('html, body').animate({
+									scrollTop: $("#weekThree").offset().top-parseInt(navBarHeight)
+								}, 500); }, 2000);	
+								break;
 							default:
 								break;
 						}

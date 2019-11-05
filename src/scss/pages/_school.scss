@@ -152,6 +152,18 @@
             margin-bottom: 10px;
             line-height: 1.3em;
             flex-grow: 1;
+            &__summary {
+                height: 6em;
+                margin-bottom: 1em;
+                text-transform: uppercase;
+                font-weight: 400;
+                @media screen and (max-width: 768px) {
+                    text-transform: uppercase;
+                    font-weight: 400;
+                    height: auto;
+                    margin-bottom: auto;
+                }
+            }
             &__alt {
                 @media screen and (min-width: 768px) {
                     height: 30%
