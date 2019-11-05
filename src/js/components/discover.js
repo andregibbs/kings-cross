@@ -44,10 +44,17 @@ import slider from './slider'
 
 // }
 
-const SLOTS = {
-    1: '#slot_1',
-    2: '#slot_2',
-    3: '#slot_3'
+const SLOTS = { 
+    "desktop": {
+        1: '#slot_1',
+        2: '#slot_2',
+        3: '#slot_3'
+    },
+    "mobile": {
+        1: '#slot_1_mobile',
+        2: '#slot_2_mobile',
+        3: '#slot_3_mobile'
+    }
 }
 const tabs = {
     1: {
@@ -143,6 +150,10 @@ export default function discover(events) {
 
     var tabTriggerBtns = document.querySelectorAll('.tab-item');
 
+    function isMobile(){
+        return parseInt(window.innerWidth) <= 768
+    }
+
     function getTabIndexBySlot(j){
         return Object.keys(tabs).filter((i)=>{return tabs[i].slot === parseInt(j)? true: false})[0];
     }
@@ -158,17 +169,37 @@ export default function discover(events) {
         return swapOutDest
     }
 
+    function fadeOut(element){
+        element.removeClass('flyout')
+        element.removeClass('fadeIn')
+        element.addClass('fadeOut')
+    }
+
+    function fadeIn(element){
+        element.removeClass('fadeOut')
+        element.addClass('fadeIn')     
+    }
+
     tabTriggerBtns.forEach(function(tabTriggerBtn, index) {
         tabTriggerBtn.addEventListener('click', function() {
-            const slot1 = $(SLOTS[1])
-            const slot2 = $(SLOTS[2])
-            const slot3 = $(SLOTS[3])
-            const slotArray = [slot1, slot2, slot3]
-            const floating_content_text = $('#floating__content > div > div')
-            const floating_content_tab = $("#floating__content > div")
+            let selector
+
+            const slot1 = $(SLOTS.desktop[1])
+            const slot2 = $(SLOTS.desktop[2])
+            const slot3 = $(SLOTS.desktop[3])
+            const slot1_mobile = $(SLOTS.mobile[1])
+            const slot2_mobile = $(SLOTS.mobile[2])
+            const slot3_mobile = $(SLOTS.mobile[3])
+           
+            const floating_content_text = $('#floating__content__text')
+            const floating_content_text_mobile = $('#floating__content__text__mobile')
+            const floating_content_tab = $("#floating__content__tab")
+            const floating_content_tab_mobile = $("#floating__content__tab_mobile")
             const floating_content_container = $("#floating__content")
+            const floating_content_container_mobile = $("#floating__content_mobile")
             const floating_content_button = $("#slot_1_button")
-            const floating_content = [floating_content_text, floating_content_button, floating_content_container, floating_content_tab]
+            const floating_content_button_mobile = $("#slot_1_button_mobile")
+            const floating_content = [floating_content_text, floating_content_button, floating_content_container, floating_content_tab, floating_content_text_mobile, floating_content_button_mobile, floating_content_container_mobile, floating_content_tab_mobile]
             const header = $('.recently__header')
             const oldActiveTabIndex = getActiveTabIndex()
             const newActiveTabIndex = getTabIndexBySlot(this.dataset.tabTrigger)
@@ -176,46 +207,47 @@ export default function discover(events) {
             const timeScale = 1;
             
             setTimeout(()=> {
-                slot2.removeClass('flyout')
-                slot2.removeClass('fadeIn')
-                slot2.addClass('fadeOut')
-                header.removeClass('fadeIn')
+                fadeOut(slot2_mobile)
+                fadeOut(slot2)
+                fadeOut(header)
             }, 0*timeScale);
             setTimeout(()=> {
-                floating_content.map((element)=>{
-                    element.removeClass('flyout')
-                    element.removeClass('fadeIn')
-                    element.addClass('fadeOut')
-                })
-                slot1.removeClass('flyout')
-                slot1.removeClass('fadeIn')
-                slot1.addClass('fadeOut')
+                
+                fadeOut(slot1)
+                fadeOut(slot1_mobile)
             }, 150*timeScale);
             setTimeout(()=> {
-                slot3.removeClass('flyout')
-                slot3.removeClass('fadeIn')
-                slot3.addClass('fadeOut') 
+                fadeOut(slot3)
+                fadeOut(slot3_mobile)
+                floating_content.map((element)=>{
+                    fadeOut(element)
+                })
             }, 250)*timeScale;
             setTimeout(()=> {
-                $(SLOTS[destination]).attr('src', tabs[getTabIndexBySlot(destination)].img.src)
-                slot3.removeClass('fadeOut')
-                slot3.addClass('fadeIn')
+                $(SLOTS.desktop[destination]).attr('src', tabs[getTabIndexBySlot(destination)].img.src)
+                $(SLOTS.mobile[destination]).attr('src', tabs[getTabIndexBySlot(destination)].img.src)
+                
             }, 950*timeScale);
             setTimeout(()=> {
                 slot1.children('img').attr('src', tabs[newActiveTabIndex].img.src)
-                slot1.removeClass('fadeOut')
-                slot1.addClass('fadeIn')
+                slot1_mobile.children('img').attr('src', tabs[newActiveTabIndex].img.src)
+
+                fadeIn(slot1)
+                fadeIn(slot1_mobile)
                 floating_content.map((element)=>{
-                    element.removeClass('fadeOut')
-                    element.addClass('fadeIn')
+                    fadeIn(element)
                 })
+                fadeIn(slot3)
+                fadeIn(slot3_mobile)
+
                 floating_content_text.html(tabs[newActiveTabIndex].content)
-                
+                floating_content_text_mobile.html(tabs[newActiveTabIndex].content)             
             }, 1050*timeScale);
             setTimeout(()=> {
-                slot2.removeClass('fadeOut')
-                slot2.addClass('fadeIn')     
-                header.addClass('fadeIn')     
+                let elements = [slot2, slot2_mobile, header]
+                elements.map((e)=>{
+                    fadeIn(e)
+                })
             }, 1130*timeScale);
             
             // var currentTabData = document.querySelector('.tab-content[data-tab-content="' + activeTab + '"]');
