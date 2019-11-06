@@ -530,6 +530,7 @@
       align-items: center;
       height: calc(#{$browser-context-mobile}/#{$media-desktop} * 100vw * 45);
       margin: auto 0;
+      width: 95%;
     }
   }
   @media screen and (max-width: 768px) {
@@ -547,14 +548,16 @@
   opacity: 0.5;
   z-index: -1;
   position: relative;
+}
 
-
+.slider-discover-alt img {
+  opacity: 1 !important;
 }
 
 .slider {
   //height: 470px!important;
   width: auto;
-  transform: scale(1.5);
+  //transform: scale(1.5);
   transform-origin: 50% 50%;
   cursor: pointer;
   opacity: 1;
@@ -587,6 +590,15 @@
 // .is-active {
 //    box-shadow: 0 19px 38px rgba(164,89,156,.30), 0 15px 12px rgba(164,89,156,.22);
 // }
+
+#floating__content__text, #floating__content__text__mobile {
+  p {
+    color: #b4b4b4;
+    b {
+      color: #fff;
+    }
+  }
+}
 
 
 .tab-content {

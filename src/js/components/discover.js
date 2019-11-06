@@ -64,7 +64,7 @@ const tabs = {
         }, 
         "content" : 
             `<h1 class="recently__content__header">Samsung KX Presents: Thread Talks with Caitlin Moran</h1>
-            <p>To kick off the first in the series of Thread Talks, host and comedian Alex Zane was joined by acclaimed author Caitlin Moran as they celebrated the world of Twitter threads, spats and conversations.</p>
+            <p><b>To kick off the first in the series of Thread Talks, host and comedian Alex Zane was joined by acclaimed author Caitlin Moran as they celebrated the world of Twitter threads, spats and conversations.</b></p><br>
             <p>The 90-minute event featured an intimate live performance from Caitlin as she reflected on one of her most popular Twitter threads - a look at the downsides of being a man – followed by a Q&A with the audience and Alex Zane which highlighted some of her greatest, weirdest and funniest moments on the platform.</p>
             <p>Thread Talks is a series of six intimate and exclusive ‘in conversation’ events featuring some of the biggest names in the world of journalism, sport, culture and comedy. The acts will perform at the venue’s Centre Stage in front the world’s first vertical 10metre-wide curved Samsung screen.</p>
             <p>Each free event is being hosted in association with Twitter UK and on each night guests will hear from the company’s Director of Planning, David Wilding.</p>`,
@@ -78,7 +78,8 @@ const tabs = {
         }, 
         "content" : 
             `<h1 class="recently__content__header">Co–Lab 3: How to monetise your side hustle</h1>
-            <p>Mercedes Benson is a creative polymath, from becoming an enterprise founder to a social influencer, she is a true all-rounder. In her talk she shared her knowledge and insight on how to turn your passion into a business discussing her own experience by making money from her creativity.</p>
+            <p><b>Mercedes Benson is a creative polymath, from becoming an enterprise founder to a social influencer, she is a true all-rounder.</b></p><br>
+            <p>In her talk she shared her knowledge and insight on how to turn your passion into a business discussing her own experience by making money from her creativity.</p>
             <p>Joined by a role model of hers, Toni Tone (@t0nit0ne), the duo showcased how best to begin your side hustle. Toni is an online talk show host and social content creator, best known for her social commentary on Twitter as well as her online writing.</p>`,
         "link" : "https://www.samsung.com/uk/explore/kings-cross/whats-on/event/?id=HMSVJXWDR5D",
         "slot": 2
@@ -90,7 +91,7 @@ const tabs = {
         }, 
         "content" : 
             `<h1 class="recently__content__header">Real parents of Kings Cross</h1>
-            <p>For our very first Co–Lab event, we paired together two juxtaposing influencers and challenged them to make a positive impact on the local community.</p>
+            <p><b>For our very first Co–Lab event, we paired together two juxtaposing influencers and challenged them to make a positive impact on the local community.</b></p><br>
             <p>Straight-talking ‘Mother of All List’s’ Clemmie Telford was paired with photographer Matt Cuzen who is known for his fantasy-style photography.</p>
             <p>Their Co–Lab explored the stories of King’s Cross parents and their connection to the local area through a powerful photo series with a surreal twist. Many of the parents who featured in the photo series attended the talk and spoke about their experience with meeting up with two absolute strangers for this project!</p>
             <p>The photo series can be viewed at #SamsungKX for a limited time.</p>`,
@@ -118,7 +119,18 @@ export default function discover(events) {
         speed: 1000
     }
 
+    const altSliderConfig = {
+            lazyLoad: 'ondemand',
+            dots: true,
+            infinite: false,
+            speed: 500,
+            fade: false,
+            cssEase: 'linear'
+    }
+    console.log(events)
+    slider(events, '.slider-discover-alt', altSliderConfig, 'homeKv');
     slider(events, '.slider-discover', sliderConfig, 'homeKv');
+    console.log('hear')
     var indexToGet = $('.slider .slick-slide').index($('#center_on_me'));
     window.$(document).ready(function() {
         setTimeout(function() {
