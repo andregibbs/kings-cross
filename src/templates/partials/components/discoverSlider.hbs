@@ -17,9 +17,26 @@
                     </div>
                 {{/each}}
             </div>
+        {{else ifCond slider "recentlySlider"}}
+            <div class="slider-discover-recently" id={{slider}} >
+                    {{#each config.discover.recentlySlider }}
+                        <div class="slider-discover__slide">
+                            <img src="{{ this.image }}" class="discover__img" alt="{{ this.alt }}">
+                        </div>
+                    {{/each}}
+                </div>
+        {{else ifCond slider "recentlySliderDescriptions"}}
+            <div class="slider-discover-recently-descriptions" id={{slider}}>
+                    {{#each config.discover.recentlySlider }}
+                        <div class="slider-discover__slide">
+                            {{{this.description}}}
+                            {{{this.link}}}
+                        </div>
+                    {{/each}}
+                </div>
          {{else }}
             <div class="slider-discover-alt" id={{slider}} >
-                <div class="slider-discover__slide_alt">
+                <div class="slider-discover__slide">
                     <video class="video__main" preload="none" playsinline onclick="if(this.paused) { this.play() }else{this.pause()}" poster="https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/video_poster.jpg">
                         <source src="https://images.samsung.com/is/content/samsung/p5/uk/kings-cross/kx_hype.mp4" type="video/mp4">
                         Your browser does not support the video tag.

@@ -100,6 +100,7 @@ const tabs = {
     }
 }
 
+
 let activeTab = 1;
 
 export default function discover(events) {
@@ -124,15 +125,51 @@ export default function discover(events) {
             dots: true,
             infinite: false,
             speed: 500,
-            fade: false,
-            cssEase: 'linear'
+            fade: false
+            
     }
+    const recentlySliderConfig = {
+        lazyLoad: 'ondemand',
+        slidesToShow: 2,
+        infinite: true,
+        centerMode: true,
+        centerPadding: '50px',
+        slidesToScroll: 1,
+        dots: false,
+        focusOnSelect: true,
+        speed: 1000,
+        asNavFor: '.slider-discover-recently-descriptions',
+        autoplay: true,
+        autoplaySpeed: 10000,
+        prevArrow: false,
+        nextArrow: false,
+    }
+    const recentlyDescriptionsSliderConfig = {
+        lazyLoad: 'ondemand',
+        dots: false,
+        infinite: true,
+        speed: 1000,
+        fade: true,
+        asNavFor: '.slider-discover-recently',
+        prevArrow: false,
+        nextArrow: false,
+}
     console.log(events)
     slider(events, '.slider-discover-alt', altSliderConfig, 'homeKv');
     slider(events, '.slider-discover', sliderConfig, 'homeKv');
+    slider(events, '.slider-discover-recently', recentlySliderConfig, 'homeKv');
+    slider(events, '.slider-discover-recently-descriptions', recentlyDescriptionsSliderConfig, 'homeKv');
     console.log('hear')
     var indexToGet = $('.slider .slick-slide').index($('#center_on_me'));
     window.$(document).ready(function() {
+        // $('.slider-discover-recently').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+        //     console.log(currentSlide, nextSlide === 2);
+
+        //     if(nextSlide === 2){
+        //         console.log('swiping')
+        //         $('.slider-discover-recently').slick('goTo', '0')
+        //     }
+        //   });
         setTimeout(function() {
             if (window.location.hash == "#whitepaper") {
                 $("#slick-slide01").click();
@@ -219,53 +256,55 @@ export default function discover(events) {
             const newActiveTabIndex = getTabIndexBySlot(this.dataset.tabTrigger)
             const destination = swapActiveTab(newActiveTabIndex, oldActiveTabIndex)
             const timeScale = 1;
+            if(!isMobile()){
+                setTimeout(()=> {
+                    fadeOut(slot2_mobile)
+                    fadeOut(slot2)
+                    fadeOut(header)
+                }, 0*timeScale);
+                setTimeout(()=> {
+                    
+                    fadeOut(slot1)
+                    fadeOut(slot1_mobile)
+                }, 150*timeScale);
+                setTimeout(()=> {
+                    fadeOut(slot3)
+                    fadeOut(slot3_mobile)
+                    floating_content.map((element)=>{
+                        fadeOut(element)
+                    })
+                }, 250)*timeScale;
+                setTimeout(()=> {
+                    $(SLOTS.desktop[destination]).attr('src', tabs[getTabIndexBySlot(destination)].img.src)
+                    $(SLOTS.mobile[destination]).attr('src', tabs[getTabIndexBySlot(destination)].img.src)
+                    
+                }, 950*timeScale);
+                setTimeout(()=> {
+                    slot1.children('img').attr('src', tabs[newActiveTabIndex].img.src)
+                    slot1_mobile.children('img').attr('src', tabs[newActiveTabIndex].img.src)
+                    floating_content_button.attr('href', tabs[newActiveTabIndex].link)
+                    floating_content_button_mobile.attr('href', tabs[newActiveTabIndex].link)
+                    
+    
+                    fadeIn(slot1)
+                    fadeIn(slot1_mobile)
+                    floating_content.map((element)=>{
+                        fadeIn(element)
+                    })
+                    fadeIn(slot3)
+                    fadeIn(slot3_mobile)
+    
+                    floating_content_text.html(tabs[newActiveTabIndex].content)
+                    floating_content_text_mobile.html(tabs[newActiveTabIndex].content)             
+                }, 1050*timeScale);
+                setTimeout(()=> {
+                    let elements = [slot2, slot2_mobile, header]
+                    elements.map((e)=>{
+                        fadeIn(e)
+                    })
+                }, 1130*timeScale);
+            }
             
-            setTimeout(()=> {
-                fadeOut(slot2_mobile)
-                fadeOut(slot2)
-                fadeOut(header)
-            }, 0*timeScale);
-            setTimeout(()=> {
-                
-                fadeOut(slot1)
-                fadeOut(slot1_mobile)
-            }, 150*timeScale);
-            setTimeout(()=> {
-                fadeOut(slot3)
-                fadeOut(slot3_mobile)
-                floating_content.map((element)=>{
-                    fadeOut(element)
-                })
-            }, 250)*timeScale;
-            setTimeout(()=> {
-                $(SLOTS.desktop[destination]).attr('src', tabs[getTabIndexBySlot(destination)].img.src)
-                $(SLOTS.mobile[destination]).attr('src', tabs[getTabIndexBySlot(destination)].img.src)
-                
-            }, 950*timeScale);
-            setTimeout(()=> {
-                slot1.children('img').attr('src', tabs[newActiveTabIndex].img.src)
-                slot1_mobile.children('img').attr('src', tabs[newActiveTabIndex].img.src)
-                floating_content_button.attr('href', tabs[newActiveTabIndex].link)
-                floating_content_button_mobile.attr('href', tabs[newActiveTabIndex].link)
-                
-
-                fadeIn(slot1)
-                fadeIn(slot1_mobile)
-                floating_content.map((element)=>{
-                    fadeIn(element)
-                })
-                fadeIn(slot3)
-                fadeIn(slot3_mobile)
-
-                floating_content_text.html(tabs[newActiveTabIndex].content)
-                floating_content_text_mobile.html(tabs[newActiveTabIndex].content)             
-            }, 1050*timeScale);
-            setTimeout(()=> {
-                let elements = [slot2, slot2_mobile, header]
-                elements.map((e)=>{
-                    fadeIn(e)
-                })
-            }, 1130*timeScale);
             
             // var currentTabData = document.querySelector('.tab-content[data-tab-content="' + activeTab + '"]');
             
