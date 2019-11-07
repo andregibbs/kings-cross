@@ -57,27 +57,10 @@ export default function slider( data, element, sliderConfig, templateToRender ){
 			$('.upComing__sliders .slider-'+getSlider+'').show().slick(sliderConfig)
 		})
 
-	} else if( element == '.slider-discover' ) {
-
+	} else if( element == '.slider-discover-alt' || element == '.slider-discover' || element == '.slider-discover-recently' || element == '.slider-discover-recently-descriptions') {
 		$(element).slick( sliderConfig )
-		$('#sliderTwo').on('beforeChange', (e, slick, currentSlide, nextSlide)=>{
-			// let track = $('#sliderTwo > div > div')
-			// let activeSlide = $('#sliderTwo > div > div > div.slider-discover__slide.slick-slide.slick-current.slick-active.slick-center')[0]
-			// console.log(currentSlide, nextSlide)
-			
-			// let direction = currentSlide > nextSlide ? (Math.abs(currentSlide-nextSlide)===1 ? "l" : "r") : (Math.abs(currentSlide-nextSlide)===1 ? "r" : "l")
-			// console.log(direction)
-			// console.log(track)
-			// console.log('prev', $(activeSlide.previousSibling))
-			// let leftTab = direction === 'r' ? activeSlide : activeSlide.previousSibling.previousSibling
-			// let rightTab = direction === 'r' ? activeSlide.nextSibling.nextSibling : activeSlide
-			// console.log('left', leftTab, 'right', rightTab)
-			//$(activeSlide.previousSibling).attr("style", "opacity: 0.5")
 
-			//console.log(find('#sliderTwo > div > div > div.slider-discover__slide.slick-slide.slick-current.slick-active.slick-center'))
-		})
-
-	} else if( templateToRender == 'experience' ) {
+	} else if( templateToRender === 'experience' ) {
 
 		$(element).slick( sliderConfig )
 

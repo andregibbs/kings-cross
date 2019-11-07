@@ -1,49 +1,54 @@
 <section class="section slider">
     <div class="section__inner">
-        <div class="slider-discover" id={{slider}}>
-
-            {{#ifCond slider "sliderOne"}}
-
-            {{#each config.discover.sliderOne }}
-            <div class="slider-discover__slide">
-
-                <img src="{{ @root.config.imgPath }}{{ this.image }}" class="discover__img" alt="{{ this.alt }}">
-                 <p class="slider-discover__slide__description">{{ this.description }}</p>
+        {{#ifCond slider "sliderOne"}}
+            <div class="slider-discover" id={{slider}}>
+                {{#each config.discover.sliderOne }}
+                    <div class="slider-discover__slide">
+                        <img src="{{ @root.config.imgPath }}{{ this.image }}" class="discover__img" alt="{{ this.alt }}">
+                        <p class="slider-discover__slide__description">{{ this.description }}</p>
+                    </div>
+                {{/each}}
             </div>
-
-            {{/each}}
-
-
-            {{else ifCond slider "sliderTwo"}}
-
-            {{#each config.discover.sliderTwo }}
-            <div class="slider-discover__slide">
-                <img src="{{ @root.config.imgPath }}{{ this.image }}" class="discover__img" alt="{{ this.alt }}">
+        {{else ifCond slider "sliderTwo"}}
+            <div class="slider-discover" id={{slider}} >
+                {{#each config.discover.sliderTwo }}
+                    <div class="slider-discover__slide">
+                        <img src="{{ @root.config.imgPath }}{{ this.image }}" class="discover__img" alt="{{ this.alt }}">
+                    </div>
+                {{/each}}
             </div>
-
-            {{/each}}
-
-            {{else ifCond slider "mainSlider"}}
-
-            {{!-- {{#each config.discover.mainSlider}} --}}
-             <div class="slider-discover__slide">
-                 <video class="video__main" preload="none" playsinline onclick="if(this.paused) { this.play() }else{this.pause()}" poster="https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/video_poster.jpg">
-                    <source src="https://images.samsung.com/is/content/samsung/p5/uk/kings-cross/kx_hype.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-            <div class="slider-discover__slide">
-                <div style="position: relative">
-                    <img class="discover__img" src="//images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/discover/KX_Carousel_Samsung-KX50_1152x648.jpg"/>
-                    <a target="_blank" class="button btn btn--primary slider-discover__cta" href="//images.samsung.com/is/content/samsung/p5/uk/explore/kings-cross/discover/SamsungKX50-The_Future_in_Focus_-_report.pdf">Learn More</a>
+        {{else ifCond slider "recentlySlider"}}
+            <div class="slider-discover-recently" id={{slider}} >
+                    {{#each config.discover.recentlySlider }}
+                        <div class="slider-discover__slide">
+                            <img src="{{ this.image }}" class="discover__img" alt="{{ this.alt }}">
+                        </div>
+                    {{/each}}
+                </div>
+        {{else ifCond slider "recentlySliderDescriptions"}}
+            <div class="slider-discover-recently-descriptions" id={{slider}}>
+                    {{#each config.discover.recentlySlider }}
+                        <div class="slider-discover__slide">
+                            {{{this.description}}}
+                            {{{this.link}}}
+                        </div>
+                    {{/each}}
+                </div>
+         {{else }}
+            <div class="slider-discover-alt" id={{slider}} >
+                <div class="slider-discover__slide">
+                    <video class="video__main" preload="none" playsinline onclick="if(this.paused) { this.play() }else{this.pause()}" poster="https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/video_poster.jpg">
+                        <source src="https://images.samsung.com/is/content/samsung/p5/uk/kings-cross/kx_hype.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="slider-discover__slide">
+                    <div style="position: relative">
+                        <img class="discover__img" src="//images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/discover/KX_Carousel_Samsung-KX50_1152x648.jpg"/>
+                        <a target="_blank" class="button btn btn--primary slider-discover__cta" href="//images.samsung.com/is/content/samsung/p5/uk/explore/kings-cross/discover/SamsungKX50-The_Future_in_Focus_-_report.pdf">Learn More</a>
+                    </div>
                 </div>
             </div>
-
-            
-            {{!-- {{/each}} --}}
-
-            {{/ifCond}}
-
-        </div>
+        {{/ifCond}}
     </div>
 </section>
