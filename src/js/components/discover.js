@@ -133,7 +133,7 @@ export default function discover(events) {
         slidesToShow: 2,
         infinite: true,
         centerMode: true,
-        centerPadding: '50px',
+        centerPadding: '30px',
         slidesToScroll: 1,
         dots: false,
         focusOnSelect: true,

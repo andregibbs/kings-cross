@@ -49,13 +49,10 @@
 }
 
 
-<<<<<<< HEAD
-=======
 .kx-video {
   padding: 0px;
 }
 
->>>>>>> feature/discover-revamp
 // .kx-video {
 //   position: relative;
 //   background: #0C0C0C;
@@ -350,6 +347,7 @@
 .spaces {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
+    margin-bottom: 6em;
   &__header {
     display: flex;
     justify-content: center;
@@ -411,6 +409,7 @@
         //flex: 0 0 calc(50% - 2%);
         height: 50%;
         width: 50%;
+        padding-left: 0px;
     }
 
     h4 {
@@ -456,6 +455,10 @@
     text-align: center;
     line-height: 1.3em;
     margin-bottom: 1em;
+    @media screen and (max-width: $mobile) {
+      font-size: em(25);
+  }
+
   }
   &__hashtag {
     font-size: em(14);
@@ -666,8 +669,6 @@
  
 }
 
-<<<<<<< HEAD
-=======
 .community-tabs {
   display: flex;
   flex-direction: row;
@@ -735,10 +736,9 @@
 }
 
 .un-margin {
-  margin: 0 !important;
+  margin-top: 0 !important;
 }
 
->>>>>>> feature/discover-revamp
 .flyout {
   &__on {
     -webkit-animation: flyout 2s!important;
