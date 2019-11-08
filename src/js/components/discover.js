@@ -154,12 +154,10 @@ export default function discover(events) {
         prevArrow: false,
         nextArrow: false,
 }
-    console.log(events)
     slider(events, '.slider-discover-alt', altSliderConfig, 'homeKv');
     slider(events, '.slider-discover', sliderConfig, 'homeKv');
     slider(events, '.slider-discover-recently', recentlySliderConfig, 'homeKv');
     slider(events, '.slider-discover-recently-descriptions', recentlyDescriptionsSliderConfig, 'homeKv');
-    console.log('hear')
     var indexToGet = $('.slider .slick-slide').index($('#center_on_me'));
     window.$(document).ready(function() {
         // $('.slider-discover-recently').on('beforeChange', function(event, slick, currentSlide, nextSlide){
@@ -232,6 +230,16 @@ export default function discover(events) {
         element.removeClass('fadeOut')
         element.addClass('fadeIn')     
     }
+
+    $('.community-tabs').children().each((idx, tab)=>{
+        $(tab).on('click', ()=>{
+            const num = idx + 1
+            $('.community-tabs > .tab.is-active').removeClass('is-active')
+            $(tab).addClass('is-active')
+            $('.community-events > .event.is-active').removeClass('is-active')
+            $('.community-events > .event:nth-child('+parseInt(num)+')').addClass('is-active')
+        })
+    })
 
     tabTriggerBtns.forEach(function(tabTriggerBtn, index) {
         tabTriggerBtn.addEventListener('click', function() {
