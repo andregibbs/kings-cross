@@ -201,18 +201,10 @@ export default function discover(events) {
         prevArrow: false,
         nextArrow: false,
 }
-<<<<<<< HEAD
-    console.log(events)
-=======
->>>>>>> feature/discover-revamp
     slider(events, '.slider-discover-alt', altSliderConfig, 'homeKv');
     slider(events, '.slider-discover', sliderConfig, 'homeKv');
     slider(events, '.slider-discover-recently', recentlySliderConfig, 'homeKv');
     slider(events, '.slider-discover-recently-descriptions', recentlyDescriptionsSliderConfig, 'homeKv');
-<<<<<<< HEAD
-    console.log('hear')
-=======
->>>>>>> feature/discover-revamp
     var indexToGet = $('.slider .slick-slide').index($('#center_on_me'));
     window.$(document).ready(function() {
         // $('.slider-discover-recently').on('beforeChange', function(event, slick, currentSlide, nextSlide){
@@ -286,8 +278,6 @@ export default function discover(events) {
         element.addClass('fadeIn')     
     }
 
-<<<<<<< HEAD
-=======
     $('.community-tabs').children().each((idx, tab)=>{
         $(tab).on('click', ()=>{
             const num = idx + 1
@@ -298,7 +288,6 @@ export default function discover(events) {
         })
     })
 
->>>>>>> feature/discover-revamp
     tabTriggerBtns.forEach(function(tabTriggerBtn, index) {
         tabTriggerBtn.addEventListener('click', function() {
             const slot1 = $(SLOTS.desktop[1])
