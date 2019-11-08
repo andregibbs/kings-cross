@@ -350,6 +350,9 @@ $(document).ready(function () {
 			fetchData(whatIsKx);
 			places();
 			// whatIsKx();
+			var container = document.getElementById('loadingScreen__animation');
+		   loadingScreen(container, loadingScreenAnimation);
+			
 
 			var container = document.getElementById('loadingScreen__animation');
 			loadingScreen(container, loadingScreenAnimation);

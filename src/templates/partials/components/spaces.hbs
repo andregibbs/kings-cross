@@ -1,10 +1,9 @@
 
       
             {{#each config.discover.spaces}}
-            <div class="spaces__space" style="background: url('{{ @root.config.imgPath }}{{ this.image }}')">
-
+            <div class="spaces__space">
+                <div class="spaces__space__image">{{{this.image}}}</div>
                 <h4>{{this.title}}</h4>
-
                 <p>{{this.description}}</p>
 
             </div>
