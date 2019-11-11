@@ -707,11 +707,15 @@
 
 .community-events .event {
   display: none;
+  opacity: 0;
+  transition: 1s;
 }
 
 .community-events .event.is-active{
   display: flex;
   flex-direction: row;
+  opacity: 1;
+  transition: 1s;
 
   img {
     width: 35%;
