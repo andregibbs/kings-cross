@@ -466,11 +466,8 @@ $(document).ready(function () {
 				$(document).ready(function(){
 						showImages('.star');
 						showVidSvg('.vidstar');
-						//week url parameter
-						console.log(getParam('week'))
 						const week = getParam('week')
 						const navBarHeight = $('section>.nav').innerHeight()
-						console.log(navBarHeight)
 						switch(week){
 							case "one":
 								setTimeout(function(){$('html, body').animate({
@@ -485,6 +482,11 @@ $(document).ready(function () {
 							case "three":
 								setTimeout(function(){$('html, body').animate({
 									scrollTop: $("#weekThree").offset().top-parseInt(navBarHeight)
+								}, 500); }, 2000);	
+								break;
+							case "four":
+								setTimeout(function(){$('html, body').animate({
+									scrollTop: $("#weekFour").offset().top-parseInt(navBarHeight)
 								}, 500); }, 2000);	
 								break;
 							default:
