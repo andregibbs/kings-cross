@@ -44,8 +44,6 @@
   a{
     box-shadow: 2px 2px 12px black;
   }
-  
-
 }
 
 
@@ -347,7 +345,7 @@
 .spaces {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
-    margin-bottom: 6em;
+    margin-bottom: 9em;
   &__header {
     display: flex;
     justify-content: center;
@@ -476,7 +474,7 @@
     display: flex;
     flex-direction: column;
     margin-left: 10%;
-    margin-top: 4%;
+    margin-top: 2%;
     opacity: inherit;
     visibility: inherit;
     @media screen and (max-width: 768px) {
@@ -498,6 +496,15 @@
     img {
       margin-bottom: 10%;
       max-width: 300px;
+      box-shadow: -12px 0px 15px 0 rgba(12,12,12,1);
+      transition: 0.4s;
+    }
+    img:hover {
+      //LOL
+      box-shadow: 20px 0px 15px 0 #0f0f0f;
+      transform: scale(1.06);
+      transition: 0.4s;
+      z-index: 2;
     }
     @media screen and (max-width: 768px) {
       flex-direction: row;
@@ -548,6 +555,19 @@
   &__image {
     transform: translate(-20%, 0);
     width: 30%;
+
+    img {
+      box-shadow: -20px 0px 15px 0 rgba(12,12,12,1);
+      transition: 0.4s;
+    }
+
+    img:hover {
+      //LOL
+      box-shadow: -15px 0px 15px 0 #0f0f0f;
+      transform: scale(1.05);
+      transition: 0.4s;
+    }
+
     @media screen and (max-width: 768px) {
       width: 95%;
       align-items: center;
@@ -562,7 +582,6 @@
         position: relative;
         z-index: 1;
       }
-      
     }
   }
   &__content {
@@ -614,8 +633,6 @@
 
 .slider-discover-recently-descriptions .slick-track, .slider-discover-alt .slick-track {
   padding: 0px;
-
-
 }
 
 .slick-center {
@@ -640,7 +657,6 @@
 .gallery__header {
   margin-bottom: 5%;
 }
-
 
 // .is-active {
 //    box-shadow: 0 19px 38px rgba(164,89,156,.30), 0 15px 12px rgba(164,89,156,.22);

@@ -304,7 +304,7 @@ export default function discover(events) {
     
                     floating_content_text.html(tabs[newActiveTabIndex].content)
                     floating_content_text_mobile.html(tabs[newActiveTabIndex].content)             
-                }, 1050*timeScale);
+                }, 1150*timeScale);
                 setTimeout(()=> {
                     let elements = [slot2, slot2_mobile, header]
                     elements.map((e)=>{

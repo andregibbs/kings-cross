@@ -53,16 +53,18 @@
       
       -webkit-animation: animat_show-recently 1s;
       animation: animat_show-recently 1s;
+      visibility: visible !important;
       @media screen and (max-width: 768px) {
         -webkit-animation: animat_show-recently_mobile 1s;
         animation: animat_show-recently_mobile 1s;
+        visibility: visible !important;
       }
     }
   }
   &#slot_1.fadeOut {
     
-    -webkit-animation: animat_hide-recently-slot1 0.7s;
-    animation: animat_hide-recently-slot1 0.7s;
+    -webkit-animation: animat_hide-recently-slot1 1s;
+    animation: animat_hide-recently-slot1 1s;
     
   }
 
@@ -80,16 +82,16 @@
     
 }
 
-.fadeIn {
+.fadeIn:not(.star__recently){
   -webkit-animation: animat_show 0.8s;
   animation: animat_show 0.8s;
-  visibility: visible ;
+  visibility: visible !important;
 
 }
 
 .fadeOut {
-   -webkit-animation: animat_hide 0.35s;
-   animation: animat_hide 0.35s;
+  -webkit-animation: animat_hide 0.35s;
+  animation: animat_hide 0.35s;
   visibility: visible ;
 }
 
