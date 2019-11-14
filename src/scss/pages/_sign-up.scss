@@ -1,4 +1,57 @@
-.sign-up__header {
+.sign-up__kv {
     z-index: 0;
     position: relative;
+    background: url("https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/school-kv-new.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    -webkit-box-shadow: inset 0px 0px 70px 90px rgba(12,12,12,1);
+    -moz-box-shadow: inset 0px 0px 70px 90px rgba(12,12,12,1);
+    box-shadow: inset 0px 0px 70px 90px rgba(12,12,12,1);
+}
+
+.sign-up__kv__copy {
+    color: #fff;
+    text-align: center;
+
+    h1 {
+        font-size: em(60);
+    }
+
+    h2 {
+
+    }
+
+    h3 {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: em(30);
+        font-weight: normal;
+        font-family: "Samsung-One", Arial, Helvetica, sans-serif;
+    }
+    
+    p{
+        font-size: em(20);
+        color: #fff;
+    }
+
+    
+}
+
+
+#iframe-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
