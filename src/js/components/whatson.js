@@ -207,7 +207,7 @@ export default function whatson(events) {
 	} else {
 
 
-		$('.whatsOn__kv').css('background', 'url(/content/dam/samsung/uk/explore/kings-cross/passion-header/passion-header-generic.jpg)')
+		//$('.whatsOn__kv').css('background-image', 'url(https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/header/Dog_Sigh_Banner_D.jpg')
 
 		lazyGetEvents(events, 0);
 	}

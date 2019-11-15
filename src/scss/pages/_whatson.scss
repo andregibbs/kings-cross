@@ -17,6 +17,7 @@
   background-position: center center !important;
   display: flex;
   align-items: center;
+  background: url('https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/header/Dog_Sigh_Banner_D_v2.jpg');
 
   @media screen and (max-width: $mobile) {
     height: 30vh;
@@ -27,6 +28,7 @@
     font-weight: bold;
     width: 50%;
     line-height: em(17);
+    color: #000;
     @media screen and (max-width: $mobile) {
       font-size: em(45);
     }
