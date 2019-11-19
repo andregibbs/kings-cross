@@ -3,7 +3,7 @@
 =============================================*/
 
 .kv {
-  background: url("https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/DISCOVER-KV-2.png");
+  background: url("https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/discover/ghfhhgjhgkdsfssdfsdf.jpg");
   // max-height: 700px;
   //below height temp for halloween
   max-height: 450px;
@@ -14,10 +14,8 @@
   display: flex;
   align-items: center;
  
- 
   @media screen and (max-width: $mobile) {
-  height: 30vh;
-
+  height: 50vw;
   }
 
   h2 {
@@ -37,8 +35,13 @@
     margin: get-desktop-vw(10) 0px;
     font-size: em(18);
     @media screen and (max-width: $mobile){
-      margin: get-mobile-vw(15) 0px;
+      margin: get-mobile-vw(12) 0px;
     }
+  }
+
+  .black-friday-kv {
+    font-size: em(23);
+    text-shadow: 2px 2px 3px black;
   }
 
   a{
