@@ -1,5 +1,6 @@
 <section class="section slider">
     <div class="section__inner">
+       {{{{identity}}}}abc{{{{/identity}}}} {{{{identity}}}}abc{{{{/identity}}}}
         {{#ifCond slider "sliderOne"}}
             <div class="slider-discover" id={{slider}}>
                 {{#each config.discover.sliderOne }}
@@ -38,7 +39,7 @@
             <div class="slider-discover-alt" id={{slider}} >
                 <div class="slider-discover__slide">
                     <video class="video__main" preload="none" playsinline onclick="if(this.paused) { this.play() }else{this.pause()}" poster="https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/video_poster.jpg">
-                        <source src="https://images.samsung.com/is/content/samsung/p5/uk/kings-cross/kx_hype.mp4" type="video/mp4">
+                        <source src="https://images.samsung.com/is/content/samsung/p5/uk/explore/kings-cross/discover/compressed-desktop.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
