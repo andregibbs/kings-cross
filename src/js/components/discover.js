@@ -231,15 +231,40 @@ export default function discover(events) {
         element.addClass('fadeIn')     
     }
 
-    $('.community-tabs').children().each((idx, tab)=>{
-        $(tab).on('click', ()=>{
-            const num = idx + 1
-            $('.community-tabs > .tab.is-active').removeClass('is-active')
-            $(tab).addClass('is-active')
-            $('.community-events > .event.is-active').removeClass('is-active')
-            $('.community-events > .event:nth-child('+parseInt(num)+')').addClass('is-active')
-        })
+    $('.community-tabs').on("click", '.tab', (e)=>{
+        const tab =  $(e.target).closest('.tab')
+        $('.tab.is-active').removeClass('is-active')
+        tab.addClass('is-active')
+        $('.community-events > .event.is-active').removeClass('is-active')
+        $('.community-events > .event[data-tab='+tab.attr('data-tab')+']').addClass('is-active')
     })
+
+    // slider
+  let settings_slider = {
+    dots: false,
+    arrows: false,
+    slidesToShow: $('.community-tabs').children().length - 1,
+    initialSlide: $('.community-tabs').children().map((idx)=>{if($(this).hasClass('is-active')){return idx}})[0]
+    // more settings
+  }
+  $('.community-tabs').slick()
+  slick_on_mobile( $('.community-tabs'), settings_slider);
+
+// slick on mobile
+  function slick_on_mobile(slider, settings){
+    $(window).on('load resize', function() {
+      if ($(window).width() > 767) {
+        if (slider.hasClass('slick-initialized')) {
+          slider.slick('unslick');
+        }
+        return
+      }
+      if (!slider.hasClass('slick-initialized')) {
+        return slider.slick(settings);
+      }
+    });
+  };
+
 
     tabTriggerBtns.forEach(function(tabTriggerBtn, index) {
         tabTriggerBtn.addEventListener('click', function() {

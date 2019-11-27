@@ -694,6 +694,13 @@
   width: 100%;
   justify-content: space-evenly;
   color: white;
+  margin-bottom: 2em;
+
+  .slick-list {
+    .slick-track {
+      padding: unset;
+    }
+  }
 }
 
 
@@ -711,6 +718,13 @@
   transition: 0.2s;
   h1 {
     font-size: em(30);
+  }
+
+  @media screen and (max-width: 768px){
+    flex-grow: 1;
+    font-size: 0.55em;
+    width: unset;
+    margin-bottom: 2em;
   }
 }
 
@@ -744,7 +758,7 @@
   .event__copy {
     width: 70%;
     padding: 3%;
-    justify-content: space-between;
+    justify-content: space-around;
     display: flex;
     flex-direction: column;
 
@@ -755,6 +769,30 @@
     h2 {
       font-size: em(22);
     }
+
+    p {
+      color: #b4b4b4;
+      font-size: em(17);
+      margin-bottom: 1em;
+    }
+  }
+
+  @media screen and (max-width: 768px){
+    flex-direction: column;
+
+    img {
+      width: 100%;
+      padding: 3%;
+    }
+
+    .event__copy {
+      width: 100%;
+
+      h2 {
+        padding-bottom: 2em;
+      }
+    }
+  
   }
 }
 
