@@ -7,9 +7,9 @@
     background-position: center center;
     display: flex;
     align-items: center;
-    -webkit-box-shadow: inset 0px 0px 70px 90px rgba(12,12,12,1);
-    -moz-box-shadow: inset 0px 0px 70px 90px rgba(12,12,12,1);
-    box-shadow: inset 0px 0px 70px 90px rgba(12,12,12,1);
+    -moz-box-shadow: 0 50px 22px -22px rgba(12, 12, 12, 1) inset, 0 -50px 22px -22px rgba(12, 12, 12, 1) inset;
+    -webkit-box-shadow: 0 50px 22px -22px rgba(12, 12, 12, 1) inset, 0 -50px 22px -22px rgba(12, 12, 12, 1) inset;
+    box-shadow: 0 50px 22px -22px rgba(12, 12, 12, 1) inset, 0 -50px 22px -22px rgba(12, 12, 12, 1) inset;
 
 }
 
@@ -49,8 +49,13 @@
 
 #iframe-container {
     position: relative;
-    overflow: hidden;
-    padding-top: 56.25%;
+    display: block;
+    width: 100%;
+    height: 1490px;
+
+    @media screen and (max-width: 768px){
+        height: 1640px;
+    }
 }
 
 iframe {
