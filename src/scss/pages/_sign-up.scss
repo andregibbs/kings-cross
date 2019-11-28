@@ -20,13 +20,14 @@
     border-color: #444;
     border-style: solid;
     border-width: 0px 0px 2px 0px;
+    margin: auto;
     h1 {
         font-size: em(60);
     }
 
     h2 {
         font-size: em(30);
-        margin-bottom: em(7);
+        margin: 3em auto 1.5em auto;
     }
 
     h3 {
@@ -41,6 +42,11 @@
         font-size: em(20);
         color: #b4b4b4;
         margin-bottom: em(25);
+    }
+
+    @media screen and (max-width: 768px){
+        width: 100%;
+        padding: 0 5%;
     }
 
     
