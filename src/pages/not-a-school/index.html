@@ -109,11 +109,19 @@
 
     <section class="section gallery">
             <div class="section__inner">
-                <div class="gallery__header">
-                    <h3>See the Space</h3>
-                </div>
+               
                 <div class="neighbourhood__container  star">
-                        {{>components/discoverSlider slider='sliderTwo' }}
+                    {{>components/discoverSlider slider='sliderNAS' }}
+                </div>
+
+                <div class="NAS-SliderCopy">
+                    <h4>2020 Applications Coming Soon</h4>
+                    <h3>Unleash your future</h3>
+                    <p>Not a school is going to be coming back to KX in the spring.</p>
+                    <p>Sign up now if you want to hear when applications open for the next year.</p>
+                    <a href="/{{ config.site }}/{{ config.subfolder }}/not-a-school/">
+                        <button class="button btn btn--primary" id="btn-support">LEARN MORE</button>
+                </a>
                 </div>
             </div>
           </section>

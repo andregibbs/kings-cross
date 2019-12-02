@@ -793,3 +793,29 @@
 .mentor {
     padding: 2em;
 }
+
+.slider-NAS > .slick-list > .slick-track > .slick-center > img {
+    transform: scale(1.3);
+  }
+
+.NAS-SliderCopy {
+    text-align: center;
+    margin: 2em;
+
+    h3 {
+        font-size: 3em;
+        margin: 1em;
+    }
+
+    h4 {
+        text-transform: uppercase;
+        font-family: SamsungOne, sans-serif;
+        color: #6f6f6f;
+    }
+
+    p {
+        width: 40%;
+        text-align: center;
+        margin: auto
+    }
+}

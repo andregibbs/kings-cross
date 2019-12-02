@@ -26,6 +26,24 @@
 
 	"discover": {
 
+		"sliderNAS": [{
+			"image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/school/slider/_0000_1.jpg"
+		},
+		{
+			"image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/school/slider/_0001_2.jpg"
+		},
+		{
+			"image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/school/slider/_0002_3.jpg"
+		},
+		{
+			"image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/school/slider/_0003_4.jpg"
+		},
+		{
+			"image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/school/slider/_0004_5.jpg"
+		},
+		{
+			"image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/school/slider/_0005_6.jpg"
+		}],
 		"sliderOne": [{
 			"title": "What makes KX unique? Tell the story.",
 			"description": "Samsung KX & Origin. Offering the very best in speciality coffee.",
