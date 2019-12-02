@@ -345,19 +345,11 @@ $(document).ready(function () {
 	switch (window.location.pathname) {
 		case '/uk/explore/kings-cross/':
 
-
-			
-			
 			fetchData(whatIsKx);
 			places();
 			// whatIsKx();
 			var container = document.getElementById('loadingScreen__animation');
 		   loadingScreen(container, loadingScreenAnimation);
-			
-
-			var container = document.getElementById('loadingScreen__animation');
-			loadingScreen(container, loadingScreenAnimation);
-			break;
 
 		case "/uk/explore/kings-cross/discover/":
 			discover();

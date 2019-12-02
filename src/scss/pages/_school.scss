@@ -301,17 +301,24 @@
     align-items: center;
     margin-top: 20px;
     &__mentor {
+        width: 30%;
         margin-top: 0;
+        @media screen and (max-width: 768px) {
+            width: 100%;
+            margin-top: 2em;
+        }
         &-speaker {
+            width: 30%;
             @media screen and (max-width: 768px) {
-                width: 30%;
+                width: 50%;
                 img {
                     max-width: 100%;
                 }
             }
         }
         &-content {
-            padding-right: 10%;
+            //padding-right: 10%;
+            width: 50%;
             @media screen and (max-width: 768px) {
                 width: 70%;
                 padding-right: 0;
@@ -329,7 +336,12 @@
     // @include width;
     &__speaker {
         margin-right: 20px;
-        max-width: 250px;
+        max-width: 134px;
+        max-height: 250px;
+        width: 50%; 
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
         &-third {
             width: 33.3%;
             max-width: 33.3%;
@@ -457,7 +469,7 @@
                 }
             }
             @media screen and (max-width: 768px) {
-                border-bottom: solid 1px white;
+                //border-bottom: solid 1px white;
                 padding: 0 10px 10px 10px;
                 margin-bottom: 10px;
                 text-align: center;
@@ -736,12 +748,13 @@
     &__content {
         display: flex;
         justify-content: space-between;
+        width: 80%;
         @media screen and (max-width: 768px) {
             flex-direction: column;
         }
     }
     img {
-        width: 250px;
+        width: 186%;
     }
 }
 
@@ -784,10 +797,11 @@
 .divider {
     border-top: 2px solid #b4b4b4;
     width: 80%;
-    margin-top: 4em;
+    //margin-top: 4em;
     margin-left: auto;
     margin-right: auto;
     padding: 4em;
+    max-width: 1440px;
 }
 
 .mentor {
@@ -804,7 +818,8 @@
 
     h3 {
         font-size: 3em;
-        margin: 1em;
+        margin: 1em 1em 0.5em 1em;
+        
     }
 
     h4 {
@@ -818,4 +833,20 @@
         text-align: center;
         margin: auto
     }
+
+}
+
+.NAS-sign-up {
+    background-color: #2bcffd;
+    border-color: #2bcffd;
+    margin: 4em auto 1em auto;
+}
+
+.NAS-gallery {
+    padding: 0;
+}
+
+.NAS-video {
+    width: 75%;
+    margin: 0 auto 4em auto !important;
 }
