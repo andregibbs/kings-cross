@@ -1,6 +1,9 @@
 /*=============================================
 =            Find KX            =
 =============================================*/
+.bold {
+  font-weight: bold;
+}
 
 .findkx {
   background: $background;
@@ -13,10 +16,6 @@
     @media screen and (max-width: $mobile) {
       flex-direction: column;
       align-items: center;
-    }
-
-    span.bold {
-      font-weight: bold;
     }
 
     .findkx__content {
@@ -79,19 +78,50 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @media screen and (max-width: $mobile){
+      flex-direction: row;
+      padding: 2em 0;
 
+    }
+    
     .findkx__call {
       display: none;
       @media screen and (max-width: $mobile) {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        margin: auto 0;
+        
       }
     }
   }
 
   &__block-2 {
     display: block;
+    margin: 2em 0;
     @media screen and (max-width: $mobile) {
       display: none;
+    }
+  }
+
+  &__block-3 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__openings {
+    width: 50%;
+
+    &__cny {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    &__special {
+      border-left: 1px solid white;
+      margin: auto 0;
+      height: 100%;
+      padding-left: 2em;
     }
   }
 
@@ -114,4 +144,109 @@
 }
 }
 
+.accordian {
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  overflow: hidden;
+  margin-top: 2em;
+ 
+
+  &__expanded {
+    height: 45em;
+    transition: all 0.7s ease-in-out;
+  }
+
+  &__collapsed {
+    height: 5em;
+    transition: all 0.6s ease-in-out;
+  }
+}
+
+.accordianIcon {
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  width: 1em;
+  height: 1em;
+  z-index: 999;
+  margin: auto 0em;
+
+  &__expand {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transition: all 0.5s ease-in-out;
+    border-color: white;
+  }
+ 
+  &__collapse {
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    border-color: #c32aa3;
+    transition: all 0.5s ease-in-out;
+  } 
+}
+
+.accordianHeader {
+  background: #0c0c0c;
+  z-index: 1;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding: 0 2em 1em 0;
+  justify-content: space-between;
+
+  @media screen and (max-width: 768px){
+    padding: 0 2em 2em 0;
+    
+  }
+}
+
+.accordianContent {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  transform: translate(0,-200%);
+  transition: all 1s ease-in-out;
+  padding: 1em 0;
+
+  &__left {
+    width: 50%;
+   
+    padding: 0em 2em 0em 0em;
+    display: flex;
+    flex-direction: column;
+     
+    p {
+      margin-bottom: 1em;
+    }
+  }
+
+  &__right {
+    width: 50%;
+    padding: 0em 0em 0em 2em;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px white solid;
+    p {
+      margin-bottom: 1em;
+    }
+  }
+}
+
+.accordianContent.active {
+  animation: ACCORDIAN 1s;
+  transform: translate(0,0);
+}
+
+@-webkit-keyframes ACCORDIAN {
+  0% {
+    opacity: 0;
+    transform: translate(0, -200%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
 /*=====  End of Find KX  ======*/

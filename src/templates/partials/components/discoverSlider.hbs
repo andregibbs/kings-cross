@@ -1,4 +1,4 @@
-<section class="section slider">
+<section class="section slider" {{#ifCond id "top"}} id="topSlider" {{/ifCond}}>
     <div class="section__inner">
        {{{{identity}}}}abc{{{{/identity}}}} {{{{identity}}}}abc{{{{/identity}}}}
         {{#ifCond slider "sliderOne"}}
@@ -38,14 +38,16 @@
          {{else }}
             <div class="slider-discover-alt" id={{slider}} >
                 <div class="slider-discover__slide">
-                    <video class="video__main" preload="none" playsinline onclick="if(this.paused) { this.play() }else{this.pause()}" poster="https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/video_poster.jpg">
-                        <source src="https://images.samsung.com/is/content/samsung/p5/uk/explore/kings-cross/discover/compressed-desktop.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+                    <div class='videoContainer'>
+                        <video class="video__main sliderVideo" preload="none" playsinline onclick="if(this.paused) { this.play() }else{this.pause()}" poster="https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/video_poster.jpg">
+                            <source src="https://images.samsung.com/is/content/samsung/p5/uk/explore/kings-cross/discover/compressed-desktop.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
                 </div>
                 <div class="slider-discover__slide">
                     <div style="position: relative">
-                        <img class="discover__img" src="//images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/discover/KX_Carousel_Samsung-KX50_1152x648.jpg"/>
+                        <img class="discover__main__img" src="//images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/discover/KX_Carousel_Samsung-KX50_1152x648.jpg"/>
                         <a target="_blank" class="button btn btn--primary slider-discover__cta" href="//images.samsung.com/is/content/samsung/p5/uk/explore/kings-cross/discover/SamsungKX50-The_Future_in_Focus_-_report.pdf">Learn More</a>
                     </div>
                 </div>

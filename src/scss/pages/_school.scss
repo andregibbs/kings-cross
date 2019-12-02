@@ -26,7 +26,7 @@
         padding-top: 0 !important;
         padding-bottom: 0 !important;
         position: relative;
-        margin-bottom: 100px;
+        margin-bottom: 5%;
         margin-top: -100px;
         .section__inner {
             position: absolute;
@@ -35,7 +35,8 @@
             transform: translate(-50%, 0%);
             padding-bottom: 80px;
             @media screen and (max-width: 768px) {
-                bottom: -50%;
+                bottom: -25%;
+                padding-bottom: 10%;
             }
         }
         @media screen and (max-width:768px) {
@@ -44,6 +45,7 @@
             background: url(https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/school/mob-signpost.png);
             background-size: contain !important;
             margin-top: 0;
+            margin-bottom: 10%;
         }
     }
     .section__inner {
@@ -586,19 +588,19 @@
 }
 
 .mobile {
-    display: none;
+    display: none !important;
 }
 
 .desktop {
-    display: initial;
+    display: initial !important;
 }
 
 @media screen and (max-width: 768px) {
     .mobile {
-        display: initial;
+        display: initial !important;
     }
     .desktop {
-        display: none;
+        display: none !important;
     }
 }
 

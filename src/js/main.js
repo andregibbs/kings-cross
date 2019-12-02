@@ -34,7 +34,12 @@ $(document).ready(function () {
 	// console.clear();
 
 	//scroll past Navbar
-
+	$('.accordian').on('click', (e)=>{
+		console.log('clickeroonie')
+		$('.accordianContent').toggleClass('active')
+		$('.accordianIcon').hasClass('accordianIcon__expand') ? $(".accordianIcon").removeClass('accordianIcon__expand').addClass('accordianIcon__collapse') : $(".accordianIcon").removeClass('accordianIcon__collapse').addClass('accordianIcon__expand')
+		$('.accordian').hasClass('accordian__expanded') ? $(".accordian").removeClass('accordian__expanded').addClass('accordian__collapsed') : $(".accordian").removeClass('accordian__collapsed').addClass('accordian__expanded')
+	})
 
 	// =================================================
 	// Global vars
@@ -359,6 +364,7 @@ $(document).ready(function () {
 			break;
 
 		case "/uk/explore/kings-cross/discover/":
+			places();
 			discover();
 			function showImages(el) {
 				var windowHeight = jQuery( window ).height();
