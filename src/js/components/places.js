@@ -18,21 +18,21 @@ export default function places() {
 	
   $.get(sebnPlacesApiurl).success(function (data) { 
       
-      let openingTimeHtml = '<h4 class="fz18">Opening Hours:</h4>';
+      let openingTimeHtml = '<h4 class="fz16">Opening Hours:</h4>';
       
       if( data.data.status ==  "OK" ) {
       	
         let storeOpeningTimes = data.data.result.opening_hours.weekday_text;
 
       	$.each(storeOpeningTimes, function(index, storeOpeningTime) {
-
-          let spaceless = storeOpeningTime.replace(/\s/g, '').replace('AM', 'am').replace('PM', 'pm').replace('-', ' - ')     
+          console.log(storeOpeningTime)
+          let spaceless = storeOpeningTime.replace(/\s/g, '').replace('AM', 'am').replace('PM', 'pm').replace('-', ' - ').replace('day', '').replace('tur', 't').replace('nes', '')     
           let altered = spaceless.replace(/:00/g, "").split('–').join(' – ').replace(':', ': ');
-          console.log('naooo')
-      		openingTimeHtml += ' <p><span class="fz18 bold">'+altered.substr(0, altered.indexOf(':'))+': </span><span class="fz18">'+altered.split(': ').pop()+'</span></p>';
+          console.log('naooo0000000ooooooo')
+      		openingTimeHtml += ' <p><span class="fz16 bold">'+altered.substr(0, altered.indexOf(':'))+': </span><span class="fz16">'+altered.split(': ').pop()+'</span></p>';
       	});
 
-      	$('.findkx__openings').html(openingTimeHtml);
+      	$('.findkx__openings__standard').html(openingTimeHtml);
       	
       }
 

@@ -68,7 +68,7 @@ const tabs = {
             <p>The 90-minute event featured an intimate live performance from Caitlin as she reflected on one of her most popular Twitter threads - a look at the downsides of being a man – followed by a Q&A with the audience and Alex Zane which highlighted some of her greatest, weirdest and funniest moments on the platform.</p>
             <p>Thread Talks is a series of six intimate and exclusive ‘in conversation’ events featuring some of the biggest names in the world of journalism, sport, culture and comedy. The acts will perform at the venue’s Centre Stage in front the world’s first vertical 10metre-wide curved Samsung screen.</p>
             <p>Each free event is being hosted in association with Twitter UK and on each night guests will hear from the company’s Director of Planning, David Wilding.</p>`,
-        "link" : "https://www.samsung.com/uk/explore/kings-cross/whats-on/event/?id=C9FBV5ZJJG5",
+        "link" : "https://www.youtube.com/channel/UC_v6xPXpnS4LaLEdfMr-Lzw",
         "slot": 1
     },
     2: {
@@ -77,11 +77,11 @@ const tabs = {
             "alt" : ""
         }, 
         "content" : 
-            `<h1 class="recently__content__header">Co–Lab 3: How to monetise your side hustle</h1>
+            `<h1 class="recently__content__header">Co-Lab Series: How to monetise your side hustle</h1>
             <p><b>Mercedes Benson is a creative polymath, from becoming an enterprise founder to a social influencer, she is a true all-rounder.</b></p><br>
             <p>In her talk she shared her knowledge and insight on how to turn your passion into a business discussing her own experience by making money from her creativity.</p>
             <p>Joined by a role model of hers, Toni Tone (@t0nit0ne), the duo showcased how best to begin your side hustle. Toni is an online talk show host and social content creator, best known for her social commentary on Twitter as well as her online writing.</p>`,
-        "link" : "https://www.samsung.com/uk/explore/kings-cross/whats-on/event/?id=HMSVJXWDR5D",
+        "link" : "https://www.youtube.com/channel/UC_v6xPXpnS4LaLEdfMr-Lzw",
         "slot": 2
     },
     3: {
@@ -90,12 +90,12 @@ const tabs = {
             "alt" : ""
         }, 
         "content" : 
-            `<h1 class="recently__content__header">Real parents of Kings Cross</h1>
+            `<h1 class="recently__content__header">Co-Lab Series: Real parents of Kings Cross</h1>
             <p><b>For our very first Co–Lab event, we paired together two juxtaposing influencers and challenged them to make a positive impact on the local community.</b></p><br>
             <p>Straight-talking ‘Mother of All List’s’ Clemmie Telford was paired with photographer Matt Cuzen who is known for his fantasy-style photography.</p>
             <p>Their Co–Lab explored the stories of King’s Cross parents and their connection to the local area through a powerful photo series with a surreal twist. Many of the parents who featured in the photo series attended the talk and spoke about their experience with meeting up with two absolute strangers for this project!</p>
             <p>The photo series can be viewed at #SamsungKX for a limited time.</p>`,
-        "link" : "https://www.samsung.com/uk/explore/kings-cross/whats-on/event/?id=RQ9ISGVZYZ3",
+        "link" : "https://www.youtube.com/channel/UC_v6xPXpnS4LaLEdfMr-Lzw",
         "slot": 3
     }
 }
@@ -231,15 +231,40 @@ export default function discover(events) {
         element.addClass('fadeIn')     
     }
 
-    $('.community-tabs').children().each((idx, tab)=>{
-        $(tab).on('click', ()=>{
-            const num = idx + 1
-            $('.community-tabs > .tab.is-active').removeClass('is-active')
-            $(tab).addClass('is-active')
-            $('.community-events > .event.is-active').removeClass('is-active')
-            $('.community-events > .event:nth-child('+parseInt(num)+')').addClass('is-active')
-        })
+    $('.community-tabs').on("click", '.tab', (e)=>{
+        const tab =  $(e.target).closest('.tab')
+        $('.tab.is-active').removeClass('is-active')
+        tab.addClass('is-active')
+        $('.community-events > .event.is-active').removeClass('is-active')
+        $('.community-events > .event[data-tab='+tab.attr('data-tab')+']').addClass('is-active')
     })
+
+    // slider
+  let settings_slider = {
+    dots: false,
+    arrows: false,
+    slidesToShow: $('.community-tabs').children().length - 1,
+    initialSlide: $('.community-tabs').children().map((idx)=>{if($(this).hasClass('is-active')){return idx}})[0]
+    // more settings
+  }
+  //$('.community-tabs').slick()
+  slick_on_mobile( $('.community-tabs'), settings_slider);
+
+// slick on mobile
+  function slick_on_mobile(slider, settings){
+    $(window).on('load resize', function() {
+      if ($(window).width() > 767) {
+        if (slider.hasClass('slick-initialized')) {
+          slider.slick('unslick');
+        }
+        return
+      }
+      if (!slider.hasClass('slick-initialized')) {
+        return slider.slick(settings);
+      }
+    });
+  };
+
 
     tabTriggerBtns.forEach(function(tabTriggerBtn, index) {
         tabTriggerBtn.addEventListener('click', function() {
