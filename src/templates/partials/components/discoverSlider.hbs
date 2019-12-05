@@ -1,6 +1,5 @@
 <section class="section slider" {{#ifCond id "top"}} id="topSlider" {{/ifCond}}>
     <div class="section__inner">
-       {{{{identity}}}}abc{{{{/identity}}}} {{{{identity}}}}abc{{{{/identity}}}}
         {{#ifCond slider "sliderOne"}}
             <div class="slider-discover" id={{slider}}>
                 {{#each config.discover.sliderOne }}
@@ -35,6 +34,14 @@
                         </div>
                     {{/each}}
                 </div>
+        {{else ifCond slider "sliderNAS"}}
+            <div class="slider-discover slider-NAS" id={{slider}} >
+                {{#each config.discover.sliderNAS }}
+                    <div class="slider-discover__slide">
+                        <img src="{{ this.image }}" class="discover__img" >
+                    </div>
+                {{/each}}
+            </div>
          {{else }}
             <div class="slider-discover-alt" id={{slider}} >
                 <div class="slider-discover__slide">

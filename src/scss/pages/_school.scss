@@ -303,17 +303,24 @@
     align-items: center;
     margin-top: 20px;
     &__mentor {
+        width: 30%;
         margin-top: 0;
+        @media screen and (max-width: 768px) {
+            width: 100%;
+            margin-top: 2em;
+        }
         &-speaker {
+            width: 30%;
             @media screen and (max-width: 768px) {
-                width: 30%;
+                width: 50%;
                 img {
                     max-width: 100%;
                 }
             }
         }
         &-content {
-            padding-right: 10%;
+            //padding-right: 10%;
+            width: 50%;
             @media screen and (max-width: 768px) {
                 width: 70%;
                 padding-right: 0;
@@ -331,7 +338,12 @@
     // @include width;
     &__speaker {
         margin-right: 20px;
-        max-width: 250px;
+        max-width: 134px;
+        max-height: 250px;
+        width: 50%; 
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
         &-third {
             width: 33.3%;
             max-width: 33.3%;
@@ -459,11 +471,19 @@
                 }
             }
             @media screen and (max-width: 768px) {
-                border-bottom: solid 1px white;
+                //border-bottom: solid 1px white;
                 padding: 0 10px 10px 10px;
                 margin-bottom: 10px;
                 text-align: center;
                 line-height: 25px;
+            }
+
+            &__attribution {
+                text-transform: uppercase;
+                font-family: SamsungOne;
+                font-weight: 400;
+                text-align: center;
+                font-size: 1.5em;
             }
         }
         &__info {
@@ -545,6 +565,15 @@
         background: #151515;
         width: 100vw;
         max-width: 100%;
+        
+        &__signup {
+            display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        max-width: 100%;
+        }
+
     }
     &__logo {
         padding: 0 5%;
@@ -552,6 +581,10 @@
             @media screen and (max-width: 768px) {
                 padding-left: 20%;
             }
+        }
+
+        &__signup {
+            padding: 0 5%;
         }
     }
     .copy {
@@ -565,6 +598,11 @@
         .bold {
             font-weight: 700;
             margin-bottom: 0;
+        }
+
+        &__small {
+            font-size: em(18);
+            padding-bottom: 4em;
         }
     }
 }
@@ -712,12 +750,13 @@
     &__content {
         display: flex;
         justify-content: space-between;
+        width: 80%;
         @media screen and (max-width: 768px) {
             flex-direction: column;
         }
     }
     img {
-        width: 250px;
+        width: 186%;
     }
 }
 
@@ -734,4 +773,93 @@
 
 .tight-margin {
     margin: 1em 0;
+}
+
+.meetTheTeamHeader {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0 5em 0;
+
+    h2 {
+        text-align: center;
+        font-size: 5em;
+    }
+
+    h3 {
+        text-align: center;
+        width: 82%;
+        display: flex;
+        margin: 2em auto 1em auto;
+        
+    }
+}
+
+.divider {
+    border-top: 2px solid #b4b4b4;
+    width: 80%;
+    //margin-top: 4em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2em;
+    max-width: 1440px;
+    margin-top: 2em;
+}
+
+.mentor {
+    padding: 2em;
+}
+
+.slider-NAS > .slick-list > .slick-track > .slick-center > img {
+    transform: scale(1.3);
+  }
+
+.NAS-SliderCopy {
+    text-align: center;
+    margin: 2em;
+
+    h3 {
+        font-size: 3em;
+        margin: 1em 1em 0.5em 1em;
+        
+    }
+
+    h4 {
+        text-transform: uppercase;
+        font-family: SamsungOne, sans-serif;
+        color: #6f6f6f;
+    }
+
+    p {
+        width: 40%;
+        text-align: center;
+        margin: auto;
+
+        @media screen and (max-width: $mobile){
+            width: 70%;
+        }
+    }
+
+}
+
+.NAS-sign-up {
+    background-color: #2bcffd;
+    border-color: #2bcffd;
+    margin: 4em auto 1em auto;
+}
+
+.NAS-sign-up:hover {
+    background-color: #fff;
+    color: #2bcffd;
+    border-color: #2bcffd;
+}
+
+.NAS-gallery {
+    padding: 0;
+}
+
+.NAS-video {
+    width: 75%;
+    margin: 0 auto 4em auto !important;
 }

@@ -14,6 +14,7 @@ import experience from './components/experience';
 import lottieAnim from './components/lottieAnim';
 import loadingScreen from './components/loadingScreen';
 import getParam from './components/getParam';
+import school from './components/school'
 
 import loadingScreenAnimation from '../data/loadingScreen.json';
 import create from '../data/Create.json';
@@ -349,9 +350,6 @@ $(document).ready(function () {
 	switch (window.location.pathname) {
 		case '/uk/explore/kings-cross/':
 
-
-			
-			
 			fetchData(whatIsKx);
 			places();
 			// whatIsKx();
@@ -436,7 +434,7 @@ $(document).ready(function () {
 			break;
 
 		case "/uk/explore/kings-cross/not-a-school/":
-
+				school()
 				lottieAnim('colab', colab);
 				lottieAnim('coms', coms);
 				lottieAnim('crit', critical);
