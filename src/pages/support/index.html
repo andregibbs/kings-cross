@@ -10,13 +10,14 @@
 		<div class="welcome">
 			<h1 class="h1-hidden">Support Lounge</h1>
 			<h2 class="welcome__title fz50">Support Lounge</h2>
+			<p class="bookings__inner__subtitle support--subtitle fz18">We have a support station full of experts that will help you get the most out of your Samsung devices, whether your screen is cracked, you are setting up a new phone, or are looking for one on one instruction on cool new features.</p>
 			<div class="welcome__tiles">
 				<div class="tile">
-					<h4 class="tile__heading fz36">One to One Tutorials</h4>
-					<p class="tile__desc fz18">Receive helpful tips or get your device setup.<br/>We’re here to help.</p>
-					<button ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:one-to-one-tutorials_book-now"
-						data-omni-type="microsite" data-omni="uk:kings-cross:support:one-to-one-tutorial:book-now"
-						class="button btn btn--primary" id="btn-oneToOne">BOOK NOW</button>
+					<h4 class="tile__heading fz36">Repair</h4>
+					<p class="tile__desc fz18">Have your device repaired by one of our qualified technicians.</p>
+					<button ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:repair_book-now"
+						data-omni-type="microsite" data-omni="uk:kings-cross:support:repair:book-now"
+						class="button btn btn--primary btn--primary--orange" id="btn-repair">BOOK NOW</button>
 				</div>
 				<div class="tile">
 					<h4 class="tile__heading fz36">General Support</h4>
@@ -27,11 +28,11 @@
 						class="button btn btn--primary btn--primary--cyan" id="btn-support">BOOK NOW</button>
 				</div>
 				<div class="tile">
-					<h4 class="tile__heading fz36">Repair</h4>
-					<p class="tile__desc fz18">Have your device repaired by one of our qualified technicians.</p>
-					<button ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:repair_book-now"
-						data-omni-type="microsite" data-omni="uk:kings-cross:support:repair:book-now"
-						class="button btn btn--primary btn--primary--orange" id="btn-repair">BOOK NOW</button>
+					<h4 class="tile__heading fz36">One to One Tutorials</h4>
+					<p class="tile__desc fz18">Receive helpful tips or get your device setup.<br/>We’re here to help.</p>
+					<button ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:one-to-one-tutorials_book-now"
+						data-omni-type="microsite" data-omni="uk:kings-cross:support:one-to-one-tutorial:book-now"
+						class="button btn btn--primary" id="btn-oneToOne">BOOK NOW</button>
 				</div>
 			</div>
 		</div>
@@ -40,6 +41,10 @@
 
 	<section class="section journey">
 
+		<div class="section__inner" id="calendar">
+			{{>components/calendar }}
+		</div>
+		
 		<form class="section__inner device-info" id="device-info">
 			<h3 class="fz50">Tell us a bit about your device</h3>
 			<div class="device-info__row">
@@ -60,10 +65,6 @@
 			</div>
 			<textarea class="input" id="device-notes" placeholder="Additional Information (Optional)"></textarea>
 		</form>
-
-		<div class="section__inner" id="calendar">
-			{{>components/calendar }}
-		</div>
 
 		<form class="section__inner" id="details">
 			<h3 class="details__title fz50">Appointment Details</h3>

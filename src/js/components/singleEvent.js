@@ -56,7 +56,7 @@ export default function singleEvent(events) {
 
       //if limited, return true
       function limited(percentage) {
-        return percentage < 30 ? true : false;
+        return percentage < 30 && percentage > 0 ? true : false;
       }
 
       console.log('percentage',per(7, 20) )
@@ -106,7 +106,7 @@ export default function singleEvent(events) {
           firstSentence: "",
           maxReservations: data.maxReservations,
           slotsAvailable: data.slotsAvailable,          
-          limitedAvailability: limited(per(data.slotsAvailable, data.maxReservations)) ? "limited tickets remaining" : "",
+          limitedAvailability: limited(per(data.slotsAvailable, data.maxReservations)) && !data.hasPassed ? "limited tickets remaining" : "",
           //TEST BELOW
           // limitedAvailability: limited(per(29, 100)) ? "limited tickets remaining" : "",
           youtube: data.extra.youtubeid,
@@ -303,6 +303,8 @@ export default function singleEvent(events) {
   $(".singleEvent").on("click", ".action-btn", function (e) {
     e.preventDefault();
 
+
+
     $(".action .action-btn").attr("disabled", true);
     $(".action .action-btn").toggleClass("btn--primary-notActive");
     $(".book").addClass("book--active");
@@ -310,6 +312,14 @@ export default function singleEvent(events) {
     if ($(this).hasClass("changeTime")) {
       $(".change").addClass("change--active");
     } else {
+      var title = $(".singleEvent .tile_container .event__header-title").text();
+      title = title.replace(/ /g, "-");
+      var gaLa = $('.book-action .book__form-submit').attr('ga-la');
+      gaLa = gaLa.replace('[[ title ]]', title);
+      $('.book-action .book__form-submit').attr('ga-la', gaLa);
+      var dataOmni = $('.book-action .book__form-submit').attr('data-omni');
+      dataOmni = dataOmni.replace('[[ title ]]', title);
+      $('.book-action .book__form-submit').attr('data-omni', dataOmni);
       $(".book-action").addClass("book-action--active");
     }
 

@@ -72,8 +72,8 @@ export default function support() {
             },
 
             repair: {
-                1: screens.deviceInfo,
-                2: screens.calendar,
+                1: screens.calendar,
+                2: screens.deviceInfo,
                 3: screens.details,
                 4: screens.confirmation
             }
