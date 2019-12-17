@@ -61,14 +61,16 @@ export default function support() {
         journeys: {
             oneToOne: {
                 1: screens.calendar,
-                2: screens.details,
-                3: screens.confirmation
+                2: screens.deviceInfo,
+                3: screens.details,
+                4: screens.confirmation
             },
 
             support: {
                 1: screens.calendar,
-                2: screens.details,
-                3: screens.confirmation
+                2: screens.deviceInfo,
+                3: screens.details,
+                4: screens.confirmation
             },
 
             repair: {
