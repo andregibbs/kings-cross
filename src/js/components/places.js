@@ -32,7 +32,7 @@ export default function places() {
       		openingTimeHtml += ' <p><span class="fz16 bold">'+altered.substr(0, altered.indexOf(':'))+': </span><span class="fz16">'+altered.split(': ').pop()+'</span></p>';
       	});
 
-      	$('.findkx__openings__standard').html(openingTimeHtml);
+      	$('.findkx__openings').html(openingTimeHtml);
       	
       }
 

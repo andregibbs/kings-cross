@@ -514,6 +514,10 @@ $(document).ready(function () {
 					
 			break;
 
+		case "/uk/explore/kings-cross/not-a-school/sign-up/":
+			places();
+			break;
+
 		default: {
 			// Your init here
 		}
