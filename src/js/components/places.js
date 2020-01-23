@@ -32,7 +32,14 @@ export default function places() {
       		openingTimeHtml += ' <p><span class="fz16 bold">'+altered.substr(0, altered.indexOf(':'))+': </span><span class="fz16">'+altered.split(': ').pop()+'</span></p>';
       	});
 
-        openingTimeHtml += '<br><p><span class="fz16 bold">Thurs 6th Feb: </span><span class="fz16">10am - 6pm</span></p>';
+        openingTimeHtml += '<br><p><span class="fz16 bold">*Thurs 6th Feb: </span><span class="fz16">10am - 6pm</span></p>';
+
+        openingTimeHtml += '<p><span class="fz16 bold">*Tues 11th Feb: </span><span class="fz16">10am – 2pm</span></p>';
+
+        openingTimeHtml += '<p><span class="fz16 bold">*Weds 12th Feb: </span><span class="fz16">1pm – 8pm</span></p>';
+
+         
+ 
 
       	$('.findkx__openings').html(openingTimeHtml);
       	
