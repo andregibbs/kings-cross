@@ -60,7 +60,10 @@ $(document).ready(function(){
 
 		if ( $('.store-opening-time').length ) {
 			$('.store-opening-time').each(function() {
-				sots.push($(this).text());
+				/** Check there is no input field is open to edit **/
+				if ($(this).find('input').length == 0) {
+					sots.push($(this).text());	
+				}
 			});
 		}
 
