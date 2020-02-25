@@ -44,25 +44,35 @@ export default function places() {
 
         storeOpeningTimesHtml +=openingTimeHtml;
 
-      }
+      } 
 
   }).done(function() {
         
         $.getJSON( specialOpeningTimesUrl, function( data ) {
 
             let specialOpeningTimeHtml = '';
-            console.log(data);
-            $.each(data, function(index, specialOpeningTime) {
 
-                specialOpeningTimeHtml += '<p><span class="fz16 bold">'+specialOpeningTime+'</span></p>';
+            if (data.length > 0) {
 
-            });
+                $.each(data, function(index, specialOpeningTime) {
 
-            storeOpeningTimesHtml +=  "<br>" + specialOpeningTimeHtml;
+                    specialOpeningTimeHtml += '<p><span class="fz16 bold">'+specialOpeningTime+'</span></p>';
+
+                });
+
+                if (storeOpeningTimesHtml != "") {
+                    storeOpeningTimesHtml +=  "<br>" + specialOpeningTimeHtml;
+                } else {
+                    $('.findkx__openings').append("<br>" + specialOpeningTimeHtml);
+                }
+
+            } 
 
         }).always(function() {
-
-          $('.findkx__openings').html(storeOpeningTimesHtml);
+          
+          if (storeOpeningTimesHtml != "") {
+              $('.findkx__openings').html(storeOpeningTimesHtml);
+          }
 
         });
   });

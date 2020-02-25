@@ -600,9 +600,6 @@ export default function support() {
                 }
             }
         }
-
-
-
     })
     //Back: if current screen is Confirmation, change Next/Book to Next
 
