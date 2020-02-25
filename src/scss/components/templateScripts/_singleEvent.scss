@@ -215,6 +215,11 @@
           margin-top: 15px;
           font-size: em(20);
           font-weight: 400;
+          a {
+            font-size: inherit;
+            font-weight: 400;
+            text-decoration: underline;
+          }
         }
       }
 
