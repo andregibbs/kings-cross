@@ -2,6 +2,7 @@
 import nav from './components/nav';
 import whatson from './components/whatson';
 import singleEvent from './components/singleEvent';
+import places from './components/places';
 import whatIsKx from './components/whatIsKx';
 import repair from './components/repair';
 import calendar from './components/calendar';
@@ -10,8 +11,16 @@ import bookingRefFetcher from './components/bookingRefFetcher';
 import discover from './components/discover';
 import support from './components/support';
 import experience from './components/experience';
+import lottieAnim from './components/lottieAnim';
 import loadingScreen from './components/loadingScreen';
+import getParam from './components/getParam';
+import school from './components/school'
+
 import loadingScreenAnimation from '../data/loadingScreen.json';
+import create from '../data/Create.json';
+import colab from '../data/Colab.json';
+import coms from '../data/Coms.json';
+import critical from '../data/Crit_think.json';
 import doLogFunction from './dev/doLog';
 var doLog = doLogFunction();
 
@@ -26,7 +35,12 @@ $(document).ready(function () {
 	// console.clear();
 
 	//scroll past Navbar
-
+	$('.accordian').on('click', (e)=>{
+		console.log('clickeroonie')
+		$('.accordianContent').toggleClass('active')
+		$('.accordianIcon').hasClass('accordianIcon__expand') ? $(".accordianIcon").removeClass('accordianIcon__expand').addClass('accordianIcon__collapse') : $(".accordianIcon").removeClass('accordianIcon__collapse').addClass('accordianIcon__expand')
+		$('.accordian').hasClass('accordian__expanded') ? $(".accordian").removeClass('accordian__expanded').addClass('accordian__collapsed') : $(".accordian").removeClass('accordian__collapsed').addClass('accordian__expanded')
+	})
 
 	// =================================================
 	// Global vars
@@ -336,25 +350,53 @@ $(document).ready(function () {
 	switch (window.location.pathname) {
 		case '/uk/explore/kings-cross/':
 
+			fetchData(whatIsKx);
+			places();
+			// whatIsKx();
+		// 	var container = document.getElementById('loadingScreen__animation');
+		//    loadingScreen(container, loadingScreenAnimation);
+			
 
 			var container = document.getElementById('loadingScreen__animation');
 			loadingScreen(container, loadingScreenAnimation);
-			fetchData(whatIsKx);
-			// whatIsKx();
-
-
 			break;
 
 		case "/uk/explore/kings-cross/discover/":
+			places();
 			discover();
+			function showImages(el) {
+				var windowHeight = jQuery( window ).height();
+				
+				$(el).each(function(){
+					var thisPos = $(this).offset().top;
+		
+					var topOfWindow = $(window).scrollTop();
+					if (topOfWindow + windowHeight - 200 > thisPos ) {
+						$(this).addClass("fadeIn");
+					}
+				});
+			}
+		
+			// if the image in the window of browser when the page is loaded, show that image
+			$(document).ready(function(){
+					showImages('.star');
+			});
+		
+			// if the image in the window of browser when scrolling the page, show that image
+			$(window).scroll(function() {
+					showImages('.star');
+			});
+			// places();
 			break;
 
 		case "/uk/explore/kings-cross/whats-on/":
 			fetchData(whatson);
+			places();
 			break;
 
 		case "/uk/explore/kings-cross/whats-on/event/":
 			fetchData(singleEvent);
+			places();
 			break;
 
 		case "/uk/explore/kings-cross/support/":
@@ -363,6 +405,7 @@ $(document).ready(function () {
 			});
 			//Support goes last!
 			support();
+			places();
 			// smoothScroll();
 			break;
 
@@ -382,10 +425,97 @@ $(document).ready(function () {
 			fetchData(function (allEvents) {
 				bookingRefFetcher(allEvents);
 			});
+			places();
 			break;
 
 		case "/uk/explore/kings-cross/experience/":
 			experience();
+			places();
+			break;
+
+		case "/uk/explore/kings-cross/not-a-school/":
+				school()
+				lottieAnim('colab', colab);
+				lottieAnim('coms', coms);
+				lottieAnim('crit', critical);
+				lottieAnim('create', create);	
+				places();
+				
+				function showImages(el) {
+					var windowHeight = jQuery( window ).height();
+					
+					$(el).each(function(){
+						var thisPos = $(this).offset().top;
+			
+						var topOfWindow = $(window).scrollTop();
+						if (topOfWindow + windowHeight - 200 > thisPos ) {
+							$(this).addClass("fadeIn");
+						}
+					});
+				}
+				function showVidSvg(el) {
+					var windowHeight = jQuery( window ).height();
+					
+					$(el).each(function(){
+						var thisPos = $(this).offset().top;
+			
+						var topOfWindow = $(window).scrollTop();
+						if (topOfWindow + windowHeight - 200 > thisPos ) {
+							$(this).addClass("fadevid");
+						}
+					});
+				}
+			
+				// if the image in the window of browser when the page is loaded, show that image
+				$(document).ready(function(){
+						showImages('.star');
+						showVidSvg('.vidstar');
+						const week = getParam('week')
+						const navBarHeight = $('section>.nav').innerHeight()
+						switch(week){
+							case "one":
+								setTimeout(function(){$('html, body').animate({
+									scrollTop: $("#weekOne").offset().top-parseInt(navBarHeight)
+								}, 500); }, 2000);	
+								break;
+							case "two":
+								setTimeout(function(){$('html, body').animate({
+									scrollTop: $("#weekTwo").offset().top-parseInt(navBarHeight)
+								}, 500); }, 2000);	
+								break;
+							case "three":
+								setTimeout(function(){$('html, body').animate({
+									scrollTop: $("#weekThree").offset().top-parseInt(navBarHeight)
+								}, 500); }, 2000);	
+								break;
+							case "four":
+								setTimeout(function(){$('html, body').animate({
+									scrollTop: $("#weekFour").offset().top-parseInt(navBarHeight)
+								}, 500); }, 2000);	
+								break;
+							default:
+								break;
+						}
+						// if(window.location.href.indexOf("?week=one") > -1) {
+							
+						// 	// setTimeout(function(){$('html, body').animate({
+						// 	// 	scrollTop: $("#scrollto").offset().top-10
+						// 	// }, 1000); }, 2000);		
+													
+						//  }
+
+				});
+			
+				// if the image in the window of browser when scrolling the page, show that image
+				$(window).scroll(function() {
+						showImages('.star');
+						showVidSvg('.vidstar');
+				});
+					
+			break;
+
+		case "/uk/explore/kings-cross/not-a-school/sign-up/":
+			places();
 			break;
 
 		default: {

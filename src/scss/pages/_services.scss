@@ -15,19 +15,21 @@
   }
 
   &__outer {
-    background-image: url(/content/dam/samsung/uk/explore/kings-cross/header/support-header.png);
+    background-image: url(/content/dam/samsung/uk/explore/kings-cross/header/support-header-gradient.jpg);
     background-position: center center; /* First value is from left and second is from top. You can use use number as well*/
+    background-position: top center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 
     padding-top: 0px !important;
     padding-bottom: 0px !important;
 
     @media screen and (max-width: $mobile){
-      background-image: url(/content/dam/samsung/uk/explore/kings-cross/header/support-header-mobile-v2.png);
+      background-image: url(/content/dam/samsung/uk/explore/kings-cross/header/support-kv-mob-v2.jpg);
     }
 
   }
+
 
   &__title {
     margin-top: 300px;
@@ -42,6 +44,7 @@
     display: flex;
     justify-content: space-between;
     margin: 100px 0px;
+    text-align:center;
     @media screen and (max-width: $mobile) {
       flex-direction: column;
     }
@@ -51,6 +54,12 @@
       justify-content: space-between;
       flex-basis: 30%;
       min-height: 190px;
+
+      &__image {
+        width: 45%;
+        height: 45%;
+        margin: 1em auto;
+      }
     
       &:nth-child(2) {
         margin: 0 200px;
@@ -71,12 +80,16 @@
       }
     
       &__heading {
-        flex-basis: 30%;
+       /*  flex-basis: 30%; */
       }
     
       &__desc {
         margin: 24px 0px;
-        flex-basis: 30%;
+        /* flex-basis: 30%; */
+      }
+
+      .btn {
+        margin: 0 auto;
       }
     }
   }
@@ -385,6 +398,35 @@
     }
     &.flash--orange{
       animation: flash__btn--orange 1s;
+    }
+  }
+}
+
+.blackFridayBanner {
+  background-image: url(https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/header/BlackFridaySupportBanner.jpg);
+  background-position: center center; /* First value is from left and second is from top. You can use use number as well*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: em(5);
+  max-height: 550px;
+  height: 38vw;
+
+  @media screen and (max-width: $mobile){
+    background-image: url(https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/header/BlackFridaySupportBannerMobile.jpg);
+    max-height: 768px;
+    height: 100vw;
+
+    h2 {
+      margin-top: 2.3em;
+    }
+  }
+
+  &__copy {
+    margin: 10%;
+    width: 60%;
+
+    h2 {
+      margin-bottom: 1em;
     }
   }
 }

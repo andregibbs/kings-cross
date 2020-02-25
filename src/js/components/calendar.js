@@ -62,6 +62,7 @@ export default function calendar(URL, type, allEvents) {
 	document.getElementById("calendar").setAttribute("ready", "true");
 
 	var selectedDate = new Date();
+	var currentDate = new Date();
 
 
 
@@ -76,6 +77,8 @@ export default function calendar(URL, type, allEvents) {
 		const dateString = date.getFullYear() + "-" + (String(date.getMonth() + 1).length == 1 ? "0" + String(date.getMonth() + 1) : String(date.getMonth() + 1)) + "-" + (String(date.getDate()).length == 1 ? "0" + String(date.getDate()) : String(date.getDate()))
 
 		loadingScreen.style.display = "block";
+
+		showHideLeftArrow(date);
 
 		$.get(appointmentURL + dateString)
 			.success(function (data) {
@@ -93,6 +96,16 @@ export default function calendar(URL, type, allEvents) {
 				showCalendarError(err)
 				//ADD A HEADS UP TO THE USER
 			})
+	}
+
+	function showHideLeftArrow(date) {
+		
+		if (date <= currentDate) {
+			document.getElementsByClassName("arrow left")[0].style.visibility = "hidden";
+		} else {
+			document.getElementsByClassName("arrow left")[0].style.visibility = "visible";
+		}
+
 	}
 
 	function showCalendarError(error) {

@@ -8,7 +8,24 @@
 
 		<section class="event__header section__inner">
 			
-			<div class="event__header__top">[[#unless externalbookinglink ]]<div class="event__header__top__left"><span class="event__header-date">[[ startDate ]] | [[ startTime ]]</span><span class="action-capacity">Max spaces [[ maxReservations ]] | Spaces left [[ slotsAvailable ]] </span></div>[[/unless]]
+			<div class="event__header__top">
+				[[#unless externalbookinglink ]]
+				<div class="event__header__top__left">
+					<span class="event__header-date">
+						[[ startDate ]] | [[ startTime ]]
+					</span>
+					<span class="action-capacity limited action">
+						
+						<span class="action-btn limited__availability">
+						[[ limitedAvailability ]]
+					</span>
+					
+					</span>
+					
+
+					
+				</div>[[/unless]]
+			
 			
 
 				{{!-- [[#if sponsor]]<span id="sponsor-mobile">Brought to you by [[ capitalize sponsor ]]</span>[[/if]] --}}
@@ -46,7 +63,11 @@
 						[[#if sponsor ]]<div class="event__header-sponsor"><span id="sponsor">Brought to you by [[ capitalize sponsor ]]</span></div>[[/if]]
 						<p class="event__header-date">[[ startDate ]]<br>[[ startTime ]] - [[ endTime ]]</p>
 						[[#unless externalbookinglink ]]
-						<div class="action-capacity fz14">Max Spaces [[ maxReservations ]] | Spaces left [[ slotsAvailable ]]</div>
+						
+						<div class="limited action">
+							<p class="event__header-date limited__availability action-btn">[[ limitedAvailability ]]</p>
+						</div>
+
 						[[/unless]]
 					</div>
 				</section>

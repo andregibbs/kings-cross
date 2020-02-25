@@ -1,5 +1,6 @@
 # King's Cross Booking Process
 *To build, simply use ```gulp``` without any args. Version used for production: 3.9.1*
+*To build, for production (to scrap the code for AEM) use ```gulp production``` without any args. Version used for production: 3.9.1*
 
 ## **Brief project breakdown:**
 

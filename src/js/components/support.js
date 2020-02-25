@@ -61,19 +61,21 @@ export default function support() {
         journeys: {
             oneToOne: {
                 1: screens.calendar,
-                2: screens.details,
-                3: screens.confirmation
+                2: screens.deviceInfo,
+                3: screens.details,
+                4: screens.confirmation
             },
 
             support: {
                 1: screens.calendar,
-                2: screens.details,
-                3: screens.confirmation
+                2: screens.deviceInfo,
+                3: screens.details,
+                4: screens.confirmation
             },
 
             repair: {
-                1: screens.deviceInfo,
-                2: screens.calendar,
+                1: screens.calendar,
+                2: screens.deviceInfo,
                 3: screens.details,
                 4: screens.confirmation
             }
@@ -598,9 +600,6 @@ export default function support() {
                 }
             }
         }
-
-
-
     })
     //Back: if current screen is Confirmation, change Next/Book to Next
 

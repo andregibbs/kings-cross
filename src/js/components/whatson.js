@@ -73,8 +73,16 @@ export default function whatson(events) {
 	$('.events__showMore').click(function () {
 		if (numberEventsToShow + 12 > eventsToManipulate.length) {
 			doLog("Events to show", numberEventsToShow);
-			doLog("Events to manipulate", eventsToManipulate);
-			lazyGetEvents(eventsToManipulate, eventsToManipulate.length - numberEventsToShow);
+			console.log("Events to manipulate", eventsToManipulate);
+			
+			if(passion){
+				eventsToManipulate = eventsToManipulate.filter(function (event) {
+					return event.extra.passions.includes(passion)
+				})
+		
+			}
+			console.log(eventsToManipulate)
+			lazyGetEvents(eventsToManipulate, eventsToManipulate.length - numberEventsToShow );
 			$('.events__showMore').hide();
 		} else {
 			lazyGetEvents(eventsToManipulate, 12);
@@ -192,7 +200,7 @@ export default function whatson(events) {
 	// =================================================
 
 	if (passion) {
-
+		$('.whatsOn__kv > div > h2').addClass('kv__dark__theme')
 		$('.whatsOn__kv').css('background', 'url(/content/dam/samsung/uk/explore/kings-cross/passion-header/passion-header-' + passion + '.jpg)');
 		var passionName = getPassionName(passion);
 		doLog(passionName);
@@ -207,7 +215,7 @@ export default function whatson(events) {
 	} else {
 
 
-		$('.whatsOn__kv').css('background', 'url(/content/dam/samsung/uk/explore/kings-cross/passion-header/passion-header-generic.jpg)')
+		$('.whatsOn__kv').css('background-image', 'url(/content/dam/samsung/uk/explore/kings-cross/passion-header/passion-header-generic.jpg)')
 
 		lazyGetEvents(events, 0);
 	}

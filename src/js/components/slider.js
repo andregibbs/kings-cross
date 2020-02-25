@@ -57,11 +57,10 @@ export default function slider( data, element, sliderConfig, templateToRender ){
 			$('.upComing__sliders .slider-'+getSlider+'').show().slick(sliderConfig)
 		})
 
-	} else if( element == '.slider-discover' ) {
-
+	} else if( element == '.slider-discover-alt' || element == '.slider-discover' || element == '.slider-discover-recently' || element == '.slider-discover-recently-descriptions') {
 		$(element).slick( sliderConfig )
 
-	} else if( templateToRender == 'experience' ) {
+	} else if( templateToRender === 'experience' ) {
 
 		$(element).slick( sliderConfig )
 

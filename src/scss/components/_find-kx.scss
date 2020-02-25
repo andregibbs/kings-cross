@@ -15,7 +15,7 @@
       align-items: center;
     }
 
-    span {
+    span.bold {
       font-weight: bold;
     }
 
@@ -23,7 +23,7 @@
       flex-basis: 28%;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: flex-start;
       h4 {
         margin: 12px 0;
         @media screen and (max-width: $desktop) {
@@ -38,7 +38,7 @@
         order: 1;
         width: 100%;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: flex-start;
       }
     }
     .findkx__map {
@@ -95,6 +95,12 @@
     }
   }
 
+  &__block-3 {
+    @media screen and (max-width: $mobile){
+      margin-left: 2em;
+    }
+  }
+
   &__title {
     &--desktop {
       @media screen and (max-width: $mobile) {
@@ -109,6 +115,9 @@
       }
     }
   }
+  sup {
+    font-size: 11px;
+}
 }
 
 /*=====  End of Find KX  ======*/

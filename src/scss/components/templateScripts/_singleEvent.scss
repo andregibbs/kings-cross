@@ -397,6 +397,73 @@
       }
     }
   }
+
+}
+
+.limited  {
+  margin: 0!important;
+  padding-top:2%; 
+  &__availability {
+    text-transform: capitalize;    
+    animation: fadein 1s ease-in-out;
+    color: #E14D9A;
+    font-weight: bold;
+    cursor: pointer;
+  
+    position: relative;
+    line-height: 22px;
+  
+    
+    text-decoration: none;
+    
+    cursor: pointer;
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 0;
+      height: 3px;
+      background-color: white;
+      transition: .3s width linear;
+    }
+    
+    &.left:after,
+    &.center:after,
+    &.right:after {
+      width: 0;
+    }
+    
+    &.center:after {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
+    &.right:after  {
+      left: auto;
+      right: 0;
+    }
+    
+    &:hover {
+      &:after {
+        width: 100%;
+      }
+    }
+    
+  }
+  @media screen and (max-width: $mobile) {
+    padding: 0;
+  }
+}
+
+@keyframes fadein {
+  from { 
+    opacity: 0;      
+}
+  to   { 
+    opacity: 1; 
+    
+  }
 }
 
 /*=====  End of SingleEvent  ======*/

@@ -3,117 +3,103 @@
 =============================================*/
 
 .ui-datepicker {
-  border: solid 1px rgba(77, 77, 79, 0.85);
-  background: #000;
-  width: 22em;
-  color: #fff;
-  margin-top: 15px;
-  padding: 0;
-  font-family: "SamsungOne", arial;
-  z-index: 9999!important;
-  &-next {
-    padding: 5px;
-    .ui-icon {
-      background-image: none;
-      border-right: 2px solid white;
-      border-bottom: 2px solid white;
-      width: 10px;
-      height: 10px;
-      transform: rotate(-45deg);
-    }
-  }
-  &-prev {
-    padding: 5px;
-    .ui-icon {
-      background-image: none;
-      border-right: 2px solid white;
-      border-bottom: 2px solid white;
-      width: 10px;
-      height: 10px;
-      transform: rotate(-225deg);
-    }
-  }
-  &-header {
-    border: none;
-    background: transparent;
-    font-weight: 500;
+    border: solid 1px rgba(77, 77, 79, 0.85);
+    background: #000;
+    width: 22em;
     color: #fff;
-    margin-top: 5px;
-    
-  }
-
-
-
-  table {
-    margin: 0;
-  }
-
-  thead {
-    tr {
-      border: none;
-    }
-  }
-  tr {
-    border-top: 1px solid rgba(222, 222, 222, 0.3);
-  }
-
-  td {
-      border-right: 1px solid rgba(222, 222, 222, 0.3);
-  }
-
-  td {
+    margin-top: 15px;
     padding: 0;
-    .ui-state-disabled {
-      border: 1px solid rgba(222, 222, 222, 0.3);
+    font-family: "SamsungOne", arial;
+    z-index: 9999!important;
+    &-next {
+        padding: 5px;
+        .ui-icon {
+            background-image: none;
+            border-right: 2px solid white;
+            border-bottom: 2px solid white;
+            width: 10px;
+            height: 10px;
+            transform: rotate(-45deg);
+        }
     }
-  }
-
-  
-  .ui-state-default {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid transparent;
-    background: #0d0d0d;
-    font-weight: 400;
-    font-size: em(20);
-    color: #fff;
-    opacity: 1;
-  }
-
-  .ui-state-highlight {
-    border: 1px solid transparent;
-  }
-  .ui-state-active {
-    box-shadow: 0 0 0 1px #fff, 0px 0px 8px 0px rgba(226, 76, 155, 1);
-  }
-  .ui-state-hover {
-    border: 1px solid transparent;
-    box-shadow: 0 0 0 1px #fff;
-    background: transparent;
-    font-weight: normal;
-    cursor: pointer;
-  }
-  &-header {
+    &-prev {
+        padding: 5px;
+        .ui-icon {
+            background-image: none;
+            border-right: 2px solid white;
+            border-bottom: 2px solid white;
+            width: 10px;
+            height: 10px;
+            transform: rotate(-225deg);
+        }
+    }
+    &-header {
+        border: none;
+        background: transparent;
+        font-weight: 500;
+        color: #fff;
+        margin-top: 5px;
+    }
+    table {
+        margin: 0;
+    }
+    thead {
+        tr {
+            border: none;
+        }
+    }
+    tr {
+        border-top: 1px solid rgba(222, 222, 222, 0.3);
+    }
+    td {
+        border-right: 1px solid rgba(222, 222, 222, 0.3);
+    }
+    td {
+        padding: 0;
+        .ui-state-disabled {
+            border: 1px solid rgba(222, 222, 222, 0.3);
+        }
+    }
+    .ui-state-default {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid transparent;
+        background: #0d0d0d;
+        font-weight: 400;
+        font-size: em(20);
+        color: #fff;
+        opacity: 1;
+    }
+    .ui-state-highlight {
+        border: 1px solid transparent;
+    }
+    .ui-state-active {
+        box-shadow: 0 0 0 1px #fff, 0px 0px 8px 0px rgba(226, 76, 155, 1);
+    }
     .ui-state-hover {
         border: 1px solid transparent;
-        box-shadow: none;
+        box-shadow: 0 0 0 1px #fff;
         background: transparent;
         font-weight: normal;
         cursor: pointer;
-      }
-  }
-
-  td.highlight-stay a {
-    background: rgba(226, 76, 155, 0.37);
-  }
-
-  td.highlight a {
-    background: rgba(226, 76, 155, 0.5);
-  }
-
-  .ui-to {
-      box-shadow: 0 0 0 1px #fff, 0px 0px 8px 0px rgba(226, 76, 155, 1);
-  }
-
+    }
+    &-header {
+        .ui-state-hover {
+            border: 1px solid transparent;
+            box-shadow: none;
+            background: transparent;
+            font-weight: normal;
+            cursor: pointer;
+        }
+    }
+    td.highlight-stay a {
+        background: rgba(226, 76, 155, 0.37);
+    }
+    td.highlight a {
+        background: rgba(226, 76, 155, 0.5);
+    }
+    .ui-to {
+        box-shadow: 0 0 0 1px #fff, 0px 0px 8px 0px rgba(226, 76, 155, 1);
+    }
 }
