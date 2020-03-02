@@ -267,7 +267,7 @@ export default function singleEvent(events) {
           } else {
             times = dates[currentDate];
           }
-
+          $(".change__times").empty();
           times.forEach(event => {
             var slots =
               event.slotsAvailable !== 0 ? "Available" : "Unavailable";
@@ -284,7 +284,6 @@ export default function singleEvent(events) {
               slots +
               " </span></div>";
             doLog(html);
-            $(".change__times").empty();
             $(".change__times").append(html);
           });
         }
@@ -375,7 +374,7 @@ export default function singleEvent(events) {
   // Instragram feed
   // =================================================
 
-  instagram(instagramHashTag);
+  //instagram(instagramHashTag);
 
   // =================================================
   // Related Events
