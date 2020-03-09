@@ -42,3 +42,20 @@
 .content-inherited-wrap.parsys.iparsys {
 	display: none!important;
 }
+
+.lity-iframe .lity-container, .lity-youtube .lity-container, .lity-vimeo .lity-container, .lity-facebookvideo .lity-container, .lity-googlemaps .lity-container {
+	width: 100%;
+    max-width: 80%;
+}
+
+.lity-content {
+	height: 80vh;
+    display: flex;
+    justify-content: center;
+}
+
+
+.lity-iframe-container {
+	height: initial;
+}
+

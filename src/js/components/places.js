@@ -38,7 +38,7 @@ export default function places() {
           console.log(storeOpeningTime)
           let spaceless = storeOpeningTime.replace(/\s/g, '').replace('AM', 'am').replace('PM', 'pm').replace('-', ' - ').replace('day', '').replace('tur', 't').replace('nes', '')     
           let altered = spaceless.replace(/:00/g, "").split('–').join(' – ').replace(':', ': ');
-          console.log('naooo0000000ooooooo')
+          
           openingTimeHtml += ' <p><span class="fz16 bold">'+altered.substr(0, altered.indexOf(':'))+': </span><span class="fz16">'+altered.split(': ').pop()+'</span></p>';
         });
 

@@ -35,13 +35,22 @@ $(document).ready(function () {
 	// console.clear();
 
 	//scroll past Navbar
-	$('.accordian').on('click', (e)=>{
-		console.log('clickeroonie')
-		$('.accordianContent').toggleClass('active')
-		$('.accordianIcon').hasClass('accordianIcon__expand') ? $(".accordianIcon").removeClass('accordianIcon__expand').addClass('accordianIcon__collapse') : $(".accordianIcon").removeClass('accordianIcon__collapse').addClass('accordianIcon__expand')
-		$('.accordian').hasClass('accordian__expanded') ? $(".accordian").removeClass('accordian__expanded').addClass('accordian__collapsed') : $(".accordian").removeClass('accordian__collapsed').addClass('accordian__expanded')
-	})
+	// $('.accordian').on('click', (e)=>{
+	// 	console.log('clickeroonie')
+	// 	$('.accordianContent').toggleClass('active')
+	// 	$('.accordianIcon').hasClass('accordianIcon__expand') ? $(".accordianIcon").removeClass('accordianIcon__expand').addClass('accordianIcon__collapse') : $(".accordianIcon").removeClass('accordianIcon__collapse').addClass('accordianIcon__expand')
+	// 	$('.accordian').hasClass('accordian__expanded') ? $(".accordian").removeClass('accordian__expanded').addClass('accordian__collapsed') : $(".accordian").removeClass('accordian__collapsed').addClass('accordian__expanded')
+	// })
+	if (window.jQuery) {  
+       // Open a URL in a lightbox
+// var lightbox = lity('#video-intro');
 
+// // Bind as an event handler
+// $(document).on('click', '[data-lightbox]', lightbox);
+    } else {
+        // jQuery is not loaded
+       console.log("Doesn't Work");
+    }
 	// =================================================
 	// Global vars
 	// =================================================
@@ -522,5 +531,8 @@ $(document).ready(function () {
 			// Your init here
 		}
 	}
+
+
+
 
 })
