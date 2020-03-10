@@ -520,6 +520,7 @@
 }
 .event-sold-out {
   display: none;
+  font-weight: 700!important;
   @media screen and (max-width: $mobile) {
     margin-top: 1%!important;
   }
