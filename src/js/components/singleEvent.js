@@ -211,6 +211,7 @@ export default function singleEvent(events) {
           } else {
             $(".event__content-book .btn--primary").text("Fully booked")
             $(".btn--secondary.event-popup").css('display', 'flex')
+            $(".tile-desc.event-sold-out").css('display', 'block')
             $(".limited.action").hide();
           }
         }

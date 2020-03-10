@@ -518,3 +518,9 @@
   display: none;
   margin-left: 1%;
 }
+.event-sold-out {
+  display: none;
+  @media screen and (max-width: $mobile) {
+    margin-top: 1%!important;
+  }
+}

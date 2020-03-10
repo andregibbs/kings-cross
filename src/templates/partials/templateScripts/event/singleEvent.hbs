@@ -58,6 +58,7 @@
 						[[#if youtube ]]
 						<iframe width="560" height="315" src="https://www.youtube.com/embed/[[ youtube ]]" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						[[/if]]
+						<span class="tile-desc event-sold-out">Unfortunately this event is sold out. Sign up below to keep updated on our other upcoming events.</span>
 					</div>
 					<div class="event_details">
 						[[#if sponsor ]]<div class="event__header-sponsor"><span id="sponsor">Brought to you by [[ capitalize sponsor ]]</span></div>[[/if]]
@@ -75,20 +76,17 @@
 					<div class="event__content-book action">
 
 						[[#if externalbookinglink ]]						
-							<a ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:[[ title ]]_book-now" data-omni-type="microsite" data-omni="uk:kings-cross:event-page:[[ title ]]:book-now" href="[[externalbookinglink]]" class="link-book btn btn--primary" target="_blank">book now</a>
-							{{!-- <a href="https://a3p.eucdm.samsung.com/webApp/samAPP581?lang=en_GB" data-lity class=" btn btn--secondary event-popup">Sign up</button> --}}
+							<a ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:[[ title ]]_book-now" data-omni-type="microsite" data-omni="uk:kings-cross:event-page:[[ title ]]:book-now" href="[[externalbookinglink]]" class="link-book btn btn--primary" target="_blank">book now</a>							
 							[[#if reoccurring]]
-								<button ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:[[ dash title ]]_other-times" data-omni-type="microsite" data-omni="uk:kings-cross:event-page:[[ dash title ]]:other-times" class="action-btn btn btn--secondary changeTime">Other Times</button>
-								{{!-- <a href="https://a3p.eucdm.samsung.com/webApp/samAPP581?lang=en_GB" data-lity class=" btn btn--secondary event-popup">Sign up</button> --}}
+								<button ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:[[ dash title ]]_other-times" data-omni-type="microsite" data-omni="uk:kings-cross:event-page:[[ dash title ]]:other-times" class="action-btn btn btn--secondary changeTime">Other Times</button>								
 							[[/if]]
 						[[else]]
 						[[#if reoccurring ]]
 							<button ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:[[ dash title ]]_book-tickets" data-omni-type="microsite" data-omni="uk:kings-cross:event-page:[[ dash title ]]:book-tickets" class="action-btn btn btn--primary">book tickets</button>
-							<button ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:[[ dash title ]]_other-times" data-omni-type="microsite" data-omni="uk:kings-cross:event-page:[[ dash title ]]:other-times" class="action-btn btn btn--secondary changeTime">Other Times</button>
-							{{!-- <a href="https://a3p.eucdm.samsung.com/webApp/samAPP581?lang=en_GB" data-lity class=" btn btn--secondary event-popup">Sign up</button> --}}
+							<button ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:[[ dash title ]]_other-times" data-omni-type="microsite" data-omni="uk:kings-cross:event-page:[[ dash title ]]:other-times" class="action-btn btn btn--secondary changeTime">Other Times</button>							
 							[[else]]
 							<button ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:[[ dash title ]]_book-tickets" data-omni-type="microsite" data-omni="uk:kings-cross:event-page:[[ dash title ]]:book-tickets" class="action-btn btn btn--primary">book tickets</button>
-							<a href="https://a3p.eucdm.samsung.com/webApp/samAPP581?lang=en_GB" data-lity class=" btn btn--secondary event-popup">Sign up</a>
+							<a href="https://a3p.eucdm.samsung.com/webApp/samAPP581?lang=en_GB" data-lity class=" btn btn--secondary event-popup">Update me</a>
 						[[/if]]
 						[[/if]]
 						<div class="event__content-share share">
