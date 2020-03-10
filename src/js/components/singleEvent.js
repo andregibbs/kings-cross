@@ -210,6 +210,7 @@ export default function singleEvent(events) {
             $(".event__content-book .btn--primary").text("Expired")
           } else {
             $(".event__content-book .btn--primary").text("Fully booked")
+            $(".btn--secondary.event-popup").css('display', 'flex')
             $(".limited.action").hide();
           }
         }

@@ -74,17 +74,21 @@
 				<section class="event__section">
 					<div class="event__content-book action">
 
-						[[#if externalbookinglink ]]
+						[[#if externalbookinglink ]]						
 							<a ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:[[ title ]]_book-now" data-omni-type="microsite" data-omni="uk:kings-cross:event-page:[[ title ]]:book-now" href="[[externalbookinglink]]" class="link-book btn btn--primary" target="_blank">book now</a>
+							{{!-- <a href="https://a3p.eucdm.samsung.com/webApp/samAPP581?lang=en_GB" data-lity class=" btn btn--secondary event-popup">Sign up</button> --}}
 							[[#if reoccurring]]
 								<button ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:[[ dash title ]]_other-times" data-omni-type="microsite" data-omni="uk:kings-cross:event-page:[[ dash title ]]:other-times" class="action-btn btn btn--secondary changeTime">Other Times</button>
+								{{!-- <a href="https://a3p.eucdm.samsung.com/webApp/samAPP581?lang=en_GB" data-lity class=" btn btn--secondary event-popup">Sign up</button> --}}
 							[[/if]]
 						[[else]]
 						[[#if reoccurring ]]
 							<button ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:[[ dash title ]]_book-tickets" data-omni-type="microsite" data-omni="uk:kings-cross:event-page:[[ dash title ]]:book-tickets" class="action-btn btn btn--primary">book tickets</button>
 							<button ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:[[ dash title ]]_other-times" data-omni-type="microsite" data-omni="uk:kings-cross:event-page:[[ dash title ]]:other-times" class="action-btn btn btn--secondary changeTime">Other Times</button>
+							{{!-- <a href="https://a3p.eucdm.samsung.com/webApp/samAPP581?lang=en_GB" data-lity class=" btn btn--secondary event-popup">Sign up</button> --}}
 							[[else]]
 							<button ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:[[ dash title ]]_book-tickets" data-omni-type="microsite" data-omni="uk:kings-cross:event-page:[[ dash title ]]:book-tickets" class="action-btn btn btn--primary">book tickets</button>
+							<a href="https://a3p.eucdm.samsung.com/webApp/samAPP581?lang=en_GB" data-lity class=" btn btn--secondary event-popup">Sign up</a>
 						[[/if]]
 						[[/if]]
 						<div class="event__content-share share">
