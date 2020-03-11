@@ -58,7 +58,28 @@
 						[[#if youtube ]]
 						<iframe width="560" height="315" src="https://www.youtube.com/embed/[[ youtube ]]" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						[[/if]]
-						<span class="tile-desc event-sold-out">Oops! Looks like this event is now sold out. Not to worry, you can sign up below to keep updated on our other upcoming events.</span>
+
+
+						[[#if reoccurring ]]
+												
+							[[else]]
+							<span class=" event-sold-out">Oops! Looks like this event is now sold out. Not to worry, you can sign up below to keep updated on our other upcoming events.</span>
+						[[/if]]
+						
+					{{!-- [[#if externalbookinglink ]]						
+							
+							[[#if reoccurring]]
+								
+							[[/if]]
+						[[else]]
+						[[#if reoccurring ]]
+												
+							[[else]]
+							<span class="tile-desc event-sold-out">Oops! Looks like this event is now sold out. Not to worry, you can sign up below to keep updated on our other upcoming events.</span>
+						[[/if]]
+						[[/if]] --}}
+
+					
 					</div>
 					<div class="event_details">
 						[[#if sponsor ]]<div class="event__header-sponsor"><span id="sponsor">Brought to you by [[ capitalize sponsor ]]</span></div>[[/if]]

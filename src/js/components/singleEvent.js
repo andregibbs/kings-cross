@@ -59,8 +59,8 @@ export default function singleEvent(events) {
         return percentage < 30 && percentage > 0 ? true : false;
       }
 
-      console.log('percentage',per(7, 20) )
-      console.log('less than thirty?', limited(per(7, 20)))
+      
+      
 
       sortEventExtra(data);
 
@@ -78,8 +78,8 @@ export default function singleEvent(events) {
       // );
 
       if (data.seriesId == kxConfig.seriesIdAsInt) {
-        console.log("all spaces", data.maxReservations);
-          console.log("slotsAvailable", data.slotsAvailable);
+        
+          
         const options = {
           identifier: data.identifier,
           groupSize: data.maxGroupSize,
@@ -115,11 +115,11 @@ export default function singleEvent(events) {
         };
 
         if (options.sponsor == "timeout") {
-          console.log("TIMEOUT");
+          
         } else if (options.sponsor == "guardian") {
-          console.log("GUARDIAN");
+          
         } else {
-          console.log("Unsponsored");
+          
 
         }
 
@@ -209,9 +209,9 @@ export default function singleEvent(events) {
           if (data.hasPassed) {
             $(".event__content-book .btn--primary").text("Expired")
           } else {
-            $(".event__content-book .btn--primary").text("Fully booked")
+            $(".event__content-book .btn--primary").text("Fully booked").addClass('fully-booked')
             $(".btn--secondary.event-popup").css('display', 'flex')
-            $(".tile-desc.event-sold-out").css('display', 'block')
+            $(".event-sold-out").css('display', 'block')
             $(".limited.action").hide();
           }
         }
@@ -287,6 +287,12 @@ export default function singleEvent(events) {
               " </span></div>";
             doLog(html);
             $(".change__times").append(html);
+
+            // if (event.slotsAvailable) {
+            //   $(".tile-desc.event-sold-out").css('display', 'block')
+            // } else {
+            //   $(".tile-desc.event-sold-out").css('display', 'block')
+            // }
           });
         }
       } else {
@@ -305,9 +311,9 @@ export default function singleEvent(events) {
     e.preventDefault();
 
 
-
+   
     $(".action .action-btn").attr("disabled", true);
-    $(".action .action-btn").toggleClass("btn--primary-notActive");
+    $(".action .action-btn:not(.fully-booked)").toggleClass("btn--primary-notActive");    
     $(".book").addClass("book--active");
     $('.book__form__footer__error').css('opacity', 0);
     if ($(this).hasClass("changeTime")) {
@@ -361,7 +367,7 @@ export default function singleEvent(events) {
       .removeClass("btn--primary-notActive");
 
     $(".action .action-btn").attr("disabled", false);
-    $(".action .action-btn").toggleClass("btn--primary-notActive");
+    $(".action .action-btn:not(.fully-booked)").toggleClass("btn--primary-notActive");
   });
 
   $(".singleEvent").on("click", ".share__container", function (e) {
@@ -394,8 +400,17 @@ export default function singleEvent(events) {
     $(".change__form-submit").removeClass("btn--primary-notActive");
     $(".change__time").each(function () {
       $(this).removeClass("selected");
+   
     });
-    $(this).addClass("selected");
+    
+    
+    if ($(this).hasClass('Available')) {
+      
+      $(this).addClass("selected");
+    } else {
+      $('.change__form-submit').addClass('btn--primary-notActive')
+      
+    }
   });
 
   $(".book").on("click", ".change__form-submit", function () {
@@ -444,7 +459,7 @@ export default function singleEvent(events) {
               setTimeout(function () {
                 $(".book__tickets-tickets").removeClass("flash");
               }, 500);
-              console.log(bookOptions.maxGroupSize, bookOptions.slotsAvailable);
+              
               this.value = Math.min.apply(null, [bookOptions.maxGroupSize, bookOptions.slotsAvailable]);
             }
           });

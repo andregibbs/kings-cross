@@ -520,8 +520,13 @@
 }
 .event-sold-out {
   display: none;
+  font-size: em(20);
   font-weight: 700!important;
+  margin-top: 40px;
+  @media screen and (max-width: $desktop) {
+    margin-top: get-desktop-vw(40);
+  }
   @media screen and (max-width: $mobile) {
-    margin-top: 1%!important;
+    margin-top: 0;
   }
 }

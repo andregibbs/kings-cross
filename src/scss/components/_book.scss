@@ -182,10 +182,13 @@
         width: 55%;
     margin-top: 20px;
       }
-
-      &:hover {
-        background-color: rgba($color: $pink, $alpha: 0.5);
+      &.Available {
+        &:hover {
+          background-color: rgba($color: $pink, $alpha: 0.5);
+        }
       }
+
+      
       &.selected {
         background-color: rgba($color: $pink, $alpha: 0.5);
       }
