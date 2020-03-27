@@ -6,6 +6,16 @@
 	background: $background;
 }
 
+// Hiding explore nav
+//Important to hide explore menu
+.content-inherited-wrap.parsys.iparsys {
+	display: none!important;
+}
+// fix width after removal of explore menu
+#content .cm-g-static-content {
+  width: 100%;
+}
+
 .cheil-static {
 	background: $background;
 	color: $white;
@@ -36,12 +46,9 @@
 	button {
 		color: $white;
 	}
-	
+
 }
-//Important to hide explore menu 
-.content-inherited-wrap.parsys.iparsys {
-	display: none!important;
-}
+
 
 .lity-iframe .lity-container, .lity-youtube .lity-container, .lity-vimeo .lity-container, .lity-facebookvideo .lity-container, .lity-googlemaps .lity-container {
 	width: 100%;
@@ -58,4 +65,3 @@
 .lity-iframe-container {
 	height: initial;
 }
-
