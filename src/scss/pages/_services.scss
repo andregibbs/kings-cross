@@ -40,10 +40,34 @@
     }
   }
 
+  &__notice {
+    text-align: center;
+    max-width: 740px;
+    margin: 0 auto;
+    @media screen and (max-width: $mobile) {
+      max-width: auto;
+    }
+    p:first-child {
+      font-size: em(24);
+      font-weight: bold;
+    }
+    p {
+      font-size: em(20);
+      margin-bottom: em(8);
+    }
+    p a {
+      font-size: em(14);
+      @media screen and (max-width: $mobile) {
+        display: block;
+      }
+    }
+  }
+
   &__tiles {
     display: flex;
     justify-content: space-between;
-    margin: 100px 0px;
+    // margin: 100px 0px; // adjustment for coronavirus message
+    margin: 100px 0 50px; // adjustment for coronavirus message
     text-align:center;
     @media screen and (max-width: $mobile) {
       flex-direction: column;
@@ -55,34 +79,38 @@
       flex-basis: 30%;
       min-height: 190px;
 
+      @media screen and (max-width: 1024px) {
+        min-height: auto; // adjustment for coronavirus message
+      }
+
       &__image {
         width: 45%;
         height: 45%;
         margin: 1em auto;
       }
-    
+
       &:nth-child(2) {
         margin: 0 200px;
         @media screen and (max-width: $desktop) {
           margin: 0 get-desktop-vw(200);
         }
-    
+
         @media screen and (max-width: $mobile) {
           margin: get-mobile-vw(100) 0;
         }
       }
-    
+
       @media screen and (max-width: $mobile) {
         text-align: center;
         button {
           margin: 0 auto;
         }
       }
-    
+
       &__heading {
        /*  flex-basis: 30%; */
       }
-    
+
       &__desc {
         margin: 24px 0px;
         /* flex-basis: 30%; */
@@ -192,7 +220,7 @@
           flex-basis: unset;
           width: 40%;
         }
-    
+
         &::-webkit-scrollbar {
           display: none;
         }
