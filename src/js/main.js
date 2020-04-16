@@ -15,6 +15,7 @@ import lottieAnim from './components/lottieAnim';
 import loadingScreen from './components/loadingScreen';
 import getParam from './components/getParam';
 import school from './components/school'
+import homeOfInnovation from './components/homeOfInnovation'
 
 import loadingScreenAnimation from '../data/loadingScreen.json';
 import create from '../data/Create.json';
@@ -532,7 +533,16 @@ $(document).ready(function () {
 		}
 	}
 
+	console.log('HOME-OF-INNOVATION', 'xxx');
 
+	if (window.location.pathname.indexOf('/uk/explore/kings-cross/home-of-innovation/') == 0) {
 
+		console.log('HOME-OF-INNOVATION', window.location.pathname);
+
+		homeOfInnovation();
+		
+	}
+
+	console.log('HOME-OF-INNOVATION', 'xxx');
 
 })

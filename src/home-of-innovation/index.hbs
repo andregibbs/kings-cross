@@ -1,0 +1,87 @@
+<!--#include virtual="/uk/aem/header-pdp.html"-->
+
+<section class="cheil-static">
+
+	{{>stylesheet}}
+
+	{{>components/nav }}
+
+	{{!-- need to address 'copy' class here --}}
+	<section class="section copy">
+
+	{{> home-of-innovation/contentBreadcrumbs }}
+
+	{{> home-of-innovation/contentFindOutMore }}
+
+	{{> home-of-innovation/contentItems }}
+
+	{{> home-of-innovation/content }}
+
+
+	{{#if items}}
+	{{!-- don't show prev and next --}}
+	{{else}}
+	{{> home-of-innovation/contentPrevNext }}
+	{{/if}}
+
+{{!-- 
+
+BELOW is all the old stuff below from s9 need to knows project
+
+ - includes ...
+ - breadcrumbs
+ - find out more navigation (2nd level pages)
+ - back (used on mobile in place of breadcrumbs - i think)
+ - previous and next - used to navigate between detail pages (bottom level - mainly 3rd, some 2nd)
+
+--}}
+
+{{!-- 
+
+	{{ config.site }}
+	{{ config.subfolder }}
+
+<div>
+	{{ dtgen }}
+	<br/>
+	{{ site }}
+	<br/>
+	{{ subfolder }}
+	<br/>
+
+	{{ json breadcrumbs }}
+
+	<br/>
+	{{#each findoutmore}}
+		{{ this.title }}
+	{{/each}}
+	{{ json findoutmore }}
+
+	{{ json back }}
+	<br/>
+	{{ json prev }}
+	<br/>
+	{{ json next }}
+</div>
+
+
+	{{#each items}}
+		<p>{{ this.title }}</p>
+	{{/each}}
+
+ --}}
+
+
+
+	</section>
+
+	{{!-->components/findKx--}}
+
+	{{>components/socialMedia}}
+
+	{{>scripts }}
+
+</section>
+
+
+<!--#include virtual="/uk/aem/footer-pdp.html"-->

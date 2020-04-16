@@ -168,6 +168,277 @@ gulp.task('html', function () {
 
 })
 
+/* separate task and folder to keep everything separate */
+gulp.task('home-of-innovation', function () {
+
+	console.log('do home of innovation');
+
+	// the main site data ... needed for nav ...
+	var data = config.SRC_FOLDER + '/data/config.json'
+
+	//
+	var _HOI_FOLDER = 'home-of-innovation';
+
+	// ensure the content file exists ...
+	if ( fs.existsSync( path.join( config.SRC_FOLDER + '/' + _HOI_FOLDER + '/content.json' ) ) ) {
+
+		// construct the path
+		var contentPath = path.join( config.SRC_FOLDER + '/' + _HOI_FOLDER + '/content.json' )
+
+		// get as an object
+		var contentObject= JSON.parse(fs.readFileSync(contentPath, 'utf8'))
+
+		console.log(contentObject.items.length);
+
+		var homeURL = '/' + SITE + SUBFOLDER + '/' + _HOI_FOLDER + '/';
+		
+		var breadcrumbs = [];
+
+		var levelThreePages = [];
+
+		if (contentObject.items) {
+
+			var levelThreeIndex = 0;
+
+			for (var i = 0; i < contentObject.items.length; i++) {
+
+				if (contentObject.items[i].items) {
+
+					for (var j = 0; j < contentObject.items[i].items.length; j++) {
+
+						var levelThreePage = {};
+
+						// add the 'stuff' to the front of the url to 'help' (including level 2 details)
+						levelThreePage.url = homeURL + contentObject.items[i].url + '/' + contentObject.items[i].items[j].url;
+						levelThreePage.title = contentObject.items[i].items[j].title;
+
+						// add the level 3 page to the levelThreePages array - for use later for prev and next
+						levelThreePages.push(levelThreePage);
+						// increment the counter
+						levelThreeIndex++;
+
+					}
+
+				}
+				else {
+
+					var levelThreePage = {};
+
+					// add the 'stuff' to the front of the url to 'help'
+					levelThreePage.url = homeURL + contentObject.items[i].url;
+					levelThreePage.title = contentObject.items[i].title;
+
+					// add the level 3 page to the levelThreePages array - for use later for prev and next
+					levelThreePages.push(levelThreePage);
+					// increment the counter
+					levelThreeIndex++;
+
+				}
+
+			}
+
+			for (var i = 0; i < levelThreePages.length; i++) {
+				console.log(i + ' ' + levelThreePages[i].title + ' ' + levelThreePages[i].url);
+			}
+
+			levelThreeIndex = 0;
+
+			for (var i = 0; i < contentObject.items.length; i++) {
+
+				console.log(contentObject.items[i].title);
+
+				// level 2 ...
+
+				breadcrumbs = [
+					{
+						'title':'Home',
+						'url': homeURL
+					},
+					{
+						'title':contentObject.items[i].title,
+						'url': homeURL + contentObject.items[i].url
+					}
+				];
+
+				var prev, next = null;
+
+				if (contentObject.items[i].items) {
+					// this is a real level 2 ... so no prev and prev
+				}
+				else {
+					// this is really a level 3 ... so need to populate prev and next
+
+					// should be a function !!!! >>>
+
+					// get the index of the prev and next item for jump controls
+					var prevIndex = levelThreeIndex > 0 ? levelThreeIndex - 1 : levelThreePages.length - 1;
+					var nextIndex = levelThreeIndex < levelThreePages.length - 1 ? levelThreeIndex + 1 : 0;
+					// get the actual prev and next contentObject items
+					prev = levelThreePages[prevIndex];
+					next = levelThreePages[nextIndex];
+
+					console.log(prev.title + ' ' + prev.url);
+					console.log(next.title + ' ' + next.url);
+
+					levelThreeIndex++;
+
+					// <<< should be a function !!!!
+
+				}
+
+				gulp.src( config.SRC_FOLDER + '/' + _HOI_FOLDER + '/index.hbs' )
+					.pipe(handlebars({
+							helpers: config.SRC_FOLDER + '/templates/helpers/handlebarsHelpers.js',
+							partials: config.SRC_FOLDER + '/templates/partials/**/*.{html,js,hbs}',
+							bustCache: true,
+							data: {
+								'dtgen': new Date(),
+								'site': SITE,
+								'subfolder': SUBFOLDER + '/' + _HOI_FOLDER,
+								'breadcrumbs': breadcrumbs,
+								'findoutmore': contentObject.items,
+								'back': breadcrumbs[breadcrumbs.length - 2],
+								'prev': prev,
+								'next': next
+							}
+						}).data( data ).data( contentObject.items[i] )
+					)
+					.pipe(rename('index.html'))
+					.pipe(gulp.dest( config.BUILD_FOLDER + SITE + '/' + SUBFOLDER + '/' + _HOI_FOLDER + '/' + contentObject.items[i].url ))
+					.on('error', function(err) { log('Error building HTML templates', 'error') })
+					.on('end', function(err) { log('Compiled HTML templates') })
+
+
+				if (contentObject.items[i].items) {
+
+					for (var j = 0; j < contentObject.items[i].items.length; j++) {
+
+						console.log('- ' + contentObject.items[i].items[j].title);
+
+						// level 3 ...
+
+						breadcrumbs = [
+							{
+								'title':'Home',
+								'url': homeURL
+							},
+							{
+								'title':contentObject.items[i].title,
+								'url': homeURL + contentObject.items[i].url
+							},
+							{
+								'title':contentObject.items[i].items[j].title,
+								'url': homeURL + contentObject.items[i].url + '/' + contentObject.items[i].items[j].url
+							}
+						];
+
+						// should be a function !!!! >>>
+
+						// get the index of the prev and next item for jump controls
+						var prevIndex = levelThreeIndex > 0 ? levelThreeIndex - 1 : levelThreePages.length - 1;
+						var nextIndex = levelThreeIndex < levelThreePages.length - 1 ? levelThreeIndex + 1 : 0;
+						// get the actual prev and next contentObject items
+						var prev = levelThreePages[prevIndex];
+						var next = levelThreePages[nextIndex];
+
+						console.log(prev.title + ' ' + prev.url);
+						console.log(next.title + ' ' + next.url);
+
+						levelThreeIndex++;
+
+						// <<< should be a function !!!!
+
+						gulp.src( config.SRC_FOLDER + '/' + _HOI_FOLDER + '/index.hbs' )
+							.pipe(handlebars({
+									helpers: config.SRC_FOLDER + '/templates/helpers/handlebarsHelpers.js',
+									partials: config.SRC_FOLDER + '/templates/partials/**/*.{html,js,hbs}',
+									bustCache: true,
+									data: {
+										'dtgen': new Date(),
+										'site': SITE,
+										'subfolder': SUBFOLDER + '/' + _HOI_FOLDER,
+										'breadcrumbs': breadcrumbs,
+										'findoutmore': contentObject.items,
+										'back': breadcrumbs[breadcrumbs.length - 2],
+										'prev': prev,
+										'next': next
+
+									}
+								}).data( data ).data( contentObject.items[i].items[j] )
+							)
+							.pipe(rename('index.html'))
+							.pipe(gulp.dest( config.BUILD_FOLDER + SITE + '/' + SUBFOLDER + '/' + _HOI_FOLDER + '/' + contentObject.items[i].url + '/' + contentObject.items[i].items[j].url ))
+							.on('error', function(err) { log('Error building HTML templates', 'error') })
+							.on('end', function(err) { log('Compiled HTML templates') })
+
+					}
+
+				}
+
+			}
+
+		}
+
+
+
+
+		breadcrumbs = [
+			{
+				'title':'Home',
+				'url': homeURL
+			}
+		];
+
+		return gulp.src(contentPath )
+			.pipe(through.obj(function (file, enc, cb) {
+				/* Data as JSON from Copy Doc */
+				gulp.src( config.SRC_FOLDER + '/' + _HOI_FOLDER + '/index.hbs' )
+					.pipe(handlebars({
+							helpers: config.SRC_FOLDER + '/templates/helpers/handlebarsHelpers.js',
+							partials: config.SRC_FOLDER + '/templates/partials/**/*.{html,js,hbs}',
+							bustCache: true,
+							data: {
+								'dtgen': new Date(),
+								'site': SITE,
+								'subfolder': SUBFOLDER + '/' + _HOI_FOLDER,
+								'xbreadcrumbs': breadcrumbs,
+								'findoutmore':contentObject.items,
+								'epoch': (new Date).getTime(),
+								// 'author': gitConfigFile.user.name.split(' ')[0],
+							}
+						}).data( data ).data( contentObject )
+					)
+					.pipe(rename('index.html'))
+					.pipe(gulp.dest( config.BUILD_FOLDER + SITE + '/' + SUBFOLDER + '/' + _HOI_FOLDER ))
+					.on('error', function(err) { log('Error building HTML templates', 'error') })
+					.on('end', function(err) { log('Compiled HTML templates') })
+
+			}))
+
+
+
+//		// test building a page ...
+//		return gulp.src( config.SRC_FOLDER + _HOI_FOLDER + 'index.html' )
+//			.pipe(handlebars({
+//					helpers: config.SRC_FOLDER + '/templates/helpers/handlebarsHelpers.js',
+//					partials: config.SRC_FOLDER + '/templates/partials/**/*.{html,js,hbs}',
+//					bustCache: true,
+//					data: data // data passed in as a json file path
+//				}).data( contentObject ) // data passed in as an json object				
+//			)
+//			.pipe(gulp.dest( config.BUILD_FOLDER + SITE + '/' + SUBFOLDER + '/' + _HOI_FOLDER ))
+
+
+
+	}
+	else {
+
+		console.log('MISSING home-of-innovation copy.json');
+	
+	}
+
+})
+
 // minify HTML
 //  https://www.npmjs.com/package/gulp-html-minifier
 //  https://github.com/kangax/html-minifier

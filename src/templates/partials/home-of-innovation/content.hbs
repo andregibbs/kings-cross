@@ -1,0 +1,17 @@
+
+<div id="hoiContent">
+{{#each content}}
+	{{#if_equals this.type 'kv'}}
+		{{> home-of-innovation/contentKv this }}
+	{{/if_equals}}
+	{{#if_equals this.type 'headline'}}
+		{{> home-of-innovation/contentHeadline this }}
+	{{/if_equals}}
+	{{#if_equals this.type 'intro'}}
+		{{> home-of-innovation/contentIntro this }}
+	{{/if_equals}}
+	{{#if_equals this.type 'paras'}}
+		{{> home-of-innovation/contentParas this }}
+	{{/if_equals}}
+{{/each}}
+</div>

@@ -1,0 +1,19 @@
+<div class="contentPagination">
+
+    <a data-omni-type="microsite" data-omni="{{ site }}:{{ subfolder }}:previous:{{to_lower_case title }}:{{to_lower_case prev.title }}" class="pagination__item--link pagination__item--prev" href="{{ prev.url }}">
+        <span class="arrow">&lt;</span>
+        <div class="direction-container">
+            <span class="direction">Previous</span><br>
+            <span class="page-title">{{ prev.title }}</span>
+        </div>
+    </a>
+
+    <a data-omni-type="microsite" data-omni="{{ site }}:{{ subfolder }}:next:{{to_lower_case title }}:{{to_lower_case next.title }}" class="pagination__item--link pagination__item--next" href="{{ next.url }}">
+        <div class="direction-container">
+            <span class="direction">Next</span><br>
+            <span class="page-title">{{ next.title }}</span>
+        </div>
+        <span class="arrow">&gt;</span>
+    </a>
+
+</div>
