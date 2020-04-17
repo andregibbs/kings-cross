@@ -187,7 +187,13 @@ function buildHomeOfInnovation() {
 		var contentPath = path.join( config.SRC_FOLDER + '/' + _HOI_FOLDER + '/content.json' )
 
 		// get as an object
-		var contentObject= JSON.parse(fs.readFileSync(contentPath, 'utf8'))
+		var contentObject;
+    try {
+      contentObject = JSON.parse(fs.readFileSync(contentPath, 'utf8'))
+    } catch(e) {
+      console.log(e)
+      return false
+    }
 
 		console.log(contentObject.items.length);
 
