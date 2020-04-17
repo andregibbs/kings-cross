@@ -1,65 +1,37 @@
+// Import required files from base kx site
 
-.contentItems {
-	.contentItem {
-		float:left;
-		display:block;
-		overflow:hidden;
-		padding:20px;
-		background-color: #ddd;
-		width:50%;
-		a {
-			h2 {
-				color:green;
-			}
-			img {
-				max-height:50px;
-			}
-		}
-	}
-}
+@import "../base/variables";
 
+// Mixins
+@import "../mixins/clearfix";
+@import "../mixins/typography";
+@import "../mixins/vw";
 
-#hoiContent {
-	width:100%;
-	max-width: 1440px;
-	margin: 0 auto;
+// Base
+@import "../base/base";
+@import "../base/typography";
 
-	.contentKv {
+// Helpers
+@import "../helpers/helpers";
 
-	}
-	.contentHeadline {
-		h3 {
-			font-size: 30px;
-			padding: 20px 0;
-			text-align: left;
-		}
-	}
-	.contentIntro {
-		img {
-			max-height: 100px;
-			width: 50%;
-		}
-		h5 {
-			font-size: 20px;
-			color: purple;
-			padding: 10px 0;
-		}
-		p {
-			font-size: 16px;
-			color: blue;
-			text-align: left;
-			padding: 5px 0;
-			margin: 0;
-		}
-	}
-	.contentParas {
-		p {
-			font-size: 16px;
-			color: #fff;
-			text-align: left;
-			padding: 5px 0;
-			margin: 0;
-		}
-	}
+@import "../components/nav";
+@import "../components/social";
+
+// wrap all components in hoi class
+
+.cheil-static.home-of-innovation {
+
+  @import "../components/home-of-innovation/content";
+  @import "../components/home-of-innovation/contentBreadcrumbs";
+  @import "../components/home-of-innovation/contentFindOutMore";
+  @import "../components/home-of-innovation/contentGallery";
+  @import "../components/home-of-innovation/contentGroup";
+  @import "../components/home-of-innovation/contentHeadline";
+  @import "../components/home-of-innovation/contentIntro";
+  @import "../components/home-of-innovation/contentItems";
+  @import "../components/home-of-innovation/contentKv";
+  @import "../components/home-of-innovation/contentPagination";
+  @import "../components/home-of-innovation/contentParas";
+  @import "../components/home-of-innovation/contentRelated";
 
 }

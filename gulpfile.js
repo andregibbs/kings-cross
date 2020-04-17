@@ -168,16 +168,17 @@ gulp.task('html', function () {
 
 })
 
+// HOI folder, moved to script scope as its used in multiple tasks
+var _HOI_FOLDER = 'home-of-innovation';
+
 /* separate task and folder to keep everything separate */
-gulp.task('home-of-innovation', function () {
+// switched from gulp task to function (causing issues with watch)
+function buildHomeOfInnovation() {
 
 	console.log('do home of innovation');
 
 	// the main site data ... needed for nav ...
 	var data = config.SRC_FOLDER + '/data/config.json'
-
-	//
-	var _HOI_FOLDER = 'home-of-innovation';
 
 	// ensure the content file exists ...
 	if ( fs.existsSync( path.join( config.SRC_FOLDER + '/' + _HOI_FOLDER + '/content.json' ) ) ) {
@@ -191,7 +192,7 @@ gulp.task('home-of-innovation', function () {
 		console.log(contentObject.items.length);
 
 		var homeURL = '/' + SITE + SUBFOLDER + '/' + _HOI_FOLDER + '/';
-		
+
 		var breadcrumbs = [];
 
 		var levelThreePages = [];
@@ -481,7 +482,7 @@ gulp.task('home-of-innovation', function () {
 //					partials: config.SRC_FOLDER + '/templates/partials/**/*.{html,js,hbs}',
 //					bustCache: true,
 //					data: data // data passed in as a json file path
-//				}).data( contentObject ) // data passed in as an json object				
+//				}).data( contentObject ) // data passed in as an json object
 //			)
 //			.pipe(gulp.dest( config.BUILD_FOLDER + SITE + '/' + SUBFOLDER + '/' + _HOI_FOLDER ))
 
@@ -491,9 +492,43 @@ gulp.task('home-of-innovation', function () {
 	else {
 
 		console.log('MISSING home-of-innovation copy.json');
-	
+
 	}
 
+// })
+}
+
+// Home Of Innovation Build Task
+// wrapping build function due to watch issues
+gulp.task('home-of-innovation-build', () => {
+  buildHomeOfInnovation()
+  return
+})
+
+// Home Of Innovation SCSS Task
+gulp.task('home-of-innovation-scss', () => {
+
+  // HOI SCSS
+  return gulp.src(config.SRC_FOLDER + '/scss/'+_HOI_FOLDER+'/index.scss')
+    .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
+      .pipe(autoprefixer({
+      grid: true,
+          browsers: ['last 2 versions'],
+          cascade: false
+      }))
+      .pipe(gulp.dest( config.BUILD_FOLDER + SITE + '/' + SUBFOLDER + '/css/' + _HOI_FOLDER ))
+      .on('end', function() {
+        log('HOI SCSS Compiled')
+      })
+
+})
+
+// Home Of Innovation Watch Task
+gulp.task('home-of-innovation-watch', () => {
+  gulp.watch( config.SRC_FOLDER + '/' + _HOI_FOLDER + '/**/*', ['home-of-innovation-build'] )
+  gulp.watch( config.SRC_FOLDER + '/scss/**/*.scss', ['home-of-innovation-scss'] )
+  gulp.watch( config.SRC_FOLDER + '/templates/partials/' + _HOI_FOLDER + '/**/*', ['home-of-innovation-build'] )
+  log('Watching HOI folder')
 })
 
 // minify HTML
@@ -537,6 +572,8 @@ gulp.task('watch', function () {
 	log('Watching src for changes... ')
 
 })
+
+gulp.task('hoi', ['home-of-innovation-scss', 'home-of-innovation-build', 'home-of-innovation-watch'])
 
 gulp.task('production', sequence('delete-build', 'copy-assets', 'scss', 'buildJS', 'html') )
 gulp.task('development', sequence('copy-assets', 'scss', 'buildJS', 'html', 'minify') )

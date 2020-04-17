@@ -1,8 +1,8 @@
 <!--#include virtual="/uk/aem/header-pdp.html"-->
 
-<section class="cheil-static">
+<section class="cheil-static home-of-innovation">
 
-	{{>stylesheet}}
+	{{> home-of-innovation/stylesheet}}
 
 	{{>components/nav }}
 
@@ -21,10 +21,10 @@
 	{{#if items}}
 	{{!-- don't show prev and next --}}
 	{{else}}
-	{{> home-of-innovation/contentPrevNext }}
+	 {{> home-of-innovation/contentPagination }}
 	{{/if}}
 
-{{!-- 
+{{!--
 
 BELOW is all the old stuff below from s9 need to knows project
 
@@ -36,7 +36,7 @@ BELOW is all the old stuff below from s9 need to knows project
 
 --}}
 
-{{!-- 
+{{!--
 
 	{{ config.site }}
 	{{ config.subfolder }}

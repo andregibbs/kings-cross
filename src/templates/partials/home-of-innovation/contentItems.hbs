@@ -1,15 +1,15 @@
-<div class="contentItems">
-{{#each items }}
-	{{#if this.unlisted }}
-	{{!-- unlisted - so don't show on listing page --}}
-	{{else}}
-	<div class="contentItem">
-		<a data-omni-type="microsite" data-omni="{{ ../site }}:{{ ../subfolder }}:block:{{to_lower_case this.title }}" href="{{{ this.url }}}">
-			<h2>{{{ this.title }}}</h2>
-			<img src="//images.samsung.com/is/image/samsung/p5/uk/galaxy-s9-the-need-to-know/icons/{{ this.image }}.jpg?$ORIGIN_JPG$" alt="{{ this.title }}">
-			<div>{{{ this.text }}}</div>
-		</a>
-	</div>
-	{{/if}}
-{{/each}}
+<div class="hoiContentItems">
+  {{#each items }}
+  	{{#if this.unlisted }}
+  	{{!-- unlisted - so don't show on listing page --}}
+  	{{else}}
+  	<div class="hoiContentItem">
+  		<a data-omni-type="microsite" data-omni="{{ ../site }}:{{ ../subfolder }}:block:{{to_lower_case this.title }}" href="{{{ this.url }}}">
+  			<h2>{{{ this.title }}}</h2>
+  			<img src="//images.samsung.com/is/image/samsung/p5/uk/galaxy-s9-the-need-to-know/icons/{{ this.image }}.jpg?$ORIGIN_JPG$" alt="{{ this.title }}">
+  			<div>{{{ this.text }}}</div>
+  		</a>
+  	</div>
+  	{{/if}}
+  {{/each}}
 </div>

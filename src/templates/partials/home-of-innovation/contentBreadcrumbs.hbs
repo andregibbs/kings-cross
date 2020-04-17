@@ -1,5 +1,5 @@
-<div>
-	<div class="contentBreadcrumbs">
+<div class="hoiContentBreadcrumbs">
+	<div>
 	    {{#each breadcrumbs }}
 	        {{#if @index }}&nbsp;/&nbsp;{{/if}}
 	        <a class="contentBreadcrumbsLink" data-omni-type="microsite" data-omni="{{ ../site }}:{{ ../subfolder }}:breadcrumbs:{{ @index }}:{{to_lower_case this.title }}" href="{{ this.url }}">{{ this.title }}</a>

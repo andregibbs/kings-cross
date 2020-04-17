@@ -17,7 +17,7 @@
                 "title": "Moving to a Galaxy S9 <br/>is easy.",
                 "subTitle": "Let our UK experts set you up.",
                 "ctaCopy": "FIND OUT MORE",
-                "ctaLink": "https://www.samsung.com/uk/samsung-set-up/" 
+                "ctaLink": "https://www.samsung.com/uk/samsung-set-up/"
             },
             "items": [
                 {
@@ -29,7 +29,7 @@
                         "title": "Setting up your new phone is easy.",
                         "subTitle": "Let our UK experts set you up.",
                         "ctaCopy": "FIND OUT MORE",
-                        "ctaLink": "https://www.samsung.com/uk/samsung-set-up/" 
+                        "ctaLink": "https://www.samsung.com/uk/samsung-set-up/"
                     },
                     "disclaimer": [
                         "In-box items may vary by country or carrier."
@@ -38,7 +38,7 @@
 
                     "content": [
 
-                        { 
+                        {
                             "type": "headline",
                             "copy": "Creativity One headline"
                         }
@@ -55,7 +55,7 @@
                         "title": "Unlocking your phone is easy.",
                         "subTitle": "Let our UK experts set you up.",
                         "ctaCopy": "FIND OUT MORE",
-                        "ctaLink": "https://www.samsung.com/uk/samsung-set-up/" 
+                        "ctaLink": "https://www.samsung.com/uk/samsung-set-up/"
                     },
                     "disclaimer": [
                         "Images simulated for illustrative purposes.",
@@ -65,13 +65,13 @@
 
                     "content": [
 
-                        { 
+                        {
                             "type": "headline",
                             "copy": "Creativity Two headline"
                         }
 
                     ]
-                    
+
 
                 },
                 {
@@ -94,7 +94,7 @@
                     },
 
                     "content": [
-                        { 
+                        {
                             "type": "headline",
                             "copy": "Creativity Three headline"
                         },
@@ -106,7 +106,7 @@
                             ]
                         },
 
-                        { 
+                        {
                             "type": "gallery",
                             "title": "Gallery Title",
                             "medias": [
@@ -145,7 +145,7 @@
                     },
 
                     "content": [
-                        { 
+                        {
                             "type": "headline",
                             "copy": "Creativity Four headline"
                         }
@@ -164,7 +164,7 @@
                     },
 
                     "content": [
-                        { 
+                        {
                             "type": "headline",
                             "copy": "Creativity Five headline"
                         }
@@ -185,7 +185,7 @@
                 "title": "Moving to a Galaxy S9 <br/>is easy.",
                 "subTitle": "Let our UK experts set you up.",
                 "ctaCopy": "FIND OUT MORE",
-                "ctaLink": "https://www.samsung.com/uk/samsung-set-up/" 
+                "ctaLink": "https://www.samsung.com/uk/samsung-set-up/"
             },
             "items": [
                 {
@@ -197,7 +197,7 @@
                         "title": "Setting up your new phone is easy.",
                         "subTitle": "Let our UK experts set you up.",
                         "ctaCopy": "FIND OUT MORE",
-                        "ctaLink": "https://www.samsung.com/uk/samsung-set-up/" 
+                        "ctaLink": "https://www.samsung.com/uk/samsung-set-up/"
                     },
                     "disclaimer": [
                         "In-box items may vary by country or carrier."
@@ -206,13 +206,13 @@
 
                     "content": [
 
-                        { 
+                        {
                             "type": "headline",
                             "copy": "Health One headline"
                         }
 
                     ]
-                    
+
 
                 },
                 {
@@ -224,7 +224,7 @@
                         "title": "Unlocking your phone is easy.",
                         "subTitle": "Let our UK experts set you up.",
                         "ctaCopy": "FIND OUT MORE",
-                        "ctaLink": "https://www.samsung.com/uk/samsung-set-up/" 
+                        "ctaLink": "https://www.samsung.com/uk/samsung-set-up/"
                     },
                     "disclaimer": [
                         "Images simulated for illustrative purposes.",
@@ -239,18 +239,18 @@
                             "giving|giving-1"
                         ]
                     },
-                    
+
                     "content": [
 
-                        { 
+                        {
                             "type": "headline",
                             "copy": "Health Two headline"
                         },
-                        { 
+                        {
                             "type": "kv",
                             "image": "//images.samsung.com/is/image/samsung/p5/uk/smartphones/all-smartphones/MMP-PF-S20-desk-new.jpg?$ORIGIN_JPG$"
                         },
-                        { 
+                        {
                             "type": "intro",
                             "image": "//images.samsung.com/is/image/samsung/p5/uk/galaxy-s9-the-need-to-know/icons/whats-in-the-box.jpg?$ORIGIN_JPG$",
                             "copy": "first intro with image",
@@ -264,11 +264,11 @@
                                 "Three Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                             ]
                         },
-                        { 
+                        {
                             "type": "headline",
                             "copy": "second headline"
                         },
-                        { 
+                        {
                             "type": "intro",
                             "copy": "second intro no image"
                         },
@@ -279,7 +279,7 @@
                                 "Two Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                             ]
                         },
-                        { 
+                        {
                             "type": "headline",
                             "copy": "third headline"
                         },
@@ -308,7 +308,7 @@
                 "title": "Moving to a Galaxy S9 <br/>is easy.",
                 "subTitle": "Let our UK experts set you up.",
                 "ctaCopy": "FIND OUT MORE",
-                "ctaLink": "https://www.samsung.com/uk/samsung-set-up/" 
+                "ctaLink": "https://www.samsung.com/uk/samsung-set-up/"
             },
             "items": [
                 {
@@ -320,7 +320,7 @@
                         "title": "Setting up your new phone is easy.",
                         "subTitle": "Let our UK experts set you up.",
                         "ctaCopy": "FIND OUT MORE",
-                        "ctaLink": "https://www.samsung.com/uk/samsung-set-up/" 
+                        "ctaLink": "https://www.samsung.com/uk/samsung-set-up/"
                     },
                     "disclaimer": [
                         "In-box items may vary by country or carrier."
@@ -329,7 +329,7 @@
 
                     "content": [
 
-                        { 
+                        {
                             "type": "headline",
                             "copy": "Entertainment One headline"
                         }
@@ -346,7 +346,7 @@
                         "title": "Setting up your new phone is easy.",
                         "subTitle": "Let our UK experts set you up.",
                         "ctaCopy": "FIND OUT MORE",
-                        "ctaLink": "https://www.samsung.com/uk/samsung-set-up/" 
+                        "ctaLink": "https://www.samsung.com/uk/samsung-set-up/"
                     },
                     "disclaimer": [
                         "In-box items may vary by country or carrier."
@@ -355,7 +355,7 @@
 
                     "content": [
 
-                        { 
+                        {
                             "type": "headline",
                             "copy": "Entertainment Two headline"
                         }
@@ -372,7 +372,7 @@
                         "title": "Setting up your new phone is easy.",
                         "subTitle": "Let our UK experts set you up.",
                         "ctaCopy": "FIND OUT MORE",
-                        "ctaLink": "https://www.samsung.com/uk/samsung-set-up/" 
+                        "ctaLink": "https://www.samsung.com/uk/samsung-set-up/"
                     },
                     "disclaimer": [
                         "In-box items may vary by country or carrier."
@@ -381,7 +381,7 @@
 
                     "content": [
 
-                        { 
+                        {
                             "type": "headline",
                             "copy": "Entertainment Three headline"
                         }
@@ -402,7 +402,7 @@
                 "title": "Moving to a Galaxy S9 <br/>is easy.",
                 "subTitle": "Let our UK experts set you up.",
                 "ctaCopy": "FIND OUT MORE",
-                "ctaLink": "https://www.samsung.com/uk/samsung-set-up/" 
+                "ctaLink": "https://www.samsung.com/uk/samsung-set-up/"
             },
             "items": [
                 {
@@ -414,7 +414,7 @@
                         "title": "Setting up your new phone is easy.",
                         "subTitle": "Let our UK experts set you up.",
                         "ctaCopy": "FIND OUT MORE",
-                        "ctaLink": "https://www.samsung.com/uk/samsung-set-up/" 
+                        "ctaLink": "https://www.samsung.com/uk/samsung-set-up/"
                     },
                     "disclaimer": [
                         "In-box items may vary by country or carrier."
@@ -434,7 +434,7 @@
 
                     "content": [
 
-                        { 
+                        {
                             "type": "headline",
                             "copy": "Giving One headline"
                         }
@@ -443,7 +443,7 @@
 
                 }
             ]
-        }            
+        }
 
     ]
 }

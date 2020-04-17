@@ -1,12 +1,12 @@
 <div>*** RELATED START ***</div>
 {{!-- MAYBE BETTER TO HAVE SOME SORT OF RELATED TAGGING SYSTEM --}}
-<div class="contentRelated">
-    <div class="contentRelatedTitle">
+<div class="hoiContentRelated">
+    <div class="hoiContentRelated__Title">
         {{ title }}
     </div>
-    <div class="contentRelatedItems">
+    <div class="hoiContentRelated__Items">
         {{#each items }}
-        <div class="contentRelatedItem">
+        <div class="hoiContentRelated__Item">
             {{ @index }} | {{ this.title }}
             <br/>
             {{!-- link added to item in gulpfile --}}

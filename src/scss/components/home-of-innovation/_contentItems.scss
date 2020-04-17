@@ -1,0 +1,20 @@
+.hoiContentItems {
+
+  .hoiContentItem {
+    float:left;
+    display:block;
+    overflow:hidden;
+    padding:20px;
+    background-color: #ddd;
+    width:50%;
+    a {
+      h2 {
+        color:green;
+      }
+      img {
+        max-height:50px;
+      }
+    }
+  }
+
+}

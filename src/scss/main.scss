@@ -24,7 +24,7 @@
   @import "components/templateScripts/eventTile";
   @import "components/templateScripts/singleEvent";
 
-  
+
   // Pages
   @import "pages/home";
   @import "pages/discover";
@@ -37,7 +37,7 @@
   @import "pages/sign-up";
 
   // Home of Innovation
-  @import "home-of-innovation/index"
+  // @import "home-of-innovation/index"
 
 }
 // Components
@@ -56,7 +56,7 @@
 
   &__recently {
     &.fadeIn {
-      
+
       -webkit-animation: animat_show-recently 1s;
       animation: animat_show-recently 1s;
       visibility: visible !important;
@@ -68,24 +68,24 @@
     }
   }
   &#slot_1.fadeOut {
-    
+
     -webkit-animation: animat_hide-recently-slot1 1s;
     animation: animat_hide-recently-slot1 1s;
-    
+
   }
 
 
   &#slot_2.fadeOut {
     -webkit-animation: animat_hide-recently-slot2 0.7s;
     animation: animat_hide-recently-slot2 0.7s;
-   
+
   }
   &#slot_3.fadeOut {
     -webkit-animation: animat_hide-recently-slot3 0.7s;
     animation: animat_hide-recently-slot3 0.7s;
-   
+
   }
-    
+
 }
 
 .fadeIn:not(.star__recently){
@@ -111,7 +111,7 @@
     opacity:0;
     transform: translate(-15%, 0%);
   }
-  
+
   100%{
     opacity:1;
     transform: translate(-20%, 0);
@@ -123,7 +123,7 @@
     opacity:0;
     transform: translate(0%, 5%);
   }
-  
+
   100%{
     opacity:1;
     transform: translate(0%, 0);
@@ -136,13 +136,13 @@
 }
 
 @-webkit-keyframes animat_hide-recently-slot1{
-  
+
   0%{
     opacity:1;
     transform: translate(-20%, 0);
     visibility: visible;
   }
-  
+
   100%{
     opacity:0;
     transform: translate(-15%, 0);
@@ -155,7 +155,7 @@
     transform: translate(0%, 0);
     visibility: visible;
   }
-  
+
   100%{
     opacity:0;
     transform: translate(0%, -5%);
@@ -168,7 +168,7 @@
     transform: translate(0%, 0%);
     visibility: visible;
   }
-  
+
   100%{
     opacity:0;
     transform: translate(0%, 5%);

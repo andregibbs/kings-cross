@@ -1,12 +1,12 @@
 
 <div>*** GALLERY START ***</div>
-<div class="contentGallery">
-    <div class="contentGalleryTitle">
+<div class="hoiContentGallery">
+    <div class="hoiContentGallery__Title">
         {{ title }}
     </div>
-    <div class="contentGalleryMedias">
+    <div class="hoiContentGallery__Medias">
         {{#each medias }}
-        <div class="contentGalleryMedia {{ this.type }}">
+        <div class="hoiContentGallery__Media {{ this.type }}">
             {{ @index }} | {{ this.type }} - {{ this.title }}
             <br/>
             <img style="width:100px;" src="{{ this.thumb }}"/>

@@ -1,16 +1,16 @@
-<div class="contentFinfOutMore">
+<div class="hoiContentFindOutMore">
 
-	<button class="contentFinfOutMoreButton">Find out more</button>
+	<button class="hoiContentFindOutMore__Button">Find out more</button>
 
-	<div class="contentFinfOutMoreItems">
-		<ul class="contentFinfOutMoreList">
+	<div class="hoiContentFindOutMore__Items">
+		<ul class="hoiContentFindOutMore__List">
 			{{#each findoutmore }}
 				{{!-- {{#if @index }}&nbsp;|&nbsp;{{/if}} --}}
-				<li class="contentFinfOutMoreList-item">
-					<a class="contentFinfOutMoreAnchor" href="/{{ ../site }}/{{ ../subfolder }}/{{ this.url }}">{{ this.title }}</a>
+				<li class="hoiContentFindOutMore__ListItem">
+					<a class="hoiContentFindOutMore__Anchor" href="/{{ ../site }}/{{ ../subfolder }}/{{ this.url }}">{{ this.title }}</a>
 				</li>
 			{{/each}}
 		</ul>
-		
+
 	</div>
 </div>
