@@ -315,6 +315,63 @@ gulp.task('home-of-innovation', function () {
 
 						console.log('- ' + contentObject.items[i].items[j].title);
 
+						// group stuff
+
+						if (contentObject.items[i].items[j].group) {
+							console.log('GROUP - ' + JSON.stringify(contentObject.items[i].items[j].group));
+							// load up groupItmes ...
+							var groupItems = [];
+							// loop through all 3rd level items and if group is the same add it to groupItems
+							// ONLY if NOT this item
+							for (var gi = 0; gi < contentObject.items.length; gi++) {
+								for (var gj = 0; gj < contentObject.items[gi].items.length; gj++) {
+									// item has a group, it has the same code but is NOT the same group object
+									if (contentObject.items[gi].items[gj].group &&
+										contentObject.items[gi].items[gj].group.code == contentObject.items[i].items[j].group.code &&
+										contentObject.items[gi].items[gj].group != contentObject.items[i].items[j].group) {
+										// add the item to groupItems
+										groupItems.push(contentObject.items[gi].items[gj]);
+										// then add groupItem.link
+										groupItems[groupItems.length - 1].link = homeURL + contentObject.items[gi].url + '/' + contentObject.items[i].items[gj].url;
+									}
+								}
+							}
+							contentObject.items[i].items[j].group.items = groupItems;
+						}
+
+						// related stuff
+
+						if (contentObject.items[i].items[j].related) {
+							console.log('RELATED - ' + JSON.stringify(contentObject.items[i].items[j].related));
+							// load up groupItmes ...
+							var relatedItems = [];
+							// loop through the ids
+							for (var ctr = 0; ctr < contentObject.items[i].items[j].related.ids.length; ctr++) {
+								var id = contentObject.items[i].items[j].related.ids[ctr];
+								var bits = id.split('|');
+								// make sure there are 2 bits to the id
+								if (bits.length == 2) {
+									// loop through all 3rd level items and if id matches (id = [i]url | [j]url ) add it to relatedItems
+									for (var ri = 0; ri < contentObject.items.length; ri++) {
+										for (var rj = 0; rj < contentObject.items[ri].items.length; rj++) {
+											// item has a group, it has the same code but is NOT the same group object
+											if (contentObject.items[ri].url == bits[0] &&
+												contentObject.items[ri].items[rj].url == bits[1]) {
+												// add the item to relatedItems
+												relatedItems.push(contentObject.items[ri].items[rj]);
+												// then add groupItem.link
+												relatedItems[relatedItems.length - 1].link = homeURL + contentObject.items[ri].url + '/' + contentObject.items[ri].items[rj].url;
+											}
+										}
+									}
+									contentObject.items[i].items[j].related.items = relatedItems;
+								}
+							}
+						}
+
+
+
+
 						// level 3 ...
 
 						breadcrumbs = [

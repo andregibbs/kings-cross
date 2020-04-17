@@ -1,0 +1,23 @@
+
+<div>*** GALLERY START ***</div>
+<div class="contentGallery">
+    <div class="contentGalleryTitle">
+        {{ title }}
+    </div>
+    <div class="contentGalleryMedias">
+        {{#each medias }}
+        <div class="contentGalleryMedia {{ this.type }}">
+            {{ @index }} | {{ this.type }} - {{ this.title }}
+            <br/>
+            <img style="width:100px;" src="{{ this.thumb }}"/>
+            {{#if this.youtubeid }}
+                <br/>
+                <a href="https://www.youtube.com/watch?v={{ this.youtubeid }}" target="_blank">
+                    Link to YT - should show in a lightbox
+                </a>
+            {{/if}}
+        </div>
+        {{/each}}
+    </div>
+</div>
+<div>*** GALLERY END ***</div>

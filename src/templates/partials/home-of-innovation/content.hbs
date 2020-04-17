@@ -13,5 +13,16 @@
 	{{#if_equals this.type 'paras'}}
 		{{> home-of-innovation/contentParas this }}
 	{{/if_equals}}
+	{{#if_equals this.type 'gallery'}}
+		{{> home-of-innovation/contentGallery this }}
+	{{/if_equals}}
 {{/each}}
 </div>
+
+{{#if group}}
+	{{> home-of-innovation/contentGroup group }}
+{{/if}}
+
+{{#if related}}
+	{{> home-of-innovation/contentRelated related }}
+{{/if}}

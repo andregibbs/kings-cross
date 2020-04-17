@@ -1,0 +1,17 @@
+<div>*** GROUP START ***</div>
+<div class="contentGroup">
+    <div class="contentGroupTitle">
+        {{ title }} ({{ code }})
+    </div>
+    <div class="contentGroupItems">
+        {{#each items }}
+        <div class="contentGroupItem">
+            {{ @index }} | {{ this.title }}
+            <br/>
+            {{!-- link added to item in gulpfile --}}
+            <a href="{{ this.link }}">LINK TO {{ this.title }}</a>
+        </div>
+        {{/each}}
+    </div>
+</div>
+<div>*** GROUP END ***</div>

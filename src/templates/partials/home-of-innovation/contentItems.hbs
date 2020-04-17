@@ -1,5 +1,8 @@
 <div class="contentItems">
 {{#each items }}
+	{{#if this.unlisted }}
+	{{!-- unlisted - so don't show on listing page --}}
+	{{else}}
 	<div class="contentItem">
 		<a data-omni-type="microsite" data-omni="{{ ../site }}:{{ ../subfolder }}:block:{{to_lower_case this.title }}" href="{{{ this.url }}}">
 			<h2>{{{ this.title }}}</h2>
@@ -7,5 +10,6 @@
 			<div>{{{ this.text }}}</div>
 		</a>
 	</div>
+	{{/if}}
 {{/each}}
 </div>
