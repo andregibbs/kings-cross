@@ -1,3 +1,49 @@
-<div class="hoiContentKv">
-	<img src="{{ this.image }}"/>
+{{!--
+
+  JSON Model
+
+  {
+    "type": "kv",
+    "image": image_url
+    "style": {
+      "desktop": "left" | "top" | "right"  (default: left)
+      "mobile": "top" | "bottom"  (default: top)
+    }
+  }
+
+
+  }
+
+--}}
+
+<div class="hoiContentKv
+  {{#if this.style}}
+    {{#if this.style.desktop}}
+      hoiContentKv--d-{{ this.style.desktop }}
+    {{else}}
+      hoiContentKv--d-left
+    {{/if}}
+    {{#if this.style.mobile}}
+      hoiContentKv--m-{{ this.style.mobile }}
+    {{else}}
+      hoiContentKv--m-top
+    {{/if}}
+  {{else}}
+    hoiContentKv--d-Left
+    hoiContentKv--m-top
+  {{/if}}
+">
+
+  <div class="hoiContentKv__Image">
+  	<img
+      src="{{ this.image }}"
+    />
+  </div>
+
+  <div class="hoiContentKv__Content">
+
+    {{> home-of-innovation/content this }}
+
+  </div>
+
 </div>

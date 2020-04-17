@@ -19,6 +19,12 @@
 
 // wrap all components in hoi class
 
+$padding-desktop: $p-borders-desktop * 1px;
+$padding-mobile: $p-borders-mobile * 1px;
+
+$margin-desktop: $m-borders-desktop * 1px;
+$margin-mobile: $m-borders-mobile * 1px;
+
 .cheil-static.home-of-innovation {
 
   @import "../components/home-of-innovation/content";
@@ -33,5 +39,6 @@
   @import "../components/home-of-innovation/contentPagination";
   @import "../components/home-of-innovation/contentParas";
   @import "../components/home-of-innovation/contentRelated";
+  @import "../components/home-of-innovation/contentSpacer";
 
 }

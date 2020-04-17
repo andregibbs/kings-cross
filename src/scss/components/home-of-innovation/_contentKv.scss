@@ -1,3 +1,63 @@
-.hoi-contentKv {
+.hoiContentKv {
+  width: 100%;
+}
+
+.hoiContentKv__Image {
+  display: block;
+}
+
+.hoiContentKv__Content {
+  padding: $padding-mobile;
+}
+
+// Mobile Modfiers
+.hoiContentKv--m-top,
+.hoiContentKv--m-bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.hoiContentKv--m-bottom {
+  .hoiContentKv__Content {
+    order: -1
+  }
+}
+
+
+@media screen and (min-width: $mobile) {
+
+  .hoiContentKv__Content {
+    padding: $padding-desktop;
+  }
+
+  // Destop Modfiers
+  // Left & Right Style
+  .hoiContentKv--d-left,
+  .hoiContentKv--d-right {
+    display: flex;
+    flex-direction: row;
+
+    .hoiContentKv__Image,
+    .hoiContentKv__Content {
+      flex-grow: 1;
+      width: 50%;
+    }
+
+    .hoiContentKv__Content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  // Destop Right Style
+  .hoiContentKv--d-right {
+
+    .hoiContentKv__Content {
+      order: -1;
+    }
+  }
+
+
 
 }

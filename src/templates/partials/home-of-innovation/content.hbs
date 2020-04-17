@@ -16,8 +16,10 @@
   	{{#if_equals this.type 'gallery'}}
   		{{> home-of-innovation/contentGallery this }}
   	{{/if_equals}}
+    {{#if_equals this.type 'spacer'}}
+  		{{> home-of-innovation/contentSpacer this }}
+  	{{/if_equals}}
   {{/each}}
-  </div>
 
   {{#if group}}
   	{{> home-of-innovation/contentGroup group }}

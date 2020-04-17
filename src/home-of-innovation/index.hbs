@@ -4,10 +4,7 @@
 
 	{{> home-of-innovation/stylesheet}}
 
-	{{>components/nav }}
-
-	{{!-- need to address 'copy' class here --}}
-	<section class="section copy">
+	{{> components/nav }}
 
 	{{> home-of-innovation/contentBreadcrumbs }}
 
@@ -17,12 +14,9 @@
 
 	{{> home-of-innovation/content }}
 
-
-	{{#if items}}
-	{{!-- don't show prev and next --}}
-	{{else}}
+	{{#unless items}}
 	 {{> home-of-innovation/contentPagination }}
-	{{/if}}
+	{{/unless}}
 
 {{!--
 
