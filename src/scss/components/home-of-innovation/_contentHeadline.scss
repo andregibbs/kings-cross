@@ -1,7 +1,16 @@
 .hoiContentHeadline {
-  h3 {
-    font-size: 30px;
-    padding: 20px 0;
-    text-align: left;
-  }
+  // padding-left: $padding-desktop;
+  // padding-right: $padding-desktop;
+}
+
+.hoiContentHeadline--align-left {
+  text-align: left;
+}
+
+.hoiContentHeadline--align-center {
+  text-align: center;
+}
+
+.hoiContentHeadline--align-right {
+  text-align: right;
 }

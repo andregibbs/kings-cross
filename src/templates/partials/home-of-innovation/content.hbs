@@ -1,6 +1,7 @@
 
 <div class="hoiContent">
-  {{#each content}}
+
+  {{#each components}}
   	{{#if_equals this.type 'kv'}}
   		{{> home-of-innovation/contentKv this }}
   	{{/if_equals}}
@@ -19,13 +20,15 @@
     {{#if_equals this.type 'spacer'}}
   		{{> home-of-innovation/contentSpacer this }}
   	{{/if_equals}}
+    {{#if_equals this.type 'group'}}
+    	{{> home-of-innovation/contentGroup this }}
+    {{/if_equals}}
+    {{#if_equals this.type 'related' }}
+    	{{> home-of-innovation/contentRelated this }}
+    {{/if_equals}}
+    {{#if_equals this.type 'items' }}
+    	{{> home-of-innovation/contentItems this }}
+    {{/if_equals}}
   {{/each}}
 
-  {{#if group}}
-  	{{> home-of-innovation/contentGroup group }}
-  {{/if}}
-
-  {{#if related}}
-  	{{> home-of-innovation/contentRelated related }}
-  {{/if}}
 </div>

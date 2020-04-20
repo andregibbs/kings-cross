@@ -1,0 +1,29 @@
+{
+  "title": "Headline Component Tests",
+  "text": "Page for Headline component tests",
+  "image": "https://picsum.photos/1440/720",
+  "group": "group-name",
+  "url": "/category",
+  "components": [
+    {
+      "type": "headline",
+      "level": "1",
+      "copy": "This is a headline 1"
+    },
+    {
+      "type": "headline",
+      "level": "2",
+      "copy": "This is a headline 2"
+    },
+    {
+      "type": "headline",
+      "level": "3",
+      "copy": "This is a headline 3"
+    },
+    {
+      "type": "headline",
+      "level": "3",
+      "copy": "This is a headline 4"
+    }
+  ]
+}

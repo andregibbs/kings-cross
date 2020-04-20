@@ -1,0 +1,50 @@
+{
+  "title": "Components Page",
+  "text": "for testing",
+  "image": "https://picsum.photos/1440/720",
+  "group": "group-name",
+  "components": [
+    {
+      "type": "kv",
+      "image": "https://picsum.photos/1440/720",
+      "style": {
+        "desktop": "left",
+        "mobile": "bottom"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "Test Page"
+        },
+        {
+          "type": "paras",
+          "text": [
+            "and a paragraph in here",
+            "and another"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "items",
+      "title": "Test category sub pages",
+      "items": [
+        {
+          "title": "{{components|key-visual[title]}}",
+          "url": "{{components|key-visual[url]}}",
+          "image": "{{components|key-visual[image]}}"
+        },
+        {
+          "title": "{{components|headline[title]}}",
+          "url": "{{components|headline[url]}}",
+          "image": "{{components|headline[image]}}"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "group-name"
+    }
+  ]
+}

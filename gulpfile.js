@@ -168,374 +168,6 @@ gulp.task('html', function () {
 
 })
 
-// HOI folder, moved to script scope as its used in multiple tasks
-var _HOI_FOLDER = 'home-of-innovation';
-
-/* separate task and folder to keep everything separate */
-// switched from gulp task to function (causing issues with watch)
-function buildHomeOfInnovation() {
-
-	console.log('do home of innovation');
-
-	// the main site data ... needed for nav ...
-	var data = config.SRC_FOLDER + '/data/config.json'
-
-	// ensure the content file exists ...
-	if ( fs.existsSync( path.join( config.SRC_FOLDER + '/' + _HOI_FOLDER + '/content.json' ) ) ) {
-
-		// construct the path
-		var contentPath = path.join( config.SRC_FOLDER + '/' + _HOI_FOLDER + '/content.json' )
-
-		// get as an object
-		var contentObject;
-    try {
-      contentObject = JSON.parse(fs.readFileSync(contentPath, 'utf8'))
-    } catch(e) {
-      console.log(e)
-      return false
-    }
-
-		console.log(contentObject.items.length);
-
-		var homeURL = '/' + SITE + SUBFOLDER + '/' + _HOI_FOLDER + '/';
-
-		var breadcrumbs = [];
-
-		var levelThreePages = [];
-
-		if (contentObject.items) {
-
-			var levelThreeIndex = 0;
-
-			for (var i = 0; i < contentObject.items.length; i++) {
-
-				if (contentObject.items[i].items) {
-
-					for (var j = 0; j < contentObject.items[i].items.length; j++) {
-
-						var levelThreePage = {};
-
-						// add the 'stuff' to the front of the url to 'help' (including level 2 details)
-						levelThreePage.url = homeURL + contentObject.items[i].url + '/' + contentObject.items[i].items[j].url;
-						levelThreePage.title = contentObject.items[i].items[j].title;
-
-						// add the level 3 page to the levelThreePages array - for use later for prev and next
-						levelThreePages.push(levelThreePage);
-						// increment the counter
-						levelThreeIndex++;
-
-					}
-
-				}
-				else {
-
-					var levelThreePage = {};
-
-					// add the 'stuff' to the front of the url to 'help'
-					levelThreePage.url = homeURL + contentObject.items[i].url;
-					levelThreePage.title = contentObject.items[i].title;
-
-					// add the level 3 page to the levelThreePages array - for use later for prev and next
-					levelThreePages.push(levelThreePage);
-					// increment the counter
-					levelThreeIndex++;
-
-				}
-
-			}
-
-			for (var i = 0; i < levelThreePages.length; i++) {
-				console.log(i + ' ' + levelThreePages[i].title + ' ' + levelThreePages[i].url);
-			}
-
-			levelThreeIndex = 0;
-
-			for (var i = 0; i < contentObject.items.length; i++) {
-
-				console.log(contentObject.items[i].title);
-
-				// level 2 ...
-
-				breadcrumbs = [
-					{
-						'title':'Home',
-						'url': homeURL
-					},
-					{
-						'title':contentObject.items[i].title,
-						'url': homeURL + contentObject.items[i].url
-					}
-				];
-
-				var prev, next = null;
-
-				if (contentObject.items[i].items) {
-					// this is a real level 2 ... so no prev and prev
-				}
-				else {
-					// this is really a level 3 ... so need to populate prev and next
-
-					// should be a function !!!! >>>
-
-					// get the index of the prev and next item for jump controls
-					var prevIndex = levelThreeIndex > 0 ? levelThreeIndex - 1 : levelThreePages.length - 1;
-					var nextIndex = levelThreeIndex < levelThreePages.length - 1 ? levelThreeIndex + 1 : 0;
-					// get the actual prev and next contentObject items
-					prev = levelThreePages[prevIndex];
-					next = levelThreePages[nextIndex];
-
-					console.log(prev.title + ' ' + prev.url);
-					console.log(next.title + ' ' + next.url);
-
-					levelThreeIndex++;
-
-					// <<< should be a function !!!!
-
-				}
-
-				gulp.src( config.SRC_FOLDER + '/' + _HOI_FOLDER + '/index.hbs' )
-					.pipe(handlebars({
-							helpers: config.SRC_FOLDER + '/templates/helpers/handlebarsHelpers.js',
-							partials: config.SRC_FOLDER + '/templates/partials/**/*.{html,js,hbs}',
-							bustCache: true,
-							data: {
-								'dtgen': new Date(),
-								'site': SITE,
-								'subfolder': SUBFOLDER + '/' + _HOI_FOLDER,
-								'breadcrumbs': breadcrumbs,
-								'findoutmore': contentObject.items,
-								'back': breadcrumbs[breadcrumbs.length - 2],
-								'prev': prev,
-								'next': next
-							}
-						}).data( data ).data( contentObject.items[i] )
-					)
-					.pipe(rename('index.html'))
-					.pipe(gulp.dest( config.BUILD_FOLDER + SITE + '/' + SUBFOLDER + '/' + _HOI_FOLDER + '/' + contentObject.items[i].url ))
-					.on('error', function(err) { log('Error building HTML templates', 'error') })
-					.on('end', function(err) { log('Compiled HTML templates') })
-
-
-				if (contentObject.items[i].items) {
-
-					for (var j = 0; j < contentObject.items[i].items.length; j++) {
-
-						console.log('- ' + contentObject.items[i].items[j].title);
-
-						// group stuff
-
-						if (contentObject.items[i].items[j].group) {
-							console.log('GROUP - ' + JSON.stringify(contentObject.items[i].items[j].group));
-							// load up groupItmes ...
-							var groupItems = [];
-							// loop through all 3rd level items and if group is the same add it to groupItems
-							// ONLY if NOT this item
-							for (var gi = 0; gi < contentObject.items.length; gi++) {
-								for (var gj = 0; gj < contentObject.items[gi].items.length; gj++) {
-									// item has a group, it has the same code but is NOT the same group object
-									if (contentObject.items[gi].items[gj].group &&
-										contentObject.items[gi].items[gj].group.code == contentObject.items[i].items[j].group.code &&
-										contentObject.items[gi].items[gj].group != contentObject.items[i].items[j].group) {
-										// add the item to groupItems
-										groupItems.push(contentObject.items[gi].items[gj]);
-										// then add groupItem.link
-										groupItems[groupItems.length - 1].link = homeURL + contentObject.items[gi].url + '/' + contentObject.items[i].items[gj].url;
-									}
-								}
-							}
-							contentObject.items[i].items[j].group.items = groupItems;
-						}
-
-						// related stuff
-
-						if (contentObject.items[i].items[j].related) {
-							console.log('RELATED - ' + JSON.stringify(contentObject.items[i].items[j].related));
-							// load up groupItmes ...
-							var relatedItems = [];
-							// loop through the ids
-							for (var ctr = 0; ctr < contentObject.items[i].items[j].related.ids.length; ctr++) {
-								var id = contentObject.items[i].items[j].related.ids[ctr];
-								var bits = id.split('|');
-								// make sure there are 2 bits to the id
-								if (bits.length == 2) {
-									// loop through all 3rd level items and if id matches (id = [i]url | [j]url ) add it to relatedItems
-									for (var ri = 0; ri < contentObject.items.length; ri++) {
-										for (var rj = 0; rj < contentObject.items[ri].items.length; rj++) {
-											// item has a group, it has the same code but is NOT the same group object
-											if (contentObject.items[ri].url == bits[0] &&
-												contentObject.items[ri].items[rj].url == bits[1]) {
-												// add the item to relatedItems
-												relatedItems.push(contentObject.items[ri].items[rj]);
-												// then add groupItem.link
-												relatedItems[relatedItems.length - 1].link = homeURL + contentObject.items[ri].url + '/' + contentObject.items[ri].items[rj].url;
-											}
-										}
-									}
-									contentObject.items[i].items[j].related.items = relatedItems;
-								}
-							}
-						}
-
-
-
-
-						// level 3 ...
-
-						breadcrumbs = [
-							{
-								'title':'Home',
-								'url': homeURL
-							},
-							{
-								'title':contentObject.items[i].title,
-								'url': homeURL + contentObject.items[i].url
-							},
-							{
-								'title':contentObject.items[i].items[j].title,
-								'url': homeURL + contentObject.items[i].url + '/' + contentObject.items[i].items[j].url
-							}
-						];
-
-						// should be a function !!!! >>>
-
-						// get the index of the prev and next item for jump controls
-						var prevIndex = levelThreeIndex > 0 ? levelThreeIndex - 1 : levelThreePages.length - 1;
-						var nextIndex = levelThreeIndex < levelThreePages.length - 1 ? levelThreeIndex + 1 : 0;
-						// get the actual prev and next contentObject items
-						var prev = levelThreePages[prevIndex];
-						var next = levelThreePages[nextIndex];
-
-						console.log(prev.title + ' ' + prev.url);
-						console.log(next.title + ' ' + next.url);
-
-						levelThreeIndex++;
-
-						// <<< should be a function !!!!
-
-						gulp.src( config.SRC_FOLDER + '/' + _HOI_FOLDER + '/index.hbs' )
-							.pipe(handlebars({
-									helpers: config.SRC_FOLDER + '/templates/helpers/handlebarsHelpers.js',
-									partials: config.SRC_FOLDER + '/templates/partials/**/*.{html,js,hbs}',
-									bustCache: true,
-									data: {
-										'dtgen': new Date(),
-										'site': SITE,
-										'subfolder': SUBFOLDER + '/' + _HOI_FOLDER,
-										'breadcrumbs': breadcrumbs,
-										'findoutmore': contentObject.items,
-										'back': breadcrumbs[breadcrumbs.length - 2],
-										'prev': prev,
-										'next': next
-
-									}
-								}).data( data ).data( contentObject.items[i].items[j] )
-							)
-							.pipe(rename('index.html'))
-							.pipe(gulp.dest( config.BUILD_FOLDER + SITE + '/' + SUBFOLDER + '/' + _HOI_FOLDER + '/' + contentObject.items[i].url + '/' + contentObject.items[i].items[j].url ))
-							.on('error', function(err) { log('Error building HTML templates', 'error') })
-							.on('end', function(err) { log('Compiled HTML templates') })
-
-					}
-
-				}
-
-			}
-
-		}
-
-
-
-
-		breadcrumbs = [
-			{
-				'title':'Home',
-				'url': homeURL
-			}
-		];
-
-		return gulp.src(contentPath )
-			.pipe(through.obj(function (file, enc, cb) {
-				/* Data as JSON from Copy Doc */
-				gulp.src( config.SRC_FOLDER + '/' + _HOI_FOLDER + '/index.hbs' )
-					.pipe(handlebars({
-							helpers: config.SRC_FOLDER + '/templates/helpers/handlebarsHelpers.js',
-							partials: config.SRC_FOLDER + '/templates/partials/**/*.{html,js,hbs}',
-							bustCache: true,
-							data: {
-								'dtgen': new Date(),
-								'site': SITE,
-								'subfolder': SUBFOLDER + '/' + _HOI_FOLDER,
-								'xbreadcrumbs': breadcrumbs,
-								'findoutmore':contentObject.items,
-								'epoch': (new Date).getTime(),
-								// 'author': gitConfigFile.user.name.split(' ')[0],
-							}
-						}).data( data ).data( contentObject )
-					)
-					.pipe(rename('index.html'))
-					.pipe(gulp.dest( config.BUILD_FOLDER + SITE + '/' + SUBFOLDER + '/' + _HOI_FOLDER ))
-					.on('error', function(err) { log('Error building HTML templates', 'error') })
-					.on('end', function(err) { log('Compiled HTML templates') })
-
-			}))
-
-
-
-//		// test building a page ...
-//		return gulp.src( config.SRC_FOLDER + _HOI_FOLDER + 'index.html' )
-//			.pipe(handlebars({
-//					helpers: config.SRC_FOLDER + '/templates/helpers/handlebarsHelpers.js',
-//					partials: config.SRC_FOLDER + '/templates/partials/**/*.{html,js,hbs}',
-//					bustCache: true,
-//					data: data // data passed in as a json file path
-//				}).data( contentObject ) // data passed in as an json object
-//			)
-//			.pipe(gulp.dest( config.BUILD_FOLDER + SITE + '/' + SUBFOLDER + '/' + _HOI_FOLDER ))
-
-
-
-	}
-	else {
-
-		console.log('MISSING home-of-innovation copy.json');
-
-	}
-
-// })
-}
-
-// Home Of Innovation Build Task
-// wrapping build function due to watch issues
-gulp.task('home-of-innovation-build', () => {
-  buildHomeOfInnovation()
-  return
-})
-
-// Home Of Innovation SCSS Task
-gulp.task('home-of-innovation-scss', () => {
-
-  // HOI SCSS
-  return gulp.src(config.SRC_FOLDER + '/scss/'+_HOI_FOLDER+'/index.scss')
-    .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
-      .pipe(autoprefixer({
-      grid: true,
-          browsers: ['last 2 versions'],
-          cascade: false
-      }))
-      .pipe(gulp.dest( config.BUILD_FOLDER + SITE + '/' + SUBFOLDER + '/css/' + _HOI_FOLDER ))
-      .on('end', function() {
-        log('HOI SCSS Compiled')
-      })
-
-})
-
-// Home Of Innovation Watch Task
-gulp.task('home-of-innovation-watch', () => {
-  gulp.watch( config.SRC_FOLDER + '/' + _HOI_FOLDER + '/**/*', ['home-of-innovation-build'] )
-  gulp.watch( config.SRC_FOLDER + '/scss/**/*.scss', ['home-of-innovation-scss'] )
-  gulp.watch( config.SRC_FOLDER + '/templates/partials/' + _HOI_FOLDER + '/**/*', ['home-of-innovation-build'] )
-  log('Watching HOI folder')
-})
 
 // minify HTML
 //  https://www.npmjs.com/package/gulp-html-minifier
@@ -577,6 +209,224 @@ gulp.task('watch', function () {
 
 	log('Watching src for changes... ')
 
+})
+
+/*****
+  HOUSE OF INNOVATION (HOI) TASKS
+*****/
+
+// HOI folder, moved to script scope as its used in multiple tasks
+var _HOI_FOLDER = 'home-of-innovation';
+
+// Helper direcory reader
+function getFilesInDirectory(dirPath, arrayOfFiles) {
+  files = fs.readdirSync(dirPath)
+  return files.map((file) => {
+    return path.join(dirPath, "/", file)
+  })
+}
+
+// Function to generate Home Of Innovation Pages
+function HOIBuild() {
+
+  // Path to HOI config pages
+  const pagesBasePath = config.SRC_FOLDER + '/' + _HOI_FOLDER + '/pages/'
+  // Public path for relative urls
+  const publicUrl = '/' + SITE + SUBFOLDER + '/' + _HOI_FOLDER + '/';
+  // Array of file paths to page configs
+  const pages = getFilesInDirectory(pagesBasePath)
+
+  // Helper Functions
+  // Fetch page config for url (path = "segment/segment" | "segment/segment/segment")
+  function getPageData(path) {
+    // TODO: could update to handle strings with slashes before/after /slug/sub-slug/
+    path = path.replace('/', '|')
+    const pageData = require(pagesBasePath + path + '.json')
+    return pageData
+  }
+
+  // Create breadcrumbs based of page configs url segments (urlSegments ['slug', 'sub-slug'])
+  function createBreadcrumbs(urlSegments) {
+    // Include index by default
+    let breadcrumbs = [{
+      url: publicUrl,
+      title: getPageData('index').title
+    }]
+
+    // Loop through segments provided
+    urlSegments.forEach((segment, i) => {
+      // if no segment string skip as we are on index
+      if (!segment.length) {
+        return
+      }
+      // We also want to include the parent segments for their urls
+      let combinedSegments = urlSegments.slice(0, i + 1).join('/')
+      breadcrumbs.push({
+        url: publicUrl + combinedSegments,
+        title: getPageData(combinedSegments).title
+      })
+    });
+    return breadcrumbs;
+  }
+
+  // Finds other page configs with a group id
+  function getPagesWithGroupId(id) {
+    const withId = []
+    pages.forEach((path) => {
+      const pageData = require(path)
+      if (pageData.group === id) {
+        // Include page data aswell, no point double requiring in our use case
+        withId.push({
+          path,
+          pageData
+        })
+      }
+    })
+    return withId;
+  }
+
+  // Include any data that requires dynamic data from a different page
+  function populatePageDataVariables(pageData) {
+    // Based on component data
+    pageData.components.map((component) => {
+      switch (component.type) {
+        case 'related':
+          // Related pages, create items array with populated data
+          component.items = component.ids.map((id) => {
+            const path = id.replace('|','/')
+            return {
+              link: publicUrl + path,
+              title: getPageData(path).title
+            }
+          })
+          return component
+          break;
+        case 'group':
+          // find pages with same group id
+          let groupPages = getPagesWithGroupId(component.id);
+          // create array of items with data
+          component.items = groupPages.map(({path, pageData}) => {
+            return {
+              title: pageData.title,
+              link: publicUrl + path.replace(pagesBasePath, '').replace('|','/').replace('.json', ''),
+            }
+          })
+        default:
+      }
+    })
+
+
+    // We could also stringify the json
+    // search for a predefined delimited variable in the json string,
+    // eg.  {{slug|sub-slug[key]}}
+    // get the page data from the matched page and value
+    // then replace the values in the string
+
+    let dataString = JSON.stringify(pageData)
+    // Regex for{{page|page-path[key]}}
+    const regex = /{{(?<page>.*?)\[(?<key>.*?)\]}}/
+    // Loop over matches
+    while ((match = regex.exec(dataString)) !== null) {
+      const {page, key} = match.groups;
+      let value;
+      // special for any special cases
+      switch (key) {
+        case 'url':
+          // if url we want to construct it (not avaliable in page config file)
+          value = publicUrl + page.replace('|','/')
+          break;
+        default:
+          // otherwise get data then key
+          value = getPageData(page)[key]
+
+      }
+      // replace the first (current) matched occurence using matched string
+      dataString = dataString.replace(match[0], value)
+    }
+
+    console.log(dataString)
+    // if using JSON transform
+    return JSON.parse(dataString);
+
+    // If using just components loop
+    // return pageData;
+  }
+
+  // Main loop for each page config
+
+  pages.forEach((filePath) => {
+
+    // Clear require cache
+    // Get page config data
+    delete require.cache[require.resolve(filePath)];
+    const pageData = require(filePath);
+
+    // Create array for this pages url segments (['slug'/])
+    const urlSegments = filePath
+      .replace(pagesBasePath, '')
+      .replace('.json','')
+      .replace('index', '')
+      .split('|');
+
+    const breadcrumbs = createBreadcrumbs(urlSegments)
+    const populatedData = populatePageDataVariables(pageData);
+
+    // Gulp loop to generate the site files
+    gulp.src( config.SRC_FOLDER + '/' + _HOI_FOLDER + '/index.hbs' )
+      .pipe(handlebars({
+        helpers: config.SRC_FOLDER + '/templates/helpers/handlebarsHelpers.js',
+      	partials: config.SRC_FOLDER + '/templates/partials/**/*.{html,js,hbs}',
+      	bustCache: true,
+      	data: {
+          ...populatedData,
+          breadcrumbs,
+          config: {
+            site: SITE,
+            subfolder: SUBFOLDER + '/',
+          }
+      	}
+      }))
+      .pipe(rename('index.html'))
+      .pipe(gulp.dest( config.BUILD_FOLDER + SITE + '/' + SUBFOLDER + '/' + _HOI_FOLDER + '/' + urlSegments.join('/') ))
+      .on('error', function(err) { log('Error building HTML templates', 'error') })
+      .on('end', function(err) { log('Compiled HTML templates') })
+
+  })
+
+}
+
+// Home Of Innovation Build Task
+// wrapping build function due to watch issues
+gulp.task('home-of-innovation-build', () => {
+  // buildHomeOfInnovation()
+  HOIBuild()
+  return
+})
+
+// Home Of Innovation SCSS Task
+gulp.task('home-of-innovation-scss', () => {
+
+  // HOI SCSS
+  return gulp.src(config.SRC_FOLDER + '/scss/'+_HOI_FOLDER+'/index.scss')
+    .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
+      .pipe(autoprefixer({
+      grid: true,
+          browsers: ['last 2 versions'],
+          cascade: false
+      }))
+      .pipe(gulp.dest( config.BUILD_FOLDER + SITE + '/' + SUBFOLDER + '/css/' + _HOI_FOLDER ))
+      .on('end', function() {
+        log('HOI SCSS Compiled')
+      })
+
+})
+
+// Home Of Innovation Watch Task
+gulp.task('home-of-innovation-watch', () => {
+  gulp.watch( config.SRC_FOLDER + '/' + _HOI_FOLDER + '/**/*', ['home-of-innovation-build'] )
+  gulp.watch( config.SRC_FOLDER + '/scss/**/*.scss', ['home-of-innovation-scss'] )
+  gulp.watch( config.SRC_FOLDER + '/templates/partials/' + _HOI_FOLDER + '/**/*', ['home-of-innovation-build'] )
+  log('Watching HOI folder')
 })
 
 gulp.task('hoi', ['home-of-innovation-scss', 'home-of-innovation-build', 'home-of-innovation-watch'])

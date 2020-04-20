@@ -1,0 +1,44 @@
+{
+  "title": "Home Page",
+  "text": "home",
+  "components": [
+    {
+      "type": "kv",
+      "image": "https://picsum.photos/1440/720",
+      "style": {
+        "desktop": "right",
+        "mobile": "bottom"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "Desktop Mobile Bottom"
+        },
+        {
+          "type": "paras",
+          "text": [
+            "and a paragraph in here",
+            "and another"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "items",
+      "title": "Category Pages",
+      "items": [
+        {
+          "title": "{{category[title]}}",
+          "image": "{{category[image]}}",
+          "url": "{{category[url]}}"
+        },
+        {
+          "title": "{{components[title]}}",
+          "image": "{{components[image]}}",
+          "url": "{{components[url]}}"
+        }
+      ]
+    }
+  ]
+}

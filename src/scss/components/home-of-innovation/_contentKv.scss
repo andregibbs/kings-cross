@@ -17,12 +17,13 @@
   flex-direction: column;
 }
 
-.hoiContentKv--m-bottom {
-  .hoiContentKv__Content {
-    order: -1
+@media screen and (max-width: $mobile) {
+  .hoiContentKv--m-bottom {
+    .hoiContentKv__Content {
+      order: -1
+    }
   }
 }
-
 
 @media screen and (min-width: $mobile) {
 

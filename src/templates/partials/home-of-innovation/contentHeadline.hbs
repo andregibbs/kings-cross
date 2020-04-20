@@ -1,3 +1,32 @@
-<div class="hoiContentHeadline">	
-	<h3>{{ this.copy }}</h3>
+<div class="hoiContentHeadline
+  {{#if this.style}}
+    {{#if this.style.align}}
+      hoiContentKv--align-{{ this.style.align }}
+    {{/if}}
+  {{/if}}
+">
+
+  {{#if this.level}}
+    {{#if_equals this.level '1'}}
+      <h1>{{ this.copy }}</h1>
+    {{/if_equals}}
+    {{#if_equals this.level '2'}}
+      <h2>{{ this.copy }}</h2>
+    {{/if_equals}}
+    {{#if_equals this.level '3'}}
+      <h3>{{ this.copy }}</h3>
+    {{/if_equals}}
+    {{#if_equals this.level '4'}}
+      <h4>{{ this.copy }}</h4>
+    {{/if_equals}}
+    {{#if_equals this.level '5'}}
+      <h5>{{ this.copy }}</h5>
+    {{/if_equals}}
+    {{#if_equals this.level '6'}}
+      <h6>{{ this.copy }}</h6>
+    {{/if_equals}}
+  {{else}}
+    <h3>{{ this.copy }}</h3>
+  {{/if}}
+  
 </div>

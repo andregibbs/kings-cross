@@ -1,0 +1,29 @@
+{
+  "title": "Category Sub page",
+  "text": "sub page",
+  "group": "group-name",
+  "components": [
+    {
+      "type": "kv",
+      "image": "https://picsum.photos/1440/720",
+      "style": {
+        "desktop": "left",
+        "mobile": "bottom"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "Category"
+        },
+        {
+          "type": "paras",
+          "text": [
+            "and a paragraph in here",
+            "and another"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "title": "KV Component Tests",
+  "text": "Page for KV tests",
+  "group": "group-name",
+  "image": "https://picsum.photos/1440/720",
+  "components": [
+    {
+      "type": "kv",
+      "image": "https://picsum.photos/1440/720",
+      "style": {
+        "desktop": "left",
+        "mobile": "bottom"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "KV Desktop Left"
+        },
+        {
+          "type": "paras",
+          "text": [
+            "and a paragraph in here",
+            "and another"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "spacer"
+    },
+    {
+      "type": "kv",
+      "image": "https://picsum.photos/1440/720",
+      "style": {
+        "desktop": "right",
+        "mobile": "bottom"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "KV Desktop Right"
+        },
+        {
+          "type": "paras",
+          "text": [
+            "and a paragraph in here",
+            "and another"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "spacer"
+    },
+    {
+      "type": "kv",
+      "image": "https://picsum.photos/1440/720",
+      "style": {
+        "desktop": "top",
+        "mobile": "bottom"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "KV Desktop Top"
+        },
+        {
+          "type": "paras",
+          "text": [
+            "and a paragraph in here",
+            "and another"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "spacer"
+    },
+    {
+      "type": "kv",
+      "image": "https://picsum.photos/1440/720",
+      "style": {
+        "desktop": "left",
+        "mobile": "bottom"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "KV Mobile Bottom"
+        },
+        {
+          "type": "paras",
+          "text": [
+            "and a paragraph in here",
+            "and another"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "spacer"
+    },
+    {
+      "type": "kv",
+      "image": "https://picsum.photos/1440/720",
+      "style": {
+        "desktop": "left",
+        "mobile": "top"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "KV Mobile Top"
+        },
+        {
+          "type": "paras",
+          "text": [
+            "and a paragraph in here",
+            "and another"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,15 +1,30 @@
+
 <div class="hoiContentItems">
-  {{#each items }}
-  	{{#if this.unlisted }}
-  	{{!-- unlisted - so don't show on listing page --}}
-  	{{else}}
-  	<div class="hoiContentItem">
-  		<a data-omni-type="microsite" data-omni="{{ ../site }}:{{ ../subfolder }}:block:{{to_lower_case this.title }}" href="{{{ this.url }}}">
-  			<h2>{{{ this.title }}}</h2>
-  			<img src="//images.samsung.com/is/image/samsung/p5/uk/galaxy-s9-the-need-to-know/icons/{{ this.image }}.jpg?$ORIGIN_JPG$" alt="{{ this.title }}">
-  			<div>{{{ this.text }}}</div>
-  		</a>
-  	</div>
-  	{{/if}}
-  {{/each}}
+  {{#if this.title}}
+    <div class="hoiContentItems__Title">
+      <h3>{{this.title}}</h3>
+    </div>
+  {{/if}}
+  <div class="hoiContentItems__Container
+    {{#if this.grid}}
+      hoiContentItems__Container--grid-{{this.grid}}
+    {{else}}
+      hoiContentItems__Container--grid-2
+    {{/if}}
+    ">
+    {{#each items }}
+      {{!-- might not need this --}}
+    	{{#if this.unlisted }}
+    	{{!-- unlisted - so don't show on listing page --}}
+    	{{else}}
+    	<div class="hoiContentItems__Item">
+    		<a data-omni-type="microsite" data-omni="{{ ../site }}:{{ ../subfolder }}:block:{{to_lower_case this.title }}" href="{{{ this.url }}}">
+    			<h6>{{{ this.title }}}</h6>
+    			<img src="{{ this.image }}" alt="{{ this.title }}">
+    			<div>{{{ this.text }}}</div>
+    		</a>
+    	</div>
+    	{{/if}}
+    {{/each}}
+  </div>
 </div>

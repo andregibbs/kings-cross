@@ -27,6 +27,8 @@ $margin-mobile: $m-borders-mobile * 1px;
 
 .cheil-static.home-of-innovation {
 
+  @import "../components/home-of-innovation/heading";
+  
   @import "../components/home-of-innovation/content";
   @import "../components/home-of-innovation/contentBreadcrumbs";
   @import "../components/home-of-innovation/contentFindOutMore";
