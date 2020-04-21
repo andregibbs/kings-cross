@@ -7,13 +7,15 @@
   {{/if}}
   <div class="hoiList hoiList--grid-4">
     {{#each items }}
-    	<div class="hoiList__Item">
-    		<a data-omni-type="microsite" data-omni="{{ ../site }}:{{ ../subfolder }}:block:{{to_lower_case this.title }}" href="{{{ this.url }}}">
-    			<h6 className="hoiList__ItemTitle">{{{ this.title }}}</h6>
-    			<img src="{{ this.image }}" alt="{{ this.title }}">
-    			<div>{{{ this.text }}}</div>
-    		</a>
-    	</div>
+  		<a class="hoiList__Item" data-omni-type="microsite" data-omni="{{ ../site }}:{{ ../subfolder }}:block:{{to_lower_case this.title }}" href="{{{ this.url }}}">
+  			<h6 className="hoiList__ItemTitle">{{{ this.title }}}</h6>
+  			<img src="{{ this.image }}" alt="{{ this.title }}">
+  			<div>{{{ this.text }}}</div>
+  		</a>
     {{/each}}
+
+    {{#spacerElements items 4}}
+      <div class="hoiList__Item  hoiList__Item--spacer"></div>
+    {{/spacerElements}}
   </div>
 </div>

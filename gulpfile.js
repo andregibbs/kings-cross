@@ -212,7 +212,7 @@ gulp.task('watch', function () {
 })
 
 /*****
-  HOUSE OF INNOVATION (HOI) TASKS
+  HOME OF INNOVATION (HOI) TASKS
 *****/
 
 // HOI folder, moved to script scope as its used in multiple tasks
@@ -227,7 +227,7 @@ function getFilesInDirectory(dirPath, arrayOfFiles) {
 }
 
 // Function to generate Home Of Innovation Pages
-function HOIBuild() {
+function HOITemplates() {
 
   // Path to HOI config pages
   const pagesBasePath = config.SRC_FOLDER + '/' + _HOI_FOLDER + '/pages/'
@@ -389,11 +389,47 @@ function HOIBuild() {
   })
 }
 
+function HOIJs (bundler) {
+
+
+
+	// function rebundle() {
+	bundler.bundle()
+		.on('error', function(err) { console.error(err); this.emit('end'); })
+		.pipe(source('main.js'))
+    .pipe(buffer())
+    // .pipe(uglify())
+    .pipe(sourcemaps.init({ loadMaps: true }))
+    .pipe(sourcemaps.write('./'))
+    .pipe(gulp.dest( config.BUILD_FOLDER + SITE + '/' + SUBFOLDER + '/js/home-of-innovation' ))
+    log('Rebundled HOI JS')
+  // }
+
+  // if ( watch ) {
+  //   bundler.on('update', function() {
+  //     log('Rebundling HOI JS')
+  //     rebundle()
+  //   })
+  // }
+  //
+  // rebundle()
+
+}
+
 // Home Of Innovation Build Task
 // wrapping build function due to watch issues
 gulp.task('home-of-innovation-build', () => {
   // buildHomeOfInnovation()
-  HOIBuild()
+  HOITemplates()
+  return
+})
+
+let hoiJSBundler;
+gulp.task('home-of-innovation-js', () => {
+  if (!hoiJSBundler) {
+    hoiJSBundler = watchify(browserify( config.SRC_FOLDER + '/js/home-of-innovation/main.js', { debug: true }).transform(babel.configure({ presets: ['es2015-ie'] })))
+  }
+  HOIJs(hoiJSBundler)
   return
 })
 
@@ -419,11 +455,12 @@ gulp.task('home-of-innovation-scss', () => {
 gulp.task('home-of-innovation-watch', () => {
   gulp.watch( config.SRC_FOLDER + '/' + _HOI_FOLDER + '/**/*', ['home-of-innovation-build'] )
   gulp.watch( config.SRC_FOLDER + '/scss/**/*.scss', ['home-of-innovation-scss'] )
+  gulp.watch( config.SRC_FOLDER + '/js/home-of-innovation/**/*.js', ['home-of-innovation-js'] )
   gulp.watch( config.SRC_FOLDER + '/templates/partials/' + _HOI_FOLDER + '/**/*', ['home-of-innovation-build'] )
   log('Watching HOI folder')
 })
 
-gulp.task('hoi', ['home-of-innovation-scss', 'home-of-innovation-build', 'home-of-innovation-watch'])
+gulp.task('hoi', ['home-of-innovation-scss', 'home-of-innovation-build', 'home-of-innovation-js', 'home-of-innovation-watch'])
 
 gulp.task('production', sequence('delete-build', 'copy-assets', 'scss', 'buildJS', 'html') )
 gulp.task('development', sequence('copy-assets', 'scss', 'buildJS', 'html', 'minify') )

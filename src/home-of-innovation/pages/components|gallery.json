@@ -1,0 +1,56 @@
+{
+  "title": "Gallery Component Tests",
+  "text": "Page for Headline component tests",
+  "image": "https://picsum.photos/1440/720",
+  "group": "hoi-component",
+  "components": [
+    {
+      "type": "gallery",
+      "title": "Gallery Title",
+      "items": [
+        {
+          "type": "image",
+          "title": "Test Image",
+          "description": "Description of gallery item",
+          "image": "https://picsum.photos/1440/720",
+          "content": "https://picsum.photos/1440/720"
+        },
+        {
+          "type": "image",
+          "title": "Test Image",
+          "description": "Description of gallery item",
+          "image": "https://picsum.photos/1440/720",
+          "content": "https://picsum.photos/1440/720"
+        },
+        {
+          "type": "youtube",
+          "title": "Test Youtube",
+          "description": "Description of youtube item",
+          "image": "https://picsum.photos/1440/720",
+          "content": "L989S2QxXUU"
+        },
+        {
+          "type": "video",
+          "title": "Test native video",
+          "description": "Description of video item",
+          "image": "https://picsum.photos/1440/720",
+          "content": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+        },
+        {
+          "type": "image",
+          "title": "Test Image",
+          "description": "Description of image item",
+          "image": "https://picsum.photos/1440/720",
+          "content": "https://picsum.photos/1440/720"
+        },
+        {
+          "type": "image",
+          "title": "Test Image",
+          "description": "Description of image item",
+          "image": "https://picsum.photos/1440/720",
+          "content": "https://picsum.photos/1440/720"
+        }
+      ]
+    }
+  ]
+}

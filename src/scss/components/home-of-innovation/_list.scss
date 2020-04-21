@@ -4,44 +4,38 @@
 }
 
 .hoiList__Item {
+  cursor: pointer;
   padding-bottom: $spacing-mobile;
-  // padding-left: $spacing-mobile;
-  // padding-right: $spacing-mobile;
-
-  a {
-    h3 {
-      color:green;
-    }
-    img {
-      width: 100%;
-    }
-  }
-
 }
 
-.hoiList__ItemTitle {
-  color: red;
+.hoiList__Item--spacer {
+  display: none;
 }
-
 
 @media screen and (min-width: $mobile) {
 
   .hoiList__Item {
     flex-shrink: 0;
+    padding-bottom: $spacing-desktop / 2;
+  }
+
+  .hoiList__Item--spacer {
+    display: block;
   }
 
   .hoiList--grid-4 {
+    justify-content: space-between;
     .hoiList__Item {
-      width: 25%;
-      padding-left: $spacing-desktop / 2;
-      padding-right: $spacing-desktop / 2;
+      width: calc(25% - #{$spacing-desktop / 2});
+      // padding-left: $spacing-desktop / 2;
+      // padding-right: $spacing-desktop / 2;
       &:nth-child(4n+1) {
-        padding-left: 0;
-        padding-right: $spacing-desktop / 2;
+        // padding-left: 0;
+        // padding-right: $spacing-desktop / 2;
       }
       &:nth-child(4n+4) {
-        padding-left: $spacing-desktop / 2;
-        padding-right: 0;
+        // padding-left: $spacing-desktop / 2;
+        // padding-right: 0;
       }
     }
   }

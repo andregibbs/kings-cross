@@ -27,6 +27,10 @@
   		{{> home-of-innovation/hoiSpacer this }}
   	{{/if_equals}}
 
+    {{#if_equals this.type 'gallery'}}
+      {{> home-of-innovation/hoiGallery this }}
+    {{/if_equals}}
+
     {{!--
       Group, Related & Link list
       All the same components, different method of populating
@@ -56,9 +60,7 @@
   		{{> home-of-innovation/contentIntro this }}
   	{{/if_equals}}
 
-  	{{#if_equals this.type 'gallery'}}
-  		{{> home-of-innovation/contentGallery this }}
-  	{{/if_equals}}
+
 
 
 
