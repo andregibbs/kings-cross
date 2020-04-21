@@ -1,0 +1,14 @@
+.hoiParagraphs {
+  p {
+    margin-bottom: 10px;
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: $mobile) {
+  .hoiParagraphs p {
+    margin-bottom: 14px;
+  }
+}

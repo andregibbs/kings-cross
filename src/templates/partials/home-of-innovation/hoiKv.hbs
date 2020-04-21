@@ -19,33 +19,33 @@
 
 --}}
 
-<div class="hoiContentKv
+<div class="hoiKv
   {{#if this.style}}
     {{#if this.style.desktop}}
-      hoiContentKv--d-{{ this.style.desktop }}
+      hoiKv--d-{{ this.style.desktop }}
     {{else}}
-      hoiContentKv--d-left
+      hoiKv--d-left
     {{/if}}
     {{#if this.style.mobile}}
-      hoiContentKv--m-{{ this.style.mobile }}
+      hoiKv--m-{{ this.style.mobile }}
     {{else}}
-      hoiContentKv--m-top
+      hoiKv--m-top
     {{/if}}
   {{else}}
-    hoiContentKv--d-Left
-    hoiContentKv--m-top
+    hoiKv--d-Left
+    hoiKv--m-top
   {{/if}}
 ">
 
-  <div class="hoiContentKv__Image">
+  <div class="hoiKv__Image">
   	<img
       src="{{ this.image }}"
     />
   </div>
 
-  <div class="hoiContentKv__Content">
+  <div class="hoiKv__Components">
     
-    {{> home-of-innovation/content this }}
+    {{> home-of-innovation/components this }}
 
   </div>
 

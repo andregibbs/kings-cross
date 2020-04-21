@@ -1,0 +1,50 @@
+{
+  "title": "LinkList Page",
+  "description": "linklist page for testing",
+  "image": "https://picsum.photos/1440/720",
+  "group": "hoi-component",
+  "components": [
+    {
+      "type": "linklist",
+      "title": "Test category linklist",
+      "items": [
+        {
+          "title": "{{components|key-visual[title]}}",
+          "url": "{{components|key-visual[url]}}",
+          "image": "{{components|key-visual[image]}}"
+        },
+        {
+          "title": "{{components|headline[title]}}",
+          "url": "{{components|headline[url]}}",
+          "image": "{{components|headline[image]}}"
+        },
+        {
+          "title": "{{components|wrapper[title]}}",
+          "url": "{{components|wrapper[url]}}",
+          "image": "{{components|wrapper[image]}}"
+        },
+        {
+          "title": "{{components|wrapper[title]}}",
+          "url": "{{components|wrapper[url]}}",
+          "image": "{{components|wrapper[image]}}"
+        }
+      ]
+    },
+    {
+      "type": "linklist",
+      "title": "2 wide category linklist",
+      "items": [
+        {
+          "title": "{{components|key-visual[title]}}",
+          "url": "{{components|key-visual[url]}}",
+          "image": "{{components|key-visual[image]}}"
+        },
+        {
+          "title": "{{components|headline[title]}}",
+          "url": "{{components|headline[url]}}",
+          "image": "{{components|headline[image]}}"
+        }
+      ]
+    }
+  ]
+}

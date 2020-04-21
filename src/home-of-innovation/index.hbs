@@ -2,29 +2,22 @@
 
 <section class="cheil-static home-of-innovation">
 
-
-  {{title}}
-
 	{{> home-of-innovation/stylesheet}}
 
 	{{> components/nav }}
 
-  {{> home-of-innovation/contentBreadcrumbs }}
+  <div class="hoiContent">
+    {{> home-of-innovation/hoiBreadcrumbs }}
+  	{{!-- {{> home-of-innovation/hoiFindOutMore }} --}}
+  </div>
 
-	{{> home-of-innovation/contentFindOutMore }}
+	{{> home-of-innovation/components }}
 
-  {{!--
-  	{{> home-of-innovation/contentItems }}
+  {{!-- move to components
+  	{{#unless items}}
+  	 {{> home-of-innovation/contentPagination }}
+  	{{/unless}}
   --}}
-
-  {{!-- change to components? --}}
-	{{> home-of-innovation/content }}
-
-
-  {{!-- move to components --}}
-	{{#unless items}}
-	 {{> home-of-innovation/contentPagination }}
-	{{/unless}}
 
 {{!--
 

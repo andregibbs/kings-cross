@@ -287,7 +287,8 @@ function HOIBuild() {
 
   // Include any data that requires dynamic data from a different page
   function populatePageDataVariables(pageData) {
-    // Based on component data
+    // First population
+    // Based on specific component
     pageData.components.map((component) => {
       switch (component.type) {
         case 'related':
@@ -295,7 +296,8 @@ function HOIBuild() {
           component.items = component.ids.map((id) => {
             const path = id.replace('|','/')
             return {
-              link: publicUrl + path,
+              url: publicUrl + path,
+              image: getPageData(path).image,
               title: getPageData(path).title
             }
           })
@@ -305,22 +307,22 @@ function HOIBuild() {
           // find pages with same group id
           let groupPages = getPagesWithGroupId(component.id);
           // create array of items with data
+          // console.log(publicUrl, path.replace(pagesBasePath, '').replace('|','/').replace('.json', ''))
           component.items = groupPages.map(({path, pageData}) => {
             return {
               title: pageData.title,
-              link: publicUrl + path.replace(pagesBasePath, '').replace('|','/').replace('.json', ''),
+              image: pageData.image,
+              url: publicUrl + path.replace(pagesBasePath, '').replace('|','/').replace('.json', ''),
             }
           })
         default:
       }
     })
 
-
-    // We could also stringify the json
-    // search for a predefined delimited variable in the json string,
+    // Second population
+    // Using custom tags to id and populate data, search for a predefined delimited variable in the json string,
     // eg.  {{slug|sub-slug[key]}}
-    // get the page data from the matched page and value
-    // then replace the values in the string
+    // fetch the page data from the specified page, then replace the values in the string with the key value
 
     let dataString = JSON.stringify(pageData)
     // Regex for{{page|page-path[key]}}
@@ -340,20 +342,14 @@ function HOIBuild() {
           value = getPageData(page)[key]
 
       }
-      // replace the first (current) matched occurence using matched string
+      // update dataString, replaceing the first (current) matched occurence using matched string
       dataString = dataString.replace(match[0], value)
     }
-
-    console.log(dataString)
-    // if using JSON transform
+    // console.log(dataString)
     return JSON.parse(dataString);
-
-    // If using just components loop
-    // return pageData;
   }
 
   // Main loop for each page config
-
   pages.forEach((filePath) => {
 
     // Clear require cache
@@ -390,9 +386,7 @@ function HOIBuild() {
       .pipe(gulp.dest( config.BUILD_FOLDER + SITE + '/' + SUBFOLDER + '/' + _HOI_FOLDER + '/' + urlSegments.join('/') ))
       .on('error', function(err) { log('Error building HTML templates', 'error') })
       .on('end', function(err) { log('Compiled HTML templates') })
-
   })
-
 }
 
 // Home Of Innovation Build Task

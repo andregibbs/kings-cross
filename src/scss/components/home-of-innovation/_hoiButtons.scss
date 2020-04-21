@@ -1,0 +1,22 @@
+.hoiButtons {
+  display: flex;
+  flex-wrap: wrap;
+  padding: $spacing-mobile / 2 0;
+}
+
+.hoiButton {
+  margin-right: $spacing-mobile / 2;
+}
+
+.hoiButton:last-child {
+  margin-right: 0;
+}
+
+@media screen and (min-width: $mobile) {
+  .hoiButtons {
+    padding: $spacing-desktop / 2 0;
+  }
+  .hoiButton {
+    margin-right: $spacing-desktop / 2;
+  }
+}

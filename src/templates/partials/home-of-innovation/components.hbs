@@ -1,0 +1,69 @@
+
+<div class="hoiContent">
+
+  {{#each components}}
+
+    {{#if_equals this.type 'kv'}}
+      {{> home-of-innovation/hoiKv this }}
+    {{/if_equals}}
+
+    {{#if_equals this.type 'buttons'}}
+      {{> home-of-innovation/hoiButtons this}}
+    {{/if_equals}}
+
+    {{#if_equals this.type 'headline'}}
+  		{{> home-of-innovation/hoiHeadline this }}
+  	{{/if_equals}}
+
+    {{#if_equals this.type 'wrapper'}}
+      {{> home-of-innovation/hoiWrapper this}}
+    {{/if_equals}}
+
+    {{#if_equals this.type 'paragraphs'}}
+  		{{> home-of-innovation/hoiParagraphs this }}
+  	{{/if_equals}}
+
+    {{#if_equals this.type 'spacer'}}
+  		{{> home-of-innovation/hoiSpacer this }}
+  	{{/if_equals}}
+
+    {{!--
+      Group, Related & Link list
+      All the same components, different method of populating
+     --}}
+
+    {{#if_equals this.type 'group'}}
+    	{{> home-of-innovation/hoiLinkList this }}
+    {{/if_equals}}
+
+    {{#if_equals this.type 'related' }}
+    	{{> home-of-innovation/hoiLinkList this }}
+    {{/if_equals}}
+
+    {{#if_equals this.type 'linklist' }}
+    	{{> home-of-innovation/hoiLinkList this }}
+    {{/if_equals}}
+
+
+
+
+
+
+
+
+
+  	{{#if_equals this.type 'intro'}}
+  		{{> home-of-innovation/contentIntro this }}
+  	{{/if_equals}}
+
+  	{{#if_equals this.type 'gallery'}}
+  		{{> home-of-innovation/contentGallery this }}
+  	{{/if_equals}}
+
+
+
+
+
+  {{/each}}
+
+</div>

@@ -1,0 +1,21 @@
+.hoiWrapper {
+  padding: $spacing-mobile;
+}
+
+@media screen and (min-width: $mobile) {
+  .hoiWrapper {
+    padding: $spacing-desktop;
+  }
+}
+
+.hoiWrapper--align-left {
+  text-align: left;
+}
+
+.hoiWrapper--align-center {
+  text-align: center;
+}
+
+.hoiWrapper--align-right {
+  text-align: right;
+}
