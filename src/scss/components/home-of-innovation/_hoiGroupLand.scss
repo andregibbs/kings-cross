@@ -1,0 +1,73 @@
+.hoiGroupLand {
+
+}
+
+// Grouping layout
+.hoiGroupLand__Group {
+  width: 100%;
+}
+.hoiGroupLand__Group--B {}
+
+
+.hoiGroupLand__Item {
+  width: 100%;
+  flex-grow: 1;
+  height: 0;
+  padding-bottom: 50%;
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+
+.hoiGroupLand__Image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: auto;
+}
+
+.hoiGroupLand__Label {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: $black;
+  padding: $padding-desktop / 2;
+
+  h3 {
+    @extend .h5;
+    margin-bottom: 5px;
+  }
+  p {
+
+  }
+}
+
+@media screen and (min-width: $mobile) {
+  // Grouping layout
+  .hoiGroupLand__Group {
+    display: flex;
+  }
+  .hoiGroupLand__Group--B {
+    flex-direction: column;
+  }
+}
+
+
+
+
+// default layout & 4
+// toto: hide above 4 items
+
+.hoiGroupLand--3-items {
+
+}
+
+.hoiGroupLand--2-items {
+
+}
+
+.hoiGroupLand--1-items {
+
+}

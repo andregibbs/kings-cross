@@ -1,0 +1,42 @@
+{{#* inline 'groupLandItem'}}
+  <a class="hoiGroupLand__Item" href="{{this.url}}">
+
+    <img class="hoiGroupLand__Image" src="{{this.image}}" />
+
+    <div class="hoiGroupLand__Label">
+      <h3>{{this.title}}</h3>
+      <p>{{this.description}}</p>
+    </div>
+
+  </a>
+{{/inline}}
+
+<div class="hoiGroupLand  hoiGroupLand--{{items.length}}-items">
+
+  <div class="hoiGroupLand__Group  hoiGroupLand__Group--A">
+
+    {{> groupLandItem items.[0]}}
+
+    {{#if items.[1]}}
+      <div class="hoiGroupLand__Group  hoiGroupLand__Group--B">
+
+        {{> groupLandItem items.[1]}}
+
+        {{#if items.[2]}}
+          <div class="hoiGroupLand__Group  hoiGroupLand__Group--C">
+
+            {{> groupLandItem items.[2] }}
+
+            {{#if items.[3]}}
+              {{> groupLandItem items.[3] }}
+            {{/if}}
+
+          </div>
+        {{/if}}
+
+      </div>
+    {{/if}}
+
+  </div>
+
+</div>

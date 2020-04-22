@@ -1,3 +1,4 @@
+// In Page Elements
 .hoiGallery {
   padding: $spacing-mobile;
 }
@@ -10,10 +11,13 @@
   pointer-events: none;
 }
 
+.hoiGallery__NavItem_ImageWrap {
+  position: relative;
+  height: 0;
+  padding-bottom: 95%;
+}
 
-
-// Spotlight
-
+// Spotlight Ovelay Elements
 .hoiGallery__Spotlight {
   position: fixed;
   top: 0;
@@ -51,8 +55,17 @@
   position: absolute;
 }
 
+.hoiGallery__MediaResponsiveWrap {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
 .hoiGallery__Media {
   width: 100%;
+  position: absolute;
+  height: 100%;
 }
 
 .hoiGallery__MediaBody {
@@ -67,7 +80,7 @@
     padding: $spacing-desktop 0;
   }
   .hoiGallery__SpotlightWrap {
-    padding: $padding-desktop;
+    padding: $padding-desktop * 2;
   }
   .hoiGallery__Spotlight {
     padding: $padding-desktop;

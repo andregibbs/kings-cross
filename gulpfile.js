@@ -240,7 +240,7 @@ function HOITemplates() {
   // Fetch page config for url (path = "segment/segment" | "segment/segment/segment")
   function getPageData(path) {
     // TODO: could update to handle strings with slashes before/after /slug/sub-slug/
-    path = path.replace('/', '|')
+    path = path.split('/').join('|')
     const pageData = require(pagesBasePath + path + '.json')
     return pageData
   }
@@ -294,7 +294,7 @@ function HOITemplates() {
         case 'related':
           // Related pages, create items array with populated data
           component.items = component.ids.map((id) => {
-            const path = id.replace('|','/')
+            const path = id.split('|').join('/')
             return {
               url: publicUrl + path,
               image: getPageData(path).image,
@@ -335,14 +335,14 @@ function HOITemplates() {
       switch (key) {
         case 'url':
           // if url we want to construct it (not avaliable in page config file)
-          value = publicUrl + page.replace('|','/')
+          value = publicUrl + page.split('|').join('/')
           break;
         default:
           // otherwise get data then key
           value = getPageData(page)[key]
 
       }
-      // update dataString, replaceing the first (current) matched occurence using matched string
+      // update dataString, replacing the first (current) matched occurence using matched string
       dataString = dataString.replace(match[0], value)
     }
     // console.log(dataString)
@@ -357,12 +357,16 @@ function HOITemplates() {
     delete require.cache[require.resolve(filePath)];
     const pageData = require(filePath);
 
+
+
     // Create array for this pages url segments (['slug'/])
     const urlSegments = filePath
       .replace(pagesBasePath, '')
       .replace('.json','')
       .replace('index', '')
       .split('|');
+
+    log('Building page: ' + urlSegments.join('/'))
 
     const breadcrumbs = createBreadcrumbs(urlSegments)
     const populatedData = populatePageDataVariables(pageData);
@@ -384,8 +388,8 @@ function HOITemplates() {
       }))
       .pipe(rename('index.html'))
       .pipe(gulp.dest( config.BUILD_FOLDER + SITE + '/' + SUBFOLDER + '/' + _HOI_FOLDER + '/' + urlSegments.join('/') ))
-      .on('error', function(err) { log('Error building HTML templates', 'error') })
-      .on('end', function(err) { log('Compiled HTML templates') })
+      .on('error', function(err) { log('Error building HTML template:' + urlSegments.join('/'), 'error') })
+      .on('end', function(err) { log('Compiled Template: ' + urlSegments.join('/')) })
   })
 }
 

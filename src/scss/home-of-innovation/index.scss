@@ -46,17 +46,15 @@ $margin-mobile: $m-borders-mobile * 1px;
   @import "../components/home-of-innovation/hoiHeadline";
   @import "../components/home-of-innovation/hoiParagraphs";
   @import "../components/home-of-innovation/hoiGallery";
+  @import "../components/home-of-innovation/hoiGroupLand";
 
   @import "../components/home-of-innovation/hoiWrapper";
   @import "../components/home-of-innovation/hoiSpacer";
 
+  // unused
   @import "../components/home-of-innovation/contentFindOutMore";
-
-
   @import "../components/home-of-innovation/contentIntro";
-
   @import "../components/home-of-innovation/contentPagination";
-
   @import "../components/home-of-innovation/contentRelated";
 
 
@@ -65,7 +63,7 @@ $margin-mobile: $m-borders-mobile * 1px;
   }
   @media screen and (min-width: $mobile) {
     p {
-      font-size: 16px;
+      font-size: 14px;
     }
   }
 

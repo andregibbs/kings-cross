@@ -1,6 +1,6 @@
 {
   "title": "Gallery Component Tests",
-  "text": "Page for Headline component tests",
+  "description": "Page for Headline component tests",
   "image": "https://picsum.photos/1440/720",
   "group": "hoi-component",
   "components": [
@@ -47,6 +47,123 @@
           "type": "image",
           "title": "Test Image",
           "description": "Description of image item",
+          "image": "https://picsum.photos/1440/720",
+          "content": "https://picsum.photos/1440/720"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "title": "Second Gallery",
+      "items": [
+        {
+          "type": "image",
+          "title": "Test Image",
+          "description": "Description of gallery item",
+          "image": "https://picsum.photos/1440/720",
+          "content": "https://picsum.photos/1440/720"
+        },
+        {
+          "type": "image",
+          "title": "Test Image",
+          "description": "Description of gallery item",
+          "image": "https://picsum.photos/1440/720",
+          "content": "https://picsum.photos/1440/720"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "title": "Big Gallery",
+      "items": [
+        {
+          "type": "image",
+          "title": "Test Image",
+          "description": "Description of gallery item",
+          "image": "https://picsum.photos/1440/720",
+          "content": "https://picsum.photos/1440/720"
+        },
+        {
+          "type": "image",
+          "title": "Test Image",
+          "description": "Description of gallery item",
+          "image": "https://picsum.photos/1440/720",
+          "content": "https://picsum.photos/1440/720"
+        },
+        {
+          "type": "image",
+          "title": "Test Image",
+          "description": "Description of gallery item",
+          "image": "https://picsum.photos/1440/720",
+          "content": "https://picsum.photos/1440/720"
+        },
+        {
+          "type": "image",
+          "title": "Test Image",
+          "description": "Description of gallery item",
+          "image": "https://picsum.photos/1440/720",
+          "content": "https://picsum.photos/1440/720"
+        },
+        {
+          "type": "image",
+          "title": "Test Image",
+          "description": "Description of gallery item",
+          "image": "https://picsum.photos/1440/720",
+          "content": "https://picsum.photos/1440/720"
+        },
+        {
+          "type": "image",
+          "title": "Test Image",
+          "description": "Description of gallery item",
+          "image": "https://picsum.photos/1440/720",
+          "content": "https://picsum.photos/1440/720"
+        },
+        {
+          "type": "image",
+          "title": "Test Image",
+          "description": "Description of gallery item",
+          "image": "https://picsum.photos/1440/720",
+          "content": "https://picsum.photos/1440/720"
+        },
+        {
+          "type": "image",
+          "title": "Test Image",
+          "description": "Description of gallery item",
+          "image": "https://picsum.photos/1440/720",
+          "content": "https://picsum.photos/1440/720"
+        },
+        {
+          "type": "image",
+          "title": "Test Image",
+          "description": "Description of gallery item",
+          "image": "https://picsum.photos/1440/720",
+          "content": "https://picsum.photos/1440/720"
+        },
+        {
+          "type": "image",
+          "title": "Test Image",
+          "description": "Description of gallery item",
+          "image": "https://picsum.photos/1440/720",
+          "content": "https://picsum.photos/1440/720"
+        },
+        {
+          "type": "image",
+          "title": "Test Image",
+          "description": "Description of gallery item",
+          "image": "https://picsum.photos/1440/720",
+          "content": "https://picsum.photos/1440/720"
+        },
+        {
+          "type": "image",
+          "title": "Test Image",
+          "description": "Description of gallery item",
+          "image": "https://picsum.photos/1440/720",
+          "content": "https://picsum.photos/1440/720"
+        },
+        {
+          "type": "image",
+          "title": "Test Image",
+          "description": "Description of gallery item",
           "image": "https://picsum.photos/1440/720",
           "content": "https://picsum.photos/1440/720"
         }

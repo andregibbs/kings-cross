@@ -1,6 +1,6 @@
 {
   "title": "Wrapper Component Tests",
-  "text": "Page for wrapper component tests",
+  "description": "Page for wrapper component tests",
   "image": "https://picsum.photos/1440/720",
   "group": "hoi-component",
   "components": [

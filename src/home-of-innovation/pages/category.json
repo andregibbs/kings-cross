@@ -1,6 +1,6 @@
 {
   "title": "Category Name",
-  "text": "category",
+  "description": "category",
   "image": "https://picsum.photos/1440/720",
   "components": [
     {

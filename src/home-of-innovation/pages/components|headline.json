@@ -1,6 +1,6 @@
 {
   "title": "Headline Component Tests",
-  "text": "Page for Headline component tests",
+  "description": "Page for Headline component tests",
   "image": "https://picsum.photos/1440/720",
   "group": "hoi-component",
   "components": [

@@ -31,6 +31,10 @@
       {{> home-of-innovation/hoiGallery this }}
     {{/if_equals}}
 
+    {{#if_equals this.type 'group-land'}}
+      {{> home-of-innovation/hoiGroupLand this }}
+    {{/if_equals}}
+
     {{!--
       Group, Related & Link list
       All the same components, different method of populating
@@ -44,7 +48,7 @@
     	{{> home-of-innovation/hoiLinkList this }}
     {{/if_equals}}
 
-    {{#if_equals this.type 'linklist' }}
+    {{#if_equals this.type 'link-list' }}
     	{{> home-of-innovation/hoiLinkList this }}
     {{/if_equals}}
 

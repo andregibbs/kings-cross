@@ -124,8 +124,9 @@ if (typeof module !== 'undefined') {
 			return new Handlebars.SafeString(partial(options.hash));
 		});
 
+    // Pad items to desired multiple
     Handlebars.registerHelper('spacerElements', function (items, divisible, opt) {
-      var remainder = items.length / divisible;
+      var remainder = divisible - (items.length % divisible);
       var results = '';
       for (var i = 0; i < remainder; i++) {
         results += opt.fn()

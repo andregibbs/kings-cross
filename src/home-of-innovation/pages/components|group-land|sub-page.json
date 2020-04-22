@@ -1,7 +1,7 @@
 {
-  "title": "Category Sub page",
-  "description": "sub page",
-  "group": "group-name",
+  "title": "Group Land Sub 2",
+  "description": "category",
+  "image": "https://picsum.photos/1440/720",
   "components": [
     {
       "type": "kv",

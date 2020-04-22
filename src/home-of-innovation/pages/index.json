@@ -1,6 +1,6 @@
 {
   "title": "Home Page",
-  "text": "home",
+  "description": "home",
   "components": [
     {
       "type": "kv",

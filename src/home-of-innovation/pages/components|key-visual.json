@@ -1,6 +1,6 @@
 {
   "title": "Key Visual Component Tests",
-  "text": "Page for Key visual tests",
+  "description": "Page for Key visual tests",
   "image": "https://picsum.photos/1440/720",
   "group": "hoi-component",
   "components": [

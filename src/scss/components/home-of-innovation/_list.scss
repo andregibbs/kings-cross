@@ -6,10 +6,27 @@
 .hoiList__Item {
   cursor: pointer;
   padding-bottom: $spacing-mobile;
+  width: 100%;
 }
 
 .hoiList__Item--spacer {
   display: none;
+}
+
+.hoiList__ItemImageWrap {
+  position: relative;
+  height: 0;
+  padding-bottom: 95%;
+  overflow: hidden;
+}
+
+.hoiList__ItemImage {
+  position: absolute;
+  height: 100%;
+  width: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @media screen and (min-width: $mobile) {
