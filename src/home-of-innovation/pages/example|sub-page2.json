@@ -1,0 +1,63 @@
+{
+  "title": "ExampleSub2",
+  "description": "Loads of text on here",
+  "image": "https://picsum.photos/1440/900",
+  "thumb": "https://picsum.photos/300/300",
+  "group": "example-sub",
+  "components": [
+    {
+      "type": "kv",
+      "image": "{{example|sub-page2[image]}}",
+      "style": {
+        "desktop": "left",
+        "mobile": "bottom"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "Category"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "and a paragraph in here",
+            "and another"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "header",
+          "level": "2",
+          "copy": "Lots of paragraphs"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa eget egestas purus viverra accumsan in nisl nisi. Blandit aliquam etiam erat velit scelerisque in dictum. At tellus at urna condimentum mattis pellentesque id nibh tortor. Malesuada fames ac turpis egestas integer. Accumsan in nisl nisi scelerisque eu ultrices vitae auctor. Sit amet nisl suscipit adipiscing bibendum. Ante metus dictum at tempor commodo ullamcorper a lacus vestibulum. Cras fermentum odio eu feugiat pretium nibh ipsum. Aliquet eget sit amet tellus cras. Adipiscing elit pellentesque habitant morbi tristique senectus et netus. Netus et malesuada fames ac turpis egestas sed tempus. Nulla facilisi nullam vehicula ipsum a arcu. Fames ac turpis egestas maecenas pharetra convallis posuere morbi.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper sit amet risus nullam eget felis eget nunc lobortis.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper sit amet risus nullam eget felis eget nunc lobortis.",
+            "eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa eget egestas purus viverra accumsan in nisl nisi. Blandit aliquam etiam erat velit scelerisque in dictum. At tellus at urna condimentum mattis pellentesque id nibh tortor. Malesuada fames ac turpis egestas integer. Accumsan in nisl nisi scelerisque eu ultrices vitae auctor. Sit amet nisl suscipit adipiscing bibendum. Ante metus dictum at tempor commodo ullamcorper a lacus vestibulum. Cras fermentum odio eu feugiat pretium n"
+          ]
+        },
+        {
+          "type": "buttons",
+          "items": [
+            {
+              "copy": "Button in here",
+              "url": "url"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "example-sub"
+    }
+  ]
+}

@@ -14,7 +14,7 @@
 .hoiGallery__NavItem_ImageWrap {
   position: relative;
   height: 0;
-  padding-bottom: 95%;
+  padding-bottom: 100%;
 }
 
 // Spotlight Ovelay Elements
@@ -50,14 +50,21 @@
   left: 0; //$spacing-mobile;
   width: 50px;
   height: 50px;
-  background: white;
   cursor: pointer;
   position: absolute;
+  font-size: 40px;
+
+  &:before {
+    content: '\2715';
+  }
 }
+
+
 
 .hoiGallery__MediaResponsiveWrap {
   position: relative;
-  padding-bottom: 56.25%;
+  padding-bottom: 62.5%; // 16:10 1440x900
+  // padding-bottom: 56.25%; // 16:9
   height: 0;
   overflow: hidden;
 }

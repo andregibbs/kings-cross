@@ -1,7 +1,8 @@
 {
-  "title": "Group Land Component",
-  "description": "Page for Headline component tests",
-  "image": "https://picsum.photos/1440/720",
+  "title": "Group Land",
+  "description": "Page for group land component tests",
+  "image": "https://via.placeholder.com/1440x900.png?text=image%20(1440x900)",
+  "thumb": "https://via.placeholder.com/300x300.png?text=thumb%20(300x300)",
   "group": "hoi-component",
   "components": [
     {

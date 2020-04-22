@@ -9,6 +9,15 @@
   width: 100%;
 }
 
+// isolated 2 width for mobile, might need to be 3
+.hoiList {
+  justify-content: space-between;
+}
+.hoiList__Item {
+  // width: 50%;
+  width: calc(50% - #{$spacing-mobile / 2});
+}
+
 .hoiList__Item--spacer {
   display: none;
 }
@@ -16,7 +25,7 @@
 .hoiList__ItemImageWrap {
   position: relative;
   height: 0;
-  padding-bottom: 95%;
+  padding-bottom: 100%;
   overflow: hidden;
 }
 

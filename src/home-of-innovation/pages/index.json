@@ -1,19 +1,21 @@
 {
   "title": "Home Page",
   "description": "home",
+  "image": "https://via.placeholder.com/1440x900.png?text=image%20(1440x900)",
+  "thumb": "https://via.placeholder.com/300x300.png?text=thumb%20(300x300)",
   "components": [
     {
       "type": "kv",
-      "image": "https://picsum.photos/1440/720",
+      "image": "{{index[image]}}",
       "style": {
-        "desktop": "right",
+        "desktop": "left",
         "mobile": "bottom"
       },
       "components": [
         {
           "type": "headline",
           "level": "3",
-          "copy": "Desktop Mobile Bottom"
+          "copy": "Index Page"
         },
         {
           "type": "paras",
@@ -25,20 +27,8 @@
       ]
     },
     {
-      "type": "linklist",
-      "title": "Category Pages",
-      "items": [
-        {
-          "title": "{{category[title]}}",
-          "image": "{{category[image]}}",
-          "url": "{{category[url]}}"
-        },
-        {
-          "title": "{{components[title]}}",
-          "image": "{{components[image]}}",
-          "url": "{{components[url]}}"
-        }
-      ]
+      "type": "group",
+      "id": "level-1"
     }
   ]
 }

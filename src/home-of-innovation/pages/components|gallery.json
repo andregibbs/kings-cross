@@ -1,7 +1,8 @@
 {
-  "title": "Gallery Component Tests",
-  "description": "Page for Headline component tests",
-  "image": "https://picsum.photos/1440/720",
+  "title": "Gallery",
+  "description": "Page for gallery components",
+  "image": "https://via.placeholder.com/1440x900.png?text=image%20(1440x900)",
+  "thumb": "https://via.placeholder.com/300x300.png?text=thumb%20(300x300)",
   "group": "hoi-component",
   "components": [
     {
@@ -12,43 +13,44 @@
           "type": "image",
           "title": "Test Image",
           "description": "Description of gallery item",
-          "image": "https://picsum.photos/1440/720",
-          "content": "https://picsum.photos/1440/720"
+          "image": "https://via.placeholder.com/300x300.png?text=image%20(300x300)",
+          "content": "https://via.placeholder.com/1440x900.png?text=content%20(1440x900)"
         },
         {
           "type": "image",
           "title": "Test Image",
           "description": "Description of gallery item",
-          "image": "https://picsum.photos/1440/720",
-          "content": "https://picsum.photos/1440/720"
+          "image": "https://via.placeholder.com/300x300.png?text=image%20(300x300)",
+          "content": "https://via.placeholder.com/1440x900.png?text=content%20(1440x900)"
         },
         {
           "type": "youtube",
           "title": "Test Youtube",
           "description": "Description of youtube item",
-          "image": "https://picsum.photos/1440/720",
+          "image": "https://via.placeholder.com/300x300.png?text=image%20(300x300)",
           "content": "L989S2QxXUU"
         },
         {
           "type": "video",
           "title": "Test native video",
           "description": "Description of video item",
-          "image": "https://picsum.photos/1440/720",
+          "image": "https://via.placeholder.com/300x300.png?text=image%20(300x300)",
+          "poster": "https://via.placeholder.com/1440x900.png?text=poster%20(1440x900)",
           "content": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
         },
         {
           "type": "image",
           "title": "Test Image",
           "description": "Description of image item",
-          "image": "https://picsum.photos/1440/720",
-          "content": "https://picsum.photos/1440/720"
+          "image": "https://via.placeholder.com/300x300.png?text=image%20(300x300)",
+          "content": "https://via.placeholder.com/1440x900.png?text=content%20(1440x900)"
         },
         {
           "type": "image",
           "title": "Test Image",
           "description": "Description of image item",
-          "image": "https://picsum.photos/1440/720",
-          "content": "https://picsum.photos/1440/720"
+          "image": "https://via.placeholder.com/300x300.png?text=image%20(300x300)",
+          "content": "https://via.placeholder.com/1440x900.png?text=content%20(1440x900)"
         }
       ]
     },
@@ -60,15 +62,15 @@
           "type": "image",
           "title": "Test Image",
           "description": "Description of gallery item",
-          "image": "https://picsum.photos/1440/720",
-          "content": "https://picsum.photos/1440/720"
+          "image": "https://via.placeholder.com/300x300.png?text=image%20(300x300)",
+          "content": "https://via.placeholder.com/1440x900.png?text=content%20(1440x900)"
         },
         {
           "type": "image",
           "title": "Test Image",
           "description": "Description of gallery item",
-          "image": "https://picsum.photos/1440/720",
-          "content": "https://picsum.photos/1440/720"
+          "image": "https://via.placeholder.com/300x300.png?text=image%20(300x300)",
+          "content": "https://via.placeholder.com/1440x900.png?text=content%20(1440x900)"
         }
       ]
     },
@@ -80,92 +82,92 @@
           "type": "image",
           "title": "Test Image",
           "description": "Description of gallery item",
-          "image": "https://picsum.photos/1440/720",
-          "content": "https://picsum.photos/1440/720"
+          "image": "https://via.placeholder.com/300x300.png?text=image%20(300x300)",
+          "content": "https://via.placeholder.com/1440x900.png?text=content%20(1440x900)"
         },
         {
           "type": "image",
           "title": "Test Image",
           "description": "Description of gallery item",
-          "image": "https://picsum.photos/1440/720",
-          "content": "https://picsum.photos/1440/720"
+          "image": "https://via.placeholder.com/300x300.png?text=image%20(300x300)",
+          "content": "https://via.placeholder.com/1440x900.png?text=content%20(1440x900)"
         },
         {
           "type": "image",
           "title": "Test Image",
           "description": "Description of gallery item",
-          "image": "https://picsum.photos/1440/720",
-          "content": "https://picsum.photos/1440/720"
+          "image": "https://via.placeholder.com/300x300.png?text=image%20(300x300)",
+          "content": "https://via.placeholder.com/1440x900.png?text=content%20(1440x900)"
         },
         {
           "type": "image",
           "title": "Test Image",
           "description": "Description of gallery item",
-          "image": "https://picsum.photos/1440/720",
-          "content": "https://picsum.photos/1440/720"
+          "image": "https://via.placeholder.com/300x300.png?text=image%20(300x300)",
+          "content": "https://via.placeholder.com/1440x900.png?text=content%20(1440x900)"
         },
         {
           "type": "image",
           "title": "Test Image",
           "description": "Description of gallery item",
-          "image": "https://picsum.photos/1440/720",
-          "content": "https://picsum.photos/1440/720"
+          "image": "https://via.placeholder.com/300x300.png?text=image%20(300x300)",
+          "content": "https://via.placeholder.com/1440x900.png?text=content%20(1440x900)"
         },
         {
           "type": "image",
           "title": "Test Image",
           "description": "Description of gallery item",
-          "image": "https://picsum.photos/1440/720",
-          "content": "https://picsum.photos/1440/720"
+          "image": "https://via.placeholder.com/300x300.png?text=image%20(300x300)",
+          "content": "https://via.placeholder.com/1440x900.png?text=content%20(1440x900)"
         },
         {
           "type": "image",
           "title": "Test Image",
           "description": "Description of gallery item",
-          "image": "https://picsum.photos/1440/720",
-          "content": "https://picsum.photos/1440/720"
+          "image": "https://via.placeholder.com/300x300.png?text=image%20(300x300)",
+          "content": "https://via.placeholder.com/1440x900.png?text=content%20(1440x900)"
         },
         {
           "type": "image",
           "title": "Test Image",
           "description": "Description of gallery item",
-          "image": "https://picsum.photos/1440/720",
-          "content": "https://picsum.photos/1440/720"
+          "image": "https://via.placeholder.com/300x300.png?text=image%20(300x300)",
+          "content": "https://via.placeholder.com/1440x900.png?text=content%20(1440x900)"
         },
         {
           "type": "image",
           "title": "Test Image",
           "description": "Description of gallery item",
-          "image": "https://picsum.photos/1440/720",
-          "content": "https://picsum.photos/1440/720"
+          "image": "https://via.placeholder.com/300x300.png?text=image%20(300x300)",
+          "content": "https://via.placeholder.com/1440x900.png?text=content%20(1440x900)"
         },
         {
           "type": "image",
           "title": "Test Image",
           "description": "Description of gallery item",
-          "image": "https://picsum.photos/1440/720",
-          "content": "https://picsum.photos/1440/720"
+          "image": "https://via.placeholder.com/300x300.png?text=image%20(300x300)",
+          "content": "https://via.placeholder.com/1440x900.png?text=content%20(1440x900)"
         },
         {
           "type": "image",
           "title": "Test Image",
           "description": "Description of gallery item",
-          "image": "https://picsum.photos/1440/720",
-          "content": "https://picsum.photos/1440/720"
+          "image": "https://via.placeholder.com/300x300.png?text=image%20(300x300)",
+          "content": "https://via.placeholder.com/1440x900.png?text=content%20(1440x900)"
         },
         {
           "type": "image",
           "title": "Test Image",
           "description": "Description of gallery item",
-          "image": "https://picsum.photos/1440/720",
-          "content": "https://picsum.photos/1440/720"
+          "image": "https://via.placeholder.com/300x300.png?text=image%20(300x300)",
+          "content": "https://via.placeholder.com/1440x900.png?text=content%20(1440x900)"
         },
         {
           "type": "image",
           "title": "Test Image",
           "description": "Description of gallery item",
-          "image": "https://picsum.photos/1440/720",
-          "content": "https://picsum.photos/1440/720"
+          "image": "https://via.placeholder.com/300x300.png?text=image%20(300x300)",
+          "content": "https://via.placeholder.com/1440x900.png?text=content%20(1440x900)"
         }
       ]
     }

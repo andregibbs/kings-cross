@@ -1,12 +1,13 @@
 {
-  "title": "Components Page",
+  "title": "Components",
   "description": "for testing",
-  "image": "https://picsum.photos/1440/720",
-  "group": "group-name",
+  "image": "https://via.placeholder.com/1440x900.png?text=image%20(1440x900)",
+  "thumb": "https://via.placeholder.com/300x300.png?text=thumb%20(300x300)",
+  "group": "level-1",
   "components": [
     {
       "type": "kv",
-      "image": "https://picsum.photos/1440/720",
+      "image": "{{components[image]}}",
       "style": {
         "desktop": "left",
         "mobile": "top"
@@ -27,12 +28,12 @@
           "type": "buttons",
           "items": [
             {
-              "text": "button text",
-              "link": "url link"
+              "copy": "button text",
+              "url": "url link"
             },
             {
-              "text": "second button",
-              "link": "url link"
+              "copy": "second button",
+              "url": "url link"
             }
           ]
         }

@@ -21,11 +21,15 @@
 
 .hoiGroupLand__Image {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+  // height: 100%;
+  // width: auto;
   height: 100%;
-  width: auto;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
 }
 
 .hoiGroupLand__Label {

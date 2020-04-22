@@ -272,23 +272,26 @@ function HOITemplates() {
   }
 
   // Finds other page configs with a group id
-  function getPagesWithGroupId(id) {
+  function getPagesWithGroupId(id, currentFilePath) {
     const withId = []
     pages.forEach((path) => {
-      const pageData = require(path)
-      if (pageData.group === id) {
-        // Include page data aswell, no point double requiring in our use case
-        withId.push({
-          path,
-          pageData
-        })
+      // ignore current file path
+      if (path !== currentFilePath) {
+        const pageData = require(path)
+        if (pageData.group === id) {
+          // Include page data aswell, no point double requiring in our use case
+          withId.push({
+            path,
+            pageData
+          })
+        }
       }
     })
     return withId;
   }
 
   // Include any data that requires dynamic data from a different page
-  function populatePageDataVariables(pageData) {
+  function populatePageDataVariables(pageData, currentFilePath) {
     // First population
     // Based on specific component
     pageData.components.map((component) => {
@@ -299,7 +302,7 @@ function HOITemplates() {
             const path = id.split('|').join('/')
             return {
               url: publicUrl + path,
-              image: getPageData(path).image,
+              image: getPageData(path).thumb,
               title: getPageData(path).title
             }
           })
@@ -307,13 +310,13 @@ function HOITemplates() {
           break;
         case 'group':
           // find pages with same group id
-          let groupPages = getPagesWithGroupId(component.id);
+          let groupPages = getPagesWithGroupId(component.id, currentFilePath);
           // create array of items with data
           // console.log(publicUrl, path.replace(pagesBasePath, '').replace('|','/').replace('.json', ''))
           component.items = groupPages.map(({path, pageData}) => {
             return {
               title: pageData.title,
-              image: pageData.image,
+              image: pageData.thumb,
               url: publicUrl + path.replace(pagesBasePath, '').replace('|','/').replace('.json', ''),
             }
           })
@@ -371,7 +374,7 @@ function HOITemplates() {
     log('Building page: ' + urlSegments.join('/'))
 
     const breadcrumbs = createBreadcrumbs(urlSegments)
-    const populatedData = populatePageDataVariables(pageData);
+    const populatedData = populatePageDataVariables(pageData, filePath);
 
     const isStagingTask = argv._[0] === 'hoi-staging';
 

@@ -1,0 +1,61 @@
+{
+  "title": "Example Pages",
+  "description": "Example pages with some combinations of components and sub pages",
+  "image": "https://picsum.photos/1440/900",
+  "thumb": "https://picsum.photos/300/300",
+  "group": "level-1",
+  "components": [
+    {
+      "type": "kv",
+      "image": "{{example[image]}}",
+      "style": {
+        "desktop": "left",
+        "mobile": "bottom"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "level": "1",
+          "copy": "Example Page"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "{{example[description]}}"
+          ]
+        },
+        {
+          "type": "buttons",
+          "items": [
+            {
+              "copy": "And a button!",
+              "url": "url"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "headline",
+          "level": "2",
+          "copy": "Welcome to the page"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae orci vestibulum, efficitur lacus nec, venenatis lorem. Duis aliquam purus eget sem iaculis, quis pellentesque neque molestie. Nunc convallis, quam eget venenatis rutrum, quam risus rutrum augue, eu porta enim est sit amet dui. Vivamus dui leo, posuere in nisl at, euismod egestas odio. Suspendisse laoreet nisi nibh, id molestie metus placerat in. Ut quis ultricies orci. Donec et malesuada justo. Maecenas venenatis finibus metus id gravida. Sed commodo consectetur diam, vel pretium erat placerat non. Morbi ac ornare purus. Etiam venenatis fringilla sem cursus euismod. Mauris accumsan turpis sit amet lacus gravida, sed ultrices sem tristique. Aliquam erat volutpat. Phasellus bibendum turpis vel leo accumsan dignissim. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi commodo sit amet nibh ac rutrum.",
+            "Aliquam erat volutpat. Integer sagittis mi sollicitudin dignissim interdum. Phasellus a erat eros. Suspendisse euismod dapibus lectus non molestie. Vestibulum vel leo sit amet tellus mattis dignissim. Pellentesque sagittis lacus quis nunc pharetra, faucibus molestie lacus laoreet. Donec et tincidunt elit. Proin felis sem, porta ac consequat id, accumsan a diam. Aenean et dapibus dolor. Vestibulum sed magna sodales, auctor nunc ut, volutpat lacus. In sodales quam egestas egestas suscipit. Pellentesque in vulputate neque. In tristique, leo malesuada hendrerit efficitur, justo turpis elementum tellus, sed gravida risus eros ac nunc."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "example-sub",
+      "title": "Heres some sub pages"
+    }
+  ]
+}

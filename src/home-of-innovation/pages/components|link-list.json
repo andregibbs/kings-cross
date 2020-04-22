@@ -1,7 +1,8 @@
 {
-  "title": "LinkList Page",
+  "title": "Link List",
   "description": "linklist page for testing",
-  "image": "https://picsum.photos/1440/720",
+  "image": "https://via.placeholder.com/1440x900.png?text=image%20(1440x900)",
+  "thumb": "https://via.placeholder.com/300x300.png?text=thumb%20(300x300)",
   "group": "hoi-component",
   "components": [
     {
@@ -11,22 +12,22 @@
         {
           "title": "{{components|key-visual[title]}}",
           "url": "{{components|key-visual[url]}}",
-          "image": "{{components|key-visual[image]}}"
+          "image": "{{components|key-visual[thumb]}}"
         },
         {
           "title": "{{components|headline[title]}}",
           "url": "{{components|headline[url]}}",
-          "image": "{{components|headline[image]}}"
+          "image": "{{components|headline[thumb]}}"
         },
         {
           "title": "{{components|wrapper[title]}}",
           "url": "{{components|wrapper[url]}}",
-          "image": "{{components|wrapper[image]}}"
+          "image": "{{components|wrapper[thumb]}}"
         },
         {
           "title": "{{components|wrapper[title]}}",
           "url": "{{components|wrapper[url]}}",
-          "image": "{{components|wrapper[image]}}"
+          "image": "{{components|wrapper[thumb]}}"
         }
       ]
     },

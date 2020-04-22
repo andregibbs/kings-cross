@@ -1,12 +1,13 @@
 {
-  "title": "Key Visual Component Tests",
+  "title": "Key Visual",
   "description": "Page for Key visual tests",
-  "image": "https://picsum.photos/1440/720",
+  "image": "https://via.placeholder.com/1440x900.png?text=image%20(1440x900)",
+  "thumb": "https://via.placeholder.com/300x300.png?text=thumb%20(300x300)",
   "group": "hoi-component",
   "components": [
     {
       "type": "kv",
-      "image": "https://picsum.photos/1440/720",
+      "image": "https://via.placeholder.com/1440x900.png?text=image%20(1440x900)",
       "style": {
         "desktop": "left",
         "mobile": "bottom"
@@ -18,7 +19,7 @@
           "copy": "KV Desktop Left"
         },
         {
-          "type": "paras",
+          "type": "paragraphs",
           "text": [
             "and a paragraph in here",
             "and another"
@@ -31,7 +32,7 @@
     },
     {
       "type": "kv",
-      "image": "https://picsum.photos/1440/720",
+      "image": "https://via.placeholder.com/1440x900.png?text=image%20(1440x900)",
       "style": {
         "desktop": "right",
         "mobile": "bottom"
@@ -43,7 +44,7 @@
           "copy": "KV Desktop Right"
         },
         {
-          "type": "paras",
+          "type": "paragraphs",
           "text": [
             "and a paragraph in here",
             "and another"
@@ -56,7 +57,7 @@
     },
     {
       "type": "kv",
-      "image": "https://picsum.photos/1440/720",
+      "image": "https://via.placeholder.com/1440x900.png?text=image%20(1440x900)",
       "style": {
         "desktop": "top",
         "mobile": "bottom"
@@ -68,7 +69,7 @@
           "copy": "KV Desktop Top"
         },
         {
-          "type": "paras",
+          "type": "paragraphs",
           "text": [
             "and a paragraph in here",
             "and another"
@@ -81,7 +82,7 @@
     },
     {
       "type": "kv",
-      "image": "https://picsum.photos/1440/720",
+      "image": "https://via.placeholder.com/1440x900.png?text=image%20(1440x900)",
       "style": {
         "desktop": "left",
         "mobile": "bottom"
@@ -93,7 +94,7 @@
           "copy": "KV Mobile Bottom"
         },
         {
-          "type": "paras",
+          "type": "paragraphs",
           "text": [
             "and a paragraph in here",
             "and another"
@@ -106,7 +107,7 @@
     },
     {
       "type": "kv",
-      "image": "https://picsum.photos/1440/720",
+      "image": "https://via.placeholder.com/1440x900.png?text=image%20(1440x900)",
       "style": {
         "desktop": "left",
         "mobile": "top"
@@ -118,7 +119,7 @@
           "copy": "KV Mobile Top"
         },
         {
-          "type": "paras",
+          "type": "paragraphs",
           "text": [
             "and a paragraph in here",
             "and another"

@@ -1,7 +1,8 @@
 {
   "title": "Group Land Sub 1",
   "description": "category",
-  "image": "https://picsum.photos/1440/720",
+  "image": "https://via.placeholder.com/1440x900.png?text=image%20(1440x900)",
+  "thumb": "https://via.placeholder.com/300x300.png?text=thumb%20(300x300)",
   "components": [
     {
       "type": "kv",
