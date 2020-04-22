@@ -68,7 +68,7 @@ const tabs = {
             <p>The 90-minute event featured an intimate live performance from Caitlin as she reflected on one of her most popular Twitter threads - a look at the downsides of being a man – followed by a Q&A with the audience and Alex Zane which highlighted some of her greatest, weirdest and funniest moments on the platform.</p>
             <p>Thread Talks is a series of six intimate and exclusive ‘in conversation’ events featuring some of the biggest names in the world of journalism, sport, culture and comedy. The acts will perform at the venue’s Centre Stage in front the world’s first vertical 10metre-wide curved Samsung screen.</p>
             <p>Each free event is being hosted in association with Twitter UK and on each night guests will hear from the company’s Director of Planning, David Wilding.</p>`,
-        "link" : "https://www.youtube.com/channel/UC_v6xPXpnS4LaLEdfMr-Lzw",
+        "link" : "https://www.youtube.com/watch?v=V_qo-YXoaJc&list=PLrUG7VyDs_IUJjPkzyWADKvxld8A4Na1n&index=5&t=0s",
         "slot": 1
     },
     2: {
