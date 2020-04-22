@@ -20,6 +20,8 @@ var babel = require('babelify')
 var through = require('through2')
 var uglify = require('gulp-uglify')
 var htmlmin = require('gulp-html-minifier');
+var gulpif = require('gulp-if');
+var concat = require('gulp-concat');
 
 /* Other dependencies */
 var chalk = require('chalk')
@@ -371,6 +373,8 @@ function HOITemplates() {
     const breadcrumbs = createBreadcrumbs(urlSegments)
     const populatedData = populatePageDataVariables(pageData);
 
+    const isStagingTask = argv._[0] === 'hoi-staging';
+
     // Gulp loop to generate the site files
     gulp.src( config.SRC_FOLDER + '/' + _HOI_FOLDER + '/index.hbs' )
       .pipe(handlebars({
@@ -383,6 +387,7 @@ function HOITemplates() {
           config: {
             site: SITE,
             subfolder: SUBFOLDER + '/',
+            staging: isStagingTask
           }
       	}
       }))
@@ -394,8 +399,6 @@ function HOITemplates() {
 }
 
 function HOIJs (bundler) {
-
-
 
 	// function rebundle() {
 	bundler.bundle()
@@ -440,19 +443,28 @@ gulp.task('home-of-innovation-js', () => {
 // Home Of Innovation SCSS Task
 gulp.task('home-of-innovation-scss', () => {
 
-  // HOI SCSS
-  return gulp.src(config.SRC_FOLDER + '/scss/'+_HOI_FOLDER+'/index.scss')
-    .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
-      .pipe(autoprefixer({
-      grid: true,
-          browsers: ['last 2 versions'],
-          cascade: false
-      }))
-      .pipe(gulp.dest( config.BUILD_FOLDER + SITE + '/' + SUBFOLDER + '/css/' + _HOI_FOLDER ))
-      .on('end', function() {
-        log('HOI SCSS Compiled')
-      })
+  const isStagingTask = argv._[0] === 'hoi-staging';
 
+  const srcFiles = isStagingTask ? [
+    config.SRC_FOLDER + '/scss/'+_HOI_FOLDER+'/index.scss',
+    config.SRC_FOLDER + '/scss/'+_HOI_FOLDER+'/staging.scss'
+  ] : [
+    config.SRC_FOLDER + '/scss/'+_HOI_FOLDER+'/index.scss'
+  ]
+
+  // HOI SCSS
+  return gulp.src(srcFiles)
+    .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
+    .pipe(autoprefixer({
+    grid: true,
+        browsers: ['last 2 versions'],
+        cascade: false
+    }))
+    .pipe(concat('index.css'))
+    .pipe(gulp.dest( config.BUILD_FOLDER + SITE + '/' + SUBFOLDER + '/css/' + _HOI_FOLDER ))
+    .on('end', function() {
+      log('HOI SCSS Compiled')
+    })
 })
 
 // Home Of Innovation Watch Task
@@ -464,7 +476,9 @@ gulp.task('home-of-innovation-watch', () => {
   log('Watching HOI folder')
 })
 
-gulp.task('hoi', ['home-of-innovation-scss', 'home-of-innovation-build', 'home-of-innovation-js', 'home-of-innovation-watch'])
+gulp.task('hoi-staging', ['home-of-innovation-scss', 'home-of-innovation-build', 'home-of-innovation-js'])
+
+gulp.task('hoi-dev', ['home-of-innovation-scss', 'home-of-innovation-build', 'home-of-innovation-js', 'home-of-innovation-watch'])
 
 gulp.task('production', sequence('delete-build', 'copy-assets', 'scss', 'buildJS', 'html') )
 gulp.task('development', sequence('copy-assets', 'scss', 'buildJS', 'html', 'minify') )
