@@ -21,7 +21,7 @@
 					</div>
 				</div>
 			  </section>
-
+{{#ifCond @root.config.closed false}}
 	<section class="section relatedEvents">
 		<div class="section__inner">
 			<div class="relatedEvents__header">
@@ -34,7 +34,7 @@
 			</div>
 		</div>
 	</section>
-
+{{/ifCond}}
 	<section class="section kx-video">
 		<div class="section__inner">
 			<video class="video__main" preload="none" playsinline onclick="if(this.paused) { this.play() }else{this.pause()}"

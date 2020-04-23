@@ -97,7 +97,7 @@
 					<div class="event__content-book action">
 
 						[[#if externalbookinglink ]]						
-							<a ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:[[ title ]]_book-now" data-omni-type="microsite" data-omni="uk:kings-cross:event-page:[[ title ]]:book-now" href="[[externalbookinglink]]" class="link-book btn btn--primary" target="_blank">book now</a>							
+							<a ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:[[ title ]]_book-now" data-omni-type="microsite" data-omni="uk:kings-cross:event-page:[[ title ]]:book-now" href="[[externalbookinglink]]" class="link-book btn btn--primary" target="_blank">{{#ifCond @root.config.closed true}}Learn more{{else}}book now{{/ifCond}}</a>							
 							[[#if reoccurring]]
 								<button ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:[[ dash title ]]_other-times" data-omni-type="microsite" data-omni="uk:kings-cross:event-page:[[ dash title ]]:other-times" class="action-btn btn btn--secondary changeTime">Other Times</button>								
 							[[/if]]
