@@ -1,6 +1,13 @@
-{{#unless config.staging}}
+{{#if config.staging}}
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" defer></script>
+  </head>
+  <body>
+{{else}}
   <!--#include virtual="/uk/aem/header-pdp.html"-->
-{{/unless}}
+{{/if}}
 
 
 <section class="cheil-static home-of-innovation">
@@ -16,65 +23,9 @@
 
 	{{> home-of-innovation/components }}
 
-  {{!-- move to components
-  	{{#unless items}}
-  	 {{> home-of-innovation/contentPagination }}
-  	{{/unless}}
-  --}}
-
-{{!--
-
-BELOW is all the old stuff below from s9 need to knows project
-
- - includes ...
- - breadcrumbs
- - find out more navigation (2nd level pages)
- - back (used on mobile in place of breadcrumbs - i think)
- - previous and next - used to navigate between detail pages (bottom level - mainly 3rd, some 2nd)
-
---}}
-
-{{!--
-
-	{{ config.site }}
-	{{ config.subfolder }}
-
-<div>
-	{{ dtgen }}
-	<br/>
-	{{ site }}
-	<br/>
-	{{ subfolder }}
-	<br/>
-
-	{{ json breadcrumbs }}
-
-	<br/>
-	{{#each findoutmore}}
-		{{ this.title }}
-	{{/each}}
-	{{ json findoutmore }}
-
-	{{ json back }}
-	<br/>
-	{{ json prev }}
-	<br/>
-	{{ json next }}
-</div>
-
-
-	{{#each items}}
-		<p>{{ this.title }}</p>
-	{{/each}}
-
- --}}
-
-
-
 	</section>
 
 	{{!-->components/findKx--}}
-
 	{{>components/socialMedia}}
 
 	{{> scripts }}
@@ -82,6 +33,9 @@ BELOW is all the old stuff below from s9 need to knows project
 
 </section>
 
-{{#unless config.staging}}
+{{#if config.staging}}
+  </body>
+</html>
+{{else}}
 <!--#include virtual="/uk/aem/footer-pdp.html"-->
-{{/unless}}
+{{/if}}

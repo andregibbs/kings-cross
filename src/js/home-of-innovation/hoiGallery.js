@@ -7,7 +7,9 @@ class HOIGallery {
     this.spotlightCloseButton = this.spotlight.querySelector('.hoiGallery__SpotlightClose');
 
     this.sliderTarget = this.spotlight.querySelector('.hoiGallery__SpotlightItems');
-    this.slick = $(this.sliderTarget).slick();
+    this.slick = $(this.sliderTarget).slick({
+      rows: 0
+    });
     this.slickInstance = this.slick[0].slick;
 
     this.youtubeInstances = []
