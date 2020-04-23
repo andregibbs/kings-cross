@@ -35,7 +35,8 @@ class HOIGallery {
   slideWillHide(slideIndex) {
     const youtubeInstance = this.youtubeInstances[slideIndex]
     // if this hiding slide index has a youtube instance
-    if (youtubeInstance) {
+    if (youtubeInstance && typeof youtubeInstance.pauseVideo !== "undefined") {
+      // have to check pause
       youtubeInstance.pauseVideo(); // pause the video
     }
   }
@@ -59,11 +60,15 @@ class HOIGallery {
             height: '100%',
             width: '100%'
           })
+
           // will probably need to subscribe to play paused events to
           // show/hide a cover image & to enable swiping on the i
 
           // store instance
-          this.youtubeInstances[slideIndex] = youtubeInstance
+          youtubeInstance.addEventListener('onReady', () => {
+            this.youtubeInstances[slideIndex] = youtubeInstance
+          })
+
         } else {
           youtubeInstance = this.youtubeInstances[2]
         }
