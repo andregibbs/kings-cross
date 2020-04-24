@@ -3,13 +3,16 @@
 ========================================================================== */
 
 #content {
-	background: $background;
+  background: $background;
+  transition: margin-left 0.3s ease-in-out;
+  overflow-x: hidden;
+  width: 100vw;
 }
 
 // Hiding explore nav
 //Important to hide explore menu
 .content-inherited-wrap.parsys.iparsys {
-	display: none!important;
+  display: none !important;
 }
 // fix width after removal of explore menu
 #content .cm-g-static-content {
@@ -17,51 +20,54 @@
 }
 
 .cheil-static {
-	background: $background;
-	color: $white;
+  background: $background;
+  color: $white;
 
-	*, *:after, *:before {
-		box-sizing: border-box;
-		-moz-box-sizing: border-box;
-		-webkit-box-sizing: border-box;
-	}
+  *,
+  *:after,
+  *:before {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
 
-	ul {
-	margin: 0;
-	padding: 0;
-	}
+  ul {
+    margin: 0;
+    padding: 0;
+  }
 
-	li {
-	list-style-type: none;
-	}
+  li {
+    list-style-type: none;
+  }
 
-	a {
-		color: $pink;
-	}
+  a {
+    color: $pink;
+  }
 
-	img {
-		width: 100%;
-	}
+  img {
+    width: 100%;
+  }
 
-	button {
-		color: $white;
-	}
-
+  button {
+    color: $white;
+  }
 }
 
-
-.lity-iframe .lity-container, .lity-youtube .lity-container, .lity-vimeo .lity-container, .lity-facebookvideo .lity-container, .lity-googlemaps .lity-container {
-	width: 100%;
-    max-width: 80%;
+.lity-iframe .lity-container,
+.lity-youtube .lity-container,
+.lity-vimeo .lity-container,
+.lity-facebookvideo .lity-container,
+.lity-googlemaps .lity-container {
+  width: 100%;
+  max-width: 80%;
 }
 
 .lity-content {
-	height: 80vh;
-    display: flex;
-    justify-content: center;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
 }
 
-
 .lity-iframe-container {
-	height: initial;
+  height: initial;
 }

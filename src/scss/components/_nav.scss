@@ -1,57 +1,162 @@
-
 /*=============================================
 =            Nav            =
 =============================================*/
 
 .nav {
+  &__navigation {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&1+28,0.65+75,0+100 */
+    background: -moz-linear-gradient(
+      top,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 1) 28%,
+      rgba(0, 0, 0, 0.65) 75%,
+      rgba(0, 0, 0, 0) 100%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+      top,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 1) 28%,
+      rgba(0, 0, 0, 0.65) 75%,
+      rgba(0, 0, 0, 0) 100%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 1) 28%,
+      rgba(0, 0, 0, 0.65) 75%,
+      rgba(0, 0, 0, 0) 100%
+    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
 
-	&__navigation {
-		/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&1+28,0.65+75,0+100 */
-		background: -moz-linear-gradient(top,  rgba(0,0,0,1) 0%, rgba(0,0,0,1) 28%, rgba(0,0,0,0.65) 75%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
-		background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 28%,rgba(0,0,0,0.65) 75%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
-		background: linear-gradient(to bottom,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 28%,rgba(0,0,0,0.65) 75%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+    .navigation-desktop {
+      display: flex;
+      justify-content: center;
+      text-transform: uppercase;
+      font-weight: bold;
 
-		padding: 20px;
-		ul {
-			display: flex;
-			justify-content: center;
-			text-transform: uppercase;
-			font-weight: bold;
-		}
+      @media (max-width: $mobile) {
+        display: none;
+      }
+    }
 
-		li {
-			margin: 0 100px;
-			@media screen and ( max-width: $desktop ) {
-				margin: 0 get-desktop-vw(100);
-			}
+    &-link-container {
+      margin: 0 100px;
+      // padding: 20px 0;
+      position: relative;
 
-			@media screen and ( max-width: $mobile ) {
-				margin: 0 get-mobile-vw(20);
-			}
-		}
+      @media screen and (max-width: $desktop) {
+        margin: 0 get-desktop-vw(100);
+      }
 
-		a {
-			color: $white;
-			letter-spacing: 1px;
-			transition: all 0.4s ease;
-			opacity: 1;
-			display: flex;
-			&:hover {
-				opacity: 0.6;
-				transition: opacity 0.4s;
-			}
-		}
-	}
+      @media screen and (max-width: $mobile) {
+        margin: 0 get-mobile-vw(20);
+      }
 
-	&--sticky {
-		position: fixed;
-		top: 0;
-		left: 0;
-		right: 0;
-		z-index: 99;
-	}
+      a {
+        padding: 20px 0;
+      }
+
+      &:hover .nav__navigation--submenu {
+        opacity: 1;
+        visibility: visible;
+        z-index: 10;
+      }
+    }
+
+    &-main-link {
+      &:hover {
+      }
+
+      &.login-link {
+        padding: 20px;
+        border-width: 2px;
+        border-style: solid;
+        border-image: linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 1),
+            rgba(255, 255, 255, 0)
+          )
+          1 100%;
+      }
+    }
+
+    a {
+      color: $white;
+      letter-spacing: 1px;
+      transition: all 0.4s ease;
+      opacity: 1;
+      display: flex;
+      &:hover {
+        opacity: 0.6;
+        transition: opacity 0.4s;
+      }
+    }
+
+    &--submenu {
+      position: absolute;
+      flex-flow: column;
+      border-radius: 0 0 15px 15px;
+      width: 250px;
+      background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 1) 100%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+
+      li {
+        padding: 1rem;
+      }
+    }
+  }
+
+  &--sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+
+    .nav__navigation--submenu {
+      background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.85) 15%,
+        rgba(0, 0, 0, 1) 100%
+      );
+    }
+  }
+
+  .navigation-mobile {
+    display: flex;
+    position: relative;
+    padding: 20px;
+    width: 100vw;
+    @media (min-width: $mobile) {
+      display: none;
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
+      padding: 0 0.5rem;
+    }
+
+    &__login-container {
+      margin-left: auto;
+
+      .login-link {
+        border-image: none;
+        border-top: none;
+        border-bottom: none;
+        padding: 0 10px;
+        text-transform: uppercase;
+      }
+    }
+  }
 }
 
 /*=====  End of Nav  ======*/
-
