@@ -28,7 +28,7 @@ case "$1" in
 "staging")
     echo "dry run deploy to staging ..."
     #
-	aws s3 sync --dryrun build/$SUBFOLDER $S3STAGING$SUBFOLDER --exclude "*" --include "css/*" --include "js/*" --include "home-of-innovation/*" --exclude "*DS_Store" 
+	aws s3 sync --dryrun build/$SUBFOLDER $S3STAGING$SUBFOLDER --exclude "*" --include "css/*" --include "js/*" --include "index.html" --include "home-of-innovation/*" --exclude "*DS_Store"
 	#
 	read -p "Are you sure you want to deploy? " -n 1 -r
 	echo    # (optional) move to a new line
@@ -36,7 +36,7 @@ case "$1" in
 	then
 	    # do it
 	    echo "deploying to staging ..."
-		aws s3 sync build/$SUBFOLDER $S3STAGING$SUBFOLDER --exclude "*" --include "css/*" --include "js/*" --include "home-of-innovation/*" --exclude "*DS_Store" 
+		aws s3 sync build/$SUBFOLDER $S3STAGING$SUBFOLDER --exclude "*" --include "css/*" --include "js/*" --include "home-of-innovation/*" --include "index.html" --exclude "*DS_Store"
 		echo "done"
 
 		echo "********************************************"

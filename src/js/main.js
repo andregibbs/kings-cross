@@ -18,6 +18,7 @@ import school from './components/school'
 import homeOfInnovation from './components/homeOfInnovation'
 
 import loadingScreenAnimation from '../data/loadingScreen.json';
+import innovationAnimation from '../data/innovationAnimation.json';
 import create from '../data/Create.json';
 import colab from '../data/Colab.json';
 import coms from '../data/Coms.json';
@@ -42,7 +43,7 @@ $(document).ready(function () {
 	// 	$('.accordianIcon').hasClass('accordianIcon__expand') ? $(".accordianIcon").removeClass('accordianIcon__expand').addClass('accordianIcon__collapse') : $(".accordianIcon").removeClass('accordianIcon__collapse').addClass('accordianIcon__expand')
 	// 	$('.accordian').hasClass('accordian__expanded') ? $(".accordian").removeClass('accordian__expanded').addClass('accordian__collapsed') : $(".accordian").removeClass('accordian__collapsed').addClass('accordian__expanded')
 	// })
-	if (window.jQuery) {  
+	if (window.jQuery) {
        // Open a URL in a lightbox
 // var lightbox = lity('#video-intro');
 
@@ -210,7 +211,7 @@ $(document).ready(function () {
 
 			// store the 'converted' data as events in main and filter out events with no extra info
 			doLog(data.filter(event => !event.extra));
-			
+
 			events = data.filter(event => event.extra);
 
 
@@ -363,12 +364,136 @@ $(document).ready(function () {
 			fetchData(whatIsKx);
 			//places();
 			// whatIsKx();
-		// 	var container = document.getElementById('loadingScreen__animation');
-		//    loadingScreen(container, loadingScreenAnimation);
-			
 
 			var container = document.getElementById('loadingScreen__animation');
-			loadingScreen(container, loadingScreenAnimation);
+			loadingScreen(container, loadingScreenAnimation, () => {
+
+        let animFrame;
+
+        const bodyRect = document.querySelector('body').getBoundingClientRect();
+        const kvElementRect = document.querySelector('.hoiKV').getBoundingClientRect();
+        const navRect = document.querySelector('.hoiNav').getBoundingClientRect();
+
+        function getRects() {
+          return {
+            body: document.querySelector('body').getBoundingClientRect(),
+            kv: document.querySelector('.hoiKV').getBoundingClientRect(),
+            nav: document.querySelector('.hoiNav').getBoundingClientRect(),
+          }
+        }
+
+        let rects = getRects();
+        // update rects only on resize
+        window.addEventListener('resize', () => {
+          console.log('update rects', rects)
+          rects = getRects()
+        })
+
+        // delcare easings
+        let easing = {
+          easeOutCirc: (x) => {
+            return Math.sqrt(1 - Math.pow(x - 1, 2))
+          },
+          easeInSine: (x) => {
+            return 1 - Math.cos((x * Math.PI) / 2)
+          }
+        }
+
+        // main animate function
+        function animate(e) {
+          const scroll = window.scrollY;
+          const svgEl = document.querySelector('.hoiSvg')
+
+          // define each animation step
+          let steps = [
+            {
+              scroll: 0, // start scroll position of step,
+              easing: easing.easeOutCirc, // easing to use
+              values: {
+                y: -((rects.kv.height * 0.3) + (rects.nav.height / 2)), // values to transform
+                x: -(Math.min(1440, window.innerWidth) / 4),
+                rotate: 20,
+                scale: 2,
+              }
+            },
+            {
+              // for responsiveness this scroll position is dynamic an based of element dimension
+              // this position is for the center point of the nav items
+              scroll: (rects.nav.top - rects.body.top) - ((window.innerHeight - rects.nav.height) / 2) - 100,
+              easing: easing.easeInSine,
+              values: {
+                y: -50,
+                x: 0,
+                rotate: 0,
+                scale: 1,
+              }
+            },
+            {
+              // for responsiveness this scroll position is dynamic an based of element dimension
+              // this position is for the center point of the nav items
+              scroll: (rects.nav.top - rects.body.top) - ((window.innerHeight - rects.nav.height) / 2) + 100,
+              easing: easing.easeInSine,
+              values: {
+                y: 50,
+                x: 0,
+                rotate: 0,
+                scale: 1,
+              }
+            },
+            {
+              // last scroll is after 50% of the nav items are out of view
+              scroll: ((rects.nav.top - rects.body.top) - ((window.innerHeight - rects.nav.height) / 2)) + (window.innerHeight * 0.5),
+              values: {
+                y: (rects.nav.height / 3),
+                x: 0,
+                rotate: -90,
+                scale: 2,
+              }
+            }
+          ]
+
+          steps.forEach((step, i) => {
+            // loop through steps,
+            // find active step if scroll position is less than current scroll
+            if (scroll > step.scroll) {
+              let nextStep = steps[i+1] // next step
+              let progress = 1; // progress between steps, default as 1 for use in last step
+              let values = {} // will contain the calculated transform values
+
+              // if on last step, force final values
+              if (!nextStep) {
+                let prevStep = steps[i-1];
+                // loop through keys and calculate values based on progress between steps
+                Object.keys(step.values).forEach((key, i) => {
+                  values[key] = ((step.values[key] - prevStep.values[key]) * progress) + prevStep.values[key];
+                });
+
+              } else {
+                // calculate progress on animation using scroll pos between current and next step
+                progress = ((scroll - step.scroll) / (nextStep.scroll - step.scroll))
+                let eased = step.easing(progress)
+                // loop through value keys
+                Object.keys(step.values).forEach((key, i) => {
+                  values[key] = ((nextStep.values[key] - step.values[key]) * progress) + step.values[key];
+                });
+
+              }
+              // set transform style
+              svgEl.style.transform = `translate(${values['x'].toFixed(2)}px ,${values['y'].toFixed(2)}px) rotateZ(${values['rotate'].toFixed(2)}deg) scale(${values['scale'].toFixed(2)})`
+            }
+
+          })
+
+
+        }
+        function onScroll(e) {
+          cancelAnimationFrame(animFrame);
+          animFrame = requestAnimationFrame(animate)
+        }
+        window.addEventListener('scroll', onScroll);
+        animate();
+
+      }, true)
 			break;
 
 		case "/uk/explore/kings-cross/discover/":
@@ -376,22 +501,22 @@ $(document).ready(function () {
 			discover();
 			function showImages(el) {
 				var windowHeight = jQuery( window ).height();
-				
+
 				$(el).each(function(){
 					var thisPos = $(this).offset().top;
-		
+
 					var topOfWindow = $(window).scrollTop();
 					if (topOfWindow + windowHeight - 200 > thisPos ) {
 						$(this).addClass("fadeIn");
 					}
 				});
 			}
-		
+
 			// if the image in the window of browser when the page is loaded, show that image
 			$(document).ready(function(){
 					showImages('.star');
 			});
-		
+
 			// if the image in the window of browser when scrolling the page, show that image
 			$(window).scroll(function() {
 					showImages('.star');
@@ -448,15 +573,15 @@ $(document).ready(function () {
 				lottieAnim('colab', colab);
 				lottieAnim('coms', coms);
 				lottieAnim('crit', critical);
-				lottieAnim('create', create);	
+				lottieAnim('create', create);
 				//places();
-				
+
 				function showImages(el) {
 					var windowHeight = jQuery( window ).height();
-					
+
 					$(el).each(function(){
 						var thisPos = $(this).offset().top;
-			
+
 						var topOfWindow = $(window).scrollTop();
 						if (topOfWindow + windowHeight - 200 > thisPos ) {
 							$(this).addClass("fadeIn");
@@ -465,17 +590,17 @@ $(document).ready(function () {
 				}
 				function showVidSvg(el) {
 					var windowHeight = jQuery( window ).height();
-					
+
 					$(el).each(function(){
 						var thisPos = $(this).offset().top;
-			
+
 						var topOfWindow = $(window).scrollTop();
 						if (topOfWindow + windowHeight - 200 > thisPos ) {
 							$(this).addClass("fadevid");
 						}
 					});
 				}
-			
+
 				// if the image in the window of browser when the page is loaded, show that image
 				$(document).ready(function(){
 						showImages('.star');
@@ -486,42 +611,42 @@ $(document).ready(function () {
 							case "one":
 								setTimeout(function(){$('html, body').animate({
 									scrollTop: $("#weekOne").offset().top-parseInt(navBarHeight)
-								}, 500); }, 2000);	
+								}, 500); }, 2000);
 								break;
 							case "two":
 								setTimeout(function(){$('html, body').animate({
 									scrollTop: $("#weekTwo").offset().top-parseInt(navBarHeight)
-								}, 500); }, 2000);	
+								}, 500); }, 2000);
 								break;
 							case "three":
 								setTimeout(function(){$('html, body').animate({
 									scrollTop: $("#weekThree").offset().top-parseInt(navBarHeight)
-								}, 500); }, 2000);	
+								}, 500); }, 2000);
 								break;
 							case "four":
 								setTimeout(function(){$('html, body').animate({
 									scrollTop: $("#weekFour").offset().top-parseInt(navBarHeight)
-								}, 500); }, 2000);	
+								}, 500); }, 2000);
 								break;
 							default:
 								break;
 						}
 						// if(window.location.href.indexOf("?week=one") > -1) {
-							
+
 						// 	// setTimeout(function(){$('html, body').animate({
 						// 	// 	scrollTop: $("#scrollto").offset().top-10
-						// 	// }, 1000); }, 2000);		
-													
+						// 	// }, 1000); }, 2000);
+
 						//  }
 
 				});
-			
+
 				// if the image in the window of browser when scrolling the page, show that image
 				$(window).scroll(function() {
 						showImages('.star');
 						showVidSvg('.vidstar');
 				});
-					
+
 			break;
 
 		case "/uk/explore/kings-cross/not-a-school/sign-up/":
@@ -533,16 +658,16 @@ $(document).ready(function () {
 		}
 	}
 
-	console.log('HOME-OF-INNOVATION', 'xxx');
-
-	if (window.location.pathname.indexOf('/uk/explore/kings-cross/home-of-innovation/') == 0) {
-
-		console.log('HOME-OF-INNOVATION', window.location.pathname);
-
-		homeOfInnovation();
-		
-	}
-
-	console.log('HOME-OF-INNOVATION', 'xxx');
+	// console.log('HOME-OF-INNOVATION', 'xxx');
+  //
+	// if (window.location.pathname.indexOf('/uk/explore/kings-cross/home-of-innovation/') == 0) {
+  //
+	// 	console.log('HOME-OF-INNOVATION', window.location.pathname);
+  //
+	// 	homeOfInnovation();
+  //
+	// }
+  //
+	// console.log('HOME-OF-INNOVATION', 'xxx');
 
 })

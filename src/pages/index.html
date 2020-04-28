@@ -6,12 +6,31 @@
 
 	{{>components/nav }}
 
-	{{>components/homepageKV }}
+	<!-- {{>components/homepageKV }} -->
 
 	<!-- hidden h1 for seo -->
-	<h1 class="h1-hidden">Welcome to Samsung KX</h1>
 
-		<section class="section copy">
+
+  <div class="hoiSection">
+    <div class="hoiKV">
+      <h1 class="h1-hidden">Welcome to Samsung KX</h1>
+    </div>
+
+    <div class="hoiNav">
+      <div class="hoiItems">
+        <div class="hoiItem">Item</div>
+        <div class="hoiItem">Item</div>
+        <div class="hoiItem">Item</div>
+        <div class="hoiItem">Item</div>
+      </div>
+      <div class="hoiSvg">
+        {{> home-page-svg}}
+      </div>
+    </div>
+
+  </div>
+
+		<!-- <section class="section copy">
 				<div class="section__inner">
 					<div class="copy__container">
 							<p>It’s not a shop. It’s a place you can <span class="copy__hashtag">#DoWhatYouCant</span></p>
@@ -20,7 +39,7 @@
 							href="/{{ config.site }}/{{ config.subfolder }}/discover" class="button btn btn--primary">DISCOVER MORE</a>
 					</div>
 				</div>
-			  </section>
+			 </section> -->
 
 	<section class="section relatedEvents">
 		<div class="section__inner">
