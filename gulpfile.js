@@ -165,7 +165,9 @@ gulp.task('watchJS', function() { return watchJS() })
 
 /* Watch /src directory for changes & reload gulp */
 gulp.task('html', function () {
-		var data = config.SRC_FOLDER + '/data/config.json'
+		var data = require(config.SRC_FOLDER + '/data/config.json')
+
+    const isStagingTask = argv._[0] === 'staging';
 
 		/* No copy doc exists, just compile the templates as is */
 		return gulp.src( config.SRC_FOLDER + '/pages/**/*.{html,js,hbs}' )
@@ -173,7 +175,14 @@ gulp.task('html', function () {
 					helpers: config.SRC_FOLDER + '/templates/helpers/handlebarsHelpers.js',
 					partials: config.SRC_FOLDER + '/templates/partials/**/*.{html,js,hbs}',
 					bustCache: true,
-					data: data
+					data: {
+            ...data,
+            config: {
+              site: SITE,
+              subfolder: SUBFOLDER + '/',
+              staging: isStagingTask
+            }
+          }
 				})
 			)
 			.pipe(gulp.dest( config.BUILD_FOLDER + SITE + '/' + SUBFOLDER + '/' ))
@@ -490,9 +499,11 @@ gulp.task('home-of-innovation-watch', () => {
 })
 
 gulp.task('hoi-staging', ['home-of-innovation-scss', 'home-of-innovation-build', 'home-of-innovation-js'])
-
 gulp.task('hoi-dev', ['home-of-innovation-scss', 'home-of-innovation-build', 'home-of-innovation-js', 'home-of-innovation-watch'])
+
 gulp.task('production', sequence('copy-assets', 'scss', 'buildJS', 'html') )
 gulp.task('development', sequence('copy-assets', 'scss', 'buildJS', 'html') )
-gulp.task('staging', sequence('copy-assets', 'scss', 'buildJS', 'html') )
+gulp.task('_staging', sequence('copy-assets', 'scss', 'buildJS', 'html') )
+
+gulp.task('staging', ['watch', '_staging', 'watchJS'])
 gulp.task('default', ['watch', 'development', 'watchJS'])

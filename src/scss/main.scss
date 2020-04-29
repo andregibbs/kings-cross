@@ -12,14 +12,6 @@
 // Helpers
 @import "helpers/helpers";
 
-// TODO make conditional
-@import "home-of-innovation/staging";
-
-
-.homePage {
-  overflow: hidden;
-}
-
 .cheil-static {
   @import "components/nav";
   @import "components/find-kx";

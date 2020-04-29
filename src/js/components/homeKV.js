@@ -118,7 +118,7 @@ function homeKV() {
       },
       {
         // last scroll is after 50% of the nav items are out of view
-        scroll: ((rects.nav.top - rects.body.top) - ((window.innerHeight - rects.nav.height) / 2)) + (window.innerHeight * 0.5),
+        scroll: ((rects.nav.top - rects.body.top) + rects.nav.height),
         values: {
           y: (rects.nav.height / 3),
           x: 0,
