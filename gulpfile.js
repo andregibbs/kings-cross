@@ -106,13 +106,15 @@ gulp.task('images', function(cb){
 /* Gulp compile SCSS as compress/minified */
 gulp.task('scss', function() {
 
-	return gulp.src( config.SRC_FOLDER + '/scss/**/*.scss' )
+	//return gulp.src( config.SRC_FOLDER + '/scss/**/*.scss' )
+  return gulp.src( config.SRC_FOLDER + '/scss/main.scss' )
 	 	.pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
 	 		.pipe(autoprefixer({
 		  grid: true,
           browsers: ['last 2 versions'],
           cascade: false
       }))
+      .pipe(concat('main.css'))
     	.pipe(gulp.dest( config.BUILD_FOLDER + SITE + '/' + SUBFOLDER + '/css' ))
     	.on('end', function() {
     		log('SCSS Compiled')

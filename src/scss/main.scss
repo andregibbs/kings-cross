@@ -15,6 +15,15 @@
 // TODO make conditional
 @import "home-of-innovation/staging";
 
+/* misc */
+// TODO put somwhere
+.relatedEvents {
+  background: transparent !important;
+}
+.homePage {
+  overflow: hidden;
+}
+
 .cheil-static {
   @import "components/nav";
   @import "components/find-kx";
