@@ -15,10 +15,9 @@ import lottieAnim from './components/lottieAnim';
 import loadingScreen from './components/loadingScreen';
 import getParam from './components/getParam';
 import school from './components/school'
-import homeOfInnovation from './components/homeOfInnovation'
+import homeKV from './components/homeKV';
 
 import loadingScreenAnimation from '../data/loadingScreen.json';
-import innovationAnimation from '../data/innovationAnimation.json';
 import create from '../data/Create.json';
 import colab from '../data/Colab.json';
 import coms from '../data/Coms.json';
@@ -368,130 +367,8 @@ $(document).ready(function () {
 			var container = document.getElementById('loadingScreen__animation');
 			loadingScreen(container, loadingScreenAnimation, () => {
 
-        let animFrame;
-
-        const bodyRect = document.querySelector('body').getBoundingClientRect();
-        const kvElementRect = document.querySelector('.hoiKV').getBoundingClientRect();
-        const navRect = document.querySelector('.hoiNav').getBoundingClientRect();
-
-        function getRects() {
-          return {
-            body: document.querySelector('body').getBoundingClientRect(),
-            kv: document.querySelector('.hoiKV').getBoundingClientRect(),
-            nav: document.querySelector('.hoiNav').getBoundingClientRect(),
-          }
-        }
-
-        let rects = getRects();
-        // update rects only on resize
-        window.addEventListener('resize', () => {
-          console.log('update rects', rects)
-          rects = getRects()
-        })
-
-        // delcare easings
-        let easing = {
-          easeOutCirc: (x) => {
-            return Math.sqrt(1 - Math.pow(x - 1, 2))
-          },
-          easeInSine: (x) => {
-            return 1 - Math.cos((x * Math.PI) / 2)
-          }
-        }
-
-        // main animate function
-        function animate(e) {
-          const scroll = window.scrollY;
-          const svgEl = document.querySelector('.hoiSvg')
-
-          // define each animation step
-          let steps = [
-            {
-              scroll: 0, // start scroll position of step,
-              easing: easing.easeOutCirc, // easing to use
-              values: {
-                y: -((rects.kv.height * 0.3) + (rects.nav.height / 2)), // values to transform
-                x: -(Math.min(1440, window.innerWidth) / 4),
-                rotate: 20,
-                scale: 2,
-              }
-            },
-            {
-              // for responsiveness this scroll position is dynamic an based of element dimension
-              // this position is for the center point of the nav items
-              scroll: (rects.nav.top - rects.body.top) - ((window.innerHeight - rects.nav.height) / 2) - 100,
-              easing: easing.easeInSine,
-              values: {
-                y: -50,
-                x: 0,
-                rotate: 0,
-                scale: 1,
-              }
-            },
-            {
-              // for responsiveness this scroll position is dynamic an based of element dimension
-              // this position is for the center point of the nav items
-              scroll: (rects.nav.top - rects.body.top) - ((window.innerHeight - rects.nav.height) / 2) + 100,
-              easing: easing.easeInSine,
-              values: {
-                y: 50,
-                x: 0,
-                rotate: 0,
-                scale: 1,
-              }
-            },
-            {
-              // last scroll is after 50% of the nav items are out of view
-              scroll: ((rects.nav.top - rects.body.top) - ((window.innerHeight - rects.nav.height) / 2)) + (window.innerHeight * 0.5),
-              values: {
-                y: (rects.nav.height / 3),
-                x: 0,
-                rotate: -90,
-                scale: 2,
-              }
-            }
-          ]
-
-          steps.forEach((step, i) => {
-            // loop through steps,
-            // find active step if scroll position is less than current scroll
-            if (scroll > step.scroll) {
-              let nextStep = steps[i+1] // next step
-              let progress = 1; // progress between steps, default as 1 for use in last step
-              let values = {} // will contain the calculated transform values
-
-              // if on last step, force final values
-              if (!nextStep) {
-                let prevStep = steps[i-1];
-                // loop through keys and calculate values based on progress between steps
-                Object.keys(step.values).forEach((key, i) => {
-                  values[key] = ((step.values[key] - prevStep.values[key]) * progress) + prevStep.values[key];
-                });
-
-              } else {
-                // calculate progress on animation using scroll pos between current and next step
-                progress = ((scroll - step.scroll) / (nextStep.scroll - step.scroll))
-                let eased = step.easing(progress)
-                // loop through value keys
-                Object.keys(step.values).forEach((key, i) => {
-                  values[key] = ((nextStep.values[key] - step.values[key]) * progress) + step.values[key];
-                });
-
-              }
-              // set transform style
-              svgEl.style.transform = `translate(${values['x'].toFixed(2)}px ,${values['y'].toFixed(2)}px) rotateZ(${values['rotate'].toFixed(2)}deg) scale(${values['scale'].toFixed(2)})`
-            }
-
-          })
-
-
-        }
-        function onScroll(e) {
-          cancelAnimationFrame(animFrame);
-          animFrame = requestAnimationFrame(animate)
-        }
-        window.addEventListener('scroll', onScroll);
-        animate();
+        // initialise home page KV
+        homeKV()
 
       }, true)
 			break;

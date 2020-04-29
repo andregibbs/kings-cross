@@ -12,7 +12,7 @@
 // Helpers
 @import "helpers/helpers";
 
-@import "hoiSection";
+// TODO make conditional
 @import "home-of-innovation/staging";
 
 .cheil-static {
@@ -27,6 +27,7 @@
   @import "components/templateScripts/eventTile";
   @import "components/templateScripts/singleEvent";
 
+  @import "components/homeKV";
 
   // Pages
   @import "pages/home";
