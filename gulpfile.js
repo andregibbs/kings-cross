@@ -179,7 +179,7 @@ gulp.task('html', function () {
             ...data,
             config: {
               site: SITE,
-              subfolder: SUBFOLDER + '/',
+              subfolder: SUBFOLDER,
               staging: isStagingTask
             }
           }
