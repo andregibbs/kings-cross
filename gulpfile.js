@@ -236,7 +236,7 @@ function HOITemplates() {
   // Path to HOI config pages
   const pagesBasePath = config.SRC_FOLDER + '/' + _HOI_FOLDER + '/pages/'
   // Public path for relative urls
-  const publicUrl = '/' + SITE + SUBFOLDER + '/' + _HOI_FOLDER + '/';
+  const publicUrl = '/' + SITE + SUBFOLDER + '/';
   // Array of file paths to page configs
   const pages = getFilesInDirectory(pagesBasePath)
 
@@ -254,7 +254,7 @@ function HOITemplates() {
     // Include index by default
     let breadcrumbs = [{
       url: publicUrl,
-      title: getPageData('index').title
+      title: "Home" //getPageData('index').title
     }]
 
     // Loop through segments provided
@@ -397,7 +397,7 @@ function HOITemplates() {
       	}
       }))
       .pipe(rename('index.html'))
-      .pipe(gulp.dest( config.BUILD_FOLDER + SITE + '/' + SUBFOLDER + '/' + _HOI_FOLDER + '/' + urlSegments.join('/') ))
+      .pipe(gulp.dest( config.BUILD_FOLDER + SITE + '/' + SUBFOLDER + '/' + urlSegments.join('/') ))
       .on('error', function(err) { log('Error building HTML template:' + urlSegments.join('/'), 'error') })
       .on('end', function(err) { log('Compiled Template: ' + urlSegments.join('/')) })
   })
