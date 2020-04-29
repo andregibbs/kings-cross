@@ -24,10 +24,12 @@
   h1, p {
     margin-bottom: em(1);
   }
-  .homeKV__ScrollLink {
-    padding: em(10);
-    display: block;
-  }
+}
+
+.homeKV__ScrollLink {
+  padding: em(10);
+  display: block;
+  cursor: pointer;
 }
 
 .homeKV__Nav {
@@ -137,9 +139,9 @@
     h1, p {
       margin-bottom: em(2.5);
     }
-    .homeKV__ScrollLink {
-      padding: em(25);
-    }
+  }
+  .homeKV__ScrollLink {
+    padding: em(25);
   }
 }
 

@@ -38,12 +38,6 @@ function homeKV() {
     }
   }
 
-  // update rects when page is resized
-  window.addEventListener('resize', () => {
-    rects = getRects()
-  })
-
-
   // Process Steps
   // loops through the provided steps
   // and calculates its values based on scroll position
@@ -83,6 +77,9 @@ function homeKV() {
     // store scroll variable
     const scroll = window.scrollY;
 
+    // TODO: may need to offset all these values with the gnb height
+    // scrollto centering of the nav seems to be off
+
     // define each animation step for the main cross transformation
     const mainCrossSteps = [
       {
@@ -91,7 +88,7 @@ function homeKV() {
         values: {
           y: -((rects.header.height * 0.2) + (rects.nav.height / 2)), // values to transform
           x: -(Math.min(1440, window.innerWidth) / 4),
-          rotate: 20,
+          rotate: 25,
           scale: 1.5,
         }
       },
@@ -198,12 +195,29 @@ function homeKV() {
 
   }
 
+  // click events
+  document.querySelector('.homeKV__ScrollLink').addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scroll({
+			top: (rects.nav.top - rects.body.top) - ((window.innerHeight - rects.nav.height) / 2),
+			left: 0,
+			behavior: 'smooth'
+		});
+  })
+
+  // window events
   // On scroll event
   function onScroll(e) {
     cancelAnimationFrame(animFrame);
     animFrame = requestAnimationFrame(animate);
   }
   window.addEventListener('scroll', onScroll);
+
+  // update rects object and reanimate when page is resized
+  window.addEventListener('resize', () => {
+    rects = getRects()
+    animate()
+  })
 
   // trigger animation once for initial style
   animate();
