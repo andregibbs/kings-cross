@@ -1,4 +1,16 @@
 &.homePage {
+
+  // some amends for new homeKV
+  overflow: hidden;
+  // homeKV visible behind events
+  .relatedEvents {
+    background: transparent;
+  }
+  // move all sections above homeKV index
+  section {
+    z-index: 10;
+  }
+
   .kx-video {
     position: relative;
     background: #0c0c0c;
@@ -124,7 +136,6 @@
 
   .relatedEvents {
     box-shadow: none !important;
-    z-index: 17;
     padding-bottom: 0 !important;
   }
 

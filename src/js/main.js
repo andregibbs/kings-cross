@@ -23,6 +23,7 @@ import colab from '../data/Colab.json';
 import coms from '../data/Coms.json';
 import critical from '../data/Crit_think.json';
 import doLogFunction from './dev/doLog';
+import fakeEvents from '../data/fakeEvents.json';
 var doLog = doLogFunction();
 
 //experimental
@@ -195,10 +196,14 @@ $(document).ready(function () {
 	}
 
 	function fetchData(callback) {
-		$.get(apiUrl + kxConfig.seriesId, {
-			'timezone': "Europe/London",
-			'isoCurrentDate': isoCurrentDate.toISOString()
-		}).success(function (data) {
+
+		// $.get(apiUrl + kxConfig.seriesId, {
+		// 	'timezone': "Europe/London",
+		// 	'isoCurrentDate': isoCurrentDate.toISOString()
+		// }).success(function (data) {
+
+    var data = fakeEvents;
+
 			doLog("All events:", data);
 			for (var i = 0; i < data.length; i++) {
 				// MERGE JSON DATA HELD WITHIN description INTO FEED as 'extra' property !!!!!
@@ -279,7 +284,7 @@ $(document).ready(function () {
 				}
 
 			}
-		}).complete(function () {
+		// }).complete(function () {
 
 			// Logs all events
 			doLog('events', events);
@@ -295,7 +300,7 @@ $(document).ready(function () {
 
 			// Callback function when all events are fetched
 			callback(events);
-		});
+		// });
 
 	}
 
@@ -361,16 +366,17 @@ $(document).ready(function () {
 		case '/uk/explore/kings-cross/':
 
 			fetchData(whatIsKx);
-			//places();
-			// whatIsKx();
+			places();
+			whatIsKx();
+      homeKV();
 
 			var container = document.getElementById('loadingScreen__animation');
 			loadingScreen(container, loadingScreenAnimation, () => {
 
         // initialise home page KV
-        homeKV()
 
-      }, true)
+
+      }, false)
 			break;
 
 		case "/uk/explore/kings-cross/discover/":

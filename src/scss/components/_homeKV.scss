@@ -4,9 +4,30 @@
 }
 
 .homeKV__Header {
-  height: 80vh;
+  height: 70vh;
   width: 100%;
-  background: navy;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+.homeKV__Title {
+  text-align: center;
+  transform: translate(0, -5vh);
+
+  h1 {
+    font-weight: bold;
+    font-size: em(40);
+  }
+  h1, p {
+    margin-bottom: em(1);
+  }
+  .homeKV__ScrollLink {
+    padding: em(10);
+    display: block;
+  }
 }
 
 .homeKV__Nav {
@@ -19,42 +40,64 @@
 }
 
 .homeKV__NavItem {
+  display: block;
   width: 50%;
   height: 0;
-  padding-bottom: 45%;
+  padding-bottom: 75%;
   position: relative;
+  background-size: cover;
+  position: relative;
+
+  h2 {
+    font-size: em(18);
+  }
+}
+
+.homeKV__NavItemText {
+  position: absolute;
+  color: white;
+  padding: em(20) em(40);
 }
 
 .homeKV__NavItem:nth-child(1) {
-  background:red;
+  background-image: url('https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/homekv/lifestyle.png?$ORIGIN_PNG$');
+  .homeKV__NavItemText {
+    bottom: 0;
+    left: 0;
+  }
 }
 .homeKV__NavItem:nth-child(2) {
-  background:blue;
+  background-image: url('https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/homekv/entertainment.png?$ORIGIN_PNG$');
+  .homeKV__NavItemText {
+    bottom: 0;
+    right: 0;
+  }
 }
 .homeKV__NavItem:nth-child(3) {
-  background:yellow;
+  background-image: url('https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/homekv/creativity.png?$ORIGIN_PNG$');
+  .homeKV__NavItemText {
+    top: 0;
+    left: 0;
+  }
 }
 .homeKV__NavItem:nth-child(4) {
-  background:green;
+  background-image: url('https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/homekv/innovation.png?$ORIGIN_PNG$');
+  .homeKV__NavItemText {
+    top: 0;
+    right: 0;
+  }
 }
 
 .homeKV__CrossSVG {
   position: absolute;
-  width: 3000px;
-  height: 3000px;
-  opacity: 0.8;
-  z-index: 10;
+  pointer-events: none;
+  width: 1500px;
+  height: 1500px;
+  margin-top: -750px;
+  margin-left: -750px;
+  z-index: 2;
   left: 50%;
   top: 50%;
-  margin-top: -1500px;
-  margin-left: -1500px;
-  // position: absolute;
-  // width: 100%;
-  // height: 100%;
-  // opacity: 0.4;
-  // z-index: 10;
-  // left: 50%;
-  // top: 0;
 
   &:after {
     position: absolute;
@@ -68,4 +111,40 @@
     margin-left: -5px;
     margin-top: -5px;
   }
+}
+
+@media screen and (min-width: $mobile) {
+  .homeKV__NavItem {
+    height: 0;
+    padding-bottom: 41%;
+
+    h2 {
+      font-size: em(30);
+    }
+  }
+
+  .homeKV__CrossSVG {
+    width: 3000px;
+    height: 3000px;
+    margin-top: -1500px;
+    margin-left: -1500px;
+  }
+
+  .homeKV__Title {
+    h1 {
+      font-size: em(60);
+    }
+    h1, p {
+      margin-bottom: em(2.5);
+    }
+    .homeKV__ScrollLink {
+      padding: em(25);
+    }
+  }
+}
+
+// Initial values for black areas of svg
+#svg_black_horizontal,
+#svg_black_vertical {
+  opacity: 0;
 }

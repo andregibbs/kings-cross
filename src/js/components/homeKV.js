@@ -13,16 +13,23 @@ function homeKV() {
     },
     easeInSine: (x) => {
       return 1 - Math.cos((x * Math.PI) / 2)
+    },
+    linear: (x) => {
+      return x
     }
   }
 
   // declare selector for later use
-  const homeKV_SVG = document.querySelector('.homeKV__CrossSVG')
+  const homeKV_SVG = document.querySelector('.homeKV__CrossSVG');
+  const homeKV_Title = document.querySelector('.homeKV__Title');
+  const homeKV_BlackVertical = document.querySelector('.homeKV__CrossSVG #svg_black_vertical');
+  const homeKV_BlackHorizontal = document.querySelector('.homeKV__CrossSVG #svg_black_horizontal');
 
   // stores rect data for animations
   let rects = getRects();
 
-  // Function to fetch Elements we require rect data for
+  // Function to fetch any elements we require for rect data
+  // rect data inlcudes, element positioning and dimensions
   function getRects() {
     return {
       body: document.querySelector('body').getBoundingClientRect(),
@@ -33,7 +40,6 @@ function homeKV() {
 
   // update rects when page is resized
   window.addEventListener('resize', () => {
-    console.log('update rects', rects)
     rects = getRects()
   })
 
@@ -55,7 +61,7 @@ function homeKV() {
           let prevStep = steps[i-1];
           // loop through keys and calculate values based on progress between steps
           Object.keys(step.values).forEach((key, i) => {
-            values[key] = ((step.values[key] - prevStep.values[key]) * progress) + prevStep.values[key];
+            values[key] = (((step.values[key] - prevStep.values[key]) * progress) + prevStep.values[key]).toFixed(2);
           });
         } else {
           // calculate progress on animation using scroll pos between current and next step
@@ -63,7 +69,7 @@ function homeKV() {
           let eased = step.easing(progress)
           // loop through value keys
           Object.keys(step.values).forEach((key, i) => {
-            values[key] = ((nextStep.values[key] - step.values[key]) * progress) + step.values[key];
+            values[key] = (((nextStep.values[key] - step.values[key]) * progress) + step.values[key]).toFixed(2);
           });
         }
       }
@@ -78,15 +84,15 @@ function homeKV() {
     const scroll = window.scrollY;
 
     // define each animation step for the main cross transformation
-    let mainCrossSteps = [
+    const mainCrossSteps = [
       {
         scroll: 0, // start scroll position of step,
         easing: easing.easeOutCirc, // easing to use
         values: {
-          y: -((rects.header.height * 0.3) + (rects.nav.height / 2)), // values to transform
+          y: -((rects.header.height * 0.2) + (rects.nav.height / 2)), // values to transform
           x: -(Math.min(1440, window.innerWidth) / 4),
           rotate: 20,
-          scale: 2,
+          scale: 1.5,
         }
       },
       {
@@ -120,7 +126,58 @@ function homeKV() {
           y: (rects.nav.height / 3),
           x: 0,
           rotate: -90,
-          scale: 2,
+          scale: 1.5,
+        }
+      }
+    ]
+
+    const headerTitleSteps = [
+      {
+        scroll: 0, // start scroll position of step,
+        easing: easing.linear, // easing to use
+        values: {
+          y: -(window.innerHeight / 20),
+        }
+      },
+      {
+        scroll: (rects.nav.top - rects.body.top) - ((window.innerHeight - rects.nav.height) / 2) - (window.innerHeight / 4),
+        easing: easing.linear, // easing to use
+        values: {
+          y: (rects.header.height / 2) + (rects.nav.height / 4),
+        }
+      }
+    ]
+
+    const verticalBlackSteps = [
+      {
+        scroll: 0, // start scroll position of step,
+        easing: easing.linear, // easing to use
+        values: {
+          opacity: 0,
+        }
+      },
+      {
+        scroll: (rects.nav.top - rects.body.top) - ((window.innerHeight - rects.nav.height) / 2) - (window.innerHeight / 4),
+        easing: easing.linear, // easing to use
+        values: {
+          opacity: 1
+        }
+      }
+    ]
+
+    const horizontalBlackSteps = [
+      {
+        scroll: (rects.nav.top - rects.body.top) - ((window.innerHeight - rects.nav.height) / 2) + (window.innerHeight / 6),
+        easing: easing.linear, // easing to use
+        values: {
+          opacity: 0,
+        }
+      },
+      {
+        scroll: ((rects.nav.top - rects.body.top) - ((window.innerHeight - rects.nav.height) / 2)) + (window.innerHeight * 0.5),
+        easing: easing.linear, // easing to use
+        values: {
+          opacity: 1
         }
       }
     ]
@@ -128,7 +185,16 @@ function homeKV() {
     // get values for cross transform
     const mainCrossValues = processSteps(mainCrossSteps, scroll);
     // set transform style
-    homeKV_SVG.style.transform = `translate(${mainCrossValues['x'].toFixed(2)}px ,${mainCrossValues['y'].toFixed(2)}px) rotateZ(${mainCrossValues['rotate'].toFixed(2)}deg) scale(${mainCrossValues['scale'].toFixed(2)})`
+    homeKV_SVG.style.transform = `translate(${mainCrossValues['x']}px ,${mainCrossValues['y']}px) rotateZ(${mainCrossValues['rotate']}deg) scale(${mainCrossValues['scale']})`
+
+    const headerTitleValues = processSteps(headerTitleSteps, scroll);
+    homeKV_Title.style.transform = `translate(0 ,${headerTitleValues['y']}px)`
+
+    const verticalBlackValues = processSteps(verticalBlackSteps, scroll)
+    homeKV_BlackVertical.style.opacity = verticalBlackValues.opacity
+
+    const horizontalBlackValues = processSteps(horizontalBlackSteps, scroll)
+    homeKV_BlackHorizontal.style.opacity = horizontalBlackValues.opacity
 
   }
 

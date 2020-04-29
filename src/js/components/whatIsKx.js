@@ -16,34 +16,34 @@ export default function whatIsKx(events) {
 	upcomingEvents(events, 212);
 
 	// Scroll to a certain element
-	$('.whatIsKx__item').click(function() {
-		let getScrollEl = $(this).data('scroll')
-
-		window.scroll({
-			top: $('.scroll-'+ getScrollEl +'').offset().top,
-			left: 0,
-			behavior: 'smooth'
-		});
-	})
-	var testParallax =  new newParallax('.para');
-	parllaxText();
-	$(document).scroll(function() {
-		parllaxText();
-
-
-
-	})
-
-	function parllaxText() {
-
-		let paratext = $("#parallax__container").find(".parallax__text");
-		let paraHight = ($("#parallax__container").outerHeight() + $("#parallax__container").offset().top);
-		let opacity = (1 - window.scrollY / paraHight * 2);
-		// paratext.css('opacity', opacity);
-		doLog(paratext);
-		paratext[0].style.opacity = opacity;
-
-	}
+	// $('.whatIsKx__item').click(function() {
+	// 	let getScrollEl = $(this).data('scroll')
+  //
+	// 	window.scroll({
+	// 		top: $('.scroll-'+ getScrollEl +'').offset().top,
+	// 		left: 0,
+	// 		behavior: 'smooth'
+	// 	});
+	// })
+	// var testParallax =  new newParallax('.para');
+	// parllaxText();
+	// $(document).scroll(function() {
+	// 	parllaxText();
+  //
+  //
+  //
+	// })
+  //
+	// function parllaxText() {
+  //
+	// 	let paratext = $("#parallax__container").find(".parallax__text");
+	// 	let paraHight = ($("#parallax__container").outerHeight() + $("#parallax__container").offset().top);
+	// 	let opacity = (1 - window.scrollY / paraHight * 2);
+	// 	// paratext.css('opacity', opacity);
+	// 	doLog(paratext);
+	// 	paratext[0].style.opacity = opacity;
+  //
+	// }
 
 	//video
 
