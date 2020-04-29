@@ -44,12 +44,12 @@ function homeKV() {
 
   function processSteps(steps, scroll) {
     let values = {} // will contain the calculated transform values
+    // loop through steps
     steps.forEach((step, i) => {
-      // loop through steps,
-      // find active step if scroll position is less than current scroll
+      // find active step if step scroll position is less than page scroll
       if (scroll >= step.scroll) {
         let nextStep = steps[i+1] // next step
-        let progress = 1; // progress between steps, default as 1 for use in last step
+        let progress = 1; // progress between steps, declare as 1 here for use in last step
         // if on last step, force final values
         if (!nextStep) {
           let prevStep = steps[i-1];

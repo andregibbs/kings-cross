@@ -1,5 +1,7 @@
 # Home Of Innovation (HOI)
 
+add deployment process (gulp production etc)
+
 ## HOI Files
 
 ```

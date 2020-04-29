@@ -106,8 +106,16 @@ gulp.task('images', function(cb){
 /* Gulp compile SCSS as compress/minified */
 gulp.task('scss', function() {
 
-	//return gulp.src( config.SRC_FOLDER + '/scss/**/*.scss' )
-  return gulp.src( config.SRC_FOLDER + '/scss/main.scss' )
+  const isStagingTask = argv._[0] === 'staging';
+
+  const srcFiles = isStagingTask ? [
+    config.SRC_FOLDER + '/scss/main.scss',
+    config.SRC_FOLDER + '/scss/'+_HOI_FOLDER+'/staging.scss'
+  ] : [
+    config.SRC_FOLDER + '/scss/main.scss'
+  ]
+
+  return gulp.src(srcFiles)
 	 	.pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
 	 		.pipe(autoprefixer({
 		  grid: true,
@@ -484,7 +492,7 @@ gulp.task('home-of-innovation-watch', () => {
 gulp.task('hoi-staging', ['home-of-innovation-scss', 'home-of-innovation-build', 'home-of-innovation-js'])
 
 gulp.task('hoi-dev', ['home-of-innovation-scss', 'home-of-innovation-build', 'home-of-innovation-js', 'home-of-innovation-watch'])
-
-gulp.task('production', sequence('delete-build', 'copy-assets', 'scss', 'buildJS', 'html') )
-gulp.task('development', sequence('copy-assets', 'scss', 'buildJS', 'html', 'minify') )
+gulp.task('production', sequence('copy-assets', 'scss', 'buildJS', 'html') )
+gulp.task('development', sequence('copy-assets', 'scss', 'buildJS', 'html') )
+gulp.task('staging', sequence('copy-assets', 'scss', 'buildJS', 'html') )
 gulp.task('default', ['watch', 'development', 'watchJS'])
