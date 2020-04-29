@@ -176,8 +176,8 @@ gulp.task('html', function () {
 					partials: config.SRC_FOLDER + '/templates/partials/**/*.{html,js,hbs}',
 					bustCache: true,
 					data: {
-            ...data,
             config: {
+              ...data,
               site: SITE,
               subfolder: SUBFOLDER,
               staging: isStagingTask
