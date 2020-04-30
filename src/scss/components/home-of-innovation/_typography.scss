@@ -1,87 +1,60 @@
 p {
   @include fz12();
-  @media screen and (min-width: $mobile) {
+  margin-bottom: 1rem;
+  @media screen and (min-width: $mobile + 1) {
     @include fz16();
   }
 }
 
 h1, .h1 {
   @include fz40();
-  @media screen and (min-width: $mobile) {
+  margin-bottom: 1rem;
+  line-height: 1.1;
+  @media screen and (min-width: $mobile + 1) {
     @include fz50();
   }
 }
 
 h2, .h2 {
-  @include fz40();
-  @media screen and (min-width: $mobile) {
+  @include fz30();
+  margin-bottom: 1rem;
+  line-height: 1.1;
+  @media screen and (min-width: $mobile + 1) {
     @include fz36();
   }
 }
 
 h3, .h3 {
-  @include fz36();
-  @media screen and (min-width: $mobile) {
+  @include fz25();
+  margin-bottom: 1rem;
+  line-height: 1.1;
+  @media screen and (min-width: $mobile + 1) {
     @include fz30();
   }
 }
 
 h4, .h4 {
-  @include fz30();
-  @media screen and (min-width: $mobile) {
+  @include fz20();
+  margin-bottom: 1rem;
+  line-height: 1.1;
+  @media screen and (min-width: $mobile + 1) {
     @include fz24();
   }
 }
 
 h5, .h5 {
-  @include fz24();
-  @media screen and (min-width: $mobile) {
+  @include fz18();
+  margin-bottom: 1rem;
+  line-height: 1.1;
+  @media screen and (min-width: $mobile + 1) {
     @include fz20();
   }
 }
 
 h6, .h6 {
-  @include fz20();
-  @media screen and (min-width: $mobile) {
+  @include fz16();
+  margin-bottom: 0.5rem;
+  @media screen and (min-width: $mobile + 1) {
     @include fz18();
   }
 }
-
-//
-// h2, .h2 {
-//   font-size: 24px;
-// }
-// h3, .h3 {
-//   font-size: 20px;
-// }
-// h4, .h4 {
-//   font-size: 16px;
-// }
-// h5, .h5 {
-//   font-size: 14px;
-// }
-// h6, .h6 {
-//   font-size: 12px;
-// }
-
-
-//   h1, .h1 {
-//     // font-size: 48px;
-//
-//   }
-//   h2, .h2 {
-//     font-size: 36px;
-//   }
-//   h3, .h3 {
-//     font-size: 30px;
-//   }
-//   h4, .h4 {
-//     font-size: 24px;
-//   }
-//   h5, .h5 {
-//     font-size: 20px;
-//   }
-//   h6, .h6 {
-//     font-size: 16px;
-//   }
-// }

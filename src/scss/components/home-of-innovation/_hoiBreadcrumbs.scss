@@ -1,10 +1,10 @@
 .hoiBreadcrumbs {
-  padding: $spacing-mobile / 2 $spacing-mobile;
+  padding: calc(#{$spacing-mobile} / 2) $spacing-mobile;
 }
 
 
-@media screen and (min-width: $mobile) {
+@media screen and (min-width: $mobile + 1) {
   .hoiBreadcrumbs {
-    padding: $spacing-desktop / 2 $spacing-desktop;
+    padding: calc(#{$spacing-desktop} / 2) $spacing-desktop;
   }
 }

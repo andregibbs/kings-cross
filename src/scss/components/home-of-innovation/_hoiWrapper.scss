@@ -4,15 +4,15 @@
 
 // nested wrappers (probably shouldnt go more than 2 deep)
 .hoiWrapper .hoiWrapper {
-  margin: $spacing-mobile $spacing-mobile / 2;
+  margin: $spacing-mobile calc(#{$spacing-mobile} / 2);
 }
 
-@media screen and (min-width: $mobile) {
+@media screen and (min-width: $mobile + 1) {
   .hoiWrapper {
     margin: $spacing-desktop;
   }
   .hoiWrapper .hoiWrapper {
-    margin: $spacing-desktop $spacing-desktop / 2;
+    margin: $spacing-desktop calc(#{$spacing-desktop} / 2);
   }
 }
 

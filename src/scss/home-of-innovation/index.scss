@@ -20,8 +20,8 @@
 
 // wrap all components in hoi class
 
-$spacing-desktop: 40px; //$p-borders-desktop * 1px;
-$spacing-mobile: 30px; //$m-borders-mobile * 1px;
+$spacing-desktop: em(40); //$p-borders-desktop * 1px;
+$spacing-mobile: em(30); //$m-borders-mobile * 1px;
 
 $padding-desktop: $p-borders-desktop * 1px;
 $padding-mobile: $p-borders-mobile * 1px;

@@ -87,9 +87,9 @@
       padding: get-desktop-vw(12) get-desktop-vw(23);
     }
     @media screen and (max-width: $mobile) {
-      width: get-mobile-vw(240);
-      height: get-mobile-vw(60);
-      padding: get-mobile-vw(12) get-mobile-vw(23);
+      width: get-mobile-vw(300);
+      height: get-mobile-vw(80);
+      padding: get-mobile-vw(16) get-mobile-vw(32);
     }
 
     &--primary {
@@ -150,7 +150,7 @@
           border-color: $white;
         }
       }
-      
+
     }
 
     &--secondary {

@@ -115,7 +115,7 @@
   }
 }
 
-@media screen and (min-width: $mobile) {
+@media screen and (min-width: $mobile + 1) {
   .homeKV__NavItem {
     height: 0;
     padding-bottom: 41%;

@@ -52,8 +52,8 @@
 }
 
 .hoiGallery__SpotlightClose {
-  top: $spacing-mobile / 2;
-  right: $spacing-mobile / 2;
+  top: calc(#{$spacing-mobile} / 2);
+  right: calc(#{$spacing-mobile} / 2);
   width: 50px;
   height: 50px;
   cursor: pointer;
@@ -76,7 +76,7 @@
   padding: $spacing-mobile;
 }
 
-@media screen and (min-width: $mobile) {
+@media screen and (min-width: $mobile + 1) {
   .hoiGallery {
     padding: $spacing-desktop;
   }

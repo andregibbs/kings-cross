@@ -41,7 +41,7 @@
   }
 }
 
-@media screen and (min-width: $mobile) {
+@media screen and (min-width: $mobile + 1) {
 
   .hoiKv__Components {
     padding: $spacing-desktop;

@@ -1,15 +1,3 @@
-.hoiParagraphs {
-  p {
-    margin-bottom: $spacing-mobile / 1.5;
-  }
-}
-
-@media screen and (min-width: $mobile) {
-  .hoiParagraphs p {
-    margin-bottom: $spacing-desktop / 1.5;
-  }
-}
-
 .hoiParagraphs--align-left {
   text-align: left;
 }

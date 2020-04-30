@@ -38,11 +38,11 @@
   transform: translate(-50%, -50%);
 }
 
-@media screen and (min-width: $mobile) {
+@media screen and (min-width: $mobile + 1) {
 
   .hoiList__Item {
     flex-shrink: 0;
-    padding-bottom: $spacing-desktop / 2;
+    padding-bottom: calc(#{$spacing-desktop} / 2);
   }
 
   .hoiList__Item--spacer {
@@ -72,10 +72,10 @@
       width: 50%;
       &:nth-child(odd) {
         padding-left: 0;
-        padding-right: $spacing-desktop / 2;
+        padding-right: calc(#{$spacing-desktop} / 2);
       }
       &:nth-child(even) {
-        padding-left: $spacing-desktop / 2;
+        padding-left: calc(#{$spacing-desktop} / 2);
         padding-right: 0;
       }
     }
