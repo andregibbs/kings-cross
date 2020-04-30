@@ -134,5 +134,13 @@ if (typeof module !== 'undefined') {
       return results
     })
 
+    // Pad items to desired multiple
+    Handlebars.registerHelper('if_defined', function (v1, options) {
+			if (v1 !== undefined) {
+				return options.fn(this);
+			}
+			return options.inverse(this);
+		});
+
 	};
 }

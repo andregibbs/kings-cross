@@ -1,31 +1,24 @@
 /* Home Of Innovation JS Entry */
 
 import HOIGallery from './hoiGallery';
+import { createYoutubeInstance, loadYoutubeAPI } from './utils';
 
-function loadYoutubeAPI() {
-  const tag = document.createElement('script');
-  tag.src = "https://www.youtube.com/iframe_api";
-  const firstScriptTag = document.getElementsByTagName('script')[0];
-  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-  return new Promise(function(resolve, reject) {
-    window.onYouTubeIframeAPIReady = () => {
-      // youtube api ready
-      resolve()
-    }
-
-  });
-}
 
 document.addEventListener('DOMContentLoaded', () => {
 
   const galleries = document.querySelectorAll('.hoiGallery')
+  const youtubeMedias = document.querySelectorAll('.hoiMediaYoutube')
 
-  // could make this conditional depending on wether there is youtube content
+  // could make this conditional depending on wether there is youtube content on the page
   loadYoutubeAPI()
     .then(() => {
       // initialze HOIGalleries
       galleries.forEach((gallery) => {
         new HOIGallery(gallery)
+      })
+
+      youtubeMedias.forEach((element) => {
+        createYoutubeInstance(element)
       })
     })
 

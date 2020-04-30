@@ -37,14 +37,45 @@
   {{/if}}
 ">
 
-  <div class="hoiKv__Image">
-  	<img
-      src="{{ this.image }}"
-    />
+  <div class="hoiKv__Media">
+    {{#if_equals this.media.type 'image'}}
+  	 <img
+        class="hoiKv__MediaImage"
+        src="{{ this.media.content }}"
+        />
+    {{/if_equals}}
+    {{#if_equals this.media.type 'video'}}
+      <video
+        class="hoiKv__MediaVideo"
+        src="{{this.media.content}}"
+        poster="{{this.media.poster}}"
+        playsinline
+        {{#if this.media.loop}}
+          loop
+        {{/if}}
+        {{#if this.media.autoplay}}
+          autoplay muted
+        {{/if}}
+        {{#if_defined this.media.controls }}
+          {{#if this.media.controls}}
+            controls
+          {{/if}}
+        {{else}}
+          controls
+        {{/if_defined}}
+      >
+      </video>
+    {{/if_equals}}
+    {{#if_equals this.media.type 'youtube'}}
+      {{> home-of-innovation/hoiMediaYoutube
+          class="hoiKv__MediaVideo"
+          youtube-id=this.media.content
+      }}
+    {{/if_equals}}
   </div>
 
   <div class="hoiKv__Components">
-    
+
     {{> home-of-innovation/components this }}
 
   </div>

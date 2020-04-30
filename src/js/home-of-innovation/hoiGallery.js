@@ -1,3 +1,5 @@
+import { createYoutubeInstance } from './utils';
+
 class HOIGallery {
 
   constructor(el) {
@@ -27,10 +29,10 @@ class HOIGallery {
     })
 
     // subscribe to slick before change event
-    $(this.sliderTarget).on('beforeChange', (e, slick, current, next) => {
+    $(this.sliderTarget).on('beforeChange', (e, slick, currentIndex, nextIndex) => {
       // call slideWillShow method with slide element
-      this.slideWillShow(next);
-      this.slideWillHide(current);
+      this.slideWillShow(nextIndex);
+      this.slideWillHide(currentIndex);
     })
   }
 
@@ -49,28 +51,28 @@ class HOIGallery {
     // switch over slide type
     switch (type) {
       case 'youtube':
-      let youtubeInstance;
-        // if slide has no youtube instance
+        let youtubeInstance;
+        // if we dont have a stored youtube instance
         if (!this.youtubeInstances[slideIndex]) {
-          // create one in youtube media element
+          // get youtube container element
           const youtubeEl = slide.querySelector('.hoiGallery__Media--youtube')
-          // get youtube id
-          const videoId = slide.getAttribute('data-content')
-          // instantialize yt player
-          youtubeInstance = new YT.Player(youtubeEl, {
-            videoId,
-            height: '100%',
-            width: '100%'
-          })
 
-          // will probably need to subscribe to play paused events to
+          // check if there is already a youtube instance for this element
+          if (youtubeEl._youtubeInstance) {
+            youtubeInstance = youtubeEl._youtubeInstance
+          } else {
+            // if not, create one
+            youtubeInstance = createYoutubeInstance(youtubeEl)
+          }
+
+          // NOTE:
+          // may need to subscribe to play paused events to
           // show/hide a cover image & to enable swiping on the i
 
-          // store instance
+          // store instance locally after initializatin
           youtubeInstance.addEventListener('onReady', () => {
             this.youtubeInstances[slideIndex] = youtubeInstance
           })
-
         } else {
           youtubeInstance = this.youtubeInstances[2]
         }

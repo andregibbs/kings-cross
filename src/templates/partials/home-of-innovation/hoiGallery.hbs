@@ -48,9 +48,9 @@
             {{/if_equals}}
 
             {{#if_equals this.type 'youtube'}}
-              <div class="hoiGallery__SpotlightItem  hoiGallery__SpotlightItem--youtube" data-type="youtube" data-content="{{this.content}}">
+              <div class="hoiGallery__SpotlightItem  hoiGallery__SpotlightItem--youtube" data-type="youtube" >
                 <div class="hoiGallery__MediaResponsiveWrap">
-                  <div class="hoiGallery__Media  hoiGallery__Media--youtube"></div>
+                  {{> home-of-innovation/hoiMediaYoutube class="hoiGallery__Media  hoiGallery__Media--youtube" youtube-id=this.content }}
                 </div>
                 <div class="hoiGallery__MediaBody">
                   <div class="hoiHeadline">
