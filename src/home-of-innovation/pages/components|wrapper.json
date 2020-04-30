@@ -10,13 +10,19 @@
       "components": [
         {
           "type": "headline",
+          "style": {
+            "align": "center"
+          },
           "level": "2",
-          "copy": "Wrapper"
+          "copy": "Wrapper, Without style"
         },
         {
           "type": "headline",
+          "style": {
+            "align": "center"
+          },
           "level": "3",
-          "copy": "Without style (left-align)"
+          "copy": "center aligned headline, left aligned copy"
         },
         {
           "type": "paragraphs",

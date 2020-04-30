@@ -1,9 +1,7 @@
 <div class="hoiGallery">
 
   {{#if this.title}}
-    <div class="hoiLinkList__Title">
-      <h3>{{this.title}}</h3>
-    </div>
+    {{> home-of-innovation/hoiHeadline copy=this.title level='3'}}
   {{/if}}
 
   <div class="hoiGallery__Nav  hoiList  hoiList--grid-4">
@@ -34,46 +32,33 @@
         {{#each items}}
 
             {{#if_equals this.type 'image'}}
-              <div class="hoiGallery__SpotlightItem  hoiGallery__SpotlightItem--image" data-type="image">
-                <div class="hoiGallery__MediaResponsiveWrap">
-                  <img class="hoiGallery__Media  hoiGallery__Media--image" src="{{ this.content }}" alt="{{ this.title }}">
+              <div class="hoiGallery__SpotlightItem" data-type="image">
+                <div class="hoiGallery__Media">
+                  {{> home-of-innovation/hoiMediaImage content=this.content alt=this.title}}
                 </div>
-                <div class="hoiGallery__MediaBody">
-                  <div class="hoiHeadline">
-                    <h3>{{this.title}}</h3>
-                  </div>
-                  <p>{{this.description}}</p>
-                </div>
-              </div>
             {{/if_equals}}
 
             {{#if_equals this.type 'youtube'}}
-              <div class="hoiGallery__SpotlightItem  hoiGallery__SpotlightItem--youtube" data-type="youtube" >
-                <div class="hoiGallery__MediaResponsiveWrap">
-                  {{> home-of-innovation/hoiMediaYoutube class="hoiGallery__Media  hoiGallery__Media--youtube" youtube-id=this.content }}
+              <div class="hoiGallery__SpotlightItem" data-type="youtube">
+                <div class="hoiGallery__Media">
+                  {{> home-of-innovation/hoiMediaYoutube content=this.content wrap=true}}
                 </div>
-                <div class="hoiGallery__MediaBody">
-                  <div class="hoiHeadline">
-                    <h3>{{this.title}}</h3>
-                  </div>
-                  <p>{{this.description}}</p>
-                </div>
-              </div>
             {{/if_equals}}
 
             {{#if_equals this.type 'video'}}
-              <div class="hoiGallery__SpotlightItem  hoiGallery__SpotlightItem--video" data-type="video">
-                <div class="hoiGallery__MediaResponsiveWrap">
-                  <video class="hoiGallery__Media  hoiGallery__Media--video" src="{{this.content}}" controls poster="{{this.poster}}"></video>
+              <div class="hoiGallery__SpotlightItem" data-type="video">
+                <div class="hoiGallery__Media">
+                  {{> home-of-innovation/hoiMediaVideo content=this.content poster=this.poster wrap=true}}
                 </div>
-                <div class="hoiGallery__MediaBody">
-                  <div class="hoiHeadline">
-                    <h3>{{this.title}}</h3>
-                  </div>
-                  <p>{{this.description}}</p>
-                </div>
-              </div>
             {{/if_equals}}
+
+              <div class="hoiGallery__MediaBody">
+                <div class="hoiHeadline">
+                  <h3>{{this.title}}</h3>
+                </div>
+                <p>{{this.description}}</p>
+              </div>
+            </div>
 
         {{/each}}
 

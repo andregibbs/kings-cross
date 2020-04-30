@@ -2,15 +2,8 @@
   padding: $spacing-mobile;
 }
 
-.hoiLinkList__Title {
-  padding: $spacing-mobile 0;
-}
-
 @media screen and (min-width: $mobile) {
   .hoiLinkList {
     padding: $spacing-desktop;
-  }
-  .hoiLinkList__Title {
-    padding: $spacing-desktop 0;
   }
 }

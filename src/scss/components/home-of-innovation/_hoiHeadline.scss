@@ -1,15 +1,14 @@
 .hoiHeadline {
   // padding-left: $padding-desktop;
   // padding-right: $padding-desktop;
-  margin-bottom: $spacing-mobile / 2;
+  margin-bottom: $spacing-mobile / 1.5;
 }
 
 @media screen and (min-width: $mobile) {
   .hoiHeadline {
-    margin-bottom: $spacing-desktop / 2;
+    margin-bottom: $spacing-desktop / 1.5;
   }
 }
-
 
 .hoiHeadline--align-left {
   text-align: left;

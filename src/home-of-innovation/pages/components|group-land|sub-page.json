@@ -6,7 +6,10 @@
   "components": [
     {
       "type": "kv",
-      "image": "https://picsum.photos/1440/720",
+      "media": {
+        "type": "image",
+        "content": "{{components|group-land|sub-page[image]}}"
+      },
       "style": {
         "desktop": "left",
         "mobile": "bottom"

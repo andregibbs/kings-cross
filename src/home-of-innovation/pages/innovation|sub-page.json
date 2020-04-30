@@ -7,10 +7,13 @@
   "components": [
     {
       "type": "kv",
-      "image": "{{innovation|sub-page[image]}}",
+      "media": {
+        "type": "image",
+        "content": "{{innovation|sub-page[image]}}"
+      },
       "style": {
         "desktop": "left",
-        "mobile": "bottom"
+        "mobile": "top"
       },
       "components": [
         {

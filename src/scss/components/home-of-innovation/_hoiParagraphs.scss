@@ -1,14 +1,23 @@
 .hoiParagraphs {
   p {
-    margin-bottom: 10px;
-  }
-  p:last-child {
-    margin-bottom: 0;
+    margin-bottom: $spacing-mobile / 1.5;
   }
 }
 
 @media screen and (min-width: $mobile) {
   .hoiParagraphs p {
-    margin-bottom: 14px;
+    margin-bottom: $spacing-desktop / 1.5;
   }
+}
+
+.hoiParagraphs--align-left {
+  text-align: left;
+}
+
+.hoiParagraphs--align-center {
+  text-align: center;
+}
+
+.hoiParagraphs--align-right {
+  text-align: right;
 }

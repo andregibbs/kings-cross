@@ -1,1 +1,9 @@
-<div class="hoiMediaYoutube {{class}}" data-youtube-id="{{youtube-id}}"></div>
+{{#if wrap}}
+<div class="hoiMedia__Wrap">
+{{/if}}
+
+  <div class="hoiMedia hoiMedia--youtube {{class}}" data-youtube-id="{{content}}"></div>
+
+{{#if wrap}}
+</div>
+{{/if}}

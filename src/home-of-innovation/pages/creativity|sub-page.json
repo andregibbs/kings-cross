@@ -7,7 +7,10 @@
   "components": [
     {
       "type": "kv",
-      "image": "{{creativity|sub-page[image]}}",
+      "media": {
+        "type": "image",
+        "content": "{{creativity|sub-page[image]}}"
+      },
       "style": {
         "desktop": "left",
         "mobile": "bottom"

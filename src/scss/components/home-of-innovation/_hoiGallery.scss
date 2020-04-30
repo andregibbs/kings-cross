@@ -37,6 +37,8 @@
 
 .hoiGallery__SpotlightItems {
   width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
 }
 
 .hoiGallery__SpotlightItem {
@@ -50,8 +52,8 @@
 }
 
 .hoiGallery__SpotlightClose {
-  top: 0; //$spacing-desktop;
-  left: 0; //$spacing-mobile;
+  top: $spacing-mobile / 2;
+  right: $spacing-mobile / 2;
   width: 50px;
   height: 50px;
   cursor: pointer;
@@ -63,20 +65,11 @@
   }
 }
 
-
-
-.hoiGallery__MediaResponsiveWrap {
-  position: relative;
-  padding-bottom: 62.5%; // 16:10 1440x900
-  // padding-bottom: 56.25%; // 16:9
-  height: 0;
-  overflow: hidden;
-}
-
+// current made to fit contents dimensions
 .hoiGallery__Media {
   width: 100%;
-  position: absolute;
   height: 100%;
+  position: relative;
 }
 
 .hoiGallery__MediaBody {
@@ -95,5 +88,9 @@
   }
   .hoiGallery__Spotlight {
     padding: $padding-desktop;
+  }
+  .hoiGallery__SpotlightClose {
+    top: 0;
+    right: 0;
   }
 }

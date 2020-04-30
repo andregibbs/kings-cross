@@ -16,6 +16,7 @@
 
 @import "../components/nav";
 @import "../components/social";
+@import "../components/find-kx";
 
 // wrap all components in hoi class
 
@@ -31,8 +32,8 @@ $margin-mobile: $m-borders-mobile * 1px;
 .cheil-static.home-of-innovation {
 
   // general styling & containers
+  @import "../components/home-of-innovation/typography";
   @import "../components/home-of-innovation/content";
-  @import "../components/home-of-innovation/heading";
   @import "../components/home-of-innovation/list";
 
   // all pages
@@ -50,7 +51,7 @@ $margin-mobile: $m-borders-mobile * 1px;
 
   @import "../components/home-of-innovation/hoiWrapper";
   @import "../components/home-of-innovation/hoiSpacer";
-  @import "../components/home-of-innovation/hoiMediaYoutube";
+  @import "../components/home-of-innovation/hoiMedia";
 
   // unused
   // @import "../components/home-of-innovation/contentFindOutMore";
@@ -58,14 +59,7 @@ $margin-mobile: $m-borders-mobile * 1px;
   // @import "../components/home-of-innovation/contentPagination";
   // @import "../components/home-of-innovation/contentRelated";
 
-
-  p {
-    font-size: 10px;
-  }
-  @media screen and (min-width: $mobile) {
-    p {
-      font-size: 14px;
-    }
-  }
+  background: black;
+  color: white;
 
 }

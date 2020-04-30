@@ -45,31 +45,17 @@
         />
     {{/if_equals}}
     {{#if_equals this.media.type 'video'}}
-      <video
-        class="hoiKv__MediaVideo"
-        src="{{this.media.content}}"
-        poster="{{this.media.poster}}"
-        playsinline
-        {{#if this.media.loop}}
-          loop
-        {{/if}}
-        {{#if this.media.autoplay}}
-          autoplay muted
-        {{/if}}
-        {{#if_defined this.media.controls }}
-          {{#if this.media.controls}}
-            controls
-          {{/if}}
-        {{else}}
-          controls
-        {{/if_defined}}
-      >
-      </video>
+      {{> home-of-innovation/hoiMediaVideo
+          content=this.media.content
+          poster=this.media.poster
+          loop=this.media.loop
+          autoplay=this.media.autoplay
+          controls=this.media.controls
+      }}
     {{/if_equals}}
     {{#if_equals this.media.type 'youtube'}}
       {{> home-of-innovation/hoiMediaYoutube
-          class="hoiKv__MediaVideo"
-          youtube-id=this.media.content
+          class="hoiKv__MediaVideo" content=this.media.content
       }}
     {{/if_equals}}
   </div>

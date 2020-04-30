@@ -55,8 +55,7 @@ class HOIGallery {
         // if we dont have a stored youtube instance
         if (!this.youtubeInstances[slideIndex]) {
           // get youtube container element
-          const youtubeEl = slide.querySelector('.hoiGallery__Media--youtube')
-
+          const youtubeEl = slide.querySelector('.hoiMedia--youtube')
           // check if there is already a youtube instance for this element
           if (youtubeEl._youtubeInstance) {
             youtubeInstance = youtubeEl._youtubeInstance

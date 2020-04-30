@@ -7,7 +7,10 @@
   "components": [
     {
       "type": "kv",
-      "image": "{{lifestyle|sub-page[image]}}",
+      "media": {
+        "type": "image",
+        "content": "{{lifestyle|sub-page[image]}}"
+      },
       "style": {
         "desktop": "left",
         "mobile": "bottom"

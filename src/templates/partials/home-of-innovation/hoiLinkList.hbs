@@ -1,9 +1,7 @@
 
 <div class="hoiLinkList">
   {{#if this.title}}
-    <div class="hoiLinkList__Title">
-      <h3>{{this.title}}</h3>
-    </div>
+    {{> home-of-innovation/hoiHeadline copy=this.title level='3'}}
   {{/if}}
   <div class="hoiList hoiList--grid-4">
     {{#each items }}

@@ -1,4 +1,10 @@
-<div class="hoiParagraphs">
+<div class="hoiParagraphs
+  {{#if this.style}}
+    {{#if this.style.align}}
+      hoiParagraphs--align-{{ this.style.align }}
+    {{/if}}
+  {{/if}}
+">
 	{{#each text}}
 		<p>{{ this }}</p>
 	{{/each}}

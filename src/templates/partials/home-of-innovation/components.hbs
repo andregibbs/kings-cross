@@ -35,6 +35,14 @@
       {{> home-of-innovation/hoiGroupLand this }}
     {{/if_equals}}
 
+    {{#if_equals this.type 'youtube'}}
+      {{> home-of-innovation/hoiMediaYoutube this wrap=true}}
+    {{/if_equals}}
+
+    {{#if_equals this.type 'video'}}
+      {{> home-of-innovation/hoiMediaVideo this wrap=true}}
+    {{/if_equals}}
+
     {{!--
       Group, Related & Link list
       All the same components, different method of populating

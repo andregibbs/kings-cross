@@ -1,10 +1,18 @@
 .hoiWrapper {
-  padding: $spacing-mobile;
+  margin: $spacing-mobile;
+}
+
+// nested wrappers (probably shouldnt go more than 2 deep)
+.hoiWrapper .hoiWrapper {
+  margin: $spacing-mobile $spacing-mobile / 2;
 }
 
 @media screen and (min-width: $mobile) {
   .hoiWrapper {
-    padding: $spacing-desktop;
+    margin: $spacing-desktop;
+  }
+  .hoiWrapper .hoiWrapper {
+    margin: $spacing-desktop $spacing-desktop / 2;
   }
 }
 

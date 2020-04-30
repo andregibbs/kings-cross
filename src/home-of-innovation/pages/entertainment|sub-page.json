@@ -7,7 +7,10 @@
   "components": [
     {
       "type": "kv",
-      "image": "{{entertainment|sub-page[image]}}",
+      "media": {
+        "type": "image",
+        "content": "{{entertainment|sub-page[image]}}"
+      },
       "style": {
         "desktop": "left",
         "mobile": "bottom"
@@ -15,7 +18,7 @@
       "components": [
         {
           "type": "headline",
-          "level": "3",
+          "level": "1",
           "copy": "{{entertainment|sub-page[title]}}"
         },
         {
