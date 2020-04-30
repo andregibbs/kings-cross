@@ -408,7 +408,7 @@ function HOITemplates() {
           breadcrumbs,
           config: {
             site: SITE,
-            subfolder: SUBFOLDER + '/',
+            subfolder: SUBFOLDER,
             staging: isStagingTask
           }
       	}
@@ -498,7 +498,7 @@ gulp.task('home-of-innovation-watch', () => {
   log('Watching HOI folder')
 })
 
-gulp.task('hoi-staging', ['home-of-innovation-scss', 'home-of-innovation-build', 'home-of-innovation-js'])
+gulp.task('hoi-staging', ['home-of-innovation-scss', 'home-of-innovation-build', 'home-of-innovation-js', 'home-of-innovation-watch'])
 gulp.task('hoi-dev', ['home-of-innovation-scss', 'home-of-innovation-build', 'home-of-innovation-js', 'home-of-innovation-watch'])
 
 gulp.task('production', sequence('copy-assets', 'scss', 'buildJS', 'html') )
