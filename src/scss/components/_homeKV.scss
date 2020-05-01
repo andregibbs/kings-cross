@@ -23,12 +23,11 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url('https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/homekv/KV_V1.png?$LATEST_PNG$');
-  // transform: translate(0,0);
-  will-change: transform;
+  z-index: 4;
 }
 
 .homeKV__Title {
-  z-index: 4;
+  z-index: 6;
   text-align: center;
   transform: translate(0, -6.25vh); // matching animation value in homeKV.js
   will-change: transform;
@@ -76,6 +75,7 @@
   position: absolute;
   color: white;
   padding: em(10) em(20);
+  will-change: transform, opacity;
 }
 
 .homeKV__NavItem:nth-child(1) {
@@ -183,11 +183,11 @@
 
 // Initial values for black areas of svg
 #svg_black_horizontal {
-  opacity: 1;
+  opacity: 0;
   will-change: opacity;
 }
 
 #svg_black_vertical {
-  opacity: 0;
+  opacity: 1;
   will-change: opacity;
 }
