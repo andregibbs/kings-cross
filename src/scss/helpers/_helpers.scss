@@ -80,6 +80,7 @@
     transition: all $transitionDefault ease;
     width: 200px;
     height: 50px;
+    cursor: pointer;
 
     @media screen and (max-width: $desktop) {
       width: get-desktop-vw(240);
@@ -90,6 +91,20 @@
       width: get-mobile-vw(300);
       height: get-mobile-vw(80);
       padding: get-mobile-vw(16) get-mobile-vw(32);
+    }
+
+    &--small {
+      font-size: 0.8em;
+      @media screen and (max-width: $desktop) {
+        width: get-desktop-vw(160);
+        height: get-desktop-vw(44);
+        padding: get-desktop-vw(8) get-desktop-vw(16);
+      }
+      @media screen and (max-width: $mobile) {
+        width: get-mobile-vw(120);
+        height: get-mobile-vw(44);
+        padding: get-mobile-vw(8);
+      }
     }
 
     &--primary {
@@ -135,6 +150,17 @@
         }
       }
 
+      &--white {
+        border-color: white;
+        background-color: transparent;
+        color: #fff;
+        &:hover {
+          background: white;
+          color: $background;
+          border-color: $white;
+        }
+      }
+
       &-notActive {
         pointer-events: none;
         background: $grey;
@@ -147,6 +173,43 @@
         color: #fff;
         &:hover {
           color: $orange;
+          border-color: $white;
+        }
+      }
+
+      &--saffron {
+        border-color: $saffron;
+        background-color: $saffron;
+        color: #fff;
+        &:hover {
+          color: $saffron;
+          border-color: $white;
+        }
+      }
+      &--skyblue {
+        border-color: $skyblue;
+        background-color: $skyblue;
+        color: #fff;
+        &:hover {
+          color: $skyblue;
+          border-color: $white;
+        }
+      }
+      &--coral {
+        border-color: $coral;
+        background-color: $coral;
+        color: #fff;
+        &:hover {
+          color: $coral;
+          border-color: $white;
+        }
+      }
+      &--teal {
+        border-color: $teal;
+        background-color: $teal;
+        color: #fff;
+        &:hover {
+          color: $teal;
           border-color: $white;
         }
       }

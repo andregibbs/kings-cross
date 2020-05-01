@@ -5,7 +5,7 @@
 
 .hoiList__Item {
   cursor: pointer;
-  padding-bottom: $spacing-mobile;
+  padding-bottom: calc(#{$spacing-mobile} / 2);
   width: 100%;
 }
 

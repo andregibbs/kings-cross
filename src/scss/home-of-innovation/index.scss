@@ -14,14 +14,14 @@
 // Helpers
 @import "../helpers/helpers";
 
-@import "../components/nav";
+
 @import "../components/social";
 @import "../components/find-kx";
 
 // wrap all components in hoi class
 
 $spacing-desktop: em(40); //$p-borders-desktop * 1px;
-$spacing-mobile: em(30); //$m-borders-mobile * 1px;
+$spacing-mobile: em(40); //$m-borders-mobile * 1px;
 
 $padding-desktop: $p-borders-desktop * 1px;
 $padding-mobile: $p-borders-mobile * 1px;
@@ -30,6 +30,8 @@ $margin-desktop: $m-borders-desktop * 1px;
 $margin-mobile: $m-borders-mobile * 1px;
 
 .cheil-static.home-of-innovation {
+
+  @import "../components/nav";
 
   // general styling & containers
   @import "../components/home-of-innovation/typography";

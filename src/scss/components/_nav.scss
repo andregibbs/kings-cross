@@ -32,7 +32,10 @@
 		}
 
 		a {
-      font-size: 0.9em;
+      font-size: 1em;
+      @media screen and ( min-width: $mobile + 1 ) {
+				font-size: 0.9em;
+			}
 			color: $white;
 			letter-spacing: 1px;
 			transition: all 0.4s ease;

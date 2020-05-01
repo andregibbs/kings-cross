@@ -1,14 +1,20 @@
 p {
-  @include fz16();
-  margin-bottom: 1rem;
+  @include fz22();
   color: white;
   @media screen and (min-width: $mobile + 1) {
     @include fz16();
   }
 }
 
+a {
+  @include fz22();
+  @media screen and (min-width: $mobile + 1) {
+    @include fz16();
+  }
+}
+
 h1, .h1 {
-  @include fz40();
+  @include fz50();
   margin-bottom: 1rem;
   line-height: 1.1;
   @media screen and (min-width: $mobile + 1) {
@@ -17,7 +23,7 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  @include fz30();
+  @include fz36();
   margin-bottom: 1rem;
   line-height: 1.1;
   @media screen and (min-width: $mobile + 1) {
@@ -26,7 +32,7 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  @include fz25();
+  @include fz30();
   margin-bottom: 1rem;
   line-height: 1.1;
   @media screen and (min-width: $mobile + 1) {
@@ -35,7 +41,7 @@ h3, .h3 {
 }
 
 h4, .h4 {
-  @include fz20();
+  @include fz24();
   margin-bottom: 1rem;
   line-height: 1.1;
   @media screen and (min-width: $mobile + 1) {
@@ -44,7 +50,7 @@ h4, .h4 {
 }
 
 h5, .h5 {
-  @include fz18();
+  @include fz20();
   margin-bottom: 1rem;
   line-height: 1.1;
   @media screen and (min-width: $mobile + 1) {
@@ -53,7 +59,7 @@ h5, .h5 {
 }
 
 h6, .h6 {
-  @include fz16();
+  @include fz18();
   margin-bottom: 0.5rem;
   @media screen and (min-width: $mobile + 1) {
     @include fz18();

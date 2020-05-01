@@ -21,15 +21,18 @@ function homeKV() {
 
   // declare selector for later use
   const homeKV_SVG = document.querySelector('.homeKV__CrossSVG');
+  const homeKV_HeaderImage = document.querySelector('.homeKV__HeaderImage');
   const homeKV_Title = document.querySelector('.homeKV__Title');
   const homeKV_BlackVertical = document.querySelector('.homeKV__CrossSVG #svg_black_vertical');
   const homeKV_BlackHorizontal = document.querySelector('.homeKV__CrossSVG #svg_black_horizontal');
+  const navItemHeaders = document.querySelectorAll('.homeKV__NavItemText');
 
   // stores rect data for animations
   let rects = getRects();
 
   // Function to fetch any elements we require for rect data
   // rect data inlcudes, element positioning and dimensions
+  // elementrect.top - bodyrect.top = scroll top position of element
   function getRects() {
     return {
       body: document.querySelector('body').getBoundingClientRect(),
@@ -55,7 +58,7 @@ function homeKV() {
           let prevStep = steps[i-1];
           // loop through keys and calculate values based on progress between steps
           Object.keys(step.values).forEach((key, i) => {
-            values[key] = (((step.values[key] - prevStep.values[key]) * progress) + prevStep.values[key]).toFixed(2);
+            values[key] = (((step.values[key] - prevStep.values[key]) * progress) + prevStep.values[key]).toFixed(1);
           });
         } else {
           // calculate progress on animation using scroll pos between current and next step
@@ -63,7 +66,7 @@ function homeKV() {
           let eased = step.easing(progress)
           // loop through value keys
           Object.keys(step.values).forEach((key, i) => {
-            values[key] = (((nextStep.values[key] - step.values[key]) * progress) + step.values[key]).toFixed(2);
+            values[key] = (((nextStep.values[key] - step.values[key]) * progress) + step.values[key]).toFixed(1);
           });
         }
       }
@@ -76,6 +79,7 @@ function homeKV() {
   function animate(e) {
     // store scroll variable
     const scroll = window.scrollY;
+    const mobile = window.innerWidth <= 768;
 
     // TODO: may need to offset all these values with the gnb height
     // scrollto centering of the nav seems to be off
@@ -88,8 +92,8 @@ function homeKV() {
         values: {
           y: -((rects.header.height * 0.2) + (rects.nav.height / 2)), // values to transform
           x: -(Math.min(1440, window.innerWidth) / 4),
-          rotate: 25,
-          scale: 1.5,
+          rotate: 35,
+          scale: 2.5,
         }
       },
       {
@@ -128,19 +132,38 @@ function homeKV() {
       }
     ]
 
+    const headerImageSteps = [
+      {
+        scroll: 0, // start scroll position of step,
+        easing: easing.linear, // easing to use
+        values: {
+          scale: 1,
+          opacity: 1
+        }
+      },
+      {
+        scroll: (rects.nav.top - rects.body.top) - ((window.innerHeight - rects.nav.height) / 2),
+        easing: easing.linear, // easing to use
+        values: {
+          scale: 1.2,
+          opacity: 0
+        }
+      }
+    ]
+
     const headerTitleSteps = [
       {
         scroll: 0, // start scroll position of step,
         easing: easing.linear, // easing to use
         values: {
-          y: -(window.innerHeight / 20),
+          y: -(window.innerHeight / 16),
         }
       },
       {
-        scroll: (rects.nav.top - rects.body.top) - ((window.innerHeight - rects.nav.height) / 2) - (window.innerHeight / 4),
+        scroll: (rects.nav.top - rects.body.top) + rects.nav.height,
         easing: easing.linear, // easing to use
         values: {
-          y: (rects.header.height / 2) + (rects.nav.height / 4),
+          y: rects.header.height,
         }
       }
     ]
@@ -164,7 +187,21 @@ function homeKV() {
 
     const horizontalBlackSteps = [
       {
-        scroll: (rects.nav.top - rects.body.top) - ((window.innerHeight - rects.nav.height) / 2) + (window.innerHeight / 6),
+        scroll: window.innerHeight * 0.5, // start scroll position of step,
+        easing: easing.linear, // easing to use
+        values: {
+          opacity: 1,
+        }
+      },
+      {
+        scroll: (rects.nav.top - rects.body.top) - ((window.innerHeight - rects.nav.height) / 2) - (window.innerHeight / 4),
+        easing: easing.linear, // easing to use
+        values: {
+          opacity: 0,
+        }
+      },
+      {
+        scroll: (rects.nav.top - rects.body.top) - ((window.innerHeight - rects.nav.height) / 2) + (window.innerHeight / 4),
         easing: easing.linear, // easing to use
         values: {
           opacity: 0,
@@ -179,19 +216,66 @@ function homeKV() {
       }
     ]
 
+    const navItemHeaderSteps = [
+      {
+        scroll: (rects.nav.top - rects.body.top) - (rects.header.height / 2),
+        easing: easing.linear, // easing to use
+        values: {
+          x: 150,
+          opacity: 0
+        }
+      },
+      {
+        scroll: (rects.nav.top - rects.body.top) - ((window.innerHeight - rects.nav.height) / 2),
+        easing: easing.linear, // easing to use
+        values: {
+          x: 0,
+          opacity: 1
+        }
+      }
+    ]
+
     // get values for cross transform
     const mainCrossValues = processSteps(mainCrossSteps, scroll);
     // set transform style
     homeKV_SVG.style.transform = `translate(${mainCrossValues['x']}px ,${mainCrossValues['y']}px) rotateZ(${mainCrossValues['rotate']}deg) scale(${mainCrossValues['scale']})`
 
+    const headerImageValues = processSteps(headerImageSteps, scroll);
+    // homeKV_HeaderImage.style.transform = `scale(${headerImageValues['scale']})`
+    homeKV_HeaderImage.style.transform = `translate(0, ${scroll * 0.8}px) scale(${headerImageValues['scale']})`
+    homeKV_HeaderImage.style.opacity = headerImageValues['opacity']
+
     const headerTitleValues = processSteps(headerTitleSteps, scroll);
-    homeKV_Title.style.transform = `translate(0 ,${headerTitleValues['y']}px)`
+    homeKV_Title.style.transform = `translate(0 ,${headerTitleValues['y']}px, 0)`
 
     const verticalBlackValues = processSteps(verticalBlackSteps, scroll)
     homeKV_BlackVertical.style.opacity = verticalBlackValues.opacity
 
     const horizontalBlackValues = processSteps(horizontalBlackSteps, scroll)
     homeKV_BlackHorizontal.style.opacity = horizontalBlackValues.opacity
+
+    const navItemHeaderValues = processSteps(navItemHeaderSteps, scroll)
+    navItemHeaders.forEach((el, i) => {
+      let button = el.querySelector('.btn')
+      let x = navItemHeaderValues.x
+      let opacity = navItemHeaderValues.opacity
+      switch (i) {
+        case 0:
+          x = x * -1
+          x = Math.min(x + 50, 0)
+          break;
+        case 1:
+          x = Math.max(x - 50, 0)
+          break;
+        case 2:
+          x = x * -1
+          break;
+        default:
+      }
+      el.style.transform = `translate(${x}%, 0)`
+      el.style.opacity = opacity
+    });
+
 
   }
 

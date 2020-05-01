@@ -52,8 +52,8 @@
 }
 
 .hoiGallery__SpotlightClose {
-  top: calc(#{$spacing-mobile} / 2);
-  right: calc(#{$spacing-mobile} / 2);
+  top: calc(#{$spacing-mobile} / 4);
+  right: calc(#{$spacing-mobile} / 4);
   width: 50px;
   height: 50px;
   cursor: pointer;
