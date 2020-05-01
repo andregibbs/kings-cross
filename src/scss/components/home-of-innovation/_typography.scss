@@ -1,6 +1,7 @@
 p {
-  @include fz12();
+  @include fz16();
   margin-bottom: 1rem;
+  color: white;
   @media screen and (min-width: $mobile + 1) {
     @include fz16();
   }
