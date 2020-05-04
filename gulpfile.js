@@ -331,14 +331,16 @@ function HOITemplates() {
           // find pages with same group id
           let groupPages = getPagesWithGroupId(component.id, currentFilePath);
           // create array of items with data
-          // console.log(publicUrl, path.replace(pagesBasePath, '').replace('|','/').replace('.json', ''))
+          // console.log(publicUrl, path.replace(pagesBasePath, '').replace(/\|/g,'/').replace('.json', ''))
           component.items = groupPages.map(({path, pageData}) => {
             return {
               title: pageData.title,
               image: pageData.thumb,
-              url: publicUrl + path.replace(pagesBasePath, '').replace('|','/').replace('.json', ''),
+              sort: pageData.sort,
+              url: publicUrl + path.replace(pagesBasePath, '').replace(/\|/g,'/').replace('.json', ''),
             }
           })
+          component.items.sort((a, b) => a.sort - b.sort)
         default:
       }
     })

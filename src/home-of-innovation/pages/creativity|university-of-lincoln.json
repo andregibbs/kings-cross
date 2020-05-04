@@ -1,0 +1,50 @@
+{
+  "title": "University of Lincoln BRADLAB Project",
+  "description": "Founded by Jason Bradbury, BRADLAB tasks students to develop innovative new technological products.",
+  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/Uni_of_Lincoln_-_KV.jpg?$LATEST_PNG$",
+  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/Uni_of_Lincoln_-_KV.jpg?$LATEST_PNG$",
+  "group": "creativity-sub",
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "{{creativity|university-of-lincoln[image]}}"
+      },
+      "style": {
+        "desktop": "left",
+        "mobile": "top"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "level": "1",
+          "copy": "{{creativity|university-of-lincoln[title]}}"
+        }
+      ]
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "paragraphs",
+          "text": [
+            "The University of Lincoln’s Product Design degree concentrates on the creation, delivery, and communication of ideas that challenge conventional thinking and open new markets. As part of this curriculum, students partake in the BRADLAB project, founded by Jason Bradbury. Here they are tasked with researching and unpicking both technology and consumer interests to develop an innovative new technological product.",
+            "As the Home of Innovation, SamsungKX have provided the University of Lincoln a virtual platform for students of the BRADLAB project to give them an opportunity to remotely pitch their exciting new product designs via pre-recorded video content. Students will receive exclusive feedback from the Samsung product design team, alongside leading TV presenter, author and technology broadcaster, Jason Bradbury.",
+            "Submissions for the BRADLAB project can be seen following the below link."
+          ]
+        },
+        {
+          "type": "buttons",
+          "items": [
+            {
+              "copy": "BRADLAB Pitches",
+              "url": "https://www.youtube.com/playlist?list=PLYx8n4LgMtQopkQ2-xGwt_7hifbDIMbyS",
+              "target": "_blank"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

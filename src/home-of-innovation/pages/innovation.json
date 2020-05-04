@@ -8,10 +8,10 @@
       "type": "group-land",
       "items": [
         {
-          "title": "{{innovation|sub-page[title]}}",
-          "description": "{{innovation|sub-page[description]}}",
-          "image": "{{innovation|sub-page[image]}}",
-          "url": "{{innovation|sub-page[url]}}"
+          "title": "{{innovation|innovation-sessions|grl-pwr-gang[title]}}",
+          "description": "{{innovation|innovation-sessions|grl-pwr-gang[description]}}",
+          "image": "{{innovation|innovation-sessions|grl-pwr-gang[image]}}",
+          "url": "{{innovation|innovation-sessions|grl-pwr-gang[url]}}"
         }
       ]
     }

@@ -8,10 +8,10 @@
       "type": "group-land",
       "items": [
         {
-          "title": "{{lifestyle|sub-page[title]}}",
-          "description": "{{lifestyle|sub-page[description]}}",
-          "image": "{{lifestyle|sub-page[image]}}",
-          "url": "{{lifestyle|sub-page[url]}}"
+          "title": "{{lifestyle|tips-and-trikx|tips-1[title]}}",
+          "description": "{{lifestyle|tips-and-trikx|tips-1[description]}}",
+          "image": "{{lifestyle|tips-and-trikx|tips-1[image]}}",
+          "url": "{{lifestyle|tips-and-trikx|tips-1[url]}}"
         }
       ]
     }

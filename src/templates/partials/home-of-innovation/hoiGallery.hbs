@@ -52,12 +52,19 @@
                 </div>
             {{/if_equals}}
 
+            {{#if (or this.title this.description)}}
               <div class="hoiGallery__MediaBody">
-                <div class="hoiHeadline">
-                  <h3>{{this.title}}</h3>
-                </div>
-                <p>{{this.description}}</p>
+                {{#if this.title}}
+                  <div class="hoiHeadline">
+                    <h3>{{this.title}}</h3>
+                  </div>
+                {{/if}}
+                {{#if this.description}}
+                  <p>{{this.description}}</p>
+                {{/if}}
               </div>
+            {{/if}}
+            
             </div>
 
         {{/each}}

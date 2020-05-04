@@ -1,0 +1,70 @@
+{
+  "title": "Tips & Trikx: Get creative in the kitchen",
+  "description": "Get creative in the kitchen",
+  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_KV.JPG?$LATEST_PNG$",
+  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_KV.JPG?$LATEST_PNG$",
+  "group": "tips-and-trikx",
+  "sort": 3,
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "{{lifestyle|tips-and-trikx|tips-3[image]}}"
+      },
+      "style": {
+        "desktop": "right",
+        "mobile": "bottom"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "level": "1",
+          "copy": "{{lifestyle|tips-and-trikx|tips-3[title]}}"
+        }
+      ]
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "paragraphs",
+          "text": [
+            "From clearing the clutter to choosing the perfect desk foliage, enjoy these seven simple top tips and 'triKX' from Samsung KX to help boost productivity, positivity and health whilst working remotely.",
+            "<ol><li>1) Stay focused</li><p>When working from home, it's all too easy to get sucked into distractions so it's important to minimise these as much as possible. Try to avoid spaces within the home associated with leisure and relaxation such as the bedroom or in front of a TV and keep them strictly for enjoying during out-of-office hours.</p><li>2) Declutter the desk</li><p>Try to tidy the desk at the end of the day, so you can start with a clear surface the next morning. The Samsung Space Monitor is a great way of maximising this space as it pushes back to sit flat against a wall, leaving the entire work surface clear so you can focus on what's on the screen, and not what's surrounding it.</p><li>3) A workspace with a view</li><p>Natural light produces Vitamin D , which is believed to improve motivation and efficiency through its ability to increase endorphins and serotonin levels . Home workspaces should ideally be located near a window so you can directly benefit from the sun's rays.</p><li>4) Stick to the schedule</li><p>Working at home is a challenge. You either have a million things to do at once or you get into a good rhythm and then time runs away with you, it's all too easy to forget the important things. Taking time out is vital for your mental health so make sure you plan plenty of breaks. Ensure you have fixed time slots in place that are exclusively for exercise or spending time with loved ones.</p><li>5) Bring the outside in</li><p>Those working from home should design their space with things that motivate them and have a positive influence such as pictures of loved ones or pets . Indoor plants not only brighten desks but can also act as air purifiers through absorbing dust and helping to remove harmful chemicals. Aloe Vera plants are ideal for this and a desk-size won't require much maintenance.</p><li>6) H20 @ home</li><p>Not drinking enough water can lower productivity, so with or without the luxury of the communal cooler, a healthy H20 intake is key. Experts recommend drinking at least 2 litres a day and trips to the kitchen tap will provide the regular breaks that are much needed.</p><li>7) Fix up, look sharp</li><p>What we wear day-to-day is proven to naturally impact our productivity & mental health, so try to get ready as if you are heading to the office or normal place of work. Pulling on a jumper to look ‘conference call' ready? This can be accompanied with a comfy pair of jeans to easily complete the look for the day ahead.</p></ol>"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "items": [
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_1.JPG?$LATEST_PNG$",
+          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_1.JPG?$LATEST_PNG$"
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_2.JPG?$LATEST_PNG$",
+          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_2.JPG?$LATEST_PNG$"
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_3.JPG?$LATEST_PNG$",
+          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_3.JPG?$LATEST_PNG$"
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_4.JPG?$LATEST_PNG$",
+          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_4.JPG?$LATEST_PNG$"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "tips-and-trikx",
+      "title": "Episodes"
+    }
+  ]
+}

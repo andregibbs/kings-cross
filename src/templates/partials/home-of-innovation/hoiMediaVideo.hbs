@@ -4,6 +4,9 @@
 
   <video
     class="hoiMedia hoiMedia--video {{class}}"
+    {{#if (eq type 'audio')}}
+      style="background-image: url('{{poster}}')"
+    {{/if}}
     src="{{content}}"
     poster="{{poster}}"
     playsinline

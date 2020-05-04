@@ -8,10 +8,16 @@
       "type": "group-land",
       "items": [
         {
-          "title": "{{creativity|sub-page[title]}}",
-          "description": "{{creativity|sub-page[description]}}",
-          "image": "{{creativity|sub-page[image]}}",
-          "url": "{{creativity|sub-page[url]}}"
+          "title": "{{creativity|university-of-lincoln[title]}}",
+          "description": "{{creativity|university-of-lincoln[description]}}",
+          "image": "{{creativity|university-of-lincoln[image]}}",
+          "url": "{{creativity|university-of-lincoln[url]}}"
+        },
+        {
+          "title": "{{creativity|game-dev-london-podcast[title]}}",
+          "description": "{{creativity|game-dev-london-podcast[description]}}",
+          "image": "{{creativity|game-dev-london-podcast[image]}}",
+          "url": "{{creativity|game-dev-london-podcast[url]}}"
         }
       ]
     }

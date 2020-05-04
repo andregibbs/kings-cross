@@ -364,6 +364,7 @@ $(document).ready(function () {
 
 	switch (window.location.pathname) {
 		case '/uk/explore/kings-cross/':
+    case '/uk/explore/kings-cross/hoi/':
 
 			fetchData(whatIsKx);
 			places();

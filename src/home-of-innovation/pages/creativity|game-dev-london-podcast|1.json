@@ -1,0 +1,40 @@
+{
+  "title": "Game Dev London Podcast - Episode One",
+  "description": "Episode One",
+  "image": "{{creativity|game-dev-london-podcast[image]}}",
+  "thumb": "{{creativity|game-dev-london-podcast[image]}}",
+  "group": "game-dev-london-podcast",
+  "sort": 1,
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "audio",
+        "content": "https://images.samsung.com/is/content/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/game-dev-london-podcast/1.mp4",
+        "poster": "{{creativity|game-dev-london-podcast[image]}}"
+      },
+      "style": {
+        "desktop": "left",
+        "mobile": "top"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "level": "1",
+          "copy": "{{creativity|game-dev-london-podcast|2[title]}}"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Game Dev London is a diverse community group with a passion for all things gaming, including everything from design to conception, production, testing and of course playing the games themselves."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "game-dev-london-podcast",
+      "title": "Episodes"
+    }
+  ]
+}

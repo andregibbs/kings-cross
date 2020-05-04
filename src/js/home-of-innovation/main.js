@@ -3,11 +3,15 @@
 import HOIGallery from './hoiGallery';
 import { createYoutubeInstance, loadYoutubeAPI } from './utils';
 
+import nav from '../components/nav';
 
-document.addEventListener('DOMContentLoaded', () => {
+function init() {
 
   const galleries = document.querySelectorAll('.hoiGallery')
   const youtubeMedias = document.querySelectorAll('.hoiMedia--youtube')
+
+  // init nav
+  nav();
 
   // could make this conditional depending on wether there is youtube content on the page
   loadYoutubeAPI()
@@ -22,4 +26,10 @@ document.addEventListener('DOMContentLoaded', () => {
       })
     })
 
-}, false);
+}
+
+if (document.readyState === "complete" || (document.readyState !== "loading" && !document.documentElement.doScroll)) {
+  init();
+} else {
+  document.addEventListener("DOMContentLoaded", init);
+}
