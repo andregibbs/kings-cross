@@ -1,29 +1,29 @@
 /* Components */
-import nav from './components/nav';
-import whatson from './components/whatson';
-import singleEvent from './components/singleEvent';
-import places from './components/places';
-import whatIsKx from './components/whatIsKx';
-import repair from './components/repair';
-import calendar from './components/calendar';
-import slider from './components/slider';
-import bookingRefFetcher from './components/bookingRefFetcher';
-import discover from './components/discover';
-import support from './components/support';
-import experience from './components/experience';
-import lottieAnim from './components/lottieAnim';
-import loadingScreen from './components/loadingScreen';
-import getParam from './components/getParam';
-import school from './components/school'
+import nav from "./components/nav";
+import sidedrawer from "./components/sidedrawer";
+import whatson from "./components/whatson";
+import singleEvent from "./components/singleEvent";
+import places from "./components/places";
+import whatIsKx from "./components/whatIsKx";
+import repair from "./components/repair";
+import calendar from "./components/calendar";
+import slider from "./components/slider";
+import bookingRefFetcher from "./components/bookingRefFetcher";
+import discover from "./components/discover";
+import support from "./components/support";
+import experience from "./components/experience";
+import lottieAnim from "./components/lottieAnim";
+import loadingScreen from "./components/loadingScreen";
+import getParam from "./components/getParam";
+import school from "./components/school";
 import homeKV from './components/homeKV';
 
-import loadingScreenAnimation from '../data/loadingScreen.json';
-import create from '../data/Create.json';
-import colab from '../data/Colab.json';
-import coms from '../data/Coms.json';
-import critical from '../data/Crit_think.json';
-import doLogFunction from './dev/doLog';
-import fakeEvents from '../data/fakeEvents.json';
+import loadingScreenAnimation from "../data/loadingScreen.json";
+import create from "../data/Create.json";
+import colab from "../data/Colab.json";
+import coms from "../data/Coms.json";
+import critical from "../data/Crit_think.json";
+import doLogFunction from "./dev/doLog";
 var doLog = doLogFunction();
 
 //experimental
@@ -358,6 +358,12 @@ $(document).ready(function () {
 	// =========================================================
 
 	nav();
+
+  // =========================================================
+	// Sidedraw nav
+	// =========================================================
+
+  sidedrawer();
 
 	// =========================================================
 	// Loads scripts dynamically depending on which page you are

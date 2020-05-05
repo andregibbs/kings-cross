@@ -68,7 +68,7 @@ const tabs = {
             <p>The 90-minute event featured an intimate live performance from Caitlin as she reflected on one of her most popular Twitter threads - a look at the downsides of being a man – followed by a Q&A with the audience and Alex Zane which highlighted some of her greatest, weirdest and funniest moments on the platform.</p>
             <p>Thread Talks is a series of six intimate and exclusive ‘in conversation’ events featuring some of the biggest names in the world of journalism, sport, culture and comedy. The acts will perform at the venue’s Centre Stage in front the world’s first vertical 10metre-wide curved Samsung screen.</p>
             <p>Each free event is being hosted in association with Twitter UK and on each night guests will hear from the company’s Director of Planning, David Wilding.</p>`,
-        "link" : "https://www.youtube.com/channel/UC_v6xPXpnS4LaLEdfMr-Lzw",
+        "link" : "https://www.youtube.com/watch?v=V_qo-YXoaJc&list=PLrUG7VyDs_IUJjPkzyWADKvxld8A4Na1n&index=5&t=0s",
         "slot": 1
     },
     2: {
@@ -86,16 +86,14 @@ const tabs = {
     },
     3: {
         "img" : {
-            "src" : "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/recently3.png?$ORIGIN_PNG$",
+            "src" : "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/zonev-300x200.png?$ORIGIN_PNG$",
             "alt" : ""
         }, 
         "content" : 
-            `<h1 class="recently__content__header">Co-Lab Series: Real parents of Kings Cross</h1>
-            <p><b>For our very first Co–Lab event, we paired together two juxtaposing influencers and challenged them to make a positive impact on the local community.</b></p><br>
-            <p>Straight-talking ‘Mother of All List’s’ Clemmie Telford was paired with photographer Matt Cuzen who is known for his fantasy-style photography.</p>
-            <p>Their Co–Lab explored the stories of King’s Cross parents and their connection to the local area through a powerful photo series with a surreal twist. Many of the parents who featured in the photo series attended the talk and spoke about their experience with meeting up with two absolute strangers for this project!</p>
-            <p>The photo series can be viewed at #SamsungKX for a limited time.</p>`,
-        "link" : "https://www.youtube.com/channel/UC_v6xPXpnS4LaLEdfMr-Lzw",
+            `<h1 class="recently__content__header">Zone V</h1>
+            <p><b>Zone V is an easy to use interface that works with Samsung Smartphones designed to make even the most important phone features easy. It simplifies access to mobile device apps such as calls and texts, phone and contacts keeping you connected with friends and family.</b></p><br>
+            <p>From enlarging text and buttons to creating clearer menus, Zone V makes devices more accessible for those that struggle. For more information on Zone V please visit: <a href="https://zonev.com/" target="_blank">https://zonev.com/.</a></p>`,
+        "link" : "https://youtu.be/iYMiu-9aKnI",
         "slot": 3
     }
 }
