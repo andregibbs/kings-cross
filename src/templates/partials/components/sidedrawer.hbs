@@ -1,27 +1,41 @@
-<div class='sidedrawer'>
+<div class="sidedrawer">
     <ul>
         <li>
-            <button class='sidedrawer__heading-button fz25' data-open='home'>home of innovation</button>
-            <ul data-menu='home' class='sidedrawer__submenu'>
-                <li><a href="" class='fz25'>creativity space</a> </li>
-                <li><a href="" class='fz25'>entertainment space</a> </li>
-                <li><a href="" class='fz25'>health & wellbeing space</a> </li>
-                <li><a href="" class='fz25'>giving space</a></li>
+            <button class="sidedrawer__heading-button fz25" data-open="home">home of innovation</button>
+            <ul data-menu="home" class="sidedrawer__submenu">
+              <li>
+                <a class="fz25" href="/{{ config.site }}{{ config.subfolder }}/lifestyle/">
+                  Lifestyle & Wellbeing
+                </a>
+              </li>
+              <li>
+                <a class="fz25" href="/{{ config.site }}{{ config.subfolder }}/entertainment/">
+                  Entertainment
+                </a>
+              </li>
+              <li>
+                <a class="fz25" href="/{{ config.site }}{{ config.subfolder }}/creativity/">
+                  Creativity
+                </a>
+              </li>
+              <li>
+                <a class="fz25" href="/{{ config.site }}{{ config.subfolder }}/innovation/">
+                  Tech & Innovation
+                </a>
+              </li>
             </ul>
         </li>
         <li>
-            <button class='sidedrawer__heading-button fz25' data-open='home'>home of innovation</button>
-            <ul data-menu='home' class='sidedrawer__submenu'>
-                <li><a href="" class='fz25'>creativity space</a> </li>
-                <li><a href="" class='fz25'>entertainment space</a> </li>
-                <li><a href="" class='fz25'>health & wellbeing space</a> </li>
-                <li><a href="" class='fz25'>giving space</a></li>
-            </ul>
+          <a class="sidedrawer__heading-button fz25" href="/{{ config.site }}{{ config.subfolder }}/discover/">Discover</a>
         </li>
-        <li></li>
-        <li></li>
+        <li>
+          <a class="sidedrawer__heading-button fz25" href="/{{ config.site }}{{ config.subfolder }}/whats-on/">What"s on</a>
+        </li>
+        <li>
+          <a class="sidedrawer__heading-button fz25" href="/{{ config.site }}{{ config.subfolder }}/support/">Support</a>
+        </li>
     </ul>
-    <div class='sidedrawer__footer'>
+    <div class="sidedrawer__footer">
 
     </div>
 </div>

@@ -1,9 +1,9 @@
 export default function sidedrawer() {
   const container = $(".sidedrawer");
-  $(window).on("load scroll", function () {
-    const topPosition = $(".nav").offset().top;
-    $(container).css("top", `${topPosition}px`);
-  });
+  // $(window).on("load scroll", function () {
+  //   const topPosition = $(".nav").offset().top;
+  //   $(container).css("top", `${topPosition}px`);
+  // });
   const mainCategoriesButtons = $(container).find(
     ".sidedrawer__heading-button"
   );
@@ -24,7 +24,7 @@ export default function sidedrawer() {
     }
   });
 
-  const mobileBurgerMenu = $(".navigation-mobile__menu-button");
+  const mobileBurgerMenu = $(".navigation-mobile__item--toggle");
   $(mobileBurgerMenu).click(function () {
     if ($(".sidedrawer").hasClass("opened")) {
       $(".sidedrawer").removeClass("opened");

@@ -1,8 +1,19 @@
-<!--#include virtual="/uk/aem/header-pdp.html"-->
+{{#if config.staging}}
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" defer></script>
+  </head>
+  <body>
+{{else}}
+  <!--#include virtual="/uk/aem/header-pdp.html"-->
+{{/if}}
 
 <section class="cheil-static">
-    {{>stylesheet}} 
-    
+    {{>stylesheet}}
+
     {{>components/nav }}
 
     {{>components/sidedrawer }}
@@ -96,11 +107,11 @@
     </section>
 
 
-    
+
 
     <section class="section NAS-gallery">
             <div class="section__inner">
-               
+
                 <div class="neighbourhood__container  star">
                     {{>components/discoverSlider slider='sliderNAS' }}
                 </div>
@@ -175,18 +186,18 @@
                         <div class="challenge__title__number speakers__mentor-content">
                             <p class="fz16">Mentor</p>
                         </div>
-    
+
                         <div class="challenge__title__cat">
                             <h4 class="fz20">Reuben Christian</h4>
                         </div>
-    
+
                         <div class="challenge__title__date">
                             <p class="fz16">COMIC, SPEAKER, FACILITATOR</p>
                         </div>
                         <div class="challenge__title__number">
                             <p class="fz12" style="text-transform: none;">Reuben has been on a mission to Champion The Dreamers since 2006. He’s spent over a decade spreading his message, hosting entertainment shows and working with the BBC, Channel 4, Red Bull and Virgin Media.</p>
                         </div>
-    
+
                     </div>
                 </div>
 
@@ -270,21 +281,21 @@
                                 <!-- <div class="speakers">
 											<div class="speakers__speaker">
 												<img src="https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/school/speaker1.png?$ORIGIN_PNG$" alt="Reuben Christian">
-											</div>			
+											</div>
 											<div class="challenge__title">
 													<div class="challenge__title__number">
 														<p class="fz16">Key Speaker</p>
 													</div>
-												
+
 													<div class="challenge__title__cat">
 														<h4 class="fz25">Reuben Christian</h4>
 													</div>
-						
+
 													<div class="challenge__title__date">
 														<p class="fz16">COMIC, SPEAKER, FACILITATOR</p>
 													</div>
-													
-												</div>																							
+
+												</div>
 									</div> -->
 
                             </div>
@@ -355,7 +366,7 @@
 															<!-- <source src="https://images.samsung.com/is/content/samsung/p5/uk/explore/kings-cross/kx-launch-highlight.mp4" type="video/mp4"> -->
 																<source src="https://images.samsung.com/is/content/samsung/p5/uk/explore/kings-cross/school/tolani.mp4" type="video/mp4">
 															Your browser does not support the video tag.
-			
+
 														</video>
                                             </div>
 
@@ -813,7 +824,7 @@
 															<!-- <source src="https://images.samsung.com/is/content/samsung/p5/uk/explore/kings-cross/kx-launch-highlight.mp4" type="video/mp4"> -->
 																<source src="https://images.samsung.com/is/content/samsung/p5/uk/explore/kings-cross/school/compressed-desktop.mp4" type="video/mp4">
 															Your browser does not support the video tag.
-			
+
 														</video>
                                             </div>
 
@@ -907,7 +918,7 @@
                                                                         </g>
                                                                       </g>
                                                                     </g>
-                                                                  </svg>                                                                  
+                                                                  </svg>
                                                                 </a>
                                                             </div>
                                                     </div>
@@ -916,7 +927,7 @@
                                                     <p class="fz13">Andy is an innovation specialist, working at the junction of policy and practice. He helps leaders increase the speed and scale of positive change with regards to climate, nature and wellbeing.  </p>
                                                 </div>
                                             </div>
-                                            <div class="experts__content__alt desktop " > 
+                                            <div class="experts__content__alt desktop " >
                                                 <div class="challenge__title__experts__alt ">
                                                     <div class="challenge__title__cat ">
                                                         <h4 class="fz20 ">Andy Middleton</h4>
@@ -940,10 +951,10 @@
                                                                         </g>
                                                                       </g>
                                                                     </g>
-                                                                  </svg> 
-                                                            </a>                                                                 
+                                                                  </svg>
+                                                            </a>
                                                         </div>
-                                                       
+
                                                     </div>
 
                                                 </div>
@@ -953,18 +964,18 @@
                                                             <div class="challenge__title__cat ">
                                                                 <h4 class="fz25 ">Andy Middleton</h4>
                                                             </div>
-        
+
                                                             <div class="challenge__title__number">
                                                                 <p class=" fz13 ">FACILITATOR, SPEAKER, COACH</p>
                                                             </div>
                                                             <div class="challenge__title__number">
                                                                     <p class="fz12">Andy is an innovation specialist, working at the junction of policy and practice. He helps leaders increase the speed and scale of positive change with regards to climate, nature and wellbeing.  </p>
                                                                 </div>
-        
-        
+
+
                                                         </div>
                                                 </div>
-                                            
+
                                         </div>
                                         <div class="experts__expert__alt " id="alex">
                                             <div class="experts__image__container ">
@@ -1000,9 +1011,9 @@
                                                                         </g>
                                                                     </g>
                                                                     </g>
-                                                                </svg>        
-                                                            </a>                                                      
-                                                        </div>                                                      
+                                                                </svg>
+                                                            </a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="challenge__title__number__alt desktop">
@@ -1046,7 +1057,7 @@
                                                                         </g>
                                                                       </g>
                                                                     </g>
-                                                                  </svg>                                                                  
+                                                                  </svg>
                                                                 </a>
                                                             </div>
                                                         </div>
@@ -1057,7 +1068,7 @@
                                                         <div class="challenge__title__cat ">
                                                             <h4 class="fz25 ">Alex Fefegha</h4>
                                                         </div>
-    
+
                                                         <div class="challenge__title__number">
                                                             <p class="fz13 ">DESIGNER, TECHNOLOGIST, STORYTELLER</p>
                                                         </div>
@@ -1104,10 +1115,10 @@
                                                                         </g>
                                                                       </g>
                                                                     </g>
-                                                                </svg>    
-                                                            </a>                                                              
+                                                                </svg>
+                                                            </a>
                                                         </div>
-                                                        
+
                                                     </div>
                                                 </div>
                                                 <div class="challenge__title__number__alt desktop">
@@ -1151,7 +1162,7 @@
                                                                         </g>
                                                                       </g>
                                                                     </g>
-                                                                  </svg>                                                                  
+                                                                  </svg>
                                                         </div>
                                                         </a>
                                                     </div>
@@ -1171,7 +1182,7 @@
                                                         </div>
                                                     </div>
                                             </div>
-                                            
+
                                         </div>
                                         <div class="experts__expert__alt " id="mariam">
                                             <div class="experts__image__container ">
@@ -1318,7 +1329,7 @@
                                             </div>
                                         </div>
                                         <div class="speakers speakers__keynote">
-                                            <div class="speakers__speaker-third vidstar">  
+                                            <div class="speakers__speaker-third vidstar">
                                                 <!-- <img src="https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/school/Tolani.png?$ORIGIN_PNG$" alt="Reuben Christian"> -->
                                                 <div class="keynotevideo">
                                                     <svg id="vidlogo3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="181.099" height="181.099" viewBox="0 0 181.099 181.099">
@@ -1356,17 +1367,17 @@
                                                                 <!-- <source src="https://images.samsung.com/is/content/samsung/p5/uk/explore/kings-cross/kx-launch-highlight.mp4" type="video/mp4"> -->
                                                                     <source src="https://images.samsung.com/is/content/samsung/p5/uk/explore/kings-cross/school/weekThreeKeynote.mp4" type="video/mp4">
                                                                 Your browser does not support the video tag.
-                
+
                                                             </video>
                                                 </div>
-    
+
                                                 <h4 class="leader__copy__quote fz20 keynote mobile">“Technology has the power to help unite people and build communities"</h4>
-    
-    
+
+
                                             </div>
                                             <div class="challenge__title challenge__title__keynote">
-    
-    
+
+
                                                 <div class="challenge__title__cat">
                                                     <h4 class="fz25">Tobi Kyeremateng</h4>
                                                 </div>
@@ -1379,9 +1390,9 @@
                                                     </div>
                                                     <h4 class="leader__copy__quote fz25 keynote desktop tight-margin">“Technology has the power to help unite people and build communities”
                                                         </h4>
-    
+
                                                 </div>
-    
+
                                                 <div class="challenge__content__copy--sub ">
                                                     <p class="fz16">Tobi’s keynote seeks to answer how we can make the world more inclusive through tech.</p>
                                                 </div>
@@ -1399,7 +1410,7 @@
                                                                       </g>
                                                                     </g>
                                                                   </svg>
-    
+
                                                         </div>
                                                     </a>
                                                     <a href="https://twitter.com/bobimono" target="_blank" ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:notaschool:tobi-twitter" data-omni-type="microsite" data-omni="uk:kings-cross:notaschool:tobi-twitter">
@@ -1416,7 +1427,7 @@
                                                                       </g>
                                                                     </g>
                                                                   </svg>
-    
+
                                                         </div>
                                                     </a>
                                                 </div>
@@ -1463,7 +1474,7 @@
                                                                           </g>
                                                                         </g>
                                                                       </svg>
-    
+
                                                             </div>
                                                         </a>
                                                         <a href="https://twitter.com/AdahParris" target="_blank" ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:notaschool:adah-twitter" data-omni-type="microsite" data-omni="uk:kings-cross:notaschool:adah-twitter">
@@ -1480,27 +1491,27 @@
                                                                           </g>
                                                                         </g>
                                                                       </svg>
-    
+
                                                             </div>
                                                         </a>
                                                     </div>
                                                 </div>
                                                 <div class="experts__content">
                                                     <div class="challenge__title__experts">
-    
-    
+
+
                                                         <div class="challenge__title__cat">
                                                             <h4 class="fz25">Adah Parris</h4>
                                                         </div>
-    
+
                                                         <div class="challenge__title__number__summary">
                                                             <p class="fz15">STORYTELLER, CULTURAL STRATEGIST</p>
                                                         </div>
-    
+
                                                         <div class="challenge__title__number">
                                                             <p class="fz11">Adah is recognised as one of TED Talks’ Global Emerging Innovators. She is one of the UK’s Top 100 Black and Minority Ethnic (BAME) Leaders in Technology, and has over 20 years of experience in transforming cultures to create human blockchains.</p>
                                                         </div>
-    
+
                                                         <div class="challenge__icons desktop">
                                                             <a href="https://instagram.com/adahparris?igshid=ghb6dfb20ud8" target="_blank" ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:notaschool:adah-instagram" data-omni-type="microsite" data-omni="uk:kings-cross:notaschool:adah-instagram">
                                                                 <div class="challenge__icon">
@@ -1515,7 +1526,7 @@
                                                                               </g>
                                                                             </g>
                                                                           </svg>
-    
+
                                                                 </div>
                                                             </a>
                                                             <a href="https://twitter.com/AdahParris" target="_blank" ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:notaschool:adah-twitter" data-omni-type="microsite" data-omni="uk:kings-cross:notaschool:adah-twitter">
@@ -1532,7 +1543,7 @@
                                                                               </g>
                                                                             </g>
                                                                           </svg>
-    
+
                                                                 </div>
                                                             </a>
                                                         </div>
@@ -1557,7 +1568,7 @@
                                                                           </g>
                                                                         </g>
                                                                       </svg>
-    
+
                                                             </div>
                                                         </a>
                                                         <div class="challenge__icon">
@@ -1574,7 +1585,7 @@
                                                                       </g>
                                                                     </g>
                                                                   </svg>
-    
+
                                                         </div>
                                                         </a>
                                                     </div>
@@ -1584,11 +1595,11 @@
                                                         <div class="challenge__title__cat">
                                                             <h4 class="fz25">Gemma Milne</h4>
                                                         </div>
-    
+
                                                         <div class="challenge__title__number__summary">
                                                             <p class="fz15">TECHNOLOGY WRITER</p>
                                                         </div>
-    
+
                                                         <div class="challenge__title__number">
                                                             <p class="fz11">Gemma’s written work covers all things deep tech, including biotech, advanced computing, space, energy and innovation in academia, for titles such as Forbes, the BBC, CNBC, the Guardian and Quartz. She also co-hosts a podcast and is a jury member for SXSW. </p>
                                                         </div>
@@ -1606,7 +1617,7 @@
                                                                               </g>
                                                                             </g>
                                                                           </svg>
-    
+
                                                                 </div>
                                                             </a>
                                                             <div class="challenge__icon">
@@ -1623,11 +1634,11 @@
                                                                           </g>
                                                                         </g>
                                                                       </svg>
-    
+
                                                             </div>
                                                             </a>
                                                         </div>
-    
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1659,11 +1670,11 @@
                                                         <div class="challenge__title__cat">
                                                             <h4 class="fz25">Leticia Galdon</h4>
                                                         </div>
-    
+
                                                         <div class="challenge__title__number__summary">
                                                             <p class="fz15">ENTREPRENEUR, FOUNDER, ADVOCATE </p>
                                                         </div>
-    
+
                                                         <div class="challenge__title__number">
                                                             <p class="fz11">Leticia is determined to build a bridge between the tech industry and those affected by humanitarian crises.  She is Founder and CEO at PAZ.ai⁠—a social impact startup whose mission is to bring hope to people seeking refuge. </p>
                                                         </div>
@@ -1685,12 +1696,12 @@
                                                                 </div>
                                                             </a>
                                                         </div>
-    
+
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-    
+
                                     </div>
                                 </div>
                             </div>
@@ -1764,7 +1775,7 @@
                                         </div>
                                     </div>
                                     <div class="speakers speakers__keynote">
-                                        <div class="speakers__speaker-third vidstar">  
+                                        <div class="speakers__speaker-third vidstar">
                                             <div class="keynotevideo">
                                                 <svg id="vidlogo4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="181.099" height="181.099" viewBox="0 0 181.099 181.099">
                                                                 <defs>
@@ -1801,17 +1812,17 @@
                                                             <!-- <source src="https://images.samsung.com/is/content/samsung/p5/uk/explore/kings-cross/kx-launch-highlight.mp4" type="video/mp4"> -->
                                                                 <source src="https://images.samsung.com/is/content/samsung/p5/uk/explore/kings-cross/school/weekFourKeynote.mp4" type="video/mp4">
                                                             Your browser does not support the video tag.
-            
+
                                                         </video>
                                             </div>
-    
+
                                             <h4 class="leader__copy__quote fz20 keynote mobile">“Technology has the power to help unite people and build communities"</h4>
-    
-    
+
+
                                         </div>
                                         <div class="challenge__title challenge__title__keynote">
-    
-    
+
+
                                             <div class="challenge__title__cat">
                                                 <h4 class="fz25">James Ellington</h4>
                                             </div>
@@ -1866,8 +1877,8 @@
                         </div>
                     </div>
                 </div>
-                
-                
+
+
                 <div class="course star">
                     <div class="challenge">
                         <div class="challenge__left">
@@ -1919,7 +1930,7 @@
                                                                         </g>
                                                                       </g>
                                                                     </g>
-                                                                  </svg>                                             
+                                                                  </svg>
                                                                 </a>
                                                             </div>
                                                     </div>
@@ -1928,7 +1939,7 @@
                                                     <p class="fz13">Andriana uses filmmaking, photography and art direction to start a conversation around politics and ethics. She’s a lecturer at London College of Fashion, and has used her dress culture knowledge to empower underground communities. </p>
                                                 </div>
                                             </div>
-                                            <div class="experts__content__alt desktop " > 
+                                            <div class="experts__content__alt desktop " >
                                                 <div class="challenge__title__experts__alt ">
                                                     <div class="challenge__title__cat ">
                                                         <h4 class="fz20 ">Andriana Lagoudes</h4>
@@ -1963,10 +1974,10 @@
                                                                         </g>
                                                                       </g>
                                                                     </g>
-                                                                  </svg>                                             
-                                                                </a>                                   
+                                                                  </svg>
+                                                                </a>
                                                         </div>
-                                                       
+
                                                     </div>
 
                                                 </div>
@@ -1976,18 +1987,18 @@
                                                             <div class="challenge__title__cat ">
                                                                 <h4 class="fz25 ">Andriana Lagoudes</h4>
                                                             </div>
-        
+
                                                             <div class="challenge__title__number">
                                                                 <p class=" fz13 ">CRITICAL DESIGNER & FILMMAKER</p>
                                                             </div>
                                                             <div class="challenge__title__number">
                                                                     <p class="fz12">Andriana uses filmmaking, photography and art direction to start a conversation around politics and ethics. She’s a lecturer at London College of Fashion, and has used her dress culture knowledge to empower underground communities.</p>
                                                                 </div>
-        
-        
+
+
                                                         </div>
                                                 </div>
-                                            
+
                                         </div>
                                         <div class="experts__expert__alt ">
                                             <div class="experts__image__container ">
@@ -2019,9 +2030,9 @@
                                                                         </g>
                                                                       </g>
                                                                     </g>
-                                                                  </svg>                                                   
-                                                                </a>                                  
-                                                        </div>                                                      
+                                                                  </svg>
+                                                                </a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="challenge__title__number__alt desktop">
@@ -2061,7 +2072,7 @@
                                                                         </g>
                                                                       </g>
                                                                     </g>
-                                                                </svg>                                                   
+                                                                </svg>
                                                             </a>
                                                         </div>
                                                     </div>
@@ -2072,7 +2083,7 @@
                                                         <div class="challenge__title__cat ">
                                                             <h4 class="fz25 ">Rachael Grocott</h4>
                                                         </div>
-    
+
                                                         <div class="challenge__title__number">
                                                             <p class="fz13 ">DIGITAL PRODUCT DESIGNER  & FOUNDER</p>
                                                         </div>
@@ -2116,9 +2127,9 @@
                                                                       </g>
                                                                     </g>
                                                                   </svg>
-                                                            </a>                                                              
+                                                            </a>
                                                         </div>
-                                                        
+
                                                     </div>
                                                 </div>
                                                 <div class="challenge__title__number__alt desktop">
@@ -2159,7 +2170,7 @@
                                                                       </g>
                                                                     </g>
                                                                   </svg>
-                                                            </a>                                                              
+                                                            </a>
                                                         </div>
                                                     </div>
 
@@ -2178,7 +2189,7 @@
                                                         </div>
                                                     </div>
                                             </div>
-                                            
+
                                         </div>
                                         <div class="experts__expert__alt " id="mariam">
                                             <div class="experts__image__container ">
@@ -2226,7 +2237,7 @@
                                                                     </g>
                                                                   </svg>
                                                             </a>
-                                                        </div> 
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2294,14 +2305,19 @@
     </section>
 
     <!--
-  
+
   script needs to check for id query string parameter
   - if it doesn't exist or is invalid - redirect to kx home page
   - create a handlebars template to display the content ???
-  
+
   -->
 
     {{>components/findKx}} {{>components/socialMedia }} {{>templateScripts/experience/experience }} {{>scripts }}
 </section>
 
+{{#if config.staging}}
+  </body>
+</html>
+{{else}}
 <!--#include virtual="/uk/aem/footer-pdp.html"-->
+{{/if}}

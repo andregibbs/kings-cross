@@ -383,7 +383,7 @@ $(document).ready(function () {
         // initialise home page KV
 
 
-      }, false)
+      }, true)
 			break;
 
 		case "/uk/explore/kings-cross/discover/":
@@ -547,17 +547,5 @@ $(document).ready(function () {
 			// Your init here
 		}
 	}
-
-	// console.log('HOME-OF-INNOVATION', 'xxx');
-  //
-	// if (window.location.pathname.indexOf('/uk/explore/kings-cross/home-of-innovation/') == 0) {
-  //
-	// 	console.log('HOME-OF-INNOVATION', window.location.pathname);
-  //
-	// 	homeOfInnovation();
-  //
-	// }
-  //
-	// console.log('HOME-OF-INNOVATION', 'xxx');
 
 })

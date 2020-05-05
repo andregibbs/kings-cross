@@ -4,12 +4,11 @@
   left: 0;
   height: 100vh;
   width: 260px;
-  background: black;
+  background: $black;
   transform: translateX(-100%);
   display: flex;
   flex-flow: column;
-  z-index: 10;
-  background: linear-gradient(to bottom, #444444, #939393);
+  z-index: 20;
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
 
@@ -21,14 +20,22 @@
     transform: translateX(0);
   }
 
+  & > ul {
+    top: $nav-mobile-height;
+    position: relative;
+  }
+
   &__heading-button {
     width: 100%;
     text-align: left;
     padding: 16px 32px;
     position: relative;
     text-transform: uppercase;
+    display: block;
+    color: $white;
 
-    &:after {
+
+    &[data-open]:after {
       content: "";
       width: 10px;
       height: 10px;
@@ -48,7 +55,7 @@
 
   &__submenu {
     display: none;
-    background: #383838;
+    background: $black;
     padding: 16px 32px;
 
     li {

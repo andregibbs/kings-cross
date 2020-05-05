@@ -32,6 +32,7 @@ $margin-mobile: $m-borders-mobile * 1px;
 .cheil-static.home-of-innovation {
 
   @import "../components/nav";
+  @import "../components/sidedrawer";
 
   background: black;
   color: white;

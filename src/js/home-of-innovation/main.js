@@ -1,6 +1,7 @@
 /* Home Of Innovation JS Entry */
 
 import HOIGallery from './hoiGallery';
+import sidedrawer from '../components/sidedrawer';
 import { createYoutubeInstance, loadYoutubeAPI } from './utils';
 
 import nav from '../components/nav';
@@ -12,6 +13,8 @@ function init() {
 
   // init nav
   nav();
+  // init mobile nav
+  sidedrawer();
 
   // could make this conditional depending on wether there is youtube content on the page
   loadYoutubeAPI()
