@@ -179,10 +179,10 @@ function homeKV() {
         }
       },
       {
-        scroll: (rects.nav.top - rects.body.top) - ((window.innerHeight - rects.nav.height) / 2) - (window.innerHeight / 6),
+        scroll: (rects.nav.top - rects.body.top) - ((window.innerHeight - rects.nav.height) / 2) - (window.innerHeight / 4),
         easing: easing.easeOutCirc, // easing to use
         values: {
-          y: (rects.header.height / 2) + (rects.nav.height / 4),
+          y: (rects.header.height / 2) + (rects.nav.height / 5),
         }
       }
     ]

@@ -9,7 +9,8 @@
 
 @media screen and (min-width: $mobile + 1) {
   .hoiWrapper {
-    margin: $spacing-desktop;
+    max-width: 66vw;
+    margin: $spacing-desktop auto;
   }
   .hoiWrapper .hoiWrapper {
     margin: $spacing-desktop calc(#{$spacing-desktop} / 2);

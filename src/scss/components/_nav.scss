@@ -72,7 +72,6 @@
       color: $white;
     }
     &-link-container > a:not(.btn) {
-      font-size: 0.9em;
       letter-spacing: 1px;
       transition: all 0.4s ease;
       opacity: 1;
@@ -83,8 +82,11 @@
       }
     }
 
-    a.signup-link:hover {
-      opacity: 1;
+    a.signup-link {
+      width: em(160);
+      &:hover {
+        opacity: 1;
+      }
     }
 
     &--submenu {
@@ -105,7 +107,7 @@
           display: block;
           padding: 20px;
           text-align: center;
-          font-size: 0.9em;
+          // font-size: 0.9em;
           transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
           &:hover {
             background: white;
