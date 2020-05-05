@@ -298,7 +298,7 @@ function homeKV() {
         scroll: (rects.nav.top - rects.body.top) - ((window.innerHeight - rects.nav.height) / 2) - (window.innerHeight / 4),
         easing: easing.easeOutCirc, // easing to use
         values: {
-          x: 0,
+          x: mobile ? -10 : 0,
           opacity: 1
         }
       }
@@ -343,10 +343,10 @@ function homeKV() {
       switch (i) {
         case 0:
           x = x * -1
-          x = Math.min(x + 50, 0)
+          x = Math.min(x + 50, mobile ? 10 : 0)
           break;
         case 1:
-          x = Math.max(x - 50, 0)
+          x = Math.max(x - 50, mobile ? -10 : 0)
           break;
         case 2:
           x = x * -1

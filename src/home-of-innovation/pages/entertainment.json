@@ -13,6 +13,18 @@
           "description": "{{entertainment|sub-page[description]}}",
           "image": "{{entertainment|sub-page[image]}}",
           "url": "{{entertainment|sub-page[url]}}"
+        },
+        {
+          "title": "{{creativity|game-dev-london-podcast|1[title]}}",
+          "description": "{{creativity|game-dev-london-podcast|1[description]}}",
+          "image": "{{creativity|game-dev-london-podcast|1[image]}}",
+          "url": "{{creativity|game-dev-london-podcast|1[url]}}"
+        },
+        {
+          "title": "{{creativity|game-dev-london-podcast|2[title]}}",
+          "description": "{{creativity|game-dev-london-podcast|2[description]}}",
+          "image": "{{creativity|game-dev-london-podcast|2[image]}}",
+          "url": "{{creativity|game-dev-london-podcast|2[url]}}"
         }
       ]
     }

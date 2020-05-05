@@ -15,7 +15,7 @@
 <section class="cheil-static home-of-innovation">
 
   <style>
-    .cheil-static.home-of-innovation .hoiContent a {
+    .cheil-static.home-of-innovation .hoiContent a:not(.btn) {
       color: {{ themeColor }}
     }
   </style>
@@ -32,11 +32,11 @@
 
     {{> home-of-innovation/components }}
 
-    {{> components/findKx }}
-
-    {{> components/socialMedia }}
-
   </div>
+
+  {{> components/findKx }}
+
+  {{> components/socialMedia }}
 
   {{> home-of-innovation/scripts }}
 

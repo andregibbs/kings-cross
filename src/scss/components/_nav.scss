@@ -111,6 +111,18 @@
             background: white;
             color: black;
           }
+          &:hover.saffron {
+            background: $saffron;
+          }
+          &:hover.skyblue {
+            background: $skyblue;
+          }
+          &:hover.coral {
+            background: $coral;
+          }
+          &:hover.teal {
+            background: $teal;
+          }
         }
       }
     }
