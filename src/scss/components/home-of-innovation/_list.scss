@@ -1,25 +1,26 @@
 .hoiList {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .hoiList__Item {
   cursor: pointer;
   padding-bottom: calc(#{$spacing-mobile} / 2);
-  width: 100%;
-}
-
-// isolated 2 width for mobile, might need to be 3
-.hoiList {
-  justify-content: space-between;
-}
-.hoiList__Item {
-  // width: 50%;
   width: calc(50% - #{$spacing-mobile / 2});
 }
 
 .hoiList__Item--spacer {
   display: none;
+  pointer-events: none;
+}
+
+.hoiList__ItemTitle {
+  height: em(44);
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 .hoiList__ItemImageWrap {

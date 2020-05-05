@@ -1,8 +1,8 @@
 {
   "title": "Tips & Trikx: Get creative in the kitchen",
   "description": "Get creative in the kitchen",
-  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_KV.JPG?$LATEST_PNG$",
-  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_KV.JPG?$LATEST_PNG$",
+  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_KV.JPG",
+  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_KV.JPG",
   "group": "tips-and-trikx",
   "sort": 3,
   "components": [
@@ -13,13 +13,12 @@
         "content": "{{lifestyle|tips-and-trikx|tips-3[image]}}"
       },
       "style": {
-        "desktop": "right",
+        "desktop": "left",
         "mobile": "bottom"
       },
       "components": [
         {
           "type": "headline",
-          "level": "1",
           "copy": "{{lifestyle|tips-and-trikx|tips-3[title]}}"
         }
       ]
@@ -41,30 +40,30 @@
       "items": [
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_1.JPG?$LATEST_PNG$",
-          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_1.JPG?$LATEST_PNG$"
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_1.JPG",
+          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_1.JPG"
         },
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_2.JPG?$LATEST_PNG$",
-          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_2.JPG?$LATEST_PNG$"
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_2.JPG",
+          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_2.JPG"
         },
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_3.JPG?$LATEST_PNG$",
-          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_3.JPG?$LATEST_PNG$"
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_3.JPG",
+          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_3.JPG"
         },
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_4.JPG?$LATEST_PNG$",
-          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_4.JPG?$LATEST_PNG$"
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_4.JPG",
+          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_4.JPG"
         }
       ]
     },
     {
       "type": "group",
       "id": "tips-and-trikx",
-      "title": "Episodes"
+      "title": "More episodes"
     }
   ]
 }

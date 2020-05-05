@@ -1,8 +1,9 @@
 {
   "title": "Lifestyle Home",
   "description": "Example pages with some combinations of components and sub pages",
-  "image": "https://picsum.photos/1440/900",
-  "thumb": "https://picsum.photos/300/300",
+  "theme": {
+    "color": "#FFB546"
+  },
   "components": [
     {
       "type": "group-land",
@@ -12,6 +13,18 @@
           "description": "{{lifestyle|tips-and-trikx|tips-1[description]}}",
           "image": "{{lifestyle|tips-and-trikx|tips-1[image]}}",
           "url": "{{lifestyle|tips-and-trikx|tips-1[url]}}"
+        },
+        {
+          "title": "{{lifestyle|tips-and-trikx|tips-2[title]}}",
+          "description": "{{lifestyle|tips-and-trikx|tips-2[description]}}",
+          "image": "{{lifestyle|tips-and-trikx|tips-2[image]}}",
+          "url": "{{lifestyle|tips-and-trikx|tips-2[url]}}"
+        },
+        {
+          "title": "{{lifestyle|tips-and-trikx|tips-3[title]}}",
+          "description": "{{lifestyle|tips-and-trikx|tips-3[description]}}",
+          "image": "{{lifestyle|tips-and-trikx|tips-3[image]}}",
+          "url": "{{lifestyle|tips-and-trikx|tips-3[url]}}"
         }
       ]
     }

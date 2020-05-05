@@ -1,8 +1,8 @@
 {
   "title": "Game Dev London Podcast",
   "description": "Game Dev’s series of podcasts are to support the UK games industry with knowledge and stories from those at its core.",
-  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/game-dev-london-podcast/GameDev_KV.jpg?$LATEST_PNG$",
-  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/game-dev-london-podcast/GameDev_KV.jpg?$LATEST_PNG$",
+  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/game-dev-london-podcast/GameDev_KV.jpg",
+  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/game-dev-london-podcast/GameDev_KV.jpg",
   "components": [
     {
       "type": "kv",
@@ -17,7 +17,6 @@
       "components": [
         {
           "type": "headline",
-          "level": "1",
           "copy": "{{creativity|game-dev-london-podcast[title]}}"
         },
         {

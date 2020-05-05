@@ -1,6 +1,8 @@
 // Revamped homeKV
 // Script contains step configurations for the svg animations
 
+import homeKV_ScrollAnim from './homeKV-scrollAnim.json';
+
 function homeKV() {
 
   // animation frame variable
@@ -17,6 +19,9 @@ function homeKV() {
     easeInCirc: (x) => {
       return 1 - Math.sqrt(1 - Math.pow(x, 2));
     },
+    easeOutCubic: (x) => {
+      return 1 - Math.pow(1 - x, 3);
+    },
     linear: (x) => {
       return x
     }
@@ -28,8 +33,11 @@ function homeKV() {
   const homeKV_Title = document.querySelector('.homeKV__Title');
   const homeKV_BlackVertical = document.querySelector('.homeKV__CrossSVG #svg_black_vertical');
   const homeKV_BlackHorizontal = document.querySelector('.homeKV__CrossSVG #svg_black_horizontal');
-  const navItemHeaders = document.querySelectorAll('.homeKV__NavItemText');
-  const navItems = document.querySelectorAll('.homeKV__NavItem');
+  const navItemHeaders = [].slice.call(document.querySelectorAll('.homeKV__NavItemText'));
+  const navItems = [].slice.call(document.querySelectorAll('.homeKV__NavItem'));
+  const straplineOne = document.querySelector('.homeKV__Strapline--first');
+  const straplineTwo = document.querySelector('.homeKV__Strapline--last');
+  const scrollAnim = document.querySelector('.homeKV__ScrollLink');
 
   // stores rect data for animations
   let rects = getRects();
@@ -70,7 +78,7 @@ function homeKV() {
           let eased = step.easing(progress)
           // loop through value keys
           Object.keys(step.values).forEach((key, i) => {
-            values[key] = (((nextStep.values[key] - step.values[key]) * progress) + step.values[key]).toFixed(2);
+            values[key] = (((nextStep.values[key] - step.values[key]) * eased) + step.values[key]).toFixed(2);
           });
         }
       }
@@ -82,7 +90,7 @@ function homeKV() {
   // process all step configs on frame
   function animate(e) {
     // store scroll variable
-    const scroll = window.scrollY;
+    const scroll = window.scrollY || window.pageYOffset || 0;
     const mobile = window.innerWidth <= 768;
 
     // TODO: may need to offset all these values with the gnb height
@@ -92,7 +100,7 @@ function homeKV() {
     const mainCrossSteps = [
       {
         scroll: 0, // start scroll position of step,
-        easing: easing.easeOutCirc, // easing to use
+        easing: easing.easeOutCubic, // easing to use
         values: {
           y: -((rects.header.height * 0.2) + (rects.nav.height / 2)), // values to transform
           x: -(Math.min(1440, window.innerWidth) / 4),
@@ -104,7 +112,7 @@ function homeKV() {
         // for responsiveness this scroll position is dynamic an based of element dimensions
         // this position is for the center point of the nav items
         scroll: (rects.nav.top - rects.body.top) - ((window.innerHeight - rects.nav.height) / 2) - (window.innerHeight / 4),
-        easing: easing.easeInSine,
+        easing: easing.linear,
         values: {
           y: -75,
           x: 0,
@@ -115,8 +123,8 @@ function homeKV() {
       {
         // for responsiveness this scroll position is dynamic an based of element dimension
         // this position is for the center point of the nav items
-        scroll: (rects.nav.top - rects.body.top) - ((window.innerHeight - rects.nav.height) / 2) + (window.innerHeight / 6),
-        easing: easing.easeInSine,
+        scroll: (rects.nav.top - rects.body.top) - ((window.innerHeight - rects.nav.height) / 2) + (window.innerHeight / 4),
+        easing: easing.easeOutCirc,
         values: {
           y: 75,
           x: 0,
@@ -131,40 +139,47 @@ function homeKV() {
           y: (rects.nav.height / 3),
           x: 0,
           rotate: -90,
-          scale: 1.5,
+          scale: 2.5,
         }
       }
     ]
 
-    const headerImageSteps = [
-      {
-        scroll: 0, // start scroll position of step,
-        easing: easing.easeInCirc, // easing to use
-        values: {
-          scale: 1,
-          opacity: 1
-        }
-      },
-      {
-        scroll: (rects.nav.top - rects.body.top) - ((window.innerHeight - rects.nav.height) / 2),
-        easing: easing.easeInCirc, // easing to use
-        values: {
-          scale: 1.2,
-          opacity: 0
-        }
-      }
-    ]
+    // const headerImageSteps = [
+    //   {
+    //     scroll: 0, // start scroll position of step,
+    //     easing: easing.easeInCirc, // easing to use
+    //     values: {
+    //       scale: 1,
+    //       opacity: 1
+    //     }
+    //   },
+    //   {
+    //     scroll: (rects.nav.top - rects.body.top) - ((window.innerHeight - rects.nav.height) / 2),
+    //     easing: easing.easeInCirc, // easing to use
+    //     values: {
+    //       scale: 1.2,
+    //       opacity: 0
+    //     }
+    //   }
+    // ]
 
     const headerTitleSteps = [
       {
         scroll: 0, // start scroll position of step,
+        easing: easing.linear, // easing to use
+        values: {
+          y: -(window.innerHeight / 16),
+        }
+      },
+      {
+        scroll: window.innerHeight / 4, // start scroll position of step,
         easing: easing.easeOutCirc, // easing to use
         values: {
           y: -(window.innerHeight / 16),
         }
       },
       {
-        scroll: (rects.nav.top - rects.body.top) - ((window.innerHeight - rects.nav.height) / 2) - (window.innerHeight / 4),
+        scroll: (rects.nav.top - rects.body.top) - ((window.innerHeight - rects.nav.height) / 2) - (window.innerHeight / 6),
         easing: easing.easeOutCirc, // easing to use
         values: {
           y: (rects.header.height / 2) + (rects.nav.height / 4),
@@ -172,7 +187,59 @@ function homeKV() {
       }
     ]
 
-    const verticalBlackSteps = [
+    const strapLineSteps = [
+      {
+        scroll: 0, // start scroll position of step,
+        easing: easing.easeOutCirc, // easing to use
+        values: {
+          first_opacity: 1,
+          second_opacity: 0
+        }
+      },
+      {
+        scroll: ((rects.nav.top - rects.body.top) - ((window.innerHeight - rects.nav.height) / 2) - (window.innerHeight / 4)) * 0.3,
+        easing: easing.easeOutCirc, // easing to use
+        values: {
+          first_opacity: 0,
+          second_opacity: 0
+        }
+      },
+      {
+        scroll: ((rects.nav.top - rects.body.top) - ((window.innerHeight - rects.nav.height) / 2) - (window.innerHeight / 4)) * 0.7,
+        easing: easing.easeOutCirc, // easing to use
+        values: {
+          first_opacity: 0,
+          second_opacity: 0
+        }
+      },
+      {
+        scroll: (rects.nav.top - rects.body.top) - ((window.innerHeight - rects.nav.height) / 2) - (window.innerHeight / 4),
+        easing: easing.easeOutCirc, // easing to use
+        values: {
+          first_opacity: 0,
+          second_opacity: 1
+        }
+      }
+    ]
+
+    // const verticalBlackSteps = [
+    //   {
+    //     scroll: 0, // start scroll position of step,
+    //     easing: easing.linear, // easing to use
+    //     values: {
+    //       opacity: 1,
+    //     }
+    //   },
+    //   {
+    //     scroll: (rects.nav.top - rects.body.top) - ((window.innerHeight - rects.nav.height) / 2) - (window.innerHeight / 4),
+    //     easing: easing.linear, // easing to use
+    //     values: {
+    //       opacity: 1
+    //     }
+    //   }
+    // ]
+
+    const horizontalBlackSteps = [
       {
         scroll: 0, // start scroll position of step,
         easing: easing.linear, // easing to use
@@ -181,24 +248,14 @@ function homeKV() {
         }
       },
       {
-        scroll: (rects.nav.top - rects.body.top) - ((window.innerHeight - rects.nav.height) / 2) - (window.innerHeight / 4),
-        easing: easing.linear, // easing to use
-        values: {
-          opacity: 1
-        }
-      }
-    ]
-
-    const horizontalBlackSteps = [
-      {
-        scroll: window.innerHeight * 0.5, // start scroll position of step,
+        scroll: window.innerHeight * 0.25, // start scroll position of step,
         easing: easing.linear, // easing to use
         values: {
           opacity: 1,
         }
       },
       {
-        scroll: (rects.nav.top - rects.body.top) - ((window.innerHeight - rects.nav.height) / 2) - (window.innerHeight / 4),
+        scroll: (rects.nav.top - rects.body.top) - ((window.innerHeight - rects.nav.height) / 2) - (window.innerHeight / 2),
         easing: easing.linear, // easing to use
         values: {
           opacity: 0,
@@ -222,6 +279,14 @@ function homeKV() {
 
     const navItemHeaderSteps = [
       {
+        scroll: 0,
+        easing: easing.easeOutCirc, // easing to use
+        values: {
+          x: 150,
+          opacity: 0
+        }
+      },
+      {
         scroll: (rects.nav.top - rects.body.top) - (rects.header.height / 2),
         easing: easing.easeOutCirc, // easing to use
         values: {
@@ -244,7 +309,8 @@ function homeKV() {
     // set transform style
     homeKV_SVG.style.transform = `translate(${mainCrossValues['x']}px ,${mainCrossValues['y']}px) rotateZ(${mainCrossValues['rotate']}deg) scale(${mainCrossValues['scale']})`
 
-    const headerImageValues = processSteps(headerImageSteps, scroll);
+    // disable background image animation
+    // const headerImageValues = processSteps(headerImageSteps, scroll);
     // homeKV_HeaderImage.style.transform = `scale(${headerImageValues['scale']})`
     // homeKV_HeaderImage.style.transform = `translate(0, ${scroll * 0.8}px) scale(${headerImageValues['scale']})`
     // homeKV_HeaderImage.style.opacity = headerImageValues['opacity']
@@ -252,16 +318,23 @@ function homeKV() {
     const headerTitleValues = processSteps(headerTitleSteps, scroll);
     homeKV_Title.style.transform = `translate(0 ,${headerTitleValues['y']}px)`
 
+    const strapLineValues = processSteps(strapLineSteps, scroll)
+    straplineOne.style.opacity = strapLineValues.first_opacity
+    straplineTwo.style.opacity = strapLineValues.second_opacity
+    scrollAnim.style.opacity = strapLineValues.first_opacity
+
+    // disabled vertical black svg sections
     // const verticalBlackValues = processSteps(verticalBlackSteps, scroll)
     // homeKV_BlackVertical.style.opacity = verticalBlackValues.opacity
 
     const horizontalBlackValues = processSteps(horizontalBlackSteps, scroll)
+    // dont animate horizontal, but use values for fading in the nav images
     // homeKV_BlackHorizontal.style.opacity = horizontalBlackValues.opacity
     navItems.forEach((el) => {
       el.style.opacity = 1 - horizontalBlackValues.opacity
     })
 
-
+    // animate in the ctas
     const navItemHeaderValues = processSteps(navItemHeaderSteps, scroll)
     navItemHeaders.forEach((el, i) => {
       let button = el.querySelector('.btn')
@@ -283,7 +356,6 @@ function homeKV() {
       el.style.transform = `translate(${x}%, 0)`
       el.style.opacity = opacity
     });
-
 
   }
 
@@ -310,6 +382,18 @@ function homeKV() {
     rects = getRects()
     animate()
   })
+
+  // lottie animation
+  console.log('ss', lottie)
+  if (lottie) {
+    lottie.loadAnimation({
+      container: scrollAnim, // the dom element that will contain the animation
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      animationData: homeKV_ScrollAnim // the path to the animation json
+    });
+  }
 
   // trigger animation once for initial style
   animate();

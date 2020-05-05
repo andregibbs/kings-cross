@@ -1,6 +1,6 @@
 {
-  "title": "Tips and Trikx",
-  "description": "Description for tips and trix page",
+  "title": "Tips & Trikx",
+  "description": "Description for tips & trix page",
   "image": "{{lifestyle|tips-and-trikx|tips-1[image]}}",
   "thumb": "{{lifestyle|tips-and-trikx|tips-1[image]}}",
   "components": [
@@ -11,13 +11,12 @@
         "content": "{{lifestyle|tips-and-trikx|tips-1[image]}}"
       },
       "style": {
-        "desktop": "top",
+        "desktop": "left",
         "mobile": "top"
       },
       "components": [
         {
           "type": "headline",
-          "level": "1",
           "copy": "{{lifestyle|tips-and-trikx[title]}}"
         }
       ]

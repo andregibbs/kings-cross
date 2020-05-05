@@ -1,15 +1,33 @@
 // Create youtube instance
 export function createYoutubeInstance(element) {
   const videoId = element.getAttribute('data-youtube-id') // get youtube id
+  const embedType = element.getAttribute('data-youtube-embed-type')
+
   if (!videoId) {
     return console.log('no video id on element', element)
   }
+
+  let youtubeInstance;
   // instantialize yt player
-  const youtubeInstance = new YT.Player(element, {
-    videoId,
-    height: '100%',
-    width: '100%'
-  })
+  switch (embedType) {
+    case 'playlist':
+      youtubeInstance = new YT.Player(element, {
+        height: '100%',
+        width: '100%',
+        playerVars: {
+          listType:'playlist',
+          list: videoId
+        }
+      })
+      break;
+    default:
+      youtubeInstance = new YT.Player(element, {
+        videoId,
+        height: '100%',
+        width: '100%'
+      })
+  }
+
   // store instance on element
   element._youtubeInstance = youtubeInstance;
   return youtubeInstance

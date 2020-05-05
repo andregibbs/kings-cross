@@ -14,7 +14,7 @@
 
   .kx-video {
     position: relative;
-    background: #0c0c0c;
+    background: transparent;
     padding-top: 0 !important;
     padding-bottom: 0 !important;
 
@@ -119,7 +119,7 @@
 
   .copy {
     position: relative;
-    background: #0c0c0c;
+    background: transparent;
     padding-top: 0 !important;
     padding-bottom: 0 !important;
     z-index: 13;
@@ -141,9 +141,10 @@
   }
 
   .passionPoints {
+    display: none; // hide (for now?)
     padding-top: 0 !important;
     position: relative;
-    background: #0c0c0c;
+    background: transparent;
     &__header {
       display: flex;
       justify-content: center;
@@ -196,7 +197,7 @@
     &__outer {
       padding-top: 0 !important;
       position: relative;
-      background: #0c0c0c;
+      background: transparent;
     }
   }
 

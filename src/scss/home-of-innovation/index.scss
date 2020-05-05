@@ -33,35 +33,40 @@ $margin-mobile: $m-borders-mobile * 1px;
 
   @import "../components/nav";
 
-  // general styling & containers
-  @import "../components/home-of-innovation/typography";
-  @import "../components/home-of-innovation/content";
-  @import "../components/home-of-innovation/list";
-
-  // all pages
-  @import "../components/home-of-innovation/hoiBreadcrumbs";
-
-  // used in page
-  @import "../components/home-of-innovation/hoiKv";
-  @import "../components/home-of-innovation/hoiButtons";
-  @import "../components/home-of-innovation/hoiGroup";
-  @import "../components/home-of-innovation/hoiLinkList";
-  @import "../components/home-of-innovation/hoiHeadline";
-  @import "../components/home-of-innovation/hoiParagraphs";
-  @import "../components/home-of-innovation/hoiGallery";
-  @import "../components/home-of-innovation/hoiGroupLand";
-
-  @import "../components/home-of-innovation/hoiWrapper";
-  @import "../components/home-of-innovation/hoiSpacer";
-  @import "../components/home-of-innovation/hoiMedia";
-
-  // unused
-  // @import "../components/home-of-innovation/contentFindOutMore";
-  // @import "../components/home-of-innovation/contentIntro";
-  // @import "../components/home-of-innovation/contentPagination";
-  // @import "../components/home-of-innovation/contentRelated";
-
   background: black;
   color: white;
+
+  .hoiContent {
+
+    // general styling & containers
+    @import "../components/home-of-innovation/typography";
+    @import "../components/home-of-innovation/content";
+    @import "../components/home-of-innovation/list";
+
+    // all pages
+    @import "../components/home-of-innovation/hoiBreadcrumbs";
+
+    // used in page
+    @import "../components/home-of-innovation/hoiKv";
+    @import "../components/home-of-innovation/hoiButtons";
+    @import "../components/home-of-innovation/hoiGroup";
+    @import "../components/home-of-innovation/hoiLinkList";
+    @import "../components/home-of-innovation/hoiHeadline";
+    @import "../components/home-of-innovation/hoiParagraphs";
+    @import "../components/home-of-innovation/hoiGallery";
+    @import "../components/home-of-innovation/hoiGroupLand";
+
+    @import "../components/home-of-innovation/hoiWrapper";
+    @import "../components/home-of-innovation/hoiSpacer";
+    @import "../components/home-of-innovation/hoiMedia";
+
+    // unused
+    // @import "../components/home-of-innovation/contentFindOutMore";
+    // @import "../components/home-of-innovation/contentIntro";
+    // @import "../components/home-of-innovation/contentPagination";
+    // @import "../components/home-of-innovation/contentRelated";
+
+  }
+
 
 }

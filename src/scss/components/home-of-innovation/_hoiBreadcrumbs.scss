@@ -1,5 +1,10 @@
 .hoiBreadcrumbs {
   padding: calc(#{$spacing-mobile} / 2) $spacing-mobile;
+  font-weight: bold;
+}
+
+.hoiBreadcrumbs__Link {
+  @extend .h6;
 }
 
 

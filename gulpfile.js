@@ -375,6 +375,13 @@ function HOITemplates() {
     return JSON.parse(dataString);
   }
 
+
+  // Fetch the theme color for current page
+  function getThemeColor(urlSegments) {
+    const data = getPageData(urlSegments[0])
+    return data.theme ? data.theme.color : ""
+  }
+
   // Main loop for each page config
   pages.forEach((filePath) => {
 
@@ -396,6 +403,7 @@ function HOITemplates() {
 
     const breadcrumbs = createBreadcrumbs(urlSegments)
     const populatedData = populatePageDataVariables(pageData, filePath);
+    const themeColor = getThemeColor(urlSegments)
 
     const isStagingTask = argv._[0] === 'hoi-staging';
 
@@ -408,6 +416,7 @@ function HOITemplates() {
       	data: {
           ...populatedData,
           breadcrumbs,
+          themeColor,
           config: {
             site: SITE,
             subfolder: SUBFOLDER,

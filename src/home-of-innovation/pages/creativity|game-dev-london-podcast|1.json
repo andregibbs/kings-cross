@@ -20,7 +20,6 @@
       "components": [
         {
           "type": "headline",
-          "level": "1",
           "copy": "{{creativity|game-dev-london-podcast|2[title]}}"
         },
         {
@@ -32,9 +31,21 @@
       ]
     },
     {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "paragraphs",
+          "text": [
+            "In light of the recent pandemic, gaming has become more popular than ever before, offering indoors entertainment and a fun way to keep connected with those closest to you. Nevertheless, it doesn’t stop here. Lockdown has created a window for communities such as Game Dev to explore what’s missing from the current gaming offering, current trends and the challenges that come with new industry restrictions. As the home of innovation, SamsungKX is providing an online platform for Game Dev to uncover this knowledge and inspire gaming enthusiasts via weekly online podcasts. The series aims to help both those who are starting out in the gaming world and those looking to upskill in this area.",
+            "Please keep your eyes peeled for their weekly podcasts."
+          ]
+        }
+      ]
+    },
+    {
       "type": "group",
       "id": "game-dev-london-podcast",
-      "title": "Episodes"
+      "title": "More episodes"
     }
   ]
 }

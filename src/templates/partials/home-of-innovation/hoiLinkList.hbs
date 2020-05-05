@@ -6,7 +6,7 @@
   <div class="hoiList hoiList--grid-4">
     {{#each items }}
   		<a class="hoiList__Item" data-omni-type="microsite" data-omni="{{ ../site }}:{{ ../subfolder }}:block:{{to_lower_case this.title }}" href="{{{ this.url }}}">
-  			<h6 className="hoiList__ItemTitle">{{{ this.title }}}</h6>
+  			<h6 class="hoiList__ItemTitle">{{ this.title }}</h6>
         <div class="hoiList__ItemImageWrap">
           <img class="hoiList__ItemImage" src="{{ this.image }}" alt="{{ this.title }}">
         </div>

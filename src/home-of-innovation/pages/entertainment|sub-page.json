@@ -18,7 +18,6 @@
       "components": [
         {
           "type": "headline",
-          "level": "1",
           "copy": "{{entertainment|sub-page[title]}}"
         },
         {

@@ -56,7 +56,9 @@
     {{/if}}
     {{#if_equals this.media.type 'youtube'}}
       {{> home-of-innovation/hoiMediaYoutube
-          class="hoiKv__MediaVideo" content=this.media.content
+          class="hoiKv__MediaVideo"
+          content=this.media.content
+          embedType=this.media.embedType
       }}
     {{/if_equals}}
   </div>

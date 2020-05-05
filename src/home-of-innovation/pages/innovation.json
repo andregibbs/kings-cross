@@ -1,8 +1,9 @@
 {
   "title": "Innovation",
   "description": "Innovation landing page",
-  "image": "https://picsum.photos/1440/900",
-  "thumb": "https://picsum.photos/300/300",
+  "theme": {
+    "color": "#00C3B2"
+  },
   "components": [
     {
       "type": "group-land",

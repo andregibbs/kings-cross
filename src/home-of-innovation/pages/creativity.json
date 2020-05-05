@@ -1,8 +1,9 @@
 {
-  "title": "Creativity Home",
-  "description": "Example pages with some combinations of components and sub pages",
-  "image": "https://picsum.photos/1440/900",
-  "thumb": "https://picsum.photos/300/300",
+  "title": "Creativity",
+  "description": "KX Creativity",
+  "theme": {
+    "color": "#FF4337"
+  },
   "components": [
     {
       "type": "group-land",
@@ -14,10 +15,16 @@
           "url": "{{creativity|university-of-lincoln[url]}}"
         },
         {
-          "title": "{{creativity|game-dev-london-podcast[title]}}",
-          "description": "{{creativity|game-dev-london-podcast[description]}}",
-          "image": "{{creativity|game-dev-london-podcast[image]}}",
-          "url": "{{creativity|game-dev-london-podcast[url]}}"
+          "title": "{{creativity|game-dev-london-podcast|1[title]}}",
+          "description": "{{creativity|game-dev-london-podcast|1[description]}}",
+          "image": "{{creativity|game-dev-london-podcast|1[image]}}",
+          "url": "{{creativity|game-dev-london-podcast|1[url]}}"
+        },
+        {
+          "title": "{{creativity|game-dev-london-podcast|2[title]}}",
+          "description": "{{creativity|game-dev-london-podcast|2[description]}}",
+          "image": "{{creativity|game-dev-london-podcast|2[image]}}",
+          "url": "{{creativity|game-dev-london-podcast|2[url]}}"
         }
       ]
     }

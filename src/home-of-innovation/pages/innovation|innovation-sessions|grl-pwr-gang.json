@@ -1,8 +1,8 @@
 {
   "title": "Innovation Sessions",
   "description": "A brand-new digital series from the Home of Innovation to inspire the UK",
-  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/SamsungKX_LandingPage_EpisodeOne_CategoryHero_V1.jpg?$LATEST_PNG$",
-  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/SamsungKX_LandingPage_EpisodeOne_Thumbnail_V1.jpg?$LATEST_PNG$",
+  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/SamsungKX_LandingPage_EpisodeOne_CategoryHero_V1.jpg",
+  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/SamsungKX_LandingPage_EpisodeOne_Thumbnail_V1.jpg",
   "group": "innovation-sessions",
   "components": [
     {

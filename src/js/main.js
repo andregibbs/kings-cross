@@ -197,12 +197,12 @@ $(document).ready(function () {
 
 	function fetchData(callback) {
 
-		// $.get(apiUrl + kxConfig.seriesId, {
-		// 	'timezone': "Europe/London",
-		// 	'isoCurrentDate': isoCurrentDate.toISOString()
-		// }).success(function (data) {
+		$.get(apiUrl + kxConfig.seriesId, {
+			'timezone': "Europe/London",
+			'isoCurrentDate': isoCurrentDate.toISOString()
+		}).success(function (data) {
 
-    var data = fakeEvents;
+    // var data = fakeEvents;
 
 			doLog("All events:", data);
 			for (var i = 0; i < data.length; i++) {
@@ -226,6 +226,7 @@ $(document).ready(function () {
 			//get all the topic ids
 
 			events.forEach(event => {
+        console.log(topics)
 				if (topics.includes(event.topic.id)) {
 
 				} else {
@@ -284,7 +285,7 @@ $(document).ready(function () {
 				}
 
 			}
-		// }).complete(function () {
+		}).complete(function () {
 
 			// Logs all events
 			doLog('events', events);
@@ -300,7 +301,7 @@ $(document).ready(function () {
 
 			// Callback function when all events are fetched
 			callback(events);
-		// });
+		});
 
 	}
 
@@ -368,7 +369,6 @@ $(document).ready(function () {
 
 			fetchData(whatIsKx);
 			places();
-			whatIsKx();
       homeKV();
 
 			var container = document.getElementById('loadingScreen__animation');
