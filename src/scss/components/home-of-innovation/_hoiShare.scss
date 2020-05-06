@@ -11,6 +11,10 @@
   position: relative;
   margin-right: em(8);
   font-size: 1.5em;
+  transition: opacity 0.2s ease-in-out;
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 .hoiShare__Link svg {
