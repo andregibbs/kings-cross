@@ -2,6 +2,7 @@
 
 import HOIGallery from './hoiGallery';
 import HOIShare from './hoiShare';
+import HOIMediaVideo from './hoiMediaVideo';
 import sidedrawer from '../components/sidedrawer';
 import { createYoutubeInstance, loadYoutubeAPI } from './utils';
 
@@ -9,8 +10,9 @@ import nav from '../components/nav';
 
 function init() {
 
-  const galleries = document.querySelectorAll('.hoiGallery')
-  const youtubeMedias = document.querySelectorAll('.hoiMedia--youtube')
+  const galleries = [].slice.call(document.querySelectorAll('.hoiGallery'))
+  const youtubeMedias = [].slice.call(document.querySelectorAll('.hoiMedia--youtube'))
+  const videoMedias = [].slice.call(document.querySelectorAll('.hoiMedia--video'))
 
   // init nav
   nav();
@@ -24,6 +26,10 @@ function init() {
       // initialze HOIGalleries
       galleries.forEach((gallery) => {
         new HOIGallery(gallery)
+      })
+
+      videoMedias.forEach((videoEl) => {
+        new HOIMediaVideo(videoEl)
       })
 
       // init youtube instances

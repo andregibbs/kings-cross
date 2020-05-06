@@ -10,6 +10,7 @@
     src="{{content}}"
     poster="{{poster}}"
     playsinline
+    preload="auto"
     {{#if loop}}
       loop
     {{/if}}
@@ -25,6 +26,17 @@
     {{/if_defined}}
   >
   </video>
+
+  <div class="hoiMedia__State">
+
+    <div class="hoiMedia__StateIcon  hoiMedia__StateIcon--load">
+      
+    </div>
+
+    <div class="hoiMedia__StateIcon  hoiMedia__StateIcon--play">
+      {{>svg/play}}
+    </div>
+  </div>
 
 {{#if wrap}}
 </div>

@@ -18,7 +18,6 @@ export default function hoiShare() {
 
   const twitterEl = component.querySelector('#twitter');
   if (twitterEl) {
-    console.log(twitterEl, twitterURL())
     twitterEl.href = twitterURL()
   }
   const facebookEl = component.querySelector('#facebook')
