@@ -119,15 +119,19 @@
           }
           &:hover.saffron {
             background: $saffron;
+            color: black;
           }
           &:hover.skyblue {
             background: $skyblue;
+            color: black;
           }
           &:hover.coral {
             background: $coral;
+            color: black;
           }
           &:hover.teal {
             background: $teal;
+            color: black;
           }
         }
       }
@@ -148,7 +152,7 @@
     padding: 0 em(12);
     height: $nav-mobile-height;
     width: 100vw;
-    @media (min-width: $mobile) {
+    @media (min-width: $mobile + 1) {
       display: none;
     }
 
@@ -164,6 +168,24 @@
       }
       img {
         display: none;
+      }
+    }
+
+    // burger container
+    .navigation-mobile__item--toggle {
+      width: $nav-mobile-height;
+      height: $nav-mobile-height;
+      a {
+        position: relative;
+        color: transparent;
+      }
+      svg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transform: scale(2.5) !important;
       }
     }
 

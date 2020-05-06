@@ -8,7 +8,14 @@ body {
 }
 
 .hoiContent {
-  margin-top: 44px !important;
+  margin-top: 13.02083vw !important;
+
+}
+
+@media screen and (min-width: 769px) {
+  .hoiContent {
+    margin-top: 44px !important;
+  }
 }
 
 // @font-face{font-family:'SamsungOne';src:url(../fonts/SamsungOne-400.eot);src:url(../fonts/SamsungOne-400.eot?#iefix) format("embedded-opentype"),url(../fonts/SamsungOne-400.woff2) format("woff2"),url(../fonts/SamsungOne-400.woff) format("woff");font-weight:normal;font-style:normal}

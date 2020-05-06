@@ -3,8 +3,8 @@
   top: 0;
   left: 0;
   height: 100vh;
-  width: 260px;
-  background: $black;
+  width: 100vw;
+  background: rgba(0,0,0,0.9);
   transform: translateX(-100%);
   display: flex;
   flex-flow: column;
@@ -12,7 +12,7 @@
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
 
-  @media (min-width: $mobile) {
+  @media (min-width: $mobile + 1) {
     display: none;
   }
 
@@ -25,41 +25,47 @@
     position: relative;
   }
 
+  a {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
   &__heading-button {
     width: 100%;
     text-align: left;
-    padding: 16px 32px;
+    padding: get-mobile-vw(30) get-mobile-vw(60);
     position: relative;
     text-transform: uppercase;
+    font-weight: bold;
     display: block;
     color: $white;
 
 
-    &[data-open]:after {
-      content: "";
-      width: 10px;
-      height: 10px;
-      border-bottom: 2px solid white;
-      border-right: 2px solid white;
-      position: absolute;
-      top: 35%;
-      left: 80%;
-      transform: rotate(45deg);
-      transition: transform 0.3s ease-in-out;
-    }
+    // &[data-open]:after {
+    //   content: "";
+    //   width: 10px;
+    //   height: 10px;
+    //   border-bottom: 2px solid white;
+    //   border-right: 2px solid white;
+    //   position: absolute;
+    //   top: 35%;
+    //   left: 80%;
+    //   transform: rotate(45deg);
+    //   transition: transform 0.3s ease-in-out;
+    // }
 
-    &.opened:after {
-      transform: rotate(-135deg);
-    }
+    // &.opened:after {
+    //   transform: rotate(-135deg);
+    // }
   }
 
   &__submenu {
-    display: none;
+    // display: none;
     background: $black;
-    padding: 16px 32px;
+    padding: 0 get-mobile-vw(60);
 
     li {
-      padding: 1rem 0;
+      padding: get-mobile-vw(30) get-mobile-vw(60);
 
       a {
         color: white;

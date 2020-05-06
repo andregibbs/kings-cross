@@ -384,7 +384,6 @@ function homeKV() {
   })
 
   // lottie animation
-  console.log('ss', lottie)
   if (lottie) {
     lottie.loadAnimation({
       container: scrollAnim, // the dom element that will contain the animation

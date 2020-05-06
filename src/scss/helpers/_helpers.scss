@@ -94,16 +94,16 @@
     }
 
     &--mobile-nav {
-      font-size: 0.9em;
+      font-size: 0.8em;
       @media screen and (max-width: $desktop) {
         width: get-desktop-vw(160);
         height: get-desktop-vw(44);
         padding: get-desktop-vw(8) get-desktop-vw(16);
       }
       @media screen and (max-width: $mobile) {
-        width: get-mobile-vw(140);
-        height: get-mobile-vw(50);
-        padding: get-mobile-vw(10);
+        width: get-mobile-vw(160);
+        height: get-mobile-vw(60);
+        padding: get-mobile-vw(12);
       }
     }
 

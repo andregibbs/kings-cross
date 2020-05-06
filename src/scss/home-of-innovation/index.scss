@@ -29,6 +29,9 @@ $padding-mobile: $p-borders-mobile * 1px;
 $margin-desktop: $m-borders-desktop * 1px;
 $margin-mobile: $m-borders-mobile * 1px;
 
+/*----------  Nav height  ----------*/
+$nav-mobile-height: get-mobile-vw(100);
+
 .cheil-static.home-of-innovation {
 
   @import "../components/nav";

@@ -12,6 +12,9 @@
 // Helpers
 @import "helpers/helpers";
 
+/*----------  Nav height  ----------*/
+$nav-mobile-height: get-mobile-vw(100);
+
 .cheil-static {
   @import "components/nav";
   @import "components/sidedrawer";
