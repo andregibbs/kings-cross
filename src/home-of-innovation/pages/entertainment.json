@@ -1,6 +1,6 @@
 {
-  "title": "Entertainment Home",
-  "description": "Example pages with some combinations of components and sub pages",
+  "title": "Entertainment",
+  "description": "",
   "theme": {
     "color": "#0077C8"
   },
@@ -8,12 +8,6 @@
     {
       "type": "group-land",
       "items": [
-        {
-          "title": "{{entertainment|sub-page[title]}}",
-          "description": "{{entertainment|sub-page[description]}}",
-          "image": "{{entertainment|sub-page[image]}}",
-          "url": "{{entertainment|sub-page[url]}}"
-        },
         {
           "title": "{{creativity|game-dev-london-podcast|1[title]}}",
           "description": "{{creativity|game-dev-london-podcast|1[description]}}",

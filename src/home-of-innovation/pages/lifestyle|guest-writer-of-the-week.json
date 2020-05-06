@@ -1,6 +1,6 @@
 {
-  "title": "Tips & Trikx",
-  "description": "Description for tips & trix page",
+  "title": "Guest writer of the week",
+  "description": "",
   "image": "{{lifestyle|tips-and-trikx|1[image]}}",
   "thumb": "{{lifestyle|tips-and-trikx|1[image]}}",
   "components": [
@@ -26,7 +26,7 @@
     },
     {
       "type": "group",
-      "id": "tips-and-trikx",
+      "id": "guest-writer-of-the-week",
       "title": "Episodes"
     }
   ]

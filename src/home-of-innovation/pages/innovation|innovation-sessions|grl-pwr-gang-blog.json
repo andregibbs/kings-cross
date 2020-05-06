@@ -1,0 +1,48 @@
+{
+  "title": "Innovation Sessions",
+  "description": "A brand-new digital series from the Home of Innovation to inspire the UK",
+  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/SamsungKX_LandingPage_EpisodeOne_CategoryHero_V1.jpg",
+  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/SamsungKX_LandingPage_EpisodeOne_Thumbnail_V1.jpg",
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "youtube",
+        "content": "tYRS0aXaBC8"
+      },
+      "style": {
+        "desktop": "top",
+        "mobile": "top"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "level": "1",
+          "copy": "Successful strategies using positivity and tech"
+        }
+      ]
+    },
+    {
+      "type": "share"
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "paragraphs",
+          "text": [
+            "Series Overview:",
+            "Samsung KX, the Home of Innovation, presents the Innovation Sessions. A series of digital events collaborating with specialists in their fields to create content on topics including, how tech can help your business during lockdown, how to create your own podcast, and how to maximise your social media.",
+            "Episode One:",
+            "Episode one of the Innovation Sessions is hosted by Kirsti Hadley of GRL PWR Gang with special guests Carrie Anne, founder of Mére Soeur, and Sapphire Bates, founder of Coven Girl Gang.",
+            "In this episode Kirsti, Carrie and Sapphire will discuss the obstacles this year has bought to their businesses, revealing and uncovering some of the strategies they have used to survive and thrive in 2020. From the tech they have engaged with to continue building their communities, to their top tips for working from home, and key advice to small businesses; this first episode of the Innovation Sessions will provide some actionable insights, learnings and knowledge from some of the UK’s leading creative experts.",
+            "About the collaborators:",
+            "GRL PWR Gang are an inspiring and influential network of creatives, who have a shared passion for supporting women in the creative industries and female empowerment. The gang is made up of artists, designers, creators and bloggers who champion collaboration over competition, with a shared mission to support one another to win in the industry.",
+            "@MereSoeur  [INSERT BIO]",
+            "@CovenGirlGang [INSERT BIO]"
+          ]
+        }
+      ]
+    }
+  ]
+}

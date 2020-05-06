@@ -8,9 +8,8 @@
     {
       "type": "kv",
       "media": {
-        "type": "youtube",
-        "content": "PLYx8n4LgMtQopkQ2-xGwt_7hifbDIMbyS",
-        "embedType": "playlist"
+        "type": "image",
+        "content": "{{creativity|university-of-lincoln[image]}}"
       },
       "style": {
         "desktop": "left",
@@ -51,6 +50,71 @@
               "url": "https://www.youtube.com/playlist?list=PLYx8n4LgMtQopkQ2-xGwt_7hifbDIMbyS",
               "target": "_blank"
             }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "kv",
+      "media": {
+        "type": "video",
+        "content": "{{TBC}}",
+        "poster": "{{TBC}}"
+      },
+      "style": {
+        "desktop": "right",
+        "mobile": "bottom"
+      },
+      "components": [
+        {
+          "type": "paragraphs",
+          "text": [
+            "Jason Bradbury is a television presenter and children’s author, best known for his expertise in new technology and as ex-presenter of Channel 5’s The Gadget Show. In 2014, Jason also became a visiting lecturer for the University of Lincoln, sharing his industry insights with undergraduate students from the University’s Product Design and Computer Science degree courses. Following close review, Jason is delighted to announce Owen Phillips as his top scoring student from the 2020 BRADLAB project."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "{{TBC}}"
+      },
+      "style": {
+        "desktop": "left",
+        "mobile": "bottom"
+      },
+      "components": [
+        {
+          "type": "paragraphs",
+          "text": [
+            "\"I was impressed with many of the submissions, but one concept stood out in terms of its insight and simple solution.",
+            "In designing a new way for children to avoid breathing in harmful pollutants while travelling to school, Owen had to consider the requirements of a number of different, and equally important, stakeholders who all had a say in the successful adoption of a final product.",
+            "From a parental perspective, the most important thing would be that the child wear the mask on the way to school. From a child perspective, the device would need to have an element of customisation so that it can reflect their own personality, without alienating them from their social group. From a school perspective, the mask would need to match the school requirements around uniform, and yet also be standardised so that the adoption and usage remained high.",
+            "I felt that Owen had researched these areas well, and created a solution that understood the needs of each party in order to give the maximum chance of adoption, as well as considered the whole user journey of how the product would be purchased, customised and worn.",
+            "Well done!\"",
+            "Sebastian Stoddart. Director of Innovation. Experience Strategy & Innovation Team."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "kv",
+      "media": {
+        "type": "video",
+        "content": "{{TBC}}",
+        "poster": "{{TBC}}"
+      },
+      "style": {
+        "desktop": "right",
+        "mobile": "bottom"
+      },
+      "components": [
+        {
+          "type": "paragraphs",
+          "text": [
+            "BRADLAB Project Winner 2020",
+            "Owen Phillips has been officially announced as the winner of University of Lincoln's 2020 BRADLAB project. Owen pitched 'Polligon' - a product concept that aims to protect vulnerable school children against harmful pollution levels."
           ]
         }
       ]

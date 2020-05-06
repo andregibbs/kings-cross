@@ -1,5 +1,5 @@
 {
-  "title": "Innovation Sessions",
+  "title": "Innovation Sessions – Episode 1: Successful strategies using positivity and tech",
   "description": "A brand-new digital series from the Home of Innovation to inspire the UK",
   "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/SamsungKX_LandingPage_EpisodeOne_CategoryHero_V1.jpg",
   "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/SamsungKX_LandingPage_EpisodeOne_Thumbnail_V1.jpg",
@@ -19,7 +19,16 @@
         {
           "type": "headline",
           "level": "1",
-          "copy": "Successful strategies using positivity and tech"
+          "copy": "{{innovation|innovation-sessions|grl-pwr-gang[title]}}"
+        },
+        {
+          "type": "buttons",
+          "items": [
+            {
+              "copy": "Read Article",
+              "url": "www.samsung.com/uk/explore/kings-cross/innovation/innovation-sessions/grl-pwr-gang-blog/"
+            }
+          ]
         }
       ]
     },
@@ -30,23 +39,33 @@
       "type": "wrapper",
       "components": [
         {
-          "type": "header",
-          "level": "2",
-          "copy": "Lots of paragraphs"
-        },
-        {
           "type": "paragraphs",
           "text": [
             "Series Overview:",
-            "Samsung KX, the Home of Innovation, presents the Innovation Sessions. A series of digital events collaborating with specialists in their fields to create content on topics including, how tech can help your business during lockdown, how to create your own podcast, and how to maximise your social media.",
+            "Welcome to the Innovation Sessions.",
+            "Samsung KX, the Home of Innovation, has partnered with a line-up of inspiring people to bring you our very first digital event series. Topics such as podcasts, social media, tips for businesses and more will be covered to help you create your very own home of innovation.",
             "Episode One:",
-            "Episode one of the Innovation Sessions is hosted by Kirsti Hadley of GRL PWR Gang with special guests Carrie Anne, founder of Mére Soeur, and Sapphire Bates, founder of Coven Girl Gang.",
-            "In this episode Kirsti, Carrie and Sapphire will discuss the obstacles this year has bought to their businesses, revealing and uncovering some of the strategies they have used to survive and thrive in 2020. From the tech they have engaged with to continue building their communities, to their top tips for working from home, and key advice to small businesses; this first episode of the Innovation Sessions will provide some actionable insights, learnings and knowledge from some of the UK’s leading creative experts.",
+            "Episode one is hosted by Kirsti Hadley of GRL PWR Gang with special guests Carrie Anne, founder of Mére Soeur, and Sapphire Bates, founder of Coven Girl Gang.",
+            "In this episode Kirsti, Carrie and Sapphire will discuss the obstacles this year has bought to their businesses, revealing some of the strategies they have used to survive and thrive in 2020. From the tech they have used to continue building their communities, to their top tips for working from home and key advice to small businesses – this first episode of the Innovation Sessions will provide tips, learnings and ideas from some of the UK’s creative experts.",
             "About the collaborators:",
+            "GRL PWR Gang:",
             "GRL PWR Gang are an inspiring and influential network of creatives, who have a shared passion for supporting women in the creative industries and female empowerment. The gang is made up of artists, designers, creators and bloggers who champion collaboration over competition, with a shared mission to support one another to win in the industry.",
-            "@MereSoeur  [INSERT BIO]",
-            "@CovenGirlGang [INSERT BIO]"
+            "The Coven Girl Gang:",
+            "Sapphire Bates, 26, founder of the worldwide online platform, The Coven Girl Gang, is also a public speaker, columnist and podcaster. Delivering keynotes globally on everything from starting a business to growing a community with impact for brands. Sapphire has been featured in Forbes, The Huffington Post and The Evening Standard and was nominated for The Progress 1000 with the ES and Citi Bank in 2018 for her work with The Coven Girl Gang.",
+            "Mere Soeur:",
+            "Carrie Anne Roberts launched Mere Soeur as a single mother living with her mum, and working nights learning how to create a successful start-up. With nothing to lose, Carrie put the first batch of totes on her credit card. She never looked back - turning her side hustle into a six figure business. The Mere Soeur brand has been favoured by celebrities such as Jessica Alba and Meghan Markle, and her cool girl demeanour and modern family set-up has made her popular amongst both parents and childless adults alike."
           ]
+        }
+      ]
+    },
+    {
+      "type": "link-list",
+      "title": "More Episodes",
+      "items": [
+        {
+          "title": "{{innovation|innovation-sessions|grl-pwr-gang[title]}}",
+          "url": "{{innovation|innovation-sessions|grl-pwr-gang[url]}}",
+          "image": "{{innovation|innovation-sessions|grl-pwr-gang[thumb]}}"
         }
       ]
     }

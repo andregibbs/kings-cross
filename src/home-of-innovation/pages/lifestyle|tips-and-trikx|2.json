@@ -10,7 +10,7 @@
       "type": "kv",
       "media": {
         "type": "image",
-        "content": "{{lifestyle|tips-and-trikx|tips-2[image]}}"
+        "content": "{{lifestyle|tips-and-trikx|2[image]}}"
       },
       "style": {
         "desktop": "left",
@@ -19,7 +19,7 @@
       "components": [
         {
           "type": "headline",
-          "copy": "{{lifestyle|tips-and-trikx|tips-2[title]}}"
+          "copy": "{{lifestyle|tips-and-trikx|2[title]}}"
         }
       ]
     },

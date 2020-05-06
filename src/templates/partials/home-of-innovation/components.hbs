@@ -44,6 +44,10 @@
     {{> home-of-innovation/hoiMediaVideo this wrap=true}}
   {{/if_equals}}
 
+  {{#if_equals this.type 'image'}}
+    {{> home-of-innovation/hoiMediaImage this wrap=true}}
+  {{/if_equals}}
+
   {{!--
     Group, Related & Link list
     All the same components, different method of populating
