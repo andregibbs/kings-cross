@@ -7,7 +7,8 @@
   <div class="hoiGallery__Nav  hoiList  hoiList--grid-4">
 
       {{#each items }}
-      <a class="hoiGallery__NavItem  hoiList__Item" data-type="{{ this.type }}">
+      <a ga-ca="microsite" ga-ac="feature" ga-la="uk:kings-cross:{{@root.title}}:image{{@index}}"
+					data-omni-type="microsite" data-omni="uk:kings-cross:{{@root.title}}:image{{@index}}" class="hoiGallery__NavItem  hoiList__Item" data-type="{{ this.type }}">
         <h6 className="hoiList__ItemTitle">{{{ this.title }}}</h6>
         <div class="hoiList__ItemImageWrap">
           <img class="hoiList__ItemImage" src="{{ this.image }}" alt="{{ this.title }}">
