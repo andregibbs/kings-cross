@@ -3,6 +3,10 @@
 =============================================*/
 
 .nav {
+
+  position: relative;
+  z-index: 99;
+
   &__navigation {
 
     // background: $black;
