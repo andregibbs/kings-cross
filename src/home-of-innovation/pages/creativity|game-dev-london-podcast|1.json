@@ -20,7 +20,7 @@
       "components": [
         {
           "type": "headline",
-          "copy": "{{creativity|game-dev-london-podcast|2[title]}}"
+          "copy": "{{creativity|game-dev-london-podcast|1[title]}}"
         },
         {
           "type": "paragraphs",

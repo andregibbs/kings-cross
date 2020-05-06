@@ -24,6 +24,11 @@
 
 .hoiKv__Components {
   padding: $spacing-mobile;
+
+  p {
+    @extend .h6;
+    font-weight: bold;
+  }
 }
 
 @media screen and (max-width: $mobile) {
