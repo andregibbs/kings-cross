@@ -22,6 +22,9 @@
       ]
     },
     {
+      "type": "share"
+    },
+    {
       "type": "group",
       "id": "tips-and-trikx",
       "title": "Episodes"

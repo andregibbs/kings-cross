@@ -1,7 +1,33 @@
 {
   "title": "Innovation Sessions",
-  "description": "Innovation Sessions page, not deployed",
-  "image": "https://picsum.photos/1440/900",
-  "thumb": "https://picsum.photos/300/300",
-  "components": []
+  "description": "Description for Innovation Sessions",
+  "image": "{{innovation|innovation-sessions|grl-pwr-gang[image]}}",
+  "thumb": "{{innovation|innovation-sessions|grl-pwr-gang[image]}}",
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "{{innovation|innovation-sessions|grl-pwr-gang[image]}}"
+      },
+      "style": {
+        "desktop": "left",
+        "mobile": "top"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "{{innovation|innovation-sessions[title]}}"
+        }
+      ]
+    },
+    {
+      "type": "share"
+    },
+    {
+      "type": "group",
+      "id": "innovation-sessions",
+      "title": "Episodes"
+    }
+  ]
 }

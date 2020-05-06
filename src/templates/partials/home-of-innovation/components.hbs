@@ -4,6 +4,10 @@
     {{> home-of-innovation/hoiKv this }}
   {{/if_equals}}
 
+  {{#if_equals this.type 'share'}}
+    {{> home-of-innovation/hoiShare this }}
+  {{/if_equals}}
+
   {{#if_equals this.type 'buttons'}}
     {{> home-of-innovation/hoiButtons this}}
   {{/if_equals}}

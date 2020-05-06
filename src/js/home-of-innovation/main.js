@@ -1,6 +1,7 @@
 /* Home Of Innovation JS Entry */
 
 import HOIGallery from './hoiGallery';
+import HOIShare from './hoiShare';
 import sidedrawer from '../components/sidedrawer';
 import { createYoutubeInstance, loadYoutubeAPI } from './utils';
 
@@ -19,11 +20,15 @@ function init() {
   // could make this conditional depending on wether there is youtube content on the page
   loadYoutubeAPI()
     .then(() => {
+
+      new HOIShare();
+
       // initialze HOIGalleries
       galleries.forEach((gallery) => {
         new HOIGallery(gallery)
       })
 
+      // init youtube instances
       youtubeMedias.forEach((element) => {
         createYoutubeInstance(element)
       })

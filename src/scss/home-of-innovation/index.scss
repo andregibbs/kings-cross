@@ -33,6 +33,7 @@ $margin-mobile: $m-borders-mobile * 1px;
 
   @import "../components/nav";
   @import "../components/sidedrawer";
+  @import "../components/home-of-innovation/content";
 
   background: black;
   color: white;
@@ -41,7 +42,6 @@ $margin-mobile: $m-borders-mobile * 1px;
 
     // general styling & containers
     @import "../components/home-of-innovation/typography";
-    @import "../components/home-of-innovation/content";
     @import "../components/home-of-innovation/list";
 
     // all pages
@@ -49,6 +49,7 @@ $margin-mobile: $m-borders-mobile * 1px;
 
     // used in page
     @import "../components/home-of-innovation/hoiKv";
+    @import "../components/home-of-innovation/hoiShare";
     @import "../components/home-of-innovation/hoiButtons";
     @import "../components/home-of-innovation/hoiGroup";
     @import "../components/home-of-innovation/hoiLinkList";

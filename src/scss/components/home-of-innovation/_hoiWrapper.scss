@@ -17,6 +17,12 @@
   }
 }
 
+@media screen and (min-width: $desktop + 1) {
+  .hoiWrapper {
+    padding: 0 $spacing-desktop;
+  }
+}
+
 .hoiWrapper--align-left {
   text-align: left;
 }
