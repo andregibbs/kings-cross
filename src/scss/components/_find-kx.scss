@@ -52,8 +52,10 @@
         margin-left: auto;
         position: absolute;
         right: 0;
+        transform: scale(1.4);
+        transform-origin: right center;
       }
-      
+
       @media screen and (max-width: $mobile) {
         max-width: unset;
         width: 100%;
@@ -62,6 +64,7 @@
         img {
           position: static;
           width: 100%;
+          transform: none;
         }
       }
 
@@ -106,7 +109,7 @@
       display: none;
       @media screen and (max-width: $mobile) {
         display: block;
-        align-self: flex-start;
+        // align-self: flex-start;
       }
     }
   }

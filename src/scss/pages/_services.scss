@@ -71,6 +71,7 @@
     text-align:center;
     @media screen and (max-width: $mobile) {
       flex-direction: column;
+      margin: 50px 0 50px; // adjustment for coronavirus message
     }
     .tile {
       display: flex;
