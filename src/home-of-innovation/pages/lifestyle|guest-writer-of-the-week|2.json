@@ -10,7 +10,8 @@
       "type": "kv",
       "media": {
         "type": "image",
-        "content": "{{lifestyle|guest-writer-of-the-week|2[image]}}"
+        "content": "{{lifestyle|guest-writer-of-the-week|2[image]}}",
+        "alt": "{{lifestyle|guest-writer-of-the-week|2[alt]}}"
       },
       "style": {
         "desktop": "right",

@@ -8,7 +8,8 @@
       "type": "kv",
       "media": {
         "type": "image",
-        "content": "{{innovation|innovation-sessions|grl-pwr-gang[image]}}"
+        "content": "{{innovation|innovation-sessions|grl-pwr-gang[image]}}",
+        "alt": "{{innovation|innovation-sessions|grl-pwr-gang[alt]}}"
       },
       "style": {
         "desktop": "left",

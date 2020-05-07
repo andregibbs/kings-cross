@@ -11,7 +11,8 @@
       "type": "kv",
       "media": {
         "type": "image",
-        "content": "{{lifestyle|tips-and-trikx|3[image]}}"
+        "content": "{{lifestyle|tips-and-trikx|3[image]}}",
+        "alt": "{{lifestyle|tips-and-trikx|3[alt]}}"
       },
       "style": {
         "desktop": "left",
@@ -33,8 +34,62 @@
         {
           "type": "paragraphs",
           "text": [
-            "From clearing the clutter to choosing the perfect desk foliage, enjoy these seven simple top tips and 'triKX' from Samsung KX to help boost productivity, positivity and health whilst working remotely.",
-            "<ol><li>1) Stay focused</li><p>When working from home, it's all too easy to get sucked into distractions so it's important to minimise these as much as possible. Try to avoid spaces within the home associated with leisure and relaxation such as the bedroom or in front of a TV and keep them strictly for enjoying during out-of-office hours.</p><li>2) Declutter the desk</li><p>Try to tidy the desk at the end of the day, so you can start with a clear surface the next morning. The Samsung Space Monitor is a great way of maximising this space as it pushes back to sit flat against a wall, leaving the entire work surface clear so you can focus on what's on the screen, and not what's surrounding it.</p><li>3) A workspace with a view</li><p>Natural light produces Vitamin D , which is believed to improve motivation and efficiency through its ability to increase endorphins and serotonin levels . Home workspaces should ideally be located near a window so you can directly benefit from the sun's rays.</p><li>4) Stick to the schedule</li><p>Working at home is a challenge. You either have a million things to do at once or you get into a good rhythm and then time runs away with you, it's all too easy to forget the important things. Taking time out is vital for your mental health so make sure you plan plenty of breaks. Ensure you have fixed time slots in place that are exclusively for exercise or spending time with loved ones.</p><li>5) Bring the outside in</li><p>Those working from home should design their space with things that motivate them and have a positive influence such as pictures of loved ones or pets . Indoor plants not only brighten desks but can also act as air purifiers through absorbing dust and helping to remove harmful chemicals. Aloe Vera plants are ideal for this and a desk-size won't require much maintenance.</p><li>6) H20 @ home</li><p>Not drinking enough water can lower productivity, so with or without the luxury of the communal cooler, a healthy H20 intake is key. Experts recommend drinking at least 2 litres a day and trips to the kitchen tap will provide the regular breaks that are much needed.</p><li>7) Fix up, look sharp</li><p>What we wear day-to-day is proven to naturally impact our productivity & mental health, so try to get ready as if you are heading to the office or normal place of work. Pulling on a jumper to look ‘conference call' ready? This can be accompanied with a comfy pair of jeans to easily complete the look for the day ahead.</p></ol>"
+            "Real-time recipes, plant-based décor and a taste of the Caribbean; Samsung KX reveals five kitchen tips and ‘triKX’ to try at home."
+          ]
+        },
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "1) Blooming tables"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Families are eating together more than ever, so why not brighten mealtimes with some home-grown table décor? A great way to keep kids busy and encourage an interest in nature   by hand-picking flowers straight from the garden or growing at home - a perfect mini project. "
+          ]
+        },
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "2) Recipes at the ready"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Planning a menu for the week ahead can help strip back food waste and save time on shopping, though daily meal inspiration can be tricky.  The Samsung Family Hub™ Fridge Freezer partnership with Whisk offers a range of exciting, personalised recipes. Using the built-in camera, the fridge recommends meals based on the ingredients available, as well as the go-to dishes that families loves most."
+          ]
+        },
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "3) Frozen feasts"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Prepping and freezing meals is a great way to save money and cut back on hours spent over the stove. From frozen soups to pasta sauces, simply prepare dishes in bulk, split into freezer-bags and store away until they are ready to be used."
+          ]
+        },
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "4) Staycation sorbets"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Families can bring a touch of the Caribbean to their kitchens with exotic homemade sorbet lollies; a fun and easy way to keep kids occupied. Parents can get little ones to choose their favourite exotic fruits, then supervise whilst they pop in a blender with ice, yoghurt and fruit juice, ready to pour into lolly trays for freezing. A few hours later, the frozen treats will be ready to enjoy."
+          ]
+        },
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "5) Capture the flavour"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Instagram is the perfect platform for sharing dishes and inspiring others to get creative in the kitchen. Snapping stunning shots doesn’t have to be difficult! Foodies can try adding garnishes of contrasting colours to help make the hues of different dishes pop."
           ]
         }
       ]

@@ -8,7 +8,8 @@
       "type": "kv",
       "media": {
         "type": "image",
-        "content": "{{lifestyle|tips-and-trikx|1[image]}}"
+        "content": "{{lifestyle|tips-and-trikx|1[image]}}",
+        "alt": "{{lifestyle|tips-and-trikx|1[alt]}}"
       },
       "style": {
         "desktop": "left",
