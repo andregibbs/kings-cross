@@ -7,6 +7,16 @@
   margin: $spacing-mobile calc(#{$spacing-mobile} / 2);
 }
 
+.hoiWrapper .hoiMedia,
+.hoiWrapper .hoiMedia__Wrap {
+  margin-bottom: 1em;
+}
+
+.hoiWrapper h3,
+.hoiWrapper h4 {
+  margin-top: 1em;
+}
+
 @media screen and (min-width: $mobile + 1) {
   .hoiWrapper {
     max-width: 66vw;

@@ -60,6 +60,12 @@
           ]
         },
         {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_1.JPG",
+          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_1.JPG",
+          "alt": "A beautiful, colourful plate of noodles and vegetables illustrating creativity in the kitchen"
+        },
+        {
           "type": "headline",
           "level": "3",
           "copy": "3) Frozen feasts"
@@ -69,6 +75,12 @@
           "text": [
             "Prepping and freezing meals is a great way to save money and cut back on hours spent over the stove. From frozen soups to pasta sauces, simply prepare dishes in bulk, split into freezer-bags and store away until they are ready to be used."
           ]
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_2.JPG",
+          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_2.JPG",
+          "alt": "A fridge freezer in a kitchen, with the lower half open displaying the food contents inside"
         },
         {
           "type": "headline",
@@ -82,6 +94,12 @@
           ]
         },
         {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_3.JPG",
+          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_3.JPG",
+          "alt": "5 unwrapped ice lollies sit on a kitchen surface alongside ice cubes"
+        },
+        {
           "type": "headline",
           "level": "3",
           "copy": "5) Capture the flavour"
@@ -91,6 +109,12 @@
           "text": [
             "Instagram is the perfect platform for sharing dishes and inspiring others to get creative in the kitchen. Snapping stunning shots doesn’t have to be difficult! Foodies can try adding garnishes of contrasting colours to help make the hues of different dishes pop."
           ]
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_4.JPG",
+          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_4.JPG",
+          "alt": "A chef-standard looking plate of food sits on a black plate, with a black background"
         }
       ]
     },

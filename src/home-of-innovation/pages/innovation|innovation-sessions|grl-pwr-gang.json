@@ -9,8 +9,9 @@
     {
       "type": "kv",
       "media": {
-        "type": "youtube",
-        "content": "tYRS0aXaBC8"
+        "type": "image",
+        "content": "{{innovation|innovation-sessions|grl-pwr-gang[image]}}",
+        "alt": "{{innovation|innovation-sessions|grl-pwr-gang[alt]}}"
       },
       "style": {
         "desktop": "top",
@@ -21,15 +22,6 @@
           "type": "headline",
           "level": "1",
           "copy": "{{innovation|innovation-sessions|grl-pwr-gang[title]}}"
-        },
-        {
-          "type": "buttons",
-          "items": [
-            {
-              "copy": "Read Article",
-              "url": "www.samsung.com/uk/explore/kings-cross/innovation/innovation-sessions/grl-pwr-gang-blog/"
-            }
-          ]
         }
       ]
     },
@@ -39,6 +31,10 @@
     {
       "type": "wrapper",
       "components": [
+        {
+          "type": "youtube",
+          "content": "GCvsLS13ARk"
+        },
         {
           "type": "paragraphs",
           "text": [
@@ -55,6 +51,15 @@
             "Sapphire Bates, 26, founder of the worldwide online platform, The Coven Girl Gang, is also a public speaker, columnist and podcaster. Delivering keynotes globally on everything from starting a business to growing a community with impact for brands. Sapphire has been featured in Forbes, The Huffington Post and The Evening Standard and was nominated for The Progress 1000 with the ES and Citi Bank in 2018 for her work with The Coven Girl Gang.",
             "Mere Soeur:",
             "Carrie Anne Roberts launched Mere Soeur as a single mother living with her mum, and working nights learning how to create a successful start-up. With nothing to lose, Carrie put the first batch of totes on her credit card. She never looked back - turning her side hustle into a six figure business. The Mere Soeur brand has been favoured by celebrities such as Jessica Alba and Meghan Markle, and her cool girl demeanour and modern family set-up has made her popular amongst both parents and childless adults alike."
+          ]
+        },
+        {
+          "type": "buttons",
+          "items": [
+            {
+              "copy": "Read Article",
+              "url": "www.samsung.com/uk/explore/kings-cross/innovation/innovation-sessions/grl-pwr-gang-blog/"
+            }
           ]
         }
       ]

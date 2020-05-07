@@ -138,7 +138,8 @@
         },
         {
           "type": "headline",
-          "copy": "3) Storage and waste"
+          "copy": "3) Storage and waste",
+          "level": "3"
         },
         {
           "type": "paragraphs",

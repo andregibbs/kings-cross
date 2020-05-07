@@ -10,7 +10,8 @@
       "type": "kv",
       "media": {
         "type": "image",
-        "content": "{{creativity|university-of-lincoln[image]}}"
+        "content": "{{creativity|university-of-lincoln[image]}}",
+        "alt": "{{creativity|university-of-lincoln[alt]}}"
       },
       "style": {
         "desktop": "left",

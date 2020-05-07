@@ -1,18 +1,20 @@
 {
-  "title": "Innovation Sessions",
+  "title": "Innovation Sessions – GRL PWR Gang's top 5 tips for businesses in lockdown",
   "description": "Innovation Sessions – GRL PWR Gang's top 5 tips for businesses in lockdown",
   "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/SamsungKX_LandingPage_EpisodeOne_CategoryHero_V1.jpg",
   "alt": "Innovation sessions episode 1 with Kirsti Hadley of GRL PWR Gang, Carrie Anne of Mére Soeur & Sapphire Bates of Coven Girl Gang",
   "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/SamsungKX_LandingPage_EpisodeOne_Thumbnail_V1.jpg",
+  "group": "innovation-sessions",
   "components": [
     {
       "type": "kv",
       "media": {
-        "type": "youtube",
-        "content": "tYRS0aXaBC8"
+        "type": "image",
+        "content": "{{innovation|innovation-sessions|grl-pwr-gang-blog[image]}}",
+        "alt": "{{innovation|innovation-sessions|grl-pwr-gang-blog[alt]}}"
       },
       "style": {
-        "desktop": "top",
+        "desktop": "left",
         "mobile": "top"
       },
       "components": [
