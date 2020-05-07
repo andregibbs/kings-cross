@@ -1,5 +1,5 @@
 {
-  "title": "Episode 2 - Connectivity Challenges",
+  "title": "Guest writer of the week: Connectivity Challenges",
   "description": "Nourishing mid-week cooking, simplified",
   "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/2/Image_1.jpg",
   "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/2/Image_1.jpg",
@@ -20,7 +20,7 @@
       "components": [
         {
           "type": "headline",
-          "copy": "{{lifestyle|guest-writer-of-the-week|2[title]}}"
+          "copy": "Episode 2 - Connectivity Challenges"
         }
       ]
     },
@@ -79,7 +79,7 @@
             "Video chat quiz: Whether you're organising it yourself or are partaking in a public online quiz, flexing your brain is at least as important as working out your bod. A great way to run a quiz with friends is to have each person or team create a round. That way, it makes counting scores a team effort, and everyone gets a round as quizmaster. Now all you have to do is decide on a subject! ",
             "Big picture: There's nothing like going to the movies with friends - reliving nail-biting moments as soon as the credits roll; but when you can't get out to the pictures together, pencil in chats either during or after watching a film. Synchronised home cinema time may sound strange at first, but it's a fantastic excuse to stay in touch with chums and power through some excellent, and not so good flicks. ",
             "Don't forget to Snap and share your favourite connectivity memories with #SamsungKX. ",
-            "Love reading inspo articles like these? Click below to sign up and learn more."
+            "Love reading inspo articles like these? Click sign up to learn more."
           ]
         }
       ]

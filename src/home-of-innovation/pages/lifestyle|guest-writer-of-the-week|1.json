@@ -1,5 +1,5 @@
 {
-  "title": "Episode 1 - Nourishing mid-week cooking, simplified",
+  "title": "Guest writer of the week: Nourishing mid-week cooking, simplified",
   "description": "Nourishing mid-week cooking, simplified",
   "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/1/IMAGE-KV.JPG",
   "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/1/IMAGE-KV.JPG",
@@ -20,7 +20,7 @@
       "components": [
         {
           "type": "headline",
-          "copy": "{{lifestyle|guest-writer-of-the-week|1[title]}}"
+          "copy": "Episode 1 - Nourishing mid-week cooking, simplified"
         }
       ]
     },

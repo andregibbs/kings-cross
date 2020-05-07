@@ -1,5 +1,5 @@
 .sidedrawer {
-  position: fixed;
+  // position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
@@ -20,10 +20,7 @@
     transform: translateX(0);
   }
 
-  & > ul {
-    top: $nav-mobile-height;
-    position: relative;
-  }
+
 
   a {
     font-weight: bold;
@@ -71,5 +68,13 @@
         color: white;
       }
     }
+  }
+}
+
+.nav.nav--sticky + .sidedrawer {
+  position: fixed;
+  & > ul {
+    top: $nav-mobile-height;
+    position: relative;
   }
 }

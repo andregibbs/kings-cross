@@ -58,7 +58,7 @@
           "items": [
             {
               "copy": "Read Article",
-              "url": "www.samsung.com/uk/explore/kings-cross/innovation/innovation-sessions/grl-pwr-gang-blog/"
+              "url": "{{innovation|innovation-sessions|grl-pwr-gang-blog[url]}}"
             }
           ]
         }
