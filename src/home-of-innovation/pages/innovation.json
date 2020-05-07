@@ -12,6 +12,7 @@
           "title": "{{innovation|innovation-sessions|grl-pwr-gang[title]}}",
           "description": "{{innovation|innovation-sessions|grl-pwr-gang[description]}}",
           "image": "{{innovation|innovation-sessions|grl-pwr-gang[image]}}",
+          "alt": "{{innovation|innovation-sessions|grl-pwr-gang[alt]}}",
           "url": "{{innovation|innovation-sessions|grl-pwr-gang[url]}}"
         }
       ]

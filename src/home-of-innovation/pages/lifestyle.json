@@ -12,18 +12,21 @@
           "title": "{{lifestyle|tips-and-trikx|1[title]}}",
           "description": "{{lifestyle|tips-and-trikx|1[description]}}",
           "image": "{{lifestyle|tips-and-trikx|1[image]}}",
+          "alt": "{{lifestyle|tips-and-trikx|1[alt]}}",
           "url": "{{lifestyle|tips-and-trikx|1[url]}}"
         },
         {
           "title": "{{lifestyle|tips-and-trikx|2[title]}}",
           "description": "{{lifestyle|tips-and-trikx|2[description]}}",
           "image": "{{lifestyle|tips-and-trikx|2[image]}}",
+          "alt": "{{lifestyle|tips-and-trikx|2[alt]}}",
           "url": "{{lifestyle|tips-and-trikx|2[url]}}"
         },
         {
           "title": "{{lifestyle|tips-and-trikx|3[title]}}",
           "description": "{{lifestyle|tips-and-trikx|3[description]}}",
           "image": "{{lifestyle|tips-and-trikx|3[image]}}",
+          "alt": "{{lifestyle|tips-and-trikx|3[alt]}}",
           "url": "{{lifestyle|tips-and-trikx|3[url]}}"
         }
       ]

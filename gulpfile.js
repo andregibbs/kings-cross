@@ -322,7 +322,8 @@ function HOITemplates() {
             return {
               url: publicUrl + path,
               image: getPageData(path).thumb,
-              title: getPageData(path).title
+              title: getPageData(path).title,
+              alt: getPageData(path).alt || getPageData(path).title
             }
           })
           return component
@@ -336,6 +337,7 @@ function HOITemplates() {
             return {
               title: pageData.title,
               image: pageData.thumb,
+              alt: pageData.alt || pageData.title,
               sort: pageData.sort,
               url: publicUrl + path.replace(pagesBasePath, '').replace(/\|/g,'/').replace('.json', ''),
             }
