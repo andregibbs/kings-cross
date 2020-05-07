@@ -2,7 +2,7 @@
 <div class="hoiMedia__Wrap">
 {{/if}}
 
-  <video   
+  <video
     class="hoiMedia hoiMedia--video {{class}}"
     {{#if (eq type 'audio')}}
       style="background-image: url('{{poster}}')"
@@ -10,7 +10,7 @@
     src="{{content}}"
     poster="{{poster}}"
     playsinline
-    preload="auto"
+    preload="metadata"
     {{#if loop}}
       loop
     {{/if}}
@@ -30,7 +30,7 @@
   <div class="hoiMedia__State">
 
     <div class="hoiMedia__StateIcon  hoiMedia__StateIcon--load">
-      
+
     </div>
 
     <div class="hoiMedia__StateIcon  hoiMedia__StateIcon--play">

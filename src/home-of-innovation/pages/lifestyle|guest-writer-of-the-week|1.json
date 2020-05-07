@@ -1,8 +1,8 @@
 {
   "title": "Episode 1 - Nourishing mid-week cooking, simplified",
   "description": "Nourishing mid-week cooking, simplified",
-  "image": "((TBC))",
-  "thumb": "((TBC))",
+  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/1/IMAGE-KV.JPG",
+  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/1/IMAGE-KV.JPG",
   "group": "guest-writer-of-the-week",
   "sort": 1,
   "components": [
@@ -163,23 +163,18 @@
       "items": [
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-1/Image_1.JPG",
-          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-1/Image_1.JPG"
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/1/IMAGE_1.jpeg",
+          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/1/IMAGE_1.jpeg"
         },
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-1/Image_2.JPG",
-          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-1/Image_2.JPG"
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/1/IMAGE_3.jpg",
+          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/1/IMAGE_3.jpg"
         },
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-1/Image_3.JPG",
-          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-1/Image_3.JPG"
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-1/Image_4.JPG",
-          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-1/Image_4.JPG"
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/1/IMAGE_4.jpg",
+          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/1/IMAGE_4.jpg"
         }
       ]
     },

@@ -130,10 +130,10 @@
       "title": "More Episodes",
       "items": [
         {
-          "title": "{{innovation|innovation-sessions|grl-pwr-gang-blog[title]}}",
-          "url": "{{innovation|innovation-sessions|grl-pwr-gang-blog[url]}}",
-          "image": "{{innovation|innovation-sessions|grl-pwr-gang-blog[thumb]}}",
-          "alt": "{{innovation|innovation-sessions|grl-pwr-gang-blog[alt]}}"
+          "title": "{{innovation|innovation-sessions|grl-pwr-gang[title]}}",
+          "url": "{{innovation|innovation-sessions|grl-pwr-gang[url]}}",
+          "image": "{{innovation|innovation-sessions|grl-pwr-gang[thumb]}}",
+          "alt": "{{innovation|innovation-sessions|grl-pwr-gang[alt]}}"
         }
       ]
     }

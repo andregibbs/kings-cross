@@ -1,15 +1,15 @@
 {
   "title": "Guest writer of the week",
   "description": "",
-  "image": "{{lifestyle|tips-and-trikx|1[image]}}",
-  "thumb": "{{lifestyle|tips-and-trikx|1[image]}}",
+  "image": "{{lifestyle|guest-writer-of-the-week|1[image]}}",
+  "thumb": "{{lifestyle|guest-writer-of-the-week|1[image]}}",
   "components": [
     {
       "type": "kv",
       "media": {
         "type": "image",
-        "content": "{{lifestyle|tips-and-trikx|1[image]}}",
-        "alt": "{{lifestyle|tips-and-trikx|1[alt]}}"
+        "content": "{{lifestyle|guest-writer-of-the-week|1[image]}}",
+        "alt": "{{lifestyle|guest-writer-of-the-week|1[alt]}}"
       },
       "style": {
         "desktop": "left",
@@ -18,7 +18,7 @@
       "components": [
         {
           "type": "headline",
-          "copy": "{{lifestyle|tips-and-trikx[title]}}"
+          "copy": "{{lifestyle|guest-writer-of-the-week[title]}}"
         }
       ]
     },
