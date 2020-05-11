@@ -14,13 +14,6 @@
           "image": "{{innovation|innovation-sessions|grl-pwr-gang[image]}}",
           "alt": "{{innovation|innovation-sessions|grl-pwr-gang[alt]}}",
           "url": "{{innovation|innovation-sessions|grl-pwr-gang[url]}}"
-        },
-        {
-          "title": "{{innovation|innovation-sessions|grl-pwr-gang-blog[title]}}",
-          "description": "{{innovation|innovation-sessions|grl-pwr-gang-blog[description]}}",
-          "image": "{{innovation|innovation-sessions|grl-pwr-gang-blog[image]}}",
-          "alt": "{{innovation|innovation-sessions|grl-pwr-gang-blog[alt]}}",
-          "url": "{{innovation|innovation-sessions|grl-pwr-gang-blog[url]}}"
         }
       ]
     }

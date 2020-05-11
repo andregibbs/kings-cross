@@ -83,7 +83,7 @@
         },
         {
           "type": "image",
-          "content": "{{URL}}",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/1/IMAGE_1.jpeg",
           "alt": "Quick Indian spiced salad"
         },
         {
@@ -133,7 +133,7 @@
         },
         {
           "type": "image",
-          "content": "{{URL}}",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/1/IMAGE_3.jpg",
           "alt": "Beetroot and brown rice pilaf"
         },
         {
@@ -155,6 +155,10 @@
             "By Katy McClelland.",
             "Katy is a freelance food stylist, recipe developer & food editor. A regular contributor to Delicious and Vegetarian Living magazines, Katy also creates social media recipe content for drinks brand, Baileys. Among many accomplishments, Katy was previously Food Editor at TI Media where she was in charge of developing recipes and writing food, product, lifestyle and travel pieces for women's lifestyle brands including fit&well, Feel Good Food, Woman's Weekly, goodtoknow.co.uk and woman&home."
           ]
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/1/IMAGE_4.jpg"
         }
       ]
     },

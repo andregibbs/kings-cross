@@ -1,6 +1,6 @@
 .sidedrawer {
-  // position: fixed;
-  top: 0;
+  position: absolute;
+  // top: 0;
   left: 0;
   height: 100vh;
   width: 100vw;
@@ -73,6 +73,7 @@
 
 .nav.nav--sticky + .sidedrawer {
   position: fixed;
+  top: 0;
   & > ul {
     top: $nav-mobile-height;
     position: relative;

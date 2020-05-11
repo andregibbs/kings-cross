@@ -37,14 +37,6 @@
       "type": "wrapper",
       "components": [
         {
-          "type": "paragraphs",
-          "text": [
-            "The University of Lincoln’s Product Design degree concentrates on the creation, delivery, and communication of ideas that challenge conventional thinking and open new markets. As part of this curriculum, students partake in the BRADLAB project, founded by Jason Bradbury. Here they are tasked with researching and unpicking both technology and consumer interests to develop an innovative new technological product.",
-            "As the Home of Innovation, SamsungKX have provided the University of Lincoln a virtual platform for students of the BRADLAB project to give them an opportunity to remotely pitch their exciting new product designs via pre-recorded video content. Students will receive exclusive feedback from the Samsung product design team, alongside leading TV presenter, author and technology broadcaster, Jason Bradbury.",
-            "Submissions for the BRADLAB project can be seen following the below link."
-          ]
-        },
-        {
           "type": "buttons",
           "items": [
             {
@@ -102,23 +94,23 @@
       ]
     },
     {
-      "type": "kv",
-      "media": {
-        "type": "video",
-        "content": "https://images.samsung.com/is/content/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/university-of-lincoln/owen.mp4",
-        "poster": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/university-of-lincoln/owen.jpg"
-      },
-      "style": {
-        "desktop": "right",
-        "mobile": "bottom"
-      },
+      "type": "wrapper",
       "components": [
+        {
+          "type": "headline",
+          "copy": "BRADLAB Project Winner 2020",
+          "level": "4"
+        },
         {
           "type": "paragraphs",
           "text": [
-            "BRADLAB Project Winner 2020",
             "Owen Phillips has been officially announced as the winner of University of Lincoln's 2020 BRADLAB project. Owen pitched 'Polligon' - a product concept that aims to protect vulnerable school children against harmful pollution levels."
           ]
+        },
+        {
+          "type": "video",
+          "content": "https://images.samsung.com/is/content/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/university-of-lincoln/owen.mp4",
+          "poster": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/university-of-lincoln/owen.jpg"
         }
       ]
     }

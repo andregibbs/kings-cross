@@ -4,7 +4,6 @@
   "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/SamsungKX_LandingPage_EpisodeOne_CategoryHero_V1.jpg",
   "alt": "Innovation sessions episode 1 with Kirsti Hadley of GRL PWR Gang, Carrie Anne of Mére Soeur & Sapphire Bates of Coven Girl Gang",
   "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/SamsungKX_LandingPage_EpisodeOne_Thumbnail_V1.jpg",
-  "group": "innovation-sessions",
   "components": [
     {
       "type": "kv",
