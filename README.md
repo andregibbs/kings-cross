@@ -2,6 +2,8 @@
 *To build, simply use ```gulp``` without any args. Version used for production: 3.9.1*
 *To build, for production (to scrap the code for AEM) use ```gulp production``` without any args. Version used for production: 3.9.1*
 
+***NB: For documentation related to the Home Of Innovation pages, read hoiREADME.md***
+
 ## **Brief project breakdown:**
 
 ### **JS**
@@ -66,12 +68,12 @@ https://bookings.qudini.com/docs2/index.html#!/
 ### **Event Series**:
 
 ### QAWeb and Local events:
-[TEST] KX Test Events 
+[TEST] KX Test Events
 https://bookings.qudini.com/booking-widget/events/W3DMW9HUAYM
 
 Series ID: *W3DMW9HUAYM*
 
-### **Live events**: 
+### **Live events**:
 [LIVE] KX EVENTS
 https://bookings.qudini.com/booking-widget/events/U3OWDF3I0JF
 
@@ -103,7 +105,7 @@ If you open the file, save it again, and run gulp, it should fix itself, but if 
 ![Alt text](./readme/bug-correction.png?raw=true "Inline separated into multi-lines")
 <details>
   <summary>Fixed Code</summary>
-   
+
     var kxConfig = {};
 
 	kxConfig.seriesId = "W3DMW9HUAYM";
