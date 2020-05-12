@@ -1,0 +1,28 @@
+.hoiButtons {
+  display: flex;
+  flex-wrap: wrap;
+  margin: $spacing-mobile 0;
+  .btn {
+    font-size: em(14);
+  }
+}
+
+.hoiButton {
+  margin-right: calc(#{$spacing-mobile} / 2);
+}
+
+.hoiButton:last-child {
+  margin-right: 0;
+}
+
+@media screen and (min-width: $mobile + 1) {
+  .hoiButtons {
+    margin: $spacing-desktop 0;
+    .btn {
+      font-size: em(16);
+    }
+  }
+  .hoiButton {
+    margin-right: calc(#{$spacing-desktop} / 2);
+  }
+}

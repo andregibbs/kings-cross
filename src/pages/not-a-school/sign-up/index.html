@@ -1,4 +1,15 @@
-<!--#include virtual="/uk/aem/header-pdp.html"-->
+{{#if config.staging}}
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" defer></script>
+  </head>
+  <body>
+{{else}}
+  <!--#include virtual="/uk/aem/header-pdp.html"-->
+{{/if}}
 
 <section class="cheil-static">
 
@@ -16,10 +27,10 @@
 					<h1>Think the unthinkable</h1>
 					<p>What will your future be like? Technology is transforming how we all learn, work, communicate, relax… at an amazing rate. Exciting times. But it makes predicting tomorrow pretty much impossible.</p>
 					<p>That’s why Samsung created Not a School. By sharing our knowledge, we hope to give you – the next generation of innovators – a head start. Housed in #SamsungKX at London’s Coal Drops Yard, Not a School explores issues that young people told us that matter to them the most.</p>
-					<p>Build yourself – your community and the world – a brilliant future.</p>	 
+					<p>Build yourself – your community and the world – a brilliant future.</p>
 					<h2>Register your interest for Not a School 2020 and be the first to hear when applications are open</h2>
 				</div>
-            	
+
 			</div>
 		  </section>
           <section>
@@ -39,7 +50,7 @@
 					Not a School is a UK initiative that forms part of Samsung’s global commitment to education. We empower future innovators to achieve their full potential and become the next generation of leaders to pioneer positive social change #EnablingPeople.
 				</p>
 			</div>
-	
+
 		</section>
 
 		{{>components/findKx}}
@@ -49,4 +60,9 @@
 		{{>scripts }}
 	</section>
 
-<!--#include virtual="/uk/aem/footer-pdp.html"-->
+  {{#if config.staging}}
+    </body>
+  </html>
+  {{else}}
+  <!--#include virtual="/uk/aem/footer-pdp.html"-->
+  {{/if}}

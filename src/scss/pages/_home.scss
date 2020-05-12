@@ -1,7 +1,20 @@
 &.homePage {
+
+  // some amends for new homeKV
+  overflow: hidden;
+  // homeKV visible behind events
+  .relatedEvents {
+    background: transparent;
+  }
+  // move all sections above homeKV index
+  .section {
+    z-index: 10;
+    position: relative;
+  }
+
   .kx-video {
     position: relative;
-    background: #0c0c0c;
+    background: transparent;
     padding-top: 0 !important;
     padding-bottom: 0 !important;
 
@@ -106,7 +119,7 @@
 
   .copy {
     position: relative;
-    background: #0c0c0c;
+    background: transparent;
     padding-top: 0 !important;
     padding-bottom: 0 !important;
     z-index: 13;
@@ -124,14 +137,14 @@
 
   .relatedEvents {
     box-shadow: none !important;
-    z-index: 17;
     padding-bottom: 0 !important;
   }
 
   .passionPoints {
+    display: none; // hide (for now?)
     padding-top: 0 !important;
     position: relative;
-    background: #0c0c0c;
+    background: transparent;
     &__header {
       display: flex;
       justify-content: center;
@@ -184,7 +197,7 @@
     &__outer {
       padding-top: 0 !important;
       position: relative;
-      background: #0c0c0c;
+      background: transparent;
     }
   }
 

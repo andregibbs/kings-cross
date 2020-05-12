@@ -1,0 +1,9 @@
+.hoiLinkList {
+  padding: $spacing-mobile;
+}
+
+@media screen and (min-width: $mobile + 1) {
+  .hoiLinkList {
+    padding: $spacing-desktop;
+  }
+}

@@ -5,14 +5,70 @@
 	</div> --}}
 
 	<nav class="nav__navigation">
-		<ul>
-			<li><a ga-ca="microsite" ga-ac="sticky menu" ga-la="kings-cross:sticky-navbar_home" data-omni-type="microsite" data-omni="uk:kings-cross:sticky-navbar:home" href="/{{ config.site }}/{{ config.subfolder }}">Home</a></li>
-			<li><a ga-ca="microsite" ga-ac="sticky menu" ga-la="kings-cross:sticky-navbar_discover" data-omni-type="microsite" data-omni="uk:kings-cross:sticky-navbar:discover" href="/{{ config.site }}/{{ config.subfolder }}/discover/">Discover</a></li>
-			<li><a ga-ca="microsite" ga-ac="sticky menu" ga-la="kings-cross:sticky-navbar_whats-on" data-omni-type="microsite" data-omni="uk:kings-cross:sticky-navbar:whats-on" href="/{{ config.site }}/{{ config.subfolder }}/whats-on/">What's on</a></li>
-			<li><a ga-ca="microsite" ga-ac="sticky menu" ga-la="kings-cross:sticky-navbar_support" data-omni-type="microsite" data-omni="uk:kings-cross:sticky-navbar:support" href="/{{ config.site }}/{{ config.subfolder }}/support/">Support</a></li>
-			<li><a ga-ca="microsite" ga-ac="sticky menu" ga-la="kings-cross:sticky-navbar_my bookings" data-omni-type="microsite" data-omni="uk:kings-cross:sticky-navbar:my bookings" href="/{{ config.site }}/{{ config.subfolder }}/bookings/">My bookings</a></li>
+		<ul class='navigation-desktop'>
+			<li class='nav__navigation-link-container'>
+				<a class='nav__navigation-main-link' ga-ca="microsite" ga-ac="sticky menu" ga-la="kings-cross:sticky-navbar_home" data-omni-type="microsite" data-omni="uk:kings-cross:sticky-navbar:home" href="/{{ config.site }}{{ config.subfolder }}">Home of innovation</a>
+				<ul class='nav__navigation--submenu'>
+					<li>
+						<a class="saffron" href="/uk/explore/kings-cross/lifestyle">
+							Lifestyle & Wellbeing
+						</a>
+					</li>
+					<li>
+						<a class="skyblue" href="/uk/explore/kings-cross/entertainment">
+							Entertainment
+						</a>
+					</li>
+					<li>
+						<a class="coral" href="/uk/explore/kings-cross/creativity">
+							Creativity
+						</a>
+					</li>
+					<li>
+						<a class="teal" href="/uk/explore/kings-cross/innovation">
+							Tech & Innovation
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li class='nav__navigation-link-container'>
+				<a class='nav__navigation-main-link' ga-ca="microsite" ga-ac="sticky menu" ga-la="kings-cross:sticky-navbar_discover" data-omni-type="microsite" data-omni="uk:kings-cross:sticky-navbar:discover" href="/{{ config.site }}{{ config.subfolder }}/discover/">Discover</a>
+			</li>
+			<li class='nav__navigation-link-container'>
+				<a class='nav__navigation-main-link' ga-ca="microsite" ga-ac="sticky menu" ga-la="kings-cross:sticky-navbar_whats-on" data-omni-type="microsite" data-omni="uk:kings-cross:sticky-navbar:whats-on" href="/{{ config.site }}{{ config.subfolder }}/whats-on/">What's on</a>
+			</li>
+			<li class='nav__navigation-link-container'>
+				<a class='nav__navigation-main-link' ga-ca="microsite" ga-ac="sticky menu" ga-la="kings-cross:sticky-navbar_support" data-omni-type="microsite" data-omni="uk:kings-cross:sticky-navbar:support" href="/{{ config.site }}{{ config.subfolder }}/support/">Support</a>
+			</li>
+			<li class='nav__navigation-link-container'>
+        <a class='btn btn--primary btn--primary--coral nav__navigation-main-link signup-link' ga-ca="microsite" ga-ac="sticky menu" ga-la="kings-cross:sticky-navbar_sign-up" data-omni-type="microsite" data-omni="uk:kings-cross:sticky-navbar:sign-up" href="https://a3p.eucdm.samsung.com/webApp/samAPP581?lang=en_GB" data-lity>
+            Sign Up
+        </a>
+			</li>
+		</ul>
+		<ul class="navigation-mobile">
+      <li class="navigation-mobile__item  navigation-mobile__item--toggle">
+        <a class="fz20" role="button" ga-ca="microsite" ga-ac="mobile-sidebar" ga-la="kings-cross:mobile-sidebar_toggle-sidebar" data-omni-type="microsite" data-omni="uk:kings-cross:mobile-sidebar:toggle-sidebar">
+          Open Menu
+        </a>
+      </li>
+      <li class="navigation-mobile__item">
+        <a class="btn btn--primary btn--primary--coral btn--mobile-nav fz20" ga-ca="microsite" ga-ac="mobile-sidebar" ga-la="kings-cross:mobile-sidebar_sign-up-here" data-omni-type="microsite" data-omni="uk:kings-cross:share:sign-up-here"  href="https://a3p.eucdm.samsung.com/webApp/samAPP581?lang=en_GB" data-lity class="">
+          Sign Up
+        </a>
+      </li>
+
+			<!-- <li class='navigation-mobile__menu-button navigation-mobile__item fz20' role="button">
+        MENU
+      </li>
+			<li class="mobile-logo navigation-mobile__item fz20">LOGO</li>
+			<li class='navigation-mobile__login-container'>
+				<a class='nav__navigation-main-link login-link fz20'  href="/{{ config.site }}/{{ config.subfolder }}/bookings/">Sign Up</a>
+
+			</li> -->
 		</ul>
 	</nav>
 
 </section>
 
+{{>components/sidedrawer }}

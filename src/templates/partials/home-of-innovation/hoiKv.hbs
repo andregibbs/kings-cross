@@ -1,0 +1,56 @@
+<div class="hoiKv
+  {{#if this.style}}
+    {{#if this.style.desktop}}
+      hoiKv--d-{{ this.style.desktop }}
+    {{else}}
+      hoiKv--d-left
+    {{/if}}
+    {{#if this.style.mobile}}
+      hoiKv--m-{{ this.style.mobile }}
+    {{else}}
+      hoiKv--m-top
+    {{/if}}
+  {{else}}
+    hoiKv--d-Left
+    hoiKv--m-top
+  {{/if}}
+">
+
+  <div  ga-ca="microsite"
+    ga-ac="feature"
+    ga-la="uk:kings-cross:{{@root.title}}"
+    data-omni-type="microsite"
+    data-omni="uk:kings-cross:{{@root.title}}"  class="hoiKv__Media">
+    {{#if_equals this.media.type 'image'}}
+  	 <img
+        class="hoiKv__MediaImage"
+        src="{{ this.media.content }}"
+        alt="{{ this.media.alt }}"
+        />
+    {{/if_equals}}
+    {{#if (or (eq this.media.type 'video') (eq this.media.type 'audio')) }}
+      {{> home-of-innovation/hoiMediaVideo
+          content=this.media.content
+          poster=this.media.poster
+          loop=this.media.loop
+          autoplay=this.media.autoplay
+          controls=this.media.controls
+          type=this.media.type
+      }}
+    {{/if}}
+    {{#if_equals this.media.type 'youtube'}}
+      {{> home-of-innovation/hoiMediaYoutube
+          class="hoiKv__MediaVideo"
+          content=this.media.content
+          embedType=this.media.embedType
+      }}
+    {{/if_equals}}
+  </div>
+
+  <div class="hoiKv__Components">
+
+    {{> home-of-innovation/components this }}
+
+  </div>
+
+</div>

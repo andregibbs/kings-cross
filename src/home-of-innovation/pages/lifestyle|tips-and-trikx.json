@@ -1,0 +1,34 @@
+{
+  "title": "Tips & Trikx",
+  "description": "Description for tips & trix page",
+  "image": "{{lifestyle|tips-and-trikx|1[image]}}",
+  "thumb": "{{lifestyle|tips-and-trikx|1[image]}}",
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "{{lifestyle|tips-and-trikx|1[image]}}",
+        "alt": "{{lifestyle|tips-and-trikx|1[alt]}}"
+      },
+      "style": {
+        "desktop": "left",
+        "mobile": "top"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "{{lifestyle|tips-and-trikx[title]}}"
+        }
+      ]
+    },
+    {
+      "type": "share"
+    },
+    {
+      "type": "group",
+      "id": "tips-and-trikx",
+      "title": "Episodes"
+    }
+  ]
+}

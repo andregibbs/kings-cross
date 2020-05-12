@@ -1,0 +1,242 @@
+.homeKV {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.homeKV__Header {
+  height: calc(95vh - 50px);
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeKV__HeaderImage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transform-origin: center;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/homekv/KV_V1.png?$LATEST_PNG$');
+  z-index: 4;
+}
+
+.homeKV__Title {
+  z-index: 6;
+  text-align: center;
+  transform: translate(0, -6.25vh); // matching animation value in homeKV.js
+  will-change: transform;
+
+  h1 {
+    font-weight: bold;
+    font-size: em(52);
+    margin-bottom: em(4);
+  }
+  p {
+    font-size: em(18);
+    span {
+      margin-top: em(4);
+      font-weight: bold;
+      font-size: inherit;
+      display: block;
+    }
+  }
+}
+
+.homeKV__Straplines {
+  position: relative;
+}
+.homeKV__Strapline {
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+
+.homeKV__ScrollLink {
+  position: absolute;
+  bottom: 25vh;
+  // background: red;
+  width: em(160);
+  height: em(160);
+  cursor: pointer;
+  z-index: 5;
+
+  svg path {
+    stroke: white;
+    fill: white;
+  }
+}
+
+.homeKV__Nav {
+  position: relative;
+}
+
+.homeKV__NavItems {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.homeKV__NavItem {
+  display: block;
+  width: 50%;
+  height: 0;
+  padding-bottom: 75%;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+
+  h2 {
+    font-size: em(24);
+    margin-bottom: em(8);
+  }
+}
+
+.homeKV__NavItemText {
+  position: absolute;
+  color: white;
+  padding: em(10) em(20);
+  will-change: transform, opacity;
+}
+
+.homeKV__NavItemTitle--desktop {
+  display: none;
+}
+
+.homeKV__NavItem:nth-child(1) {
+  background-image: url('https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/homekv/lifestyle.png?$LATEST_PNG$');
+  .homeKV__NavItemText {
+    bottom: 0;
+    left: 0;
+    transform: translate(-150%, 0);
+  }
+}
+.homeKV__NavItem:nth-child(2) {
+  background-image: url('https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/homekv/entertainment.png?$LATEST_PNG$');
+  .homeKV__NavItemText {
+    bottom: 0;
+    right: 0;
+    transform: translate(150%, 0);
+    direction: rtl;
+  }
+}
+.homeKV__NavItem:nth-child(3) {
+  background-image: url('https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/homekv/creativity.png?$LATEST_PNG$');
+  .homeKV__NavItemText {
+    top: 0;
+    left: 0;
+    transform: translate(-150%, 0);
+  }
+}
+.homeKV__NavItem:nth-child(4) {
+  background-image: url('https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/homekv/innovation.png?$LATEST_PNG$');
+  .homeKV__NavItemText {
+    top: 0;
+    right: 0;
+    transform: translate(150%, 0);
+    direction: rtl;
+  }
+}
+
+.homeKV__CrossSVG {
+  position: absolute;
+  pointer-events: none;
+  width: 1500px;
+  height: 1500px;
+  margin-top: -750px;
+  margin-left: -750px;
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+  will-change: transform;
+
+  // center marker
+  // &:after {
+  //   position: absolute;
+  //   display: block;
+  //   content: '';
+  //   width: 10px;
+  //   height: 10px;
+  //   background: orange;
+  //   top: 50%;
+  //   left: 50%;
+  //   margin-left: -5px;
+  //   margin-top: -5px;
+  // }
+}
+
+@media screen and (min-width: $mobile + 1) {
+
+  .homeKV__Header {
+    height: calc(95vh - 50px);
+  }
+
+  .homeKV__NavItem {
+    height: 0;
+    padding-bottom: 41%;
+
+    h2 {
+      font-size: em(40);
+      margin-bottom: em(8);
+    }
+  }
+
+  .homeKV__NavItemText {
+    padding: em(20) em(40);
+  }
+  .homeKV__NavItemTitle--mobile {
+    display: none;
+  }
+  .homeKV__NavItemTitle--desktop {
+    display: block;
+  }
+
+  .homeKV__CrossSVG {
+    width: 3000px;
+    height: 3000px;
+    margin-top: -1500px;
+    margin-left: -1500px;
+  }
+
+  .homeKV__Title {
+    h1 {
+      font-size: em(72);
+      margin-bottom: em(4);
+    }
+    .homeKV__Strapline {
+      p {
+        font-size: em(22);
+        margin-bottom: em(8);
+        span {
+          margin-top: em(2);
+        }
+      }
+    }
+    .homeKV__Strapline--first {
+      opacity: 1;
+    }
+    .homeKV__Strapline--last {
+      opacity: 0.5;
+    }
+
+  }
+  .homeKV__ScrollLink {
+    bottom: em(20);
+  }
+}
+
+// Initial values for black areas of svg
+#svg_black_horizontal {
+  opacity: 0;
+  will-change: opacity;
+}
+
+#svg_black_vertical {
+  opacity: 1;
+  will-change: opacity;
+}

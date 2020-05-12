@@ -1,0 +1,33 @@
+{
+  "title": "Group Land Sub Page",
+  "description": "category",
+  "image": "https://via.placeholder.com/1440x900.png?text=image%20(1440x900)",
+  "thumb": "https://via.placeholder.com/300x300.png?text=thumb%20(300x300)",
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "{{components|group-land|sub-page[image]}}"
+      },
+      "style": {
+        "desktop": "left",
+        "mobile": "bottom"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "Category"
+        },
+        {
+          "type": "paras",
+          "text": [
+            "and a paragraph in here",
+            "and another"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{{#if wrap}}
+<div class="hoiMedia__Wrap">
+{{/if}}
+
+  <video
+    class="hoiMedia hoiMedia--video {{class}}"
+    {{#if (eq type 'audio')}}
+      style="background-image: url('{{poster}}')"
+    {{/if}}
+    src="{{content}}"
+    poster="{{poster}}"
+    playsinline
+    preload="metadata"
+    {{#if loop}}
+      loop
+    {{/if}}
+    {{#if autoplay}}
+      autoplay muted
+    {{/if}}
+    {{#if_defined controls }}
+      {{#if controls}}
+        controls
+      {{/if}}
+    {{else}}
+      controls
+    {{/if_defined}}
+  >
+  </video>
+
+  <div class="hoiMedia__State">
+
+    <div class="hoiMedia__StateIcon  hoiMedia__StateIcon--load">
+
+    </div>
+
+    <div class="hoiMedia__StateIcon  hoiMedia__StateIcon--play">
+      {{>svg/play}}
+    </div>
+  </div>
+
+{{#if wrap}}
+</div>
+{{/if}}

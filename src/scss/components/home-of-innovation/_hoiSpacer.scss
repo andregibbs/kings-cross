@@ -1,0 +1,16 @@
+.hoiSpacer {
+  height: $padding-desktop * 2;
+  background: repeating-linear-gradient(
+    45deg,
+    #4c3c3c,
+    #4c3c3c 10px,
+    #4a0d0d 10px,
+    #4a0d0d 20px
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.25);
+}

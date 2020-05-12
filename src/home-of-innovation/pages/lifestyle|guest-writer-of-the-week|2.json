@@ -1,0 +1,93 @@
+{
+  "title": "Guest writer of the week: Connectivity Challenges",
+  "description": "Feel like life's on pause? Let’s hit play",
+  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/2/Image_1.jpg",
+  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/2/Image_1.jpg",
+  "group": "guest-writer-of-the-week",
+  "sort": 2,
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "{{lifestyle|guest-writer-of-the-week|2[image]}}",
+        "alt": "{{lifestyle|guest-writer-of-the-week|2[alt]}}"
+      },
+      "style": {
+        "desktop": "right",
+        "mobile": "bottom"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "Episode 2 - Connectivity Challenges"
+        }
+      ]
+    },
+    {
+      "type": "share"
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "paragraphs",
+          "text": [
+            "Connectivity Challenges: Feel like life's on pause? Let's hit play",
+            "Create; share; move; connect - four fantastic ways to go from funk to fun, wherever you are. Your smartphone is an incredible creation tool, so whether you're an aspiring photographer, filmmaker or even a digital artist; fire up some choice apps and you're off.",
+            "It's also mind-boggling how connected we are to each other these days. Loneliness is real; it's important to recognise, and tech could be the perfect antidote when you're feeling isolated. Whether it's video chats, online games with friends or calls with family on the other side of the world - it's never been so easy. ",
+            "You can even stay fit, taking part in online community challenges while tracking your progress, either on your smartphone or wearable. All the while, you'll be boosting healthy chemicals in your body and getting some va-va-voom into your day.",
+            "With that in mind, we've set a handful of challenges to help your inner creative flourish, connect you to the world around you, and deliver some body moving inspiration directly to your mobile.",
+            "Do these in order, back to front or dip in and pick and choose the ones you fancy - they're all about putting a pep in your step and reminding you just how connected we are."
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "Create",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "<strong>Photo challenge:</strong> Close up and beautiful - find five objects you think look interesting; they can be as mundane as a paperclip, or as intricate as a flower. Next, take a super close-up picture of them on your phone, making sure to get some perspective with the background. When you capture a close-up shot, it blurs the background out majestically, giving your snap serious depth, and encouraging you to see things from a different point of view.",
+            "<strong>Video challenge:</strong> Tell a story in five clips   Stories are all about sequence, putting one thing in front of another to make something more meaningful than the sum of its parts. If you have a Samsung Galaxy S20-series phone, for example, your onboard video editor will let you stitch multiple clips into one mini-movie. So, get planning, get shooting and get filmmaking - just like that.",
+            "<strong>Selfie challenge:</strong> Pick a song you absolutely love to belt out - one that makes you light up every time you hear it. Open up the camera app on your smartphone, switch to the selfie camera, start recording, and start singing. Watching yourself back will bring out the performer in you, hearing yourself will help you hone your skills; and you never know, you might want to share the love and brighten up someone else's day with your warbles.",
+            "<strong>Videos:</strong> Watching other peoples' videos is always entertaining, and so is joining in the fun. Even if you're not ready to share your creations just yet, you can still shoot them. How? Launch a short-form video app like Instagram, Snapchat or TikTok, check out the predefined filters and have a play. You can overlay special effects, bop to the hottest backing tracks, old and new, and check out challenges set by other users that can inspire you to do something different."
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "Move",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "#Dancechallenge: If you love to shake it like a Polaroid picture, then search for the hashtag #dancechallenge. Get inspiration from other users giving it all they've got, then get on your feet and try it for yourself. You can either use your selfie camera or switch to the ultra-wide-angle camera at the back of your phone (if it's got one) to make sure you get everything in the frame. A super-music video performance, direct from your bedroom, has never been so easy to capture. ",
+            "2.6 challenge: Do a good deed from the comfort of your own home using your phone with online charity challenges. These have made a massive difference in the past, with the Ice Bucket Challenge, for example, raising an incredible $115 million for the ALS association in 2014. Whether it's a buzz cut live on social media or donating to a friend's cause, helping is an excellent way to be a force for good and inspire others. ",
+            "Live group exercise class: There's nothing like getting involved with a bunch of sweaty Bettys (or Burts) to motivate us to get moving. Luckily, the comradery of group exercise sessions has well and truly made its way onto smartphones. With no shortage of options out there, from Pilates to Zoomba, capoeira to plyometrics; many are free, so give it a go - you've got nothing to lose, other than that stiffness in your neck. Search for the hashtag #groupexercise and your humble smartphone could be the ticket to a fitter, healthier you. "
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "Connect",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Video chat quiz: Whether you're organising it yourself or are partaking in a public online quiz, flexing your brain is at least as important as working out your bod. A great way to run a quiz with friends is to have each person or team create a round. That way, it makes counting scores a team effort, and everyone gets a round as quizmaster. Now all you have to do is decide on a subject! ",
+            "Big picture: There's nothing like going to the movies with friends - reliving nail-biting moments as soon as the credits roll; but when you can't get out to the pictures together, pencil in chats either during or after watching a film. Synchronised home cinema time may sound strange at first, but it's a fantastic excuse to stay in touch with chums and power through some excellent, and not so good flicks. ",
+            "Don't forget to Snap and share your favourite connectivity memories with #SamsungKX. ",
+            "Love reading inspo articles like these? Click sign up to learn more."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "guest-writer-of-the-week",
+      "title": "More articles"
+    }
+  ]
+}

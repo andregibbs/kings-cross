@@ -1,0 +1,15 @@
+.hoiBreadcrumbs {
+  padding: calc(#{$spacing-mobile} / 2) $spacing-mobile;
+  font-weight: bold;
+}
+
+.hoiBreadcrumbs__Link {
+  @extend .h6;
+}
+
+
+@media screen and (min-width: $mobile + 1) {
+  .hoiBreadcrumbs {
+    padding: calc(#{$spacing-desktop} / 2) $spacing-desktop;
+  }
+}

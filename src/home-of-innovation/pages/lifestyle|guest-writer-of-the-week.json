@@ -1,0 +1,34 @@
+{
+  "title": "Guest writer of the week",
+  "description": "",
+  "image": "{{lifestyle|guest-writer-of-the-week|1[image]}}",
+  "thumb": "{{lifestyle|guest-writer-of-the-week|1[image]}}",
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "{{lifestyle|guest-writer-of-the-week|1[image]}}",
+        "alt": "{{lifestyle|guest-writer-of-the-week|1[alt]}}"
+      },
+      "style": {
+        "desktop": "left",
+        "mobile": "top"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "{{lifestyle|guest-writer-of-the-week[title]}}"
+        }
+      ]
+    },
+    {
+      "type": "share"
+    },
+    {
+      "type": "group",
+      "id": "guest-writer-of-the-week",
+      "title": "Episodes"
+    }
+  ]
+}

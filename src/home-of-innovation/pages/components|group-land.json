@@ -1,0 +1,141 @@
+{
+  "title": "Group Land",
+  "description": "Page for group land component tests",
+  "image": "https://via.placeholder.com/1440x900.png?text=image%20(1440x900)",
+  "thumb": "https://via.placeholder.com/300x300.png?text=thumb%20(300x300)",
+  "group": "hoi-component",
+  "components": [
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "4 Block GroupLand"
+        }
+      ]
+    },
+    {
+      "type": "group-land",
+      "items": [
+        {
+          "title": "{{components|group-land|sub-page[title]}}",
+          "description": "{{components|group-land|sub-page[description]}}",
+          "image": "{{components|group-land|sub-page[image]}}",
+          "url": "{{components|group-land|sub-page[url]}}"
+        },
+        {
+          "title": "{{components|group-land|sub-page-2[title]}}",
+          "description": "{{components|group-land|sub-page-2[description]}}",
+          "image": "{{components|group-land|sub-page-2[image]}}",
+          "url": "{{components|group-land|sub-page-2[url]}}"
+        },
+        {
+          "title": "{{components|group-land|sub-page[title]}}",
+          "description": "{{components|group-land|sub-page[description]}}",
+          "image": "{{components|group-land|sub-page[image]}}",
+          "url": "{{components|group-land|sub-page[url]}}"
+        },
+        {
+          "title": "{{components|group-land|sub-page-2[title]}}",
+          "description": "{{components|group-land|sub-page-2[description]}}",
+          "image": "{{components|group-land|sub-page-2[image]}}",
+          "url": "{{components|group-land|sub-page-2[url]}}"
+        }
+      ]
+    },
+    {
+      "type": "spacer"
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "3 Block GroupLand"
+        }
+      ]
+    },
+    {
+      "type": "group-land",
+      "items": [
+        {
+          "title": "{{components|group-land|sub-page[title]}}",
+          "description": "{{components|group-land|sub-page[description]}}",
+          "image": "{{components|group-land|sub-page[image]}}",
+          "url": "{{components|group-land|sub-page[url]}}"
+        },
+        {
+          "title": "{{components|group-land|sub-page-2[title]}}",
+          "description": "{{components|group-land|sub-page-2[description]}}",
+          "image": "{{components|group-land|sub-page-2[image]}}",
+          "url": "{{components|group-land|sub-page-2[url]}}"
+        },
+        {
+          "title": "{{components|group-land|sub-page[title]}}",
+          "description": "{{components|group-land|sub-page[description]}}",
+          "image": "{{components|group-land|sub-page[image]}}",
+          "url": "{{components|group-land|sub-page[url]}}"
+        }
+      ]
+    },
+    {
+      "type": "spacer"
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "2 Block GroupLand"
+        }
+      ]
+    },
+    {
+      "type": "group-land",
+      "items": [
+        {
+          "title": "{{components|group-land|sub-page[title]}}",
+          "description": "{{components|group-land|sub-page[description]}}",
+          "image": "{{components|group-land|sub-page[image]}}",
+          "url": "{{components|group-land|sub-page[url]}}"
+        },
+        {
+          "title": "{{components|group-land|sub-page-2[title]}}",
+          "description": "{{components|group-land|sub-page-2[description]}}",
+          "image": "{{components|group-land|sub-page-2[image]}}",
+          "url": "{{components|group-land|sub-page-2[url]}}"
+        }
+      ]
+    },
+    {
+      "type": "spacer"
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "1 Block GroupLand"
+        }
+      ]
+    },
+    {
+      "type": "group-land",
+      "items": [
+        {
+          "title": "{{components|group-land|sub-page[title]}}",
+          "description": "{{components|group-land|sub-page[description]}}",
+          "image": "{{components|group-land|sub-page[image]}}",
+          "url": "{{components|group-land|sub-page[url]}}"
+        }
+      ]
+    },
+    {
+      "type": "spacer"
+    }
+  ]
+}

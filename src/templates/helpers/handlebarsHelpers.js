@@ -124,5 +124,38 @@ if (typeof module !== 'undefined') {
 			return new Handlebars.SafeString(partial(options.hash));
 		});
 
+    // Pad items to desired multiple
+    Handlebars.registerHelper('spacerElements', function (items, divisible, opt) {
+      var remainder = divisible - (items.length % divisible);
+      var results = '';
+      for (var i = 0; i < remainder; i++) {
+        results += opt.fn()
+      }
+      return results
+    })
+
+    // Pad items to desired multiple
+    Handlebars.registerHelper('if_defined', function (v1, options) {
+			if (v1 !== undefined) {
+				return options.fn(this);
+			}
+			return options.inverse(this);
+		});
+
+    Handlebars.registerHelper({
+        eq: (v1, v2) => v1 === v2,
+        ne: (v1, v2) => v1 !== v2,
+        lt: (v1, v2) => v1 < v2,
+        gt: (v1, v2) => v1 > v2,
+        lte: (v1, v2) => v1 <= v2,
+        gte: (v1, v2) => v1 >= v2,
+        and() {
+            return Array.prototype.every.call(arguments, Boolean);
+        },
+        or() {
+            return Array.prototype.slice.call(arguments, 0, -1).some(Boolean);
+        }
+    });
+
 	};
 }

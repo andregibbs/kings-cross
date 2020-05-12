@@ -1,0 +1,72 @@
+li, p {
+  @include fz22();
+  color: white;
+  @media screen and (min-width: $mobile + 1) {
+    @include fz16();
+  }
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+
+a {
+  @include fz22();
+  @media screen and (min-width: $mobile + 1) {
+    @include fz16();
+  }
+}
+
+h1, .h1 {
+  @include fz50();
+  margin-bottom: 1rem;
+  line-height: 1.1;
+  @media screen and (min-width: $mobile + 1) {
+    @include fz50();
+  }
+}
+
+h2, .h2 {
+  @include fz36();
+  margin-bottom: 1rem;
+  line-height: 1.1;
+  @media screen and (min-width: $mobile + 1) {
+    @include fz36();
+  }
+}
+
+h3, .h3 {
+  @include fz30();
+  margin-bottom: 1rem;
+  line-height: 1.1;
+  @media screen and (min-width: $mobile + 1) {
+    @include fz30();
+  }
+}
+
+h4, .h4 {
+  @include fz24();
+  margin-bottom: 1rem;
+  line-height: 1.1;
+  @media screen and (min-width: $mobile + 1) {
+    @include fz24();
+  }
+}
+
+h5, .h5 {
+  @include fz20();
+  margin-bottom: 1rem;
+  line-height: 1.1;
+  @media screen and (min-width: $mobile + 1) {
+    @include fz20();
+  }
+}
+
+h6, .h6 {
+  @include fz18();
+  margin-bottom: 0.5rem;
+  @media screen and (min-width: $mobile + 1) {
+    @include fz18();
+  }
+}

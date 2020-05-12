@@ -1,0 +1,68 @@
+{{#each components}}
+
+  {{#if_equals this.type 'kv'}}
+    {{> home-of-innovation/hoiKv this }}
+  {{/if_equals}}
+
+  {{#if_equals this.type 'share'}}
+    {{> home-of-innovation/hoiShare this }}
+  {{/if_equals}}
+
+  {{#if_equals this.type 'buttons'}}
+    {{> home-of-innovation/hoiButtons this}}
+  {{/if_equals}}
+
+  {{#if_equals this.type 'headline'}}
+		{{> home-of-innovation/hoiHeadline this }}
+	{{/if_equals}}
+
+  {{#if_equals this.type 'wrapper'}}
+    {{> home-of-innovation/hoiWrapper this}}
+  {{/if_equals}}
+
+  {{#if_equals this.type 'paragraphs'}}
+		{{> home-of-innovation/hoiParagraphs this }}
+	{{/if_equals}}
+
+  {{#if_equals this.type 'spacer'}}
+		{{> home-of-innovation/hoiSpacer this }}
+	{{/if_equals}}
+
+  {{#if_equals this.type 'gallery'}}
+    {{> home-of-innovation/hoiGallery this }}
+  {{/if_equals}}
+
+  {{#if_equals this.type 'group-land'}}
+    {{> home-of-innovation/hoiGroupLand this }}
+  {{/if_equals}}
+
+  {{#if_equals this.type 'youtube'}}
+    {{> home-of-innovation/hoiMediaYoutube this wrap=true}}
+  {{/if_equals}}
+
+  {{#if_equals this.type 'video'}}
+    {{> home-of-innovation/hoiMediaVideo this wrap=true}}
+  {{/if_equals}}
+
+  {{#if_equals this.type 'image'}}
+    {{> home-of-innovation/hoiMediaImage this wrap=true}}
+  {{/if_equals}}
+
+  {{!--
+    Group, Related & Link list
+    All the same components, different method of populating
+   --}}
+
+  {{#if_equals this.type 'group'}}
+  	{{> home-of-innovation/hoiLinkList this }}
+  {{/if_equals}}
+
+  {{#if_equals this.type 'related' }}
+  	{{> home-of-innovation/hoiLinkList this }}
+  {{/if_equals}}
+
+  {{#if_equals this.type 'link-list' }}
+  	{{> home-of-innovation/hoiLinkList this }}
+  {{/if_equals}}
+
+{{/each}}

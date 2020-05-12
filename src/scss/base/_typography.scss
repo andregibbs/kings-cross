@@ -18,88 +18,101 @@
 	}
 
 	.fz55 {
-		font-size: 12px;
+		font-size: 12px !important;
 	}
 
 	.fz50 {
-		font-size: em(50);
+		font-size: em(50) !important;
 	}
 
 	.fz45 {
-		font-size: em(45);
+		font-size: em(45) !important;
 	}
 
 	.fz40 {
-		font-size: em(40);
+		font-size: em(40) !important;
 	}
 
 	.fz36 {
-		font-size: em(36);
+		font-size: em(36) !important;
 	}
 
 	.fz30 {
-		font-size: em(30);
+		font-size: em(30) !important;
 	}
 
 	.fz25 {
-		font-size: em(25);
+		font-size: em(25) !important;
 	}
 
 	.fz24 {
-		font-size: em(24);
+		font-size: em(24) !important;
 	}
 
 	.fz23 {
-		font-size: em(23);
+		font-size: em(23) !important;
 	}
 
 	.fz22 {
-		font-size: em(22);
+		font-size: em(22) !important;
 	}
 
 	.fz21 {
-		font-size: em(21);
+		font-size: em(21) !important;
 	}
 
 	.fz20 {
-		font-size: em(20);
+		font-size: em(20) !important;
 	}
 
 	.fz18 {
-		font-size: em(18);
+		font-size: em(18) !important;
 	}
 
 	.fz17 {
-		font-size: em(17);
+		font-size: em(17) !important;
 	}
 
 	.fz16 {
-		font-size: em(16);
+		font-size: em(16) !important;
 	}
 
 	.fz15 {
-		font-size: em(15);
+		font-size: em(15) !important;
 	}
 
 	.fz14 {
-		font-size: em(14);
+		font-size: em(14) !important;
 	}
 
 	.fz13 {
-		font-size: em(13);
+		font-size: em(13) !important;
 	}
 
 	.fz12 {
-		font-size: em(12);
+		font-size: em(12) !important;
 	}
 
 	.fz11 {
-		font-size: em(11);
+		font-size: em(11) !important;
 	}
 
 	.fz10 {
-		font-size: em(10);
+		font-size: em(10) !important;
 	}
+
+  .saffron-color {
+    color: $saffron !important;
+  }
+  .skyblue-color {
+    color: $skyblue !important;
+  }
+  .coral-color {
+    color: $coral !important;
+  }
+  .teal-color {
+    color: $teal !important;
+  }
 
 	h1, h2, h3, h4, h5 {
 		font-family: "SamsungSharpSans", arial, sans-serif;
@@ -113,5 +126,70 @@
     font-size: 2px;
 	}
 }
+
+@mixin fz55() {
+  font-size: 12px;
+}
+@mixin fz50() {
+  font-size: em(50);
+}
+@mixin fz45() {
+  font-size: em(45);
+}
+@mixin fz40() {
+  font-size: em(40);
+}
+@mixin fz36() {
+  font-size: em(36);
+}
+@mixin fz30() {
+  font-size: em(30);
+}
+@mixin fz25() {
+  font-size: em(25);
+}
+@mixin fz24() {
+  font-size: em(24);
+}
+@mixin fz23() {
+  font-size: em(23);
+}
+@mixin fz22() {
+  font-size: em(22);
+}
+@mixin fz21() {
+  font-size: em(21);
+}
+@mixin fz20() {
+  font-size: em(20);
+}
+@mixin fz18() {
+  font-size: em(18);
+}
+@mixin fz17() {
+  font-size: em(17);
+}
+@mixin fz16() {
+  font-size: em(16);
+}
+@mixin fz15() {
+  font-size: em(15);
+}
+@mixin fz14() {
+  font-size: em(14);
+}
+@mixin fz13() {
+  font-size: em(13);
+}
+@mixin fz12() {
+  font-size: em(12);
+}
+@mixin fz11() {
+  font-size: em(11);
+}
+@mixin fz10() {
+  font-size: em(10);
+}
+
 
 /*=====  End of TYPOGRAPHY  ======*/

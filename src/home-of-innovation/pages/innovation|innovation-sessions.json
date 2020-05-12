@@ -1,0 +1,34 @@
+{
+  "title": "Innovation Sessions",
+  "description": "Description for Innovation Sessions",
+  "image": "{{innovation|innovation-sessions|grl-pwr-gang[image]}}",
+  "thumb": "{{innovation|innovation-sessions|grl-pwr-gang[image]}}",
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "{{innovation|innovation-sessions|grl-pwr-gang[image]}}",
+        "alt": "{{innovation|innovation-sessions|grl-pwr-gang[alt]}}"
+      },
+      "style": {
+        "desktop": "left",
+        "mobile": "top"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "{{innovation|innovation-sessions[title]}}"
+        }
+      ]
+    },
+    {
+      "type": "share"
+    },
+    {
+      "type": "group",
+      "id": "innovation-sessions",
+      "title": "Episodes"
+    }
+  ]
+}

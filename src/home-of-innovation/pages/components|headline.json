@@ -1,0 +1,84 @@
+{
+  "title": "Headline",
+  "description": "Page for Headline component tests",
+  "image": "https://via.placeholder.com/1440x900.png?text=image%20(1440x900)",
+  "thumb": "https://via.placeholder.com/300x300.png?text=thumb%20(300x300)",
+  "group": "hoi-component",
+  "components": [
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "headline",
+          "level": "1",
+          "copy": "This is a headline 1"
+        }
+      ]
+    },
+    {
+      "type": "spacer"
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "headline",
+          "level": "2",
+          "copy": "This is a headline 2"
+        }
+      ]
+    },
+    {
+      "type": "spacer"
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "This is a headline 3"
+        }
+      ]
+    },
+    {
+      "type": "spacer"
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "headline",
+          "level": "4",
+          "copy": "This is a headline 4"
+        }
+      ]
+    },
+    {
+      "type": "spacer"
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "headline",
+          "level": "5",
+          "copy": "This is a headline 5"
+        }
+      ]
+    },
+    {
+      "type": "spacer"
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "headline",
+          "level": "6",
+          "copy": "This is a headline 6"
+        }
+      ]
+    }
+  ]
+}

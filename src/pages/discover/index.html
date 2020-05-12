@@ -1,10 +1,23 @@
-<!--#include virtual="/uk/aem/header-pdp.html"-->
+{{#if config.staging}}
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" defer></script>
+  </head>
+  <body>
+{{else}}
+  <!--#include virtual="/uk/aem/header-pdp.html"-->
+{{/if}}
 
 	<section class="cheil-static">
 
 		{{>stylesheet}}
 
 		{{>components/nav }}
+
+    {{>components/sidedrawer }}
 
 		<section class="section kv">
 			<div class="section__inner">
@@ -38,18 +51,18 @@
 					</div>
 				</div>
 			  </section>
-	
+
 
 		<section class="section  school__kv-signpost star un-margin">
 				<div class="section__inner">
 						<div class="spaces__header spaces__header-sign">
-								<h3>Not a School</h3>								
+								<h3>Not a School</h3>
 								<p>A programme of workshops, debates and projects, giving the next generation of innovators a head start</p>
 								<a href="/{{ config.site }}/{{ config.subfolder }}/not-a-school/">
 									<button ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:discover-notaschool" data-omni-type="microsite" data-omni="uk:kings-cross:discover-notaschool" class="button btn btn--primary btn--primary--black" id="btn-support">LEARN MORE</button>
 							</a>
 							</div>
-				
+
 				</div>
 			  </section>
 
@@ -63,7 +76,7 @@
 						</div>
 						<div class="recently__content">
 							<div class="recently__header star">
-								<h3>Recently at #SamsungKX</h3>		
+								<h3>Recently at #SamsungKX</h3>
 							</div>
 							<div class="floating">
 								<div class="floating__image star star__recently Slower tab-item is-active flyout" data-tab-trigger="1" id="slot_1">
@@ -81,26 +94,26 @@
 										<a class="button btn btn--primary btn--primary--black star" href="https://www.youtube.com/watch?v=V_qo-YXoaJc&list=PLrUG7VyDs_IUJjPkzyWADKvxld8A4Na1n&index=5&t=0s" id="slot_1_button">Learn More</a>
 									</div>
 								</div>
-							</div>				
+							</div>
 						</div>
 					</div>
 					<div class="recently__container mobile__flex">
-						
-							
+
+
 							<div class="recently__content">
 									<div class="recently__header star">
-											<h3>Recently at #SamsungKX</h3>		
+											<h3>Recently at #SamsungKX</h3>
 										</div>
 								<div class="floating">
-										
+
 									<div class="floating__content star" id="floating__content_mobile">
 											{{>components/discoverSlider slider='recentlySlider' }}
 											{{>components/discoverSlider slider='recentlySliderDescriptions' }}
-								
+
 									</div>
-								</div>				
+								</div>
 							</div>
-						</div>										
+						</div>
 				</div>
 			  </section>
 
@@ -133,7 +146,7 @@
 				  <section class="section showcase">
 						<div class="section__inner" style="height: 100%;">
 							<div class="showcase__help">
-								
+
 								<div class="showcase__copy">
 									<h3 class="showcase__copy__title">A Helping Hand</h3>
 									<span class="showcase__copy__sub-title">Support Lounge</span>
@@ -153,4 +166,9 @@
 		{{>scripts }}
 	</section>
 
-<!--#include virtual="/uk/aem/footer-pdp.html"-->
+  {{#if config.staging}}
+    </body>
+  </html>
+  {{else}}
+  <!--#include virtual="/uk/aem/footer-pdp.html"-->
+  {{/if}}

@@ -1,0 +1,21 @@
+{
+  "title": "Innovation",
+  "description": "Innovation landing page",
+  "theme": {
+    "color": "#00C3B2"
+  },
+  "components": [
+    {
+      "type": "group-land",
+      "items": [
+        {
+          "title": "{{innovation|innovation-sessions|grl-pwr-gang[title]}}",
+          "description": "{{innovation|innovation-sessions|grl-pwr-gang[description]}}",
+          "image": "{{innovation|innovation-sessions|grl-pwr-gang[image]}}",
+          "alt": "{{innovation|innovation-sessions|grl-pwr-gang[alt]}}",
+          "url": "{{innovation|innovation-sessions|grl-pwr-gang[url]}}"
+        }
+      ]
+    }
+  ]
+}

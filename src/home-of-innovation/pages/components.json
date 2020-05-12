@@ -1,0 +1,51 @@
+{
+  "title": "Components",
+  "description": "for testing",
+  "image": "https://via.placeholder.com/1440x900.png?text=image%20(1440x900)",
+  "thumb": "https://via.placeholder.com/300x300.png?text=thumb%20(300x300)",
+  "group": "level-1",
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "{{components[image]}}"
+      },
+      "style": {
+        "desktop": "left",
+        "mobile": "top"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "level": "1",
+          "copy": "Components"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Home of innovation components category"
+          ]
+        },
+        {
+          "type": "buttons",
+          "items": [
+            {
+              "copy": "button text",
+              "url": "url link"
+            },
+            {
+              "copy": "second button",
+              "url": "url link"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "hoi-component",
+      "title": "Component Pages"
+    }
+  ]
+}

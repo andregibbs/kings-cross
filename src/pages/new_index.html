@@ -1,4 +1,16 @@
-<!--#include virtual="/uk/aem/header-pdp.html"-->
+{{#if config.staging}}
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" defer></script>
+  </head>
+  <body>
+{{else}}
+  <!--#include virtual="/uk/aem/header-pdp.html"-->
+{{/if}}
+
 
 <section class="cheil-static homePage">
 
@@ -6,7 +18,7 @@
 
 	{{>components/nav }}
 
-	{{>components/homepageKV }}
+  {{>components/homeKV }}
 
 	<!-- hidden h1 for seo -->
 	<h1 class="h1-hidden">Welcome to Samsung KX</h1>
@@ -14,10 +26,9 @@
 		<section class="section copy">
 				<div class="section__inner">
 					<div class="copy__container">
-							<p>It’s not a shop. It’s a place you can <span class="copy__hashtag">#DoWhatYouCant</span></p>
 							<a ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:general support_discover-more"
 							data-omni-type="microsite" data-omni="uk:kings-cross:home:discover-more"
-							href="/{{ config.site }}/{{ config.subfolder }}/discover" class="button btn btn--primary">DISCOVER MORE</a>
+							href="/{{ config.site }}{{ config.subfolder }}/discover" class="button btn btn--primary">DISCOVER MORE</a>
 					</div>
 				</div>
 			  </section>
@@ -93,22 +104,19 @@
 
         <!-- coronavirus message -->
         <div class="welcome__notice">
-            <p>
-                Samsung KX is temporarily closed until further notice.
-              </p>
-              <p>
-                With the well-being of our customers and employees as our utmost priority, and in consideration of current recommendations from health and government authorities, we are temporarily closing Samsung KX.
-              </p>
-              <p>
-                Our service teams are ready to support you and your product needs, available at <a href="https://www.samsung.com/uk/support" target="_blank">https://www.samsung.com/uk/support</a>
-              </p>
-              <p>
-                We appreciate your loyalty and understanding, and will continue to update you during this ever-evolving situation.
-              </p>
-              <p>
-                We wish you, your families and your friends strength and good health.
-              </p>
-            </div>
+          <p>
+            Samsung KX is temporarily closed until further notice.
+          </p>
+          <p>
+                With the wellbeing of our customers and employees as our utmost priority, and in consideration of current recommendations from health and government authorities, Samsung KX is temporarily closed until further notice.
+          </p>
+          <p>
+                Samsung product support remains available at <a href="//www.samsung.com/uk/support" target="_blank">https://www.samsung.com/uk/support</a>
+          </p>
+          <p>
+                Thank you for your continued loyalty and understanding. Please take care of yourselves, your loved ones and your communities.
+          </p>
+        </div>
         <!-- end coronavirus message -->
 			</div>
 
@@ -132,4 +140,9 @@
 
 </section>
 
+{{#if config.staging}}
+  </body>
+</html>
+{{else}}
 <!--#include virtual="/uk/aem/footer-pdp.html"-->
+{{/if}}

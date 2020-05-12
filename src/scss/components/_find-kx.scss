@@ -3,9 +3,9 @@
 =============================================*/
 
 .findkx {
-  background: $background;
+  background: $black;
   position: relative;
-  padding-top: 0 !important;
+
   .section__inner {
     display: flex;
     justify-content: space-between;
@@ -42,10 +42,18 @@
       }
     }
     .findkx__map {
-      max-width: 70%;
+      display: flex;
+      flex-grow: 1;
+      position: relative;
 
-      &--mobile{
-        display: none;
+      img {
+        height: 100%;
+        width: auto;
+        margin-left: auto;
+        position: absolute;
+        right: 0;
+        transform: scale(1.4);
+        transform-origin: right center;
       }
 
       @media screen and (max-width: $mobile) {
@@ -54,23 +62,13 @@
         margin: get-mobile-vw(32) 0;
 
         img {
-          height: 60vh;
-          min-height: 315px;
-          max-height: 400px;
-          object-fit: cover;
+          position: static;
+          width: 100%;
+          transform: none;
         }
       }
 
       @media screen and (max-width: 425px) {
-        &--desktop{
-          display: none;
-        }
-        &--mobile{
-          display: block;
-          height: unset !important;
-          max-height: unset !important;
-          object-fit: scale-down !important;
-        }
       }
     }
   }
@@ -111,7 +109,7 @@
       display: none;
       @media screen and (max-width: $mobile) {
         display: block;
-        align-self: flex-start;
+        // align-self: flex-start;
       }
     }
   }
@@ -124,7 +122,7 @@
   a {
     margin-top: 2%;
   }
-  
+
 }
 }
 

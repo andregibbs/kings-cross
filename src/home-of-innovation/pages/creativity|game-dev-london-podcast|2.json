@@ -1,0 +1,56 @@
+{
+  "title": "Game Dev London Podcast - Episode Two",
+  "description": "Episode Two",
+  "image": "{{creativity|game-dev-london-podcast[image]}}",
+  "alt": "Game Dev London logo in pink and blue, linking through to episode 2 of the podcast",
+  "thumb": "{{creativity|game-dev-london-podcast[image]}}",
+  "group": "game-dev-london-podcast",
+  "sort": 2,
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "audio",
+        "content": "https://images.samsung.com/is/content/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/game-dev-london-podcast/2.mp4",
+        "poster": "{{creativity|game-dev-london-podcast[image]}}"
+      },
+      "style": {
+        "desktop": "left",
+        "mobile": "top"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "{{creativity|game-dev-london-podcast|2[title]}}"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Game Dev London is a diverse community group with a passion for all things gaming, including everything from design to conception, production, testing and of course playing the games themselves.",
+            "In this episode, Adam interviews Dan Hawkins, a Recruitment Specialist at Aardvark Swift, to get his perspective on the game industry at this time. Find out more from Adam and Dan about how they think the industry will change."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "share"
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "paragraphs",
+          "text": [
+            "In light of the recent pandemic, gaming has become more popular than ever before, offering indoors entertainment and a fun way to keep connected with those closest to you. Nevertheless, it doesn’t stop here. Lockdown has created a window for communities such as Game Dev to explore what’s missing from the current gaming offering, current trends and the challenges that come with new industry restrictions. As the home of innovation, SamsungKX is providing an online platform for Game Dev to uncover this knowledge and inspire gaming enthusiasts via weekly online podcasts. The series aims to help both those who are starting out in the gaming world and those looking to upskill in this area.",
+            "Please keep your eyes peeled for their weekly podcasts."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "game-dev-london-podcast",
+      "title": "More episodes"
+    }
+  ]
+}

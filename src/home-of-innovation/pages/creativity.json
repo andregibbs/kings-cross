@@ -1,0 +1,35 @@
+{
+  "title": "Creativity",
+  "description": "KX Creativity",
+  "theme": {
+    "color": "#FF4337"
+  },
+  "components": [
+    {
+      "type": "group-land",
+      "items": [
+        {
+          "title": "{{creativity|university-of-lincoln[title]}}",
+          "description": "{{creativity|university-of-lincoln[description]}}",
+          "image": "{{creativity|university-of-lincoln[image]}}",
+          "alt": "{{creativity|university-of-lincoln[alt]}}",
+          "url": "{{creativity|university-of-lincoln[url]}}"
+        },
+        {
+          "title": "{{creativity|game-dev-london-podcast|1[title]}}",
+          "description": "{{creativity|game-dev-london-podcast|1[description]}}",
+          "image": "{{creativity|game-dev-london-podcast|1[image]}}",
+          "alt": "{{creativity|game-dev-london-podcast|1[alt]}}",
+          "url": "{{creativity|game-dev-london-podcast|1[url]}}"
+        },
+        {
+          "title": "{{creativity|game-dev-london-podcast|2[title]}}",
+          "description": "{{creativity|game-dev-london-podcast|2[description]}}",
+          "image": "{{creativity|game-dev-london-podcast|2[image]}}",
+          "alt": "{{creativity|game-dev-london-podcast|2[alt]}}",
+          "url": "{{creativity|game-dev-london-podcast|2[url]}}"
+        }
+      ]
+    }
+  ]
+}

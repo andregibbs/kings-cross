@@ -1,0 +1,175 @@
+{
+  "title": "Gallery",
+  "description": "Page for gallery components",
+  "image": "https://via.placeholder.com/1440x900.png?text=image%20(1440x900)",
+  "thumb": "https://via.placeholder.com/300x300.png?text=thumb%20(300x300)",
+  "group": "hoi-component",
+  "components": [
+    {
+      "type": "gallery",
+      "title": "Gallery Title",
+      "items": [
+        {
+          "type": "image",
+          "title": "Test Image",
+          "description": "Description of gallery item",
+          "image": "https://via.placeholder.com/300x300.png?text=image%20(300x300)",
+          "content": "https://via.placeholder.com/1440x900.png?text=content%20(1440x900)"
+        },
+        {
+          "type": "image",
+          "title": "Test Image",
+          "description": "Description of gallery item",
+          "image": "https://via.placeholder.com/300x300.png?text=image%20(300x300)",
+          "content": "https://via.placeholder.com/1440x900.png?text=content%20(1440x900)"
+        },
+        {
+          "type": "youtube",
+          "title": "Test Youtube",
+          "description": "Description of youtube item",
+          "image": "https://via.placeholder.com/300x300.png?text=image%20(300x300)",
+          "content": "L989S2QxXUU"
+        },
+        {
+          "type": "video",
+          "title": "Test native video",
+          "description": "Description of video item",
+          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/homekv/test-video-poster.png?$ORIGIN_PNG$",
+          "poster": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/homekv/test-video-poster.png?$ORIGIN_PNG$",
+          "content": "https://images.samsung.com/is/content/samsung/p5/uk/explore/kings-cross/homekv/test-video.mp4"
+        },
+        {
+          "type": "image",
+          "title": "Test Image",
+          "description": "Description of image item",
+          "image": "https://via.placeholder.com/300x300.png?text=image%20(300x300)",
+          "content": "https://via.placeholder.com/1440x900.png?text=content%20(1440x900)"
+        },
+        {
+          "type": "image",
+          "title": "Test Image",
+          "description": "Description of image item",
+          "image": "https://via.placeholder.com/300x300.png?text=image%20(300x300)",
+          "content": "https://via.placeholder.com/1440x900.png?text=content%20(1440x900)"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "title": "Second Gallery",
+      "items": [
+        {
+          "type": "image",
+          "title": "Test Image",
+          "description": "Description of gallery item",
+          "image": "https://via.placeholder.com/300x300.png?text=image%20(300x300)",
+          "content": "https://via.placeholder.com/1440x900.png?text=content%20(1440x900)"
+        },
+        {
+          "type": "image",
+          "title": "Test Image",
+          "description": "Description of gallery item",
+          "image": "https://via.placeholder.com/300x300.png?text=image%20(300x300)",
+          "content": "https://via.placeholder.com/1440x900.png?text=content%20(1440x900)"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "title": "Big Gallery",
+      "items": [
+        {
+          "type": "image",
+          "title": "Test Image",
+          "description": "Description of gallery item",
+          "image": "https://via.placeholder.com/300x300.png?text=image%20(300x300)",
+          "content": "https://via.placeholder.com/1440x900.png?text=content%20(1440x900)"
+        },
+        {
+          "type": "image",
+          "title": "Test Image",
+          "description": "Description of gallery item",
+          "image": "https://via.placeholder.com/300x300.png?text=image%20(300x300)",
+          "content": "https://via.placeholder.com/1440x900.png?text=content%20(1440x900)"
+        },
+        {
+          "type": "image",
+          "title": "Test Image",
+          "description": "Description of gallery item",
+          "image": "https://via.placeholder.com/300x300.png?text=image%20(300x300)",
+          "content": "https://via.placeholder.com/1440x900.png?text=content%20(1440x900)"
+        },
+        {
+          "type": "image",
+          "title": "Test Image",
+          "description": "Description of gallery item",
+          "image": "https://via.placeholder.com/300x300.png?text=image%20(300x300)",
+          "content": "https://via.placeholder.com/1440x900.png?text=content%20(1440x900)"
+        },
+        {
+          "type": "image",
+          "title": "Test Image",
+          "description": "Description of gallery item",
+          "image": "https://via.placeholder.com/300x300.png?text=image%20(300x300)",
+          "content": "https://via.placeholder.com/1440x900.png?text=content%20(1440x900)"
+        },
+        {
+          "type": "image",
+          "title": "Test Image",
+          "description": "Description of gallery item",
+          "image": "https://via.placeholder.com/300x300.png?text=image%20(300x300)",
+          "content": "https://via.placeholder.com/1440x900.png?text=content%20(1440x900)"
+        },
+        {
+          "type": "image",
+          "title": "Test Image",
+          "description": "Description of gallery item",
+          "image": "https://via.placeholder.com/300x300.png?text=image%20(300x300)",
+          "content": "https://via.placeholder.com/1440x900.png?text=content%20(1440x900)"
+        },
+        {
+          "type": "image",
+          "title": "Test Image",
+          "description": "Description of gallery item",
+          "image": "https://via.placeholder.com/300x300.png?text=image%20(300x300)",
+          "content": "https://via.placeholder.com/1440x900.png?text=content%20(1440x900)"
+        },
+        {
+          "type": "image",
+          "title": "Test Image",
+          "description": "Description of gallery item",
+          "image": "https://via.placeholder.com/300x300.png?text=image%20(300x300)",
+          "content": "https://via.placeholder.com/1440x900.png?text=content%20(1440x900)"
+        },
+        {
+          "type": "image",
+          "title": "Test Image",
+          "description": "Description of gallery item",
+          "image": "https://via.placeholder.com/300x300.png?text=image%20(300x300)",
+          "content": "https://via.placeholder.com/1440x900.png?text=content%20(1440x900)"
+        },
+        {
+          "type": "image",
+          "title": "Test Image",
+          "description": "Description of gallery item",
+          "image": "https://via.placeholder.com/300x300.png?text=image%20(300x300)",
+          "content": "https://via.placeholder.com/1440x900.png?text=content%20(1440x900)"
+        },
+        {
+          "type": "image",
+          "title": "Test Image",
+          "description": "Description of gallery item",
+          "image": "https://via.placeholder.com/300x300.png?text=image%20(300x300)",
+          "content": "https://via.placeholder.com/1440x900.png?text=content%20(1440x900)"
+        },
+        {
+          "type": "image",
+          "title": "Test Image",
+          "description": "Description of gallery item",
+          "image": "https://via.placeholder.com/300x300.png?text=image%20(300x300)",
+          "content": "https://via.placeholder.com/1440x900.png?text=content%20(1440x900)"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "title": "Entertainment",
+  "description": "",
+  "theme": {
+    "color": "#0077C8"
+  },
+  "components": [
+    {
+      "type": "group-land",
+      "items": [
+        {
+          "title": "{{creativity|game-dev-london-podcast|1[title]}}",
+          "description": "{{creativity|game-dev-london-podcast|1[description]}}",
+          "image": "{{creativity|game-dev-london-podcast|1[image]}}",
+          "alt": "{{creativity|game-dev-london-podcast|1[alt]}}",
+          "url": "{{creativity|game-dev-london-podcast|1[url]}}"
+        },
+        {
+          "title": "{{creativity|game-dev-london-podcast|2[title]}}",
+          "description": "{{creativity|game-dev-london-podcast|2[description]}}",
+          "image": "{{creativity|game-dev-london-podcast|2[image]}}",
+          "alt": "{{creativity|game-dev-london-podcast|2[alt]}}",
+          "url": "{{creativity|game-dev-london-podcast|2[url]}}"
+        }
+      ]
+    }
+  ]
+}

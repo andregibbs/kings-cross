@@ -1,27 +1,29 @@
 /* Components */
-import nav from './components/nav';
-import whatson from './components/whatson';
-import singleEvent from './components/singleEvent';
-import places from './components/places';
-import whatIsKx from './components/whatIsKx';
-import repair from './components/repair';
-import calendar from './components/calendar';
-import slider from './components/slider';
-import bookingRefFetcher from './components/bookingRefFetcher';
-import discover from './components/discover';
-import support from './components/support';
-import experience from './components/experience';
-import lottieAnim from './components/lottieAnim';
-import loadingScreen from './components/loadingScreen';
-import getParam from './components/getParam';
-import school from './components/school'
+import nav from "./components/nav";
+import sidedrawer from "./components/sidedrawer";
+import whatson from "./components/whatson";
+import singleEvent from "./components/singleEvent";
+import places from "./components/places";
+import whatIsKx from "./components/whatIsKx";
+import repair from "./components/repair";
+import calendar from "./components/calendar";
+import slider from "./components/slider";
+import bookingRefFetcher from "./components/bookingRefFetcher";
+import discover from "./components/discover";
+import support from "./components/support";
+import experience from "./components/experience";
+import lottieAnim from "./components/lottieAnim";
+import loadingScreen from "./components/loadingScreen";
+import getParam from "./components/getParam";
+import school from "./components/school";
+import homeKV from './components/homeKV';
 
-import loadingScreenAnimation from '../data/loadingScreen.json';
-import create from '../data/Create.json';
-import colab from '../data/Colab.json';
-import coms from '../data/Coms.json';
-import critical from '../data/Crit_think.json';
-import doLogFunction from './dev/doLog';
+import loadingScreenAnimation from "../data/loadingScreen.json";
+import create from "../data/Create.json";
+import colab from "../data/Colab.json";
+import coms from "../data/Coms.json";
+import critical from "../data/Crit_think.json";
+import doLogFunction from "./dev/doLog";
 var doLog = doLogFunction();
 
 //experimental
@@ -41,7 +43,7 @@ $(document).ready(function () {
 	// 	$('.accordianIcon').hasClass('accordianIcon__expand') ? $(".accordianIcon").removeClass('accordianIcon__expand').addClass('accordianIcon__collapse') : $(".accordianIcon").removeClass('accordianIcon__collapse').addClass('accordianIcon__expand')
 	// 	$('.accordian').hasClass('accordian__expanded') ? $(".accordian").removeClass('accordian__expanded').addClass('accordian__collapsed') : $(".accordian").removeClass('accordian__collapsed').addClass('accordian__expanded')
 	// })
-	if (window.jQuery) {  
+	if (window.jQuery) {
        // Open a URL in a lightbox
 // var lightbox = lity('#video-intro');
 
@@ -194,10 +196,14 @@ $(document).ready(function () {
 	}
 
 	function fetchData(callback) {
+
 		$.get(apiUrl + kxConfig.seriesId, {
 			'timezone': "Europe/London",
 			'isoCurrentDate': isoCurrentDate.toISOString()
 		}).success(function (data) {
+
+    // var data = fakeEvents;
+
 			doLog("All events:", data);
 			for (var i = 0; i < data.length; i++) {
 				// MERGE JSON DATA HELD WITHIN description INTO FEED as 'extra' property !!!!!
@@ -209,7 +215,7 @@ $(document).ready(function () {
 
 			// store the 'converted' data as events in main and filter out events with no extra info
 			doLog(data.filter(event => !event.extra));
-			
+
 			events = data.filter(event => event.extra);
 
 
@@ -220,6 +226,7 @@ $(document).ready(function () {
 			//get all the topic ids
 
 			events.forEach(event => {
+        console.log(topics)
 				if (topics.includes(event.topic.id)) {
 
 				} else {
@@ -358,16 +365,19 @@ $(document).ready(function () {
 
 	switch (window.location.pathname) {
 		case '/uk/explore/kings-cross/':
+    case '/uk/explore/kings-cross/hoi/':
 
 			fetchData(whatIsKx);
-			//places();
-			// whatIsKx();
-		// 	var container = document.getElementById('loadingScreen__animation');
-		//    loadingScreen(container, loadingScreenAnimation);
-			
+			places();
+      homeKV();
 
 			var container = document.getElementById('loadingScreen__animation');
-			loadingScreen(container, loadingScreenAnimation);
+			loadingScreen(container, loadingScreenAnimation, () => {
+
+        // initialise home page KV
+
+
+      }, true)
 			break;
 
 		case "/uk/explore/kings-cross/discover/":
@@ -375,22 +385,22 @@ $(document).ready(function () {
 			discover();
 			function showImages(el) {
 				var windowHeight = jQuery( window ).height();
-				
+
 				$(el).each(function(){
 					var thisPos = $(this).offset().top;
-		
+
 					var topOfWindow = $(window).scrollTop();
 					if (topOfWindow + windowHeight - 200 > thisPos ) {
 						$(this).addClass("fadeIn");
 					}
 				});
 			}
-		
+
 			// if the image in the window of browser when the page is loaded, show that image
 			$(document).ready(function(){
 					showImages('.star');
 			});
-		
+
 			// if the image in the window of browser when scrolling the page, show that image
 			$(window).scroll(function() {
 					showImages('.star');
@@ -447,15 +457,15 @@ $(document).ready(function () {
 				lottieAnim('colab', colab);
 				lottieAnim('coms', coms);
 				lottieAnim('crit', critical);
-				lottieAnim('create', create);	
+				lottieAnim('create', create);
 				//places();
-				
+
 				function showImages(el) {
 					var windowHeight = jQuery( window ).height();
-					
+
 					$(el).each(function(){
 						var thisPos = $(this).offset().top;
-			
+
 						var topOfWindow = $(window).scrollTop();
 						if (topOfWindow + windowHeight - 200 > thisPos ) {
 							$(this).addClass("fadeIn");
@@ -464,17 +474,17 @@ $(document).ready(function () {
 				}
 				function showVidSvg(el) {
 					var windowHeight = jQuery( window ).height();
-					
+
 					$(el).each(function(){
 						var thisPos = $(this).offset().top;
-			
+
 						var topOfWindow = $(window).scrollTop();
 						if (topOfWindow + windowHeight - 200 > thisPos ) {
 							$(this).addClass("fadevid");
 						}
 					});
 				}
-			
+
 				// if the image in the window of browser when the page is loaded, show that image
 				$(document).ready(function(){
 						showImages('.star');
@@ -485,42 +495,42 @@ $(document).ready(function () {
 							case "one":
 								setTimeout(function(){$('html, body').animate({
 									scrollTop: $("#weekOne").offset().top-parseInt(navBarHeight)
-								}, 500); }, 2000);	
+								}, 500); }, 2000);
 								break;
 							case "two":
 								setTimeout(function(){$('html, body').animate({
 									scrollTop: $("#weekTwo").offset().top-parseInt(navBarHeight)
-								}, 500); }, 2000);	
+								}, 500); }, 2000);
 								break;
 							case "three":
 								setTimeout(function(){$('html, body').animate({
 									scrollTop: $("#weekThree").offset().top-parseInt(navBarHeight)
-								}, 500); }, 2000);	
+								}, 500); }, 2000);
 								break;
 							case "four":
 								setTimeout(function(){$('html, body').animate({
 									scrollTop: $("#weekFour").offset().top-parseInt(navBarHeight)
-								}, 500); }, 2000);	
+								}, 500); }, 2000);
 								break;
 							default:
 								break;
 						}
 						// if(window.location.href.indexOf("?week=one") > -1) {
-							
+
 						// 	// setTimeout(function(){$('html, body').animate({
 						// 	// 	scrollTop: $("#scrollto").offset().top-10
-						// 	// }, 1000); }, 2000);		
-													
+						// 	// }, 1000); }, 2000);
+
 						//  }
 
 				});
-			
+
 				// if the image in the window of browser when scrolling the page, show that image
 				$(window).scroll(function() {
 						showImages('.star');
 						showVidSvg('.vidstar');
 				});
-					
+
 			break;
 
 		case "/uk/explore/kings-cross/not-a-school/sign-up/":
@@ -531,8 +541,5 @@ $(document).ready(function () {
 			// Your init here
 		}
 	}
-
-
-
 
 })

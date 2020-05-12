@@ -1,0 +1,71 @@
+// Import required files from base kx site
+
+@import "../base/variables";
+
+// Mixins
+@import "../mixins/clearfix";
+@import "../mixins/typography";
+@import "../mixins/vw";
+
+// Base
+@import "../base/base";
+@import "../base/typography";
+
+// Helpers
+@import "../helpers/helpers";
+
+
+@import "../components/social";
+@import "../components/find-kx";
+
+// wrap all components in hoi class
+
+$spacing-desktop: em(40); //$p-borders-desktop * 1px;
+$spacing-mobile: em(40); //$m-borders-mobile * 1px;
+
+$padding-desktop: $p-borders-desktop * 1px;
+$padding-mobile: $p-borders-mobile * 1px;
+
+$margin-desktop: $m-borders-desktop * 1px;
+$margin-mobile: $m-borders-mobile * 1px;
+
+/*----------  Nav height  ----------*/
+$nav-mobile-height: get-mobile-vw(100);
+
+.cheil-static.home-of-innovation {
+
+  @import "../components/nav";
+  @import "../components/sidedrawer";
+  @import "../components/home-of-innovation/content";
+
+  background: black;
+  color: white;
+
+  .hoiContent {
+
+    // general styling & containers
+    @import "../components/home-of-innovation/typography";
+    @import "../components/home-of-innovation/list";
+
+    // all pages
+    @import "../components/home-of-innovation/hoiBreadcrumbs";
+
+    // used in page
+    @import "../components/home-of-innovation/hoiKv";
+    @import "../components/home-of-innovation/hoiShare";
+    @import "../components/home-of-innovation/hoiButtons";
+    @import "../components/home-of-innovation/hoiGroup";
+    @import "../components/home-of-innovation/hoiLinkList";
+    @import "../components/home-of-innovation/hoiHeadline";
+    @import "../components/home-of-innovation/hoiParagraphs";
+    @import "../components/home-of-innovation/hoiGallery";
+    @import "../components/home-of-innovation/hoiGroupLand";
+
+    @import "../components/home-of-innovation/hoiWrapper";
+    @import "../components/home-of-innovation/hoiSpacer";
+    @import "../components/home-of-innovation/hoiMedia";
+
+  }
+
+
+}
