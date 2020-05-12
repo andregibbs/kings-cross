@@ -28,6 +28,13 @@
           "image": "{{creativity|game-dev-london-podcast|2[image]}}",
           "alt": "{{creativity|game-dev-london-podcast|2[alt]}}",
           "url": "{{creativity|game-dev-london-podcast|2[url]}}"
+        },
+        {
+          "title": "{{creativity|editing-sessions|1[title]}}",
+          "description": "{{creativity|editing-sessions|1[description]}}",
+          "image": "{{creativity|editing-sessions|1[image]}}",
+          "alt": "{{creativity|editing-sessions|1[alt]}}",
+          "url": "{{creativity|editing-sessions|1[url]}}"
         }
       ]
     }

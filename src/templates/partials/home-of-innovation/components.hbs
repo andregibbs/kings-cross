@@ -54,7 +54,9 @@
    --}}
 
   {{#if_equals this.type 'group'}}
-  	{{> home-of-innovation/hoiLinkList this }}
+    {{#if (gt this.items.length 0)}}
+      {{> home-of-innovation/hoiLinkList this }}
+    {{/if}}
   {{/if_equals}}
 
   {{#if_equals this.type 'related' }}

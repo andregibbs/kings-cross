@@ -22,11 +22,12 @@
     data-omni-type="microsite"
     data-omni="uk:kings-cross:{{@root.title}}"  class="hoiKv__Media">
     {{#if_equals this.media.type 'image'}}
-  	 <img
+    <div
         class="hoiKv__MediaImage"
-        src="{{ this.media.content }}"
-        alt="{{ this.media.alt }}"
-        />
+        style="background-image:url('{{ this.media.content }}')"
+        role="img"
+        aria-label="{{ this.media.alt }}">
+    </div>
     {{/if_equals}}
     {{#if (or (eq this.media.type 'video') (eq this.media.type 'audio')) }}
       {{> home-of-innovation/hoiMediaVideo

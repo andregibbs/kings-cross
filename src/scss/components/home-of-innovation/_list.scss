@@ -28,8 +28,11 @@
   height: 0;
   padding-bottom: 100%;
   overflow: hidden;
+  background-size: cover;
+  background-position: center;
 }
 
+// ItemImage removed
 .hoiList__ItemImage {
   position: absolute;
   height: 100%;
