@@ -5,8 +5,12 @@
   {{/if}}
   <div class="hoiList hoiList--grid-4">
     {{#each items }}
-  		<a ga-ca="microsite" ga-ac="feature" ga-la="uk:kings-cross:{{@root.title}}:{{to_lower_case this.title }}"
+      {{#if (eq this.url false)}}
+        <div class="hoiList__Item">
+      {{else}}
+  		  <a ga-ca="microsite" ga-ac="feature" ga-la="uk:kings-cross:{{@root.title}}:{{to_lower_case this.title }}"
 					data-omni-type="microsite" data-omni="uk:kings-cross:{{@root.title}}:{{to_lower_case this.title }}" class="hoiList__Item"  href="{{{ this.url }}}">
+      {{/if}}
   			<h6 class="hoiList__ItemTitle">{{ this.title }}</h6>
         <!-- <div class="hoiList__ItemImageWrap"> -->
         <div class="hoiList__ItemImageWrap"
@@ -16,7 +20,11 @@
           <!-- <img class="hoiList__ItemImage" src="{{ this.image }}" alt="{{ this.alt }}"> -->
         </div>
   			<div>{{{ this.text }}}</div>
-  		</a>
+      {{#if (eq this.url false)}}
+        </div>
+      {{else}}
+  		  </a>
+      {{/if}}
     {{/each}}
 
     {{#spacerElements items 4}}

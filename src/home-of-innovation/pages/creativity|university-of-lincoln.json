@@ -37,6 +37,15 @@
       "type": "wrapper",
       "components": [
         {
+          "type": "paragraphs",
+          "style": {
+            "large": true
+          },
+          "text": [
+            "As the Home of Innovation, SamsungKX have provided the University of Lincoln a virtual platform for students of the BRADLAB project to give them an opportunity to remotely pitch their exciting new product designs via pre-recorded video content. Students will receive exclusive feedback from the Samsung product design team, alongside leading TV presenter, author and technology broadcaster, Jason Bradbury. Submissions for the BRADLAB project can be seen following the below link."
+          ]
+        },
+        {
           "type": "buttons",
           "items": [
             {
@@ -99,7 +108,7 @@
         {
           "type": "headline",
           "copy": "BRADLAB Project Winner 2020",
-          "level": "4"
+          "level": "3"
         },
         {
           "type": "paragraphs",

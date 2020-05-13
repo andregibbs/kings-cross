@@ -1,6 +1,11 @@
 {{#* inline 'groupLandItem'}}
-  <a ga-ca="microsite" ga-ac="feature" ga-la="uk:kings-cross:{{@root.title}}:{{this.title}}"
-					data-omni-type="microsite" data-omni="uk:kings-cross:{{@root.title}}:{{this.title}}" class="hoiGroupLand__Item" href="{{this.url}}">
+
+  {{#if (eq this.url false)}}
+    <div class="hoiGroupLand__Item">
+  {{else}}
+    <a ga-ca="microsite" ga-ac="feature" ga-la="uk:kings-cross:{{@root.title}}:{{this.title}}"
+				data-omni-type="microsite" data-omni="uk:kings-cross:{{@root.title}}:{{this.title}}" class="hoiGroupLand__Item" href="{{this.url}}">
+  {{/if}}
 
     <div class="hoiGroupLand__Image" role="img" alt="{{this.alt}}" style="background-image:url('{{this.image}}')"></div>
     <!-- <img class="hoiGroupLand__Image" src="{{this.image}}" /> -->
@@ -10,7 +15,12 @@
       <p>{{this.description}}</p>
     </div>
 
-  </a>
+  {{#if (eq this.url false)}}
+    </div>
+  {{else}}
+    </a>
+  {{/if}}
+
 {{/inline}}
 
 <div class="hoiGroupLand  hoiGroupLand--{{items.length}}-items">

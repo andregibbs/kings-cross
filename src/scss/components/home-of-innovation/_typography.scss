@@ -12,10 +12,11 @@ li {
 
 
 a {
-  @include fz22();
-  @media screen and (min-width: $mobile + 1) {
-    @include fz16();
-  }
+  font-size: 1em;
+  // @include fz22();
+  // @media screen and (min-width: $mobile + 1) {
+  //   @include fz16();
+  // }
 }
 
 h1, .h1 {

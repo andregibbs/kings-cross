@@ -33,6 +33,9 @@
       "components": [
         {
           "type": "paragraphs",
+          "style": {
+            "large": true
+          },
           "text": [
             "Real-time recipes, plant-based décor and a taste of the Caribbean; Samsung KX reveals five kitchen tips and ‘triKX’ to try at home."
           ]
@@ -56,7 +59,7 @@
         {
           "type": "paragraphs",
           "text": [
-            "Planning a menu for the week ahead can help strip back food waste and save time on shopping, though daily meal inspiration can be tricky.  The Samsung Family Hub™ Fridge Freezer partnership with Whisk offers a range of exciting, personalised recipes. Using the built-in camera, the fridge recommends meals based on the ingredients available, as well as the go-to dishes that families loves most."
+            "Planning a menu for the week ahead can help strip back food waste and save time on shopping, though daily meal inspiration can be tricky. The <a href=\"https://www.samsung.com/uk/refrigerators/family-hub-fridge-freezers/\">Samsung Family Hub™ Fridge Freezer</a> partnership with Whisk offers a range of exciting, personalised recipes. Using the built-in camera, the fridge recommends meals based on the ingredients available, as well as the go-to dishes that families loves most."
           ]
         },
         {

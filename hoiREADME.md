@@ -44,6 +44,10 @@ All files (including non HOI pages) are included and existing files will be over
 Command:  
 `bash ./dodeploy staging`
 
+### Deployment
+
+Run both `gulp hoi-dev` & `gulp` for scraping.
+
 
 #### Staging URL
 https://d1bb30i8nznsls.cloudfront.net/uk/explore/kings-cross/
@@ -57,6 +61,8 @@ Pages will be built under `/uk/explore/kings-cross/` with pipes indicating subdi
 
 Example `category-page|single-page.json` will create a page with the path `/uk/explore/kings-cross/category-page/single-page`. Pages can (probably) be as deep as required and also use numbers as url paths.
 
+The placeholder key denotes that the page should be referenced in the group component, but not linked to. Functionality could be used in other components if needed. 
+
 ### Structure
 ```javaScript
 {
@@ -67,6 +73,7 @@ Example `category-page|single-page.json` will create a page with the path `/uk/e
   "thumb": THUMB_IMAGE_URL (REQUIRED)
   "group": PAGE_GROUP_ID (OPTIONAL)
   "sort": PAGE_GROUP_SORT (number sort index for PAGE_GROUP_ID)(OPTIONAL)
+  "placeholder": PLACEHOLDER_PAGE (if the page should be referenced but not linked to)(OPTIONAL)
   "theme": THEME_OBJECT (OPTIONAL) {
     "color": LINK_COLOR (OPTIONAL)
   },

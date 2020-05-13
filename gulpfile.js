@@ -334,12 +334,13 @@ function HOITemplates() {
           // create array of items with data
           // console.log(publicUrl, path.replace(pagesBasePath, '').replace(/\|/g,'/').replace('.json', ''))
           component.items = groupPages.map(({path, pageData}) => {
+            const url = pageData.placeholder ? false : publicUrl + path.replace(pagesBasePath, '').replace(/\|/g,'/').replace('.json', '')
             return {
               title: pageData.title,
               image: pageData.thumb,
               alt: pageData.alt || pageData.title,
               sort: pageData.sort,
-              url: publicUrl + path.replace(pagesBasePath, '').replace(/\|/g,'/').replace('.json', ''),
+              url,
             }
           })
           component.items.sort((a, b) => a.sort - b.sort)

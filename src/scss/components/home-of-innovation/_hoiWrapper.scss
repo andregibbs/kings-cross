@@ -25,6 +25,10 @@
   .hoiWrapper .hoiWrapper {
     margin: $spacing-desktop calc(#{$spacing-desktop} / 2);
   }
+  .hoiWrapper .hoiMedia {
+    padding: $spacing-desktop calc(#{$spacing-desktop} * 2);
+  }
+
 }
 
 @media screen and (min-width: $desktop + 1) {

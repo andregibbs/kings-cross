@@ -14,6 +14,13 @@
           "image": "{{innovation|innovation-sessions|grl-pwr-gang[image]}}",
           "alt": "{{innovation|innovation-sessions|grl-pwr-gang[alt]}}",
           "url": "{{innovation|innovation-sessions|grl-pwr-gang[url]}}"
+        },
+        {
+          "title": "{{creativity|university-of-lincoln[title]}}",
+          "description": "{{creativity|university-of-lincoln[description]}}",
+          "image": "{{creativity|university-of-lincoln[image]}}",
+          "alt": "{{creativity|university-of-lincoln[alt]}}",
+          "url": "{{creativity|university-of-lincoln[url]}}"
         }
       ]
     }

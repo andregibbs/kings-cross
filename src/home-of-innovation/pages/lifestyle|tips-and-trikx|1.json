@@ -33,6 +33,9 @@
       "components": [
         {
           "type": "paragraphs",
+          "style": {
+            "large": true
+          },
           "text": [
             "From clearing the clutter to choosing the perfect desk foliage, enjoy these seven simple top tips and ‘triKX’ from Samsung KX to help boost productivity, positivity and health whilst working remotely."
           ]
@@ -62,7 +65,7 @@
         {
           "type": "paragraphs",
           "text": [
-            "Try to tidy the desk at the end of the day, so you can start with a clear surface the next morning. The Samsung Space Monitor is a great way of maximising this space as it pushes back to sit flat against a wall, leaving the entire work surface clear so you can focus on what’s on the screen, and not what’s surrounding it ."
+            "Try to tidy the desk at the end of the day, so you can start with a clear surface the next morning. The <a href=\"https://www.samsung.com/uk/space-monitor/\">Samsung Space Monitor</a> is a great way of maximising this space as it pushes back to sit flat against a wall, leaving the entire work surface clear so you can focus on what’s on the screen, and not what’s surrounding it ."
           ]
         },
         {

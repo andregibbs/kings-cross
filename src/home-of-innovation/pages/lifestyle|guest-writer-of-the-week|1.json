@@ -32,6 +32,9 @@
       "components": [
         {
           "type": "paragraphs",
+          "style": {
+            "large": true
+          },
           "text": [
             "Perhaps you love it or maybe you try to do very little of it but whatever your skill or will in the kitchen, we all want what we eat to be delicious, healthy and easy.",
             "Food writer, Katy McClelland, shares some great tips to demonstrate balance for simplified and nourishing mid-week cooking."
@@ -45,7 +48,7 @@
         {
           "type": "paragraphs",
           "text": [
-            "With quick mid-week cooking, the most important thing is knowing what flavours you like, then you can vary it with different produce. Use recipes as a guide then add, streamline or swap with what you have, like or can get. Balance carbs, fat, protein and greens, your body needs a bit of everything and will just crave what it's deprived of. Apps are a good way to monitor this, try the Samsung Health app – it breaks down the calories and nutrients in each meal, so you know exactly what you're consuming.",
+            "With quick mid-week cooking, the most important thing is knowing what flavours you like, then you can vary it with different produce. Use recipes as a guide then add, streamline or swap with what you have, like or can get. Balance carbs, fat, protein and greens, your body needs a bit of everything and will just crave what it's deprived of. Apps are a good way to monitor this, try the <a href=\"https://www.samsung.com/uk/apps/samsung-health/\">Samsung Health app</a> – it breaks down the calories and nutrients in each meal, so you know exactly what you're consuming.",
             "You will possibly have heard of Samin Nosrat's book 'Salt, fat, acid, heat,' that really sums up what you need flavour wise in cooking for taste and satiety. Fat gives richness, even just cooking with a bit of butter gives so much difference - (try browned butter – you won't look back).  If not, a good olive oil, cheese, nut butter or tahini does the trick. You also need a salty element for that savoury satisfaction – step forward sea salt, olives, anchovies or even marmite. Balance that with a bit of acid – lemon juice, balsamic, capers or pickles for example. The heat could be chilli and spices, but these also add toasty, roasty cooking flavours to your dish.",
             "Let's take it one step beyond and think about texture – a bit of crunch will make you feel more satisfied, and maybe even a pinch of sweetness if it goes, think dried fruit in a tagine. And there you go.",
             "Here's a great recipe to demonstrate balance, adjust everything to suit how punchy you like it."

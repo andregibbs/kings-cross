@@ -33,6 +33,9 @@
       "components": [
         {
           "type": "paragraphs",
+          "style": {
+            "large": true
+          },
           "text": [
             "Whether you’re striving for a healthier lifestyle or simply have some extra time on your hands, you don’t have to leave your comfort zone to tackle your fitness goals. Samsung KX shares five tips and ‘triKX’ for making the most of exercising whether staying indoors or venturing outside."
           ]
@@ -45,7 +48,7 @@
         {
           "type": "paragraphs",
           "text": [
-            "It’s confirmed - music can literally trick the brain into making workouts feel less like work . To really get into a groove, find a playlist that syncs to the rhythm of your fitness activity. Some music streaming apps have BPM (beats-per-minute) playlists you can access on wearables like the Galaxy Watch Active2, where the BPM of these songs also matches your target heart rate. Simply download and go!"
+            "It’s confirmed - music can literally trick the brain into making workouts feel less like work . To really get into a groove, find a playlist that syncs to the rhythm of your fitness activity. Some music streaming apps have BPM (beats-per-minute) playlists you can access on wearables like the <a href=\"https://www.samsung.com/uk/wearables/galaxy-watch-active2-r830/SM-R830NZDABTU/\">Galaxy Watch Active2</a>, where the BPM of these songs also matches your target heart rate. Simply download and go!"
           ]
         },
         {

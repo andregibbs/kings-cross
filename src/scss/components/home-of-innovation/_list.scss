@@ -10,6 +10,10 @@
   width: calc(50% - #{$spacing-mobile / 2});
 }
 
+div.hoiList__Item {
+  cursor: default;
+}
+
 .hoiList__Item--spacer {
   display: none;
   pointer-events: none;
