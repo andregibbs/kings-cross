@@ -14,27 +14,44 @@
     padding: 0 get-mobile-vw(100);
   }
 
-  &__outer {
-    background-image: url(/content/dam/samsung/uk/explore/kings-cross/header/support-header-gradient.jpg);
+  &__header {
+    height: 30vw;
+    background-image: url(/content/dam/samsung/uk/explore/kings-cross/header/Support_D.jpg);
     background-position: center center; /* First value is from left and second is from top. You can use use number as well*/
     background-position: top center;
     background-repeat: no-repeat;
     background-size: contain;
+    @media screen and (max-width: $mobile){
+      background-image: url(/content/dam/samsung/uk/explore/kings-cross/header/support-mobile.jpg);
+      height: 92vw;
+      background-size: cover;
+    }
+    display: flex;
+    align-items: center;
+  }
 
+  &__header_inner {
+    width: 100%;
+
+    @media screen and (min-width: $mobile + 1) {
+      padding-right: 50%;
+    }
+    // h1, h2, p {
+    //   max-width: 60vw;
+    // }
+  }
+
+  &__header,
+  &__outer {
     padding-top: 0px !important;
     padding-bottom: 0px !important;
-
-    @media screen and (max-width: $mobile){
-      background-image: url(/content/dam/samsung/uk/explore/kings-cross/header/support-kv-mob-v2.jpg);
-    }
-
   }
 
 
   &__title {
-    margin-top: 300px;
+    // margin-top: 300px;
     @media screen and (max-width: $mobile) {
-      margin-top: get-mobile-vw(200);
+      // margin-top: get-mobile-vw(200);
       text-align: center;
       font-size: get-mobile-vw(54);
     }
@@ -67,7 +84,7 @@
     display: flex;
     justify-content: space-between;
     // margin: 100px 0px; // adjustment for coronavirus message
-    margin: 100px 0 50px; // adjustment for coronavirus message
+    margin: 50px 0 50px; // adjustment for coronavirus message
     text-align:center;
     @media screen and (max-width: $mobile) {
       flex-direction: column;
@@ -78,22 +95,48 @@
       flex-direction: column;
       justify-content: space-between;
       flex-basis: 30%;
-      min-height: 190px;
+      min-height: 250px;
 
       @media screen and (max-width: 1024px) {
         min-height: auto; // adjustment for coronavirus message
+        // min-height: get-mobile-vw(450);
+      }
+
+      &__image,
+      &__heading,
+      > .btn {
+        flex-shrink: 0;
       }
 
       &__image {
         width: 45%;
-        height: 45%;
-        margin: 1em auto;
+        height: 150px;
+        margin: 16px auto;
+        position: relative;
+
+        @media screen and (max-width: $desktop) {
+          height: get-desktop-vw(150);
+          margin: get-desktop-vw(16) auto;
+        }
+
+        @media screen and (max-width: $mobile) {
+          height: get-mobile-vw(200);
+          margin: get-mobile-vw(24) auto;
+        }
+
+        svg {
+          height: 100%;
+          position: absolute;
+          left: 50%;
+          top: 0;
+          transform: translate(-50%, 0);
+        }
       }
 
       &:nth-child(2) {
-        margin: 0 200px;
+        margin: 0 100px;
         @media screen and (max-width: $desktop) {
-          margin: 0 get-desktop-vw(200);
+          margin: 0 get-desktop-vw(100);
         }
 
         @media screen and (max-width: $mobile) {
@@ -114,7 +157,13 @@
 
       &__desc {
         margin: 24px 0px;
-        /* flex-basis: 30%; */
+        @media screen and (max-width: $desktop) {
+          margin: get-desktop-vw(24) 0px;
+        }
+        @media screen and (max-width: $mobile) {
+          margin: get-mobile-vw(24) 0px;
+        }
+        flex-basis: 30%;
       }
 
       .btn {

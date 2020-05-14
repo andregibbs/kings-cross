@@ -1,0 +1,34 @@
+.kxClosed {
+  background-color: $background;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.kxClosed .kxClosed__wrap {
+  padding: 0 100px;
+  @media screen and (max-width: $desktop) {
+    padding: 0 get-desktop-vw(100);
+  }
+
+  @media screen and (max-width: $mobile) {
+    padding: get-mobile-vw(100);
+  }
+}
+
+.kxClosed h4,
+.kxClosed p {
+  margin-bottom: 25px;
+  @media screen and (max-width: $desktop) {
+    margin-bottom: get-desktop-vw(25);
+  }
+  @media screen and (max-width: $mobile) {
+    margin-bottom: get-mobile-vw(25);
+  }
+}
+.kxClosed .kxClosed__wrap p:last-child {
+  margin-bottom: 0;
+}
+
+.kxClosed a {
+  color: $cyan;
+}

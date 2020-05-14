@@ -20,10 +20,13 @@
     }
 
     .findkx__content {
-      flex-basis: 28%;
+      flex-basis: 40%;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
+      @media screen and (max-width: $mobile) {
+        display: block;
+      }
       h4 {
         margin: 12px 0;
         @media screen and (max-width: $desktop) {
@@ -32,6 +35,9 @@
         @media screen and (max-width: $mobile) {
           margin: get-mobile-vw(12) 0;
         }
+      }
+      a {
+        color: $coral; //temp until sitewide
       }
 
       @media screen and (max-width: $mobile) {
@@ -73,33 +79,38 @@
     }
   }
 
-  &__block-1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    .findkx__call {
-      display: none;
-      @media screen and (max-width: $mobile) {
-        display: block;
-      }
+  &__block {
+    margin-bottom: 16px;
+    @media screen and (max-width: $desktop) {
+      margin-bottom: get-desktop-vw(16);
     }
-  }
-
-  &__block-2 {
-    display: block;
     @media screen and (max-width: $mobile) {
-      display: none;
+      margin-bottom: get-mobile-vw(16);
     }
   }
 
-  &__block-3 {
-    @media screen and (max-width: $mobile){
-      margin-left: 2em;
+  @media screen and (max-width: $mobile) {
+    .findkx__content * {
+      font-size: 1.1em;
+    }
+    .findkx__mobile_groupA {
+      & > * {
+        width: 100%;
+      }
+      display: flex;
+    }
+    .findkx__mobile_groupB {
+      display: flex;
+      flex-direction: column;
+    }
+    .findkx__openings {
+      margin: get-mobile-vw(36) 0;
+      text-align: center;
     }
   }
 
   &__title {
+    margin-bottom: get-desktop-vw(40);
     &--desktop {
       @media screen and (max-width: $mobile) {
         display: none;
@@ -115,15 +126,15 @@
   }
   sup {
     font-size: 11px;
-}
-&__transport {
-  display: flex;
-  flex-direction: column;
-  a {
-    margin-top: 2%;
   }
+  &__transport {
+    // display: flex;
+    // flex-direction: column;
+    a {
+      display: block;
+    }
 
-}
+  }
 }
 
 /*=====  End of Find KX  ======*/

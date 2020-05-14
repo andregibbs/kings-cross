@@ -115,8 +115,8 @@ export default function support() {
 
                 switch (this.category) {
                     case "oneToOne":
-                        bookingURL = "https://bookings.qudini.com/booking-widget/booker/slots/ZP4CQAQ5F6R/4375/64732/0";
-                        state.productId = "62711";
+                    bookingURL = "https://bookings.qudini.com/booking-widget/booker/slots/87J4665QG8U/4492/66526/0"
+                    state.productId = "66526";
                         break;
 
                     case "support":
@@ -607,7 +607,7 @@ export default function support() {
         state.nextBtn.setAttribute("ga-la", 'kings-cross:navigation_next');
         state.nextBtn.setAttribute("ga-ac", "feature");
         state.nextBtn.setAttribute("ga-ca", "microsite");
-        
+
         if (state.stage <= 1) {
             state.cancelJourney();
         } else {
