@@ -99,7 +99,7 @@ export default function calendar(URL, type, allEvents) {
 	}
 
 	function showHideLeftArrow(date) {
-		
+
 		if (date <= currentDate) {
 			document.getElementsByClassName("arrow left")[0].style.visibility = "hidden";
 		} else {
@@ -134,7 +134,7 @@ export default function calendar(URL, type, allEvents) {
 				doLog("Formatted date", dateFormatted);
 
 				//Append the date column
-				$(".calendar__container").append(handleTemplate("dateColumn", { "dateFormatted": dateFormatted, "index": dateInd, "date": date.format("yyyy-MM-dd") }));
+				$(".calendar__container").append(handleTemplate("dateColumn", { "dateFormatted": dateFormatted, "index": dateInd, "date": moment(date).format('YYYY-MM-DD') }));
 
 				//For every appointment in date
 				for (var appointmentInd = 0; appointmentInd < data[dateInd].slots.length; appointmentInd++) {
@@ -174,7 +174,7 @@ export default function calendar(URL, type, allEvents) {
 
 				var dateFormatted = moment(date).format('dddd Do MMMM YYYY');
 
-				$(".calendar__container").append(handleTemplate("dateColumn", { "dateFormatted": dateFormatted, "index": dateInd, "date": date.format("yyyy-MM-dd") }));
+				$(".calendar__container").append(handleTemplate("dateColumn", { "dateFormatted": dateFormatted, "index": dateInd, "date": moment(date).format('YYYY-MM-DD') }));
 
 				$(".calendar__choices").last().append(handleTemplate("slot", { "time": "No slots", "available": false }));
 

@@ -16,13 +16,13 @@
 
   &__header {
     height: 30vw;
-    background-image: url(/content/dam/samsung/uk/explore/kings-cross/header/Support_D.jpg);
+    background-image: url(https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/header/Support_D.jpg);
     background-position: center center; /* First value is from left and second is from top. You can use use number as well*/
     background-position: top center;
     background-repeat: no-repeat;
     background-size: contain;
     @media screen and (max-width: $mobile){
-      background-image: url(/content/dam/samsung/uk/explore/kings-cross/header/support-mobile.jpg);
+      background-image: url(https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/header/support-mobile.jpg);
       height: 92vw;
       background-size: cover;
     }
