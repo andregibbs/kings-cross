@@ -197,111 +197,118 @@ $(document).ready(function () {
 
 	function fetchData(callback) {
 
-		$.get(apiUrl + kxConfig.seriesId, {
-			'timezone': "Europe/London",
-			'isoCurrentDate': isoCurrentDate.toISOString()
-		}).success(function (data) {
+    function getSeriesData(seriesId, cb, data) {
+      return $.get(apiUrl + seriesId, {
+  			'timezone': "Europe/London",
+  			'isoCurrentDate': isoCurrentDate.toISOString()
+  		})
 
-    // var data = fakeEvents;
+    }
 
-			doLog("All events:", data);
-			for (var i = 0; i < data.length; i++) {
-				// MERGE JSON DATA HELD WITHIN description INTO FEED as 'extra' property !!!!!
-				var event = data[i];
-				sortEventExtra(event);
-				doLog(event);
-			}
+    // using $.when to make multiple api calls and then combining the event data
+    $.when(getSeriesData(kxConfig.seriesId), getSeriesData(kxConfig.seriesId_Webinars))
+      .then((seriesData, webinarsData) => {
+        // each response is an array of the ajax success function values [data, status, xhr]
+        // using [0] key to concat data
+        let data = seriesData[0].concat(webinarsData[0]);
+        // var data = fakeEvents;
 
-
-			// store the 'converted' data as events in main and filter out events with no extra info
-			doLog(data.filter(event => !event.extra));
-
-			events = data.filter(event => event.extra);
-
-
-			// console.warn('KX logs: We are not showing these events due to and error in the description', data.filter(event => !(event.extra)))
-
-			doLog(events)
-
-			//get all the topic ids
-
-			events.forEach(event => {
-        console.log(topics)
-				if (topics.includes(event.topic.id)) {
-
-				} else {
-					topics.push(event.topic.id);
-				}
-
-			});
+  			doLog("All events:", data);
+  			for (var i = 0; i < data.length; i++) {
+  				// MERGE JSON DATA HELD WITHIN description INTO FEED as 'extra' property !!!!!
+  				var event = data[i];
+  				sortEventExtra(event);
+  				doLog(event);
+  			}
 
 
+  			// store the 'converted' data as events in main and filter out events with no extra info
+  			doLog(data.filter(event => !event.extra));
+  			events = data.filter(event => event.extra);
 
-			for (var j = 0; j < events.length; j++) {
-				var event = events[j];
+  			// console.warn('KX logs: We are not showing these events due to and error in the description', data.filter(event => !(event.extra)))
+  			doLog(events)
+
+  			//get all the topic ids
+
+  			events.forEach(event => {
+          console.log(topics)
+  				if (topics.includes(event.topic.id)) {
+
+  				} else {
+  					topics.push(event.topic.id);
+  				}
+
+  			});
 
 
 
-				if (event.topic.title.toLowerCase() == wowTopic.toLowerCase()) {
-					if (wowEvents.length < wowEventsToShow) {
-						wowEvents.push(event);
-					}
-				}
+  			for (var j = 0; j < events.length; j++) {
+  				var event = events[j];
 
-				var eventStartDate = new Date(event.startDate);
 
-				// check if expired
-				event.expired = event.startISO < isoCurrentDate.toISOString();
 
-				// today
-				if (eventStartDate.getTime() === today.getTime()) {
-					todayEvents.push(event);
+  				if (event.topic.title.toLowerCase() == wowTopic.toLowerCase()) {
+  					if (wowEvents.length < wowEventsToShow) {
+  						wowEvents.push(event);
+  					}
+  				}
 
-					if (event.extra && event.extra.promoted) {
-						todayPromotedEvents.push(event);
-					}
-				}
+  				var eventStartDate = new Date(event.startDate);
 
-				// future
-				if (eventStartDate.getTime() > today.getTime()) {
-					futureEvents.push(event);
-				}
+  				// check if expired
+  				event.expired = event.startISO < isoCurrentDate.toISOString();
 
-				// this week
-				if (eventStartDate.getTime() >= weekStart.getTime() && eventStartDate.getTime() <= weekEnd.getTime()) {
-					weekEvents.push(event);
+  				// today
+  				if (eventStartDate.getTime() === today.getTime()) {
+  					todayEvents.push(event);
 
-					if (event.extra && event.extra.promoted) {
-						weekPromotedEvents.push(event);
-					}
-				}
+  					if (event.extra && event.extra.promoted) {
+  						todayPromotedEvents.push(event);
+  					}
+  				}
 
-				// this month
-				if (eventStartDate.getTime() >= monthStart.getTime() && eventStartDate.getTime() <= monthEnd.getTime()) {
-					monthEvents.push(event);
-					if (event.extra && event.extra.promoted) {
-						monthPromotedEvents.push(event);
-					}
-				}
+  				// future
+  				if (eventStartDate.getTime() > today.getTime()) {
+  					futureEvents.push(event);
+  				}
 
-			}
-		}).complete(function () {
+  				// this week
+  				if (eventStartDate.getTime() >= weekStart.getTime() && eventStartDate.getTime() <= weekEnd.getTime()) {
+  					weekEvents.push(event);
 
-			// Logs all events
-			doLog('events', events);
-			doLog('topics', topics);
-			doLog('events - wowEvents', wowEvents);
-			doLog('events - todayEvents', todayEvents);
-			doLog('events - futureEvents', futureEvents);
-			doLog('events - weekEvents', weekEvents);
-			doLog('events - monthEvents', monthEvents);
-			doLog('events - todayPromotedEvents', todayPromotedEvents);
-			doLog('events - weekPromotedEvents', weekPromotedEvents);
-			doLog('events - monthPromotedEvents', monthPromotedEvents);
+  					if (event.extra && event.extra.promoted) {
+  						weekPromotedEvents.push(event);
+  					}
+  				}
 
-			// Callback function when all events are fetched
-			callback(events);
-		});
+  				// this month
+  				if (eventStartDate.getTime() >= monthStart.getTime() && eventStartDate.getTime() <= monthEnd.getTime()) {
+  					monthEvents.push(event);
+  					if (event.extra && event.extra.promoted) {
+  						monthPromotedEvents.push(event);
+  					}
+  				}
+
+  			}
+
+        // all transforms done
+
+  			doLog('events', events);
+  			doLog('topics', topics);
+  			doLog('events - wowEvents', wowEvents);
+  			doLog('events - todayEvents', todayEvents);
+  			doLog('events - futureEvents', futureEvents);
+  			doLog('events - weekEvents', weekEvents);
+  			doLog('events - monthEvents', monthEvents);
+  			doLog('events - todayPromotedEvents', todayPromotedEvents);
+  			doLog('events - weekPromotedEvents', weekPromotedEvents);
+  			doLog('events - monthPromotedEvents', monthPromotedEvents);
+
+        // cb
+        callback(events);
+
+    })
 
 	}
 
@@ -373,11 +380,8 @@ $(document).ready(function () {
 
 			var container = document.getElementById('loadingScreen__animation');
 			loadingScreen(container, loadingScreenAnimation, () => {
-
-        // initialise home page KV
-
-
-      }, true)
+        // loading screen done
+      }, false)
 			break;
 
 		case "/uk/explore/kings-cross/discover/":

@@ -2,6 +2,8 @@
 =            Nav            =
 =============================================*/
 
+$desktop-nav-height: 5vw;
+
 .nav {
 
   position: relative;
@@ -25,6 +27,7 @@
       align-items: center;
       justify-content: space-around;
       justify-content: space-evenly;
+      height: $desktop-nav-height;
 
       @media (max-width: $mobile) {
         display: none;
@@ -35,6 +38,10 @@
       // margin: 0 100px;
       // padding: 20px 0;
       position: relative;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
       @media screen and (max-width: $desktop) {
         // margin: 0 get-desktop-vw(100);
@@ -42,10 +49,6 @@
 
       @media screen and (max-width: $mobile) {
         // margin: 0 get-mobile-vw(20);
-      }
-
-      a {
-        margin: 5px 0;
       }
 
       &:hover .nav__navigation--submenu {
@@ -102,6 +105,7 @@
       border: 1px solid white;
       opacity: 0;
       left: 50%;
+      top: 100%;
       transform: translate(-50%, 0);
       visibility: hidden;
       transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;

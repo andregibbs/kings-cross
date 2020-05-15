@@ -74,12 +74,12 @@ export default function whatson(events) {
 		if (numberEventsToShow + 12 > eventsToManipulate.length) {
 			doLog("Events to show", numberEventsToShow);
 			console.log("Events to manipulate", eventsToManipulate);
-			
+
 			if(passion){
 				eventsToManipulate = eventsToManipulate.filter(function (event) {
 					return event.extra.passions.includes(passion)
 				})
-		
+
 			}
 			console.log(eventsToManipulate)
 			lazyGetEvents(eventsToManipulate, eventsToManipulate.length - numberEventsToShow );
@@ -136,7 +136,7 @@ export default function whatson(events) {
 		} else {
 			$("body,html").animate(
 				{
-					scrollTop: $(".section.events").offset().top
+					scrollTop: $(".section.events").offset().top - 100
 				},
 				400);
 		}
