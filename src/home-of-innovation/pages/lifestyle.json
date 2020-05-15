@@ -54,6 +54,13 @@
           "image": "{{lifestyle|guest-writer-of-the-week|3[image]}}",
           "alt": "{{lifestyle|guest-writer-of-the-week|3[alt]}}",
           "url": "{{lifestyle|guest-writer-of-the-week|3[url]}}"
+        },
+        {
+          "title": "{{lifestyle|tips-and-trikx|4[title]}}",
+          "description": "{{lifestyle|tips-and-trikx|4[description]}}",
+          "image": "{{lifestyle|tips-and-trikx|4[image]}}",
+          "alt": "{{lifestyle|tips-and-trikx|4[alt]}}",
+          "url": "{{lifestyle|tips-and-trikx|4[url]}}"
         }
       ]
     }

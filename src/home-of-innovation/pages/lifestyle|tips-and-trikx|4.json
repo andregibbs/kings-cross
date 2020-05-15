@@ -1,0 +1,147 @@
+{
+  "title": "Tips & Trikx: Simple ways to remain mindful",
+  "description": "Simple ways to remain mindful",
+  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/4/KV.JPG",
+  "alt": "A man sitting on a building rooftop at sunset",
+  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/4/KV.JPG",
+  "group": "tips-and-trikx",
+  "sort": 4,
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "{{lifestyle|tips-and-trikx|4[image]}}",
+        "alt": "{{lifestyle|tips-and-trikx|4[alt]}}"
+      },
+      "style": {
+        "desktop": "left",
+        "mobile": "bottom"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "{{lifestyle|tips-and-trikx|4[title]}}"
+        }
+      ]
+    },
+    {
+      "type": "share"
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "paragraphs",
+          "style": {
+            "large": true
+          },
+          "text": [
+            "Practicing mindfulness can help keep you focussed, boost happiness and aid a healthy sleeping pattern; Samsung KX shares five top tips and ‘triKX’ for keeping a healthy balance."
+          ]
+        },
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "1) Feel the fresh air"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "If possible, dedicate one hour a day to the outdoors, whether that’s relaxing in the garden, a stroll to the supermarket or enjoying a gentle morning jog. This will open the mind and gives you a chance to take in the surroundings and help clear your head of any stress or worries. "
+          ]
+        },
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "2) Engage the senses"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "When consuming meals on the go, it’s a common habit to not pay attention to what we are eating. When it comes to enjoying food, everyone should take a moment to engage in all five senses as this will unlock deeper appreciation for food and allow you to listen to your body’s signals, such as satisfaction and fullness."
+          ]
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/4/1.JPG",
+          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/4/1.JPG",
+          "alt": "A woman smiling and eating bananas"
+        },
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "3) Get creative with colours"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Mindfulness colouring books are a playful way to engage the mind whilst reducing stress. According to London-based organisation School of Life, particular shades can help us revert back to a range of memories and feelings. Pick up both a pocket-sized book and colouring pencil set and dedicate ten minutes a day to filling in the intricate scenes and patterns on the pages."
+          ]
+        },
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "4) Be strict with sleep"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "A good night’s sleep is important for overall health and wellbeing, as it works to prepare the mind (and body) for the day ahead. Try to avoid caffeine in the evenings and resist daytime naps, instead build an internal body clock through a set bedtime routine and wake up alarm. If struggling to fall asleep, try a meditation and relaxation aid through the <a href=\"https://www.samsung.com/uk/apps/samsung-health/\">Samsung Health app</a> which updates on a weekly basis with new ‘sleep stories’ to drift off to."
+          ]
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/4/2.JPG",
+          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/4/2.JPG",
+          "alt": "A woman sleeping in bed"
+        },
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "5) Stream away stress"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Experiencing new sounds can also help uncover a refreshing state of mindfulness. Many streaming sites have a ‘discover’ option, making it easy to find something that works for you; try turning off mobile notifications and immersing yourself in a new playlist."
+          ]
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/4/3.JPG",
+          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/4/3.JPG",
+          "alt": "A woman holding her phone and enjoying listening to music outdoors"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "items": [
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/4/1.JPG",
+          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/4/1.JPG",
+          "alt": "A woman smiling and eating bananas"
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/4/2.JPG",
+          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/4/2.JPG",
+          "alt": "A woman sleeping in bed"
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/4/3.JPG",
+          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/4/3.JPG",
+          "alt": "A woman holding her phone and enjoying listening to music outdoors"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "tips-and-trikx",
+      "title": "More episodes"
+    }
+  ]
+}

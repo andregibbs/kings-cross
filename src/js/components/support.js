@@ -111,7 +111,7 @@ export default function support() {
                 })
 
                 // hide 121 description if visible
-                $('#one-to-one-description').slideUp();
+                // $('#one-to-one-description').slideUp();
 
                 doLog("init successful");
 
@@ -119,7 +119,9 @@ export default function support() {
                     case "oneToOne":
                       bookingURL = "https://bookings.qudini.com/booking-widget/booker/slots/87J4665QG8U/4492/66526/0"
                       state.productId = "66526";
+                      // one to one specific elements
                       $('#one-to-one-description').slideDown();
+                      $('#one-to-one-policy').show();
                       break;
 
                     case "support":
@@ -210,7 +212,9 @@ export default function support() {
             state.close.style.visibility = "hidden";
             state.close.style.opacity = 0;
 
+            // one to one specific elements
             $('#one-to-one-description').slideUp();
+            $('#one-to-one-policy').hide();
 
             $(this.journeys[this.category][this.stage]).slideUp({
                 duration: 400, start: function () {
