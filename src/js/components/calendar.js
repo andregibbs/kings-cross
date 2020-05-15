@@ -129,7 +129,7 @@ export default function calendar(URL, type, allEvents) {
 				//Format date
 				var date = new Date(data[dateInd].date);
 				// var dateFormatted = days[date.getDay()] + " " + date.getDate() + " " + months[date.getMonth()] + " " + date.getFullYear();
-				var dateFormatted = moment(date).format('dddd Do <br> MMMM YYYY');
+				var dateFormatted = moment(date).format('dddd Do <br> MMMM');
 
 				doLog("Formatted date", dateFormatted);
 
@@ -172,7 +172,7 @@ export default function calendar(URL, type, allEvents) {
 
 				// var dateFormatted = days[date.getDay()] + " " + date.getDate() + " " + months[date.getMonth()] + " " + date.getFullYear();
 
-				var dateFormatted = moment(date).format('dddd Do MMMM YYYY');
+				var dateFormatted = moment(date).format('ddd Do MMMM');
 
 				$(".calendar__container").append(handleTemplate("dateColumn", { "dateFormatted": dateFormatted, "index": dateInd, "date": moment(date).format('YYYY-MM-DD') }));
 
@@ -332,7 +332,7 @@ export default function calendar(URL, type, allEvents) {
 			$("[date]").each(function (ind, elm) {
 				var a = new Date(elm.getAttribute("date"));
 				// elm.innerText = shortDays[a.getDay()] + " " + a.getDate() + " " + shortMonths[a.getMonth()];
-				elm.innerText = moment(a).format('ddd Do MMM YYYY');
+				elm.innerText = moment(a).format('ddd Do MMMM');
 			});
 			viewport = "mobile";
 			calendarRestart = false;
@@ -340,7 +340,7 @@ export default function calendar(URL, type, allEvents) {
 			$("[date]").each(function (ind, elm) {
 				var a = new Date(elm.getAttribute("date"));
 				// elm.innerText = days[a.getDay()] + " " + a.getDate() + " " + months[a.getMonth()] + " " + a.getFullYear();
-				elm.innerText = moment(a).format('dddd Do MMMM YYYY');
+				elm.innerText = moment(a).format('ddd Do MMMM');
 			});
 			viewport = "desktop";
 			calendarRestart = false;

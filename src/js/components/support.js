@@ -517,7 +517,7 @@ export default function support() {
             doLog($(this).data());
             doLog(state.timeChosen, state.queueId);
             var dateObject = new Date(state.timeChosen);
-            var timeSlotText = moment(dateObject).format("h:mm A | dddd Do YYYY") + " | Samsung KX";
+            var timeSlotText = moment(dateObject).format("h:mm A | dddd Do MMMM YYYY") + " | Samsung KX";
             $(".time-selected").text(timeSlotText);
         }
 
