@@ -25,7 +25,7 @@ export default function support() {
     };
 
     var colors = {
-        oneToOne: "pink",
+        oneToOne: "coral",
         support: "cyan",
         repair: "orange",
     };
@@ -110,14 +110,17 @@ export default function support() {
                     elm.classList.add("checkbox__" + colors[cat]);
                 })
 
-                doLog("init successful");
+                // hide 121 description if visible
+                $('#one-to-one-description').slideUp();
 
+                doLog("init successful");
 
                 switch (this.category) {
                     case "oneToOne":
-                    bookingURL = "https://bookings.qudini.com/booking-widget/booker/slots/87J4665QG8U/4492/66526/0"
-                    state.productId = "66526";
-                        break;
+                      bookingURL = "https://bookings.qudini.com/booking-widget/booker/slots/87J4665QG8U/4492/66526/0"
+                      state.productId = "66526";
+                      $('#one-to-one-description').slideDown();
+                      break;
 
                     case "support":
                         bookingURL = "https://bookings.qudini.com/booking-widget/booker/slots/IZ0LYUJL6B0/4375/37437/0";
@@ -207,6 +210,8 @@ export default function support() {
             state.close.style.visibility = "hidden";
             state.close.style.opacity = 0;
 
+            $('#one-to-one-description').slideUp();
+
             $(this.journeys[this.category][this.stage]).slideUp({
                 duration: 400, start: function () {
                     state.navigation.style.visibility = 'hidden';
@@ -235,7 +240,9 @@ export default function support() {
                         $("span.checkbox").each(function (ind, elm) {
                             elm.classList.remove("checkbox__" + colors[state.category]);
                         });
-                        ["oneToOne", "support", "repair"].forEach(function (category) {
+                        //["oneToOne", "support", "repair"].forEach(function (category) {
+                        // disable button enabling until other bookings slots are up and running again
+                        ["oneToOne"].forEach(function (category) {
                             document.getElementById("btn-" + category).classList.remove("btn--primary-notActive");
                         });
 

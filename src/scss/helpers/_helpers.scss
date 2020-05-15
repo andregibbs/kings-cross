@@ -254,6 +254,15 @@
         }
       }
 
+      &--coral {
+        border-color: $coral;
+        color: #fff;
+        &:hover {
+          color: $coral;
+          border-color: $white;
+        }
+      }
+
       &--cyan {
         border-color: $cyan;
         color: #fff;

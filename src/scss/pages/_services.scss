@@ -208,8 +208,18 @@
   & > form {
     display: none;
   }
+
   .section__inner {
     padding-top: 0 !important;
+    &#one-to-one-description {
+      text-align: center;
+      h4, p {
+        margin-bottom: 1em;
+      }
+      a {
+        font-size: 1em;
+      }
+    }
     &#confirmation {
       position: relative;
       padding: 40px !important;
@@ -362,6 +372,17 @@
     }
     .booking-line {
       background-color: $pink;
+    }
+  }
+  &.coral {
+    a {
+      color: $coral;
+    }
+    .line {
+      background-color: $coral;
+    }
+    .booking-line {
+      background-color: $coral;
     }
   }
   &.cyan {

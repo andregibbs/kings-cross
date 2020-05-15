@@ -30,7 +30,7 @@
     display: flex;
     justify-content: center;
 
-    // min-height: 350px; 
+    // min-height: 350px;
 
   }
 
@@ -198,5 +198,23 @@
   }
   .loading__bounce{
     border: 2px solid $cyan;
+  }
+}
+
+.calendar.coral{
+  .calendar__choice{
+    border: 3px solid $coral;
+    &:hover{
+      background-color: rgba($color: $coral, $alpha: 0.5);
+    }
+  }
+  .calendar--selected{
+    background-color: $coral;
+    &:hover {
+      background-color: $coral;
+    }
+  }
+  .loading__bounce{
+    border: 2px solid $coral;
   }
 }
