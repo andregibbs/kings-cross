@@ -361,6 +361,22 @@
         margin: 0 get-mobile-vw(50);
       }
     }
+
+    &__disclaimer {
+      max-width: 500px;
+      text-align: center;
+    }
+
+    // Show/Hide Zoom policy. Hide regular disclaimer if one-to-one visible
+    &__disclaimer#one-to-one-policy {
+      display: none;
+      &.visible {
+        display: block;
+      }
+      &.visible + .details__disclaimer {
+        display: none;
+      }
+    }
   }
 
   &.pink {

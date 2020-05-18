@@ -120,8 +120,14 @@ export default function support() {
                       bookingURL = "https://bookings.qudini.com/booking-widget/booker/slots/87J4665QG8U/4492/66526/0"
                       state.productId = "66526";
                       // one to one specific elements
+                      // show 121 description
                       $('#one-to-one-description').slideDown();
-                      $('#one-to-one-policy').show();
+                      // show 121 policy (hides default policy)
+                      $('#one-to-one-policy').addClass('visible');
+                      // hide imei field
+                      $('#imei-row').hide();
+                      // set notes placholder text
+                      $("#device-notes").attr('placeholder', 'What do you need help with?* (Minimum character length 30)')
                       break;
 
                     case "support":
@@ -213,8 +219,14 @@ export default function support() {
             state.close.style.opacity = 0;
 
             // one to one specific elements
+            // hide description
             $('#one-to-one-description').slideUp();
-            $('#one-to-one-policy').hide();
+            // hide one-to-one policy (makes default policy visible)
+            $('#one-to-one-policy').removeClass('visible');
+            // show imei row
+            $('#imei-row').show();
+            // reset device notes placholder
+            $("#device-notes").attr('placeholder', 'Additional Information (Optional)')
 
             $(this.journeys[this.category][this.stage]).slideUp({
                 duration: 400, start: function () {
@@ -432,6 +444,12 @@ export default function support() {
 
     function validateUnlock() {
         doLog("Validating");
+
+        // 121 Specific validation,
+        // if category is 121 & device notes length is less than 30
+        if (state.category == 'oneToOne' && state.deviceNotes.length <= 30) {
+          return sendLock();
+        }
 
         doLog("Validating Device Info");
         if (state.colorChosen && state.deviceChosen && (state.imeiValid || !state.imei)) {
@@ -685,6 +703,12 @@ export default function support() {
         }
         validateUnlock();
     });
+
+    $("#device-notes").bind('input propertychange', function () {
+        // set device notes value to state for validation
+        state.deviceNotes = this.value
+        validateUnlock();
+    })
 
     $("#imei").change(function () {
         state.imei = this.value;

@@ -175,12 +175,6 @@
         }
       }
 
-      &-notActive {
-        pointer-events: none;
-        background: $grey;
-        border-color: $grey;
-        color: $white;
-      }
       &--black {
         border-color: white;
         background-color: black;
@@ -226,6 +220,12 @@
           color: $teal;
           border-color: $white;
         }
+      }
+      &-notActive {
+        pointer-events: none;
+        background: $grey;
+        border-color: $grey;
+        color: $white;
       }
 
     }
