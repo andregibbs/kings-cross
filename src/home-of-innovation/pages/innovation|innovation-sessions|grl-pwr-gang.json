@@ -32,20 +32,63 @@
       "type": "wrapper",
       "components": [
         {
+          "type": "headline",
+          "copy": "Series Overview:",
+          "level": "3"
+        },
+        {
           "type": "paragraphs",
           "text": [
-            "<strong>Series Overview:</strong>",
-            "Welcome to the Innovation Sessions.",
-            "Samsung KX, the Home of Innovation, has partnered with a line-up of inspiring people to bring you our very first digital event series. Topics such as podcasts, social media, tips for businesses and more will be covered to help you create your very own home of innovation.",
-            "<strong>Episode One:</strong>",
+            "Welcome to the Innovation Sessions. Samsung KX, the Home of Innovation, has partnered with a line-up of inspiring people to bring you our very first digital event series. Topics such as podcasts, social media, tips for businesses and more will be covered to help you create your very own home of innovation."
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "Episode 1:",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
             "Episode one is hosted by Kirsti Hadley of GRL PWR Gang with special guests Carrie Anne, founder of Mére Soeur, and Sapphire Bates, founder of Coven Girl Gang.",
-            "In this episode Kirsti, Carrie and Sapphire will discuss the obstacles this year has bought to their businesses, revealing some of the strategies they have used to survive and thrive in 2020. <em>From the tech they have used to continue building their communities, to their top tips for working from home and key advice to small businesses – this first episode of the Innovation Sessions will provide tips, learnings and ideas from some of the UK’s creative experts.</em>",
-            "<strong>About the collaborators:</strong>",
-            "<strong>GRL PWR Gang:</strong>",
-            "GRL PWR Gang are an inspiring and influential network of creatives, who have a shared passion for supporting women in the creative industries and female empowerment. The gang is made up of artists, designers, creators and bloggers who champion collaboration over competition, with a shared mission to support one another to win in the industry.",
-            "<strong>The Coven Girl Gang:</strong>",
-            "Sapphire Bates, 26, founder of the worldwide online platform, The Coven Girl Gang, is also a public speaker, columnist and podcaster. Delivering keynotes globally on everything from starting a business to growing a community with impact for brands. Sapphire has been featured in Forbes, The Huffington Post and The Evening Standard and was nominated for The Progress 1000 with the ES and Citi Bank in 2018 for her work with The Coven Girl Gang.",
-            "<strong>Mere Soeur:</strong>",
+            "In this episode Kirsti, Carrie and Sapphire will discuss the obstacles this year has bought to their businesses, revealing some of the strategies they have used to survive and thrive in 2020. <em>From the tech they have used to continue building their communities, to their top tips for working from home and key advice to small businesses – this first episode of the Innovation Sessions will provide tips, learnings and ideas from some of the UK’s creative experts.</em>"
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "About the collaborators:",
+          "level": "3"
+        },
+        {
+          "type": "headline",
+          "copy": "GRL PWR Gang:",
+          "level": "4"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "GRL PWR Gang are an inspiring and influential network of creatives, who have a shared passion for supporting women in the creative industries and female empowerment. The gang is made up of artists, designers, creators and bloggers who champion collaboration over competition, with a shared mission to support one another to win in the industry."
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "The Coven Girl Gang:",
+          "level": "4"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Sapphire Bates, 26, founder of the worldwide online platform, The Coven Girl Gang, is also a public speaker, columnist and podcaster. Delivering keynotes globally on everything from starting a business to growing a community with impact for brands. Sapphire has been featured in Forbes, The Huffington Post and The Evening Standard and was nominated for The Progress 1000 with the ES and Citi Bank in 2018 for her work with The Coven Girl Gang."
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "Mere Soeur:",
+          "level": "4"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
             "Carrie Anne Roberts launched Mere Soeur as a single mother living with her mum, and working nights learning how to create a successful start-up. With nothing to lose, Carrie put the first batch of totes on her credit card. She never looked back - turning her side hustle into a six figure business. The Mere Soeur brand has been favoured by celebrities such as Jessica Alba and Meghan Markle, and her cool girl demeanour and modern family set-up has made her popular amongst both parents and childless adults alike."
           ]
         },

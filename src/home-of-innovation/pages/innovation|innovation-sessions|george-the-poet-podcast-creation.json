@@ -1,0 +1,85 @@
+{
+  "title": "Innovation Sessions – Episode 2: Defining your podcast narrative",
+  "description": "A brand-new digital series from the Home of Innovation to inspire the UK ",
+  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/innovation-sessions/2/SamsungKX_LandingPage_EpisodeTwo_CategoryHero_V5.jpg",
+  "alt": "A man - George the Poet - pictured sat down with arms leaning on knees, image overlayed with different coloured shapes",
+  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/innovation-sessions/2/SamsungKX_LandingPage_EpisodeTwo_Thumbnail_V2.jpg",
+  "group": "innovation-sessions",
+  "sort": 2,
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "youtube",
+        "content": "ibJM9kiK9Zk"
+      },
+      "style": {
+        "desktop": "top",
+        "mobile": "top"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "level": "1",
+          "copy": "{{innovation|innovation-sessions|george-the-poet-podcast-creation[title]}}"
+        }
+      ]
+    },
+    {
+      "type": "share"
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "headline",
+          "copy": "Series Overview:",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Welcome to the Innovation Sessions. Samsung KX, the Home of Innovation, has partnered with a line-up of inspiring people to bring you our very first digital event series. Topics such as podcasts, creativity, tips for businesses and more will be covered to help you create your very own home of innovation."
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "Episode 2:",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "‘Defining your podcast narrative’, episode two of Innovation Sessions, is hosted by ‘Have you heard George’s podcast’ presenter George the Poet and special guest producer Benbrick. In this episode George and Benbrick talk about all things podcast, for those who are looking to venture into creating their own. From helping to find your narrative and topic, to utilising the tech you have available in your home, to putting your podcast out into the world with confidence; George and Benbrick discuss all of their tips and tricks to get you started."
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "About the collaborators:",
+          "level": "3"
+        },
+        {
+          "type": "headline",
+          "copy": "George the Poet & Benbrick:",
+          "level": "4"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "George the Poet is a London-born spoken word performer of Ugandan heritage. His innovative brand of musical poetry has won him critical acclaim both as a recording artist and a social commentator.",
+            "In 2018 Benbrick started working with spoken word artist George The Poet; composing the original score, and producing what would become Have You Heard George’s Podcast?  After releasing 8 episodes in Chapter 1 #HYHGP was described as “a story that could change the world” by Radio 4. The podcast won 5 Gold British Podcast Awards including the coveted Podcast of the Year award, it received press in The New York Times, The Guardian, The Times, Financial Times, and GQ."
+          ]
+        },
+        {
+          "type": "buttons",
+          "items": [
+            {
+              "copy": "Read Article",
+              "url": "{{innovation|innovation-sessions|george-the-poet-podcast-creation|blog[url]}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

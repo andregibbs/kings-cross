@@ -1,0 +1,103 @@
+{
+  "title": "Blog",
+  "description": "Innovation Sessions: 5 tips for podcast beginners by Benbrick",
+  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/innovation-sessions/2/SamsungKX_LandingPage_EpisodeTwo_CategoryHero_V5.jpg",
+  "alt": "A man - George the Poet - pictured sat down with arms leaning on knees, image overlayed with different coloured shapes",
+  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/innovation-sessions/2/SamsungKX_LandingPage_EpisodeTwo_Thumbnail_V2.jpg",
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "{{innovation|innovation-sessions|george-the-poet-podcast-creation|blog[image]}}",
+        "alt": "{{innovation|innovation-sessions|george-the-poet-podcast-creation|blog[alt]}}"
+      },
+      "style": {
+        "desktop": "left",
+        "mobile": "top"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "level": "1",
+          "copy": "Innovation Sessions: 5 tips for podcast beginners by Benbrick"
+        }
+      ]
+    },
+    {
+      "type": "share"
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "headline",
+          "copy": "1. Take Risks",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Podcasting is still relatively new, and because of this the format allows us to try out new things.  This might see George breaking the fourth wall by talking directly to the individual listener in the middle of a poem, using sound FX (like the glass smash in Episode 9 - Sabrina’s Boy) to interrupt and refocus the listener, or setting part of the podcast inside a microwave with all the audio spinning across the stereo field.  How can you innovate and break rules in your own podcast?"
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "2. Collaborate",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "There are more podcasts than ever being released and breaking through the noise to build a fan base can seem overwhelming at the start.  If you can find someone to collaborate with, you can share the workload, and share the successes as the podcast grows.  George and I have different skill sets which cross over, allowing us to focus on delivering the best performance we can.   George will spend days carefully choosing every single word and rhyme, while I am locked in the studio crafting the music to accent George’s words."
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "3. Utilise the Tech You Have Available",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "When you are starting you don’t need to have an entire studio set up.  If you have the intention to start a podcast then you can begin immediately capturing the sounds and the people that are around you.  Capture conversations that no one else has access to - like George’s recording of his Mum talking to his nephews in Episode 2 - Popcorn.  Once you have built up some content, and ideas, you can begin looking into software, or a team to help you putting the episode together."
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "4. Make the Most of Your Skills",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Both George and I came from a music background where we would undertake various writing sessions. Whilst the 3 minute pop song model could not give George enough time to unpack all the things in his community that he wanted to speak on, it did give us both a focus on packing in as much creativity as we could, and trying to our make messaging accessible.  The recording sessions for an individual podcast can stretch to over 300 tracks and are organised much more like a typical song."
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "5. Be Confident",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "George and I spoke about the seminal \"1000 True Fans\" written by Kevin Kelly which describes how to build a fan base by trying to focus on individual fans one by one, rather than trying to immediately take over the world.  Early on it can be tempting to focus on the numbers of plays you are getting, but really the most important thing to focus on is your own work.  Keep creating better episodes every episode you make and keep looking to grow by trying new things."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "link-list",
+      "title": "More Episodes",
+      "items": [
+        {
+          "title": "{{innovation|innovation-sessions|george-the-poet-podcast-creation[title]}}",
+          "url": "{{innovation|innovation-sessions|george-the-poet-podcast-creation[url]}}",
+          "image": "{{innovation|innovation-sessions|george-the-poet-podcast-creation[thumb]}}",
+          "alt": "{{innovation|innovation-sessions|george-the-poet-podcast-creation[alt]}}"
+        }
+      ]
+    }
+  ]
+}
