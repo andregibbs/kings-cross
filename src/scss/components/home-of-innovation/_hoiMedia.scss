@@ -21,6 +21,10 @@
   transform: translate(-50%, -50%);
 }
 
+.hoiMedia--youtube {
+  object-fit: revert;
+}
+
 // Media State
 
 .hoiMedia__State {

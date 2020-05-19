@@ -21,6 +21,11 @@
   .hoiWrapper {
     max-width: 66vw;
     margin: $spacing-desktop auto;
+    .hoiMedia,
+    .hoiMedia__Wrap {
+      max-height: 75vh;
+      object-fit: contain;
+    }
   }
   .hoiWrapper .hoiWrapper {
     margin: $spacing-desktop calc(#{$spacing-desktop} / 2);

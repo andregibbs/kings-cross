@@ -119,7 +119,7 @@
   //   padding: $padding-desktop;
   // }
   .hoiGallery__SpotlightClose {
-    top: 0;
-    right: 0;
+    top: calc(#{$padding-desktop} / 2);
+    right:  calc(#{$padding-desktop} / 2);
   }
 }

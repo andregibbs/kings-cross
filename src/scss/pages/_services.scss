@@ -204,6 +204,17 @@
     }
   }
 
+  input[type="tel"]:invalid,
+  input[type="email"]:invalid {
+    color: $warning;
+    outline: 2px solid $warning;
+
+    &::placeholder {
+      color: $warning;
+    }
+  }
+
+
   & > div,
   & > form {
     display: none;
@@ -349,7 +360,8 @@
       flex-wrap: wrap;
       margin: 24px 0;
     }
-    &__checkboxes {
+    &__checkboxes,
+    &__disclaimer {
       width: 650px;
       margin: 0 50px;
       @media screen and (max-width: $desktop) {
@@ -360,11 +372,6 @@
         width: get-mobile-vw(650);
         margin: 0 get-mobile-vw(50);
       }
-    }
-
-    &__disclaimer {
-      max-width: 500px;
-      text-align: center;
     }
 
     // Show/Hide Zoom policy. Hide regular disclaimer if one-to-one visible
