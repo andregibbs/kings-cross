@@ -161,16 +161,46 @@
 
 		<div class="section__inner" id="confirmation">
 			<div class="booking-line booking-line--top"></div>
-			<h3 class="fz50">Repair booking confirmation</h3>
+
+      <!-- 121 only headers -->
+      <span class="confirmation-121--show">
+        <h3 class="fz50">Your appointment is booked</h3><br>
+        <h4 class="fz36">Thank you for booking your virtual video support appointment</h4><br>
+      </span>
+			<h3 class="fz50 confirmation-121--hide">Repair booking confirmation</h3>
+
+      <!-- 121 only header -->
+      <h5 class="fz24 confirmation__header confirmation-121--show">See you on:</h5>
 			<p class="time-selected fz24">Time Slot</p>
+
+      <!-- 121 only details -->
+      <span class="confirmation-121--show">
+        <h5 class="fz24 confirmation__header">For a:</h5>
+        <p class="fz24">Virtual video support appointment</p>
+        <h5 class="fz24 confirmation__header">Duration:</h5>
+        <p class="fz24">One hour slot</p>
+      </span>
 			<div class="confirmation__reference">
-				<p class="fz24">Reference code</p>
+        <h5 class="fz24 confirmation-121--show confirmation__header">Booking ref:</h5>
+				<p class="fz24 confirmation-121--hide">Reference code</p>
 				<p class="reference fz50" id="ref"></p>
 			</div>
-			<p class="confirmation__disclaimer fz16">
+
+      <!-- 121 only disclaimer -->
+      <span class="confirmation-121--show">
+        <h5 class="fz24 confirmation__header">Preparation:</h5>
+        <ul>
+          <li class="fz20">1. Ensure you have internet connection</li>
+          <li class="fz20">2. Ensure your device is sufficiently charged</li>
+          <li class="fz20">3. Please arrive on time for your appointment</li>
+          <li class="fz20">4. Check your confirmation email for details on how to access your appointment</li>
+        </ul>
+      </span>
+			<p class="confirmation__disclaimer fz16 confirmation-121--hide">
 				Thanks for booking an appointment at KX. We have sent your booking information to the email provided.
 				Please try to ensure you have a back up of any data stored on a device you wish to service.
 			</p>
+
 			<div class="booking-line booking-line--bot"></div>
 		</div>
 

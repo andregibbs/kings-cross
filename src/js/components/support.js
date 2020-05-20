@@ -119,15 +119,12 @@ export default function support() {
                     case "oneToOne":
                       bookingURL = "https://bookings.qudini.com/booking-widget/booker/slots/87J4665QG8U/4492/66526/0"
                       state.productId = "66526";
-                      // one to one specific elements
-                      // show 121 description
-                      $('#one-to-one-description').slideDown();
-                      // show 121 policy (hides default policy)
-                      $('#one-to-one-policy').addClass('visible');
-                      // hide imei field
-                      $('#imei-row').hide();
-                      // set notes placholder text
-                      $("#device-notes").attr('placeholder', 'What do you need help with?* (Minimum character length 30)')
+                      // one to one specific elements (these are reverted in cancelJourney)
+                      $('#one-to-one-description').slideDown(); // show 121 description
+                      $('#one-to-one-policy').addClass('visible'); // show 121 policy (hides default policy)
+                      $('#imei-row').hide(); // hide imei field
+                      $("#device-notes").attr('placeholder', 'What do you need help with?* (Minimum character length 30)') // set notes placholder text
+                      $("#confirmation").addClass('confirmation-121') // add class to confirmation to adjust content
                       break;
 
                     case "support":
@@ -218,16 +215,6 @@ export default function support() {
             state.close.style.visibility = "hidden";
             state.close.style.opacity = 0;
 
-            // one to one specific elements
-            // hide description
-            $('#one-to-one-description').slideUp();
-            // hide one-to-one policy (makes default policy visible)
-            $('#one-to-one-policy').removeClass('visible');
-            // show imei row
-            $('#imei-row').show();
-            // reset device notes placholder
-            $("#device-notes").attr('placeholder', 'Additional Information (Optional)')
-
             $(this.journeys[this.category][this.stage]).slideUp({
                 duration: 400, start: function () {
                     state.navigation.style.visibility = 'hidden';
@@ -267,6 +254,12 @@ export default function support() {
                         $("#next").removeData("slot");
                         sendLock();
 
+                        // one to one specific elements
+                        $('#one-to-one-description').slideUp(); // hide 121 description
+                        $('#one-to-one-policy').removeClass('visible'); // hide one-to-one policy (makes default policy visible)
+                        $('#imei-row').show(); // show imei row
+                        $("#device-notes").attr('placeholder', 'Additional Information (Optional)') // reset device notes placholder
+                        $("#confirmation").removeClass('confirmation-121') // remove class toggling the 121 details
 
                         clearState();
 

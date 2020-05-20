@@ -236,8 +236,10 @@
       padding: 40px !important;
       text-align: center;
 
-      .time-selected {
+      .time-selected,
+      .confirmation__header {
         margin-top: 35px;
+        margin-bottom: 5px;
       }
 
       .confirmation__reference {
@@ -247,6 +249,27 @@
         }
         @media screen and (max-width: $mobile) {
           margin: get-mobile-vw(70) 0;
+        }
+      }
+    }
+
+
+    &#confirmation {
+      .confirmation-121--show {
+        display: none;
+      }
+      &.confirmation-121 {
+        .confirmation__reference {
+          margin: 0;
+        }
+        .time-selected {
+          margin-top: 0;
+        }
+        .confirmation-121--show {
+          display: block;
+        }
+        .confirmation-121--hide {
+          display: none;
         }
       }
     }
@@ -450,7 +473,6 @@
   .close{
     display: block !important;
     top: 0px;
-    right: 256px;
     @media screen and (max-width: $desktop) {
       right: get-desktop-vw(64);
     }
