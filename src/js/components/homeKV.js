@@ -362,11 +362,10 @@ function homeKV() {
   // click events
   document.querySelector('.homeKV__ScrollLink').addEventListener('click', (e) => {
     e.preventDefault();
-    window.scroll({
-			top: (rects.nav.top - rects.body.top) - ((window.innerHeight - rects.nav.height) / 2),
-			left: 0,
-			behavior: 'smooth'
-		});
+
+    $('html, body').animate({
+      scrollTop: ((rects.nav.top - rects.body.top) - ((window.innerHeight - rects.nav.height) / 2)) - document.querySelector('.nav__navigation').offsetHeight
+    }, 1200);
   })
 
   // window events

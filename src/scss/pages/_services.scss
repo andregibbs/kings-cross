@@ -204,8 +204,8 @@
     }
   }
 
-  input[type="tel"]:invalid,
-  input[type="email"]:invalid {
+  input[type="tel"]:invalid:not(:placeholder-shown),
+  input[type="email"]:invalid:not(:placeholder-shown) {
     color: $warning;
     outline: 2px solid $warning;
 
@@ -213,6 +213,7 @@
       color: $warning;
     }
   }
+  
 
 
   & > div,
@@ -333,6 +334,21 @@
         option{
           color: black;
         }
+      }
+    }
+
+    #oneToOne-device-notes-header {
+      width: 83%;
+      margin: 20px auto 0;
+      text-align: left;
+      font-weight: normal;
+      display: none;
+      @media screen and (max-width: $desktop) {
+        margin: get-desktop-vw(20) auto 0;
+      }
+      @media screen and (max-width: $mobile) {
+        margin: get-mobile-vw(20) get-mobile-vw(8) get-mobile-vw(8);
+        width: 100%;
       }
     }
 

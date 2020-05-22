@@ -30,6 +30,16 @@ export default function support() {
         repair: "orange",
     };
 
+    var oneToOneVars = {
+      maxLength: 30,
+      placeholder: 'What do you need help with?* (30 characters minimum length)',
+      header(inputLength) {
+        let remaining = Math.max(oneToOneVars.maxLength - inputLength, 0)
+
+        return `What do you need help with?${remaining > 0 ? `* (30 characters minimum length, ${remaining} remaining)` : ''}`
+      }
+    }
+
     //Main Object
 
     var state = {
@@ -120,10 +130,12 @@ export default function support() {
                       bookingURL = "https://bookings.qudini.com/booking-widget/booker/slots/87J4665QG8U/4492/66526/0"
                       state.productId = "66526";
                       // one to one specific elements (these are reverted in cancelJourney)
+                      // todo; maybe combine visiblity changes into a single class
                       $('#one-to-one-description').slideDown(); // show 121 description
                       $('#one-to-one-policy').addClass('visible'); // show 121 policy (hides default policy)
                       $('#imei-row').hide(); // hide imei field
-                      $("#device-notes").attr('placeholder', 'What do you need help with?* (Minimum character length 30)') // set notes placholder text
+                      $("#device-notes").attr('placeholder', oneToOneVars.placeholder) // set notes placholder text
+                      $("#oneToOne-device-notes-header").show(); // show device notes header
                       $("#confirmation").addClass('confirmation-121') // add class to confirmation to adjust content
                       break;
 
@@ -259,6 +271,7 @@ export default function support() {
                         $('#one-to-one-policy').removeClass('visible'); // hide one-to-one policy (makes default policy visible)
                         $('#imei-row').show(); // show imei row
                         $("#device-notes").attr('placeholder', 'Additional Information (Optional)') // reset device notes placholder
+                        $("#oneToOne-device-notes-header").hide() //hide device notes header
                         $("#confirmation").removeClass('confirmation-121') // remove class toggling the 121 details
 
                         clearState();
@@ -440,7 +453,7 @@ export default function support() {
 
         // 121 Specific validation,
         // if category is 121 & device notes length is less than 30
-        if (state.category == 'oneToOne' && state.deviceNotes.length <= 30) {
+        if (state.category == 'oneToOne' && state.deviceNotes.length < oneToOneVars.maxLength) {
           return sendLock();
         }
 
@@ -671,7 +684,8 @@ export default function support() {
         if (this.value == "Unlisted_device") {
             $("#color-selector").val("N/A");
             state.colorChosen = "N/A";
-            sendUnlock();
+            state.deviceChosen = "Not Listed";
+            validateUnlock();
             return false;
         }
 
@@ -698,6 +712,8 @@ export default function support() {
     });
 
     $("#device-notes").bind('input propertychange', function () {
+        // set text for 121 device notes header (only visible on 121)
+        $("#oneToOne-device-notes-header").text(oneToOneVars.header(this.value.length))
         // set device notes value to state for validation
         state.deviceNotes = this.value
         validateUnlock();
