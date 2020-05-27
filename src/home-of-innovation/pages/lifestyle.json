@@ -70,6 +70,25 @@
           "url": "{{lifestyle|guest-writer-of-the-week|4[url]}}"
         }
       ]
+    },
+    {
+      "type": "group-land",
+      "items": [
+        {
+          "title": "{{lifestyle|tips-and-trikx|5[title]}}",
+          "description": "{{lifestyle|tips-and-trikx|5[description]}}",
+          "image": "{{lifestyle|tips-and-trikx|5[image]}}",
+          "alt": "{{lifestyle|tips-and-trikx|5[alt]}}",
+          "url": "{{lifestyle|tips-and-trikx|5[url]}}"
+        },
+        {
+          "title": "{{lifestyle|guest-writer-of-the-week|5[title]}}",
+          "description": "{{lifestyle|guest-writer-of-the-week|5[description]}}",
+          "image": "{{lifestyle|guest-writer-of-the-week|5[image]}}",
+          "alt": "{{lifestyle|guest-writer-of-the-week|5[alt]}}",
+          "url": "{{lifestyle|guest-writer-of-the-week|5[url]}}"
+        }
+      ]
     }
   ]
 }

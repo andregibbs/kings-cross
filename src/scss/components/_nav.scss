@@ -75,7 +75,7 @@ $desktop-nav-height: 5vw;
       }
     }
 
-    a {
+    a:not(.btn) {
       color: $white;
     }
     &-link-container > a:not(.btn) {

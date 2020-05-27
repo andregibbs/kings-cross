@@ -309,6 +309,11 @@ function HOITemplates() {
     return withId;
   }
 
+  // https://gist.github.com/getify/3667624
+  function escapeDoubleQuotes(str) {
+     return str.replace(/\\([\s\S])|(")/g,"\\$1$2"); // thanks @slevithan!
+   }
+
   // Include any data that requires dynamic data from a different page
   function populatePageDataVariables(pageData, currentFilePath) {
     // First population
@@ -368,7 +373,8 @@ function HOITemplates() {
           break;
         default:
           // otherwise get data then key
-          value = getPageData(page)[key]
+          // escaping quotes that were pr eviously escaped
+          value = escapeDoubleQuotes(getPageData(page)[key])
 
       }
       // update dataString, replacing the first (current) matched occurence using matched string

@@ -48,6 +48,17 @@
       ]
     },
     {
+      "type": "gallery",
+      "items": [
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/game-dev-london-podcast/GameDev_KV.jpg",
+          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/game-dev-london-podcast/GameDev_KV.jpg",
+          "alt": "Game Dev Podcast logo"
+        }
+      ]
+    },
+    {
       "type": "group",
       "id": "game-dev-london-podcast",
       "title": "More episodes"

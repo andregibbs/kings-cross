@@ -1,0 +1,33 @@
+{
+  "title": "Science Museum",
+  "description": "",
+  "image": "{{innovation|science-museum|1[image]}}",
+  "alt": "{{innovation|science-museum|1[alt]}}",
+  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/science-museum/1_KV.jpg",
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "{{innovation|science-museum|1[image]}}",
+        "alt": "{{innovation|science-museum|1[alt]}}"
+      },
+      "style": {
+        "desktop": "left",
+        "mobile": "top"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "level": "1",
+          "copy": "{{innovation|science-museum[title]}}"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "science-museum",
+      "title": "Learn more"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "title": "Stay Learning: Samsung presents \"Exploring Space with Tim Peake\" with the Science Museum",
+  "description": "Bring to life the amazing science behind space travel through our Space Descent VR Lounge at the Science Museum, learn about Tim Peake’s incredible journey from the International Space Station back to Earth.",
+  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/science-museum/1_KV.jpg",
+  "alt": "The International Space Station (ISS) in orbit around the Earth with the world in space in the background",
+  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/science-museum/1_KV.jpg",
+  "group": "science-museum",
+  "sort": 1,
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "youtube",
+        "content": "oyS6pilT2Hs"
+      },
+      "style": {
+        "desktop": "left",
+        "mobile": "top"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "level": "1",
+          "copy": "{{innovation|science-museum|1[title]}}"
+        }
+      ]
+    },
+    {
+      "type": "share"
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "paragraphs",
+          "text": [
+            "Throughout our long-standing partnership with the Science Museum Group, we have worked together to inform, inspire and engage millions of people across the UK with STEM subjects. Most recently we have been bringing to life the amazing science behind space travel through our Space Descent VR Lounge  at the Science Museum, which gives audiences the chance to experience Tim Peake’s incredible journey from the International Space Station (ISS) back to Earth through stunning virtual reality.",
+            "This follows our nationwide tour of Tim Peake’s Spacecraft which saw the Soyuz TMA-19M capsule land in various destinations across the UK from 2017 to 2019, inspiring millions of people with the wonders of space travel through an educational outreach programme and interactive VR experience for schools and communities.",
+            "Now, at a time when all forms of travel are limited (space or otherwise!), we’ve revisited Tim Peake’s interview at the Science and Industry Museum, part of the Manchester Science Festival, to bring you some of the most interesting and bizarre insights from his space adventure…",
+            "1. During the ascent into space, Tim Peake’s rocket reached up to 4.5Gs, which he describes as around 10 times the speed of a bullet. If you can’t quite get your head around that, he likens the feeling to being in Lewis Hamilton’s F1 car for eight minutes 48 seconds.",
+            "2. Perhaps unsurprisingly, Tim says his favourite thing about being up in space was the view, although some iconic landmarks were harder to spot than others. It took him 6 - 7 weeks to get a two second glimpse of Antarctica from the ISS, just long enough to take a quick snap!",
+            "3. His second favourite thing about being in space was floating. If you’ve ever dreamt you’re flying, you can probably imagine how cool this would be. But picture this – according to Tim, he could actually work on the ceiling and the walls! The only downside to floating in space Tim says, is that it takes time to get used to walking back on Earth afterwards where gravity keeps you firmly grounded!",
+            "4. You grow in space – according to Tim, you can grow about an inch and a half taller, which can cause a bit of back pain in the first few weeks (ouch). Apparently it’s short lived once back on Earth though, as gravity shrinks you to back to normal size.",
+            "5. During Tim’s time aboard the ISS, 85-90% of urine got recycled back into drinking water – we’ll leave you to decide what you think about that!",
+            "6. If we’re lucky, Tim speculates there could be another journey to the moon on the cards in the late 2020s (the last moon landing was almost 50 years ago in 1972!), but he predicts it might not be until the 2030s or 2040s that humans are ready to voyage to Mars.",
+            "7. It took Tim two and half years to train for his six month mission, but as he quite rightly points out, “you train to be an astronaut your entire life” - so really, what’s two years, eh?"
+          ]
+        },
+        {
+          "type": "buttons",
+          "items": [
+            {
+              "copy": "Discover more",
+              "url": "https://www.sciencemuseum.org.uk/see-and-do/space-descent-vr-tim-peake",
+              "target": "_blank"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "science-museum",
+      "title": "Learn more"
+    }
+  ]
+}
