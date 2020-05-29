@@ -46,6 +46,23 @@ div.hoiList__Item {
   transform: translate(-50%, -50%);
 }
 
+.hoiList__ItemIcon {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  svg {
+    width: 25%;
+    height: 25%;
+    max-width: 100px;
+    background: rgba(0,0,0,0.75);
+    padding: 2.5%;
+  }
+}
+
 @media screen and (min-width: $mobile + 1) {
 
   .hoiList__Item {

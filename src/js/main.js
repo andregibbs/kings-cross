@@ -226,6 +226,11 @@ $(document).ready(function () {
   			doLog(data.filter(event => !event.extra));
   			events = data.filter(event => event.extra);
 
+        // filter private events
+        events = events.filter((event) => {
+          return !event.extra.private
+        })
+
   			// console.warn('KX logs: We are not showing these events due to and error in the description', data.filter(event => !(event.extra)))
   			doLog(events)
 
@@ -312,44 +317,44 @@ $(document).ready(function () {
 
 	}
 
-	function testSlider() {
-		testSlider1();
-		testSlider2();
-	}
-
-	function testSlider1() {
-
-		const sliderConfig1 = {
-			lazyLoad: 'ondemand',
-			dots: false,
-			infinite: false,
-			speed: 500,
-			fade: false,
-			cssEase: 'linear'
-		};
-
-		slider(wowEvents, '.slider1', sliderConfig1, 'homeKv');
-	}
-
-	function testSlider2() {
-
-		const dd = {
-			todayEvents,
-			monthPromotedEvents
-		};
-
-		const sliderConfig2 = {
-			slidesToShow: 3,
-			slidesToScroll: 3,
-			dots: true,
-			infinite: true,
-			speed: 500,
-			fade: false,
-			cssEase: 'linear',
-		};
-
-		slider(dd, '.upComing', sliderConfig2, 'upComing');
-	}
+	// function testSlider() {
+	// 	testSlider1();
+	// 	testSlider2();
+	// }
+  //
+	// function testSlider1() {
+  //
+	// 	const sliderConfig1 = {
+	// 		lazyLoad: 'ondemand',
+	// 		dots: false,
+	// 		infinite: false,
+	// 		speed: 500,
+	// 		fade: false,
+	// 		cssEase: 'linear'
+	// 	};
+  //
+	// 	slider(wowEvents, '.slider1', sliderConfig1, 'homeKv');
+	// }
+  //
+	// function testSlider2() {
+  //
+	// 	const dd = {
+	// 		todayEvents,
+	// 		monthPromotedEvents
+	// 	};
+  //
+	// 	const sliderConfig2 = {
+	// 		slidesToShow: 3,
+	// 		slidesToScroll: 3,
+	// 		dots: true,
+	// 		infinite: true,
+	// 		speed: 500,
+	// 		fade: false,
+	// 		cssEase: 'linear',
+	// 	};
+  //
+	// 	slider(dd, '.upComing', sliderConfig2, 'upComing');
+	// }
 
 	function IsJsonString(str) {
 		try {

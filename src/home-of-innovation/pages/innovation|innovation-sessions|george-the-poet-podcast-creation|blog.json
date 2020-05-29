@@ -88,16 +88,9 @@
       ]
     },
     {
-      "type": "link-list",
-      "title": "More Episodes",
-      "items": [
-        {
-          "title": "{{innovation|innovation-sessions|george-the-poet-podcast-creation[title]}}",
-          "url": "{{innovation|innovation-sessions|george-the-poet-podcast-creation[url]}}",
-          "image": "{{innovation|innovation-sessions|george-the-poet-podcast-creation[thumb]}}",
-          "alt": "{{innovation|innovation-sessions|george-the-poet-podcast-creation[alt]}}"
-        }
-      ]
+      "type": "group",
+      "id": "innovation-sessions",
+      "title": "More episodes"
     }
   ]
 }

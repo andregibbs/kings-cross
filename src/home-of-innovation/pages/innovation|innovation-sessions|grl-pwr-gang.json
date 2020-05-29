@@ -11,7 +11,9 @@
       "type": "kv",
       "media": {
         "type": "youtube",
-        "content": "GCvsLS13ARk"
+        "content": "GCvsLS13ARk",
+        "poster": "{{innovation|innovation-sessions|grl-pwr-gang[image]}}",
+        "alt": "{{innovation|innovation-sessions|grl-pwr-gang[alt]}}"
       },
       "style": {
         "desktop": "top",
@@ -102,6 +104,11 @@
           ]
         }
       ]
+    },
+    {
+      "type": "group",
+      "id": "innovation-sessions",
+      "title": "More episodes"
     }
   ]
 }

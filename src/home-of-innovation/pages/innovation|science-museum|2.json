@@ -35,18 +35,18 @@
         {
           "type": "paragraphs",
           "text": [
-            "Throughout our long-standing partnership with The Science Museum Group, we have worked together to inform, inspire and engage millions of people across the UK with STEM subjects. Most recently, we have brought  to life the amazing science behind space travel through our Space Descent VR Lounge  at the Science Museum, which gives audiences the chance to experience Tim Peake’s incredible journey from the International Space Station (ISS) back to Earth through stunning virtual reality.",
+            "Throughout our long-standing partnership with the Science Museum Group, we have worked together to inform, inspire and engage millions of people across the UK with STEM subjects. Most recently, we have brought  to life the amazing science behind space travel through our Space Descent VR Lounge  at the Science Museum, which gives audiences the chance to experience Tim Peake’s incredible journey from the International Space Station (ISS) back to Earth through stunning virtual reality.",
             "In celebration of his amazing voyage as the first British astronaut for the European Space Agency, let’s take a moment to remember some other great firsts in space history.",
             "1. The First Man in Space: Yuri Gagarin",
-            "On 12 April 1961, Soviet pilot and cosmonaut Yuri Gagarin became the first human to fly to outer space aged 27 - completing an orbit of the Earth in his Vostok spacecraft in 108 minutes.",
+            "On 12 April 1961, Soviet pilot and cosmonaut Yuri Gagarin became the first human to fly to outer space, he was just 27 years-old at the time - completing an orbit of the Earth in his Vostok spacecraft in 108 minutes.",
             "2. The First Woman in Space: Valentina Tereshkova",
             "On 16 June 1963, 26-year-old Valentina Tereshkova became the first woman to fly in space, completing 48 orbits of the Earth in three days!",
-            "To this day she remains the youngest and only woman to have flown in space on a solo mission.",
+            "To this day she remains the only woman to have flown in space on a solo mission.",
             "3.The First Astronauts to walk on the Moon: Neil Armstrong & Buzz Aldrin",
             "On 16 July 1969, Apollo 11 launched from Cape Kennedy with Neil Armstrong, Michael Collins and Buzz Aldrin aboard. ",
             "Four days later, around 650 million people worldwide watched as Neil Armstrong became the first man to set foot on the moon, followed by Buzz Aldrin, making it one of the most watched moments in TV history.",
             "4.The First Brit in Space: Helen Sharman",
-            "In 1991, at the age of 27, Helen Sharman became the first Brit to venture into outer  space. Setting off on 18 May, she spent eight days in space, mainly at the Mir space station – a Russian Space Station that spent 15 years in orbit from 1986 (three times its expected lifetime).",
+            "In 1991, at the age of 27, Helen Sharman became the first Brit to venture into outer  space. Setting off on 18 May, she spent eight days in space, mainly at the Mir space station - a Russian Space Station that spent 15 years in orbit from 1986 (three times its expected lifetime).",
             "Before becoming the first British space explorer, Helen Sharman worked as a chemist for Mars, making ice cream and chocolate."
           ]
         },
@@ -64,6 +64,7 @@
     },
     {
       "type": "gallery",
+      "title": "Check out videos from the Science Museum below to learn more",
       "items": [
         {
           "type": "youtube",

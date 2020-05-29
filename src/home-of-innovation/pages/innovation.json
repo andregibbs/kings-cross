@@ -54,6 +54,20 @@
           "image": "{{innovation|science-museum|3[image]}}",
           "alt": "{{innovation|science-museum|3[alt]}}",
           "url": "{{innovation|science-museum|3[url]}}"
+        },
+        {
+          "title": "{{innovation|innovation-sessions|gal-dem-motivation-creativity[title]}}",
+          "description": "{{innovation|innovation-sessions|gal-dem-motivation-creativity[description]}}",
+          "image": "{{innovation|innovation-sessions|gal-dem-motivation-creativity[image]}}",
+          "alt": "{{innovation|innovation-sessions|gal-dem-motivation-creativity[alt]}}",
+          "url": "{{innovation|innovation-sessions|gal-dem-motivation-creativity[url]}}"
+        },
+        {
+          "title": "{{innovation|innovation-sessions|4[title]}}",
+          "description": "{{innovation|innovation-sessions|4[description]}}",
+          "image": "{{innovation|innovation-sessions|4[image]}}",
+          "alt": "{{innovation|innovation-sessions|4[alt]}}",
+          "url": false
         }
       ]
     }

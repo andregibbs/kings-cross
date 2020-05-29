@@ -6,23 +6,42 @@
   <div class="hoiList hoiList--grid-4">
     {{#each items }}
       {{#if (eq this.url false)}}
+        <!-- start non link item -->
         <div class="hoiList__Item">
       {{else}}
-  		  <a ga-ca="microsite" ga-ac="feature" ga-la="uk:kings-cross:{{@root.title}}:{{to_lower_case this.title }}"
-					data-omni-type="microsite" data-omni="uk:kings-cross:{{@root.title}}:{{to_lower_case this.title }}" class="hoiList__Item"  href="{{{ this.url }}}">
+        <!-- start standard link item -->
+  		  <a
+          ga-ca="microsite"
+          ga-ac="feature"
+          ga-la="uk:kings-cross:{{@root.title}}:{{to_lower_case this.title }}{{#if this.download}}:download-file{{/if}}"
+					data-omni-type="microsite"
+          data-omni="uk:kings-cross:{{@root.title}}:{{to_lower_case this.title }}{{#if this.download}}:download-file{{/if}}"
+          class="hoiList__Item"
+          href="{{{ this.url }}}"
+          {{#if download}}
+            download
+            target="_blank"
+          {{/if}}>
       {{/if}}
   			<h6 class="hoiList__ItemTitle">{{ this.title }}</h6>
-        <!-- <div class="hoiList__ItemImageWrap"> -->
         <div class="hoiList__ItemImageWrap"
           style="background-image:url('{{this.image}}')"
           role="img"
           aria-label="{{this.alt}}">
-          <!-- <img class="hoiList__ItemImage" src="{{ this.image }}" alt="{{ this.alt }}"> -->
+
+          {{#if download}}
+            <div class="hoiList__ItemIcon">
+              {{> svg/download}}
+            </div>
+          {{/if}}
+
         </div>
   			<div>{{{ this.text }}}</div>
       {{#if (eq this.url false)}}
+        <!-- end non link item -->
         </div>
       {{else}}
+        <!-- end standard link item -->
   		  </a>
       {{/if}}
     {{/each}}
