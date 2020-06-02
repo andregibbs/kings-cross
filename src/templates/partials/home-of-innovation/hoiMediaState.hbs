@@ -1,8 +1,18 @@
-<div class="hoiMedia__State"
+<div class="hoiMedia__State">
+
   {{#if poster}}
-    style="background-image:url({{poster}})"
+    {{#if poster_mobile}}
+      <div
+        class="hoiMedia__StatePoster hoiMedia__StatePoster--mobile"
+        style="background-image:url({{poster_mobile}})">
+      </div>
+    {{/if}}
+
+    <div
+      class="hoiMedia__StatePoster hoiMedia__StatePoster--desktop"
+      style="background-image:url({{poster}})">
+    </div>
   {{/if}}
-  >
 
   <div class="hoiMedia__StateIcon  hoiMedia__StateIcon--load"></div>
 

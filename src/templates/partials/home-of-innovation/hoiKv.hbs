@@ -22,6 +22,7 @@
     data-omni-type="microsite"
     data-omni="uk:kings-cross:{{@root.title}}"  class="hoiKv__Media">
     {{#if_equals this.media.type 'image'}}
+    {{!-- TODO add mobile image --}}
     <div
         class="hoiKv__MediaImage"
         style="background-image:url('{{ this.media.content }}')"
@@ -33,6 +34,7 @@
       {{> home-of-innovation/hoiMediaVideo
           content=this.media.content
           poster=this.media.poster
+          poster_mobile=this.media.poster_mobile
           title=this.media.title
           loop=this.media.loop
           autoplay=this.media.autoplay
@@ -46,6 +48,7 @@
           content=this.media.content
           embedType=this.media.embedType
           poster=this.media.poster
+          poster_mobile=this.media.poster_mobile
           alt=this.media.alt
       }}
     {{/if_equals}}

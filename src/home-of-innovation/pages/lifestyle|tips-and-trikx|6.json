@@ -1,0 +1,151 @@
+{
+  "title": "Tips & Trikx: Ready, (Head)set, GO...",
+  "description": "Tips for families to get creative when spending quality time together",
+  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/6/Image_KV.JPG",
+  "alt": "CEO of Game Dev Studio shares his top five tips on how to get all the benefits from gaming",
+  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/6/Image_KV.JPG",
+  "group": "tips-and-trikx",
+  "sort": 6,
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "{{lifestyle|tips-and-trikx|6[image]}}",
+        "alt": "{{lifestyle|tips-and-trikx|6[alt]}}"
+      },
+      "style": {
+        "desktop": "left",
+        "mobile": "bottom"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "{{lifestyle|tips-and-trikx|6[title]}}"
+        }
+      ]
+    },
+    {
+      "type": "share"
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "paragraphs",
+          "style": {
+            "large": true
+          },
+          "text": [
+            "The world of gaming is an exciting space and has many benefits, from relieving stress, to enhancing memory and even improving skills such as problem-solving and concentration. Despite this, it’s important to follow some healthy habits when in the gamer’s seat; Samsung KX is working with Stuart De Ville, CEO of game development management Game Dev Studio, to share his top five tips on how to get all the benefits from gaming."
+          ]
+        },
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "1) Take regular breaks"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "No matter how good the level is, it’s important to take some time out to refresh from your gaming experience. If not, this can be counteractive as the player can end up mindlessly trudging through and not taking time to relish success, such as hitting advanced levels or upgrading character stats. Prolonged sessions can also cause the feeling of monotony and exhaustion. "
+          ]
+        },
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "2) Switch it up"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Players shouldn’t binge on the same game all day. Focusing on one game over and over in succession will likely deplete the continued enjoyment of it. Gaming is a great way to relax, so keep a broad selection available for maximum benefit."
+          ]
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/6/Image_1.JPG",
+          "alt": " A young man and woman sit on a blue sofa holding gaming controller within a dimly lit modern living room playing on a video game. Their faces are lit up by the blue lights from the game."
+        },
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "3) Keep it social"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Players should connect and compete with friends over the internet. When consoles aren’t compatible, friends can video call one another and play as if they are hanging out in the same house. Better yet, they can take it a step further by livestreaming together - there’s never been a better time to become a gaming streamer and share your skills with others."
+          ]
+        },
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "4) Ban the PJs"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Players should always get dressed and keep to regular meals (or at least have a few healthy snacks nearby). Spending all day in pyjamas can have a negative effect on the brain, giving the feeling that the day has been wasted when you’ve in fact, conquered a whole new world. "
+          ]
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/6/Image_2.JPG",
+          "alt": "A man dressed in grey sits on the floor holding a gaming controler in front of a large, gaming TV on a TV stand within a modern living room. A woman sits on a black arm chair next to him holding a gaming controller. Both the man and the woman are playing a racing car driving game together."
+        },
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "5) Don't battle before bedtime"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Try playing a game that doesn’t raise the heartrate before bed. For example, an intense battle-based episode can make it hard to relax at night so will often cause disruptive sleep."
+          ]
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/6/Image_3.JPG",
+          "alt": "Woman lying fast alseep in a bed with white bedding"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "<strong>A tip from Samsung:</strong> Ready for the next level? It may be time to invest in a gaming monitor such as the <a href=\"https://www.samsung.com/uk/monitors/monitor-c27rg50/\">Samsung CRG5</a>. Great for both comfort and health, it alters to fit a variety of viewing positions and automatically adjusts black gamma levels, contrast, sharpness and colour for all game types.",
+            "Snap and share your gaming setup with #SamsungKX"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "items": [
+        {
+          "type": "image",
+          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/6/Image_1.JPG",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/6/Image_1.JPG",
+          "alt": " A young man and woman sit on a blue sofa holding gaming controller within a dimly lit modern living room playing on a video game. Their faces are lit up by the blue lights from the game."
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/6/Image_2.JPG",
+          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/6/Image_2.JPG",
+          "alt": "A man dressed in grey sits on the floor holding a gaming controler in front of a large, gaming TV on a TV stand within a modern living room. A woman sits on a black arm chair next to him holding a gaming controller. Both the man and the woman are playing a racing car driving game together."
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/6/Image_3.JPG",
+          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/6/Image_3.JPG",
+          "alt": "Woman lying fast alseep in a bed with white bedding"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "tips-and-trikx",
+      "title": "More episodes"
+    }
+  ]
+}

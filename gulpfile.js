@@ -374,7 +374,8 @@ function HOITemplates() {
         default:
           // otherwise get data then key
           // escaping quotes that were pr eviously escaped
-          value = escapeDoubleQuotes(getPageData(page)[key])
+          value = getPageData(page)[key]
+          value = value ? escapeDoubleQuotes(value) : value
 
       }
       // update dataString, replacing the first (current) matched occurence using matched string

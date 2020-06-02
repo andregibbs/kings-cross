@@ -9,13 +9,6 @@
       "type": "group-land",
       "items": [
         {
-          "title": "{{innovation|innovation-sessions|grl-pwr-gang[title]}}",
-          "description": "{{innovation|innovation-sessions|grl-pwr-gang[description]}}",
-          "image": "{{innovation|innovation-sessions|grl-pwr-gang[image]}}",
-          "alt": "{{innovation|innovation-sessions|grl-pwr-gang[alt]}}",
-          "url": "{{innovation|innovation-sessions|grl-pwr-gang[url]}}"
-        },
-        {
           "title": "{{creativity|university-of-lincoln[title]}}",
           "description": "{{creativity|university-of-lincoln[description]}}",
           "image": "{{creativity|university-of-lincoln[image]}}",
@@ -23,24 +16,12 @@
           "url": "{{creativity|university-of-lincoln[url]}}"
         },
         {
-          "title": "{{innovation|innovation-sessions|george-the-poet-podcast-creation[title]}}",
-          "description": "{{innovation|innovation-sessions|george-the-poet-podcast-creation[description]}}",
-          "image": "{{innovation|innovation-sessions|george-the-poet-podcast-creation[image]}}",
-          "alt": "{{innovation|innovation-sessions|george-the-poet-podcast-creation[alt]}}",
-          "url": "{{innovation|innovation-sessions|george-the-poet-podcast-creation[url]}}"
-        },
-        {
           "title": "{{innovation|science-museum|1[title]}}",
           "description": "{{innovation|science-museum|1[description]}}",
           "image": "{{innovation|science-museum|1[image]}}",
           "alt": "{{innovation|science-museum|1[alt]}}",
           "url": "{{innovation|science-museum|1[url]}}"
-        }
-      ]
-    },
-    {
-      "type": "group-land",
-      "items": [
+        },
         {
           "title": "{{innovation|science-museum|2[title]}}",
           "description": "{{innovation|science-museum|2[description]}}",
@@ -54,20 +35,6 @@
           "image": "{{innovation|science-museum|3[image]}}",
           "alt": "{{innovation|science-museum|3[alt]}}",
           "url": "{{innovation|science-museum|3[url]}}"
-        },
-        {
-          "title": "{{innovation|innovation-sessions|gal-dem-motivation-creativity[title]}}",
-          "description": "{{innovation|innovation-sessions|gal-dem-motivation-creativity[description]}}",
-          "image": "{{innovation|innovation-sessions|gal-dem-motivation-creativity[image]}}",
-          "alt": "{{innovation|innovation-sessions|gal-dem-motivation-creativity[alt]}}",
-          "url": "{{innovation|innovation-sessions|gal-dem-motivation-creativity[url]}}"
-        },
-        {
-          "title": "{{innovation|innovation-sessions|4[title]}}",
-          "description": "{{innovation|innovation-sessions|4[description]}}",
-          "image": "{{innovation|innovation-sessions|4[image]}}",
-          "alt": "{{innovation|innovation-sessions|4[alt]}}",
-          "url": false
         }
       ]
     }

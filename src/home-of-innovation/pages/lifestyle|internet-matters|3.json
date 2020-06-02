@@ -1,0 +1,66 @@
+{
+  "title": "Stay Learning. Keeping Kids Safe Online: Tools and Resources with Samsung + Internet Matters ",
+  "description": "In the last of this three-part series, you’ll get advice on in-built safety tools available on Samsung products and third party online safety apps that can support you in managing your child’s online safety.",
+  "image": "{{lifestyle|internet-matters[image]}}",
+  "alt": "{{lifestyle|internet-matters[alt]}}",
+  "thumb": "{{lifestyle|internet-matters[image]}}",
+  "group": "internet-matters",
+  "sort": 3,
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "youtube",
+        "content": "pZYgaS_U8G8"
+      },
+      "style": {
+        "desktop": "top",
+        "mobile": "top"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "{{lifestyle|internet-matters|3[title]}}"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Welcome to Samsung and Internet Matters exclusive online safety series, offering expert tips and advice on how to make the digital world a safe and exciting place for children!",
+            "In the last of this three-part series, you’ll get advice on in-built safety tools available on Samsung products and third party online safety apps that can support you in managing your child’s online safety."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "share"
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "paragraphs",
+          "text": [
+            "Samsung is a proud partner of online safety not-for-profit Internet Matters, working jointly to deliver a number of initiatives to help parents keep their children safe online. Together we launched our co-branded microsite, which features a range of age-appropriate guides and resources to support under-8s and over 8-s navigate the digital world safely, smartly and securely on a whole host of Samsung connected devices and products.",
+            "To further support families and in celebration of Safer Internet Day this year, we worked with Internet Matters to deliver our first online safety workshop for parents and children at Samsung KX. The workshop armed parents with a range of helpful tips, a hands-on introduction to the safety features across the Samsung range, and a tutorial with our safeguarding assistant SafeToNet.",
+            "Now, we’re delighted to build on this work with this brand new online safety web series, offering a range of insights and expert advice from Internet Matters to help keep your family safe online."
+          ]
+        },
+        {
+          "type": "buttons",
+          "items": [
+            {
+              "copy": "Learn More",
+              "url": "https://www.internetmatters.org/about-us/our-partners/samsung-internet-matters-corporate-partner/samsung-micro-site/?utm_source=Samsung_KX_Online_Course&utm_medium=video&utm_campaign=alwayson_vid_1",
+              "target": "_blank"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "internet-matters",
+      "title": "Other episodes"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "title": "Stay Learning: Samsung and SafeToNet presents \"Safeguarding Children’s Digital Wellbeing\"",
+  "description": "Learn how to safeguard your children's digital wellbeing with Safe to Net. ",
+  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/safe-to-net/STNKV.jpg",
+  "alt": "Black and turquoise landscape digital poster illustrating Samsung and SafeToNet's partnership. Black and tuquoise diamond shapes are overlayed with white text. In the bottom left hand corner there is a small black rectangle with the Galaxy Store icon and white text. In the top right hand corner there is a black and white abstract image of a young girl lying down while holding a tablet in both hands. In the top left hand corner there is the Samsung logo and SafeToNet logo.",
+  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/safe-to-net/STNKV.jpg",
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "youtube",
+        "content": "NsPaLYAHvas",
+        "poster": "{{lifestyle|safe-to-net[image]}}",
+        "poster_mobile": "{{lifestyle|safe-to-net[image]}}",
+        "alt": "{{lifestyle|safe-to-net[alt]}}"
+      },
+      "style": {
+        "desktop": "left",
+        "mobile": "bottom"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "Samsung and SafeToNet presents \"Safeguarding Children’s Digital Wellbeing\""
+        }
+      ]
+    },
+    {
+      "type": "share"
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "paragraphs",
+          "text": [
+            "SafeToNet is a brilliant safeguarding assistant app for children’s smartphones and tablets. The app uses a smart keyboard to detect risks to children and educate them in real time as they use their devices. By filtering harmful outgoing messages before they can be sent, and pointing children in the direction of support should they need it, the app supports young people’s digital well-being as well as empowering them to become responsible digital citizens. For parents, the app also provides invaluable insights into children’s digital wellbeing, showing patterns of safety and risk and guiding parents with advice on how to deal with challenging discussions.",
+            "Samsung and SafeToNet’s partnership formed out of a joint mission to help improve the safety of children and young people online, and this year we proudly featured a SafeToNet tutorial for parents at Samsung and Internet Matters’ child online safety workshop at Samsung KX. Now, we are joined by the SafeToNet team once again to bring you an overview of the app and its key features. If you think this could be of support your family, a free 60 day trial* is now available to all Samsung Galaxy device owners on the Galaxy Store.",
+            "*After the 60 day free trial, SafeToNet runs an auto renewing monthly subscription of £2.99/month or an auto renewing yearly subscription of £31.99/year on the Galaxy and Google Play store. You can cancel your subscription at any time, including during the trial period.",
+            "To learn more about the full Terms & Conditions click here: <a href=\"https://safetonet.com/terms-of-service/\">https://safetonet.com/terms-of-service/</a>"
+          ]
+        },
+        {
+          "type": "buttons",
+          "items": [
+            {
+              "copy": "Download now",
+              "url": "https://galaxy.store/safet",
+              "target": "_blank"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "items": [
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/safe-to-net/gallery/05STN.jpg",
+          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/safe-to-net/gallery/thumb/05STN_thumb.jpg",
+          "alt": "Turquoise gradient landscape digital poster with white text overlay illustrating SafeToNet's Advice & Guidance for Parents on safeguarding their devices for children's use. The the right half of the poster, two Samsung smartphones, one grey and one turquoise in colour, show the different Advice & Guidance different sections of the SafeToNet App with a close up view of typed text being inputted into the search box of the app in a circular bubble.",
+          "title": "Advice and Guidance - Parent's and Child's Advice"
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/safe-to-net/gallery/04STN.jpg",
+          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/safe-to-net/gallery/thumb/04STN_thumb.jpg",
+          "alt": "Turquoise grdient landscape digital poster with white text overlay illustrating SafeToNet's gudiance for parents within their online safeguarding app. On the right hand side of the poster two grey Samsung smartphones are shown, both displaying different sections of the SafeToNet app aimed at parents, including FAQs on children's safety online and insights into a child's online activity. In two circular bubbles close up images of the app in use are shown on top of the smartphones.",
+          "title": "Explore the Signs - Parent's Device"
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/safe-to-net/gallery/02STN.jpg",
+          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/safe-to-net/gallery/thumb/02STN_thumb.jpg",
+          "alt": "Turpoise gradient landscape digital poster with white text overlay illustrating SafeToNet's digital wellbeing assistant tool. The right hand side of the image shows two teal Samsung smartphones, one displaying the breathing exercise tool for children within SafeToNet's app, the other shows the SafeToNet app's Emotion Diary. Two circular bubbles shows close ups of the SafeToNet app being used.",
+          "title": "Digital Wellbeing - Child's Device"
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/safe-to-net/gallery/03STN.jpg",
+          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/safe-to-net/gallery/thumb/03STN_thumb.jpg",
+          "alt": "Turquoise gradient landscape digital poster with white text illustrating the safeguarding insights of SafeToNet's app. Two grey Samsung smartphones are pictured, each showing the SafeToNet app on a parent's device in action. One smartphone screen a child's Safety Indicator, the other shows analysis of a child's online messages. Two circular bubbles show close ups of the app being used, one displaying different social media channels which can be connected to the SafeToNet app, the other shows a profile of a connect child's smartphone.",
+          "title": "SafeGuarding Insights - Parent's Device"
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/safe-to-net/gallery/01STN.jpg",
+          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/safe-to-net/gallery/thumb/03STN_thumb.jpg",
+          "alt": "Turquoise gradient landscape digital poster with white text on top illustrating the safeguarding assistant on SafeToNet's app. On the right half of the image one teal Samsugn smarphone is pictured showing cyber bullying messages. Two circular bubbles show the pop-up messages from the safeguarding assistant advising sender while typing on the content and tone of their messages in response to a cyber bully.",
+          "title": "SafeGuarding Insights - Child's Device"
+        }
+      ]
+    }
+  ]
+}

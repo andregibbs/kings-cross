@@ -61,7 +61,7 @@ Pages will be built under `/uk/explore/kings-cross/` with pipes indicating subdi
 
 Example `category-page|single-page.json` will create a page with the path `/uk/explore/kings-cross/category-page/single-page`. Pages can (probably) be as deep as required and also use numbers as url paths.
 
-The placeholder key denotes that the page should be referenced in the group component, but not linked to. Functionality could be used in other components if needed. 
+The placeholder key denotes that the page should be referenced in the group component, but not linked to. Functionality could be used in other components if needed.
 
 ### Structure
 ```javaScript
@@ -145,7 +145,8 @@ Items can hold multiple buttons.
   "items": [
     {
       "copy": BUTTON_TEXT (REQUIRED)
-      "url":  URL (REQUIRED)
+      "url":  URL (REQUIRED),
+      "target": LINK_TARGET (OPTIONAL)
     }
   ]
 }
@@ -242,11 +243,14 @@ The components array will hold other components to display alongside the media. 
     "type": "youtube",
     "content": YOUTUBE_ID (REQUIRED)
     "embedType": EMBED_TYPE (video|playlist) (OPTIONAL: default video)
+    "poster": MEDIA_COVER (OPTIONAL)
+    "poster_mobile": MEDIA_COVER_MOBILE (OPTIONAL)
   },
   "media": MEDIA_OBJECT (video|audio) (REQUIRE_ONE) {
     "type": MEDIA_TYPE (video|audio) (REQUIRED)
     "content": MEDIA_URL (REQUIRED)
     "poster": MEDIA_COVER (PREFERED)
+    "poster_mobile": MEDIA_COVER_MOBILE (OPTIONAL)
   },
   "components": [
     COMPONENT_OBJECTS
@@ -334,6 +338,9 @@ Component will create a multiple paragraph elements for each array value. HTML c
 ```javaScript
 {
   "type": "paragraphs",
+  "style": STYLE_OBJECT (OPTIONAL) {
+    "large": LARGE_PARAGRAPH_TEXT (BOOL) (OPTIONAL: default false)
+  },
   "text": [
     PARAGRAPH_STRINGS
   ]

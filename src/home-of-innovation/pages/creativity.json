@@ -42,6 +42,13 @@
       "type": "group-land",
       "items": [
         {
+          "title": "{{innovation|innovation-sessions|gal-dem-motivation-creativity[title]}}",
+          "description": "{{innovation|innovation-sessions|gal-dem-motivation-creativity[description]}}",
+          "image": "{{innovation|innovation-sessions|gal-dem-motivation-creativity[image]}}",
+          "alt": "{{innovation|innovation-sessions|gal-dem-motivation-creativity[alt]}}",
+          "url": "{{innovation|innovation-sessions|gal-dem-motivation-creativity[url]}}"
+        },
+        {
           "title": "{{innovation|innovation-sessions|grl-pwr-gang[title]}}",
           "description": "{{innovation|innovation-sessions|grl-pwr-gang[description]}}",
           "image": "{{innovation|innovation-sessions|grl-pwr-gang[image]}}",
@@ -61,7 +68,12 @@
           "image": "{{creativity|game-dev-london-podcast|3[image]}}",
           "alt": "{{creativity|game-dev-london-podcast|3[alt]}}",
           "url": "{{creativity|game-dev-london-podcast|3[url]}}"
-        },
+        }
+      ]
+    },
+    {
+      "type": "group-land",
+      "items": [
         {
           "title": "{{innovation|innovation-sessions|4[title]}}",
           "description": "{{innovation|innovation-sessions|4[description]}}",
