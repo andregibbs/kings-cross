@@ -44,24 +44,21 @@ All files (including non HOI pages) are included and existing files will be over
 Command:  
 `bash ./dodeploy staging`
 
+#### Staging URL
+https://d1bb30i8nznsls.cloudfront.net/uk/explore/kings-cross/
+
 ### Deployment
 
 Run both `gulp hoi-dev` & `gulp` for scraping.
 
 
-#### Staging URL
-https://d1bb30i8nznsls.cloudfront.net/uk/explore/kings-cross/
-
-
 ## Page Config Files  
-The page config files are responsible for holding relevant data.
+The page config files are responsible for holding page relevant data.
 
 The naming of the file relates to the pages URL with each url segment separated by a pipe `|`.
 Pages will be built under `/uk/explore/kings-cross/` with pipes indicating subdirectories.
 
 Example `category-page|single-page.json` will create a page with the path `/uk/explore/kings-cross/category-page/single-page`. Pages can (probably) be as deep as required and also use numbers as url paths.
-
-The placeholder key denotes that the page should be referenced in the group component, but not linked to. Functionality could be used in other components if needed.
 
 ### Structure
 ```javaScript
@@ -88,6 +85,8 @@ The Page model stores top level info about the page and an array of what compone
 
 Note on the theme object & color, this will only be applied on top level HOI pages (ie /category/ not /category/page)
 
+The placeholder key denotes that the page should be referenced in the group component, but not linked to. Functionality could be used in other components if needed.
+
 ### Variables
 
 Included in the build task is the ability to reference key values from other page config files. Variables can also reference their own pages values. This makes it easy to reference and make changes to page values, across pages, by only editing in one place.
@@ -104,7 +103,6 @@ Example: Will find the config file named 'page-name' and pull the title key valu
   {{page-name[title]}}
 ```
 
-Sub pages can be referenced using pipes. Currently we cant select key values from components included in the components array, if this is required a simple solution could be to hold reusable 'copy' object at top level within each page config file. Then add a variable ref to the component object.
 
 ### Special Variables
 #### URL
@@ -215,7 +213,7 @@ HEADLINE_LEVEL indicates the size of the headline, 1, 2, 3, 4, 5, 6. Default 1
 ```javaScript
 {
   "type": "headline",
-  "level": HEADLINE_LEVEL (1|2|3|4|5|6) (OPTIONAL: default 1)
+  "level": HEADLINE_LEVEL ("1"|"2"|"3"|"4"|"5"|"6") (OPTIONAL: default "1"),
   "copy": HEADLINE_COPY (REQUIRED)
 }
 ```

@@ -108,6 +108,13 @@
       "type": "group-land",
       "items": [
         {
+          "title": "{{lifestyle|safe-to-net[title]}}",
+          "description": "{{lifestyle|safe-to-net[description]}}",
+          "image": "{{lifestyle|safe-to-net[image]}}",
+          "alt": "{{lifestyle|safe-to-net[alt]}}",
+          "url": "{{lifestyle|safe-to-net[url]}}"
+        },
+        {
           "title": "{{lifestyle|internet-matters|2[title]}}",
           "description": "{{lifestyle|internet-matters|2[description]}}",
           "image": "{{lifestyle|internet-matters|2[image]}}",
@@ -122,11 +129,23 @@
           "url": "{{lifestyle|internet-matters|3[url]}}"
         },
         {
-          "title": "{{lifestyle|safe-to-net[title]}}",
-          "description": "{{lifestyle|safe-to-net[description]}}",
-          "image": "{{lifestyle|safe-to-net[image]}}",
-          "alt": "{{lifestyle|safe-to-net[alt]}}",
-          "url": "{{lifestyle|safe-to-net[url]}}"
+          "title": "{{lifestyle|guest-writer-of-the-week|6[title]}}",
+          "description": "{{lifestyle|guest-writer-of-the-week|6[description]}}",
+          "image": "{{lifestyle|guest-writer-of-the-week|6[image]}}",
+          "alt": "{{lifestyle|guest-writer-of-the-week|6[alt]}}",
+          "url": "{{lifestyle|guest-writer-of-the-week|6[url]}}"
+        }
+      ]
+    },
+    {
+      "type": "group-land",
+      "items": [
+        {
+          "title": "{{lifestyle|tips-and-trikx|7[title]}}",
+          "description": "{{lifestyle|tips-and-trikx|7[description]}}",
+          "image": "{{lifestyle|tips-and-trikx|7[image]}}",
+          "alt": "{{lifestyle|tips-and-trikx|7[alt]}}",
+          "url": "{{lifestyle|tips-and-trikx|7[url]}}"
         }
       ]
     }

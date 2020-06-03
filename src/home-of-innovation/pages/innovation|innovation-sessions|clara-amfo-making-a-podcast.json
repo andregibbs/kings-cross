@@ -1,0 +1,94 @@
+{
+  "title": "Innovation Sessions – Episode 4: How to make your own podcast",
+  "description": "A brand-new digital series from the Home of Innovation to inspire the UK  ",
+  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/innovation-sessions/3/SamsungKX_LandingPage_EpisodeFour_CategoryHero_V2.jpg",
+  "alt": "",
+  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/innovation-sessions/3/SamsungKX_LandingPage_EpisodeFour_Thumbnail_V1.jpg",
+  "group": "innovation-sessions",
+  "sort": 4,
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "{{innovation|innovation-sessions|clara-amfo-making-a-podcast[image]}}",
+        "alt": "{{innovation|innovation-sessions|clara-amfo-making-a-podcast[alt]}}"
+      },
+      "style": {
+        "desktop": "left",
+        "mobile": "top"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "level": "1",
+          "copy": "{{innovation|innovation-sessions|clara-amfo-making-a-podcast[title]}}"
+        }
+      ]
+    },
+    {
+      "type": "share"
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "headline",
+          "copy": "Series Overview:",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Welcome to the Innovation Sessions.",
+            "Samsung KX, the Home of Innovation, has partnered with a line-up of inspiring people to bring you our very first digital event series. Topics such as podcasts, creativity, tips for businesses and more will be covered to help you create your very own home of innovation."
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "Episode 4:",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "In episode 4 of Innovation Sessions, podcasters Clara Amfo and Renay Richardson discuss their top tips for how to create your own podcast, how to stand out in a crowded sector with so much competition and how to perfect your format to improve your output."
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "About the collaborators:",
+          "level": "3"
+        },
+        {
+          "type": "headline",
+          "copy": "Clara Amfo",
+          "level": "4"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Clara Amfo is a bold young broadcaster best known for her 10am - 1pm BBC Radio 1 show, home of the world-famous Live Lounge.",
+            "Her show has seen her interview some of the world’s most prolific artists from Jay-Z, Ariana Grande, Kendrick Lamar and Pharrell Williams to name but a few.  A respected face on our screens and well respected in the UK music scene - Clara made her podcast debut this year, launching  \"This City\"; a podcast series that explores the streets of London through the eyes of some of the capitals most recognisable names including Mark Ronson and Louis Theroux."
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "Renay Richardson",
+          "level": "4"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Beginning her podcast career at Acast in 2014, Richardson was the first content manager in the company’s London office. Moving into production, Richardson developed a leading fashion retailer’s first podcast My Big Idea and their second These Four Walls, before moving to Audible to work in the Original Content team, and then onto Brooklyn based Panoply. In 2018, Richardson embarked on a freelance career producing shows, including The Receipts on 1xtra and About Race with Reni Eddo-Lodge. She founded Broccoli Content in the summer of 2018 in response to the lack of opportunities both in front of, and behind, the mic for minority talent."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "innovation-sessions",
+      "title": "More episodes"
+    }
+  ]
+}

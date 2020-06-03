@@ -1,0 +1,201 @@
+{
+  "title": "Tips & Trikx: 'Pawfect' shots in 8K",
+  "description": "Tech influencer sensation, ASBYT, shares six simple steps to capturing and editing photos in 8K",
+  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/7/KV.jpg",
+  "alt": "A person holding the smartphone Samsung Galaxy S20 Ultra in a landscape orientation with two hands views a close up photo of a grey cat lying down in front of a green blurred background.",
+  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/7/KV.jpg",
+  "group": "tips-and-trikx",
+  "sort": 7,
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "{{lifestyle|tips-and-trikx|7[image]}}",
+        "alt": "{{lifestyle|tips-and-trikx|7[alt]}}"
+      },
+      "style": {
+        "desktop": "left",
+        "mobile": "bottom"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "{{lifestyle|tips-and-trikx|7[title]}}"
+        }
+      ]
+    },
+    {
+      "type": "share"
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "paragraphs",
+          "style": {
+            "large": true
+          },
+          "text": [
+            "Tech influencer and YouTube vlogger Adam Butcher shares six simple steps to capturing and editing photos in 8K using the Samsung Galaxy S20 Ultra."
+          ]
+        },
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "Step One"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Firstly, you will need to capture the 8K video. To do this, open your camera app on the Samsung Galaxy S20 Ultra and head to your video tab."
+          ]
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/7/1.jpg",
+          "alt": "Two hands hold the smartphone Samsung Galaxy S20 Ultra in a portrait orientationin in front of a bush. The camera of the smartphone is on, capturing the bush in front of it. A yellow circle and arrow are pictured around the video button."
+        },
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "Step Two"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Click on the settings cog at the top left-hand side and scroll down to the videos section."
+          ]
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/7/2.jpg",
+          "alt": "Two hands hold the smartphone Samsung Galaxy S20 Ultra in a portrait orientationin in front of a bush. The camera of the smartphone is on, capturing the bush in front of it. A yellow circle and arrow are pictured around the settings button on the phone screen."
+        },
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "Step Three"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Select 'rear video size' and under the '16:9' section click on 'resolution' and make sure its set to 8K."
+          ]
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/7/3.jpg",
+          "alt": "Two hands hold the smartphone Samsung Galaxy S20 Ultra in a portrait orientationin in front of a bush. On the phone screen, the camera settings are open with a yellow circle and arrow pointing towards the rear video size setting."
+        },
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "Step Four"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Once you've captured your video footage, go to your gallery, and select the video you want to capture your stills from."
+          ]
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/7/4.jpg",
+          "alt": "Two hands hold the smartphone Samsung Galaxy S20 Ultra in a portrait orientationin in front of a garden. On the phone screen, a gallery of photos and vifdeos are shown. A yellow circle and arrow are pictured pointing towards one video in the photo and video gallery pictured on screen."
+        },
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "Step Five"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "When selected, click 'play video' and scrub through until you find your desired shot."
+          ]
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/7/5.jpg",
+          "alt": "Two hands hold the smartphone Samsung Galaxy S20 Ultra in a landscape orientationin in front of a garden. On the phone screen, a video of a grey cat lying down on the floor is pictured, with a yellow circle and arrow pictured to highlight how to scrub through a video"
+        },
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "Step Six"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Once you’ve found it, press the photo icon at the top left-hand side. Once snapped, you will now have that photo in your gallery to enjoy! "
+          ]
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/7/6.jpg",
+          "alt": "Two hands hold the smartphone Samsung Galaxy S20 Ultra in a landscape orientationin in front of a garden. On the phone screen, a video of a grey cat lying down on the floor is shown, with a yellow circle and arrow arround the photo gallery icon in the top left hand corner of the screen"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Snap and share your 8K shots with <strong>#SamsungKX</strong>"
+          ]
+        },
+        {
+          "type": "____paragraphs",
+          "text": [
+            "Watch Adam’s full video tutorial <a href=\"{{creativity|editing-sessions|2[url]}}\">here.</a>",
+            "Snap and share your 8K shots with <strong>#SamsungKX</strong>"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "items": [
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/7/1.jpg",
+          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/7/1.jpg",
+          "alt": "Two hands hold the smartphone Samsung Galaxy S20 Ultra in a portrait orientationin in front of a bush. The camera of the smartphone is on, capturing the bush in front of it. A yellow circle and arrow are pictured around the video button."
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/7/2.jpg",
+          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/7/2.jpg",
+          "alt": "Two hands hold the smartphone Samsung Galaxy S20 Ultra in a portrait orientationin in front of a bush. The camera of the smartphone is on, capturing the bush in front of it. A yellow circle and arrow are pictured around the settings button on the phone screen."
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/7/3.jpg",
+          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/7/3.jpg",
+          "alt": "Two hands hold the smartphone Samsung Galaxy S20 Ultra in a portrait orientationin in front of a bush. On the phone screen, the camera settings are open with a yellow circle and arrow pointing towards the rear video size setting."
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/7/4.jpg",
+          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/7/4.jpg",
+          "alt": "Two hands hold the smartphone Samsung Galaxy S20 Ultra in a portrait orientationin in front of a garden. On the phone screen, a gallery of photos and vifdeos are shown. A yellow circle and arrow are pictured pointing towards one video in the photo and video gallery pictured on screen."
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/7/5.jpg",
+          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/7/5.jpg",
+          "alt": "Two hands hold the smartphone Samsung Galaxy S20 Ultra in a landscape orientationin in front of a garden. On the phone screen, a video of a grey cat lying down on the floor is pictured, with a yellow circle and arrow pictured to highlight how to scrub through a video"
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/7/6.jpg",
+          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/7/6.jpg",
+          "alt": "Two hands hold the smartphone Samsung Galaxy S20 Ultra in a landscape orientationin in front of a garden. On the phone screen, a video of a grey cat lying down on the floor is shown, with a yellow circle and arrow arround the photo gallery icon in the top left hand corner of the screen"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "tips-and-trikx",
+      "title": "More episodes"
+    }
+  ]
+}
