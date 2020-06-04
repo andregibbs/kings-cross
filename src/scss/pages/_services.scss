@@ -110,17 +110,17 @@
 
       &__image {
         width: 45%;
-        height: 150px;
+        height: 110px;
         margin: 16px auto;
         position: relative;
 
         @media screen and (max-width: $desktop) {
-          height: get-desktop-vw(150);
+          height: get-desktop-vw(110);
           margin: get-desktop-vw(16) auto;
         }
 
         @media screen and (max-width: $mobile) {
-          height: get-mobile-vw(200);
+          height: get-mobile-vw(150);
           margin: get-mobile-vw(24) auto;
         }
 
@@ -213,7 +213,7 @@
       color: $warning;
     }
   }
-  
+
 
 
   & > div,
