@@ -66,7 +66,8 @@
         {
           "type": "image",
           "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/4/1.png",
-          "alt": "pastel coloured painting above a fireplace"
+          "alt": "pastel coloured painting above a fireplace",
+          "credit": "Image credit Mintstudio at The Poster Club 1"
         },
         {
           "type": "headline",
@@ -82,10 +83,9 @@
         {
           "type": "image",
           "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/4/2.jpg",
-          "alt": "pastel coloured planter with a plant"
+          "alt": "pastel coloured planter with a plant",
+          "credit": "Image credit Ferm Living"
         },
-
-
         {
           "type": "headline",
           "copy": "On the wall - picking up the paints",
@@ -127,12 +127,14 @@
         {
           "type": "image",
           "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/4/1.jpg",
-          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/4/1.jpg"
+          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/4/1.jpg",
+          "description": "Image credit Mintstudio at The Poster Club 1"
         },
         {
           "type": "image",
           "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/4/2.jpg",
-          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/4/2.jpg"
+          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/4/2.jpg",
+          "description": "Image credit Ferm Living"
         },
         {
           "type": "image",

@@ -297,7 +297,7 @@ function HOITemplates() {
       // ignore current file path
       if (path !== currentFilePath) {
         const pageData = require(path)
-        if (pageData.group === id) {
+        if (pageData.group === id && !pageData.hidden) {
           // Include page data aswell, no point double requiring in our use case
           withId.push({
             path,

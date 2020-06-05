@@ -25,6 +25,19 @@
   object-fit: revert;
 }
 
+
+.hoiMedia--ImageCredit {
+  .hoiMedia--image {
+    padding-bottom: 0;
+  }
+  .hoiMedia__ImageCredit {
+    display: block;
+    @media screen and (min-width: $mobile + 1) {
+      padding: $spacing-desktop calc(#{$spacing-desktop} * 2);
+    }
+  }
+}
+
 // Media State
 
 .hoiMedia__State {

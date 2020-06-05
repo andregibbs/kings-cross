@@ -30,7 +30,7 @@ import slider from './slider'
 // 	// 	// handle click if not Firefox (Firefox supports this feature natively)
 // 	// 	if (typeof InstallTrigger === 'undefined') {
 
-// 	// 		// get click position 
+// 	// 		// get click position
 // 	// 		var clickY = (e.pageY - $(this).offset().top);
 // 	// 		var height = parseFloat( $(this).height() );
 
@@ -44,7 +44,7 @@ import slider from './slider'
 
 // }
 
-const SLOTS = { 
+const SLOTS = {
     "desktop": {
         1: '#slot_1',
         2: '#slot_2',
@@ -61,8 +61,8 @@ const tabs = {
         "img" : {
             "src" : "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/recently1.png?$ORIGIN_PNG$",
             "alt" : ""
-        }, 
-        "content" : 
+        },
+        "content" :
             `<h1 class="recently__content__header">Samsung KX Presents: Thread Talks with Caitlin Moran</h1>
             <p><b>To kick off the first in the series of Thread Talks, host and comedian Alex Zane was joined by acclaimed author Caitlin Moran as they celebrated the world of Twitter threads, spats and conversations.</b></p><br>
             <p>The 90-minute event featured an intimate live performance from Caitlin as she reflected on one of her most popular Twitter threads - a look at the downsides of being a man – followed by a Q&A with the audience and Alex Zane which highlighted some of her greatest, weirdest and funniest moments on the platform.</p>
@@ -75,8 +75,8 @@ const tabs = {
         "img" : {
             "src" : "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/recently2.png?$ORIGIN_PNG$",
             "alt" : ""
-        }, 
-        "content" : 
+        },
+        "content" :
             `<h1 class="recently__content__header">Co-Lab Series: How to monetise your side hustle</h1>
             <p><b>Mercedes Benson is a creative polymath, from becoming an enterprise founder to a social influencer, she is a true all-rounder.</b></p><br>
             <p>In her talk she shared her knowledge and insight on how to turn your passion into a business discussing her own experience by making money from her creativity.</p>
@@ -88,8 +88,8 @@ const tabs = {
         "img" : {
             "src" : "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/zonev-300x200.png?$ORIGIN_PNG$",
             "alt" : ""
-        }, 
-        "content" : 
+        },
+        "content" :
             `<h1 class="recently__content__header">Zone V</h1>
             <p><b>Zone V is an easy to use interface that works with Samsung Smartphones designed to make even the most important phone features easy. It simplifies access to mobile device apps such as calls and texts, phone and contacts keeping you connected with friends and family.</b></p><br>
             <p>From enlarging text and buttons to creating clearer menus, Zone V makes devices more accessible for those that struggle. For more information on Zone V please visit: <a href="https://zonev.com/" target="_blank">https://zonev.com/.</a></p>`,
@@ -103,7 +103,8 @@ let activeTab = 1;
 
 export default function discover(events) {
 
-    const sliderConfig = {
+    // top kv slider config
+    const kvSliderConfig = {
         lazyLoad: 'ondemand',
         slidesToShow: 3,
         infinite: true,
@@ -115,8 +116,9 @@ export default function discover(events) {
         focusOnSelect: true,
         prevArrow: false,
         nextArrow: false,
-        speed: 1000
+        speed: 750
     }
+    $('#discover-kv-slider').slick( kvSliderConfig )
 
     const altSliderConfig = {
             lazyLoad: 'ondemand',
@@ -124,7 +126,6 @@ export default function discover(events) {
             infinite: false,
             speed: 500,
             fade: false
-            
     }
     const recentlySliderConfig = {
         lazyLoad: 'ondemand',
@@ -153,7 +154,7 @@ export default function discover(events) {
         nextArrow: false,
 }
     slider(events, '.slider-discover-alt', altSliderConfig, 'homeKv');
-    slider(events, '.slider-discover', sliderConfig, 'homeKv');
+
     slider(events, '.slider-discover-recently', recentlySliderConfig, 'homeKv');
     slider(events, '.slider-discover-recently-descriptions', recentlyDescriptionsSliderConfig, 'homeKv');
     var indexToGet = $('.slider .slick-slide').index($('#center_on_me'));
@@ -182,7 +183,7 @@ export default function discover(events) {
 
     //         var currentTabData = document.querySelector('.tab-content[data-tab-content="' + this.dataset.tabTrigger + '"]');
 
-    // 		// add fade out animation and remove 
+    // 		// add fade out animation and remove
 
 
     //         // remove classess
@@ -226,7 +227,7 @@ export default function discover(events) {
 
     function fadeIn(element){
         element.removeClass('fadeOut')
-        element.addClass('fadeIn')     
+        element.addClass('fadeIn')
     }
 
     $('.community-tabs').on("click", '.tab', (e)=>{
@@ -272,7 +273,7 @@ export default function discover(events) {
             const slot1_mobile = $(SLOTS.mobile[1])
             const slot2_mobile = $(SLOTS.mobile[2])
             const slot3_mobile = $(SLOTS.mobile[3])
-           
+
             const floating_content_text = $('#floating__content__text')
             const floating_content_text_mobile = $('#floating__content__text__mobile')
             const floating_content_tab = $("#floating__content__tab")
@@ -294,7 +295,7 @@ export default function discover(events) {
                     fadeOut(header)
                 }, 0*timeScale);
                 setTimeout(()=> {
-                    
+
                     fadeOut(slot1)
                     fadeOut(slot1_mobile)
                 }, 150*timeScale);
@@ -308,15 +309,15 @@ export default function discover(events) {
                 setTimeout(()=> {
                     $(SLOTS.desktop[destination]).attr('src', tabs[getTabIndexBySlot(destination)].img.src)
                     $(SLOTS.mobile[destination]).attr('src', tabs[getTabIndexBySlot(destination)].img.src)
-                    
+
                 }, 950*timeScale);
                 setTimeout(()=> {
                     slot1.children('img').attr('src', tabs[newActiveTabIndex].img.src)
                     slot1_mobile.children('img').attr('src', tabs[newActiveTabIndex].img.src)
                     floating_content_button.attr('href', tabs[newActiveTabIndex].link)
                     floating_content_button_mobile.attr('href', tabs[newActiveTabIndex].link)
-                    
-    
+
+
                     fadeIn(slot1)
                     fadeIn(slot1_mobile)
                     floating_content.map((element)=>{
@@ -324,9 +325,9 @@ export default function discover(events) {
                     })
                     fadeIn(slot3)
                     fadeIn(slot3_mobile)
-    
+
                     floating_content_text.html(tabs[newActiveTabIndex].content)
-                    floating_content_text_mobile.html(tabs[newActiveTabIndex].content)             
+                    floating_content_text_mobile.html(tabs[newActiveTabIndex].content)
                 }, 1150*timeScale);
                 setTimeout(()=> {
                     let elements = [slot2, slot2_mobile, header]
@@ -335,11 +336,11 @@ export default function discover(events) {
                     })
                 }, 1130*timeScale);
             }
-            
-            
+
+
             // var currentTabData = document.querySelector('.tab-content[data-tab-content="' + activeTab + '"]');
-            
-            
+
+
             // document.querySelector('.tab-content[data-tab-content="' + oldActiveTab + '"]').classList.remove('is-active');
 
             // this.classList.add('is-active');
@@ -349,7 +350,7 @@ export default function discover(events) {
             //     console.log(oldTab)
             //     oldTab.remove('is-open')
 			// 	$(newImg).attr('src', oldImgSrc);
-				
+
             //     currentTabData.classList.add('is-open');
             // }, 900);
 
@@ -365,7 +366,7 @@ export default function discover(events) {
             //     $(".floating__image img").show();
             // }, 1600);
         });
-        
+
     });
 
 

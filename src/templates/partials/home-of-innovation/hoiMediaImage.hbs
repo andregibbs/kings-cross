@@ -1,1 +1,10 @@
-<img class="hoiMedia hoiMedia--image" src="{{ this.content }}" alt="{{ this.title }}">
+{{#if credit}}
+<div class="hoiMedia--ImageCredit">
+{{/if}}
+  <img class="hoiMedia hoiMedia--image" src="{{ this.content }}" alt="{{ this.title }}">
+
+
+{{#if credit}}
+  <span class="hoiMedia__ImageCredit">{{credit}}</span>
+</div>
+{{/if}}

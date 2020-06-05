@@ -1,0 +1,9 @@
+<section class="slider discoverKv__slider">
+  <div id="discover-kv-slider">
+      {{#each items }}
+        <div>
+            <img src="{{ @root.config.imgPath }}{{ this.image }}" class="discover__img" alt="{{ this.alt }}">
+        </div>
+      {{/each}}
+  </div>
+</section>

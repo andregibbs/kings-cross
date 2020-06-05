@@ -141,11 +141,18 @@
       "type": "group-land",
       "items": [
         {
-          "title": "{{lifestyle|tips-and-trikx|7[title]}}",
-          "description": "{{lifestyle|tips-and-trikx|7[description]}}",
-          "image": "{{lifestyle|tips-and-trikx|7[image]}}",
-          "alt": "{{lifestyle|tips-and-trikx|7[alt]}}",
-          "url": "{{lifestyle|tips-and-trikx|7[url]}}"
+          "title": "{{lifestyle|tips-and-trikx|8[title]}}",
+          "description": "{{lifestyle|tips-and-trikx|8[description]}}",
+          "image": "{{lifestyle|tips-and-trikx|8[image]}}",
+          "alt": "{{lifestyle|tips-and-trikx|8[alt]}}",
+          "url": "{{lifestyle|tips-and-trikx|8[url]}}"
+        },
+        {
+          "title": "{{lifestyle|zone-v[title]}}",
+          "description": "{{lifestyle|zone-v[description]}}",
+          "image": "{{lifestyle|zone-v[image]}}",
+          "alt": "{{lifestyle|zone-v[alt]}}",
+          "url": "{{lifestyle|zone-v[url]}}"
         }
       ]
     }

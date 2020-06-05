@@ -9,7 +9,7 @@
       "type": "kv",
       "media": {
         "type": "youtube",
-        "content": "NsPaLYAHvas",
+        "content": "MPfmeNBO1FQ",
         "poster": "{{lifestyle|safe-to-net[image]}}",
         "poster_mobile": "{{lifestyle|safe-to-net[image]}}",
         "alt": "{{lifestyle|safe-to-net[alt]}}"
@@ -46,6 +46,11 @@
             {
               "copy": "Download now",
               "url": "https://galaxy.store/safet",
+              "target": "_blank"
+            },
+            {
+              "copy": "Learn more",
+              "url": "https://safetonet.com/?utm_source=samsung&utm_medium=website&utm_campaign=safeguarding",
               "target": "_blank"
             }
           ]
@@ -86,7 +91,7 @@
         {
           "type": "image",
           "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/safe-to-net/gallery/01STN.jpg",
-          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/safe-to-net/gallery/thumb/03STN_thumb.jpg",
+          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/safe-to-net/gallery/thumb/01STN_thumb.jpg",
           "alt": "Turquoise gradient landscape digital poster with white text on top illustrating the safeguarding assistant on SafeToNet's app. On the right half of the image one teal Samsugn smarphone is pictured showing cyber bullying messages. Two circular bubbles show the pop-up messages from the safeguarding assistant advising sender while typing on the content and tone of their messages in response to a cyber bully.",
           "title": "SafeGuarding Insights - Child's Device"
         }
