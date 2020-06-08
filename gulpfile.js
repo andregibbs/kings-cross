@@ -257,6 +257,8 @@ function HOITemplates() {
   // Array of file paths to page configs
   const pages = getFilesInDirectory(pagesBasePath)
 
+  let dynamicComponentData = {}
+
   // Helper Functions
   // Fetch page config for url (path = "segment/segment" | "segment/segment/segment")
   function getPageData(path) {
@@ -400,8 +402,6 @@ function HOITemplates() {
     delete require.cache[require.resolve(filePath)];
     const pageData = require(filePath);
 
-
-
     // Create array for this pages url segments (['slug'/])
     const urlSegments = filePath
       .replace(pagesBasePath, '')
@@ -416,6 +416,60 @@ function HOITemplates() {
     const themeColor = getThemeColor(urlSegments)
 
     const isStagingTask = argv._[0] === 'hoi-staging';
+
+
+    // dynamic data
+
+    populatedData.components.forEach((component) => {
+
+      if (component.dynamic) {
+        // create unique reference, replace dynamic id in page data
+        let reference = urlSegments.join('/') + '-' + component.dynamic
+        component.dynamic = reference
+        dynamicComponentData[reference] = component
+      }
+    })
+
+    // console.log(dynamicComponentData)
+
+    /*
+      Dynamic data
+
+      use populatedData
+      loop through page components
+      if has dynamic flag
+        flag should be a unique id string (not true/false)
+        unique ids per page
+        prepend page path?
+        {page path}-{dynamic id}
+        store id to check for duplicates
+
+      copy the object to a gulp variable
+      dynamic-data.json
+
+      {
+        'page/path-component-id': { data }
+      }
+
+      if task is being run with a deploy task
+        gulp hoi-deploy-dynamic (staging default)
+        gulp hoi-deploy-dynamic --live
+          if live do confirmation
+
+      deploy a json file to an s3 bucket
+        kx-hoi-dynamic-data-staging.json
+        kx-hoi-dynamic-data-live.json
+
+      build dynamic js components to request dynamic data
+      in template include inline partial for javascript to populate and render
+
+      create abstract dynamic component class
+        with fetch requests
+        templating
+        staging/live file urls
+
+    */
+
 
     // Gulp loop to generate the site files
     gulp.src( config.SRC_FOLDER + '/' + _HOI_FOLDER + '/index.hbs' )
@@ -439,6 +493,10 @@ function HOITemplates() {
       .on('error', function(err) { log('Error building HTML template:' + urlSegments.join('/'), 'error') })
       .on('end', function(err) { log('Compiled Template: ' + urlSegments.join('/')) })
   })
+
+  console.log('post done', dynamicComponentData)
+  fs.writeFileSync(config.BUILD_FOLDER + 'kx-hoi-dynamic-component-data.json', JSON.stringify(dynamicComponentData))
+
 }
 
 function HOIJs (bundler) {

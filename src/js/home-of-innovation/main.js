@@ -3,6 +3,7 @@
 import HOIGallery from './hoiGallery';
 import HOIShare from './hoiShare';
 import HOIMediaVideo from './hoiMediaVideo';
+import HOIDynamicLinkList from './HOIDynamicLinkList';
 import sidedrawer from '../components/sidedrawer';
 import { createYoutubeInstance, loadYoutubeAPI } from './utils';
 
@@ -13,6 +14,9 @@ function init() {
   const galleries = [].slice.call(document.querySelectorAll('.hoiGallery'))
   const youtubeMedias = [].slice.call(document.querySelectorAll('.hoiMedia--youtube'))
   const videoMedias = [].slice.call(document.querySelectorAll('.hoiMedia--video'))
+  const dynamicLinkLists = [].slice.call(document.querySelectorAll('.hoiLinkList[dynamic]'))
+
+  console.log(dynamicLinkLists)
 
   // init nav
   nav();
@@ -28,6 +32,7 @@ function init() {
         new HOIGallery(gallery)
       })
 
+      // init videos
       videoMedias.forEach((videoEl) => {
         new HOIMediaVideo(videoEl)
       })
@@ -36,6 +41,12 @@ function init() {
       youtubeMedias.forEach((element) => {
         createYoutubeInstance(element)
       })
+
+      // dynamic LinkList components
+      dynamicLinkLists.forEach((element) => {
+        new HOIDynamicLinkList(element)
+      })
+
     })
 
 }

@@ -1,53 +1,67 @@
 
-<div class="hoiLinkList">
+<div class="hoiLinkList" {{#if dynamic}}dynamic="{{dynamic}}"{{/if}}>
   {{#if this.title}}
     {{> home-of-innovation/hoiHeadline copy=this.title level='3'}}
   {{/if}}
   <div class="hoiList hoiList--grid-4">
-    {{#each items }}
-      {{#if (eq this.url false)}}
-        <!-- start non link item -->
-        <div class="hoiList__Item">
-      {{else}}
-        <!-- start standard link item -->
-  		  <a
-          ga-ca="microsite"
-          ga-ac="feature"
-          ga-la="uk:kings-cross:{{@root.title}}:{{to_lower_case this.title }}{{#if this.download}}:download-file{{/if}}"
-					data-omni-type="microsite"
-          data-omni="uk:kings-cross:{{@root.title}}:{{to_lower_case this.title }}{{#if this.download}}:download-file{{/if}}"
-          class="hoiList__Item"
-          href="{{{ this.url }}}"
-          {{#if download}}
-            download
-            target="_blank"
-          {{/if}}>
-      {{/if}}
-  			<h6 class="hoiList__ItemTitle">{{ this.title }}</h6>
-        <div class="hoiList__ItemImageWrap"
-          style="background-image:url('{{this.image}}')"
-          role="img"
-          aria-label="{{this.alt}}">
 
-          {{#if download}}
-            <div class="hoiList__ItemIcon">
-              {{> svg/download}}
-            </div>
-          {{/if}}
+    {{#if dynamic}}
 
-        </div>
-  			<div>{{{ this.text }}}</div>
-      {{#if (eq this.url false)}}
-        <!-- end non link item -->
-        </div>
-      {{else}}
-        <!-- end standard link item -->
-  		  </a>
-      {{/if}}
-    {{/each}}
+    {{else}}
+      {{#each items}}
+        {{> listItemPartial}}
+      {{/each}}
+      {{#spacerElements items 4}}
+        <div class="hoiList__Item  hoiList__Item--spacer"></div>
+      {{/spacerElements}}
+    {{/if}}
 
-    {{#spacerElements items 4}}
-      <div class="hoiList__Item  hoiList__Item--spacer"></div>
-    {{/spacerElements}}
+
   </div>
 </div>
+
+{{#*inline "listItemPartial"}}
+
+  {{#if (eq this.url false)}}
+    <!-- start non link item -->
+    <div class="hoiList__Item">
+  {{else}}
+    <!-- start standard link item -->
+    <a
+      ga-ca="microsite"
+      ga-ac="feature"
+      ga-la="uk:kings-cross:{{@root.title}}:{{to_lower_case this.title }}{{#if this.download}}:download-file{{/if}}"
+      data-omni-type="microsite"
+      data-omni="uk:kings-cross:{{@root.title}}:{{to_lower_case this.title }}{{#if this.download}}:download-file{{/if}}"
+      class="hoiList__Item"
+      href="{{{ this.url }}}"
+      {{#if download}}
+        download
+        target="_blank"
+      {{/if}}>
+  {{/if}}
+
+    <h6 class="hoiList__ItemTitle">{{ this.title }}</h6>
+    <div class="hoiList__ItemImageWrap"
+      style="background-image:url('{{this.image}}')"
+      role="img"
+      aria-label="{{this.alt}}">
+
+      {{#if download}}
+        <div class="hoiList__ItemIcon">
+          {{> svg/download}}
+        </div>
+      {{/if}}
+
+    </div>
+    <div>{{{ this.text }}}</div>
+
+  {{#if (eq this.url false)}}
+    <!-- end non link item -->
+    </div>
+  {{else}}
+    <!-- end standard link item -->
+    </a>
+  {{/if}}
+
+{{/inline}}
