@@ -6,7 +6,7 @@
 // Font sizes
 // 14, 16, 18, 24, 30, 36, 55
 
-* {
+.cheil-static * {
 	font-size: calc(#{$browser-context-desktop}/#{$media-desktop} * 100vw);
 
 	@media screen and ( max-width: #{$media-mobile}px ) {
