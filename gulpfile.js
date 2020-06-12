@@ -24,6 +24,7 @@ var gulpif = require('gulp-if');
 var concat = require('gulp-concat');
 
 var prompt = require('prompt');
+var hbsfy = require('hbsfy')
 
 /* Other dependencies */
 var chalk = require('chalk')
@@ -504,7 +505,7 @@ function HOITemplates(skipTemplates, dynamicDataCallback) {
   }
 
   // write dynamic data file for use in local dev
-  fs.writeFileSync(config.BUILD_FOLDER + 'kx-hoi-dynamic-component-data.json', JSON.stringify(dynamicComponentData))
+  fs.writeFileSync(config.BUILD_FOLDER + SITE + '/' + SUBFOLDER + '/' + 'kx-hoi-dynamic-component-data.json', JSON.stringify(dynamicComponentData))
 
 }
 
@@ -544,7 +545,10 @@ gulp.task('home-of-innovation-build', () => {
 let hoiJSBundler;
 gulp.task('home-of-innovation-js', () => {
   if (!hoiJSBundler) {
-    hoiJSBundler = watchify(browserify( config.SRC_FOLDER + '/js/home-of-innovation/main.js', { debug: true }).transform(babel.configure({ presets: ['es2015-ie'] })))
+    hoiJSBundler = watchify(
+      browserify( config.SRC_FOLDER + '/js/home-of-innovation/main.js', { debug: true })
+        .transform(hbsfy)
+        .transform(babel.configure({ presets: ['es2015-ie'] })))
   }
   HOIJs(hoiJSBundler)
   return
