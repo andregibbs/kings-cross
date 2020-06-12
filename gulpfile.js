@@ -421,9 +421,6 @@ function HOITemplates(skipTemplates, dynamicDataCallback) {
     const populatedData = populatePageDataVariables(pageData, filePath);
     const themeColor = getThemeColor(urlSegments)
 
-
-    // the the dynamic data callback is present, populate dynamic
-
     // populate dynamic data object
     populatedData.components.forEach((component) => {
       if (component.dynamic) {
@@ -434,17 +431,12 @@ function HOITemplates(skipTemplates, dynamicDataCallback) {
       }
     })
 
-    // dynamic data
-
-
-
-    // console.log(dynamicComponentData)
 
     /*
       Dynamic data
 
-      use populatedData
-      loop through page components
+      *use populatedData
+      *loop through page components
       if has dynamic flag
         flag should be a unique id string (not true/false)
         unique ids per page
@@ -478,7 +470,7 @@ function HOITemplates(skipTemplates, dynamicDataCallback) {
 
     */
 
-    // dont need to build pages if deploying dynamic content
+    // skip templates if set
     if (skipTemplates !== true) {
 
       // Gulp loop to generate the site files
