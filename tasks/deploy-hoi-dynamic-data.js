@@ -1,5 +1,6 @@
 var AWS = require('aws-sdk');
 var prompt = require('prompt');
+var argv = require('yargs').argv
 
 var HOITemplates = require('../gulpfile').HOITemplates
 
@@ -12,15 +13,51 @@ const FOLDER = 'home-of-innovation-dynamic/';
 const FILENAME = 'hoi-dynamic.json';
 const FILENAME_STAGING = 'hoi-dynamic-staging.json';
 
+function s3Put(data, filename) {
+
+
+}
+
 function DeployHOIDynamicData() {
 
-  console.log('hello')
+  const stageArg = argv._[0] || false
+
+  if (!stageArg || (stageArg !== "staging" && stageArg !== "live")) {
+    console.log("Missing/incorrect stage argument.")
+    console.log("Usage: npm run hoi-dynamic [staging|live]")
+    return
+  }
+
+  const isLiveTask = stageArg === "live" ? true : false
+  const fileName = isLiveTask ? FILENAME : FILENAME_STAGING
+
+  prompt.start();
+
 
   HOITemplates(true, (data) => {
 
-    console.log('dynamic data', data)
+    if (isLiveTask) {
+      prompt.get({
+        description: "You are deploying live. Type 'true' or 't' to Confirm.",
+        type: 'boolean'
+      }, (err, result) => {
+        if (result.question) {
+          s3Put
+        }
+      })
+    }
 
   })
+
+
+
+  //
+  // return new P
+
+  //
+  //   console.log('dynamic data', data)
+  //
+  // })
 
   // const filename = staging ? FILENAME_STAGING : FILENAME;
   //

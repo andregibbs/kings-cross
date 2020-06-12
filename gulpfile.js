@@ -23,9 +23,7 @@ var htmlmin = require('gulp-html-minifier');
 var gulpif = require('gulp-if');
 var concat = require('gulp-concat');
 
-var prompt = require('prompt')
-
-var DeployHOIDynamicData = require('./tasks/deploy-hoi-dynamic-data');
+var prompt = require('prompt');
 
 /* Other dependencies */
 var chalk = require('chalk')
