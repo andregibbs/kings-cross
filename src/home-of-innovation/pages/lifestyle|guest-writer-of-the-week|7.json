@@ -1,0 +1,95 @@
+{
+  "title": "Guest writer of the week: Shared experiences boost happiness",
+  "description": "Fun ways for you to make the most of getting in touch with your nearest and dearest",
+  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/7/KV.jpg",
+  "alt": "Left hand holds a black Smasung smartphone in front of a grey background with the phone screen facing the camera. On the phone screen, a calendar app is open, displaying an event notification for a scheduled family call.",
+  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/7/KV.jpg",
+  "group": "guest-writer-of-the-week",
+  "sort": 7,
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "{{lifestyle|guest-writer-of-the-week|7[image]}}",
+        "alt": "{{lifestyle|guest-writer-of-the-week|7[alt]}}"
+      },
+      "style": {
+        "desktop": "right",
+        "mobile": "top"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "Shared experiences boost happiness"
+        }
+      ]
+    },
+    {
+      "type": "share"
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "paragraphs",
+          "style": {
+            "large": true
+          },
+          "text": [
+            "If you miss faraway friends, wish you were living your best life with loved ones, or fancy spending some quality time with that lucky person that gets your heart fluttering, pick up your phone - but don’t just call. With today’s tech, book worms can start a dial-in reading club, songbirds can enjoy a digital karaoke session, and friends can stay up to date with the lives of those they care about most with a few swipes, taps, and double taps. After all, it’s believed that shared positive experiences can boost feelings of joy.",
+            "That's why we’ve listed some fun ways for you to make the most of getting in touch with your nearest and dearest, as well as introduce that positive experience and source of joy to your life, and the lives of those you care about."
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "Words with friends",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "<strong>Start a club</strong> - Some of the grandest movements in history started with a few people gathering together and sharing their thoughts and values. Love reading, how about a book club? Movie buff? Then start a film debate society.",
+            "Set a time in the diary and decide a format. Will the chosen book or movie be selected by vote or a new member every week? If you’re starting the club for young kids - siblings, children, nieces or nephews, will the club involve reading the book out loud in every session? If it’s an adult’s club, will each session be all about picking the story apart? The choice really is yours, but whichever route you’ve gone down, you’ve turned a solitary practice into an enriching conversation - go you.",
+            "<strong>Routine check-ins:</strong> We all have that one friend you just can’t get enough of.  Why not pick a time and get a calendar event in the diary weekly or daily that’s dedicated to you catching up, even if it’s just a five-minute check-in?  Whether you’re looking for some conversation outside of conference calls or want a fitness buddy to help you meet your wellbeing goals, it can be as simple as a message every morning to share your mood as a score out of ten.",
+            "Sing for joy: Numerous studies, including one carried out by <a href=\"http://www.ox.ac.uk/research/choir-singing-improves-health-happiness-%E2%80%93-and-perfect-icebreaker\" target=\"_blank\">Oxford University</a>, have found that singing as part of a choir can boost health, happiness and connect our bodies and minds. There are a few virtual choirs around, like The Sofa Singers, which you can sign up for. That said, if you have friends you know love to sing, setting one up is simple - all you need is a smartphone or computer and wired headphones, minimising delay so all participants are beautifully in sync."
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "Family",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "<strong>Special occasions:</strong> Nothing makes us feel loved like a reminder that we’re remembered - and it works both ways. Whether it’s a birthday, graduation, or an anniversary, they’re all great reasons to reach out to family members who you might not see that often in the flesh. A tip to keep on top of staying in touch - list out everyone you want to keep in contact with and give them a designated slot in your calendar, with a reminder. You can even pre-write the ‘thinking of you’ message into your calendar, so even if your busy when your phone buzzes to prompt you, sharing your love and thoughts can be as simple as a copy and paste.",
+            "<strong>Grandparents:</strong> There have never been more connected grandparents than there are now, but that doesn’t change the fact, <a href=\"https://www.ageuk.org.uk/information-advice/health-wellbeing/loneliness/\" target=\"_blank\">elderly loneliness</a> is getting a lot of folks over 70 down. Why? It’s harder for those who didn’t grow up with tech to set themselves up for video calling and instant messaging. If you know an elderly relative who isn’t living their best digital life just yet, dig out that old phone or tablet, sign them up for video calls,  and get them chatting to family around the world - trust us, you definitely can teach an old dog new tricks.",
+            "<strong>Family gatherings:</strong> Now you’ve connected your grandparents, everyone in your family is primed for a get-together. Popular video call platforms support in excess of 100 participants at a time, so what are you waiting for? Mark out group chat times every few weeks, keeping family of all ages in the conversation, open the calls with a lesson on mute etiquette to minimise on interference and background noise and get chatting as if you were all in the same room."
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "Significant others",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "<strong>Get creative:</strong> Who doesn’t love a good challenge? That’s why combining creative challenges with a romantic gesture is ideal, tapping into your competitiveness, sense of playfulness and romance all at the same time. What kinds of challenges? Here are a few examples:",
+            "- Make a token of affection that costs £15 or less and can fit through the letterbox<br>- Write a poem that best describes your significant other in 60 words or less<br>- Draw a digital sketch of your fondest memory together – the <a href=\"https://www.samsung.com/uk/mobile-accessories/galaxy-tab-s6-lite-s-pen/EJ-PP610BJEGEU/\">Samsung Galaxy Tab S6 lite S Pen</a> is great for those with hands that have a tendency to shake, as it has over 4,000 levels of pressure and sensitivity, helping to bring that special moment to life.<br>- Create a new cocktail for one another, explaining why each ingredient was chosen. It will taste even better when they taste it in real time!",
+            "Save the shared experience of opening the present, reading the poem or sipping the cocktail until you’re both on a video call, and you can live the moment together, despite the distance. Why not snap and share on Instagram with #SamsungKX to inspire your friends to do similar challenges.",
+            "<strong>Unprompted tokens of affection:</strong> Online shopping is a fab tool for any couple intent on keeping romance alive across time zones. Whether it comes in the form of inexpensive scented candles and bath bombs, do it yourself cooking kits, flowers, or just simple takeaways, so you can both enjoy a curry and a pizza date together - unprompted reminders that you’re loved are incredibly special.",
+            "<strong>Digital gifting and donations:</strong> Want to cut back on packaging and emissions? The internet makes digital gifting easier than ever, with options ranging from shared experiences - renting and watching a film together or subscribing to a streaming service, right through to making a donation to a charity in the name of a partner.",
+            "So, if you’re feeling like you or someone you know could use a little extra connection in life, it will come as little surprise that getting connected through tech can really help make it happen. Keep reading for more inspiration and keeping your headspace in a great place with the help of tech."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "guest-writer-of-the-week",
+      "title": "More articles"
+    }
+  ]
+}

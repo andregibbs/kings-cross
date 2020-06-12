@@ -311,6 +311,9 @@ function HOITemplates() {
 
   // https://gist.github.com/getify/3667624
   function escapeDoubleQuotes(str) {
+      if (typeof str !== 'string') {
+        return str
+      }
      return str.replace(/\\([\s\S])|(")/g,"\\$1$2"); // thanks @slevithan!
    }
 
@@ -320,6 +323,44 @@ function HOITemplates() {
     // Based on specific component
     pageData.components.map((component) => {
       switch (component.type) {
+        // special case to help with building graduate fashion week page
+        case 'gfw-gallery':
+          component.items = component.items.map((id) => {
+            return {
+              type: "image",
+              active: `{{_data-gfw[${id}-active]}}`,
+              title: `{{_data-gfw[${id}-name]}}`,
+              image: `{{_data-gfw[${id}-image]}}`,
+              list_button: {
+                copy: "Download Portfolio",
+                url: `{{_data-gfw[${id}-file]}}`,
+                target: "_blank"
+              },
+              content: `{{_data-gfw[${id}-content]}}`,
+              gallery_components: [
+                {
+                  type: "headline",
+                  copy: `{{_data-gfw[${id}-name]}}`,
+                  level: "3"
+                },
+                {
+                  type: "buttons",
+                  style: {
+                    align: "center"
+                  },
+                  items: [
+                    {
+                      copy: "Download Portfolio",
+                      url: `{{_data-gfw[${id}-file]}}`,
+                      target: "_blank"
+                    }
+                  ]
+                }
+              ]
+            }
+          })
+          return component
+          break;
         case 'related':
           // Related pages, create items array with populated data
           component.items = component.ids.map((id) => {
@@ -400,8 +441,6 @@ function HOITemplates() {
     delete require.cache[require.resolve(filePath)];
     const pageData = require(filePath);
 
-
-
     // Create array for this pages url segments (['slug'/])
     const urlSegments = filePath
       .replace(pagesBasePath, '')
@@ -409,7 +448,11 @@ function HOITemplates() {
       .replace('index', '')
       .split('|');
 
-    log('Building page: ' + urlSegments.join('/'))
+    if (urlSegments[0][0] === "_") {
+      return log('Skipping page: ' + urlSegments.join('/'))
+    } else {
+      log('Building page: ' + urlSegments.join('/'))
+    }
 
     const breadcrumbs = createBreadcrumbs(urlSegments)
     const populatedData = populatePageDataVariables(pageData, filePath);

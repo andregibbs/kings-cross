@@ -153,6 +153,20 @@
           "image": "{{lifestyle|zone-v[image]}}",
           "alt": "{{lifestyle|zone-v[alt]}}",
           "url": "{{lifestyle|zone-v[url]}}"
+        },
+        {
+          "title": "{{lifestyle|guest-writer-of-the-week|7[title]}}",
+          "description": "{{lifestyle|guest-writer-of-the-week|7[description]}}",
+          "image": "{{lifestyle|guest-writer-of-the-week|7[image]}}",
+          "alt": "{{lifestyle|guest-writer-of-the-week|7[alt]}}",
+          "url": "{{lifestyle|guest-writer-of-the-week|7[url]}}"
+        },
+        {
+          "title": "{{lifestyle|tips-and-trikx|9[title]}}",
+          "description": "{{lifestyle|tips-and-trikx|9[description]}}",
+          "image": "{{lifestyle|tips-and-trikx|9[image]}}",
+          "alt": "{{lifestyle|tips-and-trikx|9[alt]}}",
+          "url": "{{lifestyle|tips-and-trikx|9[url]}}"
         }
       ]
     }

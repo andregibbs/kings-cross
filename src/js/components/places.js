@@ -20,34 +20,37 @@ export default function places() {
 
   //https://sebnapi.nl/uk/kings-cross-google-apis/places-api/?placeId=ChIJWxPGhs8bdkgRzKDWW8BKbSk&fields=opening_hours&apiKey=AIzaSyBu9auy0x9Og1YGPl__MkoxswdFd6vxB7M
 
-  
 
 
 
+  console.log('aaaa')
   let storeOpeningTimesHtml = "";
-  
-  $.get(sebnPlacesApiurl).success(function (data) { 
-      
+
+  $.get(sebnPlacesApiurl).success(function (data) {
+
+
       let openingTimeHtml = '<h4 class="fz16">Opening Hours:</h4>';
-      
+
       if( data.data.status ==  "OK" ) {
-        
+        console.log(data)
         let storeOpeningTimes = data.data.result.opening_hours.weekday_text;
 
         $.each(storeOpeningTimes, function(index, storeOpeningTime) {
           console.log(storeOpeningTime)
-          let spaceless = storeOpeningTime.replace(/\s/g, '').replace('AM', 'am').replace('PM', 'pm').replace('-', ' - ').replace('day', '').replace('tur', 't').replace('nes', '')     
+          let spaceless = storeOpeningTime.replace(/\s/g, '').replace('AM', 'am').replace('PM', 'pm').replace('-', ' - ').replace('day', '').replace('tur', 't').replace('nes', '')
           let altered = spaceless.replace(/:00/g, "").split('–').join(' – ').replace(':', ': ');
-          
+
           openingTimeHtml += ' <p><span class="fz16 bold">'+altered.substr(0, altered.indexOf(':'))+': </span><span class="fz16">'+altered.split(': ').pop()+'</span></p>';
         });
 
         storeOpeningTimesHtml +=openingTimeHtml;
 
-      } 
+      }
+
+      console.log('aaaa')
 
   }).done(function() {
-        
+
         $.getJSON( specialOpeningTimesUrl, function( data ) {
 
             let specialOpeningTimeHtml = '';
@@ -66,10 +69,10 @@ export default function places() {
                     $('.findkx__openings').append("<br>" + specialOpeningTimeHtml);
                 }
 
-            } 
+            }
 
         }).always(function() {
-          
+
           if (storeOpeningTimesHtml != "") {
               $('.findkx__openings').html(storeOpeningTimesHtml);
           }

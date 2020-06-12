@@ -1,0 +1,135 @@
+{
+  "title": "Tips & Trikx: Home is where the heart is",
+  "description": "Simple ways to get the creative juices flowing",
+  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/9/KV.jpg",
+  "alt": "Stone coloured interior wall with photo wall gallery composed of different coloured photo frames showing landscape photography images. In front of the wall there is a modern, wooden chest of drawers on top of which is placed a beach photo in a white photo frame with a white mount and a modern table light made from a small, gold cylinder and orb light bulb. To the right, there is a white geometric ceramic vase containing a small indoor plant, a clear tealight holder, two coffee table books and a minimalist, brown leather basket. To the left of the chest of drawers is a gold standing lamp with three small, black lightshades.",
+  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/9/KV.jpg",
+  "group": "tips-and-trikx",
+  "sort": 9,
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "{{lifestyle|tips-and-trikx|9[image]}}",
+        "alt": "{{lifestyle|tips-and-trikx|9[alt]}}"
+      },
+      "style": {
+        "desktop": "left",
+        "mobile": "bottom"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "{{lifestyle|tips-and-trikx|9[title]}}"
+        }
+      ]
+    },
+    {
+      "type": "share"
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "paragraphs",
+          "style": {
+            "large": true
+          },
+          "text": [
+            "From bohemian wall art to minimalist interiors, Samsung KX shares five tips and ‘trikx’ for adding a splash of style to your humble abode."
+          ]
+        },
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "1) Traditional"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Give homes a touch of vintage elegance with antique furniture, deep hues and traditional paintings. <a href=\"https://www.samsung.com/uk/tvs/the-frame-ls03r/QE49LS03RAUXXU/\">The Samsung Frame TV</a> is great for those struggling to choose suitable artwork – users can simply scroll through the Art Store and virtually explore galleries from around the world. The picture will also automatically adjust to match the room’s light, ensuring the colour tone perfectly matches those of a traditional art piece."
+          ]
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/9/Image_1.jpg",
+          "alt": "Photo of a traditional painting depicting a medieval town under seige from an advancing army of foot soliders and horses lead by King Henry VIII"
+        },
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "2) Bohemian vibe"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Try earthy coloured throws, patchwork cushions and crochet chairs for a Boho look and feel. Soft woven wall art is also great – it instantly gives rooms a relaxing, Californian feel. There’s plenty online to choose from, or if feeling creative, take it on as a new <a href=\"https://www.furniturechoice.co.uk/advice-and-inspiration/diy-how-to-create-a-modern-tassel-wall-hanging_a10000060?wgu=276295_54264_15911921440992_f5a2e973cc&wgexpiry=1598968144&utm_campaign=54264_Skimbit%20LTD&utm_medium=webgains&utm_source=affiliates\" target=\"_blank\">DIY project</a> in seven simple steps."
+          ]
+        },
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "3) Minimal décor"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Minimalist interiors can often feel tricky to achieve but they don’t have to be – use clean lines, practical furniture and a simple palette as a framework for nailing this sleek style. Adding a spot of green foliage also helps to give character without the clutter; for smaller rooms, try Ceropegia Woodii plants – they’re perfectly sized for using within indoor hanging baskets – whereas Dragon Trees look great in larger rooms. "
+          ]
+        },
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "4) Shabby chic"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Upcycling furniture is key for going shabby chic.  Look online for antique items that can be transformed - think wooden ladders for bookshelves, or rustic plant pots for candle holders. Spend the afternoon coating with off-white paint and remember to finish with a layer of wax for protection."
+          ]
+        },
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "5) Pastel prettiness"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Pastels are brilliant for brightening up the home, trying adding a sense of serenity with art or giving the walls a 360 ‘paintover’. In need of inspo? Take a read of Amy Moorea Wong’s article - <a href=\"{{lifestyle|guest-writer-of-the-weer|4[url]}}\">'ways to decorate with playful pastels'</a>."
+          ]
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/9/Image_2.jpg",
+          "alt": "Photo of a tall living room with traditional ceiling trim is pictured with a retro white and black fireplace on a moss green painted wall and a pastal pink painted alcove to the right of the fireplace. A navy velvet armchair is positioned in front of the alcove by open windows. A light blue, abstract print in a black frame rests on the floor in the alcove against the wall.",
+          "credit": "Image credit Fired Earth"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "items": [
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/9/Image_1.jpg",
+          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/9/Image_1.jpg",
+          "alt": "Photo of a traditional painting depicting a medieval town under seige from an advancing army of foot soliders and horses lead by King Henry VIII"
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/9/Image_2.jpg",
+          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/9/Image_2.jpg",
+          "alt": "Photo of a tall living room with traditional ceiling trim is pictured with a retro white and black fireplace on a moss green painted wall and a pastal pink painted alcove to the right of the fireplace. A navy velvet armchair is positioned in front of the alcove by open windows. A light blue, abstract print in a black frame rests on the floor in the alcove against the wall.",
+          "description": "Image credit Fired Earth"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "tips-and-trikx",
+      "title": "More episodes"
+    }
+  ]
+}

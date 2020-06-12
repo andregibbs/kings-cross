@@ -29,7 +29,7 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  @include fz36();
+  @include fz40();
   margin-bottom: 1rem;
   line-height: 1.1;
   @media screen and (min-width: $mobile + 1) {
@@ -38,7 +38,7 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  @include fz30();
+  @include fz36();
   margin-bottom: 1rem;
   line-height: 1.1;
   @media screen and (min-width: $mobile + 1) {
@@ -47,7 +47,7 @@ h3, .h3 {
 }
 
 h4, .h4 {
-  @include fz24();
+  @include fz30();
   margin-bottom: 1rem;
   line-height: 1.1;
   @media screen and (min-width: $mobile + 1) {

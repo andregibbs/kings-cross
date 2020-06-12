@@ -12,6 +12,10 @@
 
 div.hoiList__Item {
   cursor: default;
+
+  a {
+    cursor: pointer;
+  }
 }
 
 .hoiList__Item--spacer {
@@ -20,7 +24,7 @@ div.hoiList__Item {
 }
 
 .hoiList__ItemTitle {
-  height: em(44);
+  height: em(42);
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -61,6 +65,11 @@ div.hoiList__Item {
     background: rgba(0,0,0,0.75);
     padding: 2.5%;
   }
+}
+
+.hoiList__Button {
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (min-width: $mobile + 1) {

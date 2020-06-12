@@ -1,0 +1,287 @@
+{
+  "title": "Stay Learning: Around The World in a Day. Palaces with Samsung and the British Museum",
+  "description": "Discover some of the world's amazing architecture and gain inspiration to design your own.",
+  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/5/KV_5.jpg",
+  "alt": "Photo of a wooden toy Buddhist building with toy monks and furniture inside in front of a black background",
+  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/5/KV_5.jpg",
+  "group": "british-museum",
+  "sort": 5,
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "{{creativity|british-museum|5[image]}}",
+        "alt": "{{creativity|british-museum|5[alt]}}"
+      },
+      "style": {
+        "desktop": "left",
+        "mobile": "top"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "level": "1",
+          "copy": "{{creativity|british-museum|5[title]}}"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Since 2009, the Samsung Digital Discovery Centre at the British Museum has been offering an innovative digital learning programme for schools and families, through which children and young people can learn about and interact with the Museum’s collection using the latest Samsung technology. While the British Museum’s doors may currently be closed, you can still see its extensive collection online, and together we want to continue inspiring children and young people to build, experiment, invent and create.",
+            "We’re inviting you to discover some of the world’s most amazing architecture through our hand-picked collection of the British Museum’s objects and use it as an inspiration for your very own design! Look closely at intricate decorative details, to study the buildings of ancient and modern civilisations and have fun using your preferred artistic tools to develop your digital creative skills.",
+            "What you build and how you build it is totally up to you. Use your favourite digital drawing app, have a go on Minecraft, sketch ideas on paper, or build something using cardboard, building blocks or found materials. Then, why not bring your creations to life using your digital device to take photos and videos, create gifs or stop frame animations?",
+            "Share your creations with us on social media using #MuseumsFromHome and tagging us @SamsungUK.",
+            "Now let us take you on a virtual journey across the globe and across time, from the comfort of your own home!"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "share"
+    },
+
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "headline",
+          "copy": "Challenge 5: Homes",
+          "level": "2"
+        },
+        {
+          "type": "headline",
+          "copy": "Icy Igloo",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "style": {
+            "large": true
+          },
+          "text": [
+            "This Arctic home is made from snow. Rainforest or desert, mountains or sea, where in the world will you build your home and what will you find there to build it from? "
+          ]
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/5/British_Museum_icy_igloo.jpg",
+          "alt": "Photo of a white polyester place mat with a line drawing of an igloo on it, in front of a black background",
+          "credit": "Credit: Polyester place mat, made in Puvirnituq, Canada, about 1960. © The Trustees of the British Museum"
+        },
+        {
+          "type": "headline",
+          "copy": "Travelling Tepee",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "style": {
+            "large": true
+          },
+          "text": [
+            "Not all homes are fixed to the ground, some can be packed up and moved around. Will yours be a travelling home and what places will you visit together?"
+          ]
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/5/British_Museum_Travelling_tepee.jpg",
+          "alt": "Traditional Native American tepee tent with colourful decorations in front of a black background",
+          "credit": "Credit: Model church, made in Izúcar de Matamoros, Mexico, 1980s. © The Trustees of the British Museum"
+        },
+        {
+          "type": "headline",
+          "copy": "Buddhist Building",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "style": {
+            "large": true
+          },
+          "text": [
+            "To reach this temple, visitors walk through gates, past shrines and between cherry trees. What will surround your building?"
+          ]
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/5/Insert Photo: British Museum Buddhist Building",
+          "alt": "Photo of a wooden toy Buddhist building with toy monks and furniture inside in front of a black background",
+          "credit": "Credit: Model tepee, acquired inAlberta, Canada, before 1900. © The Trustees of the British Museum"
+        },
+        {
+          "type": "headline",
+          "copy": "Tall Treetops",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "style": {
+            "large": true
+          },
+          "text": [
+            "This home is balanced in the treetops. Will your home be built high in the sky or firmly on the ground?"
+          ]
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/5/British_Museum_Tall_treetops.jpg",
+          "alt": "Photo of an old, sepia toned watercolour painting of a treehouse",
+          "credit": "Credit:  Watercolour of a treehouse in Aroma, Papua New Guinea, early 20th century. © The Trustees of the British Museum"
+        },
+
+        {
+          "type": "headline",
+          "copy": "Minature Manor",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "style": {
+            "large": true
+          },
+          "text": [
+            "It’s teatime in this tiny home. Any object can be turned into a mini place to live – pots and pans, boxes and baskets. What household object could you transform?"
+          ]
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/5/British_Museum_Mianuture_manor.jpg",
+          "alt": "Photo of a salt-glazed white stoneware teapot designed like an English mansion in front of a black background",
+          "credit": "Credit: :Salt-glazed white stoneware teapot, made in UK, about 1730. © The Trustees of the British Museum"
+        },
+
+        {
+          "type": "headline",
+          "copy": "Museum Mansion ",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "style": {
+            "large": true
+          },
+          "text": [
+            "Montagu House was the first home of the British Museum and before that someone lived there. Are you building a home in the present, past or future?"
+          ]
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/5/British_Museum_Museum_Mansion.jpg",
+          "alt": "",
+          "credit": "Credit: Watercolour of Montagu House, about 1840–1845. © The Trustees of the British Museum"
+        },
+
+        {
+          "type": "headline",
+          "copy": "Deciding Dimensions",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "style": {
+            "large": true
+          },
+          "text": [
+            "A grand home has lots of windows for lots of rooms. Will your home be a many-roomed mansion or a cosy cottage?"
+          ]
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/5/British_Museum_Deciding_dimensions.jpg",
+          "alt": "",
+          "credit": "Credit: Etching and engraving of the north prospect of Montagu House, 1708–1717. © The Trustees of the British Museum"
+        },
+
+        {
+          "type": "headline",
+          "copy": "Rising Roofs",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "style": {
+            "large": true
+          },
+          "text": [
+            "Roofs come in all shapes and sizes, this roof is shaped like the horns of a buffalo. Winged or horned, domed or flat, what shape will you choose for your roof?"
+          ]
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/5/British_Museum_Rising_roofs.jpg",
+          "alt": "",
+          "credit": "Credit: Model of a house, acquired in Sumatra, Indonesia, late 19th century. © The Trustees of the British Museum"
+        },
+
+        {
+          "type": "headline",
+          "copy": "Games and Gardens",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "style": {
+            "large": true
+          },
+          "text": [
+            "Games on the terrace and music on the balcony. This home has lots of spaces to play on a warm evening. Will your home have an outdoor space where you can have parties with friends or gaze at the stars?"
+          ]
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/5/British_Museum_Games_and_Gardens.jpg",
+          "alt": "",
+          "credit": "Credit: Painting of The month of Kartika, made in Rajasthan, India, about 1675–1700. © The Trustees of the British Museum"
+        },
+        {
+          "type": "headline",
+          "copy": "Portable Property ",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "style": {
+            "large": true
+          },
+          "text": [
+            "Fixing the roof and sweeping the floor, this is a busy home. What will everyone be doing in your home, working hard or chilling out?"
+          ]
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/5/British_Museum_Portable_property.jpg",
+          "alt": "",
+          "credit": "Credit: Model of a house with carrying handle, made in Madagascar, 20th century. © The Trustees of the British Museum "
+        },
+        {
+          "type": "buttons",
+          "items": [
+            {
+              "copy": "Discover More Spiritual Spaces",
+              "url": "https://www.britishmuseum.org/collection/search?subject=religious%20building&image=true&view=grid&sort=object_name__asc&page=1",
+              "target": "_blank"
+            }
+          ]
+        },
+        {
+          "type": "headline",
+          "level": "5",
+          "copy": "Samsung and the British Museum"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Samsung and the British Museum have been working together in partnership since 2009, developing an engaging and innovative digital learning programme through the Samsung Digital Discovery Centre (SDDC) which is offered free to schools and families. It offers the most ambitious and extensive on-site digital learning programme of any UK museum. Since 2009, the SDDC has attracted more than 150,000 school students and families.",
+            "The Samsung Digital Discovery Centre is a digital a learning hub for children and young people to learn about and interact with the British Museum's collection. This activity combines two of the SDDC’s most popular activities: build Roman Britain in Minecraft where visitors embark on their own Roman inspired construction projects, and around the world in a day, where students investigate cultures of ancient societies.",
+            "The SDDC programme forms a part of Samsung's global commitment in 'supporting education and empowering the next generation of innovators. The partnership represents our shared belief in the importance of learning about the world's history and cultures to better understand the present and prepare for the future."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "british-museum",
+      "title": "Learn more"
+    }
+  ]
+}

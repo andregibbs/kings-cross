@@ -67,4 +67,14 @@
   	{{> home-of-innovation/hoiLinkList this }}
   {{/if_equals}}
 
+  {{!--
+    Graduate Fashion Week Special Component
+  --}}
+
+  {{#if_equals this.type 'gfw-gallery'}}
+    {{> home-of-innovation/hoiGallery (gfw-filter this) }}
+  {{/if_equals}}
+
+
+
 {{/each}}

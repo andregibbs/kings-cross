@@ -37,7 +37,7 @@
           "text": [
             "Do you know anyone who would raise an eyebrow if you put the words ‘simple’ and ‘smartphone’ together?",
             "Well, it doesn’t have to be this way!",
-            "Samsung has teamed up with Zone V - an app which simplifies smartphones for the elderly and those with poor eyesight, hearing and dexterity - to help those who need support connect more easily with friends and family.",
+            "Samsung has teamed up with <a href=\"https://zonev.com/?utm_source=samsung&utm_medium=kxweb&utm_campaign=4monthsfree\" target=\"_blank\">Zone V</a> - an app which simplifies smartphones for the elderly and those with poor eyesight, hearing and dexterity - to help those who need support connect more easily with friends and family.",
             "Anyone who owns a Samsung Galaxy device can now access all the benefits of the Zone V app for free for the first 4 months* exclusively via the <a href=\"https://clicks.zonev.com/kx\" target=\"_blank\">Galaxy Store</a>, including a simplified interface providing access to the most important phone functions, larger text, bigger buttons, and lots more.",
             "As a family orientated business, it’s no wonder Zone V are so passionate about creating inclusively designed and accessible technology to bring loved ones together through their devices. But how exactly does the app make smartphones simpler?"
           ]
@@ -178,6 +178,15 @@
               "url": "https://clicks.zonev.com/kx",
               "target": "_blank"
             }
+          ]
+        },
+        {
+          "type": "paragraphs",
+          "style": {
+            "large": true
+          },
+          "text": [
+            "To explore the full range of accessibility features across Samsung products <a href=\"https://www.samsung.com/uk/accessibility/overview/\">click here</a>"
           ]
         }
       ]

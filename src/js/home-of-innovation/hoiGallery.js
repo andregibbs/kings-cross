@@ -10,7 +10,9 @@ class HOIGallery {
 
     this.sliderTarget = this.spotlight.querySelector('.hoiGallery__SpotlightItems');
     this.slick = $(this.sliderTarget).slick({
-      rows: 0
+      rows: 0,
+      accessibility: true,
+      focusOnSelect: true,
     });
     this.slickInstance = this.slick[0].slick;
 
@@ -84,7 +86,8 @@ class HOIGallery {
 
   selectLink(event) {
     // get index of current clicked element
-    const index = Array.from(event.target.parentNode.children).indexOf(event.target);
+    // need to get index of click targets parent element
+    const index = Array.from(event.target.parentNode.parentNode.children).indexOf(event.target.parentNode);
     this.slideWillShow(index) // call slideWillShow with slide index
     this.slickInstance.slickGoTo(index, true); // set slick slider to selected index
     this.openSpotlight() // open spotlight
@@ -92,6 +95,8 @@ class HOIGallery {
 
   openSpotlight() {
     this.spotlight.setAttribute('active', true)
+    this.slick.find('.slick-list').attr('tabindex', 0).focus();
+    this.slick.find('.slick-list').focus()
   }
 
   closeSpotlight() {

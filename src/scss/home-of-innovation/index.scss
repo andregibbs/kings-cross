@@ -41,6 +41,10 @@ $nav-mobile-height: get-mobile-vw(100);
   background: black;
   color: white;
 
+  .slick-arrow {
+    font-size: 0;
+  }
+
   .hoiContent {
 
     // general styling & containers

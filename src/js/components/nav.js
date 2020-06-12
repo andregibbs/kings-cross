@@ -21,7 +21,7 @@ export default function nav() {
     burgerAnimation.setSpeed(1.3);
 
     burgerAnimation.addEventListener('enterFrame', (frame) => {
-      console.log('frame', frame)
+      // console.log('frame', frame)
     })
   }
 

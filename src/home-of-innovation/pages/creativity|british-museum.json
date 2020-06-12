@@ -1,0 +1,33 @@
+{
+  "title": "British Museum",
+  "description": "",
+  "image": "{{creativity|british-museum|1[image]}}",
+  "alt": "{{creativity|british-museum|1[alt]}}",
+  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/science-museum/1_KV.jpg",
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "{{creativity|british-museum|1[image]}}",
+        "alt": "{{creativity|british-museum|1[alt]}}"
+      },
+      "style": {
+        "desktop": "left",
+        "mobile": "top"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "level": "1",
+          "copy": "{{creativity|british-museum[title]}}"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "british-museum",
+      "title": "Learn more"
+    }
+  ]
+}

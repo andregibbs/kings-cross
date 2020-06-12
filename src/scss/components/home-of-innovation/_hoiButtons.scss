@@ -7,6 +7,13 @@
   }
 }
 
+.hoiButtons--center {
+  justify-content: center;
+  .hoiButton:last-child {
+    margin-right: 0;
+  }
+}
+
 .hoiButton {
   margin-right: calc(#{$spacing-mobile} / 2);
 }

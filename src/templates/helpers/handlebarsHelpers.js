@@ -50,6 +50,10 @@ if (typeof module !== 'undefined') {
 			return JSON.stringify(context);
 		});
 
+    Handlebars.registerHelper('array', function (context) {
+      return [context]
+    })
+
 		/**
 		 * Object Length
 		 *        Returns back length of object passed in.
@@ -156,6 +160,14 @@ if (typeof module !== 'undefined') {
             return Array.prototype.slice.call(arguments, 0, -1).some(Boolean);
         }
     });
+
+    Handlebars.registerHelper('gfw-filter', function(context) {
+      context.items = context.items.filter((i) => {
+        console.log(i)
+        return i.active !== "false"
+      })
+      return context
+    })
 
 	};
 }

@@ -119,6 +119,10 @@
 		line-height: 1;
 	}
 
+  em {
+    font-size: inherit;
+  }
+
 	h1.h1-hidden {
     overflow: hidden;
     text-indent: 100%;

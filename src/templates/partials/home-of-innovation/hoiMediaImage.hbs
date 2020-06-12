@@ -1,7 +1,14 @@
 {{#if credit}}
 <div class="hoiMedia--ImageCredit">
 {{/if}}
-  <img class="hoiMedia hoiMedia--image" src="{{ this.content }}" alt="{{ this.title }}">
+
+  <img
+    class="
+      hoiMedia
+      hoiMedia--image
+      {{#if style.nativeSize}} hoiMedia--image--native {{/if}}
+    "
+    src="{{ this.content }}" alt="{{ this.title }}">
 
 
 {{#if credit}}

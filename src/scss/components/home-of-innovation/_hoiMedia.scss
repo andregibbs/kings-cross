@@ -25,6 +25,13 @@
   object-fit: revert;
 }
 
+// used for smaller images
+.hoiMedia--image--native {
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 
 .hoiMedia--ImageCredit {
   .hoiMedia--image {

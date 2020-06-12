@@ -1,0 +1,282 @@
+{
+  "title": "Stay Learning: Around The World in a Day. Towers with Samsung and the British Museum",
+  "description": "Bring to life the amazing science behind space travel through our Space Descent VR Lounge at the Science Museum, learn about Tim Peake’s incredible journey from the International Space Station back to Earth.",
+  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/1/KV.jpg",
+  "alt": "Picture of a vintage London postcard of Tower Bridge with the Tower of London, St Paul's Catherdral and the City of London in the background. In the foreground, wooden boats carrying cargo and steam boats pass under Tower Bridge. Pictures of Waterloo Bridge and Westminster Bridge are overlayed in the top left and right hand corners. At the top of the postcard in the centre, there is the side profile of a man in traditional 19th century army uniform.",
+  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/1/KV.jpg",
+  "group": "british-museum",
+  "sort": 1,
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "{{creativity|british-museum|1[image]}}",
+        "alt": "{{creativity|british-museum|1[alt]}}"
+      },
+      "style": {
+        "desktop": "left",
+        "mobile": "top"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "level": "1",
+          "copy": "{{creativity|british-museum|1[title]}}"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Since 2009, the Samsung Digital Discovery Centre at the British Museum has been offering an innovative digital learning programme for schools and families, through which children and young people can learn about and interact with the Museum’s collection using the latest Samsung technology. While the British Museum’s doors may currently be closed, you can still see its extensive collection online, and together we want to continue inspiring children and young people to build, experiment, invent and create.",
+            "We’re inviting you to discover some of the world’s most amazing architecture through our hand-picked collection of the British Museum’s objects and use it as an inspiration for your very own design! Look closely at intricate decorative details, to study the buildings of ancient and modern civilisations and have fun using your preferred artistic tools to develop your digital creative skills.",
+            "What you build and how you build it is totally up to you. Use your favourite digital drawing app, have a go on Minecraft, sketch ideas on paper, or build something using cardboard, building blocks or found materials. Then, why not bring your creations to life using your digital device to take photos and videos, create gifs or stop frame animations?",
+            "Share your creations with us on social media using #MuseumsFromHome and tagging us @SamsungUK.",
+            "Now let us take you on a virtual journey across the globe and across time, from the comfort of your own home!"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "share"
+    },
+
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "headline",
+          "copy": "Challenge 1: Towers",
+          "level": "2"
+        },
+        {
+          "type": "headline",
+          "copy": "Tower tools",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "style": {
+            "large": true
+          },
+          "text": [
+            "Many busy hands are needed to build the tallest tower in the world. Pulleys and winches, chisels and compasses, what tools will you use to build your tower?"
+          ]
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/1/British_Museum_Tower_Tools.jpg",
+          "alt": "Photo of a woodcut of The Tower of Babel being built with men and building tools at the tower's base from the 16th century",
+          "credit": "Credit: Woodcut of The Tower of Babel, 1500–1550. © The Trustees of the British Museum"
+        },
+        {
+          "type": "headline",
+          "copy": "City crisis",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "style": {
+            "large": true
+          },
+          "text": [
+            "This tower is hidden in the eye of a storm whilst a battle rages. Will the world around your tower be high drama or calm and peaceful?"
+          ]
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/1/British_Museum_City_Crisis.jpg",
+          "alt": "Photo of a black and white etching of The Fall Of Babylon, with a storm swirling around a tall tower in the distance with distressed people and buildings in the foreground.",
+          "credit": "Credit: Mezzotint with etching of The Fall of Babylon, 1831. © The Trustees of the British Museum"
+        },
+        {
+          "type": "headline",
+          "copy": "Designs destroyed",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "style": {
+            "large": true
+          },
+          "text": [
+            "Once rising to the sky, here toppling to the ground, this tower was destined to fall. What will be the fate of your tower?"
+          ]
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/1/British_Museum_Designs_Destroyed.jpg",
+          "alt": " Photo of a black and white eching of the Fall of the Tower of Babel from the 16th century, with a crumbling tower on a hill in the centre of the picture and smaller ruins in the foreground",
+          "credit": "Credit: Etching of the Fall of the Tower of Babel, 1547. © The Trustees of the British Museum"
+        },
+        {
+          "type": "headline",
+          "copy": "Lighthouse lookout",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "style": {
+            "large": true
+          },
+          "text": [
+            "This tower looks like a mighty lighthouse telling ships to stay clear but the only thing it could actually tell is the time. Will your tower be a lookout on the cliffs or a clock in your home?"
+          ]
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/1/British_Museum_Lighthouse_Lookout.jpg",
+          "alt": "Photo of a brass, metal toy lighthouse with two clocks in front of a black background",
+          "credit": "Credit: Brass cased clock in the shape of lighthouse, made in France, 1875–1885. © The Trustees of the British Museum"
+        },
+        {
+          "type": "headline",
+          "copy": "Tilting tower",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "style": {
+            "large": true
+          },
+          "text": [
+            "Looking like it will topple any moment, this famous tower's tilt has stood the test of time. Will your tower be built on level ground or shaky foundations?"
+          ]
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/1/British_Museum_Tilting_Tower.jpg",
+          "alt": "Photo of an old etching of the leaning tower of Pisa, with one picture of the tower of Pisa on the outside shown on the left hand side of the photo, and the inside of the tower of Pisa shown on the right hand side of the photo",
+          "credit": "Credit: Etching of the leaning tower of Pisa, 1900–1950. © The Trustees of the British Museum"
+        },
+        {
+          "type": "headline",
+          "copy": "Skyscrapers",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "style": {
+            "large": true
+          },
+          "text": [
+            "The tallest building in the world, but only for a year. Will you win the race to build a ladder to the stars?"
+          ]
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/1/British_Museum_Skyscrapers.jpg",
+          "alt": "",
+          "credit": "Credit: Printed postcard of the Singer Building, photographed in New York City, USA, about 1910s. © The Trustees of the British Museum"
+        },
+        {
+          "type": "headline",
+          "copy": "Tall turrets",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "style": {
+            "large": true
+          },
+          "text": [
+            "Is that a ship on the horizon? Lookouts keep this fortification safe. Could your tower be used to spot approaching enemies?"
+          ]
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/1/British_Museum_Tall_Turrets.jpg",
+          "alt": "",
+          "credit": "Credit: Drawing of the tour du Diable in Rhodes, 19th century. © The Trustees of the British Museum"
+        },
+        {
+          "type": "headline",
+          "copy": "Slim spire",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "style": {
+            "large": true
+          },
+          "text": [
+            "The higher you go, the narrower it gets. Will your tower be tall and narrow or wide and short?"
+          ]
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/1/British_Museum_Slim_Spire.jpg",
+          "alt": "",
+          "credit": "Credit: Watercolour painting of the Qutb Minar in Delhi, printed in India, early 19th century. © The Trustees of the British Museum"
+        },
+        {
+          "type": "headline",
+          "copy": "London locations",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "style": {
+            "large": true
+          },
+          "text": [
+            "This image combines many of London's famous towers. How many can you spot?"
+          ]
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/1/British_Museum_London_Locations.jpg",
+          "alt": "",
+          "credit": "Credit: Print with views of London's towers, about 1894. © The Trustees of the British Museum"
+        },
+        {
+          "type": "headline",
+          "copy": "Marvellous mill",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "style": {
+            "large": true
+          },
+          "text": [
+            "This imaginary mill harnessed the power of wind and horses to produce flour. Will your tower have a purpose?"
+          ]
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/1/British_Museum_Marvellous_Mill.jpg",
+          "alt": "",
+          "credit": "Credit: Woodcut depicting an invented mill operated by wind and horses, printed in Cologne, 1545. © The Trustees of the British Museum"
+        },
+        {
+          "type": "buttons",
+          "items": [
+            {
+              "copy": "Discover More Towers",
+              "url": "https://www.britishmuseum.org/collection/search?keyword=tower&subject=architecture&image=true&view=grid&sort=object_name__asc&page=1",
+              "target": "_blank"
+            }
+          ]
+        },
+        {
+          "type": "headline",
+          "level": "5",
+          "copy": "Samsung and the British Museum"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Samsung and the British Museum have been working together in partnership since 2009, developing an engaging and innovative digital learning programme through the Samsung Digital Discovery Centre (SDDC) which is offered free to schools and families. It offers the most ambitious and extensive on-site digital learning programme of any UK museum. Since 2009, the SDDC has attracted more than 150,000 school students and families.",
+            "The Samsung Digital Discovery Centre is a digital a learning hub for children and young people to learn about and interact with the British Museum's collection. This activity combines two of the SDDC’s most popular activities: build Roman Britain in Minecraft where visitors embark on their own Roman inspired construction projects, and around the world in a day, where students investigate cultures of ancient societies.",
+            "The SDDC programme forms a part of Samsung's global commitment in 'supporting education and empowering the next generation of innovators. The partnership represents our shared belief in the importance of learning about the world's history and cultures to better understand the present and prepare for the future."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "british-museum",
+      "title": "Learn more"
+    }
+  ]
+}

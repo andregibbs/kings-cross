@@ -38,6 +38,15 @@
           "type": "headline",
           "level": "3",
           "copy": "This is a headline 3"
+        },
+        {
+          "type": "paragraphs",
+          "style": {
+            "large": true
+          },
+          "text": [
+            "Many busy hands are needed to build the tallest tower in the world. Pulleys and winches, chisels and compasses, what tools will you use to build your tower?"
+          ]
         }
       ]
     },
@@ -51,6 +60,15 @@
           "type": "headline",
           "level": "4",
           "copy": "This is a headline 4"
+        },
+        {
+          "type": "paragraphs",
+          "style": {
+            "large": true
+          },
+          "text": [
+            "Many busy hands are needed to build the tallest tower in the world. Pulleys and winches, chisels and compasses, what tools will you use to build your tower?"
+          ]
         }
       ]
     },
