@@ -70,6 +70,15 @@ div.hoiList__Item {
 .hoiList__Button {
   display: flex;
   justify-content: center;
+
+  .btn {
+    margin-right: 0;
+    margin-bottom: calc(#{$spacing-mobile} / 2);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 @media screen and (min-width: $mobile + 1) {

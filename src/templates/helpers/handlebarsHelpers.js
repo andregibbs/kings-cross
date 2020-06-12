@@ -163,7 +163,6 @@ if (typeof module !== 'undefined') {
 
     Handlebars.registerHelper('gfw-filter', function(context) {
       context.items = context.items.filter((i) => {
-        console.log(i)
         return i.active !== "false"
       })
       return context

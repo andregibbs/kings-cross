@@ -326,15 +326,21 @@ function HOITemplates() {
         // special case to help with building graduate fashion week page
         case 'gfw-gallery':
           component.items = component.items.map((id) => {
+            // get buttons from file data
+            const buttons = getPageData(`_data-gfw`)[`${id}-files`].map((item) => {
+              item.target = "_blank"
+              return item
+            })
             return {
-              type: "image",
+              type: `{{_data-gfw[${id}-type]}}`,
               active: `{{_data-gfw[${id}-active]}}`,
               title: `{{_data-gfw[${id}-name]}}`,
               image: `{{_data-gfw[${id}-image]}}`,
-              list_button: {
-                copy: "Download Portfolio",
-                url: `{{_data-gfw[${id}-file]}}`,
-                target: "_blank"
+              list_buttons: {
+                style: {
+                  align: "center"
+                },
+                items: buttons
               },
               content: `{{_data-gfw[${id}-content]}}`,
               gallery_components: [
@@ -348,13 +354,7 @@ function HOITemplates() {
                   style: {
                     align: "center"
                   },
-                  items: [
-                    {
-                      copy: "Download Portfolio",
-                      url: `{{_data-gfw[${id}-file]}}`,
-                      target: "_blank"
-                    }
-                  ]
+                  items: buttons
                 }
               ]
             }

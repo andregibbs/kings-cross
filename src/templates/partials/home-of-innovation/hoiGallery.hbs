@@ -17,9 +17,10 @@
             aria-label="{{this.alt}}">
           </div>
         </a>
-        {{#if this.list_button}}
+        {{#if this.list_buttons}}
+          {{!-- could change this to list_content and use components --}}
           <div class="hoiList__Button">
-            {{> home-of-innovation/hoiButtons items=(array this.list_button) }}
+            {{> home-of-innovation/hoiButtons list_buttons }}
           </div>
         {{/if}}
       </div>
