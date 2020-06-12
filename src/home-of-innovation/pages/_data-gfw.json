@@ -77,7 +77,7 @@
 
   "7-name": "Charlotte Ireland, BA (Hons) Fashion Marketing, University of Leeds",
   "7-type": "image",
-  "7-active": true,
+  "7-active": false,
   "7-image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/entries/36___300_Thumbnail_Charlotte_Ireland.jpg",
   "7-content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/entries/36__Large_Image_Charlotte_Ireland.jpg",
   "7-files": [
@@ -237,13 +237,13 @@
 
   "20-name": "Shion Sasahara, BA (Hons) Fashion Promotion and Imaging, UCA Epsom",
   "20-type": "image",
-  "20-active": false,
-  "20-image": "",
-  "20-content": "",
+  "20-active": true,
+  "20-image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/entries/10___300_Thumbnail_Shion_Sashara.jpg",
+  "20-content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/entries/10__Large_Image_Shion_Sashara.jpg",
   "20-files": [
     {
-      "copy": "Download Portfolio",
-      "url": ""
+      "copy": "Visit Website",
+      "url": "https://shionsasahara.wixsite.com/echogarmentbag"
     }
   ],
 
@@ -337,13 +337,13 @@
 
   "28-name": "Autumn West, BA (Hons) Fashion Management & Communication, Sheffield Hallam University",
   "28-type": "image",
-  "28-active": false,
-  "28-image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/entries/18_shu_fashion_innovation_award_autumn_west.pdf",
-  "28-content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/entries/18_",
+  "28-active": true,
+  "28-image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/entries/18___300_Thumbnail_Autumn_West.jpg",
+  "28-content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/entries/18__Large_Image_Autumn_West.jpg",
   "28-files": [
     {
       "copy": "Download Portfolio",
-      "url": "https://images.samsung.com/is/content/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/entries/18_"
+      "url": "https://images.samsung.com/is/content/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/entries/18_Autumn_West_SHU_Publication_Guide.pdf"
     }
   ],
 
@@ -409,13 +409,13 @@
 
   "34-name": "Alicia Dalton, BA (Hons) Fashion Media & Marketing, Plymouth College of Art",
   "34-type": "image",
-  "34-active": false,
-  "34-image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/entries/24_alicia_dalton_pca_innovation_compressed_1.pdf",
-  "34-content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/entries/24_",
+  "34-active": true,
+  "34-image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/entries/24___300_Thumbnail_Alicia_Dalton.jpg",
+  "34-content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/entries/24__Large_Image_Alicia_Dalton.jpg",
   "34-files": [
     {
       "copy": "Download Portfolio",
-      "url": "https://images.samsung.com/is/content/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/entries/24_"
+      "url": "https://images.samsung.com/is/content/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/entries/24_alicia_dalton_pca_innovation_compressed_1.pdf"
     }
   ],
 
