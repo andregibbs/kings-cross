@@ -1,6 +1,6 @@
 {
   "title": "Graduate Fashion Week – Innovation Award",
-  "description": "Coming soon ",
+  "description": "As the Home of Innovation Samsung KX has provided an online platform to showcase the nominations for the Graduate Fashion Week Innovation Award",
   "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/gfw-kv.jpg",
   "alt": "Black and turquoise landscape digital poster illustrating Samsung and SafeToNet's partnership. Black and tuquoise diamond shapes are overlayed with white text. In the bottom left hand corner there is a small black rectangle with the Galaxy Store icon and white text. In the top right hand corner there is a black and white abstract image of a young girl lying down while holding a tablet in both hands. In the top left hand corner there is the Samsung logo and SafeToNet logo.",
   "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/gfw-kv.jpg",
@@ -20,6 +20,11 @@
         {
           "type": "headline",
           "copy": "Graduate Fashion Week – Innovation Award"
+        },
+        {
+          "type": "headline",
+          "level": "2",
+          "copy": "Coming soon"
         }
       ]
     },
@@ -34,35 +39,8 @@
           "text": [
             "For the first time in 29 years Graduate Fashion Week, the world’s biggest display of BA Fashion Talent, had to be cancelled. The four-day event is held annually on the first weekend in June by the charity the graduate Fashion Foundation featuring work from 38 UK Universities and 40 International universities across all Fashion disciplines from Design and Styling to Photography and Marketing.  The platform has launched some of the biggest names in fashion and its patrons and ambassadors include Vivienne Westwood, Nadja Swarovski, Victoria Beckham, Christopher Raeburn, Henry Holland and Diane Von Furstenberg to name but a few.",
             "For students, Graduate Fashion Week is the pinnacle of their academic life that they all work tirelessly towards to be showcased in front of the industry and maybe win one of the prestigious awards that celebrate the students work.  With many of their University Fashion Shows also cancelled the 2020 year group have been left bitterly disappointed and unsure of how their degrees will conclude.  Therefore, finding an alternative platform to showcase the incredible talent of tomorrow has been critical.",
-            "As the Home of Innovation Samsung KX has provided an online platform to showcase the nominations for the Graduate Fashion Week Innovation Award that celebrates work with a refreshing and innovative direction with ground-breaking thinking that the UK and Samsung is renowned for."
-          ]
-        }
-      ]
-    },
-    {
-      "type": "gfw-gallery",
-      "title": "Shortlisted Entries",
-      "items": [
-        1,2,3,4,5,6,7,8,9,10
-      ]
-    },
-    {
-      "type": "gfw-gallery",
-      "title": "All Other Entries",
-      "items": [
-        11,12,13,14,15,16,17,18,19,20,
-        21,22,23,24,25,26,27,28,29,30,
-        31,32,33,34,35,36,37,38,39,40,
-        41,42,43,44,45,46,47
-      ]
-    },
-    {
-      "type": "wrapper",
-      "components": [
-        {
-          "type": "paragraphs",
-          "text": [
-            "<em>Disclaimer: Samsung KX is a community platform that hosts a range of content covering a diverse range of topics. The views expressed within these portfolios are solely those of the students and bear no reflection of Samsung’s brand views.</em>"
+            "As the Home of Innovation Samsung KX has provided an online platform to showcase the nominations for the Graduate Fashion Week Innovation Award that celebrates work with a refreshing and innovative direction with ground-breaking thinking that the UK and Samsung is renowned for.",
+            "Come back to this page to see the portfolios on the 15th June!"
           ]
         }
       ]
