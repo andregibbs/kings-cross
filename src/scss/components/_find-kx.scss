@@ -24,9 +24,7 @@
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      @media screen and (max-width: $mobile) {
-        display: block;
-      }
+
       h4 {
         margin: 12px 0;
         @media screen and (max-width: $desktop) {
@@ -43,8 +41,14 @@
       @media screen and (max-width: $mobile) {
         order: 1;
         width: 100%;
-        flex-direction: row;
         justify-content: flex-start;
+
+        .findkx__block {
+          order: 1;
+        }
+        .findkx__mobile_groupA {
+          order: 2;
+        }
       }
     }
     .findkx__map {
@@ -77,6 +81,21 @@
       @media screen and (max-width: 425px) {
       }
     }
+
+    .findkx__openings__line {
+      p:nth-child(odd) {
+        font-weight: bold;
+      }
+      margin-bottom: get-desktop-vw(12);
+    }
+
+    .findkx__openings__fallback {
+      display: none;
+    }
+
+    .findkx__openings__dynamic:empty + .findkx__openings__fallback {
+      display: block;
+    }
   }
 
   &__block {
@@ -105,7 +124,7 @@
     }
     .findkx__openings {
       margin: get-mobile-vw(36) 0;
-      text-align: center;
+      // text-align: center;
     }
   }
 

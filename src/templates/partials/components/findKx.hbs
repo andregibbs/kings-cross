@@ -8,6 +8,44 @@
 		<div class="findkx__content">
 			<h3 class="findkx__title findkx__title--desktop fz40">Find Samsung KX</h3>
 
+      <div class="findkx__block">
+        <h3 class="findkx__title findkx__title--mobile fz36">Opening Times</h3>
+				<div class="findkx__openings">
+
+          <!-- dynamic data (findKX.js )-->
+          <div class="findkx__openings__dynamic"></div>
+
+          <!-- fallback opening times data -->
+          <div class="findkx__openings__fallback">
+            <div class="findkx__openings__line">
+              <p><span class="fz18">Monday - Saturday</span></p>
+  					  <p class="fz18">11am - 7pm</p>
+            </div>
+            <div class="findkx__openings__line">
+              <p><span class="fz18">Sunday</span></p>
+              <p class="fz18">12pm - 6pm</p>
+            </div>
+          </div>
+
+					<!-- Below details are populated from google Places Api by places.js file -->
+					<!-- places() commented out now from Main.js, fallback details below also commented out for temporary coronavirus message -->
+					<!-- <h4 class="fz25">Opening hours - Closed</h4> -->
+          <!-- <p>Temporarily closed until further notice.</p> -->
+					{{!-- <h4 class="fz18">Opening Hours: t</h4>
+					<p><span class="fz18">Monday - Saturday</span></p>
+					<p class="fz18">10am - 10pm</p>
+					<p><span class="fz18">Sunday</span></p>
+					<p class="fz18">12pm - 6pm</p> --}}
+					<!-- <br> -->
+					{{!-- <p>* <span>Wednesday 23rd October - 10am - 2pm</span></p> --}}
+
+					{{!-- <p><span style="visibility: hidden;">* </span><span>Mon 30th September - 4pm - 10pm</span></p> --}}
+
+
+
+				</div>
+			</div>
+
       <div class="findkx__mobile_groupA">
         <div class="findkx__block">
           <div class="findkx__location">
@@ -35,26 +73,6 @@
           </div>
         </div>
       </div>
-			<div class="findkx__block">
-				<div class="findkx__openings">
-					<!-- Below details are populated from google Places Api by places.js file -->
-					<!-- places() commented out now from Main.js, fallback details below also commented out for temporary coronavirus message -->
-					<h4 class="fz25">Opening hours - Closed</h4>
-          <p>Temporarily closed until further notice.</p>
-					{{!-- <h4 class="fz18">Opening Hours: t</h4>
-					<p><span class="fz18">Monday - Saturday</span></p>
-					<p class="fz18">10am - 10pm</p>
-					<p><span class="fz18">Sunday</span></p>
-					<p class="fz18">12pm - 6pm</p> --}}
-					<br>
-					{{!-- <p>* <span>Wednesday 23rd October - 10am - 2pm</span></p> --}}
-
-					{{!-- <p><span style="visibility: hidden;">* </span><span>Mon 30th September - 4pm - 10pm</span></p> --}}
-
-
-
-				</div>
-			</div>
 
 		</div>
 

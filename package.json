@@ -3,13 +3,14 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "gulp update",
-    "postinstall": "gulp build",
+    "postinstall": "",
     "hoi-dynamic": "node ./tasks/deploy-hoi-dynamic-data"
   },
   "dependencies": {
     "clipboard": "^2.0.6",
     "jshint": "^2.10.2",
-    "natives": "^1.1.6"
+    "natives": "^1.1.6",
+    "whatwg-fetch": "^3.0.0"
   },
   "devDependencies": {
     "aws-sdk": "^2.695.0",

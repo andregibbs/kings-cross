@@ -1,9 +1,11 @@
 /* Components */
+import 'whatwg-fetch';
+
 import nav from "./components/nav";
 import sidedrawer from "./components/sidedrawer";
 import whatson from "./components/whatson";
 import singleEvent from "./components/singleEvent";
-import places from "./components/places";
+// import places from "./components/places";
 import whatIsKx from "./components/whatIsKx";
 import repair from "./components/repair";
 import calendar from "./components/calendar";
@@ -370,6 +372,7 @@ $(document).ready(function () {
 	// =========================================================
 
 	nav();
+  new FindKX(); // init find KX
 
 	// =========================================================
 	// Loads scripts dynamically depending on which page you are
@@ -380,7 +383,7 @@ $(document).ready(function () {
     case '/uk/explore/kings-cross/hoi/':
 
 			fetchData(whatIsKx);
-			places();
+			// places();
       homeKV();
 
 			var container = document.getElementById('loadingScreen__animation');
@@ -546,9 +549,9 @@ $(document).ready(function () {
 			//places();
 			break;
 
-		default: {
+		default:
 			// Your init here
-		}
+
 	}
 
 })

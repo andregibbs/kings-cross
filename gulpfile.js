@@ -505,7 +505,7 @@ function HOITemplates(skipTemplates, dynamicDataCallback) {
   }
 
   // write dynamic data file for use in local dev
-  fs.writeFileSync(config.BUILD_FOLDER + SITE + '/' + SUBFOLDER + '/' + 'kx-hoi-dynamic-component-data.json', JSON.stringify(dynamicComponentData))
+  fs.writeFileSync(config.BUILD_FOLDER + '/hoi-dynamic-local.json', JSON.stringify(dynamicComponentData))
 
 }
 
@@ -585,8 +585,8 @@ gulp.task('home-of-innovation-scss', () => {
 gulp.task('home-of-innovation-watch', () => {
   gulp.watch( config.SRC_FOLDER + '/' + _HOI_FOLDER + '/**/*', ['home-of-innovation-build'] )
   gulp.watch( config.SRC_FOLDER + '/scss/**/*.scss', ['home-of-innovation-scss'] )
-  gulp.watch( config.SRC_FOLDER + '/js/home-of-innovation/**/*.js', ['home-of-innovation-js'] )
-  gulp.watch( config.SRC_FOLDER + '/templates/partials/' + _HOI_FOLDER + '/**/*', ['home-of-innovation-build'] )
+  gulp.watch( config.SRC_FOLDER + '/js/**/*.js', ['home-of-innovation-js'] )
+  gulp.watch( config.SRC_FOLDER + '/templates/partials/**/*', ['home-of-innovation-build'] )
   log('Watching HOI folder')
 })
 
