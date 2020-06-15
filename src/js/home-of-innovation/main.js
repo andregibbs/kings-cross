@@ -1,10 +1,15 @@
 /* Home Of Innovation JS Entry */
 
+import 'whatwg-fetch';
+
 import HOIGallery from './hoiGallery';
 import HOIShare from './hoiShare';
 import HOIMediaVideo from './hoiMediaVideo';
+import HOIDynamicLinkList from './HOIDynamicLinkList';
 import sidedrawer from '../components/sidedrawer';
 import { createYoutubeInstance, loadYoutubeAPI } from './utils';
+
+import FindKX from '../components/findKX';
 
 import nav from '../components/nav';
 
@@ -13,6 +18,7 @@ function init() {
   const galleries = [].slice.call(document.querySelectorAll('.hoiGallery'))
   const youtubeMedias = [].slice.call(document.querySelectorAll('.hoiMedia--youtube'))
   const videoMedias = [].slice.call(document.querySelectorAll('.hoiMedia--video'))
+  const dynamicLinkLists = [].slice.call(document.querySelectorAll('.hoiLinkList[dynamic]'))
 
   // init nav
   nav();
@@ -21,13 +27,18 @@ function init() {
   loadYoutubeAPI()
     .then(() => {
 
+      // init sharing
       new HOIShare();
+
+      // fetch dynamic opening times
+      new FindKX()
 
       // initialze HOIGalleries
       galleries.forEach((gallery) => {
         new HOIGallery(gallery)
       })
 
+      // init videos
       videoMedias.forEach((videoEl) => {
         new HOIMediaVideo(videoEl)
       })
@@ -36,6 +47,12 @@ function init() {
       youtubeMedias.forEach((element) => {
         createYoutubeInstance(element)
       })
+
+      // dynamic LinkList components
+      dynamicLinkLists.forEach((element) => {
+        new HOIDynamicLinkList(element)
+      })
+
     })
 
 }

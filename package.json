@@ -3,14 +3,17 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "gulp update",
-    "postinstall": "gulp build"
+    "postinstall": "",
+    "hoi-dynamic": "node ./tasks/deploy-hoi-dynamic-data"
   },
   "dependencies": {
     "clipboard": "^2.0.6",
     "jshint": "^2.10.2",
-    "natives": "^1.1.6"
+    "natives": "^1.1.6",
+    "whatwg-fetch": "^3.0.0"
   },
   "devDependencies": {
+    "aws-sdk": "^2.695.0",
     "babel-core": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-es2015-ie": "^6.7.0",
@@ -35,7 +38,9 @@
     "gulp-sourcemaps": "^2.6.1",
     "gulp-uglify": "^3.0.1",
     "gulp-watch": "^4.3.11",
-    "handlebars": "^4.0.11",
+    "handlebars": "^4.7.6",
+    "hbsfy": "^2.8.1",
+    "prompt": "^1.0.0",
     "through2": "^2.0.3",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",

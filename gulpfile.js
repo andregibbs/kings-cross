@@ -23,6 +23,9 @@ var htmlmin = require('gulp-html-minifier');
 var gulpif = require('gulp-if');
 var concat = require('gulp-concat');
 
+var prompt = require('prompt');
+var hbsfy = require('hbsfy')
+
 /* Other dependencies */
 var chalk = require('chalk')
 var path = require('path')
@@ -248,7 +251,7 @@ function getFilesInDirectory(dirPath, arrayOfFiles) {
 }
 
 // Function to generate Home Of Innovation Pages
-function HOITemplates() {
+function HOITemplates(skipTemplates, dynamicDataCallback) {
 
   // Path to HOI config pages
   const pagesBasePath = config.SRC_FOLDER + '/' + _HOI_FOLDER + '/pages/'
@@ -256,6 +259,12 @@ function HOITemplates() {
   const publicUrl = '/' + SITE + SUBFOLDER + '/';
   // Array of file paths to page configs
   const pages = getFilesInDirectory(pagesBasePath)
+
+  // is staging task
+  const isStagingTask = argv._[0] === 'hoi-staging';
+
+  // declare dynamic data object
+  let dynamicComponentData = {}
 
   // Helper Functions
   // Fetch page config for url (path = "segment/segment" | "segment/segment/segment")
@@ -458,15 +467,65 @@ function HOITemplates() {
     const populatedData = populatePageDataVariables(pageData, filePath);
     const themeColor = getThemeColor(urlSegments)
 
-    const isStagingTask = argv._[0] === 'hoi-staging';
+    // populate dynamic data object
+    populatedData.components.forEach((component) => {
+      if (component.dynamic) {
+        // create unique reference, replace dynamic id in page data
+        let reference = urlSegments.join('/') + '-' + component.dynamic
+        component.dynamic = reference
+        dynamicComponentData[reference] = component
+      }
+    })
 
-    // Gulp loop to generate the site files
-    gulp.src( config.SRC_FOLDER + '/' + _HOI_FOLDER + '/index.hbs' )
+
+    /*
+      Dynamic data
+
+      *use populatedData
+      *loop through page components
+      if has dynamic flag
+        flag should be a unique id string (not true/false)
+        unique ids per page
+        prepend page path?
+        {page path}-{dynamic id}
+        store id to check for duplicates
+
+      copy the object to a gulp variable
+      dynamic-data.json
+
+      {
+        'page/path-component-id': { data }
+      }
+
+      if task is being run with a deploy task
+        gulp hoi-deploy-dynamic (staging default)
+        gulp hoi-deploy-dynamic --live
+          if live do confirmation
+
+      deploy a json file to an s3 bucket
+        kx-hoi-dynamic-data-staging.json
+        kx-hoi-dynamic-data-live.json
+
+      build dynamic js components to request dynamic data
+      in template include inline partial for javascript to populate and render
+
+      create abstract dynamic component class
+        with fetch requests
+        templating
+        staging/live file urls
+
+    */
+
+    // skip templates if set
+    if (skipTemplates !== true) {
+
+      // Gulp loop to generate the site files
+      gulp.src( config.SRC_FOLDER + '/' + _HOI_FOLDER + '/index.hbs' )
       .pipe(handlebars({
         helpers: config.SRC_FOLDER + '/templates/helpers/handlebarsHelpers.js',
-      	partials: config.SRC_FOLDER + '/templates/partials/**/*.{html,js,hbs}',
-      	bustCache: true,
-      	data: {
+        partials: config.SRC_FOLDER + '/templates/partials/**/*.{html,js,hbs}',
+        bustCache: true,
+        data: {
           ...populatedData,
           breadcrumbs,
           themeColor,
@@ -475,13 +534,24 @@ function HOITemplates() {
             subfolder: SUBFOLDER,
             staging: isStagingTask
           }
-      	}
+        }
       }))
       .pipe(rename('index.html'))
       .pipe(gulp.dest( config.BUILD_FOLDER + SITE + '/' + SUBFOLDER + '/' + urlSegments.join('/') ))
       .on('error', function(err) { log('Error building HTML template:' + urlSegments.join('/'), 'error') })
       .on('end', function(err) { log('Compiled Template: ' + urlSegments.join('/')) })
+
+    }
+
   })
+
+  if (dynamicDataCallback) {
+    dynamicDataCallback(dynamicComponentData)
+  }
+
+  // write dynamic data file for use in local dev
+  fs.writeFileSync(config.BUILD_FOLDER + '/hoi-dynamic-local.json', JSON.stringify(dynamicComponentData))
+
 }
 
 function HOIJs (bundler) {
@@ -520,7 +590,10 @@ gulp.task('home-of-innovation-build', () => {
 let hoiJSBundler;
 gulp.task('home-of-innovation-js', () => {
   if (!hoiJSBundler) {
-    hoiJSBundler = watchify(browserify( config.SRC_FOLDER + '/js/home-of-innovation/main.js', { debug: true }).transform(babel.configure({ presets: ['es2015-ie'] })))
+    hoiJSBundler = watchify(
+      browserify( config.SRC_FOLDER + '/js/home-of-innovation/main.js', { debug: true })
+        .transform(hbsfy)
+        .transform(babel.configure({ presets: ['es2015-ie'] })))
   }
   HOIJs(hoiJSBundler)
   return
@@ -557,8 +630,8 @@ gulp.task('home-of-innovation-scss', () => {
 gulp.task('home-of-innovation-watch', () => {
   gulp.watch( config.SRC_FOLDER + '/' + _HOI_FOLDER + '/**/*', ['home-of-innovation-build'] )
   gulp.watch( config.SRC_FOLDER + '/scss/**/*.scss', ['home-of-innovation-scss'] )
-  gulp.watch( config.SRC_FOLDER + '/js/home-of-innovation/**/*.js', ['home-of-innovation-js'] )
-  gulp.watch( config.SRC_FOLDER + '/templates/partials/' + _HOI_FOLDER + '/**/*', ['home-of-innovation-build'] )
+  gulp.watch( config.SRC_FOLDER + '/js/**/*.js', ['home-of-innovation-js'] )
+  gulp.watch( config.SRC_FOLDER + '/templates/partials/**/*', ['home-of-innovation-build'] )
   log('Watching HOI folder')
 })
 
@@ -571,3 +644,6 @@ gulp.task('_staging', sequence('copy-assets', 'scss', 'buildJS', 'html') )
 
 gulp.task('staging', ['watch', '_staging', 'watchJS'])
 gulp.task('default', ['watch', 'development', 'watchJS'])
+
+// export hoi templates script for deploying dynamic data
+exports.HOITemplates = HOITemplates
