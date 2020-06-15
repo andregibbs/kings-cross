@@ -152,7 +152,7 @@
     },
     {
       "type": "group",
-      "dynamic": "more-episodes",
+      "__dynamic": "more-episodes",
       "id": "tips-and-trikx",
       "title": "More episodes"
     }

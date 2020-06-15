@@ -19,12 +19,8 @@
       font-weight: bold;
     }
 
+    .findkx__openings,
     .findkx__content {
-      flex-basis: 40%;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-
       h4 {
         margin: 12px 0;
         @media screen and (max-width: $desktop) {
@@ -34,6 +30,14 @@
           margin: get-mobile-vw(12) 0;
         }
       }
+    }
+
+    .findkx__content {
+      flex-basis: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+
       a {
         color: $coral; //temp until sitewide
       }
@@ -80,13 +84,6 @@
 
       @media screen and (max-width: 425px) {
       }
-    }
-
-    .findkx__openings__line {
-      p:nth-child(odd) {
-        font-weight: bold;
-      }
-      margin-bottom: get-desktop-vw(12);
     }
 
     .findkx__openings__fallback {

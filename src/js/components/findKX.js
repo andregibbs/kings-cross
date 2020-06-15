@@ -15,7 +15,7 @@ export default class findKX {
     }
 
     // get url for data based on env
-    const url = KXEnv.live ? LIVE_OPENING_TIMES : LIVE_OPENING_TIMES
+    const url = KXEnv.live ? LIVE_OPENING_TIMES : STAGING_OPENING_TIMES
 
     // get data then populate
     this.fetchData(url)
@@ -29,19 +29,17 @@ export default class findKX {
   populateTimes(data) {
 
     // line template
-    let template = function(day, time) {
+    let template = function(line) {
       return `
         <div class="findkx__openings__line">
-          <p><span class="fz18">${day}</span></p>
-          <p class="fz18">${time}</p>
+          <p class="fz18">${line}</p>
         </div>
       `
     }
 
     // append template for each line
     data.forEach((item) => {
-      let split = item.split(': ')
-      this.openingTimesEl.insertAdjacentHTML('beforeend', template(split[0], split[1]))
+      this.openingTimesEl.insertAdjacentHTML('beforeend', template(item))
     })
 
   }
