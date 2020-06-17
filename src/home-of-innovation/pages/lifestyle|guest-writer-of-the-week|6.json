@@ -21,7 +21,7 @@
       "components": [
         {
           "type": "headline",
-          "copy": "Bring the taste of your favourite restaurant home"
+          "copy": "Episode 6: Bring the taste of your favourite restaurant home"
         }
       ]
     },
@@ -139,6 +139,7 @@
     },
     {
       "type": "group",
+      "dynamic": "more-articles",
       "id": "guest-writer-of-the-week",
       "title": "More articles"
     }

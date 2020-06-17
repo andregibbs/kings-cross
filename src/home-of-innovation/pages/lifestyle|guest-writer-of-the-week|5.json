@@ -21,7 +21,7 @@
       "components": [
         {
           "type": "headline",
-          "copy": "Ways to switch up your at-home fitness routine"
+          "copy": "Episode 5: Ways to switch up your at-home fitness routine"
         }
       ]
     },
@@ -97,6 +97,7 @@
     },
     {
       "type": "group",
+      "dynamic": "more-articles",
       "id": "guest-writer-of-the-week",
       "title": "More articles"
     }

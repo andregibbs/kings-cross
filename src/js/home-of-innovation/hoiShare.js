@@ -5,7 +5,7 @@ export default function hoiShare() {
   const component = document.querySelector('.hoiShare')
 
   if (!component) {
-    return console.log('no share component')
+    return // no share component
   }
 
   function twitterURL() {

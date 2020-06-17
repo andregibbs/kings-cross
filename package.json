@@ -4,7 +4,9 @@
   "scripts": {
     "dev": "gulp update",
     "postinstall": "",
-    "hoi-dynamic": "node ./tasks/deploy-hoi-dynamic-data"
+    "hoi-dynamic": "node ./tasks/deploy-hoi-dynamic-data",
+    "hoi-dynamic-live": "node ./tasks/deploy-hoi-dynamic-data live",
+    "hoi-dynamic-staging": "node ./tasks/deploy-hoi-dynamic-data staging"
   },
   "dependencies": {
     "clipboard": "^2.0.6",

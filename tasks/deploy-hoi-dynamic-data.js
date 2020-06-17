@@ -21,6 +21,7 @@
 var AWS = require('aws-sdk');
 var prompt = require('prompt');
 var argv = require('yargs').argv
+const chalk = require('chalk')
 
 var HOITemplates = require('../gulpfile').HOITemplates
 
@@ -52,7 +53,7 @@ function s3Put(data, filename) {
   }, (err, data) => {
 
     if (err) console.log(err.stack)
-    else console.log(`Success: data deployed to ${FOLDER+filename}`)
+    else console.log(chalk.cyan(`Dynamic data successfully deployed to ${FOLDER+filename}`))
 
   })
 }
@@ -71,6 +72,12 @@ function DeployHOIDynamicData() {
   const fileName = isLiveTask ? FILENAME : FILENAME_STAGING
 
   HOITemplates(true, (data) => {
+
+    // add some data about the deployment
+    data['meta'] = {
+      publishedOn: Date(),
+      lastGitCommit: require('child_process').execSync('git rev-parse HEAD').toString().trim().substring(0, 10)
+    }
 
     if (isLiveTask) {
       prompt.start();

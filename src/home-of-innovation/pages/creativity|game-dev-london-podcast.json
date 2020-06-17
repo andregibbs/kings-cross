@@ -46,6 +46,7 @@
     },
     {
       "type": "group",
+      "dynamic": "episodes",
       "id": "game-dev-london-podcast",
       "title": "Episodes"
     }

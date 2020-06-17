@@ -1,0 +1,49 @@
+{
+  "title": "Movement and Mindfulness with Cat Meffan",
+  "description": "Cat Meffan teaches ‘Yoga for Beginners’ guided by Samsung’s ecosystem of products",
+  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/cat-meffan/KV_Cat_Meffan.jpg",
+  "alt": "Pictured is a large living room with light wooden flooring and cream walls with a traditional, in-built fireplace painted white with two alcoves either side. In the left hand alcove there are various small, dark green indoor plants and blue and pink yoga mats rolled up in a woven basket. In the right hand alcove there is a dark, wooden table with an exposed light bulb lamp on top. In front of the table is a white sofa and cream stripped sofa which faces the large windows on the opposite wall. In front of the fireplace, a young woman - Cat Meffan - wearing light purple yoga leggings and a stone coloured cropped vest top stands in a yoga tree pose facing the camera on top of a black yoga mat.",
+  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/cat-meffan/KV_Cat_Meffan.jpg",
+  "group": "cat-meffan",
+  "sort": 1,
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "youtube",
+        "content": "sqUaBtfUyJ4",
+        "poster": "{{lifestyle|cat-meffan|1[image]}}",
+        "alt": "{{lifestyle|cat-meffan|1[alt]}}"
+      },
+      "style": {
+        "desktop": "top",
+        "mobile": "top"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "Movement and Mindfulness with Cat Meffan and Samsung | Session 1"
+        }
+      ]
+    },
+    {
+      "type": "wrapper",
+      "components": [
+          {
+            "type": "paragraphs",
+            "text": [
+              "Samsung has partnered with leading wellness enthusiast, Cat Meffan, to enhance the UK’s wellbeing movement by offering the ultimate virtual yoga experience. ",
+              "New research commissioned by Samsung has revealed Brits are upping the ante on their health and fitness routine, with over a third now focussing more on their wellbeing and 29% having a new interest in mindful activities to distract from the outside world. What’s more, yoga has been revealed as one of the top three hobbies being tried for the first in recent weeks. ",
+              "As a result, Cat teaches ‘Yoga for Beginners’, the first in a series of three sessions guided by Samsung’s ecosystem of products. In this session, Cat focuses on the Galaxy Watch Active2 and the new Samsung S20 Ultra, whilst also showcasing how to track fitness and wellbeing goals with Samsung Health. "
+            ]
+          }
+      ]
+    },
+    {
+      "type": "group",
+      "dynamic": "sessions",
+      "id": "cat-meffan",
+      "title": "Sessions"
+    }
+  ]
+}

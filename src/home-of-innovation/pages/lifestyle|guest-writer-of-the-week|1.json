@@ -21,7 +21,7 @@
       "components": [
         {
           "type": "headline",
-          "copy": "Nourishing mid-week cooking, simplified"
+          "copy": "Episode 1: Nourishing mid-week cooking, simplified"
         }
       ]
     },
@@ -188,6 +188,7 @@
     },
     {
       "type": "group",
+      "dynamic": "more-articles",
       "id": "guest-writer-of-the-week",
       "title": "More articles"
     }

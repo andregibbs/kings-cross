@@ -345,6 +345,7 @@ function HOITemplates(skipTemplates, dynamicDataCallback) {
               active: `{{_data-gfw[${id}-active]}}`,
               title: `{{_data-gfw[${id}-name]}}`,
               image: `{{_data-gfw[${id}-image]}}`,
+              alt: `{{_data-gfw[${id}-alt]}}`,
               list_buttons: {
                 style: {
                   align: "center"
@@ -476,45 +477,6 @@ function HOITemplates(skipTemplates, dynamicDataCallback) {
         dynamicComponentData[reference] = component
       }
     })
-
-
-    /*
-      Dynamic data
-
-      *use populatedData
-      *loop through page components
-      if has dynamic flag
-        flag should be a unique id string (not true/false)
-        unique ids per page
-        prepend page path?
-        {page path}-{dynamic id}
-        store id to check for duplicates
-
-      copy the object to a gulp variable
-      dynamic-data.json
-
-      {
-        'page/path-component-id': { data }
-      }
-
-      if task is being run with a deploy task
-        gulp hoi-deploy-dynamic (staging default)
-        gulp hoi-deploy-dynamic --live
-          if live do confirmation
-
-      deploy a json file to an s3 bucket
-        kx-hoi-dynamic-data-staging.json
-        kx-hoi-dynamic-data-live.json
-
-      build dynamic js components to request dynamic data
-      in template include inline partial for javascript to populate and render
-
-      create abstract dynamic component class
-        with fetch requests
-        templating
-        staging/live file urls
-
-    */
 
     // skip templates if set
     if (skipTemplates !== true) {

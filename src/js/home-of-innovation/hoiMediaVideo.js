@@ -60,12 +60,12 @@ export default class HOIMediaVideo {
 
   }
 
-  setState(icon) {
-    this.videoState.setAttribute('data-state', icon)
+  setState(state) {
+    this.videoState.setAttribute('data-state', state)
   }
 
   initLoadAnimation() {
-    // could pause this when not shown 
+    // could pause this when not shown
     lottie.loadAnimation({
       container: this.loadIcon, // the dom element that will contain the animation
       renderer: 'svg',

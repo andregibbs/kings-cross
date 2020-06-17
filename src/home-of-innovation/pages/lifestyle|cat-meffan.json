@@ -1,0 +1,33 @@
+{
+  "title": "Cat Meffan",
+  "description": "Movement and Mindfulness with Cat Meffan",
+  "image": "{{lifestyle|cat-meffan|1[image]}}",
+  "alt": "{{lifestyle|cat-meffan|1[alt]}}",
+  "thumb": "{{lifestyle|cat-meffan|1[image]}}",
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "{{lifestyle|cat-meffan|1[image]}}",
+        "alt": "{{lifestyle|cat-meffan|1[alt]}}"
+      },
+      "style": {
+        "desktop": "left",
+        "mobile": "top"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "{{lifestyle|cat-meffan[title]}}"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "dynamic": "sessions",
+      "id": "cat-meffan",
+      "title": "Sessions"
+    }
+  ]
+}

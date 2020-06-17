@@ -21,7 +21,7 @@
       "components": [
         {
           "type": "headline",
-          "copy": "Shared experiences boost happiness"
+          "copy": "Episode 7: Shared experiences boost happiness"
         }
       ]
     },
@@ -88,6 +88,7 @@
     },
     {
       "type": "group",
+      "dynamic": "more-articles",
       "id": "guest-writer-of-the-week",
       "title": "More articles"
     }

@@ -21,7 +21,7 @@
       "components": [
         {
           "type": "headline",
-          "copy": "Decorating with playful pastels"
+          "copy": "Episode 4: Decorating with playful pastels"
         }
       ]
     },
@@ -160,6 +160,7 @@
     },
     {
       "type": "group",
+      "dynamic": "more-articles",
       "id": "guest-writer-of-the-week",
       "title": "More articles"
     }

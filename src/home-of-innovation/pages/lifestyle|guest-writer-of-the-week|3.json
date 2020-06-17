@@ -21,7 +21,7 @@
       "components": [
         {
           "type": "headline",
-          "copy": "Beauty hacks for staying in-in"
+          "copy": "Episode 3: Beauty hacks for staying in-in"
         }
       ]
     },
@@ -110,6 +110,7 @@
     },
     {
       "type": "group",
+      "dynamic": "more-articles",
       "id": "guest-writer-of-the-week",
       "title": "More articles"
     }
