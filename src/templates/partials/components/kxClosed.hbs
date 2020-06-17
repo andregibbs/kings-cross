@@ -1,18 +1,166 @@
-<div class="kxClosed">
+<div
+  class="
+    kxClosed
+    {{#variation}}kxClosed--{{variation}}{{/variation}}
+  ">
+
   <div class="section">
     <div class="kxClosed__wrap">
-      <h4 class="fz36">
-        Samsung KX is temporarily closed until further notice.
-      </h4>
-      <p>
-        With the wellbeing of our customers and employees as our utmost priority, and in consideration of current recommendations from health and government authorities, Samsung KX is temporarily closed until further notice.
-      </p>
-      <p>
-        Samsung product support remains available at <a href="https://www.samsung.com/uk/support" target="_blank">https://www.samsung.com/uk/support</a>
-      </p>
-      <p>
-        Thank you for your continued loyalty and understanding. Please take care of yourselves, your loved ones and your communities.
-      </p>
+
+      {{#if (eq variation "home")}}
+
+        <h4 class="fz36 center">
+          Welcome back, we've missed you
+        </h4>
+        <p>
+          We are excited to welcome you back to Samsung KX.
+        </p>
+        <p>
+          We've been working hard to bring KX to you virtually through our new content hub and we hope you've been enjoying the library of the entertainment to help you learn, discover and explore.
+        </p>
+        <p>
+          The health and wellbeing of our staff and guests remains our priority, that's why we've introduced some changes to encourage social distancing and maintain a safe environment for all.
+        </p>
+
+        {{> icons}}
+
+        <h5 class="fz30">We'll get through this, together</h5>
+        <ul>
+          <li>Takeaway is available from our café by contactless payment only</li>
+          <li>For additional safety, some of our experiences are temporarily closed</li>
+          <li>Handheld devices are being cleaned after every use</li>
+          <li>Our Support Lounge is operating by pre-booked appointments only<br>Book your slot <a ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:home-reopen-support" data-omni-type="microsite" data-omni="uk:kings-cross:home-reopen-support" href="/uk/explore/kings-cross/support">here</a> and follow the guidance provided in your confirmation email</li>
+        </ul>
+
+      {{else if (eq variation "support")}}
+
+        <h4 class="fz36">
+          We've got your back
+        </h4>
+        <p>
+          The health and wellbeing of our staff and guests remains our priority, that's why we've introduced some changes to encourage social distancing and maintain a safe environment for all.
+        </p>
+        <p>
+          Our Support Lounge is now open by pre-booked appointment only. To avoid disappointment, we recommend booking an appointment at least 24hrs in advance.
+        </p>
+        <p>
+          Please select a convenient date and time and follow the guidance provided in your confirmation email.
+        </p>
+
+        <h5 class="fz30">Ahead of your appointment, please read the following safety advice:</h5>
+        <ul>
+          <li>Visitors should keep 2metres apart from others at all times</li>
+          <li>Directional floor markings are in place for additional safety</li>
+          <li>Only a limited number of people are permitted inside at any one time</li>
+          <li>Handheld devices are being cleaned after every use</li>
+          <li>We are offering a complimentary UV sanitising service for selected devices. Please ask your Support Specialist if you would like to use this service</li>
+          <li>If you feel unwell, we respectfully ask that you stay at home and seek immediate medical assistance.</li>
+        </ul>
+
+        <p>
+          Prefer to stay at home? Arrange a virtual video support appointment with one of our Samsung experts using the booking form.
+        </p>
+
+        <p>
+          We'd like to thank you for your ongoing support, patience and understanding.
+        </p>
+
+        <p>
+          We look forward to seeing you soon.
+        </p>
+
+      {{else if (eq variation "whats-on")}}
+
+        <h4 class="fz36">
+          See you soon
+        </h4>
+
+        <p>
+          We're doing everything we can to create a safe environment for all. To comply with social distancing guidelines, all physical events are temporarily postponed to ensure the safety of our staff and guests.
+        </p>
+
+        <p>
+          Learn more about the precautions we're taking <a href="/uk/explore/kings-cross/##precautions">here</a>.
+        </p>
+
+        <p>
+          We've been working hard to bring KX to you virtually through our new content hub and we hope you've been enjoying the library of entertainment to help you learn, discover and explore.<br>
+          Check it out <a href="/uk/explore/kings-cross/##homekv-hub">here</a>.
+        </p>
+
+        <p>
+          Sign up to recieve updates on news and events.<br>
+          We appreciate your support, patience and understanding.
+        </p>
+
+
+      {{else}}
+
+        <h4 class="fz36">
+          Samsung KX is temporarily closed until further notice.
+        </h4>
+        <p>
+          With the wellbeing of our customers and employees as our utmost priority, and in consideration of current recommendations from health and government authorities, Samsung KX is temporarily closed until further notice.
+        </p>
+        <p>
+          Samsung product support remains available at <a href="https://www.samsung.com/uk/support" target="_blank">https://www.samsung.com/uk/support</a>
+        </p>
+        <p>
+          Thank you for your continued loyalty and understanding. Please take care of yourselves, your loved ones and your communities.
+        </p>
+
+      {{/if}}
     </div>
   </div>
 </div>
+
+
+{{#*inline "icons"}}
+
+<div class="kxClosed__icons">
+
+  <div class="kxClosed__icon">
+    {{> svg/two_meters}}
+    <div class="kxClosed__iconLabel">
+      Keep 2m apart
+    </div>
+  </div>
+
+  <div class="kxClosed__icon">
+    {{> svg/follow}}
+    <div class="kxClosed__iconLabel">
+      Follow the arrows
+    </div>
+  </div>
+
+  <div class="kxClosed__icon">
+    {{> svg/little_ones}}
+    <div class="kxClosed__iconLabel">
+      Keep little ones close
+    </div>
+  </div>
+
+  <div class="kxClosed__icon">
+    {{> svg/limited_no}}
+    <div class="kxClosed__iconLabel">
+      Limited no. of people
+    </div>
+  </div>
+
+  <div class="kxClosed__icon">
+    {{> svg/sanitiser}}
+    <div class="kxClosed__iconLabel">
+      Hand sanitiser available
+    </div>
+  </div>
+
+  <div class="kxClosed__icon">
+    {{> svg/stay_home}}
+    <div class="kxClosed__iconLabel">
+      Return home if you feel unwell
+    </div>
+  </div>
+
+</div>
+
+{{/inline}}

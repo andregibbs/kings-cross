@@ -11,12 +11,17 @@
   }
 
   @media screen and (max-width: $mobile) {
-    padding: get-mobile-vw(100);
+    padding: get-mobile-vw(50) 0;
   }
 }
 
 .kxClosed h4,
+.kxClosed h5,
+.kxClosed ul,
 .kxClosed p {
+  &.center {
+    text-align: center;
+  }
   margin-bottom: 25px;
   @media screen and (max-width: $desktop) {
     margin-bottom: get-desktop-vw(25);
@@ -25,10 +30,97 @@
     margin-bottom: get-mobile-vw(25);
   }
 }
+
+.kxClosed h5 {
+  margin-top: 25px;
+  @media screen and (max-width: $desktop) {
+    margin-top: get-desktop-vw(25);
+  }
+  @media screen and (max-width: $mobile) {
+    margin-top: get-mobile-vw(25);
+  }
+}
+
+.kxClosed p {
+  margin-bottom: 10px;
+  @media screen and (max-width: $desktop) {
+    margin-bottom: get-desktop-vw(10);
+  }
+  @media screen and (max-width: $mobile) {
+    margin-bottom: get-mobile-vw(10);
+  }
+}
+
+.kxClosed h4 {
+  margin-bottom: 40px;
+  @media screen and (max-width: $desktop) {
+    margin-bottom: get-desktop-vw(40);
+  }
+  @media screen and (max-width: $mobile) {
+    margin-bottom: get-mobile-vw(40);
+  }
+}
+
 .kxClosed .kxClosed__wrap p:last-child {
   margin-bottom: 0;
 }
 
 .kxClosed a {
   color: $cyan;
+}
+
+.kxClosed ul {
+
+  li {
+    list-style: initial;
+    margin-left: 1rem;
+  }
+}
+
+.kxClosed__icons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  @media screen and (max-width: $desktop) {
+    margin-bottom: get-desktop-vw(40);
+    margin-top: get-desktop-vw(40);
+  }
+  @media screen and (max-width: $mobile) {
+    margin-bottom: get-mobile-vw(40);
+    margin-top: get-mobile-vw(40);
+    flex-wrap: wrap;
+  }
+
+  .kxClosed__icon {
+    width: 16%;
+    @media screen and (max-width: $mobile) {
+      width: 45%;
+      margin-bottom: get-mobile-vw(20);
+    }
+  }
+
+  .kxClosed__iconLabel {
+    text-align: center;
+    padding: 10px;
+    @media screen and (max-width: $desktop) {
+      padding: get-desktop-vw(10);
+    }
+    @media screen and (max-width: $mobile) {
+      padding: get-mobile-vw(20) get-mobile-vw(40) ;
+    }
+    font-size: 1.3em;
+    font-weight: bold;
+    font-family: "SamsungSharpSans";
+  }
+
+  svg {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    @media screen and (max-width: $mobile) {
+      width: 30%;
+      height: auto;
+    }
+  }
 }

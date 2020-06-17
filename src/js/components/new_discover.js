@@ -103,7 +103,8 @@ let activeTab = 1;
 
 export default function discover(events) {
 
-    const sliderConfig = {
+    // top kv slider config
+    const kvSliderConfig = {
         lazyLoad: 'ondemand',
         slidesToShow: 3,
         infinite: true,
@@ -115,8 +116,9 @@ export default function discover(events) {
         focusOnSelect: true,
         prevArrow: false,
         nextArrow: false,
-        speed: 1000
+        speed: 750
     }
+    $('#discover-kv-slider').slick( kvSliderConfig )
 
     const altSliderConfig = {
             lazyLoad: 'ondemand',
@@ -124,7 +126,6 @@ export default function discover(events) {
             infinite: false,
             speed: 500,
             fade: false
-
     }
     const recentlySliderConfig = {
         lazyLoad: 'ondemand',
@@ -153,7 +154,7 @@ export default function discover(events) {
         nextArrow: false,
 }
     slider(events, '.slider-discover-alt', altSliderConfig, 'homeKv');
-    slider(events, '.slider-discover', sliderConfig, 'homeKv');
+
     slider(events, '.slider-discover-recently', recentlySliderConfig, 'homeKv');
     slider(events, '.slider-discover-recently-descriptions', recentlyDescriptionsSliderConfig, 'homeKv');
     var indexToGet = $('.slider .slick-slide').index($('#center_on_me'));

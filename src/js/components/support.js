@@ -255,9 +255,7 @@ export default function support() {
                         $("span.checkbox").each(function (ind, elm) {
                             elm.classList.remove("checkbox__" + colors[state.category]);
                         });
-                        //["oneToOne", "support", "repair"].forEach(function (category) {
-                        // disable button enabling until other bookings slots are up and running again
-                        ["oneToOne"].forEach(function (category) {
+                        ["oneToOne", "support", "repair"].forEach(function (category) {
                             document.getElementById("btn-" + category).classList.remove("btn--primary-notActive");
                         });
 
