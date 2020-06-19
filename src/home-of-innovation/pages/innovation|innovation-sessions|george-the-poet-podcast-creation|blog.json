@@ -89,6 +89,7 @@
     },
     {
       "type": "group",
+      "dynamic": "more-episodes",
       "id": "innovation-sessions",
       "title": "More episodes"
     }

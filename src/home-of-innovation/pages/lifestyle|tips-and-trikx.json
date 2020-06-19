@@ -27,6 +27,7 @@
     },
     {
       "type": "group",
+      "dynamic": "episodes",
       "id": "tips-and-trikx",
       "title": "Episodes"
     }

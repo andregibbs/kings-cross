@@ -11,7 +11,7 @@
       "type": "kv",
       "media": {
         "type": "youtube",
-        "content": "",
+        "content": "nAM8CZ513jQ",
         "poster": "{{innovation|innovation-sessions|clara-amfo-making-a-podcast[image]}}",
         "alt": "{{innovation|innovation-sessions|clara-amfo-making-a-podcast[alt]}}"
       },
@@ -83,11 +83,21 @@
           "text": [
             "Beginning her podcast career at Acast in 2014, Richardson was the first content manager in the company’s London office. Moving into production, Richardson developed a leading fashion retailer’s first podcast My Big Idea and their second These Four Walls, before moving to Audible to work in the Original Content team, and then onto Brooklyn based Panoply. In 2018, Richardson embarked on a freelance career producing shows, including The Receipts on 1xtra and About Race with Reni Eddo-Lodge. She founded Broccoli Content in the summer of 2018 in response to the lack of opportunities both in front of, and behind, the mic for minority talent."
           ]
+        },
+        {
+          "type": "buttons",
+          "items": [
+            {
+              "copy": "Read Article",
+              "url": "{{innovation|innovation-sessions|clara-amfo-making-a-podcast|blog[url]}}"
+            }
+          ]
         }
       ]
     },
     {
       "type": "group",
+      "dynamic": "more-episodes",
       "id": "innovation-sessions",
       "title": "More episodes"
     }

@@ -1,0 +1,80 @@
+{
+  "title": "Blog",
+  "description": "A brand-new digital series from the Home of Innovation to inspire the UK  ",
+  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/innovation-sessions/3/SamsungKX_LandingPage_EpisodeFour_CategoryHero_V2.jpg",
+  "alt": "Black and white portrait of the upper half of a woman - Clara Amfo - wearing a white vest top, thin necklaces and large earrings, sat sideways to the camera. The woman is smiling and looking off to the side. The portrait is layered on top of a black background, with green, yellow and white abstract shapes overlayed on top.",
+  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/innovation-sessions/3/SamsungKX_LandingPage_EpisodeFour_Thumbnail_V1.jpg",
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "{{innovation|innovation-sessions|clara-amfo-making-a-podcast[image]}}",
+        "alt": "{{innovation|innovation-sessions|clara-amfo-making-a-podcast[alt]}}"
+      },
+      "style": {
+        "desktop": "top",
+        "mobile": "top"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "level": "1",
+          "copy": "Innovation Sessions: How to make your own podcast"
+        }
+      ]
+    },
+    {
+      "type": "share"
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "headline",
+          "copy": "How to stay focused with multiple voices",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "When capturing different opinions within a podcast, you need to let everyone answer a question. Without live audience recordings, the essence of podcasting is about capturing a great conversation for as long as you like and using the best parts within the edit. Avoiding awkward pauses isn’t the main focus, the focus should be making sure that each of your guests' opinions are heard.",
+            "People try really hard to avoid silence but natural pauses become useful as they make the editing process easier. If you leave silence after someone says something, it prompts them to fill that silence and often this is when they divulge the more interesting parts of the story that they would never have said in a normal conversation, or on another platform. Most podcasts (certainly, in ours), we aren’t there to make the guest or the host look bad, so the most important thing is to let the conversation take its natural course."
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "How to get the best out of your guests/interviewees",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Podcasting is such a unique format and it’s great for getting insights that other mediums just can’t facilitate. It’s very rare that you get an hour with any guest on TV or interviews etc., and that allows a greater rapport and trust to be built, allowing the guest to feel more comfortable to share more than they would on other mediums.",
+            "To get the most out of your guests, it’s important to have a 15-minute chat beforehand off air. This helps you to get to know each other better, and to get used to each other's style of communication.",
+            "During the record, if a conversation is flowing – let it!",
+            "The Louis Theroux episode in This City is a great example of this; we chatted for around 2 hours and had a lot of editing to do to make it into a digestible episode. Don’t be concerned with parts of the conversation you don’t want to include. You are better off focusing on which parts of the conversation flowed most naturally. These moments will likely work best within the final edit."
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "How long should each episode be?",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "There is a rule if you want people to listen to the pod in one go. The goldilocks zone seems to be around 20-23 minutes. When you go out with friends you could be talking for 5 hours and think the whole conversation is hilarious, but if you were to try and cut that down into a pod, there would only be an hour at most of good usable content.",
+            "Be harsh when editing, if you’re on the fence about a snippet, take it out. It’s very flexible and personal to how much you cut out, but the more you record the more you have to work with."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "dynamic": "more-episodes",
+      "id": "innovation-sessions",
+      "title": "More episodes"
+    }
+  ]
+}
