@@ -36,6 +36,7 @@
     },
     {
       "type": "group",
+      "dynamic": "episodes",
       "id": "editing-sessions",
       "title": "More episodes"
     }

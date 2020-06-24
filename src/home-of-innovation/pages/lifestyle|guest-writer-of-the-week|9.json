@@ -1,0 +1,123 @@
+{
+  "title": "Guest writer of the week: Smart ways to up your running game",
+  "description": "Simple ways to help make running a more permanent fixture in your life",
+  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/9/KV.jpg",
+  "alt": "Beauty writer Charlier Bell stands facing the camera wearing light blue jeans and a light pink floral top with one hand on her hip. Behind her a bedroom scene is visible with a light blue bed.",
+  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/9/KV-600.jpg",
+  "group": "guest-writer-of-the-week",
+  "sort": 9,
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "{{lifestyle|guest-writer-of-the-week|9[image]}}",
+        "alt": "{{lifestyle|guest-writer-of-the-week|9[alt]}}"
+      },
+      "style": {
+        "desktop": "right",
+        "mobile": "top"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "Episode 9: Smart ways to up your running game"
+        }
+      ]
+    },
+    {
+      "type": "share"
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "paragraphs",
+          "style": {
+            "large": true
+          },
+          "text": [
+            "There really isn’t a lot to running. If you’ve got suitable footwear and a willingness to put one foot in front of the other (at a slightly quicker than walking pace), then you’re making it happen.",
+            "What is often the most challenging aspect of running is to keep on doing it – whether that’s outside or jumping back on that treadmill. If you’re doing it for fitness reasons or because running simply helps to clear your mind, making it a regular habit is often the tough part.",
+            "There isn’t a single one answer to help make running a more permanent fixture in your life. We are all made differently. There are things though that people of all abilities can embrace to make the most of that time pounding the pavement or the running belt. Especially if you’re planning to take your smartwatch along with you."
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "Spend some time indoors",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Some will always favour putting in some miles out in the fresh air, but there’s plenty of reasons to take your running inside too. It’s a good way to start shifting the focus on how you run. By thinking more about form and technique without the outside distractions, it can ultimately improve your running in general and can help reduce the risk of picking up injury niggles.",
+            "It’s also fine to use that time to work on your mental ability to stick it out for long periods. Distract yourself with something to watch or listen to, if that treadmill time feels mundane. Ultimately, your goal is to get more comfortable running for longer periods.",
+            "However you approach running indoors, have your watch on to track the action and calibrate it to ensure you’re getting the reliable data when you hit that stop button."
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "Focus on stats that matter most to you",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "When you think about the data being recorded as you run, it’s perfectly understandable to feel a bit overwhelmed by the numbers and information being dished out. You don’t need to pay attention to all of it. ",
+            "You don’t have to track your average pace, how many calories you’ve burned or even get to grips with what your running cadence is. Put the data that means most to you front and centre. ",
+            "Take the time to customise what your watch shows you, to minimise fiddling around before you run. Also to focus on the running part as opposed to what those stats say."
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "Challenge yourself and nobody else",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Don’t get caught up in measuring yourself against others who might be running faster or further than you. It’s easy to do, but it’s important to set your own targets and then choose whether to shout about them or privately punch the air when you nail them.",
+            "That goal doesn’t have to be a race. Think of running for a certain amount of time or distance before you think about other challenges. ",
+            "It doesn’t matter how long or far those targets are. These goals can be simply set up from your watch, making it easier to see in real-time when you’ve achieved them. Start small and then build to bigger challenges, only when you’re ready to do so."
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "Don't just run",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "It might sound odd to tell you not to run, but it’s an important piece of advice as any here. You don’t need to run all the time. Especially if you’re getting into it for the first time. ",
+            "For starters, your body will need time to recover in between runs. While the pressure of seeing other people logging miles every day might play on your mind, stick to what works for you and feels right.",
+            "It’s also just as good to mix things up on the exercise front. Whether you throw yourself into the pool or get on your bike. You can even stay home, keep things simple and work on some strength building exercises that don't always require equipment. ",
+            "The <a href=\"https://www.samsung.com/uk/wearables/galaxy-watch/\">Samsung Galaxy Watch</a> is able to track multiple sports, so you can have that data to pore over just like your running stats.",
+            "Adding in these other physical activities can have a positive impact on your running by helping to make the prospect of doing it less of a chore because it’s not the only thing you’re doing."
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "Try to stick to a schedule",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "This feeds into the above. It’s good to get a bit of a routine going and come to agreement with yourself on how much you can or want to do. ",
+            "Get it plotted into your calendar, so you can do something to stick to long-term. If you miss a run, and no doubt it’ll happen from time to time, set a reminder to make up for it by scheduling another. ",
+            "This isn’t about putting pressure on yourself to run, but just making yourself more accountable and by building a routine, you can also better gauge progress.",
+            "<em>By Mike Sawh</em>",
+            "<em>Mike Sawh is a freelance journalist covering wearable tech and fitness for the likes of GQ, Wired and Wareable. He is also part of the team behind <a href=\"https://www.youtube.com/channel/UCOBM9FasII4dKbyE_HKkbjw\" target=\"_blank\">The Run Testers YouTube channel</a>.</em>"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "dynamic": "more-articles",
+      "id": "guest-writer-of-the-week",
+      "title": "More articles"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "title": "Game Dev London Podcast - Episode Seven",
+  "description": "Game Dev’s series of podcasts are to support the UK games industry with knowledge and stories from those at its core.",
+  "image": "{{creativity|game-dev-london-podcast[image]}}",
+  "alt": "Game Dev London Podcast logo linking to Episode Six",
+  "thumb": "{{creativity|game-dev-london-podcast[image]}}",
+  "group": "game-dev-london-podcast",
+  "sort": 7,
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "audio",
+        "content": "https://images.samsung.com/is/content/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/game-dev-london-podcast/GDL-ep7.mp4",
+        "poster": "{{creativity|game-dev-london-podcast[image]}}"
+      },
+      "style": {
+        "desktop": "left",
+        "mobile": "top"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "{{creativity|game-dev-london-podcast|7[title]}}"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Game Dev London is a diverse community group with a passion for all things gaming, including everything from design to conception, production, testing and of course playing the games themselves.",
+            "Host Roz Tuplin interviews Muse en Lystrala - A classical musician who founded Queenship Game Studio out of a Ludum Dare event and is tackling complex topics through games including anxiety, agoraphobia and depression."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "share"
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "paragraphs",
+          "text": [
+            "In light of the recent pandemic, gaming has become more popular than ever before, offering indoors entertainment and a fun way to keep connected with those closest to you. Nevertheless, it doesn’t stop here. Lockdown has created a window for communities such as Game Dev London to explore what’s missing from the current gaming offering, current trends and the challenges that come with new industry restrictions. As the home of innovation, SamsungKX is providing an online platform for Game Dev London to uncover this knowledge and inspire gaming enthusiasts via weekly online podcasts. The series aims to help both those who are starting out in the gaming world and those looking to upskill in this area.",
+            "Please keep your eyes peeled for their weekly podcasts."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "items": [
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/game-dev-london-podcast/GameDev_KV.jpg",
+          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/game-dev-london-podcast/GameDev_KV.jpg",
+          "alt": "Game Dev Podcast logo"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "dynamic": "more-episodes",
+      "id": "game-dev-london-podcast",
+      "title": "More episodes"
+    }
+  ]
+}

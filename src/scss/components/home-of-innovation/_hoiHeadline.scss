@@ -21,3 +21,8 @@
 .hoiHeadline--align-right {
   text-align: right;
 }
+
+// remove margins within kv components
+.hoiKv__Components .hoiHeadline {
+  margin-bottom: 0;
+}

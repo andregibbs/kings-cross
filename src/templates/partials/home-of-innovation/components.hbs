@@ -36,6 +36,10 @@
     {{> home-of-innovation/hoiGroupLand this }}
   {{/if_equals}}
 
+  {{#if_equals this.type 'group-land-id'}}
+    {{> home-of-innovation/hoiGroupLand this }}
+  {{/if_equals}}
+
   {{#if_equals this.type 'youtube'}}
     {{> home-of-innovation/hoiMediaYoutube this wrap=true}}
   {{/if_equals}}
@@ -73,6 +77,12 @@
 
   {{#if_equals this.type 'gfw-gallery'}}
     {{> home-of-innovation/hoiGallery (gfw-filter this) }}
+  {{/if_equals}}
+
+  {{#if_equals this.type 'css-snippet'}}
+    <style>
+      {{this.content}}
+    </style>
   {{/if_equals}}
 
 

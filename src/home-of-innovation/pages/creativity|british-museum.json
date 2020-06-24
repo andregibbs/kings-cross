@@ -26,6 +26,7 @@
     },
     {
       "type": "group",
+      "dynamic": "learn-more",
       "id": "british-museum",
       "title": "Learn more"
     }

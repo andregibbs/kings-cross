@@ -1,3 +1,15 @@
+<div
+  class="hoiGroupLand__Container
+  {{#if dynamic}}dynamic="{{dynamic}}"{{/if}}"
+>
+  {{#each (group-land-id-split items)}}
+    {{> groupLandGroup items=this}}
+  {{/each}}
+</div>
+
+
+{{!-- inline partials --}}
+{{!-- single item --}}
 {{#* inline 'groupLandItem'}}
 
   {{#if (eq this.url false)}}
@@ -23,32 +35,35 @@
 
 {{/inline}}
 
-<div class="hoiGroupLand  hoiGroupLand--{{items.length}}-items">
+{{!-- group item --}}
+{{#* inline 'groupLandGroup'}}
+  <div class="hoiGroupLand  hoiGroupLand--{{items.length}}-items">
 
-  <div class="hoiGroupLand__Group  hoiGroupLand__Group--A">
+    <div class="hoiGroupLand__Group  hoiGroupLand__Group--A">
 
-    {{> groupLandItem items.[0]}}
+      {{> groupLandItem items.[0]}}
 
-    {{#if items.[1]}}
-      <div class="hoiGroupLand__Group  hoiGroupLand__Group--B">
+      {{#if items.[1]}}
+        <div class="hoiGroupLand__Group  hoiGroupLand__Group--B">
 
-        {{> groupLandItem items.[1]}}
+          {{> groupLandItem items.[1]}}
 
-        {{#if items.[2]}}
-          <div class="hoiGroupLand__Group  hoiGroupLand__Group--C">
+          {{#if items.[2]}}
+            <div class="hoiGroupLand__Group  hoiGroupLand__Group--C">
 
-            {{> groupLandItem items.[2] }}
+              {{> groupLandItem items.[2] }}
 
-            {{#if items.[3]}}
-              {{> groupLandItem items.[3] }}
-            {{/if}}
+              {{#if items.[3]}}
+                {{> groupLandItem items.[3] }}
+              {{/if}}
 
-          </div>
-        {{/if}}
+            </div>
+          {{/if}}
 
-      </div>
-    {{/if}}
+        </div>
+      {{/if}}
+
+    </div>
 
   </div>
-
-</div>
+{{/inline}}

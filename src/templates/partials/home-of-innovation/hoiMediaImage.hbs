@@ -8,8 +8,13 @@
       hoiMedia--image
       {{#if style.nativeSize}} hoiMedia--image--native {{/if}}
     "
-    src="{{ this.content }}" alt="{{ this.title }}">
-
+    {{#if style.snippet}}
+      style="{{style.snippet}}"
+    {{/if}}
+    src="{{ this.content }}"
+    alt="{{#if this.alt}}{{this.alt}}{{else}}{{this.title}}{{/if}}"
+    title="{{#if this.title}}{{this.title}}{{else}}{{this.alt}}{{/if}}"
+    >
 
 {{#if credit}}
   <span class="hoiMedia__ImageCredit">{{credit}}</span>

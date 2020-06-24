@@ -1,5 +1,5 @@
 {
-  "title": "Stay Learning: Around The World in a Day. Palaces with Samsung and the British Museum",
+  "title": "Around The World in a Day: Spiritual Spaces with Samsung and the British Museum",
   "description": "Discover some of the world's amazing architecture and gain inspiration to design your own.",
   "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/4/KV_4.jpg",
   "alt": "Photo of a handmade colourful model church in front of a black background",
@@ -15,24 +15,14 @@
         "alt": "{{creativity|british-museum|4[alt]}}"
       },
       "style": {
-        "desktop": "left",
+        "desktop": "top",
         "mobile": "top"
       },
       "components": [
         {
           "type": "headline",
           "level": "1",
-          "copy": "{{creativity|british-museum|4[title]}}"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Since 2009, the Samsung Digital Discovery Centre at the British Museum has been offering an innovative digital learning programme for schools and families, through which children and young people can learn about and interact with the Museum’s collection using the latest Samsung technology. While the British Museum’s doors may currently be closed, you can still see its extensive collection online, and together we want to continue inspiring children and young people to build, experiment, invent and create.",
-            "We’re inviting you to discover some of the world’s most amazing architecture through our hand-picked collection of the British Museum’s objects and use it as an inspiration for your very own design! Look closely at intricate decorative details, to study the buildings of ancient and modern civilisations and have fun using your preferred artistic tools to develop your digital creative skills.",
-            "What you build and how you build it is totally up to you. Use your favourite digital drawing app, have a go on Minecraft, sketch ideas on paper, or build something using cardboard, building blocks or found materials. Then, why not bring your creations to life using your digital device to take photos and videos, create gifs or stop frame animations?",
-            "Share your creations with us on social media using #MuseumsFromHome and tagging us @SamsungUK.",
-            "Now let us take you on a virtual journey across the globe and across time, from the comfort of your own home!"
-          ]
+          "copy": "Stay Learning. Around The World in a Day: Spiritual Spaces with Samsung and the British Museum"
         }
       ]
     },
@@ -44,13 +34,26 @@
       "type": "wrapper",
       "components": [
         {
+          "type": "paragraphs",
+          "style": {
+            "large": true
+          },
+          "text": [
+            "Together with our partner the British Museum, we’re inviting you to discover some of the world’s most amazing architecture through our hand-picked collection of the British Museum’s objects, which you can use as inspiration for your very own design! Look closely at intricate decorative details, study the buildings of ancient and modern civilisations and have fun using your preferred artistic tools to develop your digital creative skills.",
+            "What you build and how you build it is totally up to you. Use your favourite digital drawing app, have a go on Minecraft, sketch ideas on paper, or build something using cardboard, building blocks or found materials. Then, why not bring your creations to life using your digital device to take photos and videos, create GIFs or stop motion animations?",
+            "Share your creations with us on social media using #MuseumFromHome and tagging us at @SamsungUK.",
+            "Now let us take you on a virtual journey across the globe and across time, from the comfort of your own home!",
+            "<em>Since 2009, the Samsung Digital Discovery Centre at the British Museum has been offering an innovative digital learning programme for schools and families. Though this programme children and young people can learn about and interact with the Museum’s collection using the latest Samsung technology. While the British Museum’s doors may currently be closed, you can still see its extensive collection online, and together we want to continue inspiring children and young people to build, experiment, invent and create.</em>"
+          ]
+        },
+        {
           "type": "headline",
           "copy": "Challenge 4: Spiritual Spaces",
           "level": "2"
         },
         {
           "type": "headline",
-          "copy": "Religious Routes",
+          "copy": "Religious routes",
           "level": "3"
         },
         {
@@ -64,9 +67,9 @@
         },
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/4/Insert British Museum Tower Tools",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/4/Religious_Routes_2.jpg",
           "alt": "Photo of a woodcut of The Tower of Babel being built with men and building tools at the tower's base from the 16th century",
-          "credit": "Credit: Chromolithograph of the sacred shrine of Moinuddin Chishti at Ajmer, printed in India, mid 20th century. © The Trustees of the British Museum"
+          "credit": "Printed by S.S. Brijbasi & Sons, Chromolithograph of the sacred shrine of Moinuddin Chishti at Ajmer, printed in India, mid 20th century. © The Trustees of the British Museum "
         },
         {
           "type": "headline",
@@ -84,13 +87,13 @@
         },
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/4/British_Museum_Kaleidoscope_of_colour.jpg",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/4/Kaleidoscope_of_colour.jpg",
           "alt": "Photo of a handmade colourful model church in front of a black background",
-          "credit": "Credit: Model church, made in Izúcar de Matamoros, Mexico, 1980s. © The Trustees of the British Museum"
+          "credit": "Image credit: Model church, made in Izúcar de Matamoros, Mexico, 1980s. © The Trustees of the British Museum"
         },
         {
           "type": "headline",
-          "copy": "Buddhist Building",
+          "copy": "Buddhist building",
           "level": "3"
         },
         {
@@ -104,13 +107,13 @@
         },
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/4/British_Museum_Buddhist_Building.jpg",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/4/Buddhist_Building.jpg",
           "alt": "Photo of a Japanese Triptych print of Kinryuzan Sensoji Temple in Tokyo showing temples with blossom tress and foliage in the foreground and distant hills in the background",
-          "credit": "Credit:Triptych print of Kinryuzan Sensoji Temple in Tokyo, made in Japan, 1854. © The Trustees of the British Museum"
+          "credit": "Image credit: Utagawa Hiroshige (1797-1858), Triptych print of Kinryuzan Sensoji Temple in Tokyo, made in Japan, 1854. © The Trustees of the British Museum "
         },
         {
           "type": "headline",
-          "copy": "Spiritual Spaces",
+          "copy": "Spiritual spaces",
           "level": "3"
         },
         {
@@ -124,13 +127,13 @@
         },
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/4/British_Museum_Spiritual_Spaces.jpg",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/4/Spiritual_Spaces.jpg",
           "alt": "Handmade, dark model of Church of the Holy Sepulchre in Jerusalem decorated in white markings, shown in front of a black background",
-          "credit": "Credit:  Model of Church of the Holy Sepulchre in Jerusalem, made in Levant, before 1753. © The Trustees of the British Museum"
+          "credit": "Image credit: Model of Church of the Holy Sepulchre in Jerusalem, made in Levant, before 1753. © The Trustees of the British Museum"
         },
         {
           "type": "headline",
-          "copy": "Wonderous Windows",
+          "copy": "Wonderous windows",
           "level": "3"
         },
         {
@@ -144,13 +147,13 @@
         },
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/4/Insert Photo: British Museum Wonderous Windows",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/4/Wonderous_windows.jpg",
           "alt": "",
-          "credit": "Credit: :Model of Church of the Holy Sepulchre in Jerusalem, made in Levant, before 1753. © The Trustees of the British Museum"
+          "credit": "Image credit: Model of Church of the Holy Sepulchre in Jerusalem, made in Levant, before 1753. © The Trustees of the British Museum"
         },
         {
           "type": "headline",
-          "copy": "Simple Shapes ",
+          "copy": "Simple shapes ",
           "level": "3"
         },
         {
@@ -164,13 +167,13 @@
         },
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/4/British_Museum_Simple_shapes.jpg",
-          "alt": "",
-          "credit": "Credit:Model of Church of the Holy Sepulchre in Jerusalem, made in Levant, before 1753. © The Trustees of the British Museum"
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/4/Simple_shapes.jpg",
+          "alt": "Black and white photo from above of a model church decorated with geometric patterns",
+          "credit": "Image credit: Model of Church of the Holy Sepulchre in Jerusalem, made in Levant, before 1753. © The Trustees of the British Museum"
         },
         {
           "type": "headline",
-          "copy": "Supporting Structures",
+          "copy": "Supporting structures",
           "level": "3"
         },
         {
@@ -184,13 +187,13 @@
         },
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/4/British_Museum_Supporting_structures.jpg",
-          "alt": "",
-          "credit": "Credit: Model of Church of the Holy Sepulchre in Jerusalem, made in Levant, before 1753. © The Trustees of the British Museum"
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/4/Supporting_Structures.jpg",
+          "alt": "Photo of the inside of a model church made out of wood and marble decorated with geometric shapes, depicting an internal column with numerous floors and arches on the outside",
+          "credit": "Image credit: Model of Church of the Holy Sepulchre in Jerusalem, made in Levant, before 1753. © The Trustees of the British Museum"
         },
         {
           "type": "headline",
-          "copy": "Sacred Spaces",
+          "copy": "Sacred spaces",
           "level": "3"
         },
         {
@@ -204,13 +207,13 @@
         },
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/4/Insert Photo:  British Museum sacred spaces",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/4/Sacred_spaces.jpg",
           "alt": "",
-          "credit": "Credit: Print of Hall in Assyrian Palace restored, published in London, UK, 1849. © The Trustees of the British Museum"
+          "credit": "Image credit: Print of Hall in Assyrian Palace restored, published in London, UK, 1849. © The Trustees of the British Museum"
         },
         {
           "type": "headline",
-          "copy": "Painted Palace Patterns",
+          "copy": "Souvenir structure",
           "level": "3"
         },
         {
@@ -219,18 +222,18 @@
             "large": true
           },
           "text": [
-            "These colourful patterns decorated the walls and bricks of the palace. What will adorn the walls of your palace?"
+            "A souvenir for a pilgrim visiting the real church, this model can be taken apart and carried home. Will your building be a portable model or permanent structure?"
           ]
         },
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/4/Insert Photo: British Museum Painted palace patterns",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/4/Souvenir_Structure.jpg",
           "alt": "",
-          "credit": "Credit: Model of Church of the Holy Sepulchre in Jerusalem, made in Levant, before 1753. © The Trustees of the British Museum"
+          "credit": "Image credit: Model of Church of the Holy Sepulchre in Jerusalem, made in Levant, before 1753. © The Trustees of the British Museum"
         },
         {
           "type": "headline",
-          "copy": "Souvenir Structure ",
+          "copy": "Standing stones",
           "level": "3"
         },
         {
@@ -239,14 +242,14 @@
             "large": true
           },
           "text": [
-            "A souvenir for a pilgrim visiting the real church, this model can be taken apart and carried home. Will your building be portable model or permanent structure?"
+            "Not all sacred sites have walls and a roof. Will you build a spiritual space to shelter or a mysterious outdoor monument that has people asking, how did this get here?"
           ]
         },
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/4/British_Museum_Souvenir_Structure.jpg",
-          "alt": "",
-          "credit": "Credit: Model of Church of the Holy Sepulchre in Jerusalem, made in Levant, before 1753. © The Trustees of the British Museum"
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/4/Standing_Stones.jpg",
+          "alt": "Photo of a watercolour painting of purple Assyrian wall paintings and glazed bricks",
+          "credit": "Image credit: Julius Caesar Ibbetson (1759-1817), Etching and aquatint of Stonehenge, published in London, UK, 1791. © The Trustees of the British Museum"
         },
         {
           "type": "buttons",
@@ -260,21 +263,29 @@
         },
         {
           "type": "headline",
-          "level": "5",
-          "copy": "Samsung and the British Museum"
+          "level": "2",
+          "copy": "About Samsung and the British Museum"
         },
         {
           "type": "paragraphs",
           "text": [
-            "Samsung and the British Museum have been working together in partnership since 2009, developing an engaging and innovative digital learning programme through the Samsung Digital Discovery Centre (SDDC) which is offered free to schools and families. It offers the most ambitious and extensive on-site digital learning programme of any UK museum. Since 2009, the SDDC has attracted more than 150,000 school students and families.",
-            "The Samsung Digital Discovery Centre is a digital a learning hub for children and young people to learn about and interact with the British Museum's collection. This activity combines two of the SDDC’s most popular activities: build Roman Britain in Minecraft where visitors embark on their own Roman inspired construction projects, and around the world in a day, where students investigate cultures of ancient societies.",
-            "The SDDC programme forms a part of Samsung's global commitment in 'supporting education and empowering the next generation of innovators. The partnership represents our shared belief in the importance of learning about the world's history and cultures to better understand the present and prepare for the future."
+            "Samsung and the British Museum have been working together in partnership since 2009, developing an engaging and innovative digital learning programme through the Samsung Digital Discovery Centre which is offered free to schools and families. It offers the most ambitious and extensive on-site digital learning programme of any UK museum. Since 2009, the programme has attracted more than 150,000 school students and families.",
+            "The <a href=\"https://www.britishmuseum.org/learn/schools/samsung-digital-discovery-centre\" target=\"_blank\">Samsung Digital Discovery Centre</a> is a digital learning hub for children and young people to learn about and interact with the British Museum's collection. This activity combines two of the centre’s most popular activities: Build Roman Britain in Minecraft, where visitors embark on their own Roman inspired construction projects, and Around the World in a Day, where students investigate cultures of ancient societies.",
+            "The Samsung Digital Discovery Centre forms a part of Samsung's global commitment in 'supporting education and empowering the next generation of innovators’. The partnership represents our shared belief in the importance of learning about the world's history and cultures to better understand the present and prepare for the future."
           ]
+        },
+        {
+          "type": "image",
+          "style": {
+            "snippet": "max-width: 200px; padding-left: 0; padding-right: 0;"
+          },
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/british-museum-logo.png"
         }
       ]
     },
     {
       "type": "group",
+      "dynamic": "learn-more",
       "id": "british-museum",
       "title": "Learn more"
     }

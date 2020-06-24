@@ -12,9 +12,24 @@
   margin-bottom: 1em;
 }
 
+.hoiWrapper h2 {
+  margin-top: 2em
+}
+
 .hoiWrapper h3,
 .hoiWrapper h4 {
   margin-top: 1em;
+}
+
+.hoiWrapper ul {
+  margin-left: 2em;
+  li {
+    list-style: initial;
+  }
+}
+
+.hoiWrapper .hoiMedia {
+  padding: $spacing-mobile 0;
 }
 
 @media screen and (min-width: $mobile + 1) {
