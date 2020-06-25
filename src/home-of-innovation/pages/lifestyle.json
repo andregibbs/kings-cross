@@ -1,5 +1,5 @@
 {
-  "title": "Lifestyle Home",
+  "title": "Lifestyle",
   "description": "",
   "theme": {
     "color": "#FFB546"
@@ -7,13 +7,32 @@
   "components": [
     {
       "type": "group-land-id",
-      "dynamic": "group-pages",
       "items": [
+        "lifestyle|cat-meffan|2",
+        "lifestyle|guest-writer-of-the-week|9",
         "lifestyle|tips-and-trikx|10",
         "lifestyle|cat-meffan|1",
         "lifestyle|guest-writer-of-the-week|8",
         "lifestyle|tips-and-trikx|9",
-        "lifestyle|guest-writer-of-the-week|7"
+        "lifestyle|guest-writer-of-the-week|7",
+        "lifestyle|zone-v",
+        "lifestyle|tips-and-trikx|8",
+        "lifestyle|guest-writer-of-the-week|6",
+        "lifestyle|internet-matters|3",
+        "lifestyle|internet-matters|2",
+        "lifestyle|safe-to-net",
+        "lifestyle|internet-matters|1",
+        "lifestyle|tips-and-trikx|6",
+        "lifestyle|guest-writer-of-the-week|5",
+        "lifestyle|tips-and-trikx|5",
+        "lifestyle|guest-writer-of-the-week|4",
+        "lifestyle|tips-and-trikx|4",
+        "lifestyle|guest-writer-of-the-week|3",
+        "lifestyle|guest-writer-of-the-week|2",
+        "lifestyle|guest-writer-of-the-week|1",
+        "lifestyle|tips-and-trikx|3",
+        "lifestyle|tips-and-trikx|2",
+        "lifestyle|tips-and-trikx|1"
       ]
     }
   ]

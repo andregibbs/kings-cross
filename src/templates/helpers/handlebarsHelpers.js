@@ -168,11 +168,11 @@ if (typeof module !== 'undefined') {
       return context
     })
 
-    Handlebars.registerHelper('group-land-id-split', function(context) {
+    Handlebars.registerHelper('group-land-split', function(context) {
       let i, j, newArray = [], size = 4;
       context = context.reverse()
       for (i = 0, j = context.length; i < j; i += size) {
-        newArray.push(context.slice(i, i + size))
+        newArray.push(context.slice(i, i + size).reverse())
       }
       return newArray.reverse()
     })

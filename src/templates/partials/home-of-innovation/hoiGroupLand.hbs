@@ -1,8 +1,6 @@
 <div
-  class="hoiGroupLand__Container
-  {{#if dynamic}}dynamic="{{dynamic}}"{{/if}}"
->
-  {{#each (group-land-id-split items)}}
+  class="hoiGroupLand__Container">
+  {{#each (group-land-split items)}}
     {{> groupLandGroup items=this}}
   {{/each}}
 </div>

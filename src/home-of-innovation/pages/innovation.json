@@ -6,36 +6,12 @@
   },
   "components": [
     {
-      "type": "group-land",
+      "type": "group-land-id",
       "items": [
-        {
-          "title": "{{creativity|university-of-lincoln[title]}}",
-          "description": "{{creativity|university-of-lincoln[description]}}",
-          "image": "{{creativity|university-of-lincoln[image]}}",
-          "alt": "{{creativity|university-of-lincoln[alt]}}",
-          "url": "{{creativity|university-of-lincoln[url]}}"
-        },
-        {
-          "title": "{{innovation|science-museum|1[title]}}",
-          "description": "{{innovation|science-museum|1[description]}}",
-          "image": "{{innovation|science-museum|1[image]}}",
-          "alt": "{{innovation|science-museum|1[alt]}}",
-          "url": "{{innovation|science-museum|1[url]}}"
-        },
-        {
-          "title": "{{innovation|science-museum|2[title]}}",
-          "description": "{{innovation|science-museum|2[description]}}",
-          "image": "{{innovation|science-museum|2[image]}}",
-          "alt": "{{innovation|science-museum|2[alt]}}",
-          "url": "{{innovation|science-museum|2[url]}}"
-        },
-        {
-          "title": "{{innovation|science-museum|3[title]}}",
-          "description": "{{innovation|science-museum|3[description]}}",
-          "image": "{{innovation|science-museum|3[image]}}",
-          "alt": "{{innovation|science-museum|3[alt]}}",
-          "url": "{{innovation|science-museum|3[url]}}"
-        }
+        "creativity|university-of-lincoln",
+        "innovation|science-museum|1",
+        "innovation|science-museum|2",
+        "innovation|science-museum|3"
       ]
     }
   ]

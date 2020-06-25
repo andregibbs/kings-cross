@@ -400,6 +400,22 @@ function HOITemplates(skipTemplates, dynamicDataCallback) {
             }
           })
           component.items.sort((a, b) => a.sort - b.sort)
+          break;
+        case 'group-land-id':
+          component.items = component.items.map((id) => {
+            const path = id.split('|').join('/')
+            const pageData = getPageData(path)
+            const url = pageData.placeholder ? false : publicUrl + path.replace(pagesBasePath, '').replace(/\|/g,'/').replace('.json', '')
+            return {
+              title: pageData.title,
+              description: pageData.description,
+              image: pageData.image,
+              alt: pageData.alt || pageData.title,
+              url
+            }
+
+          })
+
         default:
       }
     })
