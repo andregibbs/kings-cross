@@ -1,53 +1,101 @@
 /*=============================================
 =            Discover           =
 =============================================*/
+@import './discover/discoverKv.scss';
+@import './discover/DiscoverExperience.scss';
 
-.kv {
-  background: url("https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/kx-discover2020.jpg");
-  // max-height: 700px;
-  //below height temp for halloween
-  max-height: 450px;
-  height: 57vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+// wrapper
+.section.section--kv {
+  padding-top: 0 !important;
+  padding-bottom: 2vw;
+}
+
+// common header
+.discover__Header {
+  width: 100%;
+  text-align: center;
   display: flex;
-  align-items: center;
-
+  flex-direction: column;
   @media screen and (max-width: $mobile) {
-    height: 30vh;
+    font-size: 0.9rem !important;
   }
-
   h2 {
-    font-size: em(50);
-    font-weight: bold;
-    width: 80%;
-    line-height: em(17);
-    text-shadow: 2px 2px 12px #000000;
-    margin-bottom: 1%;
-    @media screen and (max-width: $mobile) {
-      font-size: em(40);
-    }
+    // @extend .fz20;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-family: "SamsungOne", arial, sans-serif;
+    margin-bottom: em(6);
   }
-
+  h3 {
+    // @extend .fz30;
+    margin-bottom: em(10);
+  }
   p {
-    text-shadow: 2px 2px 12px #000000;
-    margin: get-desktop-vw(10) 0px;
-    font-size: em(18);
-    @media screen and (max-width: $mobile) {
-      margin: get-mobile-vw(15) 0px;
+    font-size: 1em;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    // padding: 0 40px;
+    @media screen and (min-width: $mobile + 1) {
+      max-width: 50%;
     }
-  }
-
-  .black-friday-kv {
-    font-size: em(23);
-    text-shadow: 2px 2px 3px black;
-  }
-
-  a {
-    box-shadow: 2px 2px 12px black;
   }
 }
+
+.discover__Button {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+// .kv {
+//   background: url("https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/kx-discover2020.jpg");
+//   // max-height: 700px;
+//   //below height temp for halloween
+//   max-height: 450px;
+//   height: 57vh;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   background-position: center center;
+//   display: flex;
+//   align-items: center;
+//
+//   @media screen and (max-width: $mobile) {
+//     height: 30vh;
+//   }
+//
+//   h2 {
+//     font-size: em(50);
+//     font-weight: bold;
+//     width: 80%;
+//     line-height: em(17);
+//     text-shadow: 2px 2px 12px #000000;
+//     margin-bottom: 1%;
+//     @media screen and (max-width: $mobile) {
+//       font-size: em(40);
+//     }
+//   }
+//
+//   p {
+//     text-shadow: 2px 2px 12px #000000;
+//     margin: get-desktop-vw(10) 0px;
+//     font-size: em(18);
+//     @media screen and (max-width: $mobile) {
+//       margin: get-mobile-vw(15) 0px;
+//     }
+//   }
+//
+//   .black-friday-kv {
+//     font-size: em(23);
+//     text-shadow: 2px 2px 3px black;
+//   }
+//
+//   a {
+//     box-shadow: 2px 2px 12px black;
+//   }
+// }
 
 .kx-video {
   padding: 0px;
@@ -292,54 +340,54 @@
   }
 }
 
-.neighbourhood {
-  padding-bottom: 0 !important;
-  &__header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
+// .neighbourhood {
+//   padding-bottom: 0 !important;
+//   &__header {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     flex-direction: column;
+//     text-align: center;
+//
+//     h3 {
+//       font-size: em(50);
+//       font-weight: bold;
+//       margin-bottom: 20px;
+//     }
+//     span {
+//       font-size: em(30);
+//       font-weight: 700;
+//       margin-bottom: 25px;
+//     }
+//   }
+//   &__container {
+//     .slider {
+//       padding-bottom: 0;
+//     }
+//   }
+// }
 
-    h3 {
-      font-size: em(50);
-      font-weight: bold;
-      margin-bottom: 20px;
-    }
-    span {
-      font-size: em(30);
-      font-weight: 700;
-      margin-bottom: 25px;
-    }
-  }
-  &__container {
-    .slider {
-      padding-bottom: 0;
-    }
-  }
-}
-
-.gallery {
-  padding-top: 0 !important;
-  padding-bottom: 2vw;
-  &__header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    h3 {
-      font-size: em(50);
-      font-weight: bold;
-      margin-bottom: 20px;
-    }
-    span {
-      font-size: em(30);
-      font-weight: 700;
-      margin-bottom: 25px;
-    }
-  }
-}
+// .gallery {
+//   padding-top: 0 !important;
+//   padding-bottom: 2vw;
+//   &__header {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     flex-direction: column;
+//     text-align: center;
+//     h3 {
+//       font-size: em(50);
+//       font-weight: bold;
+//       margin-bottom: 20px;
+//     }
+//     span {
+//       font-size: em(30);
+//       font-weight: 700;
+//       margin-bottom: 25px;
+//     }
+//   }
+// }
 
 .spaces {
   padding-top: 0 !important;
@@ -662,6 +710,11 @@
 .gallery__header {
   margin-bottom: 3%;
 }
+
+
+
+
+
 
 // .is-active {
 //    box-shadow: 0 19px 38px rgba(164,89,156,.30), 0 15px 12px rgba(164,89,156,.22);

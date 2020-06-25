@@ -1,5 +1,30 @@
 import slider from './slider'
 
+import DiscoverExperience from './discover/discoverExperience';
+
+export default function discover(events) {
+
+  // initialise top slider
+  $('#discover-kv-slider').slick({
+      lazyLoad: 'ondemand',
+      slidesToShow: 3,
+      infinite: true,
+      centerMode: true,
+      centerPadding: '0px',
+      slidesToScroll: 1,
+      initialSlide: 0,
+      dots: false,
+      focusOnSelect: true,
+      prevArrow: false,
+      nextArrow: false,
+      speed: 750
+  })
+
+  // init discover experience component
+  new DiscoverExperience()
+
+}
+
 // export default function discover( events ) {
 
 // 	const sliderConfig = {
@@ -101,9 +126,10 @@ const tabs = {
 
 let activeTab = 1;
 
-export default function discover(events) {
+export function old_discover(events) {
 
-    const sliderConfig = {
+    // top kv slider config
+    const kvSliderConfig = {
         lazyLoad: 'ondemand',
         slidesToShow: 3,
         infinite: true,
@@ -115,8 +141,9 @@ export default function discover(events) {
         focusOnSelect: true,
         prevArrow: false,
         nextArrow: false,
-        speed: 1000
+        speed: 750
     }
+    $('#discover-kv-slider').slick( kvSliderConfig )
 
     const altSliderConfig = {
             lazyLoad: 'ondemand',
@@ -124,7 +151,6 @@ export default function discover(events) {
             infinite: false,
             speed: 500,
             fade: false
-
     }
     const recentlySliderConfig = {
         lazyLoad: 'ondemand',
@@ -153,7 +179,7 @@ export default function discover(events) {
         nextArrow: false,
 }
     slider(events, '.slider-discover-alt', altSliderConfig, 'homeKv');
-    slider(events, '.slider-discover', sliderConfig, 'homeKv');
+
     slider(events, '.slider-discover-recently', recentlySliderConfig, 'homeKv');
     slider(events, '.slider-discover-recently-descriptions', recentlyDescriptionsSliderConfig, 'homeKv');
     var indexToGet = $('.slider .slick-slide').index($('#center_on_me'));
@@ -174,28 +200,6 @@ export default function discover(events) {
     });
 
 
-    // 	var tabTriggerBtns = document.querySelectorAll('.tab-item');
-
-    //     tabTriggerBtns.forEach(function(tabTriggerBtn, index){
-    //      tabTriggerBtn.addEventListener('click', function(){
-    // 		var flyout = document.querySelectorAll('.flyout');
-
-    //         var currentTabData = document.querySelector('.tab-content[data-tab-content="' + this.dataset.tabTrigger + '"]');
-
-    // 		// add fade out animation and remove
-
-
-    //         // remove classess
-    //         document.querySelector('.tab-content.is-open').classList.remove('is-open');
-    //         document.querySelector('.is-active').classList.remove('is-active');
-    // 		// add classes
-
-    // 		currentTabData.classList.add('is-open', 'flyout__on');
-    // 		// currentTabData.classList.add('is-open', 'flyout__on');
-    // 		this.classList.add('flyout', 'is-active');
-    // 		// this.classList.add('flyout__on');
-    //     });
-    // });
 
     var tabTriggerBtns = document.querySelectorAll('.tab-item');
 
