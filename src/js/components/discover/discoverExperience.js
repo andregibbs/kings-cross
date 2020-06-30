@@ -1,27 +1,25 @@
-
-
 export default class DiscoverExperience {
 
-  constructor() {
-    this.el = document.querySelector('.discover__Experience');
-    if (!this.el) return;
+  constructor(el) {
+    if (!el) return;
+    this.el = el
 
     this.activeIndex = false
-    this.items = [].slice.call(this.el.querySelectorAll('.discover__ExperienceItem'))
+    this.items = [].slice.call(this.el.querySelectorAll('.discoverExperience__Item'))
 
     this.addEventListeners(this.items);
   }
 
   addEventListeners(items) {
+    // add item and close events
     items.forEach((item, i) => {
       item.addEventListener('click', this.itemClickHandler.bind(this))
-      item.querySelector('.discover__ExperienceItem__Close').addEventListener('click', this.itemCloseHandler.bind(this))
+      item.querySelector('.discoverExperience__ItemClose').addEventListener('click', this.itemCloseHandler.bind(this))
     });
   }
 
   itemClickHandler(e) {
     const el = e.target
-    console.log('item clicked', el)
 
     // set all to inactive
     this.items.forEach((item) => {
@@ -37,15 +35,10 @@ export default class DiscoverExperience {
 
   itemCloseHandler(e) {
     e.stopImmediatePropagation()
-    console.log('item close', e)
-
+    // remove all active states (neutral)
     this.items.forEach((item) => {
       item.removeAttribute('active')
     })
-
-
   }
-
-
 
 }

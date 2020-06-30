@@ -1,0 +1,67 @@
+<div class="discoverExperience">
+
+  <div class="discoverExperience__Items">
+
+    {{>
+      item
+      image="https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/discover/2020-experiences/dj_galaxy.jpg"
+      title="DJ Galaxy"
+      description="For the aspiring musicians, this unique experience teaches guests to create, perform and record bespoke beats with the tap of a Samsung smartphone"
+    }}
+
+    {{>
+      item
+      image="https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/discover/2020-experiences/galaxy_graffiti.jpg"
+      title="Galaxy Graffiti"
+      description="Embracing the capital’s passion for street art, guests can virtually make their mark on the 10metre-wide screen across a range of digital London backdrops and share their creations on social media as a memento of their visit"
+    }}
+
+    {{>
+      item
+      image="https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/discover/2020-experiences/personalised_cases.jpg"
+      title="Personalised cases"
+      description="Give your Samsung device a unique creative flare with a free personalised phone case"
+    }}
+
+    {{>
+      item
+      image="https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/discover/2020-experiences/digital_cockpit.jpg"
+      title="Digital Cockpit"
+      description="The world’s first seamlessly connected driving experience that brings to life the future of automotive"
+    }}
+
+    {{>
+      item
+      image="https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/discover/2020-experiences/vr_car.jpg"
+      title="VR Car"
+      description="Take your driving skills to the next level with virtual reality racing"
+    }}
+
+    {{>
+      item
+      image="https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/discover/2020-experiences/collage_me.jpg"
+      title="Collage Me"
+      description="Those wanting to push the boundaries of self-expression can create and take away their very own free mini 3D figure or even turn a selfie into a unique, personalised collage to share on social media"
+    }}
+
+  </div>
+
+</div>
+
+
+{{#*inline 'item'}}
+<div
+  class="discoverExperience__Item"
+  style="background-image: url('{{image}}')">
+  <div class="discoverExperience__ItemClose"></div>
+  <div class="discoverExperience__ItemBody  discoverExperience__ItemBody--inactive">
+    <h3 class="fz24">{{title}}</h3>
+  </div>
+  <div class="discoverExperience__ItemBody  discoverExperience__ItemBody--active">
+    <h3 class="fz30">{{title}}</h3>
+    <p class="fz18">
+      {{description}}
+    </p>
+  </div>
+</div>
+{{/inline}}

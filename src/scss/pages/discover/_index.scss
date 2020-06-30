@@ -1,13 +1,34 @@
 /*=============================================
 =            Discover           =
 =============================================*/
-@import './discover/discoverKv.scss';
-@import './discover/DiscoverExperience.scss';
+@import './discoverKv.scss';
+@import './discoverExperience.scss';
+@import './discoverEvents.scss';
 
 // wrapper
+// move to common file?
 .section.section--kv {
   padding-top: 0 !important;
   padding-bottom: 2vw;
+}
+.section.section--fullbleed {
+  padding-left: 0;
+  padding-right: 0;
+}
+.section.section--nopad-v {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.section.section--hide {
+  display: none;
+}
+
+.discover {
+  // @media screen and (max-width: $mobile) {
+    p {
+      font-size: 0.6rem !important;
+    }
+  // }
 }
 
 // common header
@@ -17,18 +38,30 @@
   display: flex;
   flex-direction: column;
   @media screen and (max-width: $mobile) {
-    font-size: 0.9rem !important;
+    font-size: 0.6rem !important;
   }
   h2 {
     // @extend .fz20;
     text-transform: uppercase;
     font-weight: normal;
     font-family: "SamsungOne", arial, sans-serif;
-    margin-bottom: em(6);
+    margin-bottom: 2vw;
   }
   h3 {
     // @extend .fz30;
-    margin-bottom: em(10);
+    margin-bottom: 4vw;
+  }
+
+  @media screen and (min-width: $mobile + 1) {
+    h2 {
+      margin-bottom: 1vw;
+    }
+    h3 {
+      margin-bottom: 2vw;
+    }
+    p {
+      max-width: 50%;
+    }
   }
   p {
     font-size: 1em;
@@ -36,9 +69,6 @@
     text-align: center;
     margin: 0 auto;
     // padding: 0 40px;
-    @media screen and (min-width: $mobile + 1) {
-      max-width: 50%;
-    }
   }
 }
 
@@ -48,6 +78,37 @@
   justify-content: center;
 }
 
+
+.discover__NotASchool {
+  @extend .section;
+  background: url(https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/school/Kx_NAS_signpost.png);
+  background-size: auto 75%;
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-top: 25px;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 0;
+
+  p {
+    margin-bottom: 4vw;
+  }
+
+  @media screen and (min-width: $mobile + 1) {
+    background-size: cover;
+    height: 500px;
+    // height: 57vh;
+    margin-bottom: 2vw;
+    font-size: 1em;
+    p {
+      margin-bottom: 2vw;
+    }
+  }
+}
 
 
 // .kv {
@@ -847,9 +908,6 @@
   }
 }
 
-.un-margin {
-  margin-top: 0 !important;
-}
 
 .flyout {
   &__on {

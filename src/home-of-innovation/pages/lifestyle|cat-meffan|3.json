@@ -1,0 +1,49 @@
+{
+  "title": "Movement and Mindfulness with Cat Meffan",
+  "description": "Cat Meffan teaches 'Vinyasa Flow', guided by Samsung’s ecosystem of products",
+  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/cat-meffan/KV_Cat_Meffan_3.jpg",
+  "alt": "A large living room with light wooden flooring and cream walls is pictured with a traditional, in-built fireplace painted white with two alcoves either side. In the left hand alcove there are various small, dark green indoor plants, a small striped board and black and pink yoga mats rolled up in a woven basket. In the right hand alcove there is a dark, wooden table with an exposed light bulb lamp, books and a candle on top. In front of the table is a white and cream stripped sofa which faces the large windows on the opposite wall. In front of the fireplace, a young woman - Cat Meffan - wearing dark grey yoga leggings and a red sports bra stands sideways to the camera practising a one legged dolphin yoga pose on top of a blue yoga mat.",
+  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/cat-meffan/KV_Cat_Meffan_3.jpg",
+  "group": "cat-meffan",
+  "sort": 3,
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "youtube",
+        "content": "n5Z_TA99qs8",
+        "poster": "{{lifestyle|cat-meffan|3[image]}}",
+        "alt": "{{lifestyle|cat-meffan|3[alt]}}"
+      },
+      "style": {
+        "desktop": "top",
+        "mobile": "top"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "Movement and Mindfulness with Cat Meffan and Samsung | Session 3"
+        }
+      ]
+    },
+    {
+      "type": "wrapper",
+      "components": [
+          {
+            "type": "paragraphs",
+            "text": [
+              "Samsung has partnered with leading wellness enthusiast, Cat Meffan, to enhance the UK’s wellbeing movement by offering the ultimate virtual yoga experience.",
+              "New research commissioned by Samsung has revealed Brits are upping the ante on their health and fitness routine, with over a third now focussing more on their wellbeing and 29% having a new interest in mindful activities to distract from the outside world. What’s more, yoga has been revealed as one of the top three hobbies being tried for the first in recent weeks.",
+              "As a result, Cat teaches ‘Vinyasa Flow’, the final session in the series of three guided by Samsung’s ecosystem of products. In this session, Cat focuses on the Galaxy Buds+ and demonstrates how the high quality audio capabilities help to aid focus and avoid distractions throughout yoga practices."
+            ]
+          }
+      ]
+    },
+    {
+      "type": "group",
+      "dynamic": "sessions",
+      "id": "cat-meffan",
+      "title": "Sessions"
+    }
+  ]
+}

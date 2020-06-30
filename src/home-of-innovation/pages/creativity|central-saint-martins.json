@@ -30,7 +30,7 @@
         {
           "type": "paragraphs",
           "text": [
-            "A digital exhibition in partnership with <a href=\" https://www.arts.ac.uk/subjects/communication-and-graphic-design/postgraduate/ma-graphic-communication-design-csm\" target=\"_blank\">MA</a> and <a href=\" https://www.arts.ac.uk/subjects/illustration/undergraduate/ba-hons-graphic-communication-design-csm\" target=\"_blank\">BA</a> Graphic Communication Design students at the world-renowned arts and design college, Central Saint Martins, demonstrating the role of the home through the eyes of current students."
+            "A digital exhibition in partnership with world-renowned arts and design college, Central Saint Martins."
           ]
         }
       ]
@@ -42,18 +42,13 @@
       "type": "wrapper",
       "components": [
         {
-          "type": "headline",
-          "level": "3",
-          "copy": "The Home of the Future:"
-        },
-        {
           "type": "paragraphs",
           "style": {
             "large": true
           },
           "text": [
-            "Samsung KX, the Home of Innovation, and Central Saint Martins teamed up to explore what happens at the cross-section of innovation and creative collaboration. Our partnership enables Samsung KX to generate opportunities for the next generation of creative pioneers to create and exhibit pioneering work.",
-            "Our first collaboration is a digital exhibition titled 'The Home of the Future'; a poignant collection of works as a result of a research exercise that offers a glimpse into the role of the home and what that means to a group of 52 BA Graphic Communication Design students.",
+            "Samsung KX, the Home of Innovation, and Central Saint Martins have teamed up to explore what happens at the cross-section of innovation and creative collaboration. Our partnership enables Samsung KX to generate opportunities for the next generation of creative pioneers to create and exhibit their work.",
+            "Our first collaboration is a digital exhibition, in partnership with <a href=\" https://www.arts.ac.uk/subjects/communication-and-graphic-design/postgraduate/ma-graphic-communication-design-csm\" target=\"_blank\">MA</a> and <a href=\" https://www.arts.ac.uk/subjects/illustration/undergraduate/ba-hons-graphic-communication-design-csm\" target=\"_blank\">BA</a> Graphic Communication Design students at Central Saint Martins, which demonstrates the role of the home through the eyes of current students.",
             "The exhibition features a number of different creative approaches and highlights many of the challenges with which students are grappling including their limited resources while working remotely. The resulting work is a testament to the skill and ingenuity of this next creative generation."
           ]
         },

@@ -1,0 +1,67 @@
+.discoverEvents {}
+
+.discoverEvents__Slider {
+  width: 100%;
+
+  .slick-track {
+    padding: 4vw 0;
+  }
+}
+
+.discoverEvents__SliderItem {
+  width: 100%;
+  padding-top: 50vw;
+  background: blue;
+  position: relative;
+}
+
+.discoverEvents__SliderItemBody {
+  padding: 4vw;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  button {
+    margin-top: auto;
+  }
+}
+
+
+// Slider Styles
+.discoverEvents__Slider {
+
+  .s-slick-dots {
+    button {
+      border: 1px solid white;
+      background: $black;
+      border-radius: 50%;
+      color: transparent;
+      transition: 0.3s ease-in-out;
+      &:before {
+        display: none;
+      }
+    }
+
+    .slick-active button {
+      background: $teal;
+    }
+  }
+}
+
+@media screen and (min-width: $mobile + 1) {
+  .discoverEvents__SliderItem {
+    padding-top: 30vw;
+  }
+  .discoverEvents__SliderItemBody {
+    padding: 2vw;
+  }
+  .discoverEvents__Slider {
+    .slick-track {
+      padding: 4vw 0;
+    }
+  }
+}

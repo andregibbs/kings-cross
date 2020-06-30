@@ -1,0 +1,38 @@
+<div class="discoverEvents">
+  <h3 class="fz30">Samsung KX Highlights</h3>
+
+  <div class="discoverEvents__Slider">
+
+
+    {{> slider-item
+      title="Title"
+      cta="button"
+    }}
+
+    {{> slider-item
+      title="Title"
+      cta="button"
+    }}
+
+    {{> slider-item
+      title="Title"
+      cta="button"
+    }}
+
+
+  </div>
+
+</div>
+
+
+{{#*inline 'slider-item'}}
+
+  <div class="discoverEvents__SliderItem">
+    <div class="discoverEvents__SliderItemBody">
+      <h4 class="fz36">{{title}}</h4>
+      <button class="btn btn--primary btn--primary--coral">{{cta}}</button>
+    </div>
+  </div>
+
+
+{{/inline}}

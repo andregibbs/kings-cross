@@ -1,0 +1,58 @@
+<div class="hoiCards">
+
+  {{> card
+    title="Lifestyle & Wellbeing"
+    image="https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/homekv/lifestyle.png?$LATEST_PNG$"
+    cta="Enter"
+    color="saffron"
+    url="/uk/explore/kings-cross/lifestyle"
+  }}
+
+  {{> card
+    title="Creativity"
+    image="https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/homekv/creativity.png?$LATEST_PNG$"
+    cta="Enter"
+    color="coral"
+    url="/uk/explore/kings-cross/creativity"
+  }}
+
+  {{> card
+    title="Entertainment"
+    image="https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/homekv/entertainment.png?$LATEST_PNG$"
+    cta="Enter"
+    color="skyblue"
+    url="/uk/explore/kings-cross/entertainment"
+  }}
+
+  {{> card
+    title="Tech & Innovation"
+    image="https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/homekv/innovation.png?$LATEST_PNG$"
+    cta="Enter"
+    color="teal"
+    url="/uk/explore/kings-cross/innovation"
+  }}
+
+</div>
+
+
+{{#*inline 'card'}}
+
+  <div
+    class='hoiCards__Card'
+    style="background-image: url('{{image}}');"
+  >
+    <h3 class="fz24">{{title}}</h3>
+    <a
+      href="{{url}}"
+      ga-ca="microsite"
+      ga-ac="feature"
+      ga-la="kings-cross:discover-home-of-innovation-{{title}}"
+      data-omni-type="microsite"
+      data-omni="uk:kings-cross:discover-home-of-innovation-{{title}}"
+      class="btn btn--primary btn--primary--{{color}}"
+    >
+      {{cta}}
+    </a>
+  </div>
+
+{{/inline}}

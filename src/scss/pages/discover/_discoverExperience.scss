@@ -3,14 +3,14 @@
 $item-transition-duration: 0.5s;
 $easing: cubic-bezier(0.85, 0, 0.15, 1);
 
-.discover__Experience {
+.discoverExperience {
   width: 100%;
   position: relative;
   z-index: 2;
   margin: 25px 0;
 }
 
-.discover__ExperienceItem {
+.discoverExperience__Item {
   padding-bottom: 50%;
   position: relative;
   overflow: hidden;
@@ -23,7 +23,7 @@ $easing: cubic-bezier(0.85, 0, 0.15, 1);
   }
 }
 
-.discover__ExperienceItem__Close {
+.discoverExperience__ItemClose {
   transition: opacity #{$item-transition-duration / 2} $easing;
   position: absolute;
   pointer-events: none;
@@ -41,11 +41,11 @@ $easing: cubic-bezier(0.85, 0, 0.15, 1);
   }
 }
 
-.discover__ExperienceItem__Body {
+.discoverExperience__ItemBody {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.7);
   width: 100%;
   h3, p {
     padding: 4vw;
@@ -68,18 +68,18 @@ $easing: cubic-bezier(0.85, 0, 0.15, 1);
   }
 }
 
-.discover__ExperienceItem[active="true"] {
-  .discover__ExperienceItem__Body--inactive {
+.discoverExperience__Item[active="true"] {
+  .discoverExperience__ItemBody--inactive {
     transition: $item-transition-duration $easing;
     transform: translate(0, 110%);
     opacity: 0;
   }
-  .discover__ExperienceItem__Body--active {
+  .discoverExperience__ItemBody--active {
     transition: #{$item-transition-duration * 2} #{$item-transition-duration / 2} $easing;
     transform: translate(0,0);
     opacity: 1;
   }
-  .discover__ExperienceItem__Close {
+  .discoverExperience__ItemClose {
     transition: opacity #{$item-transition-duration / 2} #{$item-transition-duration} $easing;
     display: block;
     opacity: 1;
@@ -90,87 +90,86 @@ $easing: cubic-bezier(0.85, 0, 0.15, 1);
 
 @media screen and (min-width: $mobile + 1) {
 
-  .discover__Experience {
-    padding-bottom: 50%;
+  .discoverExperience {
+    padding-bottom: 45%;
     margin: 50px 0;
+  }
 
-    .discover__ExperienceItems {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
+  .discoverExperience__Items {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .discoverExperience__Item {
+    transition: $item-transition-duration $easing, opacity #{$item-transition-duration / 2} $easing;
+    position: absolute;
+    padding-bottom: 0;
+    width: 33.3%;
+    height: 33.3%;
+    top: 0;
+    left: 0;
+
+    &:nth-child(1) {
+      width: 66.7%;
+      height: 66.7%;
     }
-
-    .discover__ExperienceItem {
-      transition: $item-transition-duration $easing, opacity #{$item-transition-duration / 2} $easing;
-      position: absolute;
-      padding-bottom: 0;
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(6) {
+      left: 66.7%;
+    }
+    &:nth-child(3) {
+      top: 33.3%;
+    }
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(6) {
+      top: 66.7%;
+      width: 33.35%;
+    }
+    &:nth-child(5) {
+      left: 33.3%;
+    }
+    &:nth-child(6) {
+      left: 66.6%;
       width: 33.3%;
-      height: 33.3%;
-      top: 0;
-      left: 0;
+    }
+  }
 
-      &:nth-child(1) {
-        width: 66.7%;
-        height: 66.7%;
-      }
-      &:nth-child(2),
-      &:nth-child(3),
-      &:nth-child(6) {
-        left: 66.7%;
-      }
-      &:nth-child(3) {
-        top: 33.3%;
-      }
-      &:nth-child(4),
-      &:nth-child(5),
-      &:nth-child(6) {
-        top: 66.7%;
-        width: 33.35%;
-      }
-      &:nth-child(5) {
-        left: 33.3%;
-      }
-      &:nth-child(6) {
-        left: 66.6%;
-        width: 33.3%;
-      }
+  .discoverExperience__ItemBody {
+    h3, p {
+      padding: 2vw;
+    }
+    p {
+      max-width: 66vw;
     }
 
-    .discover__ExperienceItem__Body {
-      h3, p {
-        padding: 2vw;
+    &--active {
+      h3 {
+        padding-bottom: 1vw;
       }
       p {
-        max-width: 66vw;
-      }
-
-      &--active {
-        h3 {
-          padding-bottom: 1vw;
-        }
-        p {
-          padding-top: 0;
-        }
+        padding-top: 0;
       }
     }
+  }
 
-    // States
-    // .discover__ExperienceItem:hover {
-    .discover__ExperienceItem[active="true"] {
-      transition: $item-transition-duration $easing, opacity 0s $easing;
-      width: 100%;
-      height: 100%;
-      left: 0;
-      top: 0;
-      cursor: auto;
-    }
+  // States
+  // .discoverExperience__Item:hover {
+  .discoverExperience__Item[active="true"] {
+    transition: $item-transition-duration $easing, opacity 0s $easing;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    cursor: auto;
+  }
 
-    .discover__ExperienceItem[active="false"] {
-      opacity: 0.6;
-    }
-
+  .discoverExperience__Item[active="false"] {
+    opacity: 0.6;
   }
 
 }

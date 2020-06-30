@@ -33,7 +33,6 @@ $nav-mobile-height: get-mobile-vw(100);
 
   // Pages
   @import "pages/home";
-  @import "pages/discover";
   @import "pages/whatson";
   @import "pages/event";
   @import "pages/services";
@@ -42,8 +41,13 @@ $nav-mobile-height: get-mobile-vw(100);
   @import "pages/school";
   @import "pages/sign-up";
 
-  // Home of Innovation
-  // @import "home-of-innovation/index"
+  // refactored
+  @import "pages/discover/index";
+
+  // common
+  @import "components/common/hoiCards";
+
+
 
 }
 // Components

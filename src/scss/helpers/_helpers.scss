@@ -29,7 +29,7 @@
       padding-bottom: get-desktop-vw($m-borders-desktop);
     }
 
-    @media screen and (max-width: $mobile) {
+    @media screen and (max-width: $mobile-small) {
       padding-left: $p-borders-mobile + px;
       padding-right: $p-borders-mobile + px;
       padding-top: get-mobile-vw($m-borders-mobile);

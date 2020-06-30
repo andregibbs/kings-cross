@@ -3,7 +3,7 @@
   padding: 0;
   position: relative;
 
-  height: calc(100vw - 40px);
+  height: 60vw;
   @media screen and (min-width: $mobile + 1) {
     // calculate slide height based on 1.8 center scale, then double it
     height: calc((((100vw - 40px) / 3) * 1.8) * 0.52);
@@ -14,12 +14,46 @@
     height: calc(((1440px / 3) * 1.8) * 0.52);
   }
 
+  // initalise states
+  #discover-kv-slider,
+  .discoverKv__svgs,
+  .discoverKv__content {
+    opacity: 0;
+    transition: 0.5s 0.25s ease-in-out;
+  }
+  .discoverKv__svgs {
+    transition-delay: 0.5s;
+    .discoverKv__svg {
+      transition: 0.75s 0.5s ease-out;
+    }
+    .discoverKv__svg--left {
+      transform: translate(-5%, 0);
+    }
+    .discoverKv__svg--right {
+      transform: translate(5%, 0);
+    }
+  }
+  .discoverKv__content {
+    transition-delay: 1s;
+  }
+  &[ready] {
+    #discover-kv-slider,
+    .discoverKv__svgs,
+    .discoverKv__content {
+      opacity: 1;
+    }
+    .discoverKv__svg {
+      transform: translate(0, 0);
+    }
+  }
+
+
   // SVGS
   .discoverKv__svgs {
     pointer-events: none;
     height: 100%;
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     top: 0;
     left: 0;
     width: 100%;
@@ -28,6 +62,9 @@
       width: 75%;
       // (width - padding) / 3slides ) * scale) * imageRatio ) centerSlideScale)
       top: calc(((((100vw - 40px) / 3) * 1) * 0.52) * 3);
+      @media screen and (min-width: $mobile-small + 1) {
+        top: calc(((((100vw - 80px) / 3) * 1) * 0.52) * 3);
+      }
       @media screen and (min-width: $mobile + 1) {
         width: 50%;
         top: calc((((100vw - 80px) / 3) * 1) * 0.48);
@@ -55,7 +92,7 @@
   .discoverKv__content {
     height: 100%;
     @media screen and (max-width: $mobile) {
-      height: auto;
+      height: 80%;
     }
     position: absolute;
     z-index: 3;
@@ -72,7 +109,7 @@
   // Slider
   .discoverKv__slider {
     position: relative;
-    z-index: 2;
+    z-index: 1;
     height: 100%;
     justify-content: flex-start;
     padding: 0;
@@ -93,6 +130,10 @@
       transform-origin: top center;
       transition: 0.25s ease-in-out;
       position: relative;
+
+      & > div > div {
+        display: block !important;
+      }
 
       &:before {
         content: '';
