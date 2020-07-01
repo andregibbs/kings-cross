@@ -31,6 +31,12 @@ export default class DiscoverExperience {
     el.setAttribute('active', 'true')
     el.style.zIndex = '5';
 
+    const target = document.querySelector('.discoverExperience__Items').getBoundingClientRect();
+    const nav = document.querySelector('.nav').offsetHeight * 1.5
+    $('html, body').animate({
+      scrollTop: (window.scrollY + target.y) - nav
+    }, 400);
+
   }
 
   itemCloseHandler(e) {

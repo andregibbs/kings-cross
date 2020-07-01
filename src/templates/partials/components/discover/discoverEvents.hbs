@@ -1,24 +1,14 @@
 <div class="discoverEvents">
-  <h3 class="fz30">Samsung KX Highlights</h3>
 
   <div class="discoverEvents__Slider">
 
-
     {{> slider-item
-      title="Title"
-      cta="button"
+      title="Samsung KX50: The Future in Focus"
+      image="https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/discover/2020-assets/KX_50.jpg"
+      cta="Download PDF"
+      url="https://images.samsung.com/is/content/samsung/p5/uk/explore/kings-cross/discover/SamsungKX50-The_Future_in_Focus_-_report.pdf"
+      target="_blank"
     }}
-
-    {{> slider-item
-      title="Title"
-      cta="button"
-    }}
-
-    {{> slider-item
-      title="Title"
-      cta="button"
-    }}
-
 
   </div>
 
@@ -27,10 +17,10 @@
 
 {{#*inline 'slider-item'}}
 
-  <div class="discoverEvents__SliderItem">
+  <div class="discoverEvents__SliderItem" style="background-image:url({{image}})">
     <div class="discoverEvents__SliderItemBody">
       <h4 class="fz36">{{title}}</h4>
-      <button class="btn btn--primary btn--primary--coral">{{cta}}</button>
+      <a class="btn btn--primary btn--primary--coral" href="{{url}}" target="{{target}}">{{cta}}</a>
     </div>
   </div>
 

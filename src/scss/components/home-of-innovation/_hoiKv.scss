@@ -93,3 +93,22 @@
   }
 
 }
+
+
+// Themes
+
+.hoiKv--theme-cat-meffan {
+  background-color: rgb(235,235,235);
+  h2, p {
+    color: black;
+  }
+  .hoiKv__Media:after {
+    padding-bottom: 70%;
+  }
+  .hoiKv__MediaImage {
+    background-size: 75%;
+  }
+  .hoiButtons {
+    margin: 0;
+  }
+}

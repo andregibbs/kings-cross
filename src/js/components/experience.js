@@ -33,6 +33,8 @@ export default function experience(  ) {
 	// live
 	// var s3domain = 'https://kxuploads-live.s3.eu-west-2.amazonaws.com/uploads/';
 
+
+
 	if (id) {
         doLog('id in url - ' + id);
 
@@ -53,6 +55,7 @@ export default function experience(  ) {
             processData: false,
 
             success: function (data) {
+                console.log(id, data)
                 processFiles(data);
             },
             error: function () {
