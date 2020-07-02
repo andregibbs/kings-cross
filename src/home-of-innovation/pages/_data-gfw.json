@@ -1,7 +1,7 @@
 {
   "___notes": "this is a data file for graduate fashion week only ()",
-  "___notes": "this file is skipped during the gulp hoi templates task",
-  "___notes": "the numbering of the entries and asset folder numbers dont match, be warned",
+  "___notes": "this file is skipped during the gulp hoi templates task (prefixed with an underscore)",
+  "___notes": "the numbering of the entries and asset file numbers dont match, be warned",
 
   "1-name": "Erin Dapper, BA (Hons) Fashion Communication with Business Studies, University of Brighton",
   "1-type": "image",

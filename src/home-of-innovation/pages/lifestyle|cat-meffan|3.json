@@ -6,7 +6,6 @@
   "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/cat-meffan/KV_Cat_Meffan_3.jpg",
   "group": "cat-meffan",
   "sort": 3,
-  "hidden": true,
   "components": [
     {
       "type": "kv",
@@ -38,42 +37,6 @@
               "As a result, Cat teaches ‘Vinyasa Flow’, the final session in the series of three guided by Samsung’s ecosystem of products. In this session, Cat focuses on the Galaxy Buds+ and demonstrates how the high quality audio capabilities help to aid focus and avoid distractions throughout yoga practices."
             ]
           }
-      ]
-    },
-    {
-      "type": "kv",
-      "media": {
-        "type": "image",
-        "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/cat-meffan/Banner-Full-Bleed_720x720_V2.jpg",
-        "alt": "{{lifestyle|cat-meffan|1[alt]}}"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top",
-        "theme": "cat-meffan"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "2",
-          "copy": "Get More and Pay Less"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Take 19% off when you buy a Galaxy S20, Galaxy Buds+ and Galaxy Watch Active 2 with this limited-time Galaxy product bundle offer."
-          ]
-        },
-        {
-          "type": "buttons",
-          "items": [
-            {
-              "copy": "Shop offers",
-              "url": "",
-              "target": "_blank"
-            }
-          ]
-        }
       ]
     },
     {
