@@ -1,0 +1,162 @@
+// this file holds some straddling non-BEM styles floating in various places
+// if replacing/reusing a component, take what is needed from here and use with BEM
+
+// copy class taken from discover, looks to be used across other pages
+.copy {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  p {
+    font-size: em(20);
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 25px;
+    color: #b4b4b4;
+    &.copy--last {
+      margin-bottom: 0px;
+      color: #fff;
+    }
+  }
+  h1 {
+    font-size: em(30);
+    text-align: center;
+    line-height: 1.3em;
+    margin-bottom: 1em;
+    @media screen and (max-width: $mobile) {
+      font-size: em(25);
+    }
+  }
+  &__hashtag {
+    font-size: em(14);
+    font-weight: bold;
+    color: #00b3e2;
+  }
+}
+
+// Animations from main.scss might have been used in discover
+// .star was used to fade in images from main.js ???
+.star {
+  visibility: hidden;
+
+  &__recently {
+    &.fadeIn {
+
+      -webkit-animation: animat_show-recently 1s;
+      animation: animat_show-recently 1s;
+      visibility: visible !important;
+      @media screen and (max-width: 768px) {
+        -webkit-animation: animat_show-recently_mobile 1s;
+        animation: animat_show-recently_mobile 1s;
+        visibility: visible !important;
+      }
+    }
+  }
+  &#slot_1.fadeOut {
+    -webkit-animation: animat_hide-recently-slot1 1s;
+    animation: animat_hide-recently-slot1 1s;
+  }
+
+  &#slot_2.fadeOut {
+    -webkit-animation: animat_hide-recently-slot2 0.7s;
+    animation: animat_hide-recently-slot2 0.7s;
+  }
+  &#slot_3.fadeOut {
+    -webkit-animation: animat_hide-recently-slot3 0.7s;
+    animation: animat_hide-recently-slot3 0.7s;
+  }
+}
+
+.fadeIn:not(.star__recently) {
+  -webkit-animation: animat_show 0.8s;
+  animation: animat_show 0.8s;
+  visibility: visible !important;
+}
+
+.fadeOut {
+  -webkit-animation: animat_hide 0.35s;
+  animation: animat_hide 0.35s;
+  visibility: visible;
+}
+
+@-webkit-keyframes animat_show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes animat_show-recently {
+  0% {
+    opacity: 0;
+    transform: translate(-15%, 0%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(-20%, 0);
+  }
+}
+
+@-webkit-keyframes animat_show-recently_mobile {
+  0% {
+    opacity: 0;
+    transform: translate(0%, 5%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0%, 0);
+  }
+}
+
+@-webkit-keyframes animat_hide {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes animat_hide-recently-slot1 {
+  0% {
+    opacity: 1;
+    transform: translate(-20%, 0);
+    visibility: visible;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-15%, 0);
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes animat_hide-recently-slot2 {
+  0% {
+    opacity: 1;
+    transform: translate(0%, 0);
+    visibility: visible;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(0%, -5%);
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes animat_hide-recently-slot3 {
+  0% {
+    opacity: 1;
+    transform: translate(0%, 0%);
+    visibility: visible;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(0%, 5%);
+    visibility: hidden;
+  }
+}

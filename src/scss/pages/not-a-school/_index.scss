@@ -340,7 +340,7 @@
         margin-right: 20px;
         max-width: 134px;
         max-height: 250px;
-        width: 50%; 
+        width: 50%;
         overflow: hidden;
         display: flex;
         justify-content: center;
@@ -409,7 +409,7 @@
         }
         &__alt {
             width: 100%;
-            
+
         }
         img {
             height: 100%;
@@ -565,7 +565,7 @@
         background: #151515;
         width: 100vw;
         max-width: 100%;
-        
+
         &__signup {
             display: flex;
         justify-content: center;
@@ -692,8 +692,8 @@
         animation: vidafter;
         animation-duration: 1s;
         visibility: visible !important;
-        top: 12%;
-        left: 12%;
+        // top: 12%;
+        // left: 12%;
         transform: translate(-50%, -50%) scale(0.4);
         @media screen and (max-width: 768px) {
             top: 50%;
@@ -792,7 +792,7 @@
         width: 82%;
         display: flex;
         margin: 2em auto 1em auto;
-        
+
     }
 }
 
@@ -822,7 +822,7 @@
     h3 {
         font-size: 3em;
         margin: 1em 1em 0.5em 1em;
-        
+
     }
 
     h4 {
@@ -862,4 +862,73 @@
 .NAS-video {
     width: 75%;
     margin: 0 auto 4em auto !important;
+}
+
+.video__main {
+  padding: 0 !important;
+  margin: 0 !important;
+  display: block;
+  width: 100%;
+}
+
+// nas slider styles (taken from discover)
+.slider-NAS {
+  .slick-slide:not(.slick-center) img {
+    display: block;
+    padding: 5%;
+    opacity: 0.5;
+    z-index: -1;
+    position: relative;
+  }
+
+  .slider-discover-alt img {
+    opacity: 1 !important;
+  }
+
+  .slider-discover-alt {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .slider {
+    //height: 470px!important;
+    width: auto;
+    //transform: scale(1.5);
+    transform-origin: 50% 50%;
+    cursor: pointer;
+    opacity: 1;
+    padding-bottom: 20px;
+  }
+
+  .slider-discover-recently-descriptions .slick-track,
+  .slider-discover-alt .slick-track {
+    padding: 0px;
+  }
+
+  .slick-center {
+    transform: scale(1.2);
+    transform-origin: 50% 50%;
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+
+    img {
+      display: block;
+      margin: 5%;
+      box-shadow: 0 15px 15px 0 rgba(12, 12, 12, 1),
+        0 15px 15px 0 rgba(12, 12, 12, 1);
+      z-index: 1;
+      position: relative;
+    }
+  }
+
+  .slick-track {
+    padding: 50px 0;
+
+    @media screen and (max-width: 768px) {
+      padding: 30px 0;
+    }
+  }
 }

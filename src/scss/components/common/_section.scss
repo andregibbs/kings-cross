@@ -1,0 +1,17 @@
+// lots of sections dotted around, will collate here
+
+//
+// full width to container
+.section.section--fullbleed {
+  padding-left: 0;
+  padding-right: 0;
+}
+// no pad vertical
+.section.section--nopad-v {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+// hide section
+.section.section--hide {
+  display: none;
+}
