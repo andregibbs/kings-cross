@@ -161,6 +161,7 @@ if (typeof module !== 'undefined') {
         }
     });
 
+    // filters items for graduate fashion week, removes incatives
     Handlebars.registerHelper('gfw-filter', function(context) {
       context.items = context.items.filter((i) => {
         return i.active !== "false"
@@ -168,6 +169,8 @@ if (typeof module !== 'undefined') {
       return context
     })
 
+    // Splits a single array into an array of arrays containing 4 items.
+    // Items are filled backwards so the first item array will try to contain the least items
     Handlebars.registerHelper('group-land-split', function(context) {
       let i, j, newArray = [], size = 4;
       context = context.reverse()
@@ -178,5 +181,38 @@ if (typeof module !== 'undefined') {
     })
 
 
-	};
+    /*
+      Searches string for <a> links
+      adds omni and ga tracking if not already present
+    */
+    Handlebars.registerHelper('addInlineLinkTracking', function(context, title) {
+      // regexp to find any <a> links
+      var regexp = /<a.*(?!(?:[^>]*?)(data-omni-type)|(data-omni)|(ga-ca)|(ga-la)).*>(.*)<\/a>/g
+      // template for tracking action
+      var actionTemplate = (title, action) => {
+        action = action.replace(/[^a-zA-Z0-9]/g, '_').toLowerCase()
+        return `uk:kings-cross:${title}:${action}`
+      }
+      // replace all link matches
+      return context.replace(regexp, (m) => {
+        let matches = regexp.exec(m)
+        let tags = []
+        // check if tags are missing, if so add
+        if (!matches[1]) { // mising omni-type
+          tags.push(`data-omni-type="microsite"`)
+        }
+        if (!matches[2]) { // missing omni
+          tags.push(`data-omni="${actionTemplate(title, matches[5])}"`)
+        }
+        if (!matches[3]) { // missing ga-ca
+          tags.push(`ga-ca="microsite"`)
+        }
+        if (!matches[4]) { //missing ga-la
+          tags.push(`ga-la="${actionTemplate(title, matches[5])}"`)
+        }
+        // return match with additional tags
+        return m.replace('<a',`<a ${tags.join(' ')}`)
+      })
+    })
+  }
 }

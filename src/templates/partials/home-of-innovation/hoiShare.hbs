@@ -1,16 +1,23 @@
 <div class="hoiShare">
 
-  <a class="hoiShare__Link" id="twitter" href="#" target="_blank">
+  <a class="hoiShare__Link" id="twitter" href="#" title="Share On Twitter" target="_blank"
+    data-omni-type="microsite" data-omni="uk:kings-cross:{{@root.title}}:share-twitter"
+    ga-ca="microsite" ga-la="kings-cross:{{@root.title}}:share-twitter"
+    >
     {{> svg/twitter }}
   </a>
 
-  <a class="hoiShare__Link" id="facebook" href="#" target="_blank">
+  <a class="hoiShare__Link" id="facebook" href="#" title="Share On Facebook" target="_blank"
+    data-omni-type="microsite" data-omni="uk:kings-cross:{{@root.title}}:share-facebook"
+    ga-ca="microsite" ga-la="kings-cross:{{@root.title}}:share-facebook">
     {{> svg/facebook }}
   </a>
 
-  <button class="hoiShare__Link" id="share" href="#" target="_blank">
+  <a class="hoiShare__Link" id="share" href="#" title="Share Link" target="_blank"
+    data-omni-type="microsite" data-omni="uk:kings-cross:{{@root.title}}:share-twitter"
+    ga-ca="microsite" ga-la="kings-cross:{{@root.title}}:share-link">
     {{> svg/share }}
-  </button>
+  </a>
 
   <p class="hoiShare__Feedback">
     Link copied to clipboard

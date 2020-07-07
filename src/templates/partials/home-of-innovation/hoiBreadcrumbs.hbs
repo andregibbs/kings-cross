@@ -1,6 +1,9 @@
 <div class="hoiBreadcrumbs">
   {{#each breadcrumbs }}
       {{#if @index }}&nbsp;/&nbsp;{{/if}}
-      <a class="hoiBreadcrumbs__Link" data-omni-type="microsite" data-omni="{{ ../site }}:{{ ../subfolder }}:breadcrumbs:{{ @index }}:{{to_lower_case this.title }}" href="{{ this.url }}">{{ this.title }}</a>
+      <a class="hoiBreadcrumbs__Link" href="{{ this.url }}"
+        data-omni-type="microsite" data-omni="uk:kings-cross:{{to_lower_case @root.title}}:breadcrumbs:{{to_lower_case this.title }}"
+        ga-ca="microsite" ga-la="uk:kings-cross:{{to_lower_case @root.title}}:breadcrumbs:{{to_lower_case this.title }}"
+        >{{ this.title }}</a>
   {{/each}}
 </div>

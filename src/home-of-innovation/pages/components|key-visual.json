@@ -20,13 +20,6 @@
           "type": "headline",
           "level": "3",
           "copy": "KV Desktop Left"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "and a paragraph in here",
-            "and another"
-          ]
         }
       ]
     },
@@ -48,13 +41,6 @@
           "type": "headline",
           "level": "3",
           "copy": "KV Desktop Right"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "and a paragraph in here",
-            "and another"
-          ]
         }
       ]
     },
@@ -76,13 +62,6 @@
           "type": "headline",
           "level": "3",
           "copy": "KV Desktop Top"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "and a paragraph in here",
-            "and another"
-          ]
         }
       ]
     },
