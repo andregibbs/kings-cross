@@ -33,9 +33,12 @@ export default class DiscoverExperience {
 
     const target = document.querySelector('.discoverExperience__Items').getBoundingClientRect();
     const nav = document.querySelector('.nav').offsetHeight * 1.5
-    $('html, body').animate({
-      scrollTop: (window.scrollY + target.y) - nav
-    }, 400);
+
+    if (window.innerWidth > 768) {
+      $j('html, body').animate({
+        scrollTop: (window.scrollY + target.y) - nav
+      }, 400);
+    }
 
   }
 

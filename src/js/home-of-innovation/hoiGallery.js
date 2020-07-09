@@ -9,7 +9,7 @@ class HOIGallery {
     this.spotlightCloseButton = this.spotlight.querySelector('.hoiGallery__SpotlightClose');
 
     this.sliderTarget = this.spotlight.querySelector('.hoiGallery__SpotlightItems');
-    this.slick = $(this.sliderTarget).slick({
+    this.slick = $j(this.sliderTarget).slick({
       rows: 0,
       accessibility: true,
       focusOnSelect: true,
@@ -31,7 +31,7 @@ class HOIGallery {
     })
 
     // subscribe to slick before change event
-    $(this.sliderTarget).on('beforeChange', (e, slick, currentIndex, nextIndex) => {
+    $j(this.sliderTarget).on('beforeChange', (e, slick, currentIndex, nextIndex) => {
       // call slideWillShow method with slide element
       this.slideWillShow(nextIndex);
       this.slideWillHide(currentIndex);

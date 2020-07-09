@@ -177,6 +177,7 @@ $desktop-nav-height: 5vw;
 
     // burger container
     .navigation-mobile__item--toggle {
+      cursor: pointer;
       width: $nav-mobile-height;
       height: $nav-mobile-height;
       a {

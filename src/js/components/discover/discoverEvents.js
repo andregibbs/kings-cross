@@ -3,7 +3,7 @@ export default class DiscoverEvents {
     this.el = el
     this.slider = el.querySelector('.discoverEvents__Slider')
 
-    $(this.slider).slick({
+    $j(this.slider).slick({
       dots: true,
       arrows: false
     })

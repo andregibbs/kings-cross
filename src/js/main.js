@@ -1,6 +1,16 @@
 /* Components */
 import 'whatwg-fetch';
 
+// import jquery scoped to project
+import $ from 'jquery'
+import 'slick-carousel'
+import 'lity'
+
+// loading via html tags caused the slick initialization to vanish
+// multiple jquery versions loaded
+// use $j to avoid external conflicts
+window.$j = $
+
 import nav from "./components/nav";
 import sidedrawer from "./components/sidedrawer";
 import whatson from "./components/whatson";
@@ -32,7 +42,8 @@ var doLog = doLogFunction();
 //experimental
 // import smoothScroll from './librarys/smoothscroll';
 
-$(document).ready(function () {
+
+$j(document).ready(function () {
 
 	// This will clear all unnecessary Samsung logs
 
@@ -40,18 +51,18 @@ $(document).ready(function () {
 	// console.clear();
 
 	//scroll past Navbar
-	// $('.accordian').on('click', (e)=>{
+	// $j('.accordian').on('click', (e)=>{
 	// 	console.log('clickeroonie')
-	// 	$('.accordianContent').toggleClass('active')
-	// 	$('.accordianIcon').hasClass('accordianIcon__expand') ? $(".accordianIcon").removeClass('accordianIcon__expand').addClass('accordianIcon__collapse') : $(".accordianIcon").removeClass('accordianIcon__collapse').addClass('accordianIcon__expand')
-	// 	$('.accordian').hasClass('accordian__expanded') ? $(".accordian").removeClass('accordian__expanded').addClass('accordian__collapsed') : $(".accordian").removeClass('accordian__collapsed').addClass('accordian__expanded')
+	// 	$j('.accordianContent').toggleClass('active')
+	// 	$j('.accordianIcon').hasClass('accordianIcon__expand') ? $j(".accordianIcon").removeClass('accordianIcon__expand').addClass('accordianIcon__collapse') : $j(".accordianIcon").removeClass('accordianIcon__collapse').addClass('accordianIcon__expand')
+	// 	$j('.accordian').hasClass('accordian__expanded') ? $j(".accordian").removeClass('accordian__expanded').addClass('accordian__collapsed') : $j(".accordian").removeClass('accordian__collapsed').addClass('accordian__expanded')
 	// })
 	if (window.jQuery) {
        // Open a URL in a lightbox
 // var lightbox = lity('#video-intro');
 
 // // Bind as an event handler
-// $(document).on('click', '[data-lightbox]', lightbox);
+// $j(document).on('click', '[data-lightbox]', lightbox);
     } else {
         // jQuery is not loaded
        console.log("Doesn't Work");
@@ -320,44 +331,6 @@ $(document).ready(function () {
 
 	}
 
-	// function testSlider() {
-	// 	testSlider1();
-	// 	testSlider2();
-	// }
-  //
-	// function testSlider1() {
-  //
-	// 	const sliderConfig1 = {
-	// 		lazyLoad: 'ondemand',
-	// 		dots: false,
-	// 		infinite: false,
-	// 		speed: 500,
-	// 		fade: false,
-	// 		cssEase: 'linear'
-	// 	};
-  //
-	// 	slider(wowEvents, '.slider1', sliderConfig1, 'homeKv');
-	// }
-  //
-	// function testSlider2() {
-  //
-	// 	const dd = {
-	// 		todayEvents,
-	// 		monthPromotedEvents
-	// 	};
-  //
-	// 	const sliderConfig2 = {
-	// 		slidesToShow: 3,
-	// 		slidesToScroll: 3,
-	// 		dots: true,
-	// 		infinite: true,
-	// 		speed: 500,
-	// 		fade: false,
-	// 		cssEase: 'linear',
-	// 	};
-  //
-	// 	slider(dd, '.upComing', sliderConfig2, 'upComing');
-	// }
 
 	function IsJsonString(str) {
 		try {
@@ -379,7 +352,10 @@ $(document).ready(function () {
 	// Loads scripts dynamically depending on which page you are
 	// =========================================================
 
-	switch (window.location.pathname) {
+  const location = getParam('pn') || window.location.pathname
+  console.log('pn', location)
+
+	switch (location) {
 		case '/uk/explore/kings-cross/':
     case '/uk/explore/kings-cross/hoi/':
     case '/uk/explore/kings-cross-test/':
@@ -400,23 +376,23 @@ $(document).ready(function () {
 			function showImages(el) {
 				var windowHeight = jQuery( window ).height();
 
-				$(el).each(function(){
-					var thisPos = $(this).offset().top;
+				$j(el).each(function(){
+					var thisPos = $j(this).offset().top;
 
-					var topOfWindow = $(window).scrollTop();
+					var topOfWindow = $j(window).scrollTop();
 					if (topOfWindow + windowHeight - 200 > thisPos ) {
-						$(this).addClass("fadeIn");
+						$j(this).addClass("fadeIn");
 					}
 				});
 			}
 
 			// if the image in the window of browser when the page is loaded, show that image
-			$(document).ready(function(){
+			$j(document).ready(function(){
 					showImages('.star');
 			});
 
 			// if the image in the window of browser when scrolling the page, show that image
-			$(window).scroll(function() {
+			$j(window).scroll(function() {
 					showImages('.star');
 			});
 			// //places();
@@ -477,53 +453,53 @@ $(document).ready(function () {
 				function showImages(el) {
 					var windowHeight = jQuery( window ).height();
 
-					$(el).each(function(){
-						var thisPos = $(this).offset().top;
+					$j(el).each(function(){
+						var thisPos = $j(this).offset().top;
 
-						var topOfWindow = $(window).scrollTop();
+						var topOfWindow = $j(window).scrollTop();
 						if (topOfWindow + windowHeight - 200 > thisPos ) {
-							$(this).addClass("fadeIn");
+							$j(this).addClass("fadeIn");
 						}
 					});
 				}
 				function showVidSvg(el) {
 					var windowHeight = jQuery( window ).height();
 
-					$(el).each(function(){
-						var thisPos = $(this).offset().top;
+					$j(el).each(function(){
+						var thisPos = $j(this).offset().top;
 
-						var topOfWindow = $(window).scrollTop();
+						var topOfWindow = $j(window).scrollTop();
 						if (topOfWindow + windowHeight - 200 > thisPos ) {
-							$(this).addClass("fadevid");
+							$j(this).addClass("fadevid");
 						}
 					});
 				}
 
 				// if the image in the window of browser when the page is loaded, show that image
-				$(document).ready(function(){
+				$j(document).ready(function(){
 						showImages('.star');
 						showVidSvg('.vidstar');
 						const week = getParam('week')
-						const navBarHeight = $('section>.nav').innerHeight()
+						const navBarHeight = $j('section>.nav').innerHeight()
 						switch(week){
 							case "one":
-								setTimeout(function(){$('html, body').animate({
-									scrollTop: $("#weekOne").offset().top-parseInt(navBarHeight)
+								setTimeout(function(){$j('html, body').animate({
+									scrollTop: $j("#weekOne").offset().top-parseInt(navBarHeight)
 								}, 500); }, 2000);
 								break;
 							case "two":
-								setTimeout(function(){$('html, body').animate({
-									scrollTop: $("#weekTwo").offset().top-parseInt(navBarHeight)
+								setTimeout(function(){$j('html, body').animate({
+									scrollTop: $j("#weekTwo").offset().top-parseInt(navBarHeight)
 								}, 500); }, 2000);
 								break;
 							case "three":
-								setTimeout(function(){$('html, body').animate({
-									scrollTop: $("#weekThree").offset().top-parseInt(navBarHeight)
+								setTimeout(function(){$j('html, body').animate({
+									scrollTop: $j("#weekThree").offset().top-parseInt(navBarHeight)
 								}, 500); }, 2000);
 								break;
 							case "four":
-								setTimeout(function(){$('html, body').animate({
-									scrollTop: $("#weekFour").offset().top-parseInt(navBarHeight)
+								setTimeout(function(){$j('html, body').animate({
+									scrollTop: $j("#weekFour").offset().top-parseInt(navBarHeight)
 								}, 500); }, 2000);
 								break;
 							default:
@@ -531,8 +507,8 @@ $(document).ready(function () {
 						}
 						// if(window.location.href.indexOf("?week=one") > -1) {
 
-						// 	// setTimeout(function(){$('html, body').animate({
-						// 	// 	scrollTop: $("#scrollto").offset().top-10
+						// 	// setTimeout(function(){$j('html, body').animate({
+						// 	// 	scrollTop: $j("#scrollto").offset().top-10
 						// 	// }, 1000); }, 2000);
 
 						//  }
@@ -540,7 +516,7 @@ $(document).ready(function () {
 				});
 
 				// if the image in the window of browser when scrolling the page, show that image
-				$(window).scroll(function() {
+				$j(window).scroll(function() {
 						showImages('.star');
 						showVidSvg('.vidstar');
 				});

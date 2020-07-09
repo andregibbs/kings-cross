@@ -80,8 +80,9 @@ export default function calendar(URL, type, allEvents) {
 
 		showHideLeftArrow(date);
 
-		$.get(appointmentURL + dateString)
-			.success(function (data) {
+		$j.get(
+      appointmentURL + dateString,
+      function (data) {
 				doLog("Got data");
 				populateWithAppointments(data);
 				loadingScreen.style.display = "";
@@ -282,7 +283,27 @@ export default function calendar(URL, type, allEvents) {
 		const isoCurrentDate = new Date();
 		let matchingTopicEvents = [];
 
-		$.get('https://bookings.qudini.com/booking-widget/event/event/' + eventId + '', {
+
+    // Rewritten in jquery2+ not sure if used.
+    // $j.get({
+    //   url: 'https://bookings.qudini.com/booking-widget/event/event/' + eventId + '',
+    //   data: {
+  	// 		'timezone': "Europe/London",
+  	// 		'isoCurrentDate': isoCurrentDate.toISOString()
+  	// 	},
+    //   success: (event) => {
+  	// 		doLog(event.topic.title);
+  	// 		for (var eInd = 0; eInd < allEvents.length; eInd++) {
+  	// 			if (allEvents[eInd].topic.title == event.topic.title) {
+  	// 				matchingTopicEvents.push(allEvents[eInd]);
+  	// 			}
+  	// 		}
+  	// 		doLog("µ", matchingTopicEvents); //presorted in ascending order
+  	// 		populateWithEvents(matchingTopicEvents);
+  	// 	}
+    // })
+
+		$j.get('https://bookings.qudini.com/booking-widget/event/event/' + eventId + '', {
 			'timezone': "Europe/London",
 			'isoCurrentDate': isoCurrentDate.toISOString()
 		}).success(function (event) {

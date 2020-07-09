@@ -2,6 +2,16 @@
 
 import 'whatwg-fetch';
 
+// import jquery scoped to project
+import $ from 'jquery'
+import 'slick-carousel'
+import 'lity'
+
+// loading via html tags caused the slick initialization to vanish
+// multiple jquery versions loaded
+// use $j to avoid external conflicts
+window.$j = $
+
 import HOIGallery from './hoiGallery';
 import HOIShare from './hoiShare';
 import HOIMediaVideo from './hoiMediaVideo';

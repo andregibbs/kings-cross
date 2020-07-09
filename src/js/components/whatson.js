@@ -26,7 +26,7 @@ export default function whatson(events) {
 	// =================================================
 
 	if (passion) {
-		var passionSwitch = $('[data-code="' + passion + '"]');
+		var passionSwitch = $j('[data-code="' + passion + '"]');
 		if (!passionSwitch.hasClass("active")) {
 			passionSwitch.addClass("active");
 			passionSwitch.find(".label").addClass("label--active");
@@ -36,24 +36,24 @@ export default function whatson(events) {
 
 	function lazyGetEvents(eventsToShow, numberOfEvents) {
 		if (eventsToShow.length > 0) {
-			$('.events__showMore').removeClass('noMore');
-			$('.events__noResults').removeClass('active');
+			$j('.events__showMore').removeClass('noMore');
+			$j('.events__noResults').removeClass('active');
 			let newEvents = [];
 			numberEventsToShow += numberOfEvents;
 			for (let i = 0; i < numberEventsToShow; i++) {
 				newEvents.push(eventsToShow[i]);
 			}
 
-			$('.eventTile').remove();
+			$j('.eventTile').remove();
 			renderEventsIntoDom(newEvents);
 
 		} else {
 			eventsToManipulate = [];
-			$('.eventTile').remove();
-			$('.events__showMore').addClass('noMore');
-			$('.events__noResults').addClass('active');
+			$j('.eventTile').remove();
+			$j('.events__showMore').addClass('noMore');
+			$j('.events__noResults').addClass('active');
 			if (!filterOpen) {
-				$('.eventFilter__header__toggle').click();
+				$j('.eventFilter__header__toggle').click();
 			}
 		}
 
@@ -70,7 +70,7 @@ export default function whatson(events) {
 
 	dataPicker()
 
-	$('.events__showMore').click(function () {
+	$j('.events__showMore').click(function () {
 		if (numberEventsToShow + 12 > eventsToManipulate.length) {
 			doLog("Events to show", numberEventsToShow);
 			console.log("Events to manipulate", eventsToManipulate);
@@ -83,24 +83,24 @@ export default function whatson(events) {
 			}
 			console.log(eventsToManipulate)
 			lazyGetEvents(eventsToManipulate, eventsToManipulate.length - numberEventsToShow );
-			$('.events__showMore').hide();
+			$j('.events__showMore').hide();
 		} else {
 			lazyGetEvents(eventsToManipulate, 12);
 		}
 
 	});
 
-	$('.passions .switch, .suitables .switch').click(function () {
-		$(this)
+	$j('.passions .switch, .suitables .switch').click(function () {
+		$j(this)
 			.find('.label')
 			.toggleClass('label--active')
-		$(this).find('.switch-button')
+		$j(this).find('.switch-button')
 			.toggleClass('selected')
-		$(this).toggleClass('active')
+		$j(this).toggleClass('active')
 	});
 
-	$('.eventFilter__header__toggle').click(function () {
-		$(this).find('a').toggleClass('unfold');
+	$j('.eventFilter__header__toggle').click(function () {
+		$j(this).find('a').toggleClass('unfold');
 
 		if (this.getElementsByTagName("a")[0].classList.contains("unfold")) {
 			spantext.innerText = "HIDE FILTERS";
@@ -110,38 +110,38 @@ export default function whatson(events) {
 			filterOpen = false;
 		}
 
-		if ($('.filters__labels').hasClass('closed')) {
+		if ($j('.filters__labels').hasClass('closed')) {
 
-			$('.filters__labels').slideDown();
-			$('.filters__labels').toggleClass('closed');
-			// $("body,html").animate(
+			$j('.filters__labels').slideDown();
+			$j('.filters__labels').toggleClass('closed');
+			// $j("body,html").animate(
 			// 	{
-			// 		scrollTop: $(".eventFilter").offset().top
+			// 		scrollTop: $j(".eventFilter").offset().top
 			// 	},
 			// 	800 //speed
 			// );
 
 		} else {
-			$('.filters__labels').slideUp();
-			$('.filters__labels').toggleClass('closed');
+			$j('.filters__labels').slideUp();
+			$j('.filters__labels').toggleClass('closed');
 		}
 
 	});
 
-	$('.filters__results .btn').click(function () {
+	$j('.filters__results .btn').click(function () {
 
 
-		if ($(this).hasClass('btn--secondary')) {
+		if ($j(this).hasClass('btn--secondary')) {
 			resetFilters()
 		} else {
-			$("body,html").animate(
+			$j("body,html").animate(
 				{
-					scrollTop: $(".section.events").offset().top - 100
+					scrollTop: $j(".section.events").offset().top - 100
 				},
 				400);
 		}
 		numberEventsToShow = 24;
-		$('.events__showMore').show();
+		$j('.events__showMore').show();
 
 
 
@@ -153,17 +153,17 @@ export default function whatson(events) {
 
 
 
-		if ($('#from').val() && $('#to').val()) {
+		if ($j('#from').val() && $j('#to').val()) {
 			eventsToRender = eventsToRender.filter(function (event) {
-				return event.startDate >= moment($('#from').val(), "DD-MM-YYYY").format("MM/DD/YYYY") && event.startDate <= moment($('#to').val(), "DD-MM-YYYY").format("MM/DD/YYYY");
+				return event.startDate >= moment($j('#from').val(), "DD-MM-YYYY").format("MM/DD/YYYY") && event.startDate <= moment($j('#to').val(), "DD-MM-YYYY").format("MM/DD/YYYY");
 			});
-		} else if ($('#from').val()) {
+		} else if ($j('#from').val()) {
 			eventsToRender = eventsToRender.filter(function (event) {
-				return event.startDate >= moment($('#from').val(), "DD-MM-YYYY").format("MM/DD/YYYY");
+				return event.startDate >= moment($j('#from').val(), "DD-MM-YYYY").format("MM/DD/YYYY");
 			});
-		} else if ($('#to').val()) {
+		} else if ($j('#to').val()) {
 			eventsToRender = eventsToRender.filter(function (event) {
-				return event.startDate <= moment($('#to').val(), "DD-MM-YYYY").format("MM/DD/YYYY");
+				return event.startDate <= moment($j('#to').val(), "DD-MM-YYYY").format("MM/DD/YYYY");
 			});
 		}
 
@@ -200,11 +200,11 @@ export default function whatson(events) {
 	// =================================================
 
 	if (passion) {
-		$('.whatsOn__kv > div > h2').addClass('kv__dark__theme')
-		$('.whatsOn__kv').css('background', 'url(/content/dam/samsung/uk/explore/kings-cross/passion-header/passion-header-' + passion + '.jpg)');
+		$j('.whatsOn__kv > div > h2').addClass('kv__dark__theme')
+		$j('.whatsOn__kv').css('background', 'url(https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/passion-header/passion-header-' + passion + '.jpg)');
 		var passionName = getPassionName(passion);
 		doLog(passionName);
-		$('.whatsOn__kv h2').text(passionName);
+		$j('.whatsOn__kv h2').text(passionName);
 
 		const eventsFiltered = events.filter(function (event) {
 			return event.extra.passions.includes(passion)
@@ -215,7 +215,7 @@ export default function whatson(events) {
 	} else {
 
 
-		$('.whatsOn__kv').css('background-image', 'url(/content/dam/samsung/uk/explore/kings-cross/passion-header/passion-header-generic.jpg)')
+		$j('.whatsOn__kv').css('background-image', 'url(https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/passion-header/passion-header-generic.jpg)')
 
 		lazyGetEvents(events, 0);
 	}
@@ -229,12 +229,12 @@ export default function whatson(events) {
 		getPassions = []
 		getEventtype = []
 
-		$('.passions .switch.active').each(function () {
-			getPassions.push($(this).data('code'))
+		$j('.passions .switch.active').each(function () {
+			getPassions.push($j(this).data('code'))
 		})
 
-		$('.suitables .switch.active').each(function () {
-			getEventtype.push($(this).data('code'))
+		$j('.suitables .switch.active').each(function () {
+			getEventtype.push($j(this).data('code'))
 		})
 
 	}
@@ -245,17 +245,17 @@ export default function whatson(events) {
 
 	function resetFilters() {
 
-		$('.passions .switch, .suitables .switch').each(function () {
-			$(this)
+		$j('.passions .switch, .suitables .switch').each(function () {
+			$j(this)
 				.find('.label')
 				.removeClass('label--active')
-			$(this).find('.switch-button')
+			$j(this).find('.switch-button')
 				.removeClass('selected')
-			$(this).removeClass('active')
+			$j(this).removeClass('active')
 		});
 
-		$('.filters__date__container input').each(function () {
-			$(this).val('');
+		$j('.filters__date__container input').each(function () {
+			$j(this).val('');
 		})
 
 	}
@@ -306,7 +306,7 @@ export default function whatson(events) {
 			}
 
 
-			$('.events .events__container').append(handleTemplate('eventTile', options))
+			$j('.events .events__container').append(handleTemplate('eventTile', options))
 
 			if (counter == 10) {
 				counter = 0

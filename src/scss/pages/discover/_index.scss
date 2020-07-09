@@ -37,6 +37,9 @@
     // @extend .fz30;
     margin-bottom: 4vw;
   }
+  strong {
+    font-size: 1em;
+  }
 
   @media screen and (min-width: $mobile + 1) {
     h2 {

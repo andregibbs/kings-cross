@@ -1,4 +1,4 @@
-const LOCAL_HOSTNAME = 'kings-cross.samsung.com';
+const LOCAL_HOSTNAME = 'kings-cross.samsung.com'; // move to .env if diff
 
 function KXEnv() {
 

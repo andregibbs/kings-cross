@@ -10,8 +10,11 @@
   },
   "dependencies": {
     "clipboard": "^2.0.6",
+    "jquery": "^3.5.1",
     "jshint": "^2.10.2",
+    "lity": "^2.4.1",
     "natives": "^1.1.6",
+    "slick-carousel": "^1.8.1",
     "whatwg-fetch": "^3.0.0"
   },
   "devDependencies": {

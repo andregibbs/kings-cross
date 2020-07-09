@@ -5,8 +5,8 @@ export default function slider( data, element, sliderConfig, templateToRender ){
 	// You can add your custom slick options, renders, behavior bellow by mathing $element parameter
 	if( element == '.upComing' ) {
 
-		$('.slider-today').slick( sliderConfig )
-		$('.slider-futured').slick( sliderConfig )
+		$j('.slider-today').slick( sliderConfig )
+		$j('.slider-futured').slick( sliderConfig )
 
 		// Gets Data and populates slick container with items
 		data.todayEvents.forEach( (item, index) => {
@@ -23,7 +23,7 @@ export default function slider( data, element, sliderConfig, templateToRender ){
 
 			// Limits the loop to 6 elements ( 5 = 6 )
 			if ( index <= 5 ) {
-				$('.slider-today').slick('slickAdd', handleTemplate( templateToRender, handlebarsData));
+				$j('.slider-today').slick('slickAdd', handleTemplate( templateToRender, handlebarsData));
 			}
 
 		});
@@ -43,29 +43,29 @@ export default function slider( data, element, sliderConfig, templateToRender ){
 
 			// Limits the loop to 6 elements ( 5 = 6 )
 			if ( index <= 5 ) {
-				$('.slider-futured').slick('slickAdd', handleTemplate( templateToRender, handlebarsData));
+				$j('.slider-futured').slick('slickAdd', handleTemplate( templateToRender, handlebarsData));
 			}
 		});
 
-		$('.header-click').click(function(){
-			let getSlider = $(this).data('slider')
+		$j('.header-click').click(function(){
+			let getSlider = $j(this).data('slider')
 
-			$('.header-click').removeClass('header--active')
-			$(this).addClass('header--active')
+			$j('.header-click').removeClass('header--active')
+			$j(this).addClass('header--active')
 
-			$('.upComing__sliders .slider-item').hide().slick('destroy')
-			$('.upComing__sliders .slider-'+getSlider+'').show().slick(sliderConfig)
+			$j('.upComing__sliders .slider-item').hide().slick('destroy')
+			$j('.upComing__sliders .slider-'+getSlider+'').show().slick(sliderConfig)
 		})
 
 	} else if( element == '.slider-discover-alt' || element == '.slider-discover' || element == '.slider-discover-recently' || element == '.slider-discover-recently-descriptions') {
-		$(element).slick( sliderConfig )
+		$j(element).slick( sliderConfig )
 
 	} else if( templateToRender === 'experience' ) {
 
-		$(element).slick( sliderConfig )
+		$j(element).slick( sliderConfig )
 
 	} else {
-		$(element).slick( sliderConfig )
+		$j(element).slick( sliderConfig )
 		fetchSlickData()
 	}
 
@@ -83,7 +83,7 @@ export default function slider( data, element, sliderConfig, templateToRender ){
 				passion: item.passions
 			}
 
-			$(element).slick('slickAdd', handleTemplate( templateToRender, handlebarsData ));
+			$j(element).slick('slickAdd', handleTemplate( templateToRender, handlebarsData ));
 		});
 	}
 

@@ -9,12 +9,12 @@ export default function discover(events) {
   const visitKxLink = document.querySelector('.discover__VisitLink')
 
   // wait for slider ready to add attr
-  $('#discover-kv-slider').on('init', () => {
+  $j('#discover-kv-slider').on('init', () => {
     kvContainer.setAttribute('ready', '');
   })
 
   // initialise top slider
-  $('#discover-kv-slider').slick({
+  $j('#discover-kv-slider').slick({
       lazyLoad: 'ondemand',
       slidesToShow: 3,
       infinite: true,
@@ -31,7 +31,7 @@ export default function discover(events) {
 
   visitKxLink.addEventListener('click', () => {
     const target = document.querySelector('.findkx').getBoundingClientRect();
-    $('html, body').animate({
+    $j('html, body').animate({
       scrollTop: window.scrollY + target.y
     }, 800);
   })
