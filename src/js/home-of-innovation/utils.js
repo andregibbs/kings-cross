@@ -1,3 +1,16 @@
+// Create Loader Animation
+import mediaLoadingAnimation from '../animation/media-loading.json'
+
+export function createLoaderAnimation(element) {
+  return lottie.loadAnimation({
+    container: element, // the dom element that will contain the animation
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    animationData: mediaLoadingAnimation // the path to the animation json
+  });
+}
+
 // Create youtube instance
 export function createYoutubeInstance(element) {
   const videoId = element.getAttribute('data-youtube-id') // get youtube id

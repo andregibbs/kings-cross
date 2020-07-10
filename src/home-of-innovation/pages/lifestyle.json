@@ -7,6 +7,7 @@
   "components": [
     {
       "type": "group-land-id",
+      "dynamic": "group-pages",
       "items": [
         "lifestyle|cat-meffan|2",
         "lifestyle|guest-writer-of-the-week|9",

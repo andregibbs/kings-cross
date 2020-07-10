@@ -7,6 +7,7 @@
   "components": [
     {
       "type": "group-land-id",
+      "dynamic": "group-pages",
       "items": [
         "creativity|university-of-lincoln",
         "innovation|science-museum|1",

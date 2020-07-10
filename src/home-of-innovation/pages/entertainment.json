@@ -7,6 +7,7 @@
   "components": [
     {
       "type": "group-land-id",
+      "dynamic": "group-pages",
       "items": [
         "creativity|game-dev-london-podcast|7",
         "creativity|game-dev-london-podcast|6",

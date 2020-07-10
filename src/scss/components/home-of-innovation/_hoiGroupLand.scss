@@ -1,12 +1,21 @@
 .hoiGroupLand {
+  animation: fadein 0.4s 0.2s ease-in-out forwards;
+  opacity: 0;
+}
 
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 // Grouping layout
 .hoiGroupLand__Group {
   width: 100%;
 }
-.hoiGroupLand__Group--B {}
 
 
 .hoiGroupLand__Item {
@@ -71,12 +80,18 @@
   }
 }
 
+// Loader
+.hoiGroupLand + .hoiGroupLand__Loader {
+  display: none;
+}
 
-
+.hoiGroupLand__Loader {
+  height: 50vmax;
+  padding: 16vw;
+}
 
 // default layout & 4
 // toto: hide above 4 items
-
 .hoiGroupLand--3-items {
 
 }

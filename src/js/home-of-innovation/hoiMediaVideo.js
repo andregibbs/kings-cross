@@ -1,4 +1,4 @@
-import mediaLoadingAnimation from '../animation/media-loading.json'
+import { createLoaderAnimation } from './utils'
 
 const HOI_MEDIA_STATE = {
   load: 'load',
@@ -13,8 +13,12 @@ export default class HOIMediaVideo {
     this.videoState = videoEl.parentElement.querySelector('.hoiMedia__State')
     this.playIcon = this.videoState.querySelector('.hoiMedia__StateIcon--play')
     this.loadIcon = this.videoState.querySelector('.hoiMedia__StateIcon--load')
+    this.loadAnimation = createLoaderAnimation(this.loadIcon)
 
-    this.initLoadAnimation();
+    // add loading delay to consecutive media videos
+    // maybe remove the preload attribute and then add back in after each has loaded?
+    // look at dev tools for performance
+
     this.events()
     if (this.video.readyState >= 3) {
       this.setState(HOI_MEDIA_STATE.play)
@@ -62,17 +66,6 @@ export default class HOIMediaVideo {
 
   setState(state) {
     this.videoState.setAttribute('data-state', state)
-  }
-
-  initLoadAnimation() {
-    // could pause this when not shown
-    lottie.loadAnimation({
-      container: this.loadIcon, // the dom element that will contain the animation
-      renderer: 'svg',
-      loop: true,
-      autoplay: true,
-      animationData: mediaLoadingAnimation // the path to the animation json
-    });
   }
 
 }
