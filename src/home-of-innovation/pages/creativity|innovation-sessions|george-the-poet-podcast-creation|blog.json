@@ -1,16 +1,21 @@
 {
   "title": "Blog",
   "description": "Innovation Sessions: 5 tips for podcast beginners by Benbrick",
-  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/innovation-sessions/2/SamsungKX_LandingPage_EpisodeTwo_CategoryHero_V5.jpg",
+  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/innovation-sessions/E2_HeroHalf.jpg",
   "alt": "A man - George the Poet - pictured sat down with arms leaning on knees, image overlayed with different coloured shapes",
-  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/innovation-sessions/2/SamsungKX_LandingPage_EpisodeTwo_Thumbnail_V2.jpg",
+  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/innovation-sessions/E2_Thumb.jpg",
   "components": [
+    {
+      "type": "css-snippet",
+      "content": "@media screen and (min-width: 769px) { .hoiKv__MediaImage { background-position: bottom center !important; } }",
+      "__notes": "css snippet to align key visual image (desktop only)"
+    },
     {
       "type": "kv",
       "media": {
         "type": "image",
-        "content": "{{innovation|innovation-sessions|george-the-poet-podcast-creation|blog[image]}}",
-        "alt": "{{innovation|innovation-sessions|george-the-poet-podcast-creation|blog[alt]}}"
+        "content": "{{creativity|innovation-sessions|george-the-poet-podcast-creation|blog[image]}}",
+        "alt": "{{creativity|innovation-sessions|george-the-poet-podcast-creation|blog[alt]}}"
       },
       "style": {
         "desktop": "left",

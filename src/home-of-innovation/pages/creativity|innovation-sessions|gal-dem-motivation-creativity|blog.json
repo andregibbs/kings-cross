@@ -1,16 +1,21 @@
 {
   "title": "Blog",
   "description": "A brand-new digital series from the Home of Innovation to inspire the UK ",
-  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/innovation-sessions/gal-dem-motivation-creativity/SamsungKX_E3_LandingPage_Full_1440x900.jpg",
+  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/innovation-sessions/E3_HeroHalf.jpg",
   "alt": "Two women, one in the foreground close up and one standing behind, pictured in black and white with image overlayed with different coloured shapes",
-  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/innovation-sessions/gal-dem-motivation-creativity/SamsungKX_E3_LandingPage_Thumbnail_300x300.jpg",
+  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/innovation-sessions/E3_Thumb.jpg",
   "components": [
+    {
+      "type": "css-snippet",
+      "content": "@media screen and (min-width: 769px) { .hoiKv__MediaImage { background-position: bottom center !important; } }",
+      "__notes": "css snippet to align key visual image (desktop only)"
+    },
     {
       "type": "kv",
       "media": {
         "type": "image",
-        "content": "{{innovation|innovation-sessions|gal-dem-motivation-creativity|blog[image]}}",
-        "alt": "{{innovation|innovation-sessions|gal-dem-motivation-creativity|blog[alt]}}"
+        "content": "{{creativity|innovation-sessions|gal-dem-motivation-creativity|blog[image]}}",
+        "alt": "{{creativity|innovation-sessions|gal-dem-motivation-creativity|blog[alt]}}"
       },
       "style": {
         "desktop": "left",

@@ -1,9 +1,9 @@
 {
   "title": "Innovation Sessions: Defining your podcast narrative",
   "description": "A brand-new digital series from the Home of Innovation to inspire the UK ",
-  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/innovation-sessions/2/SamsungKX_LandingPage_EpisodeTwo_CategoryHero_V5.jpg",
+  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/innovation-sessions/E2_Hero.jpg",
   "alt": "A man - George the Poet - pictured sat down with arms leaning on knees, image overlayed with different coloured shapes",
-  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/innovation-sessions/2/SamsungKX_LandingPage_EpisodeTwo_Thumbnail_V2.jpg",
+  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/innovation-sessions/E2_Thumb.jpg",
   "group": "innovation-sessions",
   "sort": 2,
   "components": [
@@ -12,8 +12,8 @@
       "media": {
         "type": "youtube",
         "content": "ibJM9kiK9Zk",
-        "poster": "{{innovation|innovation-sessions|george-the-poet-podcast-creation[image]}}",
-        "alt": "{{innovation|innovation-sessions|george-the-poet-podcast-creation[alt]}}"
+        "poster": "{{creativity|innovation-sessions|george-the-poet-podcast-creation[image]}}",
+        "alt": "{{creativity|innovation-sessions|george-the-poet-podcast-creation[alt]}}"
       },
       "style": {
         "desktop": "top",
@@ -23,7 +23,7 @@
         {
           "type": "headline",
           "level": "1",
-          "copy": "{{innovation|innovation-sessions|george-the-poet-podcast-creation[title]}}"
+          "copy": "{{creativity|innovation-sessions|george-the-poet-podcast-creation[title]}}"
         }
       ]
     },
@@ -77,7 +77,7 @@
           "items": [
             {
               "copy": "Read Article",
-              "url": "{{innovation|innovation-sessions|george-the-poet-podcast-creation|blog[url]}}"
+              "url": "{{creativity|innovation-sessions|george-the-poet-podcast-creation|blog[url]}}"
             }
           ]
         }

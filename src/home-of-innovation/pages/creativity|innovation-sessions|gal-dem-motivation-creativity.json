@@ -1,9 +1,9 @@
 {
   "title": "Innovation Sessions: Cultivating creativity and maintaining motivation",
   "description": "A brand-new digital series from the Home of Innovation to inspire the UK ",
-  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/innovation-sessions/gal-dem-motivation-creativity/SamsungKX_E3_LandingPage_Full_1440x900.jpg",
+  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/innovation-sessions/E3_Hero.jpg",
   "alt": "Two women, one in the foreground close up and one standing behind, pictured in black and white with image overlayed with different coloured shapes",
-  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/innovation-sessions/gal-dem-motivation-creativity/SamsungKX_E3_LandingPage_Thumbnail_300x300.jpg",
+  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/innovation-sessions/E3_Thumb.jpg",
   "group": "innovation-sessions",
   "sort": 3,
   "components": [
@@ -12,8 +12,8 @@
       "media": {
         "type": "youtube",
         "content": "3UKo4SVIqUQ",
-        "poster": "{{innovation|innovation-sessions|gal-dem-motivation-creativity[image]}}",
-        "alt": "{{innovation|innovation-sessions|gal-dem-motivation-creativity[alt]}}"
+        "poster": "{{creativity|innovation-sessions|gal-dem-motivation-creativity[image]}}",
+        "alt": "{{creativity|innovation-sessions|gal-dem-motivation-creativity[alt]}}"
       },
       "style": {
         "desktop": "top",
@@ -23,7 +23,7 @@
         {
           "type": "headline",
           "level": "1",
-          "copy": "{{innovation|innovation-sessions|gal-dem-motivation-creativity[title]}}"
+          "copy": "{{creativity|innovation-sessions|gal-dem-motivation-creativity[title]}}"
         }
       ]
     },
@@ -88,7 +88,7 @@
           "items": [
             {
               "copy": "Read Article",
-              "url": "{{innovation|innovation-sessions|gal-dem-motivation-creativity|blog[url]}}"
+              "url": "{{creativity|innovation-sessions|gal-dem-motivation-creativity|blog[url]}}"
             }
           ]
         }

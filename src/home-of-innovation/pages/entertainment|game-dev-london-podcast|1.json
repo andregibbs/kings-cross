@@ -1,18 +1,18 @@
 {
-  "title": "Game Dev London Podcast - Episode Two",
-  "description": "How the gaming industry is changing",
-  "image": "{{creativity|game-dev-london-podcast[image]}}",
-  "alt": "Game Dev London Podcast logo linking to Episode Two",
-  "thumb": "{{creativity|game-dev-london-podcast[image]}}",
+  "title": "Game Dev London Podcast - Episode One",
+  "description": "Starting your own indie dev studio",
+  "image": "{{entertainment|game-dev-london-podcast[image]}}",
+  "alt": "Game Dev London Podcast logo linking to Episode One",
+  "thumb": "{{entertainment|game-dev-london-podcast[image]}}",
   "group": "game-dev-london-podcast",
-  "sort": 2,
+  "sort": 1,
   "components": [
     {
       "type": "kv",
       "media": {
         "type": "audio",
-        "content": "https://images.samsung.com/is/content/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/game-dev-london-podcast/2.mp4",
-        "poster": "{{creativity|game-dev-london-podcast[image]}}"
+        "content": "https://images.samsung.com/is/content/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/game-dev-london-podcast/1.mp4",
+        "poster": "{{entertainment|game-dev-london-podcast[image]}}"
       },
       "style": {
         "desktop": "left",
@@ -21,13 +21,13 @@
       "components": [
         {
           "type": "headline",
-          "copy": "{{creativity|game-dev-london-podcast|2[title]}}"
+          "copy": "{{entertainment|game-dev-london-podcast|1[title]}}"
         },
         {
           "type": "paragraphs",
           "text": [
             "Game Dev London is a diverse community group with a passion for all things gaming, including everything from design to conception, production, testing and of course playing the games themselves.",
-            "In this episode, Adam interviews Dan Hawkins, a Recruitment Specialist at Aardvark Swift, to get his perspective on the game industry at this time. Find out more from Adam and Dan about how they think the industry will change."
+            "In this Game Dev London Podcast episode, you meet hosts Stuart De Ville and Adam Boyne discussing starting your own indie dev studio and some of the things you should consider."
           ]
         }
       ]

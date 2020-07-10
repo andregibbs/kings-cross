@@ -1,9 +1,9 @@
 {
   "title": "Game Dev London Podcast - Episode Six",
   "description": "Game Dev’s series of podcasts are to support the UK games industry with knowledge and stories from those at its core.",
-  "image": "{{creativity|game-dev-london-podcast[image]}}",
+  "image": "{{entertainment|game-dev-london-podcast[image]}}",
   "alt": "Game Dev London Podcast logo linking to Episode Six",
-  "thumb": "{{creativity|game-dev-london-podcast[image]}}",
+  "thumb": "{{entertainment|game-dev-london-podcast[image]}}",
   "group": "game-dev-london-podcast",
   "sort": 6,
   "components": [
@@ -12,7 +12,7 @@
       "media": {
         "type": "audio",
         "content": "https://images.samsung.com/is/content/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/game-dev-london-podcast/GDL-EP6.mp4",
-        "poster": "{{creativity|game-dev-london-podcast[image]}}"
+        "poster": "{{entertainment|game-dev-london-podcast[image]}}"
       },
       "style": {
         "desktop": "left",
@@ -21,7 +21,7 @@
       "components": [
         {
           "type": "headline",
-          "copy": "{{creativity|game-dev-london-podcast|6[title]}}"
+          "copy": "{{entertainment|game-dev-london-podcast|6[title]}}"
         },
         {
           "type": "paragraphs",

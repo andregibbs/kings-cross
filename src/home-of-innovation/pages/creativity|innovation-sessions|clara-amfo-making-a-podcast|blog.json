@@ -1,16 +1,16 @@
 {
   "title": "Blog",
   "description": "A brand-new digital series from the Home of Innovation to inspire the UK  ",
-  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/innovation-sessions/3/SamsungKX_LandingPage_EpisodeFour_CategoryHero_V2.jpg",
+  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/innovation-sessions/E4_Hero.jpg",
   "alt": "Black and white portrait of the upper half of a woman - Clara Amfo - wearing a white vest top, thin necklaces and large earrings, sat sideways to the camera. The woman is smiling and looking off to the side. The portrait is layered on top of a black background, with green, yellow and white abstract shapes overlayed on top.",
-  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/innovation-sessions/3/SamsungKX_LandingPage_EpisodeFour_Thumbnail_V1.jpg",
+  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/innovation-sessions/E4_Thumb.jpg",
   "components": [
     {
       "type": "kv",
       "media": {
         "type": "image",
-        "content": "{{innovation|innovation-sessions|clara-amfo-making-a-podcast[image]}}",
-        "alt": "{{innovation|innovation-sessions|clara-amfo-making-a-podcast[alt]}}"
+        "content": "{{creativity|innovation-sessions|clara-amfo-making-a-podcast[image]}}",
+        "alt": "{{creativity|innovation-sessions|clara-amfo-making-a-podcast[alt]}}"
       },
       "style": {
         "desktop": "top",

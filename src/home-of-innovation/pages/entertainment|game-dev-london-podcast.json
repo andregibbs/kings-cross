@@ -9,8 +9,8 @@
       "type": "kv",
       "media": {
         "type": "image",
-        "content": "{{creativity|game-dev-london-podcast[image]}}",
-        "alt": "{{creativity|game-dev-london-podcast[alt]}}"
+        "content": "{{entertainment|game-dev-london-podcast[image]}}",
+        "alt": "{{entertainment|game-dev-london-podcast[alt]}}"
       },
       "style": {
         "desktop": "left",
@@ -19,7 +19,7 @@
       "components": [
         {
           "type": "headline",
-          "copy": "{{creativity|game-dev-london-podcast[title]}}"
+          "copy": "{{entertainment|game-dev-london-podcast[title]}}"
         },
         {
           "type": "paragraphs",

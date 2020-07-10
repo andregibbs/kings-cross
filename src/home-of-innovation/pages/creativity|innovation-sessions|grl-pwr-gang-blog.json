@@ -1,16 +1,16 @@
 {
   "title": "Innovation Sessions – GRL PWR Gang's top 5 tips for businesses in lockdown",
   "description": "Innovation Sessions – GRL PWR Gang's top 5 tips for businesses in lockdown",
-  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/SamsungKX_LandingPage_EpisodeOne_CategoryHero_V1.jpg",
+  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/innovation-sessions/E1_Hero.jpg",
   "alt": "A woman - Kirsti Hadley - leaning back in sitting position, image overlayed with different coloured shapes",
-  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/SamsungKX_LandingPage_EpisodeOne_Thumbnail_V1.jpg",
+  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/innovation-sessions/E1_Thumb.jpg",
   "components": [
     {
       "type": "kv",
       "media": {
         "type": "image",
-        "content": "{{innovation|innovation-sessions|grl-pwr-gang-blog[image]}}",
-        "alt": "{{innovation|innovation-sessions|grl-pwr-gang-blog[alt]}}"
+        "content": "{{creativity|innovation-sessions|grl-pwr-gang-blog[image]}}",
+        "alt": "{{creativity|innovation-sessions|grl-pwr-gang-blog[alt]}}"
       },
       "style": {
         "desktop": "left",

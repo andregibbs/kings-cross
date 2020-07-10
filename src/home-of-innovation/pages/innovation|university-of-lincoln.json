@@ -10,8 +10,8 @@
       "type": "kv",
       "media": {
         "type": "image",
-        "content": "{{creativity|university-of-lincoln[image]}}",
-        "alt": "{{creativity|university-of-lincoln[alt]}}"
+        "content": "{{innovation|university-of-lincoln[image]}}",
+        "alt": "{{innovation|university-of-lincoln[alt]}}"
       },
       "style": {
         "desktop": "left",
@@ -20,7 +20,7 @@
       "components": [
         {
           "type": "headline",
-          "copy": "{{creativity|university-of-lincoln[title]}}"
+          "copy": "{{innovation|university-of-lincoln[title]}}"
         },
         {
           "type": "paragraphs",

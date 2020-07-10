@@ -1,18 +1,18 @@
 {
-  "title": "Game Dev London Podcast - Episode Three",
-  "description": "Get to know the Game Dev London Community",
-  "image": "{{creativity|game-dev-london-podcast[image]}}",
-  "alt": "Game Dev London Podcast logo linking to Episode Three",
-  "thumb": "{{creativity|game-dev-london-podcast[image]}}",
+  "title": "Game Dev London Podcast - Episode Five",
+  "description": "Game Dev’s series of podcasts are to support the UK games industry with knowledge and stories from those at its core.",
+  "image": "{{entertainment|game-dev-london-podcast[image]}}",
+  "alt": "Game Dev London Podcast logo linking to Episode Five",
+  "thumb": "{{entertainment|game-dev-london-podcast[image]}}",
   "group": "game-dev-london-podcast",
-  "sort": 3,
+  "sort": 5,
   "components": [
     {
       "type": "kv",
       "media": {
         "type": "audio",
-        "content": "https://images.samsung.com/is/content/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/game-dev-london-podcast/3.mp4",
-        "poster": "{{creativity|game-dev-london-podcast[image]}}"
+        "content": "https://images.samsung.com/is/content/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/game-dev-london-podcast/GDL-EP5.mp4",
+        "poster": "{{entertainment|game-dev-london-podcast[image]}}"
       },
       "style": {
         "desktop": "left",
@@ -21,13 +21,13 @@
       "components": [
         {
           "type": "headline",
-          "copy": "{{creativity|game-dev-london-podcast|3[title]}}"
+          "copy": "{{entertainment|game-dev-london-podcast|5[title]}}"
         },
         {
           "type": "paragraphs",
           "text": [
             "Game Dev London is a diverse community group with a passion for all things gaming, including everything from design to conception, production, testing and of course playing the games themselves.",
-            "In this episode: Host Roz Tuplin interviews Jade Leamcharaskul, who was the organiser of the original GameDevLunch which has since transformed into GameDevLondon. She gives her insights on running games events and growing a community, as well as how to stay creative and motivated while avoiding burnout."
+            "In this episode, Adam interviews Gwe Limpalaer (@gwendle), developer of Unspottable, about balancing working a full-time job while making a game, taking a game from concept to release, and making sure your game feels fresh whilst staying consistent. We also take a look at Gwe's upcoming release \"UNSPOTTABLE\""
           ]
         }
       ]

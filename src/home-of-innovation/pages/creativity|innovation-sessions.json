@@ -1,15 +1,15 @@
 {
   "title": "Innovation Sessions",
   "description": "Description for Innovation Sessions",
-  "image": "{{innovation|innovation-sessions|grl-pwr-gang[image]}}",
-  "thumb": "{{innovation|innovation-sessions|grl-pwr-gang[image]}}",
+  "image": "{{creativity|innovation-sessions|grl-pwr-gang[image]}}",
+  "thumb": "{{creativity|innovation-sessions|grl-pwr-gang[image]}}",
   "components": [
     {
       "type": "kv",
       "media": {
         "type": "image",
-        "content": "{{innovation|innovation-sessions|grl-pwr-gang[image]}}",
-        "alt": "{{innovation|innovation-sessions|grl-pwr-gang[alt]}}"
+        "content": "{{creativity|innovation-sessions|grl-pwr-gang[image]}}",
+        "alt": "{{creativity|innovation-sessions|grl-pwr-gang[alt]}}"
       },
       "style": {
         "desktop": "left",
@@ -18,7 +18,7 @@
       "components": [
         {
           "type": "headline",
-          "copy": "{{innovation|innovation-sessions[title]}}"
+          "copy": "{{creativity|innovation-sessions[title]}}"
         }
       ]
     },

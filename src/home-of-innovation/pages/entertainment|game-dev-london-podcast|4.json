@@ -1,18 +1,18 @@
 {
-  "title": "Game Dev London Podcast - Episode One",
-  "description": "Starting your own indie dev studio",
-  "image": "{{creativity|game-dev-london-podcast[image]}}",
-  "alt": "Game Dev London Podcast logo linking to Episode One",
-  "thumb": "{{creativity|game-dev-london-podcast[image]}}",
+  "title": "Game Dev London Podcast - Episode Four",
+  "description": "Game Dev’s series of podcasts are to support the UK games industry with knowledge and stories from those at its core.",
+  "image": "{{entertainment|game-dev-london-podcast[image]}}",
+  "alt": "Game Dev London Podcast logo linking to Episode Four",
+  "thumb": "{{entertainment|game-dev-london-podcast[image]}}",
   "group": "game-dev-london-podcast",
-  "sort": 1,
+  "sort": 4,
   "components": [
     {
       "type": "kv",
       "media": {
         "type": "audio",
-        "content": "https://images.samsung.com/is/content/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/game-dev-london-podcast/1.mp4",
-        "poster": "{{creativity|game-dev-london-podcast[image]}}"
+        "content": "https://images.samsung.com/is/content/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/game-dev-london-podcast/4b.mp4",
+        "poster": "{{entertainment|game-dev-london-podcast[image]}}"
       },
       "style": {
         "desktop": "left",
@@ -21,13 +21,13 @@
       "components": [
         {
           "type": "headline",
-          "copy": "{{creativity|game-dev-london-podcast|1[title]}}"
+          "copy": "{{entertainment|game-dev-london-podcast|4[title]}}"
         },
         {
           "type": "paragraphs",
           "text": [
             "Game Dev London is a diverse community group with a passion for all things gaming, including everything from design to conception, production, testing and of course playing the games themselves.",
-            "In this Game Dev London Podcast episode, you meet hosts Stuart De Ville and Adam Boyne discussing starting your own indie dev studio and some of the things you should consider."
+            "Game Dev London presents a mini-series from Host Quang Nguyen: In this episode we talk to Nicoll Hunt about a videogame that he loves, Street Fighter II. We discuss the game from a game developer’s point of view, and why it is so adored by him."
           ]
         }
       ]

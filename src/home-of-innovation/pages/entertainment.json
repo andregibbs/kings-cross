@@ -9,13 +9,18 @@
       "type": "group-land-id",
       "dynamic": "group-pages",
       "items": [
-        "creativity|game-dev-london-podcast|7",
-        "creativity|game-dev-london-podcast|6",
-        "creativity|game-dev-london-podcast|5",
-        "creativity|game-dev-london-podcast|4",
-        "creativity|game-dev-london-podcast|3",
-        "creativity|game-dev-london-podcast|2",
-        "creativity|game-dev-london-podcast|1"
+        "entertainment|game-dev-london-podcast|8",
+        "entertainment|game-dev-london-podcast|7",
+        "creativity|innovation-sessions|grl-pwr-gang",
+        "entertainment|game-dev-london-podcast|6",
+        "entertainment|game-dev-london-podcast|5",
+        "creativity|innovation-sessions|george-the-poet-podcast-creation",
+        "entertainment|game-dev-london-podcast|4",
+        "creativity|innovation-sessions|gal-dem-motivation-creativity",
+        "entertainment|game-dev-london-podcast|3",
+        "entertainment|game-dev-london-podcast|2",
+        "creativity|innovation-sessions|clara-amfo-making-a-podcast",
+        "entertainment|game-dev-london-podcast|1"
       ]
     }
   ]
