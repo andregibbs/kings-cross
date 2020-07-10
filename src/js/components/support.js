@@ -98,7 +98,7 @@ export default function support() {
                 this.stage = 1;
 
                 doLog("???");
-                $("html, body").animate({ scrollTop: $('.journey').offset().top - 300 }, 600);
+                $j("html, body").animate({ scrollTop: $j('.journey').offset().top - 300 }, 600);
 
                 document.getElementById("btn-" + this.category).classList.add("btn--primary-notActive");
 
@@ -116,12 +116,12 @@ export default function support() {
                 this.backBtn.classList.add("btn--secondary--" + colors[cat]);
                 screens.calendar.children[0].classList.add(colors[cat]);
                 document.getElementsByClassName("journey")[0].classList.add(colors[cat]);
-                $(".checkbox").each(function (ind, elm) {
+                $j(".checkbox").each(function (ind, elm) {
                     elm.classList.add("checkbox__" + colors[cat]);
                 })
 
                 // hide 121 description if visible
-                // $('#one-to-one-description').slideUp();
+                // $j('#one-to-one-description').slideUp();
 
                 doLog("init successful");
 
@@ -131,12 +131,12 @@ export default function support() {
                       state.productId = "66526";
                       // one to one specific elements (these are reverted in cancelJourney)
                       // todo; maybe combine visiblity changes into a single class
-                      $('#one-to-one-description').slideDown(); // show 121 description
-                      $('#one-to-one-policy').addClass('visible'); // show 121 policy (hides default policy)
-                      $('#imei-row').hide(); // hide imei field
-                      $("#device-notes").attr('placeholder', oneToOneVars.placeholder) // set notes placholder text
-                      $("#oneToOne-device-notes-header").show(); // show device notes header
-                      $("#confirmation").addClass('confirmation-121') // add class to confirmation to adjust content
+                      $j('#one-to-one-description').slideDown(); // show 121 description
+                      $j('#one-to-one-policy').addClass('visible'); // show 121 policy (hides default policy)
+                      $j('#imei-row').hide(); // hide imei field
+                      $j("#device-notes").attr('placeholder', oneToOneVars.placeholder) // set notes placholder text
+                      $j("#oneToOne-device-notes-header").show(); // show device notes header
+                      $j("#confirmation").addClass('confirmation-121') // add class to confirmation to adjust content
                       break;
 
                     case "support":
@@ -165,9 +165,9 @@ export default function support() {
 
                 var nextScreen = this.journeys[cat][1];
                 if (nextScreen == screens.deviceInfo) {
-                    $(nextScreen).slideDown({
+                    $j(nextScreen).slideDown({
                         start: function () {
-                            $(this).css({
+                            $j(this).css({
                                 display: "block"
                             });
                             doLog("Start");
@@ -183,7 +183,7 @@ export default function support() {
                         }
                     });
                 } else {
-                    $(nextScreen).slideDown(400, function () {
+                    $j(nextScreen).slideDown(400, function () {
                         state.close.style.visibility = "visible";
                         state.close.style.opacity = 1;
 
@@ -227,11 +227,11 @@ export default function support() {
             state.close.style.visibility = "hidden";
             state.close.style.opacity = 0;
 
-            $(this.journeys[this.category][this.stage]).slideUp({
+            $j(this.journeys[this.category][this.stage]).slideUp({
                 duration: 400, start: function () {
                     state.navigation.style.visibility = 'hidden';
 
-                    $(state.navigation).slideUp(75, function () {
+                    $j(state.navigation).slideUp(75, function () {
                         state.navigation.style.height = 0;
                         state.navigation.style.opacity = 0;
                         state.navigation.style.visibility = 'hidden';
@@ -252,25 +252,25 @@ export default function support() {
 
                         screens.calendar.children[0].classList.remove(colors[state.category]);
                         document.getElementsByClassName("journey")[0].classList.remove(colors[state.category]);
-                        $("span.checkbox").each(function (ind, elm) {
+                        $j("span.checkbox").each(function (ind, elm) {
                             elm.classList.remove("checkbox__" + colors[state.category]);
                         });
                         ["oneToOne", "support", "repair"].forEach(function (category) {
                             document.getElementById("btn-" + category).classList.remove("btn--primary-notActive");
                         });
 
-                        $(".checkbox").siblings("input").prop("checked", false);
-                        $(".calendar--selected").removeClass("calendar--selected");
-                        $("#next").removeData("slot");
+                        $j(".checkbox").siblings("input").prop("checked", false);
+                        $j(".calendar--selected").removeClass("calendar--selected");
+                        $j("#next").removeData("slot");
                         sendLock();
 
                         // one to one specific elements
-                        $('#one-to-one-description').slideUp(); // hide 121 description
-                        $('#one-to-one-policy').removeClass('visible'); // hide one-to-one policy (makes default policy visible)
-                        $('#imei-row').show(); // show imei row
-                        $("#device-notes").attr('placeholder', 'Additional Information (Optional)') // reset device notes placholder
-                        $("#oneToOne-device-notes-header").hide() //hide device notes header
-                        $("#confirmation").removeClass('confirmation-121') // remove class toggling the 121 details
+                        $j('#one-to-one-description').slideUp(); // hide 121 description
+                        $j('#one-to-one-policy').removeClass('visible'); // hide one-to-one policy (makes default policy visible)
+                        $j('#imei-row').show(); // show imei row
+                        $j("#device-notes").attr('placeholder', 'Additional Information (Optional)') // reset device notes placholder
+                        $j("#oneToOne-device-notes-header").hide() //hide device notes header
+                        $j("#confirmation").removeClass('confirmation-121') // remove class toggling the 121 details
 
                         clearState();
 
@@ -278,8 +278,8 @@ export default function support() {
                         document.getElementById("device-info").reset();
 
                         window.history.replaceState({}, document.title, location.protocol + "//" + location.host + location.pathname);
-                        // while ($(".calendar__container")[0].lastChild) {
-                        //     $(".calendar__container")[0].removeChild($(".calendar__container")[0].lastChild);
+                        // while ($j(".calendar__container")[0].lastChild) {
+                        //     $j(".calendar__container")[0].removeChild($j(".calendar__container")[0].lastChild);
                         // }
                     });
 
@@ -426,7 +426,7 @@ export default function support() {
                 var current_device = document.createElement("option");
                 current_device.innerText = "Device not listed";
                 current_device.value = "Unlisted_device";
-                $(current_device).data("colors", "N/A");
+                $j(current_device).data("colors", "N/A");
                 selectorList.appendChild(current_device);
 
 
@@ -434,7 +434,7 @@ export default function support() {
                     current_device = document.createElement("option");
                     current_device.innerText = devices[device].name;
                     current_device.value = devices[device].model;
-                    $(current_device).data("colors", devices[device].colors);
+                    $j(current_device).data("colors", devices[device].colors);
                     selectorList.appendChild(current_device);
                 }
 
@@ -542,20 +542,20 @@ export default function support() {
     }
 
     state.nextBtn.addEventListener("unlock", function () {
-        // if ($(this).data("slot")) {
-        if ($(this).data("slot")) {
-            doLog($(this).data("slot"));
-            state.timeChosen = $(this).data("slot");
-            state.queueId = $(this).data("queueId");
-            doLog($(this).data());
+        // if ($j(this).data("slot")) {
+        if ($j(this).data("slot")) {
+            doLog($j(this).data("slot"));
+            state.timeChosen = $j(this).data("slot");
+            state.queueId = $j(this).data("queueId");
+            doLog($j(this).data());
             doLog(state.timeChosen, state.queueId);
             var dateObject = new Date(state.timeChosen);
             var timeSlotText = moment(dateObject).format("h:mm A | dddd Do MMMM YYYY") + " | Samsung KX";
-            $(".time-selected").text(timeSlotText);
+            $j(".time-selected").text(timeSlotText);
         }
 
         this.classList.remove("btn--primary-notActive");
-        $(this).data("locked", false)
+        $j(this).data("locked", false)
         doLog("next unlocked")
         // }
     });
@@ -563,7 +563,7 @@ export default function support() {
     state.nextBtn.addEventListener("lock", function () {
         doLog("Next 'Locked'");
         this.classList.add("btn--primary-notActive");
-        $(this).data("locked", true)
+        $j(this).data("locked", true)
     });
 
     state.nextBtn.addEventListener("click", function () {
@@ -597,7 +597,7 @@ export default function support() {
                     }
                 }
             }
-            $('#details input').filter('[required]').each(function (i, el) {
+            $j('#details input').filter('[required]').each(function (i, el) {
                 isValid(el);
                 if (formValid) {
                     sendUnlock();
@@ -605,13 +605,13 @@ export default function support() {
                     sendLock();
                 }
             })
-            $('#details input').filter('[required]').change(function () {
+            $j('#details input').filter('[required]').change(function () {
                 isValid(this);
                 sendUnlock();
             })
         }
 
-        if (!$(this).data("locked") || formValid) {//Button not locked and not final screen
+        if (!$j(this).data("locked") || formValid) {//Button not locked and not final screen
             if (state.journeys[state.category][state.stage] == screens.details) {
                 state.makeBooking();
 
@@ -627,9 +627,9 @@ export default function support() {
 
                 if (newScreen == screens.details) {
                     state.nextBtn.innerText = "BOOK NOW";
-                    $(state.nextBtn).removeAttr("ga-ca");
-                    $(state.nextBtn).removeAttr("ga-ac");
-                    $(state.nextBtn).removeAttr("ga-la");
+                    $j(state.nextBtn).removeAttr("ga-ca");
+                    $j(state.nextBtn).removeAttr("ga-ac");
+                    $j(state.nextBtn).removeAttr("ga-la");
                 }
             }
         }
@@ -660,7 +660,7 @@ export default function support() {
         }
     })
 
-    $("#model-selector").change(function () {
+    $j("#model-selector").change(function () {
 
         state.colorChosen = "";
 
@@ -669,7 +669,7 @@ export default function support() {
         }
 
         if (this.selectedIndex != 0) {
-            var deviceColors = $(this).find(":selected").data("colors").split(", ");
+            var deviceColors = $j(this).find(":selected").data("colors").split(", ");
             for (var clr = 0; clr < deviceColors.length; clr++) {
                 var color = document.createElement("option");
                 color.value = deviceColors[clr];
@@ -680,7 +680,7 @@ export default function support() {
 
 
         if (this.value == "Unlisted_device") {
-            $("#color-selector").val("N/A");
+            $j("#color-selector").val("N/A");
             state.colorChosen = "N/A";
             state.deviceChosen = "Not Listed";
             validateUnlock();
@@ -700,7 +700,7 @@ export default function support() {
 
     });
 
-    $("#color-selector").change(function () {
+    $j("#color-selector").change(function () {
         if (this.selectedIndex != 0) {
             state.colorChosen = this.options[this.selectedIndex].innerHTML;
         } else {
@@ -709,15 +709,15 @@ export default function support() {
         validateUnlock();
     });
 
-    $("#device-notes").bind('input propertychange', function () {
+    $j("#device-notes").bind('input propertychange', function () {
         // set text for 121 device notes header (only visible on 121)
-        $("#oneToOne-device-notes-header").text(oneToOneVars.header(this.value.length))
+        $j("#oneToOne-device-notes-header").text(oneToOneVars.header(this.value.length))
         // set device notes value to state for validation
         state.deviceNotes = this.value
         validateUnlock();
     })
 
-    $("#imei").change(function () {
+    $j("#imei").change(function () {
         state.imei = this.value;
         state.imeiValid = checkIMEI(this.value);
         if (state.imei && !state.imeiValid) {
@@ -749,10 +749,10 @@ export default function support() {
     }
 
     initDeviceGrabs();
-    $("#btn-oneToOne").click(function () { state.startJourney("oneToOne") })
-    $("#btn-support").click(function () { state.startJourney("support") })
-    $("#btn-repair").click(function () { state.startJourney("repair") })
-    $(".close").click(function () { state.cancelJourney() })
+    $j("#btn-oneToOne").click(function () { state.startJourney("oneToOne") })
+    $j("#btn-support").click(function () { state.startJourney("support") })
+    $j("#btn-repair").click(function () { state.startJourney("repair") })
+    $j(".close").click(function () { state.cancelJourney() })
 
     handleResize();
 

@@ -13,10 +13,10 @@ import slider from './slider'
 
 // 	slider( events, '.slider-discover', sliderConfig, 'homeKv' );
 
-// 	window.$( document ).ready(function() {
+// 	window.$j( document ).ready(function() {
 // 		setTimeout(function(){
 // 			if(window.location.hash == "#whitepaper") {
-// 				$("#slick-slide01").click();
+// 				$j("#slick-slide01").click();
 // 			}
 // 		},300);
 // 	});
@@ -25,14 +25,14 @@ import slider from './slider'
 
 // 	//video
 
-// 	// $("video").click(function(e){
+// 	// $j("video").click(function(e){
 
 // 	// 	// handle click if not Firefox (Firefox supports this feature natively)
 // 	// 	if (typeof InstallTrigger === 'undefined') {
 
 // 	// 		// get click position
-// 	// 		var clickY = (e.pageY - $(this).offset().top);
-// 	// 		var height = parseFloat( $(this).height() );
+// 	// 		var clickY = (e.pageY - $j(this).offset().top);
+// 	// 		var height = parseFloat( $j(this).height() );
 
 // 	// 		// avoids interference with controls
 // 	// 		if (clickY > 0.82*height) return;
@@ -156,19 +156,19 @@ export default function discover(events) {
     slider(events, '.slider-discover', sliderConfig, 'homeKv');
     slider(events, '.slider-discover-recently', recentlySliderConfig, 'homeKv');
     slider(events, '.slider-discover-recently-descriptions', recentlyDescriptionsSliderConfig, 'homeKv');
-    var indexToGet = $('.slider .slick-slide').index($('#center_on_me'));
-    window.$(document).ready(function() {
-        // $('.slider-discover-recently').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+    var indexToGet = $j('.slider .slick-slide').index($j('#center_on_me'));
+    window.$j(document).ready(function() {
+        // $j('.slider-discover-recently').on('beforeChange', function(event, slick, currentSlide, nextSlide){
         //     console.log(currentSlide, nextSlide === 2);
 
         //     if(nextSlide === 2){
         //         console.log('swiping')
-        //         $('.slider-discover-recently').slick('goTo', '0')
+        //         $j('.slider-discover-recently').slick('goTo', '0')
         //     }
         //   });
         setTimeout(function() {
             if (window.location.hash == "#whitepaper") {
-                $("#slick-slide01").click();
+                $j("#slick-slide01").click();
             }
         }, 300);
     });
@@ -229,29 +229,29 @@ export default function discover(events) {
         element.addClass('fadeIn')
     }
 
-    $('.community-tabs').on("click", '.tab', (e)=>{
-        const tab =  $(e.target).closest('.tab')
-        $('.tab.is-active').removeClass('is-active')
+    $j('.community-tabs').on("click", '.tab', (e)=>{
+        const tab =  $j(e.target).closest('.tab')
+        $j('.tab.is-active').removeClass('is-active')
         tab.addClass('is-active')
-        $('.community-events > .event.is-active').removeClass('is-active')
-        $('.community-events > .event[data-tab='+tab.attr('data-tab')+']').addClass('is-active')
+        $j('.community-events > .event.is-active').removeClass('is-active')
+        $j('.community-events > .event[data-tab='+tab.attr('data-tab')+']').addClass('is-active')
     })
 
     // slider
   let settings_slider = {
     dots: false,
     arrows: false,
-    slidesToShow: $('.community-tabs').children().length - 1,
-    initialSlide: $('.community-tabs').children().map((idx)=>{if($(this).hasClass('is-active')){return idx}})[0]
+    slidesToShow: $j('.community-tabs').children().length - 1,
+    initialSlide: $j('.community-tabs').children().map((idx)=>{if($j(this).hasClass('is-active')){return idx}})[0]
     // more settings
   }
-  //$('.community-tabs').slick()
-  slick_on_mobile( $('.community-tabs'), settings_slider);
+  //$j('.community-tabs').slick()
+  slick_on_mobile( $j('.community-tabs'), settings_slider);
 
 // slick on mobile
   function slick_on_mobile(slider, settings){
-    $(window).on('load resize', function() {
-      if ($(window).width() > 767) {
+    $j(window).on('load resize', function() {
+      if ($j(window).width() > 767) {
         if (slider.hasClass('slick-initialized')) {
           slider.slick('unslick');
         }
@@ -266,23 +266,23 @@ export default function discover(events) {
 
     tabTriggerBtns.forEach(function(tabTriggerBtn, index) {
         tabTriggerBtn.addEventListener('click', function() {
-            const slot1 = $(SLOTS.desktop[1])
-            const slot2 = $(SLOTS.desktop[2])
-            const slot3 = $(SLOTS.desktop[3])
-            const slot1_mobile = $(SLOTS.mobile[1])
-            const slot2_mobile = $(SLOTS.mobile[2])
-            const slot3_mobile = $(SLOTS.mobile[3])
+            const slot1 = $j(SLOTS.desktop[1])
+            const slot2 = $j(SLOTS.desktop[2])
+            const slot3 = $j(SLOTS.desktop[3])
+            const slot1_mobile = $j(SLOTS.mobile[1])
+            const slot2_mobile = $j(SLOTS.mobile[2])
+            const slot3_mobile = $j(SLOTS.mobile[3])
 
-            const floating_content_text = $('#floating__content__text')
-            const floating_content_text_mobile = $('#floating__content__text__mobile')
-            const floating_content_tab = $("#floating__content__tab")
-            const floating_content_tab_mobile = $("#floating__content__tab_mobile")
-            const floating_content_container = $("#floating__content")
-            const floating_content_container_mobile = $("#floating__content_mobile")
-            const floating_content_button = $("#slot_1_button")
-            const floating_content_button_mobile = $("#slot_1_button_mobile")
+            const floating_content_text = $j('#floating__content__text')
+            const floating_content_text_mobile = $j('#floating__content__text__mobile')
+            const floating_content_tab = $j("#floating__content__tab")
+            const floating_content_tab_mobile = $j("#floating__content__tab_mobile")
+            const floating_content_container = $j("#floating__content")
+            const floating_content_container_mobile = $j("#floating__content_mobile")
+            const floating_content_button = $j("#slot_1_button")
+            const floating_content_button_mobile = $j("#slot_1_button_mobile")
             const floating_content = [floating_content_text, floating_content_button, floating_content_container, floating_content_tab, floating_content_text_mobile, floating_content_button_mobile, floating_content_container_mobile, floating_content_tab_mobile]
-            const header = $('.recently__header')
+            const header = $j('.recently__header')
             const oldActiveTabIndex = getActiveTabIndex()
             const newActiveTabIndex = getTabIndexBySlot(this.dataset.tabTrigger)
             const destination = swapActiveTab(newActiveTabIndex, oldActiveTabIndex)
@@ -306,8 +306,8 @@ export default function discover(events) {
                     })
                 }, 250)*timeScale;
                 setTimeout(()=> {
-                    $(SLOTS.desktop[destination]).attr('src', tabs[getTabIndexBySlot(destination)].img.src)
-                    $(SLOTS.mobile[destination]).attr('src', tabs[getTabIndexBySlot(destination)].img.src)
+                    $j(SLOTS.desktop[destination]).attr('src', tabs[getTabIndexBySlot(destination)].img.src)
+                    $j(SLOTS.mobile[destination]).attr('src', tabs[getTabIndexBySlot(destination)].img.src)
 
                 }, 950*timeScale);
                 setTimeout(()=> {
@@ -348,21 +348,21 @@ export default function discover(events) {
             //     var oldTab = document.querySelector('.tab-content.is-open').classList
             //     console.log(oldTab)
             //     oldTab.remove('is-open')
-			// 	$(newImg).attr('src', oldImgSrc);
+			// 	$j(newImg).attr('src', oldImgSrc);
 
             //     currentTabData.classList.add('is-open');
             // }, 900);
 
-            // $('.flyout').not('.floating__image').addClass('flyout__on')
-            // $(".floating__image img").attr('src', newImgSrc);
-            // $(".floating__image").removeClass('fadeIn');
+            // $j('.flyout').not('.floating__image').addClass('flyout__on')
+            // $j(".floating__image img").attr('src', newImgSrc);
+            // $j(".floating__image").removeClass('fadeIn');
             // setTimeout(function() {
-            //     $('.flyout').removeClass('flyout__on')
+            //     $j('.flyout').removeClass('flyout__on')
             // }, 1000);
 
             // setTimeout(function() {
-            //     $(".floating__image").addClass('fadeIn');
-            //     $(".floating__image img").show();
+            //     $j(".floating__image").addClass('fadeIn');
+            //     $j(".floating__image img").show();
             // }, 1600);
         });
 

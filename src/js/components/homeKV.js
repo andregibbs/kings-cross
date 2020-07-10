@@ -363,7 +363,7 @@ function homeKV() {
   document.querySelector('.homeKV__ScrollLink').addEventListener('click', (e) => {
     e.preventDefault();
 
-    $('html, body').animate({
+    $j('html, body').animate({
       scrollTop: ((rects.nav.top - rects.body.top) - ((window.innerHeight - rects.nav.height) / 2)) - document.querySelector('.nav__navigation').offsetHeight
     }, 1200);
   })

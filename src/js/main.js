@@ -2,13 +2,14 @@
 import 'whatwg-fetch';
 
 // import jquery scoped to project
-import $ from 'jquery'
+const $ = require('jquery')
+
 import 'slick-carousel'
 import 'lity'
 
 // loading via html tags caused the slick initialization to vanish
 // multiple jquery versions loaded
-// use $j to avoid external conflicts
+// use $j to avoid external conflicts\
 window.$j = $
 
 import nav from "./components/nav";

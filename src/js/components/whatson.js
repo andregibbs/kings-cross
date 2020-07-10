@@ -1,4 +1,3 @@
-import '../librarys/jquery-ui-1.12.1.custom/jquery-ui.min.js'
 import handleTemplate from './handleTemplate'
 import getUrlVars from './getUrlVars'
 import dataPicker from './dataPicker';

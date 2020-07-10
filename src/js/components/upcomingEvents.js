@@ -63,11 +63,11 @@ export default function upcomingEvents( events, topicId, currentEvent ) {
   // if there are no events, hide the related Events element
   if (!sorted_dates.length) {
     // assuming all related events are within a container with classes .section & .relatedEvents
-    $(".section.relatedEvents").hide();
+    $j(".section.relatedEvents").hide();
   } else {
     // if there are less than 5 events, add different layout style to container
     if (sorted_dates.length < 5) {
-      $(".relatedEvents__container").addClass('relatedEvents__container--fewerThanFourEvents');
+      $j(".relatedEvents__container").addClass('relatedEvents__container--fewerThanFourEvents');
     }
     for (var i = 0; i < 5; i++) {
       // if element doesnt exist continue (shouldnt happen with filtering above ^^)
@@ -96,13 +96,13 @@ export default function upcomingEvents( events, topicId, currentEvent ) {
         description: sorted_dates[i].description
       };
 
-      $(".relatedEvents__container").append(handleTemplate("eventTile", options));
+      $j(".relatedEvents__container").append(handleTemplate("eventTile", options));
 
   }
 
 }
 
-$(".relatedEvents__header__see").click(function() {
+$j(".relatedEvents__header__see").click(function() {
   window.location.href = "/uk/explore/kings-cross/whats-on/";
 });
 

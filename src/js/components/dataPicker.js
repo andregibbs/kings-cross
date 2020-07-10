@@ -1,3 +1,6 @@
+// this file is not using the $j jquery alias, importing jquery-ui was being a dick
+// direct dependencies are included in whats-on/index.html to expose vanilla $ jquery and date picker
+
 export default function dataPicker(  ) {
 	var dateFormat = "mm/dd/yy",
 
@@ -38,26 +41,26 @@ export default function dataPicker(  ) {
 		dateFormat: "dd/mm/yy",
 		beforeShow: function(input, inst) {
 			$("#ui-datepicker-div td").off();
-  
+
 			$(document).on("mouseenter", "#ui-datepicker-div td", function(e) {
-  
+
 			  $(this).parent().addClass("finalRow");
 			  $(".finalRow").parents('.ui-datepicker-group-last').parent().find('.ui-datepicker-group-first').find('tr').last().addClass("finalRowRangeOtherTable");
 			  $(".finalRowRangeOtherTable").find("td:not(.ui-datepicker-unselectable)").addClass("highlight");
 			  $(".finalRowRangeOtherTable").prevAll().find("td:not(.ui-datepicker-unselectable)").addClass("highlight");
-  
+
 			  $(".finalRow").prevAll().find("td:not(.ui-datepicker-unselectable)").addClass("highlight");
 			  $(this).prevAll("td:not(.ui-datepicker-unselectable)").addClass("highlight");
 			});
-  
+
 			$(document).on("mouseleave", "#ui-datepicker-div td", function(e) {
-  
+
 				$(this).parent().removeClass("finalRow");
 				$("#ui-datepicker-div td").removeClass("highlight");
-  
+
 				$(".finalRowRange").removeClass("finalRowRange").find('.highlight').removeClass("highlight");
 				$(".finalRowRangeOtherTable").removeClass("finalRowRangeOtherTable").find('.highlight').removeClass("highlight");
-  
+
 			});
 		},
 		beforeShowDay: function(date) {
@@ -75,33 +78,33 @@ export default function dataPicker(  ) {
 			setTimeout(function () {
 				from.datepicker('option', 'maxDate', $(this).datepicker('getDate'));
 			}, 200);
-		 
-		  
+
+
 		  $("#ui-datepicker-div td").off();
-  
+
 		$(document).on("mouseenter", "#ui-datepicker-div td", function(e) {
-  
+
 			  $(this).parent().addClass("finalRow");
 			  $(".finalRow").parents('.ui-datepicker-group-last').parent().find('.ui-datepicker-group-first').find('tr').last().addClass("finalRowRangeOtherTable");
 			  $(".finalRowRangeOtherTable").find("td:not(.ui-datepicker-unselectable)").addClass("highlight");
 			  $(".finalRowRangeOtherTable").prevAll().find("td:not(.ui-datepicker-unselectable)").addClass("highlight");
-  
+
 			  $(".finalRow").prevAll().find("td:not(.ui-datepicker-unselectable)").addClass("highlight");
 			  $(this).prevAll("td:not(.ui-datepicker-unselectable)").addClass("highlight");
 			});
-  
+
 			$("#ui-datepicker-div td").on("mouseleave", function() {
-  
+
 				$(this).parent().removeClass("finalRow");
 				$("#ui-datepicker-div td").removeClass("highlight");
-  
+
 				$(".finalRowRange").removeClass("finalRowRange").find('.highlight').removeClass("highlight");
 				$(".finalRowRangeOtherTable").removeClass("finalRowRangeOtherTable").find('.highlight').removeClass("highlight");
-  
+
 			});
-  
+
 	  }
-  
+
 	})
 
 
@@ -116,8 +119,8 @@ export default function dataPicker(  ) {
 		return date;
 	}
 
-	
-	
-	  
+
+
+
 
 }

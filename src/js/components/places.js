@@ -66,7 +66,7 @@ export default function places() {
                 if (storeOpeningTimesHtml != "") {
                     storeOpeningTimesHtml +=  "<br>" + specialOpeningTimeHtml;
                 } else {
-                    $('.findkx__openings').append("<br>" + specialOpeningTimeHtml);
+                    $j('.findkx__openings').append("<br>" + specialOpeningTimeHtml);
                 }
 
             }
@@ -74,7 +74,7 @@ export default function places() {
         }).always(function() {
 
           if (storeOpeningTimesHtml != "") {
-              $('.findkx__openings').html(storeOpeningTimesHtml);
+              $j('.findkx__openings').html(storeOpeningTimesHtml);
           }
 
         });

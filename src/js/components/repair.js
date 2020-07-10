@@ -12,8 +12,8 @@ export default function repair() {
 		.success(function (data) {
 
 			//clear old data
-			while ($(".calendar-times")[0].lastChild) {
-				$(".calendar-times")[0].removeChild($(".calendar-times")[0].lastChild);
+			while ($j(".calendar-times")[0].lastChild) {
+				$j(".calendar-times")[0].removeChild($j(".calendar-times")[0].lastChild);
 			}
 
 			const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
@@ -51,14 +51,14 @@ export default function repair() {
 
 						slot.appendChild(time);
 						slot.appendChild(available);
-						$(slot).data("startTime", data[dateInd].slots[appointmentInd].start)
+						$j(slot).data("startTime", data[dateInd].slots[appointmentInd].start)
 
 						slot.addEventListener("click", function () {
 							// document.getElementsByClassName("kx-services-book-time")[0].innerText = (new Date(appointmentStartTime)).toGMTString();
 							// main.switchTo("form");
-							$(".calendar-times-date-choices-choice").removeClass("selected");
-							$(".calendar-times-date-choices-choice").children("p").text("Available");
-							appointmentStartTime = $(this).data("startTime");
+							$j(".calendar-times-date-choices-choice").removeClass("selected");
+							$j(".calendar-times-date-choices-choice").children("p").text("Available");
+							appointmentStartTime = $j(this).data("startTime");
 							this.classList.add("selected");
 							this.getElementsByTagName("p")[0].innerText = "Selected";
 							document.getElementById("next").classList.add("active");
@@ -79,15 +79,15 @@ export default function repair() {
 					arrow_container.appendChild(arrow);
 					dateContainer.appendChild(arrow_container);
 
-					$(".calendar-times")[0].appendChild(dateContainer);
+					$j(".calendar-times")[0].appendChild(dateContainer);
 
-					$(".cont").click(function () {
-						var currScroll = $(this).prev().scrollTop();
-						var heightOfBox = $(".calendar-times-date-choices-choice").eq(0).outerHeight(true)
-						$(this).prev().animate({ scrollTop: currScroll + (currScroll % heightOfBox <= (heightOfBox / 2) ? heightOfBox - (currScroll % heightOfBox) : (Math.ceil(currScroll / heightOfBox) + 1) * heightOfBox - currScroll) + "px" });
+					$j(".cont").click(function () {
+						var currScroll = $j(this).prev().scrollTop();
+						var heightOfBox = $j(".calendar-times-date-choices-choice").eq(0).outerHeight(true)
+						$j(this).prev().animate({ scrollTop: currScroll + (currScroll % heightOfBox <= (heightOfBox / 2) ? heightOfBox - (currScroll % heightOfBox) : (Math.ceil(currScroll / heightOfBox) + 1) * heightOfBox - currScroll) + "px" });
 					});
 
-					$(".calendar-times-date-choices").each(function () {
+					$j(".calendar-times-date-choices").each(function () {
 
 						this.addEventListener("scroll", function (e) {
 							//doLog(this, this.offsetHeight + this.scrollTop == this.scrollHeight);
@@ -135,13 +135,13 @@ export default function repair() {
 
 					dateContainer.append(cheekyContainer)
 
-					$(".calendar-times")[0].appendChild(dateContainer);
+					$j(".calendar-times")[0].appendChild(dateContainer);
 				}
 			}
-			$("#load-screen").style.display = "none";
+			$j("#load-screen").style.display = "none";
 		})
 		.fail(function (err) {
-			$("#load-screen").style.display = "";
+			$j("#load-screen").style.display = "";
 			doLog(err);
 		})
 
@@ -217,11 +217,11 @@ export default function repair() {
 	}
 
 	function handleNext() {
-		$(".calendar-next--btn")[0].addEventListener("click", function () {
+		$j(".calendar-next--btn")[0].addEventListener("click", function () {
 			if (this.classList.contains("active") && appointmentStartTime != "") {
 				main.switchTo("form");
-				$(".kx-services-book-date")[0].innerText = (new Date(appointmentStartTime)).toGMTString().slice(0, 16)
-				$(".kx-services-book-time")[0].innerText = parseInt(appointmentStartTime.slice(11, 13)) > 11 ? appointmentStartTime.slice(11, 16) + "pm" : appointmentStartTime.slice(11, 16) + "am";
+				$j(".kx-services-book-date")[0].innerText = (new Date(appointmentStartTime)).toGMTString().slice(0, 16)
+				$j(".kx-services-book-time")[0].innerText = parseInt(appointmentStartTime.slice(11, 13)) > 11 ? appointmentStartTime.slice(11, 16) + "pm" : appointmentStartTime.slice(11, 16) + "am";
 			}
 		})
 	}

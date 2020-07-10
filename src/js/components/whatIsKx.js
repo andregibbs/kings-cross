@@ -16,18 +16,18 @@ export default function whatIsKx(events) {
 	upcomingEvents(events, 212);
 
 	// Scroll to a certain element
-	// $('.whatIsKx__item').click(function() {
-	// 	let getScrollEl = $(this).data('scroll')
+	// $j('.whatIsKx__item').click(function() {
+	// 	let getScrollEl = $j(this).data('scroll')
   //
 	// 	window.scroll({
-	// 		top: $('.scroll-'+ getScrollEl +'').offset().top,
+	// 		top: $j('.scroll-'+ getScrollEl +'').offset().top,
 	// 		left: 0,
 	// 		behavior: 'smooth'
 	// 	});
 	// })
 	// var testParallax =  new newParallax('.para');
 	// parllaxText();
-	// $(document).scroll(function() {
+	// $j(document).scroll(function() {
 	// 	parllaxText();
   //
   //
@@ -36,8 +36,8 @@ export default function whatIsKx(events) {
   //
 	// function parllaxText() {
   //
-	// 	let paratext = $("#parallax__container").find(".parallax__text");
-	// 	let paraHight = ($("#parallax__container").outerHeight() + $("#parallax__container").offset().top);
+	// 	let paratext = $j("#parallax__container").find(".parallax__text");
+	// 	let paraHight = ($j("#parallax__container").outerHeight() + $j("#parallax__container").offset().top);
 	// 	let opacity = (1 - window.scrollY / paraHight * 2);
 	// 	// paratext.css('opacity', opacity);
 	// 	doLog(paratext);
@@ -47,14 +47,14 @@ export default function whatIsKx(events) {
 
 	//video
 
-		// $("video").click(function(e){
+		// $j("video").click(function(e){
 
 		// 	// handle click if not Firefox (Firefox supports this feature natively)
 		// 	if (typeof InstallTrigger === 'undefined') {
 
 		// 		// get click position
-		// 		var clickY = (e.pageY - $(this).offset().top);
-		// 		var height = parseFloat( $(this).height() );
+		// 		var clickY = (e.pageY - $j(this).offset().top);
+		// 		var height = parseFloat( $j(this).height() );
 
 		// 		// avoids interference with controls
 		// 		if (clickY > 0.82*height) return;

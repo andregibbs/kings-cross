@@ -87,7 +87,7 @@ export default function calendar(URL, type, allEvents) {
 				populateWithAppointments(data);
 				loadingScreen.style.display = "";
 				handleScrollArrows();
-				$(".calendar__choices").each(function () {
+				$j(".calendar__choices").each(function () {
 					this.scrollTop = 0;
 				});
 			})
@@ -110,16 +110,16 @@ export default function calendar(URL, type, allEvents) {
 	}
 
 	function showCalendarError(error) {
-		$('.calendar__container').empty().append('Error Collecting Appointments')
+		$j('.calendar__container').empty().append('Error Collecting Appointments')
 	}
 
 	function populateWithAppointments(data) {
 		doLog("populating with data");
 		//clear old data
-		// while ($(".calendar__container")[0].lastChild) {
-		// 	$(".calendar__container")[0].removeChild($(".calendar__container")[0].lastChild);
+		// while ($j(".calendar__container")[0].lastChild) {
+		// 	$j(".calendar__container")[0].removeChild($j(".calendar__container")[0].lastChild);
 		// }
-		$('.calendar__container').empty()
+		$j('.calendar__container').empty()
 		doLog("Children cleared");
 
 
@@ -135,7 +135,7 @@ export default function calendar(URL, type, allEvents) {
 				doLog("Formatted date", dateFormatted);
 
 				//Append the date column
-				$(".calendar__container").append(handleTemplate("dateColumn", { "dateFormatted": dateFormatted, "index": dateInd, "date": moment(date).format('YYYY-MM-DD') }));
+				$j(".calendar__container").append(handleTemplate("dateColumn", { "dateFormatted": dateFormatted, "index": dateInd, "date": moment(date).format('YYYY-MM-DD') }));
 
 				//For every appointment in date
 				for (var appointmentInd = 0; appointmentInd < data[dateInd].slots.length; appointmentInd++) {
@@ -145,23 +145,23 @@ export default function calendar(URL, type, allEvents) {
 					var time = slotTime.getHours() + ":" + (String(slotTime.getMinutes()).length == 1 ? "0" + String(slotTime.getMinutes()) : String(slotTime.getMinutes()));
 
 					//Append the slot with template
-					$(".calendar__choices").last().append(handleTemplate("slot", { "time": time, "available": true }));
+					$j(".calendar__choices").last().append(handleTemplate("slot", { "time": time, "available": true }));
 
 					//Attach the slot time to slot's data tag
-					var slot = $(".calendar__choice").last()
+					var slot = $j(".calendar__choice").last()
 					slot.data("startTime", data[dateInd].slots[appointmentInd].start);
 					slot.data("queueId", data[dateInd].slots[appointmentInd].queueId);
 
 					//Click handler
 					slot.click(function () {
-						$(".calendar__choice").removeClass("calendar--selected");
-						$(".calendar__choice").children("p").text("Available");
-						appointmentStartTime = $(this).data("startTime");
+						$j(".calendar__choice").removeClass("calendar--selected");
+						$j(".calendar__choice").children("p").text("Available");
+						appointmentStartTime = $j(this).data("startTime");
 						this.classList.add("calendar--selected");
 						this.getElementsByTagName("p")[0].innerText = "Selected";
 						doLog("selected", appointmentStartTime);
-						$("#next").data("slot", appointmentStartTime);
-						$("#next").data("queueId", $(this).data("queueId"));
+						$j("#next").data("slot", appointmentStartTime);
+						$j("#next").data("queueId", $j(this).data("queueId"));
 						document.getElementById("next").dispatchEvent(unlock);
 					});
 
@@ -175,11 +175,11 @@ export default function calendar(URL, type, allEvents) {
 
 				var dateFormatted = moment(date).format('ddd Do MMMM');
 
-				$(".calendar__container").append(handleTemplate("dateColumn", { "dateFormatted": dateFormatted, "index": dateInd, "date": moment(date).format('YYYY-MM-DD') }));
+				$j(".calendar__container").append(handleTemplate("dateColumn", { "dateFormatted": dateFormatted, "index": dateInd, "date": moment(date).format('YYYY-MM-DD') }));
 
-				$(".calendar__choices").last().append(handleTemplate("slot", { "time": "No slots", "available": false }));
+				$j(".calendar__choices").last().append(handleTemplate("slot", { "time": "No slots", "available": false }));
 
-				$(".calendar__choice").last().addClass("calendar--unavailable");
+				$j(".calendar__choice").last().addClass("calendar--unavailable");
 
 			}
 		}
@@ -221,54 +221,54 @@ export default function calendar(URL, type, allEvents) {
 	};
 
 	function handleScrollArrows() {
-		$(".load").each(function (ind, elm) {
+		$j(".load").each(function (ind, elm) {
 			//Click To Scroll Animations
 			//They ensure that no matter how much and when you click, it will always snap to an element as long as the container is 350px
-			$(elm).click(function () {
-				// var h = $(elm).siblings().find(".calendar__choice").outerHeight(false) + parseFloat($(".calendar__choice").css('marginTop'));
-				var elementHeights = $('.calendar__choice').map(function () {
-					return $(this).outerHeight(true);
+			$j(elm).click(function () {
+				// var h = $j(elm).siblings().find(".calendar__choice").outerHeight(false) + parseFloat($j(".calendar__choice").css('marginTop'));
+				var elementHeights = $j('.calendar__choice').map(function () {
+					return $j(this).outerHeight(true);
 				});
 				var h = Math.max.apply(null, elementHeights);
 				doLog(h);
 				if (this.classList.contains("load--bot")) {
 					if (this.previousElementSibling.scrollTop % h == 0) {
-						$(this.previousElementSibling).animate({
+						$j(this.previousElementSibling).animate({
 							scrollTop: '+=' + h
 						}, 300);
 					}
 					else if (this.previousElementSibling.scrollTop % h > h / 2) {
 						var scrollBy = 2 * h - (this.previousElementSibling.scrollTop % h);
 						doLog(scrollBy);
-						$(this.previousElementSibling).animate({
+						$j(this.previousElementSibling).animate({
 							scrollTop: '+=' + scrollBy
 						}, 300);
 					}
 					else {
 						var scrollBy = h - this.previousElementSibling.scrollTop % h;
 						doLog(scrollBy);
-						$(this.previousElementSibling).animate({
+						$j(this.previousElementSibling).animate({
 							scrollTop: '+=' + scrollBy
 						}, 300);
 					}
 
 				} else {
 					if (this.nextElementSibling.scrollTop % h == 0) {
-						$(this.nextElementSibling).animate({
+						$j(this.nextElementSibling).animate({
 							scrollTop: '-=' + h
 						}, 300);
 					}
 					else if (this.nextElementSibling.scrollTop % h > h / 2) {
 						var scrollBy = h + (this.nextElementSibling.scrollTop % h);
 						doLog(scrollBy);
-						$(this.nextElementSibling).animate({
+						$j(this.nextElementSibling).animate({
 							scrollTop: '-=' + scrollBy
 						}, 300);
 					}
 					else {
 						var scrollBy = 2 * h + this.nextElementSibling.scrollTop % h;
 						doLog(scrollBy);
-						$(this.nextElementSibling).animate({
+						$j(this.nextElementSibling).animate({
 							scrollTop: '-=' + scrollBy
 						}, 300);
 					}
@@ -319,10 +319,10 @@ export default function calendar(URL, type, allEvents) {
 	}
 
 	function populateWithEvents(data) {
-		// while ($(".calendar__container")[0].lastChild) {
-		// 	$(".calendar__container")[0].removeChild($(".calendar__container")[0].lastChild);
+		// while ($j(".calendar__container")[0].lastChild) {
+		// 	$j(".calendar__container")[0].removeChild($j(".calendar__container")[0].lastChild);
 		// }
-		$('.calendar__container').empty()
+		$j('.calendar__container').empty()
 
 		// const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 		// const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
@@ -350,7 +350,7 @@ export default function calendar(URL, type, allEvents) {
 
 		if (window.innerWidth <= 768 && (viewport != "mobile" || calendarRestart)) {
 			doLog("Still mobile");
-			$("[date]").each(function (ind, elm) {
+			$j("[date]").each(function (ind, elm) {
 				var a = new Date(elm.getAttribute("date"));
 				// elm.innerText = shortDays[a.getDay()] + " " + a.getDate() + " " + shortMonths[a.getMonth()];
 				elm.innerText = moment(a).format('ddd Do MMMM');
@@ -358,7 +358,7 @@ export default function calendar(URL, type, allEvents) {
 			viewport = "mobile";
 			calendarRestart = false;
 		} else if (window.innerWidth >= 768 && (viewport != "desktop" || calendarRestart)) {
-			$("[date]").each(function (ind, elm) {
+			$j("[date]").each(function (ind, elm) {
 				var a = new Date(elm.getAttribute("date"));
 				// elm.innerText = days[a.getDay()] + " " + a.getDate() + " " + months[a.getMonth()] + " " + a.getFullYear();
 				elm.innerText = moment(a).format('ddd Do MMMM');

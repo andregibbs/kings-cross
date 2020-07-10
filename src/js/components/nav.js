@@ -2,7 +2,7 @@ import navBurgerAnimation from '../animation/nav-burger-animation.json'
 
 export default function nav() {
 
-	const nav = $('.nav')
+	const nav = $j('.nav')
 	const navHeight = nav.height()
 	const navOffset = nav.offset().top;
 
@@ -26,19 +26,19 @@ export default function nav() {
   }
 
   // mobile burger toggle
-  const mobileBurgerMenu = $(".navigation-mobile__item--toggle");
-  $(mobileBurgerMenu).click(function () {
-    if ($(".sidedrawer").hasClass("opened")) {
-      $(".sidedrawer").removeClass("opened");
-      // $("#content").css("margin-left", "0");
+  const mobileBurgerMenu = $j(".navigation-mobile__item--toggle");
+  $j(mobileBurgerMenu).click(function () {
+    if ($j(".sidedrawer").hasClass("opened")) {
+      $j(".sidedrawer").removeClass("opened");
+      // $j("#content").css("margin-left", "0");
 
       if (burgerAnimation) {
         burgerAnimation.playSegments([95, 125], true);
       }
 
     } else {
-      $(".sidedrawer").addClass("opened");
-      // $("#content").css("margin-left", "260px");
+      $j(".sidedrawer").addClass("opened");
+      // $j("#content").css("margin-left", "260px");
       if (burgerAnimation) {
         burgerAnimation.playSegments([30, 60], true);
         // burgerAnimation.play()
@@ -46,13 +46,13 @@ export default function nav() {
     }
   });
 
-	$(window).scroll(function() {
-		if( $(this).scrollTop() >= navOffset ) {
+	$j(window).scroll(function() {
+		if( $j(this).scrollTop() >= navOffset ) {
 			nav.addClass("nav--sticky")
-			$('#content').css('paddingTop', navHeight)
+			$j('#content').css('paddingTop', navHeight)
 		} else {
 			nav.removeClass("nav--sticky")
-			$('#content').css('paddingTop', '')
+			$j('#content').css('paddingTop', '')
 		}
 	})
 
