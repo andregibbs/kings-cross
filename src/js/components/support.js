@@ -98,7 +98,8 @@ export default function support() {
                 this.stage = 1;
 
                 doLog("???");
-                $j("html, body").animate({ scrollTop: $j('.journey').offset().top - 300 }, 600);
+                let scrollOffset = window.innerWidth > 768 ? 200 : 100
+                $j("html, body").animate({ scrollTop: $j('.journey').offset().top - scrollOffset }, 600);
 
                 document.getElementById("btn-" + this.category).classList.add("btn--primary-notActive");
 
@@ -321,7 +322,7 @@ export default function support() {
                 document.getElementsByClassName("journey")[0].classList.add("progress");
                 sendLock();
 
-                $.ajax({
+                $j.ajax({
                     method: "POST",
                     contentType: "application/json; charset=utf-8",
                     dataType: "json",
@@ -402,7 +403,7 @@ export default function support() {
 
     function initDeviceGrabs() {
         var url = "https://spreadsheets.google.com/feeds/list/1sVUkiE2351zGssyybR27Xb7vck3n5mZZCkZD6pb7zcc/1/public/values?alt=json";
-        $.ajax({
+        $j.ajax({
             url: url,
             dataType: "jsonp",
             success: function (data) {

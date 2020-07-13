@@ -1,6 +1,8 @@
-/* Components */
+/* polyfills */
 import 'whatwg-fetch';
+require('es6-promise/auto');
 
+/* JQuery */
 // import jquery scoped to project
 const $ = require('jquery')
 
@@ -12,6 +14,7 @@ import 'lity'
 // use $j to avoid external conflicts\
 window.$j = $
 
+/* Components */
 import nav from "./components/nav";
 import sidedrawer from "./components/sidedrawer";
 import whatson from "./components/whatson";
@@ -46,28 +49,6 @@ var doLog = doLogFunction();
 
 $j(document).ready(function () {
 
-	// This will clear all unnecessary Samsung logs
-
-
-	// console.clear();
-
-	//scroll past Navbar
-	// $j('.accordian').on('click', (e)=>{
-	// 	console.log('clickeroonie')
-	// 	$j('.accordianContent').toggleClass('active')
-	// 	$j('.accordianIcon').hasClass('accordianIcon__expand') ? $j(".accordianIcon").removeClass('accordianIcon__expand').addClass('accordianIcon__collapse') : $j(".accordianIcon").removeClass('accordianIcon__collapse').addClass('accordianIcon__expand')
-	// 	$j('.accordian').hasClass('accordian__expanded') ? $j(".accordian").removeClass('accordian__expanded').addClass('accordian__collapsed') : $j(".accordian").removeClass('accordian__collapsed').addClass('accordian__expanded')
-	// })
-	if (window.jQuery) {
-       // Open a URL in a lightbox
-// var lightbox = lity('#video-intro');
-
-// // Bind as an event handler
-// $j(document).on('click', '[data-lightbox]', lightbox);
-    } else {
-        // jQuery is not loaded
-       console.log("Doesn't Work");
-    }
 	// =================================================
 	// Global vars
 	// =================================================

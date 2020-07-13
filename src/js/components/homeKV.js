@@ -27,6 +27,10 @@ function homeKV() {
     }
   }
 
+  // firefox performance is shit,
+  // (svg too big, might need to programtically generate svg based on screen size)
+  const DISABLE_CROSS_ANIM = /firefox/i.test(navigator.userAgent) || false
+
   // declare selector for later use
   const homeKV_SVG = document.querySelector('.homeKV__CrossSVG');
   const homeKV_HeaderImage = document.querySelector('.homeKV__HeaderImage');
@@ -304,10 +308,13 @@ function homeKV() {
       }
     ]
 
-    // get values for cross transform
-    const mainCrossValues = processSteps(mainCrossSteps, scroll);
-    // set transform style
-    homeKV_SVG.style.transform = `translate(${mainCrossValues['x']}px ,${mainCrossValues['y']}px) rotateZ(${mainCrossValues['rotate']}deg) scale(${mainCrossValues['scale']})`
+    // unless cross animation is disabled
+    if (!DISABLE_CROSS_ANIM) {
+      // get values for cross transform
+      const mainCrossValues = processSteps(mainCrossSteps, scroll);
+      // set transform style
+      homeKV_SVG.style.transform = `translate(${mainCrossValues['x']}px ,${mainCrossValues['y']}px) rotateZ(${mainCrossValues['rotate']}deg) scale(${mainCrossValues['scale']})`
+    }
 
     // disable background image animation
     // const headerImageValues = processSteps(headerImageSteps, scroll);

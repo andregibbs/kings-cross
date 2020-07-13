@@ -17,6 +17,8 @@ export default function singleEvent(events) {
   let topicId = null;
 
 
+  console.log('aaaaa', kxConfig, window.kxConfig)
+
   // =================================================
   // Populating event details from query string
   // =================================================
@@ -66,6 +68,7 @@ export default function singleEvent(events) {
     sortEventExtra(data);
 
     eventId = data.id;
+    console.log(data.seriesId, kxConfig.seriesIdAsInt)
     if (data.seriesId == kxConfig.seriesIdAsInt) {
       const options = {
         identifier: data.identifier,
@@ -556,7 +559,7 @@ export default function singleEvent(events) {
         .toggleClass("btn--primary-notActive");
       $j(".cm-configurator-loader").show();
 
-      $.ajax({
+      $j.ajax({
         type: "POST",
         url: "https://bookings.qudini.com/booking-widget/series/" + kxConfig.seriesId + "/event/book",
         dataType: "json",
@@ -589,7 +592,7 @@ export default function singleEvent(events) {
           $j(".order__time").text(orderInfo);
 
           // send booking reference to ga
-          if (ga) {
+          if (typeof ga !== "undefined") {
             var gaId = (location.host == 'qaweb-shop.samsung.com') ? "UA-101298876-1" : "UA-100137701-12";
             ga("create", gaId, { name: "gtm9999", cookieExpires: "33696000", cookieDomain: "auto" })
             ga("gtm9999.send", { hitType: "event", eventCategory: "microsite", eventAction: "feature", eventLabel: "kings-cross:event_get-tickets", dimension22: data.refNumber });

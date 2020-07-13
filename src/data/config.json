@@ -48,30 +48,6 @@
 		{
 			"image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/school/slider/_0005_6.jpg"
 		}],
-		"sliderOne": [{
-			"title": "What makes KX unique? Tell the story.",
-			"description": "Samsung KX & Origin. Offering the very best in speciality coffee.",
-			"image": "carousel-neigh-1.jpg",
-			"alt": "some image for kx"
-		},
-		{
-			"title": "What makes KX unique? Tell the story. another one",
-			"description": "Experience an ever-changing menu of delicious filter coffees and feature espressos.",
-			"image": "carousel-neigh-2.jpg",
-			"alt": "some image for kx"
-		},
-		{
-			"title": "What makes KX unique? Tell the story. another one another one",
-			"description": "Enjoy a selection of delicious food, using local produce with quality and sustainability in mind.",
-			"image": "carousel-neigh-3.jpg",
-			"alt": "some image for kx"
-		},
-		{
-			"title": "What makes KX unique? Tell the story. another one another one",
-			"description": "Powered by the perfect blend of passion, precision, curiosity and caffeine, the Origin Roastery is where knowledge and instinct unite.",
-			"image": "carousel-neigh-4.jpg",
-			"alt": "some image for kx"
-		}],
 
 		"sliderTwo": [{
 			"title": "Kissing Rooftops at Night",

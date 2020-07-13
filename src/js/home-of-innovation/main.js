@@ -1,5 +1,6 @@
 /* Home Of Innovation JS Entry */
 
+require('es6-promise/auto');
 import 'whatwg-fetch';
 
 // import jquery scoped to project
