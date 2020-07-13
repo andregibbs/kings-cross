@@ -59,7 +59,7 @@ const SLOTS = {
 const tabs = {
     1: {
         "img" : {
-            "src" : "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/recently1.png?$ORIGIN_PNG$",
+            "src" : "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/recently1.png?$ORIGIN_PNG$",
             "alt" : ""
         },
         "content" :
@@ -73,7 +73,7 @@ const tabs = {
     },
     2: {
         "img" : {
-            "src" : "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/recently2.png?$ORIGIN_PNG$",
+            "src" : "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/recently2.png?$ORIGIN_PNG$",
             "alt" : ""
         },
         "content" :
@@ -86,7 +86,7 @@ const tabs = {
     },
     3: {
         "img" : {
-            "src" : "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/zonev-300x200.png?$ORIGIN_PNG$",
+            "src" : "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/zonev-300x200.png?$ORIGIN_PNG$",
             "alt" : ""
         },
         "content" :

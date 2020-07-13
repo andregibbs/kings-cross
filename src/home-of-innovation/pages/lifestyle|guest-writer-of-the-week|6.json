@@ -1,9 +1,9 @@
 {
   "title": "Guest writer of the week: Bring the taste of your favourite restaurant home",
   "description": "Get chef standard food from your own kitchen",
-  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/6/KV.jpg",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/6/KV.jpg",
   "alt": "A fully cooked roasted chicken, seasoned with chopped red chilli, mushrooms and green vegtables on a black cooking tray. Next to the black cooking tray is a small black jug of dark liquid and a light pink ceramic frying pan containing cooked tagliatelle pasta with praws, mushroom and green vegtables. All dishes are placed on top of a white wooden table.",
-  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/6/KV.jpg",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/6/KV.jpg",
   "group": "guest-writer-of-the-week",
   "sort": 6,
   "components": [
@@ -55,7 +55,7 @@
         },
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/6/1.jpg",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/6/1.jpg",
           "alt": ""
         },
         {
@@ -72,7 +72,7 @@
         },
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/6/2.jpg",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/6/2.jpg",
           "alt": ""
         },
         {

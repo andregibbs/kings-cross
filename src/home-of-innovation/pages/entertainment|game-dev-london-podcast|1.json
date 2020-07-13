@@ -11,7 +11,7 @@
       "type": "kv",
       "media": {
         "type": "audio",
-        "content": "https://images.samsung.com/is/content/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/game-dev-london-podcast/1.mp4",
+        "content": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/game-dev-london-podcast/1.mp4",
         "poster": "{{entertainment|game-dev-london-podcast[image]}}"
       },
       "style": {
@@ -52,8 +52,8 @@
       "items": [
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/game-dev-london-podcast/GameDev_KV.jpg",
-          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/game-dev-london-podcast/GameDev_KV.jpg",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/game-dev-london-podcast/GameDev_KV.jpg",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/game-dev-london-podcast/GameDev_KV.jpg",
           "alt": "Game Dev Podcast logo"
         }
       ]

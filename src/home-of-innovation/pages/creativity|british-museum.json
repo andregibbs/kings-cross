@@ -3,7 +3,7 @@
   "description": "",
   "image": "{{creativity|british-museum|1[image]}}",
   "alt": "{{creativity|british-museum|1[alt]}}",
-  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/science-museum/1_KV.jpg",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/science-museum/1_KV.jpg",
   "components": [
     {
       "type": "kv",

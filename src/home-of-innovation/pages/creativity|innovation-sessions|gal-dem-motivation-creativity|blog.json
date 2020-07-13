@@ -1,9 +1,9 @@
 {
   "title": "Blog",
   "description": "A brand-new digital series from the Home of Innovation to inspire the UK ",
-  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/innovation-sessions/E3_HeroHalf.jpg",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/innovation-sessions/E3_HeroHalf.jpg",
   "alt": "Two women, one in the foreground close up and one standing behind, pictured in black and white with image overlayed with different coloured shapes",
-  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/innovation-sessions/E3_Thumb.jpg",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/innovation-sessions/E3_Thumb.jpg",
   "components": [
     {
       "type": "css-snippet",
@@ -51,7 +51,7 @@
         },
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/innovation-sessions/gal-dem-motivation-creativity/Soof_blog.png",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/innovation-sessions/gal-dem-motivation-creativity/Soof_blog.png",
           "alt": "Black tablet laid flat on a grey table, surrounded by stationary, colourful printed illustrations and sticky notes with writing on them. On the tablet screen there is a pink, blue, purple and yellow circular digital illustration with leaves and an overlayed 'Everything will be fine' message"
         },
         {
@@ -66,7 +66,7 @@
         },
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/innovation-sessions/gal-dem-motivation-creativity/Dancing_Queen_page.jpg",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/innovation-sessions/gal-dem-motivation-creativity/Dancing_Queen_page.jpg",
           "alt": "Dancing_Queen_copy.png"
         },
         {
@@ -83,26 +83,26 @@
       "title": "Download Images",
       "items": [
         {
-          "url": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/innovation-sessions/gal-dem-motivation-creativity/Time_Day-Lockdown.png",
-          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/innovation-sessions/gal-dem-motivation-creativity/thumb_1.png",
+          "url": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/innovation-sessions/gal-dem-motivation-creativity/Time_Day-Lockdown.png",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/innovation-sessions/gal-dem-motivation-creativity/thumb_1.png",
           "alt": "Time_Day-Lockdown.png",
           "download": true
         },
         {
-          "url": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/innovation-sessions/gal-dem-motivation-creativity/tana_con.png",
-          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/innovation-sessions/gal-dem-motivation-creativity/thumb_4.png",
+          "url": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/innovation-sessions/gal-dem-motivation-creativity/tana_con.png",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/innovation-sessions/gal-dem-motivation-creativity/thumb_4.png",
           "alt": "tana_con.png",
           "download": true
         },
         {
-          "url": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/innovation-sessions/gal-dem-motivation-creativity/My_Lockdown_Haven.png",
-          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/innovation-sessions/gal-dem-motivation-creativity/thumb_2.png",
+          "url": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/innovation-sessions/gal-dem-motivation-creativity/My_Lockdown_Haven.png",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/innovation-sessions/gal-dem-motivation-creativity/thumb_2.png",
           "alt": "My_Lockdown_Haven.png",
           "download": true
         },
         {
-          "url": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/innovation-sessions/gal-dem-motivation-creativity/Dancing_Queen_copy.png",
-          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/innovation-sessions/gal-dem-motivation-creativity/thumb_3.png",
+          "url": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/innovation-sessions/gal-dem-motivation-creativity/Dancing_Queen_copy.png",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/innovation-sessions/gal-dem-motivation-creativity/thumb_3.png",
           "alt": "Dancing_Queen_copy.png",
           "download": true
         }

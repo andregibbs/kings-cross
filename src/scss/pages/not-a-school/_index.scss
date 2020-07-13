@@ -10,12 +10,12 @@
     background-size: cover !important;
     background-position: center center !important;
     display: flex;
-    background: url(https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/school/Kx_NAS_header_v3.jpg);
+    background: url(https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/school/Kx_NAS_header_v3.jpg);
     align-items: center;
     padding-top: 0 !important;
     padding-bottom: 0 !important;
     &-signpost {
-        background: url(https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/school/Kx_NAS_signpost.png);
+        background: url(https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/school/Kx_NAS_signpost.png);
         max-height: 450px;
         height: 57vh;
         background-repeat: no-repeat !important;
@@ -42,7 +42,7 @@
         @media screen and (max-width:768px) {
             height: 30vh;
             padding: 0!important;
-            background: url(https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/school/mob-signpost.png);
+            background: url(https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/school/mob-signpost.png);
             background-size: contain !important;
             margin-top: 0;
             margin-bottom: 10%;

@@ -1,9 +1,9 @@
 {
   "title": "Tips & Trikx: Discover the creative within",
   "description": "Simple ways to get the creative juices flowing",
-  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/8/KV.jpg",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/8/KV.jpg",
   "alt": "Black and white cat with light green eyes sits inside as white and grey fish shaped pet bed on top of a white fluffy blanket.",
-  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/8/KV.jpg",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/8/KV.jpg",
   "group": "tips-and-trikx",
   "sort": 8,
   "components": [
@@ -64,7 +64,7 @@
         },
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/8/1.jpg",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/8/1.jpg",
           "alt": "Grey cat with pink collar lies down on its back on stone floor outside"
         },
         {
@@ -80,7 +80,7 @@
         },
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/8/2.jpg",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/8/2.jpg",
           "alt": "Two hands hold a Samsung tablet, using an S Pen in the right hand to draw a cartoon of a small boy's head using a drawing app. In the background, there is blurred out green pages and walkways."
         },
         {
@@ -112,14 +112,14 @@
       "items": [
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/8/1.jpg",
-          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/8/1.jpg",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/8/1.jpg",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/8/1.jpg",
           "alt": "Grey cat with pink collar lies down on its back on stone floor outside"
         },
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/8/2.jpg",
-          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/8/2.jpg",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/8/2.jpg",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/8/2.jpg",
           "alt": "Two hands hold a Samsung tablet, using an S Pen in the right hand to draw a cartoon of a small boy's head using a drawing app. In the background, there is blurred out green pages and walkways. "
         }
       ]

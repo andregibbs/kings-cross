@@ -1,9 +1,9 @@
 {
   "title": "Movement and Mindfulness with Cat Meffan | Session 1",
   "description": "Cat Meffan teaches ‘Yoga for Beginners’ guided by Samsung’s ecosystem of products",
-  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/cat-meffan/KV_Cat_Meffan.jpg",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/cat-meffan/KV_Cat_Meffan.jpg",
   "alt": "Pictured is a large living room with light wooden flooring and cream walls with a traditional, in-built fireplace painted white with two alcoves either side. In the left hand alcove there are various small, dark green indoor plants and blue and pink yoga mats rolled up in a woven basket. In the right hand alcove there is a dark, wooden table with an exposed light bulb lamp on top. In front of the table is a white sofa and cream stripped sofa which faces the large windows on the opposite wall. In front of the fireplace, a young woman - Cat Meffan - wearing light purple yoga leggings and a stone coloured cropped vest top stands in a yoga tree pose facing the camera on top of a black yoga mat.",
-  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/cat-meffan/KV_Cat_Meffan.jpg",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/cat-meffan/KV_Cat_Meffan.jpg",
   "group": "cat-meffan",
   "sort": 1,
   "components": [
@@ -43,7 +43,7 @@
       "type": "___kv",
       "media": {
         "type": "image",
-        "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/cat-meffan/Banner-Full-Bleed_720x720_V2.jpg",
+        "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/cat-meffan/Banner-Full-Bleed_720x720_V2.jpg",
         "alt": "{{lifestyle|cat-meffan|1[alt]}}"
       },
       "style": {

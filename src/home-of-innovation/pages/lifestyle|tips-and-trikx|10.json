@@ -1,9 +1,9 @@
 {
   "title": "Tips & Trikx: Passionate about penmanship",
   "description": "Five tips to help future writers get started ",
-  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/10/KV.jpg",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/10/KV.jpg",
   "alt": "An opened note book with pages filled with writing is pictured slightly out of focus on a thick wooden table. Next to the note book is a white mug that says forty five on the front in black text, a small glass bottle partly filled with milk and a small white plate on which cutlery and a brown paper napkin is placed. In the background, the inside of a cafe with other tables and chairs are visible but are blurry and out of focus.",
-  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/10/KV.jpg",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/10/KV.jpg",
   "group": "tips-and-trikx",
   "sort": 10,
   "components": [
@@ -64,7 +64,7 @@
         },
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/10/1.jpg",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/10/1.jpg",
           "alt": "A flat lay image of a white desk from above is pictured. Near the bottom left hand corner, a black Samsung smartphone is pictured lying screen up with a lockscreen wallpaper of colourful swirls over a black background. Next to the Samsung mobile phone is a black Samsung S Pen leaning against the smartphone. At the top of the image a white wireless keyboard is pictured with only the right half of the keyboard in shot. Next to the keyboard in the top right hand corner, is a grey pad with a black fountian pen on it. In the bottom right hand corner, there is a small pad of white, blank paper with a pencil resting on top."
         },
         {
@@ -80,7 +80,7 @@
         },
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/10/2.jpg",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/10/2.jpg",
           "alt": " A young woman wearing matching denim trousers and a denim jacket over a purple, black and blue toned speckled top is pictured. She is sitting on a ledge looking down at the book in her hands with a purple pen in her right hand. Behind her a blurred tree and outdoor space is visible."
         },
         {
@@ -113,14 +113,14 @@
       "items": [
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/10/1.jpg",
-          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/10/1.jpg",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/10/1.jpg",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/10/1.jpg",
           "alt": "A flat lay image of a white desk from above is pictured. Near the bottom left hand corner, a black Samsung smartphone is pictured lying screen up with a lockscreen wallpaper of colourful swirls over a black background. Next to the Samsung mobile phone is a black Samsung S Pen leaning against the smartphone. At the top of the image a white wireless keyboard is pictured with only the right half of the keyboard in shot. Next to the keyboard in the top right hand corner, is a grey pad with a black fountian pen on it. In the bottom right hand corner, there is a small pad of white, blank paper with a pencil resting on top."
         },
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/10/2.jpg",
-          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/10/2.jpg",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/10/2.jpg",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/10/2.jpg",
           "alt": " A young woman wearing matching denim trousers and a denim jacket over a purple, black and blue toned speckled top is pictured. She is sitting on a ledge looking down at the book in her hands with a purple pen in her right hand. Behind her a blurred tree and outdoor space is visible."
         }
       ]

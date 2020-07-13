@@ -16,13 +16,13 @@
 
   &__header {
     height: 30vw;
-    background-image: url(https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/header/Support_D.jpg);
+    background-image: url(https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/header/Support_D.jpg);
     background-position: center center; /* First value is from left and second is from top. You can use use number as well*/
     background-position: top center;
     background-repeat: no-repeat;
     background-size: contain;
     @media screen and (max-width: $mobile){
-      background-image: url(https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/header/support-mobile.jpg);
+      background-image: url(https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/header/support-mobile.jpg);
       height: 92vw;
       background-size: cover;
     }
@@ -563,7 +563,7 @@
 }
 
 .blackFridayBanner {
-  background-image: url(https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/header/BlackFridaySupportBanner.jpg);
+  background-image: url(https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/header/BlackFridaySupportBanner.jpg);
   background-position: center center; /* First value is from left and second is from top. You can use use number as well*/
   background-repeat: no-repeat;
   background-size: cover;
@@ -572,7 +572,7 @@
   height: 38vw;
 
   @media screen and (max-width: $mobile){
-    background-image: url(https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/header/BlackFridaySupportBannerMobile.jpg);
+    background-image: url(https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/header/BlackFridaySupportBannerMobile.jpg);
     max-height: 768px;
     height: 100vw;
 

@@ -1,9 +1,9 @@
 {
   "title": "University of Lincoln BRADLAB Project",
   "description": "Founded by Jason Bradbury, BRADLAB tasks students to develop innovative new technological products.",
-  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/university-of-lincoln/kv.jpg",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/university-of-lincoln/kv.jpg",
   "alt": "Black cartoon outlines of household items such as cooking utensils, paint brushes and cleaning products",
-  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/university-of-lincoln/kv.jpg",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/university-of-lincoln/kv.jpg",
   "group": "creativity-sub",
   "components": [
     {
@@ -61,8 +61,8 @@
       "type": "kv",
       "media": {
         "type": "video",
-        "content": "https://images.samsung.com/is/content/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/university-of-lincoln/jason.mp4",
-        "poster": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/university-of-lincoln/jason.jpg",
+        "content": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/university-of-lincoln/jason.mp4",
+        "poster": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/university-of-lincoln/jason.jpg",
         "title": "Black and white head shot of Jason Bradbury"
       },
       "style": {
@@ -82,7 +82,7 @@
       "type": "kv",
       "media": {
         "type": "image",
-        "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/university-of-lincoln/seb.jpg",
+        "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/university-of-lincoln/seb.jpg",
         "alt": "In colour headshot of man wearing dark grey v neck jumper over a blue and white chequered shirt"
       },
       "style": {
@@ -119,8 +119,8 @@
         },
         {
           "type": "video",
-          "content": "https://images.samsung.com/is/content/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/university-of-lincoln/owen.mp4",
-          "poster": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/university-of-lincoln/owen.jpg",
+          "content": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/university-of-lincoln/owen.mp4",
+          "poster": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/university-of-lincoln/owen.jpg",
           "title": "In colour headshot of man wearing dark grey v neck jumper over a blue and white chequered shirt"
         }
       ]

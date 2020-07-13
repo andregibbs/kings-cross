@@ -1,9 +1,9 @@
 {
   "title": "Stay Learning: Samsung presents \"The Faces of Space Travel\" with the Science Museum",
   "description": "Through Samsung's partnership with the Science Museum, we bring to life the amazing science behind space travel by remembering some great firsts in space history.",
-  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/science-museum/2_KV.jpg",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/science-museum/2_KV.jpg",
   "alt": "A woman, Helen Sharman, the first British space explorer, stands facing the camera smiling next to a retro astronaunt suit",
-  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/science-museum/2_KV.jpg",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/science-museum/2_KV.jpg",
   "group": "science-museum",
   "sort": 2,
   "components": [
@@ -69,25 +69,25 @@
         {
           "type": "youtube",
           "title": "1. The First Man in Space",
-          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/science-museum/2/1.jpg",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/science-museum/2/1.jpg",
           "content": "yIvk0aQifPs"
         },
         {
           "type": "youtube",
           "title": "2. The First Woman in Space",
-          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/science-museum/2/2.jpg",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/science-museum/2/2.jpg",
           "content": "ZEbw4wPsxUo"
         },
         {
           "type": "youtube",
           "title": "3. The First Astronauts to walk on the Moon",
-          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/science-museum/2/3.jpg",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/science-museum/2/3.jpg",
           "content": "9HvG6ZlpLrI"
         },
         {
           "type": "youtube",
           "title": "4. The First Brit in Space",
-          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/science-museum/2/4.jpg",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/science-museum/2/4.jpg",
           "content": "x0-nMl0jf5E"
         }
       ]

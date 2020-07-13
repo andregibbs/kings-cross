@@ -1,9 +1,9 @@
 {
   "title": "Guest writer of the week: Nourishing mid-week cooking, simplified",
   "description": "Nourishing mid-week cooking, simplified",
-  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/1/IMAGE-KV.JPG",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/1/IMAGE-KV.JPG",
   "alt": "Plate of rice, pomegranate seeds and herbs with a silver fork, surrounded by other foods on a white wooded table",
-  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/1/IMAGE-KV.JPG",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/1/IMAGE-KV.JPG",
   "group": "guest-writer-of-the-week",
   "sort": 1,
   "components": [
@@ -87,7 +87,7 @@
         },
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/1/IMAGE_1.jpeg",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/1/IMAGE_1.jpeg",
           "alt": "Quick Indian spiced salad"
         },
         {
@@ -137,7 +137,7 @@
         },
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/1/IMAGE_3.jpg",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/1/IMAGE_3.jpg",
           "alt": "Beetroot and brown rice pilaf"
         },
         {
@@ -162,7 +162,7 @@
         },
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/1/IMAGE_4.jpg"
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/1/IMAGE_4.jpg"
         }
       ]
     },
@@ -171,18 +171,18 @@
       "items": [
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/1/IMAGE_1.jpeg",
-          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/1/IMAGE_1.jpeg"
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/1/IMAGE_1.jpeg",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/1/IMAGE_1.jpeg"
         },
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/1/IMAGE_3.jpg",
-          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/1/IMAGE_3.jpg"
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/1/IMAGE_3.jpg",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/1/IMAGE_3.jpg"
         },
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/1/IMAGE_4.jpg",
-          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/1/IMAGE_4.jpg"
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/1/IMAGE_4.jpg",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/1/IMAGE_4.jpg"
         }
       ]
     },

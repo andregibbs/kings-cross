@@ -1,9 +1,9 @@
 {
   "title": "Tips & Trikx: Fun with the family",
   "description": "Tips for families to get creative when spending quality time together",
-  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/5/KV.JPG",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/5/KV.JPG",
   "alt": "Family sitting around table playing with toys",
-  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/5/KV.JPG",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/5/KV.JPG",
   "group": "tips-and-trikx",
   "sort": 5,
   "components": [
@@ -64,8 +64,8 @@
         },
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/5/1.JPG",
-          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/5/1.JPG",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/5/1.JPG",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/5/1.JPG",
           "alt": "A small cake with a yellow flower"
         },
         {
@@ -81,8 +81,8 @@
         },
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/5/2.JPG",
-          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/5/2.JPG",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/5/2.JPG",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/5/2.JPG",
           "alt": "A family in a living room"
         },
         {
@@ -115,14 +115,14 @@
       "items": [
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/5/1.JPG",
-          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/5/1.JPG",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/5/1.JPG",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/5/1.JPG",
           "alt": "A small cake with a yellow flower"
         },
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/5/2.JPG",
-          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/5/2.JPG",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/5/2.JPG",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/5/2.JPG",
           "alt": "A family in a living room"
         }
       ]

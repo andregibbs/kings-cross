@@ -1,9 +1,9 @@
 {
   "title": "Around the World in a Day: Towers with Samsung and the British Museum",
   "description": "Discover some of the world's amazing architecture and gain inspiration to design your own.",
-  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/1/KV.jpg",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/1/KV.jpg",
   "alt": "Picture of a vintage London postcard of Tower Bridge with the Tower of London, St Paul's Catherdral and the City of London in the background. In the foreground, wooden boats carrying cargo and steam boats pass under Tower Bridge. Pictures of Waterloo Bridge and Westminster Bridge are overlayed in the top left and right hand corners. At the top of the postcard in the centre, there is the side profile of a man in traditional 19th century army uniform.",
-  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/1/KV.jpg",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/1/KV.jpg",
   "group": "british-museum",
   "sort": 1,
   "components": [
@@ -66,7 +66,7 @@
         },
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/1/Tower_Tools.jpg",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/1/Tower_Tools.jpg",
           "alt": "Photo of a woodcut of The Tower of Babel being built with men and building tools at the tower's base from the 16th century",
           "credit": "Image credit: Woodcut of The Tower of Babel, 1500–1550. © The Trustees of the British Museum"
         },
@@ -86,7 +86,7 @@
         },
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/1/City_Crisis.jpg",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/1/City_Crisis.jpg",
           "alt": "Photo of a black and white etching of The Fall Of Babylon, with a storm swirling around a tall tower in the distance with distressed people and buildings in the foreground.",
           "credit": "Image credit: John Martin (1789-1854), Mezzotint with etching of The Fall of Babylon, 1831. © The Trustees of the British Museum"
         },
@@ -106,7 +106,7 @@
         },
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/1/Designs_Destroyed.jpg",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/1/Designs_Destroyed.jpg",
           "alt": " Photo of a black and white eching of the Fall of the Tower of Babel from the 16th century, with a crumbling tower on a hill in the centre of the picture and smaller ruins in the foreground",
           "credit": "Image credit: Cornelis Anthonisz. Theunissen (c.1505-1553), Etching of the Fall of the Tower of Babel, 1547. © The Trustees of the British Museum"
         },
@@ -126,7 +126,7 @@
         },
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/1/Lighthouse_lookout.jpg",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/1/Lighthouse_lookout.jpg",
           "alt": "Photo of a brass, metal toy lighthouse with two clocks in front of a black background",
           "credit": "Image credit: Brass cased clock in the shape of lighthouse, made in France, 1875–1885. © The Trustees of the British Museum"
         },
@@ -146,7 +146,7 @@
         },
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/1/Tilting_Tower.jpg",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/1/Tilting_Tower.jpg",
           "alt": "Photo of an old etching of the leaning tower of Pisa, with one picture of the tower of Pisa on the outside shown on the left hand side of the photo, and the inside of the tower of Pisa shown on the right hand side of the photo",
           "credit": "Image credit: Ranieri Grassi (1750-1850), Etching of the leaning tower of Pisa, 1900–1950. © The Trustees of the British Museum"
         },
@@ -166,7 +166,7 @@
         },
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/1/Skyscrapers.jpg",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/1/Skyscrapers.jpg",
           "alt": "Photo of a printed vintage postcard of the Singer Building in New York City, USA in front of a black background",
           "credit": "Image credit: Printed postcard of the Singer Building, photographed in New York City, USA, about 1910s. © The Trustees of the British Museum"
         },
@@ -186,7 +186,7 @@
         },
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/1/Tall_turrets.jpg",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/1/Tall_turrets.jpg",
           "alt": "Photo of an 19th century drawing of a stone tower and bridge situated on the coast with the sea and boats in front.",
           "credit": "Image credit: Michel François Préaulx (active 1796-1827), Drawing of the tour du Diable in Rhodes, 19th century. © The Trustees of the British Museum "
         },
@@ -206,7 +206,7 @@
         },
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/1/Slim_Spire.jpg",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/1/Slim_Spire.jpg",
           "alt": "Photo of a vintage watercolour painting of a red sandstone and white marble minaret ",
           "credit": "Image credit: Watercolour painting of the Qutb Minar in Delhi, printed in India, early 19th century. © The Trustees of the British Museum"
         },
@@ -226,7 +226,7 @@
         },
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/1/London_locations.jpg",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/1/London_locations.jpg",
           "alt": "Picture of a vintage London postcard of Tower Bridge with the Tower of London, St Paul's Catherdral and the City of London in the background. In the foreground, wooden boats carrying cargo and steam boats pass under Tower Bridge. Pictures of Waterloo Bridge and Westminster Bridge are overlayed in the top left and right hand corners. At the top of the postcard in the centre, there is the side profile of a man in traditional 19th century army uniform.",
           "credit": "Image credit: Print with views of London's towers, about 1894. © The Trustees of the British Museum"
         },
@@ -246,7 +246,7 @@
         },
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/1/Marvellous_mill.jpg",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/1/Marvellous_mill.jpg",
           "alt": "Photo of a vintage woodcut depicting an invented mill operated by wind and horses with illegible text underneath",
           "credit": "Image credit: Woodcut depicting an invented mill operated by wind and horses, printed in Cologne, 1545. © The Trustees of the British Museum"
         },
@@ -278,7 +278,7 @@
           "style": {
             "snippet": "max-width: 200px; padding-left: 0; padding-right: 0;"
           },
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/british-museum-logo.png"
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/british-museum-logo.png"
         }
       ]
     },

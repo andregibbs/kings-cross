@@ -2,9 +2,9 @@
   "title": "Around The World in a Day: Palaces with Samsung and the British Museum",
   "listTitle": "Around The World in a Day: Palaces with Samsung and the British Museum",
   "description": "Discover some of the world's amazing architecture and gain inspiration to design your own.",
-  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/3/KV_3.jpg",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/3/KV_3.jpg",
   "alt": "Photo of a small ivory Asian palace in front of a black background",
-  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/3/KV_3.jpg",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/3/KV_3.jpg",
   "group": "british-museum",
   "sort": 3,
   "components": [
@@ -68,7 +68,7 @@
         },
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/3/Rainforest_ruins.jpg",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/3/Rainforest_ruins.jpg",
           "alt": "Old black and white photograph of ruined buildings in a rainforest",
           "credit": "Image credit: Photographic print of excavations, photographed in Palenque, Mexico, 1890–1891. © The Trustees of the British Museum"
         },
@@ -88,7 +88,7 @@
         },
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/3/Crystal_Construction.jpg",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/3/Crystal_Construction.jpg",
           "alt": "Photo of a lithograph of the Great Exhibition at Crystal Palace being built",
           "credit": "Image credit: Joseph Nash (1808-1878), lithograph of the Great Exhibition at Crystal Palace, published in London, UK, 1851. © The Trustees of the British Museum"
         },
@@ -108,7 +108,7 @@
         },
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/3/Pocket_Palace_crop.jpg",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/3/Pocket_Palace_crop.jpg",
           "alt": "Photo of a small ivory Asian palace in front of a black background",
           "credit": "Image credit: Kagetoshi (–1843 ca.), Netsuke, Dream of Rosei, made in Japan, early 19th century. © The Trustees of the British Museum"
         },
@@ -128,7 +128,7 @@
         },
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/3/City_Sized.jpg",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/3/City_Sized.jpg",
           "alt": "Photo of a Chinese ganging scroll with a areil painting of the Forbidden City in Beijing on it",
           "credit": "Image credit: Hanging scroll of the Forbidden City, made in Beijing, China, about 16th century. © The Trustees of the British Museum"
         },
@@ -148,7 +148,7 @@
         },
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/3/Impressive_Interiors.jpg",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/3/Impressive_Interiors.jpg",
           "alt": "Photo of an 18th drawing of an imaginary marble palace interior",
           "credit": "Image credit:  Lorenzo Quaglio I (1730–1804), Drawing of an imaginary palace interior, 1745–1804. © The Trustees of the British Museum"
         },
@@ -168,7 +168,7 @@
         },
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/3/Spectacular_seats.jpg",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/3/Spectacular_seats.jpg",
           "alt": "Photograph of a gold, ornate Persian throne room with one central throne and smaller chairs next to it on top of a red carpet",
           "credit": "Image credit: Photograph of Golestan Palace, Tehran, 20th century. © The Trustees of the British Museum"
         },
@@ -188,7 +188,7 @@
         },
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/3/Giant_Guardians_crop.jpg",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/3/Giant_Guardians_crop.jpg",
           "alt": "Photo of an anicent gypsum statue of human headed winged lion in grey stone in front of a black background",
           "credit": "Image credit: Gypsum statue of human headed winged lion, found in Nimrud, Iraq, 865–860 BC. © The Trustees of the British Museum"
         },
@@ -208,7 +208,7 @@
         },
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/3/Dramatic_deeds_as_decoration.jpg",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/3/Dramatic_deeds_as_decoration.jpg",
           "alt": "Photo of a restored print of a grand Assyrian hall decorated with relief sculptures depicting battle scenes on the walls. A group of women stand in the hall all dressed in plain dresses, with one woman in centre view wearing more elaborate clothing, shaded by an umbrella held by another woman.",
           "credit": "Image credit: Print of Hall in Assyrian Palace restored, published in London, UK, 1849. © The Trustees of the British Museum"
         },
@@ -228,7 +228,7 @@
         },
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/3/Painted_Palace_Patterns.jpg",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/3/Painted_Palace_Patterns.jpg",
           "alt": "Photo of a watercolour painting of purple Assyrian wall paintings and glazed bricks",
           "credit": "Image credit: William Boutcher (1814–1900), Watercolour of Assyrian wall-wall paintings and glazed bricks from Nimrud, 19th century–early 20th century. © The Trustees of the British Museum"
         },
@@ -248,7 +248,7 @@
         },
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/3/Gorgeous_gardens.jpg",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/3/Gorgeous_gardens.jpg",
           "alt": "Photo of an old etching depicting the Château of Clagny in Versailles from above, with a large royal garden in the foreground and an impressive palace in the background",
           "credit": "Image credit: Adam Perelle (1640–1695), Etching of the Château of Clagny in Versailles, France, 1674–1696. © The Trustees of the British Museum"
         },
@@ -280,7 +280,7 @@
           "style": {
             "snippet": "max-width: 200px; padding-left: 0; padding-right: 0;"
           },
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/british-museum-logo.png"
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/british-museum-logo.png"
         }
       ]
     },

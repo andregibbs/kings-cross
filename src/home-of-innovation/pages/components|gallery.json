@@ -34,9 +34,9 @@
           "type": "video",
           "title": "Test native video",
           "description": "Description of video item",
-          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/homekv/test-video-poster.png?$ORIGIN_PNG$",
-          "poster": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/homekv/test-video-poster.png?$ORIGIN_PNG$",
-          "content": "https://images.samsung.com/is/content/samsung/p5/uk/explore/kings-cross/homekv/test-video.mp4"
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/homekv/test-video-poster.png?$ORIGIN_PNG$",
+          "poster": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/homekv/test-video-poster.png?$ORIGIN_PNG$",
+          "content": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/homekv/test-video.mp4"
         },
         {
           "type": "image",

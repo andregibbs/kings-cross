@@ -10,7 +10,7 @@
 	"LIVE___seriesId_Webinars":"JQXAE5L8AWF",
 
 	"imgPath":"/content/dam/samsung/uk/explore/kings-cross/",
-	"aemImgPath":"https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/",
+	"aemImgPath":"https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/",
 
 	"wowEventsToShow": 3,
 	"filteredPerPage": 9,
@@ -31,22 +31,22 @@
 	"discover": {
 
 		"sliderNAS": [{
-			"image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/school/slider/_0000_1.jpg"
+			"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/school/slider/_0000_1.jpg"
 		},
 		{
-			"image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/school/slider/_0001_2.jpg"
+			"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/school/slider/_0001_2.jpg"
 		},
 		{
-			"image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/school/slider/_0002_3.jpg"
+			"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/school/slider/_0002_3.jpg"
 		},
 		{
-			"image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/school/slider/_0003_4.jpg"
+			"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/school/slider/_0003_4.jpg"
 		},
 		{
-			"image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/school/slider/_0004_5.jpg"
+			"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/school/slider/_0004_5.jpg"
 		},
 		{
-			"image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/school/slider/_0005_6.jpg"
+			"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/school/slider/_0005_6.jpg"
 		}],
 
 		"sliderTwo": [{
@@ -125,21 +125,21 @@
 	"recentlySlider" : [{
 		"title": "Caitlin Moran",
 		"description": "<h1 class='recently__content__header'>Samsung KX Presents: Thread Talks with Caitlin Moran</h1><p><b>To kick off the first in the series of Thread Talks, host and comedian Alex Zane was joined by acclaimed author Caitlin Moran as they celebrated the world of Twitter threads, spats and conversations.</b></p><br><p>The 90-minute event featured an intimate live performance from Caitlin as she reflected on one of her most popular Twitter threads - a look at the downsides of being a man – followed by a Q&A with the audience and Alex Zane which highlighted some of her greatest, weirdest and funniest moments on the platform.</p><p>Thread Talks is a series of six intimate and exclusive ‘in conversation’ events featuring some of the biggest names in the world of journalism, sport, culture and comedy. The acts will perform at the venue’s Centre Stage in front the world’s first vertical 10metre-wide curved Samsung screen.</p><p>Each free event is being hosted in association with Twitter UK and on each night guests will hear from the company’s Director of Planning, David Wilding.</p>",
-		"image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/recently1.png?$ORIGIN_PNG$",
+		"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/recently1.png?$ORIGIN_PNG$",
 		"alt": "Caitlin Moran",
 		"link": "<a class='button btn btn--primary btn--primary--black star' href='https://www.youtube.com/watch?v=V_qo-YXoaJc&list=PLrUG7VyDs_IUJjPkzyWADKvxld8A4Na1n&index=5&t=0s' id='slot_1_button_mobile'>Learn More</a>"
 	},
 	{
 		"title": "Mercedes Benson",
 		"description": "<h1 class='recently__content__header'>Co–Lab 3: How to monetise your side hustle</h1><p><b>Mercedes Benson is a creative polymath, from becoming an enterprise founder to a social influencer, she is a true all-rounder.</b></p><br><p>In her talk she shared her knowledge and insight on how to turn your passion into a business discussing her own experience by making money from her creativity.</p><p>Joined by a role model of hers, Toni Tone (@t0nit0ne), the duo showcased how best to begin your side hustle. Toni is an online talk show host and social content creator, best known for her social commentary on Twitter as well as her online writing.</p>",
-		"image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/recently2.png?$ORIGIN_PNG$",
+		"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/recently2.png?$ORIGIN_PNG$",
 		"alt": "Mercedes Benson",
 		"link": "<a class='button btn btn--primary btn--primary--black star' href='https://www.samsung.com/uk/explore/kings-cross/whats-on/event/?id=HMSVJXWDR5D' id='slot_1_button_mobile'>Learn More</a>"
 	},
 	{
 		"title": "Clemmie Telford",
 		"description": "<h1 class='recently__content__header'>Zone V</h1><p><b>Zone V is an easy to use interface that works with Samsung Smartphones designed to make even the most important phone features easy. It simplifies access to mobile device apps such as calls and texts, phone and contacts keeping you connected with friends and family.</b></p><br><p>From enlarging text and buttons to creating clearer menus, Zone V makes devices more accessible for those that struggle. For more information on Zone V please visit: <a href='https://zonev.com/' target='_blank'>https://zonev.com/.</a></p>",
-		"image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/zonev-300x200.png?$ORIGIN_PNG$",
+		"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/zonev-300x200.png?$ORIGIN_PNG$",
 		"alt": "Clemmie Telford",
 		"link": "<a class='button btn btn--primary btn--primary--black star' href='https://youtu.be/iYMiu-9aKnI' id='slot_1_button_mobile'>Learn More</a>"
 	}],

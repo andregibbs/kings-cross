@@ -19,7 +19,7 @@
   background-position: center center !important;
   display: flex;
   align-items: center;
-  //background: url('https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/header/Dog_Sigh_Banner_D_v2.jpg');
+  //background: url('https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/header/Dog_Sigh_Banner_D_v2.jpg');
 
   @media screen and (max-width: $mobile) {
     height: 30vh;
@@ -372,21 +372,21 @@
     &--purple {
       border-top: solid 11px $purple;
       &::after {
-        background: url(https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/product-classes.png);
+        background: url(https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/product-classes.png);
         background-position: center center;
       }
     }
     &--pink {
       border-top: solid 11px $pink;
       &::after {
-        background: url(https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/gaming-sessions.png);
+        background: url(https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/gaming-sessions.png);
         background-position: center center;
       }
     }
     &--blue {
       border-top: solid 11px $cyan;
       &::after {
-        background: url(https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/connected-kitchen-demo.png);
+        background: url(https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/connected-kitchen-demo.png);
         background-position: center center;
       }
     }

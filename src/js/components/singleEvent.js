@@ -168,7 +168,7 @@ export default function singleEvent(events) {
         switch (options.sponsor.toLowerCase()) {
           case "timeout":
             var sponsorImg = new Image();
-            sponsorImg.src = 'https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/external-logos/timeout.png';
+            sponsorImg.src = 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/external-logos/timeout.png';
             sponsorContainer.innerHTML = "";
             sponsorContainer.appendChild(sponsorImg);
             // var mobileImg = sponsorImg.cloneNode();
@@ -177,7 +177,7 @@ export default function singleEvent(events) {
             break;
           case "guardian":
             var sponsorImg = new Image();
-            sponsorImg.src = 'https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/external-logos/guardian_v2-white.png';
+            sponsorImg.src = 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/external-logos/guardian_v2-white.png';
             sponsorContainer.innerHTML = "";
             sponsorContainer.appendChild(sponsorImg);
             // var mobileImg = sponsorImg.cloneNode();

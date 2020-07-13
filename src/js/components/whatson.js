@@ -200,7 +200,7 @@ export default function whatson(events) {
 
 	if (passion) {
 		$j('.whatsOn__kv > div > h2').addClass('kv__dark__theme')
-		$j('.whatsOn__kv').css('background', 'url(https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/passion-header/passion-header-' + passion + '.jpg)');
+		$j('.whatsOn__kv').css('background', 'url(https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/passion-header/passion-header-' + passion + '.jpg)');
 		var passionName = getPassionName(passion);
 		doLog(passionName);
 		$j('.whatsOn__kv h2').text(passionName);
@@ -214,7 +214,7 @@ export default function whatson(events) {
 	} else {
 
 
-		$j('.whatsOn__kv').css('background-image', 'url(https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/passion-header/passion-header-generic.jpg)')
+		$j('.whatsOn__kv').css('background-image', 'url(https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/passion-header/passion-header-generic.jpg)')
 
 		lazyGetEvents(events, 0);
 	}

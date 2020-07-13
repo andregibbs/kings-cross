@@ -1,9 +1,9 @@
 {
   "title": "Tips & Trikx: Home is where the heart is",
   "description": "Simple ways to get the creative juices flowing",
-  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/9/KV.jpg",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/9/KV.jpg",
   "alt": "Stone coloured interior wall with photo wall gallery composed of different coloured photo frames showing landscape photography images. In front of the wall there is a modern, wooden chest of drawers on top of which is placed a beach photo in a white photo frame with a white mount and a modern table light made from a small, gold cylinder and orb light bulb. To the right, there is a white geometric ceramic vase containing a small indoor plant, a clear tealight holder, two coffee table books and a minimalist, brown leather basket. To the left of the chest of drawers is a gold standing lamp with three small, black lightshades.",
-  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/9/KV.jpg",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/9/KV.jpg",
   "group": "tips-and-trikx",
   "sort": 9,
   "components": [
@@ -53,7 +53,7 @@
         },
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/9/Image_1.jpg",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/9/Image_1.jpg",
           "alt": "Photo of a traditional painting depicting a medieval town under seige from an advancing army of foot soliders and horses lead by King Henry VIII"
         },
         {
@@ -102,7 +102,7 @@
         },
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/9/Image_2.jpg",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/9/Image_2.jpg",
           "alt": "Photo of a tall living room with traditional ceiling trim is pictured with a retro white and black fireplace on a moss green painted wall and a pastal pink painted alcove to the right of the fireplace. A navy velvet armchair is positioned in front of the alcove by open windows. A light blue, abstract print in a black frame rests on the floor in the alcove against the wall.",
           "credit": "Image credit Fired Earth"
         }
@@ -113,14 +113,14 @@
       "items": [
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/9/Image_1.jpg",
-          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/9/Image_1.jpg",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/9/Image_1.jpg",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/9/Image_1.jpg",
           "alt": "Photo of a traditional painting depicting a medieval town under seige from an advancing army of foot soliders and horses lead by King Henry VIII"
         },
         {
           "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/9/Image_2.jpg",
-          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/9/Image_2.jpg",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/9/Image_2.jpg",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/9/Image_2.jpg",
           "alt": "Photo of a tall living room with traditional ceiling trim is pictured with a retro white and black fireplace on a moss green painted wall and a pastal pink painted alcove to the right of the fireplace. A navy velvet armchair is positioned in front of the alcove by open windows. A light blue, abstract print in a black frame rests on the floor in the alcove against the wall.",
           "description": "Image credit Fired Earth"
         }

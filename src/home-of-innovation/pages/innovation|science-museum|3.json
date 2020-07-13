@@ -1,9 +1,9 @@
 {
   "title": "Stay Learning: Samsung presents \"How AI is changing the world\" with the Science Museum",
   "description": "Through Samsung's partnership with the Science Museum, learn more about AI and how we are using this technology daily.",
-  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/science-museum/3_KV.jpg",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/science-museum/3_KV.jpg",
   "alt": "Two example space drones are suspended from the ceiling in an event space",
-  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/science-museum/3_KV.jpg",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/science-museum/3_KV.jpg",
   "group": "science-museum",
   "sort": 3,
   "components": [
@@ -60,35 +60,35 @@
         {
           "type": "youtube",
           "title": "How Boaty McBoatface is making climate change discoveries",
-          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/science-museum/3/1.jpg",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/science-museum/3/1.jpg",
           "alt": "Nose of Boaty McBoatface, the autonomous underwater vehicle, breaking through sea ice",
           "content": "ZiZ-la0O5uQ"
         },
         {
           "type": "youtube",
           "title": "The Mantra drone that’s helping to save lives",
-          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/science-museum/3/2.jpg",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/science-museum/3/2.jpg",
           "alt": "The Mantra drone, a prototype of a landmine clearing drone, hovers over a field of cut down corn",
           "content": "h1XT4Kugo7A"
         },
         {
           "type": "youtube",
           "title": "How AI is changing Formula 1",
-          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/science-museum/3/3.jpg",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/science-museum/3/3.jpg",
           "alt": "Inside of a red and black F1 racing car with a car racing track ahead",
           "content": "GYwPNMAgF-Q"
         },
         {
           "type": "youtube",
           "title": "How driverless cars are being trialed and tested",
-          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/science-museum/3/4.jpg",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/science-museum/3/4.jpg",
           "alt": "A woman standing close to the camera in a light blue dress, talks to someone offscreen",
           "content": "GUuJjJusNdU"
         },
         {
           "type": "youtube",
           "title": "How underwater drones are changing our understanding of the ocean",
-          "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/science-museum/3/5.jpg",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/science-museum/3/5.jpg",
           "alt": "Three white underwater drones are suspended in a pool of water",
           "content": "yRU8mBRIGaA"
         }
