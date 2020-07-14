@@ -4,7 +4,6 @@ var doLog = doLogFunction();
 
 export default function support() {
     doLog("Support module loaded.");
-
     // customevent();
 
     var bookingURL = "";
@@ -306,6 +305,12 @@ export default function support() {
                 var surname = document.getElementById("surname").value;
                 var email = document.getElementById("email").value;
                 var phone = document.getElementById("tel").value;
+
+                // replace leading 0 with +44
+                if (phone[0] === "0") {
+                  phone = phone.replace(/^0/,"+44")
+                }
+
                 var notes = (state.deviceChosen ? "Model selected: " + state.deviceChosen + "; " : "") + (state.colorChosen ? "Colour: " + state.colorChosen + "; ": "") + (state.imei ? "IMEI: " + state.imei : "") + (state.deviceNotes ? "; Customer Notes: " + state.deviceNotes : "");
                 var bookingData = {
                     "name": name,
