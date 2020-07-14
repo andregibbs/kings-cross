@@ -212,8 +212,6 @@ export default function whatson(events) {
 		lazyGetEvents(eventsFiltered, 0);
 
 	} else {
-
-
 		$j('.whatsOn__kv').css('background-image', 'url(https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/passion-header/passion-header-generic.jpg)')
 
 		lazyGetEvents(events, 0);

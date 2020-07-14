@@ -1,10 +1,25 @@
-// this file is not using the $j jquery alias, importing jquery-ui was being a dick
-// direct dependencies are included in whats-on/index.html to expose vanilla $ jquery and date picker
 
 export default function dataPicker(  ) {
-	var dateFormat = "mm/dd/yy",
 
-	from = $( "#from" )
+  // due to jquery conflicts and differences between staging and aem environments
+  // the jquery ui library for the datepicker function is loaded here
+  // and attached to whatever jquery $ version is in the global scope
+
+  var s = document.createElement('script')
+  s.setAttribute('type', 'text/javascript')
+  s.onload = () => {
+    createPickers()
+  }
+  s.setAttribute('src', 'https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js')
+  document.getElementsByTagName("head")[0].appendChild(s)
+
+}
+
+function createPickers() {
+
+	var dateFormat = "mm/dd/yy";
+
+	var from = $( "#from" )
 	.datepicker({
 		dayNamesMin: [ "S", "M", "T", "W", "T", "F", "S" ],
 		defaultDate: "+1w",

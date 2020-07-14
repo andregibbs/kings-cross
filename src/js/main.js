@@ -335,7 +335,6 @@ $j(document).ready(function () {
 	// =========================================================
 
   const location = getParam('pn') || window.location.pathname
-  console.log('pn', location)
 
 	switch (location) {
 		case '/uk/explore/kings-cross/':

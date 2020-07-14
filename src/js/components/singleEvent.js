@@ -16,9 +16,6 @@ export default function singleEvent(events) {
   let eventTimes = [];
   let topicId = null;
 
-
-  console.log('aaaaa', kxConfig, window.kxConfig)
-
   // =================================================
   // Populating event details from query string
   // =================================================
