@@ -72,6 +72,19 @@
   }
 }
 
+.homeKV__CrossPNG {
+  display: none
+}
+
+.homeKV__CrossSVG[png] {
+  svg {
+    display: none;
+  }
+  .homeKV__CrossPNG {
+    display: block;
+  }
+}
+
 .homeKV__Nav {
   position: relative;
 }

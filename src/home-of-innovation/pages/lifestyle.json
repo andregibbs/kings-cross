@@ -9,6 +9,7 @@
       "type": "group-land-id",
       "dynamic": "group-pages",
       "items": [
+        "lifestyle|cat-meffan|3",
         "lifestyle|cat-meffan|2",
         "lifestyle|guest-writer-of-the-week|9",
         "lifestyle|tips-and-trikx|10",
@@ -19,6 +20,7 @@
         "lifestyle|zone-v",
         "lifestyle|tips-and-trikx|8",
         "lifestyle|guest-writer-of-the-week|6",
+        "lifestyle|tips-and-trikx|7",
         "lifestyle|internet-matters|3",
         "lifestyle|internet-matters|2",
         "lifestyle|safe-to-net",

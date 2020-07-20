@@ -27,10 +27,6 @@ function homeKV() {
     }
   }
 
-  // firefox performance is shit,
-  // (svg too big, might need to programtically generate svg based on screen size)
-  const DISABLE_CROSS_ANIM = /firefox/i.test(navigator.userAgent) || false
-
   // declare selector for later use
   const homeKV_SVG = document.querySelector('.homeKV__CrossSVG');
   const homeKV_HeaderImage = document.querySelector('.homeKV__HeaderImage');
@@ -43,17 +39,38 @@ function homeKV() {
   const straplineTwo = document.querySelector('.homeKV__Strapline--last');
   const scrollAnim = document.querySelector('.homeKV__ScrollLink');
 
+  // firefox performance is shit,
+  // fall back to smaller png image
+  // USE_PNG also used to set the main cross scales
+  const USE_PNG = /firefox/i.test(navigator.userAgent) || false
+  if (USE_PNG) {
+    homeKV_SVG.setAttribute('png', '')
+  }
+
   // stores rect data for animations
   let rects = getRects();
+  let mobile = rects.innerWidth <= 768;
 
   // Function to fetch any elements we require for rect data
   // rect data inlcudes, element positioning and dimensions
   // elementrect.top - bodyrect.top = scroll top position of element
   function getRects() {
+    let body = document.querySelector('body').getBoundingClientRect()
+    let header = document.querySelector('.homeKV__Header').getBoundingClientRect()
+    let nav = document.querySelector('.homeKV__Nav').getBoundingClientRect()
     return {
-      body: document.querySelector('body').getBoundingClientRect(),
-      header: document.querySelector('.homeKV__Header').getBoundingClientRect(),
-      nav: document.querySelector('.homeKV__Nav').getBoundingClientRect(),
+      body: {
+        top: body.top
+      },
+      header: {
+        height: header.height
+      },
+      nav: {
+        height: nav.height,
+        top: nav.top
+      },
+      innerHeight: window.innerHeight,
+      innerWidth: window.innerWidth
     }
   }
 
@@ -93,9 +110,10 @@ function homeKV() {
   // main animate function
   // process all step configs on frame
   function animate(e) {
+    // console.log(e)
     // store scroll variable
     const scroll = window.scrollY || window.pageYOffset || 0;
-    const mobile = window.innerWidth <= 768;
+
 
     // TODO: may need to offset all these values with the gnb height
     // scrollto centering of the nav seems to be off
@@ -107,33 +125,33 @@ function homeKV() {
         easing: easing.easeOutCubic, // easing to use
         values: {
           y: -((rects.header.height * 0.2) + (rects.nav.height / 2)), // values to transform
-          x: -(Math.min(1440, window.innerWidth) / 4),
+          x: -(Math.min(1440, rects.innerWidth) / 4),
           rotate: 35,
-          scale: 2.5,
+          scale: USE_PNG ? 1 : 2.5,
         }
       },
       {
         // for responsiveness this scroll position is dynamic an based of element dimensions
         // this position is for the center point of the nav items
-        scroll: (rects.nav.top - rects.body.top) - ((window.innerHeight - rects.nav.height) / 2) - (window.innerHeight / 4),
+        scroll: (rects.nav.top - rects.body.top) - ((rects.innerHeight - rects.nav.height) / 2) - (rects.innerHeight / 4),
         easing: easing.linear,
         values: {
           y: -75,
           x: 0,
           rotate: 0,
-          scale: 1,
+          scale: USE_PNG ? 0.4 : 1,
         }
       },
       {
         // for responsiveness this scroll position is dynamic an based of element dimension
         // this position is for the center point of the nav items
-        scroll: (rects.nav.top - rects.body.top) - ((window.innerHeight - rects.nav.height) / 2) + (window.innerHeight / 4),
+        scroll: (rects.nav.top - rects.body.top) - ((rects.innerHeight - rects.nav.height) / 2) + (rects.innerHeight / 4),
         easing: easing.easeOutCirc,
         values: {
           y: 75,
           x: 0,
           rotate: 0,
-          scale: 1,
+          scale: USE_PNG ? 0.4 : 1,
         }
       },
       {
@@ -143,7 +161,7 @@ function homeKV() {
           y: (rects.nav.height / 3),
           x: 0,
           rotate: -90,
-          scale: 2.5,
+          scale: USE_PNG ? 1 : 2.5,
         }
       }
     ]
@@ -158,7 +176,7 @@ function homeKV() {
     //     }
     //   },
     //   {
-    //     scroll: (rects.nav.top - rects.body.top) - ((window.innerHeight - rects.nav.height) / 2),
+    //     scroll: (rects.nav.top - rects.body.top) - ((rects.innerHeight - rects.nav.height) / 2),
     //     easing: easing.easeInCirc, // easing to use
     //     values: {
     //       scale: 1.2,
@@ -172,18 +190,18 @@ function homeKV() {
         scroll: 0, // start scroll position of step,
         easing: easing.linear, // easing to use
         values: {
-          y: -(window.innerHeight / 16),
+          y: -(rects.innerHeight / 16),
         }
       },
       {
-        scroll: window.innerHeight / 4, // start scroll position of step,
+        scroll: rects.innerHeight / 4, // start scroll position of step,
         easing: easing.easeOutCirc, // easing to use
         values: {
-          y: -(window.innerHeight / 16),
+          y: -(rects.innerHeight / 16),
         }
       },
       {
-        scroll: (rects.nav.top - rects.body.top) - ((window.innerHeight - rects.nav.height) / 2) - (window.innerHeight / 4),
+        scroll: (rects.nav.top - rects.body.top) - ((rects.innerHeight - rects.nav.height) / 2) - (rects.innerHeight / 4),
         easing: easing.easeOutCirc, // easing to use
         values: {
           y: (rects.header.height / 2) + (rects.nav.height / 5),
@@ -201,7 +219,7 @@ function homeKV() {
         }
       },
       {
-        scroll: ((rects.nav.top - rects.body.top) - ((window.innerHeight - rects.nav.height) / 2) - (window.innerHeight / 4)) * 0.3,
+        scroll: ((rects.nav.top - rects.body.top) - ((rects.innerHeight - rects.nav.height) / 2) - (rects.innerHeight / 4)) * 0.3,
         easing: easing.easeOutCirc, // easing to use
         values: {
           first_opacity: 0,
@@ -209,7 +227,7 @@ function homeKV() {
         }
       },
       {
-        scroll: ((rects.nav.top - rects.body.top) - ((window.innerHeight - rects.nav.height) / 2) - (window.innerHeight / 4)) * 0.7,
+        scroll: ((rects.nav.top - rects.body.top) - ((rects.innerHeight - rects.nav.height) / 2) - (rects.innerHeight / 4)) * 0.7,
         easing: easing.easeOutCirc, // easing to use
         values: {
           first_opacity: 0,
@@ -217,7 +235,7 @@ function homeKV() {
         }
       },
       {
-        scroll: (rects.nav.top - rects.body.top) - ((window.innerHeight - rects.nav.height) / 2) - (window.innerHeight / 4),
+        scroll: (rects.nav.top - rects.body.top) - ((rects.innerHeight - rects.nav.height) / 2) - (rects.innerHeight / 4),
         easing: easing.easeOutCirc, // easing to use
         values: {
           first_opacity: 0,
@@ -235,7 +253,7 @@ function homeKV() {
     //     }
     //   },
     //   {
-    //     scroll: (rects.nav.top - rects.body.top) - ((window.innerHeight - rects.nav.height) / 2) - (window.innerHeight / 4),
+    //     scroll: (rects.nav.top - rects.body.top) - ((rects.innerHeight - rects.nav.height) / 2) - (rects.innerHeight / 4),
     //     easing: easing.linear, // easing to use
     //     values: {
     //       opacity: 1
@@ -252,28 +270,28 @@ function homeKV() {
         }
       },
       {
-        scroll: window.innerHeight * 0.25, // start scroll position of step,
+        scroll: rects.innerHeight * 0.25, // start scroll position of step,
         easing: easing.linear, // easing to use
         values: {
           opacity: 1,
         }
       },
       {
-        scroll: (rects.nav.top - rects.body.top) - ((window.innerHeight - rects.nav.height) / 2) - (window.innerHeight / 2),
+        scroll: (rects.nav.top - rects.body.top) - ((rects.innerHeight - rects.nav.height) / 2) - (rects.innerHeight / 2),
         easing: easing.linear, // easing to use
         values: {
           opacity: 0,
         }
       },
       {
-        scroll: (rects.nav.top - rects.body.top) - ((window.innerHeight - rects.nav.height) / 2) + (window.innerHeight / 4),
+        scroll: (rects.nav.top - rects.body.top) - ((rects.innerHeight - rects.nav.height) / 2) + (rects.innerHeight / 4),
         easing: easing.linear, // easing to use
         values: {
           opacity: 0,
         }
       },
       {
-        scroll: ((rects.nav.top - rects.body.top) - ((window.innerHeight - rects.nav.height) / 2)) + (window.innerHeight * 0.5),
+        scroll: ((rects.nav.top - rects.body.top) - ((rects.innerHeight - rects.nav.height) / 2)) + (rects.innerHeight * 0.5),
         easing: easing.linear, // easing to use
         values: {
           opacity: 1
@@ -299,7 +317,7 @@ function homeKV() {
         }
       },
       {
-        scroll: (rects.nav.top - rects.body.top) - ((window.innerHeight - rects.nav.height) / 2) - (window.innerHeight / 4),
+        scroll: (rects.nav.top - rects.body.top) - ((rects.innerHeight - rects.nav.height) / 2) - (rects.innerHeight / 4),
         easing: easing.easeOutCirc, // easing to use
         values: {
           x: mobile ? -10 : 0,
@@ -309,12 +327,11 @@ function homeKV() {
     ]
 
     // unless cross animation is disabled
-    if (!DISABLE_CROSS_ANIM) {
-      // get values for cross transform
-      const mainCrossValues = processSteps(mainCrossSteps, scroll);
-      // set transform style
-      homeKV_SVG.style.transform = `translate(${mainCrossValues['x']}px ,${mainCrossValues['y']}px) rotateZ(${mainCrossValues['rotate']}deg) scale(${mainCrossValues['scale']})`
-    }
+
+    // get values for cross transform
+    const mainCrossValues = processSteps(mainCrossSteps, scroll);
+    // set transform style
+    homeKV_SVG.style.transform = `translate3d(${mainCrossValues['x']}px ,${mainCrossValues['y']}px, 0) rotateZ(${mainCrossValues['rotate']}deg) scale(${mainCrossValues['scale']})`
 
     // disable background image animation
     // const headerImageValues = processSteps(headerImageSteps, scroll);
@@ -323,18 +340,15 @@ function homeKV() {
     // homeKV_HeaderImage.style.opacity = headerImageValues['opacity']
 
     const headerTitleValues = processSteps(headerTitleSteps, scroll);
-    homeKV_Title.style.transform = `translate(0 ,${headerTitleValues['y']}px)`
-
     const strapLineValues = processSteps(strapLineSteps, scroll)
+    const horizontalBlackValues = processSteps(horizontalBlackSteps, scroll)
+    const navItemHeaderValues = processSteps(navItemHeaderSteps, scroll)
+
+    homeKV_Title.style.transform = `translate(0 ,${headerTitleValues['y']}px)`
     straplineOne.style.opacity = strapLineValues.first_opacity
     straplineTwo.style.opacity = strapLineValues.second_opacity
     scrollAnim.style.opacity = strapLineValues.first_opacity
 
-    // disabled vertical black svg sections
-    // const verticalBlackValues = processSteps(verticalBlackSteps, scroll)
-    // homeKV_BlackVertical.style.opacity = verticalBlackValues.opacity
-
-    const horizontalBlackValues = processSteps(horizontalBlackSteps, scroll)
     // dont animate horizontal, but use values for fading in the nav images
     // homeKV_BlackHorizontal.style.opacity = horizontalBlackValues.opacity
     navItems.forEach((el) => {
@@ -342,7 +356,6 @@ function homeKV() {
     })
 
     // animate in the ctas
-    const navItemHeaderValues = processSteps(navItemHeaderSteps, scroll)
     navItemHeaders.forEach((el, i) => {
       let button = el.querySelector('.btn')
       let x = navItemHeaderValues.x
@@ -378,6 +391,7 @@ function homeKV() {
   // window events
   // On scroll event
   function onScroll(e) {
+    e.stopImmediatePropagation()
     cancelAnimationFrame(animFrame);
     animFrame = requestAnimationFrame(animate);
   }
@@ -385,6 +399,7 @@ function homeKV() {
 
   // update rects object and reanimate when page is resized
   window.addEventListener('resize', () => {
+    mobile = window.innerWidth <= 768;
     rects = getRects()
     animate()
   })
