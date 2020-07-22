@@ -1,0 +1,47 @@
+{
+  "title": "Editing Sessions: Find the Focal by Mike Will",
+  "description": "Get the most out of your smartphone camera with this range of simple tutorials from a selection of the UK's top technology influencers",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/editing-sessions/KV_3.jpg",
+  "alt": "",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/editing-sessions/KV_3.jpg",
+  "group": "editing-sessions",
+  "hidden": true,
+  "sort": 3,
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "youtube",
+        "content": "9Wo_pYfUQos",
+        "poster": "{{creativity|editing-sessions|3[image]}}",
+        "alt": "{{creativity|editing-sessions|3[alt]}}"
+      },
+      "style": {
+        "desktop": "top",
+        "mobile": "top"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "Find the Focal by Mike Will"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Welcome to the Editing Sessions. A chance to learn tips from the professionals on how to get the most out of your smartphone camera.",
+            "Mike Will is one of the UK’s leading creative photographers, widely known for capturing unforgettable moments from around the world. We’ve teamed up with him to help teach the flexibility of focal lengths using the Samsung Galaxy S20 Ultra. Taking to the streets of London, Mike shares his expertise on when to use the Ultrawide angle, Wide angle and Zoom lens, and how all three lengths can completely transform a shot."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "share"
+    },
+    {
+      "type": "group",
+      "dynamic": "episodes",
+      "id": "editing-sessions",
+      "title": "More episodes"
+    }
+  ]
+}
