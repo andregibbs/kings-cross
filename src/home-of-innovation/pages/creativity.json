@@ -9,6 +9,7 @@
       "type": "group-land-id",
       "dynamic": "group-pages",
       "items": [
+        "creativity|editing-sessions|3",
         "creativity|central-saint-martins",
         "creativity|british-museum|1",
         "creativity|british-museum|2",
