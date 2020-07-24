@@ -14,6 +14,8 @@
   }
 }
 
+
+
 .hoiButton {
   margin-right: calc(#{$spacing-mobile} / 2);
 }
@@ -32,4 +34,8 @@
   .hoiButton {
     margin-right: calc(#{$spacing-desktop} / 2);
   }
+}
+
+.hoiButtons--nomargin {
+  margin: 0;
 }

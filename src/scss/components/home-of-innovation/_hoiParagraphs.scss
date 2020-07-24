@@ -1,5 +1,9 @@
 .hoiParagraphs p {
   margin-bottom: 1rem;
+
+  strong {
+    font-size: inherit;
+  }
 }
 
 .hoiParagraphs--align-left {
