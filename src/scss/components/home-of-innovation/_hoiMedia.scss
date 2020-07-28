@@ -39,8 +39,9 @@
   }
   .hoiMedia__ImageCredit {
     display: block;
+    padding: 0 0 $spacing-mobile 0;
     @media screen and (min-width: $mobile + 1) {
-      padding: $spacing-desktop calc(#{$spacing-desktop} * 2);
+      padding: 0 0 $spacing-desktop;
     }
   }
 }

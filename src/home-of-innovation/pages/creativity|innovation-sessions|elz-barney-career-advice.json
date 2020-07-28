@@ -1,9 +1,9 @@
 {
-  "title": "Innovation Sessions: Turning a Passion into a Profession",
+  "title": "Innovation Sessions: Turning a passion into a profession",
   "description": "A brand-new digital series from the Home of Innovation to inspire the UK",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/innovation-sessions/elz-barney-career-advice/elz-barney-career-advice_main_kv.jpg",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/innovation-sessions/elz-barney-career-advice/elz-barney-career-advice_main_kv_2.jpg",
   "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/innovation-sessions/elz-barney-career-advice/elz-barney-career-advice_thumb.jpg",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/innovation-sessions/elz-barney-career-advice/elz-barney-career-advice_thumb_2.jpg",
   "group": "innovation-sessions",
   "sort": 5,
   "components": [
@@ -11,7 +11,7 @@
       "type": "kv",
       "media": {
         "type": "youtube",
-        "content": "",
+        "content": "SYRzDGyMMpg",
         "poster": "{{creativity|innovation-sessions|elz-barney-career-advice[image]}}",
         "alt": "{{creativity|innovation-sessions|elz-barney-career-advice[alt]}}"
       },
@@ -54,7 +54,7 @@
           "text": [
             "In episode 5 of Innovation Sessions, the first ever shot in Samsung KX; Elz the Witch and Barney Artist head to the Home of Innovation to discuss how they both turned their passions into careers and give their tips for how you can do the same.",
             "Hoping to inspire the next generation of female gamers, Elz provides the insights for how she was able to grow her stature in the predominantly male sectors of gaming and IT, ultimately being able to quit her job and turn her gaming passion into her profession.",
-            "In a period of no physical performances for musicians, Barney Artist discusses how he has turned lockdown into an opportunity to connect with his followers, and be ultra-creative with projects in the downtime from live performances – including using the high quality S20 camera."
+            "In a period of no physical performances for musicians, Barney Artist discusses how he has turned lockdown into an opportunity to connect with his followers, and to be ultra-creative with projects in the downtime from live performances – including using the high quality <a href=\"https://www.samsung.com/uk/smartphones/galaxy-s20/\">Galaxy S20</a> camera."
           ]
         },
         {
@@ -71,7 +71,7 @@
           "type": "paragraphs",
           "text": [
             "Elz the Witch. The newest face in Gaming, Fashion & Sports. One of the most popular new gaming presenter channels in the UK. From co-hosting the FIFA E-World Cup final at The O2 Arena through to working with the biggest brands in entertainment.",
-            "She has her own YouTube channel with over 4.5million views and 80k+ subscribers, where she collabs with guests such as KSI and AJ Tracey and The Sidemen, to game with them, or review the latest game releases! She hosted the JD podcast ‘In the Duffle Bag’ and has presented for BBC sport and Fifa.",
+            "She has her own YouTube channel with over 4.5million views and 80k+ subscribers, where she collabs with guests such as KSI and AJ Tracey and The Sidemen, to game with them, or review the latest game releases!",
             "Elz the Witch’s versatility as a presenter has been on full display over the last year as she’s grown into one of the most exciting prospects in the entertainment industry."
           ]
         },
