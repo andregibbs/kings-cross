@@ -213,7 +213,6 @@ export default function singleEvent(events) {
       // =================================================
 
       eventTimes = events.filter(x => x.topic.id === topicId);
-
       doLog(eventTimes);
       var dates = {};
       //get all dates
@@ -249,6 +248,7 @@ export default function singleEvent(events) {
 
       function updateTimes(dates, currentDate) {
         doLog('current date', currentDate);
+        doLog(dates, currentDate);
         var times = null;
         var currentSelection = $j(".styledSelect").attr("rel");
         if (!currentDate) {

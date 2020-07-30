@@ -12,6 +12,11 @@ export default function whatIsKx(events) {
 	// polyfill docs: http://iamdustan.com/smoothscroll/
 	smoothscroll.polyfill();
 
+  // filter private events
+  events = events.filter((event) => {
+    return !event.extra.private
+  })
+
 
 	upcomingEvents(events, 212);
 

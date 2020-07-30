@@ -20,6 +20,11 @@ export default function whatson(events) {
 
 	let spantext = document.getElementsByClassName("eventFilter__header__toggle")[0].getElementsByTagName("span")[0];
 
+  // remove initial private events
+  events = events.filter((event) => {
+    return !event.extra.private
+  })
+
 	// =================================================
 	// DataPicker and filters
 	// =================================================
@@ -78,9 +83,14 @@ export default function whatson(events) {
 				eventsToManipulate = eventsToManipulate.filter(function (event) {
 					return event.extra.passions.includes(passion)
 				})
-
 			}
-			console.log(eventsToManipulate)
+
+      // remove priavte
+      eventsToManipulate = eventsToManipulate.filter((event) => {
+        return !event.extra.private
+      })
+
+
 			lazyGetEvents(eventsToManipulate, eventsToManipulate.length - numberEventsToShow );
 			$j('.events__showMore').hide();
 		} else {

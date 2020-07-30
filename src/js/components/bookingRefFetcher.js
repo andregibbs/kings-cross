@@ -40,9 +40,11 @@ export default function bookingRefFetcher(AllEvents) {
     };
 
     let bookingData;
+    let ref = getParam("ref")
 
+    console.log('aaaaa')
     ui.refButton.addEventListener("click", function () {
-      let ref = document.getElementById("bookingRef").value;
+      document.getElementById("bookingRef").value;
       loading.display(1);
 
       $j.get({

@@ -28,6 +28,7 @@ import slider from "./components/slider";
 import bookingRefFetcher from "./components/bookingRefFetcher";
 import discover from "./components/discover";
 import support from "./components/support";
+// import gaming from "./components/gaming";
 import experience from "./components/experience";
 import lottieAnim from "./components/lottieAnim";
 import loadingScreen from "./components/loadingScreen";
@@ -208,7 +209,6 @@ $j(document).ready(function () {
         // using [0] key to concat data
         let data = seriesData[0].concat(webinarsData[0]);
         // var data = fakeEvents;
-
   			doLog("All events:", data);
   			for (var i = 0; i < data.length; i++) {
   				// MERGE JSON DATA HELD WITHIN description INTO FEED as 'extra' property !!!!!
@@ -223,9 +223,9 @@ $j(document).ready(function () {
   			events = data.filter(event => event.extra);
 
         // filter private events
-        events = events.filter((event) => {
-          return !event.extra.private
-        })
+        // events = events.filter((event) => {
+        //   return !event.extra.private
+        // })
 
   			// console.warn('KX logs: We are not showing these events due to and error in the description', data.filter(event => !(event.extra)))
   			doLog(events)
@@ -507,6 +507,13 @@ $j(document).ready(function () {
 		case "/uk/explore/kings-cross/not-a-school/sign-up/":
 			//places();
 			break;
+
+    // case "/uk/explore/kings-cross/next-level-gaming/":
+    //   fetchData(function (allEvents) {
+    //     calendar("https://bookings.qudini.com/booking-widget/booker/slots/IZ0LYUJL6B0/4375/62764/0", "appointment", allEvents);
+    //   });
+    //   gaming();
+    //   break;
 
 		default:
 			// Your init here
