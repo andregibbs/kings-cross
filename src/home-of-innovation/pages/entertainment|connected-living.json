@@ -1,0 +1,107 @@
+{
+  "title": "Connected Living with Jessie Ware",
+  "description": "Explore Connected Living at the Samsung KX Kitchen with Jessie Ware",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/entertainment/connected-living/keyvis_1440x720.jpg",
+  "alt": "",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/entertainment/connected-living/keyvis_1440x720.jpg",
+  "components": [
+    {
+      "type": "css-snippet",
+      "content": ".hoiList__ItemTitle { height: auto !important; }"
+    },
+    {
+      "type": "kv",
+      "media": {
+        "type": "youtube",
+        "content": "C6VW3JWbLR0",
+        "poster": "{{entertainment|connected-living[image]}}",
+        "alt": "{{entertainment|connected-living[alt]}}"
+      },
+      "style": {
+        "desktop": "top",
+        "mobile": "top"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "Connected Living with Jessie Ware"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Jessie Ware takes a visit to Samsung KX to experience Connected Living through the SmartThings app and record a very special edition of the Table Manners podcast with celebrity guest Ovie Soko. From Love Island to home cooked food, watch all the highlights right here."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "share"
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "kv",
+          "media": {
+            "type": "image",
+            "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/entertainment/connected-living/table_manners.jpg",
+            "alt": ""
+          },
+          "style": {
+            "desktop": "left",
+            "mobile": "top"
+          },
+          "components": [
+            {
+              "type": "headline",
+              "level": "3",
+              "copy": "Samsung x Table Manners podcast highlights"
+            },
+            {
+              "type": "paragraphs",
+              "text": [
+                "<a href=\"https://linktr.ee/tablemannerspod\" target=\"_blank\">Listen to the full Table Manners podcast</a>"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "link-list",
+      "title": "Check out all the products used in the making of the podcast",
+      "items": [
+        {
+          "title": "SmartThings",
+          "url": "https://www.samsung.com/uk/apps/smartthings/",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/entertainment/connected-living/smart_things.jpg"
+        },
+        {
+          "title": "Galaxy S20",
+          "url": "https://www.samsung.com/uk/smartphones/galaxy-s20/",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/entertainment/connected-living/g988.jpg"
+        },
+        {
+          "title": "Dual Cook Flex",
+          "url": "https://www.samsung.com/uk/cooking-appliances/electric-oven-nv75n7677rseu/",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/entertainment/connected-living/oven-2.jpg"
+        },
+        {
+          "title": "Family Hub",
+          "url": "https://www.samsung.com/uk/refrigerators/american-style-rs8000nc/",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/entertainment/connected-living/fridge.jpg"
+        },
+        {
+          "title": "Induction Hob",
+          "url": "https://www.samsung.com/uk/cooking-appliances/cooktop-nz84j9770ek/",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/entertainment/connected-living/hob.jpg"
+        },
+        {
+          "title": "AirDresser",
+          "url": "https://www.samsung.com/uk/washing-machines/airdresser-df60r8600cg/",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/entertainment/connected-living/crystal-mirror-2.jpg"
+        }
+      ]
+    }
+  ]
+}
