@@ -42,11 +42,9 @@ export default function bookingRefFetcher(AllEvents) {
     let bookingData;
     let ref = getParam("ref")
 
-    console.log('aaaaa')
     ui.refButton.addEventListener("click", function () {
-      document.getElementById("bookingRef").value;
+      ref = document.getElementById("bookingRef").value;
       loading.display(1);
-
       $j.get({
         url:"https://bookings.qudini.com/booking-widget/event/attendee/" + ref,
         success: bookingReceived
