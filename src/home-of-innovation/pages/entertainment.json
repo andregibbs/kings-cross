@@ -9,6 +9,8 @@
       "type": "group-land-id",
       "dynamic": "group-pages",
       "items": [
+        "entertainment|connected-living",
+        "creativity|innovation-sessions|elz-barney-career-advice",
         "entertainment|game-dev-london-podcast|10",
         "entertainment|game-dev-london-podcast|9",
         "entertainment|game-dev-london-podcast|8",
@@ -18,10 +20,11 @@
         "entertainment|game-dev-london-podcast|5",
         "creativity|innovation-sessions|george-the-poet-podcast-creation",
         "entertainment|game-dev-london-podcast|4",
-        "creativity|innovation-sessions|gal-dem-motivation-creativity",
         "entertainment|game-dev-london-podcast|3",
-        "entertainment|game-dev-london-podcast|2",
         "creativity|innovation-sessions|clara-amfo-making-a-podcast",
+        "entertainment|game-dev-london-podcast|2",
+        "entertainment|game-dev-london-podcast|2",
+        "creativity|innovation-sessions|gal-dem-motivation-creativity",
         "entertainment|game-dev-london-podcast|1"
       ]
     }
