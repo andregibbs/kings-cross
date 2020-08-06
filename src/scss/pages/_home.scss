@@ -140,6 +140,66 @@
     padding-bottom: 0 !important;
   }
 
+  .Home__kxtras {
+    // margin: 2rem 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    .section__inner {
+      background-image: url('https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/kxtras/kxtras-home-banner.jpg');
+      background-size: 100% auto;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      position: relative;
+
+
+      @media screen and (max-width: $mobile) {
+        background-image: url('https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/kxtras/kxtras-home-banner-mob.jpg');
+      }
+    }
+    .Home__kxtras_copy {
+      margin-right: auto;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 1rem 1rem 1rem 2rem;
+
+      @media screen and (max-width: $mobile) {
+        padding: 1rem;
+        font-size: 1.5em;
+        text-align: center;
+        height: 550px;
+        .btn {
+          margin: 0 auto;
+        }
+      }
+
+      @media screen and (min-width: $mobile + 1) {
+        width: 50%;
+        height: 32vw;
+      }
+
+      @media screen and (min-width: 1440px) {
+        height: 550px;
+      }
+
+      h2, p {
+        margin-bottom: 10px;
+      }
+      h2 {
+        line-height: 1.2;
+      }
+      p {
+        line-height: 1.5;
+        margin-bottom: 12px;
+      }
+    }
+  }
+
+
+  // passion point below
+
   .passionPoints {
     display: none; // hide (for now?)
     padding-top: 0 !important;
@@ -200,6 +260,9 @@
       background: transparent;
     }
   }
+
+
+
 
   .cover__container {
     display: flex;
