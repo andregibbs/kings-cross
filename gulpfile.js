@@ -413,6 +413,7 @@ function HOITemplates(skipTemplates, dynamicDataCallback, selectedFiles) {
           component.items.sort((a, b) => a.sort - b.sort)
           break;
         case 'group-land-id':
+        case 'link-list-id':
           component.items = component.items.map((id) => {
             const path = id.split('|').join('/')
             const pageData = getPageData(path)

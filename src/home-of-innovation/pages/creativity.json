@@ -6,30 +6,73 @@
   },
   "components": [
     {
-      "type": "group-land-id",
-      "dynamic": "group-pages",
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/discover/2020-assets/creativity.jpg",
+        "alt": ""
+      },
+      "style": {
+        "desktop": "left",
+        "mobile": "top"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "level": "1",
+          "copy": "Creativity"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Heres some text describing the creativity category"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "link-list-id",
+      "dynamic": "creativity-latest",
+      "title": "Creativity Latest",
+      "style": {
+        "feature": true
+      },
       "items": [
-        "creativity|graduate-fashion-week|elyse-blackshaw",
-        "creativity|graduate-fashion-week|life-of-a-marketing-girl",
-        "creativity|graduate-fashion-week|henry-holland",
-        "creativity|editing-sessions|4",
-        "creativity|innovation-sessions|adam-gemili-rachel-ama-get-fit-get-cooking",
+        "creativity|central-saint-martins",
         "creativity|innovation-sessions|elz-barney-career-advice",
         "creativity|editing-sessions|3",
-        "creativity|central-saint-martins",
         "creativity|british-museum|1",
-        "creativity|british-museum|2",
-        "creativity|british-museum|3",
-        "creativity|british-museum|4",
-        "creativity|british-museum|5",
         "creativity|graduate-fashion-week",
-        "creativity|editing-sessions|2",
-        "creativity|innovation-sessions|clara-amfo-making-a-podcast",
-        "creativity|innovation-sessions|george-the-poet-podcast-creation",
-        "creativity|innovation-sessions|grl-pwr-gang",
-        "creativity|innovation-sessions|gal-dem-motivation-creativity",
-        "creativity|editing-sessions|1"
+        "creativity|british-museum|3",
+        "creativity|innovation-sessions|george-the-poet-podcast-creation"
       ]
+    },
+    {
+      "type": "group",
+      "style": {
+        "scroll": true
+      },
+      "dynamic": "british-museum",
+      "id": "british-museum",
+      "title": "British Museum"
+    },
+    {
+      "type": "group",
+      "style": {
+        "scroll": true
+      },
+      "dynamic": "innovation-sessions",
+      "id": "innovation-sessions",
+      "title": "Innovation Sessions"
+    },
+    {
+      "type": "group",
+      "style": {
+        "scroll": true
+      },
+      "dynamic": "editing-sessions",
+      "id": "editing-sessions",
+      "title": "Editing Sessions"
     }
   ]
 }

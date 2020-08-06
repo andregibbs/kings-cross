@@ -32,6 +32,9 @@ $margin-mobile: $m-borders-mobile * 1px;
 /*----------  Nav height  ----------*/
 $nav-mobile-height: get-mobile-vw(100);
 
+// for cards
+$border-radius: 20px;
+
 body {
   line-height: 1.32;
 }

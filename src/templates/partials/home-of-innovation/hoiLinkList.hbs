@@ -1,6 +1,11 @@
 
 <div
-  class="hoiLinkList"
+  class="hoiLinkList
+  {{#if style}}
+    {{#if style.scroll}}hoiLinkList--scroll{{/if}}
+    {{#if style.feature}}hoiLinkList--feature{{/if}}
+  {{/if}}
+  "
   {{#if dynamic}}dynamic="{{dynamic}}"{{/if}}
   >
 
