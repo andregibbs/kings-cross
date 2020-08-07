@@ -62,8 +62,31 @@
     overflow-x: auto;
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
     display: block;
     white-space: nowrap;
+    &::-webkit-scrollbar {
+      // width: 8px; /* 1px wider than Lion. */
+      height: 8px;
+      /* This is more usable for users trying to click it. */
+      background-color: rgba(0,0,0,0);
+      -webkit-border-radius: 100px;
+    }
+    /* hover effect for both scrollbar area, and scrollbar 'thumb' */
+    &::-webkit-scrollbar:hover {
+      background-color: rgba(0, 0, 0, 0.09);
+    }
+    /* The scrollbar 'thumb' ...that marque oval shape in a scrollbar */
+    &::-webkit-scrollbar-thumb:horizontal {
+      /* This is the EXACT color of Mac OS scrollbars.
+         Yes, I pulled out digital color meter */
+      background: rgba(255,255,255,0.5);
+      -webkit-border-radius: 100px;
+    }
+    &::-webkit-scrollbar-thumb:horizontal:active {
+      background: rgba(255,255,255,0.61); /* Some darker color when you click it */
+      -webkit-border-radius: 100px;
+    }
   }
   .hoiList__Item {
     display: inline-block;

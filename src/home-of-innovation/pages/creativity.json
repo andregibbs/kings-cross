@@ -48,6 +48,18 @@
       ]
     },
     {
+      "type": "link-list-id",
+      "dynamic": "creativity-features",
+      "title": "Features",
+      "style": {
+        "scroll": true
+      },
+      "items": [
+        "creativity|central-saint-martins",
+        "creativity|graduate-fashion-week"
+      ]
+    },
+    {
       "type": "group",
       "style": {
         "scroll": true

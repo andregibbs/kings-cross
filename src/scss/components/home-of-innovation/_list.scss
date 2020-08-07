@@ -28,12 +28,9 @@ div.hoiList__Item {
     transform: scale(1.02);
   }
   .hoiList__ItemTitleDescription {
-    max-height: 4em;
     opacity: 1;
-
     &:before {
-      height: 0.5em;
-      transition: 0.3s ease-in-out;
+      transform: scale(1)
     }
   }
 }
@@ -63,7 +60,7 @@ div.hoiList__Item {
     z-index: -1;
     opacity: 0.9;
     transition: 0.3s ease-in-out;
-    background: linear-gradient(0deg, rgba(0,0,0,0.9), rgba(0,0,0,0.7));
+    background: linear-gradient(0deg, rgba(0,0,0,0.9), rgba(0,0,0,0.6));
   }
 }
 
@@ -83,13 +80,17 @@ div.hoiList__Item {
   margin-top: 0;
   max-height: 0;
   opacity: 0;
-  transition: 0.75s ease-in-out;
+  transition: 0.5s ease-in-out;
   font-size: 0.75em;
+  will-change: max-height;
+  white-space: normal;
   &:before {
     content: '';
     display: block;
-    height: 0;
-    transition: 0.75s ease-in-out;
+    height: 0.5em;
+    transform: scale(0);
+    will-change: transform;
+    transition: 0.5s ease-in-out;
   }
 }
 
@@ -100,8 +101,7 @@ div.hoiList__Item {
   overflow: hidden;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  transition: 0.75s ease-in-out;
+  transition: 2s ease-in-out;
   transform-origin: center;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility:    hidden;

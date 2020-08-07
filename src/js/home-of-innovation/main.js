@@ -24,8 +24,8 @@ import { createYoutubeInstance, loadYoutubeAPI } from './utils';
 
 
 import FindKX from '../components/findKX';
-
 import nav from '../components/nav';
+import initListItemHoverEvents from './hoiListItemHoverEvents'
 
 function init() {
 
@@ -75,6 +75,8 @@ function init() {
       dynamicGroupLand.forEach(element => {
         new HOIDynamicGroupLand(element)
       })
+
+      initListItemHoverEvents()
 
     })
 
