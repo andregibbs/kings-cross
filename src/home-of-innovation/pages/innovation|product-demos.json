@@ -1,0 +1,31 @@
+{
+  "title": "Product Masterclass",
+  "description": "Join one of our live Product Masterclasses to learn all about your Samsung devices",
+  "image": "",
+  "alt": "Black cartoon outlines of household items such as cooking utensils, paint brushes and cleaning products",
+  "thumb": "",
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "youtube",
+        "content": "dxKwWNFzITY",
+        "poster": "",
+        "alt": ""
+      },
+      "style": {
+        "desktop": "top",
+        "mobile": "top"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "{{innovation|product-demos[title]}}"
+        }
+      ]
+    },
+    {
+      "type": "share"
+    }
+  ]
+}
