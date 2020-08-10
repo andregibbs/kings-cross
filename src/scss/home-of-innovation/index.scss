@@ -14,11 +14,8 @@
 // Helpers
 @import "../helpers/helpers";
 
-
 @import "../components/social";
 @import "../components/find-kx";
-
-// wrap all components in hoi class
 
 $spacing-desktop: em(40); //$p-borders-desktop * 1px;
 $spacing-mobile: em(40); //$m-borders-mobile * 1px;
@@ -39,7 +36,7 @@ body {
   line-height: 1.32;
 }
 
-
+// wrap all components in hoi class
 
 .cheil-static.home-of-innovation {
 
@@ -81,7 +78,8 @@ body {
     @import "../components/home-of-innovation/hoiSpacer";
     @import "../components/home-of-innovation/hoiMedia";
 
-  }
+    @import "../components/home-of-innovation/hoiCards";
 
+  }
 
 }

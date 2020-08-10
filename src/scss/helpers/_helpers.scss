@@ -176,12 +176,13 @@
       }
 
       &--black {
-        border-color: white;
+        border-color: black;
         background-color: black;
         color: #fff;
         &:hover {
-          color: $orange;
+          color: $black;
           border-color: $white;
+          background-color: $white;
         }
       }
 

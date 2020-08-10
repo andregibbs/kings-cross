@@ -1,0 +1,21 @@
+// hoiCards styles for hub section
+// slightly different styles to main pages
+
+@import "../components/common/hoiCards";
+.hoiCards__hoiContainer {
+  margin-top: $spacing-desktop;
+  .hoiHeadline {
+    padding: 0 2.5em;
+  }
+  // hoiCards hoi variation (kept here to use hoi vars)
+  .hoiCards--hoi {
+    // adjusts margins and widths
+    margin-top: 0;
+    padding: 0 $spacing-mobile;
+    @media screen and (min-width: $mobile + 1) {
+      .hoiCards__Card {
+        width: calc(25% - 1em);
+      }
+    }
+  }
+}

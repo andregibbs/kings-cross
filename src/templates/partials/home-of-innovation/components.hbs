@@ -99,10 +99,22 @@
     {{> home-of-innovation/hoiGallery (gfw-filter this) }}
   {{/if_equals}}
 
+
+  {{!--
+    Other
+  --}}
+
   {{#if_equals this.type 'css-snippet'}}
-    <style>
-      {{this.content}}
-    </style>
+  <style>
+  {{this.content}}
+  </style>
+  {{/if_equals}}
+
+  {{#if_equals this.type 'hoi-cards'}}
+    <div class="hoiCards__hoiContainer">
+      {{> home-of-innovation/hoiHeadline level="3" copy="Explore" }}
+      {{> components/common/hoiCards style="hoi" current_page=this.current_page}}
+    </div>
   {{/if_equals}}
 
 

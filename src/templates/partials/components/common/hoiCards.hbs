@@ -1,4 +1,19 @@
-<div class="hoiCards">
+<div class="
+  hoiCards
+  {{#if style}}hoiCards--{{style}}{{/if}}
+  ">
+
+  {{#if_defined current_page}}
+
+    {{> card
+      title="Home"
+      image="https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/discover/2020-assets/home-test.jpg"
+      cta="Enter"
+      color="black"
+      url="/uk/explore/kings-cross/"
+    }}
+
+  {{/if_defined}}
 
   {{> card
     title="Lifestyle & Wellbeing"
@@ -8,13 +23,16 @@
     url="/uk/explore/kings-cross/lifestyle"
   }}
 
-  {{> card
-    title="Creativity"
-    image="https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/discover/2020-assets/creativity.jpg"
-    cta="Enter"
-    color="coral"
-    url="/uk/explore/kings-cross/creativity"
-  }}
+  {{#if_equals current_page 'creativity'}}
+  {{else}}
+    {{> card
+      title="Creativity"
+      image="https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/discover/2020-assets/creativity.jpg"
+      cta="Enter"
+      color="coral"
+      url="/uk/explore/kings-cross/creativity"
+    }}
+  {{/if_equals}}
 
   {{> card
     title="Entertainment"
