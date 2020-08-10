@@ -31,6 +31,8 @@ var chalk = require('chalk')
 var path = require('path')
 var fs = require('fs')
 
+import { getFilesInDirectory } from './tasks/helpers'
+
 var log = function( message, type ) {
 	return ( type === 'error' ) ? console.log( chalk.red( message ) ) : console.log( chalk.green( message ) );
 }
@@ -241,14 +243,6 @@ gulp.task('watch', function () {
 
 // HOI folder, moved to script scope as its used in multiple tasks
 var _HOI_FOLDER = 'home-of-innovation';
-
-// Helper direcory reader
-function getFilesInDirectory(dirPath, arrayOfFiles) {
-  files = fs.readdirSync(dirPath)
-  return files.map((file) => {
-    return path.join(dirPath, "/", file)
-  })
-}
 
 // Function to generate Home Of Innovation Pages
 function HOITemplates(skipTemplates, dynamicDataCallback, selectedFiles) {
