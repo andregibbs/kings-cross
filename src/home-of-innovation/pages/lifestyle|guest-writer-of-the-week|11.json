@@ -1,0 +1,111 @@
+{
+  "title": "Guest writer of the week: Build habits, not motivation",
+  "description": "The simplest way to take control of your life - without too much effort",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/11/gw11-joel-snape.jpg",
+  "alt": "",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/11/gw11-joel-snape.jpg",
+  "group": "guest-writer-of-the-week",
+  "sort": 11,
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "{{lifestyle|guest-writer-of-the-week|11[image]}}",
+        "alt": "{{lifestyle|guest-writer-of-the-week|11[alt]}}"
+      },
+      "style": {
+        "desktop": "right",
+        "mobile": "top"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "Build habits, not motivation"
+        }
+      ]
+    },
+    {
+      "type": "share"
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "paragraphs",
+          "text": [
+            "Between #MotivationMonday, dozens of celeb success stories and a thousand different posters and playlists, it’s easy to think that the M-word is all you need to worry about when you’re looking to introduce change. Get hyped, visualise success, watch your favourite Rocky montage and the rest will follow, right? Well, not so fast – the problem with motivation is that it doesn’t last, and the secret to real life-change is that it’s all about long-term consistency. And how do you guarantee the second one? Simple: build better habits.",
+            "Habits rule our lives: some studies <a href=\"#anno1\"><sup>[1]</sup></a> estimate that as many as 40% of our daily actions aren’t the result of conscious decisions*, but ingrained actions. You already have some good ones: you (probably) brush your teeth twice a day, and you (hopefully) don’t need a playlist to get it done. The trick is to make other healthy behaviours automatic, so that you eat well and exercise just as regularly. How? Here’s how."
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "Start small",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Aim to hit the gym for 60 minutes, five days a week, and you’re setting yourself up for disappointment. Start by thinking smaller: aim to get to the gym three or even two days a week, for just twenty minutes, to make it easier to hit your goals. On days where you’re feeling really low, set your sights lower but keep the habit intact – going to the gym or park, doing a couple of stretches and leaving beats doing nothing at all. In the same way, eating a healthy, protein-rich breakfast (eggs, basically) every day beats prepping a feast on Monday and skipping it for the rest of the week. And on that topic..."
+          ]
+        },
+
+        {
+          "type": "headline",
+          "copy": "Avoid 'zero' days",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "A 'zero' day is one where you don’t do anything productive towards your goal: not one single squat or effort at eating healthier. Aim to avoid these by setting yourself one micro-sized goal that you can accomplish as soon as you get up – nailing hydration by drinking a big glass of water once you are out of bed, or doing a short workout from one of the 120 your <a href=\"https://www.samsung.com/uk/wearables/galaxy-watch3-r850/SM-R850NZSAEUA/buy/\">Samsung Galaxy Watch3</a> can offer. Alternatively, if the clock hits 11:58PM and you’ve had an unproductive day, do one thing: decide on a healthy recipe you’ll try later in the week, or do one rep of any exercise. Keep that streak going, but don’t fret if you do miss one single day."
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "Use habit stacking",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "One of the simplest ways to forge new habits is to ‘stack’ them on top of existing ones: pairing something you want to do with something you already do automatically. If you get up every morning and immediately put the kettle on, for instance, you might ‘stack’ the habit of doing some simple stretches while you wait for the kettle to boil. If you shower every morning, get in the habit of doing one all-out set of press-ups before you jump under the water. You can also do this with work or lifestyle habits - for instance, writing a line of a novel or meditating for a few minutes immediately when you finish up for the day. "
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "Think like a computer",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Reprogramme your brain and you won’t even need to worry about making good decisions: they’ll happen automatically. Set up cues by using what behavioural scientists call If > Then patterns: “If I feel hungry before lunch, I’ll have an apple instead of a cupcake”, for instance. You can also change your thinking by changing the language you use around other people: “I don’t eat X” rather than “I can’t eat X” reminds you that you’re in control of the process."
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "And don’t be too hard on yourself",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "<a id=\"anno1\"></a>",
+            "The number of days it takes to really forge a new habit is contentious: some studies put it as low as 18, or as high as nearly three months. Stick at anything and you’ll eventually build it into your lifestyle, until the day comes when it’s easy and automatic. Until then, don’t worry - you’ll get there.",
+            "<br>",
+            "<strong>By Joel Snape</strong>",
+            "<em>Joel Snape is a freelance journalist, frequently contributing to titles including the Guardian, the Telegraph and Men’s Fitness. He now specialises in fitness, however previously spent time as an author, writing the children’s book series, Dylan Douglas.</em>",
+            "<sup>[1]</sup> Science Daily. \"How we form habits, change existing ones\". <a href=\"https://www.sciencedaily.com/releases/2014/08/140808111931.htm\" target=\"_blank\">https://www.sciencedaily.com/releases/2014/08/140808111931.htm</a>"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "dynamic": "more-articles",
+      "id": "guest-writer-of-the-week",
+      "title": "More articles"
+    }
+  ]
+}

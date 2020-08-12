@@ -94,6 +94,31 @@
 
 }
 
+// Livestream
+
+.hoiKv--theme-livestream-chat {
+  @media screen and (min-width: $mobile + 1) {
+    max-height: 80vh;
+  }
+  .hoiKv__Components {
+    width: 100%;
+    display: none;
+    padding: 0;
+    position: relative;
+    @media screen and (min-width: $mobile + 1) {
+      display: block;
+      width: 20%;
+      min-height: auto;
+    }
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
 
 // Themes
 

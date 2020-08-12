@@ -1,0 +1,161 @@
+{
+  "title": "The Alternative Careers Guide",
+  "description": "A brand new guide to help inspire a new generation of tech leaders",
+  "image": "https://picsum.photos/seed/1/720/720",
+  "alt": "",
+  "thumb": "",
+  "hidden": true,
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "{{innovation|alternative-careers-guide[image]}}",
+        "alt": "{{innovation|alternative-careers-guide[alt]}}"
+      },
+      "style": {
+        "desktop": "left",
+        "mobile": "top"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "{{innovation|alternative-careers-guide[title]}}"
+        }
+      ]
+    },
+    {
+      "type": "share"
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "paragraphs",
+          "style": {
+            "large": true
+          },
+          "text": [
+            "Today’s job market has changed beyond all recognition from the one which existed 25 years ago and there is a wealth of new technology-based roles that many people don’t even know exist.",
+            "To help young people realise the multitude of exciting technological opportunities open to them today, we have launched The Alternate Careers Guide, an online prospectus which features a series of interviews, fronted by radio and TV presenter, Roman Kemp as he meets some of the individuals spearheading their chosen professions.",
+            "Guests to the series include Drone Operator and founder of SkyBound Rescuer, Gemma Alcock, Tech Entrepreneur and Cashmere App Developer, Urenna Okonkwo, 3D prop designer Keith Thomson and Samsung Software Tester Mantas Navickas."
+          ]
+        }
+      ]
+    },
+
+    {
+      "type": "kv",
+      "media": {
+        "type": "video",
+        "content": "",
+        "poster": "https://picsum.photos/seed/2/720/720",
+        "title": ""
+      },
+      "style": {
+        "desktop": "right",
+        "mobile": "bottom"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "The Alternative Careers Guide: Gemma Alcock, Drone Operator",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Drone Operator Gemma Alcock is the founder and CEO of Skybound Rescuer, a research and training organisation which is dedicated to advancing drone life-saving technology for Emergency Response Services.",
+            "Her research focuses on finding the best aerial solutions to support difficult rescue operations at night, over mountain ranges and at sea where drones can provide vital information on the location of the casualty, potential environmental dangers and deliver resources and aid to the injured whilst help is on the way."
+          ]
+        }
+      ]
+    },
+
+    {
+      "type": "kv",
+      "media": {
+        "type": "video",
+        "content": "",
+        "poster": "https://picsum.photos/seed/3/720/720",
+        "title": ""
+      },
+      "style": {
+        "desktop": "left",
+        "mobile": "bottom"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "The Alternative Careers Guide: Urenna Okonkwo, App Creator",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Tech entrepreneur Urenna Okonkwo is the founder and creator of fashion app Cashmere - a smart and social savings platform that helps trendy millennials save towards and buy luxury fashion guilt-free without having to dip into their personal savings.",
+            "Urenna came up with the idea after spotting an expensive designer pair of shoes which she wanted and failed to find an existing fashion focussed savings app.",
+            "Realising she’d found a gap in the market, Urenna taught herself to code and developed the app on her own. It now has thousands of users and partners including Harvey Nichols, Liberty, Vestiaire Collective, Saks Fifth Avenue, Coach, Giuseppe Zanotti and many more."
+          ]
+        }
+      ]
+    },
+
+    {
+      "type": "kv",
+      "media": {
+        "type": "video",
+        "content": "",
+        "poster": "https://picsum.photos/seed/4/720/720",
+        "title": ""
+      },
+      "style": {
+        "desktop": "right",
+        "mobile": "bottom"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "The Alternative Careers Guide: Keith Thomson, 3D Prop Designer",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Prop designer Keith Thomson  is one of the 3D prop designers at Plunge Productions, a Brighton based company which creates props, costumes and sets for brands across TV and film including ITV’s The Masked Singer.",
+            "With technology always improving, Keith is on the forefront of utilising new artistic methods including 3D printing alongside more traditional processes such as sculpting and woodwork to bring his spectacular creations to life."
+          ]
+        }
+      ]
+    },
+
+    {
+      "type": "kv",
+      "media": {
+        "type": "video",
+        "content": "",
+        "poster": "https://picsum.photos/seed/5/720/720",
+        "title": ""
+      },
+      "style": {
+        "desktop": "left",
+        "mobile": "bottom"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "The Alternative Careers Guide: Mantas Navickas, Samsung Software Tester",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Technical Product Graduate Mantas Navickas is part of the emerging talent team at Samsung Electronics UK Headquarters in Chertsey.",
+            "Working with the leading technology at Samsung, Mantas coordinates new software releases for all Samsung devices across all networks as well as future schedules for new software as it’s developed.",
+            "He assists in communicating with the customer service team during new launches and assists the content team with testing of new services and software after they are introduced into the UK market."
+          ]
+        }
+      ]
+    }
+  ]
+}

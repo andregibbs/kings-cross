@@ -16,10 +16,12 @@ window.$j = $
 import HOIGallery from './hoiGallery';
 import HOIShare from './hoiShare';
 import HOIMediaVideo from './hoiMediaVideo';
+import HOIYoutubeLiveChat from './hoiYoutubeLiveChat'
 import HOIDynamicLinkList from './hoiDynamicLinkList';
 import HOIDynamicGroupLand from './hoiDynamicGroupLand';
 import sidedrawer from '../components/sidedrawer';
 import { createYoutubeInstance, loadYoutubeAPI } from './utils';
+
 
 import FindKX from '../components/findKX';
 
@@ -41,7 +43,10 @@ function init() {
     .then(() => {
 
       // init sharing
-      new HOIShare();
+      HOIShare();
+
+      // init live chats
+      HOIYoutubeLiveChat()
 
       // fetch dynamic opening times
       new FindKX()

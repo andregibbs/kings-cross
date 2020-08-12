@@ -44,6 +44,10 @@
     {{> home-of-innovation/hoiMediaYoutube this wrap=true}}
   {{/if_equals}}
 
+  {{#if_equals this.type 'youtube-live-chat'}}
+    {{> home-of-innovation/hoiYoutubeLiveChat this}}
+  {{/if_equals}}
+
   {{#if_equals this.type 'video'}}
     {{> home-of-innovation/hoiMediaVideo this wrap=true}}
   {{/if_equals}}

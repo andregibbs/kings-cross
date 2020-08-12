@@ -10,12 +10,15 @@
     {{else}}
       hoiKv--m-top
     {{/if}}
-    {{#if this.style.theme}}
-      hoiKv--theme-{{this.style.theme}}
-    {{/if}}
   {{else}}
     hoiKv--d-Left
     hoiKv--m-top
+  {{/if}}
+
+  {{#if this.style}}
+    {{#if this.style.theme}}
+      hoiKv--theme-{{this.style.theme}}
+    {{/if}}
   {{/if}}
 ">
 
@@ -45,7 +48,7 @@
           type=this.media.type
       }}
     {{/if}}
-    {{#if_equals this.media.type 'youtube'}}
+    {{#if (or (eq this.media.type 'youtube') (eq this.media.type 'livestream')) }}
       {{> home-of-innovation/hoiMediaYoutube
           class="hoiKv__MediaVideo"
           content=this.media.content
@@ -54,7 +57,7 @@
           poster_mobile=this.media.poster_mobile
           alt=this.media.alt
       }}
-    {{/if_equals}}
+    {{/if}}
   </div>
 
   <div class="hoiKv__Components">

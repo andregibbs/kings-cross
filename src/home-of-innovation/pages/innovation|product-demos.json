@@ -7,25 +7,41 @@
   "components": [
     {
       "type": "kv",
+      "style": {
+        "desktop": "left",
+        "mobile": "top",
+        "theme": "livestream-chat"
+      },
       "media": {
-        "type": "youtube",
+        "type": "livestream",
         "content": "dxKwWNFzITY",
         "poster": "",
         "alt": ""
       },
-      "style": {
-        "desktop": "top",
-        "mobile": "top"
-      },
       "components": [
         {
-          "type": "headline",
-          "copy": "{{innovation|product-demos[title]}}"
+          "type": "youtube-live-chat",
+          "content": "dxKwWNFzITY"
         }
       ]
     },
     {
       "type": "share"
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "headline",
+          "copy": "{{innovation|product-demos[title]}}"
+        },
+        {
+          "type": "__paragraphs",
+          "text": [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dui libero, viverra eget sem vitae, tempor imperdiet metus. Praesent massa purus, laoreet eget sagittis non, rutrum sed nunc. Curabitur accumsan mauris nulla, eget facilisis nunc consectetur vitae. Donec non leo tellus. Nulla vehicula mauris eu scelerisque volutpat. Maecenas bibendum massa et rutrum molestie. Aenean molestie, lacus nec imperdiet tristique, ex sem tincidunt turpis, ut imperdiet dui nisl sagittis nisl. Suspendisse tincidunt quam a aliquam commodo. Integer sed ante a justo ultrices dignissim. Donec id dolor erat. Suspendisse et sollicitudin sapien."
+          ]
+        }
+      ]
     }
   ]
 }
