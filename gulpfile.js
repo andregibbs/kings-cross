@@ -31,7 +31,7 @@ var chalk = require('chalk')
 var path = require('path')
 var fs = require('fs')
 
-import { getFilesInDirectory } from './tasks/helpers'
+var getFilesInDirectory = require('./tasks/helpers').getFilesInDirectory
 
 var log = function( message, type ) {
 	return ( type === 'error' ) ? console.log( chalk.red( message ) ) : console.log( chalk.green( message ) );
