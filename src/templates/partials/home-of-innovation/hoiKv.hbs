@@ -31,7 +31,10 @@
     {{!-- TODO add mobile image --}}
     <div
         class="hoiKv__MediaImage"
-        style="background-image:url('{{ this.media.content }}')"
+        style="
+          background-image:url('{{ this.media.content }}');
+          {{#if this.style}}{{#if this.style.media_background_position}}background-position: {{this.style.media_background_position}};{{/if}}{{/if}}
+        "
         role="img"
         aria-label="{{ this.media.alt }}">
     </div>

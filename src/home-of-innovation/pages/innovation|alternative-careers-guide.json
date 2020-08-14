@@ -1,11 +1,16 @@
 {
   "title": "The Alternative Careers Guide",
   "description": "A brand new guide to help inspire a new generation of tech leaders",
-  "image": "https://picsum.photos/seed/1/720/720",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/alternative-careers-guide/kv.jpg",
   "alt": "",
-  "thumb": "",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/alternative-careers-guide/kv.jpg",
   "hidden": true,
   "components": [
+    {
+      "type": "css-snippet",
+      "content": ".hoiKv--theme-section-guide .hoiKv__MediaImage { background-size: contain !important; } .hoiContent .btn { min-width: 200px; } .hoiContent video { object-fit: contain !important; }"
+    },
+
     {
       "type": "kv",
       "media": {
@@ -14,7 +19,7 @@
         "alt": "{{innovation|alternative-careers-guide[alt]}}"
       },
       "style": {
-        "desktop": "left",
+        "desktop": "top",
         "mobile": "top"
       },
       "components": [
@@ -27,18 +32,38 @@
     {
       "type": "share"
     },
+
     {
-      "type": "wrapper",
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/alternative-careers-guide/Samsung_Alternative_Careers_Report_Final_Cover.jpg",
+        "title": ""
+      },
+      "style": {
+        "desktop": "left",
+        "mobile": "bottom",
+        "theme": "section-guide"
+      },
       "components": [
         {
           "type": "paragraphs",
-          "style": {
-            "large": true
-          },
           "text": [
-            "Today’s job market has changed beyond all recognition from the one which existed 25 years ago and there is a wealth of new technology-based roles that many people don’t even know exist.",
-            "To help young people realise the multitude of exciting technological opportunities open to them today, we have launched The Alternate Careers Guide, an online prospectus which features a series of interviews, fronted by radio and TV presenter, Roman Kemp as he meets some of the individuals spearheading their chosen professions.",
-            "Guests to the series include Drone Operator and founder of SkyBound Rescuer, Gemma Alcock, Tech Entrepreneur and Cashmere App Developer, Urenna Okonkwo, 3D prop designer Keith Thomson and Samsung Software Tester Mantas Navickas."
+            "Today’s job market has changed beyond all recognition from the one which existed 25 years ago, with many young people keen to pursue new and exciting careers in tech over traditional vocational professions.",
+            "16-18 year olds have been hit hard by the impact of Covid-19, with millions across the UK being forced to reconsider their plans for further education or rethink the next step in their career.",
+            "To help educate young people about the exciting careers in tech available to them, Samsung have created the Alternative Careers Guide, a series of interviews with young people making waves in their tech industries. The series is hosted by radio and TV presenter Roman Kemp.",
+            "Series guests include Drone Operator Gemma Alcock, Tech Entrepreneur and App Creator Urenna Okonkwo, 3D Prop Designer Keith Thomson and Mantas Navickas Samsung Technical Product Graduate specialising in Software Testing.",
+            "To learn more about the Alternative Careers Guide please click below."
+          ]
+        },
+        {
+          "type": "buttons",
+          "items": [
+            {
+              "copy": "Learn more",
+              "url": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/alternative-careers-guide/4934_Samsung_Alternative_Careers_Report_V5.pdf",
+              "target": "_blank"
+            }
           ]
         }
       ]
@@ -48,9 +73,9 @@
       "type": "kv",
       "media": {
         "type": "video",
-        "content": "",
-        "poster": "https://picsum.photos/seed/2/720/720",
-        "title": ""
+        "content": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/alternative-careers-guide/SamsungCareers_Gemma_Drone_Cut9.mp4",
+        "poster": "",
+        "title": "Gemma Alcock, Drone Operator"
       },
       "style": {
         "desktop": "right",
@@ -59,7 +84,7 @@
       "components": [
         {
           "type": "headline",
-          "copy": "The Alternative Careers Guide: Gemma Alcock, Drone Operator",
+          "copy": "Gemma Alcock, Drone Operator",
           "level": "3"
         },
         {
@@ -76,9 +101,8 @@
       "type": "kv",
       "media": {
         "type": "video",
-        "content": "",
-        "poster": "https://picsum.photos/seed/3/720/720",
-        "title": ""
+        "content": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/alternative-careers-guide/SamsungCareers_Urenna_TechEnt_Cut8.mp4",
+        "title": "Urenna Okonkwo, App Creator"
       },
       "style": {
         "desktop": "left",
@@ -87,7 +111,7 @@
       "components": [
         {
           "type": "headline",
-          "copy": "The Alternative Careers Guide: Urenna Okonkwo, App Creator",
+          "copy": "Urenna Okonkwo, App Creator",
           "level": "3"
         },
         {
@@ -105,9 +129,8 @@
       "type": "kv",
       "media": {
         "type": "video",
-        "content": "",
-        "poster": "https://picsum.photos/seed/4/720/720",
-        "title": ""
+        "content": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/alternative-careers-guide/SamsungCareers_Keith_Props_Cut4.mp4",
+        "title": "Keith Thomson, 3D Prop Designer"
       },
       "style": {
         "desktop": "right",
@@ -116,7 +139,7 @@
       "components": [
         {
           "type": "headline",
-          "copy": "The Alternative Careers Guide: Keith Thomson, 3D Prop Designer",
+          "copy": "Keith Thomson, 3D Prop Designer",
           "level": "3"
         },
         {
@@ -133,9 +156,8 @@
       "type": "kv",
       "media": {
         "type": "video",
-        "content": "",
-        "poster": "https://picsum.photos/seed/5/720/720",
-        "title": ""
+        "content": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/alternative-careers-guide/SamsungCareers_Mantas_Samsung_Cut5.mp4",
+        "title": "Mantas Navickas, Samsung Software Tester"
       },
       "style": {
         "desktop": "left",
@@ -144,7 +166,7 @@
       "components": [
         {
           "type": "headline",
-          "copy": "The Alternative Careers Guide: Mantas Navickas, Samsung Software Tester",
+          "copy": "Mantas Navickas, Samsung Software Tester",
           "level": "3"
         },
         {
@@ -153,6 +175,28 @@
             "Technical Product Graduate Mantas Navickas is part of the emerging talent team at Samsung Electronics UK Headquarters in Chertsey.",
             "Working with the leading technology at Samsung, Mantas coordinates new software releases for all Samsung devices across all networks as well as future schedules for new software as it’s developed.",
             "He assists in communicating with the customer service team during new launches and assists the content team with testing of new services and software after they are introduced into the UK market."
+          ]
+        }
+      ]
+    },
+
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "paragraphs",
+          "text": [
+            "Samsung are committed to supporting and nurturing the next generation interested in exploring a career in tech. The company’s Emerging Talent programme offers placement and graduate opportunities to young people looking to take the next step in their career.",
+            "To find out more about how to apply for opportunities at Samsung click below."
+          ]
+        },
+        {
+          "type": "buttons",
+          "items": [
+            {
+              "copy": "Learn more",
+              "url": "https://www.samsung.com/uk/aboutsamsung/careers/emerging-talent/placement-opportunities/"
+            }
           ]
         }
       ]

@@ -1,0 +1,118 @@
+{
+	"title": "Blog",
+	"description": "A brand-new digital series from the Home of Innovation to inspire the UK ",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/innovation-sessions/adam-gemili-rachel-ama/ep6_tall.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/innovation-sessions/adam-gemili-rachel-ama/ep6_thumb.jpg",
+	"components": [
+    {
+			"type": "kv",
+			"media": {
+				"type": "image",
+				"content": "{{creativity|innovation-sessions|adam-gemili-rachel-ama-get-fit-get-cooking|blog[image]}}",
+				"alt": "{{creativity|innovation-sessions|adam-gemili-rachel-ama-get-fit-get-cooking|blog[alt]}}"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "top",
+        "media_background_position": "center bottom"
+			},
+			"components": [{
+				"type": "headline",
+				"level": "1",
+				"copy": "Innovation Sessions: Get fit and get cooking"
+			}]
+		},
+		{
+			"type": "share"
+		},
+		{
+			"type": "wrapper",
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Adams Blog",
+					"level": "3"
+				},
+        {
+          "type": "paragraphs",
+          "text": [
+            "Being an athlete involves commitment, hard-work, and a need to consistently push yourself. A huge part of this is about tracking your performance - from measuring sleep and food intake, to energy burned, to general health analytics. I’m able to measure all of these variables and adjust my training sessions accordingly thanks to modern day tech and devices.",
+            "For my job, daily routine is incredibly important – especially in 2020! Given the unusual circumstances of the past few months, I have had to maintain my fitness from home like many other athletes. Not being able to get on the track or down the gym, each day I would complete a simple HIIT work out from home to get my heart rate up and push myself.",
+            "2020 has taught me that you don’t need much to keep progressing towards your goals, and whatever hurdles are thrown at you, you have to keep going. Below is a simple work out that I would complete daily during lockdown that you can try too. It’s great to raise your heartbeat, burn some calories, and get you fit without having to leave the lounge. I’m sure this can work for you too."
+          ]
+        },
+				{
+					"type": "headline",
+					"copy": "Warm-Up",
+					"level": "4"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"To warm-up, ideally you want to get your heart rate up and your body moving comfortably with some light jogging, star jumps and lunges. Remember, it’s only a warm-up – the hard parts are yet to come!"
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "HIIT Circuit",
+					"level": "4"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+            "A HIIT circuit with 45 seconds of intense exercise followed by 15 seconds of rest is a great way to get fit without any equipment.",
+            "Pick six exercises, so your circuit lasts six minutes, then rest for two minutes and repeat two to five times depending on your level of fitness.",
+            "This can keep you working for 16 to 40 minutes depending on your desired intensity. If you are just starting out, stick to two. If you are already working out, try and push yourself to hit the five rounds.",
+            "The idea is that you give each 45 seconds everything you’ve got so you are really tired at the end of the exercises. The short recovery period allows for the body to reset, before going again on a different exercise, targeting a different part of the body.",
+            "Here is an example of six exercises that I would do as part of a circuit:",
+            "Mountain climbers<br>Press ups<br>Leg raises<br>Burpees<br>Squat into tuck jumps<br>Crunches",
+            "I hope this inspires you to get your devices out, get your tracking apps and watches at the ready, and give this a go. Good luck!"
+					]
+				},
+        {
+					"type": "headline",
+					"copy": "Rachel's Blog",
+					"level": "3"
+				},
+        {
+          "type": "paragraphs",
+          "text": [
+            "As a vegan chef – I’m happiest in life when in the kitchen, dancing and singing along to some of my favourite tunes, cooking up a storm.",
+            "I’m a big believer in cooking from the heart - creating something that’s fun and full of flavour. Something that my friends and family are going to love.",
+            "For me, inspiration comes from taking traditional vegan recipes and mixing them up with food from my Caribbean and West African roots; food that’s full of flavour and full of soul.",
+            "Cooking sustainably and mindfully is really important to me. This comes down to the choice of ingredients I use; always simple, affordable but also ethical. This also comes down to being considerate with food wastage too.",
+            "Using tech, such as the Samsung Family Hub fridge, is an incredibly futuristic way of managing your food waste. It tags and tracks expiry dates and helps you to create recipes based on when food products are about to reach their best. I think everyone has a responsibility to be mindful about their food usage and using tech such as this is an incredible way to do so!",
+            "All of my recipes featured in my new book; Rachel Ama Vegan Eats, use as much of the raw ingredients as possible, helping to minimise waste.",
+            "Cauliflower, for example – is one of the mystical ingredients that people a) really underrate and b) don’t use properly… until they know how!",
+            "With cauliflower, you can use all of the flower, including the leaves to create a truly delicious, simple vegan meal. Below shows a recipe that’s featured in my book – which I’m sure you’ll love. Try it with some crispy popadoms and some mango chutney for dunking them into. This recipe would also make a fantastic side for a curry or dhal."
+          ]
+        },
+				{
+					"type": "headline",
+					"copy": "Curry-roasted Cauliflower with Coconut Raita",
+					"level": "4"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Serves 2 as a main or 4 as a side",
+            "Ingredients:<br>1 cauliflower, broken into small florets and saving the outer leaves<br>1 tsp ground turmeric<br>1 tbsp curry powder<br>2 tbsp coconut oil, melted 3 poppadoms, plus extra to serve Salt and black pepper Mango chutney, to serve.",
+            "<strong>For the courgette coconut raita:</strong><br>200g unsweetened vegan coconut yoghurt<br>2 tbsp extra-virgin olive oil 1⁄4 courgette, finely grated<br>Small handful of mint leaves, roughly chopped, saving some whole leaves to garnish<br>",
+            "Juice and grated zest of 1 lime (saving half the juice for dressing the cauli ower)",
+            "<strong>Recipe:</strong>",
+            "Preheat the oven to 200°C fan.",
+            "Place the cauliflower florets in a roasting tin with the spices, some salt and pepper and the coconut oil, then mix everything together so that the cauliflower is evenly coated. Roast in the oven for 20 minutes, then remove from the oven and mix in the cauliflower leaves, tearing up any that look too big. Place back in the oven to roast for a further 10 minutes until everything is soft and slightly charred.<br>Meanwhile, mix together all the raita ingredients in a bowl, season with salt and pepper and set aside.",
+            "Remove the cauliflower from the oven, add the lime juice (reserved from making the raita) and crunch the poppadoms on top. Serve with the raita, mango chutney and poppadoms and garnish with the whole mint leaves."
+					]
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "more-episodes",
+			"id": "innovation-sessions",
+			"title": "More episodes"
+		}
+	]
+}
