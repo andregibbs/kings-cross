@@ -187,13 +187,14 @@ Items can hold multiple media items, and handle three different media types; Ima
 ```
 
 ### GroupLand
-Component ID: **groupland**
+Component ID: **group-land**
 
 Can hold and display up to 4 items with the following options. Layout of the component adjusts automatically depending on how many items are included.
 
 ```javaScript
 {
   "type": "group-land",
+  "dynamic": DYNAMIC_ID (OPTIONAL (see Dynamic components))
   "items": [
     {
       "title": ITEM_TITLE (REQUIRED)
@@ -205,6 +206,25 @@ Can hold and display up to 4 items with the following options. Layout of the com
   ]
 }
 ```
+
+### GroupLand ID
+Component ID: **group-land-id**
+
+Will render the same templates as regular group-land, but items can be populated using an array of page IDs
+
+```javaScript
+{
+  "type": "group-land-id",
+  "dynamic": DYNAMIC_ID (OPTIONAL (see Dynamic components))
+  "items": [
+    "category|page-id",
+    "creativity|innovation-sessions|adam-gemili-rachel-ama-get-fit-get-cooking",
+    "creativity|innovation-sessions|elz-barney-career-advice",
+    ...
+  ]
+}
+```
+
 ### Headline
 Component ID: **headline**
 
@@ -301,6 +321,7 @@ Component ID: **linklist**
 {
   "type": "link-list",
   "title": LIST_TITLE (OPTIONAL)
+  "dynamic": DYNAMIC_ID (OPTIONAL (see Dynamic components))
   "items": [
     {
       "title": ITEM_TITLE (REQUIRED)
@@ -324,6 +345,7 @@ All pages that match the PAGE_GROUP_ID will be included and be sorted by their P
 {
   "type": "group",
   "title": LIST_TITLE (OPTIONAL)
+  "dynamic": DYNAMIC_ID (OPTIONAL (see Dynamic components))
   "id": PAGE_GROUP_ID (REQUIRED)
 }
 ```
@@ -373,6 +395,41 @@ Generally used directly under KV and unwrapped. but can probably be included any
   "type": "share"
 }
 ```
+
+## Dynamic components
+
+Some components can be configured to load the content dynamically, reducing the need to deploy multiple pages when only one page has been updated.
+
+The components this applies to are:
+* group
+* link-list
+* group-land
+* group-land-id
+
+To configure the component for dynamic deployment, simply include the `"dynamic"` key to the component object, and create a **unique dynamic ID for the page**. This ID is used to load the content via javascript.
+
+```javaScript
+{
+  "type": "group",
+  "dynamic": "unique-for-page-id",
+  "id": "page-group-to-load"
+}
+```
+
+The HOI build task will resolve and populate all the content for the page, before template generation. At this point the data marked to be dynamic will be copied out for use in local, staging, p6-qa and live dynamic component loading.
+
+To deploy the data to the staging and p6-qa environment, use the command: (p6-qa.samsung.com & our cloudfront staging)
+
+`npm run hoi-dynamic-staging`
+
+For live use: (samsung.com only)
+
+`npm run hoi-dynamic-live`
+
+You will be prompted to confirm the live deployment in terminal.
+
+After deployment, any pages that are published with dynamic components will automatically consume the new data for display.
+
 
 ## Other Components
 
