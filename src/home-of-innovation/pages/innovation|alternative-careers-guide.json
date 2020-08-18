@@ -1,14 +1,14 @@
 {
   "title": "The Alternative Careers Guide",
   "description": "A brand new guide to help inspire a new generation of tech leaders",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/alternative-careers-guide/kv.jpg",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/alternative-careers-guide/KeyVisual-Roman_Kemp.jpg",
   "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/alternative-careers-guide/kv.jpg",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/alternative-careers-guide/KeyVisual-Roman_Kemp.jpg",
   "hidden": true,
   "components": [
     {
       "type": "css-snippet",
-      "content": ".hoiKv--theme-section-guide .hoiKv__MediaImage { background-size: contain !important; } .hoiContent .btn { min-width: 200px; } .hoiContent video { object-fit: contain !important; }"
+      "content": ".hoiKv--theme-section-guide .hoiKv__MediaImage { background-size: contain !important; } .hoiContent .btn { min-width: 200px; } .hoiContent video { object-fit: contain !important; } .hoiContent h3 { color: #FF4337 !important;}"
     },
 
     {
@@ -49,9 +49,9 @@
         {
           "type": "paragraphs",
           "text": [
-            "Today’s job market has changed beyond all recognition from the one which existed 25 years ago, with many young people keen to pursue new and exciting careers in tech over traditional vocational professions.",
-            "16-18 year olds have been hit hard by the impact of Covid-19, with millions across the UK being forced to reconsider their plans for further education or rethink the next step in their career.",
-            "To help educate young people about the exciting careers in tech available to them, Samsung have created the Alternative Careers Guide, a series of interviews with young people making waves in their tech industries. The series is hosted by radio and TV presenter Roman Kemp.",
+            "With all the global changes over the last few months, you might be finding yourself thinking about what your future looks like.",
+            "Here at Samsung, we want to be there for you and support you in your next steps. Careers that you might not have thought possible (or existed!) such as being an app designer or a drone pilot are very much a reality.",
+            "We’ve pulled together a few videos from your peers who are making waves in their tech industries, the series is hosted by radio and TV presenter Roman Kemp, showing you how you can make still your interests and dreams a reality.",
             "Series guests include Drone Operator Gemma Alcock, Tech Entrepreneur and App Creator Urenna Okonkwo, 3D Prop Designer Keith Thomson and Mantas Navickas Samsung Technical Product Graduate specialising in Software Testing.",
             "To learn more about the Alternative Careers Guide please click below."
           ]
@@ -172,9 +172,8 @@
         {
           "type": "paragraphs",
           "text": [
-            "Technical Product Graduate Mantas Navickas is part of the emerging talent team at Samsung Electronics UK Headquarters in Chertsey.",
-            "Working with the leading technology at Samsung, Mantas coordinates new software releases for all Samsung devices across all networks as well as future schedules for new software as it’s developed.",
-            "He assists in communicating with the customer service team during new launches and assists the content team with testing of new services and software after they are introduced into the UK market."
+            "Technical Product Graduate Mantas Navickas works at Samsung Electronics UK, as part of Samsung’s Emerging Talent Scheme. The scheme offers placement and graduate opportunities to young people looking to take the next step in a career in tech.",
+            "Mantas works in the team at Samsung that coordinate the new software releases for all Samsung devices, testing the software on phones before it reaches customers."
           ]
         }
       ]

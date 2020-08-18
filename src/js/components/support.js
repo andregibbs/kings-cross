@@ -139,15 +139,15 @@ export default function support() {
                       $j("#confirmation").addClass('confirmation-121') // add class to confirmation to adjust content
                       break;
 
-                    case "support":
-                        bookingURL = "https://bookings.qudini.com/booking-widget/booker/slots/IZ0LYUJL6B0/4375/37437/0";
-                        state.productId = "37437";
-                        break;
-
                     case "repair":
-                        bookingURL = "https://bookings.qudini.com/booking-widget/booker/slots/IZ0LYUJL6B0/4375/62764/0";
-                        state.productId = "62764";
-                        break;
+                      bookingURL = "https://bookings.qudini.com/booking-widget/booker/slots/IZ0LYUJL6B0/4375/62764/0";
+                      state.productId = "62764";
+                      break;
+                    case "support":
+                      bookingURL = "https://bookings.qudini.com/booking-widget/booker/slots/ZP4CQAQ5F6R/4375/64732/0";
+                      state.productId = "64732";
+                      break;
+
                     default:
                         console.error("Incorrect category");
                         return;
@@ -256,7 +256,9 @@ export default function support() {
                             elm.classList.remove("checkbox__" + colors[state.category]);
                         });
                         ["oneToOne", "support", "repair"].forEach(function (category) {
+                          if (document.getElementById("btn-" + category)) {
                             document.getElementById("btn-" + category).classList.remove("btn--primary-notActive");
+                          }
                         });
 
                         $j(".checkbox").siblings("input").prop("checked", false);

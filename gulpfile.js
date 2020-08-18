@@ -267,7 +267,6 @@ function HOITemplates(skipTemplates, dynamicDataCallback, selectedFiles) {
     // otherwise use all
     pages = getFilesInDirectory(pagesBasePath)
   }
-  console.log(pages)
 
   // is staging task
   const isStagingTask = argv._[0] === 'hoi-staging';
