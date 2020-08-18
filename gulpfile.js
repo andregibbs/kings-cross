@@ -251,14 +251,23 @@ function getFilesInDirectory(dirPath, arrayOfFiles) {
 }
 
 // Function to generate Home Of Innovation Pages
-function HOITemplates(skipTemplates, dynamicDataCallback) {
+function HOITemplates(skipTemplates, dynamicDataCallback, selectedFiles) {
 
   // Path to HOI config pages
   const pagesBasePath = config.SRC_FOLDER + '/' + _HOI_FOLDER + '/pages/'
   // Public path for relative urls
   const publicUrl = '/' + SITE + SUBFOLDER + '/';
+
   // Array of file paths to page configs
-  const pages = getFilesInDirectory(pagesBasePath)
+  let pages;
+  // if a single file is specified
+  if (selectedFiles) {
+    pages = selectedFiles
+  } else {
+    // otherwise use all
+    pages = getFilesInDirectory(pagesBasePath)
+  }
+  console.log(pages)
 
   // is staging task
   const isStagingTask = argv._[0] === 'hoi-staging';
@@ -606,7 +615,12 @@ gulp.task('home-of-innovation-scss', () => {
 
 // Home Of Innovation Watch Task
 gulp.task('home-of-innovation-watch', () => {
-  gulp.watch( config.SRC_FOLDER + '/' + _HOI_FOLDER + '/**/*', ['home-of-innovation-build'] )
+  // watch and update all (removed as was getting slow)
+  // gulp.watch( config.SRC_FOLDER + '/' + _HOI_FOLDER + '/**/*', ['home-of-innovation-build'] )
+  gulp.watch( config.SRC_FOLDER + '/' + _HOI_FOLDER + '/**/*', (changeObj) => {
+    // use changed file object to only update single template, wraped in array
+    return HOITemplates(false, false, [changeObj.path])
+  } )
   gulp.watch( config.SRC_FOLDER + '/scss/**/*.scss', ['home-of-innovation-scss'] )
   gulp.watch( config.SRC_FOLDER + '/js/**/*.js', ['home-of-innovation-js'] )
   gulp.watch( config.SRC_FOLDER + '/templates/partials/**/*', ['home-of-innovation-build'] )
