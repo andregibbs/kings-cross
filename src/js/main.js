@@ -35,6 +35,7 @@ import loadingScreen from "./components/loadingScreen";
 import getParam from "./components/getParam";
 import school from "./components/school";
 import homeKV from './components/homeKV';
+import hoiSearch from './components/common/hoiSearch';
 
 import loadingScreenAnimation from "../data/loadingScreen.json";
 import create from "../data/Create.json";
@@ -506,6 +507,10 @@ $j(document).ready(function () {
 
 		case "/uk/explore/kings-cross/not-a-school/sign-up/":
 			//places();
+			break;
+
+    case "/uk/explore/kings-cross/search/":
+      hoiSearch();
 			break;
 
     // case "/uk/explore/kings-cross/next-level-gaming/":

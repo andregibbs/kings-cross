@@ -79,7 +79,7 @@ files.forEach((file, index) => {
     title: data.title,
     description: data.description,
     image: data.image,
-    url: PUBLIC_URL + id.replace('|','/'),
+    url: PUBLIC_URL + id.replace(/\|/g,'/'),
     values: fileValues.join()
   })
 
@@ -87,4 +87,4 @@ files.forEach((file, index) => {
 
 
 console.log('file written', LOCAL_BUILD_FOLDER)
-fs.writeFileSync(LOCAL_BUILD_FOLDER + '/hoi-search.json', JSON.stringify(pageData))
+fs.writeFileSync(LOCAL_BUILD_FOLDER + 'uk/explore/kings-cross/hoi-search.json', JSON.stringify(pageData))
