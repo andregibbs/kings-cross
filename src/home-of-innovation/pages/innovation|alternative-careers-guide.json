@@ -4,7 +4,6 @@
   "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/alternative-careers-guide/KeyVisual-Roman_Kemp.jpg",
   "alt": "",
   "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/alternative-careers-guide/KeyVisual-Roman_Kemp.jpg",
-  "hidden": true,
   "components": [
     {
       "type": "css-snippet",
@@ -51,8 +50,8 @@
           "text": [
             "With all the global changes over the last few months, you might be finding yourself thinking about what your future looks like.",
             "Here at Samsung, we want to be there for you and support you in your next steps. Careers that you might not have thought possible (or existed!) such as being an app designer or a drone pilot are very much a reality.",
-            "We’ve pulled together a few videos from your peers who are making waves in their tech industries, the series is hosted by radio and TV presenter Roman Kemp, showing you how you can make still your interests and dreams a reality.",
-            "Series guests include Drone Operator Gemma Alcock, Tech Entrepreneur and App Creator Urenna Okonkwo, 3D Prop Designer Keith Thomson and Mantas Navickas Samsung Technical Product Graduate specialising in Software Testing.",
+            "We’ve pulled together a few videos from your peers who are making waves in their tech industries, the series is hosted by radio and TV presenter Roman Kemp, showing you how you can still make your interests and dreams a reality.",
+            "Series guests include Drone Operator Gemma Alcock, Tech Entrepreneur and App Creator Urenna Okonkwo, 3D Prop Designer Keith Thomson and Mantas Navickas, a Samsung Technical Product Graduate specialising in Software Testing.",
             "To learn more about the Alternative Careers Guide please click below."
           ]
         },
@@ -61,7 +60,7 @@
           "items": [
             {
               "copy": "Learn more",
-              "url": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/alternative-careers-guide/4934_Samsung_Alternative_Careers_Report_V5.pdf",
+              "url": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/alternative-careers-guide/4934_Samsung_Alternative_Careers_Report_Final2.pdf",
               "target": "_blank"
             }
           ]
@@ -73,7 +72,7 @@
       "type": "kv",
       "media": {
         "type": "video",
-        "content": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/alternative-careers-guide/SamsungCareers_Gemma_Drone_Cut9.mp4",
+        "content": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/alternative-careers-guide/Gemma_Drone_2min_Subs.mp4",
         "poster": "",
         "title": "Gemma Alcock, Drone Operator"
       },
@@ -91,7 +90,7 @@
           "type": "paragraphs",
           "text": [
             "Drone Operator Gemma Alcock is the founder and CEO of Skybound Rescuer, a research and training organisation which is dedicated to advancing drone life-saving technology for Emergency Response Services.",
-            "Her research focuses on finding the best aerial solutions to support difficult rescue operations at night, over mountain ranges and at sea where drones can provide vital information on the location of the casualty, potential environmental dangers and deliver resources and aid to the injured whilst help is on the way."
+            "Her research focuses on finding the best aerial solutions to support difficult rescue operations at night, over mountain ranges and at sea where drones can provide vital information on the location of the casualty and potential environmental dangers, as well as deliver resources and aid to the injured whilst help is on the way."
           ]
         }
       ]
@@ -101,7 +100,7 @@
       "type": "kv",
       "media": {
         "type": "video",
-        "content": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/alternative-careers-guide/SamsungCareers_Urenna_TechEnt_Cut8.mp4",
+        "content": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/alternative-careers-guide/SamsungCareers_Urenna_TechEnt_Sub.mp4",
         "title": "Urenna Okonkwo, App Creator"
       },
       "style": {
@@ -129,7 +128,7 @@
       "type": "kv",
       "media": {
         "type": "video",
-        "content": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/alternative-careers-guide/SamsungCareers_Keith_Props_Cut4.mp4",
+        "content": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/alternative-careers-guide/SamsungCareers_Keith_Props_Sub.mp4",
         "title": "Keith Thomson, 3D Prop Designer"
       },
       "style": {
@@ -145,7 +144,7 @@
         {
           "type": "paragraphs",
           "text": [
-            "Prop designer Keith Thomson  is one of the 3D prop designers at Plunge Productions, a Brighton based company which creates props, costumes and sets for brands across TV and film including ITV’s The Masked Singer.",
+            "Prop designer Keith Thomson is one of the 3D prop designers at Plunge Creations a Brighton based company which creates props, costumes and sets for brands across TV and film including ITV’s The Masked Singer.",
             "With technology always improving, Keith is on the forefront of utilising new artistic methods including 3D printing alongside more traditional processes such as sculpting and woodwork to bring his spectacular creations to life."
           ]
         }
@@ -156,7 +155,7 @@
       "type": "kv",
       "media": {
         "type": "video",
-        "content": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/alternative-careers-guide/SamsungCareers_Mantas_Samsung_Cut5.mp4",
+        "content": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/alternative-careers-guide/SamsungCareers_Mantas_Samsung_Sub.mp4",
         "title": "Mantas Navickas, Samsung Software Tester"
       },
       "style": {
