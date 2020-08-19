@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Search</title>
+  </head>
+  <body>
+
+    <input id="search" />
+
+    <div id="results">
+
+    </div>
+
+    <script type="text/javascript">
+      var searchFile = '/hoi-search.json'
+      var input = document.querySelector('#search')
+      var data;
+
+      fetch(searchFile)
+        .then(r => r.json())
+        .then(json => {
+          console.log(json)
+          data = json
+        })
+
+      input.addEventListener('input', (e) => {
+        var value = input.value
+        if (value.length > 2) {
+          results = searchPages(value)
+          renderResults(results)
+        } else {
+          renderResults([])
+        }
+      })
+
+      function searchPages(input) {
+        return data.filter(i => {
+          return i.values.toLowerCase().indexOf(input) > -1
+        })
+      }
+
+      function renderResults(results) {
+        var el = document.querySelector('#results')
+        el.textContent = ''
+
+        results.forEach(r => {
+          var newEl = document.createElement('div')
+          newEl.innerText = `${r.title}, ${r.url}`
+          el.appendChild(newEl)
+        })
+      }
+    </script>
+  </body>
+</html>
