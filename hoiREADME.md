@@ -210,7 +210,7 @@ Can hold and display up to 4 items with the following options. Layout of the com
 ### GroupLand ID
 Component ID: **group-land-id**
 
-Will render the same templates as regular group-land, but items can be populated using an array of page IDs
+Will render the same templates as regular group-land, but items can be populated using an array of page IDs. This component can hold more than 4 items and will generate multiple GroupLand components automatically.
 
 ```javaScript
 {
