@@ -71,8 +71,8 @@
     {
       "type": "kv",
       "media": {
-        "type": "video",
-        "content": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/alternative-careers-guide/Gemma_Drone_2min_Subs.mp4",
+        "type": "youtube",
+        "content": "4usnA8Z5q4w",
         "poster": "",
         "title": "Gemma Alcock, Drone Operator"
       },
@@ -99,8 +99,8 @@
     {
       "type": "kv",
       "media": {
-        "type": "video",
-        "content": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/alternative-careers-guide/SamsungCareers_Urenna_TechEnt_Sub.mp4",
+        "type": "youtube",
+        "content": "u11bTkLjNg8",
         "title": "Urenna Okonkwo, App Creator"
       },
       "style": {
@@ -127,8 +127,8 @@
     {
       "type": "kv",
       "media": {
-        "type": "video",
-        "content": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/alternative-careers-guide/SamsungCareers_Keith_Props_Sub.mp4",
+        "type": "youtube",
+        "content": "jO-vsN_mYyc",
         "title": "Keith Thomson, 3D Prop Designer"
       },
       "style": {
@@ -154,8 +154,8 @@
     {
       "type": "kv",
       "media": {
-        "type": "video",
-        "content": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/alternative-careers-guide/SamsungCareers_Mantas_Samsung_Sub.mp4",
+        "type": "youtube",
+        "content": "aE0NFRkTDgE",
         "title": "Mantas Navickas, Samsung Software Tester"
       },
       "style": {
