@@ -2,6 +2,8 @@
 *To build, simply use ```gulp``` without any args. Version used for production: 3.9.1*
 *To build, for production (to scrap the code for AEM) use ```gulp production``` without any args. Version used for production: 3.9.1*
 
+**This project requires node version v11.15.0. Use nvm to switch node versions and run**
+
 ***NB: For documentation related to the Home Of Innovation pages, read hoiREADME.md***
 
 ## **Brief project breakdown:**
