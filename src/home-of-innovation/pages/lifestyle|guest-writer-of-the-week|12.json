@@ -1,5 +1,5 @@
 {
-  "title": "Create the ultimate backyard cinema for summer with this ‘hot’ movie line-up… ",
+  "title": "Guest writer of the week: Create the ultimate backyard cinema for summer with this ‘hot’ movie line-up… ",
   "description": "",
   "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/12/mamma-mia.png",
   "alt": "",
@@ -21,7 +21,7 @@
       "components": [
         {
           "type": "headline",
-          "copy": "{{lifestyle|guest-writer-of-the-week|12[title]}}"
+          "copy": "Create the ultimate backyard cinema for summer with this ‘hot’ movie line-up…"
         }
       ]
     },
@@ -186,12 +186,6 @@
           ]
         }
       ]
-    },
-    {
-      "type": "group",
-      "dynamic": "more-articles",
-      "id": "guest-writer-of-the-week",
-      "title": "More articles"
     }
   ]
 }
