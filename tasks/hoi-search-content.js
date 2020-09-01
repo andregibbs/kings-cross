@@ -80,7 +80,8 @@ files.forEach((file, index) => {
     description: data.description,
     image: data.image,
     url: PUBLIC_URL + id.replace(/\|/g,'/'),
-    values: fileValues.join()
+    values: fileValues,
+    joinedValues: fileValues.join()
   })
 
 })

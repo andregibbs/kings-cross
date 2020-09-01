@@ -9,9 +9,15 @@ export default function HOISearch() {
   console.log('fudge')
   fetch(searchFile)
     .then(r => r.json())
-    .then(json => {
-      data = json
-      fuse = new Fuse(data, { includeScore: true, ignoreLocation: true, ignoreFieldNorm: true, threshold: 0.25, keys: ['title','description','values']})
+    .then(data => {
+      fuse = new Fuse(data, {
+        includeScore: true,
+        // includeMatches: true, // debug: show search
+        threshold: 0.25, // word accuracy level
+        distance: 1500, // length of value to search
+        findAllMatches: true, // search for multiple
+        keys: ['title','description','values']
+      })
       console.log(data, fuse)
     })
 
@@ -19,7 +25,8 @@ export default function HOISearch() {
     const value = input.value
     // if (value.length > 2) {
     const results = fuse.search(value)
-    console.log(value,results)
+    console.clear()
+    console.log(value,results,fuse)
       renderResults(results)
     // } else {
       // renderResults([])
@@ -32,11 +39,12 @@ export default function HOISearch() {
     el.textContent = ''
 
     results.forEach(r => {
-      var newEl = document.createElement('a')
-      newEl.className = "result"
+      // console.log(r)
+      var newEl = document.createElement('div')
+      // newEl.className = "result"
       newEl.href = r.item.url
-      newEl.style.backgroundImage = `url('${r.item.image}')`
-      newEl.innerText = `${r.item.title}, ${r.item.url}`
+      // newEl.style.backgroundImage = `url('${r.item.image}')`
+      newEl.innerText = `${r.item.title}, Score: ${r.score}`
       el.appendChild(newEl)
     })
   }
