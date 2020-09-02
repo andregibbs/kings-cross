@@ -12,15 +12,19 @@ var files = getFilesInDirectory(SRC_FOLDER)
 // Filter Files
 files = files.filter(file => {
   const id = file.replace(SRC_FOLDER, '').replace('.json', '')
+  // ignore if prefixed by underscore
   if (file.indexOf('/_') > - 1) {
     return false
   }
+  // ignore if its a component test category
   if (id.split('|')[0] === 'components') {
     return false
   }
+  // ignore if is category page
   if (id.split('|').length <= 1) {
     return false
   }
+  // todo add manual flag to pages to hide from search
   return true
 })
 
