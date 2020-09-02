@@ -110,6 +110,27 @@
 		{{>components/socialMedia}}
 
 		{{>scripts }}
+
+    <script type="text/javascript">
+      // garbage required to insert veview slideshow
+      function checkJQuery() {
+        // if our main script has loaded and $j variable is accessible
+        if (typeof $j !== 'undefined') {
+          // assign to global jQuery (required by veview)
+          window.jQuery = $j
+          // insert script
+          var el = document.createElement('script')
+          el.src = "https://widget.veview.com/customers/www.samsung.com/gb/js/veview.widget.js",
+          document.querySelector('.cheil-static').appendChild(el)
+        } else {
+          // recheck
+          setTimeout(checkJQuery, 500)
+        }
+      }
+      // initial check
+      checkJQuery()
+    </script>
+
 	</section>
 
 {{#if config.staging}}
