@@ -3,3 +3,5 @@ build
 .DS_STORE
 yarn.lock
 .vscode/settings.json
+
+_new_node_modules/

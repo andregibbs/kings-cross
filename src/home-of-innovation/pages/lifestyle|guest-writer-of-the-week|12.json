@@ -182,6 +182,12 @@
           ]
         }
       ]
+    },
+    {
+      "type": "group",
+      "dynamic": "more-articles",
+      "id": "guest-writer-of-the-week",
+      "title": "More articles"
     }
   ]
 }

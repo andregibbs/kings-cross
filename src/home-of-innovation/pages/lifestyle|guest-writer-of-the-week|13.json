@@ -6,6 +6,7 @@
   "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/13_kv_charlie_bell.jpg",
   "group": "guest-writer-of-the-week",
   "sort": 13,
+  "hidden": true,
   "components": [
     {
       "type": "kv",
@@ -61,7 +62,7 @@
         {
           "type": "paragraphs",
           "text": [
-            "Who doesn’t love that just-stepped-out-of-the-salon bounce? With the right tools, it’s easy to fake that feeling at home too. Firstly, it’s important your hair is protected with a defence spray such as TRESemmé Heat Defense Spray, £5.49. ‘If your hair is wet, give it a super quick rough dry. Section your hair starting from the top of your ears all the way round your head and clip up and out the way,’ says Aaron Carlo, Lead Stylist for TRESemmé. ‘Starting at the root, place a round brush underneath, angling your hairdryer at the top of your hair, following the brush as you move down. Make sure to keep the hair super tight round the brush. Repeat until the section is dry and move on to the rest of your sections,’ adds Aaron. A spritz of TRESemmé Flexible Hold Hair Spray, £4.99, will hold it in place, without any stiffness. Don’t forget to capture your tresses transformation with the Samsung Galaxy Note20. The 8K camera gives you ultra-high resolution for pro-looking videos and snaps."
+            "Who doesn’t love that just-stepped-out-of-the-salon bounce? With the right tools, it’s easy to fake that feeling at home too. Firstly, it’s important your hair is protected with a defence spray such as TRESemmé Heat Defense Spray, £5.49. ‘If your hair is wet, give it a super quick rough dry. Section your hair starting from the top of your ears all the way round your head and clip up and out the way,’ says Aaron Carlo, Lead Stylist for TRESemmé. ‘Starting at the root, place a round brush underneath, angling your hairdryer at the top of your hair, following the brush as you move down. Make sure to keep the hair super tight round the brush. Repeat until the section is dry and move on to the rest of your sections,’ adds Aaron. A spritz of TRESemmé Flexible Hold Hair Spray, £4.99, will hold it in place, without any stiffness. Don’t forget to capture your tresses transformation with the <a href=\"https://www.samsung.com/uk/smartphones/galaxy-note20/buy/\">Samsung Galaxy Note20</a>. The 8K camera gives you ultra-high resolution for pro-looking videos and snaps."
           ]
         },
         {
