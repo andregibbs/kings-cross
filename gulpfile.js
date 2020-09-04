@@ -22,6 +22,7 @@ var uglify = require('gulp-uglify')
 var htmlmin = require('gulp-html-minifier');
 var gulpif = require('gulp-if');
 var concat = require('gulp-concat');
+var merge = require('merge-stream');
 
 var prompt = require('prompt');
 var hbsfy = require('hbsfy')
@@ -133,6 +134,44 @@ gulp.task('scss', function() {
     	.on('end', function() {
     		log('SCSS Compiled')
     	})
+})
+
+// Gulp task to build individual page css files (moving away from one massive css for all pages)
+gulp.task('scss-page', function() {
+
+  const pages = ['home']
+
+  let streams = []
+  pages.forEach(page => {
+    let src = `${config.SRC_FOLDER}/scss/pages/${page}/index.scss`
+    let stream = gulp.src(src)
+      .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
+      .pipe(autoprefixer({
+        grid: true,
+        browsers: ['last 2 versions'],
+        cascade: false
+      }))
+      .pipe(rename(`${page}.css`))
+      .pipe(gulp.dest( config.BUILD_FOLDER + SITE + '/' + SUBFOLDER + '/css' ))
+
+    streams.push(stream)
+  })
+
+  return merge(streams)
+
+  // return gulp.src(srcFiles)
+  //   .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
+  //   .pipe(autoprefixer({
+  //     grid: true,
+  //     browsers: ['last 2 versions'],
+  //     cascade: false
+  //   }))
+  //   .pipe(gulp.dest( config.BUILD_FOLDER + SITE + '/' + SUBFOLDER + '/css' ))
+  //   .on('end', function() {
+  //     log('SCSS Page Compiled')
+  //   })
+
+
 })
 
 /* JavaScript - Babel / Browserify */
@@ -633,8 +672,8 @@ gulp.task('hoi-staging', ['home-of-innovation-scss', 'home-of-innovation-build',
 gulp.task('hoi-dev', ['home-of-innovation-scss', 'home-of-innovation-build', 'home-of-innovation-js', 'home-of-innovation-watch'])
 
 gulp.task('production', sequence('copy-assets', 'scss', 'buildJS', 'html') )
-gulp.task('development', sequence('copy-assets', 'scss', 'buildJS', 'html') )
-gulp.task('_staging', sequence('copy-assets', 'scss', 'buildJS', 'html') )
+gulp.task('development', sequence('copy-assets', 'scss', 'scss-page', 'buildJS', 'html') )
+gulp.task('_staging', sequence('copy-assets', 'scss', 'scss-page', 'buildJS', 'html') )
 
 gulp.task('staging', ['watch', '_staging', 'watchJS'])
 gulp.task('default', ['watch', 'development', 'watchJS'])

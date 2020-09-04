@@ -48,6 +48,7 @@
     "gulp-watch": "^4.3.11",
     "handlebars": "^4.7.6",
     "hbsfy": "^2.8.1",
+    "merge-stream": "^2.0.0",
     "prompt": "^1.0.0",
     "through2": "^2.0.3",
     "vinyl-buffer": "^1.0.0",

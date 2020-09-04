@@ -1,0 +1,20 @@
+@import "base/variables";
+
+// Mixins
+@import "mixins/clearfix";
+@import "mixins/typography";
+@import "mixins/vw";
+
+// Base
+@import "base/base";
+@import "base/typography";
+
+// Helpers
+@import "helpers/helpers";
+
+/*----------  Nav height  ----------*/
+$nav-mobile-height: get-mobile-vw(100);
+
+body {
+  line-height: 1.32;
+}
