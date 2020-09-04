@@ -32,6 +32,7 @@ var path = require('path')
 var fs = require('fs')
 
 var getFilesInDirectory = require('./tasks/helpers').getFilesInDirectory
+var HoiSearchContent = require('./tasks/hoi-search-content')
 
 var log = function( message, type ) {
 	return ( type === 'error' ) ? console.log( chalk.red( message ) ) : console.log( chalk.green( message ) );
@@ -535,6 +536,10 @@ function HOITemplates(skipTemplates, dynamicDataCallback, selectedFiles) {
 
   // write dynamic data file for use in local dev
   fs.writeFileSync(config.BUILD_FOLDER + '/hoi-dynamic-local.json', JSON.stringify(dynamicComponentData))
+
+  // finish off with generating the search content
+  // automatically writes the local search data file
+  HoiSearchContent()
 
 }
 

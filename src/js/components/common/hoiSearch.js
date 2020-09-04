@@ -1,15 +1,32 @@
-import Fuse from 'fuse.js'
+// Search Component for HOI Content
 
-const searchFile = '/uk/explore/kings-cross/hoi-search.json'
-const input = document.querySelector('#search')
-let data;
-let fuse;
+import Fuse from 'fuse.js'
+import { FetchEvents } from '../../util/Events'
+import KXEnv from '../../util/KXEnv'
+import config from '../../../data/config.json'
+
+// Search Data Fetch URL
+const BASE_URL = "https://kxuploads.s3.eu-west-2.amazonaws.com/home-of-innovation-dynamic/"
+const LOCAL_URL = '/hoi-search-local.json';
+const STAGING_URL = BASE_URL + "hoi-search-staging.json";
+const LIVE_URL =  BASE_URL + "hoi-search.json";
+const SearchDataURL = KXEnv.live ? LIVE_URL : KXEnv.local ? LOCAL_URL : STAGING_URL;
+
+let fuse; // fuse instance
 
 export default function HOISearch() {
-  console.log('fudge')
-  fetch(searchFile)
+
+  const el = document.querySelector('.hoiSearch');
+  if (!el) {
+    return // console.log('no search component')
+  }
+  const input = el.querySelector('.hoiSearch__input input')
+  const resultsEl = el.querySelector('.hoiSearch__results')
+
+  fetch(SearchDataURL)
     .then(r => r.json())
     .then(data => {
+      // Create fuse instance with search data
       fuse = new Fuse(data, {
         includeScore: true,
         // includeMatches: true, // debug: show search
@@ -18,8 +35,26 @@ export default function HOISearch() {
         findAllMatches: true, // search for multiple
         keys: ['title','description','values']
       })
-      console.log(data, fuse)
+      addEventData(fuse)
     })
+
+  // Add additional event data
+  function addEventData(fuse) {
+    // fetch event data
+    FetchEvents((events) => {
+      console.log('events', events)
+      // TODO: filter hidden events
+      events.forEach(event => {
+        const item = {
+          title: event.title,
+          description: event.description.replace(/(<.*?>)/gim,''), //remove links
+          url: `/${ config.site }${ config.subfolder }/whats-on/event/?id=${event.identifier}`,
+          image: event.imageURL
+        }
+        fuse.add(item)
+      })
+    })
+  }
 
   input.addEventListener('input', (e) => {
     const value = input.value
@@ -35,8 +70,9 @@ export default function HOISearch() {
 
 
   function renderResults(results) {
-    const el = document.querySelector('#results')
-    el.textContent = ''
+
+
+    resultsEl.textContent = ''
 
     results.forEach(r => {
       // console.log(r)
@@ -45,7 +81,7 @@ export default function HOISearch() {
       newEl.href = r.item.url
       // newEl.style.backgroundImage = `url('${r.item.image}')`
       newEl.innerText = `${r.item.title}, Score: ${r.score}`
-      el.appendChild(newEl)
+      resultsEl.appendChild(newEl)
     })
   }
 }

@@ -1,0 +1,35 @@
+{{#if config.staging}}
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+{{else}}
+  <!--#include virtual="/uk/aem/header-pdp.html"-->
+{{/if}}
+
+<section class="cheil-static">
+
+	{{>stylesheet}}
+
+	{{>components/nav }}
+
+  <br><br><br><br>
+  {{>components/common/hoiSearch}}
+
+
+	{{>components/common/findKx }}
+	{{>components/socialMedia }}
+
+	{{> scripts }}
+
+</section>
+
+{{#if config.staging}}
+  </body>
+</html>
+{{else}}
+<!--#include virtual="/uk/aem/footer-pdp.html"-->
+{{/if}}

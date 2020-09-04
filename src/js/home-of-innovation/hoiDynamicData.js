@@ -1,11 +1,7 @@
 import KXEnv from '../util/KXEnv';
 
 const BASE_URL = "https://kxuploads.s3.eu-west-2.amazonaws.com/home-of-innovation-dynamic/"
-
-// TODO: move to env or find other solution
-const LOCAL_HOSTNAME = 'kings-cross.samsung.com';
 const LOCAL_URL = '/hoi-dynamic-local.json';
-
 const STAGING_URL = BASE_URL + "hoi-dynamic-staging.json";
 const LIVE_URL =  BASE_URL + "hoi-dynamic.json";
 
