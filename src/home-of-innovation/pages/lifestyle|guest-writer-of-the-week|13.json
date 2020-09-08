@@ -6,7 +6,6 @@
   "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/13_kv_charlie_bell.jpg",
   "group": "guest-writer-of-the-week",
   "sort": 13,
-  "hidden": true,
   "components": [
     {
       "type": "kv",

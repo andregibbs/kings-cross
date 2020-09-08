@@ -310,8 +310,10 @@ function HOITemplates(skipTemplates, dynamicDataCallback, selectedFiles) {
   // Finds other page configs with a group id
   function getPagesWithGroupId(id, currentFilePath) {
     const withId = []
-    pages.forEach((path) => {
+    let allPages = getFilesInDirectory(pagesBasePath)
+    allPages.forEach((path) => {
       // ignore current file path
+
       if (path !== currentFilePath) {
         const pageData = require(path)
         if (pageData.group === id && !pageData.hidden) {

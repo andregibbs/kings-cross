@@ -1,0 +1,33 @@
+{
+  "title": "Lunch and Listen",
+  "description": "Lunch time play starts here. Watch Munya Chawawa work up a sweat and Amelia Dimoldenberg shock with her sketches as host Clara Amfo brings the fun back to our breaks.",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/entertainment/lunch-and-listen/kv.jpg",
+  "alt": "",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/entertainment/lunch-and-listen/thumb.jpg",
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "{{entertainment|lunch-and-listen[image]}}",
+        "alt": "{{entertainment|lunch-and-listen[alt]}}"
+      },
+      "style": {
+        "desktop": "top",
+        "mobile": "bottom"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "Lunch and Listen"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "dynamic": "episodes",
+      "id": "lunch-and-listen",
+      "title": "Episodes"
+    }
+  ]
+}
