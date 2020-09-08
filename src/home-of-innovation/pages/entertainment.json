@@ -9,6 +9,7 @@
       "type": "group-land-id",
       "dynamic": "group-pages",
       "items": [
+        "entertainment|lunch-and-listen",
         "entertainment|connected-living",
         "entertainment|game-dev-london-podcast|11",
         "creativity|innovation-sessions|elz-barney-career-advice",
