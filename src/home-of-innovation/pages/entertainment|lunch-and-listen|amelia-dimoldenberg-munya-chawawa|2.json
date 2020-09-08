@@ -1,17 +1,18 @@
 {
   "title": "Munya Chawawa raises heart rates",
-  "description": "Time to take a break. Munya teaches Amelia how to become a skipping pro before performing his posh drill gaming rap. Clara also has her own secret skill up her sleeve too…",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/entertainment/lunch-and-listen/kv.jpg",
+  "description": "Take a break! Munya teaches Amelia his secret skill as Clara reveals hers.",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/entertainment/lunch-and-listen/t2_kv.jpg",
   "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/entertainment/lunch-and-listen/thumb.jpg",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/entertainment/lunch-and-listen/t2_thumb.jpg",
   "group": "lunch-and-listen",
   "sort": 2,
   "components": [
     {
       "type": "kv",
       "media": {
-        "type": "image",
-        "content": "{{entertainment|lunch-and-listen|amelia-dimoldenberg-munya-chawawa|2[image]}}",
+        "type": "youtube",
+        "content": "TCw8wI2MBMY",
+        "poster": "{{entertainment|lunch-and-listen|amelia-dimoldenberg-munya-chawawa|2[image]}}",
         "alt": "{{entertainment|lunch-and-listen|amelia-dimoldenberg-munya-chawawa|2[alt]}}"
       },
       "style": {
@@ -21,7 +22,7 @@
       "components": [
         {
           "type": "headline",
-          "copy": "Lunch and Listen - Part 2: Munya Chawawa raises heart rates"
+          "copy": "Munya Chawawa raises heart rates"
         },
         {
           "type": "paragraphs",
