@@ -1,0 +1,14 @@
+$spacing-desktop: em(40); //$p-borders-desktop * 1px;
+$spacing-mobile: em(40); //$m-borders-mobile * 1px;
+
+$padding-desktop: $p-borders-desktop * 1px;
+$padding-mobile: $p-borders-mobile * 1px;
+
+$margin-desktop: $m-borders-desktop * 1px;
+$margin-mobile: $m-borders-mobile * 1px;
+
+/*----------  Nav height  ----------*/
+$nav-mobile-height: get-mobile-vw(100);
+
+// for cards
+$border-radius: 20px;

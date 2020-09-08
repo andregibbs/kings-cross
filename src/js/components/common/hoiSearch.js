@@ -1,5 +1,10 @@
 // Search Component for HOI Content
 
+const Handlebars = require("hbsfy/runtime");
+import HandlebarsHelpers from '../../../templates/helpers/handlebarsHelpers';
+HandlebarsHelpers.register(Handlebars)
+
+
 import Fuse from 'fuse.js'
 import { FetchEvents } from '../../util/Events'
 import KXEnv from '../../util/KXEnv'
@@ -13,6 +18,11 @@ const LIVE_URL =  BASE_URL + "hoi-search.json";
 const SearchDataURL = KXEnv.live ? LIVE_URL : KXEnv.local ? LOCAL_URL : STAGING_URL;
 
 let fuse; // fuse instance
+
+// template
+const itemTemplate = require('../../../templates/partials/home-of-innovation/hoiLinkList.hbs');
+Handlebars.registerPartial('home-of-innovation/partials/listItem', require('../../../templates/partials/home-of-innovation/partials/listItem.hbs'))
+Handlebars.registerPartial('home-of-innovation/partials/listItemSpacer', require('../../../templates/partials/home-of-innovation/partials/listItem.hbs'))
 
 export default function HOISearch() {
 
@@ -70,18 +80,29 @@ export default function HOISearch() {
 
 
   function renderResults(results) {
+    console.log('render search', results)
+    // results.forEach((item) => {
+    resultsEl.insertAdjacentHTML('beforeend', itemTemplate({
+      items: results
+    }))
+    // })
 
-
-    resultsEl.textContent = ''
-
-    results.forEach(r => {
-      // console.log(r)
-      var newEl = document.createElement('div')
-      // newEl.className = "result"
-      newEl.href = r.item.url
-      // newEl.style.backgroundImage = `url('${r.item.image}')`
-      newEl.innerText = `${r.item.title}, Score: ${r.score}`
-      resultsEl.appendChild(newEl)
-    })
+    // // loop remainders for spacing items
+    // for (var i = 0; i < data.length % ROW_ITEMS; i++) {
+    //   this.dynamicTarget.insertAdjacentHTML('beforeend', itemSpacerTemplate())
+    // }
+    //
+    //
+    // resultsEl.textContent = ''
+    //
+    // results.forEach(r => {
+    //   // console.log(r)
+    //   var newEl = document.createElement('div')
+    //   // newEl.className = "result"
+    //   newEl.href = r.item.url
+    //   // newEl.style.backgroundImage = `url('${r.item.image}')`
+    //   newEl.innerText = `${r.item.title}, Score: ${r.score}`
+    //   resultsEl.appendChild(newEl)
+    // })
   }
 }

@@ -2,8 +2,12 @@
 
 .cheil-static {
 
+  @import "../../home-of-innovation/vars";
   @import "../../components/common/hoiCards";
   @import "../../components/common/section";
+
+  @import "../../components/home-of-innovation/hoiLinkList";
+  @import "../../components/home-of-innovation/list";
 
   @import "../../components/nav";
   @import "../../components/sidedrawer";

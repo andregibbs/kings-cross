@@ -140,18 +140,25 @@ gulp.task('scss', function() {
 gulp.task('scss-page', function() {
 
   const pages = ['home']
+  const isStagingTask = argv._[0] === 'staging';
 
   let streams = []
   pages.forEach(page => {
-    let src = `${config.SRC_FOLDER}/scss/pages/${page}/index.scss`
-    let stream = gulp.src(src)
+    const srcFiles = isStagingTask ? [
+      `${config.SRC_FOLDER}/scss/pages/${page}/index.scss`,
+      config.SRC_FOLDER + '/scss/'+_HOI_FOLDER+'/staging.scss'
+    ] : [
+      `${config.SRC_FOLDER}/scss/pages/${page}/index.scss`
+    ]
+
+    let stream = gulp.src(srcFiles)
       .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
       .pipe(autoprefixer({
         grid: true,
         browsers: ['last 2 versions'],
         cascade: false
       }))
-      .pipe(rename(`${page}.css`))
+      .pipe(concat(`${page}.css`))
       .pipe(gulp.dest( config.BUILD_FOLDER + SITE + '/' + SUBFOLDER + '/css' ))
 
     streams.push(stream)
@@ -177,7 +184,7 @@ gulp.task('scss-page', function() {
 /* JavaScript - Babel / Browserify */
 function compileJS( watch ) {
 
-    var bundler = watchify(browserify( config.SRC_FOLDER + '/js/main.js', { debug: true }).transform(babel.configure({ presets: ['es2015-ie'] })))
+    var bundler = watchify(browserify( config.SRC_FOLDER + '/js/main.js', { debug: true }).transform(hbsfy).transform(babel.configure({ presets: ['es2015-ie'] })))
 
 	function rebundle() {
 		bundler.bundle()
@@ -268,7 +275,7 @@ gulp.task('compress', function (cb) {
 
 /* Watch /src directory for changes & reload gulp */
 gulp.task('watch', function () {
-	gulp.watch( config.SRC_FOLDER + '/scss/**/*.scss', ['scss'] )
+	gulp.watch( config.SRC_FOLDER + '/scss/**/*.scss', ['scss', 'scss-page'] )
 	gulp.watch( config.SRC_FOLDER + '/js/**/*.js', ['watchJS'] )
     gulp.watch( config.SRC_FOLDER + '/templates/partials/**/*.hbs', ['html'] )
     gulp.watch( config.SRC_FOLDER + '/pages/**/*.html', ['html'] )
