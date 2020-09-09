@@ -23,17 +23,27 @@ function HOIListItemHover(el) {
 }
 
 const selectorToFind = 'hoiList__Item'
-export default function initListItemHoverEvents() {
+export default function initListItemHoverEvents(target) {
   // observe this element for mutations
-  const elToObserve = document.querySelector('section.home-of-innovation')
+  const targetSelector = target || 'section.home-of-innovation'
+  const elToObserve = document.querySelector(targetSelector)
 
   const observer = new MutationObserver(function (mutations, ob) {
     mutations.forEach((mutation) => {
       mutation.addedNodes.forEach((node) => {
+        console.log('added', node, node)
         // loop through added nodes to find ones with list item class
         if (node.className && node.className.length > 1 && node.className.indexOf(selectorToFind) > -1) {
           // create listener
           HOIListItemHover(node)
+        } else if (node.className && node.className.indexOf('hoiLinkList') > -1) {
+          // console.log('search node')
+          // If we are on the search page, the parent container of the search items is passed to the observer
+          // here we locate the items to apply the hover states (could also be done with querySelectorAll)
+          let items = [].slice.call(node.children[0].children)
+          items.forEach((el) => {
+            HOIListItemHover(el)
+          })
         }
       })
     })

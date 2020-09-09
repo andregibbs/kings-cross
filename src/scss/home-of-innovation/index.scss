@@ -1,12 +1,14 @@
 // Import required files from base kx site
 
 @import "../base/variables";
-@import "vars";
 
 // Mixins
 @import "../mixins/clearfix";
 @import "../mixins/typography";
 @import "../mixins/vw";
+
+// Hoi vars (after mixins)
+@import "vars";
 
 // Base
 @import "../base/base";

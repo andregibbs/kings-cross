@@ -24,6 +24,9 @@ const itemTemplate = require('../../../templates/partials/home-of-innovation/hoi
 Handlebars.registerPartial('home-of-innovation/partials/listItem', require('../../../templates/partials/home-of-innovation/partials/listItem.hbs'))
 Handlebars.registerPartial('home-of-innovation/partials/listItemSpacer', require('../../../templates/partials/home-of-innovation/partials/listItem.hbs'))
 
+// listItemJS
+import initListItemHoverEvents from '../../home-of-innovation/hoiListItemHoverEvents';
+
 export default function HOISearch() {
 
   const el = document.querySelector('.hoiSearch');
@@ -72,37 +75,25 @@ export default function HOISearch() {
     const results = fuse.search(value)
     console.clear()
     console.log(value,results,fuse)
-      renderResults(results)
+    renderResults(results.map(r => r.item));
     // } else {
       // renderResults([])
     // }
   })
 
+  // init observer on hoiSearch__results for result hover events
+  initListItemHoverEvents('.hoiSearch__results')
 
   function renderResults(results) {
     console.log('render search', results)
-    // results.forEach((item) => {
+    // clear the element
+    resultsEl.textContent = '';
+    // render template
     resultsEl.insertAdjacentHTML('beforeend', itemTemplate({
       items: results
     }))
-    // })
 
-    // // loop remainders for spacing items
-    // for (var i = 0; i < data.length % ROW_ITEMS; i++) {
-    //   this.dynamicTarget.insertAdjacentHTML('beforeend', itemSpacerTemplate())
-    // }
-    //
-    //
-    // resultsEl.textContent = ''
-    //
-    // results.forEach(r => {
-    //   // console.log(r)
-    //   var newEl = document.createElement('div')
-    //   // newEl.className = "result"
-    //   newEl.href = r.item.url
-    //   // newEl.style.backgroundImage = `url('${r.item.image}')`
-    //   newEl.innerText = `${r.item.title}, Score: ${r.score}`
-    //   resultsEl.appendChild(newEl)
-    // })
+
+
   }
 }
