@@ -1,15 +1,23 @@
 {
   "title": "Lunch and Listen - Bring back play full episode",
   "description": "Lunch time play starts here. Watch Munya Chawawa work up a sweat and Amelia Dimoldenberg shock with her sketches as host Clara Amfo brings the fun back to our breaks.",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/entertainment/lunchlistenameliadimoldenbergmunyachawawa/kv.jpg",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/entertainment/lunch-and-listen/kv_short.jpg",
   "alt": "",
   "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/entertainment/lunchlistenameliadimoldenbergmunyachawawa/thumb.jpg",
+  "group": "lunch-and-listen",
+  "sort": 3,
   "components": [
+    {
+      "type": "css-snippet",
+      "content": ".hoiKv__MediaImage { background-size: contain !important; } .hoiKv__Media:after { padding-bottom: 45% !important; }",
+      "__notes": ""
+    },
     {
       "type": "kv",
       "media": {
-        "type": "image",
-        "content": "{{entertainment|lunch-and-listen|bring-back-play[image]}}",
+        "type": "youtube",
+        "content": "ZUKvp5S8gK8",
+        "poster": "{{entertainment|lunch-and-listen|bring-back-play[image]}}",
         "alt": "{{entertainment|lunch-and-listen|bring-back-play[alt]}}"
       },
       "style": {
@@ -19,7 +27,7 @@
       "components": [
         {
           "type": "headline",
-          "copy": "Lunch and Listen"
+          "copy": "{{entertainment|lunch-and-listen|bring-back-play[title]}}"
         },
         {
           "type": "paragraphs",
