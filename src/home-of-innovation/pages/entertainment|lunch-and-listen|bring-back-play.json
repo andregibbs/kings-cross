@@ -6,6 +6,7 @@
   "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/entertainment/lunchlistenameliadimoldenbergmunyachawawa/thumb.jpg",
   "group": "lunch-and-listen",
   "sort": 3,
+  "hidden": true,
   "components": [
     {
       "type": "css-snippet",
