@@ -1,0 +1,60 @@
+$kxnav-height: 50px;
+
+$navigation-zindex: 900;
+$search-zindex: 800;
+
+// Main Block
+.kxNav {
+  position: relative;
+  width: 100vw;
+  height: $kxnav-height;
+}
+
+// Sticky bar (desktop & mobile)
+.kxNav__StickyBar {
+  height: $kxnav-height;
+  width: 100vw;
+  top: 0;
+  background: blue;
+  z-index: $navigation-zindex;
+}
+
+// Sticky Nav (desktop)
+.kxNav__StickyNav {
+  display: flex;
+  height: 100%;
+}
+
+.kxNav__StickyNavLink {
+
+  flex-grow: 1;
+  background: red;
+}
+
+// Desktop/Mobile states
+@media screen and (max-width: $mobile) {
+  .kxNav__StickyBar--desktop {
+    display: none;
+  }
+  .kxNav__StickyBar--mobile {
+    display: block;
+  }
+}
+.kxNav__StickyBar--mobile {
+  display: none;
+}
+
+// Sticky state
+.kxNav[sticky] .kxNav__StickyBar {
+  position: fixed;
+}
+
+// Page Resets
+.kxNav {
+  a {
+    color: white;
+  }
+  * {
+    font-size: 16px;
+  }
+}

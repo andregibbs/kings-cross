@@ -1,0 +1,63 @@
+<nav class="kxNav" role="navigation">
+
+  <div class="kxNav__StickyBar  kxNav__StickyBar--desktop">
+
+  	<ul
+      class="kxNav__StickyNav"
+      role="menubar"
+      aria-label="Samsung Kings Cross Navigation Menu">
+
+      {{> components/common/kxNav/link
+        title="Home Of Innovation"
+        tabindex=0
+        page="/"
+      }}
+
+      {{> components/common/kxNav/link
+        title="KX Online Hub"
+        page="/home"
+      }}
+
+      {{> components/common/kxNav/link
+        title="What's on"
+        page="/whats-on"
+      }}
+
+      {{> components/common/kxNav/link
+        title="Search"
+        page="/home"
+      }}
+
+      {{> components/common/kxNav/link
+        title="Discover"
+        page="/discover"
+      }}
+
+      {{> components/common/kxNav/link
+        title="Support"
+        page="/support"
+      }}
+
+      <li role="presentation">
+        <a
+          class="kxNav__StickyNavLink btn btn--primary btn--primary--coral"
+          role="menuitem"
+          ga-ca="microsite"
+          ga-ac="sticky menu"
+          ga-la="kings-cross:sticky-navbar_sign-up"
+          data-omni-type="microsite"
+          data-omni="uk:kings-cross:sticky-navbar:sign-up"
+          href="https://a3p.eucdm.samsung.com/webApp/samAPP581?lang=en_GB"
+          data-lity>
+            Sign Up
+        </a>
+      </li>
+
+  	</ul>
+
+  </div>
+
+  <div class="kxNav__StickyBar  kxNav__StickyBar--mobile">
+    mobile
+  </div>
+</nav>

@@ -24,7 +24,8 @@ import { createYoutubeInstance, loadYoutubeAPI } from './utils';
 
 
 import FindKX from '../components/findKX';
-import nav from '../components/nav';
+// import nav from '../components/nav';
+import KXNav from '../components/common/kxNav'
 import initListItemHoverEvents from './hoiListItemHoverEvents'
 
 function init() {
@@ -36,7 +37,7 @@ function init() {
   const dynamicGroupLand = [].slice.call(document.querySelectorAll('.hoiGroupLand__Container[dynamic]'))
 
   // init nav
-  nav();
+  new KXNav()
 
   // could make this conditional depending on wether there is youtube content on the page
   loadYoutubeAPI()

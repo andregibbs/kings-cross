@@ -1,0 +1,10 @@
+{
+  "title": "KX Online Hub",
+  "description": "HOI generated page for Hub Content",
+  "components": [
+    {
+      "type": "headline",
+      "copy": "Content to be placed below"
+    }
+  ]
+}

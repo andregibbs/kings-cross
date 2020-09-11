@@ -139,7 +139,7 @@ gulp.task('scss', function() {
 // Gulp task to build individual page css files (moving away from one massive css for all pages)
 gulp.task('scss-page', function() {
 
-  const pages = ['home']
+  const pages = [] //['home']
   const isStagingTask = argv._[0] === 'staging';
 
   let streams = []
@@ -300,6 +300,7 @@ function HOITemplates(skipTemplates, dynamicDataCallback, selectedFiles) {
   const publicUrl = '/' + SITE + SUBFOLDER + '/';
 
   // Array of file paths to page configs
+
   // disabled as inteferring with dynamic data (need to process all pages)
   let pages;
   // if a single file is specified

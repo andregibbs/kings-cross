@@ -30,7 +30,8 @@ body {
 
 .cheil-static.home-of-innovation {
 
-  @import "../components/nav";
+  @import "../components/common/kxNav/index";
+  // @import "../components/nav";
   @import "../components/sidedrawer";
   @import "../components/home-of-innovation/content";
 
