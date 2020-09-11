@@ -259,14 +259,15 @@ function HOITemplates(skipTemplates, dynamicDataCallback, selectedFiles) {
   const publicUrl = '/' + SITE + SUBFOLDER + '/';
 
   // Array of file paths to page configs
+  // disabled as inteferring with dynamic data (need to process all pages)
   let pages;
   // if a single file is specified
-  if (selectedFiles) {
-    pages = selectedFiles
-  } else {
+  // if (selectedFiles) {
+  //   pages = selectedFiles
+  // } else {
     // otherwise use all
     pages = getFilesInDirectory(pagesBasePath)
-  }
+  // }
 
   // is staging task
   const isStagingTask = argv._[0] === 'hoi-staging';
