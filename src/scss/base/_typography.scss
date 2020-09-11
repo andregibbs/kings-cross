@@ -6,6 +6,8 @@
 // Font sizes
 // 14, 16, 18, 24, 30, 36, 55
 
+$samsung-sharp: "SamsungSharpSans", arial, sans-serif;
+
 .cheil-static * {
 	font-size: calc(#{$browser-context-desktop}/#{$media-desktop} * 100vw);
 

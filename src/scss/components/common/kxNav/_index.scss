@@ -1,7 +1,19 @@
+// Vars
 $kxnav-height: 50px;
-
 $navigation-zindex: 900;
 $search-zindex: 800;
+
+// Page Resets
+.kxNav {
+  a {
+    color: white;
+  }
+  * {
+    font-size: 14px;
+    font-family: $samsung-sharp;
+    letter-spacing: 1px;
+  }
+}
 
 // Main Block
 .kxNav {
@@ -23,15 +35,65 @@ $search-zindex: 800;
 .kxNav__StickyNav {
   display: flex;
   height: 100%;
+  align-items: center;
+  padding: 0 4em;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .kxNav__StickyNavLink {
-
-  flex-grow: 1;
+  flex: 1;
+  flex-grow: 2;
+  flex-shrink: 0;
   background: red;
+  height: 100%;
+}
+
+.kxNav__StickyNavLink--search {
+  min-width: $kxnav-height;
+  max-width: $kxnav-height;
+  width: $kxnav-height;
+  background: green;
+  a {
+    font-size: 0;
+  }
+}
+
+.kxNav__StickyNavLink a {
+  text-transform: uppercase;
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.kxNav__StickyNavLink a:hover {
+  background-color: rgba(255,255,255,0.1);
+}
+
+// Desktop signup link
+.kxNav__StickyNavLink .btn {
+  height: 20px;
+  background: grey;
+  width: 100%;
+}
+
+// Mobile Nav
+.kxNav_MobileNav {
+  position: fixed;
+  top: $kxnav-height;
+  bottom: 0;
+  background: rgba(100,200,50,0.2);
+  z-index: $navigation-zindex;
 }
 
 // Desktop/Mobile states
+.kxNav__StickyBar--mobile {
+  display: none;
+}
 @media screen and (max-width: $mobile) {
   .kxNav__StickyBar--desktop {
     display: none;
@@ -40,21 +102,8 @@ $search-zindex: 800;
     display: block;
   }
 }
-.kxNav__StickyBar--mobile {
-  display: none;
-}
 
 // Sticky state
 .kxNav[sticky] .kxNav__StickyBar {
   position: fixed;
-}
-
-// Page Resets
-.kxNav {
-  a {
-    color: white;
-  }
-  * {
-    font-size: 16px;
-  }
 }

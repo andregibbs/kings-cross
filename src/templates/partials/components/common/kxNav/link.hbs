@@ -1,5 +1,8 @@
 <li
-  class="kxNav__StickyNavLink"
+  class="
+    kxNav__StickyNavLink
+    {{#if class}}kxNav__StickyNavLink--{{class}}{{/if}}
+  "
   role="presentation"
   {{#if tabindex}}tabindex="{{tabindex}}"{{/if}}>
 
@@ -7,10 +10,10 @@
     href="/uk/explore/kings-cross{{page}}"
     role="menuitem"
     ga-ca="microsite"
-    ga-ac="navigation-desktop"
-    ga-la="uk:kings-cross:navigation-desktop:{{title}}"
+    ga-ac="navigation-{{type}}"
+    ga-la="uk:kings-cross:navigation-{{type}}:{{title}}"
     data-omni-type="microsite"
-    data-omni="uk:kings-cross:kings-cross:navigation-desktop:{{title}}">
+    data-omni="uk:kings-cross:kings-cross:navigation-{{type}}:{{title}}">
     {{title}}
   </a>
 

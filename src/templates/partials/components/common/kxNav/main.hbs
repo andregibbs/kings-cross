@@ -9,44 +9,53 @@
 
       {{> components/common/kxNav/link
         title="Home Of Innovation"
+        type="desktop"
         tabindex=0
         page="/"
       }}
 
       {{> components/common/kxNav/link
         title="KX Online Hub"
+        type="desktop"
         page="/home"
       }}
 
       {{> components/common/kxNav/link
         title="What's on"
+        type="desktop"
         page="/whats-on"
       }}
 
       {{> components/common/kxNav/link
+        class="search"
         title="Search"
+        type="desktop"
         page="/home"
       }}
 
       {{> components/common/kxNav/link
         title="Discover"
+        type="desktop"
         page="/discover"
       }}
 
       {{> components/common/kxNav/link
         title="Support"
+        type="desktop"
         page="/support"
       }}
 
-      <li role="presentation">
+      <li
+        class="kxNav__StickyNavLink"
+        role="presentation">
         <a
-          class="kxNav__StickyNavLink btn btn--primary btn--primary--coral"
+          class="btn btn--primary btn--primary--coral"
           role="menuitem"
           ga-ca="microsite"
-          ga-ac="sticky menu"
-          ga-la="kings-cross:sticky-navbar_sign-up"
+          ga-ac="navigation-desktop"
+          ga-la="kings-cross:navigation-desktop:sign-up"
           data-omni-type="microsite"
-          data-omni="uk:kings-cross:sticky-navbar:sign-up"
+          data-omni="uk:kings-cross:navigation-desktop:sign-up"
           href="https://a3p.eucdm.samsung.com/webApp/samAPP581?lang=en_GB"
           data-lity>
             Sign Up
@@ -59,5 +68,55 @@
 
   <div class="kxNav__StickyBar  kxNav__StickyBar--mobile">
     mobile
+
+    <a
+      aria-expanded="false"
+      ga-ca="microsite"
+      ga-ac="mobile-sidebar"
+      ga-la="kings-cross:navigation-mobile:toggle"
+      data-omni-type="microsite"
+      data-omni="uk:kings-cross:navigation:toggle-mobile-nav"
+      class="kxNav__MobileToggle">
+      Toggle Navigation
+    </a>
+
+    <ul
+      class="kxNav_MobileNav"
+      role="menubar"
+      aria-label="Samsung Kings Cross Navigation Menu">
+
+      {{> components/common/kxNav/link
+        title="Home Of Innovation"
+        tabindex=0
+        type="mobile"
+        page="/"
+      }}
+
+      {{> components/common/kxNav/link
+        title="KX Online Hub"
+        type="mobile"
+        page="/home"
+      }}
+
+      {{> components/common/kxNav/link
+        title="What's on"
+        type="mobile"
+        page="/whats-on"
+      }}
+
+      {{> components/common/kxNav/link
+        title="Discover"
+        type="mobile"
+        page="/discover"
+      }}
+
+      {{> components/common/kxNav/link
+        title="Support"
+        type="mobile"
+        page="/support"
+      }}
+
+    </ul>
+
   </div>
 </nav>
