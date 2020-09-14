@@ -130,7 +130,12 @@
 
   <div class="kxNav__SearchContainer  kxNav__SubView">
 
-      search
+    {{#if hideSearchNav}}
+      hidden
+    {{else}}
+      {{> components/common/hoiSearch }}
+    {{/if}}
+
   </div>
 
 </nav>

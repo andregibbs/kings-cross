@@ -21,10 +21,14 @@
 
 	{{> home-of-innovation/stylesheet}}
 
-	{{> components/common/kxNav/main }}
+	{{> components/common/kxNav/main hideSearchNav=hideSearchNav }}
 
   <div class="hoiContent">
-    {{> home-of-innovation/hoiBreadcrumbs }}
+
+    {{#if hideBreadcrumbs}}
+    {{else}}
+      {{> home-of-innovation/hoiBreadcrumbs }}
+    {{/if}}
     {{!-- {{> home-of-innovation/hoiFindOutMore }} --}}
 
     {{> home-of-innovation/components }}

@@ -91,6 +91,10 @@
     {{> home-of-innovation/hoiLinkList this }}
   {{/if_equals}}
 
+  {{#if_equals this.type 'search' }}
+    {{> components/common/hoiSearch }}
+  {{/if_equals}}
+
   {{!--
     Graduate Fashion Week Special Component
   --}}

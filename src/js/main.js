@@ -36,6 +36,7 @@ import getParam from "./components/getParam";
 import school from "./components/school";
 import homeKV from './components/homeKV';
 import HOISearch from './components/common/hoiSearch';
+import KXNav from './components/common/kxNav'
 
 import loadingScreenAnimation from "../data/loadingScreen.json";
 import create from "../data/Create.json";
@@ -66,8 +67,10 @@ $j(document).ready(function () {
 	// Sticky nav
 	// =========================================================
 
-	nav();
+	// nav(); //old nav
   new FindKX(); // init find KX
+  new KXNav() // new
+  HOISearch(); // init search
 
 	// =========================================================
 	// Loads scripts dynamically depending on which page you are
@@ -245,11 +248,6 @@ $j(document).ready(function () {
 
 		case "/uk/explore/kings-cross/not-a-school/sign-up/":
 			//places();
-			break;
-
-    case "/uk/explore/kings-cross/home/":
-      // init search component
-      HOISearch();
 			break;
 
     // case "/uk/explore/kings-cross/next-level-gaming/":

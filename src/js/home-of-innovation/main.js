@@ -25,6 +25,7 @@ import { createYoutubeInstance, loadYoutubeAPI } from './utils';
 
 import FindKX from '../components/findKX';
 // import nav from '../components/nav';
+import HOISearch from '../components/common/hoiSearch';
 import KXNav from '../components/common/kxNav'
 import initListItemHoverEvents from './hoiListItemHoverEvents'
 
@@ -36,18 +37,21 @@ function init() {
   const dynamicLinkLists = [].slice.call(document.querySelectorAll('.hoiLinkList[dynamic]'))
   const dynamicGroupLand = [].slice.call(document.querySelectorAll('.hoiGroupLand__Container[dynamic]'))
 
-  // init nav
-  new KXNav()
-
   // could make this conditional depending on wether there is youtube content on the page
   loadYoutubeAPI()
     .then(() => {
+
+      // init nav
+      new KXNav()
 
       // init sharing
       HOIShare();
 
       // init live chats
       HOIYoutubeLiveChat()
+
+      // init hoi search (will be present in either nav or in page with a component)
+      HOISearch();
 
       // fetch dynamic opening times
       new FindKX()

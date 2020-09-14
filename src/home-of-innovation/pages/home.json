@@ -1,10 +1,11 @@
 {
   "title": "KX Online Hub",
   "description": "HOI generated page for Hub Content",
+  "hideSearchNav": true,
+  "hideBreadcrumbs": true,
   "components": [
     {
-      "type": "headline",
-      "copy": "Content to be placed below"
+      "type": "search"
     }
   ]
 }

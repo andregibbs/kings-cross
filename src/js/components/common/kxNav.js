@@ -2,14 +2,14 @@ import navBurgerAnimation from '../../animation/nav-burger-animation.json'
 
 class KXNav {
   constructor() {
-    this.search = true; // search instance
-
     this.el = document.querySelector('.kxNav')
   	this.height = this.el.offsetHeight
     this.sticky = false
     this.mobileToggle = this.el.querySelector('.kxNav__MobileToggle')
     this.mobileOpen = false
 
+    // flag to determine wether the nav holds the search component (it can be included within page as a hoi component)
+    this.navContainsSearchComponent = this.el.querySelector('.hoiSearch') !== null
     this.searchToggles = [].slice.call(this.el.querySelectorAll('.kxNav__SearchLink'))
     this.searchOpen = false
 
@@ -101,7 +101,17 @@ class KXNav {
   initSearchToggle() {
     this.searchToggles.forEach(el => {
       el.addEventListener('click', (e) => {
-        if (this.searchOpen) {
+        // if the nav does not hold the search component, just scroll top
+        // currently used for hoi home page
+        if (!this.navContainsSearchComponent) {
+          window.scrollTo({
+            top: this.getTop(),
+            left: 0,
+            behavior: 'smooth'
+          })
+          return
+        }
+        if (this.searchOpen ) {
           this.closeSearch()
         } else {
           this.openSearch()

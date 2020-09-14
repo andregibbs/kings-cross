@@ -233,6 +233,7 @@ $search-change-duration: 0.5s;
   }
   // transition to show the search view after icon navigation
   .kxNav__SearchContainer {
+    pointer-events: all;
     transition: opacity $search-change-duration $nav-icon-animation-duration ease-in-out;
     opacity: 1;
   }
