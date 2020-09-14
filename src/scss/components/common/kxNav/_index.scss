@@ -13,7 +13,7 @@ $subview-zindex: 700;
     color: white;
   }
   * {
-    font-size: 14px;
+    font-size: 13px;
     font-family: $samsung-sharp;
     letter-spacing: 1px;
   }
@@ -32,7 +32,8 @@ $subview-zindex: 700;
   height: $kxnav-height;
   width: 100vw;
   top: 0;
-  background: blue;
+  background: rgba(0,0,0,0.8);
+  background: linear-gradient(to bottom,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 28%,rgba(0,0,0,0.75) 100%);
   z-index: $navigation-zindex;
 }
 
@@ -50,7 +51,6 @@ $subview-zindex: 700;
   flex: 1;
   flex-grow: 2;
   flex-shrink: 0;
-  background: red;
   height: 100%;
 }
 
@@ -176,11 +176,12 @@ $subview-zindex: 700;
   min-width: $kxnav-height;
   max-width: $kxnav-height;
   width: $kxnav-height;
-  background: green;
   position: relative;
   a {
+    font-size: 0;
     position: relative;
     z-index: $raised-nav-item-zindex;
+    cursor: pointer;
   }
 }
 
@@ -197,13 +198,28 @@ $subview-zindex: 700;
 $nav-icon-animation-duration: 1s;
 $search-change-duration: 0.5s;
 
+.kxNav__SearchLink:before {
+  content: '';
+  display: block;
+  background-image: url(https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/icon/magnify-white-fill.svg);
+  width: $kxnav-height;
+  height: $kxnav-height;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: $search-link-zindex + 1;
+  position: absolute;
+}
 // stroked circle element for search animation
 .kxNav__SearchLink:after {
   content: '';
   display: block;
   position: absolute;
-  width: $kxnav-height;
-  height: $kxnav-height;
+  width: $kxnav-height - 10;
+  height: $kxnav-height - 10;
   top: 50%;
   left: 50%;
   background: black;

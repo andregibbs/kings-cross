@@ -1,2 +1,14 @@
+<script type="text/javascript">
+var kxConfig = {};
+kxConfig['seriesId'] = "{{ config.seriesId }}";
+kxConfig['seriesId_Webinars'] = "{{ config.seriesId_Webinars }}";
+kxConfig['LIVE___seriesId'] = "{{ config.LIVE___seriesId }}";
+kxConfig['LIVE___seriesId_Webinars'] = "{{ config.LIVE___seriesId_Webinars }}";
+if (window.location.hostname == 'www.samsung.com' ||
+    window.location.hostname == 'kings-cross-live.samsung.com') {
+    kxConfig.seriesId = kxConfig.LIVE___seriesId;
+    kxConfig.seriesId_Webinars = kxConfig.LIVE___seriesId_Webinars;
+}
+</script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.7/lottie.min.js"></script>
 <script src="/{{ config.site }}{{ config.subfolder }}/js/home-of-innovation/main.js" defer></script>
