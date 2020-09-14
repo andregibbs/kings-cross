@@ -2,12 +2,14 @@
   class="
     kxNav__StickyNavLink
     {{#if class}}kxNav__StickyNavLink--{{class}}{{/if}}
+    {{#if raised}}kxNav__StickyNavLink--raised{{/if}}
+    {{#if fade}}kxNav__StickyNavLink--fade{{/if}}
   "
   role="presentation"
   {{#if tabindex}}tabindex="{{tabindex}}"{{/if}}>
 
   <a
-    href="/uk/explore/kings-cross{{page}}"
+    {{#if page}}href="/uk/explore/kings-cross{{page}}"{{/if}}
     role="menuitem"
     ga-ca="microsite"
     ga-ac="navigation-{{type}}"

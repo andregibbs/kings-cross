@@ -11,42 +11,47 @@
         title="Home Of Innovation"
         type="desktop"
         tabindex=0
+        raised="true"
         page="/"
       }}
 
       {{> components/common/kxNav/link
         title="KX Online Hub"
         type="desktop"
+        fade="true"
         page="/home"
       }}
 
       {{> components/common/kxNav/link
         title="What's on"
         type="desktop"
+        fade="true"
         page="/whats-on"
       }}
 
-      {{> components/common/kxNav/link
-        class="search"
-        title="Search"
+      {{> components/common/kxNav/searchLink
         type="desktop"
-        page="/home"
       }}
 
       {{> components/common/kxNav/link
         title="Discover"
         type="desktop"
+        fade="true"
         page="/discover"
       }}
 
       {{> components/common/kxNav/link
         title="Support"
         type="desktop"
+        fade="true"
         page="/support"
       }}
 
       <li
-        class="kxNav__StickyNavLink"
+        class="
+          kxNav__StickyNavLink
+          kxNav__StickyNavLink--raised
+        "
         role="presentation">
         <a
           class="btn btn--primary btn--primary--coral"
@@ -67,7 +72,6 @@
   </div>
 
   <div class="kxNav__StickyBar  kxNav__StickyBar--mobile">
-    mobile
 
     <a
       aria-expanded="false"
@@ -77,13 +81,17 @@
       data-omni-type="microsite"
       data-omni="uk:kings-cross:navigation:toggle-mobile-nav"
       class="kxNav__MobileToggle">
-      Toggle Navigation
+      Toggle Mobile Navigation
     </a>
 
     <ul
-      class="kxNav_MobileNav"
+      class="kxNav__MobileNav  kxNav__SubView"
       role="menubar"
       aria-label="Samsung Kings Cross Navigation Menu">
+
+      {{> components/common/kxNav/searchLink
+        type="mobile"
+      }}
 
       {{> components/common/kxNav/link
         title="Home Of Innovation"
@@ -119,4 +127,10 @@
     </ul>
 
   </div>
+
+  <div class="kxNav__SearchContainer  kxNav__SubView">
+
+      search
+  </div>
+
 </nav>

@@ -1,7 +1,11 @@
 // Vars
 $kxnav-height: 50px;
+$raised-nav-item-zindex: 1200;
+$search-link-zindex: 1000;
+$search-view-zindex: 1100;
 $navigation-zindex: 900;
-$search-zindex: 800;
+$mobile-nav-zindex: 800;
+$subview-zindex: 700;
 
 // Page Resets
 .kxNav {
@@ -20,6 +24,7 @@ $search-zindex: 800;
   position: relative;
   width: 100vw;
   height: $kxnav-height;
+  // overflow: hidden;
 }
 
 // Sticky bar (desktop & mobile)
@@ -49,16 +54,7 @@ $search-zindex: 800;
   height: 100%;
 }
 
-.kxNav__StickyNavLink--search {
-  min-width: $kxnav-height;
-  max-width: $kxnav-height;
-  width: $kxnav-height;
-  background: green;
-  a {
-    font-size: 0;
-  }
-}
-
+// inner link styles
 .kxNav__StickyNavLink a {
   text-transform: uppercase;
   display: block;
@@ -70,24 +66,76 @@ $search-zindex: 800;
   text-align: center;
 }
 
+// pre raised above search view
+.kxNav__StickyNavLink--raised {
+  position: relative;
+  z-index: $raised-nav-item-zindex;
+}
+
 .kxNav__StickyNavLink a:hover {
   background-color: rgba(255,255,255,0.1);
 }
 
-// Desktop signup link
+// Desktop signup link (temp)
 .kxNav__StickyNavLink .btn {
   height: 20px;
   background: grey;
   width: 100%;
 }
 
-// Mobile Nav
-.kxNav_MobileNav {
-  position: fixed;
-  top: $kxnav-height;
+// Mobile Nav (sidebar)
+.kxNav__MobileNav {
+  z-index: $mobile-nav-zindex;
+  transform: translate(-110%, 0);
+  transition: transform 0.3s ease-in-out;
+  background: rgba(0,0,0,0.9);
+
+}
+
+// mobile toggle icon
+.kxNav__MobileToggle {
+  font-size: 0;
+  width: $kxnav-height;
+  height: $kxnav-height;
+  position: relative;
+  display: block;
+  z-index: $raised-nav-item-zindex;
+  a {
+    position: relative;
+    color: transparent;
+  }
+  svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+
+// mobile nav links
+.kxNav__StickyBar--mobile {
+  .kxNav__StickyNavLink {
+    height: $kxnav-height;
+    text-align: left;
+    a {
+      justify-content: flex-start;
+      padding: 0 1em;
+    }
+  }
+}
+
+// subview styles (mobile sidebar and search)
+.kxNav__SubView {
+  width: 100%;
+  top: 0;
   bottom: 0;
-  background: rgba(100,200,50,0.2);
-  z-index: $navigation-zindex;
+  position: fixed;
+  margin-top: $kxnav-height;
+  top: 0;
+  bottom: 0;
+  background: blue;
+  z-index: $subview-zindex;
 }
 
 // Desktop/Mobile states
@@ -106,4 +154,125 @@ $search-zindex: 800;
 // Sticky state
 .kxNav[sticky] .kxNav__StickyBar {
   position: fixed;
+}
+
+.kxNav[sticky] .kxNav__SubView {
+  // position: fixed;
+  top: $kxnav-height !important;
+  margin-top: 0;
+}
+
+// mobile sidebar open
+.kxNav[mobile-nav-open] .kxNav__MobileNav {
+  transform: translate(0, 0);
+}
+
+//////////
+// Search
+//////////
+
+// search icon link
+.kxNav__SearchLink {
+  min-width: $kxnav-height;
+  max-width: $kxnav-height;
+  width: $kxnav-height;
+  background: green;
+  position: relative;
+  a {
+    position: relative;
+    z-index: $raised-nav-item-zindex;
+  }
+}
+
+// search link positioning for sidebar
+.kxNav__SearchLink--mobile {
+  max-width: 100%;
+  width: 100%;
+  a {
+    display: block;
+  }
+}
+
+// variables to animate the search view and search nav icon
+$nav-icon-animation-duration: 1s;
+$search-change-duration: 0.5s;
+
+// stroked circle element for search animation
+.kxNav__SearchLink:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: $kxnav-height;
+  height: $kxnav-height;
+  top: 50%;
+  left: 50%;
+  background: black;
+  border-radius: 50%;
+  border: 1px solid white;
+  transform: translate(-50%, -50%);
+  transition: $nav-icon-animation-duration ease-in-out;
+  will-change: width, height;
+  pointer-events: none;
+  z-index: $search-link-zindex;
+}
+
+// search view initial state
+.kxNav__SearchContainer {
+  opacity: 0;
+  pointer-events: none;
+  z-index: $search-view-zindex;
+  transition: opacity $search-change-duration ease-in-out;
+}
+
+// search open state
+.kxNav[search-open] {
+  .kxNav__SearchLink:after {
+    // 200 of longest edge should cover it
+    width: 200vmax;
+    height: 200vmax;
+  }
+  // transition to show the search view after icon navigation
+  .kxNav__SearchContainer {
+    transition: opacity $search-change-duration $nav-icon-animation-duration ease-in-out;
+    opacity: 1;
+  }
+  // animation to fade nav links in after search visibility change
+  .kxNav__StickyBar--desktop {
+    .kxNav__StickyNavLink--fade {
+      animation: raise-link-above-search $search-change-duration $nav-icon-animation-duration ease-in-out forwards;
+    }
+  }
+}
+
+// state only set after first search opening
+.kxNav[search-closed] {
+  .kxNav__StickyBar--desktop {
+    .kxNav__StickyNavLink--fade {
+      animation: persist-link-after-search $nav-icon-animation-duration ease-in-out;
+    }
+  }
+}
+
+// used to maintain nav link zindex during search view close
+@keyframes persist-link-after-search {
+  100% {
+    z-index: $raised-nav-item-zindex;
+    opacity: 1;
+  }
+  0% {
+    z-index: $raised-nav-item-zindex;
+    opacity: 1;
+  }
+}
+
+// used to animate nav link visibility during search view opening
+@keyframes raise-link-above-search {
+  0% {
+    opacity: 0;
+    z-index: $raised-nav-item-zindex;
+  }
+  100% {
+    z-index: $raised-nav-item-zindex;
+    opacity: 1;
+  }
 }
