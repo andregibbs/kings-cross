@@ -81,7 +81,7 @@ function init() {
         new HOIDynamicGroupLand(element)
       })
 
-      initListItemHoverEvents()
+      // initListItemHoverEvents()
 
     })
 

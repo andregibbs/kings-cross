@@ -25,7 +25,7 @@ Handlebars.registerPartial('home-of-innovation/partials/listItem', require('../.
 Handlebars.registerPartial('home-of-innovation/partials/listItemSpacer', require('../../../templates/partials/home-of-innovation/partials/listItem.hbs'))
 
 // listItemJS
-import initListItemHoverEvents from '../../home-of-innovation/hoiListItemHoverEvents';
+// import initListItemHoverEvents from '../../home-of-innovation/hoiListItemHoverEvents';
 
 export default function HOISearch() {
 
@@ -33,7 +33,7 @@ export default function HOISearch() {
   if (!el) {
     return // console.log('no search component')
   }
-  const input = el.querySelector('.hoiSearch__input input')
+  const input = el.querySelector('.hoiSearch__input')
   const resultsEl = el.querySelector('.hoiSearch__results')
 
   fetch(SearchDataURL)
@@ -71,21 +71,17 @@ export default function HOISearch() {
 
   input.addEventListener('input', (e) => {
     const value = input.value
-    // if (value.length > 2) {
     const results = fuse.search(value)
-    console.clear()
-    console.log(value,results,fuse)
+    console.log(value, results)
     renderResults(results.map(r => r.item));
-    // } else {
-      // renderResults([])
-    // }
+
   })
 
   // init observer on hoiSearch__results for result hover events
-  initListItemHoverEvents('.hoiSearch__results')
+  // initListItemHoverEvents('.hoiSearch__results')
 
   function renderResults(results) {
-    console.log('render search', results)
+    console.log('render search', results, results.length)
     // clear the element
     resultsEl.textContent = '';
     // render template

@@ -15,7 +15,6 @@ $subview-zindex: 700;
   * {
     font-size: 13px;
     font-family: $samsung-sharp;
-    letter-spacing: 1px;
   }
 }
 
@@ -64,6 +63,7 @@ $subview-zindex: 700;
   justify-content: center;
   align-items: center;
   text-align: center;
+  letter-spacing: 1px;
 }
 
 // pre raised above search view
@@ -134,8 +134,10 @@ $subview-zindex: 700;
   margin-top: $kxnav-height;
   top: 0;
   bottom: 0;
-  background: blue;
+  background: rgba(0,0,0,0.9);
   z-index: $subview-zindex;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 // Desktop/Mobile states

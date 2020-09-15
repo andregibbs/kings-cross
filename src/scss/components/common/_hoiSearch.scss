@@ -1,0 +1,149 @@
+.hoiSearch {
+
+}
+
+// reset
+
+.hoiSearch {
+  .hoiSearch__header {
+    font-size: 13px;
+    font-family: $samsung-sharp;
+    .hoiSearch__filter label {
+      font-size: 13px;
+    }
+    h3 {
+      font-size: 1.875em;
+      margin-bottom: 1rem
+    }
+  }
+  a {
+    color: white;
+  }
+}
+
+.hoiSearch__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  background: #191919;
+  text-align: center;
+}
+
+.hoiSearch__header h3 {
+  margin-top: auto;
+}
+
+.hoiSearch__input {
+  width: 300px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 25px;
+  border: 1px solid white;
+  background: black;
+  background-image: url(https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/icon/magnify-white-fill.svg);
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  color: white;
+  padding-left: 50px;
+  font-size: 1.3em;
+}
+
+$filter-size: 30px;
+.hoiSearch__filters {
+  display: flex;
+  margin-top: auto;
+  margin-bottom: 1em;
+}
+@media screen and (max-width: $mobile) {
+  .hoiSearch__filters {
+    flex-wrap: wrap;
+    .hoiSearch__filter {
+      width: 50%;
+    }
+  }
+}
+
+.hoiSearch__filter {
+  label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding-left: $filter-size;
+    height: $filter-size;
+    position: relative;
+  }
+  label:before {
+    content: '';
+    display: inline-block;
+    width: $filter-size;
+    height: $filter-size;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 1px solid white;
+    transition: 0.3s;
+  }
+  label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: $filter-size;
+    height: $filter-size;
+    background-image: url(https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/icon/check-white.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 14px;
+    opacity: 0.5;
+    transition: 0.3s;
+  }
+  label:hover:after {
+    opacity: 1;
+  }
+  input:checked {
+    & + label:before {
+      color: red;
+    }
+    & + label:after {
+      opacity: 1;
+    }
+  }
+}
+
+.hoiSearch__filter:nth-child(1) {
+  input:checked + label:before {
+    background-color: $saffron;
+  }
+  label:before {
+    border-color: $saffron;
+  }
+}
+.hoiSearch__filter:nth-child(2) {
+  input:checked + label:before {
+    background-color: $coral;
+  }
+  label:before {
+    border-color: $coral;
+  }
+}
+.hoiSearch__filter:nth-child(3) {
+  input:checked + label:before {
+    background-color: $skyblue;
+  }
+  label:before {
+    border-color: $skyblue;
+  }
+}
+.hoiSearch__filter:nth-child(4) {
+  input:checked + label:before {
+    background-color: $teal;
+  }
+  label:before {
+    border-color: $teal;
+  }
+}
+
+/// Results & containers
+.hoiSearch__results_container {
+
+}

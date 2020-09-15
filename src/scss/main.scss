@@ -26,7 +26,13 @@ body {
   @import "components/common/hoiCards";
   @import "components/common/slider";
   @import "components/common/section";
+
+  // new nav and search
   @import "components/common/kxNav/index";
+  @import "components/common/hoiSearch";
+  @import "home-of-innovation/vars";
+  @import "components/home-of-innovation/hoiLinkList";
+  @import "components/home-of-innovation/list";
 
   // components
   @import "components/nav";
