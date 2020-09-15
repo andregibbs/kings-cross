@@ -97,7 +97,7 @@ $j(document).ready(function () {
 			//places();
 			discover();
 			function showImages(el) {
-				var windowHeight = jQuery( window ).height();
+				var windowHeight = $j( window ).height();
 
 				$j(el).each(function(){
 					var thisPos = $j(this).offset().top;
@@ -174,7 +174,7 @@ $j(document).ready(function () {
 				//places();
 
 				function showImages(el) {
-					var windowHeight = jQuery( window ).height();
+					var windowHeight = $j( window ).height();
 
 					$j(el).each(function(){
 						var thisPos = $j(this).offset().top;
@@ -186,7 +186,7 @@ $j(document).ready(function () {
 					});
 				}
 				function showVidSvg(el) {
-					var windowHeight = jQuery( window ).height();
+					var windowHeight = $j( window ).height();
 
 					$j(el).each(function(){
 						var thisPos = $j(this).offset().top;

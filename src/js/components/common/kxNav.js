@@ -49,7 +49,11 @@ class KXNav {
   // Sets subview top position (calculating gnb size)
   setSubviewPosition() {
     const subViews = [].slice.call(document.querySelectorAll('.kxNav__SubView'))
-    const gnbHeight = document.querySelector('.gnb').offsetHeight
+    const gnb = document.querySelector('.gnb')
+    if (!gnb) {
+      return // no gnb
+    }
+    const gnbHeight = gnb.offsetHeight
     subViews.forEach((view) => {
       view.style.top = `${gnbHeight}px`
     })

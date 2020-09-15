@@ -131,6 +131,9 @@ if (typeof module !== 'undefined') {
     // Pad items to desired multiple
     Handlebars.registerHelper('spacerElements', function (items, divisible, opt) {
       var remainder = items.length % divisible;
+      if (remainder > 0) {
+        remainder = divisible - remainder
+      }
       var results = '';
       for (var i = 0; i < remainder; i++) {
         results += opt.fn()

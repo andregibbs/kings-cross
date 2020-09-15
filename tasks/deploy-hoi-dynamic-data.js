@@ -25,6 +25,8 @@ const chalk = require('chalk')
 
 var HOITemplates = require('../gulpfile').HOITemplates
 
+const HoiSearchContent = require('./hoi-search-content')
+
 const REGION = 'eu-west-2';
 const AWS_ACCESS_KEY_ID = 'AKIAJKZN5DXUYODHENKA';
 const AWS_SECRET_ACCESS_KEY = '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';
@@ -34,7 +36,20 @@ const FOLDER = 'home-of-innovation-dynamic/';
 const FILENAME = 'hoi-dynamic.json';
 const FILENAME_STAGING = 'hoi-dynamic-staging.json';
 
-function s3Put(data, filename) {
+const SEARCH_FILENAME = 'hoi-search.json';
+const SEARCH_FILENAME_STAGING = 'hoi-search-staging.json';
+
+
+// staging arguments
+const stageArg = argv._[0] || false
+if (!stageArg || (stageArg !== "staging" && stageArg !== "live")) {
+  console.log("Missing/incorrect stage argument.")
+  console.log("Usage: npm run hoi-dynamic [staging|live]")
+  return
+}
+
+// put object in s3
+function s3Put(data, filename, callback) {
 
   const s3 = new AWS.S3({
     region: REGION,
@@ -55,18 +70,16 @@ function s3Put(data, filename) {
     if (err) console.log(err.stack)
     else console.log(chalk.cyan(`Dynamic data successfully deployed to ${FOLDER+filename}`))
 
+    if (callback) {
+      callback()
+    }
   })
 }
 
+
+// main deploy data function
+// deploys dynamic data then search data
 function DeployHOIDynamicData() {
-
-  const stageArg = argv._[0] || false
-
-  if (!stageArg || (stageArg !== "staging" && stageArg !== "live")) {
-    console.log("Missing/incorrect stage argument.")
-    console.log("Usage: npm run hoi-dynamic [staging|live]")
-    return
-  }
 
   const isLiveTask = stageArg === "live" ? true : false
   const fileName = isLiveTask ? FILENAME : FILENAME_STAGING
@@ -86,11 +99,38 @@ function DeployHOIDynamicData() {
         type: 'boolean'
       }, (err, result) => {
         if (result.question) {
-          s3Put(data, fileName)
+          s3Put(data, fileName, DeploySearchData)
         }
       })
     } else {
-      s3Put(data, fileName)
+      s3Put(data, fileName, DeploySearchData)
+    }
+
+  })
+
+}
+
+function DeploySearchData() {
+
+  console.log('Deploying HoiSearch Data')
+
+  const isLiveTask = stageArg === "live" ? true : false
+  const searchFileName = isLiveTask ? SEARCH_FILENAME : SEARCH_FILENAME_STAGING
+
+  HoiSearchContent().then((searchData) => {
+
+    if (isLiveTask) {
+      prompt.start();
+      prompt.get({
+        description: "You are deploying search items live. Type 'true' or 't' to confirm.",
+        type: 'boolean'
+      }, (err, result) => {
+        if (result.question) {
+          s3Put(searchData, searchFileName)
+        }
+      })
+    } else {
+      s3Put(searchData, searchFileName)
     }
 
   })

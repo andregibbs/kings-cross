@@ -103,7 +103,7 @@ function HoiSearchContent() {
       // write local copy
       console.log("HOI Search Content Written")
       fs.writeFileSync(LOCAL_BUILD_FOLDER + '/hoi-search-local.json', JSON.stringify(data))
-      resolve(files)
+      resolve(data)
     })
   });
 }

@@ -22,10 +22,17 @@ let fuse; // fuse instance
 // template
 const itemTemplate = require('../../../templates/partials/home-of-innovation/hoiLinkList.hbs');
 Handlebars.registerPartial('home-of-innovation/partials/listItem', require('../../../templates/partials/home-of-innovation/partials/listItem.hbs'))
-Handlebars.registerPartial('home-of-innovation/partials/listItemSpacer', require('../../../templates/partials/home-of-innovation/partials/listItem.hbs'))
+Handlebars.registerPartial('home-of-innovation/partials/listItemSpacer', require('../../../templates/partials/home-of-innovation/partials/listItemSpacer.hbs'))
 
 // listItemJS
 // import initListItemHoverEvents from '../../home-of-innovation/hoiListItemHoverEvents';
+
+const STATE = {
+  loading: 'loading',
+  results: 'results',
+  noinput: 'noinput',
+  noresults: 'noresults'
+}
 
 export default function HOISearch() {
 
@@ -34,7 +41,8 @@ export default function HOISearch() {
     return // console.log('no search component')
   }
   const input = el.querySelector('.hoiSearch__input')
-  const resultsEl = el.querySelector('.hoiSearch__results')
+  const resultsEl = el.querySelector('.hoiSearch__panel--results')
+  const resultsWrapEl = el.querySelector('.hoiSearch__results_wrap')
 
   fetch(SearchDataURL)
     .then(r => r.json())
@@ -72,24 +80,54 @@ export default function HOISearch() {
   input.addEventListener('input', (e) => {
     const value = input.value
     const results = fuse.search(value)
-    console.log(value, results)
-    renderResults(results.map(r => r.item));
+    clearResults()
+    clearTimeout(renderResultsTimeout)
 
+    if (value.length <= 0) {
+      setSearchState(STATE.noinput)
+    } else {
+      renderResults(results.map(r => r.item));
+    }
   })
+
+  function setSearchState(state) {
+    el.setAttribute('search-state', state)
+  }
+
+  function clearResults() {
+    resultsWrapEl.style.height = ''
+    setTimeout(() => {
+      resultsEl.textContent = '';
+    }, 300)
+  }
+
 
   // init observer on hoiSearch__results for result hover events
   // initListItemHoverEvents('.hoiSearch__results')
 
+  let renderResultsTimeout = null;
+
   function renderResults(results) {
-    console.log('render search', results, results.length)
-    // clear the element
-    resultsEl.textContent = '';
-    // render template
-    resultsEl.insertAdjacentHTML('beforeend', itemTemplate({
-      items: results
-    }))
 
 
+    setSearchState(STATE.loading)
+
+    if (!results.length) {
+      renderResultsTimeout = setTimeout(() => {
+        setSearchState(STATE.noresults)
+      }, 300)
+    } else {
+      // clear the element
+      renderResultsTimeout = setTimeout(() => {
+        resultsEl.textContent = '';
+        // render template
+        resultsEl.insertAdjacentHTML('beforeend', itemTemplate({
+          items: results
+        }))
+        setSearchState(STATE.results)
+        resultsWrapEl.style.height = resultsEl.offsetHeight + 'px'
+      }, 800)
+    }
 
   }
 }

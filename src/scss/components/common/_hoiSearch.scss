@@ -143,7 +143,63 @@ $filter-size: 30px;
   }
 }
 
-/// Results & containers
-.hoiSearch__results_container {
+.hoiSearch__panel {
+  display: none;
+  .hoiList__Item {
+    opacity: 1;
+  }
+}
 
+// show results
+.hoiSearch__panel--results {
+  display: block;
+}
+// but hide within wrap (to be animated)
+.hoiSearch__results_wrap {
+  height: 0;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.hoiSearch[search-state="loading"] {
+  .hoiSearch__panel--loading {
+    display: block;
+  }
+}
+
+.hoiSearch[search-state="results"] {
+  .hoiSearch__panel--results {
+    .hoiList__Item {
+      opacity: 0;
+      animation: search-fade-in 0.3s ease-in-out forwards;
+    }
+
+    @for $i from 0 through 8 {
+      .hoiList__Item:nth-child(#{$i + 1}) {
+        animation-delay: #{($i * 0.05s) + 0.1s};
+      }
+    }
+
+  }
+}
+
+.hoiSearch[search-state="noinput"] {
+  .hoiSearch__panel--noinput {
+    display: block;
+  }
+}
+
+.hoiSearch[search-state="noresults"] {
+  .hoiSearch__panel--noresults {
+    display: block;
+  }
+}
+
+@keyframes search-fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

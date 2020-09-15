@@ -17,25 +17,23 @@
     {{/if}}>
 {{/if}}
 
-  <h6 class="hoiList__ItemTitle">
-    <span class="hoiList__ItemTitleCopy">{{ this.title }}</span>
-    {{#if this.description}}
-      <span class="hoiList__ItemTitleDescription">{{ this.description }}</span>
-    {{/if}}
-  </h6>
+
   <div class="hoiList__ItemImageWrap"
     style="background-image:url('{{this.image}}')"
     role="img"
     aria-label="{{this.alt}}">
 
     {{#if download}}
-      <div class="hoiList__ItemIcon">
+      <div class="hoiList__ItemImageIcon">
         {{> svg/download}}
       </div>
     {{/if}}
-
   </div>
-  <div>{{{ this.text }}}</div>
+
+  <h6 class="hoiList__ItemTitle">
+    <span class="hoiList__ItemIcon"></span>
+    {{ this.title }}
+  </h6>
 
 {{#if (eq this.url false)}}
   <!-- end non link item -->
