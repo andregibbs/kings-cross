@@ -34,6 +34,13 @@ const STATE = {
   noresults: 'noresults'
 }
 
+/*
+  TODO:
+  make class
+  add render results function that pulls in search value & filters to generate results
+  create second fuse instance for events?
+*/
+
 export default function HOISearch() {
 
   const el = document.querySelector('.hoiSearch');

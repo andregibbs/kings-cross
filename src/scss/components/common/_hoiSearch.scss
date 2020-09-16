@@ -3,7 +3,6 @@
 }
 
 // reset
-
 .hoiSearch {
   .hoiSearch__header {
     font-size: 13px;
@@ -172,14 +171,13 @@ $filter-size: 30px;
     .hoiList__Item {
       opacity: 0;
       animation: search-fade-in 0.3s ease-in-out forwards;
+      animation-delay: 0s;
     }
-
-    @for $i from 0 through 8 {
+    @for $i from 0 through 12 {
       .hoiList__Item:nth-child(#{$i + 1}) {
-        animation-delay: #{($i * 0.05s) + 0.1s};
+        animation-delay: #{($i * 0.05s) + 0.2s};
       }
     }
-
   }
 }
 
