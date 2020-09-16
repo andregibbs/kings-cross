@@ -1,0 +1,68 @@
+{
+  "title": "Fashion Illustration with Elyse Blackshaw",
+  "description": "Join us as Graduate Fashion Foundation and Elyse Blackshaw host an interactive Fashion Illustration Workshop",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/livestreams/Samsung_GraduateFashionWeek_1440x900_Elyse.jpg",
+  "alt": "",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/livestreams/Samsung_GraduateFashionWeek_1080x1080_Elyse_V2.jpg",
+  "group": "gfw-livestream",
+  "sort": 2,
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "livestream",
+        "content": "4cBXq1SY_Ns",
+        "poster": "{{creativity|graduate-fashion-week|elyse-blackshaw[image]}}",
+        "alt": ""
+      },
+      "style": {
+        "desktop": "top",
+        "mobile": "bottom"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "Fashion Illustration with Elyse Blackshaw"
+        },
+        {
+          "type": "headline",
+          "level": "2",
+          "copy": "Watch live here at 7pm on Friday 18th September"
+        }
+      ]
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "paragraphs",
+          "style": {
+            "large": true
+          },
+          "text": [
+            "During the workshop you will learn more about Elyse’s career and gain top tips on how to create your own fashion illustration.",
+            "Each guest will have the opportunity to put their own skills into practice during the session using the <a href=\"https://www.samsung.com/uk/tablets/galaxy-tab-s7-plus-t970/SM-T970NZNAEUA/buy/\">Galaxy Tab S7</a>.",
+            "This event supports social distancing, in line with government guidelines. Learn more about the precautions we're taking <a href=\"https://www.samsung.com/uk/explore/kings-cross/\">here</a>."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "link-list",
+      "title": "Check out the products used in the workshops here",
+      "items": [
+        {
+          "title": "Galaxy Tab S7",
+          "url": "https://www.samsung.com/uk/tablets/galaxy-tab-s7-plus-t970/SM-T970NZNAEUA/buy/",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/livestreams/Galaxy_Tab_S7_Mystic_Black.jpg"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "dynamic": "episodes",
+      "id": "gfw-livestream",
+      "title": "Episodes"
+    }
+  ]
+}

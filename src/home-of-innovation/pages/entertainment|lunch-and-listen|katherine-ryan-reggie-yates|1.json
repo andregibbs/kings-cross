@@ -1,0 +1,43 @@
+{
+  "title": "Katherine and Reggie get creative",
+  "description": "Reggie gets artistic as he photographs Katherine and Clara on the Galaxy Note 20.",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/entertainment/lunch-and-listen/Samsung_WebsiteEp2_BANNER_Katherine_v1.jpg",
+  "alt": "",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/entertainment/lunch-and-listen/Samsung_WebsiteEp2_THUMBNAIL_Kathryn_V1.jpg",
+  "group": "lunch-and-listen",
+  "sort": 4,
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "youtube",
+        "content": "vSlZP5KGiIM",
+        "poster": "{{entertainment|lunch-and-listen|katherine-ryan-reggie-yates|1[image]}}",
+        "alt": "{{entertainment|lunch-and-listen|katherine-ryan-reggie-yates|1[alt]}}"
+      },
+      "style": {
+        "desktop": "top",
+        "mobile": "bottom"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "Katherine and Reggie get creative"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Turn on your out of office and learn to serve. Reggie Yates gets artistic as he uses the <a href=\"https://www.samsung.com/uk/smartphones/galaxy-note20/\">Galaxy Note 20</a> to photograph Clara Amfo, Katherine Ryan and her side-kick pooch at Samsung KX.",
+            "Samsung KX’s all new series Lunch & Listen is here to help you reclaim your lunch break! Hosted by Clara Amfo, this fun and engaging two-part series sees special guests Katherine Ryan, Munya Chawawa, Reggie Yates and Amelia Dimoldenberg reveal their hidden hobbies and talk about how they reclaim their free time -  inspiring you to do the same."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "dynamic": "episodes",
+      "id": "lunch-and-listen",
+      "title": "Episodes"
+    }
+  ]
+}

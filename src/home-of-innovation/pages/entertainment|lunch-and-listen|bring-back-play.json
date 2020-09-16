@@ -1,5 +1,5 @@
 {
-  "title": "Lunch and Listen - Bring back play full episode",
+  "title": "Lunch and Listen - Episode 1",
   "description": "Lunch time play starts here. Watch Munya Chawawa work up a sweat and Amelia Dimoldenberg shock with her sketches as host Clara Amfo brings the fun back to our breaks.",
   "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/entertainment/lunch-and-listen/kv_short.jpg",
   "alt": "",
@@ -10,7 +10,7 @@
     {
       "type": "css-snippet",
       "content": ".hoiKv__MediaImage { background-size: contain !important; } .hoiKv__Media:after { padding-bottom: 45% !important; }",
-      "__notes": ""
+      "__notes": "custom ratio for kv image"
     },
     {
       "type": "kv",
