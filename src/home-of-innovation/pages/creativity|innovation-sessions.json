@@ -23,9 +23,6 @@
       ]
     },
     {
-      "type": "share"
-    },
-    {
       "type": "group",
       "dynamic": "episodes",
       "id": "innovation-sessions",

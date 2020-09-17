@@ -23,9 +23,6 @@
       ]
     },
     {
-      "type": "share"
-    },
-    {
       "type": "group",
       "dynamic": "articles",
       "id": "guest-writer-of-the-week",

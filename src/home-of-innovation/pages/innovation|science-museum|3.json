@@ -27,9 +27,6 @@
       ]
     },
     {
-      "type": "share"
-    },
-    {
       "type": "wrapper",
       "components": [
         {

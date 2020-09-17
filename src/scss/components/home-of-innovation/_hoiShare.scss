@@ -7,6 +7,8 @@
 .hoiShare__Link {
   width: em(32);
   height: em(32);
+  max-width: 30px;
+  max-height: 30px;
   display: block;
   position: relative;
   margin-right: em(8);

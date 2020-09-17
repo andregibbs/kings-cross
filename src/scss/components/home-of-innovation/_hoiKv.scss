@@ -32,6 +32,10 @@
     @extend .h6;
     font-weight: bold;
   }
+
+  .hoiShare {
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: $mobile) {

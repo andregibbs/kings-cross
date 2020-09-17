@@ -28,9 +28,6 @@
 			}]
 		},
 		{
-			"type": "share"
-		},
-		{
 			"type": "wrapper",
 			"components": [{
 					"type": "headline",
