@@ -9,6 +9,10 @@
       "type": "group-land-id",
       "dynamic": "group-pages",
       "items": [
+        "creativity|graduate-fashion-week|duck-productions",
+        "creativity|graduate-fashion-week|elyse-blackshaw",
+        "creativity|graduate-fashion-week|life-of-a-marketing-girl",
+        "creativity|graduate-fashion-week|henry-holland",
         "creativity|editing-sessions|4",
         "creativity|innovation-sessions|adam-gemili-rachel-ama-get-fit-get-cooking",
         "creativity|innovation-sessions|elz-barney-career-advice",
