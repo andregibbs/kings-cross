@@ -3,9 +3,113 @@
   "description": "HOI generated page for Hub Content",
   "hideSearchNav": true,
   "hideBreadcrumbs": true,
+  "theme": {
+    "color": "white"
+  },
   "components": [
     {
       "type": "search"
+    },
+    {
+      "type": "link-list-id",
+      "dynamic": "featured",
+      "title": "Featured",
+      "style": {
+        "scroll": true
+      },
+      "items": [
+        "lifestyle|tips-and-trikx|5",
+        "creativity|central-saint-martins",
+        "creativity|innovation-sessions",
+        "entertainment|game-dev-london-podcast|10",
+        "creativity|graduate-fashion-week",
+        "innovation|science-museum|1"
+      ]
+    },
+    {
+      "type": "link-list-id",
+      "dynamic": "new-series",
+      "title": "Series",
+      "style": {
+        "scroll": true,
+        "size": "square"
+      },
+      "items": [
+        "lifestyle|tips-and-trikx",
+        "creativity|innovation-sessions",
+        "entertainment|game-dev-london-podcast",
+        "innovation|science-museum",
+        "lifestyle|cat-meffan",
+        "lifestyle|guest-writer-of-the-week",
+        "creativity|editing-sessions",
+        "creativity|british-museum",
+        "creativity|innovation-sessions",
+        "lifestyle|internet-matters"
+      ]
+    },
+    {
+      "type": "link-list-id",
+      "dynamic": "lifestyle",
+      "title": "Lifestyle",
+      "style": {
+        "scroll": true
+      },
+      "items": [
+        "lifestyle|cat-meffan|3",
+        "lifestyle|guest-writer-of-the-week|10",
+        "lifestyle|internet-matters|3",
+        "lifestyle|safe-to-net",
+        "lifestyle|tips-and-trikx|10",
+        "lifestyle|zone-v"
+      ]
+    },
+    {
+      "type": "link-list-id",
+      "dynamic": "creativity",
+      "title": "Creativity",
+      "style": {
+        "scroll": true
+      },
+      "items": [
+        "creativity|british-museum|5",
+        "creativity|central-saint-martins",
+        "creativity|editing-sessions|3",
+        "creativity|graduate-fashion-week",
+        "creativity|innovation-sessions|elz-barney-career-advice"
+      ]
+    },
+    {
+      "type": "link-list-id",
+      "dynamic": "entertainment",
+      "title": "Entertainment",
+      "style": {
+        "scroll": true
+      },
+      "items": [
+        "entertainment|game-dev-london-podcast|10",
+        "entertainment|connected-living",
+        "entertainment|game-dev-london-podcast|9",
+        "entertainment|game-dev-london-podcast|8",
+        "entertainment|game-dev-london-podcast|7",
+        "entertainment|game-dev-london-podcast|6",
+        "entertainment|game-dev-london-podcast|5",
+        "entertainment|game-dev-london-podcast|4",
+        "entertainment|game-dev-london-podcast|3"
+      ]
+    },
+    {
+      "type": "link-list-id",
+      "dynamic": "innovation",
+      "title": "Tech",
+      "style": {
+        "scroll": true
+      },
+      "items": [
+        "innovation|science-museum|3",
+        "innovation|science-museum|2",
+        "innovation|science-museum|1",
+        "innovation|university-of-lincoln"
+      ]
     }
   ]
 }

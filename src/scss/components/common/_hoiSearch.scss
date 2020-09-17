@@ -28,6 +28,7 @@
   min-height: 50vh;
   background: #191919;
   text-align: center;
+  padding: 0 $spacing-desktop;
 }
 
 .hoiSearch__header h3 {
@@ -47,19 +48,25 @@
   color: white;
   padding-left: 50px;
   font-size: 1.3em;
+  @media screen and (max-width: $mobile) {
+    width: 100%;
+  }
 }
 
 $filter-size: 30px;
 .hoiSearch__filters {
   display: flex;
   margin-top: auto;
-  margin-bottom: 1em;
+  margin-bottom: $spacing-desktop;
 }
 @media screen and (max-width: $mobile) {
   .hoiSearch__filters {
     flex-wrap: wrap;
     .hoiSearch__filter {
       width: 50%;
+      label {
+        padding-left: 0;
+      }
     }
   }
 }

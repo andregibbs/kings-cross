@@ -1,10 +1,22 @@
 .hoiLinkList {
-  padding: $spacing-mobile;
+  margin: $spacing-mobile;
 }
 
 @media screen and (min-width: $mobile + 1) {
   .hoiLinkList {
-    padding: $spacing-desktop;
+    margin: $spacing-desktop;
+  }
+}
+
+
+// Square list items
+
+.hoiLinkList--size-square {
+  .hoiList__Item {
+    width: auto;
+  }
+  .hoiList__ItemImageWrap {
+    padding-bottom: 100%;
   }
 }
 
@@ -49,21 +61,24 @@
 // Scrolling Style
 
 .hoiLinkList--scroll {
-  padding-left: 0;
-  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
   .hoiHeadline {
     padding-left: 2.5em;
     padding-right: 2.5em;
   }
   .hoiList {
+    display: flex;
+    flex-wrap: nowrap;
     justify-content: flex-start;
     padding-left: 2.5em;
     padding-right: 2.5em;
+
     overflow-x: auto;
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: -ms-autohiding-scrollbar;
-    display: block;
+    // display: block;
     white-space: nowrap;
     &::-webkit-scrollbar {
       // width: 8px; /* 1px wider than Lion. */
@@ -90,9 +105,10 @@
   }
   .hoiList__Item {
     display: inline-block;
-    width: calc(42vw - #{$spacing-desktop / 2});
+    flex-shrink: 0;
+    width: calc(45vw - #{$spacing-desktop / 2});
     @media screen and (min-width: $mobile + 1) {
-      width: calc(23vw - #{$spacing-desktop / 2});
+      width: calc(23vw - #{$spacing-desktop / 4});
     }
     margin-right: calc(2.5em / 2);
     &--spacer {
