@@ -1,0 +1,11 @@
+.hoiIframe {
+  min-height: 80vw;
+  position: relative;
+
+  iframe {
+    border: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}

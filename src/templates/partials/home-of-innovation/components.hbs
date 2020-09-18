@@ -56,6 +56,10 @@
     {{> home-of-innovation/hoiMediaImage this wrap=true}}
   {{/if_equals}}
 
+  {{#if_equals this.type 'iframe'}}
+    {{> home-of-innovation/hoiIframe this wrap=true}}
+  {{/if_equals}}
+
   {{!--
     Group, Related & Link list
     All the same components, different method of populating
