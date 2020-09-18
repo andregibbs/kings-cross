@@ -1,0 +1,80 @@
+.hoiWrapper {
+  margin: $spacing-mobile $spacing-mobile calc(#{$spacing-mobile} * 4);
+}
+
+// nested wrappers (probably shouldnt go more than 2 deep)
+.hoiWrapper .hoiWrapper {
+  margin: $spacing-mobile calc(#{$spacing-mobile} / 2);
+}
+
+.hoiWrapper .hoiMedia,
+.hoiWrapper .hoiMedia__Wrap {
+  margin-bottom: 1em;
+}
+
+.hoiWrapper h2 {
+  margin-top: 2em
+}
+
+.hoiWrapper h3,
+.hoiWrapper h4 {
+  margin-top: 1em;
+}
+
+.hoiWrapper ul {
+  margin-left: 2em;
+  li {
+    list-style: initial;
+  }
+}
+
+.hoiWrapper > .hoiMedia {
+  padding: $spacing-mobile 0;
+}
+
+@media screen and (min-width: $mobile + 1) {
+  .hoiWrapper {
+    max-width: 75vw;
+    margin: calc(#{$spacing-desktop} * 2) auto calc(#{$spacing-desktop} * 4);
+    .hoiMedia,
+    .hoiMedia__Wrap {
+      max-height: 75vh;
+      object-fit: contain;
+    }
+  }
+  .hoiWrapper .hoiWrapper {
+    margin: $spacing-desktop calc(#{$spacing-desktop} / 2);
+  }
+  .hoiWrapper > .hoiMedia {
+    padding: $spacing-desktop calc(#{$spacing-desktop} * 2);
+  }
+
+}
+
+@media screen and (min-width: 1280px) {
+  .hoiWrapper {
+    max-width: 66vw;
+  }
+}
+
+@media screen and (min-width: $desktop + 1) {
+  .hoiWrapper {
+    padding: 0 $spacing-desktop;
+  }
+}
+
+.hoiWrapper--align-left {
+  text-align: left;
+}
+
+.hoiWrapper--align-center {
+  text-align: center;
+}
+
+.hoiWrapper--align-right {
+  text-align: right;
+}
+
+.hoiWrapper--full {
+  max-width: none;
+}

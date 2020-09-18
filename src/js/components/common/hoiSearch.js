@@ -132,7 +132,7 @@ export default function HOISearch() {
           items: results
         }))
         setSearchState(STATE.results)
-        resultsWrapEl.style.height = resultsEl.offsetHeight + 'px'
+        resultsWrapEl.style.height = (resultsEl.offsetHeight * 1.1) + 'px'
       }, 800)
     }
 
