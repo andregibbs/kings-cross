@@ -68,17 +68,25 @@ class KXNav {
     }
     // otherwise toggle mobile nav
     if (this.mobileOpen) {
-      this.el.removeAttribute('mobile-nav-open')
-      this.mobileOpen = false
-      if (this.burgerAnimation) {
-        this.burgerAnimation.playSegments([95, 125], true);
-      }
+      this.closeMobileNav()
     } else {
-      this.el.setAttribute('mobile-nav-open', '')
-      this.mobileOpen = true
-      if (this.burgerAnimation) {
-        this.burgerAnimation.playSegments([30, 60], true);
-      }
+      this.openMobileNav()
+    }
+  }
+
+  closeMobileNav() {
+    this.el.removeAttribute('mobile-nav-open')
+    this.mobileOpen = false
+    if (this.burgerAnimation) {
+      this.burgerAnimation.playSegments([95, 125], true);
+    }
+  }
+
+  openMobileNav() {
+    this.el.setAttribute('mobile-nav-open', '')
+    this.mobileOpen = true
+    if (this.burgerAnimation) {
+      this.burgerAnimation.playSegments([30, 60], true);
     }
   }
 
@@ -108,6 +116,7 @@ class KXNav {
         // if the nav does not hold the search component, just scroll top
         // currently used for hoi home page
         if (!this.navContainsSearchComponent) {
+          this.closeMobileNav()
           window.scrollTo({
             top: this.getTop(),
             left: 0,
@@ -115,7 +124,7 @@ class KXNav {
           })
           return
         }
-        if (this.searchOpen ) {
+        if (this.searchOpen) {
           this.closeSearch()
         } else {
           this.openSearch()
