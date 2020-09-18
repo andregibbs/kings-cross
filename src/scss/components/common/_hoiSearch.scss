@@ -1,6 +1,6 @@
-.hoiSearch {
+@import "../../home-of-innovation/vars";
 
-}
+.hoiSearch {}
 
 // reset
 .hoiSearch {
@@ -20,39 +20,49 @@
   }
 }
 
+// header
 .hoiSearch__header {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 400px;
-  background: #191919;
+  background: #090909;
   text-align: center;
   padding: 0 $spacing-desktop;
 }
-
 .hoiSearch__header h3 {
   margin-top: auto;
 }
 
+// input field
+$input-height: 50px;
+$input-width: 300px;
 .hoiSearch__input {
-  width: 300px;
-  height: 50px;
-  line-height: 50px;
+  width: $input-width;
+  height: $input-height;
+  line-height: $input-height;
   border-radius: 25px;
-  border: 1px solid white;
+  border: 1px solid;
+  border-color: rgba(255,255,255,0.5);
   background: black;
   background-image: url(https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/icon/magnify-white-fill.svg);
   background-repeat: no-repeat;
   background-position: 15px center;
   color: white;
-  padding-left: 50px;
+  padding-left: $input-height;
   font-size: 1.3em;
+  transition: 0.3s;
   @media screen and (max-width: $mobile) {
     width: 100%;
   }
+  &:focus {
+    outline: 0;
+    border-color: rgba(255,255,255,1);
+  }
 }
 
+// Search Filters
 $filter-size: 30px;
 .hoiSearch__filters {
   display: flex;
@@ -149,35 +159,43 @@ $filter-size: 30px;
   }
 }
 
+// body panels visible below header
 .hoiSearch__panel {
   display: none;
   .hoiList__Item {
     opacity: 1;
   }
 }
-
-// show results
+// always show results panel (used to determine height of wrapper)
 .hoiSearch__panel--results {
   display: block;
 }
-// but hide within wrap (to be animated)
+// wrapper will animate to results panel height
 .hoiSearch__results_wrap {
   height: 0;
   transition: 0.3s;
   overflow: hidden;
 }
 
+// SEARCH STATES
+// loading
 .hoiSearch[search-state="loading"] {
   .hoiSearch__panel--loading {
-    display: block;
+    display: flex;
+    visibility: visible;
   }
 }
-
+// results
 .hoiSearch[search-state="results"] {
+  .hoiSearch__results_wrap .hoiSearch__panel_status {
+    display: flex;
+    visibility: visible;
+  }
   .hoiSearch__panel--results {
+
     .hoiList__Item {
       opacity: 0;
-      animation: search-fade-in 0.3s ease-in-out forwards;
+      animation: search-item-fade-in 0.3s ease-in-out forwards;
       animation-delay: 0s;
     }
     @for $i from 0 through 12 {
@@ -187,20 +205,66 @@ $filter-size: 30px;
     }
   }
 }
-
+// no input
 .hoiSearch[search-state="noinput"] {
   .hoiSearch__panel--noinput {
-    display: block;
+    display: flex;
+    visibility: visible;
   }
 }
-
+// no results
 .hoiSearch[search-state="noresults"] {
   .hoiSearch__panel--noresults {
-    display: block;
+    display: flex;
+    visibility: visible;
   }
 }
 
-@keyframes search-fade-in {
+.hoiSearch__panel_status {
+  height: 50px;
+  display: none;
+  visibility: hidden;
+  align-items: center;
+  justify-content: center;
+}
+
+
+// COMPONENT ACTIVE STATE
+// when active
+.hoiSearch[active] {
+  .hoiSearch__header h3,
+  .hoiSearch__input,
+  .hoiSearch__filters {
+    opacity: 1;
+    transition: 0.7s 1.3s ease-in-out;
+  }
+  .hoiSearch__input {
+    width: $input-width;
+    transition: opacity 1s 1.3s ease-in-out, width 0.5s 1.5s ease-in-out;
+  }
+  .hoiSearch__header h3 {
+    transition-delay: 1.7s;
+  }
+  .hoiSearch__filters {
+    transition-delay: 2.5s;
+  }
+}
+// default/deactivated
+.hoiSearch {
+  .hoiSearch__header h3,
+  .hoiSearch__input,
+  .hoiSearch__filters {
+    opacity: 0;
+    transition: 0s 0.5s ease-in-out;
+  }
+  .hoiSearch__input {
+    width: $input-height;
+  }
+}
+
+// Animations
+// search item fade in
+@keyframes search-item-fade-in {
   0% {
     opacity: 0;
   }

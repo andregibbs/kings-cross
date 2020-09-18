@@ -551,6 +551,8 @@ function HOITemplates(skipTemplates, dynamicDataCallback, selectedFiles) {
     // skip templates if set
     if (skipTemplates !== true) {
 
+      var configData = require(config.SRC_FOLDER + '/data/config.json')
+
       // Gulp loop to generate the site files
       gulp.src( config.SRC_FOLDER + '/' + _HOI_FOLDER + '/index.hbs' )
       .pipe(handlebars({
@@ -562,6 +564,7 @@ function HOITemplates(skipTemplates, dynamicDataCallback, selectedFiles) {
           breadcrumbs,
           themeColor,
           config: {
+            ...configData,
             site: SITE,
             subfolder: SUBFOLDER,
             staging: isStagingTask

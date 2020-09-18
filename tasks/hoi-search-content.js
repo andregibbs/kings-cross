@@ -17,8 +17,9 @@ function getFiles() {
     if (file.indexOf('/_') > - 1) {
       return false
     }
-    // ignore if its a component test category
-    if (id.split('|')[0] === 'components') {
+    // only use file if it is part of the following categories
+    let categoriesToCapture = ['creativity','entertainment','innovation','lifestyle']
+    if (categoriesToCapture.indexOf(id.split('|')[0]) === -1) {
       return false
     }
     // ignore if is category page
@@ -80,13 +81,13 @@ function processFiles(files, cb) {
 
     // trigger recursive loop
     jsonRecursive(preparedContent)
-
     // push processed fileValues to pageData
     pageData.push({
       id,
       title: data.title,
       description: data.description,
       image: data.image,
+      category: id.split('|')[0],
       url: PUBLIC_URL + id.replace(/\|/g,'/'),
       values: fileValues,
       joinedValues: fileValues.join()

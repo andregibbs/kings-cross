@@ -69,8 +69,8 @@ $j(document).ready(function () {
 
 	// nav(); //old nav
   new FindKX(); // init find KX
-  new KXNav() // new
-  HOISearch(); // init search
+
+  new KXNav(new HOISearch()) // new nav with search
 
 	// =========================================================
 	// Loads scripts dynamically depending on which page you are

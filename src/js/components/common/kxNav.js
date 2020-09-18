@@ -1,3 +1,5 @@
+import HOISearch from './hoiSearch';
+
 import navBurgerAnimation from '../../animation/nav-burger-animation.json'
 
 class KXNav {
@@ -12,6 +14,13 @@ class KXNav {
     this.navContainsSearchComponent = this.el.querySelector('.hoiSearch') !== null
     this.searchToggles = [].slice.call(this.el.querySelectorAll('.kxNav__SearchLink'))
     this.searchOpen = false
+
+    this.searchComponent = new HOISearch()
+    if (!this.navContainsSearchComponent) {
+      // if the component is not within the nav, activate it by default
+      // wont be deactivated by navigation interactions
+      this.searchComponent.activate()
+    }
 
     // mobile nav container
     this.mobileNav = this.el.querySelector('.kxNav__MobileNav')
@@ -117,6 +126,7 @@ class KXNav {
         // currently used for hoi home page
         if (!this.navContainsSearchComponent) {
           this.closeMobileNav()
+          // scroll to top (could change to hoiSearch position)
           window.scrollTo({
             top: this.getTop(),
             left: 0,
@@ -137,6 +147,7 @@ class KXNav {
   openSearch() {
     this.el.setAttribute('search-open', '')
     this.el.removeAttribute('search-closed')
+    this.searchComponent.activate()
     this.searchOpen = true
   }
 
@@ -146,6 +157,7 @@ class KXNav {
     // set a search closed state to animate nav items back
     // state not set initially on page load
     this.el.setAttribute('search-closed', '')
+    this.searchComponent.deactivate()
     this.searchOpen = false
   }
 }

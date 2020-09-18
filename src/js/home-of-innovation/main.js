@@ -25,7 +25,6 @@ import { createYoutubeInstance, loadYoutubeAPI } from './utils';
 
 import FindKX from '../components/findKX';
 // import nav from '../components/nav';
-import HOISearch from '../components/common/hoiSearch';
 import KXNav from '../components/common/kxNav'
 import initListItemHoverEvents from './hoiListItemHoverEvents'
 
@@ -41,7 +40,7 @@ function init() {
   loadYoutubeAPI()
     .then(() => {
 
-      // init nav
+      // init hoi search (will be present in either nav or in page with a component)
       new KXNav()
 
       // init sharing
@@ -49,9 +48,6 @@ function init() {
 
       // init live chats
       HOIYoutubeLiveChat()
-
-      // init hoi search (will be present in either nav or in page with a component)
-      HOISearch();
 
       // fetch dynamic opening times
       new FindKX()
