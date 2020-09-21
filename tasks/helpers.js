@@ -8,6 +8,14 @@ function getFilesInDirectory(dirPath, arrayOfFiles) {
   })
 }
 
+// https://gist.github.com/getify/3667624
+function escapeDoubleQuotes(str) {
+    if (typeof str !== 'string') {
+      return str
+    }
+   return str.replace(/\\([\s\S])|(")/g,"\\$1$2"); // thanks @slevithan!
+ }
+
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -19,5 +27,6 @@ function shuffleArray(array) {
 
 module.exports = {
   getFilesInDirectory,
-  shuffleArray
+  shuffleArray,
+  escapeDoubleQuotes
 }

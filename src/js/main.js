@@ -15,8 +15,8 @@ import 'lity'
 window.$j = $
 
 /* Components */
-import nav from "./components/nav";
-import sidedrawer from "./components/sidedrawer";
+// import nav from "./components/nav";
+// import sidedrawer from "./components/sidedrawer";
 import whatson from "./components/whatson";
 import singleEvent from "./components/singleEvent";
 // import places from "./components/places";
@@ -35,7 +35,6 @@ import loadingScreen from "./components/loadingScreen";
 import getParam from "./components/getParam";
 import school from "./components/school";
 import homeKV from './components/homeKV';
-import HOISearch from './components/common/hoiSearch';
 import KXNav from './components/common/kxNav'
 
 import loadingScreenAnimation from "../data/loadingScreen.json";
@@ -63,14 +62,8 @@ $j(document).ready(function () {
 		return str.charAt(0).toUpperCase() + str.slice(1);
 	});
 
-	// =========================================================
-	// Sticky nav
-	// =========================================================
-
-	// nav(); //old nav
+  new KXNav() // new nav
   new FindKX(); // init find KX
-
-  new KXNav(new HOISearch()) // new nav with search
 
 	// =========================================================
 	// Loads scripts dynamically depending on which page you are

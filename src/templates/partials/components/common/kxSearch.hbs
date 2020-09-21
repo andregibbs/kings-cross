@@ -1,0 +1,57 @@
+<div class="kxSearch">
+
+  <div class="kxSearch__header">
+    <h3>Search the home of innovation</h3>
+    <input class="kxSearch__input" />
+
+    <div class="kxSearch__filters">
+      <span class="kxSearch__filter">
+        <input type="checkbox" name="content_filter" id="filter_lifestyle" value="lifestyle">
+        <label for="filter_lifestyle">Lifestyle</label>
+      </span>
+      <span class="kxSearch__filter">
+        <input type="checkbox" name="content_filter" id="filter_creativity" value="creativity">
+        <label for="filter_creativity">Creativity</label>
+      </span>
+      <span class="kxSearch__filter">
+        <input type="checkbox" name="content_filter" id="filter_entertainment" value="entertainment">
+        <label for="filter_entertainment">Entertainment</label>
+      </span>
+      <span class="kxSearch__filter">
+        <input type="checkbox" name="content_filter" id="filter_tech" value="tech">
+        <label for="filter_tech">Tech</label>
+      </span>
+    </div>
+  </div>
+
+  <div class="kxSearch__response">
+    <div class="kxSearch__panel  kxSearch__panel--noinput  kxSearch__panel_status">
+      Please enter a search term
+    </div>
+    <div class="kxSearch__panel  kxSearch__panel--noresults  kxSearch__panel_status">
+      Could not find any results
+    </div>
+    <div class="kxSearch__panel  kxSearch__panel--loading  kxSearch__panel_status">
+      Loading...
+    </div>
+    <div class="kxSearch__results_wrap">
+      <div class="kxSearch__panel  kxSearch__panel--results">
+        <div class="kxSearch__panel__header">
+          <h3>Search Results</h3>
+        </div>
+        <div id="search-results"></div>
+        <div class="kxSearch__panel__header">
+          <h3>Event Results</h3>
+        </div>
+        <div class="hoiLinkList hoiLinkList--scroll">
+          <div class="hoiList hoiList--grid-4">
+            <div id="event-results">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

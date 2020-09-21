@@ -33,6 +33,7 @@ var path = require('path')
 var fs = require('fs')
 
 var getFilesInDirectory = require('./tasks/helpers').getFilesInDirectory
+var escapeDoubleQuotes = require('./tasks/helpers').escapeDoubleQuotes
 var HoiSearchContent = require('./tasks/hoi-search-content')
 
 var log = function( message, type ) {
@@ -370,14 +371,6 @@ function HOITemplates(skipTemplates, dynamicDataCallback, selectedFiles) {
     })
     return withId;
   }
-
-  // https://gist.github.com/getify/3667624
-  function escapeDoubleQuotes(str) {
-      if (typeof str !== 'string') {
-        return str
-      }
-     return str.replace(/\\([\s\S])|(")/g,"\\$1$2"); // thanks @slevithan!
-   }
 
   // Include any data that requires dynamic data from a different page
   function populatePageDataVariables(pageData, currentFilePath) {

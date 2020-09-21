@@ -1,13 +1,12 @@
 @import "../../home-of-innovation/vars";
-
-.hoiSearch {}
+@import "./kxEventTile";
 
 // reset
-.hoiSearch {
-  .hoiSearch__header {
+.kxSearch {
+  .kxSearch__header {
     font-size: 13px;
     font-family: $samsung-sharp;
-    .hoiSearch__filter label {
+    .kxSearch__filter label {
       font-size: 13px;
     }
     h3 {
@@ -17,11 +16,12 @@
   }
   a {
     color: white;
+    font-size: 13px;
   }
 }
 
 // header
-.hoiSearch__header {
+.kxSearch__header {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,14 +31,14 @@
   text-align: center;
   padding: 0 $spacing-desktop;
 }
-.hoiSearch__header h3 {
+.kxSearch__header h3 {
   margin-top: auto;
 }
 
 // input field
 $input-height: 50px;
 $input-width: 300px;
-.hoiSearch__input {
+.kxSearch__input {
   width: $input-width;
   height: $input-height;
   line-height: $input-height;
@@ -64,15 +64,15 @@ $input-width: 300px;
 
 // Search Filters
 $filter-size: 30px;
-.hoiSearch__filters {
+.kxSearch__filters {
   display: flex;
   margin-top: auto;
   margin-bottom: $spacing-desktop;
 }
 @media screen and (max-width: $mobile) {
-  .hoiSearch__filters {
+  .kxSearch__filters {
     flex-wrap: wrap;
-    .hoiSearch__filter {
+    .kxSearch__filter {
       width: 50%;
       label {
         padding-left: 0;
@@ -81,7 +81,7 @@ $filter-size: 30px;
   }
 }
 
-.hoiSearch__filter {
+.kxSearch__filter {
   label {
     cursor: pointer;
     display: flex;
@@ -126,7 +126,7 @@ $filter-size: 30px;
   }
 }
 
-.hoiSearch__filter:nth-child(1) {
+.kxSearch__filter:nth-child(1) {
   input:checked + label:before {
     background-color: $saffron;
   }
@@ -134,7 +134,7 @@ $filter-size: 30px;
     border-color: $saffron;
   }
 }
-.hoiSearch__filter:nth-child(2) {
+.kxSearch__filter:nth-child(2) {
   input:checked + label:before {
     background-color: $coral;
   }
@@ -142,7 +142,7 @@ $filter-size: 30px;
     border-color: $coral;
   }
 }
-.hoiSearch__filter:nth-child(3) {
+.kxSearch__filter:nth-child(3) {
   input:checked + label:before {
     background-color: $skyblue;
   }
@@ -150,7 +150,7 @@ $filter-size: 30px;
     border-color: $skyblue;
   }
 }
-.hoiSearch__filter:nth-child(4) {
+.kxSearch__filter:nth-child(4) {
   input:checked + label:before {
     background-color: $teal;
   }
@@ -160,18 +160,19 @@ $filter-size: 30px;
 }
 
 // body panels visible below header
-.hoiSearch__panel {
+.kxSearch__panel {
   display: none;
   .hoiList__Item {
     opacity: 1;
   }
 }
 // always show results panel (used to determine height of wrapper)
-.hoiSearch__panel--results {
+.kxSearch__panel--results,
+.kxSearch__panel--events {
   display: block;
 }
 // wrapper will animate to results panel height
-.hoiSearch__results_wrap {
+.kxSearch__results_wrap {
   height: 0;
   transition: 0.3s;
   overflow: hidden;
@@ -179,20 +180,27 @@ $filter-size: 30px;
 
 // SEARCH STATES
 // loading
-.hoiSearch[search-state="loading"] {
-  .hoiSearch__panel--loading {
+.kxSearch[search-state="loading"] {
+  .kxSearch__panel--loading {
     display: flex;
     visibility: visible;
   }
 }
 // results
-.hoiSearch[search-state="results"] {
-  .hoiSearch__results_wrap .hoiSearch__panel_status {
+.kxSearch[search-state="results"] {
+  .kxSearch__panel__header {
+    margin: $spacing-mobile $spacing-mobile 0 $spacing-mobile;
+
+    @media screen and (min-width: $mobile + 1) {
+      margin: $spacing-desktop $spacing-desktop 0 $spacing-desktop;
+    }
+
+  }
+  .kxSearch__results_wrap .kxSearch__panel_status {
     display: flex;
     visibility: visible;
   }
-  .hoiSearch__panel--results {
-
+  .kxSearch__panel--results {
     .hoiList__Item {
       opacity: 0;
       animation: search-item-fade-in 0.3s ease-in-out forwards;
@@ -206,21 +214,21 @@ $filter-size: 30px;
   }
 }
 // no input
-.hoiSearch[search-state="noinput"] {
-  .hoiSearch__panel--noinput {
+.kxSearch[search-state="noinput"] {
+  .kxSearch__panel--noinput {
     display: flex;
     visibility: visible;
   }
 }
 // no results
-.hoiSearch[search-state="noresults"] {
-  .hoiSearch__panel--noresults {
+.kxSearch[search-state="noresults"] {
+  .kxSearch__panel--noresults {
     display: flex;
     visibility: visible;
   }
 }
 
-.hoiSearch__panel_status {
+.kxSearch__panel_status {
   height: 50px;
   display: none;
   visibility: hidden;
@@ -231,33 +239,33 @@ $filter-size: 30px;
 
 // COMPONENT ACTIVE STATE
 // when active
-.hoiSearch[active] {
-  .hoiSearch__header h3,
-  .hoiSearch__input,
-  .hoiSearch__filters {
+.kxSearch[active] {
+  .kxSearch__header h3,
+  .kxSearch__input,
+  .kxSearch__filters {
     opacity: 1;
     transition: 0.7s 1.3s ease-in-out;
   }
-  .hoiSearch__input {
+  .kxSearch__input {
     width: $input-width;
     transition: opacity 1s 1.3s ease-in-out, width 0.5s 1.5s ease-in-out;
   }
-  .hoiSearch__header h3 {
+  .kxSearch__header h3 {
     transition-delay: 1.7s;
   }
-  .hoiSearch__filters {
+  .kxSearch__filters {
     transition-delay: 2.5s;
   }
 }
 // default/deactivated
-.hoiSearch {
-  .hoiSearch__header h3,
-  .hoiSearch__input,
-  .hoiSearch__filters {
+.kxSearch {
+  .kxSearch__header h3,
+  .kxSearch__input,
+  .kxSearch__filters {
     opacity: 0;
     transition: 0s 0.5s ease-in-out;
   }
-  .hoiSearch__input {
+  .kxSearch__input {
     width: $input-height;
   }
 }

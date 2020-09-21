@@ -1,0 +1,31 @@
+<div class="kxEventTile"
+  style="
+    background-image: url({{ image }})
+    background-size: cover;
+    border-top: solid 11px {{#if extra}}{{ extra.passionColor }}{{/if}}
+  ">
+	<a
+    ga-ca="microsite"
+    ga-ac="feature"
+    ga-la="kings-cross:event-tile:{{ dash title }}"
+    data-omni-type="microsite"
+    data-omni="uk:kings-cross:event-tile:{{ dash title }}"
+    href="/uk/explore/kings-cross/whats-on/event/?id={{ identifier }}">
+
+		<div class="kxEventTile__content tile">
+			<div class="kxEventTile__content__top">
+				<span class="tile-date">{{ startDate }} | {{ startTime }}</span>
+			<h3 class="tile-title">{{ title }}</h3>
+			</div>
+
+			<div class="kxEventTile__content__bottom">
+				{{#each suitablesName }}
+				<span class="tile-suitable">{{ this }}</span>
+			{{/each }}
+			</div>
+
+
+		</div>
+	</a>
+</div>
+</script>

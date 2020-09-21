@@ -1,11 +1,15 @@
 const path = require('path')
 const fs = require('fs')
 const getFilesInDirectory = require('./helpers').getFilesInDirectory
+const escapeDoubleQuotes = require('./helpers').escapeDoubleQuotes
 const shuffleArray = require('./helpers').shuffleArray
 
 const SRC_FOLDER = 'src/home-of-innovation/pages/'
 const PUBLIC_URL = '/uk/explore/kings-cross/'
 const LOCAL_BUILD_FOLDER = path.join( __dirname, '../build/' )
+
+var SITE = 'uk';
+var SUBFOLDER = '/explore/kings-cross';
 
 function getFiles() {
   // Get Files
@@ -33,6 +37,13 @@ function getFiles() {
   return files;
 }
 
+function getPageData(path) {
+  // TODO: could update to handle strings with slashes before/after /slug/sub-slug/
+  path = path.split('/').join('|')
+  const pageData = require('../' + SRC_FOLDER + path + '.json')
+  return pageData
+}
+
 function processFiles(files, cb) {
   let pageData = []
 
@@ -51,11 +62,34 @@ function processFiles(files, cb) {
     let elementRegex = /(<.*?>)/gim
     let variableRegex = /({{.*?}})/g
 
-    // stringify, remove vars, parse json
-    let preparedContent = JSON.parse(
-      JSON.stringify(data)
-        .replace(variableRegex, '')
-    )
+    // this is the same function lifted from gulpfile for processing vars,
+    // have copied over for use instead of abstracting to allow change node executing dirpaths
+    let preparedContent = JSON.stringify(data)
+    const publicUrl = '/' + SITE + SUBFOLDER + '/';
+    // Regex for{{page|page-path[key]}}
+    const regex = /{{(?<page>.*?)\[(?<key>.*?)\]}}/
+    // Loop over matches
+    while ((match = regex.exec(preparedContent)) !== null) {
+      const {page, key} = match.groups;
+      let value;
+      // special for any special cases
+
+      switch (key) {
+        case 'url':
+          // if url we want to construct it (not avaliable in page config file)
+          value = publicUrl + page.split('|').join('/')
+          break;
+        default:
+          // otherwise get data then key
+          // escaping quotes that were pr eviously escaped
+          value = getPageData(page)[key]
+          value = value ? escapeDoubleQuotes(value) : value
+
+      }
+      // update preparedContent, replacing the first (current) matched occurence using matched string
+      preparedContent = preparedContent.replace(match[0], value)
+    }
+    preparedContent = JSON.parse(preparedContent)
 
     // remove element tags from string
     function removeElements(string) {
@@ -81,12 +115,13 @@ function processFiles(files, cb) {
 
     // trigger recursive loop
     jsonRecursive(preparedContent)
+    
     // push processed fileValues to pageData
     pageData.push({
       id,
-      title: data.title,
-      description: data.description,
-      image: data.image,
+      title: preparedContent.title,
+      description: preparedContent.description,
+      image: preparedContent.image,
       category: id.split('|')[0],
       url: PUBLIC_URL + id.replace(/\|/g,'/'),
       values: fileValues,

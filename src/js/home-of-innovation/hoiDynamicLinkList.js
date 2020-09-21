@@ -27,7 +27,7 @@ export default class HOIDynamicLinkList {
         if (!data) {
           throw 'Missing data for ID'
         }
-        this.compileTemplate(data.items)
+        this.compileTemplate(data)
       })
       .catch(e => {
         // fall back or hide data?
@@ -39,13 +39,17 @@ export default class HOIDynamicLinkList {
   compileTemplate(data) {
 
     // loop data and insert template
-    data.forEach((item) => {
+    data.items.forEach((item) => {
       this.dynamicTarget.insertAdjacentHTML('beforeend', itemTemplate(item))
     })
 
     // loop remainders for spacing items
-    for (var i = 0; i < data.length % ROW_ITEMS; i++) {
-      this.dynamicTarget.insertAdjacentHTML('beforeend', itemSpacerTemplate())
+    if (data.style && data.style.scroll) {
+      // dont show if style.scroll is set
+    } else {
+      for (var i = 0; i < data.items.length % ROW_ITEMS; i++) {
+        this.dynamicTarget.insertAdjacentHTML('beforeend', itemSpacerTemplate())
+      }
     }
   }
 

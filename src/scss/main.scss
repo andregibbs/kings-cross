@@ -28,8 +28,10 @@ body {
   @import "components/common/section";
 
   // new nav and search
-  @import "components/common/kxNav/index";
-  @import "components/common/hoiSearch";
+  @import "components/common/kxNav";
+  @import "components/common/kxSearch";
+
+  // extra imports for search & nav
   @import "home-of-innovation/vars";
   @import "components/home-of-innovation/hoiLinkList";
   @import "components/home-of-innovation/list";

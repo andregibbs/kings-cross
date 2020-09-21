@@ -19,12 +19,10 @@ import HOIMediaVideo from './hoiMediaVideo';
 import HOIYoutubeLiveChat from './hoiYoutubeLiveChat'
 import HOIDynamicLinkList from './hoiDynamicLinkList';
 import HOIDynamicGroupLand from './hoiDynamicGroupLand';
-import sidedrawer from '../components/sidedrawer';
 import { createYoutubeInstance, loadYoutubeAPI } from './utils';
 
 
 import FindKX from '../components/findKX';
-// import nav from '../components/nav';
 import KXNav from '../components/common/kxNav'
 import initListItemHoverEvents from './hoiListItemHoverEvents'
 

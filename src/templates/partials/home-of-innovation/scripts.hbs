@@ -9,6 +9,14 @@ if (window.location.hostname == 'www.samsung.com' ||
     kxConfig.seriesId = kxConfig.LIVE___seriesId;
     kxConfig.seriesId_Webinars = kxConfig.LIVE___seriesId_Webinars;
 }
+kxConfig['passions'] = [];
+{{#each config.passions}}
+kxConfig.passions.push({"code":"{{ this.code }}","name":"{{{ this.name }}}","color":"{{{ this.color }}}"});
+{{/each}}
+kxConfig['suitables'] = [];
+{{#each config.suitables}}
+kxConfig.suitables.push({"code":"{{ this.code }}","name":"{{{ this.name }}}"});
+{{/each}}
 </script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.7/lottie.min.js"></script>
 <script src="/{{ config.site }}{{ config.subfolder }}/js/home-of-innovation/main.js" defer></script>

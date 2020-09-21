@@ -25,9 +25,14 @@
       {{#each items}}
         {{> home-of-innovation/partials/listItem}}
       {{/each}}
-      {{#spacerElements items 4}}
-        {{> home-of-innovation/partials/listItemSpacer}}
-      {{/spacerElements}}
+
+      {{#if (eq style.scroll true)}}
+        Scroll
+      {{else}}
+        {{#spacerElements items 4}}
+          {{> home-of-innovation/partials/listItemSpacer}}
+        {{/spacerElements}}
+      {{/if}}
     {{/if}}
 
 

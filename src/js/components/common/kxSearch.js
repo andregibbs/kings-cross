@@ -4,7 +4,6 @@ const Handlebars = require("hbsfy/runtime");
 import HandlebarsHelpers from '../../../templates/helpers/handlebarsHelpers';
 HandlebarsHelpers.register(Handlebars)
 
-
 import Fuse from 'fuse.js'
 import { FetchEvents } from '../../util/Events'
 import KXEnv from '../../util/KXEnv'
@@ -14,19 +13,15 @@ import config from '../../../data/config.json'
 const BASE_URL = "https://kxuploads.s3.eu-west-2.amazonaws.com/home-of-innovation-dynamic/"
 const LOCAL_URL = '/hoi-search-local.json';
 const STAGING_URL = BASE_URL + "hoi-search-staging.json";
-const LIVE_URL =  BASE_URL + "hoi-search.json";
-const SearchDataURL = KXEnv.live ? LIVE_URL : KXEnv.local ? LOCAL_URL : STAGING_URL;
-
-// let fuse; // fuse instance
+const LIVE_URL =  BASE_URL + "hoi-search.json";const SearchDataURL = KXEnv.live ? LIVE_URL : KXEnv.local ? LOCAL_URL : STAGING_URL;
 
 // template
-const itemTemplate = require('../../../templates/partials/home-of-innovation/hoiLinkList.hbs');
+const searchItemTemplate = require('../../../templates/partials/home-of-innovation/hoiLinkList.hbs');
+const eventItemTemplate = require('../../../templates/partials/components/common/kxEventTile.hbs');
 Handlebars.registerPartial('home-of-innovation/partials/listItem', require('../../../templates/partials/home-of-innovation/partials/listItem.hbs'))
 Handlebars.registerPartial('home-of-innovation/partials/listItemSpacer', require('../../../templates/partials/home-of-innovation/partials/listItemSpacer.hbs'))
 
-// listItemJS
-// import initListItemHoverEvents from '../../home-of-innovation/hoiListItemHoverEvents';
-
+// State obj
 const STATE = {
   loading: 'loading',
   results: 'results',
@@ -34,24 +29,21 @@ const STATE = {
   noresults: 'noresults'
 }
 
-/*
-  TODO:
-  make class
-  add render results function that pulls in search value & filters to generate results
-  create second fuse instance for events?
-*/
+const MAX_SEARCH_RESULTS = 20;
 
-export default class HOISearch {
+export default class KXSearch {
   constructor() {
 
-    this.el = document.querySelector('.hoiSearch');
+    this.el = document.querySelector('.kxSearch');
     if (!this.el) {
       return // console.log('no search component')
     }
-    this.input = this.el.querySelector('.hoiSearch__input')
-    this.resultsEl = this.el.querySelector('.hoiSearch__panel--results')
-    this.resultsWrapEl = this.el.querySelector('.hoiSearch__results_wrap')
-    this.filterElements = [].slice.call(this.el.querySelectorAll('.hoiSearch__filters input'))
+    this.input = this.el.querySelector('.kxSearch__input')
+    this.resultsEl = this.el.querySelector('.kxSearch__panel--results')
+    this.resultsWrapEl = this.el.querySelector('.kxSearch__results_wrap')
+    this.searchResultsTarget = this.el.querySelector('#search-results')
+    this.filterElements = [].slice.call(this.el.querySelectorAll('.kxSearch__filters input'))
+    this.eventResultsTarget = this.el.querySelector('#event-results')
 
     this.searchFuse = null
     this.eventsFuse = null
@@ -73,7 +65,7 @@ export default class HOISearch {
     this.fetchEventData()
       .then(eventData => {
         console.log('ass', eventData)
-        this.eventFuse = new Fuse(eventData, {
+        this.eventsFuse = new Fuse(eventData, {
           includeScore: true,
           // includeMatches: true, // debug: show search
           threshold: 0.4, // word accuracy level
@@ -105,15 +97,6 @@ export default class HOISearch {
   fetchEventData() {
     return new Promise(function(resolve, reject) {
       FetchEvents(events => {
-        // TODO: filter hidden events
-        events.map(event => {
-          return item = {
-            title: event.title,
-            description: event.description.replace(/(<.*?>)/gim,''), //remove links
-            url: `/${ config.site }${ config.subfolder }/whats-on/event/?id=${event.identifier}`,
-            image: event.imageURL
-          }
-        })
         console.log('events', events)
         resolve(events)
       })
@@ -124,11 +107,12 @@ export default class HOISearch {
     this.el.setAttribute('search-state', state)
   }
 
-  clearResults() {
+  clearResults(delay = 300) {
     this.resultsWrapEl.style.height = ''
     setTimeout(() => {
-      this.resultsEl.textContent = ''
-    }, 300)
+      this.searchResultsTarget.textContent = '';
+      this.eventResultsTarget.textContent = '';
+    }, delay)
   }
 
   getActiveFilters(e) {
@@ -142,34 +126,43 @@ export default class HOISearch {
   }
 
   findResults(e) {
-   const value = this.input.value
-   const activeFilters = this.getActiveFilters()
-   let searchResults = []
-   let eventResults = []
+    const value = this.input.value
+    const activeFilters = this.getActiveFilters()
+    let searchResults = []
+    let eventResults = []
 
-   console.log(activeFilters)
+    if (this.searchFuse) {
+      // get search results
+      searchResults = this.searchFuse.search(value).map(r => r.item)
+      if (activeFilters.length) {
+        // filter if filters are checked
+        searchResults = searchResults.filter(result => {
+          return activeFilters.indexOf(result.category) > -1
+        })
+      }
+      // trim to max items
+      searchResults = searchResults.slice(0,MAX_SEARCH_RESULTS);
+    }
 
-   if (this.searchFuse) {
-     searchResults = this.searchFuse.search(value).map(r => r.item)
-     if (activeFilters.length) {
-       searchResults = searchResults.filter(result => {
-         console.log(result)
-         return activeFilters.indexOf(result.category) > -1
-       })
-     }
-   }
+    if (this.eventsFuse) {
+      // get event results
+      eventResults = this.eventsFuse.search(value).map(r => r.item)
+      // temp item bulk up
+      eventResults = eventResults.concat(eventResults)
+      eventResults = eventResults.concat(eventResults)
+      eventResults = eventResults.concat(eventResults)
+    }
 
-   if (this.eventsFuse) {
-     eventResults = this.eventsFuse.search(value).map(r => r.item)
-   }
 
-   this.clearResults()
-   clearTimeout(this.renderResultsTimeout)
+    console.log('eventResults', eventResults)
 
-   if (value.length <= 0) {
-     this.setSearchState(STATE.noinput)
-   } else {
-     this.renderResults(searchResults, eventResults);
+    this.clearResults()
+    clearTimeout(this.renderResultsTimeout)
+
+    if (value.length <= 0) {
+      this.setSearchState(STATE.noinput)
+    } else {
+      this.renderResults(searchResults, eventResults);
     }
   }
 
@@ -178,27 +171,31 @@ export default class HOISearch {
     this.setSearchState(STATE.loading)
 
     if (!searchResults.length && !eventResults.length) {
+      // if no results
       this.renderResultsTimeout = setTimeout(() => {
         this.setSearchState(STATE.noresults)
       }, 300)
     } else {
       // clear the element
       this.renderResultsTimeout = setTimeout(() => {
-        this.resultsEl.textContent = '';
-        // render template
+        this.searchResultsTarget.textContent = '';
+        this.eventResultsTarget.textContent = '';
+        // render serach results template
         if (searchResults.length) {
-          this.resultsEl.insertAdjacentHTML('beforeend', itemTemplate({
+          this.searchResultsTarget.insertAdjacentHTML('beforeend', searchItemTemplate({
             items: searchResults
           }))
         }
-
+        // render event results
         if (eventResults.length) {
-          this.resultsEl.insertAdjacentHTML('beforeend', itemTemplate({
-            items: eventResults
-          }))
+          eventResults.forEach(eventObj => {
+            console.log(eventObj)
+            this.eventResultsTarget.insertAdjacentHTML('beforeend', eventItemTemplate(eventObj))
+          });
         }
-
+        // set state and height to animate
         this.setSearchState(STATE.results)
+        // maybe move this height change to function for a bit more accuracy
         this.resultsWrapEl.style.height = (this.resultsEl.offsetHeight * 1.1) + 'px'
       }, 800)
     }
