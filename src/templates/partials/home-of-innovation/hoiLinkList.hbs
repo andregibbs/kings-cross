@@ -5,6 +5,7 @@
     {{#if style.scroll}}hoiLinkList--scroll{{/if}}
     {{#if style.feature}}hoiLinkList--feature{{/if}}
     {{#if style.size}}hoiLinkList--size-{{style.size}}{{/if}}
+    {{#if style.hideIcon}}hoiLinkList--hideIcon{{/if}}
   {{/if}}
   "
   {{#if dynamic}}dynamic="{{dynamic}}"{{/if}}
@@ -14,6 +15,9 @@
     {{> home-of-innovation/hoiHeadline copy=this.title level='3'}}
   {{/if}}
 
+  <a class="hoiLinkList__ScrollArrow  hoiLinkList__ScrollArrow--left"></a>
+  <a class="hoiLinkList__ScrollArrow  hoiLinkList__ScrollArrow--right"></a>
+
   <div
     class="hoiList hoiList--grid-4"
     {{#if dynamic}}dynamic-target {{/if}}
@@ -22,6 +26,7 @@
     {{#if dynamic}}
 
     {{else}}
+
       {{#each items}}
         {{> home-of-innovation/partials/listItem}}
       {{/each}}
@@ -32,6 +37,7 @@
           {{> home-of-innovation/partials/listItemSpacer}}
         {{/spacerElements}}
       {{/if}}
+
     {{/if}}
 
 

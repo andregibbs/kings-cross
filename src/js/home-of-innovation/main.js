@@ -19,6 +19,7 @@ import HOIMediaVideo from './hoiMediaVideo';
 import HOIYoutubeLiveChat from './hoiYoutubeLiveChat'
 import HOIDynamicLinkList from './hoiDynamicLinkList';
 import HOIDynamicGroupLand from './hoiDynamicGroupLand';
+import HOILinkListHoverManager from './hoiLinkListHoverScroll'
 import { createYoutubeInstance, loadYoutubeAPI } from './utils';
 
 
@@ -49,6 +50,8 @@ function init() {
 
       // fetch dynamic opening times
       new FindKX()
+
+      new HOILinkListHoverManager()
 
       // initialze HOIGalleries
       galleries.forEach((gallery) => {

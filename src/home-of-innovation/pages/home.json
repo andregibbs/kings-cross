@@ -32,7 +32,8 @@
       "title": "Series",
       "style": {
         "scroll": true,
-        "size": "square"
+        "size": "square",
+        "hideIcon": true
       },
       "items": [
         "lifestyle|tips-and-trikx",

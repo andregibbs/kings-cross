@@ -9,17 +9,6 @@
 }
 
 
-// Square list items
-
-.hoiLinkList--size-square {
-  .hoiList__Item {
-    width: auto;
-  }
-  .hoiList__ItemImageWrap {
-    padding-bottom: 100%;
-  }
-}
-
 // Category Featured
 
 .hoiLinkList--feature {
@@ -60,12 +49,72 @@
 
 // Scrolling Style
 
+.hoiLinkList__ScrollArrow {
+  width: 6vw;
+  max-width: 200px;
+  display: none;
+  position: absolute;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 15%,rgba(0,0,0,0.75) 50%,rgba(0,0,0,0) 85%,rgba(0,0,0,0) 100%);
+  height: 100%;
+  top: 0;
+  z-index: 200;
+  opacity: 0;
+  transition: 0.3s;
+  &:before {
+    content: '\276E';
+    position: absolute;
+    font-size: 3em;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  &--left {
+    left: 0;
+  }
+  &--right {
+    &:before {
+      content: '\276F';
+    }
+    right: 0;
+  }
+}
+
 .hoiLinkList--scroll {
+  position: relative;
   margin-left: 0;
   margin-right: 0;
+
+  &:hover {
+    .hoiLinkList__ScrollArrow {
+      opacity: 1;
+      cursor: pointer;
+    }
+  }
+  &[end-left] {
+    .hoiLinkList__ScrollArrow--left {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+  &[end-right] {
+    .hoiLinkList__ScrollArrow--right {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+  .hoiLinkList__ScrollArrow {
+    display: block;
+  }
+
   .hoiHeadline {
     padding-left: 2.5em;
     padding-right: 2.5em;
+    position: relative;
+    z-index: 201;
   }
   .hoiList {
     display: flex;
@@ -76,32 +125,47 @@
 
     overflow-x: auto;
     overflow-y: hidden;
+
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: -ms-autohiding-scrollbar;
-    // display: block;
-    white-space: nowrap;
+
+    &:after {
+      content: '';
+      flex-shrink: 0;
+      display: block;
+      width: 2.5em;
+      height: 1px;
+    }
+
+    // forced hidden scrollbar
     &::-webkit-scrollbar {
       // width: 8px; /* 1px wider than Lion. */
-      height: 8px;
-      /* This is more usable for users trying to click it. */
-      background-color: rgba(0,0,0,0);
-      -webkit-border-radius: 100px;
+      height: 0px;
     }
-    /* hover effect for both scrollbar area, and scrollbar 'thumb' */
-    &::-webkit-scrollbar:hover {
-      background-color: rgba(0, 0, 0, 0.09);
-    }
-    /* The scrollbar 'thumb' ...that marque oval shape in a scrollbar */
-    &::-webkit-scrollbar-thumb:horizontal {
-      /* This is the EXACT color of Mac OS scrollbars.
-         Yes, I pulled out digital color meter */
-      background: rgba(255,255,255,0.5);
-      -webkit-border-radius: 100px;
-    }
-    &::-webkit-scrollbar-thumb:horizontal:active {
-      background: rgba(255,255,255,0.61); /* Some darker color when you click it */
-      -webkit-border-radius: 100px;
-    }
+
+    // fancy visible scroll bar
+    // &::-webkit-scrollbar {
+    //   // width: 8px; /* 1px wider than Lion. */
+    //   height: 8px;
+    //   /* This is more usable for users trying to click it. */
+    //   background-color: rgba(0,0,0,0);
+    //   -webkit-border-radius: 100px;
+    // }
+    // /* hover effect for both scrollbar area, and scrollbar 'thumb' */
+    // &::-webkit-scrollbar:hover {
+    //   background-color: rgba(0, 0, 0, 0.09);
+    // }
+    // /* The scrollbar 'thumb' ...that marque oval shape in a scrollbar */
+    // &::-webkit-scrollbar-thumb:horizontal {
+    //   /* This is the EXACT color of Mac OS scrollbars.
+    //      Yes, I pulled out digital color meter */
+    //   background: rgba(255,255,255,0.5);
+    //   -webkit-border-radius: 100px;
+    // }
+    // &::-webkit-scrollbar-thumb:horizontal:active {
+    //   background: rgba(255,255,255,0.61); /* Some darker color when you click it */
+    //   -webkit-border-radius: 100px;
+    // }
   }
   .hoiList__Item {
     display: inline-block;
@@ -111,8 +175,34 @@
       width: calc(23vw - #{$spacing-desktop / 4});
     }
     margin-right: calc(2.5em / 2);
+    &:last-child {
+      margin-right: 0;
+    }
     &--spacer {
       display: none;
     }
+  }
+}
+
+// Square list items
+
+.hoiLinkList--size-square {
+  .hoiList__Item {
+    width: calc(26.5vw - #{$spacing-desktop / 2});
+    margin-right: calc(4em / 2);
+    @media screen and (min-width: $mobile + 1) {
+      width: calc(13.25vw - #{$spacing-desktop / 4});
+    }
+  }
+  .hoiList__ItemImageWrap {
+    padding-bottom: 100%;
+  }
+}
+
+// Hide item icon
+
+.hoiLinkList--hideIcon {
+  .hoiList__ItemIcon {
+    display: none;
   }
 }
