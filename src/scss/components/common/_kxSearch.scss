@@ -3,6 +3,9 @@
 
 // reset
 .kxSearch {
+  * {
+    font-family: "SamsungSharpSans",arial,sans-serif;
+  }
   .kxSearch__header {
     font-size: 13px;
     font-family: $samsung-sharp;
@@ -165,6 +168,12 @@ $filter-size: 30px;
   .hoiList__Item {
     opacity: 1;
   }
+  h4 {
+    font-size: 2.25em;
+    @media screen and (max-width: $mobile) {
+      font-size: 2.5em;
+    }
+  }
 }
 // always show results panel (used to determine height of wrapper)
 .kxSearch__panel--results,
@@ -229,13 +238,26 @@ $filter-size: 30px;
 }
 
 .kxSearch__panel_status {
-  height: 50px;
+  // height: 50px;
   display: none;
   visibility: hidden;
   align-items: center;
   justify-content: center;
+  padding: 2em;
+  font-size: 2em;
 }
 
+.kxSearch__results_wrap[search-results="false"] {
+  .kxSearch__panel__header--search {
+    display: none;
+  }
+}
+
+.kxSearch__results_wrap[event-results="false"] {
+  .kxSearch__panel__header--events {
+    display: none;
+  }
+}
 
 // COMPONENT ACTIVE STATE
 // when active
@@ -257,6 +279,7 @@ $filter-size: 30px;
     transition-delay: 2.5s;
   }
 }
+
 // default/deactivated
 .kxSearch {
   .kxSearch__header h3,
@@ -267,6 +290,17 @@ $filter-size: 30px;
   }
   .kxSearch__input {
     width: $input-height;
+  }
+}
+
+// styles for event tile within event search results
+#event-results {
+  display: flex;
+  width: 100%;
+  .kxEventTile {
+    margin: 0;
+    max-width: none;
+    @extend .hoiList__Item;
   }
 }
 

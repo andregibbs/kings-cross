@@ -64,11 +64,10 @@ export default class KXSearch {
 
     this.fetchEventData()
       .then(eventData => {
-        console.log('ass', eventData)
         this.eventsFuse = new Fuse(eventData, {
           includeScore: true,
           // includeMatches: true, // debug: show search
-          threshold: 0.4, // word accuracy level
+          threshold: 0.25, // word accuracy level
           distance: 1500, // length of value to search
           findAllMatches: true, // search for multiple
           keys: ['title','description']
@@ -176,10 +175,14 @@ export default class KXSearch {
         this.setSearchState(STATE.noresults)
       }, 300)
     } else {
-      // clear the element
       this.renderResultsTimeout = setTimeout(() => {
+        // clear result targets
         this.searchResultsTarget.textContent = '';
         this.eventResultsTarget.textContent = '';
+        // add result count to wrapper
+        this.resultsWrapEl.setAttribute('search-results', searchResults.length > 0)
+        this.resultsWrapEl.setAttribute('event-results', eventResults.length > 0)
+
         // render serach results template
         if (searchResults.length) {
           this.searchResultsTarget.insertAdjacentHTML('beforeend', searchItemTemplate({
@@ -189,7 +192,6 @@ export default class KXSearch {
         // render event results
         if (eventResults.length) {
           eventResults.forEach(eventObj => {
-            console.log(eventObj)
             this.eventResultsTarget.insertAdjacentHTML('beforeend', eventItemTemplate(eventObj))
           });
         }

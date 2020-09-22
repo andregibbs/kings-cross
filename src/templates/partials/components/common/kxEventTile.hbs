@@ -12,18 +12,17 @@
     data-omni="uk:kings-cross:event-tile:{{ dash title }}"
     href="/uk/explore/kings-cross/whats-on/event/?id={{ identifier }}">
 
-		<div class="kxEventTile__content tile">
+		<div class="kxEventTile__content kxEventTile__tile">
 			<div class="kxEventTile__content__top">
-				<span class="tile-date">{{ startDate }} | {{ startTime }}</span>
-			<h3 class="tile-title">{{ title }}</h3>
+				<span class="kxEventTile__tile-date">{{ startDate }} | {{ startTime }}</span>
+			<h3 class="kxEventTile__tile-title">{{ title }}</h3>
 			</div>
 
 			<div class="kxEventTile__content__bottom">
 				{{#each suitablesName }}
-				<span class="tile-suitable">{{ this }}</span>
+				<span class="kxEventTile__tile-suitable">{{ this }}</span>
 			{{/each }}
 			</div>
-
 
 		</div>
 	</a>
