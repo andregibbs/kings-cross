@@ -1,0 +1,107 @@
+{
+  "title": "Episode 1: Films you can direct with your face... Whatever Next?",
+  "description": "",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/Episode1-KV-PC.jpg",
+  "alt": "A vector illustration of a blue and right director’s chair on a blue graduated background. The back of the chair reads \"YOU\" in white text.",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/Album-art-ep1_v3.jpg",
+  "group": "5g-podcast",
+  "sort": 1,
+  "components": [
+    {
+      "type": "css-snippet",
+      "content": ".hoiKv__Media:after { padding-bottom: 36% !important; } .hoiParagraphs p { max-width: 940px; } @media screen and (max-width: 769px) { .hoiKv__Media:after { padding-bottom: 110% !important; } .hoiMedia__StatePoster { background-image: url(https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/Episode1-KV-MO.jpg) !important; } }  ",
+      "__notes": "custom ratio for kv video"
+    },
+    {
+      "type": "kv",
+      "media": {
+        "type": "audio",
+        "content": "",
+        "poster": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/Episode1-KV-PC.jpg",
+        "alt": ""
+      },
+      "style": {
+        "desktop": "top",
+        "mobile": "top"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "Episode 1: Films you can direct with your face... Whatever Next?"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Have you ever wanted to give a film a different ending? In this episode, Dr Hannah Fry and comedian Suzi Ruffell look at how this might be possible in the very near future. From film and TV to music festivals and live comedy, Hannah and Suzi uncover the weird and wonderful ways that 5G is set to transform the world of entertainment."
+          ]
+        },
+        {
+          "type": "icon-links",
+          "items": [
+            {
+              "title": "Spotify",
+              "link": "",
+              "target": "_blank",
+              "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ico-spotify.png"
+            },
+            {
+              "title": "Acast",
+              "link": "",
+              "target": "_blank",
+              "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ico-acast.png"
+            },
+            {
+              "title": "Google Podcasts",
+              "link": "",
+              "target": "_blank",
+              "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ico-google-podcasts.png"
+            },
+            {
+              "title": "Stitcher",
+              "link": "",
+              "target": "_blank",
+              "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ico-stitcher.png"
+            },
+            {
+              "title": "Overcast",
+              "link": "",
+              "target": "_blank",
+              "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ico-overcast.png"
+            },
+            {
+              "title": "Apple Podcasts",
+              "link": "",
+              "target": "_blank",
+              "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ico-apple.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "5g-podcast",
+      "title": "Episodes"
+    },
+    {
+      "type": "image-panel-links",
+      "items": [
+        {
+          "title": "Discover our entire range of 5G products",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/banner-5G-range.png",
+          "alt": "A cropped image of the top rear of an unfolded Galaxy Z Fold2 in Mystic Bronze",
+          "link": "",
+          "cta": "LEARN MORE"
+        },
+        {
+          "title": "Find out what 5G will mean for you",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/banner-lockup.png",
+          "image_right": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/banner-lockup-dots-crop.png",
+          "alt": "White text reads \"You+ Samsung +5G\". teal lines radiate away from \"+5G\". Blue circles are visible in a grid behind the white text.",
+          "link": "",
+          "cta": "LEARN MORE"
+        }
+      ]
+    }
+  ]
+}

@@ -11,9 +11,13 @@ export default class HOIMediaVideo {
   constructor(videoEl) {
     this.video = videoEl
     this.videoState = videoEl.parentElement.querySelector('.hoiMedia__State')
-    this.playIcon = this.videoState.querySelector('.hoiMedia__StateIcon--play')
-    this.loadIcon = this.videoState.querySelector('.hoiMedia__StateIcon--load')
-    this.loadAnimation = createLoaderAnimation(this.loadIcon)
+
+    // video state is optional, can be hidden
+    if (this.videoState) {
+      this.playIcon = this.videoState.querySelector('.hoiMedia__StateIcon--play')
+      this.loadIcon = this.videoState.querySelector('.hoiMedia__StateIcon--load')
+      this.loadAnimation = createLoaderAnimation(this.loadIcon)
+    }
 
     // add loading delay to consecutive media videos
     // maybe remove the preload attribute and then add back in after each has loaded?
@@ -29,12 +33,14 @@ export default class HOIMediaVideo {
 
   events() {
 
-    this.videoState.addEventListener('click', (e) => {
-      const state = this.videoState.getAttribute('data-state')
-      if (state == HOI_MEDIA_STATE.play) {
-        this.video.play()
-      }
-    })
+    if (this.videoState) {
+      this.videoState.addEventListener('click', (e) => {
+        const state = this.videoState.getAttribute('data-state')
+        if (state == HOI_MEDIA_STATE.play) {
+          this.video.play()
+        }
+      })
+    }
 
     this.video.addEventListener('canplay', (e) => {
       // console.log('can play')
@@ -65,7 +71,9 @@ export default class HOIMediaVideo {
   }
 
   setState(state) {
-    this.videoState.setAttribute('data-state', state)
+    if (this.videoState) {
+      this.videoState.setAttribute('data-state', state)
+    }
   }
 
 }

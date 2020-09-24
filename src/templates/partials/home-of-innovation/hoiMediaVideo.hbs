@@ -30,7 +30,11 @@
   >
   </video>
 
-  {{> home-of-innovation/hoiMediaState }}
+
+  {{#if hide_state}}
+  {{else}}
+    {{> home-of-innovation/hoiMediaState }}
+  {{/if}}
 
 {{#if wrap}}
 </div>

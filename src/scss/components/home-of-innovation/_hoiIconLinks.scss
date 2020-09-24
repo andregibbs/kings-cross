@@ -1,0 +1,36 @@
+.hoiIconLinks {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: $spacing-desktop;
+}
+
+.hoiIconLinks__Link {
+  text-align: center;
+  margin-right: 2.5em;
+  margin-bottom: 2.5em;
+  img {
+    width: initial;
+    height: initial;
+  }
+}
+
+.hoiIconLinks__Link_Image {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// @media screen and (max-width: $mobile + 1) {
+//   .hoiIconLinks {
+//     justify-content: space-around;
+//   }
+//   .hoiIconLinks__Link {
+//     margin: 0.5em;
+//   }
+// }
+.hoiIconLinks__Link_Text {
+  text-decoration: underline;
+  padding: 1em;
+  display: block;
+}

@@ -1,0 +1,65 @@
+{
+  "title": "Whatever Next? Podcast",
+  "description": "",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/KX-landing-KV-static-PC.jpg",
+  "alt": "A vector illustration of a futuristic Basildon in bold block colours. A Hollywood-esque sign reading \"BASILDON\" is seen on a set of hills. A large blue and red director’s chair sit in the middle of the scene. An orange arena with small people can be seen. The cityscape is full of multicoloured high-rise buildings.",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/KX-landing-KV-static-PC.jpg",
+  "components": [
+    {
+      "type": "css-snippet",
+      "content": ".hoiKv__Media:after { padding-bottom: 36% !important; } .hoiParagraphs p { max-width: 940px; } @media screen and (max-width: 769px) { .hoiMedia { display: none; } .hoiKv__Media:after { padding-bottom: 112% !important; } .hoiKv__MediaImage { background-image: url(https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/KX-KV-MO_v2.jpg) !important; background-size: cover; background-repeat: no-repeat; } }",
+      "__notes": "custom ratio for kv video"
+    },
+    {
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/KX-landing-KV-PC.jpg",
+        "alt": "A vector illustration of a futuristic Basildon in bold block colours. A Hollywood-esque sign reading \"BASILDON\" is seen on a set of hills. A large blue and red director’s chair sit in the middle of the scene. An orange arena with small people can be seen. The cityscape is full of multicoloured high-rise buildings."
+      },
+      "style": {
+        "desktop": "top",
+        "mobile": "top"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "Who knows what the 5G future holds?"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "The truth is, nobody does. But from smart cows to gaming with your mind, 5G is already changing what’s possible today. Dr Hannah Fry and comedian Suzi Ruffell are on a mission to speak to the extraordinary people using 5G to supercharge the tech world. Together, they’ll uncover the weird and wonderful stories that throw light on how our everyday lives are transforming.",
+            "Whatever’s next, one thing’s for sure, with the right tools and a head-full of ideas, 5G promises to build a better world for us all. A world we can all play a part in creating.",
+            "<img src=\"https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/paragraph-lockup.png\" style=\"width:168px;\"/>"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "5g-podcast",
+      "title": "Episodes"
+    },
+    {
+      "type": "image-panel-links",
+      "items": [
+        {
+          "title": "Discover our entire range of 5G products",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/banner-5G-range.png",
+          "alt": "A cropped image of the top rear of an unfolded Galaxy Z Fold2 in Mystic Bronze",
+          "link": "",
+          "cta": "LEARN MORE"
+        },
+        {
+          "title": "Find out what 5G will mean for you",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/banner-lockup.png",
+          "image_right": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/banner-lockup-dots-crop.png",
+          "alt": "White text reads \"You+ Samsung +5G\". teal lines radiate away from \"+5G\". Blue circles are visible in a grid behind the white text.",
+          "link": "",
+          "cta": "LEARN MORE"
+        }
+      ]
+    }
+  ]
+}

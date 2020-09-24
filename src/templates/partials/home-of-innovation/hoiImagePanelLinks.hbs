@@ -1,0 +1,31 @@
+<div class="hoiImagePanelLinks">
+
+  {{#each items}}
+
+    <div
+      class="hoiImagePanelLinks__Link">
+      <div
+        class="hoiImagePanelLinks__Link_Image"
+        style="background-image:url({{image}});">
+        <span role="img" aria-label="{{alt}}"></span>
+      </div>
+      {{#if image_right}}
+      <div
+        class="hoiImagePanelLinks__Link_Image  hoiImagePanelLinks__Link_Image--right"
+        style="background-image:url({{image_right}});">
+      </div>
+      {{/if}}
+      <div class="hoiImagePanelLinks__Link_Body">
+        <h3>{{title}}</h3>
+        <a
+          class="hoiImagePanelLinks__Link_CTA"
+          href="{{link}}"
+          {{#if target}}target="{{target}}"{{/if}}>
+          {{cta}}
+        </a>
+      </div>
+    </div>
+
+  {{/each}}
+
+</div>

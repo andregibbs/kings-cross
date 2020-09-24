@@ -1,0 +1,20 @@
+<div class="hoiIconLinks">
+
+  {{#each items}}
+
+    <a
+      class="hoiIconLinks__Link"
+      href="{{link}}"
+      {{#if target}}target="{{target}}{{/if}}">
+
+      <div class="hoiIconLinks__Link_Image">
+        <img src="{{image}}" alt="{{title}} icon" />
+      </div>
+      <span class="hoiIconLinks__Link_Text">
+        {{title}}
+      </span>
+    </a>
+
+  {{/each}}
+
+</div>

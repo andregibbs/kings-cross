@@ -1,0 +1,72 @@
+.hoiImagePanelLinks {
+  padding: $spacing-mobile;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: $mobile + 1) {
+  .hoiImagePanelLinks {
+    padding: $spacing-desktop;
+  }
+}
+
+.hoiImagePanelLinks__Link {
+  width: 100%;
+  background: #0d0e0f;
+  position: relative;
+  margin-bottom: 1em;
+}
+
+@media screen and (min-width: $mobile) {
+  .hoiImagePanelLinks {
+    flex-wrap: nowrap;
+  }
+  .hoiImagePanelLinks__Link {
+    margin-bottom: 0;
+    width: calc(50% - #{$spacing-desktop / 3});
+  }
+}
+
+.hoiImagePanelLinks__Link_Image {
+  width: 100%;
+  height: 0;
+  position: relative;
+  padding-top: 44%;
+  background-repeat: no-repeat;
+  background-position: left 1em center;
+  background-size: auto 90%;
+}
+
+// this is a bad way of doing, if needs doing again
+// use one single image as the background of the whole card
+.hoiImagePanelLinks__Link_Image--right {
+  background-position: right 1em top 2em;
+  background-size: auto 70%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+}
+
+.hoiImagePanelLinks__Link_Body {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 4em;
+  padding-right: 1em;
+
+  h3 {
+    font-size: 1.7em;
+  }
+}
+
+.hoiImagePanelLinks__Link_CTA {
+  font-weight: bold;
+  text-decoration: underline;
+  line-height: 1.2;
+}

@@ -53,11 +53,19 @@
   {{/if_equals}}
 
   {{#if_equals this.type 'image'}}
-    {{> home-of-innovation/hoiMediaImage this wrap=true}}
+    {{> home-of-innovation/hoiMediaImage this}}
   {{/if_equals}}
 
   {{#if_equals this.type 'iframe'}}
-    {{> home-of-innovation/hoiIframe this wrap=true}}
+    {{> home-of-innovation/hoiIframe this}}
+  {{/if_equals}}
+
+  {{#if_equals this.type 'image-panel-links'}}
+    {{> home-of-innovation/hoiImagePanelLinks this}}
+  {{/if_equals}}
+
+  {{#if_equals this.type 'icon-links'}}
+    {{> home-of-innovation/hoiIconLinks this}}
   {{/if_equals}}
 
   {{!--
