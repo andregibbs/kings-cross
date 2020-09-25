@@ -31,7 +31,7 @@
           "text": [
             "The truth is, nobody does. But from smart cows to gaming with your mind, 5G is already changing what’s possible today. Dr Hannah Fry and comedian Suzi Ruffell are on a mission to speak to the extraordinary people using 5G to supercharge the tech world. Together, they’ll uncover the weird and wonderful stories that throw light on how our everyday lives are transforming.",
             "Whatever’s next, one thing’s for sure, with the right tools and a head-full of ideas, 5G promises to build a better world for us all. A world we can all play a part in creating.",
-            "<img src=\"https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/paragraph-lockup.png\" style=\"width:168px;\"/>"
+            "<img src=\"https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/paragraph-lockup.png\" style=\"width:168px; margin-top:20px;\"/>"
           ]
         }
       ]
@@ -48,7 +48,7 @@
           "title": "Discover our entire range of 5G products",
           "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/banner-5G-range.png",
           "alt": "A cropped image of the top rear of an unfolded Galaxy Z Fold2 in Mystic Bronze",
-          "link": "",
+          "link": "https://www.samsung.com/uk/galaxy-5g/products/",
           "cta": "LEARN MORE"
         },
         {
@@ -56,7 +56,7 @@
           "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/banner-lockup.png",
           "image_right": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/banner-lockup-dots-crop.png",
           "alt": "White text reads \"You+ Samsung +5G\". teal lines radiate away from \"+5G\". Blue circles are visible in a grid behind the white text.",
-          "link": "",
+          "link": "https://www.samsung.com/uk/galaxy-5g/",
           "cta": "LEARN MORE"
         }
       ]
