@@ -4,15 +4,16 @@ class HOILinkListHoverScroll {
     this.el = el
     this.scrollEl = el.querySelector('.hoiList') // scrolling element
 
+    this.scrollEl.addEventListener('ListItemsUpdated', this.shouldShowScrollArrows.bind(this))
+
     this.leftScroll = el.querySelector('.hoiLinkList__ScrollArrow--left')
     this.rightScroll = el.querySelector('.hoiLinkList__ScrollArrow--right')
-
-    console.log(this.el, this.leftScroll)
 
     this.animating = false
     this.directionForward = false
     this.scrollSpeed = 4
 
+    this.shouldShowScrollArrows()
     this.checkEndOfScroll()
 
     this.leftScroll.addEventListener('mouseenter', () => {
@@ -47,6 +48,22 @@ class HOILinkListHoverScroll {
       this.scrollEl.scrollLeft += direction
       this.checkEndOfScroll()
       requestAnimationFrame(this.startScrolling.bind(this))
+    }
+  }
+
+  shouldShowScrollArrows() {
+    const scrollChildren = this.scrollEl.querySelectorAll('.hoiList__Item')
+    // if there are no children, its probable that the list is dynamic and not loaded
+    if (scrollChildren.length === 0) {
+      return
+    }
+    // set hide attribute on main el (not scrolling el) to allow css to target scroll arrows
+    if (scrollChildren.length <= 4) {
+      // if we have childred and less than 4 items, hide arrows
+      this.el.setAttribute('hide-scroll-arrows', '')
+    } else {
+      // else show em
+      this.el.removeAttribute('hide-scroll-arrows')
     }
   }
 

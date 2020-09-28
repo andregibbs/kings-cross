@@ -20,10 +20,6 @@ export default function places() {
 
   //https://sebnapi.nl/uk/kings-cross-google-apis/places-api/?placeId=ChIJWxPGhs8bdkgRzKDWW8BKbSk&fields=opening_hours&apiKey=AIzaSyBu9auy0x9Og1YGPl__MkoxswdFd6vxB7M
 
-
-
-
-  console.log('aaaa')
   let storeOpeningTimesHtml = "";
 
   $.get(sebnPlacesApiurl).success(function (data) {

@@ -5,6 +5,7 @@ import HandlebarsHelpers from '../../templates/helpers/handlebarsHelpers';
 HandlebarsHelpers.register(Handlebars)
 
 import fetchDynamicData from './hoiDynamicData';
+import { ListItemsUpdatedEvent } from './hoiEvents'
 
 const itemTemplate = require('../../templates/partials/home-of-innovation/partials/listItem.hbs');
 const itemSpacerTemplate = require('../../templates/partials/home-of-innovation/partials/listItemSpacer.hbs');
@@ -51,6 +52,10 @@ export default class HOIDynamicLinkList {
         this.dynamicTarget.insertAdjacentHTML('beforeend', itemSpacerTemplate())
       }
     }
+
+    // fire list update event (captured in hoiLinkListHoverScroll)
+    this.dynamicTarget.dispatchEvent(ListItemsUpdatedEvent)
+
   }
 
 }

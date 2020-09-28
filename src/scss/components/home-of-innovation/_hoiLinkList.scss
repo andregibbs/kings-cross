@@ -94,6 +94,11 @@
       cursor: pointer;
     }
   }
+  &[hide-scroll-arrows] {
+    .hoiLinkList__ScrollArrow {
+      display: none;
+    }
+  }
   &[end-left] {
     .hoiLinkList__ScrollArrow--left {
       opacity: 0;

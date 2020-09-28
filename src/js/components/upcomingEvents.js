@@ -22,11 +22,9 @@ export default function upcomingEvents( events, topicId, currentEvent ) {
     var filteredEvents = [];
 
   // filter private events
-  console.log(events.length)
   events = events.filter((event) => {
     return !event.extra.private
   })
-  console.log(events.length)
 
 		//if standard event
 	if(topicId !== 212) {
