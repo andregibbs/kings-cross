@@ -7,6 +7,10 @@
   "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/3/KV_3.jpg",
   "group": "british-museum",
   "sort": 3,
+  "meta": {
+    "icon": "article",
+    "tags": []
+  },
   "components": [
     {
       "type": "kv",

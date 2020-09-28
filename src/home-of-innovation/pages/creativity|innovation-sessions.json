@@ -3,6 +3,10 @@
   "description": "Description for Innovation Sessions",
   "image": "{{creativity|innovation-sessions|grl-pwr-gang[image]}}",
   "thumb": "{{creativity|innovation-sessions|grl-pwr-gang[image]}}",
+  "meta": {
+    "icon": "series",
+    "tags": []
+  },
   "components": [
     {
       "type": "kv",

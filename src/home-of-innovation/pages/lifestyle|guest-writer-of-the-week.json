@@ -3,6 +3,10 @@
   "description": "",
   "image": "{{lifestyle|guest-writer-of-the-week|1[image]}}",
   "thumb": "{{lifestyle|guest-writer-of-the-week|1[image]}}",
+  "meta": {
+    "icon": "series",
+    "tags": []
+  },
   "components": [
     {
       "type": "kv",
@@ -25,6 +29,9 @@
     {
       "type": "group",
       "dynamic": "articles",
+      "style": {
+        "scroll": true
+      },
       "id": "guest-writer-of-the-week",
       "title": "Articles"
     }

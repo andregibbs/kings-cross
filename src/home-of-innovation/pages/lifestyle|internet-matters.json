@@ -4,6 +4,10 @@
   "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/internet-matters/IM_KV.jpg",
   "alt": "A man, woman and young boy all lie on the floor inside a family home with the young boy playing a game on a digital tablet.",
   "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/internet-matters/IM_KV.jpg",
+  "meta": {
+    "icon": "series",
+    "tags": []
+  },
   "components": [
     {
       "type": "kv",

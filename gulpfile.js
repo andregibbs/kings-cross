@@ -442,6 +442,7 @@ function HOITemplates(skipTemplates, dynamicDataCallback, selectedFiles) {
               image: pageData.thumb,
               alt: pageData.alt || pageData.title,
               sort: pageData.sort,
+              meta: pageData.meta || false,
               url,
             }
           })
@@ -458,6 +459,7 @@ function HOITemplates(skipTemplates, dynamicDataCallback, selectedFiles) {
               description: pageData.description,
               image: pageData.image,
               alt: pageData.alt || pageData.title,
+              meta: pageData.meta || false,
               url
             }
 

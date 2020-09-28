@@ -58,10 +58,35 @@ div.hoiList__Item {
   width: 1em;
   height: 1em;
   margin-right: calc(#{$spacing-desktop} / 4);
-  background: white;
+  // background: white;
   flex-shrink: 0;
+  position: relative;
   @media screen and (max-width: $mobile) {
     display: none;
+  }
+
+  .hoiList__ItemIconSVG {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: none;
+    path {
+      fill: white;
+    }
+  }
+  &[icon='article'] .hoiList__ItemIconSVG--article {
+    display: block;
+  }
+  &[icon='audio'] .hoiList__ItemIconSVG--audio {
+    display: block;
+  }
+  &[icon='video'] .hoiList__ItemIconSVG--video {
+    display: block;
+  }
+  &[icon='series'] .hoiList__ItemIconSVG--series {
+    display: block;
   }
 }
 

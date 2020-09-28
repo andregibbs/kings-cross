@@ -8,7 +8,6 @@
   }
 }
 
-
 // Category Featured
 
 .hoiLinkList--feature {
@@ -144,7 +143,6 @@
 
     // forced hidden scrollbar
     &::-webkit-scrollbar {
-      // width: 8px; /* 1px wider than Lion. */
       height: 0px;
     }
 
@@ -171,6 +169,16 @@
     //   background: rgba(255,255,255,0.61); /* Some darker color when you click it */
     //   -webkit-border-radius: 100px;
     // }
+
+    &:empty {
+      content: 'hello';
+      border-bottom: 1px solid red;
+      height: 20px;
+      // &:before {
+      //   content: 'loading';
+      //   display: block;
+      // }
+    }
   }
   .hoiList__Item {
     display: inline-block;
@@ -205,9 +213,16 @@
 }
 
 // Hide item icon
-
 .hoiLinkList--hideIcon {
   .hoiList__ItemIcon {
     display: none;
   }
+}
+
+.hoiLinkList__Loader {
+  min-height: 20vw;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
 }

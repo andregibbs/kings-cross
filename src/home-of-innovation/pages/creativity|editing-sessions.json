@@ -4,6 +4,10 @@
   "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/editing-sessions/gadgetsboy.jpg",
   "alt": "Sunset",
   "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/editing-sessions/gadgetsboy.jpg",
+  "meta": {
+    "icon": "series",
+    "tags": []
+  },
   "components": [
     {
       "type": "kv",

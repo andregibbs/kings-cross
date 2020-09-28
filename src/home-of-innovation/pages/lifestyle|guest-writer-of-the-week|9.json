@@ -6,6 +6,10 @@
   "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/9/KV-600.jpg",
   "group": "guest-writer-of-the-week",
   "sort": 9,
+  "meta": {
+    "icon": "article",
+    "tags": []
+  },
   "components": [
     {
       "type": "kv",

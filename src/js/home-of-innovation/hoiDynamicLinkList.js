@@ -9,6 +9,7 @@ import { ListItemsUpdatedEvent } from './hoiEvents'
 
 const itemTemplate = require('../../templates/partials/home-of-innovation/partials/listItem.hbs');
 const itemSpacerTemplate = require('../../templates/partials/home-of-innovation/partials/listItemSpacer.hbs');
+const listLoaderTemplate = require('../../templates/partials/home-of-innovation/partials/listLoader.hbs')
 
 const ROW_ITEMS = 4
 
@@ -16,10 +17,15 @@ export default class HOIDynamicLinkList {
 
   constructor(el) {
 
+    // main el
+    this.el = el
     // get component id
     this.dynamicID = el.getAttribute('dynamic')
     // target for templates to be placed
     this.dynamicTarget = el.querySelector('[dynamic-target]')
+
+    // add loading element
+    el.insertAdjacentHTML('beforeend', listLoaderTemplate())
 
     // fetch
     fetchDynamicData()
@@ -38,6 +44,9 @@ export default class HOIDynamicLinkList {
   }
 
   compileTemplate(data) {
+
+    // remove loading element
+    this.el.removeChild(this.el.querySelector('.hoiLinkList__Loader'))
 
     // loop data and insert template
     data.items.forEach((item) => {

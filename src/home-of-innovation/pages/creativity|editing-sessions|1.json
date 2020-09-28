@@ -6,6 +6,10 @@
   "thumb": "{{creativity|editing-sessions[image]}}",
   "group": "editing-sessions",
   "sort": 1,
+  "meta": {
+    "icon": "video",
+    "tags": []
+  },
   "components": [
     {
       "type": "kv",

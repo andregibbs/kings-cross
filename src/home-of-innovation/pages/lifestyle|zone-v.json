@@ -4,6 +4,10 @@
   "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/zone-v/KV.jpg",
   "alt": "Elderly man sat wearing a light blue jumper sat down on a brown leather armchair smiling at the camera holding a Samsung smartphone towards the camera.",
   "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/zone-v/KV.jpg",
+  "meta": {
+    "icon": "article",
+    "tags": []
+  },
   "components": [
     {
       "type": "kv",

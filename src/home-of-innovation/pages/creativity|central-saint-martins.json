@@ -5,6 +5,10 @@
   "alt": "Black cartoon outlines of household items such as cooking utensils, paint brushes and cleaning products",
   "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/central-saint-martins/KV.jpg",
   "media_path": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/central-saint-martins/media/",
+  "meta": {
+    "icon": "video",
+    "tags": []
+  },
   "components": [
     {
       "type": "css-snippet",

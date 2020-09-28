@@ -6,6 +6,10 @@
   "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/9/KV.jpg",
   "group": "tips-and-trikx",
   "sort": 9,
+  "meta": {
+    "icon": "article",
+    "tags": []
+  },
   "components": [
     {
       "type": "kv",

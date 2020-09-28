@@ -115,7 +115,7 @@ function processFiles(files, cb) {
 
     // trigger recursive loop
     jsonRecursive(preparedContent)
-    
+
     // push processed fileValues to pageData
     pageData.push({
       id,
@@ -125,7 +125,8 @@ function processFiles(files, cb) {
       category: id.split('|')[0],
       url: PUBLIC_URL + id.replace(/\|/g,'/'),
       values: fileValues,
-      joinedValues: fileValues.join()
+      joinedValues: fileValues.join(),
+      meta: preparedContent.meta || false
     })
 
   })

@@ -6,6 +6,10 @@
   "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/innovation-sessions/E3_Thumb.jpg",
   "group": "innovation-sessions",
   "sort": 3,
+  "meta": {
+    "icon": "video",
+    "tags": []
+  },
   "components": [
     {
       "type": "kv",

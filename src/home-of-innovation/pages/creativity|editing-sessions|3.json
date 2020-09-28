@@ -6,6 +6,10 @@
   "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/editing-sessions/KV_3.jpg",
   "group": "editing-sessions",
   "sort": 3,
+  "meta": {
+    "icon": "video",
+    "tags": []
+  },
   "components": [
     {
       "type": "kv",

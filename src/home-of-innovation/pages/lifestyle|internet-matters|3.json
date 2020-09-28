@@ -6,6 +6,10 @@
   "thumb": "{{lifestyle|internet-matters[image]}}",
   "group": "internet-matters",
   "sort": 3,
+  "meta": {
+    "icon": "video",
+    "tags": []
+  },
   "components": [
     {
       "type": "kv",

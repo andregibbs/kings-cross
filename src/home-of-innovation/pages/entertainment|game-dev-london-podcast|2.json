@@ -6,6 +6,10 @@
   "thumb": "{{entertainment|game-dev-london-podcast[image]}}",
   "group": "game-dev-london-podcast",
   "sort": 2,
+  "meta": {
+    "icon": "audio",
+    "tags": []
+  },
   "components": [
     {
       "type": "kv",

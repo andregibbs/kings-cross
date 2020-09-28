@@ -3,6 +3,10 @@
   "description": "Description for tips & trix page",
   "image": "{{lifestyle|tips-and-trikx|1[image]}}",
   "thumb": "{{lifestyle|tips-and-trikx|1[image]}}",
+  "meta": {
+    "icon": "series",
+    "tags": []
+  },
   "components": [
     {
       "type": "kv",

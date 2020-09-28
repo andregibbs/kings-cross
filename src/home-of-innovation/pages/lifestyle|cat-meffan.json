@@ -4,6 +4,10 @@
   "image": "{{lifestyle|cat-meffan|1[image]}}",
   "alt": "{{lifestyle|cat-meffan|1[alt]}}",
   "thumb": "{{lifestyle|cat-meffan|1[image]}}",
+  "meta": {
+    "icon": "series",
+    "tags": []
+  },
   "components": [
     {
       "type": "kv",
