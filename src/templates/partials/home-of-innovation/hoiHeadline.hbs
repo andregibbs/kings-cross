@@ -29,4 +29,12 @@
     <h1>{{ this.copy }}</h1>
   {{/if}}
 
+  {{#if link}}
+    <a
+      class="hoiHeadline__Link"
+      href="{{this.link.url}}">
+      {{this.link.cta}}
+    </a>
+  {{/if}}
+
 </div>

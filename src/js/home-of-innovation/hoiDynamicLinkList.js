@@ -6,7 +6,7 @@ HandlebarsHelpers.register(Handlebars)
 
 import fetchDynamicData from './hoiDynamicData';
 import { ListItemsUpdatedEvent } from './hoiEvents'
-
+import listLoaderAnimation from '../animation/hoi-list-loader.json'
 const itemTemplate = require('../../templates/partials/home-of-innovation/partials/listItem.hbs');
 const itemSpacerTemplate = require('../../templates/partials/home-of-innovation/partials/listItemSpacer.hbs');
 const listLoaderTemplate = require('../../templates/partials/home-of-innovation/partials/listLoader.hbs')
@@ -25,7 +25,7 @@ export default class HOIDynamicLinkList {
     this.dynamicTarget = el.querySelector('[dynamic-target]')
 
     // add loading element
-    el.insertAdjacentHTML('beforeend', listLoaderTemplate())
+    this.loaderAnimation = this.createLoaderAnimation()
 
     // fetch
     fetchDynamicData()
@@ -34,6 +34,7 @@ export default class HOIDynamicLinkList {
         if (!data) {
           throw 'Missing data for ID'
         }
+        this.destroyLoaderAnimation()
         this.compileTemplate(data)
       })
       .catch(e => {
@@ -43,10 +44,29 @@ export default class HOIDynamicLinkList {
 
   }
 
-  compileTemplate(data) {
+  createLoaderAnimation() {
+    // add loader template to parent
+    this.el.insertAdjacentHTML('beforeend', listLoaderTemplate())
+    const animEl = this.el.querySelector('.hoiLinkList__LoaderAnim')
+    let loaderAnimation = false;
+    // burger menu anim
+    if (lottie) {
+      loaderAnimation = lottie.loadAnimation({
+        container: animEl, // the dom element that will contain the animation
+        renderer: 'svg',
+        loop: true,
+        animationData: listLoaderAnimation // the path to the animation json
+      });
+    }
+    return loaderAnimation
+  }
 
-    // remove loading element
+  destroyLoaderAnimation() {
+    this.loaderAnimation.destroy()
     this.el.removeChild(this.el.querySelector('.hoiLinkList__Loader'))
+  }
+
+  compileTemplate(data) {
 
     // loop data and insert template
     data.items.forEach((item) => {

@@ -52,6 +52,10 @@
       "type": "link-list-id",
       "dynamic": "lifestyle",
       "title": "Lifestyle",
+      "title_link": {
+        "cta": "See more",
+        "url": "/uk/explore/kings-cross/lifestyle"
+      },
       "style": {
         "scroll": true
       },

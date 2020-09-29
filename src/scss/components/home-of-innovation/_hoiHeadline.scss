@@ -2,12 +2,24 @@
   // padding-left: $padding-desktop;
   // padding-right: $padding-desktop;
   margin-bottom: calc(#{$spacing-mobile} / 1.5);
+
+  display: flex;
+  align-items: baseline;
+  h1, h2, h3, h4, h5, h6 {
+    display: inline-block;
+  }
 }
 
 @media screen and (min-width: $mobile + 1) {
   .hoiHeadline {
     margin-bottom: calc(#{$spacing-desktop} / 1.5);
   }
+}
+
+// headline extra link
+.hoiHeadline__Link {
+  display: inline-block;
+  margin-left: auto;
 }
 
 .hoiHeadline--align-left {

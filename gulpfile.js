@@ -457,7 +457,7 @@ function HOITemplates(skipTemplates, dynamicDataCallback, selectedFiles) {
             return {
               title: pageData.title,
               description: pageData.description,
-              image: pageData.image,
+              image: pageData.thumb,
               alt: pageData.alt || pageData.title,
               meta: pageData.meta || false,
               url

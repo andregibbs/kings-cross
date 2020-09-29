@@ -121,7 +121,7 @@ function processFiles(files, cb) {
       id,
       title: preparedContent.title,
       description: preparedContent.description,
-      image: preparedContent.image,
+      image: preparedContent.thumb,
       category: id.split('|')[0],
       url: PUBLIC_URL + id.replace(/\|/g,'/'),
       values: fileValues,

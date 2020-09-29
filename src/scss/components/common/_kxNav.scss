@@ -77,10 +77,8 @@ $subview-zindex: 700;
 }
 
 // Desktop signup link (temp)
-.kxNav__StickyNavLink .btn {
-  height: 20px;
-  background: grey;
-  width: 100%;
+.kxNav__StickyNavLink--signup {
+  padding: 0.5em;
 }
 
 // Mobile Nav (sidebar)
