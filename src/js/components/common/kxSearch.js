@@ -60,6 +60,12 @@ export default class KXSearch {
           findAllMatches: true, // search for multiple
           keys: ['title','description','values']
         })
+
+        // input field may be populated after back/fwd navigation
+        if (this.input.value.length > 0) {
+          setTimeout(this.findResults(), 300)
+        }
+
       })
 
     this.fetchEventData()
@@ -78,6 +84,8 @@ export default class KXSearch {
     this.filterElements.forEach(filter => {
       filter.addEventListener('change', this.findResults.bind(this))
     })
+
+    window.addEventListener('resize', this.updateResultsHeight.bind(this))
   }
 
   activate() {
@@ -85,7 +93,6 @@ export default class KXSearch {
   }
 
   deactivate() {
-    console.log('deact')
     this.el.removeAttribute('active')
   }
 
@@ -152,8 +159,7 @@ export default class KXSearch {
       eventResults = eventResults.concat(eventResults)
     }
 
-
-    console.log('eventResults', eventResults)
+    // console.log('eventResults', eventResults)
 
     this.clearResults()
     clearTimeout(this.renderResultsTimeout)
@@ -163,6 +169,11 @@ export default class KXSearch {
     } else {
       this.renderResults(searchResults, eventResults);
     }
+  }
+
+  updateResultsHeight() {
+    // can be refined
+    this.resultsWrapEl.style.height = (this.resultsEl.offsetHeight * 1.1) + 'px'
   }
 
   renderResults(searchResults, eventResults) {
@@ -197,8 +208,8 @@ export default class KXSearch {
         }
         // set state and height to animate
         this.setSearchState(STATE.results)
-        // maybe move this height change to function for a bit more accuracy
-        this.resultsWrapEl.style.height = (this.resultsEl.offsetHeight * 1.1) + 'px'
+
+        this.updateResultsHeight()
       }, 800)
     }
 

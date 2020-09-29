@@ -26,6 +26,11 @@ function getFiles() {
     if (categoriesToCapture.indexOf(id.split('|')[0]) === -1) {
       return false
     }
+    // ignore hidden or placeholder pages
+    if (getPageData(id).hidden || getPageData(id).placeholder) {
+      console.log('ignore hidden', id)
+      return false
+    }
     // ignore if is category page
     if (id.split('|').length <= 1) {
       return false

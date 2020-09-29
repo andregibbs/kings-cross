@@ -48,6 +48,7 @@ $subview-zindex: 700;
 
 .kxNav__StickyNavLink {
   flex: 1;
+  margin-bottom: 0;
   flex-grow: 2;
   flex-shrink: 0;
   height: 100%;
@@ -242,6 +243,10 @@ $search-change-duration: 0.5s;
 
 // search open state
 .kxNav[search-open] {
+  .kxNav__SearchLink:before {
+    background-image: url(https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/icon/search-close-white.svg);
+    transform: translate(-50%, -50%) scale(1.4);
+  }
   .kxNav__SearchLink:after {
     // 200 of longest edge should cover it
     width: 200vmax;

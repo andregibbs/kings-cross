@@ -33,8 +33,12 @@ body {
   @import "../components/common/kxNav";
   @import "../components/common/kxSearch";
   // @import "../components/nav";
-  @import "../components/sidedrawer";
+  // @import "../components/sidedrawer";
   @import "../components/home-of-innovation/content";
+
+  @import "../components/home-of-innovation/typography";
+  @import "../components/home-of-innovation/hoiLinkList";
+  @import "../components/home-of-innovation/list";
 
   background: black;
   color: white;
@@ -46,8 +50,6 @@ body {
   .hoiContent {
 
     // general styling & containers
-    @import "../components/home-of-innovation/typography";
-    @import "../components/home-of-innovation/list";
 
     // all pages
     @import "../components/home-of-innovation/hoiBreadcrumbs";
@@ -57,7 +59,6 @@ body {
     @import "../components/home-of-innovation/hoiShare";
     @import "../components/home-of-innovation/hoiButtons";
     @import "../components/home-of-innovation/hoiGroup";
-    @import "../components/home-of-innovation/hoiLinkList";
     @import "../components/home-of-innovation/hoiHeadline";
     @import "../components/home-of-innovation/hoiParagraphs";
     @import "../components/home-of-innovation/hoiGallery";

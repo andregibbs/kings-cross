@@ -51,7 +51,7 @@
     {
       "type": "link-list-id",
       "dynamic": "lifestyle",
-      "title": "Lifestyle",
+      "title": "Lifestyle & Wellbeing",
       "title_link": {
         "cta": "See more",
         "url": "/uk/explore/kings-cross/lifestyle"
@@ -72,6 +72,10 @@
       "type": "link-list-id",
       "dynamic": "creativity",
       "title": "Creativity",
+      "title_link": {
+        "cta": "See more",
+        "url": "/uk/explore/kings-cross/creativity"
+      },
       "style": {
         "scroll": true
       },
@@ -87,6 +91,10 @@
       "type": "link-list-id",
       "dynamic": "entertainment",
       "title": "Entertainment",
+      "title_link": {
+        "cta": "See more",
+        "url": "/uk/explore/kings-cross/entertainment"
+      },
       "style": {
         "scroll": true
       },
@@ -105,7 +113,11 @@
     {
       "type": "link-list-id",
       "dynamic": "innovation",
-      "title": "Tech",
+      "title": "Tech & Innovation",
+      "title_link": {
+        "cta": "See more",
+        "url": "/uk/explore/kings-cross/innovation"
+      },
       "style": {
         "scroll": true
       },
