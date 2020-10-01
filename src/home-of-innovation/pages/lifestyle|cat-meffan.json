@@ -31,7 +31,10 @@
       "type": "group",
       "dynamic": "sessions",
       "id": "cat-meffan",
-      "title": "Sessions"
+      "title": "Sessions",
+      "style": {
+        "scroll": true
+      }
     }
   ]
 }

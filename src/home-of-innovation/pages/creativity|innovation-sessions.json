@@ -30,7 +30,10 @@
       "type": "group",
       "dynamic": "episodes",
       "id": "innovation-sessions",
-      "title": "Episodes"
+      "title": "Episodes",
+      "style": {
+        "scroll": true
+      }
     }
   ]
 }

@@ -20,6 +20,10 @@
 .hoiHeadline__Link {
   display: inline-block;
   margin-left: auto;
+  font-size: 13px;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .hoiHeadline--align-left {

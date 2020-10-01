@@ -90,7 +90,10 @@
       "type": "group",
       "dynamic": "more-articles",
       "id": "guest-writer-of-the-week",
-      "title": "More articles"
+      "title": "More articles",
+      "style": {
+        "scroll": true
+      }
     }
   ]
 }

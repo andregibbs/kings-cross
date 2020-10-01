@@ -64,7 +64,10 @@
       "type": "group",
       "dynamic": "more-episodes",
       "id": "game-dev-london-podcast",
-      "title": "More episodes"
+      "title": "More episodes",
+      "style": {
+        "scroll": true
+      }
     }
   ]
 }

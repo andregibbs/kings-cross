@@ -13,7 +13,7 @@ $subview-zindex: 700;
     color: white;
   }
   * {
-    font-size: 13px;
+    // font-size: 13px;
     font-family: $samsung-sharp;
   }
 }
@@ -23,6 +23,7 @@ $subview-zindex: 700;
   position: relative;
   width: 100vw;
   height: $kxnav-height;
+  z-index: 600;
   // overflow: hidden;
 }
 
@@ -34,6 +35,10 @@ $subview-zindex: 700;
   background: rgba(0,0,0,0.8);
   background: linear-gradient(to bottom,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 28%,rgba(0,0,0,0.75) 100%);
   z-index: $navigation-zindex;
+
+  @media screen and (max-width: $mobile) {
+    background: rgba(0,0,0,0.9);
+  }
 }
 
 // Sticky Nav (desktop)
@@ -65,6 +70,7 @@ $subview-zindex: 700;
   align-items: center;
   text-align: center;
   letter-spacing: 1px;
+  font-size: 13px;
 }
 
 // pre raised above search view
@@ -119,7 +125,7 @@ $subview-zindex: 700;
     text-align: left;
     a {
       justify-content: flex-start;
-      padding: 0 1em;
+      padding: 0 2em;
     }
   }
 }
@@ -127,12 +133,11 @@ $subview-zindex: 700;
 // subview styles (mobile sidebar and search)
 .kxNav__SubView {
   width: 100%;
-  top: 0;
+  top: $kxnav-height;
   bottom: 0;
   position: fixed;
-  margin-top: $kxnav-height;
-  top: 0;
-  bottom: 0;
+  position: absolute;
+  min-height: 100vh;
   background: rgba(0,0,0,0.9);
   z-index: $subview-zindex;
   overflow-y: auto;
@@ -248,9 +253,9 @@ $search-change-duration: 0.5s;
     transform: translate(-50%, -50%) scale(1.4);
   }
   .kxNav__SearchLink:after {
-    // 200 of longest edge should cover it
-    width: 200vmax;
-    height: 200vmax;
+    // 250 of longest edge should cover it
+    width: 250vmax;
+    height: 250vmax;
   }
   // transition to show the search view after icon navigation
   .kxNav__SearchContainer {

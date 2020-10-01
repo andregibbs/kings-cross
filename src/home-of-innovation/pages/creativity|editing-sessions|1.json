@@ -39,7 +39,10 @@
       "type": "group",
       "dynamic": "episodes",
       "id": "editing-sessions",
-      "title": "More episodes"
+      "title": "More episodes",
+      "style": {
+        "scroll": true
+      }
     }
   ]
 }

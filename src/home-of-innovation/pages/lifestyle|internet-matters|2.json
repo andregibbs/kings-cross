@@ -61,7 +61,10 @@
     {
       "type": "group",
       "id": "internet-matters",
-      "title": "Other episodes"
+      "title": "Other episodes",
+      "style": {
+        "scroll": true
+      }
     }
   ]
 }

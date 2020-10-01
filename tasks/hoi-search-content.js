@@ -28,7 +28,6 @@ function getFiles() {
     }
     // ignore hidden or placeholder pages
     if (getPageData(id).hidden || getPageData(id).placeholder) {
-      console.log('ignore hidden', id)
       return false
     }
     // ignore if is category page

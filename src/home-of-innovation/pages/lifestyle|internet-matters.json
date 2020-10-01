@@ -30,7 +30,10 @@
     {
       "type": "group",
       "id": "internet-matters",
-      "title": "Articles"
+      "title": "Articles",
+      "style": {
+        "scroll": true
+      }
     }
   ]
 }

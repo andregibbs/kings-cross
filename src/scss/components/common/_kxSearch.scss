@@ -5,7 +5,7 @@
 .kxSearch {
   * {
     font-family: "SamsungSharpSans",arial,sans-serif;
-    font-size: 13px;
+    // font-size: 13px;
   }
   .kxSearch__header {
     font-size: 13px;
@@ -14,7 +14,7 @@
       font-size: 13px;
     }
     h3 {
-      font-size: 1.875em;
+      font-size: 2.5em;
       margin-bottom: 1rem
     }
   }
@@ -26,14 +26,39 @@
 
 // header
 .kxSearch__header {
+  height: 500px;
+  background: black;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.kxSearch__header_body {
+  padding: 0 $spacing-desktop;
+
+  flex-grow: 1;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 400px;
-  background: #090909;
-  text-align: center;
-  padding: 0 $spacing-desktop;
+  position: relative;
+  * {
+    z-index: 2;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/hub_kv_opt.jpg);
+    background-size: cover;
+    background-position: bottom center;
+    opacity: 0.5;
+    z-index: 1;
+  }
 }
 .kxSearch__header h3 {
   margin-top: auto;
@@ -55,8 +80,9 @@ $input-width: 300px;
   background-position: 15px center;
   color: white;
   padding-left: $input-height;
-  font-size: 1.3em;
+  font-size: 13px;
   transition: 0.3s;
+  margin-bottom: auto;
   @media screen and (max-width: $mobile) {
     width: 100%;
   }
@@ -70,12 +96,15 @@ $input-width: 300px;
 $filter-size: 30px;
 .kxSearch__filters {
   display: flex;
-  margin-top: auto;
-  margin-bottom: $spacing-desktop;
+  padding: 0 calc(#{$spacing-desktop} / 2) calc(#{$spacing-desktop} / 2);
+  justify-content: center;
+  background: black;
+  width: 100%;
 }
 @media screen and (max-width: $mobile) {
   .kxSearch__filters {
     flex-wrap: wrap;
+    padding: 0 $spacing-mobile $spacing-mobile $spacing-mobile;
     .kxSearch__filter {
       width: 50%;
       label {
@@ -199,10 +228,10 @@ $filter-size: 30px;
 // results
 .kxSearch[search-state="results"] {
   .kxSearch__panel__header {
-    margin: $spacing-mobile $spacing-mobile 0 $spacing-mobile;
+    padding: $spacing-mobile 0 $spacing-mobile $spacing-mobile;
 
     @media screen and (min-width: $mobile + 1) {
-      margin: $spacing-desktop $spacing-desktop 0 $spacing-desktop;
+      padding: $spacing-desktop $spacing-desktop 0 $spacing-desktop;
     }
 
   }
@@ -211,10 +240,15 @@ $filter-size: 30px;
     visibility: visible;
   }
   .kxSearch__panel--results {
+    padding-bottom: 2.5em;
     .hoiList__Item {
       opacity: 0;
       animation: search-item-fade-in 0.3s ease-in-out forwards;
       animation-delay: 0s;
+      @media screen and (max-width: $mobile) {
+        width: calc(50% - 2.5em/4);
+        margin-bottom: calc(#{$spacing-mobile} / 2);
+      }
     }
     @for $i from 0 through 12 {
       .hoiList__Item:nth-child(#{$i + 1}) {
@@ -244,8 +278,11 @@ $filter-size: 30px;
   visibility: hidden;
   align-items: center;
   justify-content: center;
-  padding: 2em;
+  padding: calc(#{$spacing-mobile} / 2);
   font-size: 2em;
+  @media screen and (min-width: $mobile + 1) {
+    padding: 2em;
+  }
 }
 
 .kxSearch__results_wrap[search-results="false"] {
@@ -263,6 +300,10 @@ $filter-size: 30px;
 // COMPONENT ACTIVE STATE
 // when active
 .kxSearch[active] {
+  .kxSearch__header_body {
+    opacity: 1;
+    transition: 0.7s 0.8s ease-in-out;
+  }
   .kxSearch__header h3,
   .kxSearch__input,
   .kxSearch__filters {
@@ -283,7 +324,8 @@ $filter-size: 30px;
 
 // default/deactivated
 .kxSearch {
-  .kxSearch__header h3,
+  .kxSearch__header_body,
+  .kxSearch__header_body h3,
   .kxSearch__input,
   .kxSearch__filters {
     opacity: 0;

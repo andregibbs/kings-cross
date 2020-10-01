@@ -15,7 +15,7 @@ class KXNav {
     this.searchToggles = [].slice.call(this.el.querySelectorAll('.kxNav__SearchLink'))
     this.searchOpen = false
 
-    this.searchComponent = new KXSearch()
+    this.searchComponent = new KXSearch(this.navContainsSearchComponent)
     if (!this.navContainsSearchComponent) {
       // if the component is not within the nav, activate it by default
       // wont be deactivated by navigation interactions
@@ -27,7 +27,7 @@ class KXNav {
     // TODO: add resize/rotate listener to adjust
 
     // set subview sizes
-    this.setSubviewPosition()
+    // this.setSubviewPosition()
 
     // create burger animation
     this.burgerAnimation = this.initBurgerAnimation()
@@ -37,6 +37,7 @@ class KXNav {
 
     this.mobileToggle.addEventListener('click', this.mobileToggleHandler.bind(this))
     window.addEventListener('scroll', this.scrollHandler.bind(this))
+    // window.addEventListener('resize', this.setSubviewPosition.bind(this))
   }
 
   // handles scroll and sets sticky state
@@ -64,7 +65,7 @@ class KXNav {
     }
     const gnbHeight = gnb.offsetHeight
     subViews.forEach((view) => {
-      view.style.top = `${gnbHeight}px`
+      view.style.top = `${50}px`
     })
   }
 

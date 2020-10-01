@@ -201,10 +201,10 @@
 
 .hoiLinkList--size-square {
   .hoiList__Item {
-    width: calc(26.5vw - #{$spacing-desktop / 2});
+    width: calc(26.5vw - #{$spacing-desktop / 2}) !important;
     margin-right: calc(4em / 2);
     @media screen and (min-width: $mobile + 1) {
-      width: calc(13.25vw - #{$spacing-desktop / 4});
+      width: calc(13.25vw - #{$spacing-desktop / 4}) !important;
     }
   }
   .hoiList__ItemImageWrap {

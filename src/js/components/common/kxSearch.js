@@ -32,7 +32,7 @@ const STATE = {
 const MAX_SEARCH_RESULTS = 20;
 
 export default class KXSearch {
-  constructor() {
+  constructor(navContainsSearchComponent) {
 
     this.el = document.querySelector('.kxSearch');
     if (!this.el) {
@@ -48,6 +48,8 @@ export default class KXSearch {
     this.searchFuse = null
     this.eventsFuse = null
     this.renderResultsTimeout = null
+    this.hasResults = false
+    this.navContainsSearchComponent = navContainsSearchComponent
 
     this.fetchSearchData()
       .then(searchData => {
@@ -90,10 +92,18 @@ export default class KXSearch {
 
   activate() {
     this.el.setAttribute('active','')
+    this.input.focus()
+    if (this.navContainsSearchComponent) {
+      document.querySelector('html').style.overflow = 'hidden'
+    }
   }
 
   deactivate() {
     this.el.removeAttribute('active')
+    this.input.blur()
+    if (this.navContainsSearchComponent) {
+      document.querySelector('html').style.overflow = 'auto'
+    }
   }
 
   fetchSearchData() {
@@ -173,7 +183,9 @@ export default class KXSearch {
 
   updateResultsHeight() {
     // can be refined
-    this.resultsWrapEl.style.height = (this.resultsEl.offsetHeight * 1.1) + 'px'
+    if (this.hasResults) {
+      this.resultsWrapEl.style.height = (this.resultsEl.offsetHeight) + 'px'
+    }
   }
 
   renderResults(searchResults, eventResults) {
@@ -182,10 +194,12 @@ export default class KXSearch {
 
     if (!searchResults.length && !eventResults.length) {
       // if no results
+      this.hasResults = false
       this.renderResultsTimeout = setTimeout(() => {
         this.setSearchState(STATE.noresults)
       }, 300)
     } else {
+      this.hasResults = true
       this.renderResultsTimeout = setTimeout(() => {
         // clear result targets
         this.searchResultsTarget.textContent = '';

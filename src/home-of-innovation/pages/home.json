@@ -12,8 +12,8 @@
     },
     {
       "type": "link-list-id",
-      "dynamic": "featured",
-      "title": "Featured",
+      "dynamic": "latest",
+      "title": "Latest",
       "style": {
         "scroll": true
       },

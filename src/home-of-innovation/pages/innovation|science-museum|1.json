@@ -65,7 +65,10 @@
     {
       "type": "group",
       "id": "science-museum",
-      "title": "Learn more"
+      "title": "Learn more",
+      "style": {
+        "scroll": true
+      }
     }
   ]
 }
