@@ -4,6 +4,7 @@
   "image": "",
   "alt": "",
   "thumb": "",
+  "hidden": true,
   "components": [
     {
       "note" : "this page will not exist and redirect to entertainment/lunch-and-listen"

@@ -21,12 +21,6 @@
           "type": "headline",
           "level": "1",
           "copy": "Creativity"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Heres some text describing the creativity category"
-          ]
         }
       ]
     },
@@ -35,7 +29,7 @@
       "dynamic": "creativity-latest",
       "title": "Creativity Latest",
       "style": {
-        "feature": true
+        "scroll": true
       },
       "items": [
         "creativity|central-saint-martins",
@@ -85,36 +79,6 @@
       "dynamic": "editing-sessions",
       "id": "editing-sessions",
       "title": "Editing Sessions"
-    },
-    {
-      "type": "hoi-cards",
-      "current_page": "creativity"
-    },
-    {
-      "type": "__link-list",
-      "title": "Explore",
-      "items": [
-        {
-          "title": "KX Home",
-          "url": "/uk/explore/kings-cross/",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/discover/2020-assets/home-test.jpg"
-        },
-        {
-          "title": "Innovation",
-          "url": "/uk/explore/kings-cross/innovation/",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/discover/2020-assets/innovation.jpg"
-        },
-        {
-          "title": "Entertainment",
-          "url": "/uk/explore/kings-cross/entertainment/",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/discover/2020-assets/entertainment.jpg"
-        },
-        {
-          "title": "Lifestyle",
-          "url": "/uk/explore/kings-cross/lifestyle/",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/discover/2020-assets/lifestyle.jpg"
-        }
-      ]
     }
   ]
 }

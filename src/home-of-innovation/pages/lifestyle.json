@@ -6,42 +6,100 @@
   },
   "components": [
     {
-      "type": "group-land-id",
-      "dynamic": "group-pages",
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/discover/2020-assets/lifestyle.jpg",
+        "alt": ""
+      },
+      "style": {
+        "desktop": "left",
+        "mobile": "top"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "level": "1",
+          "copy": "Creativity"
+        }
+      ]
+    },
+    {
+      "type": "link-list-id",
+      "dynamic": "latest",
+      "title": "Latest",
+      "style": {
+        "scroll": true
+      },
       "items": [
         "lifestyle|guest-writer-of-the-week|15",
         "lifestyle|guest-writer-of-the-week|14",
-        "lifestyle|guest-writer-of-the-week|13",
-        "lifestyle|guest-writer-of-the-week|12",
-        "lifestyle|guest-writer-of-the-week|11",
-        "lifestyle|guest-writer-of-the-week|10",
-        "lifestyle|cat-meffan|3",
-        "lifestyle|cat-meffan|2",
-        "lifestyle|guest-writer-of-the-week|9",
         "lifestyle|tips-and-trikx|10",
-        "lifestyle|cat-meffan|1",
-        "lifestyle|guest-writer-of-the-week|8",
         "lifestyle|tips-and-trikx|9",
-        "lifestyle|guest-writer-of-the-week|7",
-        "lifestyle|zone-v",
-        "lifestyle|tips-and-trikx|8",
-        "lifestyle|guest-writer-of-the-week|6",
-        "lifestyle|tips-and-trikx|7",
-        "lifestyle|internet-matters|3",
-        "lifestyle|internet-matters|2",
-        "lifestyle|safe-to-net",
-        "lifestyle|internet-matters|1",
-        "lifestyle|tips-and-trikx|6",
-        "lifestyle|guest-writer-of-the-week|5",
-        "lifestyle|tips-and-trikx|5",
-        "lifestyle|guest-writer-of-the-week|4",
-        "lifestyle|tips-and-trikx|4",
-        "lifestyle|guest-writer-of-the-week|3",
-        "lifestyle|guest-writer-of-the-week|2",
-        "lifestyle|guest-writer-of-the-week|1",
-        "lifestyle|tips-and-trikx|3",
-        "lifestyle|tips-and-trikx|2",
-        "lifestyle|tips-and-trikx|1"
+        "lifestyle|cat-meffan|3",
+        "lifestyle|internet-matters|3"
+      ]
+    },
+    {
+      "type": "link-list-group",
+      "dynamic": "cat-meffan",
+      "title": "Cat Meffan",
+      "style": {
+        "scroll": true
+      },
+      "id": "cat-meffan",
+      "order": "reverse"
+    },
+    {
+      "type": "link-list-group",
+      "dynamic": "guest-writer-of-the-week",
+      "title": "Guest Writer Of The Week",
+      "style": {
+        "scroll": true
+      },
+      "id": "guest-writer-of-the-week",
+      "order": "reverse"
+    },
+    {
+      "type": "link-list-group",
+      "dynamic": "internet-matters",
+      "title": "Internet Matters",
+      "style": {
+        "scroll": true
+      },
+      "id": "internet-matters",
+      "order": "reverse"
+    },
+    {
+      "type": "link-list-group",
+      "dynamic": "tips-and-trikx",
+      "title": "Tips & Trikx",
+      "style": {
+        "scroll": true
+      },
+      "id": "tips-and-trikx",
+      "order": "reverse"
+    },
+    {
+      "type": "link-list-id",
+      "dynamic": "zone-v",
+      "title": "Zone V",
+      "style": {
+        "scroll": true
+      },
+      "items": [
+        "lifestyle|zone-v"
+      ]
+    },
+    {
+      "type": "link-list-id",
+      "dynamic": "safe-to-net",
+      "title": "Safe To Net",
+      "style": {
+        "scroll": true
+      },
+      "items": [
+        "lifestyle|safe-to-net"
       ]
     }
   ]

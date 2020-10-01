@@ -6,11 +6,15 @@
   "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/game-dev-london-podcast/gdl-team-banner.jpg",
   "group": "game-dev-london-podcast",
   "sort": 12,
+  "meta": {
+    "icon": "audio",
+    "tags": []
+  },
   "components": [
     {
       "type": "kv",
       "media": {
-        "type": "video",
+        "type": "audio",
         "content": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/game-dev-london-podcast/GDL-ep12.mp4",
         "poster": "{{entertainment|game-dev-london-podcast|12[image]}}"
       },
@@ -52,7 +56,10 @@
       "type": "group",
       "dynamic": "more-episodes",
       "id": "game-dev-london-podcast",
-      "title": "More episodes"
+      "title": "More episodes",
+      "style": {
+        "scroll": true
+      }
     }
   ]
 }

@@ -4,6 +4,7 @@
 	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/innovation-sessions/elz-barney-career-advice/elz-barney-career-advice_main_kv_2.jpg",
 	"alt": "",
 	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/innovation-sessions/elz-barney-career-advice/elz-barney-career-advice_thumb_2.jpg",
+  "hidden": true,
   "meta": {
     "icon": "article",
     "tags": []

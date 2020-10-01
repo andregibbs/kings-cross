@@ -431,22 +431,34 @@ function HOITemplates(skipTemplates, dynamicDataCallback, selectedFiles) {
           return component
           break;
         case 'group':
+        case 'link-list-group':
           // find pages with same group id
           let groupPages = getPagesWithGroupId(component.id, currentFilePath);
           // create array of items with data
           // console.log(publicUrl, path.replace(pagesBasePath, '').replace(/\|/g,'/').replace('.json', ''))
-          component.items = groupPages.map(({path, pageData}) => {
-            const url = pageData.placeholder ? false : publicUrl + path.replace(pagesBasePath, '').replace(/\|/g,'/').replace('.json', '')
-            return {
-              title: pageData.title,
-              image: pageData.thumb,
-              alt: pageData.alt || pageData.title,
-              sort: pageData.sort,
-              meta: pageData.meta || false,
-              url,
-            }
-          })
-          component.items.sort((a, b) => a.sort - b.sort)
+
+          component.items = groupPages
+            .filter(({path, pageData}) => {
+              // filter hidden
+              return pageData.hidden ? false : true
+            })
+            .map(({path, pageData}) => {
+              const url = pageData.placeholder ? false : publicUrl + path.replace(pagesBasePath, '').replace(/\|/g,'/').replace('.json', '')
+              return {
+                title: pageData.title,
+                image: pageData.thumb,
+                alt: pageData.alt || pageData.title,
+                sort: pageData.sort,
+                meta: pageData.meta || false,
+                url,
+              }
+            })
+          if (component.order === "reverse") {
+            // newer content first
+            component.items.sort((a, b) => b.sort - a.sort)
+          } else {
+            component.items.sort((a, b) => a.sort - b.sort)
+          }
           break;
         case 'group-land-id':
         case 'link-list-id':
@@ -462,7 +474,6 @@ function HOITemplates(skipTemplates, dynamicDataCallback, selectedFiles) {
               meta: pageData.meta || false,
               url
             }
-
           })
 
         default:

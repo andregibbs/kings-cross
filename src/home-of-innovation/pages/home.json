@@ -3,6 +3,7 @@
   "description": "HOI generated page for Hub Content",
   "hideSearchNav": true,
   "hideBreadcrumbs": true,
+  "hidden": true,
   "theme": {
     "color": "white"
   },
@@ -18,12 +19,12 @@
         "scroll": true
       },
       "items": [
-        "lifestyle|tips-and-trikx|5",
-        "creativity|central-saint-martins",
-        "creativity|innovation-sessions",
-        "entertainment|game-dev-london-podcast|10",
-        "creativity|graduate-fashion-week",
-        "innovation|science-museum|1"
+        "entertainment|lunch-and-listen|bring-back-play-ep-2",
+        "entertainment|game-dev-london-podcast|12",
+        "lifestyle|guest-writer-of-the-week|15",
+        "creativity|editing-sessions|5",
+        "innovation|alternative-careers-guide",
+        "creativity|graduate-fashion-week|henry-holland"
       ]
     },
     {
@@ -36,15 +37,14 @@
         "hideIcon": true
       },
       "items": [
-        "lifestyle|tips-and-trikx",
+        "entertainment|lunch-and-listen",
         "creativity|innovation-sessions",
         "entertainment|game-dev-london-podcast",
-        "innovation|science-museum",
-        "lifestyle|cat-meffan",
+        "lifestyle|tips-and-trikx",
         "lifestyle|guest-writer-of-the-week",
         "creativity|editing-sessions",
-        "creativity|british-museum",
-        "creativity|innovation-sessions",
+        "lifestyle|cat-meffan",
+        "innovation|science-museum",
         "lifestyle|internet-matters"
       ]
     },
@@ -60,11 +60,19 @@
         "scroll": true
       },
       "items": [
+        "lifestyle|guest-writer-of-the-week|15",
+        "lifestyle|guest-writer-of-the-week|14",
+        "lifestyle|guest-writer-of-the-week|13",
         "lifestyle|cat-meffan|3",
-        "lifestyle|guest-writer-of-the-week|10",
-        "lifestyle|internet-matters|3",
-        "lifestyle|safe-to-net",
+        "lifestyle|cat-meffan|2",
+        "lifestyle|cat-meffan|1",
         "lifestyle|tips-and-trikx|10",
+        "lifestyle|tips-and-trikx|9",
+        "lifestyle|tips-and-trikx|8",
+        "lifestyle|internet-matters|3",
+        "lifestyle|internet-matters|2",
+        "lifestyle|internet-matters|1",
+        "lifestyle|safe-to-net",
         "lifestyle|zone-v"
       ]
     },
@@ -80,11 +88,22 @@
         "scroll": true
       },
       "items": [
-        "creativity|british-museum|5",
-        "creativity|central-saint-martins",
-        "creativity|editing-sessions|3",
         "creativity|graduate-fashion-week",
-        "creativity|innovation-sessions|elz-barney-career-advice"
+        "creativity|graduate-fashion-week|elyse-blackshaw",
+        "creativity|graduate-fashion-week|life-of-a-marketing-girl",
+        "creativity|graduate-fashion-week|henry-holland",
+        "creativity|editing-sessions|5",
+        "creativity|editing-sessions|4",
+        "creativity|editing-sessions|3",
+        "creativity|editing-sessions|2",
+        "creativity|editing-sessions|1",
+        "creativity|central-saint-martins",
+        "creativity|british-museum|1",
+        "creativity|innovation-sessions|adam-gemili-rachel-ama-get-fit-get-cooking",
+        "creativity|innovation-sessions|elz-barney-career-advice",
+        "creativity|innovation-sessions|clara-amfo-making-a-podcast",
+        "creativity|innovation-sessions|gal-dem-motivation-creativity",
+        "creativity|innovation-sessions|george-the-poet-podcast-creation"
       ]
     },
     {
@@ -99,15 +118,17 @@
         "scroll": true
       },
       "items": [
-        "entertainment|game-dev-london-podcast|10",
+        "entertainment|lunch-and-listen|bring-back-play-ep-2",
+        "entertainment|lunch-and-listen|bring-back-play",
         "entertainment|connected-living",
-        "entertainment|game-dev-london-podcast|9",
-        "entertainment|game-dev-london-podcast|8",
-        "entertainment|game-dev-london-podcast|7",
-        "entertainment|game-dev-london-podcast|6",
-        "entertainment|game-dev-london-podcast|5",
-        "entertainment|game-dev-london-podcast|4",
-        "entertainment|game-dev-london-podcast|3"
+        "entertainment|game-dev-london-podcast|12",
+        "entertainment|game-dev-london-podcast|11",
+        "entertainment|game-dev-london-podcast|10",
+        "creativity|innovation-sessions|adam-gemili-rachel-ama-get-fit-get-cooking",
+        "creativity|innovation-sessions|elz-barney-career-advice",
+        "creativity|innovation-sessions|clara-amfo-making-a-podcast",
+        "creativity|innovation-sessions|gal-dem-motivation-creativity",
+        "creativity|innovation-sessions|george-the-poet-podcast-creation"
       ]
     },
     {
@@ -122,10 +143,11 @@
         "scroll": true
       },
       "items": [
+        "innovation|alternative-careers-guide",
+        "innovation|university-of-lincoln",
         "innovation|science-museum|3",
         "innovation|science-museum|2",
-        "innovation|science-museum|1",
-        "innovation|university-of-lincoln"
+        "innovation|science-museum|1"
       ]
     }
   ]

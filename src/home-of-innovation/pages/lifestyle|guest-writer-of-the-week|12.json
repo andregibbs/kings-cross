@@ -6,6 +6,10 @@
   "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/12/mamma-mia.png",
   "group": "guest-writer-of-the-week",
   "sort": 12,
+  "meta": {
+    "icon": "article",
+    "tags": []
+  },
   "components": [
     {
       "type": "kv",
@@ -187,7 +191,10 @@
       "type": "group",
       "dynamic": "more-articles",
       "id": "guest-writer-of-the-week",
-      "title": "More articles"
+      "title": "More articles",
+      "style": {
+        "scroll": true
+      }
     }
   ]
 }

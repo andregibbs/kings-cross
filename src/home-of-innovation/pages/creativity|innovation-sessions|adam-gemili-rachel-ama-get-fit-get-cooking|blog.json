@@ -4,6 +4,11 @@
 	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/innovation-sessions/adam-gemili-rachel-ama/ep6_tall.jpg",
 	"alt": "",
 	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/innovation-sessions/adam-gemili-rachel-ama/ep6_thumb.jpg",
+  "hidden": true,
+  "meta": {
+    "icon": "article",
+    "tags": []
+  },
 	"components": [
     {
 			"type": "kv",
@@ -112,7 +117,10 @@
 			"type": "group",
 			"dynamic": "more-episodes",
 			"id": "innovation-sessions",
-			"title": "More episodes"
+			"title": "More episodes",
+      "style": {
+        "scroll": true
+      }
 		}
 	]
 }

@@ -6,27 +6,59 @@
   },
   "components": [
     {
-      "type": "group-land-id",
-      "dynamic": "group-pages",
-      "items": [
-        "entertainment|lunch-and-listen",
-        "entertainment|game-dev-london-podcast|12",
-        "entertainment|connected-living",
-        "entertainment|game-dev-london-podcast|11",
-        "creativity|innovation-sessions|elz-barney-career-advice",
-        "entertainment|game-dev-london-podcast|10",
-        "entertainment|game-dev-london-podcast|9",
-        "entertainment|game-dev-london-podcast|8",
-        "entertainment|game-dev-london-podcast|7",
-        "creativity|innovation-sessions|grl-pwr-gang",
-        "entertainment|game-dev-london-podcast|6",
-        "entertainment|game-dev-london-podcast|5",
-        "creativity|innovation-sessions|george-the-poet-podcast-creation",
-        "entertainment|game-dev-london-podcast|4",
-        "entertainment|game-dev-london-podcast|3",
-        "creativity|innovation-sessions|clara-amfo-making-a-podcast",
-        "creativity|innovation-sessions|gal-dem-motivation-creativity"
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/discover/2020-assets/entertainment.jpg",
+        "alt": ""
+      },
+      "style": {
+        "desktop": "left",
+        "mobile": "top"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "level": "1",
+          "copy": "Entertainment"
+        }
       ]
+    },
+    {
+      "type": "link-list-id",
+      "dynamic": "latest",
+      "title": "Latest",
+      "style": {
+        "scroll": true
+      },
+      "items": [
+        "entertainment|lunch-and-listen|bring-back-play-ep-2",
+        "entertainment|lunch-and-listen|bring-back-play",
+        "entertainment|game-dev-london-podcast|12",
+        "entertainment|game-dev-london-podcast|11",
+        "entertainment|game-dev-london-podcast|10",
+        "entertainment|connected-living"
+      ]
+    },
+    {
+      "type": "link-list-group",
+      "dynamic": "lunch-and-listen",
+      "title": "Lunch and Listen",
+      "style": {
+        "scroll": true
+      },
+      "id": "lunch-and-listen",
+      "order": "reverse"
+    },
+    {
+      "type": "link-list-group",
+      "dynamic": "game-dev-london-podcast",
+      "title": "Game Dev London Podcast",
+      "style": {
+        "scroll": true
+      },
+      "id": "game-dev-london-podcast",
+      "order": "reverse"
     }
   ]
 }

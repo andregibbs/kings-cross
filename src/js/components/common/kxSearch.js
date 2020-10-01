@@ -182,9 +182,8 @@ export default class KXSearch {
   }
 
   updateResultsHeight() {
-    // can be refined
     if (this.hasResults) {
-      this.resultsWrapEl.style.height = (this.resultsEl.offsetHeight) + 'px'
+      this.resultsWrapEl.style.height = ((this.resultsEl.offsetHeight) + 50) + 'px'
     }
   }
 

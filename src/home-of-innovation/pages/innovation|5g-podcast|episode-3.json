@@ -7,6 +7,10 @@
   "group": "5g-podcast",
   "sort": 3,
   "placeholder": true,
+  "meta": {
+    "icon": "video",
+    "tags": []
+  },
   "components": [
     {
       "type": "css-snippet",
@@ -45,7 +49,11 @@
     {
       "type": "group",
       "id": "5g-podcast",
-      "title": "Episodes"
+      "dynamic": "episodes",
+      "title": "Episodes",
+      "style": {
+        "scroll": true
+      }
     }
   ]
 }

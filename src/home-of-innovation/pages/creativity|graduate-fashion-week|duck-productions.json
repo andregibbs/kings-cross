@@ -7,6 +7,10 @@
   "group": "gfw-livestream",
   "hidden": true,
   "sort": 1,
+  "meta": {
+    "icon": "video",
+    "tags": []
+  },
   "components": [
     {
       "type": "kv",
@@ -62,7 +66,10 @@
       "type": "group",
       "dynamic": "episodes",
       "id": "gfw-livestream",
-      "title": "Episodes"
+      "title": "Episodes",
+      "style": {
+        "scroll": true
+      }
     }
   ]
 }

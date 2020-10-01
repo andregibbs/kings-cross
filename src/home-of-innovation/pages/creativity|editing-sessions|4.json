@@ -6,6 +6,10 @@
   "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/editing-sessions/4/thumb.jpg",
   "group": "editing-sessions",
   "sort": 4,
+  "meta": {
+    "icon": "video",
+    "tags": []
+  },
   "components": [
     {
       "type": "kv",
@@ -40,7 +44,10 @@
       "type": "group",
       "dynamic": "episodes",
       "id": "editing-sessions",
-      "title": "More episodes"
+      "title": "More episodes",
+      "style": {
+        "scroll": true
+      }
     }
   ]
 }

@@ -6,15 +6,47 @@
   },
   "components": [
     {
-      "type": "group-land-id",
-      "dynamic": "group-pages",
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/discover/2020-assets/innovation.jpg",
+        "alt": ""
+      },
+      "style": {
+        "desktop": "left",
+        "mobile": "top"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "level": "1",
+          "copy": "Innovation"
+        }
+      ]
+    },
+    {
+      "type": "link-list-id",
+      "dynamic": "latest",
+      "title": "Latest",
+      "style": {
+        "scroll": true
+      },
       "items": [
         "innovation|alternative-careers-guide",
         "innovation|university-of-lincoln",
-        "innovation|science-museum|1",
-        "innovation|science-museum|2",
+        "innovation|product-demos",
         "innovation|science-museum|3"
       ]
+    },
+    {
+      "type": "link-list-group",
+      "dynamic": "science-museum",
+      "title": "Science Museum",
+      "style": {
+        "scroll": true
+      },
+      "id": "science-museum",
+      "order": "reverse"
     }
   ]
 }

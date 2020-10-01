@@ -91,6 +91,10 @@
     {{> home-of-innovation/hoiLinkList this }}
   {{/if_equals}}
 
+  {{#if_equals this.type 'link-list-group' }}
+    {{> home-of-innovation/hoiLinkList this }}
+  {{/if_equals}}
+
   {{#if_equals this.type 'search' }}
     {{> components/common/kxSearch }}
   {{/if_equals}}

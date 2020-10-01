@@ -4,6 +4,10 @@
   "image": "",
   "alt": "Black cartoon outlines of household items such as cooking utensils, paint brushes and cleaning products",
   "thumb": "",
+  "meta": {
+    "icon": "video",
+    "tags": []
+  },
   "components": [
     {
       "type": "kv",
