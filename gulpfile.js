@@ -690,7 +690,7 @@ gulp.task('hoi-dev', ['home-of-innovation-scss', 'home-of-innovation-build', 'ho
 
 gulp.task('production', sequence('copy-assets', 'scss', 'buildJS', 'html') )
 gulp.task('development', sequence('copy-assets', 'buildJS', 'html', 'scss', 'scss-page' ) )
-gulp.task('_staging', sequence('copy-assets', 'scss', 'scss-page', 'buildJS', 'html') )
+gulp.task('_staging', sequence('copy-assets', 'buildJS', 'html', 'scss', 'scss-page' ) )
 
 gulp.task('staging', ['watch', '_staging', 'watchJS'])
 gulp.task('default', ['watch', 'development', 'watchJS'])
