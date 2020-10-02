@@ -33,7 +33,7 @@ function homeKV() {
   const homeKV_Title = document.querySelector('.homeKV__Title');
   const homeKV_BlackVertical = document.querySelector('.homeKV__CrossSVG #svg_black_vertical');
   const homeKV_BlackHorizontal = document.querySelector('.homeKV__CrossSVG #svg_black_horizontal');
-  const navItemHeaders = [].slice.call(document.querySelectorAll('.homeKV__NavItemText'));
+  const navItemHeaders = [].slice.call(document.querySelectorAll('.homeKV__NavItemBody'));
   const navItems = [].slice.call(document.querySelectorAll('.homeKV__NavItem'));
   const straplineOne = document.querySelector('.homeKV__Strapline--first');
   const straplineTwo = document.querySelector('.homeKV__Strapline--last');
@@ -299,32 +299,32 @@ function homeKV() {
       }
     ]
 
-    const navItemHeaderSteps = [
-      {
-        scroll: 0,
-        easing: easing.easeOutCirc, // easing to use
-        values: {
-          x: 150,
-          opacity: 0
-        }
-      },
-      {
-        scroll: (rects.nav.top - rects.body.top) - (rects.header.height / 2),
-        easing: easing.easeOutCirc, // easing to use
-        values: {
-          x: 150,
-          opacity: 0
-        }
-      },
-      {
-        scroll: (rects.nav.top - rects.body.top) - ((rects.innerHeight - rects.nav.height) / 2) - (rects.innerHeight / 4),
-        easing: easing.easeOutCirc, // easing to use
-        values: {
-          x: mobile ? -10 : 0,
-          opacity: 1
-        }
-      }
-    ]
+    // const navItemHeaderSteps = [
+    //   {
+    //     scroll: 0,
+    //     easing: easing.linear, // easing to use
+    //     values: {
+    //       // x: 150,
+    //       opacity: 0
+    //     }
+    //   },
+    //   {
+    //     scroll: (rects.nav.top - rects.body.top) - (rects.header.height / 2),
+    //     easing: easing.easeOutCirc, // easing to use
+    //     values: {
+    //       // x: 150,
+    //       opacity: 0
+    //     }
+    //   },
+    //   {
+    //     scroll: (rects.nav.top - rects.body.top) - (rects.innerHeight - (rects.nav.height / 2)),
+    //     easing: easing.easeOutCirc, // easing to use
+    //     values: {
+    //       // x: mobile ? -10 : 0,
+    //       opacity: 1
+    //     }
+    //   }
+    // ]
 
     // unless cross animation is disabled
 
@@ -342,7 +342,7 @@ function homeKV() {
     const headerTitleValues = processSteps(headerTitleSteps, scroll);
     const strapLineValues = processSteps(strapLineSteps, scroll)
     const horizontalBlackValues = processSteps(horizontalBlackSteps, scroll)
-    const navItemHeaderValues = processSteps(navItemHeaderSteps, scroll)
+    // const navItemHeaderValues = processSteps(navItemHeaderSteps, scroll)
 
     homeKV_Title.style.transform = `translate(0 ,${headerTitleValues['y']}px)`
     straplineOne.style.opacity = strapLineValues.first_opacity
@@ -356,26 +356,25 @@ function homeKV() {
     })
 
     // animate in the ctas
-    navItemHeaders.forEach((el, i) => {
-      let button = el.querySelector('.btn')
-      let x = navItemHeaderValues.x
-      let opacity = navItemHeaderValues.opacity
-      switch (i) {
-        case 0:
-          x = x * -1
-          x = Math.min(x + 50, mobile ? 10 : 0)
-          break;
-        case 1:
-          x = Math.max(x - 50, mobile ? -10 : 0)
-          break;
-        case 2:
-          x = x * -1
-          break;
-        default:
-      }
-      el.style.transform = `translate(${x}%, 0)`
-      el.style.opacity = opacity
-    });
+    // navItemHeaders.forEach((el, i) => {
+    //   // let x = navItemHeaderValues.x
+    //   let opacity = navItemHeaderValues.opacity
+    //   // switch (i) {
+    //   //   case 0:
+    //   //     x = x * -1
+    //   //     x = Math.min(x + 50, mobile ? 10 : 0)
+    //   //     break;
+    //   //   case 1:
+    //   //     x = Math.max(x - 50, mobile ? -10 : 0)
+    //   //     break;
+    //   //   case 2:
+    //   //     x = x * -1
+    //   //     break;
+    //   //   default:
+    //   // }
+    //   // el.style.transform = `translate(${x}%, 0)`
+    //   el.style.opacity = opacity
+    // });
 
   }
 

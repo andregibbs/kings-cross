@@ -65,6 +65,8 @@
   height: em(160);
   cursor: pointer;
   z-index: 5;
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
 
   svg path {
     stroke: white;
@@ -91,7 +93,7 @@
 
 .homeKV__NavItems {
   display: flex;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
 }
 
 .homeKV__NavItem {
@@ -100,62 +102,59 @@
   height: 0;
   padding-bottom: 75%;
   position: relative;
-  background-size: cover;
-  background-position: center;
+  background-size: auto 100%;
+  background-position: center center;
   opacity: 0;
+  position: relative;
 
+  &:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,0.3) 15%,rgba(0,0,0,0.3) 85%,rgba(0,0,0,1) 100%);
+  }
+
+}
+
+.homeKV__NavItemBody {
+  position: absolute;
+  top: 50%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  align-items: center;
+  z-index: 2;
   h2 {
-    font-size: em(24);
-    margin-bottom: em(8);
+    font-size: em(18);
+    margin-bottom: 10px;
   }
 }
 
-.homeKV__NavItemText {
-  position: absolute;
-  color: white;
-  padding: em(10) em(20);
-  will-change: transform, opacity;
+.homeKV__NavItemBody__Desc {
+  display: none;
+  font-size: em(14);
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
-.homeKV__NavItemTitle--desktop {
-  display: none;
-}
 
 .homeKV__NavItem:nth-child(1) {
-  background-image: url('https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/homekv/lifestyle.png?$LATEST_PNG$');
-  .homeKV__NavItemText {
-    bottom: 0;
-    left: 0;
-    transform: translate(-150%, 0);
+  background-image: url('https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/homekv/homekv_online.jpg');
+  .homeKV__NavItemBody {
+    left: 0%;
   }
 }
 .homeKV__NavItem:nth-child(2) {
-  background-image: url('https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/homekv/entertainment.png?$LATEST_PNG$');
-  .homeKV__NavItemText {
-    bottom: 0;
-    right: 0;
-    transform: translate(150%, 0);
-    direction: rtl;
+  background-image: url('https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/homekv/homekv_events.jpg');
+  .homeKV__NavItemBody {
+    right: 0%;
   }
 }
-.homeKV__NavItem:nth-child(3) {
-  background-image: url('https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/homekv/creativity.png?$LATEST_PNG$');
-  .homeKV__NavItemText {
-    top: 0;
-    left: 0;
-    transform: translate(-150%, 0);
-  }
-}
-.homeKV__NavItem:nth-child(4) {
-  background-image: url('https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/homekv/innovation.png?$LATEST_PNG$');
-  .homeKV__NavItemText {
-    top: 0;
-    right: 0;
-    transform: translate(150%, 0);
-    direction: rtl;
-  }
-}
-
 .homeKV__CrossSVG {
   position: absolute;
   pointer-events: none;
@@ -183,6 +182,19 @@
   // }
 }
 
+@media screen and (max-width: $mobile) {
+  .homeKV__NavItemBody {
+    .btn {
+      padding: 0.75em;
+      width: 100%;
+      height: 3em;
+    }
+  }
+  .homeKV__NavItem:nth-child(2) {
+    background-position: left center;
+  }
+}
+
 @media screen and (min-width: $mobile + 1) {
 
   .homeKV__Header {
@@ -191,21 +203,17 @@
 
   .homeKV__NavItem {
     height: 0;
-    padding-bottom: 41%;
+    padding-bottom: 82%;
 
     h2 {
-      font-size: em(40);
-      margin-bottom: em(8);
+      font-size: em(36);
     }
   }
 
-  .homeKV__NavItemText {
-    padding: em(20) em(40);
+  .homeKV__NavItemBody {
+    width: 80%;
   }
-  .homeKV__NavItemTitle--mobile {
-    display: none;
-  }
-  .homeKV__NavItemTitle--desktop {
+  .homeKV__NavItemBody__Desc {
     display: block;
   }
 

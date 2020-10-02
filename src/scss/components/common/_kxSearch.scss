@@ -60,7 +60,7 @@
   }
 }
 .kxSearch__header h3 {
-  margin-top: auto;
+  // margin-top: auto;
 }
 
 // input field
@@ -81,7 +81,7 @@ $input-width: 300px;
   padding-left: $input-height;
   font-size: 13px;
   transition: 0.3s;
-  margin-bottom: auto;
+  // margin-bottom: auto;
   @media screen and (max-width: $mobile) {
     width: 100%;
   }
@@ -114,11 +114,19 @@ $filter-size: 30px;
 }
 
 .kxSearch__filter {
+  display: block;
+  margin: $filter-size / 2 0 0;
+  @media screen and (min-width: $mobile + 1) {
+    margin-right: 10px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
   label {
     cursor: pointer;
     display: flex;
     align-items: center;
-    padding-left: $filter-size;
+    // padding-left: $filter-size;
     height: $filter-size;
     position: relative;
   }
@@ -145,13 +153,15 @@ $filter-size: 30px;
     opacity: 0.5;
     transition: 0.3s;
     top: 0;
-    left: $filter-size;
+    left: 0;
+    z-index: 1;
   }
   label:hover:after {
     opacity: 1;
   }
-  input,
-  input::-ms-check{
+  input {
+    opacity: 0;
+    appearance: none;
     display:none
   }
   input:checked {

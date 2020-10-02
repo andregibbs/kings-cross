@@ -113,7 +113,6 @@ export default class KXSearch {
   fetchEventData() {
     return new Promise(function(resolve, reject) {
       FetchEvents(events => {
-        console.log('events', events)
         resolve(events)
       })
     });
@@ -163,10 +162,6 @@ export default class KXSearch {
     if (this.eventsFuse) {
       // get event results
       eventResults = this.eventsFuse.search(value).map(r => r.item)
-      // temp item bulk up
-      eventResults = eventResults.concat(eventResults)
-      eventResults = eventResults.concat(eventResults)
-      eventResults = eventResults.concat(eventResults)
     }
 
     // console.log('eventResults', eventResults)
