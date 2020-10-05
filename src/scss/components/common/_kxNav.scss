@@ -137,7 +137,6 @@ $subview-zindex: 700;
   bottom: 0;
   position: fixed;
   position: absolute;
-  min-height: 100vh;
   background: rgba(0,0,0,0.9);
   z-index: $subview-zindex;
   overflow-y: auto;

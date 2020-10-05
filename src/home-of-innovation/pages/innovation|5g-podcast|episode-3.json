@@ -6,6 +6,7 @@
   "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/album-art-coming-soon.jpg",
   "group": "5g-podcast",
   "sort": 3,
+  "hidden": true,
   "placeholder": true,
   "meta": {
     "icon": "video",

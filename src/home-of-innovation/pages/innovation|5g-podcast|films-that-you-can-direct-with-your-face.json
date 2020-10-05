@@ -6,6 +6,7 @@
   "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/Album-art-ep1_v3.jpg",
   "group": "5g-podcast",
   "sort": 1,
+  "hidden": true,
   "meta": {
     "icon": "video",
     "tags": []

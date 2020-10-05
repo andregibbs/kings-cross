@@ -27,7 +27,7 @@ class KXNav {
     // TODO: add resize/rotate listener to adjust
 
     // set subview sizes
-    // this.setSubviewPosition()
+    this.setSubviewPosition()
 
     // create burger animation
     this.burgerAnimation = this.initBurgerAnimation()
@@ -37,7 +37,7 @@ class KXNav {
 
     this.mobileToggle.addEventListener('click', this.mobileToggleHandler.bind(this))
     window.addEventListener('scroll', this.scrollHandler.bind(this))
-    // window.addEventListener('resize', this.setSubviewPosition.bind(this))
+    window.addEventListener('resize', this.setSubviewPosition.bind(this))
   }
 
   // handles scroll and sets sticky state
@@ -65,7 +65,7 @@ class KXNav {
     }
     const gnbHeight = gnb.offsetHeight
     subViews.forEach((view) => {
-      view.style.top = `${50}px`
+      view.style.top = `${gnbHeight + 50}px`
     })
   }
 

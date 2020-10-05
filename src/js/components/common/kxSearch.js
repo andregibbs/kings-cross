@@ -189,6 +189,8 @@ export default class KXSearch {
     if (!searchResults.length && !eventResults.length) {
       // if no results
       this.hasResults = false
+      this.resultsWrapEl.removeAttribute('search-results')
+      this.resultsWrapEl.removeAttribute('event-results')
       this.renderResultsTimeout = setTimeout(() => {
         this.setSearchState(STATE.noresults)
       }, 300)
