@@ -10,19 +10,24 @@
   }
 }
 
+// headline extra link
+.hoiHeadline__Link {
+  display: inline-block;
+  text-transform: uppercase;
+  margin-left: auto;
+  font-size: 11px;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 @media screen and (min-width: $mobile + 1) {
   .hoiHeadline {
     margin-bottom: calc(#{$spacing-desktop} / 1.5);
   }
-}
-
-// headline extra link
-.hoiHeadline__Link {
-  display: inline-block;
-  margin-left: auto;
-  font-size: 13px;
-  &:hover {
-    text-decoration: underline;
+  .hoiHeadline__Link {
+    margin-left: 1em;
+    font-size: 13px;
   }
 }
 

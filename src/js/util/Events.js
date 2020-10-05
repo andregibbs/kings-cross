@@ -83,7 +83,7 @@ export default function fetchData(callback) {
       //get all the topic ids
       events.forEach(event => {
         console.log(topics)
-        if (topics.includes(event.topic.id)) {
+        if (topics.indexOf(event.topic.id) > -1) {
 
         } else {
           topics.push(event.topic.id);

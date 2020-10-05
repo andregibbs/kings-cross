@@ -117,6 +117,15 @@
     background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,0.3) 15%,rgba(0,0,0,0.3) 85%,rgba(0,0,0,1) 100%);
   }
 
+  &:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+
 }
 
 .homeKV__NavItemBody {
@@ -145,12 +154,18 @@
 
 .homeKV__NavItem:nth-child(1) {
   background-image: url('https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/homekv/homekv_online.jpg');
+  &:after {
+    background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 15%, rgba(0,0,0,0) 100%);
+  }
   .homeKV__NavItemBody {
     left: 0%;
   }
 }
 .homeKV__NavItem:nth-child(2) {
   background-image: url('https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/homekv/homekv_events.jpg');
+  &:after {
+    background: linear-gradient(to left, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 15%, rgba(0,0,0,0) 100%);
+  }
   .homeKV__NavItemBody {
     right: 0%;
   }

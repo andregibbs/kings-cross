@@ -102,7 +102,7 @@ export default class KXSearch {
     this.el.removeAttribute('active')
     this.input.blur()
     if (this.navContainsSearchComponent) {
-      document.querySelector('html').style.overflow = 'auto'
+      document.querySelector('html').style.overflow = ''
     }
   }
 

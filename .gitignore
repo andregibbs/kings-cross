@@ -3,3 +3,7 @@ build
 .DS_STORE
 yarn.lock
 .vscode/settings.json
+
+
+hoi-dynamic-manual-bk.json
+hoi-dynamic-manual.json

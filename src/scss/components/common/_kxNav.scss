@@ -241,6 +241,7 @@ $search-change-duration: 0.5s;
 // search view initial state
 .kxNav__SearchContainer {
   opacity: 0;
+  position: fixed;
   pointer-events: none;
   z-index: $search-view-zindex;
   transition: opacity $search-change-duration ease-in-out;
