@@ -4,9 +4,9 @@
   "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/livestreams/Samsung_GraduateFashionWeek_1440x900_Duck.jpg",
   "alt": "",
   "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/livestreams/Samsung_GraduateFashionWeek_1080x1080_Duck_V4.jpg",
-  "group": "gfw-livestream",
+  "group": "graduate-fashion-week",
   "hidden": true,
-  "sort": 1,
+  "sort": 2,
   "meta": {
     "icon": "video",
     "tags": []
@@ -65,7 +65,7 @@
     {
       "type": "group",
       "dynamic": "episodes",
-      "id": "gfw-livestream",
+      "id": "graduate-fashion-week",
       "title": "Episodes",
       "style": {
         "scroll": true

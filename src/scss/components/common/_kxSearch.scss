@@ -54,7 +54,7 @@
     height: 100%;
     background-image: url(https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/hub_kv_opt.jpg);
     background-size: cover;
-    background-position: bottom center;
+    background-position: center center;
     opacity: 0.5;
     z-index: 1;
   }
@@ -287,6 +287,19 @@ $filter-size: 30px;
   }
 }
 
+//
+.kxSearch__noinput_message--in-nav {
+  display: none;
+}
+.kxSearch[search-in-nav] {
+  .kxSearch__noinput_message--in-nav {
+    display: block
+  }
+  .kxSearch__noinput_message--in-page {
+    display: none;
+  }
+}
+
 .kxSearch__panel_status {
   // height: 50px;
   display: none;
@@ -295,6 +308,11 @@ $filter-size: 30px;
   justify-content: center;
   padding: calc(#{$spacing-mobile} / 2);
   font-size: 2em;
+  text-align: center;
+  > div {
+    font-size: 1em;
+    text-align: center;
+  }
   @media screen and (min-width: $mobile + 1) {
     padding: 2em;
   }

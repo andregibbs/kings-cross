@@ -59,13 +59,12 @@ class KXNav {
   // Sets subview top position (calculating gnb size)
   setSubviewPosition() {
     const subViews = [].slice.call(document.querySelectorAll('.kxNav__SubView'))
-    const gnb = document.querySelector('.gnb')
-    if (!gnb) {
-      return // no gnb
+    let containerOffset = document.querySelector('.cheil-static').offsetTop - window.scrollY
+    if (containerOffset < 0) {
+      containerOffset = 0
     }
-    const gnbHeight = gnb.offsetHeight
     subViews.forEach((view) => {
-      view.style.top = `${gnbHeight + 50}px`
+      view.style.top = `${containerOffset + 50}px`
     })
   }
 
@@ -146,6 +145,7 @@ class KXNav {
 
   // opens search view
   openSearch() {
+    this.setSubviewPosition()
     this.el.setAttribute('search-open', '')
     this.el.removeAttribute('search-closed')
     this.searchComponent.activate()

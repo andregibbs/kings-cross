@@ -43,6 +43,7 @@
       "components": [
         {
           "type": "kv",
+          "share": false,
           "media": {
             "type": "image",
             "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/entertainment/connected-living/table_manners.jpg",

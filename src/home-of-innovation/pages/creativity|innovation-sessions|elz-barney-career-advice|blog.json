@@ -52,6 +52,7 @@
 				},
         {
 					"type": "kv",
+          "share": false,
 					"media": {
 						"type": "audio",
 						"content": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/innovation-sessions/elz-barney-career-advice/barney-dark-n-cold.mp4",

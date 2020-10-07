@@ -51,6 +51,10 @@ export default class KXSearch {
     this.hasResults = false
     this.navContainsSearchComponent = navContainsSearchComponent
 
+    if (this.navContainsSearchComponent) {
+      this.el.setAttribute('search-in-nav', '')
+    }
+
     this.fetchSearchData()
       .then(searchData => {
         // Create fuse instance with search data

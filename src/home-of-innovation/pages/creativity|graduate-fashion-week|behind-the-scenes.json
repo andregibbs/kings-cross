@@ -1,0 +1,66 @@
+{
+  "title": "Behind The Scenes",
+  "description": "Exclusive BTS footage of the Graduate Fashion Week Class of 2020 Catwalk Showacase from Samsung KX",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/livestreams/behind-the-scenes/Graduatefashionweek-8.jpg",
+  "alt": "",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/livestreams/behind-the-scenes/Graduatefashionweek-8.jpg",
+  "group": "graduate-fashion-week",
+  "sort": 6,
+  "hidden": true,
+  "meta": {
+    "icon": "video",
+    "tags": []
+  },
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "video",
+        "content": "IcKj0GrQW5c",
+        "poster": "{{creativity|graduate-fashion-week|behind-the-scenes[image]}}",
+        "alt": ""
+      },
+      "style": {
+        "desktop": "top",
+        "mobile": "bottom"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "Samsung KX's exclusive BTS footage of the Graduate Fashion Week Catlwalk"
+        }
+      ]
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "paragraphs",
+          "text": [
+            "On Tuesday 22nd September, Graduate Fashion Week collaborated with Samsung KX to virtually unveil 98 unique looks from 53 graduate collections, right in the heart of the space. Watch this exclusive behind-the-scenes video for stylish footage of the exciting journey that was experienced in London's home of innovation. This stunning showcase followed after a collaboration earlier this year, in which Samsung KX used its online platform to present the inspiring work of the Graduate Fashion Innovation Award 2020 after their annual display was cancelled. This catwalk played finale to what was a phenomenal Graduate Fashion Week in the space, with activity including a 5 day public exhibition, a style podcast with Henry Holland & a panel talk with Hilary Alexander OBE, stay tuned for further fashion content!"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "link-list",
+      "title": "Check out the products used in the workshops here",
+      "items": [
+        {
+          "title": "The Sero",
+          "url": "https://www.samsung.com/uk/tvs/the-sero-ls05t/",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/behind-the-scenes/Samsung-Lifestyle-TV-The-Sero.jpg"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "dynamic": "episodes",
+      "id": "graduate-fashion-week",
+      "title": "Episodes",
+      "style": {
+        "scroll": true
+      }
+    }
+  ]
+}

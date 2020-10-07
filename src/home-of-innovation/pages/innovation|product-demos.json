@@ -12,6 +12,7 @@
   "components": [
     {
       "type": "kv",
+      "share": false,
       "style": {
         "desktop": "left",
         "mobile": "top",
@@ -29,9 +30,6 @@
           "content": "dxKwWNFzITY"
         }
       ]
-    },
-    {
-      "type": "share"
     },
     {
       "type": "wrapper",

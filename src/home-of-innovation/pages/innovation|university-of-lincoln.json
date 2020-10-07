@@ -60,6 +60,7 @@
     },
     {
       "type": "kv",
+      "share": false,
       "media": {
         "type": "video",
         "content": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/university-of-lincoln/jason.mp4",
@@ -81,6 +82,7 @@
     },
     {
       "type": "kv",
+      "share": false,
       "media": {
         "type": "image",
         "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/university-of-lincoln/seb.jpg",

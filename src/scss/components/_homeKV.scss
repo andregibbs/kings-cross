@@ -137,6 +137,8 @@
   padding: 1em;
   align-items: center;
   z-index: 2;
+  transform: translate(0, -75%);
+
   h2 {
     font-size: em(18);
     margin-bottom: 10px;
@@ -241,7 +243,7 @@
 
   .homeKV__Title {
     h1 {
-      font-size: em(72);
+      font-size: 3.5em;
       margin-bottom: em(4);
     }
     .homeKV__Strapline {

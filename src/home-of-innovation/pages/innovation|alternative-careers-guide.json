@@ -33,11 +33,8 @@
       ]
     },
     {
-      "type": "share"
-    },
-
-    {
       "type": "kv",
+      "share": false,
       "media": {
         "type": "image",
         "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/alternative-careers-guide/Samsung_Alternative_Careers_Report_Final_Cover.jpg",
@@ -74,6 +71,7 @@
 
     {
       "type": "kv",
+      "share": false,
       "media": {
         "type": "youtube",
         "content": "4usnA8Z5q4w",
@@ -102,6 +100,7 @@
 
     {
       "type": "kv",
+      "share": false,
       "media": {
         "type": "youtube",
         "content": "u11bTkLjNg8",
@@ -130,6 +129,7 @@
 
     {
       "type": "kv",
+      "share": false,
       "media": {
         "type": "youtube",
         "content": "jO-vsN_mYyc",
@@ -157,6 +157,7 @@
 
     {
       "type": "kv",
+      "share": false,
       "media": {
         "type": "youtube",
         "content": "aE0NFRkTDgE",

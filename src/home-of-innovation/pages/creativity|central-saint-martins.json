@@ -64,6 +64,7 @@
 
     {
       "type": "kv",
+      "share": false,
       "media": {
         "type": "video",
         "content": "{{creativity|central-saint-martins[media_path]}}Penelope_Zouganeli.mp4",
@@ -97,6 +98,7 @@
     },
     {
       "type": "kv",
+      "share": false,
       "media": {
         "type": "video",
         "content": "{{creativity|central-saint-martins[media_path]}}Luke_Davies.mp4",
@@ -128,6 +130,7 @@
     },
     {
       "type": "kv",
+      "share": false,
       "media": {
         "type": "video",
         "content": "{{creativity|central-saint-martins[media_path]}}Didara_Abdirakhman.mp4",
@@ -159,6 +162,7 @@
     },
     {
       "type": "kv",
+      "share": false,
       "media": {
         "type": "video",
         "content": "{{creativity|central-saint-martins[media_path]}}Daria_Antropova.mp4",
@@ -190,6 +194,7 @@
     },
     {
       "type": "kv",
+      "share": false,
       "media": {
         "type": "video",
         "content": "{{creativity|central-saint-martins[media_path]}}Athena_Kong_Samsung.mp4",
@@ -221,6 +226,7 @@
     },
     {
       "type": "kv",
+      "share": false,
       "media": {
         "type": "video",
         "content": "{{creativity|central-saint-martins[media_path]}}Rocio_Rey.mp4",
@@ -252,6 +258,7 @@
     },
     {
       "type": "kv",
+      "share": false,
       "media": {
         "type": "video",
         "content": "{{creativity|central-saint-martins[media_path]}}Connie_Boeree.mp4",
@@ -283,6 +290,7 @@
     },
     {
       "type": "kv",
+      "share": false,
       "media": {
         "type": "video",
         "content": "{{creativity|central-saint-martins[media_path]}}Zora_Zixuan_Xu.mp4",
@@ -314,6 +322,7 @@
     },
     {
       "type": "kv",
+      "share": false,
       "media": {
         "type": "video",
         "content": "{{creativity|central-saint-martins[media_path]}}TigrisLi.mp4",
@@ -347,6 +356,7 @@
 
     {
       "type": "kv",
+      "share": false,
       "media": {
         "type": "video",
         "content": "{{creativity|central-saint-martins[media_path]}}Braydon_Walmsley.mp4",
@@ -378,6 +388,7 @@
     },
     {
       "type": "kv",
+      "share": false,
       "media": {
         "type": "video",
         "content": "{{creativity|central-saint-martins[media_path]}}Carmen_Fribbins.mp4",
@@ -409,6 +420,7 @@
     },
     {
       "type": "kv",
+      "share": false,
       "media": {
         "type": "video",
         "content": "{{creativity|central-saint-martins[media_path]}}Flora_Hay.mp4",
@@ -440,6 +452,7 @@
     },
     {
       "type": "kv",
+      "share": false,
       "media": {
         "type": "video",
         "content": "{{creativity|central-saint-martins[media_path]}}Changhyo_Kim.mp4",
@@ -471,6 +484,7 @@
     },
     {
       "type": "kv",
+      "share": false,
       "media": {
         "type": "video",
         "content": "{{creativity|central-saint-martins[media_path]}}Jiahui_Qiu.mp4",
@@ -502,6 +516,7 @@
     },
     {
       "type": "kv",
+      "share": false,
       "media": {
         "type": "video",
         "content": "{{creativity|central-saint-martins[media_path]}}Fernanda_Duarte.mp4",
@@ -533,6 +548,7 @@
     },
     {
       "type": "kv",
+      "share": false,
       "media": {
         "type": "video",
         "content": "{{creativity|central-saint-martins[media_path]}}Florrie_Smith.mp4",
@@ -564,6 +580,7 @@
     },
     {
       "type": "kv",
+      "share": false,
       "media": {
         "type": "video",
         "content": "{{creativity|central-saint-martins[media_path]}}Hannah_Meah.mp4",
@@ -595,6 +612,7 @@
     },
     {
       "type": "kv",
+      "share": false,
       "media": {
         "type": "video",
         "content": "{{creativity|central-saint-martins[media_path]}}Vasilisa_Petrova.mp4",
@@ -626,6 +644,7 @@
     },
     {
       "type": "kv",
+      "share": false,
       "media": {
         "type": "video",
         "content": "{{creativity|central-saint-martins[media_path]}}Amandine_Forest.mp4",
@@ -657,6 +676,7 @@
     },
     {
       "type": "kv",
+      "share": false,
       "media": {
         "type": "video",
         "content": "{{creativity|central-saint-martins[media_path]}}Olivia_Alexander.mp4",
@@ -688,6 +708,7 @@
     },
     {
       "type": "kv",
+      "share": false,
       "media": {
         "type": "video",
         "content": "{{creativity|central-saint-martins[media_path]}}Gyuri_Kim.mp4",
@@ -719,6 +740,7 @@
     },
     {
       "type": "kv",
+      "share": false,
       "media": {
         "type": "video",
         "content": "{{creativity|central-saint-martins[media_path]}}George_MacLand.mp4",
@@ -750,6 +772,7 @@
     },
     {
       "type": "kv",
+      "share": false,
       "media": {
         "type": "video",
         "content": "{{creativity|central-saint-martins[media_path]}}HuiChi_Yang.mp4",
@@ -783,6 +806,7 @@
     },
     {
       "type": "kv",
+      "share": false,
       "media": {
         "type": "video",
         "content": "{{creativity|central-saint-martins[media_path]}}Louise_Grosjean.mp4",
@@ -814,6 +838,7 @@
     },
     {
       "type": "kv",
+      "share": false,
       "media": {
         "type": "video",
         "content": "{{creativity|central-saint-martins[media_path]}}James_Mackenzie.mp4",
@@ -845,6 +870,7 @@
     },
     {
       "type": "kv",
+      "share": false,
       "media": {
         "type": "video",
         "content": "{{creativity|central-saint-martins[media_path]}}Imogen_Fox.mp4",
@@ -876,6 +902,7 @@
     },
     {
       "type": "kv",
+      "share": false,
       "media": {
         "type": "video",
         "content": "{{creativity|central-saint-martins[media_path]}}Mansi_Agarwal.mp4",
@@ -907,6 +934,7 @@
     },
     {
       "type": "kv",
+      "share": false,
       "media": {
         "type": "video",
         "content": "{{creativity|central-saint-martins[media_path]}}Tooey_Jones.mp4",
@@ -938,6 +966,7 @@
     },
     {
       "type": "kv",
+      "share": false,
       "media": {
         "type": "video",
         "content": "{{creativity|central-saint-martins[media_path]}}Jessie_Liang.mp4",
@@ -969,6 +998,7 @@
     },
     {
       "type": "kv",
+      "share": false,
       "media": {
         "type": "video",
         "content": "{{creativity|central-saint-martins[media_path]}}Jinhye_Park.mp4",
@@ -1000,6 +1030,7 @@
     },
     {
       "type": "kv",
+      "share": false,
       "media": {
         "type": "video",
         "content": "{{creativity|central-saint-martins[media_path]}}Sophia_Conroy_Iglesias.mp4",
@@ -1031,6 +1062,7 @@
     },
     {
       "type": "kv",
+      "share": false,
       "media": {
         "type": "video",
         "content": "{{creativity|central-saint-martins[media_path]}}Pranjali_Gore.mp4",
@@ -1062,6 +1094,7 @@
     },
     {
       "type": "kv",
+      "share": false,
       "media": {
         "type": "video",
         "content": "{{creativity|central-saint-martins[media_path]}}Hae_Dn_Kim.mp4",
@@ -1093,6 +1126,7 @@
     },
     {
       "type": "kv",
+      "share": false,
       "media": {
         "type": "video",
         "content": "{{creativity|central-saint-martins[media_path]}}Valerie_Lianggara.mp4",
@@ -1124,6 +1158,7 @@
     },
     {
       "type": "kv",
+      "share": false,
       "media": {
         "type": "video",
         "content": "{{creativity|central-saint-martins[media_path]}}Vlad_Balan.mp4",
@@ -1155,6 +1190,7 @@
     },
     {
       "type": "kv",
+      "share": false,
       "media": {
         "type": "video",
         "content": "{{creativity|central-saint-martins[media_path]}}Zhamilya_Adamsopiyeva.mp4",
@@ -1181,6 +1217,7 @@
     },
     {
       "type": "kv",
+      "share": false,
       "media": {
         "type": "video",
         "content": "{{creativity|central-saint-martins[media_path]}}Joshua_Cho.mp4",
@@ -1213,6 +1250,7 @@
     },
     {
       "type": "kv",
+      "share": false,
       "media": {
         "type": "video",
         "content": "{{creativity|central-saint-martins[media_path]}}Ellen_Huynh.mp4",
@@ -1244,6 +1282,7 @@
     },
     {
       "type": "kv",
+      "share": false,
       "media": {
         "type": "video",
         "content": "{{creativity|central-saint-martins[media_path]}}Julia_Morell_Gagnum.mp4",
@@ -1275,6 +1314,7 @@
     },
     {
       "type": "kv",
+      "share": false,
       "media": {
         "type": "video",
         "content": "{{creativity|central-saint-martins[media_path]}}Yurong_Ni.mp4",
@@ -1306,6 +1346,7 @@
     },
     {
       "type": "kv",
+      "share": false,
       "media": {
         "type": "video",
         "content": "{{creativity|central-saint-martins[media_path]}}Sacha_Heneine_Jessie_Liang.mp4",
@@ -1337,6 +1378,7 @@
     },
     {
       "type": "kv",
+      "share": false,
       "media": {
         "type": "video",
         "content": "{{creativity|central-saint-martins[media_path]}}Haoran_Niu.mp4",
@@ -1368,6 +1410,7 @@
     },
     {
       "type": "kv",
+      "share": false,
       "media": {
         "type": "video",
         "content": "{{creativity|central-saint-martins[media_path]}}Stacey_Yu.mp4",
@@ -1399,6 +1442,7 @@
     },
     {
       "type": "kv",
+      "share": false,
       "media": {
         "type": "video",
         "content": "{{creativity|central-saint-martins[media_path]}}Lemon_Tang.mp4",
@@ -1430,6 +1474,7 @@
     },
     {
       "type": "kv",
+      "share": false,
       "media": {
         "type": "video",
         "content": "{{creativity|central-saint-martins[media_path]}}Weronika_Szklarek.mp4",
@@ -1461,6 +1506,7 @@
     },
     {
       "type": "kv",
+      "share": false,
       "media": {
         "type": "video",
         "content": "{{creativity|central-saint-martins[media_path]}}Sally_Yang.mp4",
@@ -1492,6 +1538,7 @@
     },
     {
       "type": "kv",
+      "share": false,
       "media": {
         "type": "video",
         "content": "{{creativity|central-saint-martins[media_path]}}Katy_Duong.mp4",
@@ -1523,6 +1570,7 @@
     },
     {
       "type": "kv",
+      "share": false,
       "media": {
         "type": "video",
         "content": "{{creativity|central-saint-martins[media_path]}}Wangjia_Zou.mp4",
@@ -1554,6 +1602,7 @@
     },
     {
       "type": "kv",
+      "share": false,
       "media": {
         "type": "video",
         "content": "{{creativity|central-saint-martins[media_path]}}Zhen_Liu.mp4",
