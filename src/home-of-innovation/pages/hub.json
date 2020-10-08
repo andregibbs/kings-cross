@@ -38,6 +38,7 @@
         "hideIcon": true
       },
       "items": [
+        "creativity|graduate-fashion-week",
         "entertainment|lunch-and-listen",
         "creativity|innovation-sessions",
         "entertainment|game-dev-london-podcast",
@@ -89,10 +90,11 @@
         "scroll": true
       },
       "items": [
-        "creativity|graduate-fashion-week",
+        "creativity|graduate-fashion-week|behind-the-scenes",
         "creativity|graduate-fashion-week|elyse-blackshaw",
         "creativity|graduate-fashion-week|life-of-a-marketing-girl",
         "creativity|graduate-fashion-week|henry-holland",
+        "creativity|graduate-fashion-week|innovation-award-2020",
         "creativity|editing-sessions|5",
         "creativity|editing-sessions|4",
         "creativity|editing-sessions|3",

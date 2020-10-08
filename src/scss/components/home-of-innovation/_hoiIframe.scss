@@ -1,8 +1,19 @@
 .hoiIframe {
-  min-height: 80vw;
   position: relative;
+  height: auto;
+  margin: calc(#{$spacing-mobile} * 2) 0;
 
+  @media screen and (min-width: $mobile) {
+    margin: calc(#{$spacing-desktop} * 2) $spacing-desktop;
+  }
+
+  &:before {
+    content: '';
+    padding-bottom: 56.25%;
+    display: block;
+  }
   iframe {
+    width: 100%;
     border: 0;
     position: absolute;
     left: 0;

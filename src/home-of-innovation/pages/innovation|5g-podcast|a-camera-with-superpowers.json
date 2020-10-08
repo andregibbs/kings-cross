@@ -1,12 +1,12 @@
 {
-  "title": "Episode 1: Films you can direct with your face... Whatever Next?",
+  "title": "Episode 2: A camera with superpowers... Whatever Next?",
   "description": "",
   "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/Episode1-KV-PC.jpg",
   "alt": "A vector illustration of a blue and right director’s chair on a blue graduated background. The back of the chair reads \"YOU\" in white text.",
   "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/Album-art-ep1_v3.jpg",
   "group": "5g-podcast",
   "hidden": true,
-  "sort": 1,
+  "sort": 2,
   "meta": {
     "icon": "video",
     "tags": []
@@ -21,7 +21,7 @@
       "type": "kv",
       "media": {
         "type": "audio",
-        "content": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/5G_EP1.mp3",
+        "content": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/Samsung_EP2_FOR_BROADCAST.mp3",
         "poster": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/Episode1-KV-PC.jpg",
         "alt": ""
       },
@@ -32,7 +32,7 @@
       "components": [
         {
           "type": "headline",
-          "copy": "Episode 1: Films you can direct with your face... Whatever Next?"
+          "copy": "Episode 2: A camera with superpowers... Whatever Next?"
         },
         {
           "type": "paragraphs",

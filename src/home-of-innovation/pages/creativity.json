@@ -32,6 +32,7 @@
         "scroll": true
       },
       "items": [
+        "creativity|graduate-fashion-week|behind-the-scenes",
         "creativity|central-saint-martins",
         "creativity|innovation-sessions|elz-barney-career-advice",
         "creativity|editing-sessions|3",
@@ -42,25 +43,13 @@
       ]
     },
     {
-      "type": "link-list-id",
-      "dynamic": "creativity-features",
-      "title": "Features",
-      "style": {
-        "scroll": true
-      },
-      "items": [
-        "creativity|central-saint-martins",
-        "creativity|graduate-fashion-week"
-      ]
-    },
-    {
       "type": "group",
       "style": {
         "scroll": true
       },
-      "dynamic": "british-museum",
-      "id": "british-museum",
-      "title": "British Museum"
+      "dynamic": "graduate-fashion-week",
+      "id": "graduate-fashion-week",
+      "title": "Graduate Fashion Week"
     },
     {
       "type": "group",
@@ -79,6 +68,26 @@
       "dynamic": "editing-sessions",
       "id": "editing-sessions",
       "title": "Editing Sessions"
+    },
+    {
+      "type": "group",
+      "style": {
+        "scroll": true
+      },
+      "dynamic": "british-museum",
+      "id": "british-museum",
+      "title": "British Museum"
+    },
+    {
+      "type": "link-list-id",
+      "dynamic": "creativity-features",
+      "title": "Central Saint Martins",
+      "style": {
+        "scroll": true
+      },
+      "items": [
+        "creativity|central-saint-martins"
+      ]
     }
   ]
 }

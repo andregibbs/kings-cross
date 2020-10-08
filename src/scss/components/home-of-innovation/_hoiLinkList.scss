@@ -8,6 +8,17 @@
   }
 }
 
+.hoiLinkList__Loader {
+  min-height: 20vw;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  .hoiLinkList__LoaderAnim {
+    height: 5em;
+  }
+}
+
 // Category Featured
 
 .hoiLinkList--feature {
@@ -219,13 +230,9 @@
   }
 }
 
-.hoiLinkList__Loader {
-  min-height: 20vw;
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  .hoiLinkList__LoaderAnim {
-    height: 5em;
+
+.hoiLinkList--size-big-square {
+  .hoiList__ItemImageWrap {
+    padding-bottom: 100%;
   }
 }

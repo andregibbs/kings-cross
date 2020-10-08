@@ -6,7 +6,6 @@
   "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/gfw-kv.jpg",
   "group": "graduate-fashion-week",
   "sort": 1,
-  "hidden": true,
   "meta": {
     "icon": "article",
     "tags": []
@@ -76,6 +75,15 @@
           ]
         }
       ]
+    },
+    {
+      "type": "group",
+      "dynamic": "episodes",
+      "id": "graduate-fashion-week",
+      "title": "Episodes",
+      "style": {
+        "scroll": true
+      }
     }
   ]
 }

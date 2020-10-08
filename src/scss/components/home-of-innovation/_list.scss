@@ -21,8 +21,8 @@ div.hoiList__Item {
   }
 }
 
-.hoiList__Item:hover,
-.hoiList__Item:focus {
+.hoiList__Item:not(.hoiList__Item--placeholder):hover,
+.hoiList__Item:not(.hoiList__Item--placeholder):focus {
   outline: none;
   .hoiList__ItemImageWrap {
     border-color: rgba(255,255,255,0.8);
