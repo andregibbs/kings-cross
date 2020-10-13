@@ -1,0 +1,51 @@
+{
+  "title": "Bringing colour back",
+  "description": "Get the look with RJ Tulloch’s make up masterclass",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/rj-tulloch/Image-Resize---1440-x-810.jpg",
+  "alt": "",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/rj-tulloch/Image-Resize---1440-x-810.jpg",
+  "meta": {
+    "icon": "video",
+    "tags": []
+  },
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "youtube",
+        "content": "",
+        "poster": "{{lifestyle|rj-tulloch[image]}}",
+        "alt": ""
+      },
+      "style": {
+        "desktop": "top",
+        "mobile": "bottom"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "Get the look with RJ Tulloch’s make up masterclass"
+        },
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "Watch here at 7pm on Thursday 15th October"
+        }
+      ]
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "paragraphs",
+          "style": {
+            "large": true
+          },
+          "text": [
+            "MUA make-up artist RJ Tulloch (<a href=\"https://www.instagram.com/cakefacerj/\" target=\"_blank\">@cakefacerj</a>) has launched a series of brilliantly bold looks and illusions, inspired by the vibrant colour palettes of the new <a href=\"https://www.samsung.com/uk/smartphones/galaxy-s20/buy/?modelCode=SM-G780FZBDEUA\">Samsung Galaxy S20 FE</a> range. Filmed on a Galaxy S20 FE phone, this exclusive masterclass includes a step-by-step tutorial, revealing the secrets behind recreating these amazing looks at home."
+          ]
+        }
+      ]
+    }
+  ]
+}
