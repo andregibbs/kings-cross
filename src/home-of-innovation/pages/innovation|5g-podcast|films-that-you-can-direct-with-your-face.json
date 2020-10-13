@@ -1,11 +1,10 @@
 {
   "title": "Episode 1: Films you can direct with your face... Whatever Next?",
   "description": "",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/Episode1-KV-PC.jpg",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/assets-v2/Episode1-KV-PC-2x-v2.jpg",
   "alt": "A vector illustration of a blue and right director’s chair on a blue graduated background. The back of the chair reads \"YOU\" in white text.",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/Album-art-ep1_v3.jpg",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/assets-v2/Album-art-ep1.jpg",
   "group": "5g-podcast",
-  "hidden": true,
   "sort": 1,
   "meta": {
     "icon": "video",
@@ -14,7 +13,7 @@
   "components": [
     {
       "type": "css-snippet",
-      "content": ".hoiKv__Media:after { padding-bottom: 36% !important; } .hoiParagraphs p { max-width: 940px; } @media screen and (max-width: 769px) { .hoiKv__Media:after { padding-bottom: 110% !important; } .hoiMedia__StatePoster { background-image: url(https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/Episode1-KV-MO.jpg) !important; } }  ",
+      "content": ".hoiKv__Media:after { padding-bottom: 36% !important; } .hoiParagraphs p { max-width: 940px; } @media screen and (max-width: 769px) { .hoiKv__Media:after { padding-bottom: 110% !important; } .hoiMedia__StatePoster { background-image: url(https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/assets-v2/Episode1-KV-MO-2x.jpg) !important; } }  ",
       "__notes": "custom ratio for kv video"
     },
     {
@@ -22,7 +21,7 @@
       "media": {
         "type": "audio",
         "content": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/5G_EP1.mp3",
-        "poster": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/Episode1-KV-PC.jpg",
+        "poster": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/assets-v2/Episode1-KV-PC-2x-v2.jpg",
         "alt": ""
       },
       "style": {
@@ -41,41 +40,41 @@
           ]
         },
         {
-          "type": "_icon-links",
+          "type": "icon-links",
           "items": [
             {
               "title": "Spotify",
-              "link": "",
+              "link": "https://open.spotify.com/episode/52z1GBjdHEblQqoT0ztRoU",
               "target": "_blank",
               "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ico-spotify.png"
             },
             {
               "title": "Acast",
-              "link": "",
+              "link": "https://play.acast.com/s/whatever-next/whatevernext-entertainment",
               "target": "_blank",
               "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ico-acast.png"
             },
             {
               "title": "Google Podcasts",
-              "link": "",
+              "link": false,
               "target": "_blank",
               "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ico-google-podcasts.png"
             },
             {
               "title": "Stitcher",
-              "link": "",
+              "link": false,
               "target": "_blank",
               "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ico-stitcher.png"
             },
             {
               "title": "Overcast",
-              "link": "",
+              "link": false,
               "target": "_blank",
               "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ico-overcast.png"
             },
             {
               "title": "Apple Podcasts",
-              "link": "",
+              "link": "https://podcasts.apple.com/gb/podcast/films-that-you-can-direct-with-your-face-whatever-next/id1535056495?i=1000494202134",
               "target": "_blank",
               "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ico-apple.png"
             }

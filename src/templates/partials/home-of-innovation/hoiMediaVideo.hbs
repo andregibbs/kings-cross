@@ -3,12 +3,13 @@
 {{/if}}
 
   <video
-    class="hoiMedia hoiMedia--video {{class}}"
+    class="hoiMedia hoiMedia--video hoiMedia--video{{class}}"
     {{#if (eq type 'audio')}}
       style="background-image: url('{{poster}}')"
+    {{else}}
+      poster="{{poster}}"
     {{/if}}
     src="{{content}}"
-    poster="{{poster}}"
     {{#if title}}
       title="{{title}}"
     {{/if}}

@@ -21,6 +21,11 @@
   transform: translate(-50%, -50%);
 }
 
+.hoiMedia--video {
+  background-size: cover;
+  border-bottom: 2px solid black; // hides bottom of video player peeking on chrome
+}
+
 .hoiMedia--youtube {
   object-fit: revert;
 }

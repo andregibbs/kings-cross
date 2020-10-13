@@ -4,7 +4,6 @@
   "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/KX-landing-KV-static-PC.jpg",
   "alt": "A vector illustration of a futuristic Basildon in bold block colours. A Hollywood-esque sign reading \"BASILDON\" is seen on a set of hills. A large blue and red director’s chair sit in the middle of the scene. An orange arena with small people can be seen. The cityscape is full of multicoloured high-rise buildings.",
   "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/KX-landing-KV-static-PC.jpg",
-  "hidden": true,
   "meta": {
     "icon": "series",
     "tags": []
@@ -12,14 +11,14 @@
   "components": [
     {
       "type": "css-snippet",
-      "content": ".hoiKv__Media:after { padding-bottom: 36% !important; } .hoiParagraphs p { max-width: 940px; } @media screen and (max-width: 769px) { .hoiMedia { display: none; } .hoiKv__Media:after { padding-bottom: 112% !important; } .hoiKv__Media { background-image: url(https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/KX-KV-MO_v2.jpg) !important; background-size: cover; background-repeat: no-repeat; } }",
+      "content": ".hoiKv__Media:after { padding-bottom: 36% !important; } .hoiParagraphs p { max-width: 940px; } @media screen and (max-width: 769px) { .hoiMedia { display: none; } .hoiKv__Media:after { padding-bottom: 112% !important; } .hoiKv__Media { background-image: url(https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/assets-v2/KX-KV-MO-2x.jpg) !important; background-size: cover; background-repeat: no-repeat; } }",
       "__notes": "custom ratio for kv video"
     },
     {
       "type": "kv",
       "media": {
         "type": "video",
-        "content": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/5G-KX-KV-v2.mp4",
+        "content": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/assets-v2/5G-KX-Desktop2.mp4",
         "autoplay": true,
         "controls": false,
         "hide_state": true,

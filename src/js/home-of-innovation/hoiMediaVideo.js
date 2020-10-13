@@ -22,8 +22,11 @@ export default class HOIMediaVideo {
     // add loading delay to consecutive media videos
     // maybe remove the preload attribute and then add back in after each has loaded?
     // look at dev tools for performance
-
     this.events()
+
+    // video load needed for ios events
+    this.video.load()
+
     if (this.video.readyState >= 3) {
       this.setState(HOI_MEDIA_STATE.play)
     } else {
@@ -43,19 +46,16 @@ export default class HOIMediaVideo {
     }
 
     this.video.addEventListener('canplay', (e) => {
-      // console.log('can play')
       this.setState(HOI_MEDIA_STATE.play);
     })
 
     this.video.addEventListener('canplaythrough', (e) => {
-      // console.log('canplaythrough')
       if (this.video.paused) {
         this.setState(HOI_MEDIA_STATE.play);
       }
     })
 
     this.video.addEventListener('waiting', (e) => {
-      // console.log('waiting')
       this.setState(HOI_MEDIA_STATE.load)
     })
 
@@ -64,7 +64,6 @@ export default class HOIMediaVideo {
     })
 
     this.video.addEventListener('playing', (e) => {
-      // console.log('playing')
       this.setState(HOI_MEDIA_STATE.playing)
     })
 
