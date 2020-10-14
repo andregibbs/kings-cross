@@ -4,7 +4,6 @@
   "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/rj-tulloch/Image-Resize---1440-x-810.jpg",
   "alt": "",
   "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/rj-tulloch/Image-Resize---1440-x-810.jpg",
-  "hidden": true,
   "meta": {
     "icon": "video",
     "tags": []
@@ -25,7 +24,7 @@
       "components": [
         {
           "type": "headline",
-          "copy": "Bring colour back"
+          "copy": "Bringing colour back"
         },
         {
           "type": "headline",
