@@ -43,9 +43,8 @@ var log = function( message, type ) {
 var SITE = 'uk';
 var SUBFOLDER = '/explore/kings-cross';
 
-/* Configuration */
+/* gulp configuration */
 var config = {
-
 	/* Root directory */
 	ROOT_FOLDER: __dirname,
 
@@ -58,6 +57,17 @@ var config = {
 	/* Development source files */
 	SRC_FOLDER: path.join( __dirname, 'src'),
 }
+
+/*
+  individual page builds
+  lists pages that have an isolated scss and js entry point
+*/
+const INDIVIDUAL_PAGE_BUILDS = [
+  'kxtras'
+]
+
+
+// Tasks
 
 gulp.task('browser-sync', function() {
   browserSync.init({
@@ -140,11 +150,10 @@ gulp.task('scss', function() {
 // Gulp task to build individual page css files (moving away from one massive css for all pages)
 gulp.task('scss-page', function() {
 
-  const pages = [] //['home']
   const isStagingTask = argv._[0] === 'staging';
 
   let streams = []
-  pages.forEach(page => {
+  INDIVIDUAL_PAGE_BUILDS.forEach(page => {
     const srcFiles = isStagingTask ? [
       `${config.SRC_FOLDER}/scss/pages/${page}/index.scss`,
       config.SRC_FOLDER + '/scss/'+_HOI_FOLDER+'/staging.scss'
@@ -182,39 +191,57 @@ gulp.task('scss-page', function() {
 
 })
 
-/* JavaScript - Babel / Browserify */
-function compileJS( watch ) {
+// KX:JS used to create the main KX site js files
+gulp.task('kx:js', function() {
+  // collate individual page builds with original main entry
+  const files = INDIVIDUAL_PAGE_BUILDS.map(page => {
+    return {
+      name: page,
+      src: `${config.SRC_FOLDER}/js/pages/${page}/index.js`,
+      dest: `${config.BUILD_FOLDER}${SITE}/${SUBFOLDER}/js/${page}`
+    }
+  }).concat([
+    {
+      name: 'main',
+      src: `${config.SRC_FOLDER}/js/main.js`,
+      dest: `${config.BUILD_FOLDER}${SITE}/${SUBFOLDER}/js/`
+    }
+  ])
+  // create stream for each file src
+  const streams = files.map(file => {
+    // browserify with config
+    const bundler = watchify(
+      browserify(
+        file.src,
+        { debug: true }
+      )
+      .transform(hbsfy)
+      .transform(babel.configure({ presets: ['es2015-ie'] }))
+    )
+    watchFn = createBundleHandler(bundler, file)
+    bundler.on('update', watchFn);
+    // bundler.on('log', console.log)
+    return watchFn()
+  })
+  // return streams
+  return merge(streams)
+})
 
-    var bundler = watchify(browserify( config.SRC_FOLDER + '/js/main.js', { debug: true }).transform(hbsfy).transform(babel.configure({ presets: ['es2015-ie'] })))
-
-	function rebundle() {
-		bundler.bundle()
-			.on('error', function(err) { console.error(err); this.emit('end'); })
-			.pipe(source('main.js'))
-            .pipe(buffer())
-            // .pipe(uglify())
-			.pipe(sourcemaps.init({ loadMaps: true }))
-            .pipe(sourcemaps.write('./'))
-            .pipe(gulp.dest( config.BUILD_FOLDER + SITE + '/' + SUBFOLDER + '/js' ))
-
-	}
-
-	if ( watch ) {
-		bundler.on('update', function() {
-			log('Rebundling JavaScript')
-			rebundle()
-		})
-	}
-
-	rebundle()
+function createBundleHandler(bundler, file) {
+  // function called when bundle needs to be bundled
+  return function() {
+    console.log('kx:js - Building: ', file.name)
+    return bundler.bundle()
+      .pipe(source(`main.js`))
+      .pipe(buffer())
+      .pipe(sourcemaps.init({ loadMaps: true }))
+      .pipe(sourcemaps.write('./'))
+      .pipe(gulp.dest(file.dest))
+      .on('end', () => { console.log(`kx:js - File Written: ${file.name}`)} )
+  }
 }
 
-function watchJS() {
-	return compileJS( true )
-}
-
-gulp.task('buildJS', function() { return compileJS() })
-gulp.task('watchJS', function() { return watchJS() })
+//
 
 /* Watch /src directory for changes & reload gulp */
 gulp.task('html', function () {
@@ -685,15 +712,19 @@ gulp.task('home-of-innovation-watch', () => {
   log('Watching HOI folder')
 })
 
+// Main HOI tasks
 gulp.task('hoi-staging', ['home-of-innovation-scss', 'home-of-innovation-build', 'home-of-innovation-js', 'home-of-innovation-watch'])
 gulp.task('hoi-dev', ['home-of-innovation-scss', 'home-of-innovation-build', 'home-of-innovation-js', 'home-of-innovation-watch'])
 
-gulp.task('production', sequence('copy-assets', 'scss', 'buildJS', 'html') )
-gulp.task('development', sequence('copy-assets', 'buildJS', 'html', 'scss', 'scss-page' ) )
-gulp.task('_staging', sequence('copy-assets', 'buildJS', 'html', 'scss', 'scss-page' ) )
+// Main KX tasks
+gulp.task('staging', ['watch', '_staging', 'kx:js'])
+gulp.task('default', ['watch', 'development', 'kx:js'])
 
-gulp.task('staging', ['watch', '_staging', 'watchJS'])
-gulp.task('default', ['watch', 'development', 'watchJS'])
+gulp.task('development', sequence('copy-assets', 'html', 'scss', 'scss-page' ) )
+gulp.task('_staging', sequence('copy-assets', 'html', 'scss', 'scss-page' ) )
+
+gulp.task('production', sequence('copy-assets', 'scss', 'buildJS', 'html') )
+
 
 // export hoi templates script for deploying dynamic data
 exports.HOITemplates = HOITemplates
