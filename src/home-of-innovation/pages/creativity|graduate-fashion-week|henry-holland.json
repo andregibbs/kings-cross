@@ -14,8 +14,8 @@
     {
       "type": "kv",
       "media": {
-        "type": "livestream",
-        "content": "z3UHZCmXvxY",
+        "type": "youtube",
+        "content": "Qr1hi_cisrA",
         "poster": "{{creativity|graduate-fashion-week|henry-holland[image]}}",
         "alt": ""
       },
@@ -27,11 +27,6 @@
         {
           "type": "headline",
           "copy": "What Were You Thinking? Henry Holland Podcast with Daniel Fletcher"
-        },
-        {
-          "type": "headline",
-          "level": "2",
-          "copy": "Watch live here at 7pm on Sunday 20th September"
         }
       ]
     },

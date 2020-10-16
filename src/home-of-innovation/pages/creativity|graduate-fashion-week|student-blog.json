@@ -3,7 +3,7 @@
   "description": "",
   "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/sophie-parnaby/Main_KV.jpg",
   "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/sophie-parnaby/Main_KV.jpg",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/sophie-parnaby/thumbnail.jpg",
   "group": "graduate-fashion-week",
   "sort": 7,
   "meta": {
@@ -34,7 +34,7 @@
       "components": [
         {
           "type": "headline",
-          "copy": "Who you are and where you study?",
+          "copy": "Who you are and where do you study?",
           "level": "3"
         },
         {
@@ -91,6 +91,15 @@
           "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/sophie-parnaby/Article_image_2.jpg",
           "alt": ""
         }
+      ]
+    },
+    {
+      "type": "gfw-gallery",
+      "style": {
+        "block": true
+      },
+      "items": [
+        3
       ]
     },
     {

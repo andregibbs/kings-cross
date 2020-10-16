@@ -1,5 +1,5 @@
 {
-  "title": "Bringing colour back",
+  "title": "Bringing bold colours back: Get the look with RJ Tulloch’s make up masterclass",
   "description": "Get the look with RJ Tulloch’s make up masterclass",
   "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/rj-tulloch/Image-Resize---1440-x-810.jpg",
   "alt": "",
@@ -13,7 +13,7 @@
       "type": "kv",
       "media": {
         "type": "youtube",
-        "content": "",
+        "content": "wzVWm2uNelw",
         "poster": "{{lifestyle|rj-tulloch[image]}}",
         "alt": ""
       },
@@ -24,7 +24,7 @@
       "components": [
         {
           "type": "headline",
-          "copy": "Bringing colour back"
+          "copy": "Bringing bold colours back"
         },
         {
           "type": "headline",

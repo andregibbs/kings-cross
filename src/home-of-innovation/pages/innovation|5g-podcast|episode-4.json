@@ -1,11 +1,12 @@
 {
-  "title": "Episode 2: A camera with superpowers... Whatever Next?",
+  "title": "Coming Soon: Episode 4: ...",
   "description": "",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/assets-v2/Episode2-KV-PC-2x-v2.jpg",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/assets-v2/Episode3-KV-PC-2x-v2.jpg",
   "alt": "A vector illustration of a blue and right director’s chair on a blue graduated background. The back of the chair reads \"YOU\" in white text.",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/assets-v2/Album-art-ep2.jpg",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/assets-v2/Album-art-ep3.jpg",
   "group": "5g-podcast",
-  "sort": 2,
+  "hidden": true,
+  "sort": 4,
   "meta": {
     "icon": "video",
     "tags": []
@@ -13,15 +14,15 @@
   "components": [
     {
       "type": "css-snippet",
-      "content": ".hoiKv__Media:after { padding-bottom: 36% !important; } .hoiParagraphs p { max-width: 940px; } @media screen and (max-width: 769px) { .hoiKv__Media:after { padding-bottom: 110% !important; } .hoiMedia__StatePoster { background-image: url(https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/assets-v2/Episode2-KV-MO-2x.jpg) !important; } }  ",
+      "content": ".hoiKv__Media:after { padding-bottom: 36% !important; } .hoiParagraphs p { max-width: 940px; } @media screen and (max-width: 769px) { .hoiKv__Media:after { padding-bottom: 110% !important; } .hoiMedia__StatePoster { background-image: url(https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/assets-v2/Episode3-KV-MO-2x.jpg) !important; } }  ",
       "__notes": "custom ratio for kv video"
     },
     {
       "type": "kv",
       "media": {
         "type": "audio",
-        "content": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/Samsung_EP2_FOR_BROADCAST.mp3",
-        "poster": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/assets-v2/Episode2-KV-PC-2x-v2.jpg",
+        "content": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/Samsung_EP3_FOR_BROADCAST_updated_140120.mp3",
+        "poster": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/assets-v2/Episode3-KV-PC-2x-v2.jpg",
         "alt": ""
       },
       "style": {
@@ -31,50 +32,50 @@
       "components": [
         {
           "type": "headline",
-          "copy": "Episode 2: A camera with superpowers... Whatever Next?"
+          "copy": "Episode 3: Mind-controlled gaming... Whatever Next?"
         },
         {
           "type": "paragraphs",
           "text": [
-            "Cameras with superpowers, apps that help blind people see, and pictures you can never lose. This week's episode is all about photography. Dr Hannah Fry and comedian Suzi Ruffell give us a snapshot into the ever changing world of photography. With 5G here today, this 200-year-old process continues to be revolutionised before our eyes."
+            "We’ve gone from joysticks to VR headsets in flash. The gaming industry is constantly changing and it’s hard to keep up. In this episode, Dr Hannah Fry and comedian Suzi Ruffell look at how gaming technology is helping to manage disaster relief and is being used in exposure therapy. Our hosts spend a day playing video games at Myndplay where they use only their minds to control things. Whether you’re a gamer, or you don’t know your Esports from your Email, this episode will make you rethink what you thought you knew about gaming."
           ]
         },
         {
-          "type": "icon-links",
+          "type": "_icon-links",
           "items": [
             {
               "title": "Spotify",
-              "link": "https://open.spotify.com/episode/3DTNmChhy3HcQ8KmqOKNW4",
+              "link": "",
               "target": "_blank",
               "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ico-spotify.png"
             },
             {
               "title": "Acast",
-              "link": false,
+              "link": "",
               "target": "_blank",
               "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ico-acast.png"
             },
             {
               "title": "Google Podcasts",
-              "link": false,
+              "link": "",
               "target": "_blank",
               "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ico-google-podcasts.png"
             },
             {
               "title": "Stitcher",
-              "link": false,
+              "link": "",
               "target": "_blank",
               "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ico-stitcher.png"
             },
             {
               "title": "Overcast",
-              "link": false,
+              "link": "",
               "target": "_blank",
               "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ico-overcast.png"
             },
             {
               "title": "Apple Podcasts",
-              "link": "https://podcasts.apple.com/gb/podcast/a-camera-with-superpowers-whatever-next/id1535056495?i=1000494202135",
+              "link": "",
               "target": "_blank",
               "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ico-apple.png"
             }
