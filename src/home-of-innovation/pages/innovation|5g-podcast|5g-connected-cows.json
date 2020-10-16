@@ -1,11 +1,11 @@
 {
-  "title": "Coming Soon: Episode 4: ...",
+  "title": "Coming Soon: Episode 4: 5G Connected Cows... Whatever Next?",
   "description": "",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/assets-v2/Episode3-KV-PC-2x-v2.jpg",
-  "alt": "A vector illustration of a blue and right director’s chair on a blue graduated background. The back of the chair reads \"YOU\" in white text.",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/assets-v2/Album-art-ep3.jpg",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/Episode4-KV-PC_2x.jpg",
+  "alt": "",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/Album-art-ep4.jpg",
   "group": "5g-podcast",
-  "hidden": true,
+  "placeholder": true,
   "sort": 4,
   "meta": {
     "icon": "video",
@@ -14,15 +14,15 @@
   "components": [
     {
       "type": "css-snippet",
-      "content": ".hoiKv__Media:after { padding-bottom: 36% !important; } .hoiParagraphs p { max-width: 940px; } @media screen and (max-width: 769px) { .hoiKv__Media:after { padding-bottom: 110% !important; } .hoiMedia__StatePoster { background-image: url(https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/assets-v2/Episode3-KV-MO-2x.jpg) !important; } }  ",
+      "content": ".hoiKv__Media:after { padding-bottom: 36% !important; } .hoiParagraphs p { max-width: 940px; } @media screen and (max-width: 769px) { .hoiKv__Media:after { padding-bottom: 110% !important; } .hoiMedia__StatePoster { background-image: url(https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/Episode4-KV-MO_2x.jpg) !important; } }  ",
       "__notes": "custom ratio for kv video"
     },
     {
       "type": "kv",
       "media": {
         "type": "audio",
-        "content": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/Samsung_EP3_FOR_BROADCAST_updated_140120.mp3",
-        "poster": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/assets-v2/Episode3-KV-PC-2x-v2.jpg",
+        "content": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/_Samsung_EP3_FOR_BROADCAST_updated_140120.mp3",
+        "poster": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/Episode4-KV-PC_2x.jpg",
         "alt": ""
       },
       "style": {
@@ -32,12 +32,12 @@
       "components": [
         {
           "type": "headline",
-          "copy": "Episode 3: Mind-controlled gaming... Whatever Next?"
+          "copy": "Episode 4: 5G Connected Cows... Whatever Next?"
         },
         {
           "type": "paragraphs",
           "text": [
-            "We’ve gone from joysticks to VR headsets in flash. The gaming industry is constantly changing and it’s hard to keep up. In this episode, Dr Hannah Fry and comedian Suzi Ruffell look at how gaming technology is helping to manage disaster relief and is being used in exposure therapy. Our hosts spend a day playing video games at Myndplay where they use only their minds to control things. Whether you’re a gamer, or you don’t know your Esports from your Email, this episode will make you rethink what you thought you knew about gaming."
+            "From farming crops to the produce on our shelves to a printer that can print out our food, the food industry is being revolutionised by new technology. Dr Hannah Fry and comedian Suzi Ruffell get up close and personal with a 5G cow… yes a 5G cow, and record the episode while sipping on some sweet 5G wine. If you’ve ever eaten food, thought about food or seen food - this episode is a tasty one!"
           ]
         },
         {

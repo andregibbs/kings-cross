@@ -40,41 +40,41 @@
           ]
         },
         {
-          "type": "_icon-links",
+          "type": "icon-links",
           "items": [
             {
               "title": "Spotify",
-              "link": "",
+              "link": "https://open.spotify.com/show/5GmDjm5AfympDo7vchz1Wl",
               "target": "_blank",
               "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ico-spotify.png"
             },
             {
               "title": "Acast",
-              "link": "",
+              "link": "https://play.acast.com/s/whatever-next/mind-controlledgaming...whatevernext-",
               "target": "_blank",
               "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ico-acast.png"
             },
             {
               "title": "Google Podcasts",
-              "link": "",
+              "link": "https://podcasts.google.com/feed/aHR0cHM6Ly9yc3MuYWNhc3QuY29tL3doYXRldmVyLW5leHQ?sa=X&ved=0CAMQ4aUDahcKEwjA0-mKyrbsAhUAAAAAHQAAAAAQEA",
               "target": "_blank",
               "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ico-google-podcasts.png"
             },
             {
               "title": "Stitcher",
-              "link": "",
+              "link": false,
               "target": "_blank",
               "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ico-stitcher.png"
             },
             {
               "title": "Overcast",
-              "link": "",
+              "link": false,
               "target": "_blank",
               "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ico-overcast.png"
             },
             {
               "title": "Apple Podcasts",
-              "link": "",
+              "link": "https://podcasts.apple.com/gb/podcast/whatever-next/id1535056495",
               "target": "_blank",
               "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ico-apple.png"
             }

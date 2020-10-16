@@ -46,7 +46,17 @@
             "large": true
           },
           "text": [
-            "MUA make-up artist RJ Tulloch (<a href=\"https://www.instagram.com/cakefacerj/\" target=\"_blank\">@cakefacerj</a>) has launched a series of brilliantly bold looks and illusions, inspired by the vibrant colour palettes of the new <a href=\"https://www.samsung.com/uk/smartphones/galaxy-s20/buy/?modelCode=SM-G780FZBDEUA\">Samsung Galaxy S20 FE</a> range. Filmed on a Galaxy S20 FE phone, this exclusive masterclass includes a step-by-step tutorial, revealing the secrets behind recreating these amazing looks at home."
+            "MUA make-up artist RJ Tulloch (<a href=\"https://www.instagram.com/cakefacerj/\" target=\"_blank\">@cakefacerj</a>) has launched a series of brilliantly bold looks and illusions, inspired by the vibrant colour palettes of the new <a href=\"https://www.samsung.com/uk/smartphones/galaxy-s20/buy/?modelCode=SM-G780FZBDEUA\">Samsung Galaxy S20 FE</a> range. Filmed on a Galaxy S20 FE phone, this exclusive masterclass includes a step-by-step tutorial, revealing the secrets behind recreating these amazing looks at home, as well as a makeup prize giveaway."
+          ]
+        },
+        {
+          "type": "buttons",
+          "items": [
+            {
+              "url": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/rj-tulloch/RJ_x_S20_FE_PrizeGiveaway.pdf",
+              "target": "_blank",
+              "copy": "T&Cs"
+            }
           ]
         }
       ]
