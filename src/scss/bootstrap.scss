@@ -12,9 +12,15 @@
 // Helpers
 @import "helpers/helpers";
 
-/*----------  Nav height  ----------*/
-$nav-mobile-height: get-mobile-vw(100);
 
 body {
   line-height: 1.32;
+}
+
+.cheil-static {
+
+  // new nav and search
+  @import "components/common/kxNav";
+  @import "components/common/kxSearch";
+
 }

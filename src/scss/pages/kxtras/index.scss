@@ -1,5 +1,15 @@
+@import '../../bootstrap';
+
 .Page {}
 
 .KXtras {
 
+}
+
+.KXtras__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 30vh;
+  background-color: navy;
 }

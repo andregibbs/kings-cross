@@ -232,6 +232,7 @@ function createBundleHandler(bundler, file) {
   return function() {
     console.log('kx:js - Building: ', file.name)
     return bundler.bundle()
+      .on('error', (err) => { console.log(`kx:js ${file.name} - Error: ${err}`) })
       .pipe(source(`main.js`))
       .pipe(buffer())
       .pipe(sourcemaps.init({ loadMaps: true }))
@@ -304,7 +305,7 @@ gulp.task('compress', function (cb) {
 /* Watch /src directory for changes & reload gulp */
 gulp.task('watch', function () {
 	gulp.watch( config.SRC_FOLDER + '/scss/**/*.scss', ['scss', 'scss-page'] )
-	gulp.watch( config.SRC_FOLDER + '/js/**/*.js', ['watchJS'] )
+	// gulp.watch( config.SRC_FOLDER + '/js/**/*.js', ['watchJS'] )
     gulp.watch( config.SRC_FOLDER + '/templates/partials/**/*.hbs', ['html'] )
     gulp.watch( config.SRC_FOLDER + '/pages/**/*.html', ['html'] )
 
