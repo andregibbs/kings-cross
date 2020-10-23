@@ -1,15 +1,118 @@
 @import '../../bootstrap';
 
+@import '../../home-of-innovation/vars';
+@import '../../components/home-of-innovation/list';
+@import '../../components/home-of-innovation/hoiLinkList';
+
 .Page {}
 
-.KXtras {
+.KXtras {}
+
+.KXtras__section {
 
 }
 
-.KXtras__header {
+.KXtras__header.section {
+  text-align: center;
+  padding-bottom: 0;
+  h2 {
+    @extend .fz36;
+    margin-bottom: 1rem;
+  }
+  p {
+    @extend .fz24;
+    max-width: 35em;
+    margin: 0 auto 2rem;
+  }
+  .KXtras__header_icon {
+    width: 5rem;
+    height: 5rem;
+    margin: 0 auto 1rem;
+    background: green;
+  }
+}
+
+.KXtras__section--header {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 30vh;
+  min-height: 400px;
   background-color: navy;
+}
+
+.KXtras__section--goodies {
+  .KXtras__purchase_items {
+    .hoiList__Item {
+      width: calc(16.6% - 2.5em/2);
+      margin-bottom: 0;
+    }
+    .hoiList__ItemImageWrap {
+      padding-bottom: 100%;
+      background: red;
+    }
+  }
+}
+
+.KXtras__section--collect {
+  padding-bottom: 80px;
+  .KXtras__header {
+    text-align: left;
+  }
+  .KXtras__collect_banner {
+    background: red;
+    margin: 2em 0;
+    position: relative;
+    display: flex;
+    .KXtras__collect_banner_text {
+      font-size: 5vw;
+      font-family: "SamsungSharpSans", arial, sans-serif;
+      display: block;
+      width: 50%;
+      padding: 0 40px;
+      line-height: 1.6;
+      // flex-grow: 2;
+    }
+    .KXtras__collect_banner_image {
+      width: 25%;
+      background: green;
+      position: relative;
+      img {
+        width: 80%;
+        padding-bottom: 80%;
+        background: blue;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    .KXtras__collect_banner_disclaimer {
+      width: 25%;
+      text-align: right;
+      padding: 0 40px 0 0;
+      transform: translate(0, calc(100% + 40px));
+    }
+  }
+}
+
+.KXtras__section--explore {
+  .KXtras__explore_items {
+    .hoiList__Item {
+      margin-bottom: 0;
+    }
+    .hoiList__ItemImageWrap {
+      padding-bottom: 100%;
+      background: blue;
+    }
+    .hoiLinkList__ScrollArrow {
+      color: white;
+    }
+  }
+}
+
+
+.KXtras__section--setup {
+  .btn {
+    margin: 0 auto;
+  }
 }

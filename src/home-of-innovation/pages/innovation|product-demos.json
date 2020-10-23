@@ -1,8 +1,8 @@
 {
-  "title": "Product Masterclass",
+  "title": "Livestream",
   "description": "Join one of our live Product Masterclasses to learn all about your Samsung devices",
   "image": "",
-  "alt": "Black cartoon outlines of household items such as cooking utensils, paint brushes and cleaning products",
+  "alt": "",
   "thumb": "",
   "hidden": true,
   "meta": {
@@ -10,6 +10,18 @@
     "tags": []
   },
   "components": [
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "headline",
+          "style": {
+            "align": "center"
+          },
+          "copy": "Wednesday Stream"
+        }
+      ]
+    },
     {
       "type": "kv",
       "share": false,
@@ -20,14 +32,14 @@
       },
       "media": {
         "type": "livestream",
-        "content": "dxKwWNFzITY",
+        "content": "SQX1mTIQpHY",
         "poster": "",
         "alt": ""
       },
       "components": [
         {
           "type": "youtube-live-chat",
-          "content": "dxKwWNFzITY"
+          "content": "SQX1mTIQpHY"
         }
       ]
     },
@@ -36,13 +48,64 @@
       "components": [
         {
           "type": "headline",
-          "copy": "{{innovation|product-demos[title]}}"
-        },
+          "style": {
+            "align": "center"
+          },
+          "copy": "Thursday Stream"
+        }
+      ]
+    },
+    {
+      "type": "kv",
+      "share": false,
+      "style": {
+        "desktop": "left",
+        "mobile": "top",
+        "theme": "livestream-chat"
+      },
+      "media": {
+        "type": "livestream",
+        "content": "KQ_LYUAfny0",
+        "poster": "",
+        "alt": ""
+      },
+      "components": [
         {
-          "type": "__paragraphs",
-          "text": [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dui libero, viverra eget sem vitae, tempor imperdiet metus. Praesent massa purus, laoreet eget sagittis non, rutrum sed nunc. Curabitur accumsan mauris nulla, eget facilisis nunc consectetur vitae. Donec non leo tellus. Nulla vehicula mauris eu scelerisque volutpat. Maecenas bibendum massa et rutrum molestie. Aenean molestie, lacus nec imperdiet tristique, ex sem tincidunt turpis, ut imperdiet dui nisl sagittis nisl. Suspendisse tincidunt quam a aliquam commodo. Integer sed ante a justo ultrices dignissim. Donec id dolor erat. Suspendisse et sollicitudin sapien."
-          ]
+          "type": "youtube-live-chat",
+          "content": "KQ_LYUAfny0"
+        }
+      ]
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "headline",
+          "style": {
+            "align": "center"
+          },
+          "copy": "Friday Stream"
+        }
+      ]
+    },
+    {
+      "type": "kv",
+      "share": false,
+      "style": {
+        "desktop": "left",
+        "mobile": "top",
+        "theme": "livestream-chat"
+      },
+      "media": {
+        "type": "livestream",
+        "content": "9RBPIk9lLjA",
+        "poster": "",
+        "alt": ""
+      },
+      "components": [
+        {
+          "type": "youtube-live-chat",
+          "content": "9RBPIk9lLjA"
         }
       ]
     }

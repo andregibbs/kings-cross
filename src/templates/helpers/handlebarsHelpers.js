@@ -54,6 +54,10 @@ if (typeof module !== 'undefined') {
       return [context]
     })
 
+    Handlebars.registerHelper('object', function({hash}) {
+      return hash;
+    })
+
 		/**
 		 * Object Length
 		 *        Returns back length of object passed in.

@@ -47,6 +47,13 @@ body {
     font-size: 0;
   }
 
+  ol {
+    margin: 0 2rem;
+    li {
+      list-style: decimal;
+    }
+  }
+
   .hoiContent {
 
     // general styling & containers

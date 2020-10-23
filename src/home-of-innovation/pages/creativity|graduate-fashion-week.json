@@ -29,6 +29,15 @@
     },
     {
       "type": "group",
+      "dynamic": "blog",
+      "id": "graduate-fashion-week-student-blog",
+      "title": "Inspiring Student Content",
+      "style": {
+        "scroll": true
+      }
+    },
+    {
+      "type": "group",
       "dynamic": "articles",
       "id": "graduate-fashion-week",
       "title": "More Content",

@@ -36,11 +36,16 @@
 }
 
 .hoiHeadline--align-center {
-  text-align: center;
+  & > * {
+    margin: 0 auto;
+  }
 }
 
 .hoiHeadline--align-right {
   text-align: right;
+  & > * {
+    margin-left: auto;
+  }
 }
 
 // remove margins within kv components

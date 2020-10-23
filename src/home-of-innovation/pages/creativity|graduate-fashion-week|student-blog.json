@@ -1,13 +1,11 @@
 {
-  "title": "Speaking future fashion scenarios with Sophie Parnaby",
+  "title": "Graduate Fashion Week: Inspiring Student Content",
   "description": "",
   "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/sophie-parnaby/Main_KV.jpg",
   "alt": "",
   "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/sophie-parnaby/thumbnail.jpg",
-  "group": "graduate-fashion-week",
-  "sort": 7,
   "meta": {
-    "icon": "article",
+    "icon": "series",
     "tags": []
   },
   "components": [
@@ -25,88 +23,15 @@
       "components": [
         {
           "type": "headline",
-          "copy": "Speaking future fashion scenarios with Sophie Parnaby"
+          "copy": "Graduate Fashion Week: Inspiring Student Content"
         }
-      ]
-    },
-    {
-      "type": "wrapper",
-      "components": [
-        {
-          "type": "headline",
-          "copy": "Who you are and where do you study?",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "I’m Sophie Parnaby and I’m from Ilkley near Leeds. I’ve recently graduated from Manchester Metropolitan University with a degree in Fashion design and technology for womenswear.",
-            "<br>"
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Describe your journey in fashion...",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Halfway through my degree I completed a placement year, where I spent three months interning in the design department at Old Navy. I then spent a further six months working for Julien Macdonald, a luxury label with a focus on embroidered gowns, which is where my interest in embellishment grew. Throughout university I had always been interested in sustainable fashion, and in final year we were set a sustainable design brief which was a great opportunity merge these two interests.",
-            "<br>"
-          ]
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/sophie-parnaby/Article_image_1.jpg",
-          "alt": ""
-        },
-        {
-          "type": "headline",
-          "copy": "How tech has been embedded in your design journey?",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "I’ve used 3D print technology to find a more sustainable way of creating embellishment and spent the majority of my final year at Manchester developing a process using a 3D printer to replicate the appearance of sequins. I’ve seen how 3D printing is increasingly becoming a more sustainable way to manufacture in other industries, and I think it’s so important that this ground-breaking technology is applied in the same way within the fashion industry.",
-            "<br>"
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "What inspired your designs and collection?",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "I called my final collection ‘Future Mythologies’ which explores a future scenario, fast forwarding to a time where the planet could be affected by climate change which would create new atmospheric conditions. I considered how new species would evolve in this altered climate, investigating the idea of biomimicry and hybrids. One piece that I called ‘Icarus’ is completely covered with 3D printed textures, which formed wing like structures that appear to be an extension of the body. It's been great to showcase my collection at the hub of innovation, Samsung KX during Graduate Fashion Week!",
-            "<br>"
-          ]
-        },
-
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/sophie-parnaby/Article_image_2.jpg",
-          "alt": ""
-        }
-      ]
-    },
-    {
-      "type": "gfw-gallery",
-      "style": {
-        "block": true
-      },
-      "items": [
-        3
       ]
     },
     {
       "type": "group",
       "dynamic": "episodes",
-      "id": "graduate-fashion-week",
-      "title": "Episodes",
+      "id": "graduate-fashion-week-student-blog",
+      "title": "Articles",
       "style": {
         "scroll": true
       }

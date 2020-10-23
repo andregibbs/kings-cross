@@ -1,0 +1,120 @@
+{
+  "title": "Talking fashion, photography & tech with Tabatha",
+  "description": "",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/student-blog/tabatha-lopez/720-x-810.jpg",
+  "alt": "",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/student-blog/tabatha-lopez/400-x-225.jpg",
+  "group": "graduate-fashion-week-student-blog",
+  "sort": 2,
+  "meta": {
+    "icon": "article",
+    "tags": []
+  },
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "{{creativity|graduate-fashion-week|student-blog|tabatha-lopez[image]}}",
+        "alt": ""
+      },
+      "style": {
+        "desktop": "right",
+        "mobile": "bottom"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "Talking fashion, photography & tech with Tabatha"
+        }
+      ]
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "headline",
+          "copy": "As a fashion photographer, what is it that inspires you?",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "My work is often centred around themes such as the everyday, identity and youth culture. I have always been enticed to capture people’s life stories and used everything around me as a source of inspiration which I then translate into my shoots.",
+            "I often chose to shoot non-models, as I believe they can transmit so much more emotion and narrative into a photograph. Viewers are also able to form stronger emotions to the images, as they may feel it is more relatable to them.",
+            "When it comes to looking for inspiration, I also love looking through old magazines and shoots from the 90’s and early 00’s. The fashion image as people knew it for, had evolved from highly glamorised fashion shoots to more intimate photographs which were captured to look like day-to-day life snapshots. I think it’s this newfound rawness in the images which I feel so attracted to. I love capturing things for what they really are in life",
+            "<br>"
+          ]
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/student-blog/tabatha-lopez/Article_image_1.jpg",
+          "alt": ""
+        },
+        {
+          "type": "headline",
+          "copy": "What would you say has been the impact of tech on your journey?",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "My work is all produced using a ﬁlm camera. I believe that shooting on ﬁlm, not only creates more of a rawness to each image, but also has a very interesting process to it, which I really enjoy taking part in. I think there is something quite special about putting so much effort and time into producing an image. You allow yourself to take a step back and really think about what it is you want to translate within that image, and as a result you are more precise with the ﬁnal outcome.",
+            "Technology plays a big role within my pre-production and postproduction work. Social media websites such as Instagram and Facebook have made it more accessible for photographers to be able to scout for models, locations and contact collaborators.",
+            "Having software such as Photoshop and InDesign, allows me to do this without having to print images, and allows me to work on my ﬁnal images anywhere that I wish to, as long as I have my laptop with me. Furthermore, with the use of technology, more creatives have been given the chance to be able to publish their own work, and as a result been able to distribute themselves to greater audiences.",
+            "<br>"
+          ]
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/student-blog/tabatha-lopez/Article_image_2.jpg",
+          "alt": ""
+        },
+        {
+          "type": "headline",
+          "copy": "How has smartphone photography inspired your work? ",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Smartphone photography is something which I often use in order to scout for locations.",
+            "Wide angle effects, for example, enable us to capture images from different perspectives, something of which we weren't able to do previously.  These sorts of effects come in great when capturing locations, as we are able to capture more within the image.",
+            "It is also great to use when experimenting with the composition of your image, as you can see results instantly. It is good to have an idea of what you want your image to look like before committing and using up your film.",
+            "Nowadays, smartphone cameras have an amazing quality. They are portable as well, which means you will never have to miss out on a photographic opportunity.",
+            "<br>"
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "How do you see the future for this area?",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Technology really is impacting the world around us a little bit more each day. Regarding the creative industry, it really is opening up a lot of ways in which we can connect with one another and express ourselves as individuals.",
+            "A great example of this can be seen throughout the many creative ways that the designers have been showcasing their garments within the digital showcase of both London Fashion Week and Graduate Fashion Week at Samsung KX.",
+            "As human beings we are always ﬁnding new ways to create and display work, and I really do think technology plays a big role in allowing us to do this.",
+            "<br>"
+          ]
+        },
+
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/student-blog/tabatha-lopez/Article_image_3.jpg",
+          "alt": ""
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "dynamic": "episodes",
+      "id": "graduate-fashion-week-student-blog",
+      "title": "Articles",
+      "style": {
+        "scroll": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "goodies": [
+    {
+      "url": "asd"
+    },
+    {
+      "url": "asd"
+    },
+    {
+      "url": "asd"
+    },
+    {
+      "url": "asd"
+    },
+    {
+      "url": "asd"
+    },
+    {
+      "url": "asd"
+    }
+  ],
+  "products": [
+    {
+      "name": "asd",
+      "image": "image",
+      "url": "url"
+    },
+    {
+      "name": "asd",
+      "image": "image",
+      "url": "url"
+    },
+    {
+      "name": "asd",
+      "image": "image",
+      "url": "url"
+    },
+    {
+      "name": "asd",
+      "image": "image",
+      "url": "url"
+    },
+    {
+      "name": "asd",
+      "image": "image",
+      "url": "url"
+    }
+  ]
+}

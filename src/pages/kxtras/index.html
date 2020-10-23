@@ -1,51 +1,81 @@
 {{>headers/header}}
 
-<section class="cheil-static KXtras">
+<section class="cheil-static  KXtras">
 
   {{>stylesheet page="kxtras"}}
 
 	{{>components/common/kxNav/main }}
 
-  <section class="KXtras__header">
+  <section class="KXtras__section  KXtras__section--header">
     <h1 class="fz50">KXtras at Samsung KX</h1>
   </section>
 
-  <section class="section KXtras__purchase">
-    <div class="section__inner">
-      <h2 class="fz36">Get something KXtra with your purchase</h2>
-      <p class="fz24">
-        Make a purchase online or in store and collect Samsung KX to receive exclusive goodies
-      </p>
+  <section class="KXtras__section  KXtras__section--goodies">
+    <div class="KXtras__header section">
+      <div class="section__inner">
+        <h2>Want something a little more with your purchase?</h2>
+        <p>
+          Receive exclusive goodies*, complimentary set up service and full switch over when you purchase in-store or collect at Samsung KX.
+        </p>
+      </div>
+    </div>
+    {{>home-of-innovation/hoiLinkList
+      class="KXtras__purchase_items"
+      items=pageTemplateData.kxtras.goodies
+    }}
+  </section>
+
+  <section class="KXtras__section  KXtras__section--collect">
+    <div class="KXtras__header  section">
+      <div class="section__inner">
+        <h3 class="fz30">Now available at Samsung KX</h3>
+      </div>
+    </div>
+    <div class="KXtras__collect_banner">
+      <div class="KXtras__collect_banner_text">Click & Collect</div>
+      <div class="KXtras__collect_banner_image"><img /></div>
+      <div class="KXtras__collect_banner_disclaimer">*subject to availability</div>
     </div>
   </section>
 
-  <div class="KXtras__collect">
-    <div class="KXtras__collect_banner">
-      <span>Click and</span>
-      <span>Collect</span>
-    </div>
-    <p>Now available at Samsung KX</p>
-  </div>
 
-  <section class="KXtras__setup">
-    <h2 class="fz36">Get a complimentary set up service</h2>
-    <p>And full switch over to your new device when you collect your new Samsung Galaxy phone</p>
+  <section class="KXtras__section  KXtras__section--explore">
+    <div class="KXtras__header  section">
+      <div class="section__inner">
+        <div class="KXtras__header_icon">icon</div>
+        <h2>Explore the Galaxy</h2>
+      </div>
+    </div>
+    {{>home-of-innovation/hoiLinkList
+      class="KXtras__explore_items  hoiLinkList--scroll"
+      items=pageTemplateData.kxtras.products
+    }}
+  </section>
+
+  <section class="KXtras__section KXtras__section--setup">
+    <div class="KXtras__header  section">
+      <div class="section__inner">
+        <div class="KXtras__header_icon">icon</div>
+        <h2>Get a complimentary set up service</h2>
+        <p>And full switch over to your new device when you collect your new Samsung Galaxy phone</p>
+        <a class="btn  btn--primary  btn--primary--saffron">Book appointment</a>
+      </div>
+    </div>
   </section>
 
   <section class="KXtras__image">
 
   </section>
 
-  <section class="KXtras__explore">
-    <span>icon</span>
-    <h2 class="fz36">Explore the Galaxy</h2>
 
-  </section>
 
-  <section class="KXtras__fragrance">
-    <span>icon</span>
-    <h2 class="fz36">Bag a bottle of the UK's favourite fragrance</h2>
-    <p>Purchase a new 2020 ecobubble<sup>&trade;</sup> washing machine from Samsung KX and receive a complimentary limited edition bottle of the new 'Freshly Laundered - Eco Edition' perfume.
+  <section class="KXtras__section  KXtras__section--offers">
+    <div class="KXtras__header  section">
+      <div class="section__inner">
+        <div class="KXtras__header_icon">icon</div>
+        <h2>Offers & Promotions</h2>
+      </div>
+    </div>
   </section>
 
   <section class="KXtras__fragrance_banner">

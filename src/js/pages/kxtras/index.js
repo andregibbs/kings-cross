@@ -1,14 +1,15 @@
-import '../../bootstrap.js';
-import KXNav from  '../../components/common/KXNav'
+import '../../bootstrap.js'
 
-function init() {
-  console.log('init')
-  new KXNav() // new nav
+import KXNav from  '../../components/common/KXNav'
+import HOILinkListHoverManager from '../../home-of-innovation/HOILinkListHoverScroll'
+
+function KXtras() {
+  new KXNav() // init nav
+  new HOILinkListHoverManager() // init link list manager for hoiLists
 }
 
-
 if (document.readyState === "complete" || (document.readyState !== "loading" && !document.documentElement.doScroll)) {
-  init();
+  KXtras()
 } else {
-  document.addEventListener("DOMContentLoaded", init);
+  document.addEventListener("DOMContentLoaded", KXtras)
 }

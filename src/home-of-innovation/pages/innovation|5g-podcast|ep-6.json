@@ -1,11 +1,12 @@
 {
-  "title": "Episode 4: 5G connected cows... Whatever Next?",
+  "title": "Coming Soon: Episode 6: ",
   "description": "",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/Episode4-KV-PC_2x.jpg",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/v6/Episode6-KV-PC_2x.jpg",
   "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/Album-art-ep4.jpg",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/v6/Album-art-ep6.jpg",
   "group": "5g-podcast",
-  "sort": 4,
+  "hidden": true,
+  "sort": 6,
   "meta": {
     "icon": "video",
     "tags": []
@@ -13,15 +14,15 @@
   "components": [
     {
       "type": "css-snippet",
-      "content": ".hoiKv__Media:after { padding-bottom: 36% !important; } .hoiParagraphs p { max-width: 940px; } @media screen and (max-width: 769px) { .hoiKv__Media:after { padding-bottom: 110% !important; } .hoiMedia__StatePoster { background-image: url(https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/Episode4-KV-MO_2x.jpg) !important; } }  ",
+      "content": ".hoiKv__Media:after { padding-bottom: 36% !important; } .hoiParagraphs p { max-width: 940px; } @media screen and (max-width: 769px) { .hoiKv__Media:after { padding-bottom: 110% !important; } .hoiMedia__StatePoster { background-image: url(https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/v6/Episode6-KV-MO_2x.jpg) !important; } }  ",
       "__notes": "custom ratio for kv video"
     },
     {
       "type": "kv",
       "media": {
         "type": "audio",
-        "content": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/Samsung_EP4_FOR_BROADCAST_updated_191020.mp3",
-        "poster": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/Episode4-KV-PC_2x.jpg",
+        "content": "",
+        "poster": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/v6/Episode6-KV-PC_2x.jpg",
         "alt": ""
       },
       "style": {
@@ -31,12 +32,12 @@
       "components": [
         {
           "type": "headline",
-          "copy": "Episode 4: 5G connected cows... Whatever Next?"
+          "copy": "Episode 5: Remote control surgeons... Whatever Next?"
         },
         {
           "type": "paragraphs",
           "text": [
-            "From farming crops to the produce on our shelves to a printer that can print out our food, the food industry is being revolutionised by new technology. Dr Hannah Fry and comedian Suzi Ruffell get up close and personal with a 5G cow… yes a 5G cow, and record the episode while sipping on some sweet 5G wine. If you’ve ever eaten food, thought about food or seen food - this episode is a tasty one!"
+            "With the world of work transforming faster than ever, Dr Hannah Fry and comedian Suzi Ruffell hear all out about the latest 5G-enabled workplace tech. From meetings with hologram colleagues to remote-control robots performing life-saving surgery, whether you live to work or work to live, this episode is the perfect fit."
           ]
         },
         {

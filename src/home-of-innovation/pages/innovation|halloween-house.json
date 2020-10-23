@@ -1,0 +1,158 @@
+{
+  "title": "Halloween at Home",
+  "description": "",
+  "image": "https://picsum.photos/720/810",
+  "alt": "",
+  "thumb": "https://picsum.photos/400/255",
+  "hidden": true,
+  "meta": {
+    "icon": "article",
+    "tags": []
+  },
+  "components": [
+    {
+      "type": "css-snippet",
+      "content": ".hoiKv--theme-side-by-side-video, .hoiKv--theme-in-wrapper { margin: 2em 0 !important; } .hoiKv--theme-in-wrapper .hoiKv__Components p { font-weight: normal !important; font-size: 1.25em !important; } .hoiKv--theme-side-by-side-video .hoiKv__Components { padding: 0 !important; position: relative !important; } .hoiKv--theme-side-by-side-video .hoiKv__Media:after { padding-bottom: 100% !important; } .hoiKv--theme-side-by-side-video .hoiKv__Components .hoiMedia__Wrap { padding-bottom: 100% !important; margin-bottom: 0 !important; }",
+      "__notes": "css for side by side video"
+    },
+    {
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "https://picsum.photos/720/810",
+        "alt": ""
+      },
+      "style": {
+        "desktop": "top",
+        "mobile": "bottom"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "Halloween at Home"
+        }
+      ]
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "kv",
+          "share": false,
+          "media": {
+            "type": "video",
+            "content": "https://picsum.photos/720/810",
+            "alt": ""
+          },
+          "style": {
+            "desktop": "left",
+            "mobile": "bottom",
+            "theme": "in-wrapper"
+          },
+          "components": [
+            {
+              "type": "paragraphs",
+              "text": [
+                "Although Halloween 2020 will be very different to previous years, there are still plenty of ways for families to celebrate the holiday at home in a safe and secure way.",
+                "Here at Samsung we wanted to share some spooky inspiration for the 31st October to help make this Halloween a night to remember.",
+                "Using the power of our SmartThings technology we’ve created the ultimate Halloween House, transforming a 300-year-old property into the smartest and scariest Halloween display ever. Our engineers rigged the home with devices to control lights, sound and security cameras which were then all controlled using the SmartThings app on a Samsung Galaxy S20 and QLED TV."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "kv",
+          "share": false,
+          "media": {
+            "type": "video",
+            "content": "https://picsum.photos/720/810",
+            "alt": ""
+          },
+          "style": {
+            "desktop": "right",
+            "mobile": "bottom",
+            "theme": "in-wrapper"
+          },
+          "components": [
+            {
+              "type": "paragraphs",
+              "text": [
+                "To try this out at home and take your Halloween display to the next level with the use of smart tech, just watch our SmartThings Halloween ‘How to’ guide."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Leading Scottish SFX make-up artist Ellie Hand-McCready has created two terrifying make-up tutorials especially for Samsung fans. You can follow her two guides to create showstopping Halloween looks to scare your friends or family."
+          ]
+        },
+        {
+          "type": "kv",
+          "share": false,
+          "media": {
+            "type": "video",
+            "content": "https://picsum.photos/720/810",
+            "alt": ""
+          },
+          "style": {
+            "desktop": "left",
+            "mobile": "top",
+            "theme": "side-by-side-video"
+          },
+          "components": [
+            {
+              "type": "video",
+              "content": "https://picsum.photos/720/810"
+            }
+          ]
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "If your household are still looking for ideas look no further than our handy Top 10 list below:",
+            "<ol><li>Halloween movie night</li><li>Family fancy dress night</li><li>Cooking/making Halloween themed food and drink</li><li>Carving pumpkins</li><li>Decorating your house with Halloween props</li><li>Having or attending a virtual Halloween party over Zoom / video call</li><li>Playing spooky tricks on people in your household</li><li>Playing Halloween games with friends and family over video call</li><li>Creating Halloween playlists</li><li>Telling / reading scary stories to family members at home</li></ol>",
+            "If you visit Samsung KX this Halloween you will also be able to take part in a Halloween themed AR treasure hunt as well as get your hands on limited-edition phone cases decorated with Ellie Hand-McCready’s unique make up design."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "title": "Gallery",
+      "items": [
+        {
+          "type": "image",
+          "content": "https://picsum.photos/800/1000",
+          "image": "https://picsum.photos/400/400"
+        },
+        {
+          "type": "image",
+          "content": "https://picsum.photos/800/1000",
+          "image": "https://picsum.photos/400/400"
+        },
+        {
+          "type": "image",
+          "content": "https://picsum.photos/800/1000",
+          "image": "https://picsum.photos/400/400"
+        },
+        {
+          "type": "image",
+          "content": "https://picsum.photos/800/1000",
+          "image": "https://picsum.photos/400/400"
+        },
+        {
+          "type": "image",
+          "content": "https://picsum.photos/800/1000",
+          "image": "https://picsum.photos/400/400"
+        },
+        {
+          "type": "image",
+          "content": "https://picsum.photos/800/1000",
+          "image": "https://picsum.photos/400/400"
+        }
+      ]
+    }
+  ]
+}

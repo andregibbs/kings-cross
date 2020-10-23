@@ -246,27 +246,39 @@ function createBundleHandler(bundler, file) {
 
 /* Watch /src directory for changes & reload gulp */
 gulp.task('html', function () {
-		var data = require(config.SRC_FOLDER + '/data/config.json')
 
-    const isStagingTask = argv._[0] === 'staging';
+  // retrieve and combine each individual page template data
+  let pageTemplateData = {}
+  INDIVIDUAL_PAGE_BUILDS.forEach(page => {
+    let templateData = {}
+    templateData[page] = require(`${config.SRC_FOLDER}/js/pages/${page}/templateData.json`)
+    if (templateData[page]) {
+      Object.assign(pageTemplateData, templateData)
+    }
+  })
 
-		/* No copy doc exists, just compile the templates as is */
-		return gulp.src( config.SRC_FOLDER + '/pages/**/*.{html,js,hbs}' )
-			.pipe(handlebars({
-					helpers: config.SRC_FOLDER + '/templates/helpers/handlebarsHelpers.js',
-					partials: config.SRC_FOLDER + '/templates/partials/**/*.{html,js,hbs}',
-					bustCache: true,
-					data: {
-            config: {
-              ...data,
-              site: SITE,
-              subfolder: SUBFOLDER,
-              staging: isStagingTask
-            }
-          }
-				})
-			)
-			.pipe(gulp.dest( config.BUILD_FOLDER + SITE + '/' + SUBFOLDER + '/' ))
+	var data = require(config.SRC_FOLDER + '/data/config.json')
+
+  const isStagingTask = argv._[0] === 'staging';
+
+	/* No copy doc exists, just compile the templates as is */
+	return gulp.src( config.SRC_FOLDER + '/pages/**/*.{html,js,hbs}' )
+		.pipe(handlebars({
+				helpers: config.SRC_FOLDER + '/templates/helpers/handlebarsHelpers.js',
+				partials: config.SRC_FOLDER + '/templates/partials/**/*.{html,js,hbs}',
+				bustCache: true,
+				data: {
+          config: {
+            ...data,
+            site: SITE,
+            subfolder: SUBFOLDER,
+            staging: isStagingTask
+          },
+          pageTemplateData
+        }
+			})
+		)
+		.pipe(gulp.dest( config.BUILD_FOLDER + SITE + '/' + SUBFOLDER + '/' ))
 
 })
 
@@ -306,8 +318,12 @@ gulp.task('compress', function (cb) {
 gulp.task('watch', function () {
 	gulp.watch( config.SRC_FOLDER + '/scss/**/*.scss', ['scss', 'scss-page'] )
 	// gulp.watch( config.SRC_FOLDER + '/js/**/*.js', ['watchJS'] )
-    gulp.watch( config.SRC_FOLDER + '/templates/partials/**/*.hbs', ['html'] )
-    gulp.watch( config.SRC_FOLDER + '/pages/**/*.html', ['html'] )
+  gulp.watch(
+    [
+      config.SRC_FOLDER + '/templates/partials/**/*.hbs',
+      config.SRC_FOLDER + '/js/pages/**/templateData.json'
+    ] , ['html'] )
+  gulp.watch( config.SRC_FOLDER + '/pages/**/*.html', ['html'] )
 
 	log('Watching src for changes... ')
 
