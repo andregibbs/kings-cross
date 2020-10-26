@@ -1,4 +1,9 @@
-<div class="hoiIconLinks">
+<div class="
+  hoiIconLinks
+  {{#if style}}
+    hoiIconLinks--{{style}}
+  {{/if}}
+  ">
 
   {{#each items}}
 
@@ -12,9 +17,11 @@
         <div class="hoiIconLinks__Link_Image">
           <img src="{{image}}" alt="{{title}} icon" />
         </div>
-        <span class="hoiIconLinks__Link_Text">
-          {{title}}
-        </span>
+        {{#if title}}
+          <span class="hoiIconLinks__Link_Text">
+            {{title}}
+          </span>
+        {{/if}}
       </a>
 
     {{/if}}

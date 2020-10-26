@@ -34,3 +34,10 @@
   padding: 1em;
   display: block;
 }
+
+.hoiIconLinks--fixed-size {
+  .hoiIconLinks__Link_Image img {
+    width: auto;
+    height: 100%;
+  }
+}

@@ -141,7 +141,7 @@ $easing: cubic-bezier(0.85, 0, 0.15, 1);
 
   .discoverExperience__ItemBody {
     h3, p {
-      padding: 2vw;
+      padding: 1rem;
     }
     p {
       max-width: 66vw;
@@ -149,10 +149,10 @@ $easing: cubic-bezier(0.85, 0, 0.15, 1);
 
     &--active {
       h3 {
-        padding-bottom: 1vw;
+        padding: 2rem 2rem 1rem 2rem;
       }
       p {
-        padding-top: 0;
+        padding: 0rem 2rem 2rem 2rem;
       }
     }
   }

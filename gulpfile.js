@@ -349,12 +349,12 @@ function HOITemplates(skipTemplates, dynamicDataCallback, selectedFiles) {
   // disabled as inteferring with dynamic data (need to process all pages)
   let pages;
   // if a single file is specified
-  // if (selectedFiles) {
-  //   pages = selectedFiles
-  // } else {
-    // otherwise use all
+  if (selectedFiles) {
+    pages = selectedFiles
+  } else {
+  //  otherwise use all
     pages = getFilesInDirectory(pagesBasePath)
-  // }
+  }
 
   // is staging task
   const isStagingTask = argv._[0] === 'hoi-staging';

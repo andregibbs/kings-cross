@@ -1,0 +1,38 @@
+{
+  "title": "YFA Creative Labs",
+  "description": "",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/yfa-creative-labs/yfa-kv.jpg",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/yfa-creative-labs/yfa-kv.jpg",
+  "meta": {
+    "icon": "series",
+    "tags": []
+  },
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "{{creativity|yfa-creative-labs[image]}}"
+      },
+      "style": {
+        "desktop": "left",
+        "mobile": "top"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "YFA Creative Labs"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "dynamic": "episodes",
+      "id": "yfa-creative-labs",
+      "title": "Episodes",
+      "style": {
+        "scroll": true
+      }
+    }
+  ]
+}

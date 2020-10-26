@@ -11,6 +11,10 @@
   pointer-events: none;
 }
 
+.hoiGallery__NavItem:focus {
+  outline: none;
+}
+
 .hoiGallery__NavItem_ImageWrap {
   position: relative;
   height: 0;
