@@ -1,6 +1,16 @@
-<div class="hoiIframe">
+<div class="
+  hoiIframe
+  {{#if variant}}
+    hoiIframe--{{variant}}
+  {{/if}}
+  ">
 
-  <iframe src="{{src}}" width="100%" height="100%"></iframe>
-
+  <iframe src="{{src}}" width="100%" height="100%"
+    {{#if (eq variant 'spotify')}}
+      frameborder="0"
+      allowtransparency="true"
+      allow="encrypted-media"
+    {{/if}}
+    ></iframe>
 
 </div>

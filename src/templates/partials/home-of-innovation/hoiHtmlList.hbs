@@ -1,0 +1,17 @@
+<div class="hoiHtmlList">
+  {{#if (eq type 'ol')}}
+    <ol>
+  {{else}}
+    <ul>
+  {{/if}}
+
+  {{#each items}}
+    <li>{{this}}</li>
+  {{/each}}
+
+  {{#if (eq type 'ol')}}
+    </ol>
+  {{else}}
+    </ul>
+  {{/if}}
+</div>

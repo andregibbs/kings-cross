@@ -1,0 +1,112 @@
+{
+  "title": "Expert view: The future of food",
+  "description": "Expert view on the future of food",
+  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/05_Samsung_Website_TOT_GreenLab_BLOG_1440x810_V1.png",
+  "alt": "",
+  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/05_Samsung_Website_TOT_GreenLab_BLOG_400x255_V1.png",
+  "group": "taste-of-tomorrow",
+  "sort": 1,
+  "meta": {
+    "icon": "article",
+    "tags": []
+  },
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/05_Samsung_Website_TOT_GreenLab_BLOG_1440x810_V1.png",
+        "alt": ""
+      },
+      "style": {
+        "desktop": "top",
+        "mobile": "bottom"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "Expert view: The future of food"
+        }
+      ]
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "paragraphs",
+          "style": {
+            "large": true
+          },
+          "text": [
+            "Andrew Gregson, Founder of Green Lab, explores innovations that are changing the way we grow, cook and eat."
+          ]
+        },
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "GROW"
+        },
+        {
+          "type": "paragraphs",
+          "style": {
+            "large": true
+          },
+          "text": [
+            "Early methods of Stone Age farming started around 12,000 years ago when our hunter-gatherer ancestors grew pea, barley, lentils and herded wild goats and oxen. Fast forward to 1937 and Dr. William Frederick Gericke of the University of California at Berkeley coined the term ‘hydroponics’ - growing without soil using simply water and nutrients to raise a 7m high tomato plant.",
+            "This novel way of growing quickly became a mainstay of commercial growers and the agricultural communities during the 40’s, 50’s and 60’s, resulting in a transformation of growth rates, space use, water efficiency (up to 75% less water) and better control of pests and diseases.",
+            "Hydroponic systems today are very modern systems for growing food using controlled environments in which vegetables and leafy greens grow all using technology and connected devices to automate lighting, nutrient delivery, temperature, light spectrum, humidity and even pest detection. Hydroponics are also creating new opportunities to grow at home; for example using <a href=\"https://www.samsung.com/uk/smartthings/\">Samsung SmartThings</a> to grow your own microgreens in a spare room with your phone to control lighting, water levels, and even notify you when things leak. ",
+            "Our cities are changing and modern hydroponics are now appearing on city rooftops, inside hidden underground tunnels and high-tech shipping containers producing food; everything from microgreens, salads, herbs, vegetables, spices and fruits."
+          ]
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/insights-green-lab-1.jpg"
+        },
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "COOK"
+        },
+        {
+          "type": "paragraphs",
+          "style": {
+            "large": true
+          },
+          "text": [
+            "We waste approximately a third of all the food we produce; either at the farm, the supermarket or household. Reducing food waste through better meal planning and smarter buying habits is something the <a href=\"https://www.samsung.com/uk/refrigerators/family-hub-fridge-freezers/\">Samsung Family Hub</a> can help with. Imagine if your fridge can tell you what’s inside, when it’ll expire and how many of those tasty plant based sausages you have left before you buy another packet.",
+            "Whilst busy professionals struggling to find interesting ways to prepare meals with random left over collections of food, herbs and veggies in their <a href=\"https://www.samsung.com/uk/refrigerators/family-hub-fridge-freezers/\">Samsung Family Hub</a>, can ask the fridge to even suggest recipes, ensuring not only help you reduce food waste, but most likely save you money."
+          ]
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/insights-green-lab-2.jpg"
+        },
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "EAT"
+        },
+        {
+          "type": "paragraphs",
+          "style": {
+            "large": true
+          },
+          "text": [
+            "Probably not high on your shopping list, but insects form part of a new trend in alternative protein sources; using as little as 1 litre of water you can produce 1 kilo of insects, compared with 15,000 litres for a comparable kilo of beef. These little critters pack a real punch when it comes to protein sources, with 2 to 3 times more complete protein. Crickets, mealworms, grasshoppers, and buffalo worms are ideal for snacking, and in sufficient quantities can be ground as flour for bread, shakes, pizza bases, cookies or stews.",
+            "Contributing to a healthier gut are the probiotics and fermented foods that have been passed down through many generations that are making a resurgence as part of healthier lifestyles. Kefir and Kombucha are two very popular fermented drinks that deliver a beneficial mix of live bacteria to balance your gut health.",
+            "The future of food is a culinary adventure that balances new ways of growing our food, innovation in how we prepare new exciting ingredients, flavours and experiences that make it easier for us to grow, cook and eat more sustainably."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "dynamic": "more-articles",
+      "id": "taste-of-tomorrow",
+      "title": "More articles",
+      "style": {
+        "scroll": true
+      }
+    }
+  ]
+}

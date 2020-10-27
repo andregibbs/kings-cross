@@ -1,0 +1,61 @@
+{
+  "title": "Taste of Tomorrow: Songs for your Tongs",
+  "description": "Cooking playlist picks",
+  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/07_Samsung_Website_TOT_Spotify_1440x810_V1.png",
+  "alt": "",
+  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/07_Samsung_Website_TOT_Spotify_400x255_V1.png",
+  "group": "taste-of-tomorrow",
+  "sort": 6,
+  "meta": {
+    "icon": "article",
+    "tags": []
+  },
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/07_Samsung_Website_TOT_Spotify_1440x810_V1.png",
+        "alt": ""
+      },
+      "style": {
+        "desktop": "top",
+        "mobile": "bottom"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "Taste of Tomorrow: Songs for your Tongs"
+        }
+      ]
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "paragraphs",
+          "style": {
+            "large": true
+          },
+          "text": [
+            "Chef Sara Kiko Pipowa shared her cooking playlist picks when she came to cook her creations in the KX kitchen for Taste of Tomorrow. Listen below!"
+          ]
+        },
+        {
+          "type": "iframe",
+          "variant": "spotify",
+          "src": "https://open.spotify.com/embed/playlist/3EaDpBSnI1DVt7W7FEvjEY"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "dynamic": "more-articles",
+      "id": "taste-of-tomorrow",
+      "title": "More articles",
+      "style": {
+        "scroll": true
+      }
+    }
+  ]
+}

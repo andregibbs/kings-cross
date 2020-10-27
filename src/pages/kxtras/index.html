@@ -10,41 +10,17 @@
     <h1 class="fz50">KXtras at Samsung KX</h1>
   </section>
 
-  <section class="KXtras__section  KXtras__section--goodies">
-    <div class="KXtras__header section">
-      <div class="section__inner">
-        <h2>Want something a little more with your purchase?</h2>
-        <p>
-          Receive exclusive goodies*, complimentary set up service and full switch over when you purchase in-store or collect at Samsung KX.
-        </p>
-      </div>
-    </div>
-    {{>home-of-innovation/hoiLinkList
-      class="KXtras__purchase_items"
-      items=pageTemplateData.kxtras.goodies
-    }}
-  </section>
-
-  <section class="KXtras__section  KXtras__section--collect">
-    <div class="KXtras__header  section">
-      <div class="section__inner">
-        <h3 class="fz30">Now available at Samsung KX</h3>
-      </div>
-    </div>
-    <div class="KXtras__collect_banner">
-      <div class="KXtras__collect_banner_text">Click & Collect</div>
-      <div class="KXtras__collect_banner_image"><img /></div>
-      <div class="KXtras__collect_banner_disclaimer">*subject to availability</div>
-    </div>
-  </section>
-
-
   <section class="KXtras__section  KXtras__section--explore">
     <div class="KXtras__header  section">
       <div class="section__inner">
         <div class="KXtras__header_icon">icon</div>
         <h2>Explore the Galaxy</h2>
       </div>
+    </div>
+    <div class="KXtras__collect_banner">
+      <h3 class="fz50">Click & Collect</h3>
+      <h4 class="fz22">Now avaliable at Samsung KX</h4>
+      <span class="KXtras__collect_banner_disclaimer">*subject to availability</span>
     </div>
     {{>home-of-innovation/hoiLinkList
       class="KXtras__explore_items  hoiLinkList--scroll"
@@ -57,17 +33,37 @@
       <div class="section__inner">
         <div class="KXtras__header_icon">icon</div>
         <h2>Get a complimentary set up service</h2>
-        <p>And full switch over to your new device when you collect your new Samsung Galaxy phone</p>
-        <a class="btn  btn--primary  btn--primary--saffron">Book appointment</a>
+        <p>From unboxing onwards, our dedicated Samsung experts will guide you through every aspect of setup. From SmartSwitch to tailored 1 to 1s, we'll ensure you are getting the most from your new device.</p>
+        <a
+          class="btn  btn--primary  btn--primary--saffron"
+          ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:kxtras:setup-service-support-link"
+          data-omni-type="microsite" data-omni="uk:kings-cross:home:setup-service-support-link"
+          href="/uk/explore/kings-cross/support"
+        >
+          Book appointment
+        </a>
       </div>
+    </div>
+    <div class="KXtras__image">
+      <img src="" alt="">
     </div>
   </section>
 
-  <section class="KXtras__image">
-
+  <section class="KXtras__section  KXtras__section--goodies">
+    <div class="KXtras__header section">
+      <div class="section__inner">
+        <div class="KXtras__header_icon">icon</div>
+        <h2>Want something a little more with your purchase?</h2>
+        <p>
+          Receive exclusive goodies*, complimentary set up service and full switch over when you purchase in-store or collect at Samsung KX.
+        </p>
+      </div>
+    </div>
+    <div class="KXtras__image  KXtras__image--arrows">
+      <div class="KXtras__image_arrow  KXtras__image_arrow--left"></div>
+      <div class="KXtras__image_arrow  KXtras__image_arrow--right"></div>
+    </div>
   </section>
-
-
 
   <section class="KXtras__section  KXtras__section--offers">
     <div class="KXtras__header  section">
@@ -78,14 +74,26 @@
     </div>
   </section>
 
-  <section class="KXtras__fragrance_banner">
 
-  </section>
+  <div
+    class="KXtras__image"
+    style="background-image:url('')">
+    <div class="KXtras__image_body">
+      <h2 class="fz50">Samsung Week</h2>
+      <a class="btn  btn--primary  btn--primary--saffron">Learn more</a>
+    </div>
+  </div>
 
-  <section class="KXtras__signup">
-
-  </section>
-
+  {{>
+    components/common/kxImageLinkBanner
+    page="kxtras"
+    title="Don't miss out!"
+    copy="Stay in the loop to hear about our upcoming events, receive exclusive priority access and rewards"
+    image=""
+    link="asd"
+    cta="SIGN UP"
+    buttonColor="coral"
+  }}
 
 </section>
 

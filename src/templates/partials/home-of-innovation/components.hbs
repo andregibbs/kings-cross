@@ -68,6 +68,10 @@
     {{> home-of-innovation/hoiIconLinks this}}
   {{/if_equals}}
 
+  {{#if_equals this.type 'html-list'}}
+    {{> home-of-innovation/hoiHtmlList this}}
+  {{/if_equals}}
+
   {{!--
     Group, Related & Link list
     All the same components, different method of populating

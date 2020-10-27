@@ -1,6 +1,7 @@
 @import '../../bootstrap';
 
 @import '../../home-of-innovation/vars';
+@import '../../components/common/kxImageLinkBanner';
 @import '../../components/home-of-innovation/list';
 @import '../../components/home-of-innovation/hoiLinkList';
 
@@ -12,7 +13,7 @@
 
 }
 
-.KXtras__header.section {
+.KXtras__header {
   text-align: center;
   padding-bottom: 0;
   h2 {
@@ -32,6 +33,59 @@
   }
 }
 
+.KXtras__image {
+  width: 100%;
+  background: red;
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  &:before {
+    content: '';
+    display: block;
+    padding-bottom: 34.7%;
+    max-height: 500px;
+  }
+  @media screen and (max-width: $mobile) {
+    &:before {
+      padding-bottom: 100%;
+    }
+  }
+  .KXtras__image_body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    h2 {
+      margin-bottom: 2rem;
+    }
+  }
+
+  // variant
+  &--arrows {
+    .KXtras__image_arrow {
+      position: absolute;
+      width: 20vw;
+      height: 20vw;
+      background: rgba(255,255,255,0.5);
+    }
+    .KXtras__image_arrow--left {
+      top: 0;
+      left: 0;
+      transform: translate(0, -50%);
+    }
+    .KXtras__image_arrow--right {
+      bottom: 0;
+      right: 0;
+      transform: translate(0, 50%);
+    }
+  }
+}
+
 .KXtras__section--header {
   display: flex;
   align-items: center;
@@ -40,62 +94,21 @@
   background-color: navy;
 }
 
-.KXtras__section--goodies {
-  .KXtras__purchase_items {
-    .hoiList__Item {
-      width: calc(16.6% - 2.5em/2);
-      margin-bottom: 0;
-    }
-    .hoiList__ItemImageWrap {
-      padding-bottom: 100%;
-      background: red;
-    }
-  }
-}
-
-.KXtras__section--collect {
-  padding-bottom: 80px;
-  .KXtras__header {
-    text-align: left;
-  }
+.KXtras__section--explore {
   .KXtras__collect_banner {
     background: red;
-    margin: 2em 0;
-    position: relative;
     display: flex;
-    .KXtras__collect_banner_text {
-      font-size: 5vw;
-      font-family: "SamsungSharpSans", arial, sans-serif;
-      display: block;
-      width: 50%;
-      padding: 0 40px;
-      line-height: 1.6;
-      // flex-grow: 2;
-    }
-    .KXtras__collect_banner_image {
-      width: 25%;
-      background: green;
-      position: relative;
-      img {
-        width: 80%;
-        padding-bottom: 80%;
-        background: blue;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+    h3, h4 {
+      margin-bottom: 0.5rem;
     }
     .KXtras__collect_banner_disclaimer {
-      width: 25%;
-      text-align: right;
-      padding: 0 40px 0 0;
-      transform: translate(0, calc(100% + 40px));
+      font-size: 0.8em;
     }
   }
-}
-
-.KXtras__section--explore {
   .KXtras__explore_items {
     .hoiList__Item {
       margin-bottom: 0;
@@ -110,9 +123,68 @@
   }
 }
 
-
 .KXtras__section--setup {
   .btn {
     margin: 0 auto;
   }
 }
+
+// .KXtras__section--goodies {
+//   .KXtras__purchase_items {
+//     .hoiList__Item {
+//       width: calc(16.6% - 2.5em/2);
+//       margin-bottom: 0;
+//     }
+//     .hoiList__ItemImageWrap {
+//       padding-bottom: 100%;
+//       background: red;
+//     }
+//   }
+// }
+//
+// .KXtras__section--collect {
+//   padding-bottom: 80px;
+//   .KXtras__header {
+//     text-align: left;
+//   }
+//   .KXtras__collect_banner {
+//     background: red;
+//     margin: 2em 0;
+//     position: relative;
+//     display: flex;
+//     .KXtras__collect_banner_text {
+//       font-size: 5vw;
+//       font-family: "SamsungSharpSans", arial, sans-serif;
+//       display: block;
+//       width: 50%;
+//       padding: 0 40px;
+//       line-height: 1.6;
+//       // flex-grow: 2;
+//     }
+//     .KXtras__collect_banner_image {
+//       width: 25%;
+//       background: green;
+//       position: relative;
+//       img {
+//         width: 80%;
+//         padding-bottom: 80%;
+//         background: blue;
+//         position: absolute;
+//         top: 50%;
+//         left: 50%;
+//         transform: translate(-50%, -50%);
+//       }
+//     }
+//     .KXtras__collect_banner_disclaimer {
+//       width: 25%;
+//       text-align: right;
+//       padding: 0 40px 0 0;
+//       transform: translate(0, calc(100% + 40px));
+//     }
+//   }
+// }
+//
+//
+//
+//
+//

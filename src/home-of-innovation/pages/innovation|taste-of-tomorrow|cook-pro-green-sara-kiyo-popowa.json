@@ -1,0 +1,50 @@
+{
+  "title": "COOK: Discover mindful cooking",
+  "description": "Discover mindful cooking",
+  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/03_Samsung_Website_TOT_Cook_HERO_1440x810_V1.png",
+  "alt": "",
+  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/03_Samsung_Website_TOT_Cook_HERO_400x255_V1.png",
+  "group": "taste-of-tomorrow",
+  "sort": 3,
+  "meta": {
+    "icon": "article",
+    "tags": []
+  },
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "youtube",
+        "content": "",
+        "poster": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/03_Samsung_Website_TOT_Cook_HERO_1440x810_V1.png",
+        "alt": ""
+      },
+      "style": {
+        "desktop": "top",
+        "mobile": "bottom"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "COOK: Discover mindful cooking"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Discover the low-waste cooking methods that will change our future.",
+            "Chef Sara Kiyo Pipowa teaches Professor Green how to optimise ingredients with the <a href=\"https://www.samsung.com/uk/refrigerators/family-hub-fridge-freezers/\">Samsung Family Hub</a> fridge and the <a href=\"https://www.samsung.com/uk/home-appliances/infinite-line/ovens/\">Samsung Infinite Range Oven</a>."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "dynamic": "more-articles",
+      "id": "taste-of-tomorrow",
+      "title": "More articles",
+      "style": {
+        "scroll": true
+      }
+    }
+  ]
+}

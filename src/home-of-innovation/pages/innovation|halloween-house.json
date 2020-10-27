@@ -1,12 +1,11 @@
 {
   "title": "Halloween at Home",
   "description": "",
-  "image": "https://picsum.photos/720/810",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/halloween-house/ProjectMap_1440x810.jpg",
   "alt": "",
-  "thumb": "https://picsum.photos/400/255",
-  "hidden": true,
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/halloween-house/ProjectMap_1440x810.jpg",
   "meta": {
-    "icon": "article",
+    "icon": "video",
     "tags": []
   },
   "components": [
@@ -66,8 +65,8 @@
           ]
         },
         {
-          "type": "video",
-          "poster": "https://picsum.photos/720/810"
+          "type": "youtube",
+          "content": "Vs66NbPJoP8"
         }
       ]
     },
@@ -84,8 +83,8 @@
           ]
         },
         {
-          "type": "video",
-          "poster": "https://picsum.photos/720/810"
+          "type": "youtube",
+          "content": "vASrvIqNbdM"
         }
       ]
     },
@@ -106,8 +105,8 @@
           "type": "kv",
           "share": false,
           "media": {
-            "type": "video",
-            "content": "https://picsum.photos/720/810",
+            "type": "youtube",
+            "content": "bHadsmCr2sg",
             "alt": ""
           },
           "style": {
@@ -117,8 +116,8 @@
           },
           "components": [
             {
-              "type": "video",
-              "content": "https://picsum.photos/720/810"
+              "type": "youtube",
+              "content": "lQmVe0qHqvE"
             }
           ]
         },
