@@ -1,28 +1,38 @@
 {
   "products": [
     {
-      "name": "asd",
-      "image": "image",
+      "title": "Galaxy Note20 5G",
+      "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/kxtras/product_note20.png",
+      "url": ""
+    },
+    {
+      "title": "Galaxy S20FE 5G",
+      "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/kxtras/product_S20FE.png",
       "url": "url"
     },
     {
-      "name": "asd",
-      "image": "image",
+      "title": "Galaxy ZFold 5g",
+      "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/kxtras/product_ZFold.png",
       "url": "url"
     },
     {
-      "name": "asd",
-      "image": "image",
+      "title": "Galaxy ZFlip",
+      "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/kxtras/product_ZFlip.png",
       "url": "url"
     },
     {
-      "name": "asd",
-      "image": "image",
+      "title": "Galaxy Buds",
+      "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/kxtras/product_buds.png",
       "url": "url"
     },
     {
-      "name": "asd",
-      "image": "image",
+      "title": "Galaxy Watch Active",
+      "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/kxtras/product_Watch3.png",
+      "url": "url"
+    },
+    {
+      "title": "Samsung Tab",
+      "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/kxtras/product_tab.png",
       "url": "url"
     }
   ]

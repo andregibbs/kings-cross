@@ -13,25 +13,31 @@
   <section class="KXtras__section  KXtras__section--explore">
     <div class="KXtras__header  section">
       <div class="section__inner">
-        <div class="KXtras__header_icon">icon</div>
+        <div class="KXtras__header_icon">
+          <img src="https://images.samsung.com/is/content/samsung/p5/uk/explore/kings-cross/kxtras/icon-5g.svg" />
+         </div>
         <h2>Explore the Galaxy</h2>
       </div>
     </div>
-    <div class="KXtras__collect_banner">
-      <h3 class="fz50">Click & Collect</h3>
-      <h4 class="fz22">Now avaliable at Samsung KX</h4>
-      <span class="KXtras__collect_banner_disclaimer">*subject to availability</span>
+    <div class="KXtras__explore_wrap">
+      <div class="KXtras__collect_banner">
+        <h3 class="fz50">Click & Collect</h3>
+        <h4 class="fz22">Now avaliable at Samsung KX</h4>
+        <span class="KXtras__collect_banner_disclaimer">*subject to availability</span>
+      </div>
+      {{>home-of-innovation/hoiLinkList
+        class="KXtras__explore_items  hoiLinkList--scroll"
+        items=pageTemplateData.kxtras.products
+      }}
     </div>
-    {{>home-of-innovation/hoiLinkList
-      class="KXtras__explore_items  hoiLinkList--scroll"
-      items=pageTemplateData.kxtras.products
-    }}
   </section>
 
   <section class="KXtras__section KXtras__section--setup">
     <div class="KXtras__header  section">
       <div class="section__inner">
-        <div class="KXtras__header_icon">icon</div>
+        <div class="KXtras__header_icon">
+          <img src="https://images.samsung.com/is/content/samsung/p5/uk/explore/kings-cross/kxtras/icon-setup.svg" />
+        </div>
         <h2>Get a complimentary set up service</h2>
         <p>From unboxing onwards, our dedicated Samsung experts will guide you through every aspect of setup. From SmartSwitch to tailored 1 to 1s, we'll ensure you are getting the most from your new device.</p>
         <a
@@ -45,14 +51,15 @@
       </div>
     </div>
     <div class="KXtras__image">
-      <img src="" alt="">
     </div>
   </section>
 
   <section class="KXtras__section  KXtras__section--goodies">
     <div class="KXtras__header section">
       <div class="section__inner">
-        <div class="KXtras__header_icon">icon</div>
+        <div class="KXtras__header_icon">
+          <img src="https://images.samsung.com/is/content/samsung/p5/uk/explore/kings-cross/kxtras/icon-purchase.svg" />
+        </div>
         <h2>Want something a little more with your purchase?</h2>
         <p>
           Receive exclusive goodies*, complimentary set up service and full switch over when you purchase in-store or collect at Samsung KX.
