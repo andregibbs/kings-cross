@@ -251,6 +251,7 @@ gulp.task('html', function () {
   let pageTemplateData = {}
   INDIVIDUAL_PAGE_BUILDS.forEach(page => {
     let templateData = {}
+    delete require.cache[require(`${config.SRC_FOLDER}/js/pages/${page}/templateData.json`)];
     templateData[page] = require(`${config.SRC_FOLDER}/js/pages/${page}/templateData.json`)
     if (templateData[page]) {
       Object.assign(pageTemplateData, templateData)

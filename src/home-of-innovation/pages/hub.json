@@ -19,6 +19,7 @@
         "scroll": true
       },
       "items": [
+        "creativity|editing-sessions|6",
         "innovation|taste-of-tomorrow|insights-green-lab",
         "innovation|taste-of-tomorrow|grow-pro-green-green-lab",
         "innovation|taste-of-tomorrow|cook-pro-green-sara-kiyo-popowa",
@@ -109,6 +110,7 @@
         "scroll": true
       },
       "items": [
+        "creativity|editing-sessions|6",
         "creativity|yfa-creative-labs|halloween",
         "creativity|graduate-fashion-week|student-blog|tabatha-lopez",
         "creativity|graduate-fashion-week|student-blog|sophie-parnaby",
@@ -122,9 +124,7 @@
         "creativity|editing-sessions|3",
         "creativity|editing-sessions|2",
         "creativity|editing-sessions|1",
-        "creativity|central-saint-martins",
-        "creativity|british-museum|1",
-        "creativity|innovation-sessions|adam-gemili-rachel-ama-get-fit-get-cooking"
+        "creativity|central-saint-martins"
       ]
     },
     {

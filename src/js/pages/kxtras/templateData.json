@@ -3,37 +3,37 @@
     {
       "title": "Galaxy Note20 5G",
       "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/kxtras/product_note20.png",
-      "url": ""
+      "url": "https://www.samsung.com/uk/smartphones/galaxy-note20/buy/"
     },
     {
       "title": "Galaxy S20FE 5G",
       "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/kxtras/product_S20FE.png",
-      "url": "url"
+      "url": "https://www.samsung.com/uk/smartphones/galaxy-s20/buy/?modelCode=SM-G780FZBDEUA/"
     },
     {
-      "title": "Galaxy ZFold 5g",
+      "title": "Galaxy Z Fold2 5G",
       "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/kxtras/product_ZFold.png",
-      "url": "url"
+      "url": "https://www.samsung.com/uk/smartphones/galaxy-z-fold2/buy/"
     },
     {
-      "title": "Galaxy ZFlip",
+      "title": "Galaxy Z Flip 5G",
       "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/kxtras/product_ZFlip.png",
-      "url": "url"
+      "url": "https://www.samsung.com/uk/smartphones/galaxy-z-flip/buy/"
     },
     {
-      "title": "Galaxy Buds",
+      "title": "Galaxy Buds Live",
       "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/kxtras/product_buds.png",
-      "url": "url"
+      "url": "https://www.samsung.com/uk/wearables/galaxy-buds-live-r180/SM-R180NZNAEUA/buy/"
     },
     {
-      "title": "Galaxy Watch Active",
+      "title": "Galaxy Watch3",
       "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/kxtras/product_Watch3.png",
-      "url": "url"
+      "url": "https://www.samsung.com/uk/wearables/galaxy-watch3-r845/SM-R845FZKAEUA/buy/"
     },
     {
-      "title": "Samsung Tab",
+      "title": "Galaxy Tab S7",
       "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/kxtras/product_tab.png",
-      "url": "url"
+      "url": "https://www.samsung.com/uk/tablets/galaxy-tab-s7-plus-5g-t976/SM-T976BZNAEUA/buy/"
     }
   ]
 }
