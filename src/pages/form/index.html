@@ -1,0 +1,32 @@
+{{>headers/header}}
+
+<section class="cheil-static form">
+
+  {{>stylesheet page="form"}}
+
+	{{>components/common/kxNav/main }}
+
+  <h1>Form Test</h1>
+
+  <button id="clear">Clear Stored Options</button>
+
+  <div class="prompt">
+    Would you like to complete a survey?
+    <div>
+      <button id="yes">Yes</button>
+      <button id="no">No</button>
+    </div>
+  </div>
+
+  <div class="modal">
+    <button id="close">X</button>
+    <div id="form-target">
+
+    </div>
+  </div>
+
+  {{>scripts page="form"}}
+
+</section>
+
+{{>headers/footer}}
