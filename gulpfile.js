@@ -251,9 +251,13 @@ gulp.task('html', function () {
   let pageTemplateData = {}
   INDIVIDUAL_PAGE_BUILDS.forEach(page => {
     let templateData = {}
-    delete require.cache[require(`${config.SRC_FOLDER}/js/pages/${page}/templateData.json`)];
-    templateData[page] = require(`${config.SRC_FOLDER}/js/pages/${page}/templateData.json`)
-    if (templateData[page]) {
+    const pagePath = `${config.SRC_FOLDER}/js/pages/${page}/templateData.json`
+    // check if page template data for page exists
+    if (fs.existsSync(pagePath)) {
+      // delete cache for rebuild
+      delete require.cache[require(pagePath)];
+      templateData[page] = require(pagePath)
+      // combine page template data files
       Object.assign(pageTemplateData, templateData)
     }
   })
