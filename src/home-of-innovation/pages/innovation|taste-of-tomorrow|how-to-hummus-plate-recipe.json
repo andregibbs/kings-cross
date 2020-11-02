@@ -1,0 +1,109 @@
+{
+  "title": "How to create: Sara Kiyo Popowa’s delicious Hummus Plate",
+  "description": "Discover mindful cooking",
+  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/08_Samsung_Website_TOT_How_To_Recipes_1440x810_V1.png",
+  "alt": "",
+  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/08_Samsung_Website_TOT_How_To_Recipes_400x255_V1.png",
+  "group": "taste-of-tomorrow",
+  "sort": 8,
+  "meta": {
+    "icon": "article",
+    "tags": []
+  },
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/08_Samsung_Website_TOT_How_To_Recipes_1440x810_V1.png",
+        "alt": ""
+      },
+      "style": {
+        "desktop": "top",
+        "mobile": "bottom"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "How to create: Sara Kiyo Popowa’s delicious Hummus Plate"
+        }
+      ]
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "paragraphs",
+          "text": [
+            "Hummus is for more than carrot sticks – it can form the base of this super satisfying, endlessly variable meal. Making your own hummus is really easy if you own a food processor or blender. I like making mine thick and creamy by adding extra tahini, and leaving out the oil. Vinegar is a more sustainable option to lemons in this recipe. If you can, bulk - cook your own chickpeas – it’s easier than you think and tastes SO much better! Once cooked, they can be frozen in smaller portions so you always have some on hand. The hummus keeps for up to 5 days in the fridge."
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "Ingredients: Creamy Roast Garlic Hummus",
+          "level": "4"
+        },
+        {
+          "type": "html-list",
+          "items": [
+            "480g cooked chickpeas",
+            "6 tbsp tahini",
+            "2 tbsp + 1 tsp vinegar (any type)",
+            "4 cloves garlic, roasted (together with the veg)",
+            "150ml water",
+            "Handful of any fresh herbs, stalks included (optional)",
+            "Pinch of chilli powder, to taste",
+            "Seasalt to taste"
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "Ingredients: Roast Veg",
+          "level": "4"
+        },
+        {
+          "type": "html-list",
+          "items": [
+            "500g squash, in 1/2 inch slices",
+            "Handful of garlic cloves, unpeeled",
+            "150g (cherry) tomatoes",
+            "2 small peppers, chopped",
+            "Drizzle of olive oil",
+            "Seasalt to taste"
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "Tip",
+          "level": "4"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Roast extra veg and keep them in an airtight container in the fridge for up to 3 days. Use throughout the week to instantly bulk out salads, soups, stirfries. Blend them into the leftover hummus to change its flavour!"
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "Method",
+          "level": "4"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Preheat the oven to 190C. Drizzle a little olive oil over the tray and add the squash pieces and garlic with a scatter of salt, coating them in a little oil with your hands as you spread them out. Roast for about 5 minutes, then add the cherry tomatoes and peppers and roast for another 10-15 minutes until the tomatoes are slightly charred and the squash tender."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "dynamic": "more-articles",
+      "id": "taste-of-tomorrow",
+      "title": "More articles",
+      "style": {
+        "scroll": true
+      }
+    }
+  ]
+}
