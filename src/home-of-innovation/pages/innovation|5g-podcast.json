@@ -11,7 +11,7 @@
   "components": [
     {
       "type": "css-snippet",
-      "content": ".hoiKv__Media:after { padding-bottom: 36% !important; } .hoiParagraphs p { max-width: 940px; } @media screen and (max-width: 769px) { .hoiMedia { display: none; } .hoiKv__Media:after { padding-bottom: 112% !important; } .hoiKv__Media { background-image: url(https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/assets-v2/KX-KV-MO-2x.jpg) !important; background-size: cover; background-repeat: no-repeat; } }",
+      "content": ".hoiKv__Media:after { padding-bottom: 36% !important; } .hoiParagraphs p { max-width: 940px; } @media screen and (max-width: 769px) { .hoiMedia { display: none; } .hoiKv__Media:after { padding-bottom: 112% !important; } .hoiKv__Media { background-image: url(https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/WhateverNext_AndreaKX-KV-MO.jpg) !important; background-size: cover; background-repeat: no-repeat; } }",
       "__notes": "custom ratio for kv video"
     },
     {
@@ -38,8 +38,7 @@
           "type": "paragraphs",
           "text": [
             "The truth is, nobody does. But from smart cows to gaming with your mind, 5G is already changing what’s possible today. Dr Hannah Fry and comedian Suzi Ruffell are on a mission to speak to the extraordinary people using 5G to supercharge the tech world. Together, they’ll uncover the weird and wonderful stories that throw light on how our everyday lives are transforming.",
-            "Whatever’s next, one thing’s for sure, with the right tools and a head-full of ideas, 5G promises to build a better world for us all. A world we can all play a part in creating.",
-            "<img src=\"https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/paragraph-lockup.png\" style=\"width:168px; margin-top:20px;\"/>"
+            "Whatever’s next, one thing’s for sure, with the right tools and a head-full of ideas, 5G promises to build a better world for us all. A world we can all play a part in creating."
           ]
         }
       ]
@@ -65,7 +64,7 @@
         },
         {
           "title": "Find out what 5G will mean for you",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/banner-lockup.png",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/WhateverNext_Andreabanner-lockup.png",
           "image_right": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/banner-lockup-dots-crop.png",
           "alt": "White text reads \"You+ Samsung +5G\". teal lines radiate away from \"+5G\". Blue circles are visible in a grid behind the white text.",
           "link": "https://www.samsung.com/uk/galaxy-5g/",

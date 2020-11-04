@@ -79,7 +79,7 @@ $subview-zindex: 700;
   z-index: $raised-nav-item-zindex;
 }
 
-.kxNav__StickyNavLink a:hover {
+.kxNav__StickyNavLink a:not(.btn):hover {
   background-color: rgba(255,255,255,0.1);
 }
 

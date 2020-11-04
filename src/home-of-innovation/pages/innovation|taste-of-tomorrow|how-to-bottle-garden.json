@@ -7,15 +7,16 @@
   "group": "taste-of-tomorrow",
   "sort": 10,
   "meta": {
-    "icon": "article",
+    "icon": "video",
     "tags": []
   },
   "components": [
     {
       "type": "kv",
       "media": {
-        "type": "image",
-        "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/09b_Samsung_Website_How-To_Hydroponic_garden_1440x810_V1.png",
+        "type": "youtube",
+        "content": "dcWLv82Sl44",
+        "poster": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/09b_Samsung_Website_How-To_Hydroponic_garden_1440x810_V1.png",
         "alt": ""
       },
       "style": {
@@ -26,6 +27,11 @@
         {
           "type": "headline",
           "copy": "How to create: your own Hydroponic Bottle Garden"
+        },
+        {
+          "type": "headline",
+          "copy": "Simple growing solutions at home",
+          "level": "3"
         }
       ]
     },

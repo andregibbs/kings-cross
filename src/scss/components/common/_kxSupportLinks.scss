@@ -1,0 +1,117 @@
+.kxSupportLinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  max-width: 1920px;
+  margin: 0 auto;
+
+  padding: 0 100px;
+  @media screen and (max-width: $desktop) {
+    padding: 0 get-desktop-vw(100);
+  }
+
+  @media screen and (max-width: $mobile) {
+    padding: 0 get-mobile-vw(100);
+  }
+}
+
+.kxSupportLinks__title {
+  @media screen and (max-width: $mobile) {
+    text-align: center;
+    font-size: get-mobile-vw(54);
+  }
+}
+
+.kxSupportLinks__tiles {
+  display: flex;
+  justify-content: space-between;
+  // margin: 100px 0px; // adjustment for coronavirus message
+  margin: 50px 0 50px; // adjustment for coronavirus message
+  text-align:center;
+  @media screen and (max-width: $mobile) {
+    flex-direction: column;
+    margin: 50px 0 50px; // adjustment for coronavirus message
+  }
+}
+
+.kxSupportLinks__tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 30%;
+  min-height: 250px;
+
+  @media screen and (max-width: 1024px) {
+    min-height: auto; // adjustment for coronavirus message
+    // min-height: get-mobile-vw(450);
+  }
+
+  &_image,
+  &_heading,
+  > .btn {
+    flex-shrink: 0;
+  }
+
+  // tile image
+  &_image {
+    width: 45%;
+    height: 110px;
+    margin: 16px auto;
+    position: relative;
+
+    @media screen and (max-width: $desktop) {
+      height: get-desktop-vw(110);
+      margin: get-desktop-vw(16) auto;
+    }
+
+    @media screen and (max-width: $mobile) {
+      height: get-mobile-vw(150);
+      margin: get-mobile-vw(24) auto;
+    }
+
+    svg {
+      height: 100%;
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translate(-50%, 0);
+    }
+  }
+
+  // tile description
+  &_desc {
+    margin: 24px 0px;
+    @media screen and (max-width: $desktop) {
+      margin: get-desktop-vw(24) 0px;
+    }
+    @media screen and (max-width: $mobile) {
+      margin: get-mobile-vw(24) 0px;
+    }
+    flex-basis: 30%;
+  }
+
+  // center tile
+  &:nth-child(2) {
+    margin: 0 100px;
+    @media screen and (max-width: $desktop) {
+      margin: 0 get-desktop-vw(100);
+    }
+
+    @media screen and (max-width: $mobile) {
+      margin: get-mobile-vw(100) 0;
+    }
+  }
+
+  // mobile tile query
+  @media screen and (max-width: $mobile) {
+    text-align: center;
+    button {
+      margin: 0 auto;
+    }
+  }
+
+  // tile btn style
+  .btn {
+    margin: 0 auto;
+  }
+}

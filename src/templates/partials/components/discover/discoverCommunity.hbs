@@ -1,0 +1,17 @@
+<div class="discoverCommunity">
+
+  {{#each items}}
+    {{> discover-community-item this}}
+  {{/each}}
+
+</div>
+
+
+{{#*inline 'discover-community-item'}}
+  <div class="discoverCommunity__item">
+    <div class="discoverCommunity__item_body">
+      <h3>{{title}}</h3>
+      <p>{{description}}</p>
+    </div>
+  </div>
+{{/inline}}

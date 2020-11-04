@@ -1,20 +1,25 @@
-/*=============================================
-=            Discover           =
-=============================================*/
+// bootstrap
+@import '../../bootstrap';
+
+@import "../../components/common/hoiCards";
+@import "../../components/common/kxSupportLinks";
+
+// Discover Imports
 @import './discoverKv.scss';
 @import './discoverExperience.scss';
-@import './discoverEvents.scss';
+@import './discoverCommunity.scss';
+// @import './discoverEvents.scss';
 
+
+.cheil-static.discover {
+  .welcome__tiles {
+    margin-top: 0;
+  }
+}
 
 .section.discover__Hero {
   padding-top: 0 !important;
   padding-bottom: 2vw;
-}
-
-&.discover {
-  .welcome__tiles {
-    margin-top: 0;
-  }
 }
 
 // common header

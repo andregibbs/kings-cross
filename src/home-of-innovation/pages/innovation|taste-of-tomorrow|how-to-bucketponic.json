@@ -7,15 +7,16 @@
   "group": "taste-of-tomorrow",
   "sort": 9,
   "meta": {
-    "icon": "article",
+    "icon": "video",
     "tags": []
   },
   "components": [
     {
       "type": "kv",
       "media": {
-        "type": "image",
-        "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/09a_Samsung_Website_How-To_Bucketponic_1440x810_V1.png",
+        "type": "youtube",
+        "content": "wLAZKt-nk1I",
+        "poster": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/09a_Samsung_Website_How-To_Bucketponic_1440x810_V1.png",
         "alt": ""
       },
       "style": {
@@ -26,6 +27,11 @@
         {
           "type": "headline",
           "copy": "How to create: your own Bucketponic"
+        },
+        {
+          "type": "headline",
+          "copy": "Deep Water Culture Growing, using Smart Things tech",
+          "level": "3"
         }
       ]
     },
@@ -41,11 +47,11 @@
           "type": "html-list",
           "items": [
             "Air pump",
-            "Air stone Clay pebbles",
+            "Air stone",
             "Air pipe 1.5m",
             "20 Litre Bucket",
-            "4 x 8cm net pots",
-            "Plants (Chilli, Lettuce, Herbs)",
+            "1 x 14cm Net Pot",
+            "Plants (Herbs or Small Chilli Plant) ",
             "Small bag of clay pebbles",
             "Scissors*",
             "Craft Knife*",

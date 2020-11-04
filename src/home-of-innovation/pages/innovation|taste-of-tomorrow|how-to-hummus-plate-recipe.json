@@ -7,15 +7,16 @@
   "group": "taste-of-tomorrow",
   "sort": 8,
   "meta": {
-    "icon": "article",
+    "icon": "video",
     "tags": []
   },
   "components": [
     {
       "type": "kv",
       "media": {
-        "type": "image",
-        "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/08_Samsung_Website_TOT_How_To_Recipes_1440x810_V1.png",
+        "type": "youtube",
+        "content": "LWGyhOpm8SI",
+        "poster": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/08_Samsung_Website_TOT_How_To_Recipes_1440x810_V1.png",
         "alt": ""
       },
       "style": {

@@ -63,7 +63,8 @@ var config = {
   lists pages that have an isolated scss and js entry point
 */
 const INDIVIDUAL_PAGE_BUILDS = [
-  'kxtras'
+  'kxtras',
+  'discover'
 ]
 
 

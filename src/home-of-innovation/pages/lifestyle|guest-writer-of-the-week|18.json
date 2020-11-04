@@ -1,0 +1,115 @@
+{
+  "title": "Guest writer of the week: Build the perfect workout playlist",
+  "description": "",
+  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/18/KV_2.jpg",
+  "alt": "",
+  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/18/THUMBNAIL.png",
+  "group": "guest-writer-of-the-week",
+  "sort": 18,
+  "meta": {
+    "icon": "article",
+    "tags": []
+  },
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "{{lifestyle|guest-writer-of-the-week|18[image]}}",
+        "alt": "{{lifestyle|guest-writer-of-the-week|18[alt]}}"
+      },
+      "style": {
+        "desktop": "top",
+        "mobile": "bottom"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "Build the perfect workout playlist"
+        }
+      ]
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "paragraphs",
+          "text": [
+            "It probably seems obvious that music can help you have a better workout – after all, that’s the whole point of Spin studios, and even marathons sometimes have brass bands – but there’s more to hitting a new PB than just cranking up the volume and searching Spotify for Workout Bangers. The science of using music to enhance performance is well-established – and even if you’re not aiming for Olympian heights of achievement, there’s plenty you can do to make your next gym session more productive by just changing your tunes. Here’s how to build a better playlist – that takes you from hype-up to cooldown. "
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "For your warmup",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Going for a big session? The preparation starts before you even hit the gym. In a study of 54 tennis players who were interviewed on their pre-competition listening habits, most listened to music with a BPM of 90 or above, at an average of 87 decibels, to hit the state they described as ‘psyched up’. They also chose music that rated high for ‘familiarity’  – so choose a favourite up-tempo tune when you’re on final approach to the gym to make sure you’re ready to go. "
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "For a big cardio effort",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Time to up the tempo - preferably to roughly match whatever activity you’re doing. According to a 2010 study, music that hits that 120-140BPM sweet spot helped cyclists put in more effort, especially if they liked what they were listening to. Meanwhile, rowers who listened to a fast-tempo excerpt from Beethoven’s 7th symphony were able to go faster than those who listened to a slower section, or nothing at all . "
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "For a tough session",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "If you’ve got a mammoth effort planned, keep it upbeat: a 2012 study conducted with elite triathletes at the Queensland Academy of Sport showed that treadmill running to exhaustion was increased by more than 18% when participants ran in time to music that included everything from Oasis to Taylor Swift. Oddly, the effect was slightly more pronounced – going up to 19.7% – when volunteers ran to music that was described as ‘neutral’ rather than ‘motivational’  – so you might not need the Eye Of The Tiger for every single session."
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "For focus",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "If you’re doing a more skill-based workout – like practising your gymnastics work on rings, or doing technical Olympic-style lifts like the snatch or clean and jerk – it’s not the time to crank up your dubstep megamix. Slower, more familiar music can help you find your focus – as it did for two-time Olympic gold medalist Dame Kelly Holmes, who used Alicia Keys in her pre-event routine at the Athens Games of 2004, or Audley Harrison, who listened to Japanese classical music en route to his own podium spot."
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "For your cooldown",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Don’t ditch your <a href=\"https://www.samsung.com/uk/wearables/galaxy-buds-live-r180/SM-R180NZNAEUA/buy/\">Galaxy Buds Live</a> after your post-workout shower – they last for up to 21 hours, so there’s no need to be worrying about saving that battery. After your workout, the right music can produce bodily changes that mean you should recover more quickly. Stay tuned in for 20 to 30 minutes of slow, sedate music to lower your body’s levels of the stress hormone cortisol – it can also help you remember your training session more fondly, meaning that you’ll be more likely to want to repeat the experience. Keep it slow-paced and simple, avoiding complex rhythmic structures and jarring transitions – if you can handle some Handel, his classical compositions are ideal."
+          ]
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "<strong>By Joel Snape.</strong>",
+            "<em>Joel Snape is a freelance journalist, frequently contributing to titles including the Guardian, the Telegraph and Men’s Fitness. He now specialises in fitness, however previously spent time as an author, writing the children’s book series, Dylan Douglas.</em>"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "dynamic": "more-articles",
+      "id": "guest-writer-of-the-week",
+      "title": "More articles",
+      "style": {
+        "scroll": true
+      }
+    }
+  ]
+}

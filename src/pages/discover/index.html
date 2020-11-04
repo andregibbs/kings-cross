@@ -1,144 +1,128 @@
-{{#if config.staging}}
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
-  <body>
-{{else}}
-  <!--#include virtual="/uk/aem/header-pdp.html"-->
-{{/if}}
+{{>headers/header}}
 
-	<section class="cheil-static discover">
+<section class="cheil-static discover">
 
-    {{>stylesheet}}
+  {{>stylesheet page="discover"}}
 
-		{{>components/common/kxNav/main}}
+	{{>components/common/kxNav/main}}
 
-    <section class="section discover__Hero">
-      <div class="discoverKv section__inner">
-          {{>components/discover/discoverKv_slider items=config.discover.sliderTwo }}
-          <div class="discoverKv__svgs">
-            {{>components/discover/discoverKv_left_svg}}
-            {{>components/discover/discoverKv_right_svg}}
-          </div>
-          <div class="discoverKv__content">
-            <h1 class="fz50">Discover Samsung KX</h1>
-          </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="section__inner">
-        {{> discover-header
-          title="Experiences"
-          sub="Create, Make and Innovate"
-          text="Get hands on with some of our latest innovations. Discover experiences, including an AR simulator, 3D printing and a DJ booth, that'll help you <strong>#DoWhatYouCant</strong>"
-        }}
-        {{>components/discover/discoverExperience }}
-        <div class="discover__Button">
-          <a tabindex="0" ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:discover-visit-kx" data-omni-type="microsite" data-omni="uk:kings-cross:discover-visit-kx" class="btn btn--primary btn--primary--coral discover__VisitLink">Visit Samsung KX</a>
+  <section class="section discover__Hero">
+    <div class="discoverKv section__inner">
+        {{>components/discover/discoverKv_slider items=config.discover.sliderTwo }}
+        <div class="discoverKv__svgs">
+          {{>components/discover/discoverKv_left_svg}}
+          {{>components/discover/discoverKv_right_svg}}
         </div>
-      </div>
-    </section>
-
-    <section class="section section--nopad-v section--hide">
-      <div class="section__inner">
-        {{> discover-header
-          title="All KX Events"
-          sub="See What's On"
-        }}
-        <div class="discover__Button">
-          <a ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:discover-all-events" data-omni-type="microsite" data-omni="uk:kings-cross:discover-all-events" class="button btn btn--primary btn--primary--coral">All Events</a>
+        <div class="discoverKv__content">
+          <h1 class="fz50">Discover Samsung KX</h1>
         </div>
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section section--nopad-v">
-      <div class="section__inner">
+  <section class="section">
+    <div class="section__inner">
+      {{> discover-header
+        title="Experiences"
+        sub="Create, Make and Innovate"
+        text="Get hands on with some of our latest innovations. Discover experiences, including an AR simulator, 3D printing and a DJ booth, that'll help you <strong>#DoWhatYouCant</strong>"
+      }}
+      {{>components/discover/discoverExperience }}
+      <div class="discover__Button">
+        <a tabindex="0" ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:discover-visit-kx" data-omni-type="microsite" data-omni="uk:kings-cross:discover-visit-kx" class="btn btn--primary btn--primary--coral discover__VisitLink">Visit Samsung KX</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--nopad-v section--hide">
+    <div class="section__inner">
+      {{> discover-header
+        title="All KX Events"
+        sub="See What's On"
+      }}
+      <div class="discover__Button">
+        <a ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:discover-all-events" data-omni-type="microsite" data-omni="uk:kings-cross:discover-all-events" class="button btn btn--primary btn--primary--coral">All Events</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--nopad-v">
+    <div class="section__inner">
+      {{> discover-header
+        title="Highlights"
+        sub="Samsung KX Community"
+      }}
+      {{>components/discover/discoverCommunity items=pageTemplateData.discover.communityItems}}
+    </div>
+  </section>
+
+  <section class="section  section--hide">
+    <div class="section__inner">
+      {{> discover-header
+        title="Online Content"
+        sub="Home Of Innovation"
+      }}
+      {{>components/common/hoiCards}}
+    </div>
+  </section>
+
+	<section class="section section--fullbleed section--nopad-v">
+		<div class="section__inner">
         {{> discover-header
-          title="Highlights"
-          sub="Samsung KX Community"
+          title="Not a School"
+          sub="Unleash Your Future"
         }}
-        {{>components/discover/discoverEvents}}
-      </div>
-    </section>
+        <div class="discover__NotASchool">
+					<p class="fz18">A programme of workshops, debates and projects, giving the next generation of innovators a head start</p>
+					<a
+            href="/{{ config.site }}{{ config.subfolder }}/not-a-school/"
+						ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:discover-notaschool" data-omni-type="microsite" data-omni="uk:kings-cross:discover-notaschool"
+            class="button btn btn--primary btn--primary--black"
+            id="btn-support">
+            LEARN MORE
+				  </a>
+				</div>
 
-    <section class="section">
-      <div class="section__inner">
-        {{> discover-header
-          title="Online Content"
-          sub="Home Of Innovation"
-        }}
-        {{>components/common/hoiCards}}
-      </div>
-    </section>
+		</div>
+  </section>
 
-		<section class="section section--fullbleed section--nopad-v">
-			<div class="section__inner">
-          {{> discover-header
-            title="Not a School"
-            sub="Unleash Your Future"
-          }}
-          <div class="discover__NotASchool">
-						<p class="fz18">A programme of workshops, debates and projects, giving the next generation of innovators a head start</p>
-						<a
-              href="/{{ config.site }}{{ config.subfolder }}/not-a-school/"
-							ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:discover-notaschool" data-omni-type="microsite" data-omni="uk:kings-cross:discover-notaschool"
-              class="button btn btn--primary btn--primary--black"
-              id="btn-support">
-              LEARN MORE
-					  </a>
-					</div>
+  <section class="section">
+    <div class="section__inner">
+      {{> discover-header
+        title="SUPPORT LOUNGE"
+        sub="Product Help and Repairs"
+      }}
+      {{>components/common/kxSupportLinks showLinks=true}}
+    </div>
+  </section>
 
-			</div>
-    </section>
+	{{>components/common/findKx}}
+	{{>components/socialMedia}}
 
-    <section class="section">
-      <div class="section__inner">
-        {{> discover-header
-          title="SUPPORT LOUNGE"
-          sub="Product Help and Repairs"
-        }}
-        {{>components/common/welcomeTiles showLinks=true}}
-      </div>
-    </section>
+	{{>scripts page="discover"}}
 
-		{{>components/common/findKx}}
-
-		{{>components/socialMedia}}
-
-		{{>scripts }}
-
-    <script type="text/javascript">
-      // garbage required to insert veview slideshow
-      function checkJQuery() {
-        // if our main script has loaded and $j variable is accessible
-        if (typeof $j !== 'undefined') {
-          // assign to global jQuery (required by veview)
-          window.jQuery = $j
-          // insert script
-          var el = document.createElement('script')
-          el.src = "https://widget.veview.com/customers/www.samsung.com/gb/js/veview.widget.js",
-          document.querySelector('.cheil-static').appendChild(el)
-        } else {
-          // recheck
-          setTimeout(checkJQuery, 500)
-        }
+  <script type="text/javascript">
+    // garbage required to insert veview slideshow
+    function checkJQuery() {
+      // if our main script has loaded and $j variable is accessible
+      if (typeof $j !== 'undefined') {
+        // assign to global jQuery (required by veview)
+        window.jQuery = $j
+        // insert script
+        var el = document.createElement('script')
+        el.src = "https://widget.veview.com/customers/www.samsung.com/gb/js/veview.widget.js",
+        document.querySelector('.cheil-static').appendChild(el)
+      } else {
+        // recheck
+        setTimeout(checkJQuery, 500)
       }
-      // initial check
-      checkJQuery()
-    </script>
+    }
+    // initial check
+    checkJQuery()
+  </script>
 
-	</section>
+</section>
 
-{{#if config.staging}}
-  </body>
-</html>
-{{else}}
-<!--#include virtual="/uk/aem/footer-pdp.html"-->
-{{/if}}
+{{>headers/footer}}
 
 
 {{!-- inline templates --}}

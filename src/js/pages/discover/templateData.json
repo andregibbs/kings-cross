@@ -1,0 +1,19 @@
+{
+  "communityItems": [
+    {
+      "title": "item title",
+      "image": "item image",
+      "description": "item description"
+    },
+    {
+      "title": "item title",
+      "image": "item image",
+      "description": "item description"
+    },
+    {
+      "title": "item title",
+      "image": "item image",
+      "description": "item description"
+    }
+  ]
+}

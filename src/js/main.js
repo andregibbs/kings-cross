@@ -26,7 +26,7 @@ import repair from "./components/repair";
 import calendar from "./components/calendar";
 import slider from "./components/slider";
 import bookingRefFetcher from "./components/bookingRefFetcher";
-import discover from "./components/discover";
+// import discover from "./components/discover";
 import support from "./components/support";
 // import gaming from "./components/gaming";
 import experience from "./components/experience";
