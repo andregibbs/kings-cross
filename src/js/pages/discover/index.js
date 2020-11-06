@@ -2,7 +2,8 @@ import '../../bootstrap.js'
 import 'slick-carousel'
 
 import DiscoverExperience from './discoverExperience';
-import DiscoverEvents from './discoverEvents';
+// import DiscoverEvents from './discoverEvents';
+import DiscoverCommunity from './discoverCommunity';
 
 function Discover() {
 
@@ -40,6 +41,7 @@ function Discover() {
 
   // init discover experience component
   new DiscoverExperience(document.querySelector('.discoverExperience'));
+  new DiscoverCommunity()
   // new DiscoverEvents(document.querySelector('.discoverEvents'))
 
 }

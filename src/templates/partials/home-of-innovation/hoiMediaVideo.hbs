@@ -2,7 +2,13 @@
 <div class="hoiMedia__Wrap">
 {{/if}}
 
+  {{#if (eq type 'audio')}}
+  <audio
+    controlsList="nofullscreen nodownload noremoteplayback"
+  {{else}}
   <video
+  {{/if}}
+    {{!-- maintaining --video class names regardless of audio/video tag --}}
     class="hoiMedia hoiMedia--video hoiMedia--video{{class}}"
     {{#if (eq type 'audio')}}
       style="background-image: url('{{poster}}')"
@@ -29,7 +35,11 @@
       controls
     {{/if_defined}}
   >
-  </video>
+  {{#if (eq type 'audio')}}
+    </audio>
+  {{else}}
+    </video>
+  {{/if}}
 
 
   {{#if hide_state}}

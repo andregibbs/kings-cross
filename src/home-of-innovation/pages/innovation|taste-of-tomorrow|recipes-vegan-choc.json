@@ -1,9 +1,9 @@
 {
   "title": "Vegan Chocolate Mousse by Sara Kiyo Popowa",
   "description": "Vegan Chocolate Mousse recipe",
-  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/recipe_images_Photo_cred_Sara_Kiyo_Popowa_Oct_13_2019.jpg",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/recipe_images_Photo_cred_Sara_Kiyo_Popowa_Oct_13_2019.jpg",
   "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/10_Samsung_Website_Recipe_Chocolate_Mousse.jpg",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/10_Samsung_Website_Recipe_Chocolate_Mousse.jpg",
   "group": "taste-of-tomorrow",
   "sort": 5,
   "meta": {
@@ -15,7 +15,7 @@
       "type": "kv",
       "media": {
         "type": "image",
-        "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/recipe_images_Photo_cred_Sara_Kiyo_Popowa_Oct_13_2019.jpg",
+        "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/recipe_images_Photo_cred_Sara_Kiyo_Popowa_Oct_13_2019.jpg",
         "alt": ""
       },
       "style": {

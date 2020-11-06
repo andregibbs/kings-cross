@@ -1,9 +1,9 @@
 {
   "title": "Taste of Tomorrow: Songs for your Tongs",
   "description": "Cooking playlist picks",
-  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/07_Samsung_Website_TOT_Spotify_1440x810_V1.png",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/07_Samsung_Website_TOT_Spotify_1440x810_V1.png",
   "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/07_Samsung_Website_TOT_Spotify_400x255_V1.png",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/07_Samsung_Website_TOT_Spotify_400x255_V1.png",
   "group": "taste-of-tomorrow",
   "sort": 6,
   "meta": {
@@ -15,7 +15,7 @@
       "type": "kv",
       "media": {
         "type": "image",
-        "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/07_Samsung_Website_TOT_Spotify_1440x810_V1.png",
+        "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/07_Samsung_Website_TOT_Spotify_1440x810_V1.png",
         "alt": ""
       },
       "style": {

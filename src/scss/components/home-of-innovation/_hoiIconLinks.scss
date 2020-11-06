@@ -2,6 +2,11 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: $spacing-desktop;
+  @media screen and (max-width: $mobile) {
+    // flex-wrap: nowrap;
+    // flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .hoiIconLinks__Link {
@@ -9,8 +14,11 @@
   margin-right: 2.5em;
   margin-bottom: 2.5em;
   img {
-    width: initial;
-    height: initial;
+    width: auto;
+    height: auto;
+  }
+  @media screen and (max-width: $mobile) {
+    width: 40%;
   }
 }
 

@@ -256,7 +256,7 @@ gulp.task('html', function () {
     // check if page template data for page exists
     if (fs.existsSync(pagePath)) {
       // delete cache for rebuild
-      delete require.cache[require(pagePath)];
+      delete require.cache[require.resolve(pagePath)];
       templateData[page] = require(pagePath)
       // combine page template data files
       Object.assign(pageTemplateData, templateData)

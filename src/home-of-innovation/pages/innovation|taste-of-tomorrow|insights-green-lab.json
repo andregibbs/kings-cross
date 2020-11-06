@@ -1,9 +1,9 @@
 {
   "title": "Expert view: The future of food",
   "description": "Expert view on the future of food",
-  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/05_Samsung_Website_TOT_GreenLab_BLOG_1440x810_V1.png",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/05_Samsung_Website_TOT_GreenLab_BLOG_1440x810_V1.png",
   "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/05_Samsung_Website_TOT_GreenLab_BLOG_400x255_V1.png",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/05_Samsung_Website_TOT_GreenLab_BLOG_400x255_V1.png",
   "group": "taste-of-tomorrow",
   "sort": 1,
   "meta": {
@@ -15,7 +15,7 @@
       "type": "kv",
       "media": {
         "type": "image",
-        "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/05_Samsung_Website_TOT_GreenLab_BLOG_1440x810_V1.png",
+        "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/05_Samsung_Website_TOT_GreenLab_BLOG_1440x810_V1.png",
         "alt": ""
       },
       "style": {

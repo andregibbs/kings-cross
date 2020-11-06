@@ -28,6 +28,6 @@
   left: 0;
 }
 
-.discoverCommunity__item:hover {
+.discoverCommunity__item[active] {
   flex-grow: 2;
 }
