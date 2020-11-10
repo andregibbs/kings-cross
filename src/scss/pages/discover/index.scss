@@ -105,6 +105,29 @@
   }
 }
 
+.discover__OnlineBanner {
+  position: relative;
+  background-image: url(https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/hub_kv_opt.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  &:before {
+    content: '';
+    padding-bottom: 50%;
+    display: block;
+
+    @media screen and (min-width: $mobile + 1) {
+      padding-bottom: 29.1%;
+    }
+  }
+  .btn {
+    margin-bottom: 1rem;
+  }
+}
+
 .discover__VisitLink {
   // color: $coral;
   // text-transform: uppercase;

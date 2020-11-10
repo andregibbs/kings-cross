@@ -71,6 +71,8 @@ $subview-zindex: 700;
   text-align: center;
   letter-spacing: 1px;
   font-size: 13px;
+
+
 }
 
 // pre raised above search view
@@ -85,7 +87,7 @@ $subview-zindex: 700;
 
 // Desktop signup link (temp)
 .kxNav__StickyNavLink--signup {
-  padding: 0.5em;
+  padding: 0.5em 0;
 }
 
 // Mobile Nav (sidebar)

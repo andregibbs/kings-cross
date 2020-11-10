@@ -1,20 +1,50 @@
 {
+  "kv_slider": [
+    {
+      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/discover/kv_slider/discover_kv_1.jpg",
+      "alt": ""
+    },
+    {
+      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/discover/kv_slider/discover_kv_2.jpg",
+      "alt": ""
+    },
+    {
+      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/discover/kv_slider/discover_kv_3.jpg",
+      "alt": ""
+    },
+    {
+      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/discover/kv_slider/discover_kv_4.jpg",
+      "alt": ""
+    },
+    {
+      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/discover/kv_slider/discover_kv_5.jpg",
+      "alt": ""
+    },
+    {
+      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/discover/kv_slider/discover_kv_6.jpg",
+      "alt": ""
+    }
+  ],
   "communityItems": [
     {
-      "title": "item title",
-      "image": "item image",
-      "description": "item description"
+      "title": "Samsung KX50",
+      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/discover/community/discover_communities_1.jpg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "__anchor desc": "offset the image position when item is inactive. in %",
+      "anchor": "-5"
     },
     {
-      "title": "item title",
-      "image": "item image",
-      "description": "item description",
-      "active": true
+      "title": "Age UK",
+      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/discover/community/discover_communities_2.jpg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "active": true,
+      "anchor": "-25"
     },
     {
-      "title": "item title",
-      "image": "item image",
-      "description": "item description"
+      "title": "Mind",
+      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/discover/community/discover_communities_3.jpg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "anchor": "0"
     }
   ]
 }

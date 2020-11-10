@@ -1,17 +1,48 @@
 <div class="discoverCommunity">
 
-  {{#each items}}
-    {{> discover-community-item this}}
-  {{/each}}
+  <div class="discoverCommunity__titles">
+    {{#each items}}
+      <div
+        class="discoverCommunity__title"
+        {{#if active}}active {{/if}}>
+        <h3 class="fz30">{{title}}</h3>
+      </div>
+    {{/each}}
+  </div>
+
+  <div class="discoverCommunity__items">
+    {{#each items}}
+      {{> discover-community-item this}}
+    {{/each}}
+  </div>
 
 </div>
 
 
 {{#*inline 'discover-community-item'}}
-  <div class="discoverCommunity__item" {{#if active}}active {{/if}}>
+
+  <div
+    class="discoverCommunity__item"
+    {{#if active}}active {{/if}}
+    data-anchor="{{anchor}}"
+    data-anchor-active="{{anchorActive}}"
+    >
+
+    <img class="discoverCommunity__item_image"
+      src="{{image}}"
+      {{#if (ne active true)}}
+        style="transform: translateX({{anchor}}%)"
+      {{/if}}
+      />
+    <div
+      class="discoverCommunity__item_image_mobile"
+      style="background-image: url({{image}})">
+    </div>
     <div class="discoverCommunity__item_body">
-      <h3>{{title}}</h3>
+      <h3 class="fz30">{{title}}</h3>
       <p>{{description}}</p>
+      <a class="btn btn--primary btn--primary--coral">CTA</a>
     </div>
   </div>
+
 {{/inline}}

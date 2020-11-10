@@ -1,17 +1,21 @@
+$center-slide-scale: 1.8;
+$slide-scale: 0.95;
+
 // discover v2 kv styles
 .discoverKv {
   padding: 0;
   position: relative;
 
-  height: 60vw;
-  @media screen and (min-width: $mobile + 1) {
-    // calculate slide height based on 1.8 center scale, then double it
-    height: calc((((100vw - 40px) / 3) * 1.8) * 0.52);
+  height: calc(70vw * 0.52);
 
+  @media screen and (min-width: $mobile + 1) {
+    height: calc((60vw * 1.1) * 0.52); // new full width
   }
   @media screen and (min-width: 1440px + 1) {
     // ((((width - padding) / 3) * scale) * imageRatio) * 2 (doubleheight)
-    height: calc(((1440px / 3) * 1.8) * 0.52);
+    height: calc(((1440px / 3) * #{$center-slide-scale}) * 0.52);
+    max-width: 1440px;
+    margin: 0 auto;
   }
 
   // initalise states
@@ -61,16 +65,17 @@
       position: absolute;
       width: 75%;
       // (width - padding) / 3slides ) * scale) * imageRatio ) centerSlideScale)
-      top: calc(((((100vw - 40px) / 3) * 1) * 0.52) * 3);
-      @media screen and (min-width: $mobile-small + 1) {
-        top: calc(((((100vw - 80px) / 3) * 1) * 0.52) * 3);
-      }
+      // top: calc(((((100vw - 40px) / 3) * 1) * 0.52) * 3);
+      top: calc((70vw * #{$slide-scale}) * 0.52);
+      // @media screen and (min-width: $mobile-small + 1) {
+      //   top: calc(((((100vw - 80px) / 3) * 1) * 0.52) * 3);
+      // }
       @media screen and (min-width: $mobile + 1) {
         width: 50%;
-        top: calc((((100vw - 80px) / 3) * 1) * 0.48);
+        top: calc((60vw * #{$slide-scale}) * 0.52);
       }
       @media screen and (min-width: $desktop + 1) {
-        top: calc(((1440px / 3) * 1 )* 0.48);
+        top: calc(((1440px * 0.6) * #{$slide-scale}) * 0.52);
       }
       &--left {
         left: 0;
@@ -81,7 +86,7 @@
       }
     }
     @media screen and (min-width: $mobile + 1) {
-      // transform: scale(1.8);
+      // transform: scale($center-slide-scale);
       .discoverKv__svg--right {
         display: block;
       }
@@ -92,7 +97,13 @@
   .discoverKv__content {
     height: 100%;
     @media screen and (max-width: $mobile) {
-      height: 80%;
+      height: 100%;
+      h1 {
+        font-size: 2.5em !important;
+        max-width: 50vw;
+        text-align: center;
+        line-height: 1.2;
+      }
     }
     position: absolute;
     z-index: 3;
@@ -130,9 +141,19 @@
       transform-origin: top center;
       transition: 0.25s ease-in-out;
       position: relative;
+      width: 70vw;
+      transform: scale(#{$slide-scale});
 
       & > div > div {
         display: block !important;
+      }
+
+      @media screen and (min-width: $mobile + 1) {
+        width: 60vw;
+      }
+
+      @media screen and (min-width: $desktop + 1) {
+        width: calc(1440px * 0.6);
       }
 
       &:before {
@@ -156,21 +177,63 @@
 
     }
     .slick-center {
-      transform: scale(3);
+      // transform: scale(3);
       z-index: 12;
 
       &:before {
-        opacity: 0;
+        opacity: 0.1;
       }
-      @media screen and (min-width: $mobile + 1) {
-        transform: scale(1.8);
-      }
-      transition: 0.5s 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+      // @media screen and (min-width: $mobile + 1) {
+        // transform: scale($center-slide-scale);
+        transform: scale(1.1);
+      // }
+      // transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
       img {
         margin: 0;
         z-index: 10;
         @media screen and (max-width: $mobile) {
           box-shadow: none;
+        }
+      }
+    }
+    .slick-arrow {
+      z-index: 100;
+      position: absolute;
+      left: 50%;
+      right: 0;
+      font-size: 0;
+      width: 1em;
+      height: 1em;
+      pointer-events: all;
+      &:before {
+        display: block;
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        background-image: url(https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/icon/chevron.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 2rem;
+        height: 2rem;
+        @media screen and (min-width: $mobile + 1) {
+          width: 3rem;
+          height: 3rem;
+        }
+      }
+      &.slick-prev {
+        transform: translateX(calc(-30vw - 50%)) scale(-1,1);
+
+        @media screen and (min-width: $desktop + 1) {
+          // (1440 * 0.6) / 2
+          transform: translateX(calc(-432px - 50%)) scale(-1,1);
+        }
+      }
+      &.slick-next {
+        transform: translateX(calc(30vw - 50%));
+        @media screen and (min-width: $desktop + 1) {
+          transform: translateX(calc(432px - 50%));
         }
       }
     }

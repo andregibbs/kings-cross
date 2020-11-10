@@ -6,9 +6,9 @@
 
 	{{>components/common/kxNav/main}}
 
-  <section class="section discover__Hero">
-    <div class="discoverKv section__inner">
-        {{>components/discover/discoverKv_slider items=config.discover.sliderTwo }}
+  <section class="discover__Hero _section">
+    <div class="discoverKv _section__inner">
+        {{>components/discover/discoverKv_slider items=pageTemplateData.discover.kv_slider }}
         <div class="discoverKv__svgs">
           {{>components/discover/discoverKv_left_svg}}
           {{>components/discover/discoverKv_right_svg}}
@@ -55,21 +55,30 @@
     </div>
   </section>
 
-  <section class="section  section--hide">
+  <section class="section">
     <div class="section__inner">
       {{> discover-header
-        title="Online Content"
-        sub="Home Of Innovation"
+        title="Video / Podcasts / Article"
+        sub="Watch Online Content"
       }}
-      {{>components/common/hoiCards}}
+      <div class="discover__OnlineBanner">
+        <a
+          ga-ca="microsite"
+          ga-ac="feature"
+          ga-la="kings-cross:discover-watch-online-content"
+          data-omni-type="microsite"
+          data-omni="uk:kings-cross:discover-watch-online-content"
+          class="btn btn--primary btn--primary--saffron">
+          Watch
+        </a>
+      </div>
     </div>
   </section>
 
-	<section class="section section--fullbleed section--nopad-v">
+	<section class="section section--nopad-v section--fullbleed">
 		<div class="section__inner">
         {{> discover-header
-          title="Not a School"
-          sub="Unleash Your Future"
+          sub="Not a School"
         }}
         <div class="discover__NotASchool">
 					<p class="fz18">A programme of workshops, debates and projects, giving the next generation of innovators a head start</p>
@@ -88,8 +97,8 @@
   <section class="section">
     <div class="section__inner">
       {{> discover-header
-        title="SUPPORT LOUNGE"
-        sub="Product Help and Repairs"
+        title="Get help with samsung products"
+        sub="Get Support at Samsung KX"
       }}
       {{>components/common/kxSupportLinks showLinks=true}}
     </div>
@@ -132,7 +141,7 @@
     <h2 class="fz20">{{title}}</h2>
     <h3 class="fz30">{{sub}}</h3>
     {{#if text}}
-      <p class="fz16">{{{text}}}</p>
+      <p class="fz18">{{{text}}}</p>
     {{/if}}
   </div>
 {{/inline}}

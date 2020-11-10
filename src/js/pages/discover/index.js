@@ -27,9 +27,10 @@ function Discover() {
       initialSlide: 0,
       dots: false,
       focusOnSelect: true,
-      prevArrow: false,
-      nextArrow: false,
-      speed: 750
+      // prevArrow: false,
+      // nextArrow: false,
+      speed: 750,
+      variableWidth: true
   })
 
   visitKxLink.addEventListener('click', () => {
