@@ -28,8 +28,23 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+  margin-bottom: $m-borders-desktop / 2 + px;
+  @media screen and (max-width: $desktop) {
+    margin-bottom: get-desktop-vw($m-borders-desktop / 2);
+  }
   @media screen and (max-width: $mobile) {
+    margin-bottom: get-mobile-vw($m-borders-mobile / 2);
     font-size: 0.6rem !important;
+  }
+
+  &--large-bottom-margin {
+    margin-bottom: $m-borders-desktop + px;
+    @media screen and (max-width: $desktop) {
+      margin-bottom: get-desktop-vw($m-borders-desktop);
+    }
+    @media screen and (max-width: $mobile) {
+      margin-bottom: get-mobile-vw($m-borders-mobile);
+    }
   }
   h2 {
     // @extend .fz20;
@@ -74,7 +89,6 @@
 
 
 .discover__NotASchool {
-  @extend .section;
   background: url(https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/school/Kx_NAS_signpost.png);
   background-size: auto 75%;
   background-position: center top;
@@ -83,20 +97,21 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  margin: 25px 0;
+  // margin: 25px 0;
   align-items: center;
   text-align: center;
   padding-bottom: 0;
 
   p {
     margin-bottom: 4vw;
+    max-width: 60vw;
   }
 
   @media screen and (min-width: $mobile + 1) {
     background-size: cover;
     height: 500px;
     // height: 57vh;
-    margin-top: 50px;
+    // margin-top: 50px;
     // margin-bottom: 2vw;
     font-size: 1em;
     p {
@@ -125,6 +140,9 @@
   }
   .btn {
     margin-bottom: 1rem;
+    @media screen and (min-width: $mobile + 1) {
+      margin-bottom: 2rem;
+    }
   }
 }
 

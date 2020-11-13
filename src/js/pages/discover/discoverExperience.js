@@ -32,7 +32,7 @@ export default class DiscoverExperience {
     el.style.zIndex = '5';
 
     const target = document.querySelector('.discoverExperience__Items').getBoundingClientRect();
-    const nav = document.querySelector('.nav').offsetHeight * 1.5
+    const nav = document.querySelector('.kxNav').offsetHeight * 1.5
 
     if (window.innerWidth > 768) {
       $j('html, body').animate({

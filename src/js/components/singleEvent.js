@@ -20,14 +20,33 @@ export default function singleEvent(events) {
   // Populating event details from query string
   // =================================================
 
-  $j.get({
-    url: "https://bookings.qudini.com/booking-widget/event/series/" + kxConfig.seriesId,
-    success: seriesReceived
-  });
+  let seriesIdsAsInts = []
+
+  // $j.get({
+  //   url: "https://bookings.qudini.com/booking-widget/event/series/" + kxConfig.seriesId,
+  //   success: seriesReceived
+  // });
+
+  /// TODO: rework
+  // script has to pull in both series types to fetch their ids,
+  // this is checked against the series id of the single event data from the url
+
+  function getSeriesData(seriesId, cb, data) {
+    return $j.get("https://bookings.qudini.com/booking-widget/event/series/" + seriesId, {
+      'timezone': "Europe/London",
+      'isoCurrentDate': isoCurrentDate.toISOString()
+    })
+  }
+
+  $j.when(getSeriesData(kxConfig.seriesId), getSeriesData(kxConfig.seriesId_Webinars))
+    .then((seriesData, webinarsData) => {
+      seriesIdsAsInts.push(seriesData[0].id)
+      seriesIdsAsInts.push(webinarsData[0].id)
+      seriesReceived()
+    })
 
   function seriesReceived(seriesData) {
       // get the Integer value for the current series as this is returned by the event API - we need to check below that the event is valid for the series
-    kxConfig.seriesIdAsInt = seriesData.id;
     $j.get({
       url: "https://bookings.qudini.com/booking-widget/event/eventId/" + id,
       data: {
@@ -65,8 +84,7 @@ export default function singleEvent(events) {
     sortEventExtra(data);
 
     eventId = data.id;
-    console.log(data.seriesId, kxConfig.seriesIdAsInt)
-    if (data.seriesId == kxConfig.seriesIdAsInt) {
+    if (seriesIdsAsInts.indexOf(data.seriesId) > -1) {
       const options = {
         identifier: data.identifier,
         groupSize: data.maxGroupSize,
@@ -600,6 +618,7 @@ export default function singleEvent(events) {
         fail: function (err) {
           $j(".book__form-submit").attr("disabled", false);
           $j(".cm-configurator-loader").hide();
+          console.log("aaaaa", err)
           doLog(err);
         }
       });

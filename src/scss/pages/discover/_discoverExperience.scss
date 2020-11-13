@@ -7,7 +7,7 @@ $easing: cubic-bezier(0.85, 0, 0.15, 1);
   width: 100%;
   position: relative;
   z-index: 2;
-  margin: 25px 0;
+  margin-bottom: 2rem;
 }
 
 .discoverExperience__Item {
@@ -69,6 +69,9 @@ $easing: cubic-bezier(0.85, 0, 0.15, 1);
 }
 
 .discoverExperience__Item[active="true"] {
+  &:before {
+    display: none;
+  }
   .discoverExperience__ItemBody--inactive {
     transition: $item-transition-duration $easing;
     transform: translate(0, 110%);
@@ -92,7 +95,7 @@ $easing: cubic-bezier(0.85, 0, 0.15, 1);
 
   .discoverExperience {
     padding-bottom: 45%;
-    margin: 50px 0;
+    margin-bottom: 4rem;
   }
 
   .discoverExperience__Items {
@@ -104,6 +107,7 @@ $easing: cubic-bezier(0.85, 0, 0.15, 1);
   }
 
   .discoverExperience__Item {
+    @include shine-hover;
     transition: $item-transition-duration $easing, opacity #{$item-transition-duration / 2} $easing;
     position: absolute;
     padding-bottom: 0;

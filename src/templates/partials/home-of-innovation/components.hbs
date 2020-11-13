@@ -72,6 +72,10 @@
     {{> home-of-innovation/hoiHtmlList this}}
   {{/if_equals}}
 
+  {{#if_equals this.type 'class-container'}}
+    {{> home-of-innovation/hoiClassContainer this}}
+  {{/if_equals}}
+
   {{!--
     Group, Related & Link list
     All the same components, different method of populating

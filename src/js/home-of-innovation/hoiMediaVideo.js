@@ -12,9 +12,11 @@ const TRACKING = {
   ACTION_PLAY: 'Play',
   ACTION_UPDATE: 'Progress',
   ACTION_PAUSE: 'Pause',
-  ACTION_ENDED: 'Ended'
+  ACTION_ENDED: 'Ended',
+  ACTION_SEEKED: 'Seek'
 }
 
+// Not just for video (audio too)
 export default class HOIMediaVideo {
 
   constructor(videoEl) {
@@ -23,6 +25,7 @@ export default class HOIMediaVideo {
     this.fileName = this.media.src.split('/').slice(-1)[0]
 
     this.mediaStarted = false // if media has been started
+    this.mediaSeeked = false // store seeking interaction
     this.lastMediaProgress = false // percent of media progress for tracking event
 
     // video state is optional, can be hidden
@@ -59,14 +62,14 @@ export default class HOIMediaVideo {
     }
 
     this.media.addEventListener('canplay', (e) => {
+      // ignore if media already initiated
       if (!this.mediaStarted) {
-        // ignore if media already played once
         this.setState(HOI_MEDIA_STATE.play);
       }
     })
 
     this.media.addEventListener('canplaythrough', (e) => {
-      // ignore if media already played once
+      // ignore if media already initiated
       if (!this.mediaStarted) {
         this.setState(HOI_MEDIA_STATE.play);
       }
@@ -80,7 +83,9 @@ export default class HOIMediaVideo {
     this.media.addEventListener('pause', (e) => {
       if (!this.media.seeking) {
         this.setState(HOI_MEDIA_STATE.play);
-        trackEvent(TRACKING.CATEGORY, TRACKING.ACTION_PAUSE, this.fileName)
+        trackEvent(TRACKING.CATEGORY, TRACKING.ACTION_PAUSE, this.fileName, {
+          eventValue: Math.floor(this.getMediaPositionProgress() * 100)
+        })
       }
     })
 
@@ -89,7 +94,15 @@ export default class HOIMediaVideo {
     })
 
     this.media.addEventListener('play', e => {
-      trackEvent(TRACKING.CATEGORY, TRACKING.ACTION_PLAY, this.fileName)
+      if (!this.mediaSeeked) {
+        trackEvent(TRACKING.CATEGORY, TRACKING.ACTION_PLAY, this.fileName, {
+          eventValue: Math.floor(this.getMediaPositionProgress() * 100)
+        })
+      } else {
+        trackEvent(TRACKING.CATEGORY, TRACKING.ACTION_SEEKED, this.fileName, {
+          eventValue: Math.floor(this.getMediaPositionProgress() * 100)
+        })
+      }
     })
 
     this.media.addEventListener('ended', e => {
@@ -101,24 +114,46 @@ export default class HOIMediaVideo {
       this.setState(HOI_MEDIA_STATE.playing)
     })
 
+    this.media.addEventListener('seeking', e => {
+      // set flag for seeking, is reset during trackProgress
+      this.mediaSeeked = true
+    })
+
+    this.media.addEventListener('seeked', e => {
+      // set flag for seeking, is reset during trackProgress
+      this.mediaSeeked = true
+    })
+
+  }
+
+  getMediaPositionProgress() {
+    const {duration, currentTime, paused} = this.media
+    return currentTime / duration
   }
 
   trackProgress() {
     // monitors the percentage progress of media playback, sends tracking event every 10%
     const {duration, currentTime, paused} = this.media
     let progress;
-    if (!!duration && !!currentTime && !paused) {
+
+    // skip if no values or media was previously seeked
+    if (!!duration && !!currentTime && !paused && !this.mediaSeeked) {
       // progress rounded to mutiples of 10 (0%,10%,20%,30%...100%)
-      progress = Math.floor((currentTime / duration) * 10) * 10
+      progress = Math.floor(this.getMediaPositionProgress() * 10) * 10
       // want to trigger if value doesnt equal the last, will capture forward and backwards scrubbing
       if (progress !== this.lastMediaProgress) {
         // console.log('progress update', progress)
-        // add event
         trackEvent(TRACKING.CATEGORY, TRACKING.ACTION_UPDATE, this.fileName, {
-          progress
+          eventValue: progress
         })
       }
       this.lastMediaProgress = progress
+    }
+    // if media has seeked, dont fire progress event and reset lastMediaProgress to seeked position
+    if (this.mediaSeeked) {
+      progress = Math.floor(this.getMediaPositionProgress() * 10) * 10
+      this.lastMediaProgress = progress
+      this.mediaSeeked = false
     }
   }
 

@@ -1,10 +1,10 @@
 const LIVE_TRACKING_ID = "UA-100137701-12"
-const QA_TRACKING_ID = "UA-101298876-1"
-const TRACKING_ID = location.host == "www.samsung.com" ? LIVE_TRACKING_ID : LIVE_TRACKING_ID
+const QA_TRACKING_ID = "UA-100137701-12" // "UA-101298876-1" //  qa tracking - currently unaccessible
+const TRACKING_ID = location.host == "www.samsung.com" ? LIVE_TRACKING_ID : QA_TRACKING_ID
 
 if (typeof ga !== "undefined") {
-  console.log('ga created', TRACKING_ID)
-  // ga("create", TRACKING_ID, { cookieExpires: "33696000", cookieDomain: "auto" });
+  // console.log('ga created', TRACKING_ID)
+  ga("create", TRACKING_ID, { cookieExpires: "33696000", cookieDomain: "auto" });
 }
 
 export function trackEvent(category, action, label, customKeys) {
@@ -27,8 +27,8 @@ export function trackEvent(category, action, label, customKeys) {
     }
 
     if (typeof ga !== "undefined") {
-      console.log('track', trackObj)
-      // ga("send", trackObj);
+      // console.log('ga', trackObj)
+      ga("send", trackObj);
     }
 
     // disabled until tested

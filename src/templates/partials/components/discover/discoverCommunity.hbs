@@ -5,7 +5,7 @@
       <div
         class="discoverCommunity__title"
         {{#if active}}active {{/if}}>
-        <h3 class="fz30">{{title}}</h3>
+        <h3 class="fz22">{{{title}}}</h3>
       </div>
     {{/each}}
   </div>
@@ -36,10 +36,13 @@
       />
     <div
       class="discoverCommunity__item_image_mobile"
-      style="background-image: url({{image}})">
+      style="
+        background-image: url({{image}});
+        background-position: {{background-position-mobile}};
+      ">
     </div>
     <div class="discoverCommunity__item_body">
-      <h3 class="fz30">{{title}}</h3>
+      <h3 class="fz30">{{{title}}}</h3>
       <p>{{description}}</p>
       <a class="btn btn--primary btn--primary--coral">CTA</a>
     </div>

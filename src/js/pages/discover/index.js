@@ -30,7 +30,9 @@ function Discover() {
       // prevArrow: false,
       // nextArrow: false,
       speed: 750,
-      variableWidth: true
+      variableWidth: true,
+      autoplay: true,
+      autoplaySpeed: 6000,
   })
 
   visitKxLink.addEventListener('click', () => {

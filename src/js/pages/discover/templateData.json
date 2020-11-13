@@ -17,34 +17,33 @@
       "alt": ""
     },
     {
-      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/discover/kv_slider/discover_kv_5.jpg",
-      "alt": ""
-    },
-    {
       "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/discover/kv_slider/discover_kv_6.jpg",
       "alt": ""
     }
   ],
   "communityItems": [
     {
-      "title": "Samsung KX50",
+      "title": "Samsung KX50:<br/> The Future in Focus",
       "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/discover/community/discover_communities_1.jpg",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "description": "Samsung KX invited six futurists and academics to look ahead to the next 50 years of digital evolution and predict how it will affect our cities, our travel, our working lives, our food, our leisure and our health.",
       "__anchor desc": "offset the image position when item is inactive. in %",
-      "anchor": "-5"
+      "anchor": "-5",
+      "background-position-mobile": "57% center"
     },
     {
-      "title": "Age UK",
+      "title": "Age UK Camden",
       "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/discover/community/discover_communities_2.jpg",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "description": "Samsung KX have teamed up with Age UK Camden to give over 55’s in Camden the opportunity to up-skill and learn ways of using new technology to benefit them in everyday life. Members are encouraged to step outside of their comfort zone and engage in Digital Art, Photography, Online Shopping workshops and more.",
       "active": true,
-      "anchor": "-25"
+      "anchor": "-25",
+      "background-position-mobile": "83% center"
     },
     {
-      "title": "Mind",
+      "title": "Mind in Camden",
       "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/discover/community/discover_communities_3.jpg",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "anchor": "0"
+      "description": "Samsung KX has worked with Mind in Camden to create a safe and welcoming space, in which members can attend weekly coffee mornings, receiving complimentary hot drinks and refreshments, as well as providing a dial in service, where members can call in on a Galaxy Tab S7 to speak to others.",
+      "anchor": "0",
+      "background-position-mobile": "63% center"
     }
   ]
 }
