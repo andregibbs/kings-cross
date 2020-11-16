@@ -30,6 +30,12 @@
         {
           "type": "headline",
           "copy": "Tabatha explores fashion through an S20 FE lens"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Tabatha Lopez-Palmby uses the S20 FE for her latest fashion photography shoot, and interviews her subjects on the impact of technology in their lives"
+          ]
         }
       ]
     },
@@ -200,11 +206,29 @@
             "items": [
               {
                 "copy": "Download Portfolio",
-                "url": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/student-blog/tabatha-lopez-2/Samsung-Tabatha_Lopez_Palmby.pdf"
+                "url": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/student-blog/tabatha-lopez-2/Samsung_V02.pdf"
               }
             ]
           },
           "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/student-blog/tabatha-lopez-2/mubiyna_4.jpg"
+        },
+        {
+          "type": "image",
+          "title": "Galaxy S20 FE",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/student-blog/tabatha-lopez-2/Galaxy_S20_FE_Cloud_Navy-th.jpg",
+          "list_buttons": {
+            "style": {
+              "align": "center"
+            },
+            "items": [
+              {
+                "copy": "Galaxy S20 FE",
+                "url": "https://www.samsung.com/uk/smartphones/galaxy-s20/buy/?modelCode=SM-G780FZBDEUA/&cid=UK_PPC_3998554642_FF~Eval:Brand_SamsungShop_KS~BA_BS~IM_PR~ECOM_SB~ECOM_OB~TRAFFIC_PK~ROAS_FS~LHQ_MD~W_AI~N_MT~EXA_CA~KEW_paid-cdm&gclid=Cj0KCQjw8fr7BRDSARIsAK0Qqr6J0B95q_56QJ6f29QoqNR8qcmNE4PY6ui6L6DIA99eakqssEEopd8aAiCXEALw_wcB&gclsrc=aw.ds",
+                "target": "_blank"
+              }
+            ]
+          },
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/student-blog/tabatha-lopez-2/Galaxy_S20_FE_Cloud_Navy.jpg"
         }
       ]
     },

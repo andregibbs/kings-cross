@@ -56,7 +56,7 @@
             },
             {
               "title": "Google Podcasts",
-              "link": false,
+              "link": "https://podcasts.google.com/feed/aHR0cHM6Ly9yc3MuYWNhc3QuY29tL3doYXRldmVyLW5leHQ/episode/NGVhZjYzMTctOTgxZi00NDc3LWFiMDEtNGQ2M2IwOTg2YWVk?sa=X&ved=0CAUQkfYCahcKEwi4yNnD4P_sAhUAAAAAHQAAAAAQAQ",
               "target": "_blank",
               "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ico-google-podcasts.png"
             },
