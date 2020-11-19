@@ -1,11 +1,11 @@
 {
-  "title": "Coming Soon: Episode 7: ",
+  "title": "Coming Soon: Episode 7: Interactive yoga pants… Whatever Next?",
   "description": "",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/v6/Episode6-KV-PC_2x.jpg",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/KX-KVsEpisode7-KV-PC.jpg",
   "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/v6/Album-art-ep6.jpg",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/thumbs-x2/640_thumb_ep7.jpg",
   "group": "5g-podcast",
-  "hidden": true,
+  "placeholder": true,
   "sort": 7,
   "meta": {
     "icon": "audio",
@@ -14,7 +14,7 @@
   "components": [
     {
       "type": "css-snippet",
-      "content": ".hoiKv__Media:after { padding-bottom: 36% !important; } .hoiParagraphs p { max-width: 940px; } @media screen and (max-width: 769px) { .hoiKv__Media:after { padding-bottom: 110% !important; } .hoiMedia__StatePoster { background-image: url(https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/v6/Episode6-KV-MO_2x.jpg) !important; } }  ",
+      "content": ".hoiKv__Media:after { padding-bottom: 36% !important; } .hoiParagraphs p { max-width: 940px; } @media screen and (max-width: 769px) { .hoiKv__Media:after { padding-bottom: 110% !important; } .hoiMedia__StatePoster { background-image: url(https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/KX-KVsEpisode7-KV-MO.jpg) !important; } }  ",
       "__notes": "custom ratio for kv video"
     },
     {
@@ -22,7 +22,7 @@
       "media": {
         "type": "audio",
         "content": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/Samsung_Podcast_EP7_FOR_BROADCAST_nodisclaimer.mp3",
-        "poster": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/v6/Episode6-KV-PC_2x.jpg",
+        "poster": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/KX-KVsEpisode7-KV-PC.jpg",
         "alt": ""
       },
       "style": {
@@ -32,12 +32,12 @@
       "components": [
         {
           "type": "headline",
-          "copy": "Episode 5: Remote control surgeons... Whatever Next?"
+          "copy": "Episode 7: Interactive yoga pants… Whatever Next?"
         },
         {
           "type": "paragraphs",
           "text": [
-            "With the world of work transforming faster than ever, Dr Hannah Fry and comedian Suzi Ruffell hear all out about the latest 5G-enabled workplace tech. From meetings with hologram colleagues to remote-control robots performing life-saving surgery, whether you live to work or work to live, this episode is the perfect fit."
+            "Ever wanted a wearable that does more than just give you numbers? Join Dr Hannah Fry and comedian Suzi Ruffell as they explore the world of wearables in health and fitness. From haptic yoga pants that can help you achieve that perfect downward dog to exoskeletons that assist work and help us live longer, this episode shows how 5G is transforming the way we move for good."
           ]
         },
         {
@@ -45,37 +45,37 @@
           "items": [
             {
               "title": "Spotify",
-              "link": "",
+              "link": false,
               "target": "_blank",
               "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ico-spotify.png"
             },
             {
               "title": "Acast",
-              "link": "",
+              "link": false,
               "target": "_blank",
               "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ico-acast.png"
             },
             {
               "title": "Google Podcasts",
-              "link": "",
+              "link": false,
               "target": "_blank",
               "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ico-google-podcasts.png"
             },
             {
               "title": "Stitcher",
-              "link": "",
+              "link": false,
               "target": "_blank",
               "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ico-stitcher.png"
             },
             {
               "title": "Overcast",
-              "link": "",
+              "link": false,
               "target": "_blank",
               "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ico-overcast.png"
             },
             {
               "title": "Apple Podcasts",
-              "link": "",
+              "link": false,
               "target": "_blank",
               "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ico-apple.png"
             }

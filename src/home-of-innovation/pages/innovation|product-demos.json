@@ -11,6 +11,19 @@
   },
   "components": [
     {
+      "type": "css-snippet",
+      "content": ".hoiWrapper { margin: 2.5em !important; }"
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "headline",
+          "copy": "Samsung Galaxy S20 FE Masterclass"
+        }
+      ]
+    },
+    {
       "type": "kv",
       "share": false,
       "style": {
@@ -20,14 +33,14 @@
       },
       "media": {
         "type": "livestream",
-        "content": "jPU48I151KI",
+        "content": "27tWqPkKn3Y",
         "poster": "",
         "alt": ""
       },
       "components": [
         {
           "type": "youtube-live-chat",
-          "content": "jPU48I151KI"
+          "content": "27tWqPkKn3Y"
         }
       ]
     }

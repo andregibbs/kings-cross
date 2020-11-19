@@ -5,6 +5,10 @@
       "alt": ""
     },
     {
+      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/discover/kv_slider/Web-SamsungKX-0521-1440x750.jpg",
+      "alt": ""
+    },
+    {
       "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/discover/kv_slider/discover_kv_2.jpg",
       "alt": ""
     },
@@ -28,15 +32,21 @@
       "description": "Samsung KX invited six futurists and academics to look ahead to the next 50 years of digital evolution and predict how it will affect our cities, our travel, our working lives, our food, our leisure and our health.",
       "__anchor desc": "offset the image position when item is inactive. in %",
       "anchor": "-5",
-      "background-position-mobile": "57% center"
+      "background-position-mobile": "57% center",
+      "active": true,
+      "cta": "Download PDF",
+      "cta_link": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/discover/SamsungKX50-The_Future_in_Focus_-_report.pdf",
+      "target": "_blank"
     },
     {
       "title": "Age UK Camden",
       "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/discover/community/discover_communities_2.jpg",
-      "description": "Samsung KX have teamed up with Age UK Camden to give over 55’s in Camden the opportunity to up-skill and learn ways of using new technology to benefit them in everyday life. Members are encouraged to step outside of their comfort zone and engage in Digital Art, Photography, Online Shopping workshops and more.",
-      "active": true,
+      "description": "Samsung KX have teamed up with Age UK Camden to give over 55’s in Camden the opportunity to upskill and learn ways of using new technology to benefit them in everyday life. Samsung KX also served as the exhibition space for Age UK Camden’s recent week-long photography exhibition that highlighted the vital support that has been provided to thousands of older Camden residents since lockdown began.",
       "anchor": "-25",
-      "background-position-mobile": "83% center"
+      "background-position-mobile": "83% center",
+      "cta": "Watch exhibition video",
+      "cta_link": "https://www.youtube.com/watch?v=cJlEkazoEYU",
+      "target": "_blank"
     },
     {
       "title": "Mind in Camden",

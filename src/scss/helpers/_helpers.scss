@@ -186,6 +186,17 @@
         }
       }
 
+      &--glass {
+        border-color: white;
+        background-color: rgba(0,0,0,0.35);
+        color: #fff;
+        &:hover {
+          color: white;
+          border-color: white;
+          background-color: rgba(0,0,0,0.5);
+        }
+      }
+
       &--saffron {
         border-color: $saffron;
         background-color: $saffron;

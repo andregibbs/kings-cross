@@ -1,11 +1,10 @@
 {
-  "title": "Coming Soon: Episode 6: ",
+  "title": "Episode 6: Smart rubbish… Whatever Next?",
   "description": "",
   "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/KX-KVsEpisode6-KV-PC.jpg",
   "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/v6/Album-art-ep6.jpg",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/thumbs-x2/640_thumb_ep6.jpg",
   "group": "5g-podcast",
-  "hidden": true,
   "sort": 6,
   "meta": {
     "icon": "audio",
@@ -32,12 +31,12 @@
       "components": [
         {
           "type": "headline",
-          "copy": "Episode 5: Remote control surgeons... Whatever Next?"
+          "copy": "Episode 6: Smart rubbish… Whatever Next?"
         },
         {
           "type": "paragraphs",
           "text": [
-            "With the world of work transforming faster than ever, Dr Hannah Fry and comedian Suzi Ruffell hear all out about the latest 5G-enabled workplace tech. From meetings with hologram colleagues to remote-control robots performing life-saving surgery, whether you live to work or work to live, this episode is the perfect fit."
+            "How smart can a home be? Dr Hannah Fry and comedian Suzi Ruffell look at domestic items that have evolved to think for themselves. From bins with brains to smart toilets which will happily test your urine and speak to your doctor if needs be, join them as they discover home is where the heart (and the 5G tech) is."
           ]
         },
         {
@@ -45,37 +44,37 @@
           "items": [
             {
               "title": "Spotify",
-              "link": "",
+              "link": false,
               "target": "_blank",
               "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ico-spotify.png"
             },
             {
               "title": "Acast",
-              "link": "",
+              "link": false,
               "target": "_blank",
               "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ico-acast.png"
             },
             {
               "title": "Google Podcasts",
-              "link": "",
+              "link": false,
               "target": "_blank",
               "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ico-google-podcasts.png"
             },
             {
               "title": "Stitcher",
-              "link": "",
+              "link": false,
               "target": "_blank",
               "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ico-stitcher.png"
             },
             {
               "title": "Overcast",
-              "link": "",
+              "link": false,
               "target": "_blank",
               "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ico-overcast.png"
             },
             {
               "title": "Apple Podcasts",
-              "link": "",
+              "link": false,
               "target": "_blank",
               "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ico-apple.png"
             }

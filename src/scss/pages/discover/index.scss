@@ -33,8 +33,9 @@
     margin-bottom: get-desktop-vw($m-borders-desktop / 2);
   }
   @media screen and (max-width: $mobile) {
-    margin-bottom: get-mobile-vw($m-borders-mobile / 2);
+    // margin-bottom: get-mobile-vw($m-borders-mobile / 2);
     font-size: 0.6rem !important;
+    margin: 1.5rem 0;
   }
 
   &--large-bottom-margin {
@@ -43,7 +44,8 @@
       margin-bottom: get-desktop-vw($m-borders-desktop);
     }
     @media screen and (max-width: $mobile) {
-      margin-bottom: get-mobile-vw($m-borders-mobile);
+      // margin-bottom: get-mobile-vw($m-borders-mobile);
+      margin: 1.5rem 0 3rem;
     }
   }
   h2 {

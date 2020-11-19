@@ -19,6 +19,8 @@
         "scroll": true
       },
       "items": [
+        "creativity|yfa-creative-labs|slow-motion-filmmaking",
+        "lifestyle|guest-writer-of-the-week|19",
         "creativity|graduate-fashion-week|student-blog|tabatha-lopez-S20FE",
         "innovation|taste-of-tomorrow|hydroponic-time-lapse",
         "innovation|taste-of-tomorrow|eat-pro-green-green-lab-sara-kiyo-popowa",
@@ -41,8 +43,7 @@
         "creativity|graduate-fashion-week|student-blog|sophie-parnaby",
         "innovation|5g-podcast|mind-controlled-gaming",
         "lifestyle|rj-tulloch",
-        "innovation|5g-podcast|films-that-you-can-direct-with-your-face",
-        "innovation|5g-podcast|a-camera-with-superpowers"
+        "innovation|5g-podcast|films-that-you-can-direct-with-your-face"
       ]
     },
     {
@@ -82,18 +83,16 @@
         "scroll": true
       },
       "items": [
+        "lifestyle|guest-writer-of-the-week|19",
+        "lifestyle|guest-writer-of-the-week|18",
         "lifestyle|guest-writer-of-the-week|17",
         "lifestyle|rj-tulloch",
         "lifestyle|guest-writer-of-the-week|16",
         "lifestyle|guest-writer-of-the-week|15",
-        "lifestyle|guest-writer-of-the-week|14",
-        "lifestyle|guest-writer-of-the-week|13",
         "lifestyle|cat-meffan|3",
         "lifestyle|cat-meffan|2",
         "lifestyle|cat-meffan|1",
         "lifestyle|tips-and-trikx|10",
-        "lifestyle|tips-and-trikx|9",
-        "lifestyle|tips-and-trikx|8",
         "lifestyle|internet-matters|3",
         "lifestyle|internet-matters|2",
         "lifestyle|internet-matters|1",
@@ -113,6 +112,7 @@
         "scroll": true
       },
       "items": [
+        "creativity|yfa-creative-labs|slow-motion-filmmaking",
         "creativity|graduate-fashion-week|student-blog|tabatha-lopez-S20FE",
         "creativity|editing-sessions|6",
         "creativity|yfa-creative-labs|halloween",

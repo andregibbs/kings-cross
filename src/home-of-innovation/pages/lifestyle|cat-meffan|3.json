@@ -45,6 +45,7 @@
     },
     {
       "type": "kv",
+      "share": false,
       "media": {
         "type": "image",
         "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/cat-meffan/Banner-Full-Bleed_720x720_V2.jpg",

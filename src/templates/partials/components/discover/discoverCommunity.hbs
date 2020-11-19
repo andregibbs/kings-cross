@@ -41,10 +41,15 @@
         background-position: {{background-position-mobile}};
       ">
     </div>
+    <div class="discoverCommunity__item_cover">
+      <a class="btn btn--primary btn--primary--glass discoverCommunity__item_toggle">Learn More</a>
+    </div>
     <div class="discoverCommunity__item_body">
       <h3 class="fz30">{{{title}}}</h3>
       <p>{{description}}</p>
-      <a class="btn btn--primary btn--primary--coral">CTA</a>
+      {{#if cta}}
+        <a class="btn btn--primary btn--primary--coral" href="{{cta_link}}" target="{{target}}">{{cta}}</a>
+      {{/if}}
     </div>
   </div>
 

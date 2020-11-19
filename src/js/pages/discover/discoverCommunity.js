@@ -2,6 +2,7 @@ export default class DiscoverCommunity {
   constructor(el) {
     this.el = el || document.querySelector('.discoverCommunity')
     this.items = [].slice.call(this.el.querySelectorAll('.discoverCommunity__item'))
+    this.toggles = [].slice.call(this.el.querySelectorAll('.discoverCommunity__item_toggle'))
     this.titles = [].slice.call(this.el.querySelectorAll('.discoverCommunity__title'))
 
     // attach events for titles and body
@@ -25,7 +26,8 @@ export default class DiscoverCommunity {
   }
 
   itemClicked(clickedIndex) {
-    this.items.forEach((item, index) => {
+    this.toggles.forEach((toggle, index) => {
+      const item = this.items[index]
       const {anchor, anchorActive, image} = this.itemImageAnchors(item)
       if (index === clickedIndex) {
         item.setAttribute('active', '')

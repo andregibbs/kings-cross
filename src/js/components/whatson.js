@@ -48,6 +48,14 @@ export default function whatson(events) {
 				newEvents.push(eventsToShow[i]);
 			}
 
+      // filter if there is event is null
+      newEvents = newEvents.filter(event => !!event)
+
+      // if all events do not exceed total to show, hide the show more button
+      if (newEvents.length < numberEventsToShow) {
+        $j('.events__showMore').hide();
+      }
+
 			$j('.eventTile').remove();
 			renderEventsIntoDom(newEvents);
 
@@ -76,8 +84,8 @@ export default function whatson(events) {
 
 	$j('.events__showMore').click(function () {
 		if (numberEventsToShow + 12 > eventsToManipulate.length) {
-			doLog("Events to show", numberEventsToShow);
-			console.log("Events to manipulate", eventsToManipulate);
+			// console.log("Events to show", numberEventsToShow);
+			// console.log("Events to manipulate", eventsToManipulate);
 
 			if(passion){
 				eventsToManipulate = eventsToManipulate.filter(function (event) {
@@ -224,6 +232,7 @@ export default function whatson(events) {
 	} else {
 		$j('.whatsOn__kv').css('background-image', 'url(https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/passion-header/passion-header-generic.jpg)')
 
+    // console.log('pre', events);
 		lazyGetEvents(events, 0);
 	}
 
@@ -290,6 +299,8 @@ export default function whatson(events) {
 	// =================================================
 
 	function renderEventsIntoDom(allEventsToRender) {
+
+    // console.log('render', allEventsToRender)
 
 		// filter empty events
 		allEventsToRender = allEventsToRender.filter(Boolean)
