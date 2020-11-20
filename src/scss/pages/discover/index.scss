@@ -41,7 +41,7 @@
   &--large-bottom-margin {
     margin-bottom: $m-borders-desktop + px;
     @media screen and (max-width: $desktop) {
-      margin-bottom: get-desktop-vw($m-borders-desktop);
+      margin-bottom: calc(#{get-desktop-vw($m-borders-desktop)} * 1.5em);
     }
     @media screen and (max-width: $mobile) {
       // margin-bottom: get-mobile-vw($m-borders-mobile);
@@ -50,6 +50,7 @@
   }
   h2 {
     // @extend .fz20;
+    font-size: 1.6em;
     text-transform: uppercase;
     font-weight: normal;
     font-family: "SamsungOne", arial, sans-serif;
@@ -75,7 +76,6 @@
     }
   }
   p {
-    font-size: 1em;
     width: 100%;
     text-align: center;
     margin: 0 auto;
@@ -106,7 +106,7 @@
 
   p {
     margin-bottom: 4vw;
-    max-width: 60vw;
+    max-width: 70vw;
   }
 
   @media screen and (min-width: $mobile + 1) {

@@ -1,7 +1,11 @@
 {
   "kv_slider": [
     {
-      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/discover/kv_slider/discover_kv_1.jpg",
+      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/discover/kv_slider/KX-Outside-1440x750.jpg",
+      "alt": ""
+    },
+    {
+      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/discover/kv_slider/KX-Outside-2-1440x750.jpg",
       "alt": ""
     },
     {
@@ -50,7 +54,7 @@
     },
     {
       "title": "Mind in Camden",
-      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/discover/community/discover_communities_3.jpg",
+      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/discover/community/KX-Inside-1440x900.jpg",
       "description": "Samsung KX has worked with Mind in Camden to create a safe and welcoming space, in which members can attend weekly coffee mornings, receiving complimentary hot drinks and refreshments, as well as providing a dial in service, where members can call in on a Galaxy Tab S7 to speak to others.",
       "anchor": "0",
       "background-position-mobile": "63% center"
