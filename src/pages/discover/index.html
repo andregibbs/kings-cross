@@ -1,10 +1,8 @@
-{{>headers/header}}
+{{>bootstrap/header}}
 
 <section class="cheil-static discover">
 
-  {{>stylesheet page="discover"}}
-
-	{{>components/common/kxNav/main}}
+  {{>bootstrap/header-components page="discover"}}
 
   <section class="discover__Hero _section">
     <div class="discoverKv _section__inner">
@@ -107,10 +105,7 @@
     </div>
   </section>
 
-	{{>components/common/findKx}}
-	{{>components/socialMedia}}
-
-	{{>scripts page="discover"}}
+  {{>bootstrap/footer-components page="discover"}}
 
   <script type="text/javascript">
     // garbage required to insert veview slideshow
@@ -134,7 +129,7 @@
 
 </section>
 
-{{>headers/footer}}
+{{>bootstrap/footer}}
 
 
 {{!-- inline templates --}}

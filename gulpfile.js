@@ -282,8 +282,11 @@ gulp.task('html', function () {
           },
           pageTemplateData
         }
-			})
+			}).on('error', (e) => {
+        console.log({message, fileName})
+      })
 		)
+    .pipe(htmlmin())
 		.pipe(gulp.dest( config.BUILD_FOLDER + SITE + '/' + SUBFOLDER + '/' ))
 
 })

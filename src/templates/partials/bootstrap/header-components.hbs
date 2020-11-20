@@ -1,0 +1,15 @@
+{{!--
+  Site wide required header components
+  these components should be loaded on all kx pages
+
+  some current pages may not have been updated to use this component
+
+  args
+
+    page: to specify stylesheet based on page name
+    hideSearchNav: if navigation should not display search (for /hub)
+
+--}}
+
+{{>stylesheet page=page}}
+{{>components/common/kxNav/main hideSearchNav=hideSearchNav}}
