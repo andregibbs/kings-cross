@@ -1,0 +1,56 @@
+{
+  "title": "Galaxy S20 FE Masterclass",
+  "description": "Join us for a live masterclass from Samsung KX",
+  "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/s20fe_1440x720.jpg",
+  "alt": "",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/product-demos/s20fe/Podcast-Recording_400x255.jpg",
+  "meta": {
+    "icon": "series",
+    "tags": []
+  },
+  "components": [
+    {
+      "type": "css-snippet",
+      "content": "@media screen and (max-width:768px) { .s20fe-offer-banner { background-image: url(https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/product-demos/s20fe/BlackFriday_S20-FE_640x890_.jpg) !important; padding-top: 139% !important; } }"
+    },
+    {
+      "type": "kv",
+      "style": {
+        "desktop": "top",
+        "mobile": "top"
+      },
+      "media": {
+        "type": "image",
+        "content": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/home-of-innovation/innovation/s20fe_1440x720.jpg",
+        "alt": ""
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "Samsung Galaxy S20 FE Masterclass"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "dynamic": "episodes",
+      "title": "Galaxy S20 FE Masterclass",
+      "id": "s20fe-masterclass"
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "image-banner-link",
+          "class": "s20fe-offer-banner",
+          "title": "Save big this Black Friday",
+          "cta": "See Offers",
+          "btnclass": "bf-blue",
+          "link": "https://www.samsung.com/uk/offer/",
+          "height": "38.6%",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/product-demos/s20fe/BlackFriday_S20-FE_1440x556_.jpg"
+        }
+      ]
+    }
+  ]
+}

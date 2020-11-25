@@ -1,0 +1,50 @@
+{
+  "title": "Editing Sessions: Revamping Visuals by GadgetsBoy",
+  "description": "Get the most out of your smartphone camera with this range of simple tutorials from a selection of the UK's top technology influencers",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/editing-sessions/7/es7-kv.jpg",
+  "alt": "",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/editing-sessions/7/es7-thumb.jpg",
+  "group": "editing-sessions",
+  "sort": 7,
+  "meta": {
+    "icon": "video",
+    "tags": []
+  },
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "youtube",
+        "content": "KLnXZjl1uZQ",
+        "poster": "{{creativity|editing-sessions|7[image]}}",
+        "alt": "{{creativity|editing-sessions|7[alt]}}"
+      },
+      "style": {
+        "desktop": "top",
+        "mobile": "top"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "Revamping Visuals by GadgetsBoy"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Welcome to the Editing Sessions. A chance to learn tips from the professionals on how to get the most out of your smartphone camera.",
+            "Leading content creator and tech expert GadgetsBoy shares his secrets to fine tuning photos on the <a href=\"https://www.samsung.com/uk/smartphones/galaxy-note20/buy/\">Samsung Galaxy Note20 Ultra</a>. From simple resizing techniques to altering the contrast, shadows and colour tones, this 3-minute tutorial covers all the essentials for creating the ultimate gallery of snaps."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "dynamic": "episodes",
+      "id": "editing-sessions",
+      "title": "More episodes",
+      "style": {
+        "scroll": true
+      }
+    }
+  ]
+}

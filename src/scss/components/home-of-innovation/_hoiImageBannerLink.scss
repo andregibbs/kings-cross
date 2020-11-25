@@ -1,0 +1,42 @@
+.hoiImageBannerLink {
+  width: 100%;
+  display: block;
+  background-size: cover;
+  position: relative;
+}
+
+.hoiImageBannerLink__body {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 6.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: flex-start;
+
+  @media screen and (min-width: $mobile + 1) {
+    padding: 1rem 3.5rem;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  @media screen and (min-width:1440px) {
+    padding-left: 100px;
+  }
+
+  h4 {
+    margin-top: 0 !important;
+  }
+  .btn--bf-blue {
+    background-color: #01b4e3;
+    border-color: #01b4e3;
+    &:hover {
+      color: #01b4e3;
+      background-color: white;
+      border-color: white;
+    }
+  }
+}

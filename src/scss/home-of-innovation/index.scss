@@ -24,6 +24,7 @@
 
 body {
   line-height: 1.32;
+  background-color: black;
 }
 
 // wrap all components in hoi class
@@ -75,6 +76,8 @@ body {
     @import "../components/home-of-innovation/hoiImagePanelLinks";
     @import "../components/home-of-innovation/hoiIconLinks";
     @import "../components/home-of-innovation/hoiHtmlList";
+    @import "../components/home-of-innovation/hoiYoutubeLiveChat";
+    @import "../components/home-of-innovation/hoiImageBannerLink";
 
     @import "../components/home-of-innovation/hoiWrapper";
     @import "../components/home-of-innovation/hoiSpacer";

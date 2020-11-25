@@ -64,6 +64,10 @@
     {{> home-of-innovation/hoiImagePanelLinks this}}
   {{/if_equals}}
 
+  {{#if_equals this.type 'image-banner-link'}}
+    {{> home-of-innovation/hoiImageBannerLink this}}
+  {{/if_equals}}
+
   {{#if_equals this.type 'icon-links'}}
     {{> home-of-innovation/hoiIconLinks this}}
   {{/if_equals}}

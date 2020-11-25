@@ -1,0 +1,69 @@
+{
+  "title": "Livestream",
+  "description": "Join one of our live Product Masterclasses to learn all about your Samsung devices",
+  "image": "",
+  "alt": "",
+  "thumb": "",
+  "hidden": true,
+  "meta": {
+    "icon": "video",
+    "tags": []
+  },
+  "components": [
+    {
+      "type": "css-snippet",
+      "content": ".hoiWrapper { margin: 2.5em !important; }"
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "headline",
+          "copy": "Samsung Galaxy S20 FE Masterclass"
+        },
+        {
+          "type": "buttons",
+          "items": [
+            {
+              "url": "youtube://",
+              "copy": "One"
+            },
+            {
+              "url": "vnd.youtube://",
+              "copy": "Two"
+            },
+            {
+              "url": "youtube:///",
+              "copy": "Three"
+            },
+            {
+              "url": "vnd.youtube:///",
+              "copy": "Four"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "kv",
+      "share": false,
+      "style": {
+        "desktop": "left",
+        "mobile": "top",
+        "theme": "livestream-chat"
+      },
+      "media": {
+        "type": "livestream",
+        "content": "27tWqPkKn3Y",
+        "poster": "",
+        "alt": ""
+      },
+      "components": [
+        {
+          "type": "youtube-live-chat",
+          "content": "27tWqPkKn3Y"
+        }
+      ]
+    }
+  ]
+}

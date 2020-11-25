@@ -1,0 +1,21 @@
+<div
+  class="hoiImageBannerLink {{class}}"
+  href="{{link}}"
+  {{#if target}}target="{{target}}"{{/if}}
+  style="
+    background-image:url({{image}});
+    padding-top: {{height}};
+  ">
+
+  <div class="hoiImageBannerLink__body">
+    <h4>{{title}}</h4>
+    <a
+      href="{{link}}"
+      class="btn btn--primary {{#if btnclass}}btn--{{btnclass}}{{/if}}"
+      ga-ca="microsite" ga-ac="feature" ga-la="uk:kings-cross:{{@root.title}}:{{cta}}"
+      data-omni-type="microsite" data-omni="uk:kings-cross:{{@root.title}}:{{cta}}"
+    >
+      {{cta}}
+    </a>
+  </div>
+</div>
