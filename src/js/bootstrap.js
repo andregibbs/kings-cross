@@ -1,3 +1,6 @@
+// This boostrap is used for individual pages js build files
+// imported from single page files in src/js/pages/*
+
 /* polyfills */
 import 'whatwg-fetch';
 require('es6-promise/auto');

@@ -1,3 +1,20 @@
+/*
+  This main.js file is used for the legacy kx pages
+  should not be futher added to
+
+
+  instead, configure a individual page build:
+
+  INDIVIDUAL PAGE BUILDS
+  gulp build process auto configured to use files in these locations
+
+  for JS
+    src/js/pages/<PAGE_NAME>/index.js
+  for scss
+    src/scss/pages/<PAGE_NAME>/index.scss
+
+*/
+
 /* polyfills */
 import 'whatwg-fetch';
 require('es6-promise/auto');

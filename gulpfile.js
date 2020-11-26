@@ -60,12 +60,25 @@ var config = {
 
 /*
   individual page builds
-  lists pages that have an isolated scss and js entry point
+  files automatically discovered if present
+
+  for JS
+    src/js/pages/<PAGE_NAME>/index.js
+  for scss
+    src/scss/pages/<PAGE_NAME>/index.scss
 */
-const INDIVIDUAL_PAGE_BUILDS = [
-  'kxtras',
-  'discover'
-]
+const INDIVIDUAL_PAGE_BUILDS = {
+  js: [],
+  scss: []
+}
+const JS_PB_DIR = path.join(config.SRC_FOLDER,'/js/pages/')
+fs.readdirSync(PAGE_BUILD_DIR).forEach(file => {
+  INDIVIDUAL_PAGE_BUILDS.js.push(file)
+});
+const CSS_PB_DIR = path.join(config.SRC_FOLDER,'/scss/pages/')
+fs.readdirSync(CSS_PB_DIR).forEach(file => {
+  INDIVIDUAL_PAGE_BUILDS.scss.push(file)
+});
 
 
 // Tasks
@@ -154,7 +167,7 @@ gulp.task('scss-page', function() {
   const isStagingTask = argv._[0] === 'staging';
 
   let streams = []
-  INDIVIDUAL_PAGE_BUILDS.forEach(page => {
+  INDIVIDUAL_PAGE_BUILDS.scss.forEach(page => {
     const srcFiles = isStagingTask ? [
       `${config.SRC_FOLDER}/scss/pages/${page}/index.scss`,
       config.SRC_FOLDER + '/scss/'+_HOI_FOLDER+'/staging.scss'
@@ -195,7 +208,7 @@ gulp.task('scss-page', function() {
 // KX:JS used to create the main KX site js files
 gulp.task('kx:js', function() {
   // collate individual page builds with original main entry
-  const files = INDIVIDUAL_PAGE_BUILDS.map(page => {
+  const files = INDIVIDUAL_PAGE_BUILDS.js.js.map(page => {
     return {
       name: page,
       src: `${config.SRC_FOLDER}/js/pages/${page}/index.js`,
@@ -249,8 +262,9 @@ function createBundleHandler(bundler, file) {
 gulp.task('html', function () {
 
   // retrieve and combine each individual page template data
+  // use js reference for possible json data file
   let pageTemplateData = {}
-  INDIVIDUAL_PAGE_BUILDS.forEach(page => {
+  INDIVIDUAL_PAGE_BUILDS.js.forEach(page => {
     let templateData = {}
     const pagePath = `${config.SRC_FOLDER}/js/pages/${page}/templateData.json`
     // check if page template data for page exists

@@ -5,7 +5,7 @@ import HOILinkListHoverManager from '../../home-of-innovation/HOILinkListHoverSc
 
 function KXtras() {
   new HOILinkListHoverManager() // init link list manager for hoiLists
-  
+
   $j('.KXtras__carousel').slick({
     dots: true
   })
