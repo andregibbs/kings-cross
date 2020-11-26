@@ -72,7 +72,7 @@ const INDIVIDUAL_PAGE_BUILDS = {
   scss: []
 }
 const JS_PB_DIR = path.join(config.SRC_FOLDER,'/js/pages/')
-fs.readdirSync(PAGE_BUILD_DIR).forEach(file => {
+fs.readdirSync(JS_PB_DIR).forEach(file => {
   INDIVIDUAL_PAGE_BUILDS.js.push(file)
 });
 const CSS_PB_DIR = path.join(config.SRC_FOLDER,'/scss/pages/')
@@ -208,7 +208,7 @@ gulp.task('scss-page', function() {
 // KX:JS used to create the main KX site js files
 gulp.task('kx:js', function() {
   // collate individual page builds with original main entry
-  const files = INDIVIDUAL_PAGE_BUILDS.js.js.map(page => {
+  const files = INDIVIDUAL_PAGE_BUILDS.js.map(page => {
     return {
       name: page,
       src: `${config.SRC_FOLDER}/js/pages/${page}/index.js`,

@@ -1,9 +1,5 @@
 // Search Component for HOI Content
 
-const Handlebars = require("hbsfy/runtime");
-import HandlebarsHelpers from '../../../templates/helpers/handlebarsHelpers';
-HandlebarsHelpers.register(Handlebars)
-
 import Fuse from 'fuse.js'
 import { FetchEvents } from '../../util/Events'
 import KXEnv from '../../util/KXEnv'

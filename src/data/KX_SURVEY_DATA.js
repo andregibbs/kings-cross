@@ -21,7 +21,13 @@ const SURVEY_DATA = [
     name: "NAME OF SURVEY",
     active: false,
     id: "PUBLIC ID USED IN PARAMETER",
-    form_id: "GOOGLE ID OF FORM"
+    survey_id: "GOOGLE ID OF FORM"
+  },
+  {
+    name: "Test Survey",
+    active: true,
+    id: "TEST",
+    survey_id: "GOOGLE ID OF FORM"
   }
 ]
 

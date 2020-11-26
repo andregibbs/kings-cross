@@ -20,9 +20,10 @@ body {
 
 .cheil-static {
 
-  // new nav and search
+  // common components
   @import "components/common/kxNav";
   @import "components/common/kxSearch";
+  @import "components/common/kxSurvey";
 
   @import "components/common/section";
 

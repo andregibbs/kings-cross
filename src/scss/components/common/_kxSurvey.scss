@@ -1,0 +1,48 @@
+
+&.form {
+  min-height: 80vh;
+  background: blueviolet;
+}
+
+.kxSurvey {}
+
+
+// prompt
+.kxSurvey__prompt {
+  z-index: 4545;
+  // display: none;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  width: 100%;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 320px;
+  padding: 1.5rem;
+
+  h4 {
+    margin-bottom: 0.5rem;
+  }
+  p {
+    margin-bottom: 1rem;
+  }
+}
+
+.kxSurvey__prompt_buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  .btn:first-child {
+    margin-right: 1rem;
+  }
+}
+
+
+.kxSurvey__modal {
+  z-index: 4544;
+  display: none;
+}
