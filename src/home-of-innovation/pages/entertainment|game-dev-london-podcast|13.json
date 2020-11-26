@@ -1,0 +1,60 @@
+{
+  "title": "Game Dev miniseries: Exploring avenues of emploment within the gaming world",
+  "description": "Game Dev’s series of podcasts are to support the UK games industry with knowledge and stories from those at its core.",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/game-dev-london-podcast/gdl-team-banner.jpg",
+  "alt": "Game Dev London Podcast logo linking to Episode Twelve",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/game-dev-london-podcast/gdl-team-banner.jpg",
+  "group": "game-dev-london-podcast",
+  "sort": 13,
+  "meta": {
+    "icon": "audio",
+    "tags": []
+  },
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "audio",
+        "content": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/game-dev-london-podcast/GDL-ep13.mp4",
+        "poster": "{{entertainment|game-dev-london-podcast|13[image]}}"
+      },
+      "style": {
+        "desktop": "top",
+        "mobile": "top"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "{{entertainment|game-dev-london-podcast|13[title]}}"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "In this first episode of the Biz Dev miniseries, Game Dev London hosts Stuart De Ville and Jay Shin talk about the pros and cons of different paths you can take in game development, with a particular focus on indie dev. Watch here to find out how you might plan your journey, how to discover what may best suit your personality and the importance of mentors."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "paragraphs",
+          "text": [
+            "In light of the recent pandemic, gaming has become more popular than ever before, offering indoors entertainment and a fun way to keep connected with those closest to you. Nevertheless, it doesn’t stop here. Lockdown has created a window for communities such as Game Dev London to explore what’s missing from the current gaming offering, current trends and the challenges that come with new industry restrictions. As the home of innovation, SamsungKX is providing an online platform for Game Dev London to uncover this knowledge and inspire gaming enthusiasts via weekly online podcasts. The series aims to help both those who are starting out in the gaming world and those looking to upskill in this area.",
+            "Please keep your eyes peeled for their weekly podcasts."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "dynamic": "more-episodes",
+      "id": "game-dev-london-podcast",
+      "title": "More episodes",
+      "style": {
+        "scroll": true
+      }
+    }
+  ]
+}
