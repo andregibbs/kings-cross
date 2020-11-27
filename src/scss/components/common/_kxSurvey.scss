@@ -10,18 +10,27 @@
 // prompt
 .kxSurvey__prompt {
   z-index: 4545;
-  // display: none;
+  display: none;
   position: fixed;
-  bottom: 1rem;
-  right: 1rem;
-  width: 100%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 1rem;
   background: black;
-  display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  max-width: 320px;
+  max-width: 380px;
   padding: 1.5rem;
+
+  @media screen and (min-width: $mobile + 1) {
+    margin: 2rem;
+  }
+
+  &[active] {
+    display: flex;
+    // opacity pointer events to hide
+  }
 
   h4 {
     margin-bottom: 0.5rem;
@@ -41,8 +50,53 @@
   }
 }
 
-
 .kxSurvey__modal {
   z-index: 4544;
   display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.8);
+  padding: 2rem 1rem 1rem;
+
+  @media screen and (min-width: $mobile + 1) {
+    padding: 2rem 2rem;
+  }
+}
+
+.kxSurvey__modal[active] {
+  display: block;
+}
+
+.kxSurvey__modal_body,
+.kxSurvey__modal_body iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.kxSurvey__modal_body {
+  display: flex;
+  flex-direction: column;
+  h3 {
+    margin-bottom: 1rem;
+  }
+  h3, p {
+    margin-right: 4rem;
+  }
+
+  iframe {
+    margin-top: 1rem;
+  }
+}
+
+.kxSurvey__modal_close {
+  cursor: pointer;
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  top: 2rem;
+  right: 2rem;
+  background: white;
 }

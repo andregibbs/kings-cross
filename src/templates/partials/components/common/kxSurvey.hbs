@@ -1,8 +1,10 @@
 <div class="kxSurvey">
 
   <div class="kxSurvey__prompt">
-    <h4 class="fz24">KX Survey</h4>
-    <p class="fz18">Would you like to complete a survey?</p>
+    <h4 class="fz24">{{prompt.title}}</h4>
+    {{#each prompt.copy}}
+      <p class="fz18">{{{this}}}</p>
+    {{/each}}
     <div class="kxSurvey__prompt_buttons">
       <div id="kxSurvey__prompt--yes" class="btn btn--primary">Yes</div>
       <div id="kxSurvey__prompt--no" class="btn btn--primary">No</div>
@@ -10,8 +12,14 @@
   </div>
 
   <div class="kxSurvey__modal">
-    <div id="kxSurvey__modal_close"></div>
+    <div class="kxSurvey__modal_close"></div>
     <div class="kxSurvey__modal_body">
+      {{#if modal.title}}
+        <h3 class="fz36">{{modal.title}}</h3>
+      {{/if}}
+      {{#each modal.copy}}
+        <p class="fz20">{{{this}}}</p>
+      {{/each}}
       <iframe
         src="https://docs.google.com/forms/d/e/{{survey_id}}/viewform?embedded=true"
         frameborder="0"

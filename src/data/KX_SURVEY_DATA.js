@@ -20,14 +20,24 @@ const SURVEY_DATA = [
   {
     name: "NAME OF SURVEY",
     active: false,
-    id: "PUBLIC ID USED IN PARAMETER",
-    survey_id: "GOOGLE ID OF FORM"
-  },
-  {
-    name: "Test Survey",
-    active: true,
     id: "TEST",
-    survey_id: "GOOGLE ID OF FORM"
+    survey_id: "GOOGLE ID OF FORM",
+    prompt: {
+      title: 'KX Survey',
+      copy: [
+        'Would you like to complete a survey?'
+      ],
+      yes: 'yes',
+      no: 'no'
+    },
+    modal: {
+      title: 'modal title',
+      copy: [
+        'here are a few paragraphss',
+        'if some extra copy is needed',
+        'can also include <strong>html</strong>'
+      ]
+    }
   }
 ]
 

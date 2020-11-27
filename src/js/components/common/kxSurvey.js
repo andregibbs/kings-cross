@@ -2,7 +2,9 @@ import SURVEY_DATA from '../../../data/KX_SURVEY_DATA'; // temp until dynamic da
 import getParam from '../getParam' // maybe move replace script
 
 const template = require('../../../templates/partials/components/common/kxSurvey.hbs');
+
 const URL_PARAM = 'kxsid'
+const PROMPT_DISPLAY_DELAY = 1000
 
 /*
   KX Survey
@@ -18,34 +20,64 @@ const URL_PARAM = 'kxsid'
 class KXSurvey {
   constructor() {
     this.templateTarget = document.querySelector('.cheil-static')
-    const surveyID = getParam(URL_PARAM)
-    const surveyData = SURVEY_DATA.filter(survey => {
-      return survey.id === surveyID
-    })[0]
 
-    console.log(surveyID, surveyData)
+    const surveyData = this.getSurveyData()
 
     if (this.templateTarget && surveyData) {
       this.renderTemplate(surveyData)
     }
   }
 
-  renderTemplate(data) {
-    this.templateTarget.insertAdjacentHTML('beforeend', template())
-    this.addEvents()
+  getSurveyData() {
+    const surveyID = getParam(URL_PARAM)
+    const surveyData = SURVEY_DATA.filter(survey => {
+      return survey.id === surveyID
+    })[0]
+    return surveyData
   }
 
-  addEvents() {
-    const promptYes = this.templateTarget.querySelector('#kxSurvey__prompt--yes')
-    const promptNo = this.templateTarget.querySelector('#kxSurvey__prompt--no')
-    const modalClose = this.templateTarget.querySelector('#kxSurvey__modal_close')
+  renderTemplate(data) {
+    console.log('render', data)
+    this.templateTarget.insertAdjacentHTML('beforeend', template(data))
+    this.setupView()
+  }
+
+  showPrompt() {
+
+  }
+
+  setupView() {
+    const el = this.templateTarget
+    const modalEl = el.querySelector('.kxSurvey__modal')
+    const promptEl = el.querySelector('.kxSurvey__prompt')
+    const promptYes = el.querySelector('#kxSurvey__prompt--yes')
+    const promptNo = el.querySelector('#kxSurvey__prompt--no')
+    const modalClose = el.querySelector('.kxSurvey__modal_close')
 
     promptYes.addEventListener('click', () => {
       console.log('show survey')
+      // lock scroll
+      document.querySelector('html').style.overflow = 'hidden'
+      modalEl.setAttribute('active','')
+      promptEl.removeAttribute('active')
     })
     promptNo.addEventListener('click', () => {
       console.log('no survey')
+      promptEl.removeAttribute('active')
     })
+
+    modalClose.addEventListener('click', () => {
+      // unlock scroll
+      document.querySelector('html').style.overflow = ''
+      modalEl.removeAttribute('active')
+    })
+
+    // show prompt after x secondss
+    setTimeout(() => {
+      promptEl.setAttribute('active', '')
+    }, PROMPT_DISPLAY_DELAY)
+
+
   }
 }
 
