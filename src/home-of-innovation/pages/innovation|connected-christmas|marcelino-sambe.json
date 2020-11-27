@@ -1,0 +1,72 @@
+{
+  "title": "Marcelino Sambe's Live Christmas Ballet",
+  "description": "",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/connected-christmas/SamsungKX_HoldingScreen_Marcelino_1440x720.png",
+  "alt": "",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/connected-christmas/SamsungKX_HoldingScreen_Marcelino_1440x720.png",
+  "group": "connected-christmas",
+  "sort": 1,
+  "meta": {
+    "icon": "video",
+    "tags": []
+  },
+  "components": [
+    {
+      "type": "css-snippet",
+      "content": ".hoiMedia__StatePoster { background-position: right center !important; } .hoiContent h1 { margin: 0 !important; } .hoiContent h3 { margin:0 !important; } }"
+    },
+    {
+      "type": "kv",
+      "share": false,
+      "style": {
+        "desktop": "left",
+        "mobile": "top",
+        "theme": "livestream-chat"
+      },
+      "media": {
+        "type": "livestream",
+        "content": "sL7RsP-dICc",
+        "poster": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/connected-christmas/SamsungKX_HoldingScreen_Marcelino_1440x720.png",
+        "alt": ""
+      },
+      "components": [
+        {
+          "type": "youtube-live-chat",
+          "content": "sL7RsP-dICc"
+        }
+      ]
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "headline",
+          "copy": "Live with Marcelino Sambe"
+        },
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "Monday 30th November - 7:30pm"
+        },
+        {
+          "type": "share",
+          "no-margin": true
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Watch Royal ballet soloist, Marcelino Sambe, as he performs an exclusive rendition of his Christmas ballet at Samsung KX. Streamed live on <a href=\"https://www.samsung.com/uk/tablets/galaxy-tab-s/galaxy-tab-s7-plus-12-4-inch-mystic-bronze-128gb-wi-fi-sm-t970nznaeua/buy/\">Galaxy Tab S7s</a> & <a href=\"https://www.samsung.com/uk/smartphones/galaxy-s20/\">Galaxy S20</a> devices, get ready to connect in new ways this year - save the date now.",
+            "<small>Please ensure you are logged-in to YouTube in order to join in the conversation.</small>",
+            "<br>"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "dynamic": "episodes",
+      "title": "Connected Christmas",
+      "id": "connected-christmas"
+    }
+  ]
+}

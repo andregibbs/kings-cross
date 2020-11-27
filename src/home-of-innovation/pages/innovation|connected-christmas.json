@@ -1,0 +1,37 @@
+{
+  "title": "Connected Christmas",
+  "description": "",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/connected-christmas/SamsungKX_HoldingScreen_Marcelino_1440x720.png",
+  "alt": "",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/connected-christmas/SamsungKX_HoldingScreen_Marcelino_1440x720.png",
+  "meta": {
+    "icon": "series",
+    "tags": []
+  },
+  "components": [
+    {
+      "type": "kv",
+      "style": {
+        "desktop": "top",
+        "mobile": "top"
+      },
+      "media": {
+        "type": "image",
+        "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/connected-christmas/SamsungKX_HoldingScreen_Marcelino_1440x720.png",
+        "alt": ""
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "Connected Christmas"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "dynamic": "episodes",
+      "title": "Connected Christmas",
+      "id": "connected-christmas"
+    }
+  ]
+}
