@@ -38,6 +38,7 @@ class KXSurvey {
   addEvents() {
     const promptYes = this.templateTarget.querySelector('#kxSurvey__prompt--yes')
     const promptNo = this.templateTarget.querySelector('#kxSurvey__prompt--no')
+    const modalClose = this.templateTarget.querySelector('#kxSurvey__modal_close')
 
     promptYes.addEventListener('click', () => {
       console.log('show survey')
