@@ -1,5 +1,5 @@
 {
-  "title": "Connected Christmas",
+  "title": "Marcelino Sambé's Live Christmas Ballet",
   "description": "",
   "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/connected-christmas/SamsungKX_HoldingScreen_Marcelino_1440x720.png",
   "alt": "",
@@ -23,14 +23,14 @@
       "components": [
         {
           "type": "headline",
-          "copy": "Connected Christmas"
+          "copy": "Marcelino Sambé’s Live Christmas Ballet"
         }
       ]
     },
     {
       "type": "group",
       "dynamic": "episodes",
-      "title": "Connected Christmas",
+      "title": "Marcelino Sambé's Live Christmas Ballet",
       "id": "connected-christmas"
     }
   ]

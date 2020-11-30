@@ -1,10 +1,11 @@
 {
-  "title": "Game Dev miniseries: Exploring avenues of emploment within the gaming world",
+  "title": "Game Dev miniseries: Exploring avenues of employment within the gaming world",
   "description": "Game Dev’s series of podcasts are to support the UK games industry with knowledge and stories from those at its core.",
   "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/game-dev-london-podcast/gdl-team-banner.jpg",
   "alt": "Game Dev London Podcast logo linking to Episode Twelve",
   "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/game-dev-london-podcast/gdl-team-banner.jpg",
   "group": "game-dev-london-podcast",
+  "hidden": true,
   "sort": 13,
   "meta": {
     "icon": "audio",
@@ -14,8 +15,8 @@
     {
       "type": "kv",
       "media": {
-        "type": "video",
-        "content": "https://images.samsung.com/is/content/samsung/p5/uk/explore/kings-cross/home-of-innovation/GDL_13_VIDEO.mp4",
+        "type": "youtube",
+        "content": "9Rbl_7dP7qU",
         "poster": "{{entertainment|game-dev-london-podcast|13[image]}}"
       },
       "style": {
