@@ -58,7 +58,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0,0,0,0.8);
+  background: rgba(0,0,0,0.9);
   padding: 2rem 1rem 1rem;
 
   @media screen and (min-width: $mobile + 1) {
@@ -79,6 +79,9 @@
 .kxSurvey__modal_body {
   display: flex;
   flex-direction: column;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
   h3 {
     margin-bottom: 1rem;
   }
@@ -87,6 +90,9 @@
   }
 
   iframe {
+    margin-top: 4rem;
+  }
+  p + iframe {
     margin-top: 1rem;
   }
 }

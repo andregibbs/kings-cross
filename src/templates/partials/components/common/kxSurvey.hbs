@@ -6,22 +6,47 @@
       <p class="fz18">{{{this}}}</p>
     {{/each}}
     <div class="kxSurvey__prompt_buttons">
-      <div id="kxSurvey__prompt--yes" class="btn btn--primary">Yes</div>
-      <div id="kxSurvey__prompt--no" class="btn btn--primary">No</div>
+      <a
+        id="kxSurvey__prompt--yes"
+        class="btn btn--primary"
+        ga-ca="microsite"
+        ga-ac="feature"
+        ga-la="uk:kings-cross:kx-survey-{{name}}:accept-prompt"
+        data-omni-type="microsite"
+        data-omni="uk:kings-cross:kx-survey-{{name}}:accept-prompt">
+        Yes
+      </a>
+      <a
+        id="kxSurvey__prompt--no"
+        class="btn btn--primary"
+        ga-ca="microsite"
+        ga-ac="feature"
+        ga-la="uk:kings-cross:kx-survey-{{name}}:reject-prompt"
+        data-omni-type="microsite"
+        data-omni="uk:kings-cross:kx-survey-{{name}}:reject-prompt">
+        No
+      </a>
     </div>
   </div>
 
   <div class="kxSurvey__modal">
-    <div class="kxSurvey__modal_close"></div>
+    <a
+      class="kxSurvey__modal_close"
+      ga-ca="microsite"
+      ga-ac="feature"
+      ga-la="uk:kings-cross:kx-survey-{{name}}:close-modal"
+      data-omni-type="microsite"
+      data-omni="uk:kings-cross:kx-survey-{{name}}:close-modal">
+    </a>
     <div class="kxSurvey__modal_body">
       {{#if modal.title}}
-        <h3 class="fz36">{{modal.title}}</h3>
+        <h3 class="fz30">{{modal.title}}</h3>
       {{/if}}
       {{#each modal.copy}}
-        <p class="fz20">{{{this}}}</p>
+        <p class="fz16">{{{this}}}</p>
       {{/each}}
       <iframe
-        src="https://docs.google.com/forms/d/e/{{survey_id}}/viewform?embedded=true"
+        src="{{survey_embed_url}}"
         frameborder="0"
         marginheight="0"
         marginwidth="0">
