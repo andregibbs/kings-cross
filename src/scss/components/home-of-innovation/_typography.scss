@@ -1,5 +1,5 @@
 
-li, p, span {
+li, p {
   // @include fz22();
   font-size: em(22);
   letter-spacing: 0.25px;
@@ -11,6 +11,10 @@ li, p, span {
   @media screen and (min-width: 1280px) {
     font-size: em(18)
   }
+}
+
+span {
+  font-size: 1em;
 }
 
 

@@ -8,27 +8,29 @@
 
   {{#if this.level}}
     {{#if_equals this.level '1'}}
-      <h1>{{ this.copy }}</h1>
+      <h1>{{{ this.copy }}}</h1>
     {{/if_equals}}
     {{#if_equals this.level '2'}}
-      <h2>{{ this.copy }}</h2>
+      <h2>{{{ this.copy }}}</h2>
     {{/if_equals}}
     {{#if_equals this.level '3'}}
-      <h3>{{ this.copy }}</h3>
+      <h3>{{{ this.copy }}}</h3>
     {{/if_equals}}
     {{#if_equals this.level '4'}}
-      <h4>{{ this.copy }}</h4>
+      <h4>{{{ this.copy }}}</h4>
     {{/if_equals}}
     {{#if_equals this.level '5'}}
-      <h5>{{ this.copy }}</h5>
+      <h5>{{{ this.copy }}}</h5>
     {{/if_equals}}
     {{#if_equals this.level '6'}}
-      <h6>{{ this.copy }}</h6>
+      <h6>{{{ this.copy }}}</h6>
     {{/if_equals}}
   {{else}}
-    <h1>{{ this.copy }}</h1>
+    <h1>{{{ this.copy }}}</h1>
   {{/if}}
 
+
+  {{!-- link for hoiList titles --}}
   {{#if link}}
     <a
       class="hoiHeadline__Link"
