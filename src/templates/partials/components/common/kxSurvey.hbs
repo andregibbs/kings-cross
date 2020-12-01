@@ -1,44 +1,52 @@
 <div class="kxSurvey">
 
   <div class="kxSurvey__prompt">
-    <h4 class="fz24">{{prompt.title}}</h4>
+    <h4 class="fz24">{{{prompt.title}}}</h4>
     {{#each prompt.copy}}
       <p class="fz18">{{{this}}}</p>
     {{/each}}
     <div class="kxSurvey__prompt_buttons">
       <a
         id="kxSurvey__prompt--yes"
-        class="btn btn--primary"
+        class="btn btn--primary btn--primary--coral"
         ga-ca="microsite"
         ga-ac="feature"
         ga-la="uk:kings-cross:kx-survey-{{name}}:accept-prompt"
         data-omni-type="microsite"
         data-omni="uk:kings-cross:kx-survey-{{name}}:accept-prompt">
-        Yes
+        {{#if prompt.yes}}
+          {{prompt.yes}}
+        {{else}}
+          Yes
+        {{/if}}
       </a>
       <a
         id="kxSurvey__prompt--no"
-        class="btn btn--primary"
+        class="btn btn--primary btn--primary--coral"
         ga-ca="microsite"
         ga-ac="feature"
         ga-la="uk:kings-cross:kx-survey-{{name}}:reject-prompt"
         data-omni-type="microsite"
         data-omni="uk:kings-cross:kx-survey-{{name}}:reject-prompt">
-        No
+        {{#if prompt.no}}
+          {{prompt.no}}
+        {{else}}
+          No
+        {{/if}}
       </a>
     </div>
   </div>
 
   <div class="kxSurvey__modal">
-    <a
-      class="kxSurvey__modal_close"
-      ga-ca="microsite"
-      ga-ac="feature"
-      ga-la="uk:kings-cross:kx-survey-{{name}}:close-modal"
-      data-omni-type="microsite"
-      data-omni="uk:kings-cross:kx-survey-{{name}}:close-modal">
-    </a>
     <div class="kxSurvey__modal_body">
+      <a
+        class="kxSurvey__modal_close"
+        ga-ca="microsite"
+        ga-ac="feature"
+        ga-la="uk:kings-cross:kx-survey-{{name}}:close-modal"
+        data-omni-type="microsite"
+        data-omni="uk:kings-cross:kx-survey-{{name}}:close-modal">
+      </a>
       {{#if modal.title}}
         <h3 class="fz30">{{modal.title}}</h3>
       {{/if}}

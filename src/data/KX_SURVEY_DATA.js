@@ -15,6 +15,29 @@
 
   it is also used locally for development
 
+  // model
+
+  {
+    name: "__SURVEY_NAME (required)",
+    active: false,
+    id: "__SURVEY_ID (required)",
+    survey_embed_url: "__EMBED_URL (required)",
+    prompt: {
+      title: '__PROMPT_TITLE (required)',
+      copy: [
+        '__PROMPT_COPY (optional)'
+      ],
+      yes: '__PROMPT_YES (optional)',
+      no: '__PROMPT_NO (optional)'
+    },
+    modal: {
+      title: '__MODAL_TITLE (optional)',
+      copy: [
+        '__MODAL_COPY (optional)'
+      ]
+    }
+  }
+
 */
 
 const SURVEY_DATA = [
@@ -24,20 +47,12 @@ const SURVEY_DATA = [
     id: "TEST",
     survey_embed_url: "https://docs.google.com/forms/d/e/1FAIpQLScrgghSDPFOhZVlgwZ2RBY9YttF8LO66gp0IV6McTLBhVnOPg/viewform",
     prompt: {
-      title: 'KX Survey',
+      title: 'Tell us what you think of<br/>Samsung KX',
       copy: [
-        'Would you like to complete a survey?'
+        'We\'d love to hear your feedback'
       ],
-      yes: 'yes',
-      no: 'no'
-    },
-    modal: {
-      title: 'modal title',
-      copy: [
-        'here are a few paragraphss',
-        'if some extra copy is needed',
-        'can also include <strong>html</strong>'
-      ]
+      yes: 'Yes',
+      no: 'X'
     }
   }
 ]

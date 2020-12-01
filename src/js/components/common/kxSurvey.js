@@ -5,7 +5,7 @@ const template = require('../../../templates/partials/components/common/kxSurvey
 
 const LOCAL_STORAGE_KEY = 'kxs-history'
 const URL_PARAM = 'kxsid'
-const PROMPT_DISPLAY_DELAY = 1000
+const PROMPT_DISPLAY_DELAY = 5000;
 
 /*
   KX Survey
@@ -34,16 +34,40 @@ class KXSurvey {
       this.resetHistory()
     }
 
-    if (this.hasBeenAskedForSurvey(this.surveyID) || !this.surveyID) {
+    if (this.hasBeenAskedForSurvey(this.surveyID) || !this.surveyID || !this.templateTarget) {
       // user has already been asked about this survey
       // or no survey id
+      // or no template target
       return
     }
 
+
+    // fetch
     const surveyData = this.getSurveyData()
-    if (this.templateTarget && surveyData) {
-      this.renderTemplate(surveyData)
-    }
+
+    // then
+    this.renderTemplate(surveyData)
+    this.setupView();
+    this.listenForUserInteraction()
+
+
+  }
+
+  listenForUserInteraction() {
+    window.addEventListener('scroll', this.userInteracted.bind(this))
+    window.addEventListener('mousemove', this.userInteracted.bind(this))
+    window.addEventListener('touchstart', this.userInteracted.bind(this))
+  }
+
+  userInteracted(e) {
+    console.log('user interact', e)
+
+    // show prompt after x secondss
+    // change to x seconds after first page interaction
+    setTimeout(() => {
+      this.promptEl.setAttribute('active', '')
+    }, PROMPT_DISPLAY_DELAY)
+
   }
 
   getSurveyData() {
@@ -80,12 +104,9 @@ class KXSurvey {
       this.modalEl.removeAttribute('active')
     })
 
-    // show prompt after x secondss
-    setTimeout(() => {
-      this.promptEl.setAttribute('active', '')
-    }, PROMPT_DISPLAY_DELAY)
-
   }
+
+
 
   userRejectPrompt() {
     console.log('userRejectPrompt')
