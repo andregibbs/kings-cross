@@ -40,6 +40,9 @@
 
 */
 
+const SURVEY_DATA_LIVE_FILENAME = 'kx-survey-data.json'
+const SURVEY_DATA_STAGING_FILENAME = 'kx-survey-data-staging.json'
+
 const SURVEY_DATA = [
   {
     name: "NAME OF SURVEY",
@@ -57,4 +60,8 @@ const SURVEY_DATA = [
   }
 ]
 
-export default SURVEY_DATA
+module.exports = {
+  SURVEY_DATA_LIVE_FILENAME,
+  SURVEY_DATA_STAGING_FILENAME,
+  SURVEY_DATA
+}

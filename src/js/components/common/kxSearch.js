@@ -9,7 +9,8 @@ import config from '../../../data/config.json'
 const BASE_URL = "https://kxuploads.s3.eu-west-2.amazonaws.com/home-of-innovation-dynamic/"
 const LOCAL_URL = '/hoi-search-local.json';
 const STAGING_URL = BASE_URL + "hoi-search-staging.json";
-const LIVE_URL =  BASE_URL + "hoi-search.json";const SearchDataURL = KXEnv.live ? LIVE_URL : KXEnv.local ? LOCAL_URL : STAGING_URL;
+const LIVE_URL =  BASE_URL + "hoi-search.json";
+const SearchDataURL = KXEnv.live ? LIVE_URL : KXEnv.local ? LOCAL_URL : STAGING_URL;
 
 // template
 const searchItemTemplate = require('../../../templates/partials/home-of-innovation/hoiLinkList.hbs');
