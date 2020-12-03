@@ -8,6 +8,11 @@
   if record is found for id
     script will render the kxSurvey template to the page
 
+  Reminder:
+    if the survey data has been updated in src/data/kxSurveyData
+    but not visible when testing
+    run 'npm run deploy-kx-survey-data-staging' to update the local file
+
 */
 
 import getParam from '../getParam' // maybe move/replace script
@@ -29,8 +34,8 @@ const {
 } = require('../../../../src/data/kxSurveyData');
 
 // paths for local, staging/qa & live data
-const STAGING_URL = FETCH_BASE + '/' + SURVEY_DATA_STAGING_FILENAME
-const LIVE_URL = FETCH_BASE + '/' + SURVEY_DATA_LIVE_FILENAME
+const STAGING_URL = FETCH_BASE + SURVEY_DATA_STAGING_FILENAME
+const LIVE_URL = FETCH_BASE + SURVEY_DATA_LIVE_FILENAME
 const LOCAL_URL = '/' + SURVEY_DATA_STAGING_FILENAME
 
 // path based on env
@@ -109,9 +114,9 @@ class KXSurvey {
     // on first interaction
     if (!this.userInteracted) {
       this.userInteracted = true
-      window.removeEventListener('scroll', this.userInteracted.bind(this))
-      window.removeEventListener('mousemove', this.userInteracted.bind(this))
-      window.removeEventListener('touchstart', this.userInteracted.bind(this))
+      window.removeEventListener('scroll', this.userInteraction.bind(this))
+      window.removeEventListener('mousemove', this.userInteraction.bind(this))
+      window.removeEventListener('touchstart', this.userInteraction.bind(this))
       this.showPrompt(this)
     }
   }

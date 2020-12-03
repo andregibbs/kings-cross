@@ -14,6 +14,9 @@
     to deploy the dynamic data for consumption on staging and live envs
 
   it is also used locally for development
+  after the survey data
+  run 'npm run deploy-kx-survey-data-staging' to update local file
+
 
   // model
 
@@ -56,6 +59,20 @@ const SURVEY_DATA = [
       ],
       yes: 'Yes',
       no: 'X'
+    }
+  },
+  {
+    name: "NAME OF SURVEY",
+    active: false,
+    id: "TEST_2",
+    survey_embed_url: "https://docs.google.com/forms/d/e/1FAIpQLScif4GIPUJCO0DjvtnFOdEHDJKFe8nYFpenc6JEy5Xe8dgyqw/viewform",
+    prompt: {
+      title: 'Survey 2',
+      copy: [
+        'Test'
+      ],
+      yes: 'Yes',
+      no: 'No'
     }
   }
 ]
