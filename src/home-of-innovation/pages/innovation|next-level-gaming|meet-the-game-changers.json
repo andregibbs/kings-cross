@@ -1,0 +1,50 @@
+{
+  "title": "Meet the Game Changers",
+  "description": "Powered by Samsung, we get an insider view of the world behind the games.",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/next-level-gaming/Samsung_NextLevel_1440x810_3Talent.jpg",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/next-level-gaming/Samsung_NextLevel_400x255_3Talent.jpg",
+  "group": "next-level-gaming",
+  "sort": 1,
+  "meta": {
+    "icon": "series",
+    "tags": []
+  },
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "youtube",
+        "content": "q17DiCyL9jQ",
+        "poster": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/next-level-gaming/Samsung_NextLevel_1440x810_3Talent.jpg",
+        "alt": ""
+      },
+      "style": {
+        "desktop": "top",
+        "mobile": "bottom"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "Meet the Game Changers"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "The esports industry is growing rapidly worldwide and with everything from million pound players to dedicated esports university degrees - the UK’s scene is rising up to be a serious contender.",
+            "Avid gamer and footballer, Chelcee Grimes, gets an insider view of the world behind the games as she meets the UK’s lead esports pros at Samsung KX.",
+            "Watch as Wolfiez, Deadly and Alliestrasza tell us what’s next for them and the industry as they test out the <a href=\"https://www.samsung.com/uk/monitors/gaming/dqhd-monitor-with-1000r-curved-display-49-inch-lc49g93tssuxen/\">Odyssey G9</a>."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "dynamic": "articles",
+      "style": {
+        "scroll": true
+      },
+      "id": "next-level-gaming",
+      "title": "Articles"
+    }
+  ]
+}

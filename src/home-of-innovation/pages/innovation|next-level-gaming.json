@@ -1,0 +1,45 @@
+{
+  "title": "Next Level Gaming",
+  "description": "",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/next-level-gaming/Samsung_NextLevel_1440x810_3Talent.jpg",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/next-level-gaming/Samsung_NextLevel_400x255_3Talent.jpg",
+  "meta": {
+    "icon": "series",
+    "tags": []
+  },
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/next-level-gaming/Samsung_NextLevel_1440x810_3Talent.jpg",
+        "alt": ""
+      },
+      "style": {
+        "desktop": "top",
+        "mobile": "bottom"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "Next Level Gaming"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Powered by the <a href=\"https://www.samsung.com/uk/monitors/gaming/dqhd-monitor-with-1000r-curved-display-49-inch-lc49g93tssuxen/\">Odyssey G9</a>, get an insider view of the professional world of Esports."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "dynamic": "articles",
+      "style": {
+        "scroll": true
+      },
+      "id": "next-level-gaming",
+      "title": "Articles"
+    }
+  ]
+}
