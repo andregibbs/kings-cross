@@ -6,6 +6,8 @@
 
 .kxClosed .kxClosed__wrap {
   padding: 0 100px;
+  max-width: 1440px;
+  margin: 0 auto;
   @media screen and (max-width: $desktop) {
     padding: 0 get-desktop-vw(100);
   }
