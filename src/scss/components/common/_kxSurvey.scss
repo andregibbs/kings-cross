@@ -97,7 +97,7 @@ $close-button-size: 2.5rem;
   }
 
   iframe {
-    margin-top: $close-button-size + 2rem;
+    padding-top: $close-button-size + 2rem;
   }
   p + iframe {
     margin-top: 1rem;
@@ -116,6 +116,7 @@ $close-button-size: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1000;
   &:before {
     content: '\2715';
   }

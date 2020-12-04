@@ -5,12 +5,6 @@
 import 'whatwg-fetch';
 require('es6-promise/auto');
 
-/* Handlebars */
-const Handlebars = require("hbsfy/runtime");
-import HandlebarsHelpers from '../templates/helpers/handlebarsHelpers';
-HandlebarsHelpers.register(Handlebars)
-
-
 /* local jquery */
 // required for events data
 import $ from 'jquery'
@@ -22,6 +16,7 @@ import KXSurvey from './components/common/kxSurvey'
 
 function Bootstrap() {
   new KXNav()
+  new KXSurvey()
 }
 
 if (document.readyState === "complete" || (document.readyState !== "loading" && !document.documentElement.doScroll)) {

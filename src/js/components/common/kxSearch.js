@@ -13,6 +13,10 @@ const LIVE_URL =  BASE_URL + "hoi-search.json";
 const SearchDataURL = KXEnv.live ? LIVE_URL : KXEnv.local ? LOCAL_URL : STAGING_URL;
 
 // template
+const Handlebars = require("hbsfy/runtime");
+import HandlebarsHelpers from '../../../templates/helpers/handlebarsHelpers';
+HandlebarsHelpers.register(Handlebars)
+
 const searchItemTemplate = require('../../../templates/partials/home-of-innovation/hoiLinkList.hbs');
 const eventItemTemplate = require('../../../templates/partials/components/common/kxEventTile.hbs');
 Handlebars.registerPartial('home-of-innovation/partials/listItem', require('../../../templates/partials/home-of-innovation/partials/listItem.hbs'))

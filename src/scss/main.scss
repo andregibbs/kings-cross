@@ -27,9 +27,10 @@ body {
   @import "components/common/slider";
   @import "components/common/section";
 
-  // new nav and search
+  // globals
   @import "components/common/kxNav";
   @import "components/common/kxSearch";
+  @import "components/common/kxSurvey";
 
   // extra imports for search & nav
   @import "home-of-innovation/vars";

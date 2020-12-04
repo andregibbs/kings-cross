@@ -53,6 +53,7 @@ import getParam from "./components/getParam";
 import school from "./components/school";
 import homeKV from './components/homeKV';
 import KXNav from './components/common/kxNav'
+import KXSurvey from './components/common/kxSurvey'
 
 import loadingScreenAnimation from "../data/loadingScreen.json";
 import create from "../data/Create.json";
@@ -100,12 +101,14 @@ $j(document).ready(function () {
 			var container = document.getElementById('loadingScreen__animation');
 			loadingScreen(container, loadingScreenAnimation, () => {
         // loading screen done
+        new KXSurvey() // init after animation
       }, false)
 			break;
 
 		case "/uk/explore/kings-cross/discover/":
 			//places();
 			discover();
+      new KXSurvey()
 			function showImages(el) {
 				var windowHeight = $j( window ).height();
 
@@ -133,11 +136,13 @@ $j(document).ready(function () {
 
 		case "/uk/explore/kings-cross/whats-on/":
 			fetchData(whatson);
+      new KXSurvey()
 			//places();
 			break;
 
 		case "/uk/explore/kings-cross/whats-on/event/":
 			fetchData(singleEvent);
+      new KXSurvey()
 			//places();
 			break;
 
@@ -147,6 +152,7 @@ $j(document).ready(function () {
 			});
 			//Support goes last!
 			support();
+      new KXSurvey()
 			//places();
 			// smoothScroll();
 			break;
@@ -168,6 +174,7 @@ $j(document).ready(function () {
 				bookingRefFetcher(allEvents);
 			});
 			//places();
+      new KXSurvey()
 			break;
 
 		case "/uk/explore/kings-cross/experience/":

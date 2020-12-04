@@ -57,8 +57,8 @@ const SURVEY_DATA = [
       copy: [
         'We\'d love to hear your feedback'
       ],
-      yes: 'Yes',
-      no: 'X'
+      yes: 'Sure',
+      no: 'No Thanks'
     }
   },
   {

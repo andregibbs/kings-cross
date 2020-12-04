@@ -25,6 +25,7 @@ import { createYoutubeInstance, loadYoutubeAPI } from './utils';
 
 import FindKX from '../components/findKX';
 import KXNav from '../components/common/kxNav'
+import KXSurvey from '../components/common/kxSurvey'
 import initListItemHoverEvents from './hoiListItemHoverEvents'
 
 function init() {
@@ -41,6 +42,9 @@ function init() {
 
       // init hoi search (will be present in either nav or in page with a component)
       new KXNav()
+
+      // init surveys
+      new KXSurvey();
 
       // init sharing
       HOIShare();

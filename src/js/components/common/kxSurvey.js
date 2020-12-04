@@ -44,6 +44,7 @@ const KX_SURVEY_DATA_URL = KXEnv.live ? LIVE_URL : KXEnv.local ? LOCAL_URL : STA
 
 class KXSurvey {
   constructor() {
+
     this.templateTarget = document.querySelector('.cheil-static')
     this.surveyID = getParam(URL_PARAM)
 
@@ -53,12 +54,10 @@ class KXSurvey {
     this.promptNo = null
     this.modalClose = null
 
-    this.skipUserInteraction = false
     this.userInteracted = false
 
     // reset view history
     if (getParam('reset')) {
-      this.skipUserInteraction = true
       this.resetHistory()
     }
 
@@ -89,11 +88,8 @@ class KXSurvey {
         this.setupView();
 
         // prompt trigger method
-        if (this.skipUserInteraction) {
-          this.showPrompt()
-        } else {
-          this.listenForUserInteraction()
-        }
+        this.listenForUserInteraction()
+
       })
       .catch(e => {
         if (KXEnv.local) {
@@ -178,7 +174,7 @@ class KXSurvey {
     const surveyHistory = localStorage.getItem(LOCAL_STORAGE_KEY)
     if (surveyHistory !== null) {
       // if exists
-      return surveyHistory
+      return JSON.parse(surveyHistory)
     } else {
       // else return empty array
       return []
@@ -213,4 +209,4 @@ class KXSurvey {
 }
 
 
-export default new KXSurvey()
+export default KXSurvey
