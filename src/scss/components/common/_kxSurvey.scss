@@ -10,7 +10,7 @@ $close-button-size: 2.5rem;
 
 // prompt
 .kxSurvey__prompt {
-  z-index: 4545;
+  z-index: 1000; // 2100 gnb z-index
   display: none;
   position: fixed;
   bottom: 0;
