@@ -19,6 +19,7 @@
         "scroll": true
       },
       "items": [
+        "innovation|5g-podcast|interactive-yoga-pants",
         "lifestyle|guest-writer-of-the-week|20",
         "innovation|connected-christmas|marcelino-sambe",
         "creativity|editing-sessions|7",
@@ -60,16 +61,16 @@
         "hideIcon": true
       },
       "items": [
+        "innovation|5g-podcast",
+        "lifestyle|guest-writer-of-the-week",
         "innovation|product-demos|s20fe",
         "innovation|taste-of-tomorrow",
         "creativity|graduate-fashion-week|student-blog",
-        "innovation|5g-podcast",
         "creativity|graduate-fashion-week",
         "entertainment|lunch-and-listen",
         "creativity|innovation-sessions",
         "entertainment|game-dev-london-podcast",
         "lifestyle|tips-and-trikx",
-        "lifestyle|guest-writer-of-the-week",
         "creativity|editing-sessions",
         "lifestyle|cat-meffan",
         "innovation|science-museum",
@@ -176,6 +177,7 @@
         "scroll": true
       },
       "items": [
+        "innovation|5g-podcast|interactive-yoga-pants",
         "innovation|connected-christmas|marcelino-sambe",
         "innovation|5g-podcast|smart-rubbish",
         "innovation|taste-of-tomorrow|hydroponic-time-lapse",

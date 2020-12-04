@@ -40,23 +40,23 @@
           ]
         },
         {
-          "type": "_icon-links",
+          "type": "icon-links",
           "items": [
             {
               "title": "Spotify",
-              "link": false,
+              "link": "https://open.spotify.com/episode/78rfICKk13Vmy632amPMOV",
               "target": "_blank",
               "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ico-spotify.png"
             },
             {
               "title": "Acast",
-              "link": false,
+              "link": "https://play.acast.com/s/whatever-next/interactiveyogapants-whatevernext-",
               "target": "_blank",
               "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ico-acast.png"
             },
             {
               "title": "Google Podcasts",
-              "link": false,
+              "link": "https://podcasts.google.com/feed/aHR0cHM6Ly9yc3MuYWNhc3QuY29tL3doYXRldmVyLW5leHQ/episode/ZDE0YzFhNmYtMjc0ZC00YmRmLThjYzktOGY5ZGZhOWUzNGZl?sa=X&ved=0CA0QkfYCahcKEwjA7PXQjbTtAhUAAAAAHQAAAAAQAQ",
               "target": "_blank",
               "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ico-google-podcasts.png"
             },
@@ -74,7 +74,7 @@
             },
             {
               "title": "Apple Podcasts",
-              "link": false,
+              "link": "https://podcasts.apple.com/gb/podcast/interactive-yoga-pants-whatever-next/id1535056495?i=1000501314966",
               "target": "_blank",
               "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ico-apple.png"
             }
