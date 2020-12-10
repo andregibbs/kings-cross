@@ -286,7 +286,7 @@ gulp.task('html', function () {
         console.log({message, fileName})
       })
 		)
-    .pipe(htmlmin())
+    // .pipe(htmlmin())
 		.pipe(gulp.dest( config.BUILD_FOLDER + SITE + '/' + SUBFOLDER + '/' ))
 
 })

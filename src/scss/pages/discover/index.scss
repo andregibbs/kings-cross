@@ -17,6 +17,22 @@
   padding-bottom: 2vw;
 }
 
+@media screen and (max-width: $mobile) {
+  .kxSupportLinks__tile,
+  .discoverExperience2__ItemHeader,
+  .discover__NotASchool {
+    .fz18 {
+      font-size: 1.5em !important;
+    }
+    .fz20 {
+      font-size: 1.75em !important;
+    }
+    .fz30 {
+      font-size: 2em !important;
+    }
+  }
+}
+
 // common header
 .discover__Header {
   width: 100%;

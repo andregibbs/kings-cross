@@ -1,12 +1,11 @@
 {
-  "title": "Creative Labs with Young Film Academy",
+  "title": "Creative Labs with Young Film Academy: Slow Motion Filmmaking",
   "description": "",
   "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/yfa-creative-labs/yfa-kv.jpg",
   "alt": "",
   "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/yfa-creative-labs/yfa-kv.jpg",
   "group": "yfa-creative-labs",
-  "hidden": true,
-  "sort": 3,
+  "sort": 2,
   "meta": {
     "icon": "video",
     "tags": []
@@ -16,7 +15,7 @@
       "type": "kv",
       "media": {
         "type": "youtube",
-        "content": "MpUZQoxrE98",
+        "content": "qk_4pyrPHKE",
         "poster": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/yfa-creative-labs/yfa-kv.jpg",
         "alt": ""
       },
@@ -27,11 +26,11 @@
       "components": [
         {
           "type": "headline",
-          "copy": "Creative Labs with Young Film Academy"
+          "copy": "Creative Labs with Young Film Academy: Slow Motion Filmmaking"
         },
         {
           "type": "headline",
-          "copy": "Watch live here at 6pm on Wednesday 25th November",
+          "copy": "Watch live here at 7pm on Tuesday 8th December",
           "level": "3"
         }
       ]
@@ -45,7 +44,7 @@
             "large": true
           },
           "text": [
-            "In this exclusive session from the pro filmmakers at Young Film Academy, you will learn how to use slow-motion function on your smartphone to tell stories or create the next viral hit. Using the <a href=\"https://www.samsung.com/uk/smartphones/galaxy-s20/\">Samsung Galaxy S20</a>, the Young Film Academy will share their top tips and tricks."
+            "Slow Motion Filmmaking – learn to use the slow-motion function on your smartphone to tell stories and create the next viral hit. In this hands-on practical session, you will learn tips and tricks from the pro filmmakers at Young Film Academy."
           ]
         }
       ]

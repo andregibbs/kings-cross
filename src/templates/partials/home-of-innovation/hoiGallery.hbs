@@ -19,7 +19,9 @@
             data-type="{{ this.type }}"
             tabindex="0"
             title="{{this.title}}">
-          <h6 class="hoiList__ItemTitle">{{{ this.title }}}</h6>  
+          {{#if this.title}}
+            <h6 class="hoiList__ItemTitle">{{{ this.title }}}</h6>
+          {{/if}}
           <div class="hoiList__ItemImageWrap"
             style="background-image:url('{{this.image}}')"
             role="img"

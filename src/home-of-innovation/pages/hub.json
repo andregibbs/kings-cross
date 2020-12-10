@@ -19,12 +19,17 @@
         "scroll": true
       },
       "items": [
+        "creativity|yfa-creative-labs|framing-composition",
+        "innovation|next-level-gaming|deadly-pro-gaming-secrets",
+        "innovation|next-level-gaming|wolfiez-pro-gaming-secrets",
+        "innovation|next-level-gaming|meet-the-game-changers",
+        "creativity|yfa-creative-labs|slow-motion-filmmaking",
         "innovation|5g-podcast|interactive-yoga-pants",
         "lifestyle|guest-writer-of-the-week|20",
         "innovation|connected-christmas|marcelino-sambe",
         "creativity|editing-sessions|7",
         "innovation|5g-podcast|smart-rubbish",
-        "creativity|yfa-creative-labs|slow-motion-filmmaking",
+        "creativity|yfa-creative-labs|three-shot-filmmaking",
         "lifestyle|guest-writer-of-the-week|19",
         "creativity|graduate-fashion-week|student-blog|tabatha-lopez-S20FE",
         "innovation|taste-of-tomorrow|hydroponic-time-lapse",
@@ -61,6 +66,8 @@
         "hideIcon": true
       },
       "items": [
+        "innovation|next-level-gaming",
+        "creativity|yfa-creative-labs",
         "innovation|5g-podcast",
         "lifestyle|guest-writer-of-the-week",
         "innovation|product-demos|s20fe",
@@ -119,8 +126,10 @@
         "scroll": true
       },
       "items": [
-        "creativity|editing-sessions|7",
+        "creativity|yfa-creative-labs|framing-composition",
         "creativity|yfa-creative-labs|slow-motion-filmmaking",
+        "creativity|editing-sessions|7",
+        "creativity|yfa-creative-labs|three-shot-filmmaking",
         "creativity|graduate-fashion-week|student-blog|tabatha-lopez-S20FE",
         "creativity|editing-sessions|6",
         "creativity|yfa-creative-labs|halloween",
@@ -177,6 +186,9 @@
         "scroll": true
       },
       "items": [
+        "innovation|next-level-gaming|deadly-pro-gaming-secrets",
+        "innovation|next-level-gaming|wolfiez-pro-gaming-secrets",
+        "innovation|next-level-gaming|meet-the-game-changers",
         "innovation|5g-podcast|interactive-yoga-pants",
         "innovation|connected-christmas|marcelino-sambe",
         "innovation|5g-podcast|smart-rubbish",

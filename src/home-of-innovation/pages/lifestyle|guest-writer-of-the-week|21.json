@@ -1,0 +1,105 @@
+{
+  "title": "Guest writer of the week: Time, cooking and convenience in a digital world",
+  "description": "",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/21/chicken_leeks.jpg",
+  "alt": "",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/21/chicken_leeks.jpg",
+  "group": "guest-writer-of-the-week",
+  "hidden": true,
+  "sort": 21,
+  "meta": {
+    "icon": "article",
+    "tags": []
+  },
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "{{lifestyle|guest-writer-of-the-week|21[image]}}",
+        "alt": "{{lifestyle|guest-writer-of-the-week|21[alt]}}"
+      },
+      "style": {
+        "desktop": "left",
+        "mobile": "bottom"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "Time, cooking and convenience in a digital world"
+        }
+      ]
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "paragraphs",
+          "text": [
+            "We live in a progressively digital world, where internet plays a huge part in everyday life. It makes things easier, more effective and has brought us opportunity, knowledge and access to delicious new foods and recipes.",
+            "The internet allows you to find out where things are from and how they are getting to you, as well as whether you can buy it in person or from a local shop. That’s the beauty of it – you can do your research before to help the environment (even with online shopping you can still support your local businesses – they now have the opportunity to reach a wider audience). Sometimes the barrier to being more environmentally friendly can be being limited to what’s available in the shops around you. That might mean ordering your veg box from a farm delivery service, buying home grown grains and fresh milled flour direct from the producers or your meat and dairy delivered from a grass-fed organic farm.",
+            "Companies are moving with the times and making effort to be more eco-friendly. Even in appliances, <a href=\"https://www.samsung.com/uk/refrigerators/rb7300t-spacemax/\">Samsung’s new RB7300 fridge</a> is made to be more efficient by its high-efficiency insulation and ability to preserve the freshness of food by twice as long.",
+            "As far as food shopping goes, to waste less and buy produce with as lower environmental impact needs just one thing – planning. Use the time saved by shopping online to think before you buy - check what’s in the kitchen, check use by dates, and plan what you want to cook. A well-stocked store cupboard is the base for easy cooking; spices, preserves, oils, vinegars etc. all give flavour. Store and rework leftovers and refrigerate odds and ends to make into meals for in-between days. Mostly, recipes aren’t set in stone, swap in what you have. "
+          ]
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/21/veg.jpg",
+          "alt": ""
+        },
+        {
+          "type": "headline",
+          "copy": "Chicken and leek creamy oats",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Savoury porridge isn’t so far removed from risotto, it’s just much quicker and easier to cook. Really warming and creamy, it can take so many big flavours, this version uses leftover chicken and the crispy chicken skin (perfect for using up Sunday roast leftovers!). Add a sprinkling of cheese and spoonful of marmite to give it the ultimate finish.",
+            "Serves: 1<br>Start to serve: 20 mins"
+          ]
+        },
+        {
+          "type": "html-list",
+          "items": [
+            "60g rolled oats ",
+            "250ml chicken/veg stock or water or a half milk and stock/water ",
+            "A sprig of thyme or use some rosemary or bay if you have",
+            "1tps butter or oil",
+            "A small handful of sliced leek, onion or spring onions, or crushed garlic ",
+            "A handful of leftover cooked chicken/turkey (any leftover meat, fish, lentils/beans or egg)",
+            "A handful of chopped spinach, leafy greens or herbs ",
+            "Add a pinch of grated cheese (we used goats gouda, but parmesan and cheddar or even crumble in some blue) ",
+            "50g hard cheese – parmesan, goats gouda, strong cheddar or whatever strong cheese you prefer and have ",
+            "1tbsp cream or kefir if you like",
+            "1tbsp of pickle to serve (we used carrot and nigella seed kraut but kimchee or your favourite pickle/ferment or chutney)",
+            "Crispy onions to top if you don’t have chicken skin"
+          ]
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "<br>",
+            "If the chicken has skin on – peel it off and crisp it up in small heavy based saucepan with the oil/butter for around 4 mins, then set aside. Stir-fry the leek in the frying pan for around 2 mins. add the oats and mix well.",
+            "Add the stock and chicken, bring to the boil, scraping the crispy bit at the bottom of the pan. Turn to a low simmer, mixing all the time for 5-6 mins – add a dash more milk or water if it’s too thick.",
+            "Add the greens for the last min. add salt, pepper, cream and grated cheese to taste. Serve pickle on the side."
+          ]
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/21/chicken_leeks.jpg",
+          "alt": ""
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "dynamic": "more-articles",
+      "id": "guest-writer-of-the-week",
+      "title": "More articles",
+      "style": {
+        "scroll": true
+      }
+    }
+  ]
+}

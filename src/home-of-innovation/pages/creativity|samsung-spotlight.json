@@ -1,0 +1,180 @@
+{
+  "title": "Samsung Spotlight",
+  "description": "",
+  "image": "http://placeimg.com/1440/900/arch",
+  "alt": "",
+  "thumb": "http://placeimg.com/1440/900/arch",
+  "hidden": true,
+  "meta": {
+    "icon": "video",
+    "tags": []
+  },
+  "components": [
+    {
+      "type": "css-snippet",
+      "content": ".hoiHeadline h4 { margin: 0 !important; }"
+    },
+    {
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "http://placeimg.com/1440/900/arch",
+        "alt": ""
+      },
+      "style": {
+        "desktop": "left",
+        "mobile": "top"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "Samsung Spotlight"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Samsung Spotlight is a new initiative to help support young performers in the arts who have been adversely affected by the impact of the pandemic.",
+            "With venue closures, performances cancelled and stages lost, the opportunity for young performers to break into the industry has never been more challenging."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "paragraphs",
+          "text": [
+            "We’ve teamed up with actor Paul Mescal to launch Samsung Spotlight which encourages creators from across the UK & Ireland to film performances and submit to Instagram via #SamsungSpotlight.",
+            "Performances can be everything from dance to physical theatre and mime, with the best three entries winning the following prize package: "
+          ]
+        },
+        {
+          "type": "html-list",
+          "items": [
+            "Feature in Samsung’s new online advert",
+            "Take part in a virtual meet and greet with Paul",
+            "£5,000 cash prize",
+            "1 x Samsung Galaxy S20 and 1 x Samsung QLED 8K TV"
+          ]
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "A selection of the best entries will also be shared on our social channels and as part of a new Samsung Spotlight playlist on YouTube.",
+            "To launch the initiative, Paul has created ‘Lockdown’ a film which explores the emotions of lockdown as he dances amongst mannequins that represent the absent audience of 2020."
+          ]
+        },
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "How to enter"
+        },
+        {
+          "type": "headline",
+          "level": "4",
+          "copy": "Step 1: Choose your performance"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "From dance to physical theatre, mime, self-expression, poetry and acting, you can choose any type of artistic performance that will best showcase your talents."
+          ]
+        },
+        {
+          "type": "headline",
+          "level": "4",
+          "copy": "Step 2: Find a location"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Think about where to shoot your content, use vibrant, colourful or interesting locations to form your backdrop and add a stylistic flair to your performance – the world is your stage!"
+          ]
+        },
+        {
+          "type": "headline",
+          "level": "4",
+          "copy": "Step 3: Music"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Compose your own soundtrack or use royalty free music to set your performance to and enhance your entry. Please do not use a commercial or copyrighted track, there are plenty of royalty free music libraries for you to choose from online with examples of most music genres."
+          ]
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "<royalty free music>"
+          ]
+        },
+        {
+          "type": "headline",
+          "level": "4",
+          "copy": "Step 4: Film it"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Get a family member or someone in your household to film your performance – or shoot it yourself with the help of a tripod. Be as creative as possible and most importantly, have fun!"
+          ]
+        },
+        {
+          "type": "headline",
+          "level": "4",
+          "copy": "Step 5: Share it "
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Share your entry video to Instagram with #SamsungSpotlight for your chance to win.",
+            "<br>"
+          ]
+        },
+        {
+          "type": "video",
+          "content": ""
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "<br>",
+            "INSERT SHORT VERSION OF T&CS here",
+            "Full competition T&Cs can be found <a href=\"\">here</a>"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "title": "Samsung Spotlight",
+      "items": [
+        {
+          "type": "image",
+          "content": "http://placeimg.com/1440/900/arch",
+          "image": "http://placeimg.com/1440/900/arch",
+          "alt": ""
+        },
+        {
+          "type": "image",
+          "content": "http://placeimg.com/1440/900/arch",
+          "image": "http://placeimg.com/1440/900/arch",
+          "alt": ""
+        },
+        {
+          "type": "image",
+          "content": "http://placeimg.com/1440/900/arch",
+          "image": "http://placeimg.com/1440/900/arch",
+          "alt": ""
+        },
+        {
+          "type": "image",
+          "content": "http://placeimg.com/1440/900/arch",
+          "image": "http://placeimg.com/1440/900/arch",
+          "alt": ""
+        }
+      ]
+    }
+  ]
+}
