@@ -41,7 +41,6 @@ export default class findKX {
 
     // append template for each line
     data.forEach((item) => {
-      console.log('item', template(item))
       this.openingTimesEl.insertAdjacentHTML('beforeend', template(item))
     })
 
