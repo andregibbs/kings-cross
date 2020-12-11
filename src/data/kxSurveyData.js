@@ -62,14 +62,13 @@ const SURVEY_DATA = [
       '/uk/explore/kings-cross/innovation/connected-christmas/',
       '/uk/explore/kings-cross/innovation/connected-christmas/marcelino-sambe/',
       '/uk/explore/kings-cross/creativity/editing-sessions/',
-      '/uk/explore/kings-cross/creativity/editing-sessions/1',
-      '/uk/explore/kings-cross/creativity/editing-sessions/2',
-      '/uk/explore/kings-cross/creativity/editing-sessions/3',
-      '/uk/explore/kings-cross/creativity/editing-sessions/4',
-      '/uk/explore/kings-cross/creativity/editing-sessions/5',
-      '/uk/explore/kings-cross/creativity/editing-sessions/6',
-      '/uk/explore/kings-cross/creativity/editing-sessions/7',
-      '/uk/explore/kings-cross/creativity/editing-sessions/8'
+      '/uk/explore/kings-cross/creativity/editing-sessions/1/',
+      '/uk/explore/kings-cross/creativity/editing-sessions/2/',
+      '/uk/explore/kings-cross/creativity/editing-sessions/3/',
+      '/uk/explore/kings-cross/creativity/editing-sessions/4/',
+      '/uk/explore/kings-cross/creativity/editing-sessions/5/',
+      '/uk/explore/kings-cross/creativity/editing-sessions/6/',
+      '/uk/explore/kings-cross/creativity/editing-sessions/7/'
     ],
     survey_embed_url: "https://docs.google.com/forms/d/e/1FAIpQLScrgghSDPFOhZVlgwZ2RBY9YttF8LO66gp0IV6McTLBhVnOPg/viewform",
     prompt: {
