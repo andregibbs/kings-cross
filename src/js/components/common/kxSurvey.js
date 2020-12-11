@@ -22,6 +22,7 @@ const template = require('../../../templates/partials/components/common/kxSurvey
 
 const LOCAL_STORAGE_KEY = 'kxs-history'
 const URL_PARAM = 'kxsid'
+const RESET_PARAM = 'kxsreset'
 const PROMPT_DISPLAY_DELAY = 2500;
 
 // move this somewhere common to fetch data
@@ -57,15 +58,8 @@ class KXSurvey {
     this.userInteracted = false
 
     // reset view history
-    if (getParam('reset')) {
+    if (getParam(RESET_PARAM)) {
       this.resetHistory()
-    }
-
-    if (this.hasBeenAskedForSurvey(this.surveyID) || !this.surveyID || !this.templateTarget) {
-      // user has already been asked about this survey
-      // or no survey id
-      // or no template target
-      return
     }
 
     // fetch
@@ -73,19 +67,41 @@ class KXSurvey {
     // if no data and local message in console that the survey data needs to be written locally
     this.fetchSurveyData()
       .then(surveyData => {
-        // find survey data for id in url
-        const selectedSurvey = surveyData.filter(survey => {
-          return survey.id === this.surveyID
-        })[0]
+        let selectedSurvey = false;
+
+        if (this.surveyID) {
+          // find survey data for id in url
+          selectedSurvey = surveyData.filter(survey => {
+            return survey.id === this.surveyID
+          })[0]
+        } else {
+          // see if one is active for this page
+          const pathname = window.location.pathname
+          selectedSurvey = surveyData.filter(survey => {
+            if (!survey.pathnames) return false
+            return survey.pathnames.indexOf(pathname) > -1
+          })[0]
+          // store id
+          this.surveyID = selectedSurvey.id
+        }
 
         if (!selectedSurvey) {
-          console.log('no survey with specified id')
+          // console.log('no survey with specified id')
           return // no survey present
+        }
+
+        if (this.hasBeenAskedForSurvey(selectedSurvey.id)) {
+          // console.log('already asked')
+          return
+        }
+
+        if (!selectedSurvey.active) {
+          // console.log('survey not active')
+          return
         }
 
         // render template and setup view
         this.renderTemplate(selectedSurvey)
-        this.setupView();
 
         // prompt trigger method
         this.listenForUserInteraction()
@@ -161,7 +177,7 @@ class KXSurvey {
     this.storeUserAsked()
   }
 
-  userAcceptPrompt() {
+  userAcceptPrompt(e) {
     // user accepts prompt
     // lock scroll
     document.querySelector('html').style.overflow = 'hidden'
@@ -195,6 +211,7 @@ class KXSurvey {
 
   storeUserAsked() {
     const surveyHistory = this.getSurveyHistory()
+
     // push id to stored array
     surveyHistory.push(this.surveyID)
     // save array
