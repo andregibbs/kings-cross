@@ -1,0 +1,46 @@
+{
+  "title": "Marcelino Sambé: Connected Christmas ballet",
+  "description": "Ending the year with a Christmas high, connect with two moving performances, blogs and playlists, as we use Samsung tech to enjoy the festive season in new ways this year.",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/connected-christmas/Samsung_WebsiteBanner_Xmas_MARCELINO_1440x810_V1.jpg",
+  "alt": "",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/connected-christmas/Samsung_WebsiteBanner_Xmas_MARCELINO_400x255_V1.jpg",
+  "group": "connected-christmas",
+  "sort": 2,
+  "meta": {
+    "icon": "video",
+    "tags": []
+  },
+  "components": [
+    {
+      "type": "kv",
+      "style": {
+        "desktop": "top",
+        "mobile": "top"
+      },
+      "media": {
+        "type": "youtube",
+        "content": "lhwTjjvKZDU",
+        "poster": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/connected-christmas/Samsung_WebsiteBanner_Xmas_MARCELINO_1440x810_V1.jpg",
+        "alt": ""
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "Marcelino Sambé: Connected Christmas ballet"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Nutcracker soloist Marcelino Sambé shares the wonder of Christmas in an exclusive Samsung KX performance, as he connects with fans through <a href=\"https://www.samsung.com/uk/tablets/galaxy-tab-s/galaxy-tab-s7-plus-12-4-inch-mystic-bronze-128gb-wi-fi-sm-t970nznaeua/buy/\">Galaxy Tab S7</a> and <a href=\"https://www.samsung.com/uk/smartphones/galaxy-s20/galaxy-s20-fe/\">Galaxy S20</a> devices. Watch his exclusive ballet rendition now."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "dynamic": "episodes",
+      "title": "Connnected Christmas",
+      "id": "connected-christmas"
+    }
+  ]
+}

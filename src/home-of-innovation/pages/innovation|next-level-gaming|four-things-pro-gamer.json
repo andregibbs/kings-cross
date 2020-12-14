@@ -1,0 +1,106 @@
+{
+  "title": "The Four Things You Didn't Know About a Pro Gamer",
+  "description": "Powered by Odyssey G9, get an insider view of the professional world of esports.",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/next-level-gaming/Samsung_NextLevel_1440x810_3Talent.jpg",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/next-level-gaming/Samsung_NextLevel_400x255_3Talent.jpg",
+  "group": "next-level-gaming",
+  "hidden": true,
+  "sort": 4,
+  "meta": {
+    "icon": "article",
+    "tags": []
+  },
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/next-level-gaming/Samsung_NextLevel_1440x810_3Talent.jpg",
+        "alt": ""
+      },
+      "style": {
+        "desktop": "top",
+        "mobile": "bottom"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "The Four Things You Didn't Know About a Pro Gamer"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Powered by <a href=\"https://www.samsung.com/uk/monitors/gaming/dqhd-monitor-with-1000r-curved-display-49-inch-lc49g93tssuxen/\">Odyssey G9</a>, get an insider view of the professional world of esports."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "paragraphs",
+          "text": [
+            "Our latest Next Level Gaming activity has shone a light on the opportunities within the world of esports, dispelling some of the myths often assumed about gamers, and looking at how the next generation of female gamers is upon us.",
+            "When it comes to preparing for tournaments and competitions, it’s not just about putting in hours and hours of gaming practice. We spoke to Wolfiez, Deadly and Alliestrasza to tell us four interesting, and unexpected things that they do to keep them at the top of their game."
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "1. Pro gamers stretch before a game",
+          "level": "4"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Much like elite sport stars, gamers prevent injury through a series of comprehensive warmups, working their fingers as well as hand and arm stretching. Get limbered up before you compete to stay pain-free and maximise your gameplay – game on!"
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "2. Meditating gives many players the competitive edge",
+          "level": "4"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "It’s not all about the physical gameplay. Before any game, take a holistic approach of visualising and rehearsing scenarios in the mind, this is an important way to remain calm, focused and motivated, whilst increasing competitive performance."
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "3. Team sessions to analyse game play",
+          "level": "4"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Working with coaches and analysers, elite gamers review all their game play footage, as well as their competitors’ matches. Players can track their achievements, analyse past gameplay behaviour and devise new winning strategies; an integral part of getting to the top."
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "4. Team bonding is everything",
+          "level": "4"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "For team esports stars, it’s crucial that there is a natural chemistry between the players online and offline, so they play better together in game. Within the EXCEL players house they have board game nights, watch movies together, go bowling, and more. They’re friends first, and elite competitors second.",
+            "<br>",
+            "So, for the next generation of gamers, of course it’s important you put the time in gaming, but there is so much more to be an elite gamer. Get stretching, take a bit of time to meditate, analyse your gameplay and keep building those friendships."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "dynamic": "articles",
+      "style": {
+        "scroll": true
+      },
+      "id": "next-level-gaming",
+      "title": "Articles"
+    }
+  ]
+}

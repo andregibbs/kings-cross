@@ -1,9 +1,9 @@
 {
-  "title": "Marcelino Sambé's Live Christmas Ballet",
+  "title": "Connected Christmas",
   "description": "",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/connected-christmas/SamsungKX_HoldingScreen_Marcelino_1440x720.png",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/connected-christmas/Samsung_WebsiteBanner_Xmas_series_1440x810_V1.png",
   "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/connected-christmas/SamsungKX_HoldingScreen_Marcelino_1440x720.png",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/connected-christmas/Samsung_WebsiteBanner_Xmas_series_255x255_V5.jpg",
   "meta": {
     "icon": "series",
     "tags": []
@@ -17,20 +17,26 @@
       },
       "media": {
         "type": "image",
-        "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/connected-christmas/SamsungKX_HoldingScreen_Marcelino_1440x720.png",
+        "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/connected-christmas/Samsung_WebsiteBanner_Xmas_series_1440x810_V1.png",
         "alt": ""
       },
       "components": [
         {
           "type": "headline",
-          "copy": "Marcelino Sambé’s Live Christmas Ballet"
+          "copy": "Connnected Christmas"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Ending the year with a Christmas high, connect with two moving performances, blogs and playlists, as we use Samsung tech to enjoy the festive season in new ways this year."
+          ]
         }
       ]
     },
     {
       "type": "group",
       "dynamic": "episodes",
-      "title": "Marcelino Sambé's Live Christmas Ballet",
+      "title": "Connected Christmas",
       "id": "connected-christmas"
     }
   ]

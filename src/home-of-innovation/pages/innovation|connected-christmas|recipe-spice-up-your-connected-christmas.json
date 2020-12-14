@@ -1,0 +1,99 @@
+{
+  "title": "Recipe: Spice up your Connected Christmas",
+  "description": "",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/connected-christmas/Samsung_WebsiteBanner_Xmas_MARCI_RECIPE_option2_1440x810_v1.jpg",
+  "alt": "",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/connected-christmas/Samsung_WebsiteBanner_Xmas_MARCI_RECIPE_option2_400x255_v1.png",
+  "group": "connected-christmas",
+  "sort": 3,
+  "meta": {
+    "icon": "article",
+    "tags": []
+  },
+  "components": [
+    {
+      "type": "kv",
+      "style": {
+        "desktop": "top",
+        "mobile": "top"
+      },
+      "media": {
+        "type": "image",
+        "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/connected-christmas/Samsung_WebsiteBanner_Xmas_MARCI_RECIPE_option2_1440x810_v1.jpg",
+        "alt": ""
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "Recipe: Spice up your Connected Christmas"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "The delicious day of the year is finally here. Ditch the traditional turkey dinner and try something new with ballet dancer Marcelino Sambré; Portuguese 'Bacalhau com Brao' dish; a non-turkey crowd pleaser you can bring to the table using <a href=\"https://www.samsung.com/uk/smartthings/\">SmartThings</a> and the <a href=\"https://www.samsung.com/uk/home-appliances/infinite-line/ovens/\">Infinite Oven Range</a>."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "headline",
+          "copy": " Bacalhau com broa by Marcelino Sambé",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Bacalhau com broa is one of my favourite Christmas dishes. The combination of the sweet and savoury flavours from the corn bread, mixed with the salty and juicy taste from the salt cod is a mouth-watering feast for the taste buds."
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "Ingredients:",
+          "level": "4"
+        },
+        {
+          "type": "html-list",
+          "items": [
+            "4 loins of salt cod",
+            "1/4 of broa de milho, Portuguese corn bread (or 2 dl breadcrumbs)",
+            "2 onions",
+            "2 Portuguese linguiças (spiced sausages), or 0.5 Portuguese or Spanish chorizo",
+            "Parsley",
+            "1 garlic clove",
+            "Olive oil"
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "Method:",
+          "level": "4"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Start by soaking the cod loins in water, for at least 6 hours (preferably overnight) before cooking.",
+            "Preheat the oven to 180 °C. Begin by slicing the onions and drizzle a baking pan with olive oil.",
+            "Spread the onion on the baking pan and place the cod loins on top, then place in the oven and bake for 20 minutes.",
+            "While the cod is in the oven, remove the crust of the corn bread.",
+            "Remove the skin of the linguiça, or chorizo, and cut into small cubes.",
+            "Crush and chop the garlic.",
+            "Using a mincer, place the sausage, bread, garlic and parsley and chop coarsely.",
+            "Remove the cod from the oven and scoop a 2 tablespoons of olive oil into the bread mixture.",
+            "Remove the skin from the loins, spread the bread mixture on top and place in the oven for another 5 minutes.",
+            "This dish is best served with roast potatoes and sautéed spinach.",
+            "<strong>Tip:</strong><br>In the UK, it might be difficult to get hold of the genuine Portuguese corn bread ‘Broa’, therefore I would suggest corn bread as a substitute."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "dynamic": "episodes",
+      "title": "Connnected Christmas",
+      "id": "connected-christmas"
+    }
+  ]
+}

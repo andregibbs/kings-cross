@@ -1,0 +1,150 @@
+{
+  "title": "Esports 101 by Kevin Cheung",
+  "description": "Powered by Odyssey G9, get an insider view of the professional world of esports.",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/next-level-gaming/Samsung_NextLevel_1440x810_3Talent.jpg",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/next-level-gaming/Samsung_NextLevel_400x255_3Talent.jpg",
+  "group": "next-level-gaming",
+  "sort": 4,
+  "meta": {
+    "icon": "article",
+    "tags": []
+  },
+  "components": [
+    {
+      "type": "css-snippet",
+      "content": ".hoiHeadline { margin-bottom: 0 !important; }"
+    },
+    {
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/next-level-gaming/Samsung_NextLevel_1440x810_3Talent.jpg",
+        "alt": ""
+      },
+      "style": {
+        "desktop": "top",
+        "mobile": "bottom"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "Esports 101 by Kevin Cheung"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Powered by <a href=\"https://www.samsung.com/uk/monitors/gaming/dqhd-monitor-with-1000r-curved-display-49-inch-lc49g93tssuxen/\">Odyssey G9</a>, get an insider view of the professional world of esports."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "headline",
+          "copy": "Kevin Cheung – Samsung KX x Esports",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Esports in the UK is growing rapidly and the true potential for not only players but gaming enthusiasts to have successful careers in the industry are really starting to emerge. Kevin Cheung, retired esports pro turned esports University lecturer at Staffordshire University gives us an overview into this fast-paced world. "
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "1. Understanding the three pillars of esports",
+          "level": "4"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "The best place to start with understanding the professional world of esports are with the industries three key pillars. Competition, entertainment and community. These are the fundamental ingredients that lead to the support, growth and the success of the esports industry."
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "Competition",
+          "level": "5"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Where the stars are born and where their legends are cemented into esports history. Whether league or a tournament, competition events are where the players and team organisations get their moment to shine and make a successful name for themselves.",
+            "Competitions are the industry’s lifeblood and key growth pillar as they provide the entertainment for esports fans."
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "Entertainment",
+          "level": "5"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Esports broadcast productions play such an essential part within the industry as they share and connect the wider fan base globally.",
+            "Major esports titles are reaching hundreds, thousands and even millions of viewers online and they have a big role to play to keep people coming back for more."
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "Community",
+          "level": "5"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "The community, the fans, the gaming audience, they are truly the driving force behind the esports ecosystem. That’s why every individual has their place within esports.",
+            "Whether an audience member watching the spectacle unfold online or in the arena, or content creators building the hype with highlight reels for social - the Community provides the exposure necessary to support the esports ecosystem from a business and financial perspective.",
+            "They’re the reason for sponsorships, partnerships and endorsements expanding the esports market."
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "2. How does the UK scene compare globally?",
+          "level": "4"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "The UK is currently behind other major regions such as Europe, North America and Asia. But why - without the restrictions of other regions such as legislation, regulation and culture, surely the UK should be striving?",
+            "One of the major factors preventing the UK’s growth is negative stigma. It’s still prevalent around both gaming and esports.",
+            "The idea that gaming is for ‘nerds’, that it is a waste of time and not a ‘real career’ is preventing people from pursuing esports as a serious pathway. However, the public sentiment is starting to shift. More and more people are now being exposed to the world of esports and moving the conversation away from \"What is esports?\" towards \"Why is esports so successful and how do I become a part of it?\"",
+            "We see evidence of this as more support and investments come into the esports ecosystem from non-endemic companies. This is not only helping change stereotypes but helps to solve one of the other issues facing the UK esports scene - the lack of funding.",
+            "A third issue for the UK is exposure but luckily this is also taking a turn. With the recent million dollar success of Excel Esports', Jaden ‘Wolfiez’ Ashman, the UK mainstream media is beginning to not only take notice but report regularly on the esports industry.",
+            "Education is also helping to shift negative perceptions. With BA honours esports courses, such as our own at Staffordshire University, education is also now helping to combat the stigma and help propel talented individuals into a successful career in esports. One that exists beyond making it as a pro player.",
+            "Although improvements are being made and we’re seeing a rise in the growth of the UK esports scene there are still some key things we need to work on as a community. Firstly, more competitions so more UK players can shine, more reliable internet across the UK and a more supportive community as we stamp out any toxicity. This is something we can all action."
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "3. The career path for an esports pro",
+          "level": "4"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "The path ahead for esports professionals differ in many ways and yet may converge down a similar path.",
+            "For aspiring esports players, many careers have humble beginnings born from the love of the esports titles they play. That passion paired with the additional drive for competition, lead many to either look for a team or to be scouted. Others, including myself, create and form their own teams. This can commence a difficult path ahead with many obstacles, risks and sacrifices.",
+            "It must also be said that with many individuals starting their careers whilst still in education it’s no surprise that many young players find themselves in the tough decision between prioritising their studies or attempting to go pro. They face the conundrum of whether to pursue their dreams in hopes of competitive success or to continue with their education for reliability and future security. And with many gamers retiring at a young age there needs to be a backup plan.",
+            "So, what happens after you reach your pro peak?",
+            "Whether players make it to huge global success or not, there are still many great career opportunities within esports for retired players. Many ex-pros remain in the competitive space and take upon supportive roles such as coaching.",
+            "Others may look to pursue a career within On-Air Talent and become Shoutcasters and Analysts for Live Broadcast Production of esports events.  These roles allow ex-players to stay relevant and put their knowledge and skills to good use outside of the competitive stage. And of course, it’s common for many retired professionals to find their place within the world of Live Streaming and Content Creation.",
+            "Some of the more entrepreneurial individuals have found themselves pursuing their own esports business ventures. Matthew ‘Nadeshot’ Haag, a former professional Call of Duty player, went on to find success in esports by founding ‘100 Thieves’- a lifestyle brand and gaming organisation. And Stephen ‘Snoopeh’ Ellis, a former professional League of Legends player went on to become the CEO and co-founder of Pipeline - a platform that helps streamers turn their passion into a career.",
+            "So, whether you want to play for love or money, good luck, have fun, and most importantly esports fans, I wish you all Good Game."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "dynamic": "articles",
+      "style": {
+        "scroll": true
+      },
+      "id": "next-level-gaming",
+      "title": "Articles"
+    }
+  ]
+}

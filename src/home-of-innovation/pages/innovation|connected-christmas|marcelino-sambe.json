@@ -19,22 +19,16 @@
       "type": "kv",
       "share": false,
       "style": {
-        "desktop": "left",
-        "mobile": "top",
-        "theme": "livestream-chat"
+        "desktop": "top",
+        "mobile": "top"
       },
       "media": {
-        "type": "livestream",
+        "type": "youtube",
         "content": "sL7RsP-dICc",
         "poster": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/connected-christmas/SamsungKX_HoldingScreen_Marcelino_1440x720_b.jpg",
         "alt": ""
       },
-      "components": [
-        {
-          "type": "youtube-live-chat",
-          "content": "sL7RsP-dICc"
-        }
-      ]
+      "components": []
     },
     {
       "type": "wrapper",
@@ -65,7 +59,7 @@
     {
       "type": "group",
       "dynamic": "episodes",
-      "title": "Marcelino Sambé's Live Christmas Ballet",
+      "title": "Connnected Christmas",
       "id": "connected-christmas"
     }
   ]
