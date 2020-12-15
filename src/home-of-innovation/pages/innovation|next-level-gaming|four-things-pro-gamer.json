@@ -1,10 +1,9 @@
 {
   "title": "The Four Things You Didn't Know About a Pro Gamer",
   "description": "Powered by Odyssey G9, get an insider view of the professional world of esports.",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/next-level-gaming/Samsung_NextLevel_1440x810_3Talent.jpg",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/next-level-gaming/Samsung_NextLevel_400x255_3Talent.jpg",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/next-level-gaming/Samsung_NextLevel_1440x810_139.jpg",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/next-level-gaming/Samsung_NextLevel_400x255_139.jpg",
   "group": "next-level-gaming",
-  "hidden": true,
   "sort": 4,
   "meta": {
     "icon": "article",
@@ -15,7 +14,7 @@
       "type": "kv",
       "media": {
         "type": "image",
-        "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/next-level-gaming/Samsung_NextLevel_1440x810_3Talent.jpg",
+        "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/next-level-gaming/Samsung_NextLevel_1440x810_139.jpg",
         "alt": ""
       },
       "style": {
@@ -25,7 +24,7 @@
       "components": [
         {
           "type": "headline",
-          "copy": "The Four Things You Didn't Know About a Pro Gamer"
+          "copy": "The four things you didn't know about a pro gamer"
         },
         {
           "type": "paragraphs",

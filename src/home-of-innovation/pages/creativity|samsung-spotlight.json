@@ -1,41 +1,34 @@
 {
   "title": "Samsung Spotlight",
   "description": "",
-  "image": "http://placeimg.com/1440/900/arch",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/samsung-spotlight/PinPep_SamsungSpotlight_PaulMescal_006.JPG",
   "alt": "",
-  "thumb": "http://placeimg.com/1440/900/arch",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/samsung-spotlight/PinPep_SamsungSpotlight_PaulMescal_006.JPG",
   "hidden": true,
   "meta": {
-    "icon": "video",
+    "icon": "article",
     "tags": []
   },
   "components": [
     {
       "type": "css-snippet",
-      "content": ".hoiHeadline h4 { margin: 0 !important; }"
+      "content": ".hoiHeadline h5 { margin: 0 !important; }"
     },
     {
       "type": "kv",
       "media": {
         "type": "image",
-        "content": "http://placeimg.com/1440/900/arch",
+        "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/samsung-spotlight/PinPep_SamsungSpotlight_PaulMescal_006.JPG",
         "alt": ""
       },
       "style": {
-        "desktop": "left",
+        "desktop": "top",
         "mobile": "top"
       },
       "components": [
         {
           "type": "headline",
           "copy": "Samsung Spotlight"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Samsung Spotlight is a new initiative to help support young performers in the arts who have been adversely affected by the impact of the pandemic.",
-            "With venue closures, performances cancelled and stages lost, the opportunity for young performers to break into the industry has never been more challenging."
-          ]
         }
       ]
     },
@@ -45,25 +38,35 @@
         {
           "type": "paragraphs",
           "text": [
-            "We’ve teamed up with actor Paul Mescal to launch Samsung Spotlight which encourages creators from across the UK & Ireland to film performances and submit to Instagram via #SamsungSpotlight.",
-            "Performances can be everything from dance to physical theatre and mime, with the best three entries winning the following prize package: "
+            "Samsung Spotlight is a new initiative that encourages and supports emerging performers in the arts who have been adversely affected by the impact of the pandemic.",
+            "The events of 2020 have had an unprecedented effect on the arts with venue closures, performances cancelled and stages lost, making the opportunity for artistic creators to break into the industry even more challenging. ",
+            "Samsung Spotlight aims to give performers a platform to showcase their talents. The campaign launches in partnership with ‘Breakthrough Actor of the Year’ Paul Mescal, who created a visual representation of his Lockdown experience through a contemporary dance.",
+            "This entire film was shot in ultra-high definition 8K video on Samsung Galaxy S20 devices, and was created to inspire entrants to get involved whilst showing what can be achieved through your smartphone alone. Find out more about the power of 8K video here .",
+            "The competition is open to all performance artists from across the UK & Ireland over the age of 16. Those wanting to get involved simply need to film an audition-style performance up to 90 seconds and submit it via their Instagram profile using the hashtag #SamsungSpotlight. ",
+            "The competition is open from 16th December 2020 – 1st February 2021 when three winners will be selected by the judging panel. We are looking for performances that are creative, unique and showcase your talents so get inspired and get involved. ",
+            "Performances can be in any form, from dance to physical theatre and acting to mime.  ",
+            "The best three entries will each receive the following prize package:"
           ]
         },
         {
           "type": "html-list",
           "items": [
-            "Feature in Samsung’s new online advert",
-            "Take part in a virtual meet and greet with Paul",
+            "Feature in Samsung’s new digital advert",
+            "Take part in a virtual meet and greet with Paul Mescal",
             "£5,000 cash prize",
-            "1 x Samsung Galaxy S20 and 1 x Samsung QLED 8K TV"
+            "A Samsung Galaxy device",
+            "A Samsung QLED 8K TV"
           ]
         },
         {
           "type": "paragraphs",
           "text": [
-            "A selection of the best entries will also be shared on our social channels and as part of a new Samsung Spotlight playlist on YouTube.",
-            "To launch the initiative, Paul has created ‘Lockdown’ a film which explores the emotions of lockdown as he dances amongst mannequins that represent the absent audience of 2020."
+            "<br>"
           ]
+        },
+        {
+          "type": "youtube",
+          "content": "RMrnGnpMEI0"
         },
         {
           "type": "headline",
@@ -72,73 +75,66 @@
         },
         {
           "type": "headline",
-          "level": "4",
-          "copy": "Step 1: Choose your performance"
+          "level": "5",
+          "copy": "Step 1: Create your performance"
         },
         {
           "type": "paragraphs",
           "text": [
-            "From dance to physical theatre, mime, self-expression, poetry and acting, you can choose any type of artistic performance that will best showcase your talents."
+            "From dance to physical theatre, mime, self-expression, poetry and acting, you can choose any type of artistic performance that will best showcase your talents. Just remember your performance can’t be longer than 90 seconds."
           ]
         },
         {
           "type": "headline",
-          "level": "4",
+          "level": "5",
           "copy": "Step 2: Find a location"
         },
         {
           "type": "paragraphs",
           "text": [
-            "Think about where to shoot your content, use vibrant, colourful or interesting locations to form your backdrop and add a stylistic flair to your performance – the world is your stage!"
+            "Think about where to shoot your content. Consider using vibrant, colourful or interesting locations to form your backdrop and add a stylistic flair to your performance – the world is your stage!"
           ]
         },
         {
           "type": "headline",
-          "level": "4",
+          "level": "5",
           "copy": "Step 3: Music"
         },
         {
           "type": "paragraphs",
           "text": [
-            "Compose your own soundtrack or use royalty free music to set your performance to and enhance your entry. Please do not use a commercial or copyrighted track, there are plenty of royalty free music libraries for you to choose from online with examples of most music genres."
+            "If your performance includes music, please compose your own soundtrack or use royalty free music to set your performance to and enhance your entry. ",
+            "Please do not use a commercial or copyrighted track, there are plenty of royalty-free online music libraries for you to choose from, giving you access to a wide variety of genres – some example sites include:"
           ]
         },
         {
-          "type": "paragraphs",
-          "text": [
-            "<royalty free music>"
+          "type": "html-list",
+          "items": [
+            "<a href=\"https://www.free-stock-music.com\" target=\"_blank\">https://www.free-stock-music.com</a>",
+            "<a href=\"http://dig.ccmixter.org\" target=\"_blank\">http://dig.ccmixter.org</a>",
+            "<a href=\"https://audionautix.com\" target=\"_blank\">https://audionautix.com</a>"
           ]
         },
         {
           "type": "headline",
-          "level": "4",
+          "level": "5",
           "copy": "Step 4: Film it"
         },
         {
           "type": "paragraphs",
           "text": [
-            "Get a family member or someone in your household to film your performance – or shoot it yourself with the help of a tripod. Be as creative as possible and most importantly, have fun!"
+            "Get someone in your household to film your performance – or shoot it yourself with the help of a tripod."
           ]
         },
         {
           "type": "headline",
-          "level": "4",
-          "copy": "Step 5: Share it "
+          "level": "5",
+          "copy": "Step 5: Share it"
         },
         {
           "type": "paragraphs",
           "text": [
-            "Share your entry video to Instagram with #SamsungSpotlight for your chance to win.",
-            "<br>"
-          ]
-        },
-        {
-          "type": "video",
-          "content": ""
-        },
-        {
-          "type": "paragraphs",
-          "text": [
+            "Share your entry video on your public Instagram profile with #SamsungSpotlight for your chance to win. Remember the competition is open between 16th December 2020 – 1st Feb 2021",
             "<br>",
             "Full competition T&Cs can be found <a href=\"https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/samsung-spotlight/Samsung_Arts_Competition_TCs_FINAL.pdf\" target=\"_blank\">here</a>"
           ]
@@ -151,26 +147,32 @@
       "items": [
         {
           "type": "image",
-          "content": "http://placeimg.com/1440/900/arch",
-          "image": "http://placeimg.com/1440/900/arch",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/samsung-spotlight/PinPep_SamsungSpotlight_PaulMescal_006.JPG",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/samsung-spotlight/PinPep_SamsungSpotlight_PaulMescal_006.JPG",
           "alt": ""
         },
         {
           "type": "image",
-          "content": "http://placeimg.com/1440/900/arch",
-          "image": "http://placeimg.com/1440/900/arch",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/samsung-spotlight/PinPep_SamsungSpotlight_PaulMescal_007.JPG",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/samsung-spotlight/PinPep_SamsungSpotlight_PaulMescal_007.JPG",
           "alt": ""
         },
         {
           "type": "image",
-          "content": "http://placeimg.com/1440/900/arch",
-          "image": "http://placeimg.com/1440/900/arch",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/samsung-spotlight/PinPep_SamsungSpotlight_PaulMescal_005.JPG",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/samsung-spotlight/PinPep_SamsungSpotlight_PaulMescal_005.JPG",
           "alt": ""
         },
         {
           "type": "image",
-          "content": "http://placeimg.com/1440/900/arch",
-          "image": "http://placeimg.com/1440/900/arch",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/samsung-spotlight/PinPep_SamsungSpotlight_PaulMescal_004.JPG",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/samsung-spotlight/PinPep_SamsungSpotlight_PaulMescal_004.JPG",
+          "alt": ""
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/samsung-spotlight/PinPep_SamsungSpotlight_PaulMescal_003.JPG",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/samsung-spotlight/PinPep_SamsungSpotlight_PaulMescal_003.JPG",
           "alt": ""
         }
       ]
