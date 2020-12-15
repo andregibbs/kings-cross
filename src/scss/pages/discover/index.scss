@@ -131,7 +131,7 @@
     align-content: center;
     justify-content: center;
     flex-direction: column;
-    margin-left: 2rem;
+    margin: 0 auto;
 
     @media screen and (max-width: $mobile) {
       // padding: 4rem 2rem 2rem;
@@ -159,6 +159,9 @@
     }
     h2 {
       line-height: 1.2;
+      text-transform: none;
+      font-weight: normal;
+      font-family: "SamsungSharpSans", arial, sans-serif;
     }
     p {
       line-height: 1.5;

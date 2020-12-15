@@ -4,7 +4,6 @@
   "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/samsung-spotlight/PinPep_SamsungSpotlight_PaulMescal_006_1440.jpg",
   "alt": "",
   "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/samsung-spotlight/PinPep_SamsungSpotlight_PaulMescal_006_thumb.jpg",
-  "hidden": true,
   "meta": {
     "icon": "article",
     "tags": []
@@ -12,7 +11,7 @@
   "components": [
     {
       "type": "css-snippet",
-      "content": ".hoiHeadline h5 { margin: 0 !important; }"
+      "content": ".hoiHeadline h5 { margin: 0 !important; } .hoiWrapper { margin-top: 0 !important; }"
     },
     {
       "type": "kv",
@@ -41,7 +40,18 @@
             "Samsung Spotlight is a new initiative that encourages and supports emerging performers in the arts who have been adversely affected by the impact of the pandemic.",
             "The events of 2020 have had an unprecedented effect on the arts with venue closures, performances cancelled and stages lost, making the opportunity for artistic creators to break into the industry even more challenging. ",
             "Samsung Spotlight aims to give performers a platform to showcase their talents. The campaign launches in partnership with ‘Breakthrough Actor of the Year’ Paul Mescal, who created a visual representation of his Lockdown experience through a contemporary dance.",
-            "This entire film was shot in ultra-high definition 8K video on Samsung Galaxy S20 devices, and was created to inspire entrants to get involved whilst showing what can be achieved through your smartphone alone. Find out more about the power of 8K video here .",
+            "<br>"
+          ]
+        },
+        {
+          "type": "youtube",
+          "content": "RMrnGnpMEI0"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "<br>",
+            "This entire film was shot in ultra-high definition 8K video on Samsung Galaxy S20 devices, and was created to inspire entrants to get involved whilst showing what can be achieved through your smartphone alone. Find out more about the power of 8K video <a href=\"https://www.samsung.com/uk/tvs/qled-tv/8k-video-with-galaxy-s20/\">here</a>.",
             "The competition is open to all performance artists from across the UK & Ireland over the age of 16. Those wanting to get involved simply need to film an audition-style performance up to 90 seconds and submit it via their Instagram profile using the hashtag #SamsungSpotlight. ",
             "The competition is open from 16th December 2020 – 1st February 2021 when three winners will be selected by the judging panel. We are looking for performances that are creative, unique and showcase your talents so get inspired and get involved. ",
             "Performances can be in any form, from dance to physical theatre and acting to mime.  ",
@@ -57,16 +67,6 @@
             "A Samsung Galaxy device",
             "A Samsung QLED 8K TV"
           ]
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "<br>"
-          ]
-        },
-        {
-          "type": "youtube",
-          "content": "RMrnGnpMEI0"
         },
         {
           "type": "headline",

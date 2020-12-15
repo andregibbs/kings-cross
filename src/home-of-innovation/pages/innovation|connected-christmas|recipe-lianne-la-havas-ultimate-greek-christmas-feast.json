@@ -1,0 +1,95 @@
+{
+  "title": "Recipe: Lianne La Havas' ultimate Greek Christmas feast",
+  "description": "Ending the year with a Christmas high, connect with two moving performances, blogs and playlists, as we use Samsung tech to enjoy the festive season in new ways this year.",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/connected-christmas/Samsung_WebsiteBanner_Xmas_LIANNE_RECIPE_1440x810_V1.jpg",
+  "alt": "",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/connected-christmas/Samsung_WebsiteBanner_Xmas_LIANNE_RECIPE_400x255_V1.png",
+  "group": "connected-christmas",
+  "hidden": true,
+  "sort": 6,
+  "meta": {
+    "icon": "article",
+    "tags": []
+  },
+  "components": [
+    {
+      "type": "kv",
+      "style": {
+        "desktop": "top",
+        "mobile": "top"
+      },
+      "media": {
+        "type": "image",
+        "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/connected-christmas/Samsung_WebsiteBanner_Xmas_LIANNE_RECIPE_1440x810_V1.jpg",
+        "alt": ""
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "Recipe: Lianne La Havas' ultimate Greek Christmas feast"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Fancy adding something different to your culinary Christmas festivities this year? Switch it up this Christmas with a traditional Greek lamb dish by singer Lianne La Havas using <a href=\"https://www.samsung.com/uk/smartthings/\">SmartThings</a> and the <a href=\"https://www.samsung.com/uk/home-appliances/infinite-line/ovens/\">Infinite Oven Range</a>."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "headline",
+          "copy": " Traditional Greek roast lamb by Lianne La Havas ",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Greek roast lamb is one of my favourite Christmas dishes. My dad makes the most amazing leg of lamb on boxing day as part of our family tradition. Filled with loads of oregano, garlic and amazing crispy roast potatoes, you really can’t beat it! "
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "Ingredients:",
+          "level": "4"
+        },
+        {
+          "type": "html-list",
+          "items": [
+            "1 large leg of lamb (around 3.5kg)",
+            "8 garlic cloves",
+            "2 bunches of fresh oregano",
+            "Juice of 2 lemons",
+            "Olive oil",
+            "1.5kg white potatoes",
+            "400g chopped tomato’s",
+            "Kalamata olives"
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "Method:",
+          "level": "4"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Preheat the oven to 240C about 20 minutes before you begin prepping. Chop the garlic and half of the fresh oregano, then zest the skin of the lemon and add a pinch of salt into a pestle and mortar. Once muddled, add in the juice of the 2 lemons and drizzle in the olive oil to form a paste.",
+            "Make a crisscross pattern in the lamb skin with a sharp knife, then smother the lamb with the herb paste, making sure it gets into the cracks.",
+            "Tip the potatoes into a large roasting tin, then toss in the remaining olive oil and any remaining herb paste (and extra oregano). Place the lamb amongst the potatoes and roast for 20 mins. Then reduce the temperature down to 180C and roast for another 1 hr 15 mins. Baste the lamb once or twice with the juices and toss the potatoes in. When the lamb is cooked, remove from the tin and let it rest for 30 minutes.",
+            "Whilst the lamb is resting, place the roasting tin over a medium heat, add the canned tomatoes and olives to the pan juices, then simmer for a few mins. Serve the lamb with the potatoes, the sauce and a simple salad.",
+            "<strong>Tip:</strong><br>For extra crispy potatoes, make sure you soak them in cold water for at least 40 minutes before cooking."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "dynamic": "episodes",
+      "title": "Connnected Christmas",
+      "id": "connected-christmas"
+    }
+  ]
+}
