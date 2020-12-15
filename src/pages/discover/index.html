@@ -152,7 +152,27 @@
     </div>
   </section>
 
-	<section class="section section--nopad-v section--fullbleed">
+
+  <section class="section discover__solvefortomorrow">
+    <div class="section__inner">
+      <div class="discover__solvefortomorrow_copy">
+        {{> discover-header
+          title="Solve for tomorrow"
+          sub="Ideas welcome.<br>No qualifications needed."
+        }}
+        <p class="fz20">
+          Got a brilliant tech idea that solves a real-world issue?<br>
+          If you’re 16-25, enter our competition and we can help make it a reality.
+        </p>
+        <a
+        ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:discover:solvefortomorrow"
+        data-omni-type="microsite" data-omni="uk:kings-cross:discover:solvefortomorrow"
+        class="btn btn--primary btn--primary--transparent" href="https://www.samsung.com/uk/washers-and-dryers/ecobubble-smart-control/">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+	<!-- <section class="section section--nopad-v section--fullbleed">
 		<div class="section__inner">
         {{> discover-header
           sub="Unleash Your Future"
@@ -170,7 +190,7 @@
 				</div>
 
 		</div>
-  </section>
+  </section> -->
 
   <section class="section">
     <div class="section__inner">
@@ -218,7 +238,7 @@
       {{#if largeMargin}}discover__Header--large-bottom-margin{{/if}}
     ">
     <h2>{{title}}</h2>
-    <h3 class="fz40">{{sub}}</h3>
+    <h3 class="fz40">{{{sub}}}</h3>
     {{#if text}}
       <p class="fz24">{{{text}}}</p>
     {{/if}}

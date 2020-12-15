@@ -45,7 +45,7 @@
   }
   @media screen and (max-width: $mobile) {
     // margin-bottom: get-mobile-vw($m-borders-mobile / 2);
-    font-size: 0.6rem !important;
+    font-size: 0.8rem !important;
     margin: 1.5rem 0;
   }
 
@@ -100,38 +100,105 @@
   justify-content: center;
 }
 
-
-.discover__NotASchool {
-  background: url(https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/school/Kx_NAS_signpost.png);
-  background-size: auto 75%;
-  background-position: center top;
-  background-repeat: no-repeat;
-  height: 60vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  // margin: 25px 0;
-  align-items: center;
-  text-align: center;
+.discover__solvefortomorrow {
+  padding-top: 0;
   padding-bottom: 0;
+  text-align: center;
 
-  p {
-    margin-bottom: 4vw;
-    max-width: 70vw;
+  .discover__Header {
+    margin-bottom: 0;
   }
+  // @media screen and (max-width: $mobile) {
+    margin: 2rem 0;
+  // }
+  .section__inner {
+    background-image: url('https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/discover/2020-assets/KX-SFT-signpost-desktop.jpg');
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    position: relative;
+    padding: 0;
 
-  @media screen and (min-width: $mobile + 1) {
-    background-size: cover;
-    height: 500px;
-    // height: 57vh;
-    // margin-top: 50px;
-    // margin-bottom: 2vw;
-    font-size: 1em;
+
+    @media screen and (max-width: $mobile) {
+      background-image: url('https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/discover/2020-assets/KX-SFT-signpost-mobile.jpg');
+    }
+  }
+  .discover__solvefortomorrow_copy {
+    margin-right: auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 2rem;
+
+    @media screen and (max-width: $mobile) {
+      // padding: 4rem 2rem 2rem;
+      font-size: 1.4em;
+      text-align: center;
+      justify-content: flex-start;
+      height: 140vw; // ratio of image
+      margin-left: 0;
+    }
+    .btn {
+      margin: 1rem auto 0;
+    }
+
+    @media screen and (min-width: $mobile + 1) {
+      width: 50%;
+      height: 32vw;
+    }
+
+    @media screen and (min-width: 1440px) {
+      height: 550px;
+    }
+
+    h2, p {
+      margin-bottom: 10px;
+    }
+    h2 {
+      line-height: 1.2;
+    }
     p {
-      margin-bottom: 2vw;
+      line-height: 1.5;
+      margin-bottom: 12px;
     }
   }
 }
+
+// hidden
+// .discover__NotASchool {
+//   background: url(https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/school/Kx_NAS_signpost.png);
+//   background-size: auto 75%;
+//   background-position: center top;
+//   background-repeat: no-repeat;
+//   height: 60vw;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: flex-end;
+//   // margin: 25px 0;
+//   align-items: center;
+//   text-align: center;
+//   padding-bottom: 0;
+//
+//   p {
+//     margin-bottom: 4vw;
+//     max-width: 70vw;
+//   }
+//
+//   @media screen and (min-width: $mobile + 1) {
+//     background-size: cover;
+//     height: 500px;
+//     // height: 57vh;
+//     // margin-top: 50px;
+//     // margin-bottom: 2vw;
+//     font-size: 1em;
+//     p {
+//       margin-bottom: 2vw;
+//     }
+//   }
+// }
 
 .discover__OnlineBanner {
   position: relative;
