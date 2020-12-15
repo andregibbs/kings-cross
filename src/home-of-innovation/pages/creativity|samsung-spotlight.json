@@ -1,9 +1,9 @@
 {
   "title": "Samsung Spotlight",
   "description": "",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/samsung-spotlight/PinPep_SamsungSpotlight_PaulMescal_006.JPG",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/samsung-spotlight/PinPep_SamsungSpotlight_PaulMescal_006_1440.jpg",
   "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/samsung-spotlight/PinPep_SamsungSpotlight_PaulMescal_006.JPG",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/samsung-spotlight/PinPep_SamsungSpotlight_PaulMescal_006_thumb.jpg",
   "hidden": true,
   "meta": {
     "icon": "article",
@@ -18,7 +18,7 @@
       "type": "kv",
       "media": {
         "type": "image",
-        "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/samsung-spotlight/PinPep_SamsungSpotlight_PaulMescal_006.JPG",
+        "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/samsung-spotlight/PinPep_SamsungSpotlight_PaulMescal_006_1440.jpg",
         "alt": ""
       },
       "style": {
@@ -136,7 +136,7 @@
           "text": [
             "Share your entry video on your public Instagram profile with #SamsungSpotlight for your chance to win. Remember the competition is open between 16th December 2020 – 1st Feb 2021",
             "<br>",
-            "Full competition T&Cs can be found <a href=\"https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/samsung-spotlight/Samsung_Arts_Competition_TCs_FINAL.pdf\" target=\"_blank\">here</a>"
+            "Full competition T&Cs can be found <a href=\"https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/samsung-spotlight/Samsung_Arts_Competition_TCs_FINAL_14.12.pdf\" target=\"_blank\">here</a>"
           ]
         }
       ]
