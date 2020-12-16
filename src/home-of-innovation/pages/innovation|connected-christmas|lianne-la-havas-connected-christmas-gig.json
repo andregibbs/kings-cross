@@ -5,7 +5,6 @@
   "alt": "",
   "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/connected-christmas/Samsung_WebsiteBanner_Xmas_LIANNE_400x255_V2.jpg",
   "group": "connected-christmas",
-  "hidden": true,
   "sort": 5,
   "meta": {
     "icon": "video",
@@ -20,7 +19,7 @@
       },
       "media": {
         "type": "youtube",
-        "content": "",
+        "content": "2zE59qIJtN8",
         "poster": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/connected-christmas/Samsung_WebsiteBanner_Xmas_LIANNE_1440x810_V2.jpg",
         "alt": ""
       },

@@ -122,6 +122,7 @@
 
 
     @media screen and (max-width: $mobile) {
+      background-position: bottom center;
       background-image: url('https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/discover/2020-assets/KX-SFT-signpost-mobile.jpg');
     }
   }
@@ -138,7 +139,7 @@
       font-size: 1.4em;
       text-align: center;
       justify-content: flex-start;
-      height: 140vw; // ratio of image
+      height: 145vw; // ratio of image
       margin-left: 0;
     }
     .btn {

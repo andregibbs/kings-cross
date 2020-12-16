@@ -88,6 +88,13 @@
           "type": "image",
           "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/21/chicken_leeks.jpg",
           "alt": ""
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "<strong>By Katy McClelland.</strong>",
+            "<em>Freelance food stylist, recipe developer & food editor specialising in creating recipes for editorial, advertising, TV and film, social media and video content. A regular contributor to Delicious and Vegetarian Living magazines and on creating social recipe media content for Baileys.</em>"
+          ]
         }
       ]
     },
