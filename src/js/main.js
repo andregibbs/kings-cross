@@ -99,10 +99,10 @@ $j(document).ready(function () {
       homeKV();
 
 			var container = document.getElementById('loadingScreen__animation');
-			loadingScreen(container, loadingScreenAnimation, () => {
+			// loadingScreen(container, loadingScreenAnimation, () => {
         // loading screen done
         new KXSurvey() // init after animation
-      }, false)
+      // }, false)
 			break;
 
 		case "/uk/explore/kings-cross/discover/":

@@ -3,7 +3,7 @@
   "description": "From beautiful 5G choirs to Christmas haptic hugs, join Dr Hannah Fry and comedian Suzi Ruffell as they unwrap how 5G will spread the cheer during the festive holidays.",
   "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ep8/KV-pc-v1.jpg",
   "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ep8/thumbnail-v1.jpg",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ep8/thumb-2.jpg",
   "group": "5g-podcast",
   "sort": 8,
   "meta": {
@@ -13,7 +13,7 @@
   "components": [
     {
       "type": "css-snippet",
-      "content": ".hoiKv__Media:after { padding-bottom: 36% !important; } .hoiParagraphs p { max-width: 940px; } @media screen and (max-width: 769px) { .hoiKv__Media:after { padding-bottom: 110% !important; } .hoiMedia__StatePoster { background-image: url(https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ep8/KV-MB-v1.jpg) !important; } }  ",
+      "content": ".hoiKv__Media:after { padding-bottom: 36% !important; } .hoiParagraphs p { max-width: 940px; } @media screen and (max-width: 769px) { .hoiKv__Media:after { padding-bottom: 110% !important; } .hoiMedia, .hoiMedia__StatePoster { background-image: url(https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ep8/KV-MB-v1.jpg) !important; } }  ",
       "__notes": "custom ratio for kv video"
     },
     {

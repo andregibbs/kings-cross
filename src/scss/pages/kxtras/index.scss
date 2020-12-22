@@ -15,6 +15,7 @@
 .KXtras__header {
   text-align: center;
   padding-bottom: 0;
+  h1 {}
   h2 {
     @extend .fz36;
     max-width: 15em;
@@ -132,9 +133,9 @@
     display: block;
     padding-top: 52.7%;
   }
-  background-image: url('https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/kxtras/KV_MB.png');
+  background-image: url('https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/kxtras/v2/KXtras-update-KV-mobile.jpg');
   @media screen and (min-width: $mobile + 1) {
-    background-image: url('https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/kxtras/KV.png');
+    background-image: url('https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/kxtras/v2/KXtras-update-KV-desktop.jpg');
     &:before {
       padding-top: 34.7%;
     }
@@ -143,6 +144,12 @@
 
 // 5G explore
 .KXtras__section--explore {
+  h1 {
+    margin: 1rem auto 2rem;
+    @media screen and (min-width: $mobile + 1) {
+      margin: 0 auto 2rem;
+    }
+  }
   .KXtras__header {
     padding-top: 0;
     padding-bottom: 0;
@@ -152,18 +159,31 @@
     }
   }
   .KXtras__collect_banner {
-    background: $coral;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 1rem;
-    h3, h4 {
-      margin-bottom: 0.5rem;
+    background-size: cover;
+    &:before {
+      content: '';
+      display: block;
+      padding-top: 24.4%;
     }
-    .KXtras__collect_banner_disclaimer {
-      font-size: 0.8em;
+    background-image: url('https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/kxtras/v2/KXtra-section-banner-CC-mobile.jpg');
+    @media screen and (min-width: $mobile + 1) {
+      background-image: url('https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/kxtras/v2/KXtra-section-banner-CC-desktop.jpg');
+      &:before {
+        padding-top: 12.2%;
+      }
     }
+    // background: $coral;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // flex-direction: column;
+    // padding: 1rem;
+    // h3, h4 {
+    //   margin-bottom: 0.5rem;
+    // }
+    // .KXtras__collect_banner_disclaimer {
+    //   font-size: 0.8em;
+    // }
   }
   .KXtras__explore_items {
     .hoiList__Item {
@@ -219,16 +239,20 @@
 .KXtras__section--setup {
   // max-width: 1440px;
   // margin: 0 auto;
+  .KXtras__header {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
   .btn {
     margin: 0 auto;
   }
   .KXtras__image {
-    background-image: url('https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/kxtras/banner_setup-image-mb.png');
+    background-image: url('https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/kxtras/v2/set-up-service--mobile.jpg');
     &:before {
       padding-bottom: 48.6%;
     }
     @media screen and (min-width: $mobile + 1) {
-      background-image: url('https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/kxtras/banner_setup-image-pc.png');
+      background-image: url('https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/kxtras/v2/set-up-service-desktop.jpg');
       &:before {
         padding-bottom: 34.7%;
       }
@@ -237,17 +261,20 @@
 }
 
 .KXtras__section--goodies {
+  .KXtras__header {
+    padding-bottom: 1rem;
+  }
   .KXtras__goodies_disclaimer {
     @extend .fz16;
     margin-bottom: 0;
   }
   .KXtras__image {
-    background-image: url('https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/kxtras/banner_Phone_case_mb.png');
+    background-image: url('https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/kxtras/v2/goodies-mobile.jpg');
     &:before {
       padding-bottom: 48.6%;
     }
     @media screen and (min-width: $mobile + 1) {
-      background-image: url('https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/kxtras/banner_Phone_case_pc.png');
+      background-image: url('https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/kxtras/v2/goodies-desktop.jpg');
       &:before {
         padding-bottom: 38.5%;
       }
@@ -255,6 +282,11 @@
   }
 }
 
+.KXtras__section--offers {
+  .KXtras__header {
+    padding-bottom: 1rem;
+  }
+}
 
 .KXtras__carousel {
   // margin: 0 auto;
@@ -337,6 +369,22 @@
   }
 }
 
+.KXtras__signup_banner {
+  width: 100%;
+  background-size: cover;
+  &:before {
+    content: '';
+    display: block;
+    padding-top: 24.4%;
+  }
+  background-image: url('https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/kxtras/v2/KXtra-section-banner-dont-miss-out-mobile.jpg');
+  @media screen and (min-width: $mobile + 1) {
+    background-image: url('https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/kxtras/v2/KXtra-section-banner-dont-miss-out-desktop.jpg');
+    &:before {
+      padding-top: 12.2%;
+    }
+  }
+}
 
 .KXtras__signup {
   background-repeat: no-repeat;
@@ -346,7 +394,7 @@
   // margin: 0 auto;
 
   background-size: auto 150px;
-  background-position: top center;
+  background-position: top left 47%;
 
   background-image: url('https://images.samsung.com/is/content/samsung/p5/uk/explore/kings-cross/kxtras/icon-signup.svg');
   margin: 2rem 0;
@@ -360,7 +408,7 @@
 
   @media screen and (min-width: $mobile + 1) {
     background-size: auto 90%;
-    background-position: left 2rem center;
+    background-position: left 10% center;
     &:before {
       padding-bottom: 34.7%;
     }
@@ -372,12 +420,14 @@
     align-content: center;
     justify-content: center;
     flex-direction: column;
-    padding: 1rem 1rem 1rem 2rem;
+    padding: 1rem 8rem 1rem 2rem;
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 50%;
+    line-height: 1.6;
+
 
     @media screen and (max-width: $mobile + 1) {
       padding: 1rem;
@@ -403,6 +453,8 @@
     h3 {
       line-height: 1.2;
     }
-    p {}
+    p {
+      margin-bottom: 3rem;
+    }
   }
 }
