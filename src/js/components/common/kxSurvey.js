@@ -81,14 +81,16 @@ class KXSurvey {
             if (!survey.pathnames) return false
             return survey.pathnames.indexOf(pathname) > -1
           })[0]
-          // store id
-          this.surveyID = selectedSurvey.id
         }
 
         if (!selectedSurvey) {
           // console.log('no survey with specified id')
           return // no survey present
+        } else {
+          // store id
+          this.surveyID = selectedSurvey.id
         }
+
 
         if (this.hasBeenAskedForSurvey(selectedSurvey.id)) {
           // console.log('already asked')

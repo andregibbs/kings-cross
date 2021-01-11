@@ -11,7 +11,7 @@
   "components": [
     {
       "type": "css-snippet",
-      "content": ".enter-video .hoiMedia__Wrap { margin-bottom: 2rem !important; padding-bottom: 46.25% !important; } .hoiHeadline h5 { margin: 0 !important; } .hoiWrapper { margin-top: 0 !important; }"
+      "content": ".enter-video h4 { margin: 0 !important; } .enter-video .hoiMedia__Wrap { margin-bottom: 2rem !important; padding-bottom: 46.25% !important; } .hoiHeadline h5 { margin: 0 !important; } .hoiWrapper { margin-top: 0 !important; }"
     },
     {
       "type": "kv",
@@ -76,6 +76,31 @@
               "type": "headline",
               "level": "3",
               "copy": "How to enter"
+            },
+            {
+              "type": "headline",
+              "level": "4",
+              "copy": "Criteria for Entry"
+            },
+            {
+              "type": "paragraphs",
+              "text": [
+                "The competition is open to all performance artists from across the UK & Ireland over the age of 16.<br>When entering, please ensure you adhere to the following criteria or your submission will not qualify:"
+              ]
+            },
+            {
+              "type": "html-list",
+              "items": [
+                "All performances entered must be up to max 90 seconds in length",
+                "All submissions must be original, this includes the chosen music, choreography and prose or monologues.",
+                "Entries must be submitted via a public Instagram profile using the hashtag #SamsungSpotlight"
+              ]
+            },
+            {
+              "type": "paragraphs",
+              "text": [
+                "Further details and advice on your performance can be found below alongside full T&Cs.<br>You have until the 1st February 2021 to enter – good luck!"
+              ]
             },
             {
               "type": "youtube",
