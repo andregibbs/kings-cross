@@ -23,6 +23,7 @@ var htmlmin = require('gulp-html-minifier');
 var gulpif = require('gulp-if');
 var concat = require('gulp-concat');
 var merge = require('merge-stream');
+var glob = require('glob');
 
 var prompt = require('prompt');
 var hbsfy = require('hbsfy')
@@ -72,13 +73,17 @@ const INDIVIDUAL_PAGE_BUILDS = {
   scss: []
 }
 const JS_PB_DIR = path.join(config.SRC_FOLDER,'/js/pages/')
-fs.readdirSync(JS_PB_DIR).forEach(file => {
-  INDIVIDUAL_PAGE_BUILDS.js.push(file)
-});
+const jsFiles = glob.sync(JS_PB_DIR+'**/index.js')
+jsFiles.forEach(file => {
+  let name = file.replace(JS_PB_DIR,'').replace('/index.js','');
+  INDIVIDUAL_PAGE_BUILDS.js.push(name)
+})
 const CSS_PB_DIR = path.join(config.SRC_FOLDER,'/scss/pages/')
-fs.readdirSync(CSS_PB_DIR).forEach(file => {
-  INDIVIDUAL_PAGE_BUILDS.scss.push(file)
-});
+const cssFiles = glob.sync(CSS_PB_DIR+'**/index.scss')
+cssFiles.forEach(file => {
+  let name = file.replace(CSS_PB_DIR,'').replace('/index.scss','');
+  INDIVIDUAL_PAGE_BUILDS.scss.push(name)
+})
 
 
 // Tasks
@@ -212,15 +217,16 @@ gulp.task('kx:js', function() {
     return {
       name: page,
       src: `${config.SRC_FOLDER}/js/pages/${page}/index.js`,
-      dest: `${config.BUILD_FOLDER}${SITE}/${SUBFOLDER}/js/${page}`
+      dest: `${config.BUILD_FOLDER}${SITE}${SUBFOLDER}/js/${page}`
     }
   }).concat([
     {
       name: 'main',
       src: `${config.SRC_FOLDER}/js/main.js`,
-      dest: `${config.BUILD_FOLDER}${SITE}/${SUBFOLDER}/js/`
+      dest: `${config.BUILD_FOLDER}${SITE}${SUBFOLDER}/js/`
     }
   ])
+
   // create stream for each file src
   const streams = files.map(file => {
     // browserify with config
@@ -742,7 +748,7 @@ gulp.task('home-of-innovation-scss', () => {
 gulp.task('home-of-innovation-watch', () => {
   // watch and update all (removed as was getting slow)
   // gulp.watch( config.SRC_FOLDER + '/' + _HOI_FOLDER + '/**/*', ['home-of-innovation-build'] )
-  gulp.watch( config.SRC_FOLDER + '/' + _HOI_FOLDER + '/**/*', (changeObj) => {
+  gulp.watch( config.SRC_FOLDER + '/' + _HOI_FOLDER + '/pages/**/*', (changeObj) => {
     // use changed file object to only update single template, wraped in array
     return HOITemplates(false, false, [changeObj.path])
   } )

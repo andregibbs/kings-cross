@@ -88,8 +88,8 @@ function DeployHOIDynamicData() {
 
     // add some data about the deployment
     data['meta'] = {
-      publishedOn: Date(),
-      lastGitCommit: require('child_process').execSync('git rev-parse HEAD').toString().trim().substring(0, 10)
+      publishedOn: Date()
+      // lastGitCommit: require('child_process').execSync('git rev-parse HEAD').toString().trim().substring(0, 10)
     }
 
     if (isLiveTask) {

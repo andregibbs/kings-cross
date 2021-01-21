@@ -72,6 +72,15 @@
           alt=this.media.alt
       }}
     {{/if}}
+
+    {{#if (eq this.media.type 'bambuser') }}
+      {{> home-of-innovation/hoiBambuser
+          content=this.media.content
+          poster=this.media.poster
+          poster_mobile=this.media.poster_mobile
+          alt=this.media.alt
+      }}
+    {{/if}}
   </div>
 
   <div class="hoiKv__Components">
@@ -79,7 +88,7 @@
     {{> home-of-innovation/components this }}
 
     {{#if (eq this.share false)}}
-      
+
     {{else}}
       {{> home-of-innovation/hoiShare }}
     {{/if}}

@@ -1,0 +1,198 @@
+{
+  "title": "Guest writer of the week: How to bring flowering plants into the kitchen",
+  "description": "",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/23/kv.jpeg",
+  "alt": "",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/23/kv.jpeg",
+  "group": "guest-writer-of-the-week",
+  "sort": 23,
+  "meta": {
+    "icon": "article",
+    "tags": []
+  },
+  "components": [
+    {
+      "type": "css-snippet",
+      "content": ".hoiWrapper .hoiHeadline { margin-bottom: 0 !important; } .hoiMedia__ImageCredit { text-align: center; }",
+      "__notes": "custom ratio for kv video"
+    },
+    {
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "{{lifestyle|guest-writer-of-the-week|23[image]}}",
+        "alt": "{{lifestyle|guest-writer-of-the-week|22[alt]}}"
+      },
+      "style": {
+        "desktop": "left",
+        "mobile": "bottom"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "How to bring flowering plants into the kitchen"
+        }
+      ]
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "paragraphs",
+          "text": [
+            "If you’re looking for an easy way to make your meals pop, flowering plants are an affordable solution that will take your food to the next level.",
+            "Journalist and former chef Almara Abgarian shares her top tips for how to cook with blossoms and a recipe for lavender tempura that will make your mouth water."
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "Know your blossoms",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Rose, lilac, pansies, sunflowers, citrus blossom; there’s no shortage of options when it comes to incorporating flowers into food and the flavours are set to both expand your palette and wow guests.",
+            "But beware, botanicals are often very aromatic and strong in taste, so take care with measurements."
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "It’s all about the pairing",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Like other seasonings such as herbs, certain blossoms fit better with certain ingredients. ",
+            "For instance, rose petals taste sweet and floral and work well in desserts like Turkish delight or almond sponge. As for savoury meals, Middle Eastern dishes that already contain powerful spices are a good match, such as chicken or lamb tagine. ",
+            "Or sprinkle a few rose petals onto a salad and watch it go from dull to dazzling in seconds.",
+            "Pansies on the other hand are light and crisp in flavour with a slight peppery kick, and best used sparingly as they are more of a decorative element. Or try chamomile, a blossom known to help people sleep, by sprinkling it into hot butter and adding to a bowl of porridge or make chamomile oil for fish dishes. ",
+            "A personal favourite among botanicals is lavender. Here is one of my top recipes."
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "Battered lavender prawn or cauliflower tempura",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "This recipe works for meat-lovers, vegetarians and vegans, because the core product can be swapped out for pretty much anything. Personally, I like prawns and cauliflower but you can just as easily go with chicken, tofu, broccoli or eggplants, to name but a few.",
+            "Like rose, lavender is a pungent blossom so be careful or it may overpower the other ingredients. You can get dried lavender flowers in most supermarkets."
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "Ingredients (Serves 2-4)",
+          "level": "4"
+        },
+        {
+          "type": "html-list",
+          "items": [
+            "Vegetable or meat of choice (main ingredient: amount will depend on the size of product)",
+            "3/4 cup of flour",
+            "1 egg",
+            "1 tbsp oil (I prefer olive oil but vegetable and coconut oil is fine too)",
+            "1-2 cups of water",
+            "1 cup ground flax seeds to thicken batter (for a more traditional recipe, use cornstarch or wheat flour)",
+            "1-2 tbsp lavender",
+            "Oil for cooking - be generous, as you will need enough to partially submerge the vegetable or meat and deep-fry it in the pan (minimum 4-5 cups).",
+            "A pinch of salt",
+            "1 tsp baking powder to lighten the texture"
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "Method",
+          "level": "4"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Start by combining your dry ingredients and mix in a bowl, then throw in the egg and oil.",
+            "Add the water while whisking – do this in stages to avoid lumps. Once the batter is smooth, it’s done. If it looks a little runny, add more flax seeds or cornstarch to thicken it up.",
+            "You should be able to see the lavender seeds in the batter – if these aren’t visible, add another pinch.",
+            "Cut or break the meat or vegetables into desired size.",
+            "Heat the oil in a medium-sized pan. Once piping hot, use tongs to drop in the main ingredient into the lavender batter. Here’s the most crucial part: let the batter drip off properly before you move the meat/vegetable into the pan. If you don’t, the batter will not stick. It will also be undercooked, because the outside will look crisp while the inside is still gooey."
+          ]
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/23/1.jpeg",
+          "alt": ""
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Once the main product goes golden brown, flip it to the other side. Top tip: don’t have too many tempuras in the pan at once or you risk them sticking to each other and becoming one big lump."
+          ]
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/23/3.jpeg",
+          "alt": ""
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Serve with hot chilli or peanut sauce."
+          ]
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/23/2.jpeg",
+          "alt": ""
+        },
+        {
+          "type": "headline",
+          "copy": "Share your gorgeous dishes",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Cooking with flowers is an art, so why not share the photos with others?",
+            "The new <a href=\"https://www.samsung.com/uk/smartphones/galaxy-s21-5g/buy/\">Samsung Galaxy S21</a> phone is great for capturing the ultimate 8K cooking shots. You can video record your tempura whilst it’s sizzling in the pan, and then turn your favourite moments into stunning stills."
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "Don’t forget about drinks",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Flowering plants aren’t just great in food, you can also infuse them into cocktails, lemonade and tea, among other beverages."
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "How to store blossoms",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Fresh flowering plants have a very short shelf life – they will wilt after around four to five days (or last up to a week, if you’re lucky). Keep them in an airtight container, lined with a damp paper towel – it will help keep them moist – and store in the fridge. Or go for dried flowers, which are often cheaper.",
+            "<br>",
+            "<br>",
+            "<strong>By Almara Abgarian.</strong>",
+            "<em>Almara is a freelance journalist and broadcaster, frequently writing for the Metro, the Telegraph and Good Housekeeping, and featuring on the Times Radio and BBC Radio London. She’s a former chef, with a passion for experimenting with classic recipes at home.</em>"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "dynamic": "more-articles",
+      "id": "guest-writer-of-the-week",
+      "title": "More articles",
+      "style": {
+        "scroll": true
+      }
+    }
+  ]
+}

@@ -3,8 +3,9 @@
     {{#if this.style.align}}
       hoiHeadline--align-{{ this.style.align }}
     {{/if}}
-  {{/if}}
-">
+  {{/if}}"
+  {{#if this.id}}id="{{id}}"{{/if}}
+  >
 
   {{#if this.level}}
     {{#if_equals this.level '1'}}

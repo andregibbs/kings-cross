@@ -1,0 +1,19 @@
+{
+  "panels": [
+    {
+      "title": "Discover our entire range of 5G products",
+      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/banner-5G-range.png",
+      "alt": "A cropped image of the top rear of an unfolded Galaxy Z Fold2 in Mystic Bronze",
+      "link": "https://www.samsung.com/uk/galaxy-5g/products/",
+      "cta": "LEARN MORE"
+    },
+    {
+      "title": "Find out what 5G will mean for you",
+      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/WhateverNext_Andreabanner-lockup.png",
+      "image_right": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/banner-lockup-dots-crop.png",
+      "alt": "White text reads \"You+ Samsung +5G\". teal lines radiate away from \"+5G\". Blue circles are visible in a grid behind the white text.",
+      "link": "https://www.samsung.com/uk/galaxy-5g/",
+      "cta": "LEARN MORE"
+    }
+  ]
+}

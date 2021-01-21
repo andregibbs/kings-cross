@@ -16,6 +16,7 @@ window.$j = $
 import HOIGallery from './hoiGallery';
 import HOIShare from './hoiShare';
 import HOIMediaVideo from './hoiMediaVideo';
+import HOIBambuser from './hoiBambuser';
 import HOIYoutubeLiveChat from './hoiYoutubeLiveChat'
 import HOIDynamicLinkList from './hoiDynamicLinkList';
 import HOIDynamicGroupLand from './hoiDynamicGroupLand';
@@ -33,6 +34,7 @@ function init() {
   const galleries = [].slice.call(document.querySelectorAll('.hoiGallery'))
   const youtubeMedias = [].slice.call(document.querySelectorAll('.hoiMedia--youtube'))
   const videoMedias = [].slice.call(document.querySelectorAll('.hoiMedia--video'))
+  const bambuserComponents = [].slice.call(document.querySelectorAll('.hoiBambuser'))
   const dynamicLinkLists = [].slice.call(document.querySelectorAll('.hoiLinkList[dynamic]'))
   const dynamicGroupLand = [].slice.call(document.querySelectorAll('.hoiGroupLand__Container[dynamic]'))
 
@@ -70,6 +72,10 @@ function init() {
       // init youtube instances
       youtubeMedias.forEach((element) => {
         createYoutubeInstance(element)
+      })
+
+      bambuserComponents.forEach((element) => {
+        new HOIBambuser(element)
       })
 
       // dynamic LinkList components

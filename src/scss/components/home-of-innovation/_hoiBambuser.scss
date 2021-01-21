@@ -1,0 +1,26 @@
+.hoiBambuser {
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  outline: none;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.hoiBambuser__Launch {
+  background: white;
+  border-radius: 28px;
+  padding: 1em 2em;
+  font-size: 1rem;
+  color: black;
+}

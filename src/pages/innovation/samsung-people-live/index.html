@@ -1,0 +1,45 @@
+{{>bootstrap/header}}
+
+<section class="cheil-static">
+
+  {{>bootstrap/header-components page="innovation/samsung-people-live"}}
+
+  <div class="hoiContent samsung-people-live">
+
+  <div class="hoiKv hoiKv--d-top hoiKv--m-top">
+
+    <div
+      ga-ca="microsite"
+      ga-ac="feature"
+      ga-la="uk:kings-cross:bambuser"
+      data-omni-type="microsite"
+      data-omni="uk:kings-cross:bambuser"
+      class="hoiKv__Media"
+      id="bambuser-target"
+    >
+    </div>
+    <div class="hoiKv__Components">
+      {{> home-of-innovation/hoiShare }}
+      {{> home-of-innovation/hoiHeadline copy="Test" id="title-target"}}
+    </div>
+
+  </div>
+
+  <div id="debug">
+
+  </div>
+
+  {{>
+    home-of-innovation/hoiImagePanelLinks
+    items=pageTemplateData.samsunglive.panels
+  }}
+
+  </div>
+
+  {{>bootstrap/footer-components page="innovation/samsung-people-live"}}
+
+  <script src="https://lcx-embed.bambuser.com/samsung/embed.js"></script>
+
+</section>
+
+{{>bootstrap/footer}}

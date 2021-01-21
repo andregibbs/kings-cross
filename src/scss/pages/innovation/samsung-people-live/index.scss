@@ -1,0 +1,17 @@
+@import '../../../bootstrap';
+
+@import "../../../mixins/clearfix";
+@import "../../../mixins/typography";
+@import "../../../mixins/vw";
+
+@import '../../../home-of-innovation/vars';
+
+.samsung-people-live {
+  @import '../../../components/home-of-innovation/content';
+  @import '../../../components/home-of-innovation/typography';
+  @import '../../../components/home-of-innovation/hoiKv';
+  @import '../../../components/home-of-innovation/hoiShare';
+  @import '../../../components/home-of-innovation/hoiImagePanelLinks';
+  @import '../../../components/home-of-innovation/hoiBambuser';
+  @import '../../../components/home-of-innovation/hoiHeadline';
+}
