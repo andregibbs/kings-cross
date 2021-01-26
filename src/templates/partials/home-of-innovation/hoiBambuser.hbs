@@ -3,5 +3,49 @@
   showID="{{showID}}"
   style="background-image:url({{poster}})"
 >
-  <button class="hoiBambuser__Launch">{{cta}}</button>
+  <style>
+    @media screen and (max-width: 768px) {
+      .hoiBambuser {
+          background-image:url({{mobile_poster}}) !important;
+      }
+    }
+  </style>
+  <div class="hoiBambuser__Body">
+    <h1>Samsung<br/>People</h1>
+    {{>live_icon}}
+    <h2>{{title}}</h2>
+    <p id="launch-target" class="hoiBambuser__LaunchTime"></p>
+    <a
+      class="btn btn--primary btn--primary--white  hoiBambuser__Launch"
+      data-omni-type="microsite"
+      data-omni="uk:kings-cross:samsung-people-live:launch show"
+      ga-ca="microsite"
+      ga-ac="feature"
+      ga-la="uk:kings-cross:samsung-people-live:launch show"
+      >
+      {{cta}}
+    </a>
+  </div>
 </div>
+
+{{#*inline "live_icon"}}
+
+<svg version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 183 80" style="enable-background:new 0 0 183 80;">
+<style type="text/css">
+  .st0{fill:#FF4337;}
+  .st1{fill:#FFFFFF;}
+</style>
+<path class="st0" d="M171,80H12C5.4,80,0,74.6,0,68V12C0,5.4,5.4,0,12,0h159c6.6,0,12,5.4,12,12v56C183,74.6,177.6,80,171,80z"/>
+<g>
+  <circle class="st1" cx="38" cy="40.1" r="16.5"/>
+  <g>
+    <path class="st1" d="M94.8,51.5v4.9H76v-33h5.4v28.1H94.8z"/>
+    <path class="st1" d="M99.8,23.5h5.4v33h-5.4V23.5z"/>
+    <path class="st1" d="M136.2,23.5l-10.1,33h-5.9l-10.1-33h5.7l7.5,27.2l7.4-27.2H136.2z"/>
+    <path class="st1" d="M161.5,51.6v4.9H141v-33h19.9v4.9h-14.5v8.8h10.7V42h-10.7v9.5H161.5z"/>
+  </g>
+</g>
+</svg>
+
+
+{{/inline}}

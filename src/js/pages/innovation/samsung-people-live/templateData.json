@@ -1,19 +1,42 @@
 {
   "panels": [
     {
-      "title": "Discover our entire range of 5G products",
-      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/banner-5G-range.png",
-      "alt": "A cropped image of the top rear of an unfolded Galaxy Z Fold2 in Mystic Bronze",
-      "link": "https://www.samsung.com/uk/galaxy-5g/products/",
+      "title": "Samsung People",
+      "sub": "Chat live with our friendly Samsung People",
+      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/signpost_2.jpg",
+      "alt": "",
+      "link": "https://www.samsung.com/uk/samsung-people/",
       "cta": "LEARN MORE"
     },
     {
-      "title": "Find out what 5G will mean for you",
-      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/WhateverNext_Andreabanner-lockup.png",
-      "image_right": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/banner-lockup-dots-crop.png",
-      "alt": "White text reads \"You+ Samsung +5G\". teal lines radiate away from \"+5G\". Blue circles are visible in a grid behind the white text.",
-      "link": "https://www.samsung.com/uk/galaxy-5g/",
+      "title": "Galaxy Unpacked 2021",
+      "sub": "Discover our latest products",
+      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/signpost_1.jpg",
+      "alt": "",
+      "link": "https://www.samsung.com/uk/smartphones/galaxy-s21-5g/purchase/",
       "cta": "LEARN MORE"
+    }
+  ],
+  "sub": {
+    "style": {
+      "large": true
+    },
+    "text": [
+      "Share your questions on the chat & stay tuned for a chance to win amazing prizes."
+    ]
+  },
+  "breadcrumbs": [
+    {
+      "url": "/uk/explore/kings-cross/",
+      "title": "Home"
+    },
+    {
+      "url": "/uk/explore/kings-cross/innovation/",
+      "title": "Innovation"
+    },
+    {
+      "url": "/uk/explore/kings-cross/innovation/samsung-people-live/",
+      "title": "Samsung People Live: Galaxy S21 range demo"
     }
   ]
 }

@@ -1,5 +1,4 @@
 .hoiBambuser {
-
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -10,17 +9,93 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 .hoiBambuser__Launch {
   background: white;
   border-radius: 28px;
   padding: 1em 2em;
-  font-size: 1rem;
   color: black;
+  width: auto;
+
+  font-family: $samsung-sharp;
+  text-transform: uppercase;
+  color: #333;
+  text-align: center;
+
+  &:hover {
+    background: black;
+    border-color: black;
+    color: white;
+  }
+
+  @media screen and (min-width: $mobile + 1) {
+    max-width: 15rem;
+  }
+}
+
+.hoiBambuser__Body {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  // right: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 10vw;
+  height: 60%;
+  h1 {
+    font-size: 10vw;
+    margin-bottom: 3vw;
+    flex-shrink: 0;
+  }
+  svg {
+    width: 19vw;
+    margin-bottom: 2rem;
+    flex-shrink: 0;
+  }
+  h2 {
+    font-size: 6vw;
+    margin-top: auto;
+    margin-bottom: 4vw;
+  }
+  @media screen and (min-width: $mobile + 1) {
+    width: 40%;
+    margin: auto 0;
+    left: 0;
+    padding: 6vw;
+    height: 100%;
+    h1 {
+      font-size: 6vw;
+      margin-bottom: 2vw;
+    }
+    svg {
+      width: 12vw;
+    }
+    h2 {
+      font-size: 3.5vw;
+      margin-bottom: 2vw;
+    }
+    .btn {
+      padding: 1em 2em;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding: 5rem;
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+    }
+    svg {
+      width: 8rem;
+    }
+    h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+  }
+
 }

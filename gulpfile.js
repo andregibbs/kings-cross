@@ -277,7 +277,8 @@ gulp.task('html', function () {
     if (fs.existsSync(pagePath)) {
       // delete cache for rebuild
       delete require.cache[require.resolve(pagePath)];
-      templateData[page] = require(pagePath)
+      const cleanName = page.replace(/-|\//g,'_')
+      templateData[cleanName] = require(pagePath)
       // combine page template data files
       Object.assign(pageTemplateData, templateData)
     }
@@ -303,7 +304,7 @@ gulp.task('html', function () {
           pageTemplateData
         }
 			}).on('error', (e) => {
-        console.log({message, fileName})
+        console.log({e, fileName})
       })
 		)
     // .pipe(htmlmin())

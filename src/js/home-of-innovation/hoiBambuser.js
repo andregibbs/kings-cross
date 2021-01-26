@@ -1,3 +1,5 @@
+import { trackEvent } from '../util/GATracking';
+
 export default class HoiBambuser {
 
   constructor(el) {
@@ -17,12 +19,6 @@ export default class HoiBambuser {
 
     window.onBambuserLiveShoppingReady = this.onShoppingReady.bind(this)
 
-    window.addEventListener('message', function(event) {
-      if (event.origin != "https://lcx-player.bambuser.com") {
-        return
-      }
-      // console.log('message', event.data)
-    })
   }
 
   fetchSKUData(skus) {
@@ -32,12 +28,16 @@ export default class HoiBambuser {
   hydrateProducts(player, products, skuData) {
     products.forEach(({ ref: sku, id: productId, url: publicUrl }) => {
       let productData = skuData[sku]
-      console.log('hydrate', productData, skuData, sku)
+      // console.log('hydrate', productData, skuData, sku, publicUrl)
       player.updateProduct(productId, factory => {
-        return factory
+        // if the page is loaded on qa, swap out the public url host with p6
+        if (window.location.hostname === "p6-qa.samsung.com") {
+          publicUrl = publicUrl.replace('www.samsung.com','p6-qa.samsung.com')
+        }
+        return factory.inheritFromPlaceholder()
+          .publicUrl(publicUrl)
           .product(p => p
             .name(productData.product_display_name)
-            .brandName('this is a description')
             .sku(sku)
             .variations(v => [v()
               .name(productData.product_display_name)
@@ -63,28 +63,90 @@ export default class HoiBambuser {
 
     // hydrate data
     player.on(player.EVENT.PROVIDE_PRODUCT_DATA, event => {
-      console.log('ed', event)
-
       const skus = event.products.map(p => p.ref)
       this.fetchSKUData(skus)
         .then(skuData => {
-          console.log('got product data', skuData, event)
           this.hydrateProducts(player, event.products, skuData.products)
         })
 
     })
 
+    // events
+    window.addEventListener('message', this.processMediaEvent.bind(this))
+
+  }
+
+  processMediaEvent(event) {
+    if (event.origin != "https://lcx-player.bambuser.com") {
+      return
+    }
+    const trackingEvent = JSON.parse(event.data)
+    const trackingData = trackingEvent.data
+
+    const TRACKING = {
+      CATEGORY: 'microsite',
+      ACTION: 'feature',
+      CLOSE_PRODUCTS: 'minimise shop',
+      OPEN_PRODUCTS: 'video:shop',
+      PRODUCT_CLICK: 'select product',
+      PLAY: 'video:play',
+      PAUSE: 'video:pause',
+      SHARE: 'video:share',
+      LIKE: 'like video',
+      MINIMIZE: 'minimise video',
+      prefix: (label) => { return `uk:kings-cross:samsung-people-live:${label}` }
+    }
+    switch (trackingEvent.eventName) {
+      case 'livecommerce:on-progress-update':
+        // ignore progress update for now
+        break;
+      case 'livecommerce:minimize':
+        trackEvent(TRACKING.CATEGORY, TRACKING.ACTION, TRACKING.prefix(TRACKING.MINIMIZE))
+        break;
+      case 'livecommerce:tracking-point':
+        // tracking event
+        const eventData = trackingData.data
+        switch (eventData.interactionType) {
+          case 'hideAllProductsOverlay':
+            trackEvent(TRACKING.CATEGORY, TRACKING.ACTION, TRACKING.prefix(TRACKING.CLOSE_PRODUCTS))
+            break;
+          case 'goToProductSurfBehind':
+            trackEvent(TRACKING.CATEGORY, TRACKING.ACTION, TRACKING.prefix(`${TRACKING.PRODUCT_CLICK}:${eventData.title}`))
+            break;
+          case 'showAllProductsOverlay':
+            trackEvent(TRACKING.CATEGORY, TRACKING.ACTION, TRACKING.prefix(TRACKING.OPEN_PRODUCTS))
+            break;
+          case 'resume':
+            trackEvent(TRACKING.CATEGORY, TRACKING.ACTION, TRACKING.prefix(TRACKING.PLAY))
+            break;
+          case 'pause':
+            trackEvent(TRACKING.CATEGORY, TRACKING.ACTION, TRACKING.prefix(TRACKING.PAUSE))
+            break;
+          case 'action-bar:share':
+            trackEvent(TRACKING.CATEGORY, TRACKING.ACTION, TRACKING.prefix(TRACKING.SHARE))
+            break;
+          case 'like':
+            trackEvent(TRACKING.CATEGORY, TRACKING.ACTION, TRACKING.prefix(TRACKING.LIKE))
+            break;
+          default:
+
+        }
+      default:
+        // console.log('untracked event', trackingEvent,  trackingData)
+        /*
+          CANT TRACK
+          min/max chat
+          close popover video ?!
+        */
+    }
   }
 
 }
 
-/*
-https://www.samsung.com/uk/api/v4/configurator/syndicated-product-linear?skus=SM-G980FZADEUA,SM-G980FLBDEUA,SM-G980FZIDEUA,SM-G981BZADEUA,SM-G981BLBDEUA,SM-G981BZIDEUA,SM-G986BZADEUA,SM-G986BLBDEUA,SM-G986BZKDEUA,SM-G986BZPDEUA,SM-G988BZADEUA,SM-G988BZAGEUA,SM-G988BZKDEUA,SM-G986BZRDEUA,SM-G986BZBDEUA,SM-G980FZWDEUA,SM-G981BZWDEUA,SM-G986BZWDEUA,SM-G988BZWDEUA,SM-G780FZWDEUA,SM-G780FZBDEUA,SM-G780FZGDEUA,SM-G780FZRDEUA,SM-G780FZODEUA,SM-G780FLVDEUA,SM-G781BZWDEUA,SM-G781BLVDEUA,SM-G781BZBDEUA,SM-G781BZGDEUA,SM-G781BZRDEUA,SM-G781BZODEUA,SM-G781BZWHEUA,SM-G781BLVHEUA,SM-G781BZBHEUA,SM-G781BZGHEUA,SM-G781BZRHEUA,SM-G781BZOHEUA,SM-G780FZWHEUA,SM-G780FLVHEUA,SM-G780FZBHEUA,SM-G780FZGHEUA,SM-G780FZRHEUA,SM-G780FZOHEUA&component=offers,promotion,promotion_price,carrier_attributes&count=0
-*/
-
-
 function fetchProductData(skus) {
-  return fetch(`https://www.samsung.com/uk/api/v4/configurator/syndicated-product-linear?skus=${skus}`)
+  // host name for qa / live
+  const hostname = window.location.hostname == 'p6-qa.samsung.com' ? 'p6-qa.samsung.com' : 'www.samsung.com';
+  return fetch(`https://${hostname}/uk/api/v4/configurator/syndicated-product-linear?skus=${skus}`)
     .then((response) => {
       return response.json()
       // callback(response.data);
@@ -96,5 +158,4 @@ function fetchProductData(skus) {
       return error
       // callback(error.response.data);
     });
-
 }

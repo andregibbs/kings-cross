@@ -1,3 +1,5 @@
+import '../../../bootstrap.js'
+
 import { DateTime, Interval } from 'luxon';
 import getParam from '../../../../js/components/getParam'
 
@@ -6,92 +8,103 @@ const Handlebars = require("hbsfy/runtime");
 import HandlebarsHelpers from '../../../../templates/helpers/handlebarsHelpers';
 HandlebarsHelpers.register(Handlebars)
 
+import HoiBambuser from '../../../../js/home-of-innovation/HoiBambuser';
 const template = require('../../../../templates/partials/home-of-innovation/hoiBambuser.hbs');
 const templateTarget = document.querySelector('#bambuser-target')
-const titleTarget = document.querySelector('#title-target h1')
+// const titleTarget = document.querySelector('#title-target h1')
 
-import HoiBambuser from '../../../../js/home-of-innovation/HoiBambuser';
+import KXCountdown from '../../../../js/components/common/kxCountdown';
+const countdownTarget = document.querySelector('#countdown-target')
+
 
 const SCHEDULE = [
   {
-    liveDate: [2021,1,21,12,0],
-    showID: 'ymIn5cG7nsUMhly5Gx1S',
-    title: 'January 21st 12PM',
-    cta: "Launch Show (21st 12pm)",
-    poster: 'https://picsum.photos/1440/900'
-  }
-]
-
-const __SCHEDULE = [
+    liveDate: [2021,1,27,16,0],
+    showID: '1JySqY77y0inrbcvMsi5',
+    title: 'Wednesday 27th Jan - 4PM',
+    cta: "Watch live demo",
+    poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/kv.jpg',
+    mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/kv-mob-v2.jpg'
+  },
   {
     liveDate: [2021,1,29,16,0],
     showID: '1JySqY77y0inrbcvMsi5',
-    title: 'January 29th 4PM',
-    cta: "Launch Show (29th 4PM)",
-    poster: 'https://picsum.photos/1440/900'
+    title: 'Friday 29th Jan - 4PM',
+    cta: "Watch live demo",
+    poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/kv.jpg',
+    mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/kv-mob-v2.jpg'
   },
   {
     liveDate: [2021,1,29,18,0],
     showID: '1JySqY77y0inrbcvMsi5',
-    title: 'January 29th 6PM',
-    cta: "Launch Show (29th 6PM)",
-    poster: 'https://picsum.photos/1440/900'
+    title: 'Friday 29th Jan - 6PM',
+    cta: "Watch live demo",
+    poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/kv.jpg',
+    mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/kv-mob-v2.jpg'
   },
   {
     liveDate: [2021,1,30,16,0],
     showID: '1JySqY77y0inrbcvMsi5',
-    title: 'January 30th 4PM',
-    cta: "Launch Show (30th 4PM)",
-    poster: 'https://picsum.photos/1440/900'
+    title: 'Saturday 30th Jan - 4PM',
+    cta: "Watch live demo",
+    poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/kv.jpg',
+    mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/kv-mob-v2.jpg'
   },
   {
     liveDate: [2021,1,30,18,0],
     showID: '1JySqY77y0inrbcvMsi5',
-    title: 'January 30th 6PM',
-    cta: "Launch Show (30th 6PM)",
-    poster: 'https://picsum.photos/1440/900'
+    title: 'Saturday 30th Jan - 6PM',
+    cta: "Watch live demo",
+    poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/kv.jpg',
+    mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/kv-mob-v2.jpg'
   },
   {
     liveDate: [2021,1,31,16,0],
     showID: '1JySqY77y0inrbcvMsi5',
-    title: 'January 31st 4PM',
-    cta: "Launch Show (31st 4PM)",
-    poster: 'https://picsum.photos/1440/900'
+    title: 'Sunday 31st Jan - 6PM',
+    cta: "Watch live demo",
+    poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/kv.jpg',
+    mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/kv-mob-v2.jpg'
   },
   {
-    liveDate: [2021,1,31,18,0],
+    liveDate: [2021,2,1,18,0],
     showID: '1JySqY77y0inrbcvMsi5',
-    title: 'January 31st 6PM',
-    cta: "Launch Show (31st 4PM)",
-    poster: 'https://picsum.photos/1440/900'
+    title: 'Monday 1st Feb - 6PM',
+    cta: "Watch live demo",
+    poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/kv.jpg',
+    mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/kv-mob-v2.jpg'
+  },
+  {
+    liveDate: [2021,2,2,18,0],
+    showID: '1JySqY77y0inrbcvMsi5',
+    title: 'Tuesday 2nd Feb - 6PM',
+    cta: "Watch live demo",
+    poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/kv.jpg',
+    mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/kv-mob-v2.jpg'
+  },
+  {
+    liveDate: [2021,2,3,18,0],
+    showID: '1JySqY77y0inrbcvMsi5',
+    title: 'Wednesday 3rd Feb - 6PM',
+    cta: "Watch live demo",
+    poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/kv.jpg',
+    mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/kv-mob-v2.jpg'
   },
   {
     liveDate: [2021,2,4,18,0],
     showID: '1JySqY77y0inrbcvMsi5',
-    title: 'February 4th 6PM',
-    cta: "Launch Show (4th 6PM)",
-    poster: 'https://picsum.photos/1440/900'
+    title: 'Thursday 4th Feb - 6PM',
+    cta: "Watch live demo",
+    poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/kv.jpg',
+    mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/kv-mob-v2.jpg'
   },
   {
     liveDate: [2021,2,5,18,0],
     showID: '1JySqY77y0inrbcvMsi5',
-    title: 'February 5th 6PM',
-    cta: "Launch Show (5th 6PM)",
-    poster: 'https://picsum.photos/1440/900'
-  },
-  {
-    liveDate: [2021,2,6,18,0],
-    showID: '1JySqY77y0inrbcvMsi5',
-    title: 'February 6th 6PM',
-    cta: "Launch Show (6th 6PM)",
-    poster: 'https://picsum.photos/1440/900'
-  },
-  {
-    liveDate: [2021,2,7,18,0],
-    showID: '1JySqY77y0inrbcvMsi5',
-    title: 'February 7th 6PM',
-    cta: "Launch Show (7th 6PM)",
-    poster: 'https://picsum.photos/1440/900'
+    title: 'Friday 5th Feb - 6PM',
+    cta: "Watch live demo",
+    poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/kv.jpg',
+    mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/kv-mob-v2.jpg'
   }
 ]
 
@@ -101,12 +114,16 @@ class SamsungLive {
     this.pageInitiateTime = DateTime.local()
     this.currentShow = false
     this.nextShow = false
+    this.countdown = false
     this.update()
 
     // debug for now, change for countdown / update method
-    setInterval(() => {
+    this.updateInterval = setInterval(() => {
       this.update()
-    }, 5000)
+      if (this.countdown) {
+        this.countdown.update(this.getCurrentTime())
+      }
+    }, 1000)
 
   }
 
@@ -118,14 +135,12 @@ class SamsungLive {
     // init class
     new HoiBambuser(document.querySelector('.hoiBambuser'))
     // update title
-    titleTarget.innerText = this.currentShow.title
+    // titleTarget.innerText = this.currentShow.title
   }
 
   update() {
     // get shows based on current time
     let { currentShow, nextShow } = this.getShows()
-
-    console.log('update', this.currentShow, currentShow, nextShow)
 
     // if no current show but a next, use next for kv
     if (nextShow && !currentShow) {
@@ -136,13 +151,24 @@ class SamsungLive {
       this.currentShow = currentShow
       this.renderHeader()
     }
+
     // if next show has changed
     if (this.nextShow !== nextShow) {
       this.nextShow = nextShow
-      // this.renderCountdown()
-      // render countdown
+      if (nextShow) {
+        this.renderCountdown(nextShow)
+      } else {
+        // nothing more to show from schedule
+        this.countdown = false
+        countdownTarget.innerHTML = ''
+        clearInterval(this.updateInterval)
+      }
     }
 
+  }
+
+  renderCountdown(nextShow) {
+    this.countdown = new KXCountdown(countdownTarget, nextShow.liveDate, this.getCurrentTime())
   }
 
   getCurrentTime() {
@@ -167,14 +193,19 @@ class SamsungLive {
     const currentTime = this.getCurrentTime()
     let nextShow = SCHEDULE.find(item => {
       const itemTime = DateTime.local(...item.liveDate).setZone("GMT")
-      if (Interval.fromDateTimes(currentTime, itemTime).length('minutes') < 30) {
-        // if next show is within x minutes skip
-        return false
-      }
       return itemTime > currentTime
     }) || false
     // current show is one previous to next or the last in schedule
     let currentShow = nextShow ? SCHEDULE[SCHEDULE.indexOf(nextShow) - 1] : SCHEDULE[SCHEDULE.length - 1]
+
+    if (nextShow) {
+      let nextShowTime = DateTime.local(...nextShow.liveDate).setZone("GMT")
+      // if the next show starts within 30 mins, use as current
+      if (Interval.fromDateTimes(currentTime, nextShowTime).length('minutes') < 60) {
+        currentShow = nextShow
+      }
+    }
+
     return {currentShow, nextShow}
   }
 

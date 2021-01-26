@@ -6,8 +6,9 @@
 
   <div class="hoiContent samsung-people-live">
 
-  <div class="hoiKv hoiKv--d-top hoiKv--m-top">
+  {{> home-of-innovation/hoiBreadcrumbs breadcrumbs=pageTemplateData.innovation_samsung_people_live.breadcrumbs}}
 
+  <div class="hoiKv hoiKv--d-top hoiKv--m-top">
     <div
       ga-ca="microsite"
       ga-ac="feature"
@@ -19,20 +20,37 @@
     >
     </div>
     <div class="hoiKv__Components">
+      {{> home-of-innovation/hoiHeadline copy="Samsung People Live: Galaxy S21 range demo"}}
+      {{> home-of-innovation/hoiParagraphs pageTemplateData.innovation_samsung_people_live.sub}}
       {{> home-of-innovation/hoiShare }}
-      {{> home-of-innovation/hoiHeadline copy="Test" id="title-target"}}
     </div>
-
   </div>
 
-  <div id="debug">
-
+  <div class="hoiWrapper">
+    <div id="countdown-target"></div>
   </div>
 
-  {{>
-    home-of-innovation/hoiImagePanelLinks
-    items=pageTemplateData.samsunglive.panels
-  }}
+  <div class="spl__Signposts">
+  {{#each pageTemplateData.innovation_samsung_people_live.panels }}
+    <div class="spl__Signpost">
+      <div class="spl__SignpostImage" style="background-image:url({{image}})"></div>
+      <div class="slp__SignpostBody">
+        <h4>{{title}}</h4>
+        <p>{{sub}}</p>
+        <a
+          class="btn btn--primary btn--primary--coral"
+          href="{{link}}"
+          data-omni-type="microsite"
+          data-omni="uk:kings-cross:samsung-people-live:signpost:{{title}}"
+          ga-ca="microsite"
+          ga-ac="feature"
+          ga-la="uk:kings-cross:samsung-people-live:signpost:{{title}}">
+          {{cta}}
+        </a>
+      </div>
+    </div>
+  {{/each}}
+  </div>
 
   </div>
 

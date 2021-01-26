@@ -1,0 +1,97 @@
+$digit-size: 5.5rem;
+$digit-size-m: 11vw;
+
+.kxCountdown {
+
+}
+
+.kxCountdown__groups {
+  display: flex;
+  font-weight: bold;
+  padding: 0 1rem;
+  height: 6rem;
+  @media screen and (max-width: $mobile + 1) {
+    height: 3rem;
+  }
+}
+
+.kxCountdown__group {
+  // flex-grow: 2;
+  display: flex;
+  position: relative;
+  // width: 100%;
+
+  &:after {
+    content: attr(label);
+    display: block;
+    position: absolute;
+    top: $digit-size + 2rem;
+    width: 100%;
+    text-align: center;
+    font-size: 2vw;
+    left: 50%;
+    transform: translate(-50%, 0);
+    @media screen and (max-width: 768px) {
+      top: calc(#{$digit-size-m} + 1rem);
+    }
+  }
+}
+
+.kxCountdown__group--spacer {
+  // width: 2rem;
+  flex-grow: 1;
+}
+.kxCountdown__digit {
+  width: 6.5vw;
+  @media screen and (min-width: $mobile + 1) {
+    width: 3.5rem;
+  }
+}
+.kxCountdownDigit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  perspective: 1000;
+  transform-style: preserve-3d;
+}
+
+.kxCountdownDigit__figure {
+  font-size: $digit-size;
+  font-family: $samsung-sharp;
+  @media screen and (max-width: 768px) {
+    font-size: $digit-size-m;
+  }
+  position: absolute;
+  top: 0;
+  &[in] {
+    opacity: 0;
+    animation: figure-in 0.4s forwards;
+    animation-delay: 0.2s;
+  }
+  &[out] {
+    animation: figure-out 0.4s forwards;
+  }
+}
+
+@keyframes figure-in {
+  0% {
+    transform: translate3d(0,-50%,0) rotateX(-90deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translate3d(0,0,0);
+    opacity: 1;
+  }
+}
+
+@keyframes figure-out {
+  0% {
+    transform: translate3d(0,0,0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(0,50%,0) rotateX(90deg);
+    opacity: 0;
+  }
+}
