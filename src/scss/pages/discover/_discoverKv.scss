@@ -204,6 +204,7 @@ $slide-scale: 0.95;
       width: 1em;
       height: 1em;
       pointer-events: all;
+      background: none;
       &:before {
         display: block;
         content: '';

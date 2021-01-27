@@ -201,7 +201,7 @@ class SamsungLive {
     if (nextShow) {
       let nextShowTime = DateTime.local(...nextShow.liveDate).setZone("GMT")
       // if the next show starts within 30 mins, use as current
-      if (Interval.fromDateTimes(currentTime, nextShowTime).length('minutes') < 60) {
+      if (Interval.fromDateTimes(currentTime, nextShowTime).length('minutes') < 30) {
         currentShow = nextShow
       }
     }

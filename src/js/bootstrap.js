@@ -13,10 +13,12 @@ window.$j = $
 import 'lity'
 import KXNav from './components/common/KXNav'
 import KXSurvey from './components/common/kxSurvey'
+import FindKX from './components/findKX'
 
 function Bootstrap() {
   new KXNav()
   new KXSurvey()
+  new FindKX()
 }
 
 if (document.readyState === "complete" || (document.readyState !== "loading" && !document.documentElement.doScroll)) {

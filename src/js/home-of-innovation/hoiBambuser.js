@@ -83,6 +83,8 @@ export default class HoiBambuser {
     const trackingEvent = JSON.parse(event.data)
     const trackingData = trackingEvent.data
 
+    // console.log(trackingEvent, trackingData)
+
     const TRACKING = {
       CATEGORY: 'microsite',
       ACTION: 'feature',
@@ -93,6 +95,7 @@ export default class HoiBambuser {
       PAUSE: 'video:pause',
       SHARE: 'video:share',
       LIKE: 'like video',
+      CALENDAR: 'add-to-calendar',
       MINIMIZE: 'minimise video',
       prefix: (label) => { return `uk:kings-cross:samsung-people-live:${label}` }
     }
@@ -128,8 +131,24 @@ export default class HoiBambuser {
           case 'like':
             trackEvent(TRACKING.CATEGORY, TRACKING.ACTION, TRACKING.prefix(TRACKING.LIKE))
             break;
+          case 'pending-curtain:share:facebook':
+          case 'pending-curtain:share:whatsapp':
+          case 'pending-curtain:share:email':
+          case 'pending-curtain:share:twitter':
+          case 'pending-curtain:share:linkedin':
+          case 'pending-curtain:share:clipboard':
+            const shareType = eventData.interactionType.split('pending-curtain:share:')[1];
+            trackEvent(TRACKING.CATEGORY, TRACKING.ACTION, TRACKING.prefix(`${TRACKING.SHARE}:${shareType}`))
+            break;
+          case 'pending-curtain:addToCalendar:google':
+          case 'pending-curtain:addToCalendar:apple':
+          case 'pending-curtain:addToCalendar:outlook':
+          case 'pending-curtain:addToCalendar:office365':
+          case 'pending-curtain:addToCalendar:ics':
+            const calendarType = eventData.interactionType.split('pending-curtain:addToCalendar:')[1];
+            trackEvent(TRACKING.CATEGORY, TRACKING.ACTION, TRACKING.prefix(`${TRACKING.CALENDAR}:${shareType}`))
+            break;
           default:
-
         }
       default:
         // console.log('untracked event', trackingEvent,  trackingData)
