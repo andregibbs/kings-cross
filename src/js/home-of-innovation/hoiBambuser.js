@@ -19,6 +19,19 @@ export default class HoiBambuser {
 
     window.onBambuserLiveShoppingReady = this.onShoppingReady.bind(this)
 
+    /*
+      These lines fix an issue where:
+      once a bambuser stream is launched
+      the current page location is used to create an iframe to display under the stream player
+      on ios, the iframe does not render correctly
+      I believe ios does not render the iframe if it is not visible to the user.
+      more info: https://stackoverflow.com/questions/55068656/safari-mobil-iframe-content-out-of-view-not-rendered
+      by adjusting the overflowscrolling attribute, the layout is redrawn
+    */
+    const fixEl = document.body
+    const settouch = (e) => fixEl.style.webkitOverflowScrolling = 'touch'
+    fixEl.addEventListener("touchend", settouch, false);
+
   }
 
   fetchSKUData(skus) {
@@ -29,35 +42,37 @@ export default class HoiBambuser {
     products.forEach(({ ref: sku, id: productId, url: publicUrl }) => {
       let productData = skuData[sku]
       // console.log('hydrate', productData, skuData, sku, publicUrl)
-      player.updateProduct(productId, factory => {
-        // if the page is loaded on qa, swap out the public url host with p6
-        if (window.location.hostname === "p6-qa.samsung.com") {
-          publicUrl = publicUrl.replace('www.samsung.com','p6-qa.samsung.com')
-        }
-        return factory.inheritFromPlaceholder()
-          .publicUrl(publicUrl)
-          .product(p => p
-            .name(productData.product_display_name)
-            .sku(sku)
-            .variations(v => [v()
+
+      if (productData !== undefined) {
+        player.updateProduct(productId, factory => {
+          // if the page is loaded on qa, swap out the public url host with p6
+          if (window.location.hostname === "p6-qa.samsung.com") {
+            publicUrl = publicUrl.replace('www.samsung.com','p6-qa.samsung.com')
+          }
+          return factory.inheritFromPlaceholder()
+            .publicUrl(publicUrl)
+            .product(p => p
               .name(productData.product_display_name)
               .sku(sku)
-              .sizes(s => [s()
+              .variations(v => [v()
                 .name(productData.product_display_name)
                 .sku(sku)
-                .price(pr => pr.current(productData.price_info[0].msrp_price.value))
+                .sizes(s => [s()
+                  .name(productData.product_display_name)
+                  .sku(sku)
+                  .price(pr => pr.current(`£${productData.price_info[0].msrp_price.value}`))
+                ])
               ])
-            ])
-          )
-      });
+            )
+        });
+      }
     });
-
   }
 
   onShoppingReady(player) {
 
     player.configure({
-      currency: 'GBP',
+      currency: ' ',
       locale: 'en-GB',
     });
 
@@ -149,9 +164,10 @@ export default class HoiBambuser {
             trackEvent(TRACKING.CATEGORY, TRACKING.ACTION, TRACKING.prefix(`${TRACKING.CALENDAR}:${shareType}`))
             break;
           default:
+            console.log('untracked tracking point', trackingEvent,  trackingData)
         }
       default:
-        // console.log('untracked event', trackingEvent,  trackingData)
+        console.log('untracked event', trackingEvent,  trackingData)
         /*
           CANT TRACK
           min/max chat

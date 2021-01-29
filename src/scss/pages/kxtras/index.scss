@@ -1,5 +1,152 @@
 @import '../../bootstrap';
 
+/*
+  import support page for booking flow
+  templates and modified scripts copied to
+  templates/partials/components/kxtras/booking.hbs
+  js/pages/kxtras/booking.js
+*/
+@import '../../pages/services';
+@import '../../components/calendar';
+
+// booking appointment-details_privacy-policy
+
+
+.KXtras__section--booking {
+  position: relative;
+  margin-top: 2rem;
+  @media screen and (min-width: $mobile + 1) {
+    margin-top: 4rem;
+    padding-top: 4rem;
+  }
+  .KXtras__booking_banner {
+    background-size: cover;
+    // margin-bottom: 2rem;
+    &:before {
+      content: '';
+      display: block;
+      padding-top: 27.4%;
+    }
+    background-image: url('https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/kxtras/booking/banner-mob.png');
+    @media screen and (min-width: $mobile + 1) {
+      background-image: url('https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/kxtras/booking/banner-desk.png');
+      &:before {
+        padding-top: 13.5%;
+      }
+    }
+  }
+  .KXtras__booking_body {
+    // margin: 0 2rem;
+    display: flex;
+    // padding: 2rem 0;
+    @media screen and (min-width: $mobile + 1) {
+      display: block;
+      max-width: 78vw;
+      margin: 0 auto;
+      padding: 2rem 0;
+    }
+    @media screen and (min-width: 1440px) {
+      max-width: calc(1440px * 0.78);
+    }
+    @media screen and (max-width: $mobile) {
+
+    }
+
+    // paragram
+    p {
+      margin-bottom: 1rem;
+      @media screen and (min-width: $mobile + 1) {
+        margin-right: calc(26vw + 1rem);
+        margin-bottom: 1rem;
+      }
+      @media screen and (min-width: 1440px) {
+        margin-right: calc((1440px * 0.32) + 2rem);
+        margin-bottom: 2rem;
+      }
+      font-size: 1.5em !important;
+
+    }
+
+    // image
+    .KXtras__booking_image {
+      width: 40%;
+      flex-shrink: 0;
+      margin-left: 1rem;
+      @media screen and (min-width: $mobile + 1) {
+        width: 32vw;
+        right: 6vw;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+      }
+      @media screen and (min-width: 1440px) {
+        width: calc(1440px * 0.32);
+        right: calc(1440px * 0.06);
+      }
+
+      // image
+      &:before {
+        content: '';
+        display: block;
+        padding-top: 27.4%;
+      }
+      background-image: url('https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/kxtras/booking/p_assistant_guy.png');
+      @media screen and (min-width: $mobile + 1) {
+        background-image: url('https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/kxtras/booking/p_assistant_guy.png');
+        &:before {
+          padding-top: 100%;
+        }
+      }
+    }
+  }
+
+  .calendar .arrow {
+    top: 50%;
+  }
+  // calendar/booking overrides
+  .calendar__choice {
+    border-color: #97D653;
+    &:hover {
+      background-color: rgba(151, 214, 83, 0.5);
+      color: white;
+    }
+  }
+  .calendar--selected {
+    background-color: #97D653;
+  }
+  .btn--primary:not(.btn--primary-notActive) {
+    background: black;
+    border-color: #97D653;
+    &:hover {
+      background-color: #97D653;
+      color: white;
+    }
+  }
+  .checkbox__container input:checked ~ .checkbox {
+    background-color: #97D653;
+  }
+  .btn--secondary {
+    border-color: #97D653;
+    &:hover {
+      background-color: rgba(151, 214, 83, 0.5);
+      color: white;
+    }
+  }
+  .btn--primary-notActive {
+    color: #999;
+  }
+  #confirmation .booking-line {
+    display: none;
+  }
+  #imei-row a,
+  .details__disclaimer a {
+    color: #97D653;
+  }
+  .close {
+    top: 0;
+  }
+}
+
 .Page {}
 
 .KXtras__wrap {

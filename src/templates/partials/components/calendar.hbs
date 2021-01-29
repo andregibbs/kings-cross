@@ -1,7 +1,11 @@
 <section class="calendar">
+    {{#if title}}
+    <h3 class="fz36">{{title}}</h3>
+    {{else}}
     <h3 class="fz36">Select a Time</h3>
+    {{/if}}
     <div class="calendar__container">
-        
+
         {{!-- Columns of dates --}}
             {{!-- First Slot is date --}}
             {{!-- Container of slots in date --}}

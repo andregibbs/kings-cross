@@ -8,6 +8,8 @@ export default function calendar(URL, type, allEvents) {
 
 	customevent();
 
+  console.log('aaaaa', URL)
+
 	var unlock = new CustomEvent("unlock");
 	var lock = new CustomEvent("lock");
 
@@ -29,6 +31,8 @@ export default function calendar(URL, type, allEvents) {
 
 	document.getElementById("calendar").addEventListener("changeURL", function (e) {
 		URL = e.detail.url;
+
+    console.log('change url', URL)
 
 		doLog("got activated");
 
@@ -74,6 +78,8 @@ export default function calendar(URL, type, allEvents) {
 		var loadingScreen = document.getElementById("load-screen");
 		const appointmentURL = URL + "?startDate=";
 
+    console.log('asd', URL, appointmentURL, date)
+
 		const dateString = date.getFullYear() + "-" + (String(date.getMonth() + 1).length == 1 ? "0" + String(date.getMonth() + 1) : String(date.getMonth() + 1)) + "-" + (String(date.getDate()).length == 1 ? "0" + String(date.getDate()) : String(date.getDate()))
 
 		loadingScreen.style.display = "block";
@@ -84,6 +90,7 @@ export default function calendar(URL, type, allEvents) {
       appointmentURL + dateString,
       function (data) {
 				doLog("Got data");
+
 				populateWithAppointments(data);
 				loadingScreen.style.display = "";
 				handleScrollArrows();
@@ -126,7 +133,6 @@ export default function calendar(URL, type, allEvents) {
 		//For every date
 		for (var dateInd = 0; dateInd < 5; dateInd++) {
 			if (!data[dateInd].unAvailable) {
-
 				//Format date
 				var date = new Date(data[dateInd].date);
 				// var dateFormatted = days[date.getDay()] + " " + date.getDate() + " " + months[date.getMonth()] + " " + date.getFullYear();

@@ -1,0 +1,145 @@
+<section class="section journey">
+
+  <!-- <div class="section__inner" id="one-to-one-description">
+    <h4 class="fz50">Book a virtual video support appointment</h4>
+    <p class="fz24">Need help setting up your device, app features or system optimisation?</p>
+    <p class="fz24">Please note we don't offer repair bookings through this service. To book a repair please select the repair option above.
+  </div> -->
+
+  <div class="section__inner" id="calendar">
+    {{>components/calendar title=calendarTitle}}
+  </div>
+
+  <form class="section__inner device-info" id="device-info">
+    <h3 class="fz50">Tell us a bit about your device</h3>
+    <div class="device-info__row">
+      <select class="input" id="model-selector">
+        <option>Choose Your Model*</option>
+      </select>
+      <select class="input" id="color-selector">
+        <option value="">Choose Device Colour*</option>
+      </select>
+    </div>
+    <div class="device-info__row" id="imei-row">
+      <input class="input" type="text" id="imei" placeholder="Device IMEI Number (Optional)" />
+      <a href="https://www.samsung.com/uk/support/mobile-devices/how-do-i-find-the-imei-model-number-and-serial-number-for-samsung-galaxy-device/"
+        target="_blank" ga-ca="microsite" ga-ac="feature"
+        ga-la="kings-cross:tell-us-a-bit-about-your-device_retrieve-your-imei" data-omni-type="microsite"
+        data-omni="uk:kings-cross:support:retrieve your imei">Retrieve
+        IMEI number</a>
+    </div>
+    <h4 class="fz20" id="oneToOne-device-notes-header">What do you need help with?* (30 characters minimum length)</h4>
+    <textarea class="input" id="device-notes" placeholder="Additional Information (Optional)"></textarea>
+  </form>
+
+  <form class="section__inner" id="details">
+    <h3 class="details__title fz50">Appointment Details</h3>
+    <p id="slot-selected" class="details__time fz24 time-selected">10:00 - 11:30 | Tuesday 09 November 2019 |
+      Samsung KX</p>
+    <div class="details__form" id="bookingForm">
+
+      <div class="details__fields">
+        <input class="input details__input" autocomplete="given-name" placeholder="Name*" id="name"
+          type="text" required>
+        <input class="input details__input" autocomplete="family-name" placeholder="Surname*" id="surname"
+          type="text" required>
+        <br>
+        <input class="input details__input" name="telephone" placeholder="Telephone*" id="tel" type="tel"
+          pattern="^\s*\(?(020[7,8]{1}\)?[ ]?[1-9]{1}[0-9{2}[ ]?[0-9]{4})|(0[1-8]{1}[0-9]{3}\)?[ ]?[0-9]{1}[0-9]{2}[ ]?[0-9]{3})\s*$"
+          required>
+        <input class="input details__input" name="email" placeholder="Email*" id="email" type="email"
+          required>
+      </div>
+
+      <div class="details__checkboxes">
+
+        <label class="checkbox__container fz16">
+          <input type="checkbox" name="age" id="age" required>I am over 13 years old.*<span
+            class="checkbox"></span>
+        </label>
+
+        <label class="checkbox__container fz16">
+          <input type="checkbox" name="checkbox" id="kx">I would like to receive special offers,
+          announcements,
+          push notifications and emails about Samsung’s King’s Cross store and related developments from
+          Samsung Electronics (UK) Ltd.<span class="checkbox"></span>
+        </label>
+
+        <label class="checkbox__container fz16">
+          <input type="checkbox" name="checkbox" id="seuk">I would like to receive special offers,
+          announcements,
+          push notifications and emails about Samsung’s products and services from Samsung Electronics
+          (UK) Ltd.<span class="checkbox"></span>
+        </label>
+      </div>
+
+      <p class="details__disclaimer" id="one-to-one-policy">
+        Samsung offers video meeting calls through Zoom so we can assist with your queries. Personal data you provide to us will be processed by Samsung in accordance with our <a href="https://www.samsung.com/uk/info/privacy/" data-omni-type="microsite" data-omni="121 zoom privacy policy" target="_blank">Privacy Policy</a>.
+      </p>
+      <p class="details__disclaimer">By submitting this form you acknowledge that your personal data will be
+        processed in accordance with our <a ga-ca="microsite" ga-ac="feature"
+          ga-la="kings-cross:appointment-details_privacy-policy" data-omni-type="microsite"
+          data-omni="uk:kings-cross:support:privacy-policy" target="_blank"
+          href="https://www.samsung.com/uk/info/privacy/">Privacy Policy.</a></p>
+
+    </div>
+
+  </form>
+
+  <div class="section__inner" id="confirmation">
+    <div class="booking-line booking-line--top"></div>
+
+    <!-- 121 only headers -->
+    <span class="confirmation-121--show">
+      <h3 class="fz50">Your appointment is booked</h3><br>
+      <h4 class="fz36">Thank you for booking your virtual video support appointment</h4><br>
+    </span>
+    <h3 class="fz50 confirmation-121--hide">Repair booking confirmation</h3>
+
+    <!-- 121 only header -->
+    <h5 class="fz24 confirmation__header confirmation-121--show">See you on:</h5>
+    <p class="time-selected fz24">Time Slot</p>
+
+    <!-- 121 only details -->
+    <!-- <span class="confirmation-121--show">
+      <h5 class="fz24 confirmation__header">For a:</h5>
+      <p class="fz24">Virtual video support appointment</p>
+      <h5 class="fz24 confirmation__header">Duration:</h5>
+      <p class="fz24">One hour slot</p>
+    </span>-->
+    
+    <div class="confirmation__reference">
+      <h5 class="fz24 confirmation-121--show confirmation__header">Booking ref:</h5>
+      <p class="fz24 confirmation-121--hide">Reference code</p>
+      <p class="reference fz50" id="ref"></p>
+    </div>
+
+    <!-- 121 only disclaimer -->
+    <!-- <span class="confirmation-121--show">
+      <h5 class="fz24 confirmation__header">Preparation:</h5>
+      <ul>
+        <li class="fz20">1. Ensure you have internet connection</li>
+        <li class="fz20">2. Ensure your device is sufficiently charged</li>
+        <li class="fz20">3. Please arrive on time for your appointment</li>
+        <li class="fz20">4. Check your confirmation email for details on how to access your appointment</li>
+      </ul>
+    </span> -->
+    <p class="confirmation__disclaimer fz16 confirmation-121--hide">
+      Thanks for booking an appointment at KX. We have sent your booking information to the email provided.
+      Please try to ensure you have a back up of any data stored on a device you wish to service.
+    </p>
+
+    <div class="booking-line booking-line--bot"></div>
+  </div>
+
+  <div class="navigation" id="navigation">
+    <button ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:navigation_back" data-omni-type="microsite"
+      data-omni="uk:kings-cross:support:navigation:back" class="btn btn--secondary" id="back">BACK</button>
+    <button ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:navigation_next" data-omni-type="microsite"
+      data-omni="uk:kings-cross:support:navigation:next" class="btn btn--primary btn--primary-notActive"
+      id="next">NEXT</button>
+  </div>
+
+  <div class="close"></div>
+
+</section>

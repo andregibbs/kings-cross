@@ -24,11 +24,11 @@ export default function hoiShare() {
   if (facebookEl) {
     facebookEl.href = facebookURL()
   }
-  // const shareEl = component.querySelector('#share')
-  // shareEl.addEventListener('click', (e) => {
-  //   e.preventDefault();
-  //   console.log('copy')
-  // })
+  const shareEl = component.querySelector('#share')
+  shareEl.addEventListener('click', (e) => {
+    e.preventDefault();
+    // console.log('copy')
+  })
 
   const shareCopy = new Clipboard(component.querySelector('#share'), {
     text: () => {

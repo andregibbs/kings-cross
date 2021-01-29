@@ -15,25 +15,60 @@
 }
 
 .hoiBambuser__Launch {
-  background: white;
   border-radius: 28px;
   padding: 1em 2em;
-  color: black;
   width: auto;
-
+  flex-shrink: 0;
+  font-size: 0.9rem;
   font-family: $samsung-sharp;
   text-transform: uppercase;
-  color: #333;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 
-  &:hover {
-    background: black;
-    border-color: black;
-    color: white;
+
+  .hoiBambuser__LaunchIcon {
+    display: none;
   }
 
-  @media screen and (min-width: $mobile + 1) {
-    max-width: 15rem;
+  // &--live {
+  padding-right: 3rem;
+  .hoiBambuser__LaunchIcon {
+    display: block;
+    position: absolute;
+    right: 0;
+    height: 101%;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 0.2rem 0.4rem;
+    @media screen and (min-width: $mobile + 1) {
+      padding: 3%;
+    }
+    svg {
+      transform-origin: center;
+      animation: icon-pulse 0.8s ease-in-out infinite;
+      path {
+        transition: 0.3s ease-in-out;
+      }
+    }
+  }
+
+  &:hover {
+    .hoiBambuser__LaunchIcon svg path {
+      fill: $coral;
+    }
+  }
+  // }
+  max-width: 18rem;
+}
+
+@keyframes icon-pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
   }
 }
 
@@ -47,40 +82,51 @@
   padding: 10vw;
   height: 60%;
   h1 {
-    font-size: 10vw;
+    font-size: 11vw;
     margin-bottom: 3vw;
     flex-shrink: 0;
+    display: inline;
   }
-  svg {
+  .hoiBambuser__LiveIcon {
     width: 19vw;
     margin-bottom: 2rem;
     flex-shrink: 0;
+    margin-top: 2vw;
+    margin-left: 2vw;
+    vertical-align: middle;
+    vertical-align: -webkit-baseline-middle;
+  }
+  .hoiBambuser__Launch {
+    margin-top: auto;
+    margin-bottom: 1rem;
   }
   h2 {
-    font-size: 6vw;
-    margin-top: auto;
-    margin-bottom: 4vw;
+    font-size: 5.5vw;
+
+    margin-bottom: 0;
   }
   @media screen and (min-width: $mobile + 1) {
     width: 40%;
     margin: auto 0;
     left: 0;
-    padding: 6vw;
-    height: 100%;
+    padding: 4vw;
+    height: 95%;
     h1 {
-      font-size: 6vw;
+      font-size: 5vw;
       margin-bottom: 2vw;
     }
-    svg {
-      width: 12vw;
+    .hoiBambuser__LiveIcon {
+      width: 8vw;
+      margin-left: 0.5vw;
+      margin-top: 1vw;
     }
     h2 {
-      font-size: 3.5vw;
-      margin-bottom: 2vw;
+      font-size: 2.5vw;
+      margin-bottom: 0;
     }
-    .btn {
-      padding: 1em 2em;
-    }
+    // .btn {
+    //   padding: 1em 2em;
+    // }
   }
 
   @media screen and (min-width: 1440px) {
@@ -89,7 +135,7 @@
       font-size: 4rem;
       margin-bottom: 1rem;
     }
-    svg {
+    .hoiBambuser__LiveIcon {
       width: 8rem;
     }
     h2 {

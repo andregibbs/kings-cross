@@ -11,26 +11,43 @@
     }
   </style>
   <div class="hoiBambuser__Body">
-    <h1>Samsung<br/>People</h1>
-    {{>live_icon}}
-    <h2>{{title}}</h2>
-    <p id="launch-target" class="hoiBambuser__LaunchTime"></p>
+    <div>
+      <h1>Samsung<br/>People</h1>
+      {{>live_icon}}
+    </div>
     <a
-      class="btn btn--primary btn--primary--white  hoiBambuser__Launch"
+      class="btn btn--primary btn--primary--coral  hoiBambuser__Launch {{#if live}}hoiBambuser__Launch--live{{/if}}"
       data-omni-type="microsite"
       data-omni="uk:kings-cross:samsung-people-live:launch show"
       ga-ca="microsite"
       ga-ac="feature"
       ga-la="uk:kings-cross:samsung-people-live:launch show"
       >
-      {{cta}}
+      {{#if live}}
+      Watch Live Now
+      {{else if ended}}
+      Replay Live Demo
+      {{else}}
+      Starting Soon
+      {{/if}}
+      <span class="hoiBambuser__LaunchIcon">
+        {{>play_icon}}
+      </span>
     </a>
+    <h2>{{title}}</h2>
+    <p  class="hoiBambuser__LaunchTime"></p>
   </div>
 </div>
 
+
+{{#*inline "play_icon"}}
+  <svg height="100%" viewBox="0 0 24 24"><path fill="white" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3 17v-10l9 5.146-9 4.854z"/></svg>
+{{/inline}}
+
+
 {{#*inline "live_icon"}}
 
-<svg version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 183 80" style="enable-background:new 0 0 183 80;">
+<svg class="hoiBambuser__LiveIcon" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 183 80" style="enable-background:new 0 0 183 80;">
 <style type="text/css">
   .st0{fill:#FF4337;}
   .st1{fill:#FFFFFF;}
