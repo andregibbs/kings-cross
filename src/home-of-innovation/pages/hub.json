@@ -19,6 +19,7 @@
         "scroll": true
       },
       "items": [
+        "innovation|samsung-people-live",
         "lifestyle|guest-writer-of-the-week|23",
         "creativity|samsung-spotlight",
         "innovation|connected-christmas|recipe-spice-up-your-connected-christmas",
@@ -44,23 +45,7 @@
         "innovation|taste-of-tomorrow|how-to-bottle-garden",
         "innovation|taste-of-tomorrow|how-to-bucketponic",
         "innovation|taste-of-tomorrow|how-to-hummus-plate-recipe",
-        "innovation|5g-podcast|remote-control-surgery",
-        "creativity|editing-sessions|6",
-        "innovation|taste-of-tomorrow|insights-green-lab",
-        "innovation|taste-of-tomorrow|grow-pro-green-green-lab",
-        "innovation|taste-of-tomorrow|cook-pro-green-sara-kiyo-popowa",
-        "innovation|taste-of-tomorrow|recipes-vegan-choc",
-        "innovation|taste-of-tomorrow|recipes-any-greens",
-        "innovation|taste-of-tomorrow|songs-for-tongs-playlist",
-        "creativity|yfa-creative-labs|halloween",
-        "innovation|halloween-house",
-        "innovation|5g-podcast|5g-connected-cows",
-        "creativity|graduate-fashion-week|student-blog|tabatha-lopez",
-        "lifestyle|guest-writer-of-the-week|17",
-        "creativity|graduate-fashion-week|student-blog|sophie-parnaby",
-        "innovation|5g-podcast|mind-controlled-gaming",
-        "lifestyle|rj-tulloch",
-        "innovation|5g-podcast|films-that-you-can-direct-with-your-face"
+        "innovation|5g-podcast|remote-control-surgery"
       ]
     },
     {
@@ -73,6 +58,7 @@
         "hideIcon": true
       },
       "items": [
+        "innovation|samsung-people-live",
         "innovation|connected-christmas",
         "innovation|next-level-gaming",
         "creativity|yfa-creative-labs",
@@ -197,6 +183,7 @@
         "scroll": true
       },
       "items": [
+        "innovation|samsung-people-live",
         "innovation|connected-christmas|recipe-spice-up-your-connected-christmas",
         "innovation|connected-christmas|connected-christmas-festive-cheer-to-your-ear",
         "innovation|connected-christmas|marcelino-sambe-connected-christmas-ballet",
@@ -215,16 +202,7 @@
         "innovation|taste-of-tomorrow|insights-green-lab",
         "innovation|taste-of-tomorrow|grow-pro-green-green-lab",
         "innovation|taste-of-tomorrow|cook-pro-green-sara-kiyo-popowa",
-        "innovation|taste-of-tomorrow|recipes-vegan-choc",
-        "innovation|taste-of-tomorrow|recipes-any-greens",
-        "innovation|taste-of-tomorrow|songs-for-tongs-playlist",
-        "innovation|halloween-house",
-        "innovation|5g-podcast|5g-connected-cows",
-        "innovation|5g-podcast|mind-controlled-gaming",
-        "innovation|5g-podcast|films-that-you-can-direct-with-your-face",
-        "innovation|5g-podcast|a-camera-with-superpowers",
-        "innovation|alternative-careers-guide",
-        "innovation|university-of-lincoln"
+        "innovation|taste-of-tomorrow|recipes-vegan-choc"
       ]
     }
   ]

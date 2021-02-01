@@ -15,27 +15,30 @@
       <h1>Samsung<br/>People</h1>
       {{>live_icon}}
     </div>
-    <a
-      class="btn btn--primary btn--primary--coral  hoiBambuser__Launch {{#if live}}hoiBambuser__Launch--live{{/if}}"
-      data-omni-type="microsite"
-      data-omni="uk:kings-cross:samsung-people-live:launch show"
-      ga-ca="microsite"
-      ga-ac="feature"
-      ga-la="uk:kings-cross:samsung-people-live:launch show"
-      >
-      {{#if live}}
-      Watch Live Now
-      {{else if ended}}
-      Replay Live Demo
-      {{else}}
-      Starting Soon
-      {{/if}}
-      <span class="hoiBambuser__LaunchIcon">
-        {{>play_icon}}
-      </span>
-    </a>
     <h2>{{title}}</h2>
-    <p  class="hoiBambuser__LaunchTime"></p>
+
+    {{#if unsupported}}
+    {{else}}
+      <a
+        class="btn btn--primary btn--primary--coral  hoiBambuser__Launch {{#if live}}hoiBambuser__Launch--live{{/if}}"
+        data-omni-type="microsite"
+        data-omni="uk:kings-cross:samsung-people-live:launch show"
+        ga-ca="microsite"
+        ga-ac="feature"
+        ga-la="uk:kings-cross:samsung-people-live:launch show"
+        >
+        {{#if live}}
+        Watch Live Now
+        {{else if ended}}
+        Replay Live Demo
+        {{else}}
+        Starting Soon
+        {{/if}}
+        <span class="hoiBambuser__LaunchIcon">
+          {{>play_icon}}
+        </span>
+      </a>
+    {{/if}}
   </div>
 </div>
 

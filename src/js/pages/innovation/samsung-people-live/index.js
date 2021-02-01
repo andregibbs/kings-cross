@@ -20,14 +20,14 @@ import HOIShare from '../../../home-of-innovation/hoiShare';
 
 
 const SCHEDULE = [
-  {
-    liveDate: [2021,1,27,16,0],
-    endDate: [2021,1,27,17,0],
-    showID: '1JySqY77y0inrbcvMsi5',
-    title: 'Wednesday 27th Jan - 4PM',
-    poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/Samsung_People_KV_slimmer.jpg',
-    mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/kv-mob-v2.jpg'
-  },
+  // {
+  //   liveDate: [2021,1,27,16,0],
+  //   endDate: [2021,1,27,17,0],
+  //   showID: '1JySqY77y0inrbcvMsi5',
+  //   title: 'Wednesday 27th Jan - 4PM',
+  //   poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/Samsung_People_KV_slimmer.jpg',
+  //   mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/kv-mob-v2.jpg'
+  // },
   {
     liveDate: [2021,1,29,16,0],
     endDate: [2021,1,29,17,0],
@@ -54,15 +54,15 @@ const SCHEDULE = [
   },
   {
     liveDate: [2021,1,30,18,0],
-    liveDate: [2021,1,30,19,0],
+    endDate: [2021,1,30,19,0],
     showID: 'isGp8tJe9U6E3BOzHQXX',
     title: 'Saturday 30th Jan - 6PM',
     poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/Samsung_People_KV_slimmer.jpg',
     mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/kv-mob-v2.jpg'
   },
   {
-    liveDate: [2021,1,31,16,0],
-    endDate: [2021,1,31,17,0],
+    liveDate: [2021,1,31,18,0],
+    endDate: [2021,1,31,19,0],
     showID: 'Rl8XPj26Kqjzf94ymAq8',
     title: 'Sunday 31st Jan - 6PM',
     poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/Samsung_People_KV_slimmer.jpg',
@@ -113,6 +113,14 @@ const SCHEDULE = [
 class SamsungLive {
 
   constructor () {
+
+    // luxon & bambuser not supported on IE
+    const isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
+    if (isIE11) {
+      this.renderUnsupportedHeader()
+      return
+    }
+
     this.pageInitiateTime = DateTime.local()
     this.currentShow = false
     this.nextShow = false
@@ -129,6 +137,15 @@ class SamsungLive {
 
     HOIShare()
 
+  }
+
+  renderUnsupportedHeader() {
+    templateTarget.insertAdjacentHTML('beforeend', template({
+      unsupported: true,
+      title: 'Sorry this browser is currently unsupported',
+      poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/Samsung_People_KV_slimmer.jpg',
+      mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/kv-mob-v2.jpg'
+    }))
   }
 
   renderHeader() {

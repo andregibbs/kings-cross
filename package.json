@@ -11,15 +11,18 @@
     "deploy-kx-survey-data-staging": "node ./tasks/deploy-kx-survey-data staging"
   },
   "dependencies": {
+    "array.find": "^1.0.9",
     "clipboard": "^2.0.6",
     "es6-promise": "^4.2.8",
     "fuse.js": "^6.4.1",
+    "is-nan": "^1.3.2",
     "jquery": "^3.5.1",
     "jquery-ui": "^1.12.1",
     "jshint": "^2.10.2",
     "lity": "^2.4.1",
     "luxon": "^1.25.0",
     "natives": "^1.1.6",
+    "number.isnan": "^0.1.1",
     "slick-carousel": "^1.8.1",
     "whatwg-fetch": "^3.0.0"
   },

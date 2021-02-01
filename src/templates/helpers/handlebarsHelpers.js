@@ -192,7 +192,7 @@ if (typeof module !== 'undefined') {
       Searches string for <a> links
       adds omni and ga tracking if not already present
     */
-    Handlebars.registerHelper('addInlineLinkTracking', function(context, title) {
+    Handlebars.registerHelper('addInlineLinkTracking', function(context, title, manualTitle) {
       // regexp to find any <a> links
       var regexp = /<a.*(?!(?:[^>]*?)(data-omni-type)|(data-omni)|(ga-ca)|(ga-la)).*>(.*)<\/a>/g
       // template for tracking action
@@ -200,6 +200,9 @@ if (typeof module !== 'undefined') {
         action = action.replace(/[^a-zA-Z0-9]/g, '_').toLowerCase()
         return `uk:kings-cross:${title}:${action}`
       }
+
+      title = title ? title : manualTitle
+      // console.log('title', title, context)
       // replace all link matches
       return context.replace(regexp, (m) => {
         let matches = regexp.exec(m)

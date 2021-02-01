@@ -121,7 +121,7 @@ export default function support() {
 
                 this.nextBtn.classList.add("btn--primary--" + colors[cat]);
                 this.backBtn.classList.add("btn--secondary--" + colors[cat]);
-                screens.calendar.children[0].classList.add(colors[cat]);
+                // screens.calendar.children[0].classList.add(colors[cat]);
                 document.getElementsByClassName("journey")[0].classList.add(colors[cat]);
                 $j(".checkbox").each(function (ind, elm) {
                     elm.classList.add("checkbox__" + colors[cat]);
