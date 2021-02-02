@@ -16,10 +16,13 @@ import KXSurvey from './components/common/kxSurvey'
 import FindKX from './components/findKX'
 import './util/GATracking.js'
 
+import DevDashboard from './dev/dashboard'
+
 function Bootstrap() {
   new KXNav()
   new KXSurvey()
   new FindKX()
+  new DevDashboard()
 }
 
 if (document.readyState === "complete" || (document.readyState !== "loading" && !document.documentElement.doScroll)) {
