@@ -136,7 +136,7 @@ export default function support() {
                     // kxtraas id
                     case "kxtras":
                       // new (need new url)
-                      bookingURL = "https://bookings.qudini.com/booking-widget/booker/slots/87J4665QG8U/4492/68391/0"
+                      bookingURL = "https://bookings.qudini.com/booking-widget/booker/slots/QHGYXAW4C7W/4492/68391/0"
                       state.productId = "68391"
                       // old test
                       // bookingURL = "https://bookings.qudini.com/booking-widget/booker/slots/87J4665QG8U/4492/66526/0"

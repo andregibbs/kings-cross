@@ -15,6 +15,11 @@
       <h1>Samsung<br/>People</h1>
       {{>live_icon}}
     </div>
+    {{#if live}}
+    {{else lastShow}}
+    {{else}}
+      <h4>Next Stream:</h4>
+    {{/if}}
     <h2>{{title}}</h2>
 
     {{#if unsupported}}
@@ -27,16 +32,18 @@
         ga-ac="feature"
         ga-la="uk:kings-cross:samsung-people-live:launch show"
         >
-        {{#if live}}
-        Watch Live Now
+        {{#if cta}}
+          {{{cta}}}
+        {{else if live}}
+          Watch Live Now
         {{else if ended}}
-        Replay Live Demo
+          Replay Live Demo
         {{else}}
-        Starting Soon
+          Starting Soon
         {{/if}}
-        <span class="hoiBambuser__LaunchIcon">
+        <div class="hoiBambuser__LaunchIcon">
           {{>play_icon}}
-        </span>
+        </div>
       </a>
     {{/if}}
   </div>
