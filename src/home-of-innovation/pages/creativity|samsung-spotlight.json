@@ -35,6 +35,56 @@
       "type": "wrapper",
       "components": [
         {
+          "type": "headline",
+          "level": "3",
+          "copy": "This competition is now closed"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Thank you to everyone who took part, we’ve received some fantastic entries.",
+            "Our judges are currently reviewing all entries and our three winners will be contacted directly via Instagram by 23:59 (GMT) on 5^th^ February 2021.",
+            "The three entries that best meet the winning criteria will each receive the following prize package:"
+          ]
+        },
+        {
+          "type": "html-list",
+          "items": [
+            "Feature in Samsung’s new digital advert",
+            "Take part in a virtual meet and greet with Paul Mescal",
+            "£5,000 cash prize",
+            "A Samsung Galaxy S21 Ultra",
+            "A Samsung QLED 8K TV"
+          ]
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Samsung Spotlight is an initiative that was launched to encourage and support emerging performers in the arts who have been adversely affected by the impact of the pandemic.",
+            "The recent events had an unprecedented effect on the arts with venue closures, performances cancelled, and stages lost, making the opportunity for artistic creators to break into the industry even more challenging.",
+            "Samsung Spotlight was created to give performers a platform to showcase their talents. The campaign launched in partnership with breakthrough actor of 2020 Paul Mescal, who created a visual representation of his Lockdown experience through a contemporary dance.",
+            "<br>"
+          ]
+        },
+        {
+          "type": "youtube",
+          "content": "RMrnGnpMEI0"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "<br>",
+            "This entire film was shot in ultra-high definition 8K video on Samsung Galaxy S20 devices and was created to inspire entrants to get involved whilst showing what can be achieved through your smartphone alone. Find out more about the power of 8K video <a href=\"https://www.samsung.com/uk/tvs/qled-tv/8k-video-with-galaxy-s20/\">here</a>.",
+            "Full competition T&Cs can be found <a href=\"https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/samsung-spotlight/Samsung_Arts_Competition_TCs_FINAL_14.12.pdf\" target=\"_blank\">here.</a>"
+          ]
+        }
+
+
+
+
+      ],
+      "___components": [
+        {
           "type": "paragraphs",
           "text": [
             "Samsung Spotlight is a new initiative that encourages and supports emerging performers in the arts who have been adversely affected by the impact of the pandemic.",
