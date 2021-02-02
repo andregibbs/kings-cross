@@ -68,7 +68,16 @@ const SURVEY_DATA = [
       '/uk/explore/kings-cross/creativity/editing-sessions/4/',
       '/uk/explore/kings-cross/creativity/editing-sessions/5/',
       '/uk/explore/kings-cross/creativity/editing-sessions/6/',
-      '/uk/explore/kings-cross/creativity/editing-sessions/7/'
+      '/uk/explore/kings-cross/creativity/editing-sessions/7/',
+      '/uk/explore/kings-cross/entertainment/lunch-and-listen/amelia-dimoldenberg-munya-chawawa/1/',
+      '/uk/explore/kings-cross/entertainment/lunch-and-listen/amelia-dimoldenberg-munya-chawawa/2/',
+      '/uk/explore/kings-cross/entertainment/lunch-and-listen/bring-back-play/',
+      '/uk/explore/kings-cross/entertainment/lunch-and-listen/katherine-ryan-reggie-yates/1/',
+      '/uk/explore/kings-cross/entertainment/lunch-and-listen/katherine-ryan-reggie-yates/2/',
+      '/uk/explore/kings-cross/entertainment/lunch-and-listen/bring-back-play-ep-2/',
+      '/uk/explore/kings-cross/entertainment/lunch-and-listen/reclaim-lunchbreak/',
+      '/uk/explore/kings-cross/kxtras/',
+      '/uk/explore/kings-cross/innovation/samsung-people-live/'
     ],
     survey_embed_url: "https://docs.google.com/forms/d/e/1FAIpQLScrgghSDPFOhZVlgwZ2RBY9YttF8LO66gp0IV6McTLBhVnOPg/viewform",
     prompt: {

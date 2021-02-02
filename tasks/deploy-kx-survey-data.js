@@ -17,7 +17,7 @@ function DeployKXSurveyData() {
   const stageArg = argv._[0] || false
   if (!stageArg || (stageArg !== "staging" && stageArg !== "live")) {
     console.log("Missing/incorrect stage argument.")
-    console.log("Usage: npm run hoi-dynamic [staging|live]")
+    console.log("Usage: npm run deploy-kx-survey-data-live or npm run deploy-kx-survey-data-staging")
     return
   }
 
