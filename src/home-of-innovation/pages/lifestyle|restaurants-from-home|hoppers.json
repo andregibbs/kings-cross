@@ -1,0 +1,108 @@
+{
+  "title": "Samsung KX x Hoppers live Cook-A-Long",
+  "description": "",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/restaurants-from-home/Hoppers.png",
+  "alt": "",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/restaurants-from-home/Hoppers_720x720.png",
+  "group": "restaurants-from-home",
+  "sort": 1,
+  "meta": {
+    "icon": "video",
+    "tags": []
+  },
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "livestream",
+        "content": "5QCHaB6jL0A",
+        "poster": "{{lifestyle|restaurants-from-home[image]}}",
+        "alt": ""
+      },
+      "style": {
+        "desktop": "top",
+        "mobile": "bottom"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "Watch the live Cook-A-Long here on 14th February at 6pm"
+        },
+        {
+          "type": "paragraphs",
+          "style": {
+            "large": true
+          },
+          "text": [
+            "Samsung KX x Hoppers live Cook-A-Long"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "paragraphs",
+          "text": [
+            "Valentine’s may be looking different this year, but that doesn’t mean it can’t be special. Whether you are at home with loved ones or having company online, shake celebrations up with the Samsung KX Connected Cook-a-long; the ultimate digital dining experience, hosted in collaboration with award- winning restaurant, Hoppers King’s Cross.",
+            "Here's everything you'll need to join the cook-a-long and create Hopper’s Banana Leaf Bream:",
+            "<br>"
+          ]
+        },
+        {
+          "type": "html-list",
+          "items": [
+            "1 whole sea bream scaled and gutted, or 2 fillets",
+            "150g fresh coriander",
+            "2 cloves garlic",
+            "1-inch ginger",
+            "1 green chillies",
+            "1 stem fresh lemongrass, (remove the drier, huskier layers and use only the first 2-3 inches of the white bit at the bottom)",
+            "3 tbsp fresh grated coconut, or 2 tbsp desiccated coconut soaked for 30 mins ",
+            "6-8 curry leaves (ideally fresh)",
+            "½ tsp turmeric powder",
+            "1 cardamom pod, seeds only",
+            "½ tsp fennel seeds",
+            "1 tsp cumin seeds",
+            "1 tsp tamarind paste",
+            "1/3 tsp sugar",
+            "1 tbsp coconut oil, or any neutral oil",
+            "1/2 lime, juiced",
+            "1/2 tsp sea salt",
+            "1 lime, to serve",
+            "1 large fresh Banana Leaf (you can use baking paper or foil if not!)",
+            "Kitchen Foil",
+            "A food processor or blender ",
+            "Side salad of choice and bottle of Riesling (optional)"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "link-list",
+      "title": "Check out the products used in the cook-a-long here",
+      "items": [
+        {
+          "title": "Dual Cook Flex",
+          "url": "https://www.samsung.com/uk/tvs/the-sero-ls05t/",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/livestreams/Samsung-Lifestyle-TV-The-Sero-03.jpg"
+        },
+        {
+          "title": "Family Hub",
+          "url": "https://www.samsung.com/uk/tvs/the-sero-ls05t/",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/livestreams/Samsung-Lifestyle-TV-The-Sero-03.jpg"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "dynamic": "episodes",
+      "id": "restaurants-from-home",
+      "title": "Episodes",
+      "style": {
+        "scroll": true
+      }
+    }
+  ]
+}

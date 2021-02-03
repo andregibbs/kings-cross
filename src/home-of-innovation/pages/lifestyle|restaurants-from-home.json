@@ -1,0 +1,40 @@
+{
+  "title": "Restaurants From Home",
+  "description": "",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/restaurants-from-home/Hoppers.png",
+  "alt": "",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/restaurants-from-home/Hoppers_720x720.png",
+  "meta": {
+    "icon": "article",
+    "tags": []
+  },
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "{{lifestyle|restaurants-from-home[image]}}",
+        "alt": "{{lifestyle|restaurants-from-home[alt]}}"
+      },
+      "style": {
+        "desktop": "top",
+        "mobile": "bottom"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "Restaraunts From Home"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "dynamic": "articles",
+      "id": "restaurants-from-home",
+      "title": "More Articles",
+      "style": {
+        "scroll": true
+      }
+    }
+  ]
+}
