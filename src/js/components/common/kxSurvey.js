@@ -149,6 +149,8 @@ class KXSurvey {
     // show prompt after timeout
     setTimeout(() => {
       this.promptEl.setAttribute('active', '')
+      // set attibute to move samsung live chat bubble
+      document.body.setAttribute('kxsurvey-open', '')
     }, PROMPT_DISPLAY_DELAY)
   }
 
@@ -164,23 +166,29 @@ class KXSurvey {
     this.promptYes.addEventListener('click', this.userAcceptPrompt.bind(this))
     this.promptNo.addEventListener('click', this.userRejectPrompt.bind(this))
 
-    this.modalClose.addEventListener('click', () => {
-      // unlock scroll
-      document.querySelector('html').style.overflow = ''
-      this.modalEl.removeAttribute('active') // hide modal
-      // todo, destroy self?
-    })
+    // modal close
+    this.modalClose.addEventListener('click', this.closeModal.bind(this))
 
+  }
+
+  closeModal() {
+    // remove lock
+    document.querySelector('html').style.overflow = ''
+    this.modalEl.removeAttribute('active') // hide modal
   }
 
   userRejectPrompt() {
     // user rejects prompt
+    // remove attibute to reset samsung live chat bubble
+    document.body.removeAttribute('kxsurvey-open')
     this.promptEl.removeAttribute('active') //hide prompt
     this.storeUserAsked()
   }
 
   userAcceptPrompt(e) {
     // user accepts prompt
+    // remove attibute to reset samsung live chat bubble
+    document.body.removeAttribute('kxsurvey-open')
     // lock scroll
     document.querySelector('html').style.overflow = 'hidden'
     this.modalEl.setAttribute('active','') // show modal
