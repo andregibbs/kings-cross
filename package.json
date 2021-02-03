@@ -8,7 +8,8 @@
     "hoi-dynamic-live": "node ./tasks/deploy-hoi-dynamic-data live",
     "hoi-dynamic-staging": "node ./tasks/deploy-hoi-dynamic-data staging",
     "deploy-kx-survey-data-live": "node ./tasks/deploy-kx-survey-data live",
-    "deploy-kx-survey-data-staging": "node ./tasks/deploy-kx-survey-data staging"
+    "deploy-kx-survey-data-staging": "node ./tasks/deploy-kx-survey-data staging",
+    "start-dashboard": "node ./src/js/dev/dashboard/server.js"
   },
   "dependencies": {
     "array.find": "^1.0.9",
@@ -36,6 +37,7 @@
     "browserify": "^14.4.0",
     "chalk": "^2.1.0",
     "directory-tree": "^2.1.0",
+    "express": "^4.17.1",
     "glob": "^7.1.6",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",

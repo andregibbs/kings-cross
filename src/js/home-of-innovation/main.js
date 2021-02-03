@@ -22,11 +22,16 @@ import HOIDynamicLinkList from './hoiDynamicLinkList';
 import HOIDynamicGroupLand from './hoiDynamicGroupLand';
 import HOILinkListHoverManager from './hoiLinkListHoverScroll'
 import { createYoutubeInstance, loadYoutubeAPI } from './utils';
+<<<<<<< HEAD
 import '../util/GATracking.js'
+=======
+>>>>>>> updatess to server, fetching local content
 
 import FindKX from '../components/findKX';
 import KXNav from '../components/common/kxNav'
 import KXSurvey from '../components/common/kxSurvey'
+
+import KXDashboard from '../dev/dashboard/'
 
 function init() {
 
@@ -42,10 +47,10 @@ function init() {
     .then(() => {
 
       // init hoi search (will be present in either nav or in page with a component)
-      new KXNav()
+      // new KXNav()
 
       // init surveys
-      new KXSurvey();
+      // new KXSurvey();
 
       // init sharing
       HOIShare();
@@ -54,7 +59,7 @@ function init() {
       HOIYoutubeLiveChat()
 
       // fetch dynamic opening times
-      new FindKX()
+      // new FindKX()
 
       new HOILinkListHoverManager()
 
