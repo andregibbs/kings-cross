@@ -2,6 +2,11 @@ const express = require('express')
 const glob = require('glob')
 const http = require('http')
 
+// const jsdom = require('jsdom')
+// const { JSDOM } = jsdom
+
+const puppeteer = require('puppeteer')
+
 const DeployFileToKXAWS = require('../../../../tasks/deploy-file-to-kx-aws')
 
 const PAGE_TYPE = {
@@ -15,6 +20,16 @@ class DashboardServer {
   constructor() {
     console.log('DashboardServer')
     this.pages = []
+
+    // JSDOM.fromURL('http://kings-cross.samsung.com/uk/explore/kings-cross/components/headline/', { runScripts: "dangerously", resources: "usable" })
+    //   .then(dom => {
+    //     // console.log(dom.window.cheillondon)
+    //     setInterval(() => {
+    //       console.log(dom.window.cheillondon.scraper.main.scrapedHTML)
+    //     }, 1000)
+    //   })
+
+
     this.getPages()
       .then(this.startServer.bind(this))
   }
@@ -44,29 +59,25 @@ class DashboardServer {
         return res.status(400).json({ error: `Couldn't find page: ${pathname}` });
       }
 
+      page.deploy()
+        .then(data => console.log('ggggg'))
+        .catch(e => console.log)
 
-
-      console.log(page.local_url)
-      http.get(page.local_url, (response) => {
-
-        if(response.statusCode === 301 || response.statusCode === 302) {
-            var newRequestUri = response.headers.location;
-            console.log('red', newRequestUri, response)
-            return
-            // http.request({hostname: newRequestUri}, function(res) {
-            //     //read response
-            // }
-        }
-        let data = ''
-        response.on('data', (chunk) => {
-          console.log(chunk)
-          data += chunk;
-        })
-        response.on('end', () => {
-          console.log(data)
-          // res.send(data)
-        })
-      })
+      // http.get(page.local_url, (response) => {
+      //   if(response.statusCode === 301 || response.statusCode === 302) {
+      //       console.log(`DashboardServer: url ${page.local_url} incorrect.`)
+      //       return
+      //   }
+      //   let data = ''
+      //   response.on('data', (chunk) => {
+      //     console.log(chunk)
+      //     data += chunk;
+      //   })
+      //   response.on('end', () => {
+      //     console.log(data)
+      //     // res.send(data)
+      //   })
+      // })
 
 
 
@@ -142,7 +153,80 @@ class DashboardPage {
     this.name = this.pathname.replace('/uk/explore/kings-cross/', '')
   }
   deploy() {
-    // keep deploy method here?
+    console.log('DashboardPage: deploy');
+    return this.getContent()
+      .then(data => {
+        console.log('DashboardPage: aftercontent', data);
+        this.uploadToAWS(data.js, `${this.filename}.js`)
+          .then((upload) => console.log('uppy', upload))
+
+        // const jsPromise = this.uploadToAWS(data.js, 'js')
+        // const htmlPromise = this.uploadToAWS(data.html, 'html')
+        // Promise.all([jsPromise])
+        //   .then((promiseData) => {
+        //     console.log('after prom', promiseData)
+        //   })
+      })
+  }
+  uploadToAWS(data, filename) {
+    return new Promise(function(resolve, reject) {
+      DeployFileToKXAWS(data, filename, (err, data) => {
+        if (err) {
+          reject({error: err})
+          // return res.status(400).json({ error: err });
+        }
+        resolve({data: filename})
+      }, 'dynamic-pages')
+    });
+  }
+  getContent() {
+    console.log('DashboardPage: getContent');
+
+    return new Promise(function(resolve, reject) {
+      (async () => {
+        const browser = await puppeteer.launch();
+        const page = await browser.newPage();
+        await page.goto('http://kings-cross.samsung.com/uk/explore/kings-cross/components/headline/');
+
+        // Get the "viewport" of the page, as reported by the page.
+        const pageData = await page.evaluate(() => {
+          return {
+            js: window.cheillondon.scraper.main.scrapedJS,
+            html: window.cheillondon.scraper.main.scrapedHTML
+          };
+        });
+
+
+        // look at the save method in the scraper, might just need creating with a filetype/encoding on aws
+        // console.log('Dimensions:', dimensions);
+
+        await browser.close();
+        resolve(pageData)
+      })();
+    });
+
+
+
+    // let checkInterval
+    // return new Promise(function(resolve, reject) {
+    //   const virtualConsole = new jsdom.VirtualConsole();
+    //   JSDOM.fromURL('http://kings-cross.samsung.com/uk/explore/kings-cross/components/headline/', { runScripts: "dangerously", resources: "usable", virtualConsole })
+    //     .then(dom => {
+    //       const window = dom.window
+    //       checkInterval = setInterval(() => {
+    //         if (window.cheillondon) {
+    //           console.log(window.cheillondon.scraper)
+    //           const js = dom.window.cheillondon.scraper.main.scrapedJS || false
+    //           const html = dom.window.cheillondon.scraper.main.scrapedHTML || false
+    //           console.log(js)
+    //           if (js.length && html.length) {
+    //             clearInterval(checkInterval)
+    //             resolve({html,js})
+    //           }
+    //         }
+    //       }, 2000)
+    //     })
+    // });
   }
 }
 

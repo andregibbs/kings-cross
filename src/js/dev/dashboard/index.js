@@ -1,11 +1,11 @@
-import glob from 'glob'
+// import glob from 'glob'
 
 const DashboardTemplate = require('./template.hbs');
 
 class DevDashboard {
   constructor() {
     console.log('dashboard')
-    this.getPages()
+    // this.getPages()
   }
 
   getPages() {
