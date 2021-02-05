@@ -1,9 +1,9 @@
 {
   "title": "Samsung KX x Hoppers live Cook-A-Long",
   "description": "",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/restaurants-from-home/Hoppers.png",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/restaurants-from-home/Connected_Kitchen_wide_2_1_1440x720.jpg",
   "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/restaurants-from-home/Hoppers_720x720.png",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/restaurants-from-home/Connected_Kitchen_wide_2_1_1440x720.jpg",
   "group": "restaurants-from-home",
   "sort": 1,
   "meta": {
@@ -16,7 +16,7 @@
       "media": {
         "type": "livestream",
         "content": "5QCHaB6jL0A",
-        "poster": "{{lifestyle|restaurants-from-home[image]}}",
+        "poster": "{{lifestyle|restaurants-from-home|hoppers[image]}}",
         "alt": ""
       },
       "style": {
@@ -85,13 +85,13 @@
       "items": [
         {
           "title": "Dual Cook Flex",
-          "url": "https://www.samsung.com/uk/tvs/the-sero-ls05t/",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/livestreams/Samsung-Lifestyle-TV-The-Sero-03.jpg"
+          "url": "https://www.samsung.com/uk/cooking-appliances/ovens/electric-oven-nv75n5641rb-eu/",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/restaurants-from-home/Dual_Cook_Flex_Oven_th.jpg"
         },
         {
           "title": "Family Hub",
-          "url": "https://www.samsung.com/uk/tvs/the-sero-ls05t/",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/livestreams/Samsung-Lifestyle-TV-The-Sero-03.jpg"
+          "url": "https://www.samsung.com/uk/refrigerators/family-hub-fridge-freezers/",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/restaurants-from-home/Family_Hub_Lifestyle_th.jpg"
         }
       ]
     },
