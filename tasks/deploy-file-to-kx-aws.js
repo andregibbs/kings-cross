@@ -10,7 +10,7 @@ const AWS_SECRET_ACCESS_KEY = '9wn6Gg16OSjESbhCsS6PZwok0xXv25ENEbxy7T7v';
 const BUCKET = 'kxuploads';
 const FOLDER = 'home-of-innovation-dynamic/';
 
-function DeployFileToKXAWS(data, filename, callback, subdir = false) {
+function DeployFileToKXAWS(data, filename, callback, subdir = false, contentType = 'application/json') {
 
   const s3 = new AWS.S3({
     region: REGION,
@@ -21,11 +21,15 @@ function DeployFileToKXAWS(data, filename, callback, subdir = false) {
     }
   })
 
+  if (contentType === 'application/json') {
+    data = JSON.stringify(data)
+  }
+
   s3.putObject({
     Bucket: BUCKET,
     Key: subdir ? `${FOLDER}${subdir}/${filename}` : FOLDER+filename,
-    Body: JSON.stringify(data),
-    ContentType: 'application/json'
+    Body: data,
+    ContentType: contentType
   }, (err, data) => {
     if (callback) {
       return callback(err, data)

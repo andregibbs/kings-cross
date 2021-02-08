@@ -60,36 +60,10 @@ class DashboardServer {
       }
 
       page.deploy()
-        .then(data => console.log('ggggg'))
+        .then(data => {
+          console.log('DashboardServer: File Deployments Complete')
+        })
         .catch(e => console.log)
-
-      // http.get(page.local_url, (response) => {
-      //   if(response.statusCode === 301 || response.statusCode === 302) {
-      //       console.log(`DashboardServer: url ${page.local_url} incorrect.`)
-      //       return
-      //   }
-      //   let data = ''
-      //   response.on('data', (chunk) => {
-      //     console.log(chunk)
-      //     data += chunk;
-      //   })
-      //   response.on('end', () => {
-      //     console.log(data)
-      //     // res.send(data)
-      //   })
-      // })
-
-
-
-      // deploy file to aws in dynamic-pages dir
-      // collect js & html data
-      // DeployFileToKXAWS(page, `${page.filename}.json`, (err, data) => {
-      //   console.log(err, data)
-      //   if (err) {
-      //     return res.status(400).json({ error: err });
-      //   }
-      //   res.json({data: page})
-      // }, 'dynamic-pages')
 
     })
 
@@ -156,27 +130,23 @@ class DashboardPage {
     console.log('DashboardPage: deploy');
     return this.getContent()
       .then(data => {
-        console.log('DashboardPage: aftercontent', data);
-        this.uploadToAWS(data.js, `${this.filename}.js`)
-          .then((upload) => console.log('uppy', upload))
-
-        // const jsPromise = this.uploadToAWS(data.js, 'js')
-        // const htmlPromise = this.uploadToAWS(data.html, 'html')
-        // Promise.all([jsPromise])
-        //   .then((promiseData) => {
-        //     console.log('after prom', promiseData)
-        //   })
+        // setup upload promises
+        const htmlUpload = this.uploadToAWS(data.html, `${this.filename}.html`, 'text/html')
+        const jsUpload = this.uploadToAWS(data.js, `${this.filename}.js`, 'application/javascript')
+        Promise.all([jsPromise])
+          .then((promiseData) => {
+            console.log('DashboardPage: Uploads complete', promiseData)
+          })
       })
   }
-  uploadToAWS(data, filename) {
+  uploadToAWS(data, filename, contentType) {
     return new Promise(function(resolve, reject) {
       DeployFileToKXAWS(data, filename, (err, data) => {
         if (err) {
           reject({error: err})
-          // return res.status(400).json({ error: err });
         }
         resolve({data: filename})
-      }, 'dynamic-pages')
+      }, 'dynamic-pages', contentType)
     });
   }
   getContent() {
@@ -188,7 +158,8 @@ class DashboardPage {
         const page = await browser.newPage();
         await page.goto('http://kings-cross.samsung.com/uk/explore/kings-cross/components/headline/');
 
-        // Get the "viewport" of the page, as reported by the page.
+        // maybe inject the scraper script here instead of via page scripts
+
         const pageData = await page.evaluate(() => {
           return {
             js: window.cheillondon.scraper.main.scrapedJS,
