@@ -19,6 +19,7 @@
         "scroll": true
       },
       "items": [
+        "lifestyle|restaurants-from-home|hoppers",
         "innovation|samsung-people-live",
         "lifestyle|guest-writer-of-the-week|23",
         "creativity|samsung-spotlight",
@@ -58,6 +59,7 @@
         "hideIcon": true
       },
       "items": [
+        "lifestyle|restaurants-from-home",
         "innovation|samsung-people-live",
         "innovation|connected-christmas",
         "innovation|next-level-gaming",
@@ -90,6 +92,7 @@
         "scroll": true
       },
       "items": [
+        "lifestyle|restaurants-from-home|hoppers",
         "lifestyle|guest-writer-of-the-week|23",
         "lifestyle|guest-writer-of-the-week|22",
         "lifestyle|guest-writer-of-the-week|21",
