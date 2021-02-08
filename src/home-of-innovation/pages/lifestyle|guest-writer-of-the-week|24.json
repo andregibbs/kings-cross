@@ -1,0 +1,149 @@
+{
+  "title": "Guest writer of the week: Insider tricks for camera-ready makeup",
+  "description": "",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/24/KV_thumbnailguest_writer_24.jpg",
+  "alt": "",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/24/KV_thumbnailguest_writer_24.jpg",
+  "group": "guest-writer-of-the-week",
+  "sort": 24,
+  "meta": {
+    "icon": "article",
+    "tags": []
+  },
+  "components": [
+    {
+      "type": "css-snippet",
+      "content": ".hoiWrapper .hoiHeadline { margin-bottom: 0 !important; } .hoiMedia__ImageCredit { text-align: center; }",
+      "__notes": "custom ratio for kv video"
+    },
+    {
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "{{lifestyle|guest-writer-of-the-week|24[image]}}",
+        "alt": "{{lifestyle|guest-writer-of-the-week|24[alt]}}"
+      },
+      "style": {
+        "desktop": "left",
+        "mobile": "bottom"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "Insider tricks for camera-ready makeup"
+        }
+      ]
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "paragraphs",
+          "text": [
+            "Having worked as a beauty journalist for over nine years, I've spent A LOT of time quizzing makeup artists (not to mention snooping on them while they work). One of my most asked questions? Exactly how do they get their clients to look so picture perfect in photographs? Here, I share some of the secrets they've parted with, as well as top tips on capturing flawless shots on the Samsung Galaxy S21."
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "Be SPF savvy ",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "There's a common misconception that you should avoid ANY products containing SPF if you're being photographed since the ingredients that reflect the sun's rays (namely, titanium dioxide and zinc oxide) can cause a ghostly white \"flashback\" effect. While this is true to some extent, it's often dependent on the way the formula is blended so don't go sacking off your favourite sun protection-spiked product just yet. One of the most popular foundations amongst bridal makeup artists is MAC Studio Fix Fluid SPF15, £27, that won't conjure up a 'Casper' effect. And remember, flashback only occurs when using a direct flash which isn't particularly flattering anyway. You'll get a much softer effect with natural light so position yourself in front of a window."
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "Skip a powder faux pas",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Who can forget those iconic red carpet snaps of celebrities sporting bright white stripes along their jawline... yep, the wrong application of setting powder can also wreak havoc with your photos and, believe it or not, those dubbed 'HD-friendly' are often the worst offenders. While these powders can be useful for blurring the skin in high definition television work, they often appear stark white under a direct flash. The fix? Steer clear of those with silica on the ingredients list. Laura Mercier Translucent Loose Setting Powder, £32, fits the bill. Mica, found in many sparkly powder highlighters, can also be problematic. Instead cheat luminosity with a touch of L'Oreal Paris Glow Mon Amour Highlighting Drops, £9.99. Concentrate on the high points of your face like your cheekbones, bridge of your nose and your Cupid's bow to prevent your face looking flat and one-dimensional."
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "Amp up with layers",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "A gentle smattering of sheer powder blush or eyeshadow looks beautiful in real life but doesn't always translate in pictures. For added oomph and colour on camera, makeup artists layer cream formulas underneath powder first. Charlotte Tilbury Eyes to Mesmerise Cream Eyeshadows, £22 each, come in shades to make every eye colour smoulder while you can't beat Glossier Cloud Paints, £15 each, for cheeks."
+          ]
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/24/eye_shadow.jpg",
+          "alt": ""
+        },
+        {
+          "type": "headline",
+          "copy": "Check your neck",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "When your shoulders, neck or décolletage are likely to be in shot, too, it's worth doing a little perfecting so you're not mismatched. To diffuse marks or redness, pop on the tinted Vita Liberata Body Blur Instant HD Skin Finish, £29.95 – a favourite with the Victoria's Secret models, it works like a real life filter for the body. I've even seen makeup artists apply highlighter to their clients' knuckles when their hands are set to be pictured. Excessive? Maybe, although I have been known to mix a dot of foundation with my hand cream to fake hand model-worthy mitts in a flash..."
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "Shooting on the S21",
+          "level": "3"
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/24/S21.PNG",
+          "alt": ""
+        },
+
+
+
+
+
+
+
+        {
+          "type": "paragraphs",
+          "text": [
+            "Beauty work done, it's time to get snapping – the easy bit, thanks to the state-of-the-art new Samsung Galaxy S21. If you're tired of taking countless different shots then follow these simple steps;"
+          ]
+        },
+        {
+          "type": "html-list",
+          "items": [
+            "Step 1: Select the ‘single take feature’ on your Samsung Galaxy S21",
+            "Step 2: Position yourself in front of a window. As mentioned above, you'll get a much softer, glowing effect with natural light ",
+            "Step 3: Tap the shutter once and move around for up to ten seconds to capture the moment from different angles",
+            "Step 4: Choose which shot you like the best from a variety of styles, angles and formats created automatically",
+            "Step 5: Upload your favourite picture to Instagram with #SamsungKX and spread the beauty tips"
+          ]
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "And that's not all. You can even grab crystal clear images from 8K video content. Perfect for creating step-by-step tutorials, simply record your makeup look from start to finish, then select a variety of 8K stills from the footage.",
+            "<br>",
+            "<strong>By Amber Voller.</strong>",
+            "<em>Amber is a freelance beauty and lifestyle journalist, having written for the likes of Stylist, Red and Harper’s Bazaar; and featured on ITV’s This Morning.</em>"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "dynamic": "more-articles",
+      "id": "guest-writer-of-the-week",
+      "title": "More articles",
+      "style": {
+        "scroll": true
+      }
+    }
+  ]
+}
