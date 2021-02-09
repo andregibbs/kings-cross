@@ -21,6 +21,7 @@
     "jquery-ui": "^1.12.1",
     "jshint": "^2.10.2",
     "lity": "^2.4.1",
+    "lottie-web": "^5.7.6",
     "luxon": "^1.25.0",
     "natives": "^1.1.6",
     "number.isnan": "^0.1.1",

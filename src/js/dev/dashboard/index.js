@@ -16,4 +16,4 @@ class DevDashboard {
 }
 
 
-export default new DevDashboard()
+new DevDashboard()

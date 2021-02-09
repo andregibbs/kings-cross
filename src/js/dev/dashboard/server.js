@@ -1,10 +1,6 @@
 const express = require('express')
 const glob = require('glob')
 const http = require('http')
-
-// const jsdom = require('jsdom')
-// const { JSDOM } = jsdom
-
 const puppeteer = require('puppeteer')
 
 const DeployFileToKXAWS = require('../../../../tasks/deploy-file-to-kx-aws')
@@ -20,18 +16,7 @@ class DashboardServer {
   constructor() {
     console.log('DashboardServer')
     this.pages = []
-
-    // JSDOM.fromURL('http://kings-cross.samsung.com/uk/explore/kings-cross/components/headline/', { runScripts: "dangerously", resources: "usable" })
-    //   .then(dom => {
-    //     // console.log(dom.window.cheillondon)
-    //     setInterval(() => {
-    //       console.log(dom.window.cheillondon.scraper.main.scrapedHTML)
-    //     }, 1000)
-    //   })
-
-
-    this.getPages()
-      .then(this.startServer.bind(this))
+    this.getPages().then(this.startServer.bind(this))
   }
 
   startServer() {
@@ -62,8 +47,12 @@ class DashboardServer {
       page.deploy()
         .then(data => {
           console.log('DashboardServer: File Deployments Complete')
+          res.send(`${page.name} deployed`)
         })
-        .catch(e => console.log)
+        .catch(e => {
+          console.log('Error', e);
+          res.status(500).send(e)
+        })
 
     })
 
@@ -133,13 +122,15 @@ class DashboardPage {
         // setup upload promises
         const htmlUpload = this.uploadToAWS(data.html, `${this.filename}.html`, 'text/html')
         const jsUpload = this.uploadToAWS(data.js, `${this.filename}.js`, 'application/javascript')
-        Promise.all([jsPromise])
+        return Promise.all([htmlUpload, jsUpload])
           .then((promiseData) => {
-            console.log('DashboardPage: Uploads complete', promiseData)
+            console.log('DashboardPage: Uploads complete')
+            return promiseData
           })
       })
   }
   uploadToAWS(data, filename, contentType) {
+    console.log('DashboardPage: Uploading to aws '+filename);
     return new Promise(function(resolve, reject) {
       DeployFileToKXAWS(data, filename, (err, data) => {
         if (err) {
@@ -150,54 +141,29 @@ class DashboardPage {
     });
   }
   getContent() {
-    console.log('DashboardPage: getContent');
-
+    const localURL = this.local_url
     return new Promise(function(resolve, reject) {
       (async () => {
         const browser = await puppeteer.launch();
-        const page = await browser.newPage();
-        await page.goto('http://kings-cross.samsung.com/uk/explore/kings-cross/components/headline/');
+        try {
+          const page = await browser.newPage();
+          await page.goto(localURL);
+          // maybe inject the scraper script here instead of via page scripts
+          const pageData = await page.evaluate(() => {
+            return {
+              js: window.cheillondon.scraper.main.scrapedJS,
+              html: window.cheillondon.scraper.main.scrapedHTML
+            };
+          });
+          resolve(pageData)
+        } catch (e) {
+          reject(e)
+        } finally {
+          await browser.close();
+        }
 
-        // maybe inject the scraper script here instead of via page scripts
-
-        const pageData = await page.evaluate(() => {
-          return {
-            js: window.cheillondon.scraper.main.scrapedJS,
-            html: window.cheillondon.scraper.main.scrapedHTML
-          };
-        });
-
-
-        // look at the save method in the scraper, might just need creating with a filetype/encoding on aws
-        // console.log('Dimensions:', dimensions);
-
-        await browser.close();
-        resolve(pageData)
       })();
     });
-
-
-
-    // let checkInterval
-    // return new Promise(function(resolve, reject) {
-    //   const virtualConsole = new jsdom.VirtualConsole();
-    //   JSDOM.fromURL('http://kings-cross.samsung.com/uk/explore/kings-cross/components/headline/', { runScripts: "dangerously", resources: "usable", virtualConsole })
-    //     .then(dom => {
-    //       const window = dom.window
-    //       checkInterval = setInterval(() => {
-    //         if (window.cheillondon) {
-    //           console.log(window.cheillondon.scraper)
-    //           const js = dom.window.cheillondon.scraper.main.scrapedJS || false
-    //           const html = dom.window.cheillondon.scraper.main.scrapedHTML || false
-    //           console.log(js)
-    //           if (js.length && html.length) {
-    //             clearInterval(checkInterval)
-    //             resolve({html,js})
-    //           }
-    //         }
-    //       }, 2000)
-    //     })
-    // });
   }
 }
 
