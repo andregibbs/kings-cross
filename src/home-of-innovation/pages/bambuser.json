@@ -1,6 +1,7 @@
 {
   "title": "bambuser",
   "description": "",
+  "hidden": true,
   "image": "https://via.placeholder.com/1440x900.png",
   "thumb": "https://via.placeholder.com/300x300.png",
   "components": [
