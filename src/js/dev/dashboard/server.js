@@ -1,4 +1,5 @@
 const express = require('express')
+const cors = require('cors')
 const glob = require('glob')
 const http = require('http')
 const puppeteer = require('puppeteer')
@@ -25,6 +26,8 @@ class DashboardServer {
     const app = express()
     const port = 3030
     const pages = this.pages;
+
+    app.use(cors())
 
     app.get('/', (req, res) => {
       res.send('Hello World!')

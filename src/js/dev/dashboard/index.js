@@ -2,18 +2,23 @@
 
 const DashboardTemplate = require('./template.hbs');
 
+const API = 'http://localhost:3030'
+
 class DevDashboard {
   constructor() {
-    console.log('dashboard')
-    // this.getPages()
+    console.log('DevDashboard')
+
+    this.getPages()
+
   }
 
   getPages() {
-    const hoiPages = glob('/src/home-of-innovation/pages/**/*.json');
-    const staticPages = glob('src/pages/**/*.html')
-    console.log(hoiPages, staticPages)
+    return fetch(`${API}/pages`)
+      .then(r => r.json())
+      .then(pages => {
+        console.log('DevDashboard: pages', pages);
+      })
   }
 }
-
 
 new DevDashboard()

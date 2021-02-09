@@ -758,14 +758,42 @@ gulp.task('home-of-innovation-watch', () => {
     return HOITemplates(false, false, [changeObj.path])
   } )
   gulp.watch( config.SRC_FOLDER + '/scss/**/*.scss', ['home-of-innovation-scss'] )
-  gulp.watch( config.SRC_FOLDER + '/js/**/*.js', ['home-of-innovation-js'] )
+  gulp.watch([
+    config.SRC_FOLDER + '/js/**/*.js',
+    `!${config.SRC_FOLDER + '/js/dev/**/*.js'}`
+  ], ['home-of-innovation-js'] )
   gulp.watch( config.SRC_FOLDER + '/templates/partials/**/*', ['home-of-innovation-build'] )
   log('Watching HOI folder')
 })
 
+gulp.task('kx:dashboard:scraper', () => {
+  return gulp
+    .src('src/js/dev/dashboard/scraper-modified.js')
+    .pipe(gulp.dest(config.BUILD_FOLDER))
+})
+
+gulp.task('kx:dashboard:ui', () => {
+  return browserify( config.SRC_FOLDER + '/js/dev/dashboard/index.js', { debug: true })
+    .transform(hbsfy)
+    .transform(babel.configure({ presets: ['es2015-ie'] }))
+    .bundle()
+  		.on('error', function(err) { console.error(err); this.emit('end'); })
+  		.pipe(source('kx-dashboard-ui.js'))
+      .pipe(buffer())
+      .pipe(gulp.dest(config.BUILD_FOLDER))
+})
+
+gulp.task('kx:dashboard:watch', () => {
+  return gulp.watch( config.SRC_FOLDER + '/js/dev/dashboard/index.js', ['kx:dashboard:ui'] )
+})
+
+// dashboard
+// add node server start script
+gulp.task('kx:dashboard', ['kx:dashboard:scraper', 'kx:dashboard:ui', 'kx:dashboard:watch'])
+
 // Main HOI tasks
 gulp.task('hoi-staging', ['home-of-innovation-scss', 'home-of-innovation-build', 'home-of-innovation-js', 'home-of-innovation-watch'])
-gulp.task('hoi-dev', ['home-of-innovation-scss', 'home-of-innovation-build', 'home-of-innovation-js', 'home-of-innovation-watch'])
+gulp.task('hoi-dev', ['kx:dashboard', 'home-of-innovation-scss', 'home-of-innovation-build', 'home-of-innovation-js', 'home-of-innovation-watch'])
 
 // Main KX tasks
 gulp.task('staging', ['watch', '_staging', 'kx:js'])

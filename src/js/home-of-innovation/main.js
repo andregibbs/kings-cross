@@ -33,8 +33,6 @@ import FindKX from '../components/findKX';
 import KXNav from '../components/common/kxNav'
 import KXSurvey from '../components/common/kxSurvey'
 
-import KXDashboard from '../dev/dashboard/'
-
 function init() {
 
   const galleries = [].slice.call(document.querySelectorAll('.hoiGallery'))
