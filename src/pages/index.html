@@ -18,9 +18,6 @@
 
   {{>components/home/homeKV }}
 
-	<!-- hidden h1 for seo -->
-	<h1 class="h1-hidden">Welcome to Samsung KX</h1>
-
 		<section class="section copy">
 				<div class="section__inner">
 					<div class="copy__container">
@@ -29,7 +26,8 @@
 							href="/{{ config.site }}{{ config.subfolder }}/discover" class="button btn btn--primary btn--primary--coral">DISCOVER MORE</a>
 					</div>
 				</div>
-			  </section>
+	  </section>
+
 {{#ifCond @root.config.closed false}}
 	<section class="section relatedEvents">
 		<div class="section__inner">

@@ -24,11 +24,12 @@
       "components": [
         {
           "type": "headline",
-          "copy": "Bringing bold colours back"
+          "copy": "Get the look with RJ Tulloch’s make up masterclass"
         },
         {
           "type": "headline",
-          "copy": "Get the look with RJ Tulloch’s make up masterclass"
+          "level": "2",
+          "copy": "Bringing bold colours back"
         },
         {
           "type": "headline",
