@@ -1,6 +1,184 @@
-<div class="kxDashboard">
+<div class="kxDashboard" open="true">
 
-  Dashydash
+  <span class="kxDashboard__title kxDashboard__header">⚙️ KX Dashboard</span>
+  <a class="kxDashboard__toggle">
+    <span class="kxDashboard__toggle--max">+</span>
+    <span class="kxDashboard__toggle--min">-</span>
+  </a>
 
+  <div class="kxDashboard__panel">
+    <hr/>
+    <div class="kxDashboard__pages">
+      <span class="kxDashboard__header">Goto page</span>
+      <select name="pages" id="pages">
+        {{#each pages}}
+          <option
+            {{#if this.selected}}selected{{/if}}
+            value="{{this.name}}">
+            {{this.name}}
+          </option>
+        {{/each}}
+      </select>
+    </div>
+    <hr/>
+    <div class="kxDashboard__current">
+      <span class="kxDashboard__header">Current Page</span>
+      Name: {{currentPage.name}}<br/>
+      Page Setup for deployment: YES/NO
+      <hr/>
+      <span class="kxDashboard__header">Status</span>
+      <div class="kxDashboard__status">Idle</div>
+      <hr/>
+      <span class="kxDashboard__header">Actions</span>
+      <div class="kxDashboard__actions  kxDashboard__buttons">
+        <button id="deploy-qa">Deploy QA</button>
+        <button id="deploy-live">Deploy Live</button>
+      </div>
+      <hr/>
+      <span class="kxDashboard__header">Tools</span>
+      <div class="kxDashboard__tools kxDashboard__buttons">
+        <button id="copy-aem-html">Copy Page Loader HTML</button>
+        <textarea id="aem-html-script">
+          {{ aemHTML }}
+        </textarea>
+        <button id="copy-aem-js">Copy Page Loader JS</button>
+        <textarea id="aem-js-script">
+          {{ aemJS }}
+        </textarea>
+      </div>
+      <hr/>
+      <span class="kxDashboard__header">Links</span>
+      <div class="kxDashboard__links">
+        <a href="{{currentPage.editor_url}}" target="_blank">AEM Page Editor</a>
+        <a href="{{currentPage.qa_url}}" target="_blank">QA Link</a>
+        <a href="{{currentPage.live_url}}" target="_blank">Live Link</a>
+        <a href="{{currentPage.staging_url}}" target="_blank">Staging Link</a>
+      </div>
+    </div>
+  </div>
 
+  <style>
+    .kxDashboard {
+      position: fixed;
+      z-index: 12345;
+      background: #d4efff;
+      padding: 1rem;
+      top: 1rem;
+      right: 1rem;
+      font-size: 0.8rem;
+    }
+    /* Min/Max Toggle */
+    .kxDashboard__toggle {
+      background: #66757d;
+      display: block;
+      color: white;
+      width: 1.5rem;
+      font-weight: bold;
+      font-size: 1rem;
+      box-sizing: border-box;
+      cursor: pointer;
+      text-align: center;
+      right: 1rem;
+      top: 1rem;
+    }
+    .kxDashboard__toggle .kxDashboard__toggle--max { display: block; }
+    .kxDashboard__toggle .kxDashboard__toggle--min { display: none; }
+    .kxDashboard__pages select {
+      width: 100%;
+      /* margin-top: 0.25rem; */
+      margin-bottom: 0.5rem;
+      padding: 0.25rem;
+      appearance: auto;
+      text-transform: capitalize;
+    }
+    /* Main Panel */
+    .kxDashboard__panel {
+      display: none;
+      line-height: 1.5;
+    }
+    /* Page Actions/Tools */
+    .kxDashboard__buttons button {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+      border: 1px solid #333;
+      border-radius: 5px;
+      line-height: 1;
+    }
+    .kxDashboard__actions button:hover {
+      text-decoration: underline;
+    }
+    #deploy-qa {
+      background-color: #ffe141;
+    }
+    #deploy-live {
+      background-color: #fd3d3d;
+      margin-bottom: 0;
+    }
+    .kxDashboard__status pre { white-space: normal; }
+    .kxDashboard__status:empty { display: none;}
+    .kxDashboard__activity {
+      display: inline-block;
+      animation: activity-rotate 2s infinite;
+      transform-origin: center;
+    }
+    @keyframes activity-rotate {
+      0% {
+        transform: rotateZ(0deg)
+      }
+      100% {
+        transform: rotateZ(359deg);
+      }
+    }
+    /* Deploy Tools */
+    .kxDashboard__tools button { background-color: #3dfd95; }
+    .kxDashboard__tools textarea {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+    }
+    /* Page Links */
+    .kxDashboard__links a {
+      display: block;
+    }
+    .kxDashboard__links a:after {
+      content: '↗';
+      display: inline-block;
+      width: 0.8rem;
+      height: 0.8rem;
+      margin-left: 0.25rem;
+      font-size: 0.7rem;
+      text-align: center;
+      border: 1px solid blue;
+      background: white;
+    }
+    /* States */
+    .kxDashboard[open="true"] { width: 300px; }
+    .kxDashboard[open="true"] .kxDashboard__title { display: block; }
+    .kxDashboard[open="true"] .kxDashboard__toggle { position: absolute; }
+    .kxDashboard[open="true"] .kxDashboard__toggle--min { display: block; }
+    .kxDashboard[open="true"] .kxDashboard__toggle--max { display: none; }
+    .kxDashboard[open="true"] .kxDashboard__panel { display: block; }
+    .kxDashboard[deploying] .kxDashboard__actions button {
+      pointer-events: none;
+      background-color: grey !important; /* overwrite id style */
+    }
+    /* Misc */
+    .kxDashboard hr  {
+      display: block;
+      margin: 0.75rem 0 0.75rem 0;
+      border: 1px solid #94a9b5;
+    }
+    .kxDashboard__header {
+      font-weight: bold;
+      display: block;
+      font-size: 0.9rem;
+      margin: 0.5rem 0;
+    }
+    .kxDashboard__title {
+      font-size: 1.2rem;
+      display: none;
+    }
+  </style>
 </div>

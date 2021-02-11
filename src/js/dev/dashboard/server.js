@@ -3,6 +3,7 @@ const cors = require('cors')
 const glob = require('glob')
 const http = require('http')
 const puppeteer = require('puppeteer')
+const fs = require('fs')
 
 const DeployFileToKXAWS = require('../../../../tasks/deploy-file-to-kx-aws')
 
@@ -12,6 +13,11 @@ const PAGE_TYPE = {
 }
 
 const LOCAL_DEV_HOST = 'http://kings-cross.samsung.com'
+const SCRAPER_PATH = `${LOCAL_DEV_HOST}/scraper-modified.js`
+const DEPLOYED_PATH = 'https://kxuploads.s3.eu-west-2.amazonaws.com/home-of-innovation-dynamic/dynamic-pages/'
+
+const AEM_Javascript = fs.readFileSync(require.resolve('./aem-bootstrap.js'), 'utf8');
+const AEM_Html = fs.readFileSync(require.resolve('./aem-bootstrap.html'), 'utf8');
 
 class DashboardServer {
   constructor() {
@@ -33,30 +39,33 @@ class DashboardServer {
       res.send('Hello World!')
     })
 
-    app.get('/pages', (req, res) => {
-      res.json(this.pages)
+    app.get('/config', (req, res) => {
+      res.json({
+        pages: this.pages,
+        aemHTML: AEM_Html,
+        aemJS: AEM_Javascript
+      })
     })
 
     // deploy?page=/pathname/here
     app.get('/deploy', (req, res) => {
       const pathname = req.query.pathname
+      const qa = req.query.qa ? true : false
       const page = pages.find(page => {
         return page.pathname == pathname
       })
       if (!page) {
         return res.status(400).json({ error: `Couldn't find page: ${pathname}` });
       }
-
-      page.deploy()
+      page.deploy(qa)
         .then(data => {
-          console.log('DashboardServer: File Deployments Complete')
-          res.send(`${page.name} deployed`)
+          console.log('DashboardServer: File Deployments Complete - ', page.name)
+          res.json(data)
         })
         .catch(e => {
           console.log('Error', e);
-          res.status(500).send(e)
+          res.status(400).send(e)
         })
-
     })
 
     app.listen(port, () => {
@@ -84,7 +93,6 @@ class DashboardServer {
     return Promise.all([getHoiPages(), getStaticPages()]).then(values => {
       this.pages = this.pages.concat(values[0]).concat(values[1])
       console.log(`DashboardServer: Collected ${this.pages.length} Pages`)
-      console.log(this.pages[0])
     })
   }
 }
@@ -114,32 +122,39 @@ class DashboardPage {
     this.live_url = `https://www.samsung.com${this.pathname}`
     this.staging_url = `https://d1bb30i8nznsls.cloudfront.net${this.pathname}`
     this.local_url = `${LOCAL_DEV_HOST}${this.pathname}/` // ! trailing slash important
+    this.editor_url = `https://p6-eu-author.samsung.com/editor.html/content/samsung${this.pathname}.html`
     // remove slashes and leading dash
     this.filename = this.pathname.split('/').join('-').replace(/-/,'')
-    this.name = this.pathname.replace('/uk/explore/kings-cross/', '')
+    this.name = this.pathname.replace('/uk/explore/kings-cross/', '').replace(/\/$/, '')
+    // set name to index if home page
+    if (!this.name.length) { this.name = 'home' }
   }
-  deploy() {
+  deploy(qa) {
     console.log('DashboardPage: deploy');
+    const filename = qa ? `${this.filename}-qa` : this.filename
     return this.getContent()
       .then(data => {
         // setup upload promises
-        const htmlUpload = this.uploadToAWS(data.html, `${this.filename}.html`, 'text/html')
-        const jsUpload = this.uploadToAWS(data.js, `${this.filename}.js`, 'application/javascript')
+        const htmlUpload = this.uploadToAWS(data.html, filename, 'html', 'text/html')
+        const jsUpload = this.uploadToAWS(data.js, filename, 'js', 'application/javascript')
         return Promise.all([htmlUpload, jsUpload])
-          .then((promiseData) => {
+          .then((uploadPaths) => {
             console.log('DashboardPage: Uploads complete')
-            return promiseData
+            const resp = Object.assign({}, uploadPaths[0], uploadPaths[1])
+            return resp
           })
       })
   }
-  uploadToAWS(data, filename, contentType) {
+  uploadToAWS(data, filename, extension, contentType) {
     console.log('DashboardPage: Uploading to aws '+filename);
     return new Promise(function(resolve, reject) {
-      DeployFileToKXAWS(data, filename, (err, data) => {
+      DeployFileToKXAWS(data, `${filename}.${extension}`, (err, data) => {
         if (err) {
           reject({error: err})
         }
-        resolve({data: filename})
+        const resp = {}
+        resp[extension] = `${DEPLOYED_PATH}${filename}.${extension}`
+        resolve(resp)
       }, 'dynamic-pages', contentType)
     });
   }
@@ -151,7 +166,12 @@ class DashboardPage {
         try {
           const page = await browser.newPage();
           await page.goto(localURL);
-          // maybe inject the scraper script here instead of via page scripts
+          await page.addScriptTag({url: SCRAPER_PATH})
+          // wait for scraper to init
+          await page.waitForFunction('window.cheillondon !== undefined');
+          // wait for the scraped data to be loaded
+          await page.waitForFunction('window.cheillondon.scraper.main.scrapedJS !== undefined');
+          await page.waitForFunction('window.cheillondon.scraper.main.scrapedHTML !== undefined');
           const pageData = await page.evaluate(() => {
             return {
               js: window.cheillondon.scraper.main.scrapedJS,

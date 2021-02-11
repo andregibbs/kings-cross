@@ -9,7 +9,7 @@
     "hoi-dynamic-staging": "node ./tasks/deploy-hoi-dynamic-data staging",
     "deploy-kx-survey-data-live": "node ./tasks/deploy-kx-survey-data live",
     "deploy-kx-survey-data-staging": "node ./tasks/deploy-kx-survey-data staging",
-    "start-dashboard": "node ./src/js/dev/dashboard/server.js"
+    "start-dashboard": "nodemon --watch ./src/js/dev/dashboard/server.js ./src/js/dev/dashboard/server.js"
   },
   "dependencies": {
     "array.find": "^1.0.9",
@@ -61,6 +61,7 @@
     "hbsfy": "^2.8.1",
     "jsdom": "^16.4.0",
     "merge-stream": "^2.0.0",
+    "nodemon": "^2.0.7",
     "prompt": "^1.0.0",
     "puppeteer": "^7.0.1",
     "through2": "^2.0.3",

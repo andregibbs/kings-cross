@@ -33,6 +33,3 @@
   insertHtml().then(insertJS)
 
 })()
-
-
-//<div id="kx-deployment-target"></div>
