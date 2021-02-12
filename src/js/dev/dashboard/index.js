@@ -50,10 +50,10 @@ class DevDashboard {
     })
     // copy bootstrap scripts for aem page
     document.querySelector('#copy-aem-js').addEventListener('click', () => {
-      this.copyAEMText('html')
+      this.copyAEMText('js')
     })
     document.querySelector('#copy-aem-html').addEventListener('click', () => {
-      this.copyAEMText('js')
+      this.copyAEMText('html')
     })
   }
 

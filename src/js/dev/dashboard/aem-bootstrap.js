@@ -1,35 +1,57 @@
-(() => {
+function KXBootstrap() {
 
-  const base = 'https://kxuploads.s3.eu-west-2.amazonaws.com/home-of-innovation-dynamic/dynamic-pages/'
-  let page = window.location.pathname.split('/').join('-').replace(/^\-|\-$/g, '');
+  // written in es5 to avoid compiling
+  // TODO browser check
+  // polyfill fetch
+  var host = window.location.host
+  var base = 'https://kxuploads.s3.eu-west-2.amazonaws.com/home-of-innovation-dynamic/dynamic-pages/'
+  var page = window.location.pathname.split('/').join('-').replace(/^\-|\-$/g, '');
+  var qa = host.indexOf('p6-qa') > -1 ? '-qa' : ''
 
-  // temp dev
-  console.log(page, page.replace('deploy-test', 'bambuser'))
-  page = page.replace('deploy-test', 'bambuser')
+  if (host.indexOf('p6-qa.samsung.com') === -1 && host.indexOf('www.samsung.com') === -1) {
+    // only run on p6-qa and live
+    return
+  }
 
-  const jsPath = `${base}${page}.js`
-  const htmlPath = `${base}${page}.html`
+  var jsPath = `${base}${page}${qa}.js`
+  var htmlPath = `${base}${page}${qa}.html`
 
-  const target = document.querySelector('#deploy-target')
+  console.log(jsPath, htmlPath)
 
-  function insertHtml() {
-    return fetch(htmlPath)
+  var target = document.querySelector('#deploy-target')
+
+  // var fetchHeaders = new Headers();
+  // fetchHeaders.append('pragma', 'no-cache');
+  // fetchHeaders.append('cache-control', 'no-cache');
+  //
+  // var options = {
+  //   headers: fetchHeaders
+  // };
+
+  function insertHtml(callback) {
+    console.log('insert html')
+    fetch(htmlPath)
       .then(data => {
         // check for success
         return data.text()
       })
       .then(html => {
         target.innerHTML = html
+        callback()
       })
   }
 
-  function insertJS() {
+  function insertJS(callback) {
+    console.log('insert js')
     const kxScript = document.createElement('script')
     kxScript.src = jsPath
     document.body.appendChild(kxScript)
-    return Promise.resolve()
   }
 
-  insertHtml().then(insertJS)
+  insertHtml(function(){
+    insertJS()
+  })
 
-})()
+}
+
+KXBootstrap()
