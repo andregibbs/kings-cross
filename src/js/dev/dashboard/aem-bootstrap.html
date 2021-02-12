@@ -1,3 +1,59 @@
 <div id="deploy-target">
-  KX Dynamic Deployment Target
+  <!-- KX Dynamic Deployment Target -->
+  <div class="kx-preload">
+    <div class="kx-letters">
+      <span>K</span>
+      <span>X</span>
+    </div>
+  </div>
+  <style>
+    #deploy-target {
+      width: 100%;
+      background: black;
+      height: 50vh;
+    }
+    .kx-preload {
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      max-height: 50vh;
+    }
+    .kx-letters span {
+      color: white;
+      font-size: 5vw;
+      opacity: 0;
+      font-family: "SamsungSharpSans", arial, sans-serif;
+      animation: kx-letter 1s ease-in-out alternate infinite;
+    }
+    .kx-letters span:nth-child(2) {
+      animation-delay: 0.25s;
+    }
+    @keyframes kx-letter {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 100%;
+      }
+    }
+  </style>
 </div>
+<style>
+  .cheil-static {
+    opacity: 0;
+  }
+  #deploy-target[loaded] .cheil-static {
+    opacity: 0;
+    animation: kx-fade 0.5s ease-in-out forwards;
+  }
+  @keyframes kx-fade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+</style>
