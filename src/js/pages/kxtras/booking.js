@@ -97,8 +97,10 @@ export default function support() {
         },
 
         startJourney: function (cat) {
+
+          // console.log('start', cat)
             // replate categories with kxtras
-            if (!this.active && ["kxtras"].indexOf(cat) != -1) {
+            if (!this.active && ["kxtras","support","oneToOne"].indexOf(cat) != -1) {
                 this.active = true;
                 this.category = cat;
                 this.stage = 1;
@@ -142,9 +144,9 @@ export default function support() {
                       // bookingURL = "https://bookings.qudini.com/booking-widget/booker/slots/87J4665QG8U/4492/66526/0"
                       // state.productId = "66526";
                       break;
-                    // case "oneToOne":
-                    //   bookingURL = "https://bookings.qudini.com/booking-widget/booker/slots/87J4665QG8U/4492/66526/0"
-                    //   state.productId = "66526";
+                    case "oneToOne":
+                      bookingURL = "https://bookings.qudini.com/booking-widget/booker/slots/87J4665QG8U/4492/66526/0"
+                      state.productId = "66526";
                     //   // one to one specific elements (these are reverted in cancelJourney)
                     //   // todo; maybe combine visiblity changes into a single class
                     //   $j('#one-to-one-description').slideDown(); // show 121 description
@@ -153,16 +155,16 @@ export default function support() {
                     //   $j("#device-notes").attr('placeholder', oneToOneVars.placeholder) // set notes placholder text
                     //   $j("#oneToOne-device-notes-header").show(); // show device notes header
                     //   $j("#confirmation").addClass('confirmation-121') // add class to confirmation to adjust content
-                    //   break;
+                      break;
                     //
                     // case "repair":
                     //   bookingURL = "https://bookings.qudini.com/booking-widget/booker/slots/IZ0LYUJL6B0/4375/62764/0";
                     //   state.productId = "62764";
                     //   break;
-                    // case "support":
-                    //   bookingURL = "https://bookings.qudini.com/booking-widget/booker/slots/ZP4CQAQ5F6R/4375/64732/0";
-                    //   state.productId = "64732";
-                    //   break;
+                    case "support":
+                      bookingURL = "https://bookings.qudini.com/booking-widget/booker/slots/ZP4CQAQ5F6R/4375/64732/0";
+                      state.productId = "64732";
+                      break;
 
                     default:
                         console.error("Incorrect category");

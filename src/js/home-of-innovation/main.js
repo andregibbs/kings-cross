@@ -22,12 +22,11 @@ import HOIDynamicLinkList from './hoiDynamicLinkList';
 import HOIDynamicGroupLand from './hoiDynamicGroupLand';
 import HOILinkListHoverManager from './hoiLinkListHoverScroll'
 import { createYoutubeInstance, loadYoutubeAPI } from './utils';
-
+import './util/GATracking.js'
 
 import FindKX from '../components/findKX';
 import KXNav from '../components/common/kxNav'
 import KXSurvey from '../components/common/kxSurvey'
-import initListItemHoverEvents from './hoiListItemHoverEvents'
 
 function init() {
 
@@ -87,8 +86,6 @@ function init() {
       dynamicGroupLand.forEach(element => {
         new HOIDynamicGroupLand(element)
       })
-
-      // initListItemHoverEvents()
 
     })
 

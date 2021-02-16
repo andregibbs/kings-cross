@@ -16,7 +16,7 @@ function KXtras() {
   const supportBooking = support()
 
   document.querySelector('#booking-launch').addEventListener('click', () => {
-    supportBooking.startJourney("kxtras")
+    supportBooking.startJourney("oneToOne")
   })
 
   $j('.KXtras__carousel').slick({

@@ -14,6 +14,7 @@ import 'lity'
 import KXNav from './components/common/KXNav'
 import KXSurvey from './components/common/kxSurvey'
 import FindKX from './components/findKX'
+import './util/GATracking.js'
 
 function Bootstrap() {
   new KXNav()

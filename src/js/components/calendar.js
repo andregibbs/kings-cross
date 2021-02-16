@@ -8,7 +8,7 @@ export default function calendar(URL, type, allEvents) {
 
 	customevent();
 
-  console.log('aaaaa', URL)
+  // console.log('aaaaa', URL)
 
 	var unlock = new CustomEvent("unlock");
 	var lock = new CustomEvent("lock");
@@ -32,7 +32,7 @@ export default function calendar(URL, type, allEvents) {
 	document.getElementById("calendar").addEventListener("changeURL", function (e) {
 		URL = e.detail.url;
 
-    console.log('change url', URL)
+    // console.log('change url', URL)
 
 		doLog("got activated");
 
