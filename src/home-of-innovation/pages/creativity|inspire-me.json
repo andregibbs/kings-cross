@@ -1,0 +1,46 @@
+{
+  "title": "Inspire Me",
+  "description": "",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/editing-sessions/gadgetsboy.jpg",
+  "alt": "",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/editing-sessions/gadgetsboy.jpg",
+  "meta": {
+    "icon": "series",
+    "tags": []
+  },
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "{{creativity|inspire-me[image]}}",
+        "alt": "{{creativity|inspire-me[alt]}}"
+      },
+      "style": {
+        "desktop": "left",
+        "mobile": "top"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "{{creativity|inspire-me[title]}}"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Welcome to the Inspire Me. A series of tutorials led by industry experts across photography, gaming and travel, designed to upskill and inspire you to dive into new passions."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "dynamic": "episodes",
+      "id": "inspire-me",
+      "title": "Episodes",
+      "style": {
+        "scroll": true
+      }
+    }
+  ]
+}
