@@ -81,7 +81,7 @@ class DashboardServer {
     console.log('DashboardServer: Collecting Pages')
     function getHoiPages() {
       return new Promise((resolve, reject) => {
-        glob('src/home-of-innovation/pages/**/[!_]*.json', (err, files) => {
+        glob('src/home-of-innovation/pages/**/[!_]*.json', {ignore: ['**/component*.json']}, (err, files) => {
           resolve(files.map(file => new DashboardPage(file, PAGE_TYPE.HOI)))
         });
       });
