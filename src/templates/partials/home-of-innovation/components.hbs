@@ -80,10 +80,17 @@
     {{> home-of-innovation/hoiClassContainer this}}
   {{/if_equals}}
 
+<<<<<<< HEAD
   {{#if_equals this.type 'template'}}
     {{#if_equals this.name 'recipe'}}
       {{recipeTemplate this.data}}
     {{/if_equals}}
+=======
+  {{#if_equals this.type 'opengraph'}}
+    <script type="application/ld+json">
+      {{{json this.content}}}
+    </script>
+>>>>>>> deployment optimizations
   {{/if_equals}}
 
   {{!--

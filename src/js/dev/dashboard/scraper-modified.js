@@ -241,7 +241,7 @@ cheillondon.scraper = (function() {
 			$(scripts).each(function() {
 
 
-				if (this.type && this.type == 'text/x-handlebars-template') {
+				if (this.type && (this.type == 'text/x-handlebars-template' || this.type == 'application/ld+json') {
 					main.doLog('EXCLUDING TEMPLATE - ' + this.type + ' ' + this.id);
 				}
 				else {

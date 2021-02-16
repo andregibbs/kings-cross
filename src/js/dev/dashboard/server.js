@@ -5,6 +5,9 @@ const http = require('http')
 const puppeteer = require('puppeteer')
 const fs = require('fs')
 
+const Terser = require('terser');
+const HTMLMinifier = require('html-minifier-terser');
+
 const DeployFileToKXAWS = require('../../../../tasks/deploy-file-to-kx-aws')
 
 const PAGE_TYPE = {
@@ -133,7 +136,10 @@ class DashboardPage {
     console.log('DashboardPage: deploy');
     const filename = qa ? `${this.filename}-qa` : this.filename
     return this.getContent()
+      .then(this.compressFiles)
       .then(data => {
+        console.log('DahboardPage: html size (kb)', Buffer.byteLength(data.html, 'utf8') / 1000)
+        console.log('DahboardPage: js size (kb)', Buffer.byteLength(data.js, 'utf8') / 1000)
         // setup upload promises
         const htmlUpload = this.uploadToAWS(data.html, filename, 'html', 'text/html')
         const jsUpload = this.uploadToAWS(data.js, filename, 'js', 'application/javascript')
@@ -144,6 +150,35 @@ class DashboardPage {
             return resp
           })
       })
+  }
+  compressFiles(dataArray) {
+    const jsMinify = Terser.minify(dataArray.js, {}).then(({code}) => { return code })
+    const htmlMinify = () => {
+      const htmlCode = HTMLMinifier.minify(dataArray.html, {
+        removeComments: true,
+        removeCommentsFromCDATA: true,
+        removeCDATASectionsFromCDATA: true,
+        collapseWhitespace: true,
+        collapseBooleanAttributes: true,
+        removeAttributeQuotes: true,
+        removeRedundantAttributes: true,
+        useShortDoctype: true,
+        removeEmptyAttributes: true,
+        removeEmptyElements: false,
+        removeOptionalTags: true,
+        removeScriptTypeAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        minifyJS: true,
+        minifyCSS: true
+      })
+      return Promise.resolve(htmlCode)
+    }
+    return Promise.all([htmlMinify(), jsMinify]).then(promises => {
+      return {
+        html: promises[0],
+        js: promises[1]
+      }
+    })
   }
   uploadToAWS(data, filename, extension, contentType) {
     console.log('DashboardPage: Uploading to aws '+filename);

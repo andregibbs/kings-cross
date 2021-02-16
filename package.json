@@ -61,6 +61,7 @@
     "hbsfy": "^2.8.1",
     "jsdom": "^16.4.0",
     "merge-stream": "^2.0.0",
+    "minify": "^7.0.1",
     "nodemon": "^2.0.7",
     "prompt": "^1.0.0",
     "puppeteer": "^7.0.1",

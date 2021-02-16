@@ -784,10 +784,14 @@ gulp.task('kx:dashboard:ui', () => {
 })
 
 gulp.task('kx:dashboard:watch', () => {
-  return gulp.watch([
+  gulp.watch([
     config.SRC_FOLDER + '/js/dev/dashboard/index.js',
     config.SRC_FOLDER + '/js/dev/dashboard/template.hbs'
   ], ['kx:dashboard:ui'] )
+
+  gulp.watch([
+    config.SRC_FOLDER + '/js/dev/dashboard/scraper-modified.js',
+  ], ['kx:dashboard:scraper'])
 })
 
 // dashboard
