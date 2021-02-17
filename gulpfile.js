@@ -386,6 +386,10 @@ function HOITemplates(skipTemplates, dynamicDataCallback, selectedFiles) {
     pages = getFilesInDirectory(pagesBasePath)
   }
 
+  // console.log(pages)
+  // console.log('gulp pages override')
+  // pages = ['/Users/work/Cheil/projects/cheil/kings-cross/src/home-of-innovation/pages/template-test.json']
+
   // is staging task
   const isStagingTask = argv._[0] === 'hoi-staging';
 

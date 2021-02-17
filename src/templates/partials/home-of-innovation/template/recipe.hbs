@@ -1,0 +1,46 @@
+<div class="hoiTemplate  hoiTemplate--recipe">
+  {{> home-of-innovation/hoiKv kv }}
+
+  <div class="hoiContent hoiTemplate__wrapper">
+
+    <div class="hoiTemplate__sidebar">
+      <div class="hoiTemplate__section">
+        <h2>Details</h2>
+        <p>Cooking Time</p>
+      </div>
+      <div class="hoiTemplate__section">
+        <h2>Ingredients</h2>
+        {{#each ingredients}}
+          <p>{{this}}</p>
+        {{/each}}
+      </div>
+      <div class="hoiTemplate__section">
+        <h2>Author</h2>
+        <p>{{author}}</p>
+      </div>
+    </div>
+
+    <div class="hoiTemplate__body">
+      <div class="hoiTemplate__section">
+        <h2>About {{name}}</h2>
+        <p>
+          {{this.description}}
+        </p>
+      </div>
+
+      <div class="hoiTemplate__section">
+        <h2>Instructions</h2>
+        {{#each instructions}}
+          <div class="hoiTemplate__section">
+            <h3>{{this.name}}</h3>
+            <p>
+              {{this.text}}
+            </p>
+            {{> home-of-innovation/hoiMediaImage content=this.image}}
+          </div>
+        {{/each}}
+      </div>
+    </div>
+
+  </div>
+</div>

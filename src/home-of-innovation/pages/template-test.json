@@ -1,0 +1,93 @@
+{
+  "title": "Page Title",
+  "thumb": "",
+  "alt": "",
+  "hidden": true,
+  "meta": {
+    "icon": "video"
+  },
+  "components": [
+    {
+      "type": "template",
+      "name": "recipe",
+      "data": {
+        "name": "Any Greens by Sara Kiyo Popowa",
+        "description": "Seed Pesto over Smashed Roast Potatoes, Greens and Edible Flowers",
+        "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/recipe_images_Photo_cred_Sara_Kiyo_Popowa_May_06_2020.jpg",
+        "author": "Sara Kiyo Popowa",
+        "prepTime": "optional",
+        "cookTime": "optional",
+        "prepTime": "optional",
+        "recipeYield": "10",
+        "recipeCategory": "Main",
+        "recipeCuisine": "American",
+        "keywords": "",
+        "ingredients": [
+          "75g greens of choice + their stalks",
+          "3 tablespoons toasted sunflower or",
+          "pumpkin seeds",
+          "1 garlic clove",
+          "1/2 tablespoon white miso (optional, or",
+          "use any miso, or sea salt)",
+          "1/2 tablespoon vinegar (any)",
+          "3 tablespoons extra virgin olive oil, more to taste",
+          "Sea salt to taste"
+        ],
+        "instructions": [
+          {
+            "name": "Preheat",
+            "text": "Preheat the oven to 350 degrees F. Grease and flour a 9x9 inch pan.",
+            "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/08b_Samsung_Website_TOT_How_To_Recipes_400x255_V2.jpg"
+          },
+          {
+            "name": "Mix dry ingredients",
+            "text": "In a large bowl, combine flour, sugar, baking powder, and salt.",
+            "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/08b_Samsung_Website_TOT_How_To_Recipes_400x255_V2.jpg"
+          },
+          {
+            "name": "Add wet ingredients",
+            "text": "Mix in the butter, eggs, and milk.",
+            "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/08b_Samsung_Website_TOT_How_To_Recipes_400x255_V2.jpg"
+          },
+          {
+            "name": "Spread into pan",
+            "text": "Spread into the prepared pan.",
+            "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/08b_Samsung_Website_TOT_How_To_Recipes_400x255_V2.jpg"
+          },
+          {
+            "name": "Bake",
+            "text": "Bake for 30 to 35 minutes, or until firm.",
+            "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/08b_Samsung_Website_TOT_How_To_Recipes_400x255_V2.jpg"
+          },
+          {
+            "name": "Enjoy",
+            "text": "Allow to cool and enjoy.",
+            "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/08b_Samsung_Website_TOT_How_To_Recipes_400x255_V2.jpg"
+          }
+        ],
+        "__video": {
+          "name": "",
+          "description": "",
+          "embedUrl": "",
+          "thumbnail": "",
+          "uploadDate": "2020-02-02"
+        }
+
+      },
+      "optional": {
+        "nutrition": {
+          "@type": "NutritionInformation",
+          "calories": "270 calories"
+        }
+      },
+      "templateVars": {
+        "@context": "https://schema.org/",
+        "@type": "Recipe",
+        "author": {
+          "@type": "Person"
+        },
+        "datePublished": "handlebars helper"
+      }
+    }
+  ]
+}

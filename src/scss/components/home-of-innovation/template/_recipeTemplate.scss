@@ -1,0 +1,65 @@
+.hoiTemplate {
+
+  .hoiKv {
+    position: relative;
+  }
+
+  .hoiKv__Components {
+    position: absolute;
+    bottom: 0;
+    max-width: 60%;
+
+    h1 {
+      margin: 0;
+      font-size: 7vw;
+    }
+  }
+
+  .hoiTemplate__wrapper {
+    display: flex;
+
+    h2 {
+      font-size: 3.25vw;
+      margin: 0 0 calc(#{$spacing-mobile / 6}) 0;
+    }
+    h3 {
+      font-size: 2.5vw;
+    }
+  }
+
+  .hoiTemplate__section {
+    margin-bottom: $spacing-mobile;
+    background: rgba(255,255,255,0.025);
+    border-left: 1px solid rgba(255,255,255,0.05);
+    padding: calc(#{$spacing-mobile / 2});
+  }
+
+  .hoiTemplate__sidebar {
+    width: 33%;
+    padding: $spacing-mobile;
+  }
+
+  .hoiTemplate__body {
+    width: 66%;
+    padding: $spacing-mobile;
+  }
+
+}
+
+.hoiTemplate--recipe {
+
+  .hoiTemplate__body {
+    h3 {
+      margin: calc(#{$spacing-mobile} / 8) 0 calc(#{$spacing-mobile} / 6) 0;
+    }
+    p, .hoiMedia--image {
+      margin: 0 0 calc(#{$spacing-mobile} / 2) 0;
+    }
+    .hoiMedia--image {
+      height: auto;
+      display: block;
+      max-width: 80%;
+      margin: calc(#{$spacing-mobile} / 2) 0;
+    }
+  }
+}

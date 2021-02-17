@@ -1,9 +1,9 @@
 {
   "title": "Inspire Me: Taking the Director’s Seat with Mike Will",
   "description": "",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/editing-sessions/5_kv.jpg",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/inspire-me/thumbnail.jpg",
   "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/editing-sessions/5_kv.jpg",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/inspire-me/thumbnail.jpg",
   "group": "inspire-me",
   "sort": 1,
   "meta": {
@@ -17,7 +17,7 @@
         "type": "youtube",
         "content": "QktU56JGRrw",
         "poster": "",
-        "alt": "{{creativity|inspire-me|smartphone-telephoto-lens-photography-tips[alt]}}"
+        "alt": ""
       },
       "style": {
         "desktop": "top",
@@ -31,7 +31,7 @@
         {
           "type": "paragraphs",
           "text": [
-            "Welcome to the Inspire Me. A series of tutorials led by industry experts across photography, gaming and travel, designed to upskill and inspire you to dive into new passions.",
+            "Welcome to Inspire Me. A series of tutorials led by industry experts across photography, gaming and travel, designed to upskill and inspire you to dive into new passions.",
             "Returning to the streets of London, UK leading photographer Mike Will explores the extensive camera features of the <a href=\"https://www.samsung.com/uk/smartphones/galaxy-s21-5g/buy/\">Samsung Galaxy S21 Ultra 5G</a>. Guaranteeing the most epic shots of London Bridge, Mike gives a step by step tutorial via the Director's View feature, covering everything from customised camera options, nailing the ultimate set up to using the dual telephoto zoom to switch up the focal lengths."
           ]
         }
