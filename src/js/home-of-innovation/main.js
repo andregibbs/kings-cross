@@ -7,13 +7,11 @@ import 'whatwg-fetch';
 import $ from 'jquery'
 import 'slick-carousel'
 import 'lity'
-import lottie from 'lottie-web'
 
 // loading via html tags caused the slick initialization to vanish
 // multiple jquery versions loaded
 // use $j to avoid external conflicts
 window.$j = $
-window.lottie = lottie // maybe move to required scripts (kxNav)
 
 import HOIGallery from './hoiGallery';
 import HOIShare from './hoiShare';
@@ -24,10 +22,7 @@ import HOIDynamicLinkList from './hoiDynamicLinkList';
 import HOIDynamicGroupLand from './hoiDynamicGroupLand';
 import HOILinkListHoverManager from './hoiLinkListHoverScroll'
 import { createYoutubeInstance, loadYoutubeAPI } from './utils';
-<<<<<<< HEAD
 import '../util/GATracking.js'
-=======
->>>>>>> updatess to server, fetching local content
 
 import FindKX from '../components/findKX';
 import KXNav from '../components/common/kxNav'
@@ -47,10 +42,10 @@ function init() {
     .then(() => {
 
       // init hoi search (will be present in either nav or in page with a component)
-      new KXNav()
+      // new KXNav()
 
       // init surveys
-      new KXSurvey();
+      // new KXSurvey();
 
       // init sharing
       HOIShare();
@@ -59,7 +54,7 @@ function init() {
       HOIYoutubeLiveChat()
 
       // fetch dynamic opening times
-      new FindKX()
+      // new FindKX()
 
       new HOILinkListHoverManager()
 
