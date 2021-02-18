@@ -31,9 +31,7 @@ function trackScroll() {
     let currentSegment = percent - (percent % 25)
     if (lastSegment != currentSegment) {
       lastSegment = currentSegment
-      trackEvent('Scroll Event', 'Scroll Percentage', 'Update', {
-        eventValue: currentSegment
-      })
+      trackEvent('Scroll Event', 'Scroll Percentage', currentSegment)
     }
   }
 

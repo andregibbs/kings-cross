@@ -58,6 +58,7 @@ function homeKV() {
     let body = document.querySelector('body').getBoundingClientRect()
     let header = document.querySelector('.homeKV__Header').getBoundingClientRect()
     let nav = document.querySelector('.homeKV__Nav').getBoundingClientRect()
+    let map = document.querySelector('.homeKV__Map').getBoundingClientRect()
     return {
       body: {
         top: body.top
@@ -68,6 +69,9 @@ function homeKV() {
       nav: {
         height: nav.height,
         top: nav.top
+      },
+      map: {
+        height: map.height
       },
       innerHeight: window.innerHeight,
       innerWidth: window.innerWidth
@@ -204,7 +208,7 @@ function homeKV() {
         scroll: (rects.nav.top - rects.body.top) - ((rects.innerHeight - rects.nav.height) / 2) - (rects.innerHeight / 4),
         easing: easing.easeOutCirc, // easing to use
         values: {
-          y: (rects.header.height / 2) + (rects.nav.height / 5),
+          y: (rects.header.height / 2) + rects.map.height,
         }
       }
     ]

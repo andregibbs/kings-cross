@@ -1,5 +1,8 @@
 // think this file is being loaded from gulp via the partials template glob
 
+// todo, include opengraph stuff
+// maybe validate it
+
 var fs = require("fs")
 
 module.exports.register = function (Handlebars) {
