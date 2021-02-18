@@ -14,10 +14,7 @@ import 'lity'
 import KXNav from './components/common/KXNav'
 import KXSurvey from './components/common/kxSurvey'
 import FindKX from './components/findKX'
-<<<<<<< HEAD
 import './util/GATracking.js'
-=======
->>>>>>> add dashboard readme, only load dashboard when automated flag in config is set to true
 
 function Bootstrap() {
   new KXNav()
