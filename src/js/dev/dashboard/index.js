@@ -4,7 +4,7 @@ const Handlebars = require("hbsfy/runtime");
 const DashboardTemplate = require('./template.hbs');
 
 const API = 'http://localhost:3030'
-const target = document.body
+const target = document.body // appending outside of cheil-static so its not scraped
 
 class DevDashboard {
   constructor() {

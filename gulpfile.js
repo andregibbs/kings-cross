@@ -24,6 +24,7 @@ var gulpif = require('gulp-if');
 var concat = require('gulp-concat');
 var merge = require('merge-stream');
 var glob = require('glob');
+var nodemon = require('gulp-nodemon')
 
 var prompt = require('prompt');
 var hbsfy = require('hbsfy')
@@ -794,12 +795,21 @@ gulp.task('kx:dashboard:watch', () => {
   ], ['kx:dashboard:scraper'])
 })
 
+gulp.task('kx:dashboard:server', (done) => {
+
+  nodemon({
+    script: config.SRC_FOLDER + '/js/dev/dashboard/server.js',
+    done: done
+  })
+
+})
+
 // dashboard
 // add node server start script
-gulp.task('kx:dashboard', ['kx:dashboard:scraper', 'kx:dashboard:ui', 'kx:dashboard:watch'])
+gulp.task('kx:dashboard', ['kx:dashboard:server', 'kx:dashboard:scraper', 'kx:dashboard:ui', 'kx:dashboard:watch'])
 
 // Main HOI tasks
-gulp.task('hoi-staging', ['home-of-innovation-scss', 'home-of-innovation-build', 'home-of-innovation-js', 'home-of-innovation-watch'])
+//gulp.task('hoi-staging', ['home-of-innovation-scss', 'home-of-innovation-build', 'home-of-innovation-js', 'home-of-innovation-watch'])
 gulp.task('hoi-dev', ['kx:dashboard', 'home-of-innovation-scss', 'home-of-innovation-build', 'home-of-innovation-js', 'home-of-innovation-watch'])
 
 // Main KX tasks

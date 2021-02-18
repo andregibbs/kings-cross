@@ -241,7 +241,7 @@ cheillondon.scraper = (function() {
 			$(scripts).each(function() {
 
 
-				if (this.type && (this.type == 'text/x-handlebars-template' || this.type == 'application/ld+json') {
+				if (this.type && (this.type == 'text/x-handlebars-template' || this.type == 'application/ld+json')) {
 					main.doLog('EXCLUDING TEMPLATE - ' + this.type + ' ' + this.id);
 				}
 				else {
@@ -493,11 +493,12 @@ cheillondon.scraper = (function() {
 		},
 
 		loadHtmlAndCss: function() {
-		  var myContentDiv = $('#' + main.kdContentDivId);
+		  // var myContentDiv = $('#' + main.kdContentDivId);
 		  // myContentDiv.html('<pre>' + main.htmlEncode(main.cheilStaticsDetail[$('.csindex.selected').index()].aemCodeToPaste) + '</pre>');
       // main.scrapedHTML = main.htmlEncode(main.cheilStaticsDetail[0].aemCodeToPaste)
-      var scrapeEl = document.createElement('div')
+      // var scrapeEl = document.createElement('div')
       // scrapeEl.innerHTML = main.cheilStaticsDetail[0].aemCodeToPaste
+      console.log('load html')
       main.scrapedHTML = main.cheilStaticsDetail[0].aemCodeToPaste
 		},
 
@@ -508,6 +509,7 @@ cheillondon.scraper = (function() {
       // var x = $("div").html('<pre>' + main.htmlEncode(main.cheilStaticsDetail[0].jsCodeToPaste) + '</pre>')
       // var scrapeEl = document.createElement('div')
       // scrapeEl.innerHTML = main.cheilStaticsDetail[0].jsCodeToPaste
+      console.log('load js')
       main.scrapedJS = main.cheilStaticsDetail[0].jsCodeToPaste
 		},
 

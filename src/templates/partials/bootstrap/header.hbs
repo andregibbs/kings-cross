@@ -15,4 +15,9 @@
   <!--#include virtual="/uk/aem/header-pdp.html"-->
 {{/if}}
 
-<script src="/kx-dashboard-ui.js" defer></script>
+
+<!-- if home of innovation page config has automated key set -->
+{{#if automated}}
+<!-- dashboard ui included here outside of cheil static -->
+  <script src="/kx-dashboard-ui.js" defer></script>
+{{/if}}

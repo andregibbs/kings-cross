@@ -1,5 +1,6 @@
 {
   "title": "Deploy Test",
+  "automated": true,
   "description": "Page for Key visual tests",
   "image": "https://via.placeholder.com/1440x900.png?text=image%20(1440x900)",
   "thumb": "https://via.placeholder.com/300x300.png?text=thumb%20(300x300)",
