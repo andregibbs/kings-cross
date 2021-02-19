@@ -7,11 +7,13 @@ import 'whatwg-fetch';
 import $ from 'jquery'
 import 'slick-carousel'
 import 'lity'
+import lottie from 'lottie-web'
 
 // loading via html tags caused the slick initialization to vanish
 // multiple jquery versions loaded
 // use $j to avoid external conflicts
 window.$j = $
+window.lottie = lottie
 
 import HOIGallery from './hoiGallery';
 import HOIShare from './hoiShare';
@@ -42,10 +44,10 @@ function init() {
     .then(() => {
 
       // init hoi search (will be present in either nav or in page with a component)
-      // new KXNav()
+      new KXNav()
 
       // init surveys
-      // new KXSurvey();
+      new KXSurvey();
 
       // init sharing
       HOIShare();

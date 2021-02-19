@@ -6,6 +6,7 @@
   "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/entertainment/game-dev-london-podcast/KX-content-hub-thumbs-game-day-podcast-1.jpg",
   "group": "game-dev-london-podcast",
   "sort": 1,
+  "automated": true,
   "meta": {
     "icon": "audio",
     "tags": []

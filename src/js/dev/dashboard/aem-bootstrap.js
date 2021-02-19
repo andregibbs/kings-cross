@@ -17,7 +17,7 @@ function KXBootstrap() {
   var kxb_jsPath = `${kxb_base}${kxb_page}${kxb_qa}.js`
   var kxb_htmlPath = `${kxb_base}${kxb_page}${kxb_qa}.html`
 
-  console.log(kxb_jsPath, kxb_htmlPath)
+  // console.log(kxb_jsPath, kxb_htmlPath)
 
   var kxb_target = document.querySelector('#deploy-target')
 
@@ -29,11 +29,18 @@ function KXBootstrap() {
   //   headers: fetchHeaders
   // };
 
+  function bootstrapFailed() {
+    console.log('create fallback redirect here')
+  }
+
   function insertHtml(callback) {
     console.log('insert html')
     fetch(kxb_htmlPath)
       .then(data => {
         // check for success
+        if (data.status !== 200) {
+          return bootstrapFailed()
+        }
         return data.text()
       })
       .then(html => {
@@ -43,11 +50,18 @@ function KXBootstrap() {
   }
 
   function insertJS(callback) {
-    console.log('insert js')
-    var kxb_script = document.createElement('script')
-    kxb_script.src = kxb_jsPath
-    document.body.appendChild(kxb_script)
-    callback()
+    // using fetch to check existence of file
+    fetch(kxb_jsPath)
+      .then(data => {
+        if (data.status !== 200) {
+          return bootstrapFailed()
+        }
+        console.log('insert js')
+        var kxb_script = document.createElement('script')
+        kxb_script.src = kxb_jsPath
+        document.body.appendChild(kxb_script)
+        callback()
+      })
   }
 
   insertHtml(function(){

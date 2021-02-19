@@ -5,13 +5,15 @@ import KXEnv from './KXEnv'
 
 let trackingInitiated = false;
 
-if (typeof ga !== "undefined" && !trackingInitiated && !KXEnv.local) {
-  // console.log('ga created', TRACKING_ID)
+// initiate ga
+if (typeof ga !== "undefined" && !trackingInitiated) {
+  console.log('ga created', TRACKING_ID)
   trackingInitiated = true
   ga("create", TRACKING_ID, { cookieExpires: "33696000", cookieDomain: "auto" });
   trackScroll()
 }
 
+// scroll tracking
 function trackScroll() {
 
   const segmentPercentage = 25 // trigger after each %
@@ -42,9 +44,9 @@ function trackScroll() {
 
 }
 
+// main track event function
 export function trackEvent(category, action, label, customKeys) {
-  // thought you could attach custom object keys in customKeys args
-  // ga may only accept and object with the key { eventValue: [[integer]] )
+  // custom keys should accept custom dimensions and the eventValue key if needed
   const dataLayer = window.dataLayer || window.uk_dataLayer || []
 
   // check for dataLayer and argss
@@ -62,14 +64,15 @@ export function trackEvent(category, action, label, customKeys) {
     }
 
     if (typeof ga !== "undefined" && !KXEnv.local) {
-      console.log('ga', trackObj)
+      // console.log('ga', trackObj)
       ga("send", trackObj);
     }
 
-    // disabled until tested
     if (KXEnv.local) {
       console.log('trackObj', trackObj)
     }
+
+    // disabled until tested
     // dataLayer.push(trackObj)
 
   }

@@ -799,6 +799,7 @@ gulp.task('kx:dashboard:server', (done) => {
 
   nodemon({
     script: config.SRC_FOLDER + '/js/dev/dashboard/server.js',
+    watch: [config.SRC_FOLDER + '/js/dev/dashboard/server.js'],
     done: done
   })
 
@@ -806,7 +807,7 @@ gulp.task('kx:dashboard:server', (done) => {
 
 // dashboard
 // add node server start script
-gulp.task('kx:dashboard', ['kx:dashboard:server', 'kx:dashboard:scraper', 'kx:dashboard:ui', 'kx:dashboard:watch'])
+gulp.task('kx:dashboard', ['kx:dashboard:scraper', 'kx:dashboard:ui', 'kx:dashboard:watch'])
 
 // Main HOI tasks
 //gulp.task('hoi-staging', ['home-of-innovation-scss', 'home-of-innovation-build', 'home-of-innovation-js', 'home-of-innovation-watch'])

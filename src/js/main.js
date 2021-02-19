@@ -25,11 +25,13 @@ const $ = require('jquery')
 
 import 'slick-carousel'
 import 'lity'
+import lottie from 'lottie-web'
 
 // loading via html tags caused the slick initialization to vanish
 // multiple jquery versions loaded
 // use $j to avoid external conflicts\
 window.$j = $
+window.lottie = lottie
 
 /* Components */
 // import nav from "./components/nav";
