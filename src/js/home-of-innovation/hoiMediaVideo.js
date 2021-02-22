@@ -8,12 +8,12 @@ const HOI_MEDIA_STATE = {
 }
 
 const TRACKING = {
-  CATEGORY: 'Media Event',
-  ACTION_PLAY: 'Play',
-  ACTION_UPDATE: 'Progress',
-  ACTION_PAUSE: 'Pause',
-  ACTION_ENDED: 'Ended',
-  ACTION_SEEKED: 'Seek'
+  // CATEGORY: 'Media Event',
+  CATEGORY_PLAY: 'Media Play',
+  CATEGORY_UPDATE: 'Media Progress',
+  CATEGORY_PAUSE: 'Media Pause',
+  CATEGORY_ENDED: 'Media Ended',
+  CATEGORY_SEEKED: 'Media Seek'
 }
 
 // Not just for video (audio too)
@@ -83,30 +83,24 @@ export default class HOIMediaVideo {
     this.media.addEventListener('pause', (e) => {
       if (!this.media.seeking) {
         this.setState(HOI_MEDIA_STATE.play);
-        trackEvent(TRACKING.CATEGORY, TRACKING.ACTION_PAUSE, this.fileName, {
-          eventValue: Math.floor(this.getMediaPositionProgress() * 100)
-        })
+        trackEvent(TRACKING.CATEGORY_PAUSE, this.getPlaybackPercentageString(), this.fileName)
       }
     })
 
     this.media.addEventListener('timeupdate', e => {
-      this.trackProgress(TRACKING.CATEGORY, TRACKING.ACTION_ENDED, this.fileName)
+      this.trackProgress()
     })
 
     this.media.addEventListener('play', e => {
       if (!this.mediaSeeked) {
-        trackEvent(TRACKING.CATEGORY, TRACKING.ACTION_PLAY, this.fileName, {
-          eventValue: Math.floor(this.getMediaPositionProgress() * 100)
-        })
+        trackEvent(TRACKING.CATEGORY_PLAY, this.getPlaybackPercentageString(), this.fileName)
       } else {
-        trackEvent(TRACKING.CATEGORY, TRACKING.ACTION_SEEKED, this.fileName, {
-          eventValue: Math.floor(this.getMediaPositionProgress() * 100)
-        })
+        trackEvent(TRACKING.CATEGORY_SEEKED, this.getPlaybackPercentageString(), this.fileName)
       }
     })
 
     this.media.addEventListener('ended', e => {
-      trackEvent(TRACKING.CATEGORY, TRACKING.ACTION_ENDED, this.fileName)
+      trackEvent(TRACKING.CATEGORY_ENDED, 'Ended', this.fileName)
     })
 
     this.media.addEventListener('playing', (e) => {
@@ -126,6 +120,10 @@ export default class HOIMediaVideo {
 
   }
 
+  getPlaybackPercentageString() {
+    return`${Math.floor(this.getMediaPositionProgress() * 100)}%`
+  }
+
   getMediaPositionProgress() {
     const {duration, currentTime, paused} = this.media
     return currentTime / duration
@@ -143,9 +141,7 @@ export default class HOIMediaVideo {
       // want to trigger if value doesnt equal the last, will capture forward and backwards scrubbing
       if (progress !== this.lastMediaProgress) {
         // console.log('progress update', progress)
-        trackEvent(TRACKING.CATEGORY, TRACKING.ACTION_UPDATE, this.fileName, {
-          eventValue: progress
-        })
+        trackEvent(TRACKING.CATEGORY_UPDATE, `${progress}%`, this.fileName)
       }
       this.lastMediaProgress = progress
     }

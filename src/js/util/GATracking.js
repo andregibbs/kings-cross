@@ -7,7 +7,7 @@ let trackingInitiated = false;
 
 // initiate ga
 if (typeof ga !== "undefined" && !trackingInitiated) {
-  console.log('ga created', TRACKING_ID)
+  // console.log('ga created', TRACKING_ID)
   trackingInitiated = true
   ga("create", TRACKING_ID, { cookieExpires: "33696000", cookieDomain: "auto" });
   trackScroll()
@@ -50,7 +50,7 @@ export function trackEvent(category, action, label, customKeys) {
   const dataLayer = window.dataLayer || window.uk_dataLayer || []
 
   // check for dataLayer and argss
-  if (dataLayer && !!action && !!category) {
+  if (dataLayer && !!category) {
 
     let trackObj = {
       hitType: 'event',

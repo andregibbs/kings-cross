@@ -12,10 +12,9 @@ Includes percentage playback progress value [0-100] at time of event
 
 ```
 {
-  eventAction: "Play"
-  eventCategory: "Media Event"
+  eventAction: "[0-100]%"
+  eventCategory: "Media Play"
   eventLabel: MEDIA_FILE_NAME
-  progress: [0-100]
 }
 ```
 
@@ -29,10 +28,9 @@ Includes percentage playback progress value 0-100] at time of event
 
 ```
 {
-  eventAction: "Pause"
-  eventCategory: "Media Event"
+  eventAction: [0-100]%
+  eventCategory: "Media Pause"
   eventLabel: MEDIA_FILE_NAME
-  progress: [0-100]
 }
 ```
 
@@ -46,10 +44,9 @@ Includes percentage playback progress value of every 10% interval passed
 
 ```
 {
-  eventAction: "Progress"
-  eventCategory: "Media Event"
+  eventAction: [0,10,20,30,40,50,60,70,80,90,100]%
+  eventCategory: "Media Progress"
   eventLabel: MEDIA_FILE_NAME
-  progress: [0,10,20,30,40,50,60,70,80,90,100]
 }
 ```
 
@@ -63,10 +60,9 @@ Includes percentage playback progress value of the playback position seeked to
 
 ```
 {
-  eventAction: "Seek"
-  eventCategory: "Media Event"
+  eventAction: [0-100]%
+  eventCategory: "Media Seek"
   eventLabel: MEDIA_FILE_NAME
-  progress: [0-100]
 }
 ```
 
@@ -78,8 +74,8 @@ Will fire when playback completes
 
 ```
 {
-  eventAction: "Ended"
-  eventCategory: "Media Event"
+  eventAction: 'Ended'
+  eventCategory: "Media Ended"
   eventLabel: MEDIA_FILE_NAME
 }
 ```
