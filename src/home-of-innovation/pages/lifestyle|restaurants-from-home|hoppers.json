@@ -14,9 +14,9 @@
     {
       "type": "kv",
       "media": {
-        "type": "image",
-        "_content": "5QCHaB6jL0A",
-        "content": "{{lifestyle|restaurants-from-home|hoppers[image]}}",
+        "type": "youtube",
+        "content": "ShOAv-ApWBI",
+        "poster": "{{lifestyle|restaurants-from-home|hoppers[image]}}",
         "alt": ""
       },
       "style": {
