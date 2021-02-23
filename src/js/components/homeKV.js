@@ -195,13 +195,27 @@ function homeKV() {
         easing: easing.linear, // easing to use
         values: {
           y: -(rects.innerHeight / 16),
+          opacity: 1
         }
       },
       {
-        scroll: rects.innerHeight / 4, // start scroll position of step,
+        scroll: rects.header.height * 0.5, // start scroll position of step,
+        // scroll: rects.innerHeight / 4, // start scroll position of step,
         easing: easing.easeOutCirc, // easing to use
         values: {
-          y: -(rects.innerHeight / 16),
+          y: rects.header.height * 0.5,
+          opacity: 0
+          // y: -(rects.innerHeight / 16),
+        }
+      },
+      {
+        scroll: rects.nav.top - (rects.map.height / 2), // start scroll position of step,
+        // scroll: rects.innerHeight / 4, // start scroll position of step,
+        easing: easing.easeOutCirc, // easing to use
+        values: {
+          y: rects.header.height,
+          opacity: 0
+          // y: -(rects.innerHeight / 16),
         }
       },
       {
@@ -209,6 +223,7 @@ function homeKV() {
         easing: easing.easeOutCirc, // easing to use
         values: {
           y: (rects.header.height / 2) + rects.map.height,
+          opacity: 1,
         }
       }
     ]
@@ -349,6 +364,7 @@ function homeKV() {
     // const navItemHeaderValues = processSteps(navItemHeaderSteps, scroll)
 
     homeKV_Title.style.transform = `translate(0 ,${headerTitleValues['y']}px)`
+    homeKV_Title.style.opacity = headerTitleValues.opacity
     straplineOne.style.opacity = strapLineValues.first_opacity
     straplineTwo.style.opacity = strapLineValues.second_opacity
     scrollAnim.style.opacity = strapLineValues.first_opacity
