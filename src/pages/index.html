@@ -1,47 +1,25 @@
-{{#if config.staging}}
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
-  <body>
-{{else}}
-  <!--#include virtual="/uk/aem/header-pdp.html"-->
-{{/if}}
+{{>bootstrap/header}}
 
 <section class="cheil-static homePage">
 
-	{{>stylesheet}}
-
-	{{>components/common/kxNav/main }}
+	{{>bootstrap/header-components page="home"}}
 
   {{>components/home/homeKV }}
 
-		<section class="section copy">
-				<div class="section__inner">
-					<div class="copy__container">
-							<a ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:general support_discover-more"
-							data-omni-type="microsite" data-omni="uk:kings-cross:home:discover-more"
-							href="/{{ config.site }}{{ config.subfolder }}/discover" class="button btn btn--primary btn--primary--coral">DISCOVER MORE</a>
-					</div>
+  <div class="home3DMap">
+    <a class="home3DMap__close">&#10005</a>
+  </div>
+
+	<section class="section copy">
+			<div class="section__inner">
+				<div class="copy__container">
+						<a ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:general support_discover-more"
+						data-omni-type="microsite" data-omni="uk:kings-cross:home:discover-more"
+						href="/{{ config.site }}{{ config.subfolder }}/discover" class="button btn btn--primary btn--primary--coral">DISCOVER MORE</a>
 				</div>
-	  </section>
-
-{{#ifCond @root.config.closed false}}
-	<section class="section relatedEvents">
-		<div class="section__inner">
-			<div class="relatedEvents__header">
-				<h2>Upcoming Events</h2>
-				<h2 class="relatedEvents__header__see">See All Events</h2>
 			</div>
+  </section>
 
-			<div class="relatedEvents__container">
-				<!-- To be populated with JS -->
-			</div>
-		</div>
-	</section>
-{{/ifCond}}
 	<section class="section kx-video">
 		<div class="section__inner">
 			<video class="video__main" preload="metadata" playsinline controls
@@ -89,7 +67,7 @@
     </div>
   </section> -->
 
-	{{>components/passionPoints }}
+	<!-- {{>components/passionPoints }} -->
 
 	<section class="section welcome__outer">
 		<div class="section__inner">
@@ -108,21 +86,11 @@
   <a id="#precautions"></a>
   {{>components/kxClosed variation="home" }}
 
-	{{>components/common/findKx }}
+	{{>bootstrap/footer-components page="home"}}
 
-	{{>components/socialMedia }}
-
-	<!-- {{>components/loadingScreen }} -->
-
-	{{>templateScripts/event/eventTile }}
-
-	{{>scripts }}
+  <!-- {{>components/loadingScreen }} -->
+	<!-- {{>templateScripts/event/eventTile }} -->
 
 </section>
 
-{{#if config.staging}}
-  </body>
-</html>
-{{else}}
-<!--#include virtual="/uk/aem/footer-pdp.html"-->
-{{/if}}
+{{>bootstrap/footer}}

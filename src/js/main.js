@@ -53,7 +53,7 @@ import lottieAnim from "./components/lottieAnim";
 import loadingScreen from "./components/loadingScreen";
 import getParam from "./components/getParam";
 import school from "./components/school";
-import homeKV from './components/homeKV';
+// import homeKV from './components/homeKV';
 import KXNav from './components/common/kxNav'
 import KXSurvey from './components/common/kxSurvey'
 

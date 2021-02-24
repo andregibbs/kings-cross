@@ -128,7 +128,7 @@ function homeKV() {
         scroll: 0, // start scroll position of step,
         easing: easing.easeOutCubic, // easing to use
         values: {
-          y: -((rects.header.height * 0.2) + (rects.nav.height / 2)), // values to transform
+          y: -((rects.header.height * 0.2) + rects.map.height + (rects.nav.height / 2)), // values to transform
           x: -(Math.min(1440, rects.innerWidth) / 4),
           rotate: 35,
           scale: USE_PNG ? 1 : 2.5,
@@ -209,7 +209,7 @@ function homeKV() {
         }
       },
       {
-        scroll: rects.nav.top - (rects.map.height / 2), // start scroll position of step,
+        scroll: rects.header.height, // start scroll position of step,
         // scroll: rects.innerHeight / 4, // start scroll position of step,
         easing: easing.easeOutCirc, // easing to use
         values: {
@@ -222,7 +222,7 @@ function homeKV() {
         scroll: (rects.nav.top - rects.body.top) - ((rects.innerHeight - rects.nav.height) / 2) - (rects.innerHeight / 4),
         easing: easing.easeOutCirc, // easing to use
         values: {
-          y: (rects.header.height / 2) + rects.map.height,
+          y: (rects.header.height / 2) + rects.map.height + (rects.nav.height * 0.2),
           opacity: 1,
         }
       }

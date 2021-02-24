@@ -1,26 +1,42 @@
 import '../../bootstrap.js'
 import 'slick-carousel'
 
-function KXtras() {
-  new HOILinkListHoverManager() // init link list manager for hoiLists
+import homeKV from './homeKV';
 
-  // fetchData(function (allEvents) {
-  calendar("https://bookings.qudini.com/booking-widget/booker/slots/IZ0LYUJL6B0/4375/68391/0", "appointment");
-  // });
+function Home() {
+  // reset scroll
+  window.scrollTo(0,0)
+  setTimeout(homeKV, 10);
 
-  const supportBooking = support()
+  const mapEl = document.querySelector('.home3DMap')
+  const mapSrc = "https://my.matterport.com/show/?m=SmPK9hQkhHi&play=1"
 
-  document.querySelector('#booking-launch').addEventListener('click', () => {
-    supportBooking.startJourney("oneToOne")
+  function createMapFrame() {
+    const mapFrame = document.createElement('iframe')
+    mapFrame.id = "matterport-frame"
+    mapFrame.width = "100%"
+    mapFrame.height = "100%"
+    mapFrame.frameBorder = "0"
+    mapFrame.setAttribute('allowfullscreen', 'xr-spatial-tracking')
+    mapFrame.src = mapSrc
+    return mapFrame
+  }
+
+  document.querySelector('#launch-map').addEventListener('click', () => {
+    // show modal
+    mapEl.setAttribute('open','')
+    mapEl.appendChild(createMapFrame())
   })
 
-  $j('.KXtras__carousel').slick({
-    dots: true
+  document.querySelector('.home3DMap__close').addEventListener('click', () => {
+    // hide modal
+    mapEl.removeAttribute('open')
+    mapEl.querySelector('#matterport-frame').outerHTML = ""
   })
 }
 
 if (document.readyState === "complete" || (document.readyState !== "loading" && !document.documentElement.doScroll)) {
-  KXtras()
+  Home()
 } else {
-  document.addEventListener("DOMContentLoaded", KXtras)
+  document.addEventListener("DOMContentLoaded", Home)
 }

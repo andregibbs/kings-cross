@@ -101,7 +101,7 @@
     margin-bottom: 1.5rem;
   }
   .btn {
-    margin: 0 auto 1.5rem;
+    margin: 0 auto 2rem;
   }
   &:after {
     content: '';
@@ -109,17 +109,26 @@
     height: 300px;
   }
   video {
-    // height: 380px;
     position: relative;
     display: block;
     margin: 0 auto;
     width: 727px;
   }
-
   @media screen and (max-width: $mobile) {
     video {
-      width: 100%;
+      width: calc(100% - 2rem);
       height: auto;
+    }
+    h2 {
+      font-size: em(36);
+      margin-bottom: 0.5rem;
+    }
+    p {
+      font-size: em(22);
+      margin-bottom: 0.75rem;
+    }
+    .btn {
+      margin: 0 auto 1rem;
     }
   }
 }
