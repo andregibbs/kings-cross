@@ -27,6 +27,13 @@ class DevDashboard {
         })
       })
       .then(this.addEvents.bind(this))
+      .catch(e => {
+        alert(`DevDashboard: Error Initialising
+
+This page is setup to allow dynamic deployments and requires the local development server for deployments.
+
+Use 'gulp kx:dashboard-server' to start and retry`)
+      })
   }
 
   addEvents() {

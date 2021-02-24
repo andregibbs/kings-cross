@@ -795,19 +795,18 @@ gulp.task('kx:dashboard:watch', () => {
   ], ['kx:dashboard:scraper'])
 })
 
+// Tassk
 gulp.task('kx:dashboard:server', (done) => {
-
   nodemon({
     script: config.SRC_FOLDER + '/js/dev/dashboard/server.js',
     watch: [config.SRC_FOLDER + '/js/dev/dashboard/server.js'],
     done: done
   })
-
 })
 
 // dashboard
-// add node server start script
 gulp.task('kx:dashboard', ['kx:dashboard:scraper', 'kx:dashboard:ui', 'kx:dashboard:watch'])
+gulp.task('kx:dashboard-server', ['kx:dashboard:server'])
 
 // Main HOI tasks
 //gulp.task('hoi-staging', ['home-of-innovation-scss', 'home-of-innovation-build', 'home-of-innovation-js', 'home-of-innovation-watch'])
@@ -817,11 +816,10 @@ gulp.task('hoi-dev', ['kx:dashboard', 'home-of-innovation-scss', 'home-of-innova
 gulp.task('staging', ['watch', '_staging', 'kx:js'])
 gulp.task('default', ['watch', 'development', 'kx:js'])
 
+// below not used.
 gulp.task('development', sequence('copy-assets', 'html', 'scss', 'scss-page' ) )
 gulp.task('_staging', sequence('copy-assets', 'html', 'scss', 'scss-page' ) )
-
 gulp.task('production', sequence('copy-assets', 'scss', 'buildJS', 'html') )
-
 
 // export hoi templates script for deploying dynamic data
 exports.HOITemplates = HOITemplates
