@@ -38,7 +38,7 @@
     margin-bottom: em(4);
   }
   p {
-    font-size: em(18);
+    font-size: em(22);
     span {
       margin-top: em(4);
       font-weight: bold;
@@ -97,11 +97,12 @@
     margin-bottom: 1rem;
   }
   p {
-    font-size: em(18);
+    font-size: em(22);
     margin-bottom: 1.5rem;
   }
   .btn {
     margin: 0 auto 2rem;
+    width: 20rem;
   }
   &:after {
     content: '';
@@ -193,7 +194,7 @@
 
 .homeKV__NavItemBody__Desc {
   display: none;
-  font-size: em(14);
+  font-size: em(22);
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 10px;

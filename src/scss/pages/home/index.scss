@@ -277,6 +277,9 @@
       @media screen and (max-width: $mobile) {
         align-items: center;
       }
+      &__desc {
+        font-size: em(22) !important;
+      }
     }
     &__title {
       margin-top: 0 !important;
@@ -287,6 +290,15 @@
       padding-top: 0 !important;
       position: relative;
       background: transparent;
+    }
+  }
+
+  .kxClosed {
+    p {
+      font-size: em(22);
+      a {
+        font-size: 1em;
+      }
     }
   }
 

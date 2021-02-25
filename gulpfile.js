@@ -305,7 +305,7 @@ gulp.task('html', function () {
           pageTemplateData
         }
 			}).on('error', (e) => {
-        console.log({e, fileName})
+        console.log({e})
       })
 		)
     // .pipe(htmlmin())

@@ -1,0 +1,29 @@
+{
+  "hubList": [
+    {
+      "title": "Editing Sessions",
+      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/editing-sessions/gadgetsboy.jpg",
+      "url": "/uk/explore/kings-cross/creativity/editing-sessions"
+    },
+    {
+      "title": "Taste of tomorrow",
+      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/01_Samsung_Website_TOT_HomepageHERO_400x255_V1.png",
+      "url": "/uk/explore/kings-cross/innovation/taste-of-tomorrow"
+    },
+    {
+      "title": "Liveshopping",
+      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/400x255_2.jpg",
+      "url": "/uk/explore/kings-cross/innovation/samsung-people-live"
+    },
+    {
+      "title": "Next level gaming",
+      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/next-level-gaming/Samsung_NextLevel_255x255_V1.jpg",
+      "url": "/uk/explore/kings-cross/innovation/next-level-gaming"
+    },
+    {
+      "title": "5G Podcast",
+      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/KX-landing-KV-static-PC.jpg",
+      "url": "/uk/explore/kings-cross/innovation/5g-podcast"
+    }
+  ]
+}

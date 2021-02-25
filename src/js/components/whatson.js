@@ -117,6 +117,7 @@ export default function whatson(events) {
 	});
 
 	$j('.eventFilter__header__toggle').click(function () {
+    console.log('assssdd')
 		$j(this).find('a').toggleClass('unfold');
 
 		if (this.getElementsByTagName("a")[0].classList.contains("unfold")) {

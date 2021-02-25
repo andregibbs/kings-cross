@@ -1,29 +1,13 @@
-{{#if config.staging}}
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-  </head>
-  <body>
-{{else}}
-  <!--#include virtual="/uk/aem/header-pdp.html"-->
-
-
-
-{{/if}}
+{{>bootstrap/header}}
 
 <section class="cheil-static">
 
-  {{>stylesheet}}
+  {{>bootstrap/header-components page="whats-on"}}
+
   <!-- CSS for dataPicker -->
   <!-- <link rel="stylesheet" href="/{{ config.site }}{{ config.subfolder }}/css/librarys/jquery-ui-1.12.1.custom/jquery-ui.min.css">
 		<link rel="stylesheet" href="/{{ config.site }}{{ config.subfolder }}/css/librarys/jquery-ui-1.12.1.custom/jquery-ui.structure.min.css">
 		<link rel="stylesheet" href="/{{ config.site }}{{ config.subfolder }}/css/librarys/jquery-ui-1.12.1.custom/jquery-ui.theme.min.css"> -->
-
-  {{>components/common/kxNav/main }}
 
   <section class="section whatsOn__kv">
     <div class="section__inner">
@@ -33,6 +17,19 @@
   </section>
 
   {{> components/kxClosed variation="whats-on" }}
+
+  <div class="whatsOn__hubItems">
+  {{#each pageTemplateData.whats_on.hubList}}
+    <a
+      class="whatsOn__hubItem"
+      ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:whats-on:hub-link:{{this.title}}"
+      data-omni-type="microsite" data-omni="kings-cross:whats-on:hub-link:{{this.title}}"
+      href="{{this.url}}">
+      <div class="whatsOn__hubItemImage" style="background-image:url({{this.image}})"></div>
+      <span>{{this.title}}</span>
+    </a>
+  {{/each}}
+  </div>
 
   <section class="section eventFilter">
     <div class="section__inner">
@@ -158,20 +155,11 @@
     </div>
   </section>
 
-  {{>components/common/findKx }}
-
-  {{>components/socialMedia }}
+  {{>bootstrap/footer-components page="whats-on"}}
 
   {{>templateScripts/event/eventTile }}
   {{>templateScripts/slider/homeKv }}
 
-
-  {{>scripts }}
 </section>
 
-{{#if config.staging}}
-  </body>
-</html>
-{{else}}
-<!--#include virtual="/uk/aem/footer-pdp.html"-->
-{{/if}}
+{{>bootstrap/footer}}
