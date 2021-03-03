@@ -47,6 +47,13 @@ function Discover() {
   new DiscoverCommunity()
   // new DiscoverEvents(document.querySelector('.discoverEvents'))
 
+  // if ie
+  if (window.document.documentMode) {
+    // set attribute to apply ie styles
+    document.querySelector('.discoverCommunity').setAttribute('ie','')
+    document.querySelector('.discoverKv').setAttribute('ie','')
+  }
+
 }
 
 if (document.readyState === "complete" || (document.readyState !== "loading" && !document.documentElement.doScroll)) {

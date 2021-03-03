@@ -79,6 +79,10 @@ $transition-duration: 0.5s;
   transition: transform $transition-duration ease-in-out;
 }
 
+.discoverCommunity[ie] .discoverCommunity__item_image {
+  left: 0;
+}
+
 .discoverCommunity__item_image_mobile {
   background-size: cover;
   background-position: center;
@@ -137,7 +141,7 @@ $transition-duration: 0.5s;
   @media screen and (min-width: 1440px) {
     // max-width: calc((1440px * 0.255) - 2rem);
     p.fz24 {
-      font-size: 18px !important; 
+      font-size: 18px !important;
     }
   }
 }

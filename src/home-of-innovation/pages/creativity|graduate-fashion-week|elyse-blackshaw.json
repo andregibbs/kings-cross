@@ -1,9 +1,9 @@
 {
-  "title": "Fashion Illustration with Elyse Blackshaw",
+  "title": "Illustrating on the Samsung Galaxy Tab S7+ | Tips from fashion illustrator Elyse Blackshaw",
   "description": "Join us as Graduate Fashion Foundation and Elyse Blackshaw host an interactive Fashion Illustration Workshop",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/livestreams/Samsung_GraduateFashionWeek_1440x900_Elyse.jpg",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/elyse-blackshaw/Elyse_Blackshaw_square.jpg",
   "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/livestreams/Samsung_GraduateFashionWeek_400x255_Elyse.jpg",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/elyse-blackshaw/Elyse_Blackshaw_square.jpg",
   "group": "graduate-fashion-week",
   "sort": 3,
   "meta": {
@@ -14,19 +14,23 @@
     {
       "type": "kv",
       "media": {
-        "type": "livestream",
-        "content": "4cBXq1SY_Ns",
-        "poster": "{{creativity|graduate-fashion-week|elyse-blackshaw[image]}}",
+        "type": "image",
+        "content": "{{creativity|graduate-fashion-week|elyse-blackshaw[image]}}",
         "alt": ""
       },
       "style": {
-        "desktop": "top",
-        "mobile": "bottom"
+        "desktop": "left",
+        "mobile": "top"
       },
       "components": [
         {
           "type": "headline",
-          "copy": "Fashion Illustration with Elyse Blackshaw"
+          "copy": "Illustrating on the Samsung Galaxy Tab S7+"
+        },
+        {
+          "type": "headline",
+          "copy": "Tips from fashion illustrator Elyse Blackshaw",
+          "level": "2"
         }
       ]
     },
@@ -34,37 +38,139 @@
       "type": "wrapper",
       "components": [
         {
-          "type": "paragraphs",
-          "style": {
-            "large": true
-          },
-          "text": [
-            "During the workshop you will learn more about Elyse’s career and gain top tips on how to create your own fashion illustration.",
-            "Each guest will have the opportunity to put their own skills into practice during the session using the <a href=\"https://www.samsung.com/uk/tablets/galaxy-tab-s7-plus-t970/SM-T970NZNAEUA/buy/\">Galaxy Tab S7</a>.",
-            "This event supports social distancing, in line with government guidelines. Learn more about the precautions we're taking <a href=\"https://www.samsung.com/uk/explore/kings-cross/\">here</a>."
-          ]
-        }
-      ]
-    },
-    {
-      "type": "link-list",
-      "title": "Check out the products used in the workshops here",
-      "items": [
+          "type": "headline",
+          "copy": "1. Get to know your tablet, what apps work for you, and practice your pen control!",
+          "level": "3"
+        },
         {
-          "title": "Galaxy Tab S7",
-          "url": "https://www.samsung.com/uk/tablets/galaxy-tab-s7-plus-t970/SM-T970NZNAEUA/buy/",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/livestreams/Galaxy_Tab_S7_Mystic_Black.jpg"
+          "type": "paragraphs",
+          "text": [
+            "If, like me, you are new to digital drawing, then the <a href=\"https://www.samsung.com/uk/tablets/galaxy-tab-s/galaxy-tab-s7-plus-12-4-inch-mystic-bronze-128gb-wi-fi-sm-t970nznaeua/?cid=UK_PPC_6905841317_FF~Eval:Brand%2BProd_TabS7%2B_KS~BAP_BS~IM_PR~TAB_SB~TABS7_OB~SALES_PK~ROAS_FS~LHQ_MD~W_AI~N_MT~EXA_CA~KEW_paid-cdm&gclid=Cj0KCQiA4feBBhC9ARIsABp_nbUaQMC-k1oVTYZ9qw1FKdi6lF_sHxvEIpSLCEcsF2vKoDFbgg-0nC0aAsJmEALw_wcB&gclsrc=aw.ds#benefits\">Galaxy Tab S7+</a> is a great device to learn and practice, with the S Pen tool that glides over the surface and a diverse range of apps to choose from. As a beginner, you may want to start with the in built ‘Pen Up’ app, where you can familiarise yourself with drawing on a screen and the quick selection tools for colours and pens. If you are used to drawing on paper it could feel a little odd at first, but you’ll quickly fall in love with the sleek ergonomics.  For a more advanced drawing, you may want to download something from the Google Play store, such as Adobe Photoshop Sketch. You may also want to explore which format you hold your tablet in. My preference is always portrait as I draw elongated models."
+          ]
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/elyse-blackshaw/Article_image_1.jpg",
+          "alt": ""
+        },
+
+
+        {
+          "type": "headline",
+          "copy": "2. Experiment!",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "To really get to know the capabilities of your tablet, you should have fun experimenting with the different pen tools available and the variables within them. My visual identity is made up of quick, energetic mark making and lots of vibrant colour, which can be achieved wonderfully on the tablet. I prefer using the Acrylic Brush and the Marker Brush tools, as they reflect real strokes of felt tip pens. I enjoy how responsive the pen tool is and the smooth feel as you glide on the screen. It also has this cool hover marker so you can accurately target your pen on the page, great for adding detail. As a fashion illustrator, the portability of having a tablet and digital pencil case is super convenient when documenting live shows."
+          ]
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/elyse-blackshaw/Article_image_2.jpg",
+          "alt": ""
+        },
+
+        {
+          "type": "headline",
+          "copy": "3. Sketch Layers!",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "For a 2D drawing you can really add depth and dimension using layers. This could be achieved by importing images from your device or creating new sketch layers. As a fashion illustrator, this is great for me as I can scan or photograph images to collage with using the tablet or use an existing template. Using separate layers, you can adjust the opacity and/or copy and paste layers to resize. This is something you cannot do with pen and paper therefore it allows for a more effective working process."
+          ]
+        },
+        {
+          "type": "video",
+          "content": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/elyse-blackshaw/Sketch_layers_video.mp4",
+          "alt": ""
+        },
+
+        {
+          "type": "headline",
+          "copy": "4. Record, document and demonstrate!",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "From the drop-down menu on the tablet, you can easily and quickly access the screen record function. This allows you to record the process of your drawing. It is a great way to review your own techniques alongside demonstrating your unique process to others. I personally draw and work quite quickly, so this is a great function that allows me to clearly document how I work and the tools I use to others in a way that they can stop, pause and re-watch. It also makes great social media content!"
+          ]
+        },
+        {
+          "type": "video",
+          "content": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/elyse-blackshaw/Portrait_video.mp4",
+          "alt": ""
+        },
+
+        {
+          "type": "headline",
+          "copy": "5. Play! ",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "What I love most about working on the Samsung Galaxy Tab S7+ is the freedom to play. It can be quite daunting having to sketch directly on to paper, yet with the tablet there is the safety of knowing you can easily take a step backwards, create a new layer or even a fresh document. In the current climate, we can feel trapped and even bored, yet the ability to draw and play freely on the tablet is something I’m really enjoying."
+          ]
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/elyse-blackshaw/Article_image_3.jpg",
+          "alt": ""
+        },
+
+
+        {
+          "type": "headline",
+          "copy": "My illustration techniques to draw fabric textures…",
+          "level": "3"
+        },
+        {
+          "type": "headline",
+          "copy": "1. Dots",
+          "level": "4"
+        },
+
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/elyse-blackshaw/Article_image_4_dots.jpg",
+          "alt": ""
+        },
+        {
+          "type": "headline",
+          "copy": "2. Dashes",
+          "level": "4"
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/elyse-blackshaw/Article_Image_5_dashes.jpg",
+          "alt": ""
+        },
+        {
+          "type": "headline",
+          "copy": "3. Stripes",
+          "level": "4"
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/elyse-blackshaw/Article_Image_6_stripes.jpg",
+          "alt": ""
+        },
+        {
+          "type": "headline",
+          "copy": "4. Squiggles",
+          "level": "4"
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/elyse-blackshaw/Article_Image_7squiggles.jpg",
+          "alt": ""
         }
       ]
-    },
-    {
-      "type": "group",
-      "dynamic": "episodes",
-      "id": "graduate-fashion-week",
-      "title": "Episodes",
-      "style": {
-        "scroll": true
-      }
     }
   ]
 }

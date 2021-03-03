@@ -238,4 +238,8 @@ $slide-scale: 0.95;
       }
     }
   }
+
+  &[ie] .slick-arrow {
+    display: none;
+  }
 }

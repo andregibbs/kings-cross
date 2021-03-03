@@ -69,7 +69,7 @@ export function trackEvent(category, action, label, customKeys) {
     }
 
     if (KXEnv.local) {
-      console.log('trackObj', trackObj)
+      // console.log('trackObj', trackObj)
     }
 
     // disabled until tested
