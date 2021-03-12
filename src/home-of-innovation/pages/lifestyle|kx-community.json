@@ -1,0 +1,39 @@
+{
+  "title": "KX Community",
+  "description": "",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/kx-community/mindfulness/mindfulness-kv-2.jpg",
+  "alt": "",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/kx-community/mindfulness/mindfulness-kv-2-thumb.jpg",
+  "meta": {
+    "icon": "series",
+    "tags": []
+  },
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "{{lifestyle|kx-community[image]}}",
+        "alt": "{{lifestyle|kx-community[alt]}}"
+      },
+      "style": {
+        "desktop": "left",
+        "mobile": "top"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "KX Community"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "kx-community",
+      "title": "Articles",
+      "style": {
+        "scroll": true
+      }
+    }
+  ]
+}

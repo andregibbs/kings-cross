@@ -1,0 +1,146 @@
+{
+  "title": "Keep Calm and Practice Mindfulness",
+  "description": "",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/kx-community/mindfulness/mindfulness-kv-2.jpg",
+  "alt": "",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/kx-community/mindfulness/mindfulness-kv-2-thumb.jpg",
+  "group": "kx-community",
+  "meta": {
+    "icon": "series",
+    "tags": []
+  },
+  "components": [
+    {
+      "type": "css-snippet",
+      "content": "@media screen and (min-width: 768px) { .split-column { display: flex; position: relative; } .split-column .hoiParagraphs { width: 50%; padding-right: 2rem; } .split-column .hoiMedia--image { width: 50% !important; position: absolute; right: 0; height: 100%; object-fit: cover !important; } } @media screen and (min-width: 1440px) { .split-column .hoiMedia--image { width: 25% !important; } .split-column .hoiParagraphs { width: 75%; } }"
+    },
+    {
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "{{lifestyle|kx-community|mindfulness[image]}}",
+        "alt": "{{lifestyle|kx-community|mindfulness[alt]}}"
+      },
+      "style": {
+        "desktop": "top",
+        "mobile": "bottom"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "Keep Calm and Practice Mindfulness"
+        },
+        {
+          "type": "headline",
+          "copy": "A how-to guide for beginners",
+          "level": "2"
+        }
+      ]
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "class-container",
+          "class": "split-column",
+          "components": [
+            {
+              "type": "paragraphs",
+              "text": [
+                "Samsung KX has partnered with The Mindfulness Project, as part of its ongoing initiative to celebrate and support local communities, by igniting their passions through the latest Samsung technology.",
+                "Emily Mitchell is a teacher at this social enterprise and currently hosting virtual wellness sessions via the KX content hub for both Age UK Camden and Mind in Camden, teaching members easy ways to remain mindful every day. ",
+                "With there never being a better time to focus on self-care, here she gives an overview of what mindfulness is and how we can all begin to practice it."
+              ]
+            },
+            {
+              "type": "image",
+              "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/kx-community/mindfulness/Emily-Jane_Mindfulness.jpg",
+              "alt": ""
+            }
+          ]
+        },
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "What is mindfulness?"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Mindfulness is a way of training our attention to be in the present. This may sound simple, but it means being with whatever is occurring, pleasant or unpleasant, and that can be challenging.",
+            "It’s about accepting the thoughts, feelings and sensations we experience, with an attitude of kindness, patience and self-compassion. It’s not about pushing those thoughts away; a common misconception."
+          ]
+        },
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "Why is mindfulness important?"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Mindfulness has proven to help a range of issues, from managing stress and anxiety to preventing depression and improving concentration.",
+            "One piece of research by Killingsworth and Gilbert (2010), which focused on smartphone app behaviours, found that those whose minds tended to wander were typically less happy than those that focused on the present.",
+            "Mindfulness enables us to train our minds to be in the moment, enriching and enhancing our experience. Ultimately, it allows us to make the most of the wonderful moments of our lives, without being lost in thoughts about the past or future."
+          ]
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/kx-community/mindfulness/Mountains.jpg",
+          "alt": ""
+        },
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "What is mindful breathing and how do I practice it?"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Mindful breathing is a basic but powerful meditation practice. The idea is simply to focus your attention on the natural rhythm and flow of your breath, feeling each inhale and exhale, however many times you need to. This is a good technique for helping to manage chronic pain and especially useful when faced with a stressful situation. If for example you are working from home and suddenly become overwhelmed by your to-do list, go to a different room, stand still and take a few deep breaths. This will lower the heart rate and bring you back to a state of calm, ready to focus on the tasks at hand.",
+            "One easy way of practicing mindful breathing, even when on the go, is to download the <a href=\"https://www.samsung.com/global/galaxy/apps/samsung-health/\">Samsung Health app</a> onto your smartphone. You can access a range of short breathing exercises via the “Mindfulness” icon. My favourite is the one-minute session which is simply six inhale and exhales which it counts with you, helping to give instant relief to the whatever tensions you are feeling."
+          ]
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/kx-community/mindfulness/mindfulness_kv.jpg",
+          "alt": ""
+        },
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "What other practises are available to me?"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Formal meditation practice – Using meditation to dedicate our time to the senses and focussing on the present moment. We can use sounds, the body, the breath and so on to anchor our attention.",
+            "When we start trying to do this, we will quickly notice it’s not easy, and the mind will wander into daydreams, worries and judgements. The wandering mind isn’t a problem, it’s part of the practice. The aim is to notice when it happens and guide the mind back. Every time we return back, we are strengthening this “muscle” of attention.",
+            "Informal mindfulness practice - Bringing a mindful awareness to day-to-day activities. This could be anything from brushing your teeth, to eating a meal or walking down the street.",
+            "All you need to do is to try and pay attention to whatever it is you’re doing and the sensations you are feeling such as taste, movement and touch. Be curious about what you notice when doing everyday activities. As with the formal practice, when the mind wanders off, simply bring it back to whatever you’re doing. What could you bring mindful attention to today?"
+          ]
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/kx-community/mindfulness/S_Health.jpg",
+          "alt": ""
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "To have a go at a guided mindfulness practice or breathing exercise, download the <a href=\"https://www.samsung.com/global/galaxy/apps/samsung-health/\">Samsung Health app</a> or visit <a href=\"https://www.youtube.com/themindfulnessproject\" target=\"_blank\">The Mindfulness Project</a> on YouTube.",
+            "If you or a family member is interested in joining Samsung’s community partner programmes, please visit their websites here: <a href=\"https://www.ageuk.org.uk/camden/\" target=\"_blank\">Age UK Camden</a> and <a href=\"https://www.mindincamden.org.uk/\" target=\"_blank\">Mind in Camden</a>."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "kx-community",
+      "title": "Articles",
+      "style": {
+        "scroll": true
+      }
+    }
+  ]
+}
