@@ -1,0 +1,46 @@
+{
+  "title": "Personal Branding",
+  "description": "",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/personal-branding/series-kv.jpg",
+  "alt": "",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/personal-branding/series-thumb.jpg",
+  "meta": {
+    "icon": "series",
+    "tags": []
+  },
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "{{creativity|personal-branding[image]}}",
+        "alt": "{{creativity|personal-branding[alt]}}"
+      },
+      "style": {
+        "desktop": "top",
+        "mobile": "top"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "{{creativity|personal-branding[title]}}"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Teaching you at home how to get that perfect portrait. With the help of a career guru and top photography talent, this 3-part series gives you all the tools and know-how you need to enhance your personal online brand. From remotely shooting the perfect power pose to professional photography, to advice on how to create that stand-out personal profile, you’ll be propelled to the next level, all powered by the new Samsung Galaxy S21 Series."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "dynamic": "episodes",
+      "id": "personal-branding",
+      "title": "Articles",
+      "style": {
+        "scroll": true
+      }
+    }
+  ]
+}

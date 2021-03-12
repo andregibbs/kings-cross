@@ -1,0 +1,121 @@
+{
+  "title": "Ashley Verse’s 5 photography tips to snap a professional portrait at home.",
+  "description": "",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/personal-branding/ashley-verse-5-photography-tips-kv.jpg",
+  "alt": "",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/personal-branding/ashley-verse-5-photography-tips-thumb.jpg",
+  "group": "personal-branding",
+  "sort": 2,
+  "meta": {
+    "icon": "article",
+    "tags": []
+  },
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "{{creativity|personal-branding|ashley-verse-5-photography-tips[image]}}",
+        "alt": "{{creativity|personal-branding|ashley-verse-5-photography-tips[alt]}}"
+      },
+      "style": {
+        "desktop": "top",
+        "mobile": "top"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "{{creativity|personal-branding|ashley-verse-5-photography-tips[title]}}"
+        }
+      ]
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "paragraphs",
+          "style": {
+            "large": true
+          },
+          "text": [
+            "Want to take portraits like a pro? Celebrity and fashion photographer Ashley Verse offers his top 5 best practices and techniques on how to take the perfect professional portrait at home effortlessly, using the <a href=\"https://www.samsung.com/uk/smartphones/galaxy-s21-5g/purchase/\">Samsung Galaxy S21 5G</a>."
+          ]
+        },
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "Tip 1. Find the perfect background"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "First of all, you don’t need a big camera set up to get a great snap! These simple tips should help you build your perfect portrait. An interesting background can add a lot of personality and drama to your portrait, helping you stand out. Next time you see a great piece of wall art, an interesting texture or a clear blue sky, try taking a moment to get a photo of yourself in front of it!",
+            "Alternatively, with modern day mobile devices like the <a href=\"https://www.samsung.com/uk/smartphones/galaxy-s21-5g/purchase/\">Galaxy S21</a> that we showcase in Remote Capture, you can play around with Studio Lighting modes and create a more natural portrait expression by blurring the background, adding even more emphasis to your portrait."
+          ]
+        },
+
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "Tip 2. All about the lighting"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Illumination with soft or hard light is a must for all portrait photography. When setting up your portrait, it’s best practice to try and avoid low light and aim for natural sunlight if possible. ",
+            "Using the <a href=\"https://www.samsung.com/uk/smartphones/galaxy-s21-5g/purchase/\">Galaxy S21</a>, the Bright Night feature allows you to capture amazing detail in low-light environments. Alternatively, sunlight through a window is some of the best lighting you can use for smartphone portrait photography. If you can’t get close to a window for your perfect portrait, you can invest in some great lights for your home to set up where you want.",
+            "Lastly on lighting, get creative. Use the light cleverly on objects around you, play around with the placements of your light to create a mood for the photo, and in general have some fun with it."
+          ]
+        },
+
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "Tip 3. Use a good camera "
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "It’s all about the camera. I am lucky enough to do photography for a career so have all the set-ups I need for amazing portrait shots. But the great thing about modern day devices like the <a href=\"https://www.samsung.com/uk/smartphones/galaxy-s21-5g/purchase/\">Galaxy S21</a> is that you don’t need a lot of professional equipment to get a great shot.",
+            "You can deliver studio quality portrait mode photos with limited editing – trust me, you won’t be disappointed!"
+          ]
+        },
+
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "Tip 4. Use props to highlight your personality & tell your story "
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Add creativity, character and interest to your portrait by adding props. Using props effectively can help add character and interest to your portrait, helping give the viewer a better idea of who you are and allowing you stand out on your professional profile. It’s a great way of including your personality in the images."
+          ]
+        },
+
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "Tip 5. Strike a pose!"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "You can have the best camera, the best background, the best lighting, but the shot still relies on you to be you, and to pull your best pose.",
+            "Many people have favourite angles of themselves – so use your best angle, show off those features you’re proud of, work on what face you want to pull depending on the shot, and have some fun.",
+            "The best shots I take of people are when they are at their most natural and when they already know what works for them in a shot. Smiling how they’d normally smile, behaving completely authentically, and knowing that it can sometimes take 5 to 10 takes to get the right shot – so to enjoy the process."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "dynamic": "episodes",
+      "id": "personal-branding",
+      "title": "Articles",
+      "style": {
+        "scroll": true
+      }
+    }
+  ]
+}
