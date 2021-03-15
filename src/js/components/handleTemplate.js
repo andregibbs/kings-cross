@@ -1,3 +1,8 @@
+
+
+import HandlebarsHelpers from '../../templates/helpers/handlebarsHelpers';
+HandlebarsHelpers.register(Handlebars)
+
 export default function handleTemplate ( id, options ) {
 
 	var element = document.getElementById( id ).innerHTML;
