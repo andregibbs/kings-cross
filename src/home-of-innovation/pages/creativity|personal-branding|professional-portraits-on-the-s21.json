@@ -3,9 +3,10 @@
   "description": "",
   "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/personal-branding/02_Samsung_Remote_Capture_WEB_Banner_V3.jpg",
   "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/personal-branding/02_Samsung_Remote_Capture_WEB_Thumbnail_V3.jpg",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/personal-branding/01_Samsung_Remote_Capture_Thumbnail_400x255_V3.jpg",
   "group": "personal-branding",
   "sort": 1,
+  "hidden": true,
   "meta": {
     "icon": "video",
     "tags": []
@@ -15,7 +16,7 @@
       "type": "kv",
       "media": {
         "type": "youtube",
-        "content": "OKsnL03LoS4",
+        "content": "H64T6d5aVsw",
         "poster": "{{creativity|personal-branding|professional-portraits-on-the-s21[image]}}",
         "alt": "{{creativity|personal-branding|professional-portraits-on-the-s21[alt]}}"
       },
