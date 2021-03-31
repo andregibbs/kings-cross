@@ -1,0 +1,89 @@
+{
+  "title": "Behind the Scenes with Michel Roux Jnr: Four ways to upgrade your cooking ",
+  "description": "",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/michel-roux-jnr/kv.jpg",
+  "alt": "",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/michel-roux-jnr/thumb.jpg",
+  "meta": {
+    "icon": "video",
+    "tags": []
+  },
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "youtube",
+        "content": "bv85J5cyf0E",
+        "poster": "{{lifestyle|michel-roux-jnr[image]}}",
+        "alt": ""
+      },
+      "style": {
+        "desktop": "top",
+        "mobile": "bottom"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "Behind the Scenes with Michel Roux Jnr:"
+        },
+        {
+          "type": "headline",
+          "level": "2",
+          "copy": "Four ways to upgrade your cooking"
+        }
+      ]
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "paragraphs",
+          "style": {
+            "large": true
+          },
+          "text": [
+            "Samsung KX invites renowned international chef Michel Roux Jr to share his favourite recipes in the Samsung KX Connected Kitchen, where he teaches how to elevate your dishes with the Samsung Infinite Line cooking range.",
+            "The Samsung KX Connected Kitchen houses the unique <a href=\"https://www.samsung.com/uk/home-appliances/infinite-line/\">Infinite Line range</a>, which promises to make entertaining a lot less daunting when it comes to making show-stopping recipes. In a <a href=\"https://www.samsung.com/ie/explore/food-home/four-ways-to-upgrade-your-cooking-with-michel-roux-jr/\">four part video series</a>, Michel Roux Jr covers everything from roasting and steaming succulent chicken with the Dual Cook Steam Oven, to reusing leftovers with the Infinite Line Hob, meaning you can spend less time in the kitchen, and more time with friends and family, when it comes to hosting. ",
+            "Filmed on the Samsung Galaxy S20, this exclusive video gives a behind the scenes look of the international TV chef cooking up all four dishes. ",
+            "Michel Roux Jr is one of Europe’s most highly respected and best loved chefs, and has featured on global TV cookery shows including Gordon Ramsay’s Hell’s Kitchen and MasterChef. The Michelin star chef has trained across London, Paris and Hong Kong, and has shared his expertise in numerous cookbooks over the years."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "items": [
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/michel-roux-jnr/kv.jpg",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/michel-roux-jnr/thumb.jpg",
+          "alt": ""
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/michel-roux-jnr/image_2.jpg",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/michel-roux-jnr/image_2_th.jpg",
+          "alt": ""
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/michel-roux-jnr/image_3.jpg",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/michel-roux-jnr/image_3_th.jpg",
+          "alt": ""
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/michel-roux-jnr/image_4.jpg",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/michel-roux-jnr/image_4_th.jpg",
+          "alt": ""
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/michel-roux-jnr/image_6.jpg",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/michel-roux-jnr/image_6_th.jpg",
+          "alt": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "title": "Improving your professional online presence? Ash Jones shares his top 3 tips",
+  "description": "",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/personal-branding/03_Samsung_Remote_Capture_WEB_Banner_V3.jpg",
+  "alt": "",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/personal-branding/03_Samsung_Remote_Capture_WEB_Thumbnail_V3.jpg",
+  "group": "personal-branding",
+  "sort": 4,
+  "meta": {
+    "icon": "article",
+    "tags": []
+  },
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "{{creativity|personal-branding|improving-your-professional-online-presence-ash-jones-top-3-tips[image]}}",
+        "alt": "{{creativity|personal-branding|improving-your-professional-online-presence-ash-jones-top-3-tips[alt]}}"
+      },
+      "style": {
+        "desktop": "top",
+        "mobile": "top"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "{{creativity|personal-branding|improving-your-professional-online-presence-ash-jones-top-3-tips[title]}}"
+        }
+      ]
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "paragraphs",
+          "style": {
+            "large": true
+          },
+          "text": [
+            "Personal branding is key in 2021. A simple black and white CV listing your previous job history and education may have sufficed to get you noticed in the past, but now employers are looking for more, and the competition is strong for all industries.",
+            "As an employer, and as part of my day to day at Great Influence and in my previous job at Social Chain, I have seen it all when it comes to prospect employees looking to stand out. We had owls flying into the office with CVs attached, we’ve had videos – both good and bad, and we’ve had some instances where a CV isn’t required whatsoever.",
+            "When it comes to getting recognised, if done correctly, all of the above and more can work (yes, even the owl). Here are my three top tips for getting yourself recognised when self-branding and applying for new jobs."
+          ]
+        },
+
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "Tip 1: Use a strong portrait, or video, that exemplifies what you’re about"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "A strong portrait picture instantly tells a story about you to the employer. Through clever use of props, colour, and expression you can show off a lot about yourself. The key here is not to confirm to the norm and play it safe. If you’re a chilled person, a yoga matt in the background of your shot tells me that. If you’re energetic, use of bright colours as your background will give this impression. The key is to not look too serious and to use your photo to tell your story – or even a video!",
+            "For the above, the <a href=\"https://www.samsung.com/uk/smartphones/galaxy-s21-5g/purchase/\">Galaxy S21’s</a> portrait mode is a huge help and can help deliver some really stand out shots, as we learnt on the <a href=\"{{creativity|personal-branding|professional-portraits-on-the-s21[url]}}\">Powerful Personal Branding shoot</a> with Chelcee Grimes and Ashley Verse. You can change and blur backgrounds, edit the colours, and essentially get a studio quality photo from your homes using the Bright Night mode."
+          ]
+        },
+
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "Tip 2: Show off your personality"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Employers get so many CVs and on average, they will only look at these for approximately 5 seconds. If you’re applying for the right job, your education and previous job history should not be the first thing you show. We want to know all about you – the character you’d bring to an office, the hobbies you’re into, what you do on your weekends. ",
+            "Don’t be afraid to put things on your CV that show off your character. Think of it like a social media channel. Would you follow if it was dull and boring? No. But if you’re reading about an interest in sport, music, gaming, reading and more – you’re getting a great idea about the potential employee and whether they are suitable to the job, and to work with the staff the company already employs."
+          ]
+        },
+
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "Tip 3: Sort out those socials!"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Very often I will actually look at someone’s social media channels before I read their CV, and this is common for employers. It’s a window into your life that we want to know about and can make or break the employment process from the off.",
+            "The first tip here is to have your social channels on private. If there’s clearly images and videos that you wouldn’t want your employer to see. Yes, they want to see personality – but they don’t want to see you on a strip in Magaluf!",
+            "If your socials are a bit more sensible, and not on private, make sure the content really sells you. For example, interesting photography, showcasing elements like travelling. All these things tell us a lot and help us understand your character.",
+            "The final tip for socials is considering separate work socials to personal socials. This way you can keep your personal social channels on private, but you can point us to your work ones. Consider it a form of a social media CV – some of the great projects you’ve worked on, some of that great travelling photography I mention above, and some interesting content around what you’re into – for example the latest book you’ve read and your view on it, or the latest hobby you’ve undertaken and why.",
+            "Begin creating your stand out powerful personal profile with Ash Jones’ exclusively designed CV template."
+          ]
+        },
+        {
+          "type": "buttons",
+          "items": [
+            {
+              "url": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/personal-branding/improving-presence/Samsung_CV_Template.pdf",
+              "copy": "Download CV Template",
+              "target": "_blank",
+              "download": true
+            }
+          ]
+        }
+
+      ]
+    },
+    {
+      "type": "group",
+      "dynamic": "episodes",
+      "id": "personal-branding",
+      "title": "Articles",
+      "style": {
+        "scroll": true
+      }
+    }
+  ]
+}

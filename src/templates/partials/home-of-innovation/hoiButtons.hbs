@@ -9,7 +9,7 @@
 
   {{#each items }}
     <a ga-ca="microsite" ga-ac="feature" ga-la="uk:kings-cross:{{@root.title}}-{{this.copy}}"
-					data-omni-type="microsite" data-omni="uk:kings-cross:{{@root.title}}-{{this.copy}}" class="hoiButton button btn btn--primary btn--primary--coral" target="{{this.target}}" href="{{this.url}}">{{this.copy}}</a>
+					data-omni-type="microsite" data-omni="uk:kings-cross:{{@root.title}}-{{this.copy}}" class="hoiButton button btn btn--primary btn--primary--coral" target="{{this.target}}" href="{{this.url}}" {{#if download}}download{{/if}}>{{this.copy}}</a>
   {{/each}}
 
 
