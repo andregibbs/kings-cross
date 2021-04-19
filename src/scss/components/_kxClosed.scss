@@ -71,8 +71,14 @@
   color: $cyan;
 }
 
-.kxClosed ul {
+.kxClosed p,
+.kxClosed ul li,
+.kxClosed ul li a,
+.kxClosed p a {
+  font-size: 1rem !important;
+}
 
+.kxClosed ul {
   li {
     list-style: initial;
     margin-left: 1rem;

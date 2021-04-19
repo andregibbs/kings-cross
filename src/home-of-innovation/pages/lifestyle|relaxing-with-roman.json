@@ -1,0 +1,133 @@
+{
+  "title": "Relaxing with Roman",
+  "description": "",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/relaxing-with-roman/new_kv.jpg",
+  "alt": "",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/relaxing-with-roman/roman_thumb.jpg",
+  "hidden": true,
+  "meta": {
+    "icon": "series",
+    "tags": []
+  },
+  "components": [
+    {
+      "type": "css-snippet",
+      "content": ".hoiWrapper { margin-top: 0 !important; } .hoiKv__Media:after { padding-bottom: 33% !important; } .hoiWrapper h2 { margin-bottom: 0 !important;} .hoiWrapper h5 { margin-top: 0 !important; }"
+    },
+    {
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "{{lifestyle|relaxing-with-roman[image]}}",
+        "alt": ""
+      },
+      "style": {
+        "desktop": "top",
+        "mobile": "top"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "Relaxing with Roman: A guide to the world of relaxation techniques"
+        }
+      ]
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/relaxing-with-roman/PA_SamsungRomanRelaxationStationEdit_13.jpg",
+          "alt": ""
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Introducing Relaxing with Roman, a new series from Samsung KX that sees radio DJ Roman Kemp try out weird and wonderful ways of relaxing from around the world; including goat yoga, tree hugging and isolation therapy.",
+            "The three-part series has been launched to promote the new ‘Relaxation Station’ in Samsung KX, an immersive experience designed to help visitors relax and unwind to combat post-lockdown fatigue.",
+            "The new walk-in experience is calibrated to provide a 5-minute hit of relaxation for the body and mind by transporting visitors to a tropical beach, complete with the sounds of waves lapping at the shore, visuals of clear blue waters and a salty sea breeze.",
+            "Relaxing with Roman has been shot in 8K on the new <a href=\"https://www.samsung.com/uk/smartphones/galaxy-s21-ultra-5g/\">Samsung S21 Ultra 5G</a>. The device features a bold new design and super high-resolution Pro-Grade camera, as well as multiple video innovations designed to help users capture the perfect shot.",
+            "The Relaxation Station at Samsung KX is open now to members of the public free of charge."
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "Relaxing with Roman Ep 1",
+          "level": "2"
+        },
+        {
+          "type": "headline",
+          "copy": "Roman tries out manuka hammer massage, tree hugging and ‘birching’, an unusual relaxation technique from Russia involving whipping the body with silver birch leaves…",
+          "level": "5"
+        },
+        {
+          "type": "youtube",
+          "content": "q17DiCyL9jQ"
+        },
+        {
+          "type": "headline",
+          "copy": "Relaxing with Roman Ep 2",
+          "level": "2"
+        },
+        {
+          "type": "headline",
+          "copy": "Watch as Roman blows up balloons and chats to his house plants in a bid to relax",
+          "level": "5"
+        },
+        {
+          "type": "youtube",
+          "content": "q17DiCyL9jQ"
+        },
+        {
+          "type": "headline",
+          "copy": "Relaxing with Roman Ep 3",
+          "level": "2"
+        },
+        {
+          "type": "headline",
+          "copy": "In the final episode of the series Roman experiments with goat yoga, poetry reading and the ultimate digital detox.",
+          "level": "5"
+        },
+        {
+          "type": "youtube",
+          "content": "q17DiCyL9jQ"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "items": [
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/relaxing-with-roman/gallery_1.jpg",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/relaxing-with-roman/gallery_1_th.jpg"
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/relaxing-with-roman/gallery_2.jpg",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/relaxing-with-roman/gallery_2_th.jpg"
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/relaxing-with-roman/gallery_3.jpg",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/relaxing-with-roman/gallery_3_th.jpg"
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/relaxing-with-roman/gallery_4.jpg",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/relaxing-with-roman/gallery_4_th.jpg"
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/relaxing-with-roman/gallery_5.jpg",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/relaxing-with-roman/gallery_5_th.jpg"
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/relaxing-with-roman/gallery_6.jpg",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/relaxing-with-roman/gallery_6_th.jpg"
+        }
+      ]
+    }
+  ]
+}

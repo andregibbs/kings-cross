@@ -10,9 +10,9 @@
       {{#if (eq variation "home")}}
 
         <h4 class="fz36 center">
-          Miss you already
+          Welcome back, we’ve missed you
         </h4>
-        <!-- <p>
+        <p>
           We are excited to welcome you back to Samsung KX.
         </p>
         <p>
@@ -34,43 +34,16 @@
         </p>
         <p>
           We look forward to seeing you soon.
-        </p> -->
-        <p>
-          Due to the latest government restrictions, Samsung KX is now temporarily closed.
-        </p>
-        <p>
-          Click & Collect is still available, with social distancing in place for your safety. Make sure to bring proof of purchase and please note you may be asked to wait outside while we prepare your order.
-        </p>
-        <p>
-          Our experts are ready to support you and your product needs virtually via our Support Lounge. Click <a href="/uk/explore/kings-cross/support">here</a> to book an appointment for device support and repairs or look out for the Samsung People widget for product help throughout our website.
-        </p>
-        <p>
-          We’re continuing to bring Samsung KX to you virtually through our new content hub to help you learn, discover and explore. Check out the latest updates <a href="/uk/explore/kings-cross/hub">here</a>.
-        </p>
-        <p>
-          We can’t wait to welcome you back soon.
         </p>
 
-        {{!-- {{> icons}} --}}
+        {{> icons}}
 
       {{else if (eq variation "support")}}
 
         <h4 class="fz36">
           We’ve got your back
         </h4>
-
         <p>
-          Due to the latest government restrictions, Samsung KX is now temporarily closed.
-        </p>
-        <p>
-          Our online Support Lounge remains open for virtual bookings via video call; whether for product advice, set-up or repairs, we’re here for you.
-        </p>
-        <p>
-          Thank you for your ongoing support, patience and understanding.<br>
-          We can’t wait to welcome you back soon.
-        </p>
-
-        <!-- <p>
           The health and wellbeing of our staff and guests is our utmost priority, that’s why we’ve introduced some changes to encourage social distancing and keep Samsung KX a safe environment for all.
         </p>
         <p>
@@ -81,7 +54,6 @@
         <h5 class="fz30">Ahead of your appointment, please read the following safety advice:</h5>
         <ul>
           <li>Visitors should keep 2metres apart from others at all times</li>
-          <li>Directional floor markings are in place for additional safety</li>
           <li>Only a limited number of people are permitted inside at any one time</li>
           <li>Handheld devices are being cleaned after every use</li>
           <li>We are offering a complimentary UV sanitising service for selected devices. Please ask your Support Specialist if you would like to use this service</li>
@@ -98,21 +70,25 @@
 
         <p>
           We look forward to seeing you soon.
-        </p> -->
-
-
+        </p>
       {{else if (eq variation "whats-on")}}
-
         <h4 class="fz36">
-          Samsung KX events are temporarily postponed
+          See you soon
         </h4>
         <p>
-          Due to government restrictions, Samsung KX is temporarily closed.
+          We’re doing everything we can to create a safe environment for all. To comply with social distancing guidelines, there may be some disruption to our physical events to ensure the safety of our staff and guests.
         </p>
         <p>
-          However, we've got a huge range of content to explore right here. Tune into a podcast, dive into a tutorial or watch us live from Samsung KX.
+          Learn more about the precautions we’re taking <a href="https://www.samsung.com/uk/explore/kings-cross/">here</a>.
         </p>
-
+        <p>
+          We’ve been working hard to bring KX to you virtually through our new content hub and we hope you’ve been enjoying the library of entertainment to help you learn, discover and explore.<br>
+          <a href="https://www.samsung.com/uk/explore/kings-cross/hub">Check it out here.</a>
+        </p>
+        <p>
+          Don’t forget to <a href="https://a3p.eucdm.samsung.com/webApp/samAPP581?lang=en_GB" data-lity>sign up</a> to receive updates on news and events.<br>
+          ThanKX for your support, patience and understanding.
+        </p>
       {{else}}
 
         <h4 class="fz36">
@@ -152,12 +128,12 @@
     </div>
   </div>
 
-  <div class="kxClosed__icon">
+  <!-- <div class="kxClosed__icon">
     {{> svg/follow}}
     <div class="kxClosed__iconLabel">
       Follow the arrows
     </div>
-  </div>
+  </div> -->
 
   <div class="kxClosed__icon">
     {{> svg/little_ones}}
