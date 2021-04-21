@@ -4,7 +4,6 @@
   "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/relaxing-with-roman/new_kv.jpg",
   "alt": "",
   "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/relaxing-with-roman/roman_thumb.jpg",
-  "hidden": true,
   "meta": {
     "icon": "series",
     "tags": []
@@ -62,7 +61,7 @@
         },
         {
           "type": "youtube",
-          "content": "q17DiCyL9jQ"
+          "content": "u919MUGxolA"
         },
         {
           "type": "headline",
@@ -76,7 +75,7 @@
         },
         {
           "type": "youtube",
-          "content": "q17DiCyL9jQ"
+          "content": "05GfpulIuoA"
         },
         {
           "type": "headline",
@@ -90,7 +89,7 @@
         },
         {
           "type": "youtube",
-          "content": "q17DiCyL9jQ"
+          "content": "nkRwCU_roM0"
         }
       ]
     },

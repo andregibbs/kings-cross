@@ -49,8 +49,49 @@ const SURVEY_DATA_STAGING_FILENAME = 'kx-survey-data-staging.json'
 
 const SURVEY_DATA = [
   {
-    name: "NAME OF SURVEY",
+    name: "What you think 2",
     active: true,
+    id: "what-you-think-2",
+    pathnames: [
+      '/uk/explore/kings-cross/',
+      '/uk/explore/kings-cross/hub/',
+      '/uk/explore/kings-cross/innovation/next-level-gaming/',
+      '/uk/explore/kings-cross/innovation/next-level-gaming/deadly-pro-gaming-secrets/',
+      '/uk/explore/kings-cross/innovation/next-level-gaming/meet-the-game-changers/',
+      '/uk/explore/kings-cross/innovation/next-level-gaming/wolfiez-pro-gaming-secrets/',
+      '/uk/explore/kings-cross/innovation/connected-christmas/',
+      '/uk/explore/kings-cross/innovation/connected-christmas/marcelino-sambe/',
+      '/uk/explore/kings-cross/creativity/editing-sessions/',
+      '/uk/explore/kings-cross/creativity/editing-sessions/1/',
+      '/uk/explore/kings-cross/creativity/editing-sessions/2/',
+      '/uk/explore/kings-cross/creativity/editing-sessions/3/',
+      '/uk/explore/kings-cross/creativity/editing-sessions/4/',
+      '/uk/explore/kings-cross/creativity/editing-sessions/5/',
+      '/uk/explore/kings-cross/creativity/editing-sessions/6/',
+      '/uk/explore/kings-cross/creativity/editing-sessions/7/',
+      '/uk/explore/kings-cross/entertainment/lunch-and-listen/amelia-dimoldenberg-munya-chawawa/1/',
+      '/uk/explore/kings-cross/entertainment/lunch-and-listen/amelia-dimoldenberg-munya-chawawa/2/',
+      '/uk/explore/kings-cross/entertainment/lunch-and-listen/bring-back-play/',
+      '/uk/explore/kings-cross/entertainment/lunch-and-listen/katherine-ryan-reggie-yates/1/',
+      '/uk/explore/kings-cross/entertainment/lunch-and-listen/katherine-ryan-reggie-yates/2/',
+      '/uk/explore/kings-cross/entertainment/lunch-and-listen/bring-back-play-ep-2/',
+      '/uk/explore/kings-cross/entertainment/lunch-and-listen/reclaim-lunchbreak/',
+      '/uk/explore/kings-cross/kxtras/',
+      '/uk/explore/kings-cross/innovation/samsung-people-live/'
+    ],
+    survey_embed_url: "https://docs.google.com/forms/d/1ylLnN2Py1vSoEz9vIGHfJrcEyR9n_oX-AV2ZiDPKc8U/viewform",
+    prompt: {
+      title: 'Tell us what you think of<br/>Samsung KX',
+      copy: [
+        'We\'d love to hear your feedback'
+      ],
+      yes: 'Sure',
+      no: 'No Thanks'
+    }
+  },
+  {
+    name: "NAME OF SURVEY",
+    active: false,
     id: "what-you-think",
     pathnames: [
       '/uk/explore/kings-cross/',
