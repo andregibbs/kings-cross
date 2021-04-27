@@ -1,208 +1,206 @@
 {
-  "title": "The Alternative Careers Guide",
-  "description": "A brand new guide to help inspire a new generation of tech leaders",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/alternative-careers-guide/KeyVisual-Roman_Kemp.jpg",
-  "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/alternative-careers-guide/KeyVisual-Roman_Kemp.jpg",
-  "meta": {
-    "icon": "article",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "css-snippet",
-      "content": ".hoiKv--theme-section-guide .hoiKv__MediaImage { background-size: contain !important; } .hoiContent .btn { min-width: 200px; } .hoiContent video { object-fit: contain !important; } .hoiContent h3 { color: #FF4337 !important;}"
-    },
-
-    {
-      "type": "kv",
-      "media": {
-        "type": "image",
-        "content": "{{innovation|alternative-careers-guide[image]}}",
-        "alt": "{{innovation|alternative-careers-guide[alt]}}"
-      },
-      "style": {
-        "desktop": "top",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "copy": "{{innovation|alternative-careers-guide[title]}}"
-        }
-      ]
-    },
-    {
-      "type": "kv",
-      "share": false,
-      "media": {
-        "type": "image",
-        "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/alternative-careers-guide/Samsung_Alternative_Careers_Report_Final_Cover.jpg",
-        "title": ""
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "bottom",
-        "theme": "section-guide"
-      },
-      "components": [
-        {
-          "type": "paragraphs",
-          "text": [
-            "With all the global changes over the last few months, you might be finding yourself thinking about what your future looks like.",
-            "Here at Samsung, we want to be there for you and support you in your next steps. Careers that you might not have thought possible (or existed!) such as being an app designer or a drone pilot are very much a reality.",
-            "We’ve pulled together a few videos from your peers who are making waves in their tech industries, the series is hosted by radio and TV presenter Roman Kemp, showing you how you can still make your interests and dreams a reality.",
-            "Series guests include Drone Operator Gemma Alcock, Tech Entrepreneur and App Creator Urenna Okonkwo, 3D Prop Designer Keith Thomson and Mantas Navickas, a Samsung Technical Product Graduate specialising in Software Testing.",
-            "To learn more about the Alternative Careers Guide please click below."
-          ]
-        },
-        {
-          "type": "buttons",
-          "items": [
-            {
-              "copy": "Learn more",
-              "url": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/alternative-careers-guide/4934_Samsung_Alternative_Careers_Report_Final2.pdf",
-              "target": "_blank"
-            }
-          ]
-        }
-      ]
-    },
-
-    {
-      "type": "kv",
-      "share": false,
-      "media": {
-        "type": "youtube",
-        "content": "4usnA8Z5q4w",
-        "poster": "",
-        "title": "Gemma Alcock, Drone Operator"
-      },
-      "style": {
-        "desktop": "right",
-        "mobile": "bottom"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "copy": "Gemma Alcock, Drone Operator",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Drone Operator Gemma Alcock is the founder and CEO of Skybound Rescuer, a research and training organisation which is dedicated to advancing drone life-saving technology for Emergency Response Services.",
-            "Her research focuses on finding the best aerial solutions to support difficult rescue operations at night, over mountain ranges and at sea where drones can provide vital information on the location of the casualty and potential environmental dangers, as well as deliver resources and aid to the injured whilst help is on the way."
-          ]
-        }
-      ]
-    },
-
-    {
-      "type": "kv",
-      "share": false,
-      "media": {
-        "type": "youtube",
-        "content": "u11bTkLjNg8",
-        "title": "Urenna Okonkwo, App Creator"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "bottom"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "copy": "Urenna Okonkwo, App Creator",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Tech entrepreneur Urenna Okonkwo is the founder and creator of fashion app Cashmere - a smart and social savings platform that helps trendy millennials save towards and buy luxury fashion guilt-free without having to dip into their personal savings.",
-            "Urenna came up with the idea after spotting an expensive designer pair of shoes which she wanted and failed to find an existing fashion focussed savings app.",
-            "Realising she’d found a gap in the market, Urenna taught herself to code and developed the app on her own. It now has thousands of users and partners including Harvey Nichols, Liberty, Vestiaire Collective, Saks Fifth Avenue, Coach, Giuseppe Zanotti and many more."
-          ]
-        }
-      ]
-    },
-
-    {
-      "type": "kv",
-      "share": false,
-      "media": {
-        "type": "youtube",
-        "content": "jO-vsN_mYyc",
-        "title": "Keith Thomson, 3D Prop Designer"
-      },
-      "style": {
-        "desktop": "right",
-        "mobile": "bottom"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "copy": "Keith Thomson, 3D Prop Designer",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Prop designer Keith Thomson is one of the 3D prop designers at Plunge Creations a Brighton based company which creates props, costumes and sets for brands across TV and film including ITV’s The Masked Singer.",
-            "With technology always improving, Keith is on the forefront of utilising new artistic methods including 3D printing alongside more traditional processes such as sculpting and woodwork to bring his spectacular creations to life."
-          ]
-        }
-      ]
-    },
-
-    {
-      "type": "kv",
-      "share": false,
-      "media": {
-        "type": "youtube",
-        "content": "aE0NFRkTDgE",
-        "title": "Mantas Navickas, Samsung Software Tester"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "bottom"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "copy": "Mantas Navickas, Samsung Software Tester",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Technical Product Graduate Mantas Navickas works at Samsung Electronics UK, as part of Samsung’s Emerging Talent Scheme. The scheme offers placement and graduate opportunities to young people looking to take the next step in a career in tech.",
-            "Mantas works in the team at Samsung that coordinate the new software releases for all Samsung devices, testing the software on phones before it reaches customers."
-          ]
-        }
-      ]
-    },
-
-    {
-      "type": "wrapper",
-      "components": [
-        {
-          "type": "paragraphs",
-          "text": [
-            "Samsung are committed to supporting and nurturing the next generation interested in exploring a career in tech. The company’s Emerging Talent programme offers placement and graduate opportunities to young people looking to take the next step in their career.",
-            "To find out more about how to apply for opportunities at Samsung click below."
-          ]
-        },
-        {
-          "type": "buttons",
-          "items": [
-            {
-              "copy": "Learn more",
-              "url": "https://www.samsung.com/uk/aboutsamsung/careers/emerging-talent/placement-opportunities/"
-            }
-          ]
-        }
-      ]
-    }
-  ]
+	"title": "The Alternative Careers Guide",
+	"description": "A brand new guide to help inspire a new generation of tech leaders",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/alternative-careers-guide/KeyVisual-Roman_Kemp.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/alternative-careers-guide/KeyVisual-Roman_Kemp.jpg",
+	"meta": {
+		"icon": "article",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 10,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "css-snippet",
+			"content": ".hoiKv--theme-section-guide .hoiKv__MediaImage { background-size: contain !important; } .hoiContent .btn { min-width: 200px; } .hoiContent video { object-fit: contain !important; } .hoiContent h3 { color: #FF4337 !important;}"
+		},
+		{
+			"type": "kv",
+			"media": {
+				"type": "image",
+				"content": "{{innovation|alternative-careers-guide[image]}}",
+				"alt": "{{innovation|alternative-careers-guide[alt]}}"
+			},
+			"style": {
+				"desktop": "top",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "{{innovation|alternative-careers-guide[title]}}"
+				}
+			]
+		},
+		{
+			"type": "kv",
+			"share": false,
+			"media": {
+				"type": "image",
+				"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/alternative-careers-guide/Samsung_Alternative_Careers_Report_Final_Cover.jpg",
+				"title": ""
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "bottom",
+				"theme": "section-guide"
+			},
+			"components": [
+				{
+					"type": "paragraphs",
+					"text": [
+						"With all the global changes over the last few months, you might be finding yourself thinking about what your future looks like.",
+						"Here at Samsung, we want to be there for you and support you in your next steps. Careers that you might not have thought possible (or existed!) such as being an app designer or a drone pilot are very much a reality.",
+						"We’ve pulled together a few videos from your peers who are making waves in their tech industries, the series is hosted by radio and TV presenter Roman Kemp, showing you how you can still make your interests and dreams a reality.",
+						"Series guests include Drone Operator Gemma Alcock, Tech Entrepreneur and App Creator Urenna Okonkwo, 3D Prop Designer Keith Thomson and Mantas Navickas, a Samsung Technical Product Graduate specialising in Software Testing.",
+						"To learn more about the Alternative Careers Guide please click below."
+					]
+				},
+				{
+					"type": "buttons",
+					"items": [
+						{
+							"copy": "Learn more",
+							"url": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/alternative-careers-guide/4934_Samsung_Alternative_Careers_Report_Final2.pdf",
+							"target": "_blank"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "kv",
+			"share": false,
+			"media": {
+				"type": "youtube",
+				"content": "4usnA8Z5q4w",
+				"poster": "",
+				"title": "Gemma Alcock, Drone Operator"
+			},
+			"style": {
+				"desktop": "right",
+				"mobile": "bottom"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Gemma Alcock, Drone Operator",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Drone Operator Gemma Alcock is the founder and CEO of Skybound Rescuer, a research and training organisation which is dedicated to advancing drone life-saving technology for Emergency Response Services.",
+						"Her research focuses on finding the best aerial solutions to support difficult rescue operations at night, over mountain ranges and at sea where drones can provide vital information on the location of the casualty and potential environmental dangers, as well as deliver resources and aid to the injured whilst help is on the way."
+					]
+				}
+			]
+		},
+		{
+			"type": "kv",
+			"share": false,
+			"media": {
+				"type": "youtube",
+				"content": "u11bTkLjNg8",
+				"title": "Urenna Okonkwo, App Creator"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "bottom"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Urenna Okonkwo, App Creator",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Tech entrepreneur Urenna Okonkwo is the founder and creator of fashion app Cashmere - a smart and social savings platform that helps trendy millennials save towards and buy luxury fashion guilt-free without having to dip into their personal savings.",
+						"Urenna came up with the idea after spotting an expensive designer pair of shoes which she wanted and failed to find an existing fashion focussed savings app.",
+						"Realising she’d found a gap in the market, Urenna taught herself to code and developed the app on her own. It now has thousands of users and partners including Harvey Nichols, Liberty, Vestiaire Collective, Saks Fifth Avenue, Coach, Giuseppe Zanotti and many more."
+					]
+				}
+			]
+		},
+		{
+			"type": "kv",
+			"share": false,
+			"media": {
+				"type": "youtube",
+				"content": "jO-vsN_mYyc",
+				"title": "Keith Thomson, 3D Prop Designer"
+			},
+			"style": {
+				"desktop": "right",
+				"mobile": "bottom"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Keith Thomson, 3D Prop Designer",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Prop designer Keith Thomson is one of the 3D prop designers at Plunge Creations a Brighton based company which creates props, costumes and sets for brands across TV and film including ITV’s The Masked Singer.",
+						"With technology always improving, Keith is on the forefront of utilising new artistic methods including 3D printing alongside more traditional processes such as sculpting and woodwork to bring his spectacular creations to life."
+					]
+				}
+			]
+		},
+		{
+			"type": "kv",
+			"share": false,
+			"media": {
+				"type": "youtube",
+				"content": "aE0NFRkTDgE",
+				"title": "Mantas Navickas, Samsung Software Tester"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "bottom"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Mantas Navickas, Samsung Software Tester",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Technical Product Graduate Mantas Navickas works at Samsung Electronics UK, as part of Samsung’s Emerging Talent Scheme. The scheme offers placement and graduate opportunities to young people looking to take the next step in a career in tech.",
+						"Mantas works in the team at Samsung that coordinate the new software releases for all Samsung devices, testing the software on phones before it reaches customers."
+					]
+				}
+			]
+		},
+		{
+			"type": "wrapper",
+			"components": [
+				{
+					"type": "paragraphs",
+					"text": [
+						"Samsung are committed to supporting and nurturing the next generation interested in exploring a career in tech. The company’s Emerging Talent programme offers placement and graduate opportunities to young people looking to take the next step in their career.",
+						"To find out more about how to apply for opportunities at Samsung click below."
+					]
+				},
+				{
+					"type": "buttons",
+					"items": [
+						{
+							"copy": "Learn more",
+							"url": "https://www.samsung.com/uk/aboutsamsung/careers/emerging-talent/placement-opportunities/"
+						}
+					]
+				}
+			]
+		}
+	]
 }

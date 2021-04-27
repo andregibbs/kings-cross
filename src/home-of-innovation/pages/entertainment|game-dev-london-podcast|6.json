@@ -1,72 +1,76 @@
 {
-  "title": "Game Dev London Podcast - Episode Six",
-  "description": "Game Dev’s series of podcasts are to support the UK games industry with knowledge and stories from those at its core.",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/entertainment/game-dev-london-podcast/kx-gdp-6-kv.jpg",
-  "alt": "Game Dev London Podcast logo linking to Episode Six",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/entertainment/game-dev-london-podcast/kx-gdp-6-thumb.jpg",
-  "group": "game-dev-london-podcast",
-  "sort": 6,
-  "meta": {
-    "icon": "audio",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "kv",
-      "media": {
-        "type": "audio",
-        "content": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/game-dev-london-podcast/GDL-EP6.mp4",
-        "poster": "{{entertainment|game-dev-london-podcast|6[image]}}"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "copy": "{{entertainment|game-dev-london-podcast|6[title]}}"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Game Dev London is a diverse community group with a passion for all things gaming, including everything from design to conception, production, testing and of course playing the games themselves.",
-            "In this episode GDL host Chris Payne talks to Follow the Feathers co-founder Sebastian Rangger about starting their company and kickstarting their first commercial game - sew-'em-up Weaving Tides."
-          ]
-        }
-      ]
-    },
-    {
-      "type": "wrapper",
-      "components": [
-        {
-          "type": "paragraphs",
-          "text": [
-            "In light of the recent pandemic, gaming has become more popular than ever before, offering indoors entertainment and a fun way to keep connected with those closest to you. Nevertheless, it doesn’t stop here. Lockdown has created a window for communities such as Game Dev London to explore what’s missing from the current gaming offering, current trends and the challenges that come with new industry restrictions. As the home of innovation, SamsungKX is providing an online platform for Game Dev London to uncover this knowledge and inspire gaming enthusiasts via weekly online podcasts. The series aims to help both those who are starting out in the gaming world and those looking to upskill in this area.",
-            "Please keep your eyes peeled for their weekly podcasts."
-          ]
-        }
-      ]
-    },
-    {
-      "type": "gallery",
-      "items": [
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/game-dev-london-podcast/GameDev_KV.jpg",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/game-dev-london-podcast/GameDev_KV.jpg",
-          "alt": "Game Dev Podcast logo"
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "dynamic": "more-episodes",
-      "id": "game-dev-london-podcast",
-      "title": "More episodes",
-      "style": {
-        "scroll": true
-      }
-    }
-  ]
+	"title": "Game Dev London Podcast - Episode Six",
+	"description": "Game Dev’s series of podcasts are to support the UK games industry with knowledge and stories from those at its core.",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/entertainment/game-dev-london-podcast/kx-gdp-6-kv.jpg",
+	"alt": "Game Dev London Podcast logo linking to Episode Six",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/entertainment/game-dev-london-podcast/kx-gdp-6-thumb.jpg",
+	"group": "game-dev-london-podcast",
+	"sort": 6,
+	"meta": {
+		"icon": "audio",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 33,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "audio",
+				"content": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/game-dev-london-podcast/GDL-EP6.mp4",
+				"poster": "{{entertainment|game-dev-london-podcast|6[image]}}"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "{{entertainment|game-dev-london-podcast|6[title]}}"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Game Dev London is a diverse community group with a passion for all things gaming, including everything from design to conception, production, testing and of course playing the games themselves.",
+						"In this episode GDL host Chris Payne talks to Follow the Feathers co-founder Sebastian Rangger about starting their company and kickstarting their first commercial game - sew-'em-up Weaving Tides."
+					]
+				}
+			]
+		},
+		{
+			"type": "wrapper",
+			"components": [
+				{
+					"type": "paragraphs",
+					"text": [
+						"In light of the recent pandemic, gaming has become more popular than ever before, offering indoors entertainment and a fun way to keep connected with those closest to you. Nevertheless, it doesn’t stop here. Lockdown has created a window for communities such as Game Dev London to explore what’s missing from the current gaming offering, current trends and the challenges that come with new industry restrictions. As the home of innovation, SamsungKX is providing an online platform for Game Dev London to uncover this knowledge and inspire gaming enthusiasts via weekly online podcasts. The series aims to help both those who are starting out in the gaming world and those looking to upskill in this area.",
+						"Please keep your eyes peeled for their weekly podcasts."
+					]
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"items": [
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/game-dev-london-podcast/GameDev_KV.jpg",
+					"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/game-dev-london-podcast/GameDev_KV.jpg",
+					"alt": "Game Dev Podcast logo"
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "more-episodes",
+			"id": "game-dev-london-podcast",
+			"title": "More episodes",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
 }

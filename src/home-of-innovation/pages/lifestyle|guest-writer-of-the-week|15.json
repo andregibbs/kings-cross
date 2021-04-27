@@ -1,122 +1,126 @@
 {
-  "title": "Guest writer of the week: Food, Mood and Rolling with the Seasons",
-  "description": "",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/15/Katy-Article-image-1.jpg",
-  "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/15/Katy-Article-image-1.jpg",
-  "group": "guest-writer-of-the-week",
-  "sort": 15,
-  "meta": {
-    "icon": "article",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "kv",
-      "media": {
-        "type": "image",
-        "content": "{{lifestyle|guest-writer-of-the-week|15[image]}}",
-        "alt": "{{lifestyle|guest-writer-of-the-week|15[alt]}}"
-      },
-      "style": {
-        "desktop": "right",
-        "mobile": "bottom"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "copy": "Food, Mood and Rolling with the Seasons"
-        }
-      ]
-    },
-    {
-      "type": "wrapper",
-      "components": [
-        {
-          "type": "paragraphs",
-          "text": [
-            "The 'mood boosting' tag is cropping up more and more on food, but what evidence is behind it? What do you eat to get that advertised mental clarity and glowing temperament? As with most things, it’s not as simple as just adding a few new ingredients to your diet, it also requires working with your body and the earth."
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Inside and out ",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Whether aware or not, we are tuned into the seasons and we naturally gravitate towards what’s available - warming root vegetables and slow cooked meaty stews in the cooler months and lighter more energising salads and berries in the warmer months without even thinking about it. Beyond these cravings though, our bodies and the microbes in our gut have developed to work optimally with our heritage foods.",
-            "Food tastes better in season and it’s also more nutritious having gone straight from the field to you without being freighted, frozen, stored or forced into accelerated ripening. It’s good as well, to feel a connection to food and where it comes from, to be in tune with nature and feel a sense of scale with the earth. There’s evidence to support the health and happiness benefits of being close to nature, getting outside and being barefoot on the ground. A bit airy fairy you might think, but here’s a lovely bit of context – the rings you see when you slice into a beetroot, each one represents a cycle of the moon. You’re eating about half a year in those slices. But the modern global food system makes it hard to stay local and seasonal, supermarket shelves are stacked with the same products all year round (out of roughly 300,000 species of plants in the world, we eat about 200), so read those labels and go to farmers’ markets get to a direct line to the season’s best. This is when taking pictures of food really pays off – to see all the variety you’re getting in your diet. As a food stylist, I’m a sucker for the perfect Instagram shot of my food, whether I’m out and about or cooking at home. For this recipe, why not try using the crystal clear camera of the <a href=\"https://www.samsung.com/uk/smartphones/galaxy-s20/galaxy-s20-fe/\">Samsung Galaxy S20FE</a> for the ultimate shot. It’s such a value for money device and comes in the most beautiful colours. Despite the lower price point, it definitely doesn’t compromise on any of its quality."
-          ]
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/15/Katy-article-image-6.jpg",
-          "alt": ""
-        },
-        {
-          "type": "headline",
-          "copy": "Perfect early Autumn recipe – roast spiced squash",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Start to serve 1 hour, serves 2",
-            "Heat the oven to 180c, 160c fan.",
-            "Heat a good drizzle of light olive oil in a roasting tin then add 1 large squash cut into chunks and 5 bashed cloves of garlic. Toss in the oil with salt and pepper and roast for 45 mins – tossing halfway.",
-            "Meanwhile bring 120g whole grain barley or spelt to the boil in a saucepan and boil for 40 mins.",
-            "To make the spice rub; crush the seeds from 3 cardamom pods with ¾ tsp fennel seeds and mix with 1tsp black onion seeds, 1tsp urfa chilli flakes (or smoky dried chilli e.g. ancho/chipotle. Or use sumac for a milder taste).",
-            "For the last 10 mins of cooking time add the spice mix and a handful of hazelnuts to the squash - mix well.",
-            "Toss the squash and drained cooked barley in the tin with 1 sliced green chilli, a few handfuls of salad leaves, chopped parsley, extra virgin olive oil, a squeeze of lime juice and a little zest, extra urfa chilli and/or sumac and salt and pepper to taste. Serve with natural yoghurt."
-          ]
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/15/Katy-article-image-2.jpg",
-          "alt": ""
-        },
-        {
-          "type": "headline",
-          "copy": "Gut feeling ",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "There are many foods that do as promised and increase those happy hormones, chocolate for example, 70%+ cocoa contains theobromine (which can help boost mood) and phenylethylamine (associated with feelings of love and joy). But happiness doesn’t come from a chemical reaction from one snack, it comes from your body working well.",
-            "Problems start from using a one size fits all approach, a diet, a detox, cutting out grains or dairy, only eating raw food. One person might go vegan and have boundless energy, glowing skin and feel amazing but someone else might feel lethargic, lose some hair and the colour from their cheeks. It all depends on what our body and our microbes need and that’s as individual as a fingerprint.",
-            "Most of our immune system is located in the large intestine and the trillions of microbes in there are closely linked to our nervous system, they protect against toxins, every substance that your brain uses is made in there and it’s key in hormone production - so our happiness, mood, appetite… all depend on their harmony. It’s an ever-growing area of research but there have even been trials of diets as a treatment for mental health conditions with pretty amazing results."
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "The fine print on happy foods",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "The key is keeping it simple, the fewer the processes it’s gone through the better it is for you and your gut – that means full fat rather than diet versions. Sugar is one to watch, 30 years ago a handful of berries would be a sweet treat now it’s everywhere and, in many forms, our microbiome just isn’t adapted to the increased volume of it.",
-            "Nobody panic – we have dark chocolate on side and carbohydrates are essential, it’s more the types we eat and the volume. Eat good quality bread and sourdough (that artisan bread is worth the price tag, we promise!), good flour properly milled should be a nutritious product, but modern production methods strip out most of the nutrients in commercial breads and bakes. Get your wholegrains in, they’re harder to digest so will get right down to your large intestine for your microbes to enjoy, mix up your gains and try the lower gluten ones like rye, spelt or gluten free buckwheat.",
-            "All the things we’d expect to be on the list are there, but lots of fibre and wholegrains are key, lots of vegetables - organic, so those chemicals don’t pass into your body (check the ‘dirty dozen and clean fifteen’ list to see which retain the most and least pesticide residues), leafy greens, eggs, mushrooms, beans and lentils, oats, a bit of cheese and dairy, meat and game (2-times per week), garlic, oily fish, nuts – especially Brazils, seeds – pumpkin seeds are great, legumes – that includes chickpea hummus, extra virgin olive oil – cold pressed varieties, unpasteurised ferments like kimchi.",
-            "On the plus side, studies have also shown that treating yourself to that cake or fried chicken, in moderation is good for you as well - keeping those microbes on their toes keeps them sharp. Variety is the spice of life, good, ‘bad’ and everything in between.",
-            "<br>",
-            "<strong>By Katy McClelland.</strong>",
-            "Freelance food stylist, recipe developer & food editor specialising in creating recipes for editorial, advertising, TV and film, social media and video content. A regular contributor to Delicious and Vegetarian Living magazines and on creating social recipe media content for Baileys."
-          ]
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "dynamic": "more-articles",
-      "id": "guest-writer-of-the-week",
-      "title": "More articles",
-      "style": {
-        "scroll": true
-      }
-    }
-  ]
+	"title": "Guest writer of the week: Food, Mood and Rolling with the Seasons",
+	"description": "",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/15/Katy-Article-image-1.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/15/Katy-Article-image-1.jpg",
+	"group": "guest-writer-of-the-week",
+	"sort": 15,
+	"meta": {
+		"icon": "article",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 7,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "image",
+				"content": "{{lifestyle|guest-writer-of-the-week|15[image]}}",
+				"alt": "{{lifestyle|guest-writer-of-the-week|15[alt]}}"
+			},
+			"style": {
+				"desktop": "right",
+				"mobile": "bottom"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Food, Mood and Rolling with the Seasons"
+				}
+			]
+		},
+		{
+			"type": "wrapper",
+			"components": [
+				{
+					"type": "paragraphs",
+					"text": [
+						"The 'mood boosting' tag is cropping up more and more on food, but what evidence is behind it? What do you eat to get that advertised mental clarity and glowing temperament? As with most things, it’s not as simple as just adding a few new ingredients to your diet, it also requires working with your body and the earth."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Inside and out ",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Whether aware or not, we are tuned into the seasons and we naturally gravitate towards what’s available - warming root vegetables and slow cooked meaty stews in the cooler months and lighter more energising salads and berries in the warmer months without even thinking about it. Beyond these cravings though, our bodies and the microbes in our gut have developed to work optimally with our heritage foods.",
+						"Food tastes better in season and it’s also more nutritious having gone straight from the field to you without being freighted, frozen, stored or forced into accelerated ripening. It’s good as well, to feel a connection to food and where it comes from, to be in tune with nature and feel a sense of scale with the earth. There’s evidence to support the health and happiness benefits of being close to nature, getting outside and being barefoot on the ground. A bit airy fairy you might think, but here’s a lovely bit of context – the rings you see when you slice into a beetroot, each one represents a cycle of the moon. You’re eating about half a year in those slices. But the modern global food system makes it hard to stay local and seasonal, supermarket shelves are stacked with the same products all year round (out of roughly 300,000 species of plants in the world, we eat about 200), so read those labels and go to farmers’ markets get to a direct line to the season’s best. This is when taking pictures of food really pays off – to see all the variety you’re getting in your diet. As a food stylist, I’m a sucker for the perfect Instagram shot of my food, whether I’m out and about or cooking at home. For this recipe, why not try using the crystal clear camera of the <a href=\"https://www.samsung.com/uk/smartphones/galaxy-s20/galaxy-s20-fe/\">Samsung Galaxy S20FE</a> for the ultimate shot. It’s such a value for money device and comes in the most beautiful colours. Despite the lower price point, it definitely doesn’t compromise on any of its quality."
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/15/Katy-article-image-6.jpg",
+					"alt": ""
+				},
+				{
+					"type": "headline",
+					"copy": "Perfect early Autumn recipe – roast spiced squash",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Start to serve 1 hour, serves 2",
+						"Heat the oven to 180c, 160c fan.",
+						"Heat a good drizzle of light olive oil in a roasting tin then add 1 large squash cut into chunks and 5 bashed cloves of garlic. Toss in the oil with salt and pepper and roast for 45 mins – tossing halfway.",
+						"Meanwhile bring 120g whole grain barley or spelt to the boil in a saucepan and boil for 40 mins.",
+						"To make the spice rub; crush the seeds from 3 cardamom pods with ¾ tsp fennel seeds and mix with 1tsp black onion seeds, 1tsp urfa chilli flakes (or smoky dried chilli e.g. ancho/chipotle. Or use sumac for a milder taste).",
+						"For the last 10 mins of cooking time add the spice mix and a handful of hazelnuts to the squash - mix well.",
+						"Toss the squash and drained cooked barley in the tin with 1 sliced green chilli, a few handfuls of salad leaves, chopped parsley, extra virgin olive oil, a squeeze of lime juice and a little zest, extra urfa chilli and/or sumac and salt and pepper to taste. Serve with natural yoghurt."
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/15/Katy-article-image-2.jpg",
+					"alt": ""
+				},
+				{
+					"type": "headline",
+					"copy": "Gut feeling ",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"There are many foods that do as promised and increase those happy hormones, chocolate for example, 70%+ cocoa contains theobromine (which can help boost mood) and phenylethylamine (associated with feelings of love and joy). But happiness doesn’t come from a chemical reaction from one snack, it comes from your body working well.",
+						"Problems start from using a one size fits all approach, a diet, a detox, cutting out grains or dairy, only eating raw food. One person might go vegan and have boundless energy, glowing skin and feel amazing but someone else might feel lethargic, lose some hair and the colour from their cheeks. It all depends on what our body and our microbes need and that’s as individual as a fingerprint.",
+						"Most of our immune system is located in the large intestine and the trillions of microbes in there are closely linked to our nervous system, they protect against toxins, every substance that your brain uses is made in there and it’s key in hormone production - so our happiness, mood, appetite… all depend on their harmony. It’s an ever-growing area of research but there have even been trials of diets as a treatment for mental health conditions with pretty amazing results."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "The fine print on happy foods",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"The key is keeping it simple, the fewer the processes it’s gone through the better it is for you and your gut – that means full fat rather than diet versions. Sugar is one to watch, 30 years ago a handful of berries would be a sweet treat now it’s everywhere and, in many forms, our microbiome just isn’t adapted to the increased volume of it.",
+						"Nobody panic – we have dark chocolate on side and carbohydrates are essential, it’s more the types we eat and the volume. Eat good quality bread and sourdough (that artisan bread is worth the price tag, we promise!), good flour properly milled should be a nutritious product, but modern production methods strip out most of the nutrients in commercial breads and bakes. Get your wholegrains in, they’re harder to digest so will get right down to your large intestine for your microbes to enjoy, mix up your gains and try the lower gluten ones like rye, spelt or gluten free buckwheat.",
+						"All the things we’d expect to be on the list are there, but lots of fibre and wholegrains are key, lots of vegetables - organic, so those chemicals don’t pass into your body (check the ‘dirty dozen and clean fifteen’ list to see which retain the most and least pesticide residues), leafy greens, eggs, mushrooms, beans and lentils, oats, a bit of cheese and dairy, meat and game (2-times per week), garlic, oily fish, nuts – especially Brazils, seeds – pumpkin seeds are great, legumes – that includes chickpea hummus, extra virgin olive oil – cold pressed varieties, unpasteurised ferments like kimchi.",
+						"On the plus side, studies have also shown that treating yourself to that cake or fried chicken, in moderation is good for you as well - keeping those microbes on their toes keeps them sharp. Variety is the spice of life, good, ‘bad’ and everything in between.",
+						"<br>",
+						"<strong>By Katy McClelland.</strong>",
+						"Freelance food stylist, recipe developer & food editor specialising in creating recipes for editorial, advertising, TV and film, social media and video content. A regular contributor to Delicious and Vegetarian Living magazines and on creating social recipe media content for Baileys."
+					]
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "more-articles",
+			"id": "guest-writer-of-the-week",
+			"title": "More articles",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
 }

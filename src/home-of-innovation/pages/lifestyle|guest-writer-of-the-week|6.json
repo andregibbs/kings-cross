@@ -1,151 +1,155 @@
 {
-  "title": "Guest writer of the week: Bring the taste of your favourite restaurant home",
-  "description": "Get chef standard food from your own kitchen",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/6/KV.jpg",
-  "alt": "A fully cooked roasted chicken, seasoned with chopped red chilli, mushrooms and green vegtables on a black cooking tray. Next to the black cooking tray is a small black jug of dark liquid and a light pink ceramic frying pan containing cooked tagliatelle pasta with praws, mushroom and green vegtables. All dishes are placed on top of a white wooden table.",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/6/KV.jpg",
-  "group": "guest-writer-of-the-week",
-  "sort": 6,
-  "meta": {
-    "icon": "article",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "kv",
-      "media": {
-        "type": "image",
-        "content": "{{lifestyle|guest-writer-of-the-week|6[image]}}",
-        "alt": "{{lifestyle|guest-writer-of-the-week|6[alt]}}"
-      },
-      "style": {
-        "desktop": "right",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "copy": "Bring the taste of your favourite restaurant home"
-        }
-      ]
-    },
-    {
-      "type": "wrapper",
-      "components": [
-        {
-          "type": "paragraphs",
-          "style": {
-            "large": true
-          },
-          "text": [
-            "From simple tweaks to new techniques, food writer, Katy McClelland shows it’s easier than you think to get chef standard food from your own kitchen. Try cooking up one of the recipes below and share your finished dishes with #SamsungKX."
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Flavour factor",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "The easiest way to add amazing flavour is using good ingredients; the better the produce the less effort required. Your shopping doesn’t need to be break the bank but splurging on some things will make a huge difference to the final dish.",
-            "Meat and fish are the obvious - you’ll see less shrinkage from cooking and thicker tastier cooking juices from the good stuff (grass fed is also something to look out for with beef). Vegetables in season and from smaller, local producers will also have twice the flavour.",
-            "Chefs also add richer flavour with fats. Try making browned butter to elevate your dishes. Use a sauté/ saucepan (a decent size for the amount of butter so it’s not overcrowded), cut the butter into fairly even small cubes. Melt and bubble over a medium high heat, then once it foams and bubbles, let it carry on fairly vigorously for around 5 mins (this is the water evaporating off and the solid fats sizzling and toasting). It should smell biscuit-ty and the bits at the bottom should be deep golden brown – not burnt. Quickly tip into a bowl to cool and stop cooking (discard the bits later). You can add this to so many dishes to give them a little kick. The Combi-Hob from the new <a href=\"https://www.samsung.com/uk/cooking-appliances/hobs/\">Samsung infinite range</a> is great for this, as it has two dual flex zones allowing you to heat multiple pans at different temperatures."
-          ]
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/6/1.jpg",
-          "alt": ""
-        },
-        {
-          "type": "headline",
-          "copy": "Base and spice",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "More often than not, onions, leeks, scallions, shallots and garlic make the base of a recipe (if you have an allium allergy focus on spices and final seasoning). For browning onions, make sure they’re cut evenly, and have enough room in the pan. Add a good knob of butter and a splash of oil (so the butter doesn’t burn). Ensure you control the heat, start medium high and reduce slightly once they start to colour (around 8-12mins).  Mix now and again, adding the pan’s lid halfway through – the earlier you add the lid the softer the onions go. Leeks and spring onions are also great when softened as a base. Watch out for garlic – it can taste bitter if it gets burnt, so don’t add it in too early or on too high of a heat. Invest in a good, heavy non-stick pan and roasting tin, it will make browning bubbling and sizzling much more effective.",
-            "The next ingredients to get the single origin stamp are spices, just like everything else they come in grades of quality. Lightly toasting whole spices in a dry pan on a low heat for around a minute can really lift the flavour.  Ensure to cook the spices long enough so that they get the full taste – this is key in Indian cooking. "
-          ]
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/6/2.jpg",
-          "alt": ""
-        },
-        {
-          "type": "headline",
-          "copy": "Smoked aubergine dip",
-          "level": "4"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Serves 4<br>From start to serve 25 mins",
-            "- 2 large aubergines<br>- 175g thick Greek yoghurt<br>- ½ clove crushed garlic<br>- A squeeze of lemon and a pinch of salt<br>- 40g browned butter (or use 3tbsp of a good extra virgin olive oil if you prefer)",
-            "Hold the aubergines on a gas flame on the hob using flameproof tongs, (or put them under a high grill). Cook for 10-12 minutes, turning every 2-3 mins to char them evenly. Their skin will look blackened and blistered on the outside but inside should be soft and tender.",
-            "Once cool enough to handle, peel off the skin with your hands. Then mash the flesh with the garlic, lemon, yoghurt and salt.",
-            "For an Indonesian twist – swap half the yoghurt for coconut milk mixed with 3tbsp peanut butter. Add ¾tsp curry powder as you brown the butter, cool slightly then drizzle over the dip. Sprinkle chopped roasted peanuts, coconut flakes, sesame seeds, golden raisins, sultanas or chopped coriander over the top.",
-            "For a Greek twist – drizzle over tahini. Add a pinch of cumin seeds and chilli flakes. Once it’s almost ready, cool slightly then drizzle over the dip and sprinkle over chopped toasted walnuts, pine nuts, golden raisins or sultanas.",
-            "For a curveball try an Ethiopian twist - add ¼ -1tsp berbere spice blend, ½ tsp nigella seeds and 4 bashed cardamon pods as you brown the butter, cool slightly then drizzle over the dip. Sprinkle over chopped toasted hazelnuts, almonds, raisins, sultanas and a drizzle of honey."
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Authentic ingredients to get an authentic taste",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "You can adapt your restaurant favourites to your home kitchen just with a little preplanning or tweaking to the tools you have. Pad Thai is a good one, at home it can be grey greens and sludgy noodles. Chefs always have the ingredients prepped and partially cooked before sizzling it all in one pan to serve. So, try cooking your elements separately if you haven’t got a big wok and good flame control underneath – don’t overcook, veggies are nice with some bite and leaves wilt enough with the pan off the heat (just ensure to keep stirring well). Rinse your soaked or cooked noodles under cold water and toss with a little oil until you’re ready to use. Get your meat or tofu and begin to golden.  Add the soy, tamarind, sesame oil, lime juice to the pan with the rest of the food. Try adding a drop of water to loosen all those lovely crispy bits and juices."
-          ]
-        },
-        {
-          "type": "image",
-          "content": "{{lifestyle|guest-writer-of-the-week|6[image]}}",
-          "alt": "{{lifestyle|guest-writer-of-the-week|6[alt]}}"
-        },
-        {
-          "type": "headline",
-          "copy": "Fakeaway Roast",
-          "level": "4"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "This is made all the easier with the <a href=\"https://www.samsung.com/uk/cooking-appliances/ovens/\">Samsung Infinite Cooking range oven</a> - it lets you cook multiple dishes simultaneously at different cooking temperatures, modes and times.",
-            "If you don’t have a dual cooker, then cook the noodles in the oven with the chicken (but for 5 mins less). It’s all in the heat control to get crispy chicken, tender noodles and fresh Asian flavours.",
-            "Serves 4 (with leftover chicken)<br>From start to serve 1 hour 30 min",
-            "- Medium chicken (1.7kg approx.)<br>- 1 heaped tbsp cornflour mixed with a few pinches of salt and pepper<br>- 70g softened butter or lard<br>- 2tbsp light cooking oil<br>- 4 garlic cloves and 1-2 red chillies, thinly sliced<br>- 250g shiitake mushrooms<br>- 3 eggs, lightly beaten <br>- 400g choi sum or pakchoi, separate the firmer ends and leaves and chop <br>",
-            "Heat the oven to 230C, 210C fan, gas 8. Put the chicken in a heavy non-stick roasting tin and rub all over with the cornflour, shake off any excess then rub all over with the butter. Roast for 15 mins.",
-            "Turn the heat down to 190C, 170C fan, gas 5 and continue roasting for around 40-60 mins more (until the juices run clear – you can stick a skewer in the leg to test). Baste with the cooking juices 2-3 times during cooking. Once the chicken is cooked, allow to rest for 10 mins on a plate.",
-            "Add the mushrooms to the tin and bake for 8 mins. Add the garlic, chillies and firmer ends of the pak choi and mix well, bake for 4 mins more. Clear a space at one side of the tin – but keep the juices and crispy bits there - pour the beaten eggs in. Bake for 1 min more. As it comes out of the oven stir the leafy bits with the rest of the veg to wilt. Break up the egg to serve.",
-            "<strong>For the sauce</strong> (make while the chicken cooks)",
-            "- A thumb sized piece of ginger, thinly sliced<br>- 1 cinnamon stick<br>- 1 ½ star anise<br>- 2tsp Sichuan peppercorns <br>- 4tbsp dark soy sauce<br>- 2tbsp mirin or white wine<br>- 80g light brown sugar <br>- 2tbsp Chinkiang black rice vinegar (or use balsamic)<br>",
-            "Add all the ingredients along with 300ml of water to a small saucepan, bring to the boil and simmer on a medium high heat until reduced by half (5-8 mins). Discard the spices at the end.",
-            "<strong>Baked noodles</strong> (start once the chicken has been in for 30 mins) ",
-            "- 250g medium dried egg noodles <br>- 25g butter or lard<br>- 300g raw king prawns in their shells (cleaned) (or 200g peeled) <br>- 4 cloves of garlic, finely chopped/grated<br>- A thumb sized piece of ginger, finely chopped/grated<br>- 4 spring onions, thinly sliced but keep the green and white ends separate  <br>- 100ml chicken stock or water mixed with 1tbsp toasted sesame oil (plus a few drops), 1tbsp soy sauce (plus extra to taste)<br>- Toasted sesame seeds a drizzle of oyster or chilli sauce to serve<br>",
-            "Heat the oven to 180C, 160C fan, gas 4. Soak the noodles in a bowl of boiling water for 4 mins, then drain and run under cold water to cool and toss with a few drops of the sesame oil. Heat a wide shallow casserole or ovenproof frying pan (26-30cm) over a high heat, add the butter, sizzle for a few seconds then add the prawns for around 30 sec to 1 min 30 sec each side Then set aside.",
-            "Turn the heat down to medium low, add the whites of the spring onions, garlic and ginger – mix well for 30-60secs. Reduce the heat to medium, add the noodles and mix well to coat. Dot over the prawns, pour the stock mixture over. Cover with a lid and bake for 10 mins.",
-            "Add more soy or sesame to taste, and stir in the greens, mushrooms and eggs.",
-            "<em>Don't forget to snap and share your dishes with <strong>#SamsungKX</em>.<br>By Katy McClelland.",
-            "<em>Katy is a freelance food stylist, recipe developer & food editor. A regular contributor to Delicious and Vegetarian Living magazines, Katy also creates social media recipe content for drinks brand, Baileys. Among many accomplishments, Katy was previously Food Editor at TI Media where she was in charge of developing recipes and writing food, product, lifestyle and travel pieces for women’s lifestyle brands including fit&well, Feel Good Food, Woman's Weekly, goodtoknow.co.uk and woman&home.</em>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "dynamic": "more-articles",
-      "id": "guest-writer-of-the-week",
-      "title": "More articles",
-      "style": {
-        "scroll": true
-      }
-    }
-  ]
+	"title": "Guest writer of the week: Bring the taste of your favourite restaurant home",
+	"description": "Get chef standard food from your own kitchen",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/6/KV.jpg",
+	"alt": "A fully cooked roasted chicken, seasoned with chopped red chilli, mushrooms and green vegtables on a black cooking tray. Next to the black cooking tray is a small black jug of dark liquid and a light pink ceramic frying pan containing cooked tagliatelle pasta with praws, mushroom and green vegtables. All dishes are placed on top of a white wooden table.",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/6/KV.jpg",
+	"group": "guest-writer-of-the-week",
+	"sort": 6,
+	"meta": {
+		"icon": "article",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 9,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "image",
+				"content": "{{lifestyle|guest-writer-of-the-week|6[image]}}",
+				"alt": "{{lifestyle|guest-writer-of-the-week|6[alt]}}"
+			},
+			"style": {
+				"desktop": "right",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Bring the taste of your favourite restaurant home"
+				}
+			]
+		},
+		{
+			"type": "wrapper",
+			"components": [
+				{
+					"type": "paragraphs",
+					"style": {
+						"large": true
+					},
+					"text": [
+						"From simple tweaks to new techniques, food writer, Katy McClelland shows it’s easier than you think to get chef standard food from your own kitchen. Try cooking up one of the recipes below and share your finished dishes with #SamsungKX."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Flavour factor",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"The easiest way to add amazing flavour is using good ingredients; the better the produce the less effort required. Your shopping doesn’t need to be break the bank but splurging on some things will make a huge difference to the final dish.",
+						"Meat and fish are the obvious - you’ll see less shrinkage from cooking and thicker tastier cooking juices from the good stuff (grass fed is also something to look out for with beef). Vegetables in season and from smaller, local producers will also have twice the flavour.",
+						"Chefs also add richer flavour with fats. Try making browned butter to elevate your dishes. Use a sauté/ saucepan (a decent size for the amount of butter so it’s not overcrowded), cut the butter into fairly even small cubes. Melt and bubble over a medium high heat, then once it foams and bubbles, let it carry on fairly vigorously for around 5 mins (this is the water evaporating off and the solid fats sizzling and toasting). It should smell biscuit-ty and the bits at the bottom should be deep golden brown – not burnt. Quickly tip into a bowl to cool and stop cooking (discard the bits later). You can add this to so many dishes to give them a little kick. The Combi-Hob from the new <a href=\"https://www.samsung.com/uk/cooking-appliances/hobs/\">Samsung infinite range</a> is great for this, as it has two dual flex zones allowing you to heat multiple pans at different temperatures."
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/6/1.jpg",
+					"alt": ""
+				},
+				{
+					"type": "headline",
+					"copy": "Base and spice",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"More often than not, onions, leeks, scallions, shallots and garlic make the base of a recipe (if you have an allium allergy focus on spices and final seasoning). For browning onions, make sure they’re cut evenly, and have enough room in the pan. Add a good knob of butter and a splash of oil (so the butter doesn’t burn). Ensure you control the heat, start medium high and reduce slightly once they start to colour (around 8-12mins).  Mix now and again, adding the pan’s lid halfway through – the earlier you add the lid the softer the onions go. Leeks and spring onions are also great when softened as a base. Watch out for garlic – it can taste bitter if it gets burnt, so don’t add it in too early or on too high of a heat. Invest in a good, heavy non-stick pan and roasting tin, it will make browning bubbling and sizzling much more effective.",
+						"The next ingredients to get the single origin stamp are spices, just like everything else they come in grades of quality. Lightly toasting whole spices in a dry pan on a low heat for around a minute can really lift the flavour.  Ensure to cook the spices long enough so that they get the full taste – this is key in Indian cooking. "
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/6/2.jpg",
+					"alt": ""
+				},
+				{
+					"type": "headline",
+					"copy": "Smoked aubergine dip",
+					"level": "4"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Serves 4<br>From start to serve 25 mins",
+						"- 2 large aubergines<br>- 175g thick Greek yoghurt<br>- ½ clove crushed garlic<br>- A squeeze of lemon and a pinch of salt<br>- 40g browned butter (or use 3tbsp of a good extra virgin olive oil if you prefer)",
+						"Hold the aubergines on a gas flame on the hob using flameproof tongs, (or put them under a high grill). Cook for 10-12 minutes, turning every 2-3 mins to char them evenly. Their skin will look blackened and blistered on the outside but inside should be soft and tender.",
+						"Once cool enough to handle, peel off the skin with your hands. Then mash the flesh with the garlic, lemon, yoghurt and salt.",
+						"For an Indonesian twist – swap half the yoghurt for coconut milk mixed with 3tbsp peanut butter. Add ¾tsp curry powder as you brown the butter, cool slightly then drizzle over the dip. Sprinkle chopped roasted peanuts, coconut flakes, sesame seeds, golden raisins, sultanas or chopped coriander over the top.",
+						"For a Greek twist – drizzle over tahini. Add a pinch of cumin seeds and chilli flakes. Once it’s almost ready, cool slightly then drizzle over the dip and sprinkle over chopped toasted walnuts, pine nuts, golden raisins or sultanas.",
+						"For a curveball try an Ethiopian twist - add ¼ -1tsp berbere spice blend, ½ tsp nigella seeds and 4 bashed cardamon pods as you brown the butter, cool slightly then drizzle over the dip. Sprinkle over chopped toasted hazelnuts, almonds, raisins, sultanas and a drizzle of honey."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Authentic ingredients to get an authentic taste",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"You can adapt your restaurant favourites to your home kitchen just with a little preplanning or tweaking to the tools you have. Pad Thai is a good one, at home it can be grey greens and sludgy noodles. Chefs always have the ingredients prepped and partially cooked before sizzling it all in one pan to serve. So, try cooking your elements separately if you haven’t got a big wok and good flame control underneath – don’t overcook, veggies are nice with some bite and leaves wilt enough with the pan off the heat (just ensure to keep stirring well). Rinse your soaked or cooked noodles under cold water and toss with a little oil until you’re ready to use. Get your meat or tofu and begin to golden.  Add the soy, tamarind, sesame oil, lime juice to the pan with the rest of the food. Try adding a drop of water to loosen all those lovely crispy bits and juices."
+					]
+				},
+				{
+					"type": "image",
+					"content": "{{lifestyle|guest-writer-of-the-week|6[image]}}",
+					"alt": "{{lifestyle|guest-writer-of-the-week|6[alt]}}"
+				},
+				{
+					"type": "headline",
+					"copy": "Fakeaway Roast",
+					"level": "4"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"This is made all the easier with the <a href=\"https://www.samsung.com/uk/cooking-appliances/ovens/\">Samsung Infinite Cooking range oven</a> - it lets you cook multiple dishes simultaneously at different cooking temperatures, modes and times.",
+						"If you don’t have a dual cooker, then cook the noodles in the oven with the chicken (but for 5 mins less). It’s all in the heat control to get crispy chicken, tender noodles and fresh Asian flavours.",
+						"Serves 4 (with leftover chicken)<br>From start to serve 1 hour 30 min",
+						"- Medium chicken (1.7kg approx.)<br>- 1 heaped tbsp cornflour mixed with a few pinches of salt and pepper<br>- 70g softened butter or lard<br>- 2tbsp light cooking oil<br>- 4 garlic cloves and 1-2 red chillies, thinly sliced<br>- 250g shiitake mushrooms<br>- 3 eggs, lightly beaten <br>- 400g choi sum or pakchoi, separate the firmer ends and leaves and chop <br>",
+						"Heat the oven to 230C, 210C fan, gas 8. Put the chicken in a heavy non-stick roasting tin and rub all over with the cornflour, shake off any excess then rub all over with the butter. Roast for 15 mins.",
+						"Turn the heat down to 190C, 170C fan, gas 5 and continue roasting for around 40-60 mins more (until the juices run clear – you can stick a skewer in the leg to test). Baste with the cooking juices 2-3 times during cooking. Once the chicken is cooked, allow to rest for 10 mins on a plate.",
+						"Add the mushrooms to the tin and bake for 8 mins. Add the garlic, chillies and firmer ends of the pak choi and mix well, bake for 4 mins more. Clear a space at one side of the tin – but keep the juices and crispy bits there - pour the beaten eggs in. Bake for 1 min more. As it comes out of the oven stir the leafy bits with the rest of the veg to wilt. Break up the egg to serve.",
+						"<strong>For the sauce</strong> (make while the chicken cooks)",
+						"- A thumb sized piece of ginger, thinly sliced<br>- 1 cinnamon stick<br>- 1 ½ star anise<br>- 2tsp Sichuan peppercorns <br>- 4tbsp dark soy sauce<br>- 2tbsp mirin or white wine<br>- 80g light brown sugar <br>- 2tbsp Chinkiang black rice vinegar (or use balsamic)<br>",
+						"Add all the ingredients along with 300ml of water to a small saucepan, bring to the boil and simmer on a medium high heat until reduced by half (5-8 mins). Discard the spices at the end.",
+						"<strong>Baked noodles</strong> (start once the chicken has been in for 30 mins) ",
+						"- 250g medium dried egg noodles <br>- 25g butter or lard<br>- 300g raw king prawns in their shells (cleaned) (or 200g peeled) <br>- 4 cloves of garlic, finely chopped/grated<br>- A thumb sized piece of ginger, finely chopped/grated<br>- 4 spring onions, thinly sliced but keep the green and white ends separate  <br>- 100ml chicken stock or water mixed with 1tbsp toasted sesame oil (plus a few drops), 1tbsp soy sauce (plus extra to taste)<br>- Toasted sesame seeds a drizzle of oyster or chilli sauce to serve<br>",
+						"Heat the oven to 180C, 160C fan, gas 4. Soak the noodles in a bowl of boiling water for 4 mins, then drain and run under cold water to cool and toss with a few drops of the sesame oil. Heat a wide shallow casserole or ovenproof frying pan (26-30cm) over a high heat, add the butter, sizzle for a few seconds then add the prawns for around 30 sec to 1 min 30 sec each side Then set aside.",
+						"Turn the heat down to medium low, add the whites of the spring onions, garlic and ginger – mix well for 30-60secs. Reduce the heat to medium, add the noodles and mix well to coat. Dot over the prawns, pour the stock mixture over. Cover with a lid and bake for 10 mins.",
+						"Add more soy or sesame to taste, and stir in the greens, mushrooms and eggs.",
+						"<em>Don't forget to snap and share your dishes with <strong>#SamsungKX</em>.<br>By Katy McClelland.",
+						"<em>Katy is a freelance food stylist, recipe developer & food editor. A regular contributor to Delicious and Vegetarian Living magazines, Katy also creates social media recipe content for drinks brand, Baileys. Among many accomplishments, Katy was previously Food Editor at TI Media where she was in charge of developing recipes and writing food, product, lifestyle and travel pieces for women’s lifestyle brands including fit&well, Feel Good Food, Woman's Weekly, goodtoknow.co.uk and woman&home.</em>"
+					]
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "more-articles",
+			"id": "guest-writer-of-the-week",
+			"title": "More articles",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
 }

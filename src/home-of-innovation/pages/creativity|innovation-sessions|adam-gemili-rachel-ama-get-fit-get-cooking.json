@@ -1,109 +1,113 @@
 {
-  "title": "Innovation Sessions: Get fit and get cooking",
-  "description": "A brand-new digital series from the Home of Innovation to inspire the UK",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/innovation-sessions/adam-gemili-rachel-ama/ep6_hero.jpg",
-  "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/innovation-sessions/thumbs/02_SAMSUNG_Session_06_Thumnail_400x255_v2.jpg",
-  "group": "innovation-sessions",
-  "sort": 6,
-  "meta": {
-    "icon": "video",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "kv",
-      "media": {
-        "type": "youtube",
-        "content": "A544I_KNqqw",
-        "poster": "{{creativity|innovation-sessions|adam-gemili-rachel-ama-get-fit-get-cooking[image]}}",
-        "alt": "{{creativity|innovation-sessions|adam-gemili-rachel-ama-get-fit-get-cooking[alt]}}"
-      },
-      "style": {
-        "desktop": "top",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "1",
-          "copy": "{{creativity|innovation-sessions|adam-gemili-rachel-ama-get-fit-get-cooking[title]}}"
-        }
-      ]
-    },
-    {
-      "type": "wrapper",
-      "components": [
-        {
-          "type": "headline",
-          "copy": "Series Overview:",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Welcome to the Innovation Sessions. Samsung KX, the Home of Innovation, has partnered with a line-up of inspiring people to bring you our very first digital event series. Topics such as podcasts, social media, tips for businesses and more will be covered to help you create your very own home of innovation."
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "About this Episode:",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Episode 6 of Innovation Sessions sees the world’s fourth fastest man Adam Gemili meet vegan chef Rachel Ama, to trade their tips on how tech helps them within their careers.",
-            "4-time European gold medallist, Adam Gemili, discusses how his devices have enabled him to keep on top of all of his stats, such as his strength, sleep quality, nutrition, heartrates and more. Through his <a href=\"https://www.samsung.com/uk/wearables/galaxy-watch3-r850/SM-R850NZSAEUA/buy/\">Galaxy Watch</a> and <a href=\"https://www.samsung.com/uk/smartphones/galaxy-s20/\">Galaxy S20</a>, Gemili is able to track and optimise his athletic performance and explains how you can too.",
-            "Rachel discusses the importance of minimising food waste and explains how the technology of the <a href=\"https://www.samsung.com/uk/refrigerators/family-hub-fridge-freezers/\">Family Hub</a> Fridge helps you to do so too. Talking tech and production, she also demonstrates how her <a href=\"https://www.samsung.com/uk/smartphones/galaxy-s20/\">Galaxy S20</a> phone and tripod brings her how-to tutorial videos to life."
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "About the collaborators:",
-          "level": "3"
-        },
-        {
-          "type": "headline",
-          "copy": "Adam Gemili:",
-          "level": "4"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Adam Gemili is a 4-time European gold medallist and the first British man to run a sub 10 seconds 100 metres and a sub 20 seconds 200 meters. Adam was an integral part of Great Britain’s first ever sprint relay World Championship gold medal, in front of a home crowd at London 2017. Global stardom is just around the corner for the boy who gave up a career in football to represent his country in the Olympics."
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Rachel Ama:",
-          "level": "4"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Rachel can often be found dancing and singing along to her favourite tunes cooking up a vegan storm in her kitchen. Sharing everything she creates and finds, from recipes to vegan skincare with warmth and humour - and welcoming everyone, whatever their food beliefs, to give the vegan life a go – preferably with the tunes turned up loud!"
-          ]
-        },
-        {
-          "type": "buttons",
-          "items": [
-            {
-              "copy": "Read Article",
-              "url": "{{creativity|innovation-sessions|adam-gemili-rachel-ama-get-fit-get-cooking|blog[url]}}"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "dynamic": "more-episodes",
-      "id": "innovation-sessions",
-      "title": "More episodes",
-      "style": {
-        "scroll": true
-      }
-    }
-  ]
+	"title": "Innovation Sessions: Get fit and get cooking",
+	"description": "A brand-new digital series from the Home of Innovation to inspire the UK",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/innovation-sessions/adam-gemili-rachel-ama/ep6_hero.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/innovation-sessions/thumbs/02_SAMSUNG_Session_06_Thumnail_400x255_v2.jpg",
+	"group": "innovation-sessions",
+	"sort": 6,
+	"meta": {
+		"icon": "video",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 6,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "youtube",
+				"content": "A544I_KNqqw",
+				"poster": "{{creativity|innovation-sessions|adam-gemili-rachel-ama-get-fit-get-cooking[image]}}",
+				"alt": "{{creativity|innovation-sessions|adam-gemili-rachel-ama-get-fit-get-cooking[alt]}}"
+			},
+			"style": {
+				"desktop": "top",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"level": "1",
+					"copy": "{{creativity|innovation-sessions|adam-gemili-rachel-ama-get-fit-get-cooking[title]}}"
+				}
+			]
+		},
+		{
+			"type": "wrapper",
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Series Overview:",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Welcome to the Innovation Sessions. Samsung KX, the Home of Innovation, has partnered with a line-up of inspiring people to bring you our very first digital event series. Topics such as podcasts, social media, tips for businesses and more will be covered to help you create your very own home of innovation."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "About this Episode:",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Episode 6 of Innovation Sessions sees the world’s fourth fastest man Adam Gemili meet vegan chef Rachel Ama, to trade their tips on how tech helps them within their careers.",
+						"4-time European gold medallist, Adam Gemili, discusses how his devices have enabled him to keep on top of all of his stats, such as his strength, sleep quality, nutrition, heartrates and more. Through his <a href=\"https://www.samsung.com/uk/wearables/galaxy-watch3-r850/SM-R850NZSAEUA/buy/\">Galaxy Watch</a> and <a href=\"https://www.samsung.com/uk/smartphones/galaxy-s20/\">Galaxy S20</a>, Gemili is able to track and optimise his athletic performance and explains how you can too.",
+						"Rachel discusses the importance of minimising food waste and explains how the technology of the <a href=\"https://www.samsung.com/uk/refrigerators/family-hub-fridge-freezers/\">Family Hub</a> Fridge helps you to do so too. Talking tech and production, she also demonstrates how her <a href=\"https://www.samsung.com/uk/smartphones/galaxy-s20/\">Galaxy S20</a> phone and tripod brings her how-to tutorial videos to life."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "About the collaborators:",
+					"level": "3"
+				},
+				{
+					"type": "headline",
+					"copy": "Adam Gemili:",
+					"level": "4"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Adam Gemili is a 4-time European gold medallist and the first British man to run a sub 10 seconds 100 metres and a sub 20 seconds 200 meters. Adam was an integral part of Great Britain’s first ever sprint relay World Championship gold medal, in front of a home crowd at London 2017. Global stardom is just around the corner for the boy who gave up a career in football to represent his country in the Olympics."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Rachel Ama:",
+					"level": "4"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Rachel can often be found dancing and singing along to her favourite tunes cooking up a vegan storm in her kitchen. Sharing everything she creates and finds, from recipes to vegan skincare with warmth and humour - and welcoming everyone, whatever their food beliefs, to give the vegan life a go – preferably with the tunes turned up loud!"
+					]
+				},
+				{
+					"type": "buttons",
+					"items": [
+						{
+							"copy": "Read Article",
+							"url": "{{creativity|innovation-sessions|adam-gemili-rachel-ama-get-fit-get-cooking|blog[url]}}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "more-episodes",
+			"id": "innovation-sessions",
+			"title": "More episodes",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
 }

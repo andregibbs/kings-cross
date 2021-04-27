@@ -1,164 +1,168 @@
 {
-  "title": "Tips & Trikx: Make the most out of exercising",
-  "description": "Make the most out of exercising",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-2/Image_KV.JPG",
-  "alt": "Female exercising with a smart watch on her left wrist and a bottle of water in her right hand",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-2/Image_KV.JPG",
-  "group": "tips-and-trikx",
-  "sort": 2,
-  "meta": {
-    "icon": "article",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "kv",
-      "media": {
-        "type": "image",
-        "content": "{{lifestyle|tips-and-trikx|2[image]}}",
-        "alt": "{{lifestyle|tips-and-trikx|2[alt]}}"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "bottom"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "copy": "{{lifestyle|tips-and-trikx|2[title]}}"
-        }
-      ]
-    },
-    {
-      "type": "wrapper",
-      "components": [
-        {
-          "type": "paragraphs",
-          "style": {
-            "large": true
-          },
-          "text": [
-            "Whether you’re striving for a healthier lifestyle or simply have some extra time on your hands, you don’t have to leave your comfort zone to tackle your fitness goals. Samsung KX shares five tips and ‘triKX’ for making the most of exercising whether staying indoors or venturing outside."
-          ]
-        },
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "1) Pick a playlist"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "It’s confirmed - music can literally trick the brain into making workouts feel less like work . To really get into a groove, find a playlist that syncs to the rhythm of your fitness activity. Some music streaming apps have BPM (beats-per-minute) playlists you can access on wearables like the <a href=\"https://www.samsung.com/uk/wearables/galaxy-watch-active2-r830/SM-R830NZDABTU/\">Galaxy Watch Active2</a>, where the BPM of these songs also matches your target heart rate. Simply download and go!"
-          ]
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-2/Image_1.JPG",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-2/Image_1.JPG",
-          "alt": "A woman listening to music closes her eyes and looks to the sun. Green and purple plants are in the background."
-        },
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "2) Get real-time results"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "A new challenge can help fuel motivation and keep exercise feeling exciting. From understanding macros to tracking sleep, there’s a wide variety of customisable apps and services to remind you of your goals and prompt you to follow through on them. Wearable tech can be the perfect real-time coach, giving insights and comprehensive workouts that keep fitness gurus smashing daily goals."
-          ]
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-2/Image_2.JPG",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-2/Image_2.JPG",
-          "alt": "A woman exercising with Samsung buds in her ears and a smart watch on her wrist checks her performance with the watch."
-        },
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "3) Find your routine"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "No matter how creative a person can be, the brain craves a little structure. From early workouts for a positive morning mindset, to evening runs for letting off steam, finding and trusting a method is the key to success."
-          ]
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-2/Image_3.JPG",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-2/Image_3.JPG",
-          "alt": "A woman and her dog exercise by running along a walkway above water."
-        },
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "4) Buddy-up safely"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Those in the same household as family or friends should try working out together, as healthy competition can increase motivation and help each other stay on track. Try making your workout more of a game and less of a chore by looping in others. Fitness apps like Samsung Health can help you channel your competitive streak and go toe-to-toe with friends (or other users around the world) on challenges that will keep you motivated. Reap the rewards - or bragging rights - and have fun in the process."
-          ]
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-2/Image_4.JPG",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-2/Image_4.JPG",
-          "alt": "A man and a woman exercise together. They're on a mat, holding hands, using their body weight to balance as they lean backwards."
-        },
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "5) Stretch"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Did you know that stretching before a workout increases muscle flexibility and improves blood circulation? Warming up with a dynamic full body stretch is a good habit to get into. Playing stretching exercise videos on a TV screen makes it easier to catch detailed movements and develop proper posture and technique."
-          ]
-        }
-      ]
-    },
-    {
-      "type": "gallery",
-      "items": [
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-2/Image_1.JPG",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-2/Image_1.JPG",
-          "alt": "A woman listening to music closes her eyes and looks to the sun. Green and purple plants are in the background."
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-2/Image_2.JPG",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-2/Image_2.JPG",
-          "alt": "A woman exercising with Samsung buds in her ears and a smart watch on her wrist checks her performance with the watch."
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-2/Image_3.JPG",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-2/Image_3.JPG",
-          "alt": "A woman and her dog exercise by running along a walkway above water."
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-2/Image_4.JPG",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-2/Image_4.JPG",
-          "alt": "A man and a woman exercise together. They're on a mat, holding hands, using their body weight to balance as they lean backwards."
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "dynamic": "more-episodes",
-      "id": "tips-and-trikx",
-      "title": "More episodes",
-      "style": {
-        "scroll": true
-      }
-    }
-  ]
+	"title": "Tips & Trikx: Make the most out of exercising",
+	"description": "Make the most out of exercising",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-2/Image_KV.JPG",
+	"alt": "Female exercising with a smart watch on her left wrist and a bottle of water in her right hand",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-2/Image_KV.JPG",
+	"group": "tips-and-trikx",
+	"sort": 2,
+	"meta": {
+		"icon": "article",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 3,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "image",
+				"content": "{{lifestyle|tips-and-trikx|2[image]}}",
+				"alt": "{{lifestyle|tips-and-trikx|2[alt]}}"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "bottom"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "{{lifestyle|tips-and-trikx|2[title]}}"
+				}
+			]
+		},
+		{
+			"type": "wrapper",
+			"components": [
+				{
+					"type": "paragraphs",
+					"style": {
+						"large": true
+					},
+					"text": [
+						"Whether you’re striving for a healthier lifestyle or simply have some extra time on your hands, you don’t have to leave your comfort zone to tackle your fitness goals. Samsung KX shares five tips and ‘triKX’ for making the most of exercising whether staying indoors or venturing outside."
+					]
+				},
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "1) Pick a playlist"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"It’s confirmed - music can literally trick the brain into making workouts feel less like work . To really get into a groove, find a playlist that syncs to the rhythm of your fitness activity. Some music streaming apps have BPM (beats-per-minute) playlists you can access on wearables like the <a href=\"https://www.samsung.com/uk/wearables/galaxy-watch-active2-r830/SM-R830NZDABTU/\">Galaxy Watch Active2</a>, where the BPM of these songs also matches your target heart rate. Simply download and go!"
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-2/Image_1.JPG",
+					"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-2/Image_1.JPG",
+					"alt": "A woman listening to music closes her eyes and looks to the sun. Green and purple plants are in the background."
+				},
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "2) Get real-time results"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"A new challenge can help fuel motivation and keep exercise feeling exciting. From understanding macros to tracking sleep, there’s a wide variety of customisable apps and services to remind you of your goals and prompt you to follow through on them. Wearable tech can be the perfect real-time coach, giving insights and comprehensive workouts that keep fitness gurus smashing daily goals."
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-2/Image_2.JPG",
+					"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-2/Image_2.JPG",
+					"alt": "A woman exercising with Samsung buds in her ears and a smart watch on her wrist checks her performance with the watch."
+				},
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "3) Find your routine"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"No matter how creative a person can be, the brain craves a little structure. From early workouts for a positive morning mindset, to evening runs for letting off steam, finding and trusting a method is the key to success."
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-2/Image_3.JPG",
+					"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-2/Image_3.JPG",
+					"alt": "A woman and her dog exercise by running along a walkway above water."
+				},
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "4) Buddy-up safely"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Those in the same household as family or friends should try working out together, as healthy competition can increase motivation and help each other stay on track. Try making your workout more of a game and less of a chore by looping in others. Fitness apps like Samsung Health can help you channel your competitive streak and go toe-to-toe with friends (or other users around the world) on challenges that will keep you motivated. Reap the rewards - or bragging rights - and have fun in the process."
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-2/Image_4.JPG",
+					"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-2/Image_4.JPG",
+					"alt": "A man and a woman exercise together. They're on a mat, holding hands, using their body weight to balance as they lean backwards."
+				},
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "5) Stretch"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Did you know that stretching before a workout increases muscle flexibility and improves blood circulation? Warming up with a dynamic full body stretch is a good habit to get into. Playing stretching exercise videos on a TV screen makes it easier to catch detailed movements and develop proper posture and technique."
+					]
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"items": [
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-2/Image_1.JPG",
+					"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-2/Image_1.JPG",
+					"alt": "A woman listening to music closes her eyes and looks to the sun. Green and purple plants are in the background."
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-2/Image_2.JPG",
+					"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-2/Image_2.JPG",
+					"alt": "A woman exercising with Samsung buds in her ears and a smart watch on her wrist checks her performance with the watch."
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-2/Image_3.JPG",
+					"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-2/Image_3.JPG",
+					"alt": "A woman and her dog exercise by running along a walkway above water."
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-2/Image_4.JPG",
+					"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-2/Image_4.JPG",
+					"alt": "A man and a woman exercise together. They're on a mat, holding hands, using their body weight to balance as they lean backwards."
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "more-episodes",
+			"id": "tips-and-trikx",
+			"title": "More episodes",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
 }

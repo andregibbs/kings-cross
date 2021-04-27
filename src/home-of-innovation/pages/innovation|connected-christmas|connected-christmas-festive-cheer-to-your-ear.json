@@ -1,56 +1,60 @@
 {
-  "title": "Connected Christmas: Festive cheer to your ear",
-  "description": "Ending the year with a Christmas high, connect with two moving performances, blogs and playlists as we use Samsung tech to enjoy the festive season in new ways this year",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/connected-christmas/Samsung_WebsiteBanner_Xmas_MARCI_PLAYLIST_1440x810_V2.jpg",
-  "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/connected-christmas/Samsung_WebsiteBanner_Xmas_MARCI_PLAYLIST_400x255_V1.png",
-  "group": "connected-christmas",
-  "sort": 4,
-  "meta": {
-    "icon": "audio",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "kv",
-      "style": {
-        "desktop": "top",
-        "mobile": "top"
-      },
-      "media": {
-        "type": "image",
-        "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/connected-christmas/Samsung_WebsiteBanner_Xmas_MARCI_PLAYLIST_1440x810_V2.jpg",
-        "alt": ""
-      },
-      "components": [
-        {
-          "type": "headline",
-          "copy": "Connected Christmas: Festive cheer to your ear"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "To get you in the mood for the festive season, a Christmas playlist is an essential! Ballet dancer Marcelino Sambé shares some of his favourite playlist hits including some Portuguese Christmas songs you may have never heard.",
-            "Feel like you're in the front row, or part of something bigger with the <a href=\"https://www.samsung.com/us/mobile-audio/galaxy-buds-live/\">Galaxy Buds Live</a>. Listen below!"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "wrapper",
-      "components": [
-        {
-          "type": "iframe",
-          "variant": "spotify",
-          "src": "https://open.spotify.com/embed/playlist/4UaMp4hgtBfR2pyMeg9p47"
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "dynamic": "episodes",
-      "title": "Connnected Christmas",
-      "id": "connected-christmas"
-    }
-  ]
+	"title": "Connected Christmas: Festive cheer to your ear",
+	"description": "Ending the year with a Christmas high, connect with two moving performances, blogs and playlists as we use Samsung tech to enjoy the festive season in new ways this year",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/connected-christmas/Samsung_WebsiteBanner_Xmas_MARCI_PLAYLIST_1440x810_V2.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/connected-christmas/Samsung_WebsiteBanner_Xmas_MARCI_PLAYLIST_400x255_V1.png",
+	"group": "connected-christmas",
+	"sort": 4,
+	"meta": {
+		"icon": "audio",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 90,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"style": {
+				"desktop": "top",
+				"mobile": "top"
+			},
+			"media": {
+				"type": "image",
+				"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/connected-christmas/Samsung_WebsiteBanner_Xmas_MARCI_PLAYLIST_1440x810_V2.jpg",
+				"alt": ""
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Connected Christmas: Festive cheer to your ear"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"To get you in the mood for the festive season, a Christmas playlist is an essential! Ballet dancer Marcelino Sambé shares some of his favourite playlist hits including some Portuguese Christmas songs you may have never heard.",
+						"Feel like you're in the front row, or part of something bigger with the <a href=\"https://www.samsung.com/us/mobile-audio/galaxy-buds-live/\">Galaxy Buds Live</a>. Listen below!"
+					]
+				}
+			]
+		},
+		{
+			"type": "wrapper",
+			"components": [
+				{
+					"type": "iframe",
+					"variant": "spotify",
+					"src": "https://open.spotify.com/embed/playlist/4UaMp4hgtBfR2pyMeg9p47"
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "episodes",
+			"title": "Connnected Christmas",
+			"id": "connected-christmas"
+		}
+	]
 }

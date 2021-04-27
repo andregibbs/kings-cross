@@ -1,50 +1,54 @@
 {
-  "title": "Munya Chawawa raises heart rates",
-  "description": "Take a break! Munya teaches Amelia his secret skill as Clara reveals hers.",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/entertainment/lunch-and-listen/t2_kv.jpg",
-  "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/entertainment/lunch-and-listen/Samsung_Website_THUMBNAIL_Munya_v3.jpg",
-  "group": "lunch-and-listen",
-  "sort": 2,
-  "meta": {
-    "icon": "video",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "kv",
-      "media": {
-        "type": "youtube",
-        "content": "TCw8wI2MBMY",
-        "poster": "{{entertainment|lunch-and-listen|amelia-dimoldenberg-munya-chawawa|2[image]}}",
-        "alt": "{{entertainment|lunch-and-listen|amelia-dimoldenberg-munya-chawawa|2[alt]}}"
-      },
-      "style": {
-        "desktop": "top",
-        "mobile": "bottom"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "copy": "Munya Chawawa raises heart rates"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Samsung KX’s all new series Lunch & Listen is here to help you reclaim your lunch break! Hosted by Clara Amfo, this fun and engaging two-part series sees special guests Katherine Ryan, Munya Chawawa, Reggie Yates and Amelia Dimoldenberg reveal their hidden hobbies and talk about how they reclaim their free time - inspiring you to do the same.",
-            "Time to take a break. Munya performs his posh drill gaming rap before seeing his heart rate soar on the <a href=\"https://www.samsung.com/uk/wearables/galaxy-watch3-r855/SM-R855FZDAEUA/\">Galaxy Watch3</a> as he teaches Amelia how to become a skipping pro. Clara also has her own secret skill up her sleeve too as she hosts the show at Samsung KX."
-          ]
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "dynamic": "episodes",
-      "id": "lunch-and-listen",
-      "title": "Episodes",
-      "style": {
-        "scroll": true
-      }
-    }
-  ]
+	"title": "Munya Chawawa raises heart rates",
+	"description": "Take a break! Munya teaches Amelia his secret skill as Clara reveals hers.",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/entertainment/lunch-and-listen/t2_kv.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/entertainment/lunch-and-listen/Samsung_Website_THUMBNAIL_Munya_v3.jpg",
+	"group": "lunch-and-listen",
+	"sort": 2,
+	"meta": {
+		"icon": "video",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 5,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "youtube",
+				"content": "TCw8wI2MBMY",
+				"poster": "{{entertainment|lunch-and-listen|amelia-dimoldenberg-munya-chawawa|2[image]}}",
+				"alt": "{{entertainment|lunch-and-listen|amelia-dimoldenberg-munya-chawawa|2[alt]}}"
+			},
+			"style": {
+				"desktop": "top",
+				"mobile": "bottom"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Munya Chawawa raises heart rates"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Samsung KX’s all new series Lunch & Listen is here to help you reclaim your lunch break! Hosted by Clara Amfo, this fun and engaging two-part series sees special guests Katherine Ryan, Munya Chawawa, Reggie Yates and Amelia Dimoldenberg reveal their hidden hobbies and talk about how they reclaim their free time - inspiring you to do the same.",
+						"Time to take a break. Munya performs his posh drill gaming rap before seeing his heart rate soar on the <a href=\"https://www.samsung.com/uk/wearables/galaxy-watch3-r855/SM-R855FZDAEUA/\">Galaxy Watch3</a> as he teaches Amelia how to become a skipping pro. Clara also has her own secret skill up her sleeve too as she hosts the show at Samsung KX."
+					]
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "episodes",
+			"id": "lunch-and-listen",
+			"title": "Episodes",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
 }

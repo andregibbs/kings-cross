@@ -1,55 +1,59 @@
 {
-  "title": "Powerful Personal Branding: Professional portraits on the S21",
-  "description": "",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/personal-branding/02_Samsung_Remote_Capture_WEB_Banner_V3.jpg",
-  "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/personal-branding/01_Samsung_Remote_Capture_Thumbnail_400x255_V3.jpg",
-  "group": "personal-branding",
-  "sort": 1,
-  "meta": {
-    "icon": "video",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "kv",
-      "media": {
-        "type": "youtube",
-        "content": "H64T6d5aVsw",
-        "poster": "{{creativity|personal-branding|professional-portraits-on-the-s21[image]}}",
-        "alt": "{{creativity|personal-branding|professional-portraits-on-the-s21[alt]}}"
-      },
-      "style": {
-        "desktop": "top",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "copy": "{{creativity|personal-branding|professional-portraits-on-the-s21[title]}}"
-        }
-      ]
-    },
-    {
-      "type": "wrapper",
-      "components": [
-        {
-          "type": "paragraphs",
-          "text": [
-            "In Episode 1, fashion and music photographer Ashley Verse teaches Chelcee Grimes how to get that perfect professional portrait using the <a href=\"https://www.samsung.com/uk/smartphones/galaxy-s21-5g/purchase/\">Samsung Galaxy S21</a>.",
-            "Shoot adhered to social distancing measures and all subjects on set undertook COVID tests before taking part"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "dynamic": "episodes",
-      "id": "personal-branding",
-      "title": "Articles",
-      "style": {
-        "scroll": true
-      }
-    }
-  ]
+	"title": "Powerful Personal Branding: Professional portraits on the S21",
+	"description": "",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/personal-branding/02_Samsung_Remote_Capture_WEB_Banner_V3.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/personal-branding/01_Samsung_Remote_Capture_Thumbnail_400x255_V3.jpg",
+	"group": "personal-branding",
+	"sort": 1,
+	"meta": {
+		"icon": "video",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 2,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "youtube",
+				"content": "H64T6d5aVsw",
+				"poster": "{{creativity|personal-branding|professional-portraits-on-the-s21[image]}}",
+				"alt": "{{creativity|personal-branding|professional-portraits-on-the-s21[alt]}}"
+			},
+			"style": {
+				"desktop": "top",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "{{creativity|personal-branding|professional-portraits-on-the-s21[title]}}"
+				}
+			]
+		},
+		{
+			"type": "wrapper",
+			"components": [
+				{
+					"type": "paragraphs",
+					"text": [
+						"In Episode 1, fashion and music photographer Ashley Verse teaches Chelcee Grimes how to get that perfect professional portrait using the <a href=\"https://www.samsung.com/uk/smartphones/galaxy-s21-5g/purchase/\">Samsung Galaxy S21</a>.",
+						"Shoot adhered to social distancing measures and all subjects on set undertook COVID tests before taking part"
+					]
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "episodes",
+			"id": "personal-branding",
+			"title": "Articles",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
 }

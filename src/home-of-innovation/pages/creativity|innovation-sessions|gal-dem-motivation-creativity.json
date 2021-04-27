@@ -1,108 +1,112 @@
 {
-  "title": "Innovation Sessions: Cultivating creativity and maintaining motivation",
-  "description": "A brand-new digital series from the Home of Innovation to inspire the UK ",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/innovation-sessions/E3_Hero.jpg",
-  "alt": "Two women, one in the foreground close up and one standing behind, pictured in black and white with image overlayed with different coloured shapes",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/innovation-sessions/thumbs/SamsungKX_E3_Teaser_Thumbnail_400x255_V3.png",
-  "group": "innovation-sessions",
-  "sort": 3,
-  "meta": {
-    "icon": "video",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "kv",
-      "media": {
-        "type": "youtube",
-        "content": "3UKo4SVIqUQ",
-        "poster": "{{creativity|innovation-sessions|gal-dem-motivation-creativity[image]}}",
-        "alt": "{{creativity|innovation-sessions|gal-dem-motivation-creativity[alt]}}"
-      },
-      "style": {
-        "desktop": "top",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "1",
-          "copy": "Innovation Sessions: Staying productive and creative through tech"
-        }
-      ]
-    },
-    {
-      "type": "wrapper",
-      "components": [
-        {
-          "type": "headline",
-          "copy": "Series Overview:",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Welcome to the Innovation Sessions.",
-            "Samsung KX, the Home of Innovation, has partnered with a line-up of inspiring people to bring you our very first digital event series. Topics such as podcasts, creativity, tips for businesses and more will be covered to help you create your very own home of innovation."
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "About this Episode:",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "In this episode of Innovation Sessions, 'Cultivating creativity and maintaining motivation', is hosted by Soofiya and Leyla Reynolds, illustrators from award winning media company gal-dem. In this episode Soofiya and Leyla discuss how they have stayed productive and inspired during lockdown through utilising tech and showcase this through creating a live “work in progress” design using the <a href=\" https://www.samsung.com/uk/tablets/galaxy-tabs6/SM-T860NZAABTU/\">Samsung Galaxy S6 Tab with an S pen</a>."
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "About the collaborators:",
-          "level": "3"
-        },
-        {
-          "type": "headline",
-          "copy": "Soofiya",
-          "level": "4"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Soofiya has been a long-term illustrator with gal-dem and has a bright signature style that works well across both digital and analog mediums. Soof has worked with Ravensbourne University, Camden Arts Centre and the Tate on talks and lectures, has writing published in Can We All Be Feminists and artwork published across Darley Anderson."
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Leyla Reynolds",
-          "level": "4"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Leyla is the original gal-dem illustrator and a founding member of gal-dem. She has helped create gal-dem's signature visual style over the years and curated the list of creatives that we now work with. Leyla has extensive experience in workshopping and arts education events, judged the 2019 World Illustration Awards for editorial illustration and recently curated and produced the 2019 Activating Newham exhibition with Create London."
-          ]
-        },
-        {
-          "type": "buttons",
-          "items": [
-            {
-              "copy": "Read Article",
-              "url": "{{creativity|innovation-sessions|gal-dem-motivation-creativity|blog[url]}}"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "dynamic": "more-episodes",
-      "id": "innovation-sessions",
-      "title": "More episodes",
-      "style": {
-        "scroll": true
-      }
-    }
-  ]
+	"title": "Innovation Sessions: Cultivating creativity and maintaining motivation",
+	"description": "A brand-new digital series from the Home of Innovation to inspire the UK ",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/innovation-sessions/E3_Hero.jpg",
+	"alt": "Two women, one in the foreground close up and one standing behind, pictured in black and white with image overlayed with different coloured shapes",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/innovation-sessions/thumbs/SamsungKX_E3_Teaser_Thumbnail_400x255_V3.png",
+	"group": "innovation-sessions",
+	"sort": 3,
+	"meta": {
+		"icon": "video",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 7,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "youtube",
+				"content": "3UKo4SVIqUQ",
+				"poster": "{{creativity|innovation-sessions|gal-dem-motivation-creativity[image]}}",
+				"alt": "{{creativity|innovation-sessions|gal-dem-motivation-creativity[alt]}}"
+			},
+			"style": {
+				"desktop": "top",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"level": "1",
+					"copy": "Innovation Sessions: Staying productive and creative through tech"
+				}
+			]
+		},
+		{
+			"type": "wrapper",
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Series Overview:",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Welcome to the Innovation Sessions.",
+						"Samsung KX, the Home of Innovation, has partnered with a line-up of inspiring people to bring you our very first digital event series. Topics such as podcasts, creativity, tips for businesses and more will be covered to help you create your very own home of innovation."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "About this Episode:",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"In this episode of Innovation Sessions, 'Cultivating creativity and maintaining motivation', is hosted by Soofiya and Leyla Reynolds, illustrators from award winning media company gal-dem. In this episode Soofiya and Leyla discuss how they have stayed productive and inspired during lockdown through utilising tech and showcase this through creating a live “work in progress” design using the <a href=\" https://www.samsung.com/uk/tablets/galaxy-tabs6/SM-T860NZAABTU/\">Samsung Galaxy S6 Tab with an S pen</a>."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "About the collaborators:",
+					"level": "3"
+				},
+				{
+					"type": "headline",
+					"copy": "Soofiya",
+					"level": "4"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Soofiya has been a long-term illustrator with gal-dem and has a bright signature style that works well across both digital and analog mediums. Soof has worked with Ravensbourne University, Camden Arts Centre and the Tate on talks and lectures, has writing published in Can We All Be Feminists and artwork published across Darley Anderson."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Leyla Reynolds",
+					"level": "4"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Leyla is the original gal-dem illustrator and a founding member of gal-dem. She has helped create gal-dem's signature visual style over the years and curated the list of creatives that we now work with. Leyla has extensive experience in workshopping and arts education events, judged the 2019 World Illustration Awards for editorial illustration and recently curated and produced the 2019 Activating Newham exhibition with Create London."
+					]
+				},
+				{
+					"type": "buttons",
+					"items": [
+						{
+							"copy": "Read Article",
+							"url": "{{creativity|innovation-sessions|gal-dem-motivation-creativity|blog[url]}}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "more-episodes",
+			"id": "innovation-sessions",
+			"title": "More episodes",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
 }

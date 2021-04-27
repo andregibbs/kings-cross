@@ -1,171 +1,167 @@
 {
-  "title": "Guest writer of the week: Hidden Winter gems to watch that you probably didn’t know about",
-  "description": "",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/19/thumb.jpg",
-  "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/19/thumb.jpg",
-  "group": "guest-writer-of-the-week",
-  "sort": 19,
-  "meta": {
-    "icon": "article",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "wrapper",
-      "components": [
-        {
-          "type": "css-snippet",
-          "content": ".hoiHeadline h3 { margin-bottom: 0 !important; }"
-        },
-        {
-          "type": "headline",
-          "copy": "Hidden Winter gems to watch that you probably didn’t know about"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Be it movies or TV series, there are a ton of winter-themed watches that you might have missed. And with the nights drawing in, and more quality entertainment to catch up on than ever before, now is the perfect time to cosy up in bed for a binge watch with the <a href=\"https://www.samsung.com/uk/tablets/galaxy-tab-s/galaxy-tab-s7-plus-12-4-inch-mystic-bronze-128gb-5g-sm-t976bznaeua/buy/\">Samsung Galaxy Tab S7+</a>.",
-            "With its beautiful 2.4-inch Super AMOLED display, super-fast responsiveness and incredibly thin and light design, the tablet is the perfect way to watch these winter warmers - and be able to snuggle up with it anywhere you like.",
-            "From epic, snow-swept dramas to guilty pleasure Christmas rom-coms, these will have you feeling festive in no time."
-          ]
-        },
-
-        {
-          "type": "headline",
-          "copy": "Snowpiercer (2013)",
-          "level": "3"
-        },
-        {
-          "type": "headline",
-          "copy": "Certificate 15",
-          "level": "5"
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/19/Snowpiercer_RADiUS-TWC.jpg",
-          "alt": "",
-          "credit": "Image Credit - RADiUS-TWC"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Though Parasite director Bong Joon-Ho’s ice-covered, sci-fi action movie was hailed as a cinematic masterpiece when it premiered at film festivals, it didn’t actually get a UK release until much later, in 2018. So, despite its stellar concept, rave reviews and A-list cast, led by Captain America himself, Chris Evans, many missed this the first time around. Treat yourself to a night in with this first English-language film from the Oscar-winning director, which takes place aboard the Snowpiercer train as it transports the Earth’s last survivors of a global warming solution gone wrong,  and see why it was so acclaimed.",
-            "<br>"
-          ]
-        },
-
-
-        {
-          "type": "headline",
-          "copy": "Suspiria (2018)",
-          "level": "3"
-        },
-        {
-          "type": "headline",
-          "copy": "Certificate 18",
-          "level": "5"
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/19/Suspiria_Amazon_Studios.jpg",
-          "alt": "",
-          "credit": "Image Credit - Amazon Studios"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Chilling to the bone thanks to both the darkness of its bleak, winter backdrop of 1970s Berlin, and its supernatural horror. Dakota Johnson and Chloe Grace Moretz star in the tale of an ambitious young American dancer who enrols in a prestigious German ballet academy - only to discover that its students are spreading hushed rumours of witchcraft within the confines of its punishing practice regime. Dancing has never been so cold and creepy.",
-            "<br>"
-          ]
-        },
-
-
-        {
-          "type": "headline",
-          "copy": "The Princess Switch (2018) ",
-          "level": "3"
-        },
-        {
-          "type": "headline",
-          "copy": "Certificate PG",
-          "level": "5"
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/19/thumb.jpg",
-          "alt": "",
-          "credit": "Image Credit - Netflix"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "There’s nothing better than a super kitsch rom com to curl up with for the holidays. And if you’ve already seen The Holiday, Love Actually and Bridget Jones’ Diary (a hundred times before) then look no further than Netflix’s The Princess Switch for your next tinsel-draped fix. A modern retelling of The Prince And The Pauper, it tells the story of two identical leads (both played by High School Musical alum Vanessa Hudgens) - one of whom is a princess, natch - who switch places and, of course, finds love. Yes, it’s cheesy. Yes, every character survives on gingerbread, Christmas jumpers and eggnog alone. And yes, it’ll have you feeling festive within the first five minutes.",
-            "<br>"
-          ]
-        },
-
-        {
-          "type": "headline",
-          "copy": "The Office Christmas Specials (Part 1 & 2) (2003)",
-          "level": "3"
-        },
-        {
-          "type": "headline",
-          "copy": "Certificate 15",
-          "level": "5"
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/19/the_office.jpg",
-          "alt": "",
-          "credit": "Image Credit - BBC"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "There’s a delicate art to the perfect Christmas special: festive but tasteful, timeless but trendy, touching but not overly sentimental. Though The Office might not be the first thing you think of when you think of festive fare, these Christmas special episodes are not only one of the very best examples of the genre, but some of the best episodes of TV, ever.",
-            "<br>"
-          ]
-        },
-
-
-        {
-          "type": "headline",
-          "copy": "Game of Thrones (2011)",
-          "level": "3"
-        },
-        {
-          "type": "headline",
-          "copy": "Certificate 15",
-          "level": "5"
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/19/Game_of_Thrones_HBO.jpeg",
-          "alt": "",
-          "credit": "Image Credit - HBO"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Ok, the blockbuster telly event of the century is not much of a hidden gem. But, you’re either a diehard Thrones fan, or you haven’t seen it at all. If you’re in the latter camp, now’s the time, because Winter is coming. If you didn’t watch the iconic show on its first airing, wrap yourself in a furry blanket, and settle in for some of the most gripping drama ever committed to screen. Plus, depending on how fast you get through it, it might just see you through to Spring.",
-            "<br>",
-            "<br>",
-            "<strong>By Bex April May</strong>",
-            "<em>Bex is an international movies editor, frequently interviewing the hottest film stars of the season and writing for the likes of MTV movies, NME, Cosmopolitan and Shortlist. </em>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "dynamic": "more-articles",
-      "id": "guest-writer-of-the-week",
-      "title": "More articles",
-      "style": {
-        "scroll": true
-      }
-    }
-  ]
+	"title": "Guest writer of the week: Hidden Winter gems to watch that you probably didn’t know about",
+	"description": "",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/19/thumb.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/19/thumb.jpg",
+	"group": "guest-writer-of-the-week",
+	"sort": 19,
+	"meta": {
+		"icon": "article",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 4,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "wrapper",
+			"components": [
+				{
+					"type": "css-snippet",
+					"content": ".hoiHeadline h3 { margin-bottom: 0 !important; }"
+				},
+				{
+					"type": "headline",
+					"copy": "Hidden Winter gems to watch that you probably didn’t know about"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Be it movies or TV series, there are a ton of winter-themed watches that you might have missed. And with the nights drawing in, and more quality entertainment to catch up on than ever before, now is the perfect time to cosy up in bed for a binge watch with the <a href=\"https://www.samsung.com/uk/tablets/galaxy-tab-s/galaxy-tab-s7-plus-12-4-inch-mystic-bronze-128gb-5g-sm-t976bznaeua/buy/\">Samsung Galaxy Tab S7+</a>.",
+						"With its beautiful 2.4-inch Super AMOLED display, super-fast responsiveness and incredibly thin and light design, the tablet is the perfect way to watch these winter warmers - and be able to snuggle up with it anywhere you like.",
+						"From epic, snow-swept dramas to guilty pleasure Christmas rom-coms, these will have you feeling festive in no time."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Snowpiercer (2013)",
+					"level": "3"
+				},
+				{
+					"type": "headline",
+					"copy": "Certificate 15",
+					"level": "5"
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/19/Snowpiercer_RADiUS-TWC.jpg",
+					"alt": "",
+					"credit": "Image Credit - RADiUS-TWC"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Though Parasite director Bong Joon-Ho’s ice-covered, sci-fi action movie was hailed as a cinematic masterpiece when it premiered at film festivals, it didn’t actually get a UK release until much later, in 2018. So, despite its stellar concept, rave reviews and A-list cast, led by Captain America himself, Chris Evans, many missed this the first time around. Treat yourself to a night in with this first English-language film from the Oscar-winning director, which takes place aboard the Snowpiercer train as it transports the Earth’s last survivors of a global warming solution gone wrong,  and see why it was so acclaimed.",
+						"<br>"
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Suspiria (2018)",
+					"level": "3"
+				},
+				{
+					"type": "headline",
+					"copy": "Certificate 18",
+					"level": "5"
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/19/Suspiria_Amazon_Studios.jpg",
+					"alt": "",
+					"credit": "Image Credit - Amazon Studios"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Chilling to the bone thanks to both the darkness of its bleak, winter backdrop of 1970s Berlin, and its supernatural horror. Dakota Johnson and Chloe Grace Moretz star in the tale of an ambitious young American dancer who enrols in a prestigious German ballet academy - only to discover that its students are spreading hushed rumours of witchcraft within the confines of its punishing practice regime. Dancing has never been so cold and creepy.",
+						"<br>"
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "The Princess Switch (2018) ",
+					"level": "3"
+				},
+				{
+					"type": "headline",
+					"copy": "Certificate PG",
+					"level": "5"
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/19/thumb.jpg",
+					"alt": "",
+					"credit": "Image Credit - Netflix"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"There’s nothing better than a super kitsch rom com to curl up with for the holidays. And if you’ve already seen The Holiday, Love Actually and Bridget Jones’ Diary (a hundred times before) then look no further than Netflix’s The Princess Switch for your next tinsel-draped fix. A modern retelling of The Prince And The Pauper, it tells the story of two identical leads (both played by High School Musical alum Vanessa Hudgens) - one of whom is a princess, natch - who switch places and, of course, finds love. Yes, it’s cheesy. Yes, every character survives on gingerbread, Christmas jumpers and eggnog alone. And yes, it’ll have you feeling festive within the first five minutes.",
+						"<br>"
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "The Office Christmas Specials (Part 1 & 2) (2003)",
+					"level": "3"
+				},
+				{
+					"type": "headline",
+					"copy": "Certificate 15",
+					"level": "5"
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/19/the_office.jpg",
+					"alt": "",
+					"credit": "Image Credit - BBC"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"There’s a delicate art to the perfect Christmas special: festive but tasteful, timeless but trendy, touching but not overly sentimental. Though The Office might not be the first thing you think of when you think of festive fare, these Christmas special episodes are not only one of the very best examples of the genre, but some of the best episodes of TV, ever.",
+						"<br>"
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Game of Thrones (2011)",
+					"level": "3"
+				},
+				{
+					"type": "headline",
+					"copy": "Certificate 15",
+					"level": "5"
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/19/Game_of_Thrones_HBO.jpeg",
+					"alt": "",
+					"credit": "Image Credit - HBO"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Ok, the blockbuster telly event of the century is not much of a hidden gem. But, you’re either a diehard Thrones fan, or you haven’t seen it at all. If you’re in the latter camp, now’s the time, because Winter is coming. If you didn’t watch the iconic show on its first airing, wrap yourself in a furry blanket, and settle in for some of the most gripping drama ever committed to screen. Plus, depending on how fast you get through it, it might just see you through to Spring.",
+						"<br>",
+						"<br>",
+						"<strong>By Bex April May</strong>",
+						"<em>Bex is an international movies editor, frequently interviewing the hottest film stars of the season and writing for the likes of MTV movies, NME, Cosmopolitan and Shortlist. </em>"
+					]
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "more-articles",
+			"id": "guest-writer-of-the-week",
+			"title": "More articles",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
 }

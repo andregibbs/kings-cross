@@ -1,223 +1,213 @@
 {
-  "title": "Samsung Spotlight",
-  "description": "",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/samsung-spotlight/PinPep_SamsungSpotlight_PaulMescal_006_1440.jpg",
-  "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/samsung-spotlight/PinPep_SamsungSpotlight_PaulMescal_006_thumb.jpg",
-  "meta": {
-    "icon": "article",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "css-snippet",
-      "content": ".enter-video h4 { margin: 0 !important; } .enter-video .hoiMedia__Wrap { margin-bottom: 2rem !important; padding-bottom: 46.25% !important; } .hoiHeadline h5 { margin: 0 !important; } .hoiWrapper { margin-top: 0 !important; } .hoiKv p { font-weight: normal !important; font-size: 1.25em !important; } .spotlight-video { padding: 2rem; } @media screen and (max-width: 768px) { .spotlight-video { padding: 1rem 0; } } .spotlight-body .hoiKv__Media:after { padding-bottom: 140% !important; } @media screen and (min-width: 769px) { .spotlight-body .hoiKv__Components { width: 75% !important;} }"
-    },
-    {
-      "type": "kv",
-      "media": {
-        "type": "image",
-        "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/samsung-spotlight/PinPep_SamsungSpotlight_PaulMescal_006_1440.jpg",
-        "alt": ""
-      },
-      "style": {
-        "desktop": "top",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "copy": "Samsung Spotlight"
-        }
-      ]
-    },
-    {
-      "type": "class-container",
-      "class": "spotlight-body",
-      "components": [
-        {
-          "type": "wrapper",
-          "components": [
-            {
-              "type": "paragraphs",
-              "text": [
-                "The Samsung Spotlight initiative, launched by Samsung UK in December 2020, was created to support performing artists in the wake of the pandemic, offering them a platform to showcase their skills to the nation.  Samsung encouraged arts students and creators from the UK & Ireland to film and submit audition-style performances to Instagram using #SamsungSpotlight, to shine a spotlight on those who had lost their stage due to COVID-19.",
-                "The winners were selected by Samsung Spotlight collaborator, Paul Mescal, who inspired entries through his contemporary dance routine titled ‘Lockdown’, all shot with Samsung Galaxy S20 in ultra-high 8K definition.",
-                "The winners, Michael Lynch, Adrian Mujkanovic and Adeola Yemitan were selected from over 300 entries and truly brought to life the spirit of the project crafting films which celebrated creativity and uniqueness during the pandemic."
-              ]
-            },
-
-            {
-              "type": "headline",
-              "copy": "Michael Lynch - 'Mime'",
-              "level": "3"
-            },
-            {
-              "type": "kv",
-              "share": false,
-              "media": {
-                "type": "image",
-                "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/samsung-spotlight/Michael_Headshot.jpg"
-              },
-              "style": {
-                "desktop": "left",
-                "mobile": "top"
-              },
-              "components": [
-                {
-                  "type": "paragraphs",
-                  "text": [
-                    "Michael Lynch is a 25-year-old performer, theatre maker and independent filmmaker who is passionate about movement and its ability to produce exciting theatre. Originally from Doncaster, South Yorkshire, he now lives in Southend-On-Sea in Essex where he began his performing arts training at East 15 Acting School after aspiring to perform and direct theatre.",
-                    "He graduated from the school in 2019, specialising in Physical Theatre and is now the artistic director of his own theatre company, Project Lockout, which he set up among fellow artists and friends.",
-                    "For his entry, ‘Mime’, Michael spent two days in his room writing, making noises in a microphone, and performing in front of a mirror. Michael said that his experience with Samsung Spotlight has added to the sense of community, encouragement and support that is vital for the arts during the pandemic."
-
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "class-container",
-              "class": "spotlight-video",
-              "components": [
-                {
-                  "type": "youtube",
-                  "content": "yO0oBF--ahQ"
-                }
-              ]
-            },
-
-
-            {
-              "type": "headline",
-              "copy": "Adrian Mujkanovic - 'Restricted'",
-              "level": "3"
-            },
-            {
-              "type": "kv",
-              "share": false,
-              "media": {
-                "type": "image",
-                "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/samsung-spotlight/Adrian_headshot.jpg"
-              },
-              "style": {
-                "desktop": "left",
-                "mobile": "top"
-              },
-              "components": [
-                {
-                  "type": "paragraphs",
-                  "text": [
-                    "23-year-old Adrian Mujkanovic, originally from Zagreb in Croatia, is a First-Year student at The Lir Academy in Dublin, the same school that Paul Mescal trained in prior to his success with Normal People. He travelled to Dublin with a desire to study and explore a new city however, like many others in higher education, his lessons have moved online which he feels has distanced him from his goals. Despite this, he’s grateful to his teachers at The Lir who have been persistent in their support throughout the pandemic.",
-                    "Despite these restrictions, Adrian believes that his involvement in the initiative is demonstrative of how people in the arts are still creating, performing and adapting to new challenges. His entry ‘RESTRICTED’ draws on his desire to explore Dublin as he shared some of the locations he’s discovered during his time in the city. Adrian has said that the Samsung Spotlight initiative has reminded him that life doesn’t happen in front of a computer screen; it happens beyond the walls of our rooms."
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "class-container",
-              "class": "spotlight-video",
-              "components": [
-                {
-                  "type": "youtube",
-                  "content": "ZsG01Sjii1Y"
-                }
-              ]
-            },
-
-            {
-              "type": "headline",
-              "copy": "Adeola Yemitan - 'Mystery'",
-              "level": "3"
-            },
-            {
-              "type": "kv",
-              "share": false,
-              "media": {
-                "type": "image",
-                "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/samsung-spotlight/Adeola_headshot.jpeg"
-              },
-              "style": {
-                "desktop": "left",
-                "mobile": "top"
-              },
-              "components": [
-                {
-                  "type": "paragraphs",
-                  "text": [
-                    "Previously training in fine art and architecture, Adeola Yemitan from Croydon, London found her way into acting through her faith and an aspiration explore the truth. She is currently training at the National Youth Theatre in London and has said that for her, the learning experience of a live performance is unparalleled and whilst the NYT has been great in using film to share their work, there is nothing like performing in front of an audience.",
-                    "For Adeola, words in many forms: journaling, spoken word, poetry and music are the most powerful means of prompting individuals to reflect and change. Spoken word, poetry and music are also forms that she explored in her entry titled ‘Mystery’."
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "class-container",
-              "class": "spotlight-video",
-              "components": [
-                {
-                  "type": "youtube",
-                  "content": "TfyIldO-bZM"
-                }
-              ]
-            },
-
-            {
-              "type": "paragraphs",
-              "text": [
-                "Samsung Spotlight was created to give performers a platform to showcase their talents. The campaign launched in partnership with breakthrough actor of 2020 Paul Mescal, who created a visual representation of his Lockdown experience through a contemporary dance."
-              ]
-            },
-
-            {
-              "type": "headline",
-              "copy": "How to Shoot in 8K and Watch in 8K from home",
-              "level": "3"
-            },
-
-            {
-              "type": "image",
-              "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/samsung-spotlight/1080x1080-KV-QLED.jpg"
-            },
-
-            {
-              "type": "paragraphs",
-              "text": [
-                "The Samsung Galaxy S20 and S21 series allow you to shoot your favourite moments in highly detailed 8K video quality. To watch your content, you can cast onto your Neo QLED 8K TV using the Livestream capability and see your creation in glorious 8K detail.",
-                "Follow the below steps to shoot in 8K and watch in 8K:",
-                "1. Select 8K when shooting on you Samsung Galaxy S20 or S21 device by tapping the resolution icon",
-                "2. Tap record to start filming",
-                "3. When you have finished, open the Gallery app to find your video",
-                "4. Cast it to your  Neo QLED 8K TV",
-                "* This service/feature is available on Samsung Galaxy S20, S20+, S20 Ultra, S21, S21+, S21 Ultra, and  Neo QLED 8K TVs."
-              ]
-            },
-
-            {
-              "type": "image",
-              "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/samsung-spotlight/First-Look-PR_DL1_Neo-QLED.jpg"
-            },
-
-            {
-              "type": "paragraphs",
-              "text": [
-                "To watch everything in crystal-clear 8K, pre-order now to be one of the first to get your Samsung Neo QLED TV."
-              ]
-            },
-
-            {
-              "type": "buttons",
-              "items": [
-                {
-                  "copy": "pre-order now",
-                  "url": "https://www.samsung.com/uk/offer/neo-qled-smart-tv-cashback-deal"
-                }
-              ]
-            }
-
-
-          ]
-        }
-      ]
-    }
-  ]
+	"title": "Samsung Spotlight",
+	"description": "",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/samsung-spotlight/PinPep_SamsungSpotlight_PaulMescal_006_1440.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/samsung-spotlight/PinPep_SamsungSpotlight_PaulMescal_006_thumb.jpg",
+	"meta": {
+		"icon": "article",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 10,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "css-snippet",
+			"content": ".enter-video h4 { margin: 0 !important; } .enter-video .hoiMedia__Wrap { margin-bottom: 2rem !important; padding-bottom: 46.25% !important; } .hoiHeadline h5 { margin: 0 !important; } .hoiWrapper { margin-top: 0 !important; } .hoiKv p { font-weight: normal !important; font-size: 1.25em !important; } .spotlight-video { padding: 2rem; } @media screen and (max-width: 768px) { .spotlight-video { padding: 1rem 0; } } .spotlight-body .hoiKv__Media:after { padding-bottom: 140% !important; } @media screen and (min-width: 769px) { .spotlight-body .hoiKv__Components { width: 75% !important;} }"
+		},
+		{
+			"type": "kv",
+			"media": {
+				"type": "image",
+				"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/samsung-spotlight/PinPep_SamsungSpotlight_PaulMescal_006_1440.jpg",
+				"alt": ""
+			},
+			"style": {
+				"desktop": "top",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Samsung Spotlight"
+				}
+			]
+		},
+		{
+			"type": "class-container",
+			"class": "spotlight-body",
+			"components": [
+				{
+					"type": "wrapper",
+					"components": [
+						{
+							"type": "paragraphs",
+							"text": [
+								"The Samsung Spotlight initiative, launched by Samsung UK in December 2020, was created to support performing artists in the wake of the pandemic, offering them a platform to showcase their skills to the nation.  Samsung encouraged arts students and creators from the UK & Ireland to film and submit audition-style performances to Instagram using #SamsungSpotlight, to shine a spotlight on those who had lost their stage due to COVID-19.",
+								"The winners were selected by Samsung Spotlight collaborator, Paul Mescal, who inspired entries through his contemporary dance routine titled ‘Lockdown’, all shot with Samsung Galaxy S20 in ultra-high 8K definition.",
+								"The winners, Michael Lynch, Adrian Mujkanovic and Adeola Yemitan were selected from over 300 entries and truly brought to life the spirit of the project crafting films which celebrated creativity and uniqueness during the pandemic."
+							]
+						},
+						{
+							"type": "headline",
+							"copy": "Michael Lynch - 'Mime'",
+							"level": "3"
+						},
+						{
+							"type": "kv",
+							"share": false,
+							"media": {
+								"type": "image",
+								"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/samsung-spotlight/Michael_Headshot.jpg"
+							},
+							"style": {
+								"desktop": "left",
+								"mobile": "top"
+							},
+							"components": [
+								{
+									"type": "paragraphs",
+									"text": [
+										"Michael Lynch is a 25-year-old performer, theatre maker and independent filmmaker who is passionate about movement and its ability to produce exciting theatre. Originally from Doncaster, South Yorkshire, he now lives in Southend-On-Sea in Essex where he began his performing arts training at East 15 Acting School after aspiring to perform and direct theatre.",
+										"He graduated from the school in 2019, specialising in Physical Theatre and is now the artistic director of his own theatre company, Project Lockout, which he set up among fellow artists and friends.",
+										"For his entry, ‘Mime’, Michael spent two days in his room writing, making noises in a microphone, and performing in front of a mirror. Michael said that his experience with Samsung Spotlight has added to the sense of community, encouragement and support that is vital for the arts during the pandemic."
+									]
+								}
+							]
+						},
+						{
+							"type": "class-container",
+							"class": "spotlight-video",
+							"components": [
+								{
+									"type": "youtube",
+									"content": "yO0oBF--ahQ"
+								}
+							]
+						},
+						{
+							"type": "headline",
+							"copy": "Adrian Mujkanovic - 'Restricted'",
+							"level": "3"
+						},
+						{
+							"type": "kv",
+							"share": false,
+							"media": {
+								"type": "image",
+								"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/samsung-spotlight/Adrian_headshot.jpg"
+							},
+							"style": {
+								"desktop": "left",
+								"mobile": "top"
+							},
+							"components": [
+								{
+									"type": "paragraphs",
+									"text": [
+										"23-year-old Adrian Mujkanovic, originally from Zagreb in Croatia, is a First-Year student at The Lir Academy in Dublin, the same school that Paul Mescal trained in prior to his success with Normal People. He travelled to Dublin with a desire to study and explore a new city however, like many others in higher education, his lessons have moved online which he feels has distanced him from his goals. Despite this, he’s grateful to his teachers at The Lir who have been persistent in their support throughout the pandemic.",
+										"Despite these restrictions, Adrian believes that his involvement in the initiative is demonstrative of how people in the arts are still creating, performing and adapting to new challenges. His entry ‘RESTRICTED’ draws on his desire to explore Dublin as he shared some of the locations he’s discovered during his time in the city. Adrian has said that the Samsung Spotlight initiative has reminded him that life doesn’t happen in front of a computer screen; it happens beyond the walls of our rooms."
+									]
+								}
+							]
+						},
+						{
+							"type": "class-container",
+							"class": "spotlight-video",
+							"components": [
+								{
+									"type": "youtube",
+									"content": "ZsG01Sjii1Y"
+								}
+							]
+						},
+						{
+							"type": "headline",
+							"copy": "Adeola Yemitan - 'Mystery'",
+							"level": "3"
+						},
+						{
+							"type": "kv",
+							"share": false,
+							"media": {
+								"type": "image",
+								"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/samsung-spotlight/Adeola_headshot.jpeg"
+							},
+							"style": {
+								"desktop": "left",
+								"mobile": "top"
+							},
+							"components": [
+								{
+									"type": "paragraphs",
+									"text": [
+										"Previously training in fine art and architecture, Adeola Yemitan from Croydon, London found her way into acting through her faith and an aspiration explore the truth. She is currently training at the National Youth Theatre in London and has said that for her, the learning experience of a live performance is unparalleled and whilst the NYT has been great in using film to share their work, there is nothing like performing in front of an audience.",
+										"For Adeola, words in many forms: journaling, spoken word, poetry and music are the most powerful means of prompting individuals to reflect and change. Spoken word, poetry and music are also forms that she explored in her entry titled ‘Mystery’."
+									]
+								}
+							]
+						},
+						{
+							"type": "class-container",
+							"class": "spotlight-video",
+							"components": [
+								{
+									"type": "youtube",
+									"content": "TfyIldO-bZM"
+								}
+							]
+						},
+						{
+							"type": "paragraphs",
+							"text": [
+								"Samsung Spotlight was created to give performers a platform to showcase their talents. The campaign launched in partnership with breakthrough actor of 2020 Paul Mescal, who created a visual representation of his Lockdown experience through a contemporary dance."
+							]
+						},
+						{
+							"type": "headline",
+							"copy": "How to Shoot in 8K and Watch in 8K from home",
+							"level": "3"
+						},
+						{
+							"type": "image",
+							"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/samsung-spotlight/1080x1080-KV-QLED.jpg"
+						},
+						{
+							"type": "paragraphs",
+							"text": [
+								"The Samsung Galaxy S20 and S21 series allow you to shoot your favourite moments in highly detailed 8K video quality. To watch your content, you can cast onto your Neo QLED 8K TV using the Livestream capability and see your creation in glorious 8K detail.",
+								"Follow the below steps to shoot in 8K and watch in 8K:",
+								"1. Select 8K when shooting on you Samsung Galaxy S20 or S21 device by tapping the resolution icon",
+								"2. Tap record to start filming",
+								"3. When you have finished, open the Gallery app to find your video",
+								"4. Cast it to your  Neo QLED 8K TV",
+								"* This service/feature is available on Samsung Galaxy S20, S20+, S20 Ultra, S21, S21+, S21 Ultra, and  Neo QLED 8K TVs."
+							]
+						},
+						{
+							"type": "image",
+							"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/samsung-spotlight/First-Look-PR_DL1_Neo-QLED.jpg"
+						},
+						{
+							"type": "paragraphs",
+							"text": [
+								"To watch everything in crystal-clear 8K, pre-order now to be one of the first to get your Samsung Neo QLED TV."
+							]
+						},
+						{
+							"type": "buttons",
+							"items": [
+								{
+									"copy": "pre-order now",
+									"url": "https://www.samsung.com/uk/offer/neo-qled-smart-tv-cashback-deal"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
 }

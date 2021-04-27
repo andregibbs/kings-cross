@@ -1,115 +1,119 @@
 {
-  "title": "Episode 7: Interactive yoga pants… Whatever Next?",
-  "description": "",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/KX-KVsEpisode7-KV-PC.jpg",
-  "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/thumbs-x2/640_thumb_ep7.jpg",
-  "group": "5g-podcast",
-  "sort": 7,
-  "meta": {
-    "icon": "audio",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "css-snippet",
-      "content": ".hoiKv__Media:after { padding-bottom: 36% !important; } .hoiParagraphs p { max-width: 940px; } @media screen and (max-width: 769px) { .hoiKv__Media:after { padding-bottom: 110% !important; } .hoiMedia__StatePoster { background-image: url(https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/KX-KVsEpisode7-KV-MO.jpg) !important; } }  ",
-      "__notes": "custom ratio for kv video"
-    },
-    {
-      "type": "kv",
-      "media": {
-        "type": "audio",
-        "content": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/Samsung_Podcast_EP7_FOR_BROADCAST_nodisclaimer.mp3",
-        "poster": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/KX-KVsEpisode7-KV-PC.jpg",
-        "alt": ""
-      },
-      "style": {
-        "desktop": "top",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "copy": "Episode 7: Interactive yoga pants… Whatever Next?"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Ever wanted a wearable that does more than just give you numbers? Join Dr Hannah Fry and comedian Suzi Ruffell as they explore the world of wearables in health and fitness. From haptic yoga pants that can help you achieve that perfect downward dog to exoskeletons that assist work and help us live longer, this episode shows how 5G is transforming the way we move for good."
-          ]
-        },
-        {
-          "type": "icon-links",
-          "items": [
-            {
-              "title": "Spotify",
-              "link": "https://open.spotify.com/episode/78rfICKk13Vmy632amPMOV",
-              "target": "_blank",
-              "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ico-spotify.png"
-            },
-            {
-              "title": "Acast",
-              "link": "https://play.acast.com/s/whatever-next/interactiveyogapants-whatevernext-",
-              "target": "_blank",
-              "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ico-acast.png"
-            },
-            {
-              "title": "Google Podcasts",
-              "link": "https://podcasts.google.com/feed/aHR0cHM6Ly9yc3MuYWNhc3QuY29tL3doYXRldmVyLW5leHQ/episode/ZDE0YzFhNmYtMjc0ZC00YmRmLThjYzktOGY5ZGZhOWUzNGZl?sa=X&ved=0CA0QkfYCahcKEwjA7PXQjbTtAhUAAAAAHQAAAAAQAQ",
-              "target": "_blank",
-              "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ico-google-podcasts.png"
-            },
-            {
-              "title": "Stitcher",
-              "link": false,
-              "target": "_blank",
-              "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ico-stitcher.png"
-            },
-            {
-              "title": "Overcast",
-              "link": false,
-              "target": "_blank",
-              "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ico-overcast.png"
-            },
-            {
-              "title": "Apple Podcasts",
-              "link": "https://podcasts.apple.com/gb/podcast/interactive-yoga-pants-whatever-next/id1535056495?i=1000501314966",
-              "target": "_blank",
-              "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ico-apple.png"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "dynamic": "episodes",
-      "id": "5g-podcast",
-      "title": "Episodes",
-      "style": {
-        "size": "big-square"
-      }
-    },
-    {
-      "type": "image-panel-links",
-      "items": [
-        {
-          "title": "Discover our entire range of 5G products",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/banner-5G-range.png",
-          "alt": "A cropped image of the top rear of an unfolded Galaxy Z Fold2 in Mystic Bronze",
-          "link": "https://www.samsung.com/uk/galaxy-5g/products/",
-          "cta": "LEARN MORE"
-        },
-        {
-          "title": "Find out what 5G will mean for you",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/WhateverNext_Andreabanner-lockup.png",
-          "image_right": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/banner-lockup-dots-crop.png",
-          "alt": "White text reads \"You+ Samsung +5G\". teal lines radiate away from \"+5G\". Blue circles are visible in a grid behind the white text.",
-          "link": "https://www.samsung.com/uk/galaxy-5g/",
-          "cta": "LEARN MORE"
-        }
-      ]
-    }
-  ]
+	"title": "Episode 7: Interactive yoga pants… Whatever Next?",
+	"description": "",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/KX-KVsEpisode7-KV-PC.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/thumbs-x2/640_thumb_ep7.jpg",
+	"group": "5g-podcast",
+	"sort": 7,
+	"meta": {
+		"icon": "audio",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 30,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "css-snippet",
+			"content": ".hoiKv__Media:after { padding-bottom: 36% !important; } .hoiParagraphs p { max-width: 940px; } @media screen and (max-width: 769px) { .hoiKv__Media:after { padding-bottom: 110% !important; } .hoiMedia__StatePoster { background-image: url(https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/KX-KVsEpisode7-KV-MO.jpg) !important; } }  ",
+			"__notes": "custom ratio for kv video"
+		},
+		{
+			"type": "kv",
+			"media": {
+				"type": "audio",
+				"content": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/Samsung_Podcast_EP7_FOR_BROADCAST_nodisclaimer.mp3",
+				"poster": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/KX-KVsEpisode7-KV-PC.jpg",
+				"alt": ""
+			},
+			"style": {
+				"desktop": "top",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Episode 7: Interactive yoga pants… Whatever Next?"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Ever wanted a wearable that does more than just give you numbers? Join Dr Hannah Fry and comedian Suzi Ruffell as they explore the world of wearables in health and fitness. From haptic yoga pants that can help you achieve that perfect downward dog to exoskeletons that assist work and help us live longer, this episode shows how 5G is transforming the way we move for good."
+					]
+				},
+				{
+					"type": "icon-links",
+					"items": [
+						{
+							"title": "Spotify",
+							"link": "https://open.spotify.com/episode/78rfICKk13Vmy632amPMOV",
+							"target": "_blank",
+							"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ico-spotify.png"
+						},
+						{
+							"title": "Acast",
+							"link": "https://play.acast.com/s/whatever-next/interactiveyogapants-whatevernext-",
+							"target": "_blank",
+							"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ico-acast.png"
+						},
+						{
+							"title": "Google Podcasts",
+							"link": "https://podcasts.google.com/feed/aHR0cHM6Ly9yc3MuYWNhc3QuY29tL3doYXRldmVyLW5leHQ/episode/ZDE0YzFhNmYtMjc0ZC00YmRmLThjYzktOGY5ZGZhOWUzNGZl?sa=X&ved=0CA0QkfYCahcKEwjA7PXQjbTtAhUAAAAAHQAAAAAQAQ",
+							"target": "_blank",
+							"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ico-google-podcasts.png"
+						},
+						{
+							"title": "Stitcher",
+							"link": false,
+							"target": "_blank",
+							"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ico-stitcher.png"
+						},
+						{
+							"title": "Overcast",
+							"link": false,
+							"target": "_blank",
+							"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ico-overcast.png"
+						},
+						{
+							"title": "Apple Podcasts",
+							"link": "https://podcasts.apple.com/gb/podcast/interactive-yoga-pants-whatever-next/id1535056495?i=1000501314966",
+							"target": "_blank",
+							"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/ico-apple.png"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "episodes",
+			"id": "5g-podcast",
+			"title": "Episodes",
+			"style": {
+				"size": "big-square"
+			}
+		},
+		{
+			"type": "image-panel-links",
+			"items": [
+				{
+					"title": "Discover our entire range of 5G products",
+					"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/banner-5G-range.png",
+					"alt": "A cropped image of the top rear of an unfolded Galaxy Z Fold2 in Mystic Bronze",
+					"link": "https://www.samsung.com/uk/galaxy-5g/products/",
+					"cta": "LEARN MORE"
+				},
+				{
+					"title": "Find out what 5G will mean for you",
+					"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/WhateverNext_Andreabanner-lockup.png",
+					"image_right": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/banner-lockup-dots-crop.png",
+					"alt": "White text reads \"You+ Samsung +5G\". teal lines radiate away from \"+5G\". Blue circles are visible in a grid behind the white text.",
+					"link": "https://www.samsung.com/uk/galaxy-5g/",
+					"cta": "LEARN MORE"
+				}
+			]
+		}
+	]
 }

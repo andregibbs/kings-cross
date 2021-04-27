@@ -1,62 +1,66 @@
 {
-  "title": "Creative Labs with Young Film Academy: Three Shot Filmmaking",
-  "description": "",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/yfa-creative-labs/yfa-kv.jpg",
-  "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/yfa-creative-labs/yfa-kv.jpg",
-  "group": "yfa-creative-labs",
-  "sort": 1,
-  "meta": {
-    "icon": "video",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "kv",
-      "media": {
-        "type": "youtube",
-        "content": "MpUZQoxrE98",
-        "poster": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/yfa-creative-labs/yfa-kv.jpg",
-        "alt": ""
-      },
-      "style": {
-        "desktop": "top",
-        "mobile": "bottom"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "copy": "Creative Labs with Young Film Academy: Three Shot Filmmaking"
-        },
-        {
-          "type": "headline",
-          "copy": "Watch live here at 6pm on Wednesday 25th November",
-          "level": "3"
-        }
-      ]
-    },
-    {
-      "type": "wrapper",
-      "components": [
-        {
-          "type": "paragraphs",
-          "style": {
-            "large": true
-          },
-          "text": [
-            "In this exclusive session from the pro filmmakers at Young Film Academy, you will learn how to make a film in three shots to tell an effective story. Using the <a href=\"https://www.samsung.com/uk/smartphones/galaxy-s20/\">Samsung Galaxy S20</a>, the Young Film Academy will share their top tips and tricks."
-          ]
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "dynamic": "episodes",
-      "id": "yfa-creative-labs",
-      "title": "Episodes",
-      "style": {
-        "scroll": true
-      }
-    }
-  ]
+	"title": "Creative Labs with Young Film Academy: Three Shot Filmmaking",
+	"description": "",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/yfa-creative-labs/yfa-kv.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/yfa-creative-labs/yfa-kv.jpg",
+	"group": "yfa-creative-labs",
+	"sort": 1,
+	"meta": {
+		"icon": "video",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 27,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "youtube",
+				"content": "MpUZQoxrE98",
+				"poster": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/yfa-creative-labs/yfa-kv.jpg",
+				"alt": ""
+			},
+			"style": {
+				"desktop": "top",
+				"mobile": "bottom"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Creative Labs with Young Film Academy: Three Shot Filmmaking"
+				},
+				{
+					"type": "headline",
+					"copy": "Watch live here at 6pm on Wednesday 25th November",
+					"level": "3"
+				}
+			]
+		},
+		{
+			"type": "wrapper",
+			"components": [
+				{
+					"type": "paragraphs",
+					"style": {
+						"large": true
+					},
+					"text": [
+						"In this exclusive session from the pro filmmakers at Young Film Academy, you will learn how to make a film in three shots to tell an effective story. Using the <a href=\"https://www.samsung.com/uk/smartphones/galaxy-s20/\">Samsung Galaxy S20</a>, the Young Film Academy will share their top tips and tricks."
+					]
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "episodes",
+			"id": "yfa-creative-labs",
+			"title": "Episodes",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
 }

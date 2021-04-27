@@ -1,58 +1,62 @@
 {
-  "title": "Powerful Personal Branding Q&A: How to rebrand your online presence",
-  "description": "",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/personal-branding/how-to-rebrand-your-online-presence/01_Samsung_Remote_Capture_WEB_Banner_V3.jpg",
-  "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/personal-branding/how-to-rebrand-your-online-presence/01_Samsung_Remote_Capture_WEB_Thumbnail_V3.jpg",
-  "group": "personal-branding",
-  "sort": 5,
-  "meta": {
-    "icon": "video",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "css-snippet",
-      "content": ".hoiWrapper { margin-top: 0 !important; }"
-    },
-    {
-      "type": "kv",
-      "media": {
-        "type": "youtube",
-        "content": "jG1snH2O1-0",
-        "poster": "{{creativity|personal-branding|how-to-rebrand-your-online-presence[image]}}",
-        "alt": "{{creativity|personal-branding|how-to-rebrand-your-online-presence[alt]}}"
-      },
-      "style": {
-        "desktop": "top",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "copy": "{{creativity|personal-branding|how-to-rebrand-your-online-presence[title]}}"
-        }
-      ]
-    },
-    {
-      "type": "wrapper",
-      "components": [
-        {
-          "type": "paragraphs",
-          "text": [
-            "In a pre-recorded Q&A, Chelcee Grimes, Ashley Verse and Ash Jones answer frequently asked questions and misconceptions around how to rebrand your online presence. Covering everything from whether or not to smile in your professional photo, to what background to include, to portrait colouring."
-          ]
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "dynamic": "episodes",
-      "id": "personal-branding",
-      "title": "Articles",
-      "style": {
-        "scroll": true
-      }
-    }
-  ]
+	"title": "Powerful Personal Branding Q&A: How to rebrand your online presence",
+	"description": "",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/personal-branding/how-to-rebrand-your-online-presence/01_Samsung_Remote_Capture_WEB_Banner_V3.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/personal-branding/how-to-rebrand-your-online-presence/01_Samsung_Remote_Capture_WEB_Thumbnail_V3.jpg",
+	"group": "personal-branding",
+	"sort": 5,
+	"meta": {
+		"icon": "video",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 5,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "css-snippet",
+			"content": ".hoiWrapper { margin-top: 0 !important; }"
+		},
+		{
+			"type": "kv",
+			"media": {
+				"type": "youtube",
+				"content": "jG1snH2O1-0",
+				"poster": "{{creativity|personal-branding|how-to-rebrand-your-online-presence[image]}}",
+				"alt": "{{creativity|personal-branding|how-to-rebrand-your-online-presence[alt]}}"
+			},
+			"style": {
+				"desktop": "top",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "{{creativity|personal-branding|how-to-rebrand-your-online-presence[title]}}"
+				}
+			]
+		},
+		{
+			"type": "wrapper",
+			"components": [
+				{
+					"type": "paragraphs",
+					"text": [
+						"In a pre-recorded Q&A, Chelcee Grimes, Ashley Verse and Ash Jones answer frequently asked questions and misconceptions around how to rebrand your online presence. Covering everything from whether or not to smile in your professional photo, to what background to include, to portrait colouring."
+					]
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "episodes",
+			"id": "personal-branding",
+			"title": "Articles",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
 }

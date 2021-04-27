@@ -1,184 +1,188 @@
 {
-  "title": "How to create: your own Bucketponic",
-  "description": "Deep Water Culture Growing, using Smart Things tech",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/09a_Samsung_Website_How-To_Bucketponic_1440x810_V1.png",
-  "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/09a_Samsung_Website_How-To_Bucketponic_400x255_V2.jpg",
-  "group": "taste-of-tomorrow",
-  "sort": 9,
-  "meta": {
-    "icon": "video",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "kv",
-      "media": {
-        "type": "youtube",
-        "content": "wLAZKt-nk1I",
-        "poster": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/09a_Samsung_Website_How-To_Bucketponic_1440x810_V1.png",
-        "alt": ""
-      },
-      "style": {
-        "desktop": "top",
-        "mobile": "bottom"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "copy": "How to create: your own Bucketponic"
-        },
-        {
-          "type": "headline",
-          "copy": "Deep Water Culture Growing, using Smart Things tech",
-          "level": "3"
-        }
-      ]
-    },
-    {
-      "type": "wrapper",
-      "components": [
-        {
-          "type": "headline",
-          "copy": "What you need:",
-          "level": "3"
-        },
-        {
-          "type": "html-list",
-          "items": [
-            "Air pump",
-            "Air stone",
-            "Air pipe 1.5m",
-            "20 Litre Bucket",
-            "1 x 14cm Net Pot",
-            "Plants (Herbs or Small Chilli Plant) ",
-            "Small bag of clay pebbles",
-            "Scissors*",
-            "Craft Knife*",
-            "Pen",
-            "Compass* and Pencil",
-            "4mm Correx Sheet - 100% recyclable (diameter of bucket +10cm)",
-            "Plant Nutrients",
-            "Water",
-            "<a href=\"https://www.samsung.com/uk/smartthings/\">Samsung SmartThings</a> plug",
-            "Smart light"
-          ]
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "* Please handle with care"
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Step 1",
-          "level": "4"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Using the circumference of the bucket top, draw a circle on the sheet of 4mm correx"
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Step 2",
-          "level": "4"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Using your scissors cut around the circle leaving 10mm from the line you have drawn"
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Step 3",
-          "level": "4"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Using the compass mark out four circles equi-distant on the correx sheet - 8cm in diameter"
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Step 4",
-          "level": "4"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Using the craft knife cut out the four circles"
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Step 5",
-          "level": "4"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Put your air stoneclay pebbles into the bucket and connect the air pipe - plug the air pump into the Samsung SmartThings plug. Do not turn on yet"
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Step 6",
-          "level": "4"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Take your plant and shake the soil from the roots. The place carefully into the net pot and fill with clay pebbles. Do this for all your plants."
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Step 7",
-          "level": "4"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Fill the bucket with water and add 100ml of plant nutrients"
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Step 8",
-          "level": "4"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Put the correx sheet on top of the bucket"
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Step 9",
-          "level": "4"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Add your plants and turn on."
-          ]
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "dynamic": "more-articles",
-      "id": "taste-of-tomorrow",
-      "title": "More articles",
-      "style": {
-        "scroll": true
-      }
-    }
-  ]
+	"title": "How to create: your own Bucketponic",
+	"description": "Deep Water Culture Growing, using Smart Things tech",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/09a_Samsung_Website_How-To_Bucketponic_1440x810_V1.png",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/09a_Samsung_Website_How-To_Bucketponic_400x255_V2.jpg",
+	"group": "taste-of-tomorrow",
+	"sort": 9,
+	"meta": {
+		"icon": "video",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 5,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "youtube",
+				"content": "wLAZKt-nk1I",
+				"poster": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/09a_Samsung_Website_How-To_Bucketponic_1440x810_V1.png",
+				"alt": ""
+			},
+			"style": {
+				"desktop": "top",
+				"mobile": "bottom"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "How to create: your own Bucketponic"
+				},
+				{
+					"type": "headline",
+					"copy": "Deep Water Culture Growing, using Smart Things tech",
+					"level": "3"
+				}
+			]
+		},
+		{
+			"type": "wrapper",
+			"components": [
+				{
+					"type": "headline",
+					"copy": "What you need:",
+					"level": "3"
+				},
+				{
+					"type": "html-list",
+					"items": [
+						"Air pump",
+						"Air stone",
+						"Air pipe 1.5m",
+						"20 Litre Bucket",
+						"1 x 14cm Net Pot",
+						"Plants (Herbs or Small Chilli Plant) ",
+						"Small bag of clay pebbles",
+						"Scissors*",
+						"Craft Knife*",
+						"Pen",
+						"Compass* and Pencil",
+						"4mm Correx Sheet - 100% recyclable (diameter of bucket +10cm)",
+						"Plant Nutrients",
+						"Water",
+						"<a href=\"https://www.samsung.com/uk/smartthings/\">Samsung SmartThings</a> plug",
+						"Smart light"
+					]
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"* Please handle with care"
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Step 1",
+					"level": "4"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Using the circumference of the bucket top, draw a circle on the sheet of 4mm correx"
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Step 2",
+					"level": "4"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Using your scissors cut around the circle leaving 10mm from the line you have drawn"
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Step 3",
+					"level": "4"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Using the compass mark out four circles equi-distant on the correx sheet - 8cm in diameter"
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Step 4",
+					"level": "4"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Using the craft knife cut out the four circles"
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Step 5",
+					"level": "4"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Put your air stoneclay pebbles into the bucket and connect the air pipe - plug the air pump into the Samsung SmartThings plug. Do not turn on yet"
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Step 6",
+					"level": "4"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Take your plant and shake the soil from the roots. The place carefully into the net pot and fill with clay pebbles. Do this for all your plants."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Step 7",
+					"level": "4"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Fill the bucket with water and add 100ml of plant nutrients"
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Step 8",
+					"level": "4"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Put the correx sheet on top of the bucket"
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Step 9",
+					"level": "4"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Add your plants and turn on."
+					]
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "more-articles",
+			"id": "taste-of-tomorrow",
+			"title": "More articles",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
 }

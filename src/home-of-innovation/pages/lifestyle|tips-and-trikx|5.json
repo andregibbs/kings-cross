@@ -1,141 +1,145 @@
 {
-  "title": "Tips & Trikx: Fun with the family",
-  "description": "Tips for families to get creative when spending quality time together",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/5/KV.JPG",
-  "alt": "Family sitting around table playing with toys",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/5/KV.JPG",
-  "group": "tips-and-trikx",
-  "sort": 5,
-  "meta": {
-    "icon": "article",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "kv",
-      "media": {
-        "type": "image",
-        "content": "{{lifestyle|tips-and-trikx|5[image]}}",
-        "alt": "{{lifestyle|tips-and-trikx|5[alt]}}"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "bottom"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "copy": "{{lifestyle|tips-and-trikx|5[title]}}"
-        }
-      ]
-    },
-    {
-      "type": "wrapper",
-      "components": [
-        {
-          "type": "paragraphs",
-          "style": {
-            "large": true
-          },
-          "text": [
-            "From home cinema nights to growing tasty ingredients in the garden, Samsung KX shares five tips and ‘triKX’ to inspire families to get creative when spending quality time together."
-          ]
-        },
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "1) Virtual family workouts"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "From dance workouts to relaxing yoga, at-home exercise is a great way to have fun and stay healthy.  No matter what the family energy levels are, there’s a whole variety of videos that can be found online and households can even put their own spin on the sessions by setting fitness challenges with downloadable apps like <a href=\"https://www.samsung.com/uk/apps/samsung-health/\">Samsung Health</a>"
-          ]
-        },
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "2) The great family bake off"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Families can get creative in the kitchen with a home bake off. From jazzing up brownie mixes with colourful fruits to going the extra mile with a three-tiered showstopper, there’s plenty of online recipes that will offer hours of fun in the kitchen. What’s more, budding household bakers can help brighten a neighbour’s day by placing a spare slice on their doorstep."
-          ]
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/5/1.JPG",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/5/1.JPG",
-          "alt": "A small cake with a yellow flower"
-        },
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "3) Home cinema"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Households can inject some fun into Fridays by enjoying a trip to the cinema from the comfort of their living room. With the curtains drawn, the popcorn microwaved, and a feel-good film, families will feel like they’re back at the movies in no time. For those looking to upgrade their cinematic experience, the latest <a href=\"https://www.samsung.com/uk/tvs/qled-tv/highlights/\">Samsung 2020 QLED TV range</a> offers best-in-class picture and sound, allowing for the perfect movie setup."
-          ]
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/5/2.JPG",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/5/2.JPG",
-          "alt": "A family in a living room"
-        },
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "4) Board games"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Board game classics are a brilliant way of fuelling laughter and brain power to the family home. Dust off the Monopoly, Cluedo or Articulate, or if feeling creative, households can make their own board game using paper, crayons and dice and enjoy making their own rules."
-          ]
-        },
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "5) Patch & plant"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "When it comes to getting your five a day, there’s nothing quite like the taste of homegrown veg. Families can easily start their own patch with a soiled area and their choice of plants. Radishes, salad leaves, carrots and tomatoes are all great for beginners and can be planted from a pot indoors, or broccoli, peppers and beetroot grow nicely in gardens.",
-            "Snap and share your family fun with <strong>#SamsungKX</strong>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "gallery",
-      "items": [
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/5/1.JPG",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/5/1.JPG",
-          "alt": "A small cake with a yellow flower"
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/5/2.JPG",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/5/2.JPG",
-          "alt": "A family in a living room"
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "dynamic": "more-episodes",
-      "id": "tips-and-trikx",
-      "title": "More episodes",
-      "style": {
-        "scroll": true
-      }
-    }
-  ]
+	"title": "Tips & Trikx: Fun with the family",
+	"description": "Tips for families to get creative when spending quality time together",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/5/KV.JPG",
+	"alt": "Family sitting around table playing with toys",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/5/KV.JPG",
+	"group": "tips-and-trikx",
+	"sort": 5,
+	"meta": {
+		"icon": "article",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 3,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "image",
+				"content": "{{lifestyle|tips-and-trikx|5[image]}}",
+				"alt": "{{lifestyle|tips-and-trikx|5[alt]}}"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "bottom"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "{{lifestyle|tips-and-trikx|5[title]}}"
+				}
+			]
+		},
+		{
+			"type": "wrapper",
+			"components": [
+				{
+					"type": "paragraphs",
+					"style": {
+						"large": true
+					},
+					"text": [
+						"From home cinema nights to growing tasty ingredients in the garden, Samsung KX shares five tips and ‘triKX’ to inspire families to get creative when spending quality time together."
+					]
+				},
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "1) Virtual family workouts"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"From dance workouts to relaxing yoga, at-home exercise is a great way to have fun and stay healthy.  No matter what the family energy levels are, there’s a whole variety of videos that can be found online and households can even put their own spin on the sessions by setting fitness challenges with downloadable apps like <a href=\"https://www.samsung.com/uk/apps/samsung-health/\">Samsung Health</a>"
+					]
+				},
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "2) The great family bake off"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Families can get creative in the kitchen with a home bake off. From jazzing up brownie mixes with colourful fruits to going the extra mile with a three-tiered showstopper, there’s plenty of online recipes that will offer hours of fun in the kitchen. What’s more, budding household bakers can help brighten a neighbour’s day by placing a spare slice on their doorstep."
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/5/1.JPG",
+					"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/5/1.JPG",
+					"alt": "A small cake with a yellow flower"
+				},
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "3) Home cinema"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Households can inject some fun into Fridays by enjoying a trip to the cinema from the comfort of their living room. With the curtains drawn, the popcorn microwaved, and a feel-good film, families will feel like they’re back at the movies in no time. For those looking to upgrade their cinematic experience, the latest <a href=\"https://www.samsung.com/uk/tvs/qled-tv/highlights/\">Samsung 2020 QLED TV range</a> offers best-in-class picture and sound, allowing for the perfect movie setup."
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/5/2.JPG",
+					"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/5/2.JPG",
+					"alt": "A family in a living room"
+				},
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "4) Board games"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Board game classics are a brilliant way of fuelling laughter and brain power to the family home. Dust off the Monopoly, Cluedo or Articulate, or if feeling creative, households can make their own board game using paper, crayons and dice and enjoy making their own rules."
+					]
+				},
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "5) Patch & plant"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"When it comes to getting your five a day, there’s nothing quite like the taste of homegrown veg. Families can easily start their own patch with a soiled area and their choice of plants. Radishes, salad leaves, carrots and tomatoes are all great for beginners and can be planted from a pot indoors, or broccoli, peppers and beetroot grow nicely in gardens.",
+						"Snap and share your family fun with <strong>#SamsungKX</strong>"
+					]
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"items": [
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/5/1.JPG",
+					"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/5/1.JPG",
+					"alt": "A small cake with a yellow flower"
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/5/2.JPG",
+					"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/5/2.JPG",
+					"alt": "A family in a living room"
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "more-episodes",
+			"id": "tips-and-trikx",
+			"title": "More episodes",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
 }

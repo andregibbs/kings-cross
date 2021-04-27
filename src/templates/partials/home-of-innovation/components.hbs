@@ -92,6 +92,10 @@
     </script>
   {{/if_equals}}
 
+  {{#if_equals this.type 'consumeTime'}}
+    {{> home-of-innovation/hoiConsumeTime this}}
+  {{/if_equals}}
+
   {{!--
     Group, Related & Link list
     All the same components, different method of populating

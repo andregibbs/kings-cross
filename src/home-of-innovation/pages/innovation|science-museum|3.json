@@ -1,107 +1,111 @@
 {
-  "title": "Stay Learning: Samsung presents \"How AI is changing the world\" with the Science Museum",
-  "description": "Through Samsung's partnership with the Science Museum, learn more about AI and how we are using this technology daily.",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/science-museum/3_KV.jpg",
-  "alt": "Two example space drones are suspended from the ceiling in an event space",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/science-museum/3_KV.jpg",
-  "group": "science-museum",
-  "sort": 3,
-  "meta": {
-    "icon": "article",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "kv",
-      "media": {
-        "type": "image",
-        "content": "{{innovation|science-museum|3[image]}}",
-        "alt": "{{innovation|science-museum|3[alt]}}"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "1",
-          "copy": "{{innovation|science-museum|3[title]}}"
-        }
-      ]
-    },
-    {
-      "type": "wrapper",
-      "components": [
-        {
-          "type": "paragraphs",
-          "text": [
-            "Artificial intelligence (AI) has been developed to enable machines to simulate human or “natural” intelligence so they think and act in a more “human” way. You’d be forgiven for thinking of AI as it is shown in sci-fi films with robots being taught about human emotions in futuristic cities, but actually the reality is that increasingly you can find AI being used in everyday technology. In fact it’s very much in our hands, in so much of the technology we use day-to-day. Face detection helping you capture that perfect shot on your phones, that uses AI. The TVs ability to predict what series you might like, that also uses AI. That spam filter on your emails - you guessed it, AI. It’s all around us making life easier and more personalised, sometimes without us even realising.",
-            "Last year we launched Samsung FAIR Future - the nation’s biggest ever conversation about AI - reaching out to over 5,000 people across the country on the future of AI. We were at the Science Museum Lates and at Norwich Science Festival giving young people and families an opportunity to get hands-on experience with the latest tech and hearing how they want AI to help them.  Our final research report was launched at our Home of Innovation, Samsung KX, inviting some of the industry’s leading experts to discuss its findings. ",
-            "Committed to enabling and empowering people through STEM education, we are also proud partners of the Science Museum’s Driverless: Who is in control? exhibition, which provides a unique glimpse into some of the AI-driven tech that could shape future habits, behaviour and society.",
-            "From self-driving cars, to smart underwater vehicles, here’s a glimpse into some of the amazing ways AI is being used right now."
-          ]
-        },
-        {
-          "type": "buttons",
-          "items": [
-            {
-              "copy": "Discover More",
-              "url": "https://www.sciencemuseum.org.uk/see-and-do/driverless-who-is-in-control",
-              "target": "_blank"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "gallery",
-      "title": "Check out videos from the Science Museum below to learn more",
-      "items": [
-        {
-          "type": "youtube",
-          "title": "How Boaty McBoatface is making climate change discoveries",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/science-museum/3/1.jpg",
-          "alt": "Nose of Boaty McBoatface, the autonomous underwater vehicle, breaking through sea ice",
-          "content": "ZiZ-la0O5uQ"
-        },
-        {
-          "type": "youtube",
-          "title": "The Mantra drone that’s helping to save lives",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/science-museum/3/2.jpg",
-          "alt": "The Mantra drone, a prototype of a landmine clearing drone, hovers over a field of cut down corn",
-          "content": "h1XT4Kugo7A"
-        },
-        {
-          "type": "youtube",
-          "title": "How AI is changing Formula 1",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/science-museum/3/3.jpg",
-          "alt": "Inside of a red and black F1 racing car with a car racing track ahead",
-          "content": "GYwPNMAgF-Q"
-        },
-        {
-          "type": "youtube",
-          "title": "How driverless cars are being trialed and tested",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/science-museum/3/4.jpg",
-          "alt": "A woman standing close to the camera in a light blue dress, talks to someone offscreen",
-          "content": "GUuJjJusNdU"
-        },
-        {
-          "type": "youtube",
-          "title": "How underwater drones are changing our understanding of the ocean",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/science-museum/3/5.jpg",
-          "alt": "Three white underwater drones are suspended in a pool of water",
-          "content": "yRU8mBRIGaA"
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "id": "science-museum",
-      "title": "Learn more",
-      "style": {
-        "scroll": true
-      }
-    }
-  ]
+	"title": "Stay Learning: Samsung presents \"How AI is changing the world\" with the Science Museum",
+	"description": "Through Samsung's partnership with the Science Museum, learn more about AI and how we are using this technology daily.",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/science-museum/3_KV.jpg",
+	"alt": "Two example space drones are suspended from the ceiling in an event space",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/science-museum/3_KV.jpg",
+	"group": "science-museum",
+	"sort": 3,
+	"meta": {
+		"icon": "article",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 5,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "image",
+				"content": "{{innovation|science-museum|3[image]}}",
+				"alt": "{{innovation|science-museum|3[alt]}}"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"level": "1",
+					"copy": "{{innovation|science-museum|3[title]}}"
+				}
+			]
+		},
+		{
+			"type": "wrapper",
+			"components": [
+				{
+					"type": "paragraphs",
+					"text": [
+						"Artificial intelligence (AI) has been developed to enable machines to simulate human or “natural” intelligence so they think and act in a more “human” way. You’d be forgiven for thinking of AI as it is shown in sci-fi films with robots being taught about human emotions in futuristic cities, but actually the reality is that increasingly you can find AI being used in everyday technology. In fact it’s very much in our hands, in so much of the technology we use day-to-day. Face detection helping you capture that perfect shot on your phones, that uses AI. The TVs ability to predict what series you might like, that also uses AI. That spam filter on your emails - you guessed it, AI. It’s all around us making life easier and more personalised, sometimes without us even realising.",
+						"Last year we launched Samsung FAIR Future - the nation’s biggest ever conversation about AI - reaching out to over 5,000 people across the country on the future of AI. We were at the Science Museum Lates and at Norwich Science Festival giving young people and families an opportunity to get hands-on experience with the latest tech and hearing how they want AI to help them.  Our final research report was launched at our Home of Innovation, Samsung KX, inviting some of the industry’s leading experts to discuss its findings. ",
+						"Committed to enabling and empowering people through STEM education, we are also proud partners of the Science Museum’s Driverless: Who is in control? exhibition, which provides a unique glimpse into some of the AI-driven tech that could shape future habits, behaviour and society.",
+						"From self-driving cars, to smart underwater vehicles, here’s a glimpse into some of the amazing ways AI is being used right now."
+					]
+				},
+				{
+					"type": "buttons",
+					"items": [
+						{
+							"copy": "Discover More",
+							"url": "https://www.sciencemuseum.org.uk/see-and-do/driverless-who-is-in-control",
+							"target": "_blank"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"title": "Check out videos from the Science Museum below to learn more",
+			"items": [
+				{
+					"type": "youtube",
+					"title": "How Boaty McBoatface is making climate change discoveries",
+					"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/science-museum/3/1.jpg",
+					"alt": "Nose of Boaty McBoatface, the autonomous underwater vehicle, breaking through sea ice",
+					"content": "ZiZ-la0O5uQ"
+				},
+				{
+					"type": "youtube",
+					"title": "The Mantra drone that’s helping to save lives",
+					"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/science-museum/3/2.jpg",
+					"alt": "The Mantra drone, a prototype of a landmine clearing drone, hovers over a field of cut down corn",
+					"content": "h1XT4Kugo7A"
+				},
+				{
+					"type": "youtube",
+					"title": "How AI is changing Formula 1",
+					"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/science-museum/3/3.jpg",
+					"alt": "Inside of a red and black F1 racing car with a car racing track ahead",
+					"content": "GYwPNMAgF-Q"
+				},
+				{
+					"type": "youtube",
+					"title": "How driverless cars are being trialed and tested",
+					"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/science-museum/3/4.jpg",
+					"alt": "A woman standing close to the camera in a light blue dress, talks to someone offscreen",
+					"content": "GUuJjJusNdU"
+				},
+				{
+					"type": "youtube",
+					"title": "How underwater drones are changing our understanding of the ocean",
+					"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/science-museum/3/5.jpg",
+					"alt": "Three white underwater drones are suspended in a pool of water",
+					"content": "yRU8mBRIGaA"
+				}
+			]
+		},
+		{
+			"type": "group",
+			"id": "science-museum",
+			"title": "Learn more",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
 }

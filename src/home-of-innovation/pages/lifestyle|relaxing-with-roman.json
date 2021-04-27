@@ -8,6 +8,10 @@
     "icon": "series",
     "tags": []
   },
+  "contentLength": {
+		"length": 10,
+		"unit": "mins"
+	},
   "components": [
     {
       "type": "css-snippet",
@@ -61,7 +65,7 @@
         },
         {
           "type": "youtube",
-          "content": "u919MUGxolA"
+          "content": "EEkU2MJjFpo"
         },
         {
           "type": "headline",
@@ -75,7 +79,7 @@
         },
         {
           "type": "youtube",
-          "content": "05GfpulIuoA"
+          "content": "vArCmflJtUk"
         },
         {
           "type": "headline",
@@ -89,7 +93,7 @@
         },
         {
           "type": "youtube",
-          "content": "nkRwCU_roM0"
+          "content": "LkifY6R7j6Q"
         }
       ]
     },

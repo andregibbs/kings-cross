@@ -1,211 +1,210 @@
 {
-  "title": "Best Shows To Perk Up Your Lunch Breaks",
-  "description": "",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/28/its_a_sin_kv.jpg",
-  "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/28/its_a_sin_kv.jpg",
-  "group": "guest-writer-of-the-week",
-  "sort": 28,
-  "meta": {
-    "icon": "article",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "css-snippet",
-      "content": ".headline-group .hoiHeadline:first-child { margin-bottom: 0 !important; } "
-    },
-    {
-      "type": "kv",
-      "media": {
-        "type": "image",
-        "content": "{{lifestyle|guest-writer-of-the-week|28[image]}}",
-        "alt": "{{lifestyle|guest-writer-of-the-week|28[alt]}}"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "copy": "Best Shows To Perk Up Your Lunch Breaks"
-        }
-      ]
-    },
-    {
-      "type": "wrapper",
-      "components": [
-        {
-          "type": "headline",
-          "copy": "Take a break from the 9-5 with these best break TV-picks",
-          "level": "2"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Let’s face it – lunch breaks can be a bit of a drag. You spend half the morning wishing the time away only to be faced with a meal scoffed in five minutes and the remaining allotted time spent mooching about the office (or house, depending on your current predicament) in search of some source of entertainment. Well, if it’s a midday thrill you seek, our top-pick of lunchtime watches will whet your appetite more than your dismal cheese sarnie."
-          ]
-        },
-        {
-          "type": "class-container",
-          "class": "headline-group",
-          "components": [
-            {
-              "type": "headline",
-              "copy": "WandaVision",
-              "level": "3"
-            },
-            {
-              "type": "headline",
-              "copy": "Streaming on Disney+ ",
-              "level": "6"
-            }
-          ]
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/28/wandavision.jpg",
-          "alt": "",
-          "credit": "IMAGE: ©2021 MARVEL"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "WandaVison is the ideal lunch-time filler (averaging at just under half an hour per episode), so there’s enough time to prep your lunch and still fit in an episode or two. Convenient, yes, but that’s not the only reason it’s made the list. This whimsical (if not slightly unnerving) addition to the Marvel Universe is suitable for both fans and newcomers alike. Though it clearly follows the events of Box Office smash hit - Avengers Endgame - it doesn’t demand background knowledge from the viewers, holding enjoyment to ransom until you’ve caught up. Instead, we find protagonists Wanda Maximoff and husband Vision trying to navigate a normal suburban life despite being anything but normal (she an enhanced being, him a synthezoid humanoid - basically an android composed of synthetic human organs and functions). The two get into many hijinks, however despite their comical conundrums there is an air of something sinister afoot. Something evil threatens their happiness, but what’s lurking is something you’ll have to watch to find out.",
-            "Of course, WandaVision is a spinoff from the MCU franchise and so has high-quality visual effects you would expect from any Marvel movie (thank you Disney). The transition from big to small screen feels seamless. However, if you’re a movie buff craving that extra premium experience from the home <a href=\"https://www.samsung.com/uk/tvs/qled-tv/highlights/\">Samsung’s Neo QLED 8K TV</a> is a MUST. It’s Edge-to-edge viewing with the Infinity One Design offers an almost bezel-less screen creating an even more immersive viewing experience. The Quantum Technology Matrix Pro will also lend itself well to the insanely glorious, special effects when Wanda’s powers really come into show. It’s ultra-fine, super-sharp Quantum Mini LEDs will make blacks more intense and colours more vivid, in other words you’re in for a spectacular ride.",
-            "<br>"
-          ]
-        },
-
-        {
-          "type": "class-container",
-          "class": "headline-group",
-          "components": [
-            {
-              "type": "headline",
-              "copy": "It’s a Sin",
-              "level": "3"
-            },
-            {
-              "type": "headline",
-              "copy": "Streaming on All 4",
-              "level": "6"
-            }
-          ]
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/28/its_a_sin.jpg",
-          "alt": "",
-          "credit": "IMAGE: Ben Blackall"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "It’s a Sin, indeed it is. It’s absolutely criminal that this mini-series only has five episodes but thankfully it’ll set you up quite nicely for your Monday to Friday lunchtime viewing. The show follows a group of five friends comprised of four gay men and their best girlfriend in the 80s. Expect fun, laughter and passion as they journey through life following their dreams. However, despite the captivating humour, reality seeps as illness ravishes the gay community. Set against the backdrop of the AIDs pandemic of the 80s the clique embodies a reality that many had to face and their trials will leave you truly touched.",
-            "<br>"
-          ]
-        },
-
-        {
-          "type": "class-container",
-          "class": "headline-group",
-          "components": [
-            {
-              "type": "headline",
-              "copy": "Teen First Dates",
-              "level": "3"
-            },
-            {
-              "type": "headline",
-              "copy": "Streaming on All 4",
-              "level": "6"
-            }
-          ]
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/28/teen_first_date.jpg",
-          "alt": "",
-          "credit": "IMAGE: Channel 4 / Dave King"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "A palate cleanser to the heavier It’s a Sin, First Dates is back with a new series and it’s just as entertaining as it ever was. If you’ve never watched, the premise is pretty easy to grasp, single hopefuls looking for love are set up on blind dates which take place in the ‘First Dates’ restaurant. Cringe-worthy, awkward encounters as singletons fumble their way to love (or not) makes for easy, comedy. The ideal way to while away that hour.",
-            "<br>"
-          ]
-        },
-
-        {
-          "type": "class-container",
-          "class": "headline-group",
-          "components": [
-            {
-              "type": "headline",
-              "copy": "Behind Her Eyes",
-              "level": "3"
-            },
-            {
-              "type": "headline",
-              "copy": "Streaming on Netflix ",
-              "level": "6"
-            }
-          ]
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/28/behind_her_eyes.jpg",
-          "alt": "",
-          "credit": "IMAGE: Netflix"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Ever find yourself drifting off at the screen? Behind Her Eyes is set to be a watch that’ll keep you thoroughly alert. Based on the bestselling novel, creator Steve Lightfoot takes novelist Sarah Pinborough’s psychological thriller and brings it to a screen near you.  Duplicity sits at the core of this watch as single mother Louise begins an affair with her psychiatrist boss whilst striking up a friendship with his wife, however as the twisted mind games unfold, nothing is what it seems. The teaser trailer hints at a nail-biter that will have you at the edge of your seat…couch…bed, basically, where ever you’re perched you’ll be at the edge.",
-            "As an added bonus the object tracking sound pro in the <a href=\"https://www.samsung.com/uk/tvs/qled-tv/highlights/\">Samsung Neo QLED 8K TV</a> will really help to immerse you in the chilling nature of some of the scenes. Its dynamic sound corresponds to the movement of objects on screen, and SpaceFit Sound analyses the installed TV’s physical environment and outputs immersive sound tailored specifically to your space, meaning you’ll be absorbed into their haunting world in no time.",
-            "<br>"
-          ]
-        },
-
-
-        {
-          "type": "headline",
-          "copy": "Craving a classic?",
-          "level": "4"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Sometimes only an oldie but a goodie will do. If you feel like retrieving one of your classics from the DVD shelves and giving it a dust off, the <a href=\"https://www.samsung.com/uk/tvs/qled-tv/highlights/\">Samsung Neo QLED 8K TV</a> has you covered. The Al powered technology cleverly tailors the restoration of every detail, pixel by pixel. It uses the latest technology to fine tune the brightness and enhance contrast in order to maximise your viewing experience and breathe new life into your old favourites.",
-            "<br>"
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Need a break from the screen? Why not try a podcast instead?",
-          "level": "4"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "The <a href=\"https://www.samsung.com/uk/explore/kings-cross/creativity/innovation-sessions/\">Samsung KX Innovation Sessions</a> might prove a little more filling for the soul. The podcast series covers a range of topics from ‘cultivating your creativity’ and ‘turning your passion into a profession’ to fitness and cooking. Featuring esteemed guests such as 4-time European gold medallist, Adam Gemili and broadcaster Clara Amfo, you can choose to watch along or just simply listen to some inspiring content to break up the mid-week drudgery.",
-            "<br>",
-            "<strong>By Janet Leigh.</strong>",
-            "<em>Janet (aka @The_Hungry_TV_Junkie) is a freelance journalist with nine years’ experience in the film and food sector. Following her start in newspapers, she worked way up to managerial position as a food journalist for Hearst UK writing predominately for Good Housekeeping magazine. She has written for Best magazine, Women’s Health, Prima, Film Juice and Digital Spy and is also a published Author. Her debut novel Gothic Angel is available through Waterstones, Amazon, WHSmith and other retailers.</em>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "dynamic": "more-articles",
-      "id": "guest-writer-of-the-week",
-      "title": "More articles",
-      "style": {
-        "scroll": true
-      }
-    }
-  ]
+	"title": "Best Shows To Perk Up Your Lunch Breaks",
+	"description": "",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/28/its_a_sin_kv.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/28/its_a_sin_kv.jpg",
+	"group": "guest-writer-of-the-week",
+	"sort": 28,
+	"meta": {
+		"icon": "article",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 6,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "css-snippet",
+			"content": ".headline-group .hoiHeadline:first-child { margin-bottom: 0 !important; } "
+		},
+		{
+			"type": "kv",
+			"media": {
+				"type": "image",
+				"content": "{{lifestyle|guest-writer-of-the-week|28[image]}}",
+				"alt": "{{lifestyle|guest-writer-of-the-week|28[alt]}}"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Best Shows To Perk Up Your Lunch Breaks"
+				}
+			]
+		},
+		{
+			"type": "wrapper",
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Take a break from the 9-5 with these best break TV-picks",
+					"level": "2"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Let’s face it – lunch breaks can be a bit of a drag. You spend half the morning wishing the time away only to be faced with a meal scoffed in five minutes and the remaining allotted time spent mooching about the office (or house, depending on your current predicament) in search of some source of entertainment. Well, if it’s a midday thrill you seek, our top-pick of lunchtime watches will whet your appetite more than your dismal cheese sarnie."
+					]
+				},
+				{
+					"type": "class-container",
+					"class": "headline-group",
+					"components": [
+						{
+							"type": "headline",
+							"copy": "WandaVision",
+							"level": "3"
+						},
+						{
+							"type": "headline",
+							"copy": "Streaming on Disney+ ",
+							"level": "6"
+						}
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/28/wandavision.jpg",
+					"alt": "",
+					"credit": "IMAGE: ©2021 MARVEL"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"WandaVison is the ideal lunch-time filler (averaging at just under half an hour per episode), so there’s enough time to prep your lunch and still fit in an episode or two. Convenient, yes, but that’s not the only reason it’s made the list. This whimsical (if not slightly unnerving) addition to the Marvel Universe is suitable for both fans and newcomers alike. Though it clearly follows the events of Box Office smash hit - Avengers Endgame - it doesn’t demand background knowledge from the viewers, holding enjoyment to ransom until you’ve caught up. Instead, we find protagonists Wanda Maximoff and husband Vision trying to navigate a normal suburban life despite being anything but normal (she an enhanced being, him a synthezoid humanoid - basically an android composed of synthetic human organs and functions). The two get into many hijinks, however despite their comical conundrums there is an air of something sinister afoot. Something evil threatens their happiness, but what’s lurking is something you’ll have to watch to find out.",
+						"Of course, WandaVision is a spinoff from the MCU franchise and so has high-quality visual effects you would expect from any Marvel movie (thank you Disney). The transition from big to small screen feels seamless. However, if you’re a movie buff craving that extra premium experience from the home <a href=\"https://www.samsung.com/uk/tvs/qled-tv/highlights/\">Samsung’s Neo QLED 8K TV</a> is a MUST. It’s Edge-to-edge viewing with the Infinity One Design offers an almost bezel-less screen creating an even more immersive viewing experience. The Quantum Technology Matrix Pro will also lend itself well to the insanely glorious, special effects when Wanda’s powers really come into show. It’s ultra-fine, super-sharp Quantum Mini LEDs will make blacks more intense and colours more vivid, in other words you’re in for a spectacular ride.",
+						"<br>"
+					]
+				},
+				{
+					"type": "class-container",
+					"class": "headline-group",
+					"components": [
+						{
+							"type": "headline",
+							"copy": "It’s a Sin",
+							"level": "3"
+						},
+						{
+							"type": "headline",
+							"copy": "Streaming on All 4",
+							"level": "6"
+						}
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/28/its_a_sin.jpg",
+					"alt": "",
+					"credit": "IMAGE: Ben Blackall"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"It’s a Sin, indeed it is. It’s absolutely criminal that this mini-series only has five episodes but thankfully it’ll set you up quite nicely for your Monday to Friday lunchtime viewing. The show follows a group of five friends comprised of four gay men and their best girlfriend in the 80s. Expect fun, laughter and passion as they journey through life following their dreams. However, despite the captivating humour, reality seeps as illness ravishes the gay community. Set against the backdrop of the AIDs pandemic of the 80s the clique embodies a reality that many had to face and their trials will leave you truly touched.",
+						"<br>"
+					]
+				},
+				{
+					"type": "class-container",
+					"class": "headline-group",
+					"components": [
+						{
+							"type": "headline",
+							"copy": "Teen First Dates",
+							"level": "3"
+						},
+						{
+							"type": "headline",
+							"copy": "Streaming on All 4",
+							"level": "6"
+						}
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/28/teen_first_date.jpg",
+					"alt": "",
+					"credit": "IMAGE: Channel 4 / Dave King"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"A palate cleanser to the heavier It’s a Sin, First Dates is back with a new series and it’s just as entertaining as it ever was. If you’ve never watched, the premise is pretty easy to grasp, single hopefuls looking for love are set up on blind dates which take place in the ‘First Dates’ restaurant. Cringe-worthy, awkward encounters as singletons fumble their way to love (or not) makes for easy, comedy. The ideal way to while away that hour.",
+						"<br>"
+					]
+				},
+				{
+					"type": "class-container",
+					"class": "headline-group",
+					"components": [
+						{
+							"type": "headline",
+							"copy": "Behind Her Eyes",
+							"level": "3"
+						},
+						{
+							"type": "headline",
+							"copy": "Streaming on Netflix ",
+							"level": "6"
+						}
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/28/behind_her_eyes.jpg",
+					"alt": "",
+					"credit": "IMAGE: Netflix"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Ever find yourself drifting off at the screen? Behind Her Eyes is set to be a watch that’ll keep you thoroughly alert. Based on the bestselling novel, creator Steve Lightfoot takes novelist Sarah Pinborough’s psychological thriller and brings it to a screen near you.  Duplicity sits at the core of this watch as single mother Louise begins an affair with her psychiatrist boss whilst striking up a friendship with his wife, however as the twisted mind games unfold, nothing is what it seems. The teaser trailer hints at a nail-biter that will have you at the edge of your seat…couch…bed, basically, where ever you’re perched you’ll be at the edge.",
+						"As an added bonus the object tracking sound pro in the <a href=\"https://www.samsung.com/uk/tvs/qled-tv/highlights/\">Samsung Neo QLED 8K TV</a> will really help to immerse you in the chilling nature of some of the scenes. Its dynamic sound corresponds to the movement of objects on screen, and SpaceFit Sound analyses the installed TV’s physical environment and outputs immersive sound tailored specifically to your space, meaning you’ll be absorbed into their haunting world in no time.",
+						"<br>"
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Craving a classic?",
+					"level": "4"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Sometimes only an oldie but a goodie will do. If you feel like retrieving one of your classics from the DVD shelves and giving it a dust off, the <a href=\"https://www.samsung.com/uk/tvs/qled-tv/highlights/\">Samsung Neo QLED 8K TV</a> has you covered. The Al powered technology cleverly tailors the restoration of every detail, pixel by pixel. It uses the latest technology to fine tune the brightness and enhance contrast in order to maximise your viewing experience and breathe new life into your old favourites.",
+						"<br>"
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Need a break from the screen? Why not try a podcast instead?",
+					"level": "4"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"The <a href=\"https://www.samsung.com/uk/explore/kings-cross/creativity/innovation-sessions/\">Samsung KX Innovation Sessions</a> might prove a little more filling for the soul. The podcast series covers a range of topics from ‘cultivating your creativity’ and ‘turning your passion into a profession’ to fitness and cooking. Featuring esteemed guests such as 4-time European gold medallist, Adam Gemili and broadcaster Clara Amfo, you can choose to watch along or just simply listen to some inspiring content to break up the mid-week drudgery.",
+						"<br>",
+						"<strong>By Janet Leigh.</strong>",
+						"<em>Janet (aka @The_Hungry_TV_Junkie) is a freelance journalist with nine years’ experience in the film and food sector. Following her start in newspapers, she worked way up to managerial position as a food journalist for Hearst UK writing predominately for Good Housekeeping magazine. She has written for Best magazine, Women’s Health, Prima, Film Juice and Digital Spy and is also a published Author. Her debut novel Gothic Angel is available through Waterstones, Amazon, WHSmith and other retailers.</em>"
+					]
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "more-articles",
+			"id": "guest-writer-of-the-week",
+			"title": "More articles",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
 }

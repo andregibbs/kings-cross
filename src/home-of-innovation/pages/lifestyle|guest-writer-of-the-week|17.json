@@ -1,149 +1,153 @@
 {
-  "title": "Guest writer of the week: Top Tips for New Gamers",
-  "description": "",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/17/kv.jpg",
-  "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/17/thumb.jpg",
-  "group": "guest-writer-of-the-week",
-  "sort": 17,
-  "meta": {
-    "icon": "article",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "kv",
-      "media": {
-        "type": "image",
-        "content": "{{lifestyle|guest-writer-of-the-week|17[image]}}",
-        "alt": "{{lifestyle|guest-writer-of-the-week|17[alt]}}"
-      },
-      "style": {
-        "desktop": "top",
-        "mobile": "bottom"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "copy": "Top Tips for New Gamers"
-        }
-      ]
-    },
-    {
-      "type": "wrapper",
-      "components": [
-        {
-          "type": "paragraphs",
-          "text": [
-            "With many of us spending a lot more time indoors this year, it's been a great chance for many to connect with friends through gaming - or reconnect with a long-lost passion.",
-            "That said, there's so much to learn if you're new to the hobby or haven't played since \"good old days\". With that in mind, here's a guide to helping you find maximum enjoyment, whatever it is you choose to play."
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Choosing A Platform",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "With multiple consoles to choose from, it can be tricky to know which is \"best\". Xbox Game Pass is great as it allows players on Xbox Consoles and PCs to play a wealth of games every month. PC Gamers also have access to thousands of games dating back decades thanks to the maturity of the platform. Of course, it could come down to whichever platform your friends are on - but we'll get to that later."
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Stay Secure",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Ok, you've picked your console, and you've logged on. What next? The key thing is to remain secure. Like emails, consoles are also susceptible to phishing scams where people can be after your password. Never share your login information online, even with a friend."
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Spend Time In Tutorials",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "If a game has a tutorial, it's almost certainly worth spending a little time watching it. Not only do they often help with a game's moment to moment mechanics, but they can often offer settings to make your experience more comfortable - like inverted view options and alternate controller layouts."
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Practice Makes Perfect",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Once you've cleared the tutorial or the intro mission, particularly in an online-focussed title like Rocket League or Apex Legends, you're bound to want to jump into online play. That's never a bad thing, but don't expect to finish top of the leaderboard just yet - these things will take practice, and games such as DOTA 2 or League of Legends have a steep learning curve that you only really learn from experience."
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Watch Some Streamers",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Another great way to learn how to play, or improve your existing skills, is to watch some of the world's best via a platform like Twitch, Facebook, or YouTube. Doing so will help you learn top-tier strategies, and there's nothing more satisfying than putting that strategy into action in a match all on your own. While there are some megastars on each platform, there are plenty of smaller streamers worth checking out, be that for their skill in a game or because they have a personality that you may personally identify with."
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Connect With Friends",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "There's nothing more fun than playing video games with friends, and the medium offers a great way to connect. While there was a time where players were siloed away from their companions playing on different consoles, those walls have started to come down now. In fact, huge titles like Fortnite, Call of Duty, and Rocket League will now let you play across console and PC. That means that while you may not have been able to play with your friend before because of their choice of platform, you can now squad up on some games!"
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Don't Be Afraid To Keep To Yourself",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "While playing games with friends can be a great way to catch up about your week, playing with strangers online can often feel like a daunting experience. Many games offer \"newcomer\" playlists to ensure inexperienced players can play together."
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Above All, Have Fun!",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "The key thing about gaming is that it's just that - playing games. The medium has arguably never been stronger, between multi-million dollar blockbusters and stunning titles developed by small independent studios, there's something that falls within every consumer's budget and preference. Whatever games you're into, be it digital card games, tough-as-nails action games, sports titles or remakes of classics, there's never been a better time to play - particularly on the <a href=\"https://www.samsung.com/uk/monitors/monitor-cg95/\">Samsung Odyssey G9</a>. The new displays offer a stunning 1,000-millimetre curved screen, one millisecond response time and a 240Hz refresh rate that make it ideal for casual and competitive gaming."
-          ]
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "<strong>by Lloyd Coombes </strong>",
-            "<em>Lloyd Coombes is a freelance gaming and tech journalist, specialising in games that evolve over time. He writes reviews, previews, features and opinion pieces, and regularly contributes to Gfinity, TechRadar, GamesRadar and the Daily Star.</em>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "dynamic": "more-articles",
-      "id": "guest-writer-of-the-week",
-      "title": "More articles",
-      "style": {
-        "scroll": true
-      }
-    }
-  ]
+	"title": "Guest writer of the week: Top Tips for New Gamers",
+	"description": "",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/17/kv.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/17/thumb.jpg",
+	"group": "guest-writer-of-the-week",
+	"sort": 17,
+	"meta": {
+		"icon": "article",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 4,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "image",
+				"content": "{{lifestyle|guest-writer-of-the-week|17[image]}}",
+				"alt": "{{lifestyle|guest-writer-of-the-week|17[alt]}}"
+			},
+			"style": {
+				"desktop": "top",
+				"mobile": "bottom"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Top Tips for New Gamers"
+				}
+			]
+		},
+		{
+			"type": "wrapper",
+			"components": [
+				{
+					"type": "paragraphs",
+					"text": [
+						"With many of us spending a lot more time indoors this year, it's been a great chance for many to connect with friends through gaming - or reconnect with a long-lost passion.",
+						"That said, there's so much to learn if you're new to the hobby or haven't played since \"good old days\". With that in mind, here's a guide to helping you find maximum enjoyment, whatever it is you choose to play."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Choosing A Platform",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"With multiple consoles to choose from, it can be tricky to know which is \"best\". Xbox Game Pass is great as it allows players on Xbox Consoles and PCs to play a wealth of games every month. PC Gamers also have access to thousands of games dating back decades thanks to the maturity of the platform. Of course, it could come down to whichever platform your friends are on - but we'll get to that later."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Stay Secure",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Ok, you've picked your console, and you've logged on. What next? The key thing is to remain secure. Like emails, consoles are also susceptible to phishing scams where people can be after your password. Never share your login information online, even with a friend."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Spend Time In Tutorials",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"If a game has a tutorial, it's almost certainly worth spending a little time watching it. Not only do they often help with a game's moment to moment mechanics, but they can often offer settings to make your experience more comfortable - like inverted view options and alternate controller layouts."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Practice Makes Perfect",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Once you've cleared the tutorial or the intro mission, particularly in an online-focussed title like Rocket League or Apex Legends, you're bound to want to jump into online play. That's never a bad thing, but don't expect to finish top of the leaderboard just yet - these things will take practice, and games such as DOTA 2 or League of Legends have a steep learning curve that you only really learn from experience."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Watch Some Streamers",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Another great way to learn how to play, or improve your existing skills, is to watch some of the world's best via a platform like Twitch, Facebook, or YouTube. Doing so will help you learn top-tier strategies, and there's nothing more satisfying than putting that strategy into action in a match all on your own. While there are some megastars on each platform, there are plenty of smaller streamers worth checking out, be that for their skill in a game or because they have a personality that you may personally identify with."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Connect With Friends",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"There's nothing more fun than playing video games with friends, and the medium offers a great way to connect. While there was a time where players were siloed away from their companions playing on different consoles, those walls have started to come down now. In fact, huge titles like Fortnite, Call of Duty, and Rocket League will now let you play across console and PC. That means that while you may not have been able to play with your friend before because of their choice of platform, you can now squad up on some games!"
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Don't Be Afraid To Keep To Yourself",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"While playing games with friends can be a great way to catch up about your week, playing with strangers online can often feel like a daunting experience. Many games offer \"newcomer\" playlists to ensure inexperienced players can play together."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Above All, Have Fun!",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"The key thing about gaming is that it's just that - playing games. The medium has arguably never been stronger, between multi-million dollar blockbusters and stunning titles developed by small independent studios, there's something that falls within every consumer's budget and preference. Whatever games you're into, be it digital card games, tough-as-nails action games, sports titles or remakes of classics, there's never been a better time to play - particularly on the <a href=\"https://www.samsung.com/uk/monitors/monitor-cg95/\">Samsung Odyssey G9</a>. The new displays offer a stunning 1,000-millimetre curved screen, one millisecond response time and a 240Hz refresh rate that make it ideal for casual and competitive gaming."
+					]
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"<strong>by Lloyd Coombes </strong>",
+						"<em>Lloyd Coombes is a freelance gaming and tech journalist, specialising in games that evolve over time. He writes reviews, previews, features and opinion pieces, and regularly contributes to Gfinity, TechRadar, GamesRadar and the Daily Star.</em>"
+					]
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "more-articles",
+			"id": "guest-writer-of-the-week",
+			"title": "More articles",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
 }

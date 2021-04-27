@@ -204,6 +204,7 @@ if (typeof module !== 'undefined') {
       title = title ? title : manualTitle
       // console.log('title', title, context)
       // replace all link matches
+
       return context.replace(regexp, (m) => {
         let matches = regexp.exec(m)
         let tags = []
@@ -223,6 +224,46 @@ if (typeof module !== 'undefined') {
         // return match with additional tags
         return m.replace('<a',`<a ${tags.join(' ')}`)
       })
+    })
+
+    // keep incase bulk time calculation is needed
+    Handlebars.registerHelper('readingTime', function (context) {
+
+      const keysToCapture = ['copy', 'text']
+      let fileValues = []
+      let elementRegex = /(<.*?>)/gim
+      let variableRegex = /({{.*?}})/g
+
+      function removeElements(string) {
+        return string.replace(elementRegex,'')
+      }
+
+      function jsonRecursive(obj) {
+        for (let k in obj) {
+          if (typeof obj[k] == "object" && obj[k] !== null) {
+            if (keysToCapture.indexOf(k) > -1) {
+              // if array, loop through and remove any elements
+              let elementsRemoved = obj[k].map(removeElements)
+              fileValues = fileValues.concat(elementsRemoved)
+            }
+            jsonRecursive(obj[k]);
+          } else {
+            if (keysToCapture.indexOf(k) > -1) {
+              fileValues.push(removeElements(obj[k]))
+            }
+          }
+        }
+      }
+
+      jsonRecursive(context.components)
+      const wordCount = fileValues.join(' ').split(' ').length
+      // reading time calculation https://marketingland.com/estimated-reading-times-increase-engagement-79830
+      const mins = wordCount / 200
+      const seconds = (mins - Math.floor(mins)) * 0.6
+      const minutesRounded = Math.round(mins+seconds)
+      // get hoi content
+      return minutesRounded
+
     })
   }
 }

@@ -6,25 +6,6 @@
   },
   "components": [
     {
-      "type": "kv",
-      "media": {
-        "type": "image",
-        "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/discover/2020-assets/creativity.jpg",
-        "alt": ""
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "1",
-          "copy": "Creativity"
-        }
-      ]
-    },
-    {
       "type": "link-list-id",
       "dynamic": "creativity-latest",
       "title": "Creativity Latest",
@@ -32,6 +13,8 @@
         "scroll": true
       },
       "items": [
+        "creativity|personal-branding|how-to-rebrand-your-online-presence",
+        "creativity|inspire-me|starting-youtube-channel-tips",
         "creativity|personal-branding|improving-your-professional-online-presence-ash-jones-top-3-tips",
         "creativity|personal-branding|psychology-of-a-portrait",
         "creativity|personal-branding|ashley-verse-5-photography-tips",
@@ -39,13 +22,35 @@
         "creativity|central-saint-martins|three-dimensional-home-map",
         "creativity|inspire-me|smartphone-telephoto-lens-photography-tips",
         "creativity|yfa-creative-labs|framing-composition",
-        "creativity|yfa-creative-labs|slow-motion-filmmaking",
-        "creativity|editing-sessions|7",
-        "creativity|yfa-creative-labs|three-shot-filmmaking",
-        "creativity|graduate-fashion-week|student-blog|tabatha-lopez-S20FE",
-        "creativity|editing-sessions|6",
-        "creativity|yfa-creative-labs|halloween"
+        "creativity|yfa-creative-labs|slow-motion-filmmaking"
       ]
+    },
+    {
+      "type": "group",
+      "style": {
+        "scroll": true
+      },
+      "dynamic": "personal-branding",
+      "id": "personal-branding",
+      "title": "Personal Branding"
+    },
+    {
+      "type": "group",
+      "style": {
+        "scroll": true
+      },
+      "dynamic": "inspire-me",
+      "id": "inspire-me",
+      "title": "Inspire Me"
+    },
+    {
+      "type": "group",
+      "style": {
+        "scroll": true
+      },
+      "dynamic": "yfa-creative-labs",
+      "id": "yfa-creative-labs",
+      "title": "YFA Creative Labs"
     },
     {
       "type": "group",

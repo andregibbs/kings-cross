@@ -1,50 +1,54 @@
 {
-  "title": "Editing Sessions: Sharpening Creative Skills with Gadgetsboy",
-  "description": "GadgetsBoy shares his expertise on getting creative with tech for a flawless shoot",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/editing-sessions/5_kv.jpg",
-  "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/editing-sessions/5_kv.jpg",
-  "group": "editing-sessions",
-  "sort": 5,
-  "meta": {
-    "icon": "video",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "kv",
-      "media": {
-        "type": "youtube",
-        "content": "fIYiC2Q5m_k",
-        "poster": "{{creativity|editing-sessions|5[image]}}",
-        "alt": "{{creativity|editing-sessions|5[alt]}}"
-      },
-      "style": {
-        "desktop": "top",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "copy": "Sharpening Creative Skills with Gadgetsboy"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Welcome to the Editing Sessions.",
-            "We’ve partnered with leading content creator GadgetsBoy to share his expertise on getting creative with tech. Using the <a href=\"https://www.samsung.com/uk/smartphones/galaxy-note20/\">Samsung Galaxy Note 20 Ultra</a>, this exclusive tutorial covers everything from on-the-go writing and animating to multitasking for a flawless shoot."
-          ]
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "dynamic": "episodes",
-      "id": "editing-sessions",
-      "title": "More episodes",
-      "style": {
-        "scroll": true
-      }
-    }
-  ]
+	"title": "Editing Sessions: Sharpening Creative Skills with Gadgetsboy",
+	"description": "GadgetsBoy shares his expertise on getting creative with tech for a flawless shoot",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/editing-sessions/5_kv.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/editing-sessions/5_kv.jpg",
+	"group": "editing-sessions",
+	"sort": 5,
+	"meta": {
+		"icon": "video",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 5,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "youtube",
+				"content": "fIYiC2Q5m_k",
+				"poster": "{{creativity|editing-sessions|5[image]}}",
+				"alt": "{{creativity|editing-sessions|5[alt]}}"
+			},
+			"style": {
+				"desktop": "top",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Sharpening Creative Skills with Gadgetsboy"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Welcome to the Editing Sessions.",
+						"We’ve partnered with leading content creator GadgetsBoy to share his expertise on getting creative with tech. Using the <a href=\"https://www.samsung.com/uk/smartphones/galaxy-note20/\">Samsung Galaxy Note 20 Ultra</a>, this exclusive tutorial covers everything from on-the-go writing and animating to multitasking for a flawless shoot."
+					]
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "episodes",
+			"id": "editing-sessions",
+			"title": "More episodes",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
 }

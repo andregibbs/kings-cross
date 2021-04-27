@@ -1,71 +1,75 @@
 {
-  "title": "Life of A Marketing Girl",
-  "description": "Join us as Graduate Fashion Foundation and guests host an innovative Fashion Marketing talk",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/livestreams/Samsung_GraduateFashionWeek_1440x900_LOAMG.jpg",
-  "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/livestreams/Samsung_GraduateFashionWeek_400x255_LOAMG.jpg",
-  "group": "graduate-fashion-week",
-  "sort": 4,
-  "meta": {
-    "icon": "video",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "kv",
-      "media": {
-        "type": "livestream",
-        "content": "4u15FI2YcfI",
-        "poster": "{{creativity|graduate-fashion-week|life-of-a-marketing-girl[image]}}",
-        "alt": ""
-      },
-      "style": {
-        "desktop": "top",
-        "mobile": "bottom"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "copy": "Life of A Marketing Girl"
-        }
-      ]
-    },
-    {
-      "type": "wrapper",
-      "components": [
-        {
-          "type": "paragraphs",
-          "style": {
-            "large": true
-          },
-          "text": [
-            "Life of a Marketing Girl is a community and thought leadership platform. A community hub to connect like-minded female marketing professionals starting from entry level to management tier.",
-            "During the talk we will learn more about the speaker's career paths and get some top tips on joining the marketing world with insightful tools and information. ",
-            "Each guest will have the opportunity to test out and take notes on a Samsung Note20.",
-            "This event supports social distancing, in line with government guidelines. Learn more about the precautions we're taking <a href=\"https://www.samsung.com/uk/explore/kings-cross/\">here</a>."
-          ]
-        }
-      ]
-    },
-    {
-      "type": "link-list",
-      "title": "Check out the products used in the workshops here",
-      "items": [
-        {
-          "title": "Galaxy Note 20",
-          "url": "https://www.samsung.com/uk/smartphones/galaxy-note20/purchase/",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/livestreams/Galaxy_Note20_Mystic_Gray_2.jpg"
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "dynamic": "episodes",
-      "id": "graduate-fashion-week",
-      "title": "Episodes",
-      "style": {
-        "scroll": true
-      }
-    }
-  ]
+	"title": "Life of A Marketing Girl",
+	"description": "Join us as Graduate Fashion Foundation and guests host an innovative Fashion Marketing talk",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/livestreams/Samsung_GraduateFashionWeek_1440x900_LOAMG.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/livestreams/Samsung_GraduateFashionWeek_400x255_LOAMG.jpg",
+	"group": "graduate-fashion-week",
+	"sort": 4,
+	"meta": {
+		"icon": "video",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 61,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "livestream",
+				"content": "4u15FI2YcfI",
+				"poster": "{{creativity|graduate-fashion-week|life-of-a-marketing-girl[image]}}",
+				"alt": ""
+			},
+			"style": {
+				"desktop": "top",
+				"mobile": "bottom"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Life of A Marketing Girl"
+				}
+			]
+		},
+		{
+			"type": "wrapper",
+			"components": [
+				{
+					"type": "paragraphs",
+					"style": {
+						"large": true
+					},
+					"text": [
+						"Life of a Marketing Girl is a community and thought leadership platform. A community hub to connect like-minded female marketing professionals starting from entry level to management tier.",
+						"During the talk we will learn more about the speaker's career paths and get some top tips on joining the marketing world with insightful tools and information. ",
+						"Each guest will have the opportunity to test out and take notes on a Samsung Note20.",
+						"This event supports social distancing, in line with government guidelines. Learn more about the precautions we're taking <a href=\"https://www.samsung.com/uk/explore/kings-cross/\">here</a>."
+					]
+				}
+			]
+		},
+		{
+			"type": "link-list",
+			"title": "Check out the products used in the workshops here",
+			"items": [
+				{
+					"title": "Galaxy Note 20",
+					"url": "https://www.samsung.com/uk/smartphones/galaxy-note20/purchase/",
+					"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/livestreams/Galaxy_Note20_Mystic_Gray_2.jpg"
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "episodes",
+			"id": "graduate-fashion-week",
+			"title": "Episodes",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
 }

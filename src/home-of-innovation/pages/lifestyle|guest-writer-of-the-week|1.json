@@ -1,200 +1,204 @@
 {
-  "title": "Guest writer of the week: Nourishing mid-week cooking, simplified",
-  "description": "Nourishing mid-week cooking, simplified",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/1/IMAGE-KV.JPG",
-  "alt": "Plate of rice, pomegranate seeds and herbs with a silver fork, surrounded by other foods on a white wooded table",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/1/IMAGE-KV.JPG",
-  "group": "guest-writer-of-the-week",
-  "sort": 1,
-  "meta": {
-    "icon": "article",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "kv",
-      "media": {
-        "type": "image",
-        "content": "{{lifestyle|guest-writer-of-the-week|1[image]}}",
-        "alt": "{{lifestyle|guest-writer-of-the-week|1[alt]}}"
-      },
-      "style": {
-        "desktop": "right",
-        "mobile": "bottom"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "copy": "Nourishing mid-week cooking, simplified"
-        }
-      ]
-    },
-    {
-      "type": "wrapper",
-      "components": [
-        {
-          "type": "paragraphs",
-          "style": {
-            "large": true
-          },
-          "text": [
-            "Perhaps you love it or maybe you try to do very little of it but whatever your skill or will in the kitchen, we all want what we eat to be delicious, healthy and easy.",
-            "Food writer, Katy McClelland, shares some great tips to demonstrate balance for simplified and nourishing mid-week cooking."
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "1) Building Blocks",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "With quick mid-week cooking, the most important thing is knowing what flavours you like, then you can vary it with different produce. Use recipes as a guide then add, streamline or swap with what you have, like or can get. Balance carbs, fat, protein and greens, your body needs a bit of everything and will just crave what it's deprived of. Apps are a good way to monitor this, try the <a href=\"https://www.samsung.com/uk/apps/samsung-health/\">Samsung Health app</a> – it breaks down the calories and nutrients in each meal, so you know exactly what you're consuming.",
-            "You will possibly have heard of Samin Nosrat's book 'Salt, fat, acid, heat,' that really sums up what you need flavour wise in cooking for taste and satiety. Fat gives richness, even just cooking with a bit of butter gives so much difference - (try browned butter – you won't look back).  If not, a good olive oil, cheese, nut butter or tahini does the trick. You also need a salty element for that savoury satisfaction – step forward sea salt, olives, anchovies or even marmite. Balance that with a bit of acid – lemon juice, balsamic, capers or pickles for example. The heat could be chilli and spices, but these also add toasty, roasty cooking flavours to your dish.",
-            "Let's take it one step beyond and think about texture – a bit of crunch will make you feel more satisfied, and maybe even a pinch of sweetness if it goes, think dried fruit in a tagine. And there you go.",
-            "Here's a great recipe to demonstrate balance, adjust everything to suit how punchy you like it."
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Quick Indian spiced salad",
-          "level": "4"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Makes 4 portions<br>From start to serve 5 mins"
-          ]
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "- 1-2 tbsp lime pickle – add to taste and depending how strong the pickle is",
-            "- 1-4 tsp lemon juice, cider or white wine vinegar – adjust depending on the acidity of the pickle",
-            "- 1-2 tbsp honey, maple syrup or light brown sugar – add to taste",
-            "- 3 tbsp extra virgin olive and 1tbsp lighter flavoured oil such as light olive or sunflower",
-            "- 2 heaped tbsp Greek yoghurt",
-            "- 1 Just whizz in a blender with 1-2tbsp of water until smooth then toss with some crunchy salad leaves",
-            "(if preferred, use mango chutney and cut out the syrup)"
-          ]
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "<strong>For the salad...</strong>",
-            "- A bit of crunchy lettuce and avocado should be enough, however feel free to add a bit extra, for example, cucumber, coriander, toasted almonds or pistachios, sesame seeds. A pinch of nigella seeds will give a lovely flavour twist. Make it more filling with chickpeas, boiled eggs, yoghurt or chicken."
-          ]
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/1/IMAGE_1.jpeg",
-          "alt": "Quick Indian spiced salad"
-        },
-        {
-          "type": "headline",
-          "copy": "2) Eating seasonally",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Whether it's fresh produce, meat, grains or dairy - if it's been able to grow or mature naturally with minimal chemical or mechanical intervention, it's not only good for your bank balance and the environment, but it's also better for your health.",
-            "Rather than battling with the seasons to maintain supply of the same fruit and veg we should be listening to mother nature and eating the natural assortment the seasons provide; from fibrous vegetables like cabbage and broccoli in winter to antioxidant rich tomatoes and berries in summer. It will taste better, fresher and be more nutritious.",
-            "Cutting food miles and supporting local producers will improve the quality, availability and diversity of produce in future too, and your body - or rather your gut loves and needs variety to keep those microbes happy (though that also includes the occasional indulgence to keep your microbiome on its toes!)."
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Beetroot and brown rice pilaf",
-          "level": "4"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Beetroot is rich in antioxidants and fibre but it's rich earthy flavour can sometimes make people avoid it, however with the right spices and gentle cooking it's delicious, and an extra win – you can also eat the leaves as you would baby spinach.",
-            "Serves 2<br>From start to serve 40 mins"
-          ]
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "- 1 medium onion, halved and thinly sliced",
-            "- 40g butter",
-            "- 1tbsp olive oil (we add oil with the butter as it has a higher burning point)",
-            "Flavour – middle eastern flavours are great with beetroot. Try 2-3tsp of has el hanout spice blend or harissa paste (if you can't get those, then 2tsp of roughly crushed cumin seeds is also good – add some warmth with around ½ tsp of cinnamon and/or cardamon pods, cayenne pepper or chilli if you like)",
-            "- 150g brown basmati rice",
-            "- 450ml veg or chicken stock (or water)",
-            "- 300g beetroot, (roughly 2) - peel and grate while the onions are cooking (swap for carrots if you prefer)",
-            "To serve – use what you have...",
-            "A drizzle of;",
-            "Tahini, Greek yoghurt, ricotta or feta, lemon juice, fresh pomegranate seeds, balsamic glaze/pomegranate or date molasses",
-            "A sprinkle of;",
-            "Parsley, coriander, mint or dill, toasted nuts – pine nuts, pistachios, hazelnuts or almonds, a few raisins or dried cherries. (if you make it curry based swap tahini for almond butter, lemon for lime and use a drizzle of tamarind)",
-            "1) Heat a wide heavy based pan over a high heat (roughly 20cm – size will affect cooking time and absorption) add the butter and oil, let it sizzle then add the onions and a pinch of salt. Stir fry for 1 min, reduce the heat to medium (you'll need to go slightly below medium if cooking on gas rather than electric). Cook the onion for 8 mins, stirring now and again. It should be lightly golden and translucent.",
-            "2) Add the ras el hanout (or harissa) and rice, mix well, and then fry for a minute more. Add the stock, mix well and bring to the boil - allow to boil for 2 mins then add the lid and reduce to a moderate simmer for 25 mins. Add the beetroot in a layer on top for the last 10 mins (work quickly so you keep in the heat).",
-            "3) Mix and season to taste, add herbs, drizzles and toppings to taste."
-          ]
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/1/IMAGE_3.jpg",
-          "alt": "Beetroot and brown rice pilaf"
-        },
-        {
-          "type": "headline",
-          "copy": "3) Storage and waste",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "There are so many hacks to curb your food waste and save money, one part is knowing your produce and one-part is good storage. Here's a few tips...",
-            "- Wash leaves and herbs in ice cold water, dry with a salad spinner then store in sealed Tupperware. They'll keep fresh and crisp for up to 10 days.",
-            "- Trim vegetables before storing so they last longer and often you can use the leaves – cut the tops off carrots (the finer ends make a great pesto), trim beetroot leaves (fry with garlic as a side) and try chopping and pickling the stalks.",
-            "- On that note, save odds and ends of veg for pickling- cabbages are great or lighter veggies like cucumber and radish can take a 10-minute pickle if they're looking too sad for a salad.",
-            "- Vegetable trimmings are also great for stocks and boosting flavour in soups and sauces, bits of onions, leeks, stalks from herbs and all sorts. Keep them in the freezer until you have time to use them, same goes for meat, fish bones and prawn shells.",
-            "- Use or freeze sour milk or yoghurt to make soda bread or scones.",
-            "- You can even keep orange peels and dry in a low oven to crumble into to granola or yoghurt.",
-            "Don't forget to snap and share your dishes with #SamsungKX.",
-            "By Katy McClelland.",
-            "Katy is a freelance food stylist, recipe developer & food editor. A regular contributor to Delicious and Vegetarian Living magazines, Katy also creates social media recipe content for drinks brand, Baileys. Among many accomplishments, Katy was previously Food Editor at TI Media where she was in charge of developing recipes and writing food, product, lifestyle and travel pieces for women's lifestyle brands including fit&well, Feel Good Food, Woman's Weekly, goodtoknow.co.uk and woman&home."
-          ]
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/1/IMAGE_4.jpg"
-        }
-      ]
-    },
-    {
-      "type": "gallery",
-      "items": [
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/1/IMAGE_1.jpeg",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/1/IMAGE_1.jpeg"
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/1/IMAGE_3.jpg",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/1/IMAGE_3.jpg"
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/1/IMAGE_4.jpg",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/1/IMAGE_4.jpg"
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "dynamic": "more-articles",
-      "id": "guest-writer-of-the-week",
-      "title": "More articles",
-      "style": {
-        "scroll": true
-      }
-    }
-  ]
+	"title": "Guest writer of the week: Nourishing mid-week cooking, simplified",
+	"description": "Nourishing mid-week cooking, simplified",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/1/IMAGE-KV.JPG",
+	"alt": "Plate of rice, pomegranate seeds and herbs with a silver fork, surrounded by other foods on a white wooded table",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/1/IMAGE-KV.JPG",
+	"group": "guest-writer-of-the-week",
+	"sort": 1,
+	"meta": {
+		"icon": "article",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 10,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "image",
+				"content": "{{lifestyle|guest-writer-of-the-week|1[image]}}",
+				"alt": "{{lifestyle|guest-writer-of-the-week|1[alt]}}"
+			},
+			"style": {
+				"desktop": "right",
+				"mobile": "bottom"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Nourishing mid-week cooking, simplified"
+				}
+			]
+		},
+		{
+			"type": "wrapper",
+			"components": [
+				{
+					"type": "paragraphs",
+					"style": {
+						"large": true
+					},
+					"text": [
+						"Perhaps you love it or maybe you try to do very little of it but whatever your skill or will in the kitchen, we all want what we eat to be delicious, healthy and easy.",
+						"Food writer, Katy McClelland, shares some great tips to demonstrate balance for simplified and nourishing mid-week cooking."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "1) Building Blocks",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"With quick mid-week cooking, the most important thing is knowing what flavours you like, then you can vary it with different produce. Use recipes as a guide then add, streamline or swap with what you have, like or can get. Balance carbs, fat, protein and greens, your body needs a bit of everything and will just crave what it's deprived of. Apps are a good way to monitor this, try the <a href=\"https://www.samsung.com/uk/apps/samsung-health/\">Samsung Health app</a> – it breaks down the calories and nutrients in each meal, so you know exactly what you're consuming.",
+						"You will possibly have heard of Samin Nosrat's book 'Salt, fat, acid, heat,' that really sums up what you need flavour wise in cooking for taste and satiety. Fat gives richness, even just cooking with a bit of butter gives so much difference - (try browned butter – you won't look back).  If not, a good olive oil, cheese, nut butter or tahini does the trick. You also need a salty element for that savoury satisfaction – step forward sea salt, olives, anchovies or even marmite. Balance that with a bit of acid – lemon juice, balsamic, capers or pickles for example. The heat could be chilli and spices, but these also add toasty, roasty cooking flavours to your dish.",
+						"Let's take it one step beyond and think about texture – a bit of crunch will make you feel more satisfied, and maybe even a pinch of sweetness if it goes, think dried fruit in a tagine. And there you go.",
+						"Here's a great recipe to demonstrate balance, adjust everything to suit how punchy you like it."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Quick Indian spiced salad",
+					"level": "4"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Makes 4 portions<br>From start to serve 5 mins"
+					]
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"- 1-2 tbsp lime pickle – add to taste and depending how strong the pickle is",
+						"- 1-4 tsp lemon juice, cider or white wine vinegar – adjust depending on the acidity of the pickle",
+						"- 1-2 tbsp honey, maple syrup or light brown sugar – add to taste",
+						"- 3 tbsp extra virgin olive and 1tbsp lighter flavoured oil such as light olive or sunflower",
+						"- 2 heaped tbsp Greek yoghurt",
+						"- 1 Just whizz in a blender with 1-2tbsp of water until smooth then toss with some crunchy salad leaves",
+						"(if preferred, use mango chutney and cut out the syrup)"
+					]
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"<strong>For the salad...</strong>",
+						"- A bit of crunchy lettuce and avocado should be enough, however feel free to add a bit extra, for example, cucumber, coriander, toasted almonds or pistachios, sesame seeds. A pinch of nigella seeds will give a lovely flavour twist. Make it more filling with chickpeas, boiled eggs, yoghurt or chicken."
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/1/IMAGE_1.jpeg",
+					"alt": "Quick Indian spiced salad"
+				},
+				{
+					"type": "headline",
+					"copy": "2) Eating seasonally",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Whether it's fresh produce, meat, grains or dairy - if it's been able to grow or mature naturally with minimal chemical or mechanical intervention, it's not only good for your bank balance and the environment, but it's also better for your health.",
+						"Rather than battling with the seasons to maintain supply of the same fruit and veg we should be listening to mother nature and eating the natural assortment the seasons provide; from fibrous vegetables like cabbage and broccoli in winter to antioxidant rich tomatoes and berries in summer. It will taste better, fresher and be more nutritious.",
+						"Cutting food miles and supporting local producers will improve the quality, availability and diversity of produce in future too, and your body - or rather your gut loves and needs variety to keep those microbes happy (though that also includes the occasional indulgence to keep your microbiome on its toes!)."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Beetroot and brown rice pilaf",
+					"level": "4"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Beetroot is rich in antioxidants and fibre but it's rich earthy flavour can sometimes make people avoid it, however with the right spices and gentle cooking it's delicious, and an extra win – you can also eat the leaves as you would baby spinach.",
+						"Serves 2<br>From start to serve 40 mins"
+					]
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"- 1 medium onion, halved and thinly sliced",
+						"- 40g butter",
+						"- 1tbsp olive oil (we add oil with the butter as it has a higher burning point)",
+						"Flavour – middle eastern flavours are great with beetroot. Try 2-3tsp of has el hanout spice blend or harissa paste (if you can't get those, then 2tsp of roughly crushed cumin seeds is also good – add some warmth with around ½ tsp of cinnamon and/or cardamon pods, cayenne pepper or chilli if you like)",
+						"- 150g brown basmati rice",
+						"- 450ml veg or chicken stock (or water)",
+						"- 300g beetroot, (roughly 2) - peel and grate while the onions are cooking (swap for carrots if you prefer)",
+						"To serve – use what you have...",
+						"A drizzle of;",
+						"Tahini, Greek yoghurt, ricotta or feta, lemon juice, fresh pomegranate seeds, balsamic glaze/pomegranate or date molasses",
+						"A sprinkle of;",
+						"Parsley, coriander, mint or dill, toasted nuts – pine nuts, pistachios, hazelnuts or almonds, a few raisins or dried cherries. (if you make it curry based swap tahini for almond butter, lemon for lime and use a drizzle of tamarind)",
+						"1) Heat a wide heavy based pan over a high heat (roughly 20cm – size will affect cooking time and absorption) add the butter and oil, let it sizzle then add the onions and a pinch of salt. Stir fry for 1 min, reduce the heat to medium (you'll need to go slightly below medium if cooking on gas rather than electric). Cook the onion for 8 mins, stirring now and again. It should be lightly golden and translucent.",
+						"2) Add the ras el hanout (or harissa) and rice, mix well, and then fry for a minute more. Add the stock, mix well and bring to the boil - allow to boil for 2 mins then add the lid and reduce to a moderate simmer for 25 mins. Add the beetroot in a layer on top for the last 10 mins (work quickly so you keep in the heat).",
+						"3) Mix and season to taste, add herbs, drizzles and toppings to taste."
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/1/IMAGE_3.jpg",
+					"alt": "Beetroot and brown rice pilaf"
+				},
+				{
+					"type": "headline",
+					"copy": "3) Storage and waste",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"There are so many hacks to curb your food waste and save money, one part is knowing your produce and one-part is good storage. Here's a few tips...",
+						"- Wash leaves and herbs in ice cold water, dry with a salad spinner then store in sealed Tupperware. They'll keep fresh and crisp for up to 10 days.",
+						"- Trim vegetables before storing so they last longer and often you can use the leaves – cut the tops off carrots (the finer ends make a great pesto), trim beetroot leaves (fry with garlic as a side) and try chopping and pickling the stalks.",
+						"- On that note, save odds and ends of veg for pickling- cabbages are great or lighter veggies like cucumber and radish can take a 10-minute pickle if they're looking too sad for a salad.",
+						"- Vegetable trimmings are also great for stocks and boosting flavour in soups and sauces, bits of onions, leeks, stalks from herbs and all sorts. Keep them in the freezer until you have time to use them, same goes for meat, fish bones and prawn shells.",
+						"- Use or freeze sour milk or yoghurt to make soda bread or scones.",
+						"- You can even keep orange peels and dry in a low oven to crumble into to granola or yoghurt.",
+						"Don't forget to snap and share your dishes with #SamsungKX.",
+						"By Katy McClelland.",
+						"Katy is a freelance food stylist, recipe developer & food editor. A regular contributor to Delicious and Vegetarian Living magazines, Katy also creates social media recipe content for drinks brand, Baileys. Among many accomplishments, Katy was previously Food Editor at TI Media where she was in charge of developing recipes and writing food, product, lifestyle and travel pieces for women's lifestyle brands including fit&well, Feel Good Food, Woman's Weekly, goodtoknow.co.uk and woman&home."
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/1/IMAGE_4.jpg"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"items": [
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/1/IMAGE_1.jpeg",
+					"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/1/IMAGE_1.jpeg"
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/1/IMAGE_3.jpg",
+					"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/1/IMAGE_3.jpg"
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/1/IMAGE_4.jpg",
+					"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/1/IMAGE_4.jpg"
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "more-articles",
+			"id": "guest-writer-of-the-week",
+			"title": "More articles",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
 }

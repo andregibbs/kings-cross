@@ -1,50 +1,54 @@
 {
-  "title": "Editing Sessions: Virtual catch ups with Jo Good",
-  "description": "Jo shares her secret tips for the most seamless ‘virtual catch up’.",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/editing-sessions/4/kv.jpg",
-  "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/editing-sessions/4/thumb.jpg",
-  "group": "editing-sessions",
-  "sort": 4,
-  "meta": {
-    "icon": "video",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "kv",
-      "media": {
-        "type": "youtube",
-        "content": "LuT3W8f-jXA",
-        "poster": "{{creativity|editing-sessions|4[image]}}",
-        "alt": "{{creativity|editing-sessions|4[alt]}}"
-      },
-      "style": {
-        "desktop": "top",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "copy": "Virtual catch ups with Jo Good"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Welcome to the Editing Sessions.",
-            "Samsung KX has partnered with BBC Radio London presenter Jo Good to inspire viewers on how to stay connected with friends and family using the <a href=\"https://www.samsung.com/uk/tablets/galaxy-tab-s7-plus-t970/SM-T970NZNAEUA/\">Samsung Galaxy Tab S7+</a>. Demonstrating with her mother Mutti, Jo shares her secret tips to video calling loved ones for the most seamless ‘virtual catch up’."
-          ]
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "dynamic": "episodes",
-      "id": "editing-sessions",
-      "title": "More episodes",
-      "style": {
-        "scroll": true
-      }
-    }
-  ]
+	"title": "Editing Sessions: Virtual catch ups with Jo Good",
+	"description": "Jo shares her secret tips for the most seamless ‘virtual catch up’.",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/editing-sessions/4/kv.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/editing-sessions/4/thumb.jpg",
+	"group": "editing-sessions",
+	"sort": 4,
+	"meta": {
+		"icon": "video",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 3,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "youtube",
+				"content": "LuT3W8f-jXA",
+				"poster": "{{creativity|editing-sessions|4[image]}}",
+				"alt": "{{creativity|editing-sessions|4[alt]}}"
+			},
+			"style": {
+				"desktop": "top",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Virtual catch ups with Jo Good"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Welcome to the Editing Sessions.",
+						"Samsung KX has partnered with BBC Radio London presenter Jo Good to inspire viewers on how to stay connected with friends and family using the <a href=\"https://www.samsung.com/uk/tablets/galaxy-tab-s7-plus-t970/SM-T970NZNAEUA/\">Samsung Galaxy Tab S7+</a>. Demonstrating with her mother Mutti, Jo shares her secret tips to video calling loved ones for the most seamless ‘virtual catch up’."
+					]
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "episodes",
+			"id": "editing-sessions",
+			"title": "More episodes",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
 }

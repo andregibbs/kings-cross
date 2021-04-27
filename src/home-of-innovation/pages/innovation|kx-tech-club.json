@@ -1,0 +1,60 @@
+{
+  "title": "KX Tech Club",
+  "description": "",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/kx-tech-pages/tech-club-BANNER_1440x650_V2.jpg",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/kx-tech-pages/tech-club-Thumbnails_225x255_V2.jpg",
+  "hidden": true,
+  "meta": {
+    "icon": "series",
+    "tags": []
+  },
+  "components": [
+    {
+      "type": "css-snippet",
+      "content": ".hoiWrapper { margin-top: 0 !important; }"
+    },
+    {
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/kx-tech-pages/tech-club-BANNER_1440x650_V2.jpg",
+        "alt": ""
+      },
+      "style": {
+        "desktop": "top",
+        "mobile": "bottom"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "KX Tech Club"
+        }
+      ]
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "headline",
+          "copy": "Samsung KX introduces KX Tech Club",
+          "level": "3"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Want to learn how to utilise your Samsung products to the max? In partnership with Rebel Book Club, we will delve into all the useful tips, tricks and hacks for an array of activities over a series of tech clubs. Attendees will get to communicate with a leading influencer for each subject covered, and join separate rooms and sessions to discuss all things tech."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "dynamic": "articles",
+      "style": {
+        "scroll": true
+      },
+      "id": "kx-tech-club",
+      "title": "Articles"
+    }
+  ]
+}

@@ -1,49 +1,53 @@
 {
-  "title": "EAT: Explore the super-foods of tomorrow",
-  "description": "Explore the super-foods of tomorrow",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/04_Samsung_Website_TOT_EAT_HERO_1440x810_V1.png",
-  "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/04_Samsung_Website_TOT_EAT_HERO_400x255_V1.png",
-  "group": "taste-of-tomorrow",
-  "sort": 7,
-  "meta": {
-    "icon": "video",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "kv",
-      "media": {
-        "type": "youtube",
-        "content": "Z4f2AKCVgXM",
-        "poster": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/04_Samsung_Website_TOT_EAT_HERO_1440x810_V1.png",
-        "alt": ""
-      },
-      "style": {
-        "desktop": "top",
-        "mobile": "bottom"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "copy": "EAT: Explore the super-foods of tomorrow"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Explore the alternative food sources that are set to shape our future nutrition. Professor Green, Sara Kiyo Pipowa, and Andrew Gregson showcase the science in the Samsung KX connected kitchen."
-          ]
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "dynamic": "more-articles",
-      "id": "taste-of-tomorrow",
-      "title": "More articles",
-      "style": {
-        "scroll": true
-      }
-    }
-  ]
+	"title": "EAT: Explore the super-foods of tomorrow",
+	"description": "Explore the super-foods of tomorrow",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/04_Samsung_Website_TOT_EAT_HERO_1440x810_V1.png",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/04_Samsung_Website_TOT_EAT_HERO_400x255_V1.png",
+	"group": "taste-of-tomorrow",
+	"sort": 7,
+	"meta": {
+		"icon": "video",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 5,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "youtube",
+				"content": "Z4f2AKCVgXM",
+				"poster": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/04_Samsung_Website_TOT_EAT_HERO_1440x810_V1.png",
+				"alt": ""
+			},
+			"style": {
+				"desktop": "top",
+				"mobile": "bottom"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "EAT: Explore the super-foods of tomorrow"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Explore the alternative food sources that are set to shape our future nutrition. Professor Green, Sara Kiyo Pipowa, and Andrew Gregson showcase the science in the Samsung KX connected kitchen."
+					]
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "more-articles",
+			"id": "taste-of-tomorrow",
+			"title": "More articles",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
 }

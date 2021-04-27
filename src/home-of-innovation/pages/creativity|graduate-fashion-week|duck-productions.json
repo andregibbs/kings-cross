@@ -1,69 +1,73 @@
 {
-  "title": "Duck Productions and GFF present the Class of 2020 Digital Presentation Film",
-  "description": "Founder of Duck Productions, Lindsay Lowe shares her expertise on the importance of moving image within the fashion industry",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/livestreams/Samsung_GraduateFashionWeek_1440x900_Duck.jpg",
-  "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/livestreams/Samsung_GraduateFashionWeek_400x255_Duck.jpg",
-  "group": "graduate-fashion-week",
-  "sort": 2,
-  "meta": {
-    "icon": "video",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "kv",
-      "media": {
-        "type": "livestream",
-        "content": "5QCHaB6jL0A",
-        "poster": "{{creativity|graduate-fashion-week|duck-productions[image]}}",
-        "alt": ""
-      },
-      "style": {
-        "desktop": "top",
-        "mobile": "bottom"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "copy": "Duck Productions and GFF present the Class of 2020 Digital Presentation Film"
-        }
-      ]
-    },
-    {
-      "type": "wrapper",
-      "components": [
-        {
-          "type": "paragraphs",
-          "style": {
-            "large": true
-          },
-          "text": [
-            "Founder of Duck Productions, Lindsay Lowe shares her expertise on the importance of moving image within the fashion industry. Lindsay will discuss the processes of working on client briefs, events, global campaigns and the team roles required to produce strong film content. Duck Productions have produced thousands of thought-provoking films for the world’s leading fashion clients such as the British Fashion Council, Victoria Beckham, Harper’s Bazaar & Tommy Hilfiger.",
-            "This event supports social distancing, in line with government guidelines. Learn more about the precautions we're taking <a href=\"https://www.samsung.com/uk/explore/kings-cross/\">here</a>."
-          ]
-        }
-      ]
-    },
-    {
-      "type": "link-list",
-      "title": "Check out the products used in the workshops here",
-      "items": [
-        {
-          "title": "The Sero",
-          "url": "https://www.samsung.com/uk/tvs/the-sero-ls05t/",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/livestreams/Samsung-Lifestyle-TV-The-Sero-03.jpg"
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "dynamic": "episodes",
-      "id": "graduate-fashion-week",
-      "title": "Episodes",
-      "style": {
-        "scroll": true
-      }
-    }
-  ]
+	"title": "Duck Productions and GFF present the Class of 2020 Digital Presentation Film",
+	"description": "Founder of Duck Productions, Lindsay Lowe shares her expertise on the importance of moving image within the fashion industry",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/livestreams/Samsung_GraduateFashionWeek_1440x900_Duck.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/livestreams/Samsung_GraduateFashionWeek_400x255_Duck.jpg",
+	"group": "graduate-fashion-week",
+	"sort": 2,
+	"meta": {
+		"icon": "video",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 5,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "livestream",
+				"content": "5QCHaB6jL0A",
+				"poster": "{{creativity|graduate-fashion-week|duck-productions[image]}}",
+				"alt": ""
+			},
+			"style": {
+				"desktop": "top",
+				"mobile": "bottom"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Duck Productions and GFF present the Class of 2020 Digital Presentation Film"
+				}
+			]
+		},
+		{
+			"type": "wrapper",
+			"components": [
+				{
+					"type": "paragraphs",
+					"style": {
+						"large": true
+					},
+					"text": [
+						"Founder of Duck Productions, Lindsay Lowe shares her expertise on the importance of moving image within the fashion industry. Lindsay will discuss the processes of working on client briefs, events, global campaigns and the team roles required to produce strong film content. Duck Productions have produced thousands of thought-provoking films for the world’s leading fashion clients such as the British Fashion Council, Victoria Beckham, Harper’s Bazaar & Tommy Hilfiger.",
+						"This event supports social distancing, in line with government guidelines. Learn more about the precautions we're taking <a href=\"https://www.samsung.com/uk/explore/kings-cross/\">here</a>."
+					]
+				}
+			]
+		},
+		{
+			"type": "link-list",
+			"title": "Check out the products used in the workshops here",
+			"items": [
+				{
+					"title": "The Sero",
+					"url": "https://www.samsung.com/uk/tvs/the-sero-ls05t/",
+					"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/livestreams/Samsung-Lifestyle-TV-The-Sero-03.jpg"
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "episodes",
+			"id": "graduate-fashion-week",
+			"title": "Episodes",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
 }

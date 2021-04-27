@@ -1,297 +1,301 @@
 {
-  "title": "Around The World in a Day: Stadiums with Samsung and the British Museum",
-  "listTitle": "Around The World in a Day. Stadiums with Samsung and the British Museum",
-  "description": "Discover some of the world's amazing architecture and gain inspiration to design your own.",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/2/KX-content-hub-full-Stadiums_with_Samsung_and_the_British_Museum.jpg",
-  "alt": "Photo of an old etching of the Roman Colosseum from the side, with part of the inside of the Colosseum visible",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/2/KX-content-hub-full-thumb-Stadiums_with_Samsung_and_the_British_Museum.jpg",
-  "group": "british-museum",
-  "sort": 2,
-  "meta": {
-    "icon": "article",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "kv",
-      "media": {
-        "type": "image",
-        "content": "{{creativity|british-museum|2[image]}}",
-        "alt": "{{creativity|british-museum|2[alt]}}"
-      },
-      "style": {
-        "desktop": "top",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "1",
-          "copy": "Stay Learning. Around The World in a Day: Stadiums with Samsung and the British Museum"
-        }
-      ]
-    },
-    {
-      "type": "wrapper",
-      "components": [
-        {
-          "type": "paragraphs",
-          "style": {
-            "large": true
-          },
-          "text": [
-            "Together with our partner the British Museum, we’re inviting you to discover some of the world’s most amazing architecture through our hand-picked collection of the British Museum’s objects, which you can use as inspiration for your very own design! Look closely at intricate decorative details, study the buildings of ancient and modern civilisations and have fun using your preferred artistic tools to develop your digital creative skills.",
-            "What you build and how you build it is totally up to you. Use your favourite digital drawing app, have a go on Minecraft, sketch ideas on paper, or build something using cardboard, building blocks or found materials. Then, why not bring your creations to life using your digital device to take photos and videos, create GIFs or stop motion animations?",
-            "Share your creations with us on social media using #MuseumFromHome and tagging us at @SamsungUK.",
-            "Now let us take you on a virtual journey across the globe and across time, from the comfort of your own home!",
-            "<em>Since 2009, the Samsung Digital Discovery Centre at the British Museum has been offering an innovative digital learning programme for schools and families. Through this programme children and young people can learn about and interact with the Museum’s collection using the latest Samsung technology. While the British Museum’s doors may currently be closed, you can still see its extensive collection online, and together we want to continue inspiring children and young people to build, experiment, invent and create.</em>"
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Challenge 2: Stadiums",
-          "level": "2"
-        },
-        {
-          "type": "headline",
-          "copy": "Fact or fiction",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "style": {
-            "large": true
-          },
-          "text": [
-            "There are lots of design clues as to which sport is played in this stadium. Will your stadium host a real-life sport or a fantasy game?"
-          ]
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/2/Fact_or_Fiction_crop.jpg",
-          "alt": "Photo of a yellow and black cotton cloth tapestry with a chequered border and an ancient stadium in the centre within a yellow circle. Trophies are shown in each corner of the design.",
-          "credit": "Image credit: Cotton cloth, kanga, made in Dar es Salaam, Tanzania, 2002. © The Trustees of the British Museum"
-        },
-        {
-          "type": "headline",
-          "copy": "Stadium shapes",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "style": {
-            "large": true
-          },
-          "text": [
-            "This long stadium has plenty of space for chariots to race up and down. Square, circle, hexagon, triangle - what shape does your stadium need to be?"
-          ]
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/2/Stadium_Shapes_crop.jpg",
-          "alt": "Photo of an 18th century watercolour painting of the Circus of Maxentius. An ancient horse racing stadium and track is pictured, situated within green countryside.",
-          "credit": "Image credit: Vincenzo Brenna (1747-1818?), Watercolour of the Circus of Maxentius, about 1770. © The Trustees of the British Museum"
-        },
-        {
-          "type": "headline",
-          "copy": "Massive monuments",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "style": {
-            "large": true
-          },
-          "text": [
-            "A huge honeycomb of archways cannot be missed. How will you make sure your stadium is seen from miles away?"
-          ]
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/2/Massive_monuments.jpg",
-          "alt": "Photo of a close up black and white etching of ruined Roman Colosseum from above from the 18th century",
-          "credit": "Image credit: Giovanni Battista Piranesi (1720-1778), Etching of ruined Flavian Amphitheatre (Colosseum), published in Rome, Italy, 1760–1778. © The Trustees of the British Museum"
-        },
-        {
-          "type": "headline",
-          "copy": "Repurposed ruin",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "style": {
-            "large": true
-          },
-          "text": [
-            "Once filled with roaring crowds, this stadium is now a relic of the past. Will your stadium be an ancient ruin or a flashy new building?"
-          ]
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/2/Repurposed_ruin.jpg",
-          "alt": "Photo of a watercolour painting of a religious ceremony inside ruined Flavian Amphitheatre (Colosseum)",
-          "credit": "Image credit: Louis Ducros (1748-1810), Watercolour of a religious ceremony inside ruined Flavian Amphitheatre (Colosseum), 1748–1810. © The Trustees of the British Museum "
-        },
-        {
-          "type": "headline",
-          "copy": "Monument for the masses",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "style": {
-            "large": true
-          },
-          "text": [
-            "With four levels of seating, all spectators have a clear view of the drama below. What kind of seating will you build for spectators in your stadium?"
-          ]
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/2/Monument_for_the_Masses.jpg",
-          "alt": "Photo of an old engraving of Flavian Amphitheatre (Roman Colosseum) from the side, with the inside of the Colosseum visible",
-          "credit": "Image credit: Engraving of Flavian Amphitheatre (Colosseum), 1545–1561. © The Trustees of the British Museum"
-        },
-        {
-          "type": "headline",
-          "copy": "Sheltered stands",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "style": {
-            "large": true
-          },
-          "text": [
-            "A shadow stretches over this stadium, a fabric roof keeping spectators cool from the sweltering sun. Will your stadium have shelter or will spectators sit through rain and shine?"
-          ]
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/2/Sheltered_Stands.jpg",
-          "alt": "Photo of a vintage watercolour painting of the inside of the fully built Flavian Amphitheatre",
-          "credit": "Image credit: Vincenzo Brenna (1747-1818?), Watercolour of Flavian Amphitheatre (Colosseum), 1769–1770. © The Trustees of the British Museum"
-        },
-        {
-          "type": "headline",
-          "copy": "Entertaining extravaganzas",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "style": {
-            "large": true
-          },
-          "text": [
-            "This stadium is quiet and still but it was once the site of heart-stopping gladiator fights and parades of animals from the corners of the Roman Empire – rhinos and bears, elephants and giraffes. Will your stadium put on an astonishing show?"
-          ]
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/2/Entertaining_extravaganzas.jpg",
-          "alt": "Photo of a vintage watercolour painting of the ruined Flavian Amphitheatre (Colosseum) in the distance and Arch of Constantine in the Roman Forum",
-          "credit": "Image credit: John 'Warwick' Smith (1749-1831), Watercolour of ruined Flavian Amphitheatre (Colosseum) and Arch of Constantine, 1749–1831. © The Trustees of the British Museum"
-        },
-        {
-          "type": "headline",
-          "copy": "Managing movement",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "style": {
-            "large": true
-          },
-          "text": [
-            "A maze of passageways, staircases entrances, and trapdoors. How will everyone move around your stadium?"
-          ]
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/2/Managing_Movement.jpg",
-          "alt": "Photo of an old engraving of the Roman Colosseum from the side, with part of the inside of the Colosseum visible",
-          "credit": "Image credit: Ambrogio Brambilla (fl. 1575–1595), Engraving of Flavian Amphitheatre (Colosseum), 1581. © The Trustees of the British Museum"
-        },
-        {
-          "type": "headline",
-          "copy": "Frozen festival",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "style": {
-            "large": true
-          },
-          "text": [
-            "Flags and garlands transform this ice palace into a carnival. Will you adorn your stadium for a sports event or a party?"
-          ]
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/2/Frozen_Festival.jpg",
-          "alt": "Photo of an old photographic print of a carnival inside an ice palace, with huge crowds moving inside a huge hall decorated with hanging decorations",
-          "credit": "Image credit: Photographic print of a carnival inside an ice palace, photographed in Montreal, Canada, late 19th century. © The Trustees of the British Museum"
-        },
-        {
-          "type": "headline",
-          "copy": "Aquatic arena",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "style": {
-            "large": true
-          },
-          "text": [
-            "Flooding this stadium turned land into water for the staging of a sea-battle. What inventions can you think of to make your stadium multi-purpose?"
-          ]
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/2/Aquatic_Arena.jpg",
-          "alt": "Photo of an old watercolour painting of an Ancient Roman naumachia in which militarty boats are positioned to stage a naval battle",
-          "credit": "Image credit: Watercolour of a Naumachia, about 1760–1770. © The Trustees of the British Museum"
-        },
-        {
-          "type": "buttons",
-          "items": [
-            {
-              "copy": "Discover More Stadiums",
-              "url": "https://www.britishmuseum.org/collection/search?keyword=arena&image=true&view=grid&sort=object_name__desc&page=1",
-              "target": "_blank"
-            }
-          ]
-        },
-        {
-          "type": "headline",
-          "level": "2",
-          "copy": "About Samsung and the British Museum"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Samsung and the British Museum have been working together in partnership since 2009, developing an engaging and innovative digital learning programme through the Samsung Digital Discovery Centre which is offered free to schools and families. It offers the most ambitious and extensive on-site digital learning programme of any UK museum. Since 2009, the programme has attracted more than 150,000 school students and families.",
-            "The <a href=\"https://www.britishmuseum.org/learn/schools/samsung-digital-discovery-centre\" target=\"_blank\">Samsung Digital Discovery Centre</a> is a digital learning hub for children and young people to learn about and interact with the British Museum's collection. This activity combines two of the centre’s most popular activities: Build Roman Britain in Minecraft, where visitors embark on their own Roman inspired construction projects, and Around the World in a Day, where students investigate cultures of ancient societies.",
-            "The Samsung Digital Discovery Centre forms a part of Samsung's global commitment in 'supporting education and empowering the next generation of innovators’. The partnership represents our shared belief in the importance of learning about the world's history and cultures to better understand the present and prepare for the future."
-          ]
-        },
-        {
-          "type": "image",
-          "style": {
-            "snippet": "max-width: 200px; padding-left: 0; padding-right: 0;"
-          },
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/british-museum-logo.png"
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "dynamic": "learn-more",
-      "id": "british-museum",
-      "title": "Learn more",
-      "style": {
-        "scroll": true
-      }
-    }
-  ]
+	"title": "Around The World in a Day: Stadiums with Samsung and the British Museum",
+	"listTitle": "Around The World in a Day. Stadiums with Samsung and the British Museum",
+	"description": "Discover some of the world's amazing architecture and gain inspiration to design your own.",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/2/KX-content-hub-full-Stadiums_with_Samsung_and_the_British_Museum.jpg",
+	"alt": "Photo of an old etching of the Roman Colosseum from the side, with part of the inside of the Colosseum visible",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/2/KX-content-hub-full-thumb-Stadiums_with_Samsung_and_the_British_Museum.jpg",
+	"group": "british-museum",
+	"sort": 2,
+	"meta": {
+		"icon": "article",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 5,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "image",
+				"content": "{{creativity|british-museum|2[image]}}",
+				"alt": "{{creativity|british-museum|2[alt]}}"
+			},
+			"style": {
+				"desktop": "top",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"level": "1",
+					"copy": "Stay Learning. Around The World in a Day: Stadiums with Samsung and the British Museum"
+				}
+			]
+		},
+		{
+			"type": "wrapper",
+			"components": [
+				{
+					"type": "paragraphs",
+					"style": {
+						"large": true
+					},
+					"text": [
+						"Together with our partner the British Museum, we’re inviting you to discover some of the world’s most amazing architecture through our hand-picked collection of the British Museum’s objects, which you can use as inspiration for your very own design! Look closely at intricate decorative details, study the buildings of ancient and modern civilisations and have fun using your preferred artistic tools to develop your digital creative skills.",
+						"What you build and how you build it is totally up to you. Use your favourite digital drawing app, have a go on Minecraft, sketch ideas on paper, or build something using cardboard, building blocks or found materials. Then, why not bring your creations to life using your digital device to take photos and videos, create GIFs or stop motion animations?",
+						"Share your creations with us on social media using #MuseumFromHome and tagging us at @SamsungUK.",
+						"Now let us take you on a virtual journey across the globe and across time, from the comfort of your own home!",
+						"<em>Since 2009, the Samsung Digital Discovery Centre at the British Museum has been offering an innovative digital learning programme for schools and families. Through this programme children and young people can learn about and interact with the Museum’s collection using the latest Samsung technology. While the British Museum’s doors may currently be closed, you can still see its extensive collection online, and together we want to continue inspiring children and young people to build, experiment, invent and create.</em>"
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Challenge 2: Stadiums",
+					"level": "2"
+				},
+				{
+					"type": "headline",
+					"copy": "Fact or fiction",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"style": {
+						"large": true
+					},
+					"text": [
+						"There are lots of design clues as to which sport is played in this stadium. Will your stadium host a real-life sport or a fantasy game?"
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/2/Fact_or_Fiction_crop.jpg",
+					"alt": "Photo of a yellow and black cotton cloth tapestry with a chequered border and an ancient stadium in the centre within a yellow circle. Trophies are shown in each corner of the design.",
+					"credit": "Image credit: Cotton cloth, kanga, made in Dar es Salaam, Tanzania, 2002. © The Trustees of the British Museum"
+				},
+				{
+					"type": "headline",
+					"copy": "Stadium shapes",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"style": {
+						"large": true
+					},
+					"text": [
+						"This long stadium has plenty of space for chariots to race up and down. Square, circle, hexagon, triangle - what shape does your stadium need to be?"
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/2/Stadium_Shapes_crop.jpg",
+					"alt": "Photo of an 18th century watercolour painting of the Circus of Maxentius. An ancient horse racing stadium and track is pictured, situated within green countryside.",
+					"credit": "Image credit: Vincenzo Brenna (1747-1818?), Watercolour of the Circus of Maxentius, about 1770. © The Trustees of the British Museum"
+				},
+				{
+					"type": "headline",
+					"copy": "Massive monuments",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"style": {
+						"large": true
+					},
+					"text": [
+						"A huge honeycomb of archways cannot be missed. How will you make sure your stadium is seen from miles away?"
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/2/Massive_monuments.jpg",
+					"alt": "Photo of a close up black and white etching of ruined Roman Colosseum from above from the 18th century",
+					"credit": "Image credit: Giovanni Battista Piranesi (1720-1778), Etching of ruined Flavian Amphitheatre (Colosseum), published in Rome, Italy, 1760–1778. © The Trustees of the British Museum"
+				},
+				{
+					"type": "headline",
+					"copy": "Repurposed ruin",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"style": {
+						"large": true
+					},
+					"text": [
+						"Once filled with roaring crowds, this stadium is now a relic of the past. Will your stadium be an ancient ruin or a flashy new building?"
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/2/Repurposed_ruin.jpg",
+					"alt": "Photo of a watercolour painting of a religious ceremony inside ruined Flavian Amphitheatre (Colosseum)",
+					"credit": "Image credit: Louis Ducros (1748-1810), Watercolour of a religious ceremony inside ruined Flavian Amphitheatre (Colosseum), 1748–1810. © The Trustees of the British Museum "
+				},
+				{
+					"type": "headline",
+					"copy": "Monument for the masses",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"style": {
+						"large": true
+					},
+					"text": [
+						"With four levels of seating, all spectators have a clear view of the drama below. What kind of seating will you build for spectators in your stadium?"
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/2/Monument_for_the_Masses.jpg",
+					"alt": "Photo of an old engraving of Flavian Amphitheatre (Roman Colosseum) from the side, with the inside of the Colosseum visible",
+					"credit": "Image credit: Engraving of Flavian Amphitheatre (Colosseum), 1545–1561. © The Trustees of the British Museum"
+				},
+				{
+					"type": "headline",
+					"copy": "Sheltered stands",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"style": {
+						"large": true
+					},
+					"text": [
+						"A shadow stretches over this stadium, a fabric roof keeping spectators cool from the sweltering sun. Will your stadium have shelter or will spectators sit through rain and shine?"
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/2/Sheltered_Stands.jpg",
+					"alt": "Photo of a vintage watercolour painting of the inside of the fully built Flavian Amphitheatre",
+					"credit": "Image credit: Vincenzo Brenna (1747-1818?), Watercolour of Flavian Amphitheatre (Colosseum), 1769–1770. © The Trustees of the British Museum"
+				},
+				{
+					"type": "headline",
+					"copy": "Entertaining extravaganzas",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"style": {
+						"large": true
+					},
+					"text": [
+						"This stadium is quiet and still but it was once the site of heart-stopping gladiator fights and parades of animals from the corners of the Roman Empire – rhinos and bears, elephants and giraffes. Will your stadium put on an astonishing show?"
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/2/Entertaining_extravaganzas.jpg",
+					"alt": "Photo of a vintage watercolour painting of the ruined Flavian Amphitheatre (Colosseum) in the distance and Arch of Constantine in the Roman Forum",
+					"credit": "Image credit: John 'Warwick' Smith (1749-1831), Watercolour of ruined Flavian Amphitheatre (Colosseum) and Arch of Constantine, 1749–1831. © The Trustees of the British Museum"
+				},
+				{
+					"type": "headline",
+					"copy": "Managing movement",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"style": {
+						"large": true
+					},
+					"text": [
+						"A maze of passageways, staircases entrances, and trapdoors. How will everyone move around your stadium?"
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/2/Managing_Movement.jpg",
+					"alt": "Photo of an old engraving of the Roman Colosseum from the side, with part of the inside of the Colosseum visible",
+					"credit": "Image credit: Ambrogio Brambilla (fl. 1575–1595), Engraving of Flavian Amphitheatre (Colosseum), 1581. © The Trustees of the British Museum"
+				},
+				{
+					"type": "headline",
+					"copy": "Frozen festival",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"style": {
+						"large": true
+					},
+					"text": [
+						"Flags and garlands transform this ice palace into a carnival. Will you adorn your stadium for a sports event or a party?"
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/2/Frozen_Festival.jpg",
+					"alt": "Photo of an old photographic print of a carnival inside an ice palace, with huge crowds moving inside a huge hall decorated with hanging decorations",
+					"credit": "Image credit: Photographic print of a carnival inside an ice palace, photographed in Montreal, Canada, late 19th century. © The Trustees of the British Museum"
+				},
+				{
+					"type": "headline",
+					"copy": "Aquatic arena",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"style": {
+						"large": true
+					},
+					"text": [
+						"Flooding this stadium turned land into water for the staging of a sea-battle. What inventions can you think of to make your stadium multi-purpose?"
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/2/Aquatic_Arena.jpg",
+					"alt": "Photo of an old watercolour painting of an Ancient Roman naumachia in which militarty boats are positioned to stage a naval battle",
+					"credit": "Image credit: Watercolour of a Naumachia, about 1760–1770. © The Trustees of the British Museum"
+				},
+				{
+					"type": "buttons",
+					"items": [
+						{
+							"copy": "Discover More Stadiums",
+							"url": "https://www.britishmuseum.org/collection/search?keyword=arena&image=true&view=grid&sort=object_name__desc&page=1",
+							"target": "_blank"
+						}
+					]
+				},
+				{
+					"type": "headline",
+					"level": "2",
+					"copy": "About Samsung and the British Museum"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Samsung and the British Museum have been working together in partnership since 2009, developing an engaging and innovative digital learning programme through the Samsung Digital Discovery Centre which is offered free to schools and families. It offers the most ambitious and extensive on-site digital learning programme of any UK museum. Since 2009, the programme has attracted more than 150,000 school students and families.",
+						"The <a href=\"https://www.britishmuseum.org/learn/schools/samsung-digital-discovery-centre\" target=\"_blank\">Samsung Digital Discovery Centre</a> is a digital learning hub for children and young people to learn about and interact with the British Museum's collection. This activity combines two of the centre’s most popular activities: Build Roman Britain in Minecraft, where visitors embark on their own Roman inspired construction projects, and Around the World in a Day, where students investigate cultures of ancient societies.",
+						"The Samsung Digital Discovery Centre forms a part of Samsung's global commitment in 'supporting education and empowering the next generation of innovators’. The partnership represents our shared belief in the importance of learning about the world's history and cultures to better understand the present and prepare for the future."
+					]
+				},
+				{
+					"type": "image",
+					"style": {
+						"snippet": "max-width: 200px; padding-left: 0; padding-right: 0;"
+					},
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/british-museum-logo.png"
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "learn-more",
+			"id": "british-museum",
+			"title": "Learn more",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
 }

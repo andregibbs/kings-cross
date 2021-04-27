@@ -1,84 +1,88 @@
 {
-  "title": "Galaxy S20 FE Masterclass - Saturday 28th November  - 5pm",
-  "description": "Join us for a live masterclass from Samsung KX",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/product-demos/s20fe/Podcast-Recording_1440x810.jpg",
-  "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/product-demos/s20fe/Podcast-Recording_400x255.jpg",
-  "group": "s20fe-masterclass",
-  "sort": 3,
-  "meta": {
-    "icon": "video",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "css-snippet",
-      "content": ".hoiContent h1 { margin: 0 !important; } .hoiContent h3 { margin:0 !important; } @media screen and (max-width:768px) { .s20fe-offer-banner { background-image: url(https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/product-demos/s20fe/BlackFriday_S20-FE_640x890_.jpg) !important; padding-top: 139% !important; } }"
-    },
-    {
-      "type": "kv",
-      "share": false,
-      "style": {
-        "desktop": "left",
-        "mobile": "top",
-        "theme": "livestream-chat"
-      },
-      "media": {
-        "type": "livestream",
-        "content": "nkWD0NHheZc",
-        "poster": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/product-demos/s20fe/Podcast-Recording_1440x810.jpg",
-        "alt": ""
-      },
-      "components": [
-        {
-          "type": "youtube-live-chat",
-          "content": "nkWD0NHheZc"
-        }
-      ]
-    },
-    {
-      "type": "wrapper",
-      "components": [
-        {
-          "type": "headline",
-          "copy": "Samsung Galaxy S20 FE Masterclass"
-        },
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "Saturday 28th November - 5pm"
-        },
-        {
-          "type": "share",
-          "no-margin": true
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Join our experts for an interactive masterclass live from Samsung KX. In this session, we’ll be discussing all things <a href=\"https://www.samsung.com/uk/smartphones/galaxy-s20/galaxy-s20-fe/\">Galaxy S20 FE</a> including colour, camera and display to help you get more out of your Galaxy device. Whether you’re on the lookout for a new smartphone and keen to learn more or just want to brush up your tech skills, we’ll be answering your questions live, no matter how big or small.",
-            "Plus, save big this Black Friday with <a href=\"https://www.samsung.com/uk/offer/\">exclusive offers</a> at Samsung.com",
-            "Can’t join live? Don’t worry, we’ll be posting the live recording after the session. Or check out one of our other sceduled sessions.",
-            "<small>Please ensure you are logged-in to YouTube in order to join in the conversation.</small>",
-            "<br>"
-          ]
-        },
-        {
-          "type": "image-banner-link",
-          "class": "s20fe-offer-banner",
-          "title": "Discover our latest offers",
-          "cta": "See Offers",
-          "btnclass": "bf-blue",
-          "link": "https://www.samsung.com/uk/offer/",
-          "height": "38.6%",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/product-demos/s20fe/BlackFriday_S20-FE_1440x556_.jpg"
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "dynamic": "episodes",
-      "title": "Galaxy S20 FE Masterclass",
-      "id": "s20fe-masterclass"
-    }
-  ]
+	"title": "Galaxy S20 FE Masterclass - Saturday 28th November  - 5pm",
+	"description": "Join us for a live masterclass from Samsung KX",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/product-demos/s20fe/Podcast-Recording_1440x810.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/product-demos/s20fe/Podcast-Recording_400x255.jpg",
+	"group": "s20fe-masterclass",
+	"sort": 3,
+	"meta": {
+		"icon": "video",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 50,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "css-snippet",
+			"content": ".hoiContent h1 { margin: 0 !important; } .hoiContent h3 { margin:0 !important; } @media screen and (max-width:768px) { .s20fe-offer-banner { background-image: url(https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/product-demos/s20fe/BlackFriday_S20-FE_640x890_.jpg) !important; padding-top: 139% !important; } }"
+		},
+		{
+			"type": "kv",
+			"share": false,
+			"style": {
+				"desktop": "left",
+				"mobile": "top",
+				"theme": "livestream-chat"
+			},
+			"media": {
+				"type": "livestream",
+				"content": "nkWD0NHheZc",
+				"poster": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/product-demos/s20fe/Podcast-Recording_1440x810.jpg",
+				"alt": ""
+			},
+			"components": [
+				{
+					"type": "youtube-live-chat",
+					"content": "nkWD0NHheZc"
+				}
+			]
+		},
+		{
+			"type": "wrapper",
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Samsung Galaxy S20 FE Masterclass"
+				},
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "Saturday 28th November - 5pm"
+				},
+				{
+					"type": "share",
+					"no-margin": true
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Join our experts for an interactive masterclass live from Samsung KX. In this session, we’ll be discussing all things <a href=\"https://www.samsung.com/uk/smartphones/galaxy-s20/galaxy-s20-fe/\">Galaxy S20 FE</a> including colour, camera and display to help you get more out of your Galaxy device. Whether you’re on the lookout for a new smartphone and keen to learn more or just want to brush up your tech skills, we’ll be answering your questions live, no matter how big or small.",
+						"Plus, save big this Black Friday with <a href=\"https://www.samsung.com/uk/offer/\">exclusive offers</a> at Samsung.com",
+						"Can’t join live? Don’t worry, we’ll be posting the live recording after the session. Or check out one of our other sceduled sessions.",
+						"<small>Please ensure you are logged-in to YouTube in order to join in the conversation.</small>",
+						"<br>"
+					]
+				},
+				{
+					"type": "image-banner-link",
+					"class": "s20fe-offer-banner",
+					"title": "Discover our latest offers",
+					"cta": "See Offers",
+					"btnclass": "bf-blue",
+					"link": "https://www.samsung.com/uk/offer/",
+					"height": "38.6%",
+					"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/product-demos/s20fe/BlackFriday_S20-FE_1440x556_.jpg"
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "episodes",
+			"title": "Galaxy S20 FE Masterclass",
+			"id": "s20fe-masterclass"
+		}
+	]
 }

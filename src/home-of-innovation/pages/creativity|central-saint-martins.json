@@ -1,40 +1,40 @@
 {
-  "title": "Central Saint Martins",
-  "description": "A digital exhibition in partnership with world-renowned arts and design college, Central Saint Martins, demonstrating the role of the home through the eyes of current students.",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/central-saint-martins/KV.jpg",
-  "alt": "Black cartoon outlines of household items such as cooking utensils, paint brushes and cleaning products",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/central-saint-martins/KV.jpg",
-  "meta": {
-    "icon": "video",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "kv",
-      "media": {
-        "type": "image",
-        "content": "{{creativity|central-saint-martins[image]}}",
-        "alt": "{{creativity|central-saint-martins[alt]}}"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "copy": "{{creativity|central-saint-martins[title]}}"
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "dynamic": "episodes",
-      "id": "central-saint-martins",
-      "title": "Episodes",
-      "style": {
-        "scroll": true
-      }
-    }
-  ]
+	"title": "Central Saint Martins",
+	"description": "A digital exhibition in partnership with world-renowned arts and design college, Central Saint Martins, demonstrating the role of the home through the eyes of current students.",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/central-saint-martins/KV.jpg",
+	"alt": "Black cartoon outlines of household items such as cooking utensils, paint brushes and cleaning products",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/central-saint-martins/KV.jpg",
+	"meta": {
+		"icon": "series",
+		"tags": []
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "image",
+				"content": "{{creativity|central-saint-martins[image]}}",
+				"alt": "{{creativity|central-saint-martins[alt]}}"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "{{creativity|central-saint-martins[title]}}"
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "episodes",
+			"id": "central-saint-martins",
+			"title": "Episodes",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
 }

@@ -1,50 +1,54 @@
 {
-  "title": "Amelia’s shocking sketches",
-  "description": "Lunch starts here! Amelia wows Clara with skills before exchanging gifts with Munya.",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/entertainment/lunch-and-listen/t1_kv.jpg",
-  "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/entertainment/lunch-and-listen/Samsung_Website_THUMBNAIL_Amelia_v3.jpg",
-  "group": "lunch-and-listen",
-  "sort": 1,
-  "meta": {
-    "icon": "video",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "kv",
-      "media": {
-        "type": "youtube",
-        "content": "GMtV1qoassY",
-        "poster": "{{entertainment|lunch-and-listen|amelia-dimoldenberg-munya-chawawa|1[image]}}",
-        "alt": "{{entertainment|lunch-and-listen|amelia-dimoldenberg-munya-chawawa|1[alt]}}"
-      },
-      "style": {
-        "desktop": "top",
-        "mobile": "bottom"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "copy": "Amelia’s shocking sketches"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Samsung KX’s all new series Lunch & Listen is here to help you reclaim your lunch break! Hosted by Clara Amfo, this fun and engaging two-part series sees special guests Katherine Ryan, Munya Chawawa, Reggie Yates and Amelia Dimoldenberg reveal their hidden hobbies and talk about how they reclaim their free time - inspiring you to do the same.",
-            "Get ready as Amelia wows Clara with her questionable art skills on the <a href=\"https://www.samsung.com/uk/tablets/galaxy-tab-s7-plus-5g-t976/SM-T976BZNAEUA/\">Galaxy Tab S7</a> before her and Munya exchange their secret ‘love’ poems at Samsung KX. Your lunch break starts here."
-          ]
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "dynamic": "episodes",
-      "id": "lunch-and-listen",
-      "title": "Episodes",
-      "style": {
-        "scroll": true
-      }
-    }
-  ]
+	"title": "Amelia’s shocking sketches",
+	"description": "Lunch starts here! Amelia wows Clara with skills before exchanging gifts with Munya.",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/entertainment/lunch-and-listen/t1_kv.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/entertainment/lunch-and-listen/Samsung_Website_THUMBNAIL_Amelia_v3.jpg",
+	"group": "lunch-and-listen",
+	"sort": 1,
+	"meta": {
+		"icon": "video",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 6,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "youtube",
+				"content": "GMtV1qoassY",
+				"poster": "{{entertainment|lunch-and-listen|amelia-dimoldenberg-munya-chawawa|1[image]}}",
+				"alt": "{{entertainment|lunch-and-listen|amelia-dimoldenberg-munya-chawawa|1[alt]}}"
+			},
+			"style": {
+				"desktop": "top",
+				"mobile": "bottom"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Amelia’s shocking sketches"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Samsung KX’s all new series Lunch & Listen is here to help you reclaim your lunch break! Hosted by Clara Amfo, this fun and engaging two-part series sees special guests Katherine Ryan, Munya Chawawa, Reggie Yates and Amelia Dimoldenberg reveal their hidden hobbies and talk about how they reclaim their free time - inspiring you to do the same.",
+						"Get ready as Amelia wows Clara with her questionable art skills on the <a href=\"https://www.samsung.com/uk/tablets/galaxy-tab-s7-plus-5g-t976/SM-T976BZNAEUA/\">Galaxy Tab S7</a> before her and Munya exchange their secret ‘love’ poems at Samsung KX. Your lunch break starts here."
+					]
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "episodes",
+			"id": "lunch-and-listen",
+			"title": "Episodes",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
 }

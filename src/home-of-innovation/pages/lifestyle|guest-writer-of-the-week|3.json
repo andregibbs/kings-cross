@@ -1,122 +1,126 @@
 {
-  "title": "Guest writer of the week: Beauty hacks for staying in-in",
-  "description": "Beauty hacks for staying in-in",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/3/KV.jpg?$2$",
-  "alt": "Beauty writer Charlie Bell faces the camera and holds pink lipstick in right hand, using her left hand to point to her cheek",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/3/KV.jpg?$2$",
-  "group": "guest-writer-of-the-week",
-  "sort": 3,
-  "meta": {
-    "icon": "article",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "kv",
-      "media": {
-        "type": "image",
-        "content": "{{lifestyle|guest-writer-of-the-week|3[image]}}",
-        "alt": "{{lifestyle|guest-writer-of-the-week|3[alt]}}"
-      },
-      "style": {
-        "desktop": "right",
-        "mobile": "bottom"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "copy": "Beauty hacks for staying in-in"
-        }
-      ]
-    },
-    {
-      "type": "wrapper",
-      "components": [
-        {
-          "type": "paragraphs",
-          "text": [
-            "Sometimes we want to choose our sofa over a busy bar, but that doesn’t mean we have to miss out on a social life. Staying connected with friends and family has never been easier so whether you’re having a virtual catch up with friends on the House Party app or gearing up for your first online date, beauty writer Charlier Bell shares her speedy beauty tips that will get you phone screen ready in no time. Don’t forget to snap your #StayingIn look and share with <strong>#SamsungKX.</strong>"
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Brilliant Base",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "There’s no need to slather on heavy makeup all the time, it’s important to give your skin a bit of breathing space. If you’ve been the victim of stressed-skin breakouts and looking for some coverage, a tinted moisturiser should be your go-to. The perfect hybrid of makeup and skincare, it offers a dose of light coverage and a boost of hydration too. I rate <strong>Bare Minerals Complexion Rescue Tinted Moisturiser (£30, bareminerals.co.uk)</strong> for a healthy-looking glow. Available in 20 shades, it’s super refreshing with buildable coverage, helping to cater to your own complexion. It’s comfortable on the skin, and a lightweight alternative for working-from-home days. What’s more, it also has SPF30 – so it’ll protect you both when inside or outdoors."
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Cool Coverage",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Stayed up late completing a TV series? Screens are not so forgiving on the skin so a dash of concealer will help refresh your peepers. Infused with light-diffusing micropearls <strong>NYX’s Born to Glow Radiant Concealer (£9, nyxcosmetics.co.uk)</strong> brightens the under-eye area. It also blurs imperfections and covers up blemishes. The built-in puff application makes blending a breeze too, and it’s vegan-friendly."
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Flirty Flush",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Want a #StayingIn selfie? A pop of blusher will add some warmth to your cheeks if the lighting is a bit harsh. A creamy formula, rather than a powder, melts into skin effortlessly and gives off a natural, dewy finish. I love <strong>Maybelline Cheek Heat Blusher in Fuschia Spark (£8.99, Superdrug)</strong>. The water-based gel cream glides on and can easily be toned up or down, depending on your mood. A little goes a long way too – just one or two dots needed and use your fingers to blend onto skin."
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Fabulous Flutter",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "A swipe of mascara will add definition to your eyes and make them appear brighter on camera. <a href=\"https://www.samsung.com/uk/smartphones/galaxy-s20/\">Samsung’s Galaxy S20</a> has a front facing camera with 40 megapixels so it’s extra good quality for video calls, meaning you’ll want to make the effort. <strong>Rimmel’s Scandaleyes Volume on Demand (£7.99, Amazon)</strong> is super adaptable, allowing you to control however big you want your lashes. The clump-free formula offers buildable volume so you can reapply throughout the day. Perfect if you want to slip on a layer for your 9am video conference and then reapply in the evening for a call with friends."
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Pucker up",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Testing the water with a virtual date? Nothing lifts a look more than a colour-popping pout and since there’s no chance of a kiss, you can totally risk it. Plus, if you’re anxious about the lack of foundation on your skin, an attention-grabbing lippie will keep the focus firmly on your luscious lips. If you can’t be faffed with the upkeep of a lipstick, a lip stain is low maintenance with high impact. As the name suggests, the colour will stay put so you won’t lose it to your wine glass or have to dash off to the loo to reapply. <strong>L’Oréal Paris Brilliant Signature in Be Brilliant (£10.99, Superdrug)</strong> gives a high-shine finish with no stickiness."
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Hair Hero",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "<strong>Amika’s Perk Up Dry Shampoo (£20, BeautyBay.com)</strong> is my saviour, helping tresses look and feel fresh when they are far from it. The talc-free formula absorbs oil without leaving a white residue. Plus, it smells DIVINE and the packaging looks super fun and colourful on my bathroom shelf.",
-            "My final tip would be to spritz on a bit of your favourite perfume because although you can’t sniff through a screen, a whiff of that familiar scent is guaranteed to give you an extra boost of confidence, especially if you’re about to embark on a virtual date. ",
-            "By <em><strong>Charlie Bell.</strong></em>",
-            "<em>Charlie is a London-based fashion, beauty and lifestyle editor with over twelve years' experience in the media industry. She has previously worked for titles including Closer, Reveal, Dare, Woman, Woman & Home, Now, Mail Online, Take a Break and Love it.</em>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "dynamic": "more-articles",
-      "id": "guest-writer-of-the-week",
-      "title": "More articles",
-      "style": {
-        "scroll": true
-      }
-    }
-  ]
+	"title": "Guest writer of the week: Beauty hacks for staying in-in",
+	"description": "Beauty hacks for staying in-in",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/3/KV.jpg?$2$",
+	"alt": "Beauty writer Charlie Bell faces the camera and holds pink lipstick in right hand, using her left hand to point to her cheek",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/3/KV.jpg?$2$",
+	"group": "guest-writer-of-the-week",
+	"sort": 3,
+	"meta": {
+		"icon": "article",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 5,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "image",
+				"content": "{{lifestyle|guest-writer-of-the-week|3[image]}}",
+				"alt": "{{lifestyle|guest-writer-of-the-week|3[alt]}}"
+			},
+			"style": {
+				"desktop": "right",
+				"mobile": "bottom"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Beauty hacks for staying in-in"
+				}
+			]
+		},
+		{
+			"type": "wrapper",
+			"components": [
+				{
+					"type": "paragraphs",
+					"text": [
+						"Sometimes we want to choose our sofa over a busy bar, but that doesn’t mean we have to miss out on a social life. Staying connected with friends and family has never been easier so whether you’re having a virtual catch up with friends on the House Party app or gearing up for your first online date, beauty writer Charlier Bell shares her speedy beauty tips that will get you phone screen ready in no time. Don’t forget to snap your #StayingIn look and share with <strong>#SamsungKX.</strong>"
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Brilliant Base",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"There’s no need to slather on heavy makeup all the time, it’s important to give your skin a bit of breathing space. If you’ve been the victim of stressed-skin breakouts and looking for some coverage, a tinted moisturiser should be your go-to. The perfect hybrid of makeup and skincare, it offers a dose of light coverage and a boost of hydration too. I rate <strong>Bare Minerals Complexion Rescue Tinted Moisturiser (£30, bareminerals.co.uk)</strong> for a healthy-looking glow. Available in 20 shades, it’s super refreshing with buildable coverage, helping to cater to your own complexion. It’s comfortable on the skin, and a lightweight alternative for working-from-home days. What’s more, it also has SPF30 – so it’ll protect you both when inside or outdoors."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Cool Coverage",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Stayed up late completing a TV series? Screens are not so forgiving on the skin so a dash of concealer will help refresh your peepers. Infused with light-diffusing micropearls <strong>NYX’s Born to Glow Radiant Concealer (£9, nyxcosmetics.co.uk)</strong> brightens the under-eye area. It also blurs imperfections and covers up blemishes. The built-in puff application makes blending a breeze too, and it’s vegan-friendly."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Flirty Flush",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Want a #StayingIn selfie? A pop of blusher will add some warmth to your cheeks if the lighting is a bit harsh. A creamy formula, rather than a powder, melts into skin effortlessly and gives off a natural, dewy finish. I love <strong>Maybelline Cheek Heat Blusher in Fuschia Spark (£8.99, Superdrug)</strong>. The water-based gel cream glides on and can easily be toned up or down, depending on your mood. A little goes a long way too – just one or two dots needed and use your fingers to blend onto skin."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Fabulous Flutter",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"A swipe of mascara will add definition to your eyes and make them appear brighter on camera. <a href=\"https://www.samsung.com/uk/smartphones/galaxy-s20/\">Samsung’s Galaxy S20</a> has a front facing camera with 40 megapixels so it’s extra good quality for video calls, meaning you’ll want to make the effort. <strong>Rimmel’s Scandaleyes Volume on Demand (£7.99, Amazon)</strong> is super adaptable, allowing you to control however big you want your lashes. The clump-free formula offers buildable volume so you can reapply throughout the day. Perfect if you want to slip on a layer for your 9am video conference and then reapply in the evening for a call with friends."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Pucker up",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Testing the water with a virtual date? Nothing lifts a look more than a colour-popping pout and since there’s no chance of a kiss, you can totally risk it. Plus, if you’re anxious about the lack of foundation on your skin, an attention-grabbing lippie will keep the focus firmly on your luscious lips. If you can’t be faffed with the upkeep of a lipstick, a lip stain is low maintenance with high impact. As the name suggests, the colour will stay put so you won’t lose it to your wine glass or have to dash off to the loo to reapply. <strong>L’Oréal Paris Brilliant Signature in Be Brilliant (£10.99, Superdrug)</strong> gives a high-shine finish with no stickiness."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Hair Hero",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"<strong>Amika’s Perk Up Dry Shampoo (£20, BeautyBay.com)</strong> is my saviour, helping tresses look and feel fresh when they are far from it. The talc-free formula absorbs oil without leaving a white residue. Plus, it smells DIVINE and the packaging looks super fun and colourful on my bathroom shelf.",
+						"My final tip would be to spritz on a bit of your favourite perfume because although you can’t sniff through a screen, a whiff of that familiar scent is guaranteed to give you an extra boost of confidence, especially if you’re about to embark on a virtual date. ",
+						"By <em><strong>Charlie Bell.</strong></em>",
+						"<em>Charlie is a London-based fashion, beauty and lifestyle editor with over twelve years' experience in the media industry. She has previously worked for titles including Closer, Reveal, Dare, Woman, Woman & Home, Now, Mail Online, Take a Break and Love it.</em>"
+					]
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "more-articles",
+			"id": "guest-writer-of-the-week",
+			"title": "More articles",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
 }

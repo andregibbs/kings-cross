@@ -1,48 +1,52 @@
 {
-  "title": "Editing Sessions: Next-level editing with Gadgetsboy",
-  "description": "Get the most out of your smartphone camera with this range of simple tutorials from a selection of the UK's top technology influencers",
-  "image": "{{creativity|editing-sessions[image]}}",
-  "alt": "Portrait image of buildings within a city at sunset, with sun setting in the background",
-  "thumb": "{{creativity|editing-sessions[image]}}",
-  "group": "editing-sessions",
-  "sort": 1,
-  "meta": {
-    "icon": "video",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "kv",
-      "media": {
-        "type": "youtube",
-        "content": "XNqggqSr5sE"
-      },
-      "style": {
-        "desktop": "top",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "copy": "Next-level editing with Gadgetsboy"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Welcome to the Editing Sessions. A chance to learn tips from the professionals on how to get the most out of your smartphone camera.",
-            "Gadgetsboy is one of the UK's most influential tech experts, and has partnered with us to help teach the art of shooting and editing photography using the <a href=\"https://www.samsung.com/uk/smartphones/galaxy-s20/\">Samsung Galaxy S20 Ultra</a> smartphone. This exclusive online tutorial focuses on capturing and editing a stunning sunset from the comfort of his home, including advice on the set up, as well as him exploring the phone’s Scene Optimiser, Pro mode and built in editing app. Watch, learn and unleash the photographer within."
-          ]
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "dynamic": "episodes",
-      "id": "editing-sessions",
-      "title": "More episodes",
-      "style": {
-        "scroll": true
-      }
-    }
-  ]
+	"title": "Editing Sessions: Next-level editing with Gadgetsboy",
+	"description": "Get the most out of your smartphone camera with this range of simple tutorials from a selection of the UK's top technology influencers",
+	"image": "{{creativity|editing-sessions[image]}}",
+	"alt": "Portrait image of buildings within a city at sunset, with sun setting in the background",
+	"thumb": "{{creativity|editing-sessions[image]}}",
+	"group": "editing-sessions",
+	"sort": 1,
+	"meta": {
+		"icon": "video",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 6,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "youtube",
+				"content": "XNqggqSr5sE"
+			},
+			"style": {
+				"desktop": "top",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Next-level editing with Gadgetsboy"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Welcome to the Editing Sessions. A chance to learn tips from the professionals on how to get the most out of your smartphone camera.",
+						"Gadgetsboy is one of the UK's most influential tech experts, and has partnered with us to help teach the art of shooting and editing photography using the <a href=\"https://www.samsung.com/uk/smartphones/galaxy-s20/\">Samsung Galaxy S20 Ultra</a> smartphone. This exclusive online tutorial focuses on capturing and editing a stunning sunset from the comfort of his home, including advice on the set up, as well as him exploring the phone’s Scene Optimiser, Pro mode and built in editing app. Watch, learn and unleash the photographer within."
+					]
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "episodes",
+			"id": "editing-sessions",
+			"title": "More episodes",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
 }

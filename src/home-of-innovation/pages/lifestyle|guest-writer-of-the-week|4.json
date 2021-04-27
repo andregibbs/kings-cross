@@ -1,172 +1,176 @@
 {
-  "title": "Guest writer of the week: Decorating with playful pastels",
-  "description": "Six ways to add some pastel prettiness to your home",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/4/KV.png",
-  "alt": "Wall decorated with downward pastal colour strokes, with modern interior design furniture in front",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/4/KV.png",
-  "group": "guest-writer-of-the-week",
-  "sort": 4,
-  "meta": {
-    "icon": "article",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "kv",
-      "media": {
-        "type": "image",
-        "content": "{{lifestyle|guest-writer-of-the-week|4[image]}}",
-        "alt": "{{lifestyle|guest-writer-of-the-week|4[alt]}}"
-      },
-      "style": {
-        "desktop": "right",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "copy": "Decorating with playful pastels"
-        }
-      ]
-    },
-    {
-      "type": "wrapper",
-      "components": [
-        {
-          "type": "paragraphs",
-          "style": {
-            "large": true
-          },
-          "text": [
-            "Pastel tones are a delicate way to brighten up the home and create a feeling of calm indoors. Interiors and design journalist Amy Moorea Wong shares five ways to add some pastel prettiness to your home."
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Fresh fabrics",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "If you’re new to having pale colours in the home, begin with something simple. Small accessories such as cushions and throws are a good place to start when changing the look of your home as they make a big change with minimal effort and can quickly be swapped when your taste changes. If you’re feeling a little braver, try small pieces of upholstered furniture dining chairs, stools or poufs for a bigger impact that can still be repositioned easily.",
-            "Try placing multiple objects in the same pastel colour around the room, spreading the tones in a minimal-yet-memorable way."
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "In the frame - pastels as art",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "An easy way to make a statement with pastels is with artwork. Keep the subject simple – abstract, minimal shapes work well – and let the soft colours be the focus. A block of pastel colours hung on (or propped against) the wall will add a sense of serenity into the room. For an affordable alternative to original artworks, try framing artist prints and posters, or even creating a gallery wall of multiple small frames with different pastel-coloured pieces within."
-          ]
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/4/1.png",
-          "alt": "pastel coloured painting above a fireplace",
-          "credit": "Image credit Mintstudio at The Poster Club 1"
-        },
-        {
-          "type": "headline",
-          "copy": "In full bloom - houseplants and pastels",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "From pink spring blossom to delicate yellow daffodils and blue hydrangea, chalky colours are most often found in the world of nature. Pairing a pastel with greenery at home is an easy way to inject life and colour into your houseplants, even when they’re not in bloom. Choose a pastel coloured pot, planter or hanging basket to make a calming, happy display in even the smallest of rooms or outdoor spaces, and enjoy the soothing benefit of not only your plants themselves (which make us feel grounded and reduce stress), but how they’re on show."
-          ]
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/4/2.jpg",
-          "alt": "pastel coloured planter with a plant",
-          "credit": "Image credit Ferm Living"
-        },
-        {
-          "type": "headline",
-          "copy": "On the wall - picking up the paints",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Painting a wall doesn’t have to be a scary prospect. Step outside of your comfort zone and dedicate a weekend to changing the whole feel of a room just with a tin, a brush and a roller. Try these painting-with-pastel tips to ensure it’s a fun and easy process.",
-            "- Cover the wall with a primer before applying paint to make sure the paint finish is even. This is especially important with pale colours such as pastels",
-            "- Paint the skirting board in the same colour as the wall, so the wall looks longer, and the ceiling seems higher",
-            "- Pastel colours reflect light, so are a great way to brighten a dark room when you don’t want to use white",
-            "- For a more adventurous look, pair a pale painted wall with another tonal colour to add edge to the pastel",
-            "Remember – painted walls can easily be repainted, so don’t feel that your colour choices are for life"
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "A passion for pattern - pastels in tiles and wallpaper",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Pastels work brilliantly when combined with similar chalky tones. For a more decorative alternative to painting, wallpaper and tiles are a bold way to add pattern and texture to a space. With pastels, go for a wallpaper design or collection of tiles that combines multiple tones for a joyful look that’s still calming, thanks to the gentle palette. Display the patterned pastel wallpaper or tiles over as large an area as you can, for maximum impact.",
-            "Make sure to keep tiles in non-wet areas as they can pick up dust easily. <a href=\"https://www.samsung.com/uk/vacuum-cleaners/all-vacuum-cleaners/?samsung-jet\">The Samsung Jet cordless vacuum cleaner</a> captures the fine dust particles that try to escape back into the air. It also comes with an array of specialist brushes - ideal for cleaning unusual or textured surfaces.",
-            "Snap and share your home's pastel paint-up with <strong>#SamsungKX</strong>",
-            "By <strong>Amy Moorea Wong</strong>",
-            "<em>Amy Moorea Wong is a freelance interior design and lifestyle journalist with nine years of experience in contemporary magazine editorial.</em>",
-            "<em>As Features Editor at ELLE Decoration UK, she wrote and commissioned content for the Now and Escape pages on interiors and design news, profiles, architecture, technology, travel and culture, as well as for the bi-annual Trend issues, the Christmas Gift Guide and house features. She also edited the beautiful, 100-page Kitchen and Bathroom Guides, adding an exciting and experimental feel to the pages.</em>",
-            "<em>One of her favourite things to do is predict and report on interiors zeitgeist, up-and-coming names and brands, innovative products and beautiful, modern design, and she has a strong affinity for pieces with an eco-edge.</em>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "gallery",
-      "items": [
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/4/1.jpg",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/4/1.jpg",
-          "description": "Image credit Mintstudio at The Poster Club 1"
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/4/2.jpg",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/4/2.jpg",
-          "description": "Image credit Ferm Living"
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/4/3.jpg",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/4/3.jpg"
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/4/4.jpg",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/4/4.jpg"
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/4/5.jpg",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/4/5.jpg"
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/4/6.jpg",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/4/6.jpg"
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "dynamic": "more-articles",
-      "id": "guest-writer-of-the-week",
-      "title": "More articles",
-      "style": {
-        "scroll": true
-      }
-    }
-  ]
+	"title": "Guest writer of the week: Decorating with playful pastels",
+	"description": "Six ways to add some pastel prettiness to your home",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/4/KV.png",
+	"alt": "Wall decorated with downward pastal colour strokes, with modern interior design furniture in front",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/4/KV.png",
+	"group": "guest-writer-of-the-week",
+	"sort": 4,
+	"meta": {
+		"icon": "article",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 5,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "image",
+				"content": "{{lifestyle|guest-writer-of-the-week|4[image]}}",
+				"alt": "{{lifestyle|guest-writer-of-the-week|4[alt]}}"
+			},
+			"style": {
+				"desktop": "right",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Decorating with playful pastels"
+				}
+			]
+		},
+		{
+			"type": "wrapper",
+			"components": [
+				{
+					"type": "paragraphs",
+					"style": {
+						"large": true
+					},
+					"text": [
+						"Pastel tones are a delicate way to brighten up the home and create a feeling of calm indoors. Interiors and design journalist Amy Moorea Wong shares five ways to add some pastel prettiness to your home."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Fresh fabrics",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"If you’re new to having pale colours in the home, begin with something simple. Small accessories such as cushions and throws are a good place to start when changing the look of your home as they make a big change with minimal effort and can quickly be swapped when your taste changes. If you’re feeling a little braver, try small pieces of upholstered furniture dining chairs, stools or poufs for a bigger impact that can still be repositioned easily.",
+						"Try placing multiple objects in the same pastel colour around the room, spreading the tones in a minimal-yet-memorable way."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "In the frame - pastels as art",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"An easy way to make a statement with pastels is with artwork. Keep the subject simple – abstract, minimal shapes work well – and let the soft colours be the focus. A block of pastel colours hung on (or propped against) the wall will add a sense of serenity into the room. For an affordable alternative to original artworks, try framing artist prints and posters, or even creating a gallery wall of multiple small frames with different pastel-coloured pieces within."
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/4/1.png",
+					"alt": "pastel coloured painting above a fireplace",
+					"credit": "Image credit Mintstudio at The Poster Club 1"
+				},
+				{
+					"type": "headline",
+					"copy": "In full bloom - houseplants and pastels",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"From pink spring blossom to delicate yellow daffodils and blue hydrangea, chalky colours are most often found in the world of nature. Pairing a pastel with greenery at home is an easy way to inject life and colour into your houseplants, even when they’re not in bloom. Choose a pastel coloured pot, planter or hanging basket to make a calming, happy display in even the smallest of rooms or outdoor spaces, and enjoy the soothing benefit of not only your plants themselves (which make us feel grounded and reduce stress), but how they’re on show."
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/4/2.jpg",
+					"alt": "pastel coloured planter with a plant",
+					"credit": "Image credit Ferm Living"
+				},
+				{
+					"type": "headline",
+					"copy": "On the wall - picking up the paints",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Painting a wall doesn’t have to be a scary prospect. Step outside of your comfort zone and dedicate a weekend to changing the whole feel of a room just with a tin, a brush and a roller. Try these painting-with-pastel tips to ensure it’s a fun and easy process.",
+						"- Cover the wall with a primer before applying paint to make sure the paint finish is even. This is especially important with pale colours such as pastels",
+						"- Paint the skirting board in the same colour as the wall, so the wall looks longer, and the ceiling seems higher",
+						"- Pastel colours reflect light, so are a great way to brighten a dark room when you don’t want to use white",
+						"- For a more adventurous look, pair a pale painted wall with another tonal colour to add edge to the pastel",
+						"Remember – painted walls can easily be repainted, so don’t feel that your colour choices are for life"
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "A passion for pattern - pastels in tiles and wallpaper",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Pastels work brilliantly when combined with similar chalky tones. For a more decorative alternative to painting, wallpaper and tiles are a bold way to add pattern and texture to a space. With pastels, go for a wallpaper design or collection of tiles that combines multiple tones for a joyful look that’s still calming, thanks to the gentle palette. Display the patterned pastel wallpaper or tiles over as large an area as you can, for maximum impact.",
+						"Make sure to keep tiles in non-wet areas as they can pick up dust easily. <a href=\"https://www.samsung.com/uk/vacuum-cleaners/all-vacuum-cleaners/?samsung-jet\">The Samsung Jet cordless vacuum cleaner</a> captures the fine dust particles that try to escape back into the air. It also comes with an array of specialist brushes - ideal for cleaning unusual or textured surfaces.",
+						"Snap and share your home's pastel paint-up with <strong>#SamsungKX</strong>",
+						"By <strong>Amy Moorea Wong</strong>",
+						"<em>Amy Moorea Wong is a freelance interior design and lifestyle journalist with nine years of experience in contemporary magazine editorial.</em>",
+						"<em>As Features Editor at ELLE Decoration UK, she wrote and commissioned content for the Now and Escape pages on interiors and design news, profiles, architecture, technology, travel and culture, as well as for the bi-annual Trend issues, the Christmas Gift Guide and house features. She also edited the beautiful, 100-page Kitchen and Bathroom Guides, adding an exciting and experimental feel to the pages.</em>",
+						"<em>One of her favourite things to do is predict and report on interiors zeitgeist, up-and-coming names and brands, innovative products and beautiful, modern design, and she has a strong affinity for pieces with an eco-edge.</em>"
+					]
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"items": [
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/4/1.jpg",
+					"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/4/1.jpg",
+					"description": "Image credit Mintstudio at The Poster Club 1"
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/4/2.jpg",
+					"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/4/2.jpg",
+					"description": "Image credit Ferm Living"
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/4/3.jpg",
+					"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/4/3.jpg"
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/4/4.jpg",
+					"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/4/4.jpg"
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/4/5.jpg",
+					"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/4/5.jpg"
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/4/6.jpg",
+					"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/4/6.jpg"
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "more-articles",
+			"id": "guest-writer-of-the-week",
+			"title": "More articles",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
 }

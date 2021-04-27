@@ -1,186 +1,190 @@
 {
-  "title": "Halloween at Home",
-  "description": "",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/halloween-house/ProjectMap_1440x810.jpg",
-  "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/halloween-house/ProjectMap_1440x810.jpg",
-  "meta": {
-    "icon": "video",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "css-snippet",
-      "content": ".hoiKv--theme-side-by-side-video, .hoiKv--theme-in-wrapper { margin: 2em 0 !important; } .hoiKv--theme-in-wrapper .hoiKv__Components p { font-weight: normal !important; font-size: 1.25em !important; } .hoiKv--theme-side-by-side-video .hoiKv__Components { padding: 0 !important; position: relative !important; } .hoiKv--theme-side-by-side-video .hoiKv__Media:after { padding-bottom: 56.25% !important; } .hoiKv--theme-side-by-side-video .hoiKv__Components .hoiMedia__Wrap { padding-bottom: 56.25% !important; margin-bottom: 0 !important; } .hoiIconLinks__Link_Image { height: 50px !important; }",
-      "__notes": "css for side by side video"
-    },
-    {
-      "type": "kv",
-      "media": {
-        "type": "image",
-        "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/halloween-house/ProjectMap_1440x810.jpg",
-        "alt": ""
-      },
-      "style": {
-        "desktop": "top",
-        "mobile": "bottom"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "copy": "Halloween at Home"
-        }
-      ]
-    },
-    {
-      "type": "wrapper",
-      "components": [
-        {
-          "type": "paragraphs",
-          "style": {
-            "large": true
-          },
-          "text": [
-            "<br>",
-            "Although Halloween 2020 will be very different to previous years, there are still plenty of ways for you to celebrate at home in a safe and secure way.",
-            "We wanted to share some spooky inspiration to help make this Halloween a night to remember.",
-            "Using the power of SmartThings we transformed a 300-year-old property into an incredible connected Halloween experience. We set up the home with the latest smart products, from the lights and sound to the security cameras, all controlled using the SmartThings app on our Galaxy S20 and QLED 8K TV.",
-            "SmartThings is one of the largest open ecosystems of connected devices, with over 150 million users worldwide. The platform allows you to connect and manage thousands of smart devices from your phone. To find out more visit our <a href=\"https://www.samsung.com/uk/smartthings/\">SmartThings page</a> or download the app."
-          ]
-        },
-        {
-          "type": "icon-links",
-          "style": "fixed-size",
-          "items": [
-            {
-              "link": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
-              "target": "_blank",
-              "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/halloween-house/app-store.png"
-            },
-            {
-              "link": "https://apps.apple.com/app/samsung-connect/id1222822904.",
-              "target": "_blank",
-              "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/halloween-house/play-store-crop.png"
-            }
-          ]
-        },
-        {
-          "type": "youtube",
-          "content": "Vs66NbPJoP8"
-        }
-      ]
-    },
-    {
-      "type": "wrapper",
-      "components": [
-        {
-          "type": "paragraphs",
-          "style": {
-            "large": true
-          },
-          "text": [
-            "Watch our SmartThings Halloween ‘How to’ guide to see how you can take your Halloween display to the next level."
-          ]
-        },
-        {
-          "type": "youtube",
-          "content": "vASrvIqNbdM"
-        }
-      ]
-    },
-    {
-      "type": "wrapper",
-      "components": [
-        {
-          "type": "paragraphs",
-          "style": {
-            "large": true
-          },
-          "text": [
-            "Leading special effects make-up artist Ellie Hand-McCready has created two Halloween tutorials especially for Samsung fans.",
-            "Follow her guides here to create your own look at home."
-          ]
-        },
-        {
-          "type": "kv",
-          "share": false,
-          "media": {
-            "type": "youtube",
-            "content": "bHadsmCr2sg",
-            "alt": ""
-          },
-          "style": {
-            "desktop": "left",
-            "mobile": "top",
-            "theme": "side-by-side-video"
-          },
-          "components": [
-            {
-              "type": "youtube",
-              "content": "lQmVe0qHqvE"
-            }
-          ]
-        },
-        {
-          "type": "paragraphs",
-          "style": {
-            "large": true
-          },
-          "text": [
-            "If your household are still looking for ideas look no further than our handy Top 10 list below:",
-            "<ol><li>Halloween movie night</li><li>Family fancy dress night</li><li>Cooking/making Halloween themed food and drink</li><li>Carving pumpkins</li><li>Decorating your house with Halloween props</li><li>Having or attending a virtual Halloween party over video call</li><li>Playing spooky tricks on people in your household</li><li>Playing Halloween games with friends and family over video call</li><li>Creating Halloween playlists</li><li>Telling / reading scary stories to family members at home</li></ol>",
-            "Visitors to Samsung KX this Halloween will be able to take part in a themed AR treasure hunt around the experience space in Coal Drops Yard. Solve a series of AR tricks and get a chocolatey treat at the end, plus enjoy limited-edition phone cases decorated with Ellie Hand-McCready’s unique make up design.",
-            "<br>",
-            "Happy Halloween!"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "gallery",
-      "title": "Samsung Halloween At Home",
-      "items": [
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/halloween-house/gallery_1.jpg",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/halloween-house/gallery_1_t.jpg"
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/halloween-house/gallery_2.jpg",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/halloween-house/gallery_2_t.jpg"
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/halloween-house/gallery_3.jpg",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/halloween-house/gallery_3_t.jpg"
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/halloween-house/gallery_4.jpg",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/halloween-house/gallery_4_t.jpg"
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/halloween-house/gallery_5.jpg",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/halloween-house/gallery_5_t.jpg"
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/halloween-house/gallery_6.jpg",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/halloween-house/gallery_6_t.jpg"
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/halloween-house/gallery_7.jpg",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/halloween-house/gallery_7_t.jpg"
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/halloween-house/gallery_8.jpg",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/halloween-house/gallery_8_t.jpg"
-        }
-      ]
-    }
-  ]
+	"title": "Halloween at Home",
+	"description": "",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/halloween-house/ProjectMap_1440x810.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/halloween-house/ProjectMap_1440x810.jpg",
+	"meta": {
+		"icon": "video",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 10,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "css-snippet",
+			"content": ".hoiKv--theme-side-by-side-video, .hoiKv--theme-in-wrapper { margin: 2em 0 !important; } .hoiKv--theme-in-wrapper .hoiKv__Components p { font-weight: normal !important; font-size: 1.25em !important; } .hoiKv--theme-side-by-side-video .hoiKv__Components { padding: 0 !important; position: relative !important; } .hoiKv--theme-side-by-side-video .hoiKv__Media:after { padding-bottom: 56.25% !important; } .hoiKv--theme-side-by-side-video .hoiKv__Components .hoiMedia__Wrap { padding-bottom: 56.25% !important; margin-bottom: 0 !important; } .hoiIconLinks__Link_Image { height: 50px !important; }",
+			"__notes": "css for side by side video"
+		},
+		{
+			"type": "kv",
+			"media": {
+				"type": "image",
+				"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/halloween-house/ProjectMap_1440x810.jpg",
+				"alt": ""
+			},
+			"style": {
+				"desktop": "top",
+				"mobile": "bottom"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Halloween at Home"
+				}
+			]
+		},
+		{
+			"type": "wrapper",
+			"components": [
+				{
+					"type": "paragraphs",
+					"style": {
+						"large": true
+					},
+					"text": [
+						"<br>",
+						"Although Halloween 2020 will be very different to previous years, there are still plenty of ways for you to celebrate at home in a safe and secure way.",
+						"We wanted to share some spooky inspiration to help make this Halloween a night to remember.",
+						"Using the power of SmartThings we transformed a 300-year-old property into an incredible connected Halloween experience. We set up the home with the latest smart products, from the lights and sound to the security cameras, all controlled using the SmartThings app on our Galaxy S20 and QLED 8K TV.",
+						"SmartThings is one of the largest open ecosystems of connected devices, with over 150 million users worldwide. The platform allows you to connect and manage thousands of smart devices from your phone. To find out more visit our <a href=\"https://www.samsung.com/uk/smartthings/\">SmartThings page</a> or download the app."
+					]
+				},
+				{
+					"type": "icon-links",
+					"style": "fixed-size",
+					"items": [
+						{
+							"link": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+							"target": "_blank",
+							"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/halloween-house/app-store.png"
+						},
+						{
+							"link": "https://apps.apple.com/app/samsung-connect/id1222822904.",
+							"target": "_blank",
+							"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/halloween-house/play-store-crop.png"
+						}
+					]
+				},
+				{
+					"type": "youtube",
+					"content": "Vs66NbPJoP8"
+				}
+			]
+		},
+		{
+			"type": "wrapper",
+			"components": [
+				{
+					"type": "paragraphs",
+					"style": {
+						"large": true
+					},
+					"text": [
+						"Watch our SmartThings Halloween ‘How to’ guide to see how you can take your Halloween display to the next level."
+					]
+				},
+				{
+					"type": "youtube",
+					"content": "vASrvIqNbdM"
+				}
+			]
+		},
+		{
+			"type": "wrapper",
+			"components": [
+				{
+					"type": "paragraphs",
+					"style": {
+						"large": true
+					},
+					"text": [
+						"Leading special effects make-up artist Ellie Hand-McCready has created two Halloween tutorials especially for Samsung fans.",
+						"Follow her guides here to create your own look at home."
+					]
+				},
+				{
+					"type": "kv",
+					"share": false,
+					"media": {
+						"type": "youtube",
+						"content": "bHadsmCr2sg",
+						"alt": ""
+					},
+					"style": {
+						"desktop": "left",
+						"mobile": "top",
+						"theme": "side-by-side-video"
+					},
+					"components": [
+						{
+							"type": "youtube",
+							"content": "lQmVe0qHqvE"
+						}
+					]
+				},
+				{
+					"type": "paragraphs",
+					"style": {
+						"large": true
+					},
+					"text": [
+						"If your household are still looking for ideas look no further than our handy Top 10 list below:",
+						"<ol><li>Halloween movie night</li><li>Family fancy dress night</li><li>Cooking/making Halloween themed food and drink</li><li>Carving pumpkins</li><li>Decorating your house with Halloween props</li><li>Having or attending a virtual Halloween party over video call</li><li>Playing spooky tricks on people in your household</li><li>Playing Halloween games with friends and family over video call</li><li>Creating Halloween playlists</li><li>Telling / reading scary stories to family members at home</li></ol>",
+						"Visitors to Samsung KX this Halloween will be able to take part in a themed AR treasure hunt around the experience space in Coal Drops Yard. Solve a series of AR tricks and get a chocolatey treat at the end, plus enjoy limited-edition phone cases decorated with Ellie Hand-McCready’s unique make up design.",
+						"<br>",
+						"Happy Halloween!"
+					]
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"title": "Samsung Halloween At Home",
+			"items": [
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/halloween-house/gallery_1.jpg",
+					"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/halloween-house/gallery_1_t.jpg"
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/halloween-house/gallery_2.jpg",
+					"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/halloween-house/gallery_2_t.jpg"
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/halloween-house/gallery_3.jpg",
+					"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/halloween-house/gallery_3_t.jpg"
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/halloween-house/gallery_4.jpg",
+					"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/halloween-house/gallery_4_t.jpg"
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/halloween-house/gallery_5.jpg",
+					"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/halloween-house/gallery_5_t.jpg"
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/halloween-house/gallery_6.jpg",
+					"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/halloween-house/gallery_6_t.jpg"
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/halloween-house/gallery_7.jpg",
+					"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/halloween-house/gallery_7_t.jpg"
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/halloween-house/gallery_8.jpg",
+					"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/halloween-house/gallery_8_t.jpg"
+				}
+			]
+		}
+	]
 }

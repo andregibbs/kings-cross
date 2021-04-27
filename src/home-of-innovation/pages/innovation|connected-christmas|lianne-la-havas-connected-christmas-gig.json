@@ -1,46 +1,50 @@
 {
-  "title": "Lianne La Havas: Connected Christmas gig",
-  "description": "Ending the year with a Christmas high, connect with two moving performances, blogs and playlists, as we use Samsung tech to enjoy the festive season in new ways this year.",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/connected-christmas/Samsung_WebsiteBanner_Xmas_LIANNE_1440x810_V2.jpg",
-  "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/connected-christmas/Samsung_WebsiteBanner_Xmas_LIANNE_400x255_V2.jpg",
-  "group": "connected-christmas",
-  "sort": 5,
-  "meta": {
-    "icon": "video",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "kv",
-      "style": {
-        "desktop": "top",
-        "mobile": "top"
-      },
-      "media": {
-        "type": "youtube",
-        "content": "2zE59qIJtN8",
-        "poster": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/connected-christmas/Samsung_WebsiteBanner_Xmas_LIANNE_1440x810_V2.jpg",
-        "alt": ""
-      },
-      "components": [
-        {
-          "type": "headline",
-          "copy": "Lianne La Havas: Connected Christmas gig"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "In a performance of her latest track, Courage, Lianne La Havas brings the magic of Christmas to Samsung KX as she connects with her beloved fans through the <a href=\"https://www.samsung.com/uk/tablets/galaxy-tab-s/galaxy-tab-s7-plus-12-4-inch-mystic-bronze-128gb-wi-fi-sm-t970nznaeua/buy/\">Galaxy Tab S7</a> and <a href=\"https://www.samsung.com/uk/smartphones/galaxy-s20/galaxy-s20-fe/\">Galaxy S20</a> devices."
-          ]
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "dynamic": "episodes",
-      "title": "Connnected Christmas",
-      "id": "connected-christmas"
-    }
-  ]
+	"title": "Lianne La Havas: Connected Christmas gig",
+	"description": "Ending the year with a Christmas high, connect with two moving performances, blogs and playlists, as we use Samsung tech to enjoy the festive season in new ways this year.",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/connected-christmas/Samsung_WebsiteBanner_Xmas_LIANNE_1440x810_V2.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/connected-christmas/Samsung_WebsiteBanner_Xmas_LIANNE_400x255_V2.jpg",
+	"group": "connected-christmas",
+	"sort": 5,
+	"meta": {
+		"icon": "video",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 5,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"style": {
+				"desktop": "top",
+				"mobile": "top"
+			},
+			"media": {
+				"type": "youtube",
+				"content": "2zE59qIJtN8",
+				"poster": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/connected-christmas/Samsung_WebsiteBanner_Xmas_LIANNE_1440x810_V2.jpg",
+				"alt": ""
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Lianne La Havas: Connected Christmas gig"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"In a performance of her latest track, Courage, Lianne La Havas brings the magic of Christmas to Samsung KX as she connects with her beloved fans through the <a href=\"https://www.samsung.com/uk/tablets/galaxy-tab-s/galaxy-tab-s7-plus-12-4-inch-mystic-bronze-128gb-wi-fi-sm-t970nznaeua/buy/\">Galaxy Tab S7</a> and <a href=\"https://www.samsung.com/uk/smartphones/galaxy-s20/galaxy-s20-fe/\">Galaxy S20</a> devices."
+					]
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "episodes",
+			"title": "Connnected Christmas",
+			"id": "connected-christmas"
+		}
+	]
 }

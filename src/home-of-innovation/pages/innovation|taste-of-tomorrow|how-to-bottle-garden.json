@@ -1,167 +1,171 @@
 {
-  "title": "How to create: your own Hydroponic Bottle Garden",
-  "description": "Simple growing solutions at home",
-  "image": "https://images.samsung.com/is/image/samsung/assets//uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/09c_Samsung_Website_How-To_Hydroponic_garden_1440x810_V1.jpg",
-  "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets//uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/09c_Samsung_Website_How-To_Hydroponic_garden_400x255_V2.jpg",
-  "group": "taste-of-tomorrow",
-  "sort": 10,
-  "meta": {
-    "icon": "video",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "kv",
-      "media": {
-        "type": "youtube",
-        "content": "dcWLv82Sl44",
-        "poster": "https://images.samsung.com/is/image/samsung/assets//uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/09c_Samsung_Website_How-To_Hydroponic_garden_1440x810_V1.jpg",
-        "alt": ""
-      },
-      "style": {
-        "desktop": "top",
-        "mobile": "bottom"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "copy": "How to create: your own Hydroponic Bottle Garden"
-        },
-        {
-          "type": "headline",
-          "copy": "Simple growing solutions at home",
-          "level": "3"
-        }
-      ]
-    },
-    {
-      "type": "wrapper",
-      "components": [
-        {
-          "type": "headline",
-          "copy": "What you need:",
-          "level": "3"
-        },
-        {
-          "type": "html-list",
-          "items": [
-            "Plastic bottle",
-            "Microgreen seeds or herbs",
-            "(basil or mint are good starters)",
-            "Thick cotton twine or old dishcloth (ideal!)",
-            "Coir or potting compost",
-            "Craft Knife*",
-            "Screwdriver*",
-            "Small jug of water"
-          ]
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "* Please handle with care"
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Step 1",
-          "level": "4"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Empty 500ml or 1 litre plastic bottle"
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Step 2",
-          "level": "4"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Unscrew cap and make a 4mm through the bottle cap then screw cap back on."
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Step 3",
-          "level": "4"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "With a sharp knife cut the bottle in half"
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Step 4",
-          "level": "4"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Turn the top half around and make sure it sit nicely inside the lower half"
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Step 5",
-          "level": "4"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Thread your thick cotton (Wick) length through the bottle cap hole, making sure there is at least 6” of thread at either end"
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Step 6",
-          "level": "4"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Fill the top half of the bottle with coir or potting compost leaving around 10mm at the top"
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Step 7",
-          "level": "4"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Fill the lower half so it almost touches the top of the bottle cap"
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Step 8",
-          "level": "4"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Put the bottle back together.",
-            "Sprinkle your microgreen seed onto the coir and sprinkle water on top to moisten them.",
-            "The wick will draw water up into the coir and provide water for your greens. Check the water level every week."
-          ]
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "dynamic": "more-articles",
-      "id": "taste-of-tomorrow",
-      "title": "More articles",
-      "style": {
-        "scroll": true
-      }
-    }
-  ]
+	"title": "How to create: your own Hydroponic Bottle Garden",
+	"description": "Simple growing solutions at home",
+	"image": "https://images.samsung.com/is/image/samsung/assets//uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/09c_Samsung_Website_How-To_Hydroponic_garden_1440x810_V1.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets//uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/09c_Samsung_Website_How-To_Hydroponic_garden_400x255_V2.jpg",
+	"group": "taste-of-tomorrow",
+	"sort": 10,
+	"meta": {
+		"icon": "video",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 5,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "youtube",
+				"content": "dcWLv82Sl44",
+				"poster": "https://images.samsung.com/is/image/samsung/assets//uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/09c_Samsung_Website_How-To_Hydroponic_garden_1440x810_V1.jpg",
+				"alt": ""
+			},
+			"style": {
+				"desktop": "top",
+				"mobile": "bottom"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "How to create: your own Hydroponic Bottle Garden"
+				},
+				{
+					"type": "headline",
+					"copy": "Simple growing solutions at home",
+					"level": "3"
+				}
+			]
+		},
+		{
+			"type": "wrapper",
+			"components": [
+				{
+					"type": "headline",
+					"copy": "What you need:",
+					"level": "3"
+				},
+				{
+					"type": "html-list",
+					"items": [
+						"Plastic bottle",
+						"Microgreen seeds or herbs",
+						"(basil or mint are good starters)",
+						"Thick cotton twine or old dishcloth (ideal!)",
+						"Coir or potting compost",
+						"Craft Knife*",
+						"Screwdriver*",
+						"Small jug of water"
+					]
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"* Please handle with care"
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Step 1",
+					"level": "4"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Empty 500ml or 1 litre plastic bottle"
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Step 2",
+					"level": "4"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Unscrew cap and make a 4mm through the bottle cap then screw cap back on."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Step 3",
+					"level": "4"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"With a sharp knife cut the bottle in half"
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Step 4",
+					"level": "4"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Turn the top half around and make sure it sit nicely inside the lower half"
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Step 5",
+					"level": "4"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Thread your thick cotton (Wick) length through the bottle cap hole, making sure there is at least 6” of thread at either end"
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Step 6",
+					"level": "4"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Fill the top half of the bottle with coir or potting compost leaving around 10mm at the top"
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Step 7",
+					"level": "4"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Fill the lower half so it almost touches the top of the bottle cap"
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Step 8",
+					"level": "4"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Put the bottle back together.",
+						"Sprinkle your microgreen seed onto the coir and sprinkle water on top to moisten them.",
+						"The wick will draw water up into the coir and provide water for your greens. Check the water level every week."
+					]
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "more-articles",
+			"id": "taste-of-tomorrow",
+			"title": "More articles",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
 }

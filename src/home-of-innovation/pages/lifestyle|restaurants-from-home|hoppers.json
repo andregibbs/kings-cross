@@ -1,124 +1,128 @@
 {
-  "title": "Restaurants from Home with Samsung KX",
-  "description": "Samsung KX x Hoppers Cookalong",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/restaurants-from-home/hoppers-kv.jpg",
-  "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/restaurants-from-home/Hoppers_1440x720.png",
-  "group": "restaurants-from-home",
-  "sort": 1,
-  "meta": {
-    "icon": "video",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "kv",
-      "media": {
-        "type": "youtube",
-        "content": "ShOAv-ApWBI",
-        "poster": "{{lifestyle|restaurants-from-home|hoppers[image]}}",
-        "alt": ""
-      },
-      "style": {
-        "desktop": "top",
-        "mobile": "bottom"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "copy": "Rustle up restaurant favourites in your own kitchen"
-        },
-        {
-          "type": "headline",
-          "copy": "Samsung KX collaborates with Sri Lankan hotspot, Hoppers, to bring the ultimate connected culinary experience to diners at home",
-          "level": "3"
-        }
-      ]
-    },
-    {
-      "type": "wrapper",
-      "components": [
-        {
-          "type": "paragraphs",
-          "text": [
-            "<em style=\"font-style: italic;\">Welcome to Restaurants from Home with Samsung KX</em>. Samsung KX, the Hub of Innovation, has partnered with a line-up of King’s Cross’ most loved restaurants to inspire you to get creative in the kitchen. Each episode will include step-by-step instructions to recreate menu favourites from the comfort of home.",
-            "We’ve partnered with award-winning restaurant Hoppers - a Sri Lankan and South Indian restaurant in King’s Cross - to exclusively bring you the recipe of their bestselling ‘Banana Leaf Bream’. Boasting a showstopping, spicy fish supper, it guarantees to get taste buds tingling. Hoppers’ Director, Karen Gokani, rustles this up from the Samsung KX Connected Kitchen, where he uses the <a href=\"https://www.samsung.com/uk/cooking-appliances/ovens/electric-oven-nv75n5641rs-eu/\">Samsung Dual Flex Oven ™</a> and <a href=\"https://www.samsung.com/uk/apps/smartthings/\">SmartThings app</a> to help him cook up a storm, and snaps his final dish in Food Mode using <a href=\"https://www.samsung.com/uk/smartphones/galaxy-s21-5g/buy/?modelCode=SM-G996BZVGEUA&cid=UK_PPC_6388038105_FF~Eval:Brand%2BProd_ProjectU_Tease_KS~BAP_BS~IM_PR~SMART_SB~GS21_OB~SALES_PK~ROAS_FS~LHQ_MD~W_AI~N_MT~EXA_CA~KEW&gclid=Cj0KCQiA0-6ABhDMARIsAFVdQv_3ttr51rnQx-wVOZfkUXxij1yz4iMiQiARbsCRScjihnmG-7qMICgaAurXEALw_wcB&gclsrc=aw.ds\">Samsung Galaxy S21 Ultra 5G</a>."
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Hopper’s Banana Leaf Bream (Serves two)",
-          "level": "3"
-        },
-        {
-          "type": "html-list",
-          "items": [
-            "1 whole sea bream scaled and gutted, or 2 fillets",
-            "150g fresh coriander",
-            "2 cloves garlic",
-            "1-inch ginger",
-            "1 green chillies",
-            "1 stem fresh lemongrass, (remove the drier, huskier layers and use only the first 2-3 inches of the white bit at the bottom)",
-            "3 tbsp fresh grated coconut, or 2 tbsp desiccated coconut soaked for 30 mins ",
-            "6-8 curry leaves (ideally fresh)",
-            "½ tsp turmeric powder",
-            "1 cardamom pod, seeds only",
-            "½ tsp fennel seeds",
-            "1 tsp cumin seeds",
-            "1 tsp tamarind paste",
-            "1/3 tsp sugar",
-            "1 tbsp coconut oil, or any neutral oil",
-            "1/2 lime, juiced",
-            "1/2 tsp sea salt",
-            "1 lime, to serve",
-            "1 large fresh Banana Leaf (you can use baking paper or foil if not!)",
-            "Kitchen Foil",
-            "A food processor or blender ",
-            "Side salad of choice and bottle of Riesling (optional)"
-          ]
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "<br>",
-            "Make a paste of 1 tsp salt, the turmeric powder and lime juice. Rub all over the fillets and leave to rest for 15 mins.",
-            "Toast the cumin and fennel seeds in a dry pan for a couple of minutes and once cool blitz with all the remaining ingredients (except the fish!) in a food processor or smoothie maker to make a course paste, using a splash of water if required. Taste the paste to check for seasoning, add some more sea salt if required. Keep the paste fairly thick so it coats the fish well.",
-            "Run the banana leaf over a hot pan or submerge in boiling water for a few seconds. This makes the leaf flexible and prevents it from ripping when you wrap the fish. Put a generous amount of herb paste over each fillet and wrap individually in the banana leaf, followed by a layer of tinfoil on the outside. Scrunch together the edges of the foil to make a tent, leaving enough space for the fish to steam, do not wrap the fish too tightly.",
-            "Place the parcels on a baking-sheet and cook in an oven preheated to 160°C for 18-20 minutes or 12-14 minutes if using individual fillets.",
-            "Serve the parcels as they are so the delicious aromas waft out when they are opened on the table."
-          ]
-        }
-      ]
-    },
-    {
-      "type": "link-list",
-      "title": "Check out the products used in the cookalong here",
-      "items": [
-        {
-          "title": "Dual Cook Flex",
-          "url": "https://www.samsung.com/uk/cooking-appliances/ovens/electric-oven-nv75n5641rs-eu/",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/restaurants-from-home/Dual_Cook_Flex_Oven_th.jpg"
-        },
-        {
-          "title": "Family Hub",
-          "url": "https://www.samsung.com/uk/refrigerators/family-hub-fridge-freezers/",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/restaurants-from-home/Family_Hub_Lifestyle_th.jpg"
-        },
-        {
-          "title": "Galaxy S21 Ultra 5G",
-          "url": "https://www.samsung.com/uk/smartphones/galaxy-s21-5g/buy/?modelCode=SM-G996BZVGEUA&cid=UK_PPC_6388038105_FF~Eval:Brand%2BProd_ProjectU_Tease_KS~BAP_BS~IM_PR~SMART_SB~GS21_OB~SALES_PK~ROAS_FS~LHQ_MD~W_AI~N_MT~EXA_CA~KEW&gclid=Cj0KCQiA0-6ABhDMARIsAFVdQv_3ttr51rnQx-wVOZfkUXxij1yz4iMiQiARbsCRScjihnmG-7qMICgaAurXEALw_wcB&gclsrc=aw.ds",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/restaurants-from-home/s21ultra_phantom_black_back.jpg"
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "dynamic": "episodes",
-      "id": "restaurants-from-home",
-      "title": "Episodes",
-      "style": {
-        "scroll": true
-      }
-    }
-  ]
+	"title": "Restaurants from Home with Samsung KX",
+	"description": "Samsung KX x Hoppers Cookalong",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/restaurants-from-home/hoppers-kv.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/restaurants-from-home/Hoppers_1440x720.png",
+	"group": "restaurants-from-home",
+	"sort": 1,
+	"meta": {
+		"icon": "video",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 4,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "youtube",
+				"content": "ShOAv-ApWBI",
+				"poster": "{{lifestyle|restaurants-from-home|hoppers[image]}}",
+				"alt": ""
+			},
+			"style": {
+				"desktop": "top",
+				"mobile": "bottom"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Rustle up restaurant favourites in your own kitchen"
+				},
+				{
+					"type": "headline",
+					"copy": "Samsung KX collaborates with Sri Lankan hotspot, Hoppers, to bring the ultimate connected culinary experience to diners at home",
+					"level": "3"
+				}
+			]
+		},
+		{
+			"type": "wrapper",
+			"components": [
+				{
+					"type": "paragraphs",
+					"text": [
+						"<em style=\"font-style: italic;\">Welcome to Restaurants from Home with Samsung KX</em>. Samsung KX, the Hub of Innovation, has partnered with a line-up of King’s Cross’ most loved restaurants to inspire you to get creative in the kitchen. Each episode will include step-by-step instructions to recreate menu favourites from the comfort of home.",
+						"We’ve partnered with award-winning restaurant Hoppers - a Sri Lankan and South Indian restaurant in King’s Cross - to exclusively bring you the recipe of their bestselling ‘Banana Leaf Bream’. Boasting a showstopping, spicy fish supper, it guarantees to get taste buds tingling. Hoppers’ Director, Karen Gokani, rustles this up from the Samsung KX Connected Kitchen, where he uses the <a href=\"https://www.samsung.com/uk/cooking-appliances/ovens/electric-oven-nv75n5641rs-eu/\">Samsung Dual Flex Oven ™</a> and <a href=\"https://www.samsung.com/uk/apps/smartthings/\">SmartThings app</a> to help him cook up a storm, and snaps his final dish in Food Mode using <a href=\"https://www.samsung.com/uk/smartphones/galaxy-s21-5g/buy/?modelCode=SM-G996BZVGEUA&cid=UK_PPC_6388038105_FF~Eval:Brand%2BProd_ProjectU_Tease_KS~BAP_BS~IM_PR~SMART_SB~GS21_OB~SALES_PK~ROAS_FS~LHQ_MD~W_AI~N_MT~EXA_CA~KEW&gclid=Cj0KCQiA0-6ABhDMARIsAFVdQv_3ttr51rnQx-wVOZfkUXxij1yz4iMiQiARbsCRScjihnmG-7qMICgaAurXEALw_wcB&gclsrc=aw.ds\">Samsung Galaxy S21 Ultra 5G</a>."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Hopper’s Banana Leaf Bream (Serves two)",
+					"level": "3"
+				},
+				{
+					"type": "html-list",
+					"items": [
+						"1 whole sea bream scaled and gutted, or 2 fillets",
+						"150g fresh coriander",
+						"2 cloves garlic",
+						"1-inch ginger",
+						"1 green chillies",
+						"1 stem fresh lemongrass, (remove the drier, huskier layers and use only the first 2-3 inches of the white bit at the bottom)",
+						"3 tbsp fresh grated coconut, or 2 tbsp desiccated coconut soaked for 30 mins ",
+						"6-8 curry leaves (ideally fresh)",
+						"½ tsp turmeric powder",
+						"1 cardamom pod, seeds only",
+						"½ tsp fennel seeds",
+						"1 tsp cumin seeds",
+						"1 tsp tamarind paste",
+						"1/3 tsp sugar",
+						"1 tbsp coconut oil, or any neutral oil",
+						"1/2 lime, juiced",
+						"1/2 tsp sea salt",
+						"1 lime, to serve",
+						"1 large fresh Banana Leaf (you can use baking paper or foil if not!)",
+						"Kitchen Foil",
+						"A food processor or blender ",
+						"Side salad of choice and bottle of Riesling (optional)"
+					]
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"<br>",
+						"Make a paste of 1 tsp salt, the turmeric powder and lime juice. Rub all over the fillets and leave to rest for 15 mins.",
+						"Toast the cumin and fennel seeds in a dry pan for a couple of minutes and once cool blitz with all the remaining ingredients (except the fish!) in a food processor or smoothie maker to make a course paste, using a splash of water if required. Taste the paste to check for seasoning, add some more sea salt if required. Keep the paste fairly thick so it coats the fish well.",
+						"Run the banana leaf over a hot pan or submerge in boiling water for a few seconds. This makes the leaf flexible and prevents it from ripping when you wrap the fish. Put a generous amount of herb paste over each fillet and wrap individually in the banana leaf, followed by a layer of tinfoil on the outside. Scrunch together the edges of the foil to make a tent, leaving enough space for the fish to steam, do not wrap the fish too tightly.",
+						"Place the parcels on a baking-sheet and cook in an oven preheated to 160°C for 18-20 minutes or 12-14 minutes if using individual fillets.",
+						"Serve the parcels as they are so the delicious aromas waft out when they are opened on the table."
+					]
+				}
+			]
+		},
+		{
+			"type": "link-list",
+			"title": "Check out the products used in the cookalong here",
+			"items": [
+				{
+					"title": "Dual Cook Flex",
+					"url": "https://www.samsung.com/uk/cooking-appliances/ovens/electric-oven-nv75n5641rs-eu/",
+					"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/restaurants-from-home/Dual_Cook_Flex_Oven_th.jpg"
+				},
+				{
+					"title": "Family Hub",
+					"url": "https://www.samsung.com/uk/refrigerators/family-hub-fridge-freezers/",
+					"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/restaurants-from-home/Family_Hub_Lifestyle_th.jpg"
+				},
+				{
+					"title": "Galaxy S21 Ultra 5G",
+					"url": "https://www.samsung.com/uk/smartphones/galaxy-s21-5g/buy/?modelCode=SM-G996BZVGEUA&cid=UK_PPC_6388038105_FF~Eval:Brand%2BProd_ProjectU_Tease_KS~BAP_BS~IM_PR~SMART_SB~GS21_OB~SALES_PK~ROAS_FS~LHQ_MD~W_AI~N_MT~EXA_CA~KEW&gclid=Cj0KCQiA0-6ABhDMARIsAFVdQv_3ttr51rnQx-wVOZfkUXxij1yz4iMiQiARbsCRScjihnmG-7qMICgaAurXEALw_wcB&gclsrc=aw.ds",
+					"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/restaurants-from-home/s21ultra_phantom_black_back.jpg"
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "episodes",
+			"id": "restaurants-from-home",
+			"title": "Episodes",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
 }

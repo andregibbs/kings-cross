@@ -1,129 +1,133 @@
 {
-  "title": "Guest writer of the week: The Evolution of an Esports Player. By Level One",
-  "description": "How to improve gaming performance and positively impact health & wellbeing",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/14_evolution-of-esports-player.jpg",
-  "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/14_evolution-of-esports-player.jpg",
-  "group": "guest-writer-of-the-week",
-  "sort": 14,
-  "meta": {
-    "icon": "article",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "kv",
-      "media": {
-        "type": "image",
-        "content": "{{lifestyle|guest-writer-of-the-week|14[image]}}",
-        "alt": "{{lifestyle|guest-writer-of-the-week|14[alt]}}"
-      },
-      "style": {
-        "desktop": "right",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "copy": "The Evolution of an Esports Player"
-        },
-        {
-          "type": "headline",
-          "level": "2",
-          "copy": "By Level One"
-        }
-      ]
-    },
-    {
-      "type": "wrapper",
-      "components": [
-        {
-          "type": "paragraphs",
-          "text": [
-            "Like any traditional sport, the esports world is evolving as it has moved from a hobby for amateur players into a professional sport. At the top of the sport, professional players and teams have recognised the need to adopt  more traditional sports approaches to support the development and wellbeing of players.",
-            "Some Pro teams have started to appreciate the need to manage players health, wellbeing, fitness, nutrition, psychology, sleep and recovery. This has not yet filtered down to the wider community.",
-            "I have spent time analysing gamers and esports players using my experience as an Occupational Therapist to analyse the impact of gaming on players. In my world occupation is classified as the things people need or want to do or has to do to have a good quality of life, enjoy themselves or contribute to their society. I have used an occupational science model called PEOP which analyses the Person, their Environment, their Occupation and their Performance to look at esports players. In this article we will focus on the “Person” in the model and how the physiological, cognitive, spiritual and psychological factors can impact a player’s performance. If we start with physiological, we examine strength and flexibility but also look at sleep patterns, nutrition, levels of inactivity and stress. Perhaps the most obvious and widely publicised concern for gamers is the lack of inactivity and need for physical exercise. This is important of course and a physical exercise regime must be part of any players program. Other factors can have an equally significant impact on players wellbeing and performance."
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Stress",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Balancing the stresses of competition with the balance of normal life is not easy. Within competitive sports, the esports player has evolved to be one of the most committed sports people with a player often spending 6 days a week with up to 12 hours a day game time. Stress, anxiety and lack of sleep from long periods of gaming can all impact your performance. Operating at high levels of prolonged stress can have a long-term impact on your health. Ensuring as a player you have a mechanism to switch off and a routine that provides time for mental recovery and gives you an ability to get a good night’s sleep are critical. The duration of time playing also leads to a number of potential physical impacts, with the level of RSI (Repetitive Strain Injury) impacting a large number of players. One of the main causes is the ergonomics of the gaming setup most people play on."
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Nutrition",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Nutrition is another important factor - the right diet can enhance your overall health and energy levels and enhance your visual and auditory processes leading to improved performance as a player. I have visited gaming tournaments and seen players consuming high-caffeine and high-sugar drinks which can give a short-term benefit but over a prolonged period these can lead to high heart rate, high blood pressure and put players at risk of developing diabetes or heart disease."
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Cognition",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Cognition is how we think, how we problem solve. For the esports player this means hand-eye coordination, visual processing skills and speeds, and an ability to maintain focus but also capability to absorb multiple inputs of information. Positively, cognition is like a muscle, you can train it to increase its performance. A number of the factors already mentioned including diet, exercise and reduced stress can do wonders for your cognitive function. Problem solving and puzzles help you to recall information that is not in the forefront of your brain and help with abstract and critical thinking. Exercises in logic and reasoning as well as trying new things like learning a language or playing music can all help stimulate cognitive abilities."
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Spirituality",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Spirituality in the context of our  analysis is not specifically related to  religion but focuses on what gives you meaning, what motivates you, what drives you. For the esports player as with any sports person this is typically winning but it starts with the basics. For you as a player it may be the achievement of a personal goal within a particular game, it may be the social element of meeting other players and competing or it may be the opportunity to forge a career in a sport  you are passionate about. It is typical competitive behaviour for us to want to be the best as quickly as possible and by any means necessary, but actions, routines and performance have no bearing on one’s inner-self. Each of us must be mindful of what it is that motivates us and use that as a positive factor in our development."
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Psychological",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Psychological factors are diverse and range from a player’s personality, self-esteem to mental health and self-awareness. While some players are part of a team, many play alone or certainly practice in isolation. There is a perception that many gamers are introverted and by placing themselves under high-pressure to achieve results can suffer from anxiety and feelings of isolation and loneliness. One thing I have learned in this analysis is that esports is a community and a vibrant one that is keen to support one another. As a player it is important that you maintain a good life balance between time playing and time socialising or engaging with people. Reward yourself for your achievements as you progress and reach out to friends and family for emotional support when needed. Most importantly give yourself time to unwind and remove stress.",
-            "<br>",
-            "There are three things I’d recommend all players focus on as an initial step:",
-            "1) Adopt a mindful and sustainable approach to your game time. Ensure you control stress levels and have a balance between time gaming and time engaged in other activities.",
-            "2) Consider your set up and gaming environment. As you will be spending a large amount of time in the same place make sure it is supporting your body and be mindful of potential symptoms of RSI.",
-            "3) Manage your nutrition. Control your intake of higher sugar, higher fat foods and ensure you have a balanced diet.",
-            "All of us can improve our gaming performance and positively impact our health  and wellbeing. What is important is that all players of all levels take notice, occupational dysfunctions can dampen performance or limit it altogether if unchecked."
-          ]
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "<br>",
-            "<em><strong>By <a href=\"http://www.level-one.co.uk/\" target=\"_blank\">Level One</a> - A digital-first publication for the widest definition of modern gamer</strong></em>",
-            "<em>Level One represents lifestyle for modern gamers, through a belief that this is more than just the game. We explore the gamer universe with intellectual opinions, attitudes, contemporary thinking, journalistic swag, and digital flair – from competitive to casual, from fashion to mobility. The topics Level One covers are as diverse as the life of our connected readers. Level One is informative, entertaining, amusing, and inspiring, it discovers new trends, gives advice, and offers new points of view.</em>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "dynamic": "more-articles",
-      "id": "guest-writer-of-the-week",
-      "title": "More articles",
-      "style": {
-        "scroll": true
-      }
-    }
-  ]
+	"title": "Guest writer of the week: The Evolution of an Esports Player. By Level One",
+	"description": "How to improve gaming performance and positively impact health & wellbeing",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/14_evolution-of-esports-player.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/14_evolution-of-esports-player.jpg",
+	"group": "guest-writer-of-the-week",
+	"sort": 14,
+	"meta": {
+		"icon": "article",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 7,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "image",
+				"content": "{{lifestyle|guest-writer-of-the-week|14[image]}}",
+				"alt": "{{lifestyle|guest-writer-of-the-week|14[alt]}}"
+			},
+			"style": {
+				"desktop": "right",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "The Evolution of an Esports Player"
+				},
+				{
+					"type": "headline",
+					"level": "2",
+					"copy": "By Level One"
+				}
+			]
+		},
+		{
+			"type": "wrapper",
+			"components": [
+				{
+					"type": "paragraphs",
+					"text": [
+						"Like any traditional sport, the esports world is evolving as it has moved from a hobby for amateur players into a professional sport. At the top of the sport, professional players and teams have recognised the need to adopt  more traditional sports approaches to support the development and wellbeing of players.",
+						"Some Pro teams have started to appreciate the need to manage players health, wellbeing, fitness, nutrition, psychology, sleep and recovery. This has not yet filtered down to the wider community.",
+						"I have spent time analysing gamers and esports players using my experience as an Occupational Therapist to analyse the impact of gaming on players. In my world occupation is classified as the things people need or want to do or has to do to have a good quality of life, enjoy themselves or contribute to their society. I have used an occupational science model called PEOP which analyses the Person, their Environment, their Occupation and their Performance to look at esports players. In this article we will focus on the “Person” in the model and how the physiological, cognitive, spiritual and psychological factors can impact a player’s performance. If we start with physiological, we examine strength and flexibility but also look at sleep patterns, nutrition, levels of inactivity and stress. Perhaps the most obvious and widely publicised concern for gamers is the lack of inactivity and need for physical exercise. This is important of course and a physical exercise regime must be part of any players program. Other factors can have an equally significant impact on players wellbeing and performance."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Stress",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Balancing the stresses of competition with the balance of normal life is not easy. Within competitive sports, the esports player has evolved to be one of the most committed sports people with a player often spending 6 days a week with up to 12 hours a day game time. Stress, anxiety and lack of sleep from long periods of gaming can all impact your performance. Operating at high levels of prolonged stress can have a long-term impact on your health. Ensuring as a player you have a mechanism to switch off and a routine that provides time for mental recovery and gives you an ability to get a good night’s sleep are critical. The duration of time playing also leads to a number of potential physical impacts, with the level of RSI (Repetitive Strain Injury) impacting a large number of players. One of the main causes is the ergonomics of the gaming setup most people play on."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Nutrition",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Nutrition is another important factor - the right diet can enhance your overall health and energy levels and enhance your visual and auditory processes leading to improved performance as a player. I have visited gaming tournaments and seen players consuming high-caffeine and high-sugar drinks which can give a short-term benefit but over a prolonged period these can lead to high heart rate, high blood pressure and put players at risk of developing diabetes or heart disease."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Cognition",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Cognition is how we think, how we problem solve. For the esports player this means hand-eye coordination, visual processing skills and speeds, and an ability to maintain focus but also capability to absorb multiple inputs of information. Positively, cognition is like a muscle, you can train it to increase its performance. A number of the factors already mentioned including diet, exercise and reduced stress can do wonders for your cognitive function. Problem solving and puzzles help you to recall information that is not in the forefront of your brain and help with abstract and critical thinking. Exercises in logic and reasoning as well as trying new things like learning a language or playing music can all help stimulate cognitive abilities."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Spirituality",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Spirituality in the context of our  analysis is not specifically related to  religion but focuses on what gives you meaning, what motivates you, what drives you. For the esports player as with any sports person this is typically winning but it starts with the basics. For you as a player it may be the achievement of a personal goal within a particular game, it may be the social element of meeting other players and competing or it may be the opportunity to forge a career in a sport  you are passionate about. It is typical competitive behaviour for us to want to be the best as quickly as possible and by any means necessary, but actions, routines and performance have no bearing on one’s inner-self. Each of us must be mindful of what it is that motivates us and use that as a positive factor in our development."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Psychological",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Psychological factors are diverse and range from a player’s personality, self-esteem to mental health and self-awareness. While some players are part of a team, many play alone or certainly practice in isolation. There is a perception that many gamers are introverted and by placing themselves under high-pressure to achieve results can suffer from anxiety and feelings of isolation and loneliness. One thing I have learned in this analysis is that esports is a community and a vibrant one that is keen to support one another. As a player it is important that you maintain a good life balance between time playing and time socialising or engaging with people. Reward yourself for your achievements as you progress and reach out to friends and family for emotional support when needed. Most importantly give yourself time to unwind and remove stress.",
+						"<br>",
+						"There are three things I’d recommend all players focus on as an initial step:",
+						"1) Adopt a mindful and sustainable approach to your game time. Ensure you control stress levels and have a balance between time gaming and time engaged in other activities.",
+						"2) Consider your set up and gaming environment. As you will be spending a large amount of time in the same place make sure it is supporting your body and be mindful of potential symptoms of RSI.",
+						"3) Manage your nutrition. Control your intake of higher sugar, higher fat foods and ensure you have a balanced diet.",
+						"All of us can improve our gaming performance and positively impact our health  and wellbeing. What is important is that all players of all levels take notice, occupational dysfunctions can dampen performance or limit it altogether if unchecked."
+					]
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"<br>",
+						"<em><strong>By <a href=\"http://www.level-one.co.uk/\" target=\"_blank\">Level One</a> - A digital-first publication for the widest definition of modern gamer</strong></em>",
+						"<em>Level One represents lifestyle for modern gamers, through a belief that this is more than just the game. We explore the gamer universe with intellectual opinions, attitudes, contemporary thinking, journalistic swag, and digital flair – from competitive to casual, from fashion to mobility. The topics Level One covers are as diverse as the life of our connected readers. Level One is informative, entertaining, amusing, and inspiring, it discovers new trends, gives advice, and offers new points of view.</em>"
+					]
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "more-articles",
+			"id": "guest-writer-of-the-week",
+			"title": "More articles",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
 }

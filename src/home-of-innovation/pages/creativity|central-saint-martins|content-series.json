@@ -1,1640 +1,1641 @@
 {
-  "title": "The Home of the Future",
-  "description": "A digital exhibition in partnership with world-renowned arts and design college, Central Saint Martins, demonstrating the role of the home through the eyes of current students.",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/central-saint-martins/KV.jpg",
-  "alt": "Black cartoon outlines of household items such as cooking utensils, paint brushes and cleaning products",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/central-saint-martins/KV.jpg",
-  "media_path": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/central-saint-martins/media/",
-  "group": "central-saint-martins",
-  "sort": 1,
-  "meta": {
-    "icon": "video",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "css-snippet",
-      "content": "@media screen and (min-width: 769px) { .hoiKv:nth-child(even) .hoiKv__Components { order: -1 } }",
-      "__notes": "little snippet to alternate kv layout direction (desktop only)"
-    },
-    {
-      "type": "kv",
-      "media": {
-        "type": "image",
-        "content": "{{creativity|central-saint-martins[image]}}",
-        "alt": "{{creativity|central-saint-martins[alt]}}"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "copy": "{{creativity|central-saint-martins[title]}}"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "A digital exhibition in partnership with world-renowned arts and design college, Central Saint Martins."
-          ]
-        }
-      ]
-    },
-    {
-      "type": "wrapper",
-      "components": [
-        {
-          "type": "paragraphs",
-          "style": {
-            "large": true
-          },
-          "text": [
-            "Samsung KX, the Home of Innovation, and Central Saint Martins have teamed up to explore what happens at the cross-section of innovation and creative collaboration. Our partnership enables Samsung KX to generate opportunities for the next generation of creative pioneers to create and exhibit their work.",
-            "Our first collaboration is a digital exhibition, in partnership with <a href=\" https://www.arts.ac.uk/subjects/communication-and-graphic-design/postgraduate/ma-graphic-communication-design-csm\" target=\"_blank\">MA</a> and <a href=\" https://www.arts.ac.uk/subjects/illustration/undergraduate/ba-hons-graphic-communication-design-csm\" target=\"_blank\">BA</a> Graphic Communication Design students at Central Saint Martins, which demonstrates the role of the home through the eyes of current students.",
-            "The exhibition features a number of different creative approaches and highlights many of the challenges with which students are grappling including their limited resources while working remotely. The resulting work is a testament to the skill and ingenuity of this next creative generation."
-          ]
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Samsung KX is a community platform that hosts a range of content covering a diverse range of topics. The views expressed within this exhibition are solely those of the students and bear no reflection of Samsung’s brand views."
-          ]
-        }
-      ]
-    },
-
-    {
-      "type": "kv",
-      "share": false,
-      "media": {
-        "type": "video",
-        "content": "{{creativity|central-saint-martins|content-series[media_path]}}Penelope_Zouganeli.mp4",
-        "title": "Penelope Zouganeli, HuiChi Yang, Zhen Liu."
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "Penelope Zouganeli, HuiChi Yang & Zhen Liu"
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": "The Fridge"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "The objective is to playfully re-imagine the usage of ordinary artefacts found in a common household. We chose the fridge for this video to explore it as a personal space that carries the character of its owner.",
-            "<a href=\"https://www.instagram.com/penelopezgnl\" target=\"_blank\">@penelopezgnl</a>",
-            "<a href=\"https://www.instagram.com/hcdopeee\" target=\"_blank\">@hcdopeee</a>",
-            "<a href=\"https://www.instagram.com/uilzzz\" target=\"_blank\">@uilzzz</a>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "kv",
-      "share": false,
-      "media": {
-        "type": "video",
-        "content": "{{creativity|central-saint-martins|content-series[media_path]}}Luke_Davies.mp4",
-        "title": "Luke Davies"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "Luke Davies"
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": "New Home"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Inspired by the creativity that has been around me since moving home, I wanted my work to express how my whole family is having fun being creative in this time; stepping away from the negative news and embracing this time to learn new things and spend family time together. However, alongside this fun is the need to work and go to school, which all of us have been through our laptops and phones and the reason why this video is all digital. Hopefully, this video inspires others to learn something new while we have all of this extra time.",
-            "<a href=\"https://www.instagram.com/Luke.Luke2001\" target=\"_blank\">@Luke.Luke2001</a>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "kv",
-      "share": false,
-      "media": {
-        "type": "video",
-        "content": "{{creativity|central-saint-martins|content-series[media_path]}}Didara_Abdirakhman.mp4",
-        "title": "Didara Abdirakhman"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "Didara Abdirakhman"
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": "Homeformation"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Home isn’t something instantaneous – you build it up, and your memories are the building blocks. Sometimes, a place can stop being your home – but after you lose your home, once it gets completely deconstructed, you begin creating a new one, brick after brick. Times are changing, but the concept of a “home” always remains the same. It’s a collection of memories associated with a certain time and place in your life, a reflection of your experience. A home isn’t something you get. It’s something you create.",
-            "<a href=\"https://www.instagram.com/sketchydida\" target=\"_blank\">@sketchydida</a>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "kv",
-      "share": false,
-      "media": {
-        "type": "video",
-        "content": "{{creativity|central-saint-martins|content-series[media_path]}}Daria_Antropova.mp4",
-        "title": "Daria Antropova"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "Daria Antropova"
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": "Welcome to my room"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "I came across an article by Christian Jarrett ‘The psychology of stuff and things’. Here he argues that our belongings are extensions of the self, they reflect who people are, ‘or at least how they would like to see themselves’. Having this quote by William James in mind ‘a man’s self is the sum total of all that he can call his’, I wanted to explore identity and the authentic self.\n\nIn the time of global self-isolation, my room was almost the only place for me to publish anything. I transferred to digital space as I wanted to explore the consequences of decontextualisation of objects, and also the physical objects ‘value’ in a non-physical space.",
-            "<a href=\"https://www.instagram.com/antropova_dasha\" target=\"_blank\">@antropova_dasha</a>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "kv",
-      "share": false,
-      "media": {
-        "type": "video",
-        "content": "{{creativity|central-saint-martins|content-series[media_path]}}Athena_Kong_Samsung.mp4",
-        "title": "Wing Tung Kong"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "Wing Tung Kong"
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": "Home of Gratitude"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "As everyone has to stay home for quarantine, interactions with the outside has become extremely diﬃcult. These illustrations aim to comfort to people during the current pandemic, making people realise how grateful we should be to have those little moments of human interactions in life.",
-            "<a href=\"https://www.instagram.com/aar.kw.t\" target=\"_blank\">@aar.kw.t</a>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "kv",
-      "share": false,
-      "media": {
-        "type": "video",
-        "content": "{{creativity|central-saint-martins|content-series[media_path]}}Rocio_Rey.mp4",
-        "title": "Rocio Rey"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "Rocio Rey"
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": "Today’s home"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "In a speculative future where the concept of ‘home’ as specific place we return to has been outdated, technology advances allow people to choose daily where they go back to. Each person has a designated room full with nothing but screens displaying places, people, and sensations, among others, each person has picked beforehand. Every day people are able to select which home they want to return to. By tapping the screen, they’ll be transported to it.",
-            "<a href=\"https://www.instagram.com/rociproc0\" target=\"_blank\">@rociproc0</a>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "kv",
-      "share": false,
-      "media": {
-        "type": "video",
-        "content": "{{creativity|central-saint-martins|content-series[media_path]}}Connie_Boeree.mp4",
-        "title": "Connie Boeree"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "Connie Boeree"
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": "No Place Like Home"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Where do you feel at home? With recent travel being severely restricted, we no longer have the choice to inhabit our collective home with the same freedom we once did. As the future still lies in a great deal of uncertainty, more than ever, I feel compelled to question whether I feel at home or trapped in my own skin? This sequence of images features visual comparisons of two of my photographic archives, one of the earth's surfaces and one of the surfaces of my skin. By presenting these two zoomed out and zoomed in perspectives, I hope to provoke a sense of wonder and speculation towards two irreplaceable places we call home. (Music by Luke Shaw )",
-            "<a href=\"https://www.instagram.com/connieboeree\" target=\"_blank\">@connieboeree</a>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "kv",
-      "share": false,
-      "media": {
-        "type": "video",
-        "content": "{{creativity|central-saint-martins|content-series[media_path]}}Zora_Zixuan_Xu.mp4",
-        "title": "Zora (Zixuan) Xu"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "Zora (Zixuan) Xu"
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": "Holiday of Imagination"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Home is there, it is not unchangeable. Once you use your imagination, the surrounding is thriving. You could play on a swing and have a picnic in a park once wake up. The brunch will be in a lovely cafe with a cup of oat latte. Later on, your favourite shop is hosting a private sale which you could go to have a look. The shower time won't be boring because you are surfing on the sea. When the light is off, I’m sure you have had a good day.",
-            "<a href=\"https://www.instagram.com/zora_isok\" target=\"_blank\">@zora_isok</a>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "kv",
-      "share": false,
-      "media": {
-        "type": "video",
-        "content": "{{creativity|central-saint-martins|content-series[media_path]}}TigrisLi.mp4",
-        "title": "TigrisLi"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "Tigris Li"
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": "Interspecies Living"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "This kitchen and living room shows a glimpse at a potential interspecies living space – where we can co-exist with living organisms and intertwine with plants. This contributes towards a sustainable nutritional cycle whilst also benefiting from plants that naturally photosynthesize and purifies the silent chemical vapors of our indoor living space. From a dandelion coffee roaster, to a vertical farm that uses the brewed dandelion grounds and hydroponics for optimized space and maximized yield count, this can all be found in the comfort of one’s own home.",
-            "<a href=\"https://www.instagram.com/tigrisli\" target=\"_blank\">@tigrisli</a>"
-          ]
-        }
-      ]
-    },
-
-
-    {
-      "type": "kv",
-      "share": false,
-      "media": {
-        "type": "video",
-        "content": "{{creativity|central-saint-martins|content-series[media_path]}}Braydon_Walmsley.mp4",
-        "title": "Braydon Walmsley"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "Braydon Walmsley"
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": "Dust Bunnies"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Life in a student accommodation building is typically very animated and loud, but with the sudden outbreak the building has become seemingly abandoned; not a sound made throughout the night and not a person to be seen throughout the day. I was unable to return home to Australia due to flight restrictions, and so have been stuck in this building all by myself. “Bringing life back into the building” was the concept that guided this project. The animated characters, the dust bunnies, symbolise a sense of company despite being alone as I know there are countless others in a similar situation to me. (Support from Joey Gonzales)",
-            "<a href=\"https://www.instagram.com/braydon.design\" target=\"_blank\">@braydon.design</a>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "kv",
-      "share": false,
-      "media": {
-        "type": "video",
-        "content": "{{creativity|central-saint-martins|content-series[media_path]}}Carmen_Fribbins.mp4",
-        "title": "Carmen Fribbins"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "Carmen Fribbins"
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": "Bringing the Outside In"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "The concept for my outcome stemmed from exploring what is no longer accessible to us during isolation and then how I could make those things accessible in alternate ways. The video explores a way in which people from across the world can come together and bring elements of nature into their homes. This comes at a time where a large majority of people are quarantined inside and when nature and fresh air is not as freely accessible to everyone as it once was, due to the restrictions placed upon us for our safety.\n\nThe method of projection I used, camera obscura, using the manipulation of light through a homemade pin hole camera, enables the outside view from a window to be projected onto the opposite wall inside your home with very few materials that are easily accessible to everyone. Therefore, for those who live in flats, have no garden or have limited access to the outside world can connect with nature in an alternate way.",
-            "<a href=\"https://www.instagram.com/carmenfribbinsart\" target=\"_blank\">@carmenfribbinsart</a>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "kv",
-      "share": false,
-      "media": {
-        "type": "video",
-        "content": "{{creativity|central-saint-martins|content-series[media_path]}}Flora_Hay.mp4",
-        "title": "Flora Hay"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "Flora Hay"
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": "Household Paraphernalia"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Finding myself at home again, I was surrounded by familiar objects that I have grown up with. I have taken the time to examine these objects and open boxes to reveal their inner secrets. What interests me is that these objects covered in layers of dust have existed for decades from generation to generation and although I believe the future demands our acceptance, these objects will continue alongside us, regaling their stories changing with every retold memory, they will continue to grow alongside the objects and technologies of the future, pinned to our lives with their blanket of dusty recollections.",
-            "<a href=\"https://www.instagram.com/hayfloradesign\" target=\"_blank\">@hayfloradesign</a>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "kv",
-      "share": false,
-      "media": {
-        "type": "video",
-        "content": "{{creativity|central-saint-martins|content-series[media_path]}}Changhyo_Kim.mp4",
-        "title": "Changhyo Kim"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "Changhyo Kim"
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": "Home Screen"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "This video responds to “How are homes being transformed? And how will they transform in the future?” Historically, ‘home’ has been transformed a lot and it will continually. We are living in a digital world and there is no longer a physical ‘home’ but there is a ‘home’ screen. Like you open the door and get into your home, you open the smartphone and get into your ‘home’.",
-            "<a href=\"https://www.instagram.com/sensasian_k\" target=\"_blank\">@sensasian_k</a>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "kv",
-      "share": false,
-      "media": {
-        "type": "video",
-        "content": "{{creativity|central-saint-martins|content-series[media_path]}}Jiahui_Qiu.mp4",
-        "title": "Jiahui Qiu"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "Jiahui Qiu"
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": "Traveling at Home"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "This film is about traveling at home, recording a daily journey within the apartment during quarantine. The idea is based on photographs in a digital album, where I recall my memories of time, location and journeys from previous holidays. The lines simply visualise a route over the floor plan, which transforms to the shape of blocks and colour. These recording method experiments take many shapes: images, films, notes, and generate different visuals.",
-            "<a href=\"https://www.instagram.com/NA\" target=\"_blank\">@NA</a>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "kv",
-      "share": false,
-      "media": {
-        "type": "video",
-        "content": "{{creativity|central-saint-martins|content-series[media_path]}}Fernanda_Duarte.mp4",
-        "title": "Fernanda Duarte"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "Fernanda Duarte"
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": "Lockdown, May/2020"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Being stuck during a pandemic in such a small space, day after day, changed my perspective about my surroundings. I started to see my flat in different ways and position myself in a different reality. With all the current restrictions because of the virus, we had to take measures and change our lifestyle completely, in consequence to that, it eliminated and restricted my space even more. This made me think about the walkable space I have here and I decided to develop my work upon that, a floating platform that guides towards a portal into different realities, representing how my feelings during this quarantine have influenced and changed my perspective.",
-            "<a href=\"https://www.instagram.com/fafduarte\" target=\"_blank\">@fafduarte</a>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "kv",
-      "share": false,
-      "media": {
-        "type": "video",
-        "content": "{{creativity|central-saint-martins|content-series[media_path]}}Florrie_Smith.mp4",
-        "title": "Florrie Smith"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "Florrie Smith"
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": "The Future is Technology"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "This room is an interpretation of a technology driven world design with imagination.\nThrough self-observation, I was able to see that we are encouraged to rely on technology, especially in this pandemic. As a result, our screens are becoming the new virtual architectures we inhabit ourselves in and become familiar with.\nOur devices are becoming a trap, stopping us from noticing what is going on in the outside world, damaging our perspective on life.\nWill people start to expect our physical spaces to act like our virtual ones?\nOur virtual worlds are so attractive purely because you can design it however you want. Erase all the negativity and devastation to have a virtual location that suits you. \nWill we ever need to leave home if everything is accessible through our screens?",
-            "<a href=\"https://www.instagram.com/florriesmith\" target=\"_blank\">@florriesmith</a>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "kv",
-      "share": false,
-      "media": {
-        "type": "video",
-        "content": "{{creativity|central-saint-martins|content-series[media_path]}}Hannah_Meah.mp4",
-        "title": "Hannah Meah"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "Hannah Meah"
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": "Somewhere Else"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Right now many of us feel disconnected from the world around us. Holidays have been cancelled and new experiences postponed. So perhaps we can ﬁnd comfort in a kind of nostalgia? And perhaps this experience could be felt in a far more immersive and visceral manner? These two animated illustrations pose for a future where, even from your terraced house on Holloway road, you could be enjoying your breakfast in Italy, Spain or Portugal. You could look out and see the faces of your friends and family and  remember in a vividly dynamic way what is was like to be somewhere in another time and another place.",
-            "<a href=\"https://www.instagram.com/hnmeahdesign\" target=\"_blank\">@hnmeahdesign</a>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "kv",
-      "share": false,
-      "media": {
-        "type": "video",
-        "content": "{{creativity|central-saint-martins|content-series[media_path]}}Vasilisa_Petrova.mp4",
-        "title": "Vasilisa Petrova"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "Vasilisa Petrova"
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": "Homes Alive"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "The animation explores the metaphoric notion of a home as an ever-expanding organism. By drawing a link between a house and its inhabitant, I compare the internal changes within the person and the shifts in their surroundings. The physical appearance of one’s home is always distinct, as such, it is the ethereal vision of home that appeals to me. Home in the perspective of this animation is not a physical space, but the intangible, that can only exist and change along the constantly evolving mind of the inhabitant.",
-            "<a href=\"https://www.instagram.com/SKASCA\" target=\"_blank\">@SKASCA</a>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "kv",
-      "share": false,
-      "media": {
-        "type": "video",
-        "content": "{{creativity|central-saint-martins|content-series[media_path]}}Amandine_Forest.mp4",
-        "title": "Amandine Forest"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "Amandine Forest"
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": "Patterns of Behaviour"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "When I considered how my home has changed recently, I realised that the repetition of the conﬁned space has made me extremely reﬂective of my life, day by day. My home has transformed into a meditation garden, a safe and familiar place that pushes me to ponder. This gave me the idea to create a visual diary of my thoughts and actions, showing how my home is now making me more aware of myself. I titled it ‘Patterns of Behaviour’ because I have settled into a routine over the course of this pandemic.",
-            "<a href=\"https://www.instagram.com/malice.studio\" target=\"_blank\">@malice.studio</a>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "kv",
-      "share": false,
-      "media": {
-        "type": "video",
-        "content": "{{creativity|central-saint-martins|content-series[media_path]}}Olivia_Alexander.mp4",
-        "title": "Olivia Alexander"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "Olivia Alexander"
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": "Feeling Flat"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Lockdown brought about a stillness in my flat. \nNo comings, no goings, no places to be. \nTime has both stopped, and become endless.\nOver the last 8 weeks I have watched the light drift around my room, transforming the mundane scenery of my flat throughout the day. Home is a place of safety and rest, but in being isolated from the people I love, my space has begun to feel empty and lonely. In my video I wanted to communicate these evolving emotions about my experience in lockdown, and how my feelings have changed towards my home as a result.",
-            "<a href=\"https://www.instagram.com/olivia.alexander.design\" target=\"_blank\">@olivia.alexander.design</a>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "kv",
-      "share": false,
-      "media": {
-        "type": "video",
-        "content": "{{creativity|central-saint-martins|content-series[media_path]}}Gyuri_Kim.mp4",
-        "title": "Gyuri Kim"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "Gyuri Kim"
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": "Home : Space for the space of the objects"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "In most cases in our lives, we tend to focus on objects and almost never focus on the space that these objects occupy. Because of this, I wanted to talk about the 'space' as it is, in the absence of the objects that occupy it. The idea of ‘negative space’ connects the fact that all of my objects come from my home. I wanted to create a space to show the ‘space’ through a virtual exhibition.",
-            "<a href=\"https://www.instagram.com/flvincent_\" target=\"_blank\">@flvincent_</a>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "kv",
-      "share": false,
-      "media": {
-        "type": "video",
-        "content": "{{creativity|central-saint-martins|content-series[media_path]}}George_MacLand.mp4",
-        "title": "George MacLand"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "George MacLand"
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": "I am the Mess in my Room"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Being back at home home for longer than expected (for obvious reasons) I have found myself in my room most of the time. I'll admit, I've never been the tidiest person, but lockdown seems to have taken it to some new unprecedented levels of messiness, finding all kinds of random tat that's been hiding in my cupboards for years. And with that, I give you this: a collection of things I've found in my room which manage to sum up my worry, in a pile on my floor. A self portrait, if you will.",
-            "<a href=\"https://www.instagram.com/georgemaclandyourewelcome\" target=\"_blank\">@georgemaclandyourewelcome</a>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "kv",
-      "share": false,
-      "media": {
-        "type": "video",
-        "content": "{{creativity|central-saint-martins|content-series[media_path]}}HuiChi_Yang.mp4",
-        "title": "HuiChi Yang, Penelope Zouganeli, Zhen Liu."
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "HuiChi Yang, Penelope Zouganeli & Zhen Liu"
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": "The Bedroom"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "In our video we explored surveillance. Our homes now have claimed the primal role in our lives. It is not any longer just a base or a shelter. It is an extension of our bodies and minds. Therefore, it is only natural external forces would be interested in our spaces.",
-            "<a href=\"https://www.instagram.com/hcdopeee\" target=\"_blank\">@hcdopeee</a>",
-            "<a href=\"https://www.instagram.com/penelopezgnl\" target=\"_blank\">@penelopezgnl</a>",
-            "<a href=\"https://www.instagram.com/uilzzz\" target=\"_blank\">@uilzzz</a>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "kv",
-      "share": false,
-      "media": {
-        "type": "video",
-        "content": "{{creativity|central-saint-martins|content-series[media_path]}}Louise_Grosjean.mp4",
-        "title": "Louise Grosjean"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "Louise Grosjean"
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": "Inward"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "“[Visualisation] works most powerfully when you realise that it is already a reality on the unseen level. It's already there” Eckhart Tolle \n\nThe current situation has conﬁned most of us to a certain space for an extended amount of time and some people (including myself) are ﬁnding it difﬁcult to stay creative when the space around us is stagnant. This animation was inspired by the way I mentally “escape” or transform my home by looking in and by doing all sorts of activities I personally enjoy. Visualisation is part of my daily routine and it helps me stay grounded and inspired so I thought I would visually share that with whoever is ﬁnding their space too constricting.",
-            "<a href=\"https://www.instagram.com/loowizdesign\" target=\"_blank\">@loowizdesign</a>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "kv",
-      "share": false,
-      "media": {
-        "type": "video",
-        "content": "{{creativity|central-saint-martins|content-series[media_path]}}James_Mackenzie.mp4",
-        "title": "James Mackenzie"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "James Mackenzie"
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": "Sharing"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "I just miss passing a cup of tea to my friend. I miss having small talk as the kettle boils, and I miss having them in my home. Only now when our homes are symbols of isolation, do I realise there is something so unique and intimate in inviting a friend around for a cuppa. All I want to do is to share a little bit more than our virtual conversation and to reach through the screen and pass a cup of tea to my mate.",
-            "<a href=\"https://www.instagram.com/jmackenzie.co.uk\" target=\"_blank\">@jmackenzie.co.uk</a>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "kv",
-      "share": false,
-      "media": {
-        "type": "video",
-        "content": "{{creativity|central-saint-martins|content-series[media_path]}}Imogen_Fox.mp4",
-        "title": "Imogen Fox"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "Imogen Fox"
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": "Plants"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "The way we perceive the world controls how we live in it. Our perceptions are based around the interactions we have with the environment. The way we grow. The way we watch things grow. A particularly special object for me to have in my environment is flowers and plants, developing a positive living space. The flower is a global symbol for happiness and collective identity. Plants generate happiness, accelerate healing process, improves relationships and compassion, improves human performance and energy. My animation aims to attempt an emotional connection within the watching experience. During a pandemic, this has heightened my beliefs that we are the communicative plants of the earth.",
-            "<a href=\"https://www.instagram.com/foxhotline\" target=\"_blank\">@foxhotline</a>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "kv",
-      "share": false,
-      "media": {
-        "type": "video",
-        "content": "{{creativity|central-saint-martins|content-series[media_path]}}Mansi_Agarwal.mp4",
-        "title": "Mansi Agarwal"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "Mansi Agarwal"
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": "Walls of our Home"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "We have seen the transformation of concrete walls to glass walls, houses and buildings. Could one day these glass walls become digital screens? Inspired by this thought and our current situation, which has made us so accustomed to interacting with technology all the time, this idea of walls as screens can be thought as of both a potential utopia and dystopia. This largely influenced my overall colour palette for the visuals which is a combination of both grayscale and colourful elements. However, visualising this utopian/ dystopian future is left to the imagination of the viewer.",
-            "<a href=\"https://www.instagram.com/mansi_28099\" target=\"_blank\">@mansi_28099</a>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "kv",
-      "share": false,
-      "media": {
-        "type": "video",
-        "content": "{{creativity|central-saint-martins|content-series[media_path]}}Tooey_Jones.mp4",
-        "title": "Tooey Jones"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "Tooey Jones"
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": "Testimony to life in Lockdown"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "I asked 40 people the question: “What colour do you think represents life in lockdown?” and used the responses to document their emotional and personal experiences. \n\nI have created an interpretation of a ‘Memory Jug’. Traditionally, the surface would be covered with objects associated with a person but I have chosen to decorate my memory jug using the colours that people associated with their experiences of living in lockdown.\n\nAs a comment on our human fragility, I make a connection between the spacing typically used to prevent damage to artifacts in galleries and the introduction of social distancing during the global pandemic.",
-            "<a href=\"https://www.instagram.com/tooeyjones\" target=\"_blank\">@tooeyjones</a>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "kv",
-      "share": false,
-      "media": {
-        "type": "video",
-        "content": "{{creativity|central-saint-martins|content-series[media_path]}}Jessie_Liang.mp4",
-        "title": "Jessie Liang"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "Jessie Liang"
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": "The World in Your Home"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Technology is quickly expanding what can happen in a home. From video calls to online shopping, almost everything can now be done without leaving the house. With the introduction of home VR systems, we are getting closer and closer to being able to transform homes into everything. Something we are still missing is being able to have 3D displays such as holograms immersed into our surroundings. When holograms are possible, the online digital interactions we have at home will be a lot more tangible and realistic. We will be able to invite people over from anywhere in the world or bring a location to us.",
-            "<a href=\"https://www.instagram.com/designedbyjessieliang\" target=\"_blank\">@designedbyjessieliang</a>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "kv",
-      "share": false,
-      "media": {
-        "type": "video",
-        "content": "{{creativity|central-saint-martins|content-series[media_path]}}Jinhye_Park.mp4",
-        "title": "Jinhye Park"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "Jinhye Park"
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": "Defence 2020"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "People have been suffering from coronavirus pandemic and are anxious about going out. People have to work from home or go out wearing masks. People used to sunbathe or read books in the courtyard, yet even this situation is now considered risky. I made these clips with a comfortable house concept, we can protect ourselves from the virus with the metaphorical force field effect.",
-            "<a href=\"https://www.instagram.com/nischeom\" target=\"_blank\">@nischeom</a>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "kv",
-      "share": false,
-      "media": {
-        "type": "video",
-        "content": "{{creativity|central-saint-martins|content-series[media_path]}}Sophia_Conroy_Iglesias.mp4",
-        "title": "Sophia Conroy-Iglesias"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "Sophia Conroy-Iglesias"
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": "What Quarantine Stole from Me"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "An extract from my short film, What Quarantine Stole from Me. Showcasing a mixture of my own and found videos, projected across areas of my home. Inspired by the concept of bringing the outside in from an earlier photography series of mine titled Stay Home: bringing the outside in, I wanted to transform my home in a way that still allowed me to have the experiences of the outside world and everything that comes with it; the noise, the contact, the ocean, the liberty, the earth and the warmth – from which we have been restricted from.",
-            "<a href=\"https://www.instagram.com/sophiaconroyiglesias\" target=\"_blank\">@sophiaconroyiglesias</a>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "kv",
-      "share": false,
-      "media": {
-        "type": "video",
-        "content": "{{creativity|central-saint-martins|content-series[media_path]}}Pranjali_Gore.mp4",
-        "title": "Pranjali Gore"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "Pranjali Gore"
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": "In the comfort of the Pliant Glass Panel"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "These days due to the pandemic the only way to make any kind of connections with the outside world is through a rectangular piece of glass. Since most of us are working or studying from home, we can allow ourselves to be a bit more flexible and comfortable in our work/study style than before. This situation may have a lot of disadvantages but I want to shed some light on the positive side of it and INSPIRE people to stay positive.",
-            "<a href=\"https://www.instagram.com/g.p.illustrations\" target=\"_blank\">@g.p.illustrations</a>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "kv",
-      "share": false,
-      "media": {
-        "type": "video",
-        "content": "{{creativity|central-saint-martins|content-series[media_path]}}Hae_Dn_Kim.mp4",
-        "title": "Hae Dn Kim"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "Hae Dn Kim"
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": "Coexistence: home reconnects humans with nature"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "During the lockdown in London, I was stuck in my room alone imagining wherever I could go. Looking through a window or digital screens became the only means to reconnect human with humans and other beings.  A series of ‘Coexistence’ shows a speculative space exploring and expanding the connection with nature, from the perspective of our future homes. Starting from the square frame as a portal of the house to reach the ecological world, this experience could alter the way we access to nature at home and can be materialised in the future.",
-            "<a href=\"https://www.instagram.com/had_not\" target=\"_blank\">@had_not</a>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "kv",
-      "share": false,
-      "media": {
-        "type": "video",
-        "content": "{{creativity|central-saint-martins|content-series[media_path]}}Valerie_Lianggara.mp4",
-        "title": "Valerie Lianggara"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "Valerie Lianggara"
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": "Always Find Your Way Back Home"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Home. A simple yet perplexing word. What does  ‘home’ mean? A place that goes deep inside you? A place where you were raised?  Or perhaps a place where you dream of being? Home can be anywhere, and I’d like  to think that home has more to do with the feeling a certain environment or  atmosphere gives you and less to do with a specific location or piece of soil.",
-            "<a href=\"https://www.instagram.com/valyvisuals\" target=\"_blank\">@valyvisuals</a>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "kv",
-      "share": false,
-      "media": {
-        "type": "video",
-        "content": "{{creativity|central-saint-martins|content-series[media_path]}}Vlad_Balan.mp4",
-        "title": "Vlad Balan"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "Vlad Balan"
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": "Home Arrest"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Home Arrest - what a luxurious jail. The nightmare of being back in Shropshire, stuck in the house with my parents, has become a reality very quickly as the virus mounted pressure on our every day lives. After months of thriving on London’s gracious energy, I am now back in a place of which I don’t even know if I can call home, let alone feel inspired by.\nWhat may look like a very modern room to some, it is truly a soulless contraption to which I have been assigned for an undetermined amount of time. All my negative emotions have managed to bubble over and come out during my time of solitude, as my mind was soaring through all the happy memories that I had in London, I was left with a profound bitter taste in my mouth whilst comparing the so called glory days to the current situation.",
-            "<a href=\"https://www.instagram.com/foreignmindset\" target=\"_blank\">@foreignmindset</a>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "kv",
-      "share": false,
-      "media": {
-        "type": "video",
-        "content": "{{creativity|central-saint-martins|content-series[media_path]}}Zhamilya_Adamsopiyeva.mp4",
-        "title": "Zhamilya Adamsopiyeva"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "Zhamilya Adamsopiyeva"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "This project is about reinventing your space in a way of benefiting your mental and physical health. Due to this hard time it's difficult to stay in contact with nature as it was before the lockdown. My aim for this project was to share my emotions as well as a way of making people aware of the importance that nature holds in our life, plants are our friends and we should take care of our friends. In our fast modern life it’s easy to forget the simple truth, which is the importance of our connection with one another, our matter of survival is fully rely on us caring\nabout our world around us. \nNature is the best medicine to fight against the emotional stress and\nanxiety, especially during hard time as we facing now. Plants is one of the permanent thing around you, always there to brighten up the room around you, wherever you are, make it more alive and less lonely. Idea of this project is even if you are stuck at one place there is always a way to reconnect with the important things, such as nature for me and share the kindness with other\npeople around you, who are quarantined same as you.",
-            "<a href=\"https://www.instagram.com/\" target=\"_blank\">@</a>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "kv",
-      "share": false,
-      "media": {
-        "type": "video",
-        "content": "{{creativity|central-saint-martins|content-series[media_path]}}Joshua_Cho.mp4",
-        "title": "Joshua Cho",
-        "loop": "true"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "Joshua Cho"
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": "An Imaginary Indoor Playground"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Based on the placement of furniture and other interesting elements in my small bedroom, I tried to reimagine this space as a playground.The procedure of each working step can be seen in chronological order. This outcome aims to alter the perception that people have with their living spaces. It gives viewers the opportunity to try reimagining their spaces in a more playful and creative way. I felt it would bring a sense of joy and brightness to the viewers, especially during these times of uncertainty and anxiousness whilst in lockdown.",
-            "<a href=\"https://www.instagram.com/sounghyun_a.ch\" target=\"_blank\">@sounghyun_a.ch</a>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "kv",
-      "share": false,
-      "media": {
-        "type": "video",
-        "content": "{{creativity|central-saint-martins|content-series[media_path]}}Ellen_Huynh.mp4",
-        "title": "Ellen Huynh"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "Ellen Huynh"
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": "Home is…"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "With current thoughts of what makes a home being highly influenced by current circumstances, past conceptions of it as a comfortable haven are evidently outdated. What I have tried to portray mirrors this alternative perspective, viewing the house as a multifaceted facility. Contemporary life at home has changed the architecture to almost resemble a microcosm of the world outside. One where the space can be transformed into a studio, a cinema and even a local restaurant. Whilst it cannot compete in terms of experience, living indoors for extended amounts of time seems plainly plausible. Surprisingly giving hope, but also despair.",
-            "<a href=\"https://www.instagram.com/ehllenn\" target=\"_blank\">@ehllenn</a>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "kv",
-      "share": false,
-      "media": {
-        "type": "video",
-        "content": "{{creativity|central-saint-martins|content-series[media_path]}}Julia_Morell_Gagnum.mp4",
-        "title": "Júlia Morell Gagnum"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "Júlia Morell Gagnum"
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": "LANDESCAPES"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "This short animated collage explores the idea of the home as a canvas.  During this time of uncertainty, the home has become more important than ever before. It has been our reality, our context. In my apartment, I’ve been drawn to the physical limitations of my space. \nThe video presents new imaginary worlds through a dialogue between the interior and exte-rior, located precisely in the frontier between the house and the interior patio of my block. The modification of the clothes lines, an everyday object, is a medium that gives way to a world of lacking sceneries.",
-            "<a href=\"https://www.instagram.com/juls_morell\" target=\"_blank\">@juls_morell</a>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "kv",
-      "share": false,
-      "media": {
-        "type": "video",
-        "content": "{{creativity|central-saint-martins|content-series[media_path]}}Yurong_Ni.mp4",
-        "title": "Yurong Ni"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "Yurong Ni"
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": "My world"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Home has became the safe place l stay during this special time. I suddenly notice the sounds around me during the quarantine — the birds outside, my cat and my family. The home became the box that trapped me.",
-            "<a href=\"https://www.instagram.com/nyrrrrrrrrrrr\" target=\"_blank\">@nyrrrrrrrrrrr</a>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "kv",
-      "share": false,
-      "media": {
-        "type": "video",
-        "content": "{{creativity|central-saint-martins|content-series[media_path]}}Sacha_Heneine_Jessie_Liang.mp4",
-        "title": "Sacha Heneine + Jessie Liang"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "Sacha Heneine \nJessie Liang"
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": "Traffic vs Traffic"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "The purpose of this video is to portray how traﬃc has transformed completely, shifting from one highway to another, is this the new normal?  We compared empty streets surrounding our homes and the digital life and sounds of the internet pinging in our ears and overwhelming our personal home which is our mind.  Although from outside it seems as if the world is silent, there is chaos going on in the weird space that is our mind and the internet. Indeed nowadays we can say that we live a digital life.",
-            "<a href=\"https://www.instagram.com/Sacha Heneine \ndesignedbyjessieliang\" target=\"_blank\">@Sacha Heneine \ndesignedbyjessieliang</a>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "kv",
-      "share": false,
-      "media": {
-        "type": "video",
-        "content": "{{creativity|central-saint-martins|content-series[media_path]}}Haoran_Niu.mp4",
-        "title": "Haoran Niu"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "Haoran Niu"
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": "Cat changed my quarantine life."
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "When I am bored by the quarantine, I find that my cat often finds something interesting hidden in my room which is difficult to notice. It encourages me to rediscover my bedroom. I used the story between my cat and I to create this comic to encourage different perspectives of your own room - just like a cat. Maybe there are some surprises hidden in the corners, you did not notice before.",
-            "<a href=\"https://www.instagram.com/haoran.new\" target=\"_blank\">@haoran.new</a>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "kv",
-      "share": false,
-      "media": {
-        "type": "video",
-        "content": "{{creativity|central-saint-martins|content-series[media_path]}}Stacey_Yu.mp4",
-        "title": "Stacey Yu"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "Stacey Yu"
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": "Rooms in Mind"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Social media has become part of our everyday life. While inspecting online habits, I found that I often felt anxious and overthink a lot when I was making publishes. This clip documents the responses of others, their habits and anxiousness. \n\nI was inspired by a word in mandarin that means the ‘rooms in mind’ in English, which describes the mind as a space that store thoughts. The mind is the home of thoughts and the rooms inside the home indicates different categories of concerns. All the rooms in the video were based on a different person.",
-            "<a href=\"https://www.instagram.com/yu_chunz\" target=\"_blank\">@yu_chunz</a>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "kv",
-      "share": false,
-      "media": {
-        "type": "video",
-        "content": "{{creativity|central-saint-martins|content-series[media_path]}}Lemon_Tang.mp4",
-        "title": "Lemon Tang"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "Lemon Tang"
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": "Cave, Shelter, or a Living Space?"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Home to some people may be a place where a family relationship is built, whereas to me, a person who has lived alone since the age of 12, home is where I can learn about myself holistically. The idea of what makes a living space a home, differentiates and reflects who we are. How one chooses to live often translates to one's critical social aspects. This clip aims to promote learning and building a bond with your living space when living alone, and the benefits of communicating with your living space in daily life.",
-            "<a href=\"https://www.instagram.com/NA\" target=\"_blank\">@NA</a>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "kv",
-      "share": false,
-      "media": {
-        "type": "video",
-        "content": "{{creativity|central-saint-martins|content-series[media_path]}}Weronika_Szklarek.mp4",
-        "title": "Weronika Szklarek"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "Weronika Szklarek"
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": "‘Where is my home?’"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "‘Where is my home?’ is a question many people ask themselves now more than ever. Together with rapid technology progress and uncovering mindfulness approach in every day life, we can say that home is wherever we are. We are your our own homes.\nThis animation is an attempt to show a combination between mindfulness and the Internet of Things as a future model of living. Both allow us to communicate with the world more effectively and make our home lives easier and lighter. It shows that our future is based in the spiritual as well as technologically advanced world.",
-            "<a href=\"https://www.instagram.com/weronika_does_life\" target=\"_blank\">@weronika_does_life</a>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "kv",
-      "share": false,
-      "media": {
-        "type": "video",
-        "content": "{{creativity|central-saint-martins|content-series[media_path]}}Sally_Yang.mp4",
-        "title": "Sally Yang"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "Sally Yang"
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": "The future form of houses"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "I am interested in questions surrounding the form of future homes and how the physical area is a fundamental part of a home. The 'Function Follows Form' principle helped to explore my idea, by changing building structures without restriction, I imagined the new characters of each home. For example, I envisioned fixed objects on the wall and floor at 'swing home'. The simple houses, such as 'no door home' and 'moving home' represent various types. All physical structures can be a home.",
-            "<a href=\"https://www.instagram.com/_ssaallyy\" target=\"_blank\">@_ssaallyy</a>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "kv",
-      "share": false,
-      "media": {
-        "type": "video",
-        "content": "{{creativity|central-saint-martins|content-series[media_path]}}Katy_Duong.mp4",
-        "title": "Tu Ky Duong"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "Tu Ky Duong"
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": "What Could Home Be?"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "This short animation is an abstraction of how we cope with the prolonged self-quarantine by moulding our living space into various functions that are available otherwise. This is portrayed via the character performing mundane tasks but through their imagination they – quite literally, transform their immediate surrounding to an outdoors experience (e.g. watching movies and cinema).",
-            "<a href=\"https://www.instagram.com/katyputitdownandgotogym\" target=\"_blank\">@katyputitdownandgotogym</a>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "kv",
-      "share": false,
-      "media": {
-        "type": "video",
-        "content": "{{creativity|central-saint-martins|content-series[media_path]}}Wangjia_Zou.mp4",
-        "title": "Wangjia Zou"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "Wangjia Zou"
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": ""
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "The concept of home allows us to explore part of our life journey, and the time where everyone is quarantined inside, with more time with ourselves than before. These are my items, and through illustrated animations conveys my perspective on home. This ongoing isolation period and climate issue makes me want to live a slower pace, having time to self organise myself and contribute more to work.",
-            "<a href=\"https://www.instagram.com/zouuozu\" target=\"_blank\">@zouuozu</a>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "kv",
-      "share": false,
-      "media": {
-        "type": "video",
-        "content": "{{creativity|central-saint-martins|content-series[media_path]}}Zhen_Liu.mp4",
-        "title": "Zhen Liu, Penelope Zouganeli, HuiChi Yang."
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "Zhen Liu, Penelope Zouganeli & HuiChi Yang"
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": "Our house by the sea"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "This is an animation we worked together on. It is our our house by a digital sea of uncertainty. Until the smoke settles, we are all floating like feathers.",
-            "<a href=\"https://www.instagram.com/uilzzz\" target=\"_blank\">@uilzzz</a>",
-            "<a href=\"https://www.instagram.com/penelopezgnl\" target=\"_blank\">@penelopezgnl</a>",
-            "<a href=\"https://www.instagram.com/hcdopeee\" target=\"_blank\">@hcdopeee</a>"
-          ]
-        }
-      ]
-    }
-  ]
+	"title": "The Home of the Future",
+	"description": "A digital exhibition in partnership with world-renowned arts and design college, Central Saint Martins, demonstrating the role of the home through the eyes of current students.",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/central-saint-martins/KV.jpg",
+	"alt": "Black cartoon outlines of household items such as cooking utensils, paint brushes and cleaning products",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/central-saint-martins/KV.jpg",
+	"media_path": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/central-saint-martins/media/",
+	"group": "central-saint-martins",
+	"sort": 1,
+	"meta": {
+		"icon": "video",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 26,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "css-snippet",
+			"content": "@media screen and (min-width: 769px) { .hoiKv:nth-child(even) .hoiKv__Components { order: -1 } }",
+			"__notes": "little snippet to alternate kv layout direction (desktop only)"
+		},
+		{
+			"type": "kv",
+			"media": {
+				"type": "image",
+				"content": "{{creativity|central-saint-martins[image]}}",
+				"alt": "{{creativity|central-saint-martins[alt]}}"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "{{creativity|central-saint-martins[title]}}"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"A digital exhibition in partnership with world-renowned arts and design college, Central Saint Martins."
+					]
+				}
+			]
+		},
+		{
+			"type": "wrapper",
+			"components": [
+				{
+					"type": "paragraphs",
+					"style": {
+						"large": true
+					},
+					"text": [
+						"Samsung KX, the Home of Innovation, and Central Saint Martins have teamed up to explore what happens at the cross-section of innovation and creative collaboration. Our partnership enables Samsung KX to generate opportunities for the next generation of creative pioneers to create and exhibit their work.",
+						"Our first collaboration is a digital exhibition, in partnership with <a href=\" https://www.arts.ac.uk/subjects/communication-and-graphic-design/postgraduate/ma-graphic-communication-design-csm\" target=\"_blank\">MA</a> and <a href=\" https://www.arts.ac.uk/subjects/illustration/undergraduate/ba-hons-graphic-communication-design-csm\" target=\"_blank\">BA</a> Graphic Communication Design students at Central Saint Martins, which demonstrates the role of the home through the eyes of current students.",
+						"The exhibition features a number of different creative approaches and highlights many of the challenges with which students are grappling including their limited resources while working remotely. The resulting work is a testament to the skill and ingenuity of this next creative generation."
+					]
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Samsung KX is a community platform that hosts a range of content covering a diverse range of topics. The views expressed within this exhibition are solely those of the students and bear no reflection of Samsung’s brand views."
+					]
+				}
+			]
+		},
+		{
+			"type": "kv",
+			"share": false,
+			"media": {
+				"type": "video",
+				"content": "{{creativity|central-saint-martins|content-series[media_path]}}Penelope_Zouganeli.mp4",
+				"title": "Penelope Zouganeli, HuiChi Yang, Zhen Liu."
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "Penelope Zouganeli, HuiChi Yang & Zhen Liu"
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": "The Fridge"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"The objective is to playfully re-imagine the usage of ordinary artefacts found in a common household. We chose the fridge for this video to explore it as a personal space that carries the character of its owner.",
+						"<a href=\"https://www.instagram.com/penelopezgnl\" target=\"_blank\">@penelopezgnl</a>",
+						"<a href=\"https://www.instagram.com/hcdopeee\" target=\"_blank\">@hcdopeee</a>",
+						"<a href=\"https://www.instagram.com/uilzzz\" target=\"_blank\">@uilzzz</a>"
+					]
+				}
+			]
+		},
+		{
+			"type": "kv",
+			"share": false,
+			"media": {
+				"type": "video",
+				"content": "{{creativity|central-saint-martins|content-series[media_path]}}Luke_Davies.mp4",
+				"title": "Luke Davies"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "Luke Davies"
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": "New Home"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Inspired by the creativity that has been around me since moving home, I wanted my work to express how my whole family is having fun being creative in this time; stepping away from the negative news and embracing this time to learn new things and spend family time together. However, alongside this fun is the need to work and go to school, which all of us have been through our laptops and phones and the reason why this video is all digital. Hopefully, this video inspires others to learn something new while we have all of this extra time.",
+						"<a href=\"https://www.instagram.com/Luke.Luke2001\" target=\"_blank\">@Luke.Luke2001</a>"
+					]
+				}
+			]
+		},
+		{
+			"type": "kv",
+			"share": false,
+			"media": {
+				"type": "video",
+				"content": "{{creativity|central-saint-martins|content-series[media_path]}}Didara_Abdirakhman.mp4",
+				"title": "Didara Abdirakhman"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "Didara Abdirakhman"
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": "Homeformation"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Home isn’t something instantaneous – you build it up, and your memories are the building blocks. Sometimes, a place can stop being your home – but after you lose your home, once it gets completely deconstructed, you begin creating a new one, brick after brick. Times are changing, but the concept of a “home” always remains the same. It’s a collection of memories associated with a certain time and place in your life, a reflection of your experience. A home isn’t something you get. It’s something you create.",
+						"<a href=\"https://www.instagram.com/sketchydida\" target=\"_blank\">@sketchydida</a>"
+					]
+				}
+			]
+		},
+		{
+			"type": "kv",
+			"share": false,
+			"media": {
+				"type": "video",
+				"content": "{{creativity|central-saint-martins|content-series[media_path]}}Daria_Antropova.mp4",
+				"title": "Daria Antropova"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "Daria Antropova"
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": "Welcome to my room"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"I came across an article by Christian Jarrett ‘The psychology of stuff and things’. Here he argues that our belongings are extensions of the self, they reflect who people are, ‘or at least how they would like to see themselves’. Having this quote by William James in mind ‘a man’s self is the sum total of all that he can call his’, I wanted to explore identity and the authentic self.\n\nIn the time of global self-isolation, my room was almost the only place for me to publish anything. I transferred to digital space as I wanted to explore the consequences of decontextualisation of objects, and also the physical objects ‘value’ in a non-physical space.",
+						"<a href=\"https://www.instagram.com/antropova_dasha\" target=\"_blank\">@antropova_dasha</a>"
+					]
+				}
+			]
+		},
+		{
+			"type": "kv",
+			"share": false,
+			"media": {
+				"type": "video",
+				"content": "{{creativity|central-saint-martins|content-series[media_path]}}Athena_Kong_Samsung.mp4",
+				"title": "Wing Tung Kong"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "Wing Tung Kong"
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": "Home of Gratitude"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"As everyone has to stay home for quarantine, interactions with the outside has become extremely diﬃcult. These illustrations aim to comfort to people during the current pandemic, making people realise how grateful we should be to have those little moments of human interactions in life.",
+						"<a href=\"https://www.instagram.com/aar.kw.t\" target=\"_blank\">@aar.kw.t</a>"
+					]
+				}
+			]
+		},
+		{
+			"type": "kv",
+			"share": false,
+			"media": {
+				"type": "video",
+				"content": "{{creativity|central-saint-martins|content-series[media_path]}}Rocio_Rey.mp4",
+				"title": "Rocio Rey"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "Rocio Rey"
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": "Today’s home"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"In a speculative future where the concept of ‘home’ as specific place we return to has been outdated, technology advances allow people to choose daily where they go back to. Each person has a designated room full with nothing but screens displaying places, people, and sensations, among others, each person has picked beforehand. Every day people are able to select which home they want to return to. By tapping the screen, they’ll be transported to it.",
+						"<a href=\"https://www.instagram.com/rociproc0\" target=\"_blank\">@rociproc0</a>"
+					]
+				}
+			]
+		},
+		{
+			"type": "kv",
+			"share": false,
+			"media": {
+				"type": "video",
+				"content": "{{creativity|central-saint-martins|content-series[media_path]}}Connie_Boeree.mp4",
+				"title": "Connie Boeree"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "Connie Boeree"
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": "No Place Like Home"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Where do you feel at home? With recent travel being severely restricted, we no longer have the choice to inhabit our collective home with the same freedom we once did. As the future still lies in a great deal of uncertainty, more than ever, I feel compelled to question whether I feel at home or trapped in my own skin? This sequence of images features visual comparisons of two of my photographic archives, one of the earth's surfaces and one of the surfaces of my skin. By presenting these two zoomed out and zoomed in perspectives, I hope to provoke a sense of wonder and speculation towards two irreplaceable places we call home. (Music by Luke Shaw )",
+						"<a href=\"https://www.instagram.com/connieboeree\" target=\"_blank\">@connieboeree</a>"
+					]
+				}
+			]
+		},
+		{
+			"type": "kv",
+			"share": false,
+			"media": {
+				"type": "video",
+				"content": "{{creativity|central-saint-martins|content-series[media_path]}}Zora_Zixuan_Xu.mp4",
+				"title": "Zora (Zixuan) Xu"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "Zora (Zixuan) Xu"
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": "Holiday of Imagination"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Home is there, it is not unchangeable. Once you use your imagination, the surrounding is thriving. You could play on a swing and have a picnic in a park once wake up. The brunch will be in a lovely cafe with a cup of oat latte. Later on, your favourite shop is hosting a private sale which you could go to have a look. The shower time won't be boring because you are surfing on the sea. When the light is off, I’m sure you have had a good day.",
+						"<a href=\"https://www.instagram.com/zora_isok\" target=\"_blank\">@zora_isok</a>"
+					]
+				}
+			]
+		},
+		{
+			"type": "kv",
+			"share": false,
+			"media": {
+				"type": "video",
+				"content": "{{creativity|central-saint-martins|content-series[media_path]}}TigrisLi.mp4",
+				"title": "TigrisLi"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "Tigris Li"
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": "Interspecies Living"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"This kitchen and living room shows a glimpse at a potential interspecies living space – where we can co-exist with living organisms and intertwine with plants. This contributes towards a sustainable nutritional cycle whilst also benefiting from plants that naturally photosynthesize and purifies the silent chemical vapors of our indoor living space. From a dandelion coffee roaster, to a vertical farm that uses the brewed dandelion grounds and hydroponics for optimized space and maximized yield count, this can all be found in the comfort of one’s own home.",
+						"<a href=\"https://www.instagram.com/tigrisli\" target=\"_blank\">@tigrisli</a>"
+					]
+				}
+			]
+		},
+		{
+			"type": "kv",
+			"share": false,
+			"media": {
+				"type": "video",
+				"content": "{{creativity|central-saint-martins|content-series[media_path]}}Braydon_Walmsley.mp4",
+				"title": "Braydon Walmsley"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "Braydon Walmsley"
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": "Dust Bunnies"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Life in a student accommodation building is typically very animated and loud, but with the sudden outbreak the building has become seemingly abandoned; not a sound made throughout the night and not a person to be seen throughout the day. I was unable to return home to Australia due to flight restrictions, and so have been stuck in this building all by myself. “Bringing life back into the building” was the concept that guided this project. The animated characters, the dust bunnies, symbolise a sense of company despite being alone as I know there are countless others in a similar situation to me. (Support from Joey Gonzales)",
+						"<a href=\"https://www.instagram.com/braydon.design\" target=\"_blank\">@braydon.design</a>"
+					]
+				}
+			]
+		},
+		{
+			"type": "kv",
+			"share": false,
+			"media": {
+				"type": "video",
+				"content": "{{creativity|central-saint-martins|content-series[media_path]}}Carmen_Fribbins.mp4",
+				"title": "Carmen Fribbins"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "Carmen Fribbins"
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": "Bringing the Outside In"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"The concept for my outcome stemmed from exploring what is no longer accessible to us during isolation and then how I could make those things accessible in alternate ways. The video explores a way in which people from across the world can come together and bring elements of nature into their homes. This comes at a time where a large majority of people are quarantined inside and when nature and fresh air is not as freely accessible to everyone as it once was, due to the restrictions placed upon us for our safety.\n\nThe method of projection I used, camera obscura, using the manipulation of light through a homemade pin hole camera, enables the outside view from a window to be projected onto the opposite wall inside your home with very few materials that are easily accessible to everyone. Therefore, for those who live in flats, have no garden or have limited access to the outside world can connect with nature in an alternate way.",
+						"<a href=\"https://www.instagram.com/carmenfribbinsart\" target=\"_blank\">@carmenfribbinsart</a>"
+					]
+				}
+			]
+		},
+		{
+			"type": "kv",
+			"share": false,
+			"media": {
+				"type": "video",
+				"content": "{{creativity|central-saint-martins|content-series[media_path]}}Flora_Hay.mp4",
+				"title": "Flora Hay"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "Flora Hay"
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": "Household Paraphernalia"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Finding myself at home again, I was surrounded by familiar objects that I have grown up with. I have taken the time to examine these objects and open boxes to reveal their inner secrets. What interests me is that these objects covered in layers of dust have existed for decades from generation to generation and although I believe the future demands our acceptance, these objects will continue alongside us, regaling their stories changing with every retold memory, they will continue to grow alongside the objects and technologies of the future, pinned to our lives with their blanket of dusty recollections.",
+						"<a href=\"https://www.instagram.com/hayfloradesign\" target=\"_blank\">@hayfloradesign</a>"
+					]
+				}
+			]
+		},
+		{
+			"type": "kv",
+			"share": false,
+			"media": {
+				"type": "video",
+				"content": "{{creativity|central-saint-martins|content-series[media_path]}}Changhyo_Kim.mp4",
+				"title": "Changhyo Kim"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "Changhyo Kim"
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": "Home Screen"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"This video responds to “How are homes being transformed? And how will they transform in the future?” Historically, ‘home’ has been transformed a lot and it will continually. We are living in a digital world and there is no longer a physical ‘home’ but there is a ‘home’ screen. Like you open the door and get into your home, you open the smartphone and get into your ‘home’.",
+						"<a href=\"https://www.instagram.com/sensasian_k\" target=\"_blank\">@sensasian_k</a>"
+					]
+				}
+			]
+		},
+		{
+			"type": "kv",
+			"share": false,
+			"media": {
+				"type": "video",
+				"content": "{{creativity|central-saint-martins|content-series[media_path]}}Jiahui_Qiu.mp4",
+				"title": "Jiahui Qiu"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "Jiahui Qiu"
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": "Traveling at Home"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"This film is about traveling at home, recording a daily journey within the apartment during quarantine. The idea is based on photographs in a digital album, where I recall my memories of time, location and journeys from previous holidays. The lines simply visualise a route over the floor plan, which transforms to the shape of blocks and colour. These recording method experiments take many shapes: images, films, notes, and generate different visuals.",
+						"<a href=\"https://www.instagram.com/NA\" target=\"_blank\">@NA</a>"
+					]
+				}
+			]
+		},
+		{
+			"type": "kv",
+			"share": false,
+			"media": {
+				"type": "video",
+				"content": "{{creativity|central-saint-martins|content-series[media_path]}}Fernanda_Duarte.mp4",
+				"title": "Fernanda Duarte"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "Fernanda Duarte"
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": "Lockdown, May/2020"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Being stuck during a pandemic in such a small space, day after day, changed my perspective about my surroundings. I started to see my flat in different ways and position myself in a different reality. With all the current restrictions because of the virus, we had to take measures and change our lifestyle completely, in consequence to that, it eliminated and restricted my space even more. This made me think about the walkable space I have here and I decided to develop my work upon that, a floating platform that guides towards a portal into different realities, representing how my feelings during this quarantine have influenced and changed my perspective.",
+						"<a href=\"https://www.instagram.com/fafduarte\" target=\"_blank\">@fafduarte</a>"
+					]
+				}
+			]
+		},
+		{
+			"type": "kv",
+			"share": false,
+			"media": {
+				"type": "video",
+				"content": "{{creativity|central-saint-martins|content-series[media_path]}}Florrie_Smith.mp4",
+				"title": "Florrie Smith"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "Florrie Smith"
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": "The Future is Technology"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"This room is an interpretation of a technology driven world design with imagination.\nThrough self-observation, I was able to see that we are encouraged to rely on technology, especially in this pandemic. As a result, our screens are becoming the new virtual architectures we inhabit ourselves in and become familiar with.\nOur devices are becoming a trap, stopping us from noticing what is going on in the outside world, damaging our perspective on life.\nWill people start to expect our physical spaces to act like our virtual ones?\nOur virtual worlds are so attractive purely because you can design it however you want. Erase all the negativity and devastation to have a virtual location that suits you. \nWill we ever need to leave home if everything is accessible through our screens?",
+						"<a href=\"https://www.instagram.com/florriesmith\" target=\"_blank\">@florriesmith</a>"
+					]
+				}
+			]
+		},
+		{
+			"type": "kv",
+			"share": false,
+			"media": {
+				"type": "video",
+				"content": "{{creativity|central-saint-martins|content-series[media_path]}}Hannah_Meah.mp4",
+				"title": "Hannah Meah"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "Hannah Meah"
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": "Somewhere Else"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Right now many of us feel disconnected from the world around us. Holidays have been cancelled and new experiences postponed. So perhaps we can ﬁnd comfort in a kind of nostalgia? And perhaps this experience could be felt in a far more immersive and visceral manner? These two animated illustrations pose for a future where, even from your terraced house on Holloway road, you could be enjoying your breakfast in Italy, Spain or Portugal. You could look out and see the faces of your friends and family and  remember in a vividly dynamic way what is was like to be somewhere in another time and another place.",
+						"<a href=\"https://www.instagram.com/hnmeahdesign\" target=\"_blank\">@hnmeahdesign</a>"
+					]
+				}
+			]
+		},
+		{
+			"type": "kv",
+			"share": false,
+			"media": {
+				"type": "video",
+				"content": "{{creativity|central-saint-martins|content-series[media_path]}}Vasilisa_Petrova.mp4",
+				"title": "Vasilisa Petrova"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "Vasilisa Petrova"
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": "Homes Alive"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"The animation explores the metaphoric notion of a home as an ever-expanding organism. By drawing a link between a house and its inhabitant, I compare the internal changes within the person and the shifts in their surroundings. The physical appearance of one’s home is always distinct, as such, it is the ethereal vision of home that appeals to me. Home in the perspective of this animation is not a physical space, but the intangible, that can only exist and change along the constantly evolving mind of the inhabitant.",
+						"<a href=\"https://www.instagram.com/SKASCA\" target=\"_blank\">@SKASCA</a>"
+					]
+				}
+			]
+		},
+		{
+			"type": "kv",
+			"share": false,
+			"media": {
+				"type": "video",
+				"content": "{{creativity|central-saint-martins|content-series[media_path]}}Amandine_Forest.mp4",
+				"title": "Amandine Forest"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "Amandine Forest"
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": "Patterns of Behaviour"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"When I considered how my home has changed recently, I realised that the repetition of the conﬁned space has made me extremely reﬂective of my life, day by day. My home has transformed into a meditation garden, a safe and familiar place that pushes me to ponder. This gave me the idea to create a visual diary of my thoughts and actions, showing how my home is now making me more aware of myself. I titled it ‘Patterns of Behaviour’ because I have settled into a routine over the course of this pandemic.",
+						"<a href=\"https://www.instagram.com/malice.studio\" target=\"_blank\">@malice.studio</a>"
+					]
+				}
+			]
+		},
+		{
+			"type": "kv",
+			"share": false,
+			"media": {
+				"type": "video",
+				"content": "{{creativity|central-saint-martins|content-series[media_path]}}Olivia_Alexander.mp4",
+				"title": "Olivia Alexander"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "Olivia Alexander"
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": "Feeling Flat"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Lockdown brought about a stillness in my flat. \nNo comings, no goings, no places to be. \nTime has both stopped, and become endless.\nOver the last 8 weeks I have watched the light drift around my room, transforming the mundane scenery of my flat throughout the day. Home is a place of safety and rest, but in being isolated from the people I love, my space has begun to feel empty and lonely. In my video I wanted to communicate these evolving emotions about my experience in lockdown, and how my feelings have changed towards my home as a result.",
+						"<a href=\"https://www.instagram.com/olivia.alexander.design\" target=\"_blank\">@olivia.alexander.design</a>"
+					]
+				}
+			]
+		},
+		{
+			"type": "kv",
+			"share": false,
+			"media": {
+				"type": "video",
+				"content": "{{creativity|central-saint-martins|content-series[media_path]}}Gyuri_Kim.mp4",
+				"title": "Gyuri Kim"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "Gyuri Kim"
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": "Home : Space for the space of the objects"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"In most cases in our lives, we tend to focus on objects and almost never focus on the space that these objects occupy. Because of this, I wanted to talk about the 'space' as it is, in the absence of the objects that occupy it. The idea of ‘negative space’ connects the fact that all of my objects come from my home. I wanted to create a space to show the ‘space’ through a virtual exhibition.",
+						"<a href=\"https://www.instagram.com/flvincent_\" target=\"_blank\">@flvincent_</a>"
+					]
+				}
+			]
+		},
+		{
+			"type": "kv",
+			"share": false,
+			"media": {
+				"type": "video",
+				"content": "{{creativity|central-saint-martins|content-series[media_path]}}George_MacLand.mp4",
+				"title": "George MacLand"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "George MacLand"
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": "I am the Mess in my Room"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Being back at home home for longer than expected (for obvious reasons) I have found myself in my room most of the time. I'll admit, I've never been the tidiest person, but lockdown seems to have taken it to some new unprecedented levels of messiness, finding all kinds of random tat that's been hiding in my cupboards for years. And with that, I give you this: a collection of things I've found in my room which manage to sum up my worry, in a pile on my floor. A self portrait, if you will.",
+						"<a href=\"https://www.instagram.com/georgemaclandyourewelcome\" target=\"_blank\">@georgemaclandyourewelcome</a>"
+					]
+				}
+			]
+		},
+		{
+			"type": "kv",
+			"share": false,
+			"media": {
+				"type": "video",
+				"content": "{{creativity|central-saint-martins|content-series[media_path]}}HuiChi_Yang.mp4",
+				"title": "HuiChi Yang, Penelope Zouganeli, Zhen Liu."
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "HuiChi Yang, Penelope Zouganeli & Zhen Liu"
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": "The Bedroom"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"In our video we explored surveillance. Our homes now have claimed the primal role in our lives. It is not any longer just a base or a shelter. It is an extension of our bodies and minds. Therefore, it is only natural external forces would be interested in our spaces.",
+						"<a href=\"https://www.instagram.com/hcdopeee\" target=\"_blank\">@hcdopeee</a>",
+						"<a href=\"https://www.instagram.com/penelopezgnl\" target=\"_blank\">@penelopezgnl</a>",
+						"<a href=\"https://www.instagram.com/uilzzz\" target=\"_blank\">@uilzzz</a>"
+					]
+				}
+			]
+		},
+		{
+			"type": "kv",
+			"share": false,
+			"media": {
+				"type": "video",
+				"content": "{{creativity|central-saint-martins|content-series[media_path]}}Louise_Grosjean.mp4",
+				"title": "Louise Grosjean"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "Louise Grosjean"
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": "Inward"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"“[Visualisation] works most powerfully when you realise that it is already a reality on the unseen level. It's already there” Eckhart Tolle \n\nThe current situation has conﬁned most of us to a certain space for an extended amount of time and some people (including myself) are ﬁnding it difﬁcult to stay creative when the space around us is stagnant. This animation was inspired by the way I mentally “escape” or transform my home by looking in and by doing all sorts of activities I personally enjoy. Visualisation is part of my daily routine and it helps me stay grounded and inspired so I thought I would visually share that with whoever is ﬁnding their space too constricting.",
+						"<a href=\"https://www.instagram.com/loowizdesign\" target=\"_blank\">@loowizdesign</a>"
+					]
+				}
+			]
+		},
+		{
+			"type": "kv",
+			"share": false,
+			"media": {
+				"type": "video",
+				"content": "{{creativity|central-saint-martins|content-series[media_path]}}James_Mackenzie.mp4",
+				"title": "James Mackenzie"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "James Mackenzie"
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": "Sharing"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"I just miss passing a cup of tea to my friend. I miss having small talk as the kettle boils, and I miss having them in my home. Only now when our homes are symbols of isolation, do I realise there is something so unique and intimate in inviting a friend around for a cuppa. All I want to do is to share a little bit more than our virtual conversation and to reach through the screen and pass a cup of tea to my mate.",
+						"<a href=\"https://www.instagram.com/jmackenzie.co.uk\" target=\"_blank\">@jmackenzie.co.uk</a>"
+					]
+				}
+			]
+		},
+		{
+			"type": "kv",
+			"share": false,
+			"media": {
+				"type": "video",
+				"content": "{{creativity|central-saint-martins|content-series[media_path]}}Imogen_Fox.mp4",
+				"title": "Imogen Fox"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "Imogen Fox"
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": "Plants"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"The way we perceive the world controls how we live in it. Our perceptions are based around the interactions we have with the environment. The way we grow. The way we watch things grow. A particularly special object for me to have in my environment is flowers and plants, developing a positive living space. The flower is a global symbol for happiness and collective identity. Plants generate happiness, accelerate healing process, improves relationships and compassion, improves human performance and energy. My animation aims to attempt an emotional connection within the watching experience. During a pandemic, this has heightened my beliefs that we are the communicative plants of the earth.",
+						"<a href=\"https://www.instagram.com/foxhotline\" target=\"_blank\">@foxhotline</a>"
+					]
+				}
+			]
+		},
+		{
+			"type": "kv",
+			"share": false,
+			"media": {
+				"type": "video",
+				"content": "{{creativity|central-saint-martins|content-series[media_path]}}Mansi_Agarwal.mp4",
+				"title": "Mansi Agarwal"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "Mansi Agarwal"
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": "Walls of our Home"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"We have seen the transformation of concrete walls to glass walls, houses and buildings. Could one day these glass walls become digital screens? Inspired by this thought and our current situation, which has made us so accustomed to interacting with technology all the time, this idea of walls as screens can be thought as of both a potential utopia and dystopia. This largely influenced my overall colour palette for the visuals which is a combination of both grayscale and colourful elements. However, visualising this utopian/ dystopian future is left to the imagination of the viewer.",
+						"<a href=\"https://www.instagram.com/mansi_28099\" target=\"_blank\">@mansi_28099</a>"
+					]
+				}
+			]
+		},
+		{
+			"type": "kv",
+			"share": false,
+			"media": {
+				"type": "video",
+				"content": "{{creativity|central-saint-martins|content-series[media_path]}}Tooey_Jones.mp4",
+				"title": "Tooey Jones"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "Tooey Jones"
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": "Testimony to life in Lockdown"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"I asked 40 people the question: “What colour do you think represents life in lockdown?” and used the responses to document their emotional and personal experiences. \n\nI have created an interpretation of a ‘Memory Jug’. Traditionally, the surface would be covered with objects associated with a person but I have chosen to decorate my memory jug using the colours that people associated with their experiences of living in lockdown.\n\nAs a comment on our human fragility, I make a connection between the spacing typically used to prevent damage to artifacts in galleries and the introduction of social distancing during the global pandemic.",
+						"<a href=\"https://www.instagram.com/tooeyjones\" target=\"_blank\">@tooeyjones</a>"
+					]
+				}
+			]
+		},
+		{
+			"type": "kv",
+			"share": false,
+			"media": {
+				"type": "video",
+				"content": "{{creativity|central-saint-martins|content-series[media_path]}}Jessie_Liang.mp4",
+				"title": "Jessie Liang"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "Jessie Liang"
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": "The World in Your Home"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Technology is quickly expanding what can happen in a home. From video calls to online shopping, almost everything can now be done without leaving the house. With the introduction of home VR systems, we are getting closer and closer to being able to transform homes into everything. Something we are still missing is being able to have 3D displays such as holograms immersed into our surroundings. When holograms are possible, the online digital interactions we have at home will be a lot more tangible and realistic. We will be able to invite people over from anywhere in the world or bring a location to us.",
+						"<a href=\"https://www.instagram.com/designedbyjessieliang\" target=\"_blank\">@designedbyjessieliang</a>"
+					]
+				}
+			]
+		},
+		{
+			"type": "kv",
+			"share": false,
+			"media": {
+				"type": "video",
+				"content": "{{creativity|central-saint-martins|content-series[media_path]}}Jinhye_Park.mp4",
+				"title": "Jinhye Park"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "Jinhye Park"
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": "Defence 2020"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"People have been suffering from coronavirus pandemic and are anxious about going out. People have to work from home or go out wearing masks. People used to sunbathe or read books in the courtyard, yet even this situation is now considered risky. I made these clips with a comfortable house concept, we can protect ourselves from the virus with the metaphorical force field effect.",
+						"<a href=\"https://www.instagram.com/nischeom\" target=\"_blank\">@nischeom</a>"
+					]
+				}
+			]
+		},
+		{
+			"type": "kv",
+			"share": false,
+			"media": {
+				"type": "video",
+				"content": "{{creativity|central-saint-martins|content-series[media_path]}}Sophia_Conroy_Iglesias.mp4",
+				"title": "Sophia Conroy-Iglesias"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "Sophia Conroy-Iglesias"
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": "What Quarantine Stole from Me"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"An extract from my short film, What Quarantine Stole from Me. Showcasing a mixture of my own and found videos, projected across areas of my home. Inspired by the concept of bringing the outside in from an earlier photography series of mine titled Stay Home: bringing the outside in, I wanted to transform my home in a way that still allowed me to have the experiences of the outside world and everything that comes with it; the noise, the contact, the ocean, the liberty, the earth and the warmth – from which we have been restricted from.",
+						"<a href=\"https://www.instagram.com/sophiaconroyiglesias\" target=\"_blank\">@sophiaconroyiglesias</a>"
+					]
+				}
+			]
+		},
+		{
+			"type": "kv",
+			"share": false,
+			"media": {
+				"type": "video",
+				"content": "{{creativity|central-saint-martins|content-series[media_path]}}Pranjali_Gore.mp4",
+				"title": "Pranjali Gore"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "Pranjali Gore"
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": "In the comfort of the Pliant Glass Panel"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"These days due to the pandemic the only way to make any kind of connections with the outside world is through a rectangular piece of glass. Since most of us are working or studying from home, we can allow ourselves to be a bit more flexible and comfortable in our work/study style than before. This situation may have a lot of disadvantages but I want to shed some light on the positive side of it and INSPIRE people to stay positive.",
+						"<a href=\"https://www.instagram.com/g.p.illustrations\" target=\"_blank\">@g.p.illustrations</a>"
+					]
+				}
+			]
+		},
+		{
+			"type": "kv",
+			"share": false,
+			"media": {
+				"type": "video",
+				"content": "{{creativity|central-saint-martins|content-series[media_path]}}Hae_Dn_Kim.mp4",
+				"title": "Hae Dn Kim"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "Hae Dn Kim"
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": "Coexistence: home reconnects humans with nature"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"During the lockdown in London, I was stuck in my room alone imagining wherever I could go. Looking through a window or digital screens became the only means to reconnect human with humans and other beings.  A series of ‘Coexistence’ shows a speculative space exploring and expanding the connection with nature, from the perspective of our future homes. Starting from the square frame as a portal of the house to reach the ecological world, this experience could alter the way we access to nature at home and can be materialised in the future.",
+						"<a href=\"https://www.instagram.com/had_not\" target=\"_blank\">@had_not</a>"
+					]
+				}
+			]
+		},
+		{
+			"type": "kv",
+			"share": false,
+			"media": {
+				"type": "video",
+				"content": "{{creativity|central-saint-martins|content-series[media_path]}}Valerie_Lianggara.mp4",
+				"title": "Valerie Lianggara"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "Valerie Lianggara"
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": "Always Find Your Way Back Home"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Home. A simple yet perplexing word. What does  ‘home’ mean? A place that goes deep inside you? A place where you were raised?  Or perhaps a place where you dream of being? Home can be anywhere, and I’d like  to think that home has more to do with the feeling a certain environment or  atmosphere gives you and less to do with a specific location or piece of soil.",
+						"<a href=\"https://www.instagram.com/valyvisuals\" target=\"_blank\">@valyvisuals</a>"
+					]
+				}
+			]
+		},
+		{
+			"type": "kv",
+			"share": false,
+			"media": {
+				"type": "video",
+				"content": "{{creativity|central-saint-martins|content-series[media_path]}}Vlad_Balan.mp4",
+				"title": "Vlad Balan"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "Vlad Balan"
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": "Home Arrest"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Home Arrest - what a luxurious jail. The nightmare of being back in Shropshire, stuck in the house with my parents, has become a reality very quickly as the virus mounted pressure on our every day lives. After months of thriving on London’s gracious energy, I am now back in a place of which I don’t even know if I can call home, let alone feel inspired by.\nWhat may look like a very modern room to some, it is truly a soulless contraption to which I have been assigned for an undetermined amount of time. All my negative emotions have managed to bubble over and come out during my time of solitude, as my mind was soaring through all the happy memories that I had in London, I was left with a profound bitter taste in my mouth whilst comparing the so called glory days to the current situation.",
+						"<a href=\"https://www.instagram.com/foreignmindset\" target=\"_blank\">@foreignmindset</a>"
+					]
+				}
+			]
+		},
+		{
+			"type": "kv",
+			"share": false,
+			"media": {
+				"type": "video",
+				"content": "{{creativity|central-saint-martins|content-series[media_path]}}Zhamilya_Adamsopiyeva.mp4",
+				"title": "Zhamilya Adamsopiyeva"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "Zhamilya Adamsopiyeva"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"This project is about reinventing your space in a way of benefiting your mental and physical health. Due to this hard time it's difficult to stay in contact with nature as it was before the lockdown. My aim for this project was to share my emotions as well as a way of making people aware of the importance that nature holds in our life, plants are our friends and we should take care of our friends. In our fast modern life it’s easy to forget the simple truth, which is the importance of our connection with one another, our matter of survival is fully rely on us caring\nabout our world around us. \nNature is the best medicine to fight against the emotional stress and\nanxiety, especially during hard time as we facing now. Plants is one of the permanent thing around you, always there to brighten up the room around you, wherever you are, make it more alive and less lonely. Idea of this project is even if you are stuck at one place there is always a way to reconnect with the important things, such as nature for me and share the kindness with other\npeople around you, who are quarantined same as you.",
+						"<a href=\"https://www.instagram.com/\" target=\"_blank\">@</a>"
+					]
+				}
+			]
+		},
+		{
+			"type": "kv",
+			"share": false,
+			"media": {
+				"type": "video",
+				"content": "{{creativity|central-saint-martins|content-series[media_path]}}Joshua_Cho.mp4",
+				"title": "Joshua Cho",
+				"loop": "true"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "Joshua Cho"
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": "An Imaginary Indoor Playground"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Based on the placement of furniture and other interesting elements in my small bedroom, I tried to reimagine this space as a playground.The procedure of each working step can be seen in chronological order. This outcome aims to alter the perception that people have with their living spaces. It gives viewers the opportunity to try reimagining their spaces in a more playful and creative way. I felt it would bring a sense of joy and brightness to the viewers, especially during these times of uncertainty and anxiousness whilst in lockdown.",
+						"<a href=\"https://www.instagram.com/sounghyun_a.ch\" target=\"_blank\">@sounghyun_a.ch</a>"
+					]
+				}
+			]
+		},
+		{
+			"type": "kv",
+			"share": false,
+			"media": {
+				"type": "video",
+				"content": "{{creativity|central-saint-martins|content-series[media_path]}}Ellen_Huynh.mp4",
+				"title": "Ellen Huynh"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "Ellen Huynh"
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": "Home is…"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"With current thoughts of what makes a home being highly influenced by current circumstances, past conceptions of it as a comfortable haven are evidently outdated. What I have tried to portray mirrors this alternative perspective, viewing the house as a multifaceted facility. Contemporary life at home has changed the architecture to almost resemble a microcosm of the world outside. One where the space can be transformed into a studio, a cinema and even a local restaurant. Whilst it cannot compete in terms of experience, living indoors for extended amounts of time seems plainly plausible. Surprisingly giving hope, but also despair.",
+						"<a href=\"https://www.instagram.com/ehllenn\" target=\"_blank\">@ehllenn</a>"
+					]
+				}
+			]
+		},
+		{
+			"type": "kv",
+			"share": false,
+			"media": {
+				"type": "video",
+				"content": "{{creativity|central-saint-martins|content-series[media_path]}}Julia_Morell_Gagnum.mp4",
+				"title": "Júlia Morell Gagnum"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "Júlia Morell Gagnum"
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": "LANDESCAPES"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"This short animated collage explores the idea of the home as a canvas.  During this time of uncertainty, the home has become more important than ever before. It has been our reality, our context. In my apartment, I’ve been drawn to the physical limitations of my space. \nThe video presents new imaginary worlds through a dialogue between the interior and exte-rior, located precisely in the frontier between the house and the interior patio of my block. The modification of the clothes lines, an everyday object, is a medium that gives way to a world of lacking sceneries.",
+						"<a href=\"https://www.instagram.com/juls_morell\" target=\"_blank\">@juls_morell</a>"
+					]
+				}
+			]
+		},
+		{
+			"type": "kv",
+			"share": false,
+			"media": {
+				"type": "video",
+				"content": "{{creativity|central-saint-martins|content-series[media_path]}}Yurong_Ni.mp4",
+				"title": "Yurong Ni"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "Yurong Ni"
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": "My world"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Home has became the safe place l stay during this special time. I suddenly notice the sounds around me during the quarantine — the birds outside, my cat and my family. The home became the box that trapped me.",
+						"<a href=\"https://www.instagram.com/nyrrrrrrrrrrr\" target=\"_blank\">@nyrrrrrrrrrrr</a>"
+					]
+				}
+			]
+		},
+		{
+			"type": "kv",
+			"share": false,
+			"media": {
+				"type": "video",
+				"content": "{{creativity|central-saint-martins|content-series[media_path]}}Sacha_Heneine_Jessie_Liang.mp4",
+				"title": "Sacha Heneine + Jessie Liang"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "Sacha Heneine \nJessie Liang"
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": "Traffic vs Traffic"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"The purpose of this video is to portray how traﬃc has transformed completely, shifting from one highway to another, is this the new normal?  We compared empty streets surrounding our homes and the digital life and sounds of the internet pinging in our ears and overwhelming our personal home which is our mind.  Although from outside it seems as if the world is silent, there is chaos going on in the weird space that is our mind and the internet. Indeed nowadays we can say that we live a digital life.",
+						"<a href=\"https://www.instagram.com/Sacha Heneine \ndesignedbyjessieliang\" target=\"_blank\">@Sacha Heneine \ndesignedbyjessieliang</a>"
+					]
+				}
+			]
+		},
+		{
+			"type": "kv",
+			"share": false,
+			"media": {
+				"type": "video",
+				"content": "{{creativity|central-saint-martins|content-series[media_path]}}Haoran_Niu.mp4",
+				"title": "Haoran Niu"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "Haoran Niu"
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": "Cat changed my quarantine life."
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"When I am bored by the quarantine, I find that my cat often finds something interesting hidden in my room which is difficult to notice. It encourages me to rediscover my bedroom. I used the story between my cat and I to create this comic to encourage different perspectives of your own room - just like a cat. Maybe there are some surprises hidden in the corners, you did not notice before.",
+						"<a href=\"https://www.instagram.com/haoran.new\" target=\"_blank\">@haoran.new</a>"
+					]
+				}
+			]
+		},
+		{
+			"type": "kv",
+			"share": false,
+			"media": {
+				"type": "video",
+				"content": "{{creativity|central-saint-martins|content-series[media_path]}}Stacey_Yu.mp4",
+				"title": "Stacey Yu"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "Stacey Yu"
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": "Rooms in Mind"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Social media has become part of our everyday life. While inspecting online habits, I found that I often felt anxious and overthink a lot when I was making publishes. This clip documents the responses of others, their habits and anxiousness. \n\nI was inspired by a word in mandarin that means the ‘rooms in mind’ in English, which describes the mind as a space that store thoughts. The mind is the home of thoughts and the rooms inside the home indicates different categories of concerns. All the rooms in the video were based on a different person.",
+						"<a href=\"https://www.instagram.com/yu_chunz\" target=\"_blank\">@yu_chunz</a>"
+					]
+				}
+			]
+		},
+		{
+			"type": "kv",
+			"share": false,
+			"media": {
+				"type": "video",
+				"content": "{{creativity|central-saint-martins|content-series[media_path]}}Lemon_Tang.mp4",
+				"title": "Lemon Tang"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "Lemon Tang"
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": "Cave, Shelter, or a Living Space?"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Home to some people may be a place where a family relationship is built, whereas to me, a person who has lived alone since the age of 12, home is where I can learn about myself holistically. The idea of what makes a living space a home, differentiates and reflects who we are. How one chooses to live often translates to one's critical social aspects. This clip aims to promote learning and building a bond with your living space when living alone, and the benefits of communicating with your living space in daily life.",
+						"<a href=\"https://www.instagram.com/NA\" target=\"_blank\">@NA</a>"
+					]
+				}
+			]
+		},
+		{
+			"type": "kv",
+			"share": false,
+			"media": {
+				"type": "video",
+				"content": "{{creativity|central-saint-martins|content-series[media_path]}}Weronika_Szklarek.mp4",
+				"title": "Weronika Szklarek"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "Weronika Szklarek"
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": "‘Where is my home?’"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"‘Where is my home?’ is a question many people ask themselves now more than ever. Together with rapid technology progress and uncovering mindfulness approach in every day life, we can say that home is wherever we are. We are your our own homes.\nThis animation is an attempt to show a combination between mindfulness and the Internet of Things as a future model of living. Both allow us to communicate with the world more effectively and make our home lives easier and lighter. It shows that our future is based in the spiritual as well as technologically advanced world.",
+						"<a href=\"https://www.instagram.com/weronika_does_life\" target=\"_blank\">@weronika_does_life</a>"
+					]
+				}
+			]
+		},
+		{
+			"type": "kv",
+			"share": false,
+			"media": {
+				"type": "video",
+				"content": "{{creativity|central-saint-martins|content-series[media_path]}}Sally_Yang.mp4",
+				"title": "Sally Yang"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "Sally Yang"
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": "The future form of houses"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"I am interested in questions surrounding the form of future homes and how the physical area is a fundamental part of a home. The 'Function Follows Form' principle helped to explore my idea, by changing building structures without restriction, I imagined the new characters of each home. For example, I envisioned fixed objects on the wall and floor at 'swing home'. The simple houses, such as 'no door home' and 'moving home' represent various types. All physical structures can be a home.",
+						"<a href=\"https://www.instagram.com/_ssaallyy\" target=\"_blank\">@_ssaallyy</a>"
+					]
+				}
+			]
+		},
+		{
+			"type": "kv",
+			"share": false,
+			"media": {
+				"type": "video",
+				"content": "{{creativity|central-saint-martins|content-series[media_path]}}Katy_Duong.mp4",
+				"title": "Tu Ky Duong"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "Tu Ky Duong"
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": "What Could Home Be?"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"This short animation is an abstraction of how we cope with the prolonged self-quarantine by moulding our living space into various functions that are available otherwise. This is portrayed via the character performing mundane tasks but through their imagination they – quite literally, transform their immediate surrounding to an outdoors experience (e.g. watching movies and cinema).",
+						"<a href=\"https://www.instagram.com/katyputitdownandgotogym\" target=\"_blank\">@katyputitdownandgotogym</a>"
+					]
+				}
+			]
+		},
+		{
+			"type": "kv",
+			"share": false,
+			"media": {
+				"type": "video",
+				"content": "{{creativity|central-saint-martins|content-series[media_path]}}Wangjia_Zou.mp4",
+				"title": "Wangjia Zou"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "Wangjia Zou"
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": ""
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"The concept of home allows us to explore part of our life journey, and the time where everyone is quarantined inside, with more time with ourselves than before. These are my items, and through illustrated animations conveys my perspective on home. This ongoing isolation period and climate issue makes me want to live a slower pace, having time to self organise myself and contribute more to work.",
+						"<a href=\"https://www.instagram.com/zouuozu\" target=\"_blank\">@zouuozu</a>"
+					]
+				}
+			]
+		},
+		{
+			"type": "kv",
+			"share": false,
+			"media": {
+				"type": "video",
+				"content": "{{creativity|central-saint-martins|content-series[media_path]}}Zhen_Liu.mp4",
+				"title": "Zhen Liu, Penelope Zouganeli, HuiChi Yang."
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "Zhen Liu, Penelope Zouganeli & HuiChi Yang"
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": "Our house by the sea"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"This is an animation we worked together on. It is our our house by a digital sea of uncertainty. Until the smoke settles, we are all floating like feathers.",
+						"<a href=\"https://www.instagram.com/uilzzz\" target=\"_blank\">@uilzzz</a>",
+						"<a href=\"https://www.instagram.com/penelopezgnl\" target=\"_blank\">@penelopezgnl</a>",
+						"<a href=\"https://www.instagram.com/hcdopeee\" target=\"_blank\">@hcdopeee</a>"
+					]
+				}
+			]
+		}
+	]
 }

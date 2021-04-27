@@ -32,14 +32,14 @@ export default class HOIDynamicLinkList {
       .then(d => {
         const data = d[this.dynamicID]
         if (!data) {
-          throw 'Missing data for ID'
+          throw 'Missing data for ID ' + this.dynamicID
         }
         this.destroyLoaderAnimation()
         this.compileTemplate(data)
       })
       .catch(e => {
         // fall back or hide data?
-        console.log(e.stack)
+        console.log(e)
       })
 
   }

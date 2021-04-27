@@ -1,297 +1,301 @@
 {
-  "title": "Around The World in a Day: Palaces with Samsung and the British Museum",
-  "listTitle": "Around The World in a Day: Palaces with Samsung and the British Museum",
-  "description": "Discover some of the world's amazing architecture and gain inspiration to design your own.",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/3/KX-content-hub-full-Around_the_world_in_a_day._Palaces_with_Samsung_and_the_British_Museum_2.jpg",
-  "alt": "Photo of a small ivory Asian palace in front of a black background",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/3/KX-content-hub-half-Around_the_world_in_a_day._Palaces_with_Samsung_and_the_British_Museum_2.jpg",
-  "group": "british-museum",
-  "sort": 3,
-  "meta": {
-    "icon": "article",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "kv",
-      "media": {
-        "type": "image",
-        "content": "{{creativity|british-museum|3[image]}}",
-        "alt": "{{creativity|british-museum|3[alt]}}"
-      },
-      "style": {
-        "desktop": "top",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "1",
-          "copy": "Stay Learning. Around The World in a Day: Palaces with Samsung and the British Museum"
-        }
-      ]
-    },
-    {
-      "type": "wrapper",
-      "components": [
-        {
-          "type": "paragraphs",
-          "style": {
-            "large": true
-          },
-          "text": [
-            "Together with our partner the British Museum, we’re inviting you to discover some of the world’s most amazing architecture through our hand-picked collection of the British Museum’s objects, which you can use as inspiration for your very own design! Look closely at intricate decorative details, study the buildings of ancient and modern civilisations and have fun using your preferred artistic tools to develop your digital creative skills.",
-            "What you build and how you build it is totally up to you. Use your favourite digital drawing app, have a go on Minecraft, sketch ideas on paper, or build something using cardboard, building blocks or found materials. Then, why not bring your creations to life using your digital device to take photos and videos, create GIFs or stop motion animations?",
-            "Share your creations with us on social media using #MuseumFromHome and tagging us at @SamsungUK.",
-            "Now let us take you on a virtual journey across the globe and across time, from the comfort of your own home!",
-            "<em>Since 2009, the Samsung Digital Discovery Centre at the British Museum has been offering an innovative digital learning programme for schools and families. Through this programme children and young people can learn about and interact with the Museum’s collection using the latest Samsung technology. While the British Museum’s doors may currently be closed, you can still see its extensive collection online, and together we want to continue inspiring children and young people to build, experiment, invent and create.</em>"
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Challenge 3: Palaces",
-          "level": "2"
-        },
-        {
-          "type": "headline",
-          "copy": "Rainforest ruins",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "style": {
-            "large": true
-          },
-          "text": [
-            "Once part of a powerful Maya city, this palace was overtaken by the jungle. Will your palace lie hidden amongst the trees or be the heart of a busy city?"
-          ]
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/3/Rainforest_ruins.jpg",
-          "alt": "Old black and white photograph of ruined buildings in a rainforest",
-          "credit": "Image credit: Photographic print of excavations, photographed in Palenque, Mexico, 1890–1891. © The Trustees of the British Museum"
-        },
-        {
-          "type": "headline",
-          "copy": "Crystal construction",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "style": {
-            "large": true
-          },
-          "text": [
-            "The Crystal Palace was not a home for kings and queens, but a huge Victorian international exhibition hall made of glass. What will your palace be made of?"
-          ]
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/3/Crystal_Construction.jpg",
-          "alt": "Photo of a lithograph of the Great Exhibition at Crystal Palace being built",
-          "credit": "Image credit: Joseph Nash (1808-1878), lithograph of the Great Exhibition at Crystal Palace, published in London, UK, 1851. © The Trustees of the British Museum"
-        },
-        {
-          "type": "headline",
-          "copy": "Pocket palace",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "style": {
-            "large": true
-          },
-          "text": [
-            "This tiny palace can fit in the palm of your hand. Will your palace be gigantic or pocket-sized?"
-          ]
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/3/Pocket_Palace_crop.jpg",
-          "alt": "Photo of a small ivory Asian palace in front of a black background",
-          "credit": "Image credit: Kagetoshi (–1843 ca.), Netsuke, Dream of Rosei, made in Japan, early 19th century. © The Trustees of the British Museum"
-        },
-        {
-          "type": "headline",
-          "copy": "City sized",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "style": {
-            "large": true
-          },
-          "text": [
-            "This palace is made up of many buildings linked by walls, gateways and courtyards covered in clouds. It was sprawling and nobody could enter or leave without the emperor's permission, so it was named the Forbidden City. How many different structures will your palace include?"
-          ]
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/3/City_Sized.jpg",
-          "alt": "Photo of a Chinese ganging scroll with a areil painting of the Forbidden City in Beijing on it",
-          "credit": "Image credit: Hanging scroll of the Forbidden City, made in Beijing, China, about 16th century. © The Trustees of the British Museum"
-        },
-        {
-          "type": "headline",
-          "copy": "Impressive interiors",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "style": {
-            "large": true
-          },
-          "text": [
-            "Archways and columns, balconies and stairs. What grand features will your palace have inside?"
-          ]
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/3/Impressive_Interiors.jpg",
-          "alt": "Photo of an 18th drawing of an imaginary marble palace interior",
-          "credit": "Image credit:  Lorenzo Quaglio I (1730–1804), Drawing of an imaginary palace interior, 1745–1804. © The Trustees of the British Museum"
-        },
-        {
-          "type": "headline",
-          "copy": "Spectacular seats",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "style": {
-            "large": true
-          },
-          "text": [
-            "Elaborately decorated and placed on a raised platform on a red carpet, this is an impressive setting for a ceremony. Will your palace have a throne?"
-          ]
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/3/Spectacular_seats.jpg",
-          "alt": "Photograph of a gold, ornate Persian throne room with one central throne and smaller chairs next to it on top of a red carpet",
-          "credit": "Image credit: Photograph of Golestan Palace, Tehran, 20th century. © The Trustees of the British Museum"
-        },
-        {
-          "type": "headline",
-          "copy": "Giant guardians",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "style": {
-            "large": true
-          },
-          "text": [
-            "This mythical human headed winged lion had magical powers to protect the palace of the powerful Assyrian King Ashurnasirpal II. Who will guard your palace?"
-          ]
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/3/Giant_Guardians_crop.jpg",
-          "alt": "Photo of an anicent gypsum statue of human headed winged lion in grey stone in front of a black background",
-          "credit": "Image credit: Gypsum statue of human headed winged lion, found in Nimrud, Iraq, 865–860 BC. © The Trustees of the British Museum"
-        },
-        {
-          "type": "headline",
-          "copy": "Dramatic deeds as decoration",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "style": {
-            "large": true
-          },
-          "text": [
-            "The walls of this Assyrian palace were covered with brightly painted sculptures showing the king's adventures. Will your walls tell a story?"
-          ]
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/3/Dramatic_deeds_as_decoration.jpg",
-          "alt": "Photo of a restored print of a grand Assyrian hall decorated with relief sculptures depicting battle scenes on the walls. A group of women stand in the hall all dressed in plain dresses, with one woman in centre view wearing more elaborate clothing, shaded by an umbrella held by another woman.",
-          "credit": "Image credit: Print of Hall in Assyrian Palace restored, published in London, UK, 1849. © The Trustees of the British Museum"
-        },
-        {
-          "type": "headline",
-          "copy": "Painted palace patterns",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "style": {
-            "large": true
-          },
-          "text": [
-            "These colourful patterns decorated the walls and bricks of the palace. What will adorn the walls of your palace?"
-          ]
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/3/Painted_Palace_Patterns.jpg",
-          "alt": "Photo of a watercolour painting of purple Assyrian wall paintings and glazed bricks",
-          "credit": "Image credit: William Boutcher (1814–1900), Watercolour of Assyrian wall-wall paintings and glazed bricks from Nimrud, 19th century–early 20th century. © The Trustees of the British Museum"
-        },
-        {
-          "type": "headline",
-          "copy": "Gorgeous gardens",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "style": {
-            "large": true
-          },
-          "text": [
-            "With perfectly arranged flowerbeds, hedges and fountains, these palace gardens are fit for royalty to stroll around. Does your luxurious palace need more than a building?"
-          ]
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/3/Gorgeous_gardens.jpg",
-          "alt": "Photo of an old etching depicting the Château of Clagny in Versailles from above, with a large royal garden in the foreground and an impressive palace in the background",
-          "credit": "Image credit: Adam Perelle (1640–1695), Etching of the Château of Clagny in Versailles, France, 1674–1696. © The Trustees of the British Museum"
-        },
-        {
-          "type": "buttons",
-          "items": [
-            {
-              "copy": "Discover More Palaces",
-              "url": "https://www.britishmuseum.org/collection/search?subject=palace%2Fmansion&image=true&view=grid&sort=object_name__desc&page=1",
-              "target": "_blank"
-            }
-          ]
-        },
-        {
-          "type": "headline",
-          "level": "2",
-          "copy": "About Samsung and the British Museum"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Samsung and the British Museum have been working together in partnership since 2009, developing an engaging and innovative digital learning programme through the Samsung Digital Discovery Centre which is offered free to schools and families. It offers the most ambitious and extensive on-site digital learning programme of any UK museum. Since 2009, the programme has attracted more than 150,000 school students and families.",
-            "The <a href=\"https://www.britishmuseum.org/learn/schools/samsung-digital-discovery-centre\" target=\"_blank\">Samsung Digital Discovery Centre</a> is a digital learning hub for children and young people to learn about and interact with the British Museum's collection. This activity combines two of the centre’s most popular activities: Build Roman Britain in Minecraft, where visitors embark on their own Roman inspired construction projects, and Around the World in a Day, where students investigate cultures of ancient societies.",
-            "The Samsung Digital Discovery Centre forms a part of Samsung's global commitment in 'supporting education and empowering the next generation of innovators’. The partnership represents our shared belief in the importance of learning about the world's history and cultures to better understand the present and prepare for the future."
-          ]
-        },
-        {
-          "type": "image",
-          "style": {
-            "snippet": "max-width: 200px; padding-left: 0; padding-right: 0;"
-          },
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/british-museum-logo.png"
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "dynamic": "learn-more",
-      "id": "british-museum",
-      "title": "Learn more",
-      "style": {
-        "scroll": true
-      }
-    }
-  ]
+	"title": "Around The World in a Day: Palaces with Samsung and the British Museum",
+	"listTitle": "Around The World in a Day: Palaces with Samsung and the British Museum",
+	"description": "Discover some of the world's amazing architecture and gain inspiration to design your own.",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/3/KX-content-hub-full-Around_the_world_in_a_day._Palaces_with_Samsung_and_the_British_Museum_2.jpg",
+	"alt": "Photo of a small ivory Asian palace in front of a black background",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/3/KX-content-hub-half-Around_the_world_in_a_day._Palaces_with_Samsung_and_the_British_Museum_2.jpg",
+	"group": "british-museum",
+	"sort": 3,
+	"meta": {
+		"icon": "article",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 4,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "image",
+				"content": "{{creativity|british-museum|3[image]}}",
+				"alt": "{{creativity|british-museum|3[alt]}}"
+			},
+			"style": {
+				"desktop": "top",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"level": "1",
+					"copy": "Stay Learning. Around The World in a Day: Palaces with Samsung and the British Museum"
+				}
+			]
+		},
+		{
+			"type": "wrapper",
+			"components": [
+				{
+					"type": "paragraphs",
+					"style": {
+						"large": true
+					},
+					"text": [
+						"Together with our partner the British Museum, we’re inviting you to discover some of the world’s most amazing architecture through our hand-picked collection of the British Museum’s objects, which you can use as inspiration for your very own design! Look closely at intricate decorative details, study the buildings of ancient and modern civilisations and have fun using your preferred artistic tools to develop your digital creative skills.",
+						"What you build and how you build it is totally up to you. Use your favourite digital drawing app, have a go on Minecraft, sketch ideas on paper, or build something using cardboard, building blocks or found materials. Then, why not bring your creations to life using your digital device to take photos and videos, create GIFs or stop motion animations?",
+						"Share your creations with us on social media using #MuseumFromHome and tagging us at @SamsungUK.",
+						"Now let us take you on a virtual journey across the globe and across time, from the comfort of your own home!",
+						"<em>Since 2009, the Samsung Digital Discovery Centre at the British Museum has been offering an innovative digital learning programme for schools and families. Through this programme children and young people can learn about and interact with the Museum’s collection using the latest Samsung technology. While the British Museum’s doors may currently be closed, you can still see its extensive collection online, and together we want to continue inspiring children and young people to build, experiment, invent and create.</em>"
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Challenge 3: Palaces",
+					"level": "2"
+				},
+				{
+					"type": "headline",
+					"copy": "Rainforest ruins",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"style": {
+						"large": true
+					},
+					"text": [
+						"Once part of a powerful Maya city, this palace was overtaken by the jungle. Will your palace lie hidden amongst the trees or be the heart of a busy city?"
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/3/Rainforest_ruins.jpg",
+					"alt": "Old black and white photograph of ruined buildings in a rainforest",
+					"credit": "Image credit: Photographic print of excavations, photographed in Palenque, Mexico, 1890–1891. © The Trustees of the British Museum"
+				},
+				{
+					"type": "headline",
+					"copy": "Crystal construction",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"style": {
+						"large": true
+					},
+					"text": [
+						"The Crystal Palace was not a home for kings and queens, but a huge Victorian international exhibition hall made of glass. What will your palace be made of?"
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/3/Crystal_Construction.jpg",
+					"alt": "Photo of a lithograph of the Great Exhibition at Crystal Palace being built",
+					"credit": "Image credit: Joseph Nash (1808-1878), lithograph of the Great Exhibition at Crystal Palace, published in London, UK, 1851. © The Trustees of the British Museum"
+				},
+				{
+					"type": "headline",
+					"copy": "Pocket palace",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"style": {
+						"large": true
+					},
+					"text": [
+						"This tiny palace can fit in the palm of your hand. Will your palace be gigantic or pocket-sized?"
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/3/Pocket_Palace_crop.jpg",
+					"alt": "Photo of a small ivory Asian palace in front of a black background",
+					"credit": "Image credit: Kagetoshi (–1843 ca.), Netsuke, Dream of Rosei, made in Japan, early 19th century. © The Trustees of the British Museum"
+				},
+				{
+					"type": "headline",
+					"copy": "City sized",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"style": {
+						"large": true
+					},
+					"text": [
+						"This palace is made up of many buildings linked by walls, gateways and courtyards covered in clouds. It was sprawling and nobody could enter or leave without the emperor's permission, so it was named the Forbidden City. How many different structures will your palace include?"
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/3/City_Sized.jpg",
+					"alt": "Photo of a Chinese ganging scroll with a areil painting of the Forbidden City in Beijing on it",
+					"credit": "Image credit: Hanging scroll of the Forbidden City, made in Beijing, China, about 16th century. © The Trustees of the British Museum"
+				},
+				{
+					"type": "headline",
+					"copy": "Impressive interiors",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"style": {
+						"large": true
+					},
+					"text": [
+						"Archways and columns, balconies and stairs. What grand features will your palace have inside?"
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/3/Impressive_Interiors.jpg",
+					"alt": "Photo of an 18th drawing of an imaginary marble palace interior",
+					"credit": "Image credit:  Lorenzo Quaglio I (1730–1804), Drawing of an imaginary palace interior, 1745–1804. © The Trustees of the British Museum"
+				},
+				{
+					"type": "headline",
+					"copy": "Spectacular seats",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"style": {
+						"large": true
+					},
+					"text": [
+						"Elaborately decorated and placed on a raised platform on a red carpet, this is an impressive setting for a ceremony. Will your palace have a throne?"
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/3/Spectacular_seats.jpg",
+					"alt": "Photograph of a gold, ornate Persian throne room with one central throne and smaller chairs next to it on top of a red carpet",
+					"credit": "Image credit: Photograph of Golestan Palace, Tehran, 20th century. © The Trustees of the British Museum"
+				},
+				{
+					"type": "headline",
+					"copy": "Giant guardians",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"style": {
+						"large": true
+					},
+					"text": [
+						"This mythical human headed winged lion had magical powers to protect the palace of the powerful Assyrian King Ashurnasirpal II. Who will guard your palace?"
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/3/Giant_Guardians_crop.jpg",
+					"alt": "Photo of an anicent gypsum statue of human headed winged lion in grey stone in front of a black background",
+					"credit": "Image credit: Gypsum statue of human headed winged lion, found in Nimrud, Iraq, 865–860 BC. © The Trustees of the British Museum"
+				},
+				{
+					"type": "headline",
+					"copy": "Dramatic deeds as decoration",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"style": {
+						"large": true
+					},
+					"text": [
+						"The walls of this Assyrian palace were covered with brightly painted sculptures showing the king's adventures. Will your walls tell a story?"
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/3/Dramatic_deeds_as_decoration.jpg",
+					"alt": "Photo of a restored print of a grand Assyrian hall decorated with relief sculptures depicting battle scenes on the walls. A group of women stand in the hall all dressed in plain dresses, with one woman in centre view wearing more elaborate clothing, shaded by an umbrella held by another woman.",
+					"credit": "Image credit: Print of Hall in Assyrian Palace restored, published in London, UK, 1849. © The Trustees of the British Museum"
+				},
+				{
+					"type": "headline",
+					"copy": "Painted palace patterns",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"style": {
+						"large": true
+					},
+					"text": [
+						"These colourful patterns decorated the walls and bricks of the palace. What will adorn the walls of your palace?"
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/3/Painted_Palace_Patterns.jpg",
+					"alt": "Photo of a watercolour painting of purple Assyrian wall paintings and glazed bricks",
+					"credit": "Image credit: William Boutcher (1814–1900), Watercolour of Assyrian wall-wall paintings and glazed bricks from Nimrud, 19th century–early 20th century. © The Trustees of the British Museum"
+				},
+				{
+					"type": "headline",
+					"copy": "Gorgeous gardens",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"style": {
+						"large": true
+					},
+					"text": [
+						"With perfectly arranged flowerbeds, hedges and fountains, these palace gardens are fit for royalty to stroll around. Does your luxurious palace need more than a building?"
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/3/Gorgeous_gardens.jpg",
+					"alt": "Photo of an old etching depicting the Château of Clagny in Versailles from above, with a large royal garden in the foreground and an impressive palace in the background",
+					"credit": "Image credit: Adam Perelle (1640–1695), Etching of the Château of Clagny in Versailles, France, 1674–1696. © The Trustees of the British Museum"
+				},
+				{
+					"type": "buttons",
+					"items": [
+						{
+							"copy": "Discover More Palaces",
+							"url": "https://www.britishmuseum.org/collection/search?subject=palace%2Fmansion&image=true&view=grid&sort=object_name__desc&page=1",
+							"target": "_blank"
+						}
+					]
+				},
+				{
+					"type": "headline",
+					"level": "2",
+					"copy": "About Samsung and the British Museum"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Samsung and the British Museum have been working together in partnership since 2009, developing an engaging and innovative digital learning programme through the Samsung Digital Discovery Centre which is offered free to schools and families. It offers the most ambitious and extensive on-site digital learning programme of any UK museum. Since 2009, the programme has attracted more than 150,000 school students and families.",
+						"The <a href=\"https://www.britishmuseum.org/learn/schools/samsung-digital-discovery-centre\" target=\"_blank\">Samsung Digital Discovery Centre</a> is a digital learning hub for children and young people to learn about and interact with the British Museum's collection. This activity combines two of the centre’s most popular activities: Build Roman Britain in Minecraft, where visitors embark on their own Roman inspired construction projects, and Around the World in a Day, where students investigate cultures of ancient societies.",
+						"The Samsung Digital Discovery Centre forms a part of Samsung's global commitment in 'supporting education and empowering the next generation of innovators’. The partnership represents our shared belief in the importance of learning about the world's history and cultures to better understand the present and prepare for the future."
+					]
+				},
+				{
+					"type": "image",
+					"style": {
+						"snippet": "max-width: 200px; padding-left: 0; padding-right: 0;"
+					},
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/british-museum-logo.png"
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "learn-more",
+			"id": "british-museum",
+			"title": "Learn more",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
 }

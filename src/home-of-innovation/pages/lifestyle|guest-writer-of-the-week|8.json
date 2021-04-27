@@ -1,92 +1,96 @@
 {
-  "title": "Guest writer of the week: Staying in in style",
-  "description": "Time to swap your sweatpants for something more stylish",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/8/KV.jpg",
-  "alt": "Beauty writer Charlier Bell stands facing the camera wearing light blue jeans and a light pink floral top with one hand on her hip. Behind her a bedroom scene is visible with a light blue bed.",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/8/KV.jpg",
-  "group": "guest-writer-of-the-week",
-  "sort": 8,
-  "meta": {
-    "icon": "article",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "kv",
-      "media": {
-        "type": "image",
-        "content": "{{lifestyle|guest-writer-of-the-week|8[image]}}",
-        "alt": "{{lifestyle|guest-writer-of-the-week|8[alt]}}"
-      },
-      "style": {
-        "desktop": "right",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "copy": "Staying in in style"
-        }
-      ]
-    },
-    {
-      "type": "wrapper",
-      "components": [
-        {
-          "type": "paragraphs",
-          "style": {
-            "large": true
-          },
-          "text": [
-            "It’s time to swap your sweatpants for something more stylish! Beauty journalist, Charlie Bell, shares a handy guide on mastering your indoor wardrobe.",
-            "Although it might be tempting to stay in your pyjamas when you have no plans to leave the house, our outfits can seriously impact our productivity so it’s a good idea to switch up your look for whatever your daily schedule throws at you. From chic activewear for those sitting-room squats, to comfortable yet professional work from home attire, give your wardrobe a chic upgrade with these savvy styling tricks."
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Bedroom Bootcamp",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Keeping fit without having to step foot in a gym has never been easier thanks to live streaming services and social media, and it feels even better in cute gym wear! It’s important however that you continue looking the part - as well as avoiding injury, working out in the right gear simply puts you in the right mindset and helps kick-start your new exercise regime. Whether it’s a sweaty HIIT sesh or a more chilled-out yoga lesson, make sure you go for breathable t-shirts, seamless styles and figure-sculpting leggings for maximum comfort and support. Bold prints and colour-popping hues will help get those endorphins flowing too. Marks & Spencer’s Good Move activewear range is functional and fashionable and super affordable too, catering for most workouts. Sweaty Betty Power Leggings (£75, sweatybetty.com) are also well worth the investment with their handy pockets and bum-sculpting fabrics. Stylish enough for those dress-down Sundays too."
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Working Wardrobe",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Working from home can often present a few challenges. The upside, your commute has been significantly reduced to the two minutes it takes you to get from your bed to your makeshift desk. But the downside, your motivation is also dwindling. Make sure you hit the ground running by showering and dressing as normal as it will help add structure to your day and keep you focused. Don’t worry about reaching for your usual office attire as comfort is key, so swap a suit for something low maintenance. An oversized shirt with jeans looks polished, yet casual. A tailored jumpsuit or a boyfriend tee and wide-leg trousers are relaxed enough to be worn all day (and still professional for any important video conference calls!). H&M have a gorgeous selection of fashion forward basics that you can weave into your current wardrobe. I also love a throw-on dress – one with no restricting waistband. Comfy and carefree, they look like you made the effort too."
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Party Time",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Whether you’re having a virtual dinner party with family or cocktails with friends, this is the perfect time to experiment with new styles. And don’t forget to snap your looks too and hashtag #SamsungKX! The <a href=\"https://www.samsung.com/uk/smartphones/galaxy-s20/\">Samsung Galaxy S20</a> has a wide-angle camera for horizontal pics, making it easier to show off those outfits on the ‘gram. The classic jeans and a nice top combo can really come into play whilst statement sleeves such as a puff or a balloon are having a fashion moment and are great for creating an impact. Try Zara for a chic and affordable selection. If not your style, then why not dig out your party season sequins and give them a bit more longevity? A sparkly top or jumper can easily be dressed down with denim or loungewear, putting you straight in the party mood. If you’d rather stick to your basics, give a plain tee or sweater a jazzy upgrade with a shoulder-grazing earring or a chunky necklace. And finish off with a swipe of red lippie to get the (virtual) party started.",
-            "<em>By Charlie Bell.</em>",
-            "<em>Charlie is a London-based fashion, beauty and lifestyle editor with over twelve years' experience in the media industry. She has previously worked for titles including Closer, Reveal, Dare, Woman, Woman & Home, Now, Mail Online, Take a Break and Love it.</em>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "dynamic": "more-articles",
-      "id": "guest-writer-of-the-week",
-      "title": "More articles",
-      "style": {
-        "scroll": true
-      }
-    }
-  ]
+	"title": "Guest writer of the week: Staying in in style",
+	"description": "Time to swap your sweatpants for something more stylish",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/8/KV.jpg",
+	"alt": "Beauty writer Charlier Bell stands facing the camera wearing light blue jeans and a light pink floral top with one hand on her hip. Behind her a bedroom scene is visible with a light blue bed.",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/8/KV.jpg",
+	"group": "guest-writer-of-the-week",
+	"sort": 8,
+	"meta": {
+		"icon": "article",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 4,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "image",
+				"content": "{{lifestyle|guest-writer-of-the-week|8[image]}}",
+				"alt": "{{lifestyle|guest-writer-of-the-week|8[alt]}}"
+			},
+			"style": {
+				"desktop": "right",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Staying in in style"
+				}
+			]
+		},
+		{
+			"type": "wrapper",
+			"components": [
+				{
+					"type": "paragraphs",
+					"style": {
+						"large": true
+					},
+					"text": [
+						"It’s time to swap your sweatpants for something more stylish! Beauty journalist, Charlie Bell, shares a handy guide on mastering your indoor wardrobe.",
+						"Although it might be tempting to stay in your pyjamas when you have no plans to leave the house, our outfits can seriously impact our productivity so it’s a good idea to switch up your look for whatever your daily schedule throws at you. From chic activewear for those sitting-room squats, to comfortable yet professional work from home attire, give your wardrobe a chic upgrade with these savvy styling tricks."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Bedroom Bootcamp",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Keeping fit without having to step foot in a gym has never been easier thanks to live streaming services and social media, and it feels even better in cute gym wear! It’s important however that you continue looking the part - as well as avoiding injury, working out in the right gear simply puts you in the right mindset and helps kick-start your new exercise regime. Whether it’s a sweaty HIIT sesh or a more chilled-out yoga lesson, make sure you go for breathable t-shirts, seamless styles and figure-sculpting leggings for maximum comfort and support. Bold prints and colour-popping hues will help get those endorphins flowing too. Marks & Spencer’s Good Move activewear range is functional and fashionable and super affordable too, catering for most workouts. Sweaty Betty Power Leggings (£75, sweatybetty.com) are also well worth the investment with their handy pockets and bum-sculpting fabrics. Stylish enough for those dress-down Sundays too."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Working Wardrobe",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Working from home can often present a few challenges. The upside, your commute has been significantly reduced to the two minutes it takes you to get from your bed to your makeshift desk. But the downside, your motivation is also dwindling. Make sure you hit the ground running by showering and dressing as normal as it will help add structure to your day and keep you focused. Don’t worry about reaching for your usual office attire as comfort is key, so swap a suit for something low maintenance. An oversized shirt with jeans looks polished, yet casual. A tailored jumpsuit or a boyfriend tee and wide-leg trousers are relaxed enough to be worn all day (and still professional for any important video conference calls!). H&M have a gorgeous selection of fashion forward basics that you can weave into your current wardrobe. I also love a throw-on dress – one with no restricting waistband. Comfy and carefree, they look like you made the effort too."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Party Time",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Whether you’re having a virtual dinner party with family or cocktails with friends, this is the perfect time to experiment with new styles. And don’t forget to snap your looks too and hashtag #SamsungKX! The <a href=\"https://www.samsung.com/uk/smartphones/galaxy-s20/\">Samsung Galaxy S20</a> has a wide-angle camera for horizontal pics, making it easier to show off those outfits on the ‘gram. The classic jeans and a nice top combo can really come into play whilst statement sleeves such as a puff or a balloon are having a fashion moment and are great for creating an impact. Try Zara for a chic and affordable selection. If not your style, then why not dig out your party season sequins and give them a bit more longevity? A sparkly top or jumper can easily be dressed down with denim or loungewear, putting you straight in the party mood. If you’d rather stick to your basics, give a plain tee or sweater a jazzy upgrade with a shoulder-grazing earring or a chunky necklace. And finish off with a swipe of red lippie to get the (virtual) party started.",
+						"<em>By Charlie Bell.</em>",
+						"<em>Charlie is a London-based fashion, beauty and lifestyle editor with over twelve years' experience in the media industry. She has previously worked for titles including Closer, Reveal, Dare, Woman, Woman & Home, Now, Mail Online, Take a Break and Love it.</em>"
+					]
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "more-articles",
+			"id": "guest-writer-of-the-week",
+			"title": "More articles",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
 }

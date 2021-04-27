@@ -1,165 +1,165 @@
 {
-  "title": "Five easy accessories that will instantly update your outfit this spring",
-  "description": "",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/27/kv.jpg",
-  "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/27/thump.jpg",
-  "group": "guest-writer-of-the-week",
-  "sort": 27,
-  "meta": {
-    "icon": "article",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "kv",
-      "media": {
-        "type": "image",
-        "content": "{{lifestyle|guest-writer-of-the-week|27[image]}}",
-        "alt": "{{lifestyle|guest-writer-of-the-week|27[alt]}}"
-      },
-      "style": {
-        "desktop": "right",
-        "mobile": "bottom"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "copy": "Five easy accessories that will instantly update your outfit this spring"
-        }
-      ]
-    },
-    {
-      "type": "wrapper",
-      "components": [
-        {
-          "type": "paragraphs",
-          "text": [
-            "If the thought of switching out your loungewear for IRL clothes has you breaking out in a cold sweat, fear not. I've cherry-picked spring/summer 2021's most-wanted accessories that have the power to give your entire look an upgrade in a flash, as well as some top tips on how to get the best shots of your finished look using the new <a href=\"https://www.samsung.com/uk/smartphones/galaxy-a/galaxy-a52-5g-awesome-black-128gb-sm-a526bzkdeua/\">Samsung Galaxy A52 5G</a>. Think small accents, BIG style points. Just don't wear them all at once..."
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "1. The straw bag",
-          "level": "3"
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/27/Straw_bag_trend.jpg",
-          "alt": "",
-          "credit": "IMAGE: Oliver Bonas"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "You don't need to be beach-bound to sport this summer's 'It' bag. With leather details and cross-body straps, the straw bags du jour will work just as well in the city as they will by the sea.",
-            "Larger raffia styles ruled on the Proenza Schouler runway – ideal for slinging a picnic, Prosecco AND the kitchen sink into.",
-            "Katie Loxton's offering, from £18.99, boasts chic tan detailing while Oliver Bonas has a huge selection of roomy styles, from £59.50. Although you can expect most of Fashville to be toting one of Loewe's dreamy basket bags, from £325, come spring.",
-            "And if you’re looking to show off this style in a Tik Tok video or Instagram Reel, make sure you’re using the Samsung Galaxy A52 5G’s Super Steady mode, which lets you record flawless action videos with less blur and shake – no tripod required."
-          ]
-        },
-
-        {
-          "type": "headline",
-          "copy": "2. The oversized necklace",
-          "level": "3"
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/27/Chunky_jewellry_trend.jpg",
-          "alt": "",
-          "credit": "IMAGE: SOEL + GOLD"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "We never thought we'd be looking to Mr T for our fashion inspiration but it's fair to say SS21's statement necklaces wouldn't look out of place in the 80s legend's jewellery box. Heavy hardware adorned models' wrists, ears and decolletages at shows including Victoria Beckham. But it's the chunky chains and super-size pendants that are set to really dominate the high street this season.",
-            "And Other Stories' designs start from around £17 or check out independent brand SEOL + GOLD, from £189.95. Wear them with low necklines and minimal makeup for a VB-worthy aesthetic."
-          ]
-        },
-
-        {
-          "type": "headline",
-          "copy": "3. The luxe hair bow ",
-          "level": "3"
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/27/Large_Bow_trend.jpg",
-          "alt": "",
-          "credit": "IMAGE: Next"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Get ready to embrace your inner Bridgerton darling... whether paired with a half up-half down or as the piece-de-resistance on a swishy high pony, oversized bows adorned many a model mane at the SS21 shows. Next's sheer beauties fit the bill for £8 or try London-based Giulio Accessories that offers everything from bow-detail hairbands to barrette slides for under £20 a pop.",
-            "Alternatively, ease yourself in by swapping your usual scrunchie for a bow-detail number. Anthropologie's satin selection, in muted browns and beiges, will make the simplest of outfits infinitely cooler.",
-            "Sometimes getting the perfect selfie is hard… especially when the back of your hair is the focus! The Single Take feature of the Samsung Galaxy A52 5G is genius for this – tap the shutter once and move around for up to ten seconds. This allows the camera to capture a moment in a variety of styles, angles and formats, so you’ll be spoilt for choice!"
-          ]
-        },
-
-        {
-          "type": "headline",
-          "copy": "4. The rainbow jewellery",
-          "level": "3"
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/27/Colourful_jewellry_trend.jpg",
-          "alt": "",
-          "credit": "IMAGE: Accessorize"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "No, I'm not talking smiley-motif bling but beautifully covetable jewels in a medley of colours. On the Versace runway, models matched their fluoro stud earrings to their fuchsia lipstick, topped with Day-Glo green necklaces. Even Chanel's signature ladylike jewellery has had a neon-over for SS21 with vibrant oversized pink gems accompanying the classic pearl details.",
-            "Over on the high street, Accessorize offers a treasure trove of colourful pieces from delicate beaded necklaces, £8 – that wouldn't look out of place in a hip boutique on the White Isle – to candy-hued drop earrings, £12.",
-            "Taking this look out out? The Samsung Galaxy A52 5G’s Night Mode means you'll always get a crisp picture, even when shooting your looks in the evening!"
-          ]
-        },
-
-        {
-          "type": "headline",
-          "copy": "5. The phone bag",
-          "level": "3"
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/27/phone_bag_trend.jpg",
-          "alt": "",
-          "credit": "IMAGE: Dune London"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "If the Coach and Jacquemus SS21 shows are anything to go by, we'll all be channeling a tourist abroad this spring as phone pouches make a comeback. Worn belted around the waist or slung effortlessly around the neck, slick new takes on the classic have popped up at Burberry, from £440, Dune London, £45, and everywhere in between.",
-            "An achingly cool bag calls for an achingly cool phone to stash inside it and the new Samsung Galaxy A52 5G is perfect for shooting vivid, high resolution images of your finished spring look in all its glory. ",
-            "When reviewing all your shots, you'll love the 2x smoother scrolling with a 120hz refresh rate; although there's no need to stress about deleting any pictures thank to the impressive internal storage and memory card facilities. ",
-            "Spring 2021? I'm SO ready for you."
-          ]
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/27/Samsung_A52_5G_1193.jpg",
-          "alt": ""
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "<strong>By Amber Voller.</strong>",
-            "Amber is a freelance beauty and lifestyle journalist, having written for the likes of Stylist, Red and Harper’s Bazaar; and featured on ITV’s This Morning."
-          ]
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "dynamic": "more-articles",
-      "id": "guest-writer-of-the-week",
-      "title": "More articles",
-      "style": {
-        "scroll": true
-      }
-    }
-  ]
+	"title": "Five easy accessories that will instantly update your outfit this spring",
+	"description": "",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/27/kv.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/27/thump.jpg",
+	"group": "guest-writer-of-the-week",
+	"sort": 27,
+	"meta": {
+		"icon": "article",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 5,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "image",
+				"content": "{{lifestyle|guest-writer-of-the-week|27[image]}}",
+				"alt": "{{lifestyle|guest-writer-of-the-week|27[alt]}}"
+			},
+			"style": {
+				"desktop": "right",
+				"mobile": "bottom"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Five easy accessories that will instantly update your outfit this spring"
+				}
+			]
+		},
+		{
+			"type": "wrapper",
+			"components": [
+				{
+					"type": "paragraphs",
+					"text": [
+						"If the thought of switching out your loungewear for IRL clothes has you breaking out in a cold sweat, fear not. I've cherry-picked spring/summer 2021's most-wanted accessories that have the power to give your entire look an upgrade in a flash, as well as some top tips on how to get the best shots of your finished look using the new <a href=\"https://www.samsung.com/uk/smartphones/galaxy-a/galaxy-a52-5g-awesome-black-128gb-sm-a526bzkdeua/\">Samsung Galaxy A52 5G</a>. Think small accents, BIG style points. Just don't wear them all at once..."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "1. The straw bag",
+					"level": "3"
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/27/Straw_bag_trend.jpg",
+					"alt": "",
+					"credit": "IMAGE: Oliver Bonas"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"You don't need to be beach-bound to sport this summer's 'It' bag. With leather details and cross-body straps, the straw bags du jour will work just as well in the city as they will by the sea.",
+						"Larger raffia styles ruled on the Proenza Schouler runway – ideal for slinging a picnic, Prosecco AND the kitchen sink into.",
+						"Katie Loxton's offering, from £18.99, boasts chic tan detailing while Oliver Bonas has a huge selection of roomy styles, from £59.50. Although you can expect most of Fashville to be toting one of Loewe's dreamy basket bags, from £325, come spring.",
+						"And if you’re looking to show off this style in a Tik Tok video or Instagram Reel, make sure you’re using the Samsung Galaxy A52 5G’s Super Steady mode, which lets you record flawless action videos with less blur and shake – no tripod required."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "2. The oversized necklace",
+					"level": "3"
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/27/Chunky_jewellry_trend.jpg",
+					"alt": "",
+					"credit": "IMAGE: SOEL + GOLD"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"We never thought we'd be looking to Mr T for our fashion inspiration but it's fair to say SS21's statement necklaces wouldn't look out of place in the 80s legend's jewellery box. Heavy hardware adorned models' wrists, ears and decolletages at shows including Victoria Beckham. But it's the chunky chains and super-size pendants that are set to really dominate the high street this season.",
+						"And Other Stories' designs start from around £17 or check out independent brand SEOL + GOLD, from £189.95. Wear them with low necklines and minimal makeup for a VB-worthy aesthetic."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "3. The luxe hair bow ",
+					"level": "3"
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/27/Large_Bow_trend.jpg",
+					"alt": "",
+					"credit": "IMAGE: Next"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Get ready to embrace your inner Bridgerton darling... whether paired with a half up-half down or as the piece-de-resistance on a swishy high pony, oversized bows adorned many a model mane at the SS21 shows. Next's sheer beauties fit the bill for £8 or try London-based Giulio Accessories that offers everything from bow-detail hairbands to barrette slides for under £20 a pop.",
+						"Alternatively, ease yourself in by swapping your usual scrunchie for a bow-detail number. Anthropologie's satin selection, in muted browns and beiges, will make the simplest of outfits infinitely cooler.",
+						"Sometimes getting the perfect selfie is hard… especially when the back of your hair is the focus! The Single Take feature of the Samsung Galaxy A52 5G is genius for this – tap the shutter once and move around for up to ten seconds. This allows the camera to capture a moment in a variety of styles, angles and formats, so you’ll be spoilt for choice!"
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "4. The rainbow jewellery",
+					"level": "3"
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/27/Colourful_jewellry_trend.jpg",
+					"alt": "",
+					"credit": "IMAGE: Accessorize"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"No, I'm not talking smiley-motif bling but beautifully covetable jewels in a medley of colours. On the Versace runway, models matched their fluoro stud earrings to their fuchsia lipstick, topped with Day-Glo green necklaces. Even Chanel's signature ladylike jewellery has had a neon-over for SS21 with vibrant oversized pink gems accompanying the classic pearl details.",
+						"Over on the high street, Accessorize offers a treasure trove of colourful pieces from delicate beaded necklaces, £8 – that wouldn't look out of place in a hip boutique on the White Isle – to candy-hued drop earrings, £12.",
+						"Taking this look out out? The Samsung Galaxy A52 5G’s Night Mode means you'll always get a crisp picture, even when shooting your looks in the evening!"
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "5. The phone bag",
+					"level": "3"
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/27/phone_bag_trend.jpg",
+					"alt": "",
+					"credit": "IMAGE: Dune London"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"If the Coach and Jacquemus SS21 shows are anything to go by, we'll all be channeling a tourist abroad this spring as phone pouches make a comeback. Worn belted around the waist or slung effortlessly around the neck, slick new takes on the classic have popped up at Burberry, from £440, Dune London, £45, and everywhere in between.",
+						"An achingly cool bag calls for an achingly cool phone to stash inside it and the new Samsung Galaxy A52 5G is perfect for shooting vivid, high resolution images of your finished spring look in all its glory. ",
+						"When reviewing all your shots, you'll love the 2x smoother scrolling with a 120hz refresh rate; although there's no need to stress about deleting any pictures thank to the impressive internal storage and memory card facilities. ",
+						"Spring 2021? I'm SO ready for you."
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/27/Samsung_A52_5G_1193.jpg",
+					"alt": ""
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"<strong>By Amber Voller.</strong>",
+						"Amber is a freelance beauty and lifestyle journalist, having written for the likes of Stylist, Red and Harper’s Bazaar; and featured on ITV’s This Morning."
+					]
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "more-articles",
+			"id": "guest-writer-of-the-week",
+			"title": "More articles",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
 }

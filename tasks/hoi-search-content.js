@@ -129,7 +129,7 @@ function processFiles(files, cb) {
       category: id.split('|')[0],
       url: PUBLIC_URL + id.replace(/\|/g,'/'),
       values: fileValues,
-      joinedValues: fileValues.join(),
+      // joinedValues: fileValues.join(), // unused
       meta: preparedContent.meta || false
     })
 

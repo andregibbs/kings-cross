@@ -1,110 +1,114 @@
 {
-  "title": "Guest writer of the week: Easy Hair Hacks for a Polished Picture-Perfect Look",
-  "description": "From five-minute up-dos to salon-worthy treatments, say goodbye to bad hair days with these tips that will guarantee the best camera-ready locks.",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/13_kv_charlie_bell.jpg",
-  "alt": "Beauty writer Charlier Bell stands facing the camera",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/13_kv_charlie_bell.jpg",
-  "group": "guest-writer-of-the-week",
-  "sort": 13,
-  "meta": {
-    "icon": "article",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "kv",
-      "media": {
-        "type": "image",
-        "content": "{{lifestyle|guest-writer-of-the-week|13[image]}}",
-        "alt": "{{lifestyle|guest-writer-of-the-week|13[alt]}}"
-      },
-      "style": {
-        "desktop": "right",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "copy": "Easy Hair Hacks for a Polished Picture-Perfect Look"
-        }
-      ]
-    },
-    {
-      "type": "wrapper",
-      "components": [
-        {
-          "type": "headline",
-          "copy": "Scalp Saviour ",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Good hair starts with the scalp, and aside from the odd shampoo massage, it can often get neglected.  The scalp helps promote healthy hair growth and regulate oil production. With this in mind, it’s time to start giving it a little attention. Dirt, sebum and dead skin can build up, leaving hair looking a little dull. Try protecting the scalp from pollution and stress with the Body Shop’s new Ginger Scalp Serum, £15 – it’s a fast-absorbing formula, helping to sooth dryness and rebalance oils between washes. Infused with ginger essential oil from Sri Lanka, white willow and birch bark, it helps improve scalp health leaving it flake free."
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Smooth Operator",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Whilst it’s important to celebrate our natural hair, sometimes we want to tame unwanted frizz or flyways. Avoid wrapping your hair in a towel post-wash as this can encourage frizz. Instead, use a softer fabric such as an old t-shirt. If you have time to air dry your hair, then style it whilst it’s still wet so that it dries smooth. There are an array of products claiming to tame frizz too. As a general rule, finer hair should stick to lighter formulas to avoid feeling too greasy, whilst thicker styles can handle heavier products. Lee Stafford’s Coco Loco With Agave Shine Oil, £7.99 is a no-mess overnight treatment. Apply a couple of drops before bed and wake up with silky soft, glossy hair. For curly hair, Only Curls Enhancing Curl Gel, £16, has avocado oil, kukui oil and aloe to add shine, moisture and hold the locks in place."
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Bouncy blow-dry",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Who doesn’t love that just-stepped-out-of-the-salon bounce? With the right tools, it’s easy to fake that feeling at home too. Firstly, it’s important your hair is protected with a defence spray such as TRESemmé Heat Defense Spray, £5.49. ‘If your hair is wet, give it a super quick rough dry. Section your hair starting from the top of your ears all the way round your head and clip up and out the way,’ says Aaron Carlo, Lead Stylist for TRESemmé. ‘Starting at the root, place a round brush underneath, angling your hairdryer at the top of your hair, following the brush as you move down. Make sure to keep the hair super tight round the brush. Repeat until the section is dry and move on to the rest of your sections,’ adds Aaron. A spritz of TRESemmé Flexible Hold Hair Spray, £4.99, will hold it in place, without any stiffness. Don’t forget to capture your tresses transformation with the <a href=\"https://www.samsung.com/uk/smartphones/galaxy-note20/buy/\">Samsung Galaxy Note20</a>. The 8K camera gives you ultra-high resolution for pro-looking videos and snaps."
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Simple up dos",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "For those in-between wash days, an effortless up-do is a quick fix. Top knots look even better messy (thankfully!) and this chic laidback look can work for lounging about the house as well as a dinner date. Scoop your hair into a pony and wrap it loosely around the base, pinning in place. Tease a few more strands and add a loose curl to frame the face too. If you want to keep your hair away from your face, braids work wonders. Take it up a notch by weaving a silky scarf through the plait. Hair accessories are a great way of sprucing up any do, and provides a good distraction from pesky flyaways too. Add a nineties-style scrunchie to your ponytail, tame frizz with a hairband or add some decadence with a pretty pearl hairclip. More is more so layer on two or three clips for a catwalk-worthy finish."
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Colour Crush",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Securing a salon appointment can be as tricky as bagging a Glastonbury ticket so if you’ve got a while until your next hairdresser slot, it’s easy to give your colour a boost at-home, without reaching for any dodgy dyes. Charles Worthington Instant Root Concealer, £9.99, is quick drying, and instantly hides greys in one spritz, and then washes out. Blondes can brighten their hair with a purple shampoo or mask. L’Oreal Paris Elvive Colour Protect Intensive Purple Mask, £6 is a quick treatment that tackles brassy tones whilst nourishing hair damaged by colour, bleaching and washing."
-          ]
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "<br>",
-            "<em>By Charlie Bell.</em>",
-            "<em>Charlie is a London-based fashion, beauty and lifestyle editor with over twelve years' experience in the media industry. She has previously worked for titles including Closer, Reveal, Dare, Woman, Woman & Home, Now, Mail Online, Take a Break and Love it.</em>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "dynamic": "more-articles",
-      "id": "guest-writer-of-the-week",
-      "title": "More articles",
-      "style": {
-        "scroll": true
-      }
-    }
-  ]
+	"title": "Guest writer of the week: Easy Hair Hacks for a Polished Picture-Perfect Look",
+	"description": "From five-minute up-dos to salon-worthy treatments, say goodbye to bad hair days with these tips that will guarantee the best camera-ready locks.",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/13_kv_charlie_bell.jpg",
+	"alt": "Beauty writer Charlier Bell stands facing the camera",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/13_kv_charlie_bell.jpg",
+	"group": "guest-writer-of-the-week",
+	"sort": 13,
+	"meta": {
+		"icon": "article",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 5,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "image",
+				"content": "{{lifestyle|guest-writer-of-the-week|13[image]}}",
+				"alt": "{{lifestyle|guest-writer-of-the-week|13[alt]}}"
+			},
+			"style": {
+				"desktop": "right",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Easy Hair Hacks for a Polished Picture-Perfect Look"
+				}
+			]
+		},
+		{
+			"type": "wrapper",
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Scalp Saviour ",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Good hair starts with the scalp, and aside from the odd shampoo massage, it can often get neglected.  The scalp helps promote healthy hair growth and regulate oil production. With this in mind, it’s time to start giving it a little attention. Dirt, sebum and dead skin can build up, leaving hair looking a little dull. Try protecting the scalp from pollution and stress with the Body Shop’s new Ginger Scalp Serum, £15 – it’s a fast-absorbing formula, helping to sooth dryness and rebalance oils between washes. Infused with ginger essential oil from Sri Lanka, white willow and birch bark, it helps improve scalp health leaving it flake free."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Smooth Operator",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Whilst it’s important to celebrate our natural hair, sometimes we want to tame unwanted frizz or flyways. Avoid wrapping your hair in a towel post-wash as this can encourage frizz. Instead, use a softer fabric such as an old t-shirt. If you have time to air dry your hair, then style it whilst it’s still wet so that it dries smooth. There are an array of products claiming to tame frizz too. As a general rule, finer hair should stick to lighter formulas to avoid feeling too greasy, whilst thicker styles can handle heavier products. Lee Stafford’s Coco Loco With Agave Shine Oil, £7.99 is a no-mess overnight treatment. Apply a couple of drops before bed and wake up with silky soft, glossy hair. For curly hair, Only Curls Enhancing Curl Gel, £16, has avocado oil, kukui oil and aloe to add shine, moisture and hold the locks in place."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Bouncy blow-dry",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Who doesn’t love that just-stepped-out-of-the-salon bounce? With the right tools, it’s easy to fake that feeling at home too. Firstly, it’s important your hair is protected with a defence spray such as TRESemmé Heat Defense Spray, £5.49. ‘If your hair is wet, give it a super quick rough dry. Section your hair starting from the top of your ears all the way round your head and clip up and out the way,’ says Aaron Carlo, Lead Stylist for TRESemmé. ‘Starting at the root, place a round brush underneath, angling your hairdryer at the top of your hair, following the brush as you move down. Make sure to keep the hair super tight round the brush. Repeat until the section is dry and move on to the rest of your sections,’ adds Aaron. A spritz of TRESemmé Flexible Hold Hair Spray, £4.99, will hold it in place, without any stiffness. Don’t forget to capture your tresses transformation with the <a href=\"https://www.samsung.com/uk/smartphones/galaxy-note20/buy/\">Samsung Galaxy Note20</a>. The 8K camera gives you ultra-high resolution for pro-looking videos and snaps."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Simple up dos",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"For those in-between wash days, an effortless up-do is a quick fix. Top knots look even better messy (thankfully!) and this chic laidback look can work for lounging about the house as well as a dinner date. Scoop your hair into a pony and wrap it loosely around the base, pinning in place. Tease a few more strands and add a loose curl to frame the face too. If you want to keep your hair away from your face, braids work wonders. Take it up a notch by weaving a silky scarf through the plait. Hair accessories are a great way of sprucing up any do, and provides a good distraction from pesky flyaways too. Add a nineties-style scrunchie to your ponytail, tame frizz with a hairband or add some decadence with a pretty pearl hairclip. More is more so layer on two or three clips for a catwalk-worthy finish."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Colour Crush",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Securing a salon appointment can be as tricky as bagging a Glastonbury ticket so if you’ve got a while until your next hairdresser slot, it’s easy to give your colour a boost at-home, without reaching for any dodgy dyes. Charles Worthington Instant Root Concealer, £9.99, is quick drying, and instantly hides greys in one spritz, and then washes out. Blondes can brighten their hair with a purple shampoo or mask. L’Oreal Paris Elvive Colour Protect Intensive Purple Mask, £6 is a quick treatment that tackles brassy tones whilst nourishing hair damaged by colour, bleaching and washing."
+					]
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"<br>",
+						"<em>By Charlie Bell.</em>",
+						"<em>Charlie is a London-based fashion, beauty and lifestyle editor with over twelve years' experience in the media industry. She has previously worked for titles including Closer, Reveal, Dare, Woman, Woman & Home, Now, Mail Online, Take a Break and Love it.</em>"
+					]
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "more-articles",
+			"id": "guest-writer-of-the-week",
+			"title": "More articles",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
 }

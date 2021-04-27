@@ -1,245 +1,244 @@
 {
-  "title": "Tabatha explores fashion through an S20 FE lens",
-  "description": "",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/student-blog/tabatha-lopez-2/KV-studentblog.jpg",
-  "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/student-blog/tabatha-lopez-2/KV-studentblog.jpg",
-  "group": "graduate-fashion-week-student-blog",
-  "sort": 3,
-  "meta": {
-    "icon": "article",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "css-snippet",
-      "content": ".cc-side-by-side-image { display: flex; align-items: center; justify-content: space-between; margin: 4rem 0; } @media screen and (max-width: 768px) { .cc-side-by-side-image { margin: 2rem 0 0; } } .cc-side-by-side-image img { width: calc(50% - 0.625rem) !important; margin-bottom: 0 !important; }"
-    },
-    {
-      "type": "kv",
-      "media": {
-        "type": "image",
-        "content": "{{creativity|graduate-fashion-week|student-blog|tabatha-lopez-S20FE[image]}}",
-        "alt": ""
-      },
-      "style": {
-        "desktop": "right",
-        "mobile": "bottom"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "copy": "Tabatha explores fashion through an S20 FE lens"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Tabatha Lopez-Palmby uses the S20 FE for her latest fashion photography shoot, and interviews her subjects on the impact of technology in their lives"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "wrapper",
-      "components": [
-        {
-          "type": "headline",
-          "copy": "Amy Saunders",
-          "level": "2"
-        },
-        {
-          "type": "headline",
-          "copy": "How has technology impacted your daily life?",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "I use technology as a way to keep in contact with my friends, to share things with them and to see what they are up to. I love it as I can also follow my favourite artists and brands. I also use it as a way to promote my art."
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Do you think technology has had a positive impact on our lives and why?",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Technology definitely has had a positive impact on our lives as it enables us to stay in contact with friends and family. It’s also a way of discovering new people and new interests. There is always something new to learn. However, a daily break from our phones can be good for the mind.",
-            "The feature I liked the most on the <a href=\"https://www.samsung.com/uk/smartphones/galaxy-s20/galaxy-s20-fe/\">Samsung S20 FE</a> was the ‘single take’ on the camera. Single take allows you to capture the best moments, and those of which you might miss if using any regular camera. The feature allows you to pan around your environment, and the camera will automatically capture the best photographs and videos. The photographs and videos are then displayed to you in 14 kinds of ways (10 photos and 4 videos), such as different filters on photographs, including black and white filter; as well as boomerangs and hyperlapse for videos."
-          ]
-        },
-        {
-          "type": "class-container",
-          "class": "cc-side-by-side-image",
-          "components": [
-            {
-              "type": "image",
-              "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/student-blog/tabatha-lopez-2/amy_1.jpg",
-              "alt": ""
-            },
-            {
-              "type": "image",
-              "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/student-blog/tabatha-lopez-2/amy_2.jpg",
-              "alt": ""
-            }
-          ]
-        },
-
-
-        {
-          "type": "headline",
-          "copy": "Mubiyna Campbell",
-          "level": "2"
-        },
-        {
-          "type": "headline",
-          "copy": "How has technology impacted your daily life?",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Technology plays a huge part in my life both social and professionally. With my phone I can stay in touch with my friends and family, keep up to date with news, music, fashion, with my TV I can watch things for educational or entertainment purposes etc. As technology is so heavily incorporated in my life, I also use it in a professional field. I use social media to promote my work which means I can reach to such a large audience of people. During this time, with us going through a pandemic technology has really kept a lot of people sane and updated with what is going on. A lot of people have been doing live-streams and video calls using different social media platforms which has been a real nice way keeping people connected."
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Do you think technology has had a positive impact on our lives and why?",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Technology has had both a positive and negative impact on our lives. The good thing about technology it really does allow us to stay connected. You can use so technology for so many different things and that makes our lives a lot easier. For example, I can use technology to listen to music on the go, I can use it to navigate myself around and I can also use it to know what’s going on around the world. But this also does mean we are very dependent and reliant on using technology in our day to day lives which can be very time consuming and could make you a bit disassociated from real life.",
-            "I really liked the fact that the <a href=\"https://www.samsung.com/uk/smartphones/galaxy-s20/galaxy-s20-fe/\">Samsung S20 FE</a> is in built with 3 different optical lenses, such as ultra wide camera, the wide-angle camera and the telephoto camera. Having the ability to play around with the lenses, really does impact the outcome of my photographs. The ultra wide angle always gives a very dramatic feel to the image, and I just love it! They’ll never be a moment in which me and my friends have to squeeze into a photograph again!"
-          ]
-        },
-        {
-          "type": "class-container",
-          "class": "cc-side-by-side-image",
-          "components": [
-            {
-              "type": "image",
-              "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/student-blog/tabatha-lopez-2/mubiyna_2_r.jpg",
-              "alt": ""
-            },
-            {
-              "type": "image",
-              "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/student-blog/tabatha-lopez-2/mubiyna_3_r.jpg",
-              "alt": ""
-            }
-          ]
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/student-blog/tabatha-lopez-2/mubiyna_4.jpg",
-          "alt": ""
-        },
-
-
-
-        {
-          "type": "headline",
-          "copy": "Jade Ashley",
-          "level": "2"
-        },
-        {
-          "type": "headline",
-          "copy": "How has technology impacted your daily life?",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Technology helps me in daily life because it helps me contact all my friends and family. I have family in different countries so technology makes it easier for me to send pictures and messages to keep them updated with what’s going on. It also helps to me express myself on social media and show people what I’m passionate about.",
-            "Technology, has also served me in order to build my career as a DJ. Having a phone with me at all times, means I am able to promote my music whenever and wherever I want. It has served me to reach greater audiences and I definietly think it has had an impact upon getting bookings in the industry."
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Do you think technology has had a positive impact on our lives and why?",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "I do think technology has had a positive impact as it has allowed people to expand and make new friends through social media etc. It has also made people’s jobs easier and simple; research and answers can be found quicker which can help a lot of people with both work and studies. Technology has allowed the music industry to expand and introduce new types of music.",
-            "The night feature has to be my favourite one on the <a href=\"https://www.samsung.com/uk/smartphones/galaxy-s20/galaxy-s20-fe/\">Samsung S20 FE</a>. When taking photographs with friends during the evenings and nightime it’s always been an issue for us to get the perfect shot. Flash is often too bright, therefore this night feature works perfectly for my friends and I. The night feature will basically shoot several frames at once, adjusting itself in order to pull in light and processes them into one clear brighter image."
-          ]
-        },
-        {
-          "type": "class-container",
-          "class": "cc-side-by-side-image",
-          "components": [
-            {
-              "type": "image",
-              "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/student-blog/tabatha-lopez-2/jade_2_r.jpg",
-              "alt": ""
-            },
-            {
-              "type": "image",
-              "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/student-blog/tabatha-lopez-2/jade_3.jpg",
-              "alt": ""
-            }
-          ]
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/student-blog/tabatha-lopez-2/jade_4.jpg",
-          "alt": ""
-        }
-      ]
-    },
-    {
-      "type": "gallery",
-      "items": [
-        {
-          "type": "image",
-          "title": "See more",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/student-blog/tabatha-lopez-2/mubiyna_4_th.jpg",
-          "list_buttons": {
-            "style": {
-              "align": "center"
-            },
-            "items": [
-              {
-                "copy": "Download Portfolio",
-                "url": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/student-blog/tabatha-lopez-2/Samsung_V02.pdf"
-              }
-            ]
-          },
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/student-blog/tabatha-lopez-2/mubiyna_4.jpg"
-        },
-        {
-          "type": "image",
-          "title": "Galaxy S20 FE",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/student-blog/tabatha-lopez-2/Galaxy_S20_FE_Cloud_Navy-th.jpg",
-          "list_buttons": {
-            "style": {
-              "align": "center"
-            },
-            "items": [
-              {
-                "copy": "Galaxy S20 FE",
-                "url": "https://www.samsung.com/uk/smartphones/galaxy-s20/buy/?modelCode=SM-G780FZBDEUA/&cid=UK_PPC_3998554642_FF~Eval:Brand_SamsungShop_KS~BA_BS~IM_PR~ECOM_SB~ECOM_OB~TRAFFIC_PK~ROAS_FS~LHQ_MD~W_AI~N_MT~EXA_CA~KEW_paid-cdm&gclid=Cj0KCQjw8fr7BRDSARIsAK0Qqr6J0B95q_56QJ6f29QoqNR8qcmNE4PY6ui6L6DIA99eakqssEEopd8aAiCXEALw_wcB&gclsrc=aw.ds",
-                "target": "_blank"
-              }
-            ]
-          },
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/student-blog/tabatha-lopez-2/Galaxy_S20_FE_Cloud_Navy.jpg"
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "dynamic": "episodes",
-      "id": "graduate-fashion-week-student-blog",
-      "title": "Articles",
-      "style": {
-        "scroll": true
-      }
-    }
-  ]
+	"title": "Tabatha explores fashion through an S20 FE lens",
+	"description": "",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/student-blog/tabatha-lopez-2/KV-studentblog.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/student-blog/tabatha-lopez-2/KV-studentblog.jpg",
+	"group": "graduate-fashion-week-student-blog",
+	"sort": 3,
+	"meta": {
+		"icon": "article",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 5,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "css-snippet",
+			"content": ".cc-side-by-side-image { display: flex; align-items: center; justify-content: space-between; margin: 4rem 0; } @media screen and (max-width: 768px) { .cc-side-by-side-image { margin: 2rem 0 0; } } .cc-side-by-side-image img { width: calc(50% - 0.625rem) !important; margin-bottom: 0 !important; }"
+		},
+		{
+			"type": "kv",
+			"media": {
+				"type": "image",
+				"content": "{{creativity|graduate-fashion-week|student-blog|tabatha-lopez-S20FE[image]}}",
+				"alt": ""
+			},
+			"style": {
+				"desktop": "right",
+				"mobile": "bottom"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Tabatha explores fashion through an S20 FE lens"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Tabatha Lopez-Palmby uses the S20 FE for her latest fashion photography shoot, and interviews her subjects on the impact of technology in their lives"
+					]
+				}
+			]
+		},
+		{
+			"type": "wrapper",
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Amy Saunders",
+					"level": "2"
+				},
+				{
+					"type": "headline",
+					"copy": "How has technology impacted your daily life?",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"I use technology as a way to keep in contact with my friends, to share things with them and to see what they are up to. I love it as I can also follow my favourite artists and brands. I also use it as a way to promote my art."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Do you think technology has had a positive impact on our lives and why?",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Technology definitely has had a positive impact on our lives as it enables us to stay in contact with friends and family. It’s also a way of discovering new people and new interests. There is always something new to learn. However, a daily break from our phones can be good for the mind.",
+						"The feature I liked the most on the <a href=\"https://www.samsung.com/uk/smartphones/galaxy-s20/galaxy-s20-fe/\">Samsung S20 FE</a> was the ‘single take’ on the camera. Single take allows you to capture the best moments, and those of which you might miss if using any regular camera. The feature allows you to pan around your environment, and the camera will automatically capture the best photographs and videos. The photographs and videos are then displayed to you in 14 kinds of ways (10 photos and 4 videos), such as different filters on photographs, including black and white filter; as well as boomerangs and hyperlapse for videos."
+					]
+				},
+				{
+					"type": "class-container",
+					"class": "cc-side-by-side-image",
+					"components": [
+						{
+							"type": "image",
+							"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/student-blog/tabatha-lopez-2/amy_1.jpg",
+							"alt": ""
+						},
+						{
+							"type": "image",
+							"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/student-blog/tabatha-lopez-2/amy_2.jpg",
+							"alt": ""
+						}
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Mubiyna Campbell",
+					"level": "2"
+				},
+				{
+					"type": "headline",
+					"copy": "How has technology impacted your daily life?",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Technology plays a huge part in my life both social and professionally. With my phone I can stay in touch with my friends and family, keep up to date with news, music, fashion, with my TV I can watch things for educational or entertainment purposes etc. As technology is so heavily incorporated in my life, I also use it in a professional field. I use social media to promote my work which means I can reach to such a large audience of people. During this time, with us going through a pandemic technology has really kept a lot of people sane and updated with what is going on. A lot of people have been doing live-streams and video calls using different social media platforms which has been a real nice way keeping people connected."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Do you think technology has had a positive impact on our lives and why?",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Technology has had both a positive and negative impact on our lives. The good thing about technology it really does allow us to stay connected. You can use so technology for so many different things and that makes our lives a lot easier. For example, I can use technology to listen to music on the go, I can use it to navigate myself around and I can also use it to know what’s going on around the world. But this also does mean we are very dependent and reliant on using technology in our day to day lives which can be very time consuming and could make you a bit disassociated from real life.",
+						"I really liked the fact that the <a href=\"https://www.samsung.com/uk/smartphones/galaxy-s20/galaxy-s20-fe/\">Samsung S20 FE</a> is in built with 3 different optical lenses, such as ultra wide camera, the wide-angle camera and the telephoto camera. Having the ability to play around with the lenses, really does impact the outcome of my photographs. The ultra wide angle always gives a very dramatic feel to the image, and I just love it! They’ll never be a moment in which me and my friends have to squeeze into a photograph again!"
+					]
+				},
+				{
+					"type": "class-container",
+					"class": "cc-side-by-side-image",
+					"components": [
+						{
+							"type": "image",
+							"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/student-blog/tabatha-lopez-2/mubiyna_2_r.jpg",
+							"alt": ""
+						},
+						{
+							"type": "image",
+							"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/student-blog/tabatha-lopez-2/mubiyna_3_r.jpg",
+							"alt": ""
+						}
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/student-blog/tabatha-lopez-2/mubiyna_4.jpg",
+					"alt": ""
+				},
+				{
+					"type": "headline",
+					"copy": "Jade Ashley",
+					"level": "2"
+				},
+				{
+					"type": "headline",
+					"copy": "How has technology impacted your daily life?",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Technology helps me in daily life because it helps me contact all my friends and family. I have family in different countries so technology makes it easier for me to send pictures and messages to keep them updated with what’s going on. It also helps to me express myself on social media and show people what I’m passionate about.",
+						"Technology, has also served me in order to build my career as a DJ. Having a phone with me at all times, means I am able to promote my music whenever and wherever I want. It has served me to reach greater audiences and I definietly think it has had an impact upon getting bookings in the industry."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Do you think technology has had a positive impact on our lives and why?",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"I do think technology has had a positive impact as it has allowed people to expand and make new friends through social media etc. It has also made people’s jobs easier and simple; research and answers can be found quicker which can help a lot of people with both work and studies. Technology has allowed the music industry to expand and introduce new types of music.",
+						"The night feature has to be my favourite one on the <a href=\"https://www.samsung.com/uk/smartphones/galaxy-s20/galaxy-s20-fe/\">Samsung S20 FE</a>. When taking photographs with friends during the evenings and nightime it’s always been an issue for us to get the perfect shot. Flash is often too bright, therefore this night feature works perfectly for my friends and I. The night feature will basically shoot several frames at once, adjusting itself in order to pull in light and processes them into one clear brighter image."
+					]
+				},
+				{
+					"type": "class-container",
+					"class": "cc-side-by-side-image",
+					"components": [
+						{
+							"type": "image",
+							"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/student-blog/tabatha-lopez-2/jade_2_r.jpg",
+							"alt": ""
+						},
+						{
+							"type": "image",
+							"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/student-blog/tabatha-lopez-2/jade_3.jpg",
+							"alt": ""
+						}
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/student-blog/tabatha-lopez-2/jade_4.jpg",
+					"alt": ""
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"items": [
+				{
+					"type": "image",
+					"title": "See more",
+					"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/student-blog/tabatha-lopez-2/mubiyna_4_th.jpg",
+					"list_buttons": {
+						"style": {
+							"align": "center"
+						},
+						"items": [
+							{
+								"copy": "Download Portfolio",
+								"url": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/student-blog/tabatha-lopez-2/Samsung_V02.pdf"
+							}
+						]
+					},
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/student-blog/tabatha-lopez-2/mubiyna_4.jpg"
+				},
+				{
+					"type": "image",
+					"title": "Galaxy S20 FE",
+					"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/student-blog/tabatha-lopez-2/Galaxy_S20_FE_Cloud_Navy-th.jpg",
+					"list_buttons": {
+						"style": {
+							"align": "center"
+						},
+						"items": [
+							{
+								"copy": "Galaxy S20 FE",
+								"url": "https://www.samsung.com/uk/smartphones/galaxy-s20/buy/?modelCode=SM-G780FZBDEUA/&cid=UK_PPC_3998554642_FF~Eval:Brand_SamsungShop_KS~BA_BS~IM_PR~ECOM_SB~ECOM_OB~TRAFFIC_PK~ROAS_FS~LHQ_MD~W_AI~N_MT~EXA_CA~KEW_paid-cdm&gclid=Cj0KCQjw8fr7BRDSARIsAK0Qqr6J0B95q_56QJ6f29QoqNR8qcmNE4PY6ui6L6DIA99eakqssEEopd8aAiCXEALw_wcB&gclsrc=aw.ds",
+								"target": "_blank"
+							}
+						]
+					},
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/student-blog/tabatha-lopez-2/Galaxy_S20_FE_Cloud_Navy.jpg"
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "episodes",
+			"id": "graduate-fashion-week-student-blog",
+			"title": "Articles",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
 }

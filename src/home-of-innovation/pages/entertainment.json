@@ -6,28 +6,9 @@
   },
   "components": [
     {
-      "type": "kv",
-      "media": {
-        "type": "image",
-        "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/discover/2020-assets/entertainment.jpg",
-        "alt": ""
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "1",
-          "copy": "Entertainment"
-        }
-      ]
-    },
-    {
       "type": "link-list-id",
       "dynamic": "latest",
-      "title": "Latest",
+      "title": "Entertainment Latest",
       "style": {
         "scroll": true
       },
@@ -35,11 +16,23 @@
         "entertainment|lunch-and-listen|reclaim-lunchbreak",
         "entertainment|lunch-and-listen|bring-back-play-ep-2",
         "entertainment|lunch-and-listen|bring-back-play",
+        "entertainment|connected-living",
         "entertainment|game-dev-london-podcast|12",
         "entertainment|game-dev-london-podcast|11",
         "entertainment|game-dev-london-podcast|10",
-        "entertainment|connected-living"
+        "creativity|innovation-sessions|adam-gemili-rachel-ama-get-fit-get-cooking",
+        "creativity|innovation-sessions|elz-barney-career-advice"
       ]
+    },
+    {
+      "type": "link-list-group",
+      "dynamic": "game-dev-series",
+      "title": "Game Dev Series",
+      "style": {
+        "scroll": true
+      },
+      "id": "game-dev-series",
+      "order": "reverse"
     },
     {
       "type": "link-list-group",

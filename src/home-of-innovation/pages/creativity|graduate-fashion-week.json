@@ -1,49 +1,49 @@
 {
-  "title": "Graduate Fashion Week",
-  "description": "Discover the cutting edge portfolios submitted by students for Graduate Fashion Week’s Innovation Award 2020",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/gfw-kv.jpg",
-  "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/gfw-kv.jpg",
-  "meta": {
-    "icon": "article",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "kv",
-      "media": {
-        "type": "image",
-        "content": "{{creativity|graduate-fashion-week[image]}}",
-        "alt": "{{creativity|graduate-fashion-week[alt]}}"
-      },
-      "style": {
-        "desktop": "top",
-        "mobile": "bottom"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "copy": "Graduate Fashion Week"
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "dynamic": "blog",
-      "id": "graduate-fashion-week-student-blog",
-      "title": "Inspiring Student Content",
-      "style": {
-        "scroll": true
-      }
-    },
-    {
-      "type": "group",
-      "dynamic": "articles",
-      "id": "graduate-fashion-week",
-      "title": "More Content",
-      "style": {
-        "scroll": true
-      }
-    }
-  ]
+	"title": "Graduate Fashion Week",
+	"description": "Discover the cutting edge portfolios submitted by students for Graduate Fashion Week’s Innovation Award 2020",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/gfw-kv.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/gfw-kv.jpg",
+	"meta": {
+		"icon": "series",
+		"tags": []
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "image",
+				"content": "{{creativity|graduate-fashion-week[image]}}",
+				"alt": "{{creativity|graduate-fashion-week[alt]}}"
+			},
+			"style": {
+				"desktop": "top",
+				"mobile": "bottom"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Graduate Fashion Week"
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "blog",
+			"id": "graduate-fashion-week-student-blog",
+			"title": "Inspiring Student Content",
+			"style": {
+				"scroll": true
+			}
+		},
+		{
+			"type": "group",
+			"dynamic": "articles",
+			"id": "graduate-fashion-week",
+			"title": "More Content",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
 }

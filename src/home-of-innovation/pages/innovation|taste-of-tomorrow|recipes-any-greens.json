@@ -1,122 +1,126 @@
 {
-  "title": "Any Greens by Sara Kiyo Popowa",
-  "description": "Seed Pesto recipe",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/recipe_images_Photo_cred_Sara_Kiyo_Popowa_May_06_2020.jpg",
-  "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/08b_Samsung_Website_TOT_How_To_Recipes_400x255_V2.jpg",
-  "group": "taste-of-tomorrow",
-  "sort": 4,
-  "meta": {
-    "icon": "article",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "kv",
-      "media": {
-        "type": "image",
-        "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/recipe_images_Photo_cred_Sara_Kiyo_Popowa_May_06_2020.jpg",
-        "alt": ""
-      },
-      "style": {
-        "desktop": "right",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "copy": "Any Greens by Sara Kiyo Popowa"
-        },
-        {
-          "type": "headline",
-          "copy": "Seed Pesto over Smashed Roast Potatoes, Greens and Edible Flowers",
-          "level": "3"
-        }
-      ]
-    },
-    {
-      "type": "wrapper",
-      "components": [
-        {
-          "type": "paragraphs",
-          "text": [
-            "You don’t need basil, pine nuts and parmesan to make your own delicious pesto to serve with crispy smashed potatoes. Any green leaf or herb works, choose the more sustainable and local options like kale, parsley or watercress.",
-            "Nutritious seeds are delicious in the pesto have a low carbon footprint. The miso and vinegar combined adds a slightly ‘cheesy’ flavour! Cover leftover pesto with olive oil and keep in the fridge for up to a couple of weeks, or freeze."
-          ]
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": "Ingredients: Any Greens & Seed pesto"
-        },
-        {
-          "type": "html-list",
-          "items": [
-            "75g greens of choice + their stalks",
-            "3 tablespoons toasted sunflower or",
-            "pumpkin seeds",
-            "1 garlic clove",
-            "1/2 tablespoon white miso (optional, or",
-            "use any miso, or sea salt)",
-            "1/2 tablespoon vinegar (any)",
-            "3 tablespoons extra virgin olive oil, more to taste",
-            "Sea salt to taste"
-          ]
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": "Ingredients: Smashed Roast Potatoes"
-        },
-        {
-          "type": "html-list",
-          "items": [
-            "600g small potatoes, scrubbed but not peeled",
-            "A good drizzle of olive oil",
-            "A few garlic cloves, unpeeled",
-            "Optional, a twig of rosemary",
-            "Sea salt to taste"
-          ]
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "<strong>Tip</strong>: Swap the sunflower seeds for raw hulled hemp seeds to get more plant based protein."
-          ]
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": "Method: Any Greens & Seed pesto"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Add all ingredients to a food processor or a blender and process. Drizzle in more oil and a little water to thin if needed. Taste test and add more miso/salt/vinegar to balance the flavours."
-          ]
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": "Method: Smashed Roast Potatoes"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Preheat your oven to 200C and drizzle a baking tray with olive oil. Boil the washed potatoes until they are just about soft all the way through, about 10 minutes. Drain and let them steam off for a minute (so they are no longer wet) then spread them on the tray with the garlic cloves and rosemary twig.",
-            "Using a fork or spatula, gently push down on each individually to ‘smash’ them. Drizzle extra oil on top and scatter with salt then roast until golden brown and crisp, 20-25 minutes."
-          ]
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "dynamic": "more-articles",
-      "id": "taste-of-tomorrow",
-      "title": "More articles",
-      "style": {
-        "scroll": true
-      }
-    }
-  ]
+	"title": "Any Greens by Sara Kiyo Popowa",
+	"description": "Seed Pesto recipe",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/recipe_images_Photo_cred_Sara_Kiyo_Popowa_May_06_2020.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/08b_Samsung_Website_TOT_How_To_Recipes_400x255_V2.jpg",
+	"group": "taste-of-tomorrow",
+	"sort": 4,
+	"meta": {
+		"icon": "article",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 3,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "image",
+				"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/recipe_images_Photo_cred_Sara_Kiyo_Popowa_May_06_2020.jpg",
+				"alt": ""
+			},
+			"style": {
+				"desktop": "right",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Any Greens by Sara Kiyo Popowa"
+				},
+				{
+					"type": "headline",
+					"copy": "Seed Pesto over Smashed Roast Potatoes, Greens and Edible Flowers",
+					"level": "3"
+				}
+			]
+		},
+		{
+			"type": "wrapper",
+			"components": [
+				{
+					"type": "paragraphs",
+					"text": [
+						"You don’t need basil, pine nuts and parmesan to make your own delicious pesto to serve with crispy smashed potatoes. Any green leaf or herb works, choose the more sustainable and local options like kale, parsley or watercress.",
+						"Nutritious seeds are delicious in the pesto have a low carbon footprint. The miso and vinegar combined adds a slightly ‘cheesy’ flavour! Cover leftover pesto with olive oil and keep in the fridge for up to a couple of weeks, or freeze."
+					]
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": "Ingredients: Any Greens & Seed pesto"
+				},
+				{
+					"type": "html-list",
+					"items": [
+						"75g greens of choice + their stalks",
+						"3 tablespoons toasted sunflower or",
+						"pumpkin seeds",
+						"1 garlic clove",
+						"1/2 tablespoon white miso (optional, or",
+						"use any miso, or sea salt)",
+						"1/2 tablespoon vinegar (any)",
+						"3 tablespoons extra virgin olive oil, more to taste",
+						"Sea salt to taste"
+					]
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": "Ingredients: Smashed Roast Potatoes"
+				},
+				{
+					"type": "html-list",
+					"items": [
+						"600g small potatoes, scrubbed but not peeled",
+						"A good drizzle of olive oil",
+						"A few garlic cloves, unpeeled",
+						"Optional, a twig of rosemary",
+						"Sea salt to taste"
+					]
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"<strong>Tip</strong>: Swap the sunflower seeds for raw hulled hemp seeds to get more plant based protein."
+					]
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": "Method: Any Greens & Seed pesto"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Add all ingredients to a food processor or a blender and process. Drizzle in more oil and a little water to thin if needed. Taste test and add more miso/salt/vinegar to balance the flavours."
+					]
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": "Method: Smashed Roast Potatoes"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Preheat your oven to 200C and drizzle a baking tray with olive oil. Boil the washed potatoes until they are just about soft all the way through, about 10 minutes. Drain and let them steam off for a minute (so they are no longer wet) then spread them on the tray with the garlic cloves and rosemary twig.",
+						"Using a fork or spatula, gently push down on each individually to ‘smash’ them. Drizzle extra oil on top and scatter with salt then roast until golden brown and crisp, 20-25 minutes."
+					]
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "more-articles",
+			"id": "taste-of-tomorrow",
+			"title": "More articles",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
 }

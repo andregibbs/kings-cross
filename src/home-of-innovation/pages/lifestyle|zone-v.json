@@ -1,196 +1,200 @@
 {
-  "title": "Stay Learning: How to simplify smartphones for elderly relatives with Samsung and Zone V",
-  "description": "",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/zone-v/kx-zone-v-kv.jpg",
-  "alt": "Elderly man sat wearing a light blue jumper sat down on a brown leather armchair smiling at the camera holding a Samsung smartphone towards the camera.",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/zone-v/kx-zone-v-thumb.jpg",
-  "meta": {
-    "icon": "article",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "kv",
-      "media": {
-        "type": "image",
-        "content": "{{lifestyle|zone-v[image]}}",
-        "alt": "{{lifestyle|zone-v[alt]}}"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "copy": "{{lifestyle|zone-v[title]}}"
-        }
-      ]
-    },
-    {
-      "type": "wrapper",
-      "components": [
-        {
-          "type": "paragraphs",
-          "style": {
-            "large": true
-          },
-          "text": [
-            "Do you know anyone who would raise an eyebrow if you put the words ‘simple’ and ‘smartphone’ together?",
-            "Well, it doesn’t have to be this way!",
-            "Samsung has teamed up with <a href=\"https://zonev.com/?utm_source=samsung&utm_medium=kxweb&utm_campaign=4monthsfree\" target=\"_blank\">Zone V</a> - an app which simplifies smartphones for the elderly and those with poor eyesight, hearing and dexterity - to help those who need support connect more easily with friends and family.",
-            "Anyone who owns a Samsung Galaxy device can now access all the benefits of the Zone V app for free for the first 4 months* exclusively via the <a href=\"https://clicks.zonev.com/kx\" target=\"_blank\">Galaxy Store</a>, including a simplified interface providing access to the most important phone functions, larger text, bigger buttons, and lots more.",
-            "As a family orientated business, it’s no wonder Zone V are so passionate about creating inclusively designed and accessible technology to bring loved ones together through their devices. But how exactly does the app make smartphones simpler?"
-          ]
-        },
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "6 ways Zone V makes smartphones easier"
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": "1. Clear menus prioritising the most important apps"
-        },
-        {
-          "type": "paragraphs",
-          "style": {
-            "large": true
-          },
-          "text": [
-            "A simplified smartphone interface replaces the existing layout with a clear, streamlined menu.<br>In the form of a simple, colour-coded list, it offers quick access to the most important features such as notifications, calls, texts and contacts."
-          ]
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/zone-v/1_v2.png",
-          "alt": "Two Samsung Galaxy S20 smartphones are pictured in portrait orientation in front of a white background. One smartphone has its phone screen facing the camera, the other has the back of the phone facing the camera. On the phone screen enlarged apps are displayed on the phone's home screen."
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": "2. Navigate easily with big buttons"
-        },
-        {
-          "type": "paragraphs",
-          "style": {
-            "large": true
-          },
-          "text": [
-            "Bigger buttons throughout make navigation a pleasant experience for all, as well as including vibration feedback as an extra level of reassurance when selecting items within the menus."
-          ]
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/zone-v/2.png",
-          "alt": "A left hand holds a small black Samsung smartphone. The right have is positioned to tap the phone screen to select the Connections option in the phone settings."
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": "3. Never leave a message unread with large text"
-        },
-        {
-          "type": "paragraphs",
-          "style": {
-            "large": true
-          },
-          "text": [
-            "Enlarged text, combined with specialist reading font Tiresias makes reading and viewing content much easier. This is complimented with a top of the range in-built magnifier, which can be used for additional support if needed."
-          ]
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/zone-v/3_v2.png",
-          "alt": "Two Samsung Galaxy S11 smartphones are pictured in front of a white background, one with the phone screen facing the camera, the other with the back of the phone showing. On the phone screen, enlarged text messages are shown with a yellow circle showing a close up shot of the phone screen."
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": "4. Access favourite contacts at the touch of a button"
-        },
-        {
-          "type": "paragraphs",
-          "style": {
-            "large": true
-          },
-          "text": [
-            "The ‘Quick Contacts’ feature gives phone owners quick, direct access to their favourite contacts – especially helpful in the case of an emergency, but also just really convenient!"
-          ]
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/zone-v/4.jpg",
-          "alt": "An elderly couple smile while posing for a photo in front of a blurred green background. The man holds a Samsung smartphone in his hand to take the photo."
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": "5. SOS function for extra peace of mind"
-        },
-        {
-          "type": "paragraphs",
-          "style": {
-            "large": true
-          },
-          "text": [
-            "Zone V’s built in SOS function is the perfect tool to provide further reassurance and peace of mind when it comes to health and safety. Sitting on the lock screen and readily available in the case of an emergency, it allows for immediate access to the phone owner’s key contacts and any vital medical information they have chosen to add. This could include allergies, medication, blood type, doctor’s details, insurance details and next of kin, but is entirely down to their discretion."
-          ]
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/zone-v/5.png",
-          "alt": "Two Samsung smartphones in portrait orientation are shown, both with the phone screen facing the camera. The phone on the left shows a locked phone screen with a nights sky wallpaper with an emergency informatoin push notification. The right hand phone shows options for calling in an emergency with enlarged phone screen text."
-        },
-        {
-          "type": "headline",
-          "level": "4",
-          "copy": "6. Get advice from the NHS App with one click"
-        },
-        {
-          "type": "paragraphs",
-          "style": {
-            "large": true
-          },
-          "text": [
-            "In partnership with NHS Digital, Zone V features an incredibly useful quick link to the NHS app, straight from the phone’s menu – allowing easy access to essential medical information."
-          ]
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/zone-v/6.png",
-          "alt": "Phone screen from a Samsung smartphone is pictured, with the home screen and apps being shown."
-        },
-        {
-          "type": "paragraphs",
-          "style": {
-            "large": true
-          },
-          "text": [
-            "<em>*After the first 4 months, the Zone V app is available as a subscription for £1.99 per month, but don’t worry, there is no need to enter any payment details upfront when you first sign up - just download and enjoy the app before making a decision about a longer subscription. <a href=\"http://zonev.com/4-months-free\" target=\"_blank\">See here for full Terms & Conditions</a>.</em>"
-          ]
-        },
-        {
-          "type": "buttons",
-          "items": [
-            {
-              "copy": "Download now",
-              "url": "https://clicks.zonev.com/kx",
-              "target": "_blank"
-            }
-          ]
-        },
-        {
-          "type": "paragraphs",
-          "style": {
-            "large": true
-          },
-          "text": [
-            "To explore the full range of accessibility features across Samsung products <a href=\"https://www.samsung.com/uk/accessibility/overview/\">click here</a>"
-          ]
-        }
-      ]
-    }
-  ]
+	"title": "Stay Learning: How to simplify smartphones for elderly relatives with Samsung and Zone V",
+	"description": "",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/zone-v/kx-zone-v-kv.jpg",
+	"alt": "Elderly man sat wearing a light blue jumper sat down on a brown leather armchair smiling at the camera holding a Samsung smartphone towards the camera.",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/zone-v/kx-zone-v-thumb.jpg",
+	"meta": {
+		"icon": "article",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 4,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "image",
+				"content": "{{lifestyle|zone-v[image]}}",
+				"alt": "{{lifestyle|zone-v[alt]}}"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "{{lifestyle|zone-v[title]}}"
+				}
+			]
+		},
+		{
+			"type": "wrapper",
+			"components": [
+				{
+					"type": "paragraphs",
+					"style": {
+						"large": true
+					},
+					"text": [
+						"Do you know anyone who would raise an eyebrow if you put the words ‘simple’ and ‘smartphone’ together?",
+						"Well, it doesn’t have to be this way!",
+						"Samsung has teamed up with <a href=\"https://zonev.com/?utm_source=samsung&utm_medium=kxweb&utm_campaign=4monthsfree\" target=\"_blank\">Zone V</a> - an app which simplifies smartphones for the elderly and those with poor eyesight, hearing and dexterity - to help those who need support connect more easily with friends and family.",
+						"Anyone who owns a Samsung Galaxy device can now access all the benefits of the Zone V app for free for the first 4 months* exclusively via the <a href=\"https://clicks.zonev.com/kx\" target=\"_blank\">Galaxy Store</a>, including a simplified interface providing access to the most important phone functions, larger text, bigger buttons, and lots more.",
+						"As a family orientated business, it’s no wonder Zone V are so passionate about creating inclusively designed and accessible technology to bring loved ones together through their devices. But how exactly does the app make smartphones simpler?"
+					]
+				},
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "6 ways Zone V makes smartphones easier"
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": "1. Clear menus prioritising the most important apps"
+				},
+				{
+					"type": "paragraphs",
+					"style": {
+						"large": true
+					},
+					"text": [
+						"A simplified smartphone interface replaces the existing layout with a clear, streamlined menu.<br>In the form of a simple, colour-coded list, it offers quick access to the most important features such as notifications, calls, texts and contacts."
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/zone-v/1_v2.png",
+					"alt": "Two Samsung Galaxy S20 smartphones are pictured in portrait orientation in front of a white background. One smartphone has its phone screen facing the camera, the other has the back of the phone facing the camera. On the phone screen enlarged apps are displayed on the phone's home screen."
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": "2. Navigate easily with big buttons"
+				},
+				{
+					"type": "paragraphs",
+					"style": {
+						"large": true
+					},
+					"text": [
+						"Bigger buttons throughout make navigation a pleasant experience for all, as well as including vibration feedback as an extra level of reassurance when selecting items within the menus."
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/zone-v/2.png",
+					"alt": "A left hand holds a small black Samsung smartphone. The right have is positioned to tap the phone screen to select the Connections option in the phone settings."
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": "3. Never leave a message unread with large text"
+				},
+				{
+					"type": "paragraphs",
+					"style": {
+						"large": true
+					},
+					"text": [
+						"Enlarged text, combined with specialist reading font Tiresias makes reading and viewing content much easier. This is complimented with a top of the range in-built magnifier, which can be used for additional support if needed."
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/zone-v/3_v2.png",
+					"alt": "Two Samsung Galaxy S11 smartphones are pictured in front of a white background, one with the phone screen facing the camera, the other with the back of the phone showing. On the phone screen, enlarged text messages are shown with a yellow circle showing a close up shot of the phone screen."
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": "4. Access favourite contacts at the touch of a button"
+				},
+				{
+					"type": "paragraphs",
+					"style": {
+						"large": true
+					},
+					"text": [
+						"The ‘Quick Contacts’ feature gives phone owners quick, direct access to their favourite contacts – especially helpful in the case of an emergency, but also just really convenient!"
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/zone-v/4.jpg",
+					"alt": "An elderly couple smile while posing for a photo in front of a blurred green background. The man holds a Samsung smartphone in his hand to take the photo."
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": "5. SOS function for extra peace of mind"
+				},
+				{
+					"type": "paragraphs",
+					"style": {
+						"large": true
+					},
+					"text": [
+						"Zone V’s built in SOS function is the perfect tool to provide further reassurance and peace of mind when it comes to health and safety. Sitting on the lock screen and readily available in the case of an emergency, it allows for immediate access to the phone owner’s key contacts and any vital medical information they have chosen to add. This could include allergies, medication, blood type, doctor’s details, insurance details and next of kin, but is entirely down to their discretion."
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/zone-v/5.png",
+					"alt": "Two Samsung smartphones in portrait orientation are shown, both with the phone screen facing the camera. The phone on the left shows a locked phone screen with a nights sky wallpaper with an emergency informatoin push notification. The right hand phone shows options for calling in an emergency with enlarged phone screen text."
+				},
+				{
+					"type": "headline",
+					"level": "4",
+					"copy": "6. Get advice from the NHS App with one click"
+				},
+				{
+					"type": "paragraphs",
+					"style": {
+						"large": true
+					},
+					"text": [
+						"In partnership with NHS Digital, Zone V features an incredibly useful quick link to the NHS app, straight from the phone’s menu – allowing easy access to essential medical information."
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/zone-v/6.png",
+					"alt": "Phone screen from a Samsung smartphone is pictured, with the home screen and apps being shown."
+				},
+				{
+					"type": "paragraphs",
+					"style": {
+						"large": true
+					},
+					"text": [
+						"<em>*After the first 4 months, the Zone V app is available as a subscription for £1.99 per month, but don’t worry, there is no need to enter any payment details upfront when you first sign up - just download and enjoy the app before making a decision about a longer subscription. <a href=\"http://zonev.com/4-months-free\" target=\"_blank\">See here for full Terms & Conditions</a>.</em>"
+					]
+				},
+				{
+					"type": "buttons",
+					"items": [
+						{
+							"copy": "Download now",
+							"url": "https://clicks.zonev.com/kx",
+							"target": "_blank"
+						}
+					]
+				},
+				{
+					"type": "paragraphs",
+					"style": {
+						"large": true
+					},
+					"text": [
+						"To explore the full range of accessibility features across Samsung products <a href=\"https://www.samsung.com/uk/accessibility/overview/\">click here</a>"
+					]
+				}
+			]
+		}
+	]
 }

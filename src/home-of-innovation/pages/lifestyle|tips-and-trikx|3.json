@@ -1,164 +1,168 @@
 {
-  "title": "Tips & Trikx: Get creative in the kitchen",
-  "description": "Get creative in the kitchen",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_KV.JPG",
-  "alt": "A plate of food with a brocolli stir fry, and a pair of chopsticks, on a woven mat",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_KV.JPG",
-  "group": "tips-and-trikx",
-  "sort": 3,
-  "meta": {
-    "icon": "article",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "kv",
-      "media": {
-        "type": "image",
-        "content": "{{lifestyle|tips-and-trikx|3[image]}}",
-        "alt": "{{lifestyle|tips-and-trikx|3[alt]}}"
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "bottom"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "copy": "{{lifestyle|tips-and-trikx|3[title]}}"
-        }
-      ]
-    },
-    {
-      "type": "wrapper",
-      "components": [
-        {
-          "type": "paragraphs",
-          "style": {
-            "large": true
-          },
-          "text": [
-            "Real-time recipes, plant-based décor and a taste of the Caribbean; Samsung KX reveals five kitchen tips and ‘triKX’ to try at home."
-          ]
-        },
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "1) Blooming tables"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Families are eating together more than ever, so why not brighten mealtimes with some home-grown table décor? A great way to keep kids busy and encourage an interest in nature   by hand-picking flowers straight from the garden or growing at home - a perfect mini project. "
-          ]
-        },
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "2) Recipes at the ready"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Planning a menu for the week ahead can help strip back food waste and save time on shopping, though daily meal inspiration can be tricky. The <a href=\"https://www.samsung.com/uk/refrigerators/family-hub-fridge-freezers/\">Samsung Family Hub™ Fridge Freezer</a> partnership with Whisk offers a range of exciting, personalised recipes. Using the built-in camera, the fridge recommends meals based on the ingredients available, as well as the go-to dishes that families loves most."
-          ]
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_1.JPG",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_1.JPG",
-          "alt": "A plate of food with a black noodles, peppers, carrots in a stir fry and a pair of dark blue chopsticks, on a green woven mat"
-        },
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "3) Frozen feasts"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Prepping and freezing meals is a great way to save money and cut back on hours spent over the stove. From frozen soups to pasta sauces, simply prepare dishes in bulk, split into freezer-bags and store away until they are ready to be used."
-          ]
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_2.JPG",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_2.JPG",
-          "alt": "A fridge freezer in a kitchen, with the lower half open displaying the food contents inside"
-        },
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "4) Staycation sorbets"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Families can bring a touch of the Caribbean to their kitchens with exotic homemade sorbet lollies; a fun and easy way to keep kids occupied. Parents can get little ones to choose their favourite exotic fruits, then supervise whilst they pop in a blender with ice, yoghurt and fruit juice, ready to pour into lolly trays for freezing. A few hours later, the frozen treats will be ready to enjoy."
-          ]
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_3.JPG",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_3.JPG",
-          "alt": "5 unwrapped ice lollies sit on a kitchen surface alongside ice cubes"
-        },
-        {
-          "type": "headline",
-          "level": "3",
-          "copy": "5) Capture the flavour"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Instagram is the perfect platform for sharing dishes and inspiring others to get creative in the kitchen. Snapping stunning shots doesn’t have to be difficult! Foodies can try adding garnishes of contrasting colours to help make the hues of different dishes pop."
-          ]
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_4.JPG",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_4.JPG",
-          "alt": "A chef-standard looking plate of food sits on a black plate, with a black background"
-        }
-      ]
-    },
-    {
-      "type": "gallery",
-      "items": [
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_1.JPG",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_1.JPG",
-          "alt": "A beautiful, colourful plate of noodles and vegetables illustrating creativity in the kitchen"
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_2.JPG",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_2.JPG",
-          "alt": "A fridge freezer in a kitchen, with the lower half open displaying the food contents inside"
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_3.JPG",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_3.JPG",
-          "alt": "5 unwrapped ice lollies sit on a kitchen surface alongside ice cubes"
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_4.JPG",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_4.JPG",
-          "alt": "A chef-standard looking plate of food sits on a black plate, with a black background"
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "dynamic": "more-episodes",
-      "id": "tips-and-trikx",
-      "title": "More episodes",
-      "style": {
-        "scroll": true
-      }
-    }
-  ]
+	"title": "Tips & Trikx: Get creative in the kitchen",
+	"description": "Get creative in the kitchen",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_KV.JPG",
+	"alt": "A plate of food with a brocolli stir fry, and a pair of chopsticks, on a woven mat",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_KV.JPG",
+	"group": "tips-and-trikx",
+	"sort": 3,
+	"meta": {
+		"icon": "article",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 2,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "image",
+				"content": "{{lifestyle|tips-and-trikx|3[image]}}",
+				"alt": "{{lifestyle|tips-and-trikx|3[alt]}}"
+			},
+			"style": {
+				"desktop": "left",
+				"mobile": "bottom"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "{{lifestyle|tips-and-trikx|3[title]}}"
+				}
+			]
+		},
+		{
+			"type": "wrapper",
+			"components": [
+				{
+					"type": "paragraphs",
+					"style": {
+						"large": true
+					},
+					"text": [
+						"Real-time recipes, plant-based décor and a taste of the Caribbean; Samsung KX reveals five kitchen tips and ‘triKX’ to try at home."
+					]
+				},
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "1) Blooming tables"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Families are eating together more than ever, so why not brighten mealtimes with some home-grown table décor? A great way to keep kids busy and encourage an interest in nature   by hand-picking flowers straight from the garden or growing at home - a perfect mini project. "
+					]
+				},
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "2) Recipes at the ready"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Planning a menu for the week ahead can help strip back food waste and save time on shopping, though daily meal inspiration can be tricky. The <a href=\"https://www.samsung.com/uk/refrigerators/family-hub-fridge-freezers/\">Samsung Family Hub™ Fridge Freezer</a> partnership with Whisk offers a range of exciting, personalised recipes. Using the built-in camera, the fridge recommends meals based on the ingredients available, as well as the go-to dishes that families loves most."
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_1.JPG",
+					"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_1.JPG",
+					"alt": "A plate of food with a black noodles, peppers, carrots in a stir fry and a pair of dark blue chopsticks, on a green woven mat"
+				},
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "3) Frozen feasts"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Prepping and freezing meals is a great way to save money and cut back on hours spent over the stove. From frozen soups to pasta sauces, simply prepare dishes in bulk, split into freezer-bags and store away until they are ready to be used."
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_2.JPG",
+					"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_2.JPG",
+					"alt": "A fridge freezer in a kitchen, with the lower half open displaying the food contents inside"
+				},
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "4) Staycation sorbets"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Families can bring a touch of the Caribbean to their kitchens with exotic homemade sorbet lollies; a fun and easy way to keep kids occupied. Parents can get little ones to choose their favourite exotic fruits, then supervise whilst they pop in a blender with ice, yoghurt and fruit juice, ready to pour into lolly trays for freezing. A few hours later, the frozen treats will be ready to enjoy."
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_3.JPG",
+					"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_3.JPG",
+					"alt": "5 unwrapped ice lollies sit on a kitchen surface alongside ice cubes"
+				},
+				{
+					"type": "headline",
+					"level": "3",
+					"copy": "5) Capture the flavour"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Instagram is the perfect platform for sharing dishes and inspiring others to get creative in the kitchen. Snapping stunning shots doesn’t have to be difficult! Foodies can try adding garnishes of contrasting colours to help make the hues of different dishes pop."
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_4.JPG",
+					"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_4.JPG",
+					"alt": "A chef-standard looking plate of food sits on a black plate, with a black background"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"items": [
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_1.JPG",
+					"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_1.JPG",
+					"alt": "A beautiful, colourful plate of noodles and vegetables illustrating creativity in the kitchen"
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_2.JPG",
+					"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_2.JPG",
+					"alt": "A fridge freezer in a kitchen, with the lower half open displaying the food contents inside"
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_3.JPG",
+					"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_3.JPG",
+					"alt": "5 unwrapped ice lollies sit on a kitchen surface alongside ice cubes"
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_4.JPG",
+					"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/tips-and-trikx/tips-3/Image_4.JPG",
+					"alt": "A chef-standard looking plate of food sits on a black plate, with a black background"
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "more-episodes",
+			"id": "tips-and-trikx",
+			"title": "More episodes",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
 }

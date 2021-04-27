@@ -1,171 +1,168 @@
 {
-  "title": "Guest writer of the week: The Best Games of this Generation ",
-  "description": "",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/kx-guest-writer-10-kv.jpg",
-  "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/kx-guest-writer-10-thumb.jpg",
-  "group": "guest-writer-of-the-week",
-  "sort": 10,
-  "meta": {
-    "icon": "article",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "kv",
-      "media": {
-        "type": "image",
-        "content": "{{lifestyle|guest-writer-of-the-week|10[image]}}",
-        "alt": "{{lifestyle|guest-writer-of-the-week|10[alt]}}"
-      },
-      "style": {
-        "desktop": "right",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "copy": "The Best Games of this Generation"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "It seems crazy to think that it's been almost seven years since the current crop of consoles launched, and it's hard to argue that a lot has happened in that time. Between new types of always-online experiences, to full-blown remakes of classic games, as well as the latest and greatest in graphics and game design, this generation has had it all.",
-            "Here's a quick glimpse at some of the most memorable experiences we've had over the last seven years."
-          ]
-        }
-      ]
-    },
-    {
-      "type": "wrapper",
-      "components": [
-
-        {
-          "type": "headline",
-          "copy": "Fun With Friends",
-          "level": "3"
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/10/fortnite.jpg",
-          "alt": "",
-          "credit": "Image Credit: Fortnite. Colourful and chaotic, Fortnite has become a cultural moment"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Ok, let's get the obvious one out of the way. Fortnite has transcended gaming to become a platform in its own right. Its bright colours and easy-to-learn but difficult-to-master building mechanics make it the complete antithesis of every other \"Battle Royale\" game out there, and it's become a place where friends get together to squad up, find secrets, and compete with other players. No game since Minecraft has become such a pop-culture phenomenon, and it's unlikely anything will, again. In fact, you can download it to your smartphone right now and see what the fuss is about!",
-            "<br>"
-          ]
-        },
-
-        {
-          "type": "headline",
-          "copy": "For The Competitors",
-          "level": "3"
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/10/rainbow_six_siege.jpg",
-          "alt": "",
-          "credit": "Image Credit: Rainbow Six Siege. The best tactical shooter on consoles, no two matches of Siege are the same"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Esports has become universal in certain franchises, but in terms of that sweaty-palmed, controller-clutching competition, Rainbow Six: Siege is an easy recommendation. Despite launching all the way back in 2015, the game gets new content multiple times per year. That includes new maps, new characters with their own unique abilities, and even changes to what's already there, just to keep you on your toes. Each Operator is fun to learn and teaming up with friends to navigate destructible environments never gets old.",
-            "<br>"
-          ]
-        },
-
-        {
-          "type": "headline",
-          "copy": "The Everlasting Gobstopper",
-          "level": "3"
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/10/destiny_w.jpg",
-          "alt": "",
-          "credit": "Image Credit: Destiny 2. After a rocky start, Destiny 2 has become the game that keeps on giving"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Destiny 2 may have launched with a shallow pool of content, but the game (not unlike Rainbow Six: Siege) has grown over time as expansions have built out the game's universe, both in terms of things to do and stories to tell. Offering arguably the best play fighting of any game on console, Destiny 2 is the kind of game that’s easy to get lost in, in the best way. Whether you're teaming up with friends to take on other players or banding with Guardians to take on one of the game's puzzle-filled Raids, there's still nothing quite like it.",
-            "<br>"
-          ]
-        },
-
-        {
-          "type": "headline",
-          "copy": "Petrolheads, Rejoice!",
-          "level": "3"
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/10/forza_horizon.jpg",
-          "alt": "",
-          "credit": "Image Credit: Forza Horizon 4. Forza Horizon 4 might just be the best driving game, ever."
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "While Gran Turismo and Forza Motorsport have traded paint to earn the chequered flag that would crown them the best racing game franchise, the latter's spin-off Horizon became a sensation with Forza Horizon 4. Offering an open-world replica of the United Kingdom to race, drift, and jump around; it's absolutely stunning to look at and incredibly approachable for newcomers and seasoned sim-racing fans alike. With secrets to uncover around every bend, it's the best driving game around and will keep you coming back with seasonal changes to its huge map.",
-            "<br>"
-          ]
-        },
-
-        {
-          "type": "headline",
-          "copy": "A True Open World",
-          "level": "3"
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/10/red_dead_redemption.jpg",
-          "alt": "",
-          "credit": "Image Credit: Red Dead Redemption 2. The world of Red Dead is almost impossibly vast, and with so much to do."
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Red Dead Redemption 2 is a slow-burn, cowboy epic that'll take over seventy hours to play through - and even then, there's a good chance you won't see everything. In fact, the real charm of Red Dead Redemption 2's lawless frontier is that it feels as though it's constantly moving and evolving, regardless of your character's input. With incredible attention to detail, you'll want to take your time with the story, before jumping back into the world with its sprawling online mode.",
-            "<br>"
-          ]
-        },
-
-        {
-          "type": "headline",
-          "copy": "A Harrowing Tale of Revenge",
-          "level": "3"
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/10/the_last_of_us_two.jpg",
-          "alt": "",
-          "credit": "Image Credit: TLOU2. Not for the faint of heart, The Last of Us Part 2 is a watershed moment in gaming."
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "The Last of Us is considered by many to be one of gaming's greats, and the decision to create a sequel was an undeniable risk. Thankfully, Ellie's tale of revenge is not only up to continuing the series' legacy of mature storytelling and nuanced writing and performances but takes everything the first game did in terms of gameplay and kicks it up a notch. Its stealth is more refined, combat is more brutal, and the game's mutated monsters are scarier than ever. Unmissable.",
-            "Whichever console you're playing on, each of these titles perform  stunningly on the <a href=\"https://displaysolutions.samsung.com/monitor/odyssey\">Samsung Odyssey G9</a> monitor. At 49-inches it offers incredible immersion, alongside an epic 5K resolution.",
-            "by Lloyd Coombes",
-            "<em>Lloyd Coombes is a freelance gaming and tech journalist, specialising in games that evolve over time. He writes reviews, previews, features and opinion pieces, and regularly contributes to Gfinity, TechRadar, GamesRadar and the Daily Star.</em>"
-          ]
-        }
-
-      ]
-    },
-    {
-      "type": "group",
-      "dynamic": "more-articles",
-      "id": "guest-writer-of-the-week",
-      "title": "More articles",
-      "style": {
-        "scroll": true
-      }
-    }
-  ]
+	"title": "Guest writer of the week: The Best Games of this Generation ",
+	"description": "",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/kx-guest-writer-10-kv.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/kx-guest-writer-10-thumb.jpg",
+	"group": "guest-writer-of-the-week",
+	"sort": 10,
+	"meta": {
+		"icon": "article",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 4,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "image",
+				"content": "{{lifestyle|guest-writer-of-the-week|10[image]}}",
+				"alt": "{{lifestyle|guest-writer-of-the-week|10[alt]}}"
+			},
+			"style": {
+				"desktop": "right",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "The Best Games of this Generation"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"It seems crazy to think that it's been almost seven years since the current crop of consoles launched, and it's hard to argue that a lot has happened in that time. Between new types of always-online experiences, to full-blown remakes of classic games, as well as the latest and greatest in graphics and game design, this generation has had it all.",
+						"Here's a quick glimpse at some of the most memorable experiences we've had over the last seven years."
+					]
+				}
+			]
+		},
+		{
+			"type": "wrapper",
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Fun With Friends",
+					"level": "3"
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/10/fortnite.jpg",
+					"alt": "",
+					"credit": "Image Credit: Fortnite. Colourful and chaotic, Fortnite has become a cultural moment"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Ok, let's get the obvious one out of the way. Fortnite has transcended gaming to become a platform in its own right. Its bright colours and easy-to-learn but difficult-to-master building mechanics make it the complete antithesis of every other \"Battle Royale\" game out there, and it's become a place where friends get together to squad up, find secrets, and compete with other players. No game since Minecraft has become such a pop-culture phenomenon, and it's unlikely anything will, again. In fact, you can download it to your smartphone right now and see what the fuss is about!",
+						"<br>"
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "For The Competitors",
+					"level": "3"
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/10/rainbow_six_siege.jpg",
+					"alt": "",
+					"credit": "Image Credit: Rainbow Six Siege. The best tactical shooter on consoles, no two matches of Siege are the same"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Esports has become universal in certain franchises, but in terms of that sweaty-palmed, controller-clutching competition, Rainbow Six: Siege is an easy recommendation. Despite launching all the way back in 2015, the game gets new content multiple times per year. That includes new maps, new characters with their own unique abilities, and even changes to what's already there, just to keep you on your toes. Each Operator is fun to learn and teaming up with friends to navigate destructible environments never gets old.",
+						"<br>"
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "The Everlasting Gobstopper",
+					"level": "3"
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/10/destiny_w.jpg",
+					"alt": "",
+					"credit": "Image Credit: Destiny 2. After a rocky start, Destiny 2 has become the game that keeps on giving"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Destiny 2 may have launched with a shallow pool of content, but the game (not unlike Rainbow Six: Siege) has grown over time as expansions have built out the game's universe, both in terms of things to do and stories to tell. Offering arguably the best play fighting of any game on console, Destiny 2 is the kind of game that’s easy to get lost in, in the best way. Whether you're teaming up with friends to take on other players or banding with Guardians to take on one of the game's puzzle-filled Raids, there's still nothing quite like it.",
+						"<br>"
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Petrolheads, Rejoice!",
+					"level": "3"
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/10/forza_horizon.jpg",
+					"alt": "",
+					"credit": "Image Credit: Forza Horizon 4. Forza Horizon 4 might just be the best driving game, ever."
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"While Gran Turismo and Forza Motorsport have traded paint to earn the chequered flag that would crown them the best racing game franchise, the latter's spin-off Horizon became a sensation with Forza Horizon 4. Offering an open-world replica of the United Kingdom to race, drift, and jump around; it's absolutely stunning to look at and incredibly approachable for newcomers and seasoned sim-racing fans alike. With secrets to uncover around every bend, it's the best driving game around and will keep you coming back with seasonal changes to its huge map.",
+						"<br>"
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "A True Open World",
+					"level": "3"
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/10/red_dead_redemption.jpg",
+					"alt": "",
+					"credit": "Image Credit: Red Dead Redemption 2. The world of Red Dead is almost impossibly vast, and with so much to do."
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Red Dead Redemption 2 is a slow-burn, cowboy epic that'll take over seventy hours to play through - and even then, there's a good chance you won't see everything. In fact, the real charm of Red Dead Redemption 2's lawless frontier is that it feels as though it's constantly moving and evolving, regardless of your character's input. With incredible attention to detail, you'll want to take your time with the story, before jumping back into the world with its sprawling online mode.",
+						"<br>"
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "A Harrowing Tale of Revenge",
+					"level": "3"
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/10/the_last_of_us_two.jpg",
+					"alt": "",
+					"credit": "Image Credit: TLOU2. Not for the faint of heart, The Last of Us Part 2 is a watershed moment in gaming."
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"The Last of Us is considered by many to be one of gaming's greats, and the decision to create a sequel was an undeniable risk. Thankfully, Ellie's tale of revenge is not only up to continuing the series' legacy of mature storytelling and nuanced writing and performances but takes everything the first game did in terms of gameplay and kicks it up a notch. Its stealth is more refined, combat is more brutal, and the game's mutated monsters are scarier than ever. Unmissable.",
+						"Whichever console you're playing on, each of these titles perform  stunningly on the <a href=\"https://displaysolutions.samsung.com/monitor/odyssey\">Samsung Odyssey G9</a> monitor. At 49-inches it offers incredible immersion, alongside an epic 5K resolution.",
+						"by Lloyd Coombes",
+						"<em>Lloyd Coombes is a freelance gaming and tech journalist, specialising in games that evolve over time. He writes reviews, previews, features and opinion pieces, and regularly contributes to Gfinity, TechRadar, GamesRadar and the Daily Star.</em>"
+					]
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "more-articles",
+			"id": "guest-writer-of-the-week",
+			"title": "More articles",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
 }

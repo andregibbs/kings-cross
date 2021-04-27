@@ -1,46 +1,50 @@
 {
-  "title": "Lunch and Listen - Episode 1",
-  "description": "Lunch time play starts here. Watch Munya Chawawa work up a sweat and Amelia Dimoldenberg shock with her sketches as host Clara Amfo brings the fun back to our breaks.",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/entertainment/lunch-and-listen/kv_short.jpg",
-  "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/entertainment/lunch-and-listen/Samsung_Website_THUMBNAIL_EP1_Hero_v3.jpg",
-  "group": "lunch-and-listen",
-  "sort": 3,
-  "meta": {
-    "icon": "video",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "css-snippet",
-      "content": ".hoiKv__MediaImage { background-size: contain !important; } .hoiKv__Media:after { padding-bottom: 45% !important; }",
-      "__notes": "custom ratio for kv image"
-    },
-    {
-      "type": "kv",
-      "media": {
-        "type": "youtube",
-        "content": "ZUKvp5S8gK8",
-        "poster": "{{entertainment|lunch-and-listen|bring-back-play[image]}}",
-        "alt": "{{entertainment|lunch-and-listen|bring-back-play[alt]}}"
-      },
-      "style": {
-        "desktop": "top",
-        "mobile": "bottom"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "copy": "{{entertainment|lunch-and-listen|bring-back-play[title]}}"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Samsung KX’s all new series Lunch & Listen is here to help you reclaim your lunch break! Hosted by Clara Amfo, this fun and engaging two-part series sees special guests Katherine Ryan, Munya Chawawa, Reggie Yates and Amelia Dimoldenberg reveal their hidden hobbies and talk about how they reclaim their free time - inspiring you to do the same.",
-            "Lunch time play starts here. Watch Munya Chawawa work up a sweat and Amelia Dimoldenberg shock with her sketches as host Clara Amfo brings the fun back to our breaks with <a href=\"https://www.samsung.com/uk/unpacked/\">Samsung Galaxy tech</a>."
-          ]
-        }
-      ]
-    }
-  ]
+	"title": "Lunch and Listen - Episode 1",
+	"description": "Lunch time play starts here. Watch Munya Chawawa work up a sweat and Amelia Dimoldenberg shock with her sketches as host Clara Amfo brings the fun back to our breaks.",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/entertainment/lunch-and-listen/kv_short.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/entertainment/lunch-and-listen/Samsung_Website_THUMBNAIL_EP1_Hero_v3.jpg",
+	"group": "lunch-and-listen",
+	"sort": 3,
+	"meta": {
+		"icon": "video",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 12,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "css-snippet",
+			"content": ".hoiKv__MediaImage { background-size: contain !important; } .hoiKv__Media:after { padding-bottom: 45% !important; }",
+			"__notes": "custom ratio for kv image"
+		},
+		{
+			"type": "kv",
+			"media": {
+				"type": "youtube",
+				"content": "ZUKvp5S8gK8",
+				"poster": "{{entertainment|lunch-and-listen|bring-back-play[image]}}",
+				"alt": "{{entertainment|lunch-and-listen|bring-back-play[alt]}}"
+			},
+			"style": {
+				"desktop": "top",
+				"mobile": "bottom"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "{{entertainment|lunch-and-listen|bring-back-play[title]}}"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Samsung KX’s all new series Lunch & Listen is here to help you reclaim your lunch break! Hosted by Clara Amfo, this fun and engaging two-part series sees special guests Katherine Ryan, Munya Chawawa, Reggie Yates and Amelia Dimoldenberg reveal their hidden hobbies and talk about how they reclaim their free time - inspiring you to do the same.",
+						"Lunch time play starts here. Watch Munya Chawawa work up a sweat and Amelia Dimoldenberg shock with her sketches as host Clara Amfo brings the fun back to our breaks with <a href=\"https://www.samsung.com/uk/unpacked/\">Samsung Galaxy tech</a>."
+					]
+				}
+			]
+		}
+	]
 }

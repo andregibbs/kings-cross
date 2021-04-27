@@ -376,7 +376,6 @@ function HOITemplates(skipTemplates, dynamicDataCallback, selectedFiles) {
   const publicUrl = '/' + SITE + SUBFOLDER + '/';
 
   // Array of file paths to page configs
-
   // disabled as inteferring with dynamic data (need to process all pages)
   let pages;
   // if a single file is specified
@@ -389,7 +388,7 @@ function HOITemplates(skipTemplates, dynamicDataCallback, selectedFiles) {
 
   // console.log(pages)
   // console.log('gulp pages override')
-  // pages = ['/Users/work/Cheil/projects/cheil/kings-cross/src/home-of-innovation/pages/template-test.json']
+  // pages = ['/Users/work/Cheil/projects/cheil/kings-cross/src/home-of-innovation/pages/hub.json']
 
   // is staging task
   const isStagingTask = argv._[0] === 'hoi-staging';
@@ -528,6 +527,7 @@ function HOITemplates(skipTemplates, dynamicDataCallback, selectedFiles) {
                 image: pageData.thumb,
                 alt: pageData.alt || pageData.title,
                 sort: pageData.sort,
+                contentLength: pageData.contentLength ? pageData.contentLength.length + ' ' + (pageData.contentLength.unit ? pageData.contentLength.unit : 'mins') : false,
                 meta: pageData.meta || false,
                 url,
               }
@@ -549,6 +549,7 @@ function HOITemplates(skipTemplates, dynamicDataCallback, selectedFiles) {
               title: pageData.title,
               description: pageData.description,
               image: pageData.thumb,
+              contentLength: pageData.contentLength ? pageData.contentLength.length + ' ' + (pageData.contentLength.unit ? pageData.contentLength.unit : 'mins') : false,
               alt: pageData.alt || pageData.title,
               meta: pageData.meta || false,
               url

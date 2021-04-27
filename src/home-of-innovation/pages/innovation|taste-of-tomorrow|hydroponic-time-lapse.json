@@ -1,61 +1,65 @@
 {
-  "title": "The future of urban growing",
-  "description": "The future of urban growing",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/01_Samsung_Timelapse_1440x810_v1.jpg",
-  "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/03_Samsung_Timelapse_400x255_v1.jpg",
-  "group": "taste-of-tomorrow",
-  "sort": 11,
-  "meta": {
-    "icon": "video",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "kv",
-      "media": {
-        "type": "youtube",
-        "content": "EeuJxWi_IgM",
-        "poster": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/01_Samsung_Timelapse_1440x810_v1.jpg",
-        "alt": ""
-      },
-      "style": {
-        "desktop": "top",
-        "mobile": "bottom"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "copy": "The future of urban growing"
-        },
-        {
-          "type": "headline",
-          "copy": "Meet the Samsung KX Hydroponic Garden",
-          "level": "3"
-        }
-      ]
-    },
-    {
-      "type": "wrapper",
-      "components": [
-        {
-          "type": "paragraphs",
-          "text": [
-            "You can now farm from the comfort of your windowsill thanks to the rise in urban agriculture.",
-            "This Hydroponic Garden at Samsung KX uses <a href=\"https://www.samsung.com/uk/smartthings/\">Samsung SmartThings</a> to control the temperature, light and water to ensure the perfect growing conditions. Water sensors detect any leaks, smart plugs control the light, and the thermostat moderates the rise in any temperature triggering a fan.",
-            "To discover how to start your own small space growing, head to our ’Taste of Tomorrow’ series for your step by step guides."
-          ]
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "dynamic": "more-articles",
-      "id": "taste-of-tomorrow",
-      "title": "More articles",
-      "style": {
-        "scroll": true
-      }
-    }
-  ]
+	"title": "The future of urban growing",
+	"description": "The future of urban growing",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/01_Samsung_Timelapse_1440x810_v1.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/03_Samsung_Timelapse_400x255_v1.jpg",
+	"group": "taste-of-tomorrow",
+	"sort": 11,
+	"meta": {
+		"icon": "video",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 3,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "youtube",
+				"content": "EeuJxWi_IgM",
+				"poster": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/01_Samsung_Timelapse_1440x810_v1.jpg",
+				"alt": ""
+			},
+			"style": {
+				"desktop": "top",
+				"mobile": "bottom"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "The future of urban growing"
+				},
+				{
+					"type": "headline",
+					"copy": "Meet the Samsung KX Hydroponic Garden",
+					"level": "3"
+				}
+			]
+		},
+		{
+			"type": "wrapper",
+			"components": [
+				{
+					"type": "paragraphs",
+					"text": [
+						"You can now farm from the comfort of your windowsill thanks to the rise in urban agriculture.",
+						"This Hydroponic Garden at Samsung KX uses <a href=\"https://www.samsung.com/uk/smartthings/\">Samsung SmartThings</a> to control the temperature, light and water to ensure the perfect growing conditions. Water sensors detect any leaks, smart plugs control the light, and the thermostat moderates the rise in any temperature triggering a fan.",
+						"To discover how to start your own small space growing, head to our ’Taste of Tomorrow’ series for your step by step guides."
+					]
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "more-articles",
+			"id": "taste-of-tomorrow",
+			"title": "More articles",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
 }

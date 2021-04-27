@@ -1,59 +1,63 @@
 {
-  "title": "What Were You Thinking? Henry Holland Podcast with Daniel Fletcher",
-  "description": "Join Henry Holland and Daniel Fletcher as they talk about the looks that changed their lives and the stories behind them",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/livestreams/Samsung_GraduateFashionWeek_1440x900_HH.jpg",
-  "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/livestreams/Samsung_GraduateFashionWeek_400x255_HH.jpg",
-  "group": "graduate-fashion-week",
-  "sort": 5,
-  "meta": {
-    "icon": "video",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "kv",
-      "media": {
-        "type": "youtube",
-        "content": "Qr1hi_cisrA",
-        "poster": "{{creativity|graduate-fashion-week|henry-holland[image]}}",
-        "alt": ""
-      },
-      "style": {
-        "desktop": "top",
-        "mobile": "bottom"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "copy": "What Were You Thinking? Henry Holland Podcast with Daniel Fletcher"
-        }
-      ]
-    },
-    {
-      "type": "wrapper",
-      "components": [
-        {
-          "type": "paragraphs",
-          "style": {
-            "large": true
-          },
-          "text": [
-            "A personal billboard to the outside world, fashion can reflect a much wider, individual message than is often told, as the clothes we wear help to reveal the story of our lives. Join Henry Holland on a sartorial journey, as he speaks to Daniel Fletcher about the looks that changed their lives and the stories behind them.",
-            "WARNING: This is not a podcast about celebrity style fails, but instead a personal fashion history straight from the horse's mouth.",
-            "This event supports social distancing, in line with government guidelines. Learn more about the precautions we're taking <a href=\"https://www.samsung.com/uk/explore/kings-cross/\">here</a>."
-          ]
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "dynamic": "episodes",
-      "id": "graduate-fashion-week",
-      "title": "Episodes",
-      "style": {
-        "scroll": true
-      }
-    }
-  ]
+	"title": "What Were You Thinking? Henry Holland Podcast with Daniel Fletcher",
+	"description": "Join Henry Holland and Daniel Fletcher as they talk about the looks that changed their lives and the stories behind them",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/livestreams/Samsung_GraduateFashionWeek_1440x900_HH.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/livestreams/Samsung_GraduateFashionWeek_400x255_HH.jpg",
+	"group": "graduate-fashion-week",
+	"sort": 5,
+	"meta": {
+		"icon": "video",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 49,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "youtube",
+				"content": "Qr1hi_cisrA",
+				"poster": "{{creativity|graduate-fashion-week|henry-holland[image]}}",
+				"alt": ""
+			},
+			"style": {
+				"desktop": "top",
+				"mobile": "bottom"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "What Were You Thinking? Henry Holland Podcast with Daniel Fletcher"
+				}
+			]
+		},
+		{
+			"type": "wrapper",
+			"components": [
+				{
+					"type": "paragraphs",
+					"style": {
+						"large": true
+					},
+					"text": [
+						"A personal billboard to the outside world, fashion can reflect a much wider, individual message than is often told, as the clothes we wear help to reveal the story of our lives. Join Henry Holland on a sartorial journey, as he speaks to Daniel Fletcher about the looks that changed their lives and the stories behind them.",
+						"WARNING: This is not a podcast about celebrity style fails, but instead a personal fashion history straight from the horse's mouth.",
+						"This event supports social distancing, in line with government guidelines. Learn more about the precautions we're taking <a href=\"https://www.samsung.com/uk/explore/kings-cross/\">here</a>."
+					]
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "episodes",
+			"id": "graduate-fashion-week",
+			"title": "Episodes",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
 }

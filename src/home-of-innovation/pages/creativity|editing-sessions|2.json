@@ -1,50 +1,54 @@
 {
-  "title": "Editing Sessions: 'Pawfect' Shots in 8K by ASBYT",
-  "description": "Get the most out of your smartphone camera with this range of simple tutorials from a selection of the UK's top technology influencers",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/editing-sessions/KX-content-hub-full-Pawfect_shots_in_8K_by_ASYBT.jpg",
-  "alt": "Grey cat with pink collar lying down on grass being stroked",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/editing-sessions/KX-content-hub-full-thumb-Pawfect_shots_in_8K_by_ASYBT.jpg",
-  "group": "editing-sessions",
-  "sort": 2,
-  "meta": {
-    "icon": "video",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "kv",
-      "media": {
-        "type": "youtube",
-        "content": "xHcWF0bi7Us",
-        "poster": "{{creativity|editing-sessions|2[image]}}",
-        "alt": "{{creativity|editing-sessions|2[alt]}}"
-      },
-      "style": {
-        "desktop": "top",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "copy": "'Pawfect' Shots in 8K by ASBYT"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Welcome to the Editing Sessions. A chance to learn tips from the professionals on how to get the most out of your smartphone camera.",
-            "ASBYT is one of YouTube’s top content creators and tech professionals. He’s teamed up with us to share how he captures high-res action shots with the <a href=\"https://www.samsung.com/uk/smartphones/galaxy-s20/\">Samsung Galaxy S20 Ultra</a> smartphone, using its 8K video capabilities. Partnering with his super cute cat Dotty, watch and learn how he takes sensational snaps that are fit for a frame."
-          ]
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "dynamic": "episodes",
-      "id": "editing-sessions",
-      "title": "More episodes",
-      "style": {
-        "scroll": true
-      }
-    }
-  ]
+	"title": "Editing Sessions: 'Pawfect' Shots in 8K by ASBYT",
+	"description": "Get the most out of your smartphone camera with this range of simple tutorials from a selection of the UK's top technology influencers",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/editing-sessions/KX-content-hub-full-Pawfect_shots_in_8K_by_ASYBT.jpg",
+	"alt": "Grey cat with pink collar lying down on grass being stroked",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/editing-sessions/KX-content-hub-full-thumb-Pawfect_shots_in_8K_by_ASYBT.jpg",
+	"group": "editing-sessions",
+	"sort": 2,
+	"meta": {
+		"icon": "video",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 2,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "youtube",
+				"content": "xHcWF0bi7Us",
+				"poster": "{{creativity|editing-sessions|2[image]}}",
+				"alt": "{{creativity|editing-sessions|2[alt]}}"
+			},
+			"style": {
+				"desktop": "top",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "'Pawfect' Shots in 8K by ASBYT"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Welcome to the Editing Sessions. A chance to learn tips from the professionals on how to get the most out of your smartphone camera.",
+						"ASBYT is one of YouTube’s top content creators and tech professionals. He’s teamed up with us to share how he captures high-res action shots with the <a href=\"https://www.samsung.com/uk/smartphones/galaxy-s20/\">Samsung Galaxy S20 Ultra</a> smartphone, using its 8K video capabilities. Partnering with his super cute cat Dotty, watch and learn how he takes sensational snaps that are fit for a frame."
+					]
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "episodes",
+			"id": "editing-sessions",
+			"title": "More episodes",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
 }

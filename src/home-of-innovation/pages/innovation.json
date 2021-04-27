@@ -6,32 +6,18 @@
   },
   "components": [
     {
-      "type": "kv",
-      "media": {
-        "type": "image",
-        "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/discover/2020-assets/innovation.jpg",
-        "alt": ""
-      },
-      "style": {
-        "desktop": "left",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "level": "1",
-          "copy": "Innovation"
-        }
-      ]
-    },
-    {
       "type": "link-list-id",
       "dynamic": "latest",
-      "title": "Latest",
+      "title": "Innovation Latest",
       "style": {
         "scroll": true
       },
       "items": [
+        "innovation|samsung-people-live",
+        "innovation|connected-christmas|recipe-spice-up-your-connected-christmas",
+        "innovation|connected-christmas|connected-christmas-festive-cheer-to-your-ear",
+        "innovation|connected-christmas|marcelino-sambe-connected-christmas-ballet",
+        "innovation|next-level-gaming|deadly-pro-gaming-secrets",
         "innovation|next-level-gaming|wolfiez-pro-gaming-secrets",
         "innovation|next-level-gaming|meet-the-game-changers",
         "innovation|5g-podcast|interactive-yoga-pants",
@@ -40,25 +26,35 @@
         "innovation|taste-of-tomorrow|hydroponic-time-lapse",
         "innovation|taste-of-tomorrow|eat-pro-green-green-lab-sara-kiyo-popowa",
         "innovation|taste-of-tomorrow|how-to-bottle-garden",
-        "innovation|taste-of-tomorrow|how-to-bucketponic",
-        "innovation|taste-of-tomorrow|how-to-hummus-plate-recipe",
-        "innovation|5g-podcast|remote-control-surgery",
-        "innovation|taste-of-tomorrow|insights-green-lab",
-        "innovation|taste-of-tomorrow|grow-pro-green-green-lab",
-        "innovation|taste-of-tomorrow|cook-pro-green-sara-kiyo-popowa",
-        "innovation|taste-of-tomorrow|recipes-vegan-choc",
-        "innovation|taste-of-tomorrow|recipes-any-greens",
-        "innovation|taste-of-tomorrow|songs-for-tongs-playlist",
-        "innovation|halloween-house",
-        "innovation|5g-podcast|5g-connected-cows",
-        "innovation|5g-podcast|mind-controlled-gaming",
-        "innovation|5g-podcast|films-that-you-can-direct-with-your-face",
-        "innovation|5g-podcast|a-camera-with-superpowers",
-        "innovation|5g-podcast",
-        "innovation|alternative-careers-guide",
-        "innovation|university-of-lincoln",
-        "innovation|science-museum|3"
+        "innovation|taste-of-tomorrow|how-to-bucketponic"
       ]
+    },
+    {
+      "type": "link-list-group",
+      "dynamic": "next-level-gaming",
+      "title": "Next Level Gaming",
+      "style": {
+        "scroll": true
+      },
+      "id": "next-level-gaming"
+    },
+    {
+      "type": "link-list-group",
+      "dynamic": "taste-of-tomorrow",
+      "title": "Taste of Tomorrow",
+      "style": {
+        "scroll": true
+      },
+      "id": "taste-of-tomorrow"
+    },
+    {
+      "type": "link-list-group",
+      "dynamic": "connected-christmas",
+      "title": "Connected Christmas",
+      "style": {
+        "scroll": true
+      },
+      "id": "connected-christmas"
     },
     {
       "type": "link-list-group",

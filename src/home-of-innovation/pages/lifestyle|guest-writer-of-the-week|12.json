@@ -1,197 +1,191 @@
 {
-  "title": "Guest writer of the week: Create the ultimate backyard cinema for summer with this ‘hot’ movie line-up… ",
-  "description": "",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/12/mamma-mia.png",
-  "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/12/mamma-mia.png",
-  "group": "guest-writer-of-the-week",
-  "sort": 12,
-  "meta": {
-    "icon": "article",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "kv",
-      "media": {
-        "type": "image",
-        "content": "{{lifestyle|guest-writer-of-the-week|12[image]}}",
-        "alt": "{{lifestyle|guest-writer-of-the-week|12[alt]}}"
-      },
-      "style": {
-        "desktop": "top",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "copy": "Create the ultimate backyard cinema for summer with this ‘hot’ movie line-up…"
-        }
-      ]
-    },
-    {
-      "type": "wrapper",
-      "components": [
-        {
-          "type": "paragraphs",
-          "text": [
-            "Hosting your own outdoor movie night, with your favourite films projected on a wall or white sheet, blankets to cosy up with, and twinkly fairy lights (if you’re feeling fancy), sounds so dreamy - the idea itself is like something out of a movie. But, it’s easier to do than you think. All you need is a phone like the new <a href='https://www.samsung.com/uk/smartphones/galaxy-note20/'>Samsung Galaxy Note20</a>, which, with its super-fast processor and all-day battery, is perfect for streaming movies on, and any nifty portable projector, which connects easily via Bluetooth. Then, just add good pals and great snacks, and your backyard cinema is open for business! Trust us: There’s no better way to watch a movie during the winter months. Take your pick from these ideal, summer-vibes movies, and be inspired to host your own backyard cinema night. Don’t forget the popcorn…",
-            "<br>"
-          ]
-        },
-
-        {
-          "type": "headline",
-          "copy": "Ibiza (2018)",
-          "level": "3"
-        },
-        {
-          "type": "headline",
-          "copy": "Certificate 15",
-          "level": "5"
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/12/ibiza.png",
-          "alt": "",
-          "credit": "Image Credit - Netflix : Aleksandar Letic"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "<strong>Best for: Virtual partying</strong>",
-            "There’s the summer you’re having - and the summer you wish you were having. If the latter involves heading to Ibiza with your best pals, and having a wild, unforgettable time on the party island with your favourite DJ (who wouldn’t want that?) then this is perfect escapism. Relax and absorb the vicarious club vibes from this fun, sun-drenched romcom, for all of the partying and none of the hangover.",
-            "<br>"
-          ]
-        },
-
-
-        {
-          "type": "headline",
-          "copy": "Wet Hot American Summer (2001)",
-          "level": "3"
-        },
-        {
-          "type": "headline",
-          "copy": "Certificate 15",
-          "level": "5"
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/12/wet-hot-american-summer.jpg",
-          "alt": "",
-          "credit": "Image Credit - Eureka Pictures"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "<strong>Best for: Belly laughs</strong>",
-            "Spoofing the raunchy summer camp movies of the Eighties, Wet Hot American Summer brings together a hilarious ensemble cast, including Elizabeth Banks, Paul Rudd and Amy Poehler for sweaty, salacious satire. It’s set on the last day of a summer camp in 1981, where there is plenty of unfinished business to tie up amongst the campers and councillors. The comedy spawned a cult following, with a sequel series released in 2015 - perfect for more summer garden screening nights. Bonus: Look out for Bradley Cooper in his first ever movie role!",
-            "<br>"
-          ]
-        },
-
-
-        {
-          "type": "headline",
-          "copy": "Mamma Mia! (2008)",
-          "level": "3"
-        },
-        {
-          "type": "headline",
-          "copy": "Certificate PG",
-          "level": "5"
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/12/mamma-mia.png",
-          "alt": "",
-          "credit": "Image Credit - Universal"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "<strong>Best for: Summer singalongs</strong>",
-            "Pierce Brosnan belting out Abba’s “SOS” might not be the coolest way to spend a summer night, but we can tell you that there is nothing more fun. Allow his and the ensemble cast’s dulcet tones to transport you to Greece for an hour and fifty minutes of non-stop fun, feel-good singalong and camp musical silliness. If you’re not ready to stop the movie night there, keep the Ouzo flowing and make it a double bill by following with the greatest sequel title ever, 2018’s Mamma Mia! Here We Go Again.",
-            "<br>"
-          ]
-        },
-
-
-        {
-          "type": "headline",
-          "copy": "Cabin In The Woods (2011)",
-          "level": "3"
-        },
-        {
-          "type": "headline",
-          "copy": "Certificate 15",
-          "level": "5"
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/12/cabin-in-the-wood.png",
-          "alt": "",
-          "credit": "Image Credit - Lionsgate"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "<strong>Best for: Snuggling under the stars</strong>",
-            "Idyllic, song-filled, beach holidays not your personal idea of fun? How about a trip gone wrong? And we mean horribly wrong. This comedy horror, about a group of students staying in a remote forest cabin where they fall victim to deadly zombies in the woods, comes from the team behind Buffy the Vampire Slayer and turns the entire slasher genre on its head in the best way. It may have you rethinking that summer holiday cottage rental, though. Survival horror chases that will have you laughing as much as it’ll have you hiding behind a blanket in terror. There’s no better excuse to snuggle up under the stars.",
-            "<br>"
-          ]
-        },
-
-
-        {
-          "type": "headline",
-          "copy": "FYRE (2019)",
-          "level": "3"
-        },
-        {
-          "type": "headline",
-          "copy": "Certificate 15",
-          "level": "5"
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/12/fyre.png",
-          "alt": "",
-          "credit": "Image Credit - Netflix"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "<strong>Best for: Must-see real-life festival drama</strong>",
-            "From fictional vacations-gone-wrong to real ones: Nothing will make you more thankful for your cosy backyard cinema setup than the nightmare depicted at Fyre festival, the documentary which had everyone talking about it last year. Telling the true story of a party in paradise that turned out to be anything but, and tenser than any horror flick, you’ll be watching open-mouthed at the festival fail. The crazy true story has to be seen to be believed.",
-            "<br>"
-          ]
-        }
-
-      ]
-    },
-    {
-      "type": "wrapper",
-      "components": [
-        {
-          "type": "paragraphs",
-          "text": [
-            "<strong>By Bex April May</strong>",
-            "<em>Bex is an international movies editor, frequently interviewing the hottest film stars of the season and writing for the likes of MTV movies, NME, Cosmopolitan and Shortlist.</em>",
-            "Samsung KX are hosting a series of weekly movie nights. Fancy joining? Head over to the What's On page for more details."
-          ]
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "dynamic": "more-articles",
-      "id": "guest-writer-of-the-week",
-      "title": "More articles",
-      "style": {
-        "scroll": true
-      }
-    }
-  ]
+	"title": "Guest writer of the week: Create the ultimate backyard cinema for summer with this ‘hot’ movie line-up… ",
+	"description": "",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/12/mamma-mia.png",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/12/mamma-mia.png",
+	"group": "guest-writer-of-the-week",
+	"sort": 12,
+	"meta": {
+		"icon": "article",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 4,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "image",
+				"content": "{{lifestyle|guest-writer-of-the-week|12[image]}}",
+				"alt": "{{lifestyle|guest-writer-of-the-week|12[alt]}}"
+			},
+			"style": {
+				"desktop": "top",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Create the ultimate backyard cinema for summer with this ‘hot’ movie line-up…"
+				}
+			]
+		},
+		{
+			"type": "wrapper",
+			"components": [
+				{
+					"type": "paragraphs",
+					"text": [
+						"Hosting your own outdoor movie night, with your favourite films projected on a wall or white sheet, blankets to cosy up with, and twinkly fairy lights (if you’re feeling fancy), sounds so dreamy - the idea itself is like something out of a movie. But, it’s easier to do than you think. All you need is a phone like the new <a href='https://www.samsung.com/uk/smartphones/galaxy-note20/'>Samsung Galaxy Note20</a>, which, with its super-fast processor and all-day battery, is perfect for streaming movies on, and any nifty portable projector, which connects easily via Bluetooth. Then, just add good pals and great snacks, and your backyard cinema is open for business! Trust us: There’s no better way to watch a movie during the winter months. Take your pick from these ideal, summer-vibes movies, and be inspired to host your own backyard cinema night. Don’t forget the popcorn…",
+						"<br>"
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Ibiza (2018)",
+					"level": "3"
+				},
+				{
+					"type": "headline",
+					"copy": "Certificate 15",
+					"level": "5"
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/12/ibiza.png",
+					"alt": "",
+					"credit": "Image Credit - Netflix : Aleksandar Letic"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"<strong>Best for: Virtual partying</strong>",
+						"There’s the summer you’re having - and the summer you wish you were having. If the latter involves heading to Ibiza with your best pals, and having a wild, unforgettable time on the party island with your favourite DJ (who wouldn’t want that?) then this is perfect escapism. Relax and absorb the vicarious club vibes from this fun, sun-drenched romcom, for all of the partying and none of the hangover.",
+						"<br>"
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Wet Hot American Summer (2001)",
+					"level": "3"
+				},
+				{
+					"type": "headline",
+					"copy": "Certificate 15",
+					"level": "5"
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/12/wet-hot-american-summer.jpg",
+					"alt": "",
+					"credit": "Image Credit - Eureka Pictures"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"<strong>Best for: Belly laughs</strong>",
+						"Spoofing the raunchy summer camp movies of the Eighties, Wet Hot American Summer brings together a hilarious ensemble cast, including Elizabeth Banks, Paul Rudd and Amy Poehler for sweaty, salacious satire. It’s set on the last day of a summer camp in 1981, where there is plenty of unfinished business to tie up amongst the campers and councillors. The comedy spawned a cult following, with a sequel series released in 2015 - perfect for more summer garden screening nights. Bonus: Look out for Bradley Cooper in his first ever movie role!",
+						"<br>"
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Mamma Mia! (2008)",
+					"level": "3"
+				},
+				{
+					"type": "headline",
+					"copy": "Certificate PG",
+					"level": "5"
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/12/mamma-mia.png",
+					"alt": "",
+					"credit": "Image Credit - Universal"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"<strong>Best for: Summer singalongs</strong>",
+						"Pierce Brosnan belting out Abba’s “SOS” might not be the coolest way to spend a summer night, but we can tell you that there is nothing more fun. Allow his and the ensemble cast’s dulcet tones to transport you to Greece for an hour and fifty minutes of non-stop fun, feel-good singalong and camp musical silliness. If you’re not ready to stop the movie night there, keep the Ouzo flowing and make it a double bill by following with the greatest sequel title ever, 2018’s Mamma Mia! Here We Go Again.",
+						"<br>"
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Cabin In The Woods (2011)",
+					"level": "3"
+				},
+				{
+					"type": "headline",
+					"copy": "Certificate 15",
+					"level": "5"
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/12/cabin-in-the-wood.png",
+					"alt": "",
+					"credit": "Image Credit - Lionsgate"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"<strong>Best for: Snuggling under the stars</strong>",
+						"Idyllic, song-filled, beach holidays not your personal idea of fun? How about a trip gone wrong? And we mean horribly wrong. This comedy horror, about a group of students staying in a remote forest cabin where they fall victim to deadly zombies in the woods, comes from the team behind Buffy the Vampire Slayer and turns the entire slasher genre on its head in the best way. It may have you rethinking that summer holiday cottage rental, though. Survival horror chases that will have you laughing as much as it’ll have you hiding behind a blanket in terror. There’s no better excuse to snuggle up under the stars.",
+						"<br>"
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "FYRE (2019)",
+					"level": "3"
+				},
+				{
+					"type": "headline",
+					"copy": "Certificate 15",
+					"level": "5"
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/12/fyre.png",
+					"alt": "",
+					"credit": "Image Credit - Netflix"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"<strong>Best for: Must-see real-life festival drama</strong>",
+						"From fictional vacations-gone-wrong to real ones: Nothing will make you more thankful for your cosy backyard cinema setup than the nightmare depicted at Fyre festival, the documentary which had everyone talking about it last year. Telling the true story of a party in paradise that turned out to be anything but, and tenser than any horror flick, you’ll be watching open-mouthed at the festival fail. The crazy true story has to be seen to be believed.",
+						"<br>"
+					]
+				}
+			]
+		},
+		{
+			"type": "wrapper",
+			"components": [
+				{
+					"type": "paragraphs",
+					"text": [
+						"<strong>By Bex April May</strong>",
+						"<em>Bex is an international movies editor, frequently interviewing the hottest film stars of the season and writing for the likes of MTV movies, NME, Cosmopolitan and Shortlist.</em>",
+						"Samsung KX are hosting a series of weekly movie nights. Fancy joining? Head over to the What's On page for more details."
+					]
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "more-articles",
+			"id": "guest-writer-of-the-week",
+			"title": "More articles",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
 }

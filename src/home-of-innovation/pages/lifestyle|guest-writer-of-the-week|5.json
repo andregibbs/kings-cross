@@ -1,109 +1,113 @@
 {
-  "title": "Guest writer of the week: Ways to switch up your at-home fitness routine",
-  "description": "Simple ways to make workouts better suited to your home setup, allowing you to train on your own terms",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/5/KV.jpg",
-  "alt": "Black fitness watch Samsung Galaxy Watch Active2 lies on top of a light blue 5KG weight lighting plate, displaying stress management function on the watch screen.",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/5/KV.jpg",
-  "group": "guest-writer-of-the-week",
-  "sort": 5,
-  "meta": {
-    "icon": "article",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "kv",
-      "media": {
-        "type": "image",
-        "content": "{{lifestyle|guest-writer-of-the-week|5[image]}}",
-        "alt": "{{lifestyle|guest-writer-of-the-week|5[alt]}}"
-      },
-      "style": {
-        "desktop": "right",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "copy": "Ways to switch up your at-home fitness routine"
-        }
-      ]
-    },
-    {
-      "type": "wrapper",
-      "components": [
-        {
-          "type": "paragraphs",
-          "text": [
-            "It’s normal to sometimes lack motivation when it comes to exercising. Some days you just need that extra time in bed, and others you might find yourself choosing to do anything but that run. You spend more time and energy looking for a workout kit, and by the time it’s ready to get out the door, you’ve convinced yourself not to go.",
-            "It’s happened to the best of us. If you’re still feeling that guilt of skipping an online class or daily walk to flex your TV-viewing muscles instead, you can still get a good sweat on away from the gym floor.",
-            "Okay, so working out from home isn’t some new fitness fad. Sometimes though, you might need to switch things up to make up for the lack of space or motivation from an already chiselled instructor barking at you to get down and give 40 seconds of burpees.",
-            "There are some really simple ways to make workouts better suited to your home setup, allowing you to train on your own terms where nobody’s going to judge you for wearing pyjama bottoms or an odd pair of sport socks."
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Forget steps, think about your heart",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "We’ve had it drilled into us over the years that it’s all about getting those steps in. But when space to exercise is more limited or you don’t have stairs to run up and down, ramping up daily step counts is more challenging.",
-            "Try shifting the focus onto your heart and looking for training routines that are geared towards raising the heart rate for short bursts. This kind of high intensity interval training is an effective way to burn calories and you don’t have to spend hours doing the workouts to feel the sweaty benefits either.",
-            "<a href=\"https://www.samsung.com/uk/wearables/galaxy-watch/\">The Samsung Galaxy Watch</a> takes a bit of the hard work out of finding exercises which raise the heart rate. Try a burpees test or take on the mountain climber’s routines to really get the pulse racing. Start out with some small sets and reps and when you’re feeling more confident, increase things gradually to give the body and heart a tougher session. Want a bit of a competition? Share on Instagram with #SamsungKX, and tag five friends, challenging them to repeat your workout in a shorter time period."
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Try some Tabata",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Staying on that hearty theme, it’s good to step out of your comfort zone and try something new. That said, it’s equally fine to stick to a familiar routine, especially if you want to make monitoring your progress over time easier.",
-            "Sometimes though, you might find that a routine or workout you thought you’d hate actually works well for you. Tabata is a form of high intensity interval training, which features exercises that last just four minutes.",
-            "The idea is to work out hard for 20 seconds, rest for 10 seconds and repeat for 8 rounds. Now that doesn’t sound like a long time, but with the right exercises you will feel it.",
-            "A quick web browse will find you the best Tabata exercises then try downloading the Tabata Timer on the Samsung Galaxy Watch, which can help you keep track of the short, but intense session."
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Move to the music",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Music always makes things better. Especially exercise. Some like to keep things high tempo, but what really matters is the kind of playlists that motivate you through no matter how horrendously difficult that session feels.",
-            "Take the time to build a few playlists, whether that’s from your own music or turning to your go-to streaming service. If you’re the kind of the person that will spend hours on this, you can use a simple online streaming app which let its algorithms go to work, building you a playlist curated from your favourite songs."
-          ]
-        },
-        {
-          "type": "headline",
-          "copy": "Work out the mind",
-          "level": "3"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Meditation before or after putting your body through real pain has huge benefits. Pre-workout, it can help you to relax and get you focused for the session. When you’re done, it can help to cool you down and get that body back to a calmer state before you jump in the shower.",
-            "Calm makes one of the best meditation apps to get you in the right frame of mind and it works nicely with the Samsung Galaxy Watch too. It also tracks stress levels to let you know if the programs are having the desired effect of keeping you, well, calm.",
-            "By <strong>Mike Sawh</strong>",
-            "<em>Mike Sawh is a freelance journalist covering wearable tech and fitness for the likes of GQ, Wired and Wareable. He is also part of the team behind <a href=\"https://www.youtube.com/channel/UCOBM9FasII4dKbyE_HKkbjw\">The Run Testers YouTube channel</a>.</em>"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "dynamic": "more-articles",
-      "id": "guest-writer-of-the-week",
-      "title": "More articles",
-      "style": {
-        "scroll": true
-      }
-    }
-  ]
+	"title": "Guest writer of the week: Ways to switch up your at-home fitness routine",
+	"description": "Simple ways to make workouts better suited to your home setup, allowing you to train on your own terms",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/5/KV.jpg",
+	"alt": "Black fitness watch Samsung Galaxy Watch Active2 lies on top of a light blue 5KG weight lighting plate, displaying stress management function on the watch screen.",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/5/KV.jpg",
+	"group": "guest-writer-of-the-week",
+	"sort": 5,
+	"meta": {
+		"icon": "article",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 5,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "image",
+				"content": "{{lifestyle|guest-writer-of-the-week|5[image]}}",
+				"alt": "{{lifestyle|guest-writer-of-the-week|5[alt]}}"
+			},
+			"style": {
+				"desktop": "right",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Ways to switch up your at-home fitness routine"
+				}
+			]
+		},
+		{
+			"type": "wrapper",
+			"components": [
+				{
+					"type": "paragraphs",
+					"text": [
+						"It’s normal to sometimes lack motivation when it comes to exercising. Some days you just need that extra time in bed, and others you might find yourself choosing to do anything but that run. You spend more time and energy looking for a workout kit, and by the time it’s ready to get out the door, you’ve convinced yourself not to go.",
+						"It’s happened to the best of us. If you’re still feeling that guilt of skipping an online class or daily walk to flex your TV-viewing muscles instead, you can still get a good sweat on away from the gym floor.",
+						"Okay, so working out from home isn’t some new fitness fad. Sometimes though, you might need to switch things up to make up for the lack of space or motivation from an already chiselled instructor barking at you to get down and give 40 seconds of burpees.",
+						"There are some really simple ways to make workouts better suited to your home setup, allowing you to train on your own terms where nobody’s going to judge you for wearing pyjama bottoms or an odd pair of sport socks."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Forget steps, think about your heart",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"We’ve had it drilled into us over the years that it’s all about getting those steps in. But when space to exercise is more limited or you don’t have stairs to run up and down, ramping up daily step counts is more challenging.",
+						"Try shifting the focus onto your heart and looking for training routines that are geared towards raising the heart rate for short bursts. This kind of high intensity interval training is an effective way to burn calories and you don’t have to spend hours doing the workouts to feel the sweaty benefits either.",
+						"<a href=\"https://www.samsung.com/uk/wearables/galaxy-watch/\">The Samsung Galaxy Watch</a> takes a bit of the hard work out of finding exercises which raise the heart rate. Try a burpees test or take on the mountain climber’s routines to really get the pulse racing. Start out with some small sets and reps and when you’re feeling more confident, increase things gradually to give the body and heart a tougher session. Want a bit of a competition? Share on Instagram with #SamsungKX, and tag five friends, challenging them to repeat your workout in a shorter time period."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Try some Tabata",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Staying on that hearty theme, it’s good to step out of your comfort zone and try something new. That said, it’s equally fine to stick to a familiar routine, especially if you want to make monitoring your progress over time easier.",
+						"Sometimes though, you might find that a routine or workout you thought you’d hate actually works well for you. Tabata is a form of high intensity interval training, which features exercises that last just four minutes.",
+						"The idea is to work out hard for 20 seconds, rest for 10 seconds and repeat for 8 rounds. Now that doesn’t sound like a long time, but with the right exercises you will feel it.",
+						"A quick web browse will find you the best Tabata exercises then try downloading the Tabata Timer on the Samsung Galaxy Watch, which can help you keep track of the short, but intense session."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Move to the music",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Music always makes things better. Especially exercise. Some like to keep things high tempo, but what really matters is the kind of playlists that motivate you through no matter how horrendously difficult that session feels.",
+						"Take the time to build a few playlists, whether that’s from your own music or turning to your go-to streaming service. If you’re the kind of the person that will spend hours on this, you can use a simple online streaming app which let its algorithms go to work, building you a playlist curated from your favourite songs."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Work out the mind",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Meditation before or after putting your body through real pain has huge benefits. Pre-workout, it can help you to relax and get you focused for the session. When you’re done, it can help to cool you down and get that body back to a calmer state before you jump in the shower.",
+						"Calm makes one of the best meditation apps to get you in the right frame of mind and it works nicely with the Samsung Galaxy Watch too. It also tracks stress levels to let you know if the programs are having the desired effect of keeping you, well, calm.",
+						"By <strong>Mike Sawh</strong>",
+						"<em>Mike Sawh is a freelance journalist covering wearable tech and fitness for the likes of GQ, Wired and Wareable. He is also part of the team behind <a href=\"https://www.youtube.com/channel/UCOBM9FasII4dKbyE_HKkbjw\">The Run Testers YouTube channel</a>.</em>"
+					]
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "more-articles",
+			"id": "guest-writer-of-the-week",
+			"title": "More articles",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
 }

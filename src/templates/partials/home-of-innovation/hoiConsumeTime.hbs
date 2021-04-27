@@ -1,0 +1,5 @@
+<div class="hoiConsumeTime">
+  {{#if @root.contentLength}}
+    {{> svg/time}} {{@root.contentLength.length}} {{#if @root.contentLength.unit}}{{@root.contentLength.unit}}{{else}}mins{{/if}}
+  {{/if}}
+</div>

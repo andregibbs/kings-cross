@@ -1,50 +1,54 @@
 {
-  "title": "Reggie and Katherine’s pastime pleasures",
-  "description": "From doggy wear to film directing, Reggie and Katherine share passions on the Galaxy Note 20 at Samsung KX",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/entertainment/lunch-and-listen/Samsung_WebsiteEp2_BANNER_Reggie_v1.jpg",
-  "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/entertainment/lunch-and-listen/Samsung_WebsiteEp2_THUMBNAIL_Reggie_v2.jpg",
-  "group": "lunch-and-listen",
-  "sort": 5,
-  "meta": {
-    "icon": "video",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "kv",
-      "media": {
-        "type": "youtube",
-        "content": "kHxG3zZLwlU",
-        "poster": "{{entertainment|lunch-and-listen|katherine-ryan-reggie-yates|2[image]}}",
-        "alt": "{{entertainment|lunch-and-listen|katherine-ryan-reggie-yates|2[alt]}}"
-      },
-      "style": {
-        "desktop": "top",
-        "mobile": "bottom"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "copy": "Reggie and Katherine’s pastime pleasures"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Time for a little lunchtime fun. From canine couture to cinematography, join guests Reggie Yates and Katherine Ryan as they share their personal passions on the <a href=\"https://www.samsung.com/uk/smartphones/galaxy-note20/\">Galaxy Note 20</a> at Samsung KX.",
-            "Samsung KX’s all new series Lunch & Listen is here to help you reclaim your lunch break! Hosted by Clara Amfo, this fun and engaging two-part sees special guests Katherine Ryan, Munya Chawawa, Reggie Yates and Amelia Dimoldenberg reveal their hidden hobbies and talk about how they reclaim their free time - inspiring you to do the same."
-          ]
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "dynamic": "episodes",
-      "id": "lunch-and-listen",
-      "title": "Episodes",
-      "style": {
-        "scroll": true
-      }
-    }
-  ]
+	"title": "Reggie and Katherine’s pastime pleasures",
+	"description": "From doggy wear to film directing, Reggie and Katherine share passions on the Galaxy Note 20 at Samsung KX",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/entertainment/lunch-and-listen/Samsung_WebsiteEp2_BANNER_Reggie_v1.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/entertainment/lunch-and-listen/Samsung_WebsiteEp2_THUMBNAIL_Reggie_v2.jpg",
+	"group": "lunch-and-listen",
+	"sort": 5,
+	"meta": {
+		"icon": "video",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 6,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "youtube",
+				"content": "kHxG3zZLwlU",
+				"poster": "{{entertainment|lunch-and-listen|katherine-ryan-reggie-yates|2[image]}}",
+				"alt": "{{entertainment|lunch-and-listen|katherine-ryan-reggie-yates|2[alt]}}"
+			},
+			"style": {
+				"desktop": "top",
+				"mobile": "bottom"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Reggie and Katherine’s pastime pleasures"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Time for a little lunchtime fun. From canine couture to cinematography, join guests Reggie Yates and Katherine Ryan as they share their personal passions on the <a href=\"https://www.samsung.com/uk/smartphones/galaxy-note20/\">Galaxy Note 20</a> at Samsung KX.",
+						"Samsung KX’s all new series Lunch & Listen is here to help you reclaim your lunch break! Hosted by Clara Amfo, this fun and engaging two-part sees special guests Katherine Ryan, Munya Chawawa, Reggie Yates and Amelia Dimoldenberg reveal their hidden hobbies and talk about how they reclaim their free time - inspiring you to do the same."
+					]
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "episodes",
+			"id": "lunch-and-listen",
+			"title": "Episodes",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
 }

@@ -1,70 +1,74 @@
 {
-  "title": "Empowering fashion illustration with the Tab S7+ by Sophie Parnaby",
-  "description": "",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/student-blog/sp-tabs7/Sophie_P_sketch.jpg",
-  "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/student-blog/sp-tabs7/Sophie_P_sketch.jpg",
-  "group": "graduate-fashion-week-student-blog",
-  "sort": 4,
-  "meta": {
-    "icon": "article",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "kv",
-      "media": {
-        "type": "image",
-        "content": "{{creativity|graduate-fashion-week|student-blog|sophie-parnaby-TabS7-plus[image]}}",
-        "alt": ""
-      },
-      "style": {
-        "desktop": "right",
-        "mobile": "bottom"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "copy": "Empowering fashion illustration with the Tab S7+ by Sophie Parnaby"
-        }
-      ]
-    },
-    {
-      "type": "wrapper",
-      "components": [
-        {
-          "type": "paragraphs",
-          "text": [
-            "When Samsung KX partnered with Graduate Fashion Week back in September 2020, I was invited to the Hub of innovation in King’s Cross, London. As a recent fashion design graduate, it was so amazing to see how technology had been integrated with fashion to showcase the work from the class of 2020. I’ve always been interested in using technology to enhance the way I design and make fashion collections. Since I’ve graduated, I’m now working on my own fashion line, using 3D printers to create innovative and sustainable fashion products.",
-            "Following the launch of the <a href=\"https://www.samsung.com/uk/tablets/galaxy-tab-s/galaxy-tab-s7-plus-12-4-inch-mystic-bronze-128gb-wi-fi-sm-t970nznaeua/buy/\">Samsung Galaxy Tab S7+</a>, I trialled the new tablet using the Pen Up sketching app to design an accessory for my new collection. The S pen which comes with the tablet makes digital sketching so easy - I was amazed by the sensitivity of the pen, and I was able to build up construction lines with the different brush features, and by altering the colours and opacity. It’s unbelievably efficient for design applications, you can import reference images into the background, and the S Pen even has a discreet button on the side which seamlessly turns it into an eraser tool. ",
-            "The technical illustrations I created using Pen Up turned out really clear and detailed which is exactly what is needed from a design sketch. It’s a great tool which can be used to communicate and visualise ideas. Looking forward, I can’t wait to launch my collection and I’ll be using digital illustration to facilitate the design process."
-          ]
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/student-blog/sp-tabs7/Sophie_P_sketch.jpg",
-          "alt": ""
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/student-blog/sp-tabs7/Image_2.jpg",
-          "alt": ""
-        },
-        {
-          "type": "image",
-          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/student-blog/sp-tabs7/Image_3.jpg",
-          "alt": ""
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "dynamic": "articles",
-      "id": "graduate-fashion-week-student-blog",
-      "title": "Articles",
-      "style": {
-        "scroll": true
-      }
-    }
-  ]
+	"title": "Empowering fashion illustration with the Tab S7+ by Sophie Parnaby",
+	"description": "",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/student-blog/sp-tabs7/Sophie_P_sketch.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/student-blog/sp-tabs7/Sophie_P_sketch.jpg",
+	"group": "graduate-fashion-week-student-blog",
+	"sort": 4,
+	"meta": {
+		"icon": "article",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 2,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "image",
+				"content": "{{creativity|graduate-fashion-week|student-blog|sophie-parnaby-TabS7-plus[image]}}",
+				"alt": ""
+			},
+			"style": {
+				"desktop": "right",
+				"mobile": "bottom"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Empowering fashion illustration with the Tab S7+ by Sophie Parnaby"
+				}
+			]
+		},
+		{
+			"type": "wrapper",
+			"components": [
+				{
+					"type": "paragraphs",
+					"text": [
+						"When Samsung KX partnered with Graduate Fashion Week back in September 2020, I was invited to the Hub of innovation in King’s Cross, London. As a recent fashion design graduate, it was so amazing to see how technology had been integrated with fashion to showcase the work from the class of 2020. I’ve always been interested in using technology to enhance the way I design and make fashion collections. Since I’ve graduated, I’m now working on my own fashion line, using 3D printers to create innovative and sustainable fashion products.",
+						"Following the launch of the <a href=\"https://www.samsung.com/uk/tablets/galaxy-tab-s/galaxy-tab-s7-plus-12-4-inch-mystic-bronze-128gb-wi-fi-sm-t970nznaeua/buy/\">Samsung Galaxy Tab S7+</a>, I trialled the new tablet using the Pen Up sketching app to design an accessory for my new collection. The S pen which comes with the tablet makes digital sketching so easy - I was amazed by the sensitivity of the pen, and I was able to build up construction lines with the different brush features, and by altering the colours and opacity. It’s unbelievably efficient for design applications, you can import reference images into the background, and the S Pen even has a discreet button on the side which seamlessly turns it into an eraser tool. ",
+						"The technical illustrations I created using Pen Up turned out really clear and detailed which is exactly what is needed from a design sketch. It’s a great tool which can be used to communicate and visualise ideas. Looking forward, I can’t wait to launch my collection and I’ll be using digital illustration to facilitate the design process."
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/student-blog/sp-tabs7/Sophie_P_sketch.jpg",
+					"alt": ""
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/student-blog/sp-tabs7/Image_2.jpg",
+					"alt": ""
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/student-blog/sp-tabs7/Image_3.jpg",
+					"alt": ""
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "articles",
+			"id": "graduate-fashion-week-student-blog",
+			"title": "Articles",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
 }

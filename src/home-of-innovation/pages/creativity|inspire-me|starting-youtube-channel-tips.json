@@ -1,50 +1,54 @@
 {
-  "title": "Inspire Me: 5 Top Things to Know When Starting a Gaming Channel by Jane Douglas",
-  "description": "",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/inspire-me/2_kv.jpg",
-  "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/inspire-me/2_thumb.jpg",
-  "group": "inspire-me",
-  "sort": 2,
-  "meta": {
-    "icon": "video",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "kv",
-      "media": {
-        "type": "youtube",
-        "content": "9TNTxLf67VY",
-        "poster": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/inspire-me/2_kv.jpg",
-        "alt": ""
-      },
-      "style": {
-        "desktop": "top",
-        "mobile": "top"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "copy": "5 Top Things to Know When Starting a Gaming Channel by Jane Douglas"
-        },
-        {
-          "type": "paragraphs",
-          "text": [
-            "Welcome to Inspire Me. A series of tutorials led by industry experts across photography, gaming and travel, designed to upskill and inspire you to dive into new passions.",
-            "Presenter, writer and producer, Jane Douglas, shares 5 top things that she wishes she’d known when first starting her successful gaming channel, Outside Xbox. She has 8 years of experience within the industry, including an appearance on the BBC’s Horizon episode ‘Are Video Games Really That Bad’, and presenting at the 2016 BAFTA Games Awards. From creating the ultimate setup with the <a href=\"https://www.samsung.com/uk/monitors/gaming/dqhd-monitor-with-1000r-curved-display-49-inch-lc49g95tssuxen/\">Odyssey G9 Gaming Monitor</a>, to finding your niche, this 6-minute tutorial is a must-watch for gaming enthusiasts at all levels."
-          ]
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "dynamic": "episodes",
-      "id": "inspire-me",
-      "title": "More episodes",
-      "style": {
-        "scroll": true
-      }
-    }
-  ]
+	"title": "Inspire Me: 5 Top Things to Know When Starting a Gaming Channel by Jane Douglas",
+	"description": "",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/inspire-me/2_kv.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/inspire-me/2_thumb.jpg",
+	"group": "inspire-me",
+	"sort": 2,
+	"meta": {
+		"icon": "video",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 7,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "youtube",
+				"content": "9TNTxLf67VY",
+				"poster": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/inspire-me/2_kv.jpg",
+				"alt": ""
+			},
+			"style": {
+				"desktop": "top",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "5 Top Things to Know When Starting a Gaming Channel by Jane Douglas"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Welcome to Inspire Me. A series of tutorials led by industry experts across photography, gaming and travel, designed to upskill and inspire you to dive into new passions.",
+						"Presenter, writer and producer, Jane Douglas, shares 5 top things that she wishes she’d known when first starting her successful gaming channel, Outside Xbox. She has 8 years of experience within the industry, including an appearance on the BBC’s Horizon episode ‘Are Video Games Really That Bad’, and presenting at the 2016 BAFTA Games Awards. From creating the ultimate setup with the <a href=\"https://www.samsung.com/uk/monitors/gaming/dqhd-monitor-with-1000r-curved-display-49-inch-lc49g95tssuxen/\">Odyssey G9 Gaming Monitor</a>, to finding your niche, this 6-minute tutorial is a must-watch for gaming enthusiasts at all levels."
+					]
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "episodes",
+			"id": "inspire-me",
+			"title": "More episodes",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
 }

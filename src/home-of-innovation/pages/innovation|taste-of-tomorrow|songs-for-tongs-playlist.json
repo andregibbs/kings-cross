@@ -1,61 +1,65 @@
 {
-  "title": "Taste of Tomorrow: Songs for your Tongs",
-  "description": "Cooking playlist picks",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/07_Samsung_Website_TOT_Spotify_1440x810_V1.png",
-  "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/07_Samsung_Website_TOT_Spotify_400x255_V1.png",
-  "group": "taste-of-tomorrow",
-  "sort": 6,
-  "meta": {
-    "icon": "audio",
-    "tags": []
-  },
-  "components": [
-    {
-      "type": "kv",
-      "media": {
-        "type": "image",
-        "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/07_Samsung_Website_TOT_Spotify_1440x810_V1.png",
-        "alt": ""
-      },
-      "style": {
-        "desktop": "top",
-        "mobile": "bottom"
-      },
-      "components": [
-        {
-          "type": "headline",
-          "copy": "Taste of Tomorrow: Songs for your Tongs"
-        }
-      ]
-    },
-    {
-      "type": "wrapper",
-      "components": [
-        {
-          "type": "paragraphs",
-          "style": {
-            "large": true
-          },
-          "text": [
-            "Chef Sara Kiyo Popowa shared her cooking playlist picks when she came to cook her creations in the KX Connected Kitchen at KX for Taste of Tomorrow. Listen below!"
-          ]
-        },
-        {
-          "type": "iframe",
-          "variant": "spotify",
-          "src": "https://open.spotify.com/embed/playlist/3EaDpBSnI1DVt7W7FEvjEY"
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "dynamic": "more-articles",
-      "id": "taste-of-tomorrow",
-      "title": "More articles",
-      "style": {
-        "scroll": true
-      }
-    }
-  ]
+	"title": "Taste of Tomorrow: Songs for your Tongs",
+	"description": "Cooking playlist picks",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/07_Samsung_Website_TOT_Spotify_1440x810_V1.png",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/07_Samsung_Website_TOT_Spotify_400x255_V1.png",
+	"group": "taste-of-tomorrow",
+	"sort": 6,
+	"meta": {
+		"icon": "audio",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 35,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "image",
+				"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/taste-of-tomorrow/07_Samsung_Website_TOT_Spotify_1440x810_V1.png",
+				"alt": ""
+			},
+			"style": {
+				"desktop": "top",
+				"mobile": "bottom"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Taste of Tomorrow: Songs for your Tongs"
+				}
+			]
+		},
+		{
+			"type": "wrapper",
+			"components": [
+				{
+					"type": "paragraphs",
+					"style": {
+						"large": true
+					},
+					"text": [
+						"Chef Sara Kiyo Popowa shared her cooking playlist picks when she came to cook her creations in the KX Connected Kitchen at KX for Taste of Tomorrow. Listen below!"
+					]
+				},
+				{
+					"type": "iframe",
+					"variant": "spotify",
+					"src": "https://open.spotify.com/embed/playlist/3EaDpBSnI1DVt7W7FEvjEY"
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "more-articles",
+			"id": "taste-of-tomorrow",
+			"title": "More articles",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
 }
