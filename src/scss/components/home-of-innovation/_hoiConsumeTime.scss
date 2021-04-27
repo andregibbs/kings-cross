@@ -1,12 +1,23 @@
 .hoiConsumeTime {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   display: flex;
   align-items: center;
-  margin: 0.5rem 0;
+  margin: 1rem 0;
   svg {
     fill: white;
-    height: 1.2rem;
-    width: 1.2rem;
+    height: 1rem;
+    width: 1rem;
     margin-right: 0.5rem;
+  }
+}
+
+@media screen and (min-width: $mobile + 1) {
+  .hoiConsumeTime {
+    font-size: 1rem;
+    svg {
+      height: 1.5rem;
+      width: 1.5rem;
+      margin-right: 0.75rem;
+    }
   }
 }

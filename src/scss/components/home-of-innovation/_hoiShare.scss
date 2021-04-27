@@ -48,7 +48,7 @@
 
 @media screen and (min-width: $mobile + 1) {
   .hoiShare {
-    margin: $spacing-desktop;
+    margin: 1rem $spacing-desktop;
   }
   .hoiShare__Link {
     width: em(40);

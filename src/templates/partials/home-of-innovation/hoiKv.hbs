@@ -84,8 +84,11 @@
   </div>
 
   <div class="hoiKv__Components">
-
     {{> home-of-innovation/components this }}
+
+    {{#if @root.contentLength}}
+      {{> home-of-innovation/hoiConsumeTime}}
+    {{/if}}
 
     {{#if (eq this.share false)}}
     {{else}}
