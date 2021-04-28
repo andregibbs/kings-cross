@@ -4,7 +4,6 @@
 	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/kx-tech-pages/tech-club-BANNER_1440x650_V2.jpg",
 	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/kx-tech-pages/tech-club-Thumbnails_400x255_V2.jpg",
 	"group": "kx-tech-club",
-  "hidden": true,
 	"sort": 1,
 	"meta": {
 		"icon": "video",
@@ -35,7 +34,7 @@
 				{
 					"type": "paragraphs",
 					"text": [
-						"Session 1 sees Rebel Book Club host Gadget Show’s Georgie Barratt, Exposure founder Raoul Shah, and two of the Samsung KX team to discuss all things working from your phone. From those first ever memories of working from a phone on the go, to using devices to manage downtime and creativity, through to how phones have revolutionised businesses; the first ever KX Tech Club covers of all the tips, tricks and advice you’ll need for maximising working from your phone."
+						"Session 1 sees Rebel Book Club host Gadget Show’s Georgie Barratt, Exposure founder Raoul Shah, and two of the Samsung KX team to discuss all things working from your phone. From those first ever memories of working from a phone on the go, to using devices, such as the <a href=\"https://www.samsung.com/uk/smartphones/galaxy-s21-ultra-5g\">Galaxy S21 Ultra</a> and <a href=\"https://www.samsung.com/uk/smartphones/galaxy-z-foldable/\">Galaxy Z Fold2</a> to manage downtime and creativity, through to how phones have revolutionised businesses; the first ever KX Tech Club covers of all the tips, tricks and advice you’ll need for maximising working from your phone."
 					]
 				}
 			]
