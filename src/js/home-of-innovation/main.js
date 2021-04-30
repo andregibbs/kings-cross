@@ -23,6 +23,7 @@ import HOIYoutubeLiveChat from './hoiYoutubeLiveChat'
 import HOIDynamicLinkList from './hoiDynamicLinkList';
 import HOIDynamicGroupLand from './hoiDynamicGroupLand';
 import HOILinkListHoverManager from './hoiLinkListHoverScroll'
+import HOIAddToCalendar from './hoiAddToCalendar'
 import { createYoutubeInstance, loadYoutubeAPI } from './utils';
 import '../util/GATracking.js'
 
@@ -38,6 +39,7 @@ function init() {
   const bambuserComponents = [].slice.call(document.querySelectorAll('.hoiBambuser'))
   const dynamicLinkLists = [].slice.call(document.querySelectorAll('.hoiLinkList[dynamic]'))
   const dynamicGroupLand = [].slice.call(document.querySelectorAll('.hoiGroupLand__Container[dynamic]'))
+  const addToCalendarComponents = [].slice.call(document.querySelectorAll('.hoiAddToCalendar'))
 
   // could make this conditional depending on wether there is youtube content on the page
   loadYoutubeAPI()
@@ -87,6 +89,11 @@ function init() {
       // dynamic GroupLanding components
       dynamicGroupLand.forEach(element => {
         new HOIDynamicGroupLand(element)
+      })
+
+      // add to calendar
+      addToCalendarComponents.forEach(element => {
+        new HOIAddToCalendar(element)
       })
 
     })

@@ -27,6 +27,7 @@
 
 .hoiKv__Components {
   padding: $spacing-mobile;
+  max-width: 1000px;
 
   p {
     @extend .h6;
@@ -36,6 +37,19 @@
   .hoiShare {
     margin-left: 0;
     margin-right: 0;
+  }
+}
+
+.hoiKv__ComponentExtras {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  .hoiShare {
+    margin-right: 0.5rem;
+  }
+
+  @media screen and (max-width: $mobile) {
+    display: block;
   }
 }
 

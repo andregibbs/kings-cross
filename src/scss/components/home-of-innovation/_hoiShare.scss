@@ -2,6 +2,7 @@
   margin: $spacing-mobile;
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .hoiShare__Link {
@@ -31,6 +32,11 @@
 .hoiShare__Feedback {
   margin-left: em(8);
   opacity: 0;
+  position: absolute;
+  left: 0;
+  top: calc(100% + 1rem);
+  width: 300px;
+  margin: 0 !important;
 }
 
 .hoiShare__Feedback--animate {

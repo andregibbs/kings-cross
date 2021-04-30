@@ -28,6 +28,7 @@ var nodemon = require('gulp-nodemon')
 
 var prompt = require('prompt');
 var hbsfy = require('hbsfy')
+var browserifySVG = require('svg-browserify')
 
 /* Other dependencies */
 var chalk = require('chalk')
@@ -236,6 +237,7 @@ gulp.task('kx:js', function() {
         file.src,
         { debug: true }
       )
+      .transform(browserifySVG)
       .transform(hbsfy)
       .transform(babel.configure({ presets: ['es2015-ie'] }))
     )
@@ -717,6 +719,7 @@ gulp.task('home-of-innovation-js', () => {
   if (!hoiJSBundler) {
     hoiJSBundler = watchify(
       browserify( config.SRC_FOLDER + '/js/home-of-innovation/main.js', { debug: true })
+        .transform(browserifySVG)
         .transform(hbsfy)
         .transform(babel.configure({ presets: ['es2015-ie'] })))
   }
@@ -810,8 +813,8 @@ gulp.task('kx:dashboard', ['kx:dashboard:scraper', 'kx:dashboard:ui', 'kx:dashbo
 gulp.task('kx:dashboard-server', ['kx:dashboard:server'])
 
 // Main HOI tasks
-//gulp.task('hoi-staging', ['home-of-innovation-scss', 'home-of-innovation-build', 'home-of-innovation-js', 'home-of-innovation-watch'])
-gulp.task('hoi-dev', ['kx:dashboard', 'home-of-innovation-scss', 'home-of-innovation-build', 'home-of-innovation-js', 'home-of-innovation-watch'])
+gulp.task('hoi-staging', ['home-of-innovation-scss', 'home-of-innovation-build', 'home-of-innovation-js', 'home-of-innovation-watch'])
+gulp.task('hoi-dev', ['home-of-innovation-scss', 'home-of-innovation-build', 'home-of-innovation-js', 'home-of-innovation-watch'])
 
 // Main KX tasks
 gulp.task('staging', ['watch', '_staging', 'kx:js'])

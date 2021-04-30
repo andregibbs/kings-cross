@@ -86,14 +86,15 @@
   <div class="hoiKv__Components">
     {{> home-of-innovation/components this }}
 
-    {{#if @root.contentLength}}
-      {{> home-of-innovation/hoiConsumeTime}}
-    {{/if}}
-
-    {{#if (eq this.share false)}}
-    {{else}}
-      {{> home-of-innovation/hoiShare }}
-    {{/if}}
+    <div class="hoiKv__ComponentExtras">
+      {{#if (eq this.share false)}}
+      {{else}}
+        {{> home-of-innovation/hoiShare }}
+      {{/if}}
+      {{#if this.event}}
+        {{> home-of-innovation/hoiAddToCalendar this.event}}
+      {{/if}}
+    </div>
   </div>
 
 </div>

@@ -24,8 +24,15 @@
 			},
 			"style": {
 				"desktop": "top",
-				"mobile": "bottom"
+				"mobile": "top"
 			},
+      "_event": {
+        "title": "Event Title",
+        "start": "April 10, 2020 19:00",
+        "description": "Here is an event description",
+        "address": "22 Lavington Street, SE1 0NZ",
+        "duration": 30
+      },
 			"components": [
 				{
 					"type": "headline",
