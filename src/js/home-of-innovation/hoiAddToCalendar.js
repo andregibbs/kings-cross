@@ -10,11 +10,20 @@ class HOIAddToCalendar {
   constructor(element) {
     this.el = element
     this.calendarData = this.getCalendarData()
-    if (this.calendarData.start > Date.now()) {
-      console.log('event has passed')
+    if (!this.calendarData) {
+      console.log('invalid data for event')
+      return this.hideComponent()
+    }
+    if (this.calendarData.start.getTime() < Date.now()) {
+      // event has passed
+      this.hideComponent()
     }
     this.createCalendarComponent()
     this.componentModifications()
+  }
+
+  hideComponent() {
+    this.el.style.visibility = 'hidden'
   }
 
   getCalendarData() {
@@ -25,7 +34,6 @@ class HOIAddToCalendar {
     }
     ['title','description','address','start','end', 'duration'].forEach(key => {
       const value = attr(key)
-      console.log(key, value)
       if (value) {
         switch (key) {
           case 'start':
@@ -41,8 +49,9 @@ class HOIAddToCalendar {
       }
     })
     console.log(data)
-    if (!data.duration && !data.end) {
+    if (!data.start || !data.duration && !data.end) {
       console.log('addToCalendar: data requires end or duration value')
+      return false
     }
     return data
   }
