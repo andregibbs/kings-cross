@@ -81,6 +81,20 @@
           alt=this.media.alt
       }}
     {{/if}}
+
+    {{#if @root.contentLength}}
+      <div class="hoiKv__ContentTime">
+        {{#if_defined @root.meta.icon}}
+          {{#if (eq @root.meta.icon 'article')}}{{> svg/article}}{{/if}}
+          {{#if (eq @root.meta.icon 'audio')}}{{> svg/audio}}{{/if}}
+          {{#if (eq @root.meta.icon 'video')}}{{> svg/video}}{{/if}}
+        {{else}}
+          {{> svg/time}}
+        {{/if_defined}}
+        {{@root.contentLength.length}} {{#if_defined @root.content.length}}@root.content.length{{else}}mins{{/if_defined}}
+      </div>
+    {{/if}}
+    
   </div>
 
   <div class="hoiKv__Components">

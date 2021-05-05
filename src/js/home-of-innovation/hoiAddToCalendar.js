@@ -14,8 +14,10 @@ class HOIAddToCalendar {
       console.log('invalid data for event')
       return this.hideComponent()
     }
+    console.log(this.calendarData.start.getTime(), Date.now())
     if (this.calendarData.start.getTime() < Date.now()) {
       // event has passed
+      console.log('event passed')
       this.hideComponent()
     }
     this.createCalendarComponent()
@@ -48,7 +50,6 @@ class HOIAddToCalendar {
         }
       }
     })
-    console.log(data)
     if (!data.start || !data.duration && !data.end) {
       console.log('addToCalendar: data requires end or duration value')
       return false

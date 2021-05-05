@@ -18,6 +18,7 @@ function getFiles() {
   files = files.filter(file => {
     const id = file.replace(SRC_FOLDER, '').replace('.json', '')
 
+    // only interested if matching page arg
     if (id === pageToPopulate) {
       return true
     }
@@ -44,7 +45,6 @@ function getFiles() {
     if (id.split('|').length <= 1) {
       return false
     }
-    // todo add manual flag to pages to hide from search
     return true
   })
 

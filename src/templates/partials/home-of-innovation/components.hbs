@@ -92,13 +92,18 @@
     </script>
   {{/if_equals}}
 
+
+  <!--
+  auto included in kv
   {{#if_equals this.type 'consumeTime'}}
     {{> home-of-innovation/hoiConsumeTime this}}
   {{/if_equals}}
 
+  auto included in kv if event & data present in kv
   {{#if_equals this.type 'addToCalendar'}}
     {{> home-of-innovation/hoiAddToCalendar this}}
   {{/if_equals}}
+  -->
 
   {{!--
     Group, Related & Link list

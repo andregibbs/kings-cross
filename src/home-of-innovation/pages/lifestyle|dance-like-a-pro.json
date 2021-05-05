@@ -1,0 +1,43 @@
+{
+	"title": "Learn How to Dance Like a Pro with Diversity’s Perri Kiely",
+	"description": "",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/dance-like-a-pro/Perri_Kiely_Workshop.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/dance-like-a-pro/Perri_Kiely_Thumb.jpg",
+	"meta": {
+		"icon": "video",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 5,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "youtube",
+				"content": "9MfM4bsSDzw",
+				"poster": "{{lifestyle|dance-like-a-pro[image]}}",
+				"alt": ""
+			},
+			"style": {
+				"desktop": "top",
+				"mobile": "bottom"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Learn How to Dance Like a Pro with Diversity’s Perri Kiely"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+            "The nation’s newfound love for dance has reached new heights, with one in five mastering a social media dance trend. However, three quarters of young people still admit to feeling anxious about dancing in public.",
+            "To give people the confidence to hit the real-life dance floor, Perri Kiely reveals his top tips on how to brush up on the latest trending moves, and expertly capture them using the <a href=\"https://www.samsung.com/uk/smartphones/galaxy-a/galaxy-a52-5g/buy/\">Samsung Galaxy A52 5G’s</a> awesome camera capabilities."
+          ]
+				}
+			]
+		}
+	]
+}
