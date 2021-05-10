@@ -1,0 +1,92 @@
+@import '../../../../bootstrap';
+
+@import "../../../../mixins/clearfix";
+@import "../../../../mixins/typography";
+@import "../../../../mixins/vw";
+
+@import '../../../../home-of-innovation/vars';
+@import '../../../../components/home-of-innovation/content';
+
+.samsung-people-live {
+  @import '../../../../components/home-of-innovation/typography';
+  @import '../../../../components/home-of-innovation/hoiKv';
+  @import '../../../../components/home-of-innovation/hoiShare';
+  @import '../../../../components/home-of-innovation/hoiImagePanelLinks';
+  @import '../../../../components/home-of-innovation/hoiBambuser';
+  @import '../../../../components/home-of-innovation/hoiHeadline';
+  @import '../../../../components/home-of-innovation/hoiBreadcrumbs';
+  @import '../../../../components/home-of-innovation/hoiWrapper';
+  @import '../../../../components/home-of-innovation/hoiParagraphs';
+  @import '../../../../components/home-of-innovation/hoiAddToCalendar';
+  @import '../../../../components/common/kxCountdown';
+}
+
+
+.samsung-people-live {
+  .hoiKv__Media:after {
+    padding-bottom: 41.7%
+  }
+  @media screen and (max-width: 768px) {
+    .hoiKv__Media:after {
+      padding-bottom: 136.8% !important;
+    }
+  }
+}
+
+.hoiContent {
+  a:not(.btn) {
+    color: #00C3B2;
+  }
+}
+
+
+.hoiWrapper {
+  margin: 0 auto !important;
+  #countdown-target {
+    // margin:     max-width: 75vw;
+    margin: calc(2.5em * 2) auto calc(2.5em * 4);
+  }
+}
+
+// darken overlay bg
+
+
+// Signposts
+.spl__Signposts {
+  display: flex;
+  padding: $spacing-mobile;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.spl__Signpost {
+  width: 100%;
+  margin-bottom: 1rem;
+  .spl__SignpostImage {
+    width: 100%;
+    padding-top: 41%;
+    background-repeat: no-repeat;
+    // background-position: left 1em center;
+    background-size: cover;
+    border-radius: 5px;
+  }
+  .slp__SignpostBody {
+    padding: 1rem;
+    h4 {
+      margin-bottom: 0.5rem;
+    }
+    p {
+      margin-bottom: 1rem;
+    }
+  }
+}
+@media screen and (min-width: $mobile + 1) {
+  .spl__Signposts {
+    padding: $spacing-desktop;
+    flex-wrap: nowrap;
+  }
+  .spl__Signpost {
+    margin-bottom: 0;
+    width: calc(50% - #{$spacing-desktop / 3});
+  }
+}

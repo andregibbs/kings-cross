@@ -14,7 +14,6 @@ class HOIAddToCalendar {
       console.log('invalid data for event')
       return this.hideComponent()
     }
-    console.log(this.calendarData.start.getTime(), Date.now())
     if (this.calendarData.start.getTime() < Date.now()) {
       // event has passed
       console.log('event passed')

@@ -1,23 +1,23 @@
-@import '../../../bootstrap';
+@import '../../../../bootstrap';
 
-@import "../../../mixins/clearfix";
-@import "../../../mixins/typography";
-@import "../../../mixins/vw";
+@import "../../../../mixins/clearfix";
+@import "../../../../mixins/typography";
+@import "../../../../mixins/vw";
 
-@import '../../../home-of-innovation/vars';
-@import '../../../components/home-of-innovation/content';
+@import '../../../../home-of-innovation/vars';
+@import '../../../../components/home-of-innovation/content';
 
 .samsung-people-live {
-  @import '../../../components/home-of-innovation/typography';
-  @import '../../../components/home-of-innovation/hoiKv';
-  @import '../../../components/home-of-innovation/hoiShare';
-  @import '../../../components/home-of-innovation/hoiImagePanelLinks';
-  @import '../../../components/home-of-innovation/hoiBambuser';
-  @import '../../../components/home-of-innovation/hoiHeadline';
-  @import '../../../components/home-of-innovation/hoiBreadcrumbs';
-  @import '../../../components/home-of-innovation/hoiWrapper';
-  @import '../../../components/home-of-innovation/hoiParagraphs';
-  @import '../../../components/common/kxCountdown';
+  @import '../../../../components/home-of-innovation/typography';
+  @import '../../../../components/home-of-innovation/hoiKv';
+  @import '../../../../components/home-of-innovation/hoiShare';
+  @import '../../../../components/home-of-innovation/hoiImagePanelLinks';
+  @import '../../../../components/home-of-innovation/hoiBambuser';
+  @import '../../../../components/home-of-innovation/hoiHeadline';
+  @import '../../../../components/home-of-innovation/hoiBreadcrumbs';
+  @import '../../../../components/home-of-innovation/hoiWrapper';
+  @import '../../../../components/home-of-innovation/hoiParagraphs';
+  @import '../../../../components/common/kxCountdown';
 }
 
 

@@ -1,0 +1,47 @@
+{
+  "title": "testy",
+  "panels": [
+    {
+      "title": "Samsung People",
+      "sub": "Chat live with our friendly Samsung People",
+      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/signpost_2.jpg",
+      "alt": "",
+      "link": "https://www.samsung.com/uk/samsung-people/",
+      "cta": "LEARN MORE"
+    },
+    {
+      "title": "Galaxy Unpacked 2021",
+      "sub": "Discover our latest products",
+      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/signpost_1.jpg",
+      "alt": "",
+      "link": "https://www.samsung.com/uk/smartphones/galaxy-s21-5g/purchase/",
+      "cta": "LEARN MORE"
+    }
+  ],
+  "sub": {
+    "style": {
+      "large": true
+    },
+    "text": [
+      "Join our Samsung People Live at Samsung KX to learn more about our amazing new products, the Galaxy S21 Ultra 5G, Galaxy Buds Pro and Galaxy SmartTag"
+    ]
+  },
+  "breadcrumbs": [
+    {
+      "url": "/uk/explore/kings-cross/",
+      "title": "Home"
+    },
+    {
+      "url": "/uk/explore/kings-cross/innovation/",
+      "title": "Innovation"
+    },
+    {
+      "url": "/uk/explore/kings-cross/innovation/samsung-people-live/",
+      "title": "Samsung People Live"
+    },
+    {
+      "url": "/uk/explore/kings-cross/innovation/samsung-people-live/new-galaxy-book-range",
+      "title": "New Galaxy Book Range"
+    }
+  ]
+}
