@@ -85,15 +85,17 @@
     padding: 10px 40px;
 
     max-width: 160px;
+    width: 160px;
 
     @media screen and (max-width: $desktop) {
       margin: get-desktop-vw(7) auto;
-      padding: get-desktop-vw(12) get-desktop-vw(46);
+      padding: get-desktop-vw(12) 0;
     }
 
     @media screen and (max-width: $mobile) {
       margin: get-mobile-vw(7) auto;
       padding: get-mobile-vw(24) get-mobile-vw(24);
+      width: auto;
     }
 
     &:hover {

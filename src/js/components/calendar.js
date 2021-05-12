@@ -78,8 +78,6 @@ export default function calendar(URL, type, allEvents) {
 		var loadingScreen = document.getElementById("load-screen");
 		const appointmentURL = URL + "?startDate=";
 
-    console.log('asd', URL, appointmentURL, date)
-
 		const dateString = date.getFullYear() + "-" + (String(date.getMonth() + 1).length == 1 ? "0" + String(date.getMonth() + 1) : String(date.getMonth() + 1)) + "-" + (String(date.getDate()).length == 1 ? "0" + String(date.getDate()) : String(date.getDate()))
 
 		loadingScreen.style.display = "block";

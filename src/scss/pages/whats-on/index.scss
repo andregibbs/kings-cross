@@ -7,8 +7,46 @@
 @import "../../components/datePicker";
 
 
-// Hub items
+@import "../../components/common/kxQudiniBooking";
 
+
+.whatsOn__booking_panels {
+  display: flex;
+  padding: 2rem;
+  background-image: red;
+}
+
+.whatsOn__booking_panel {
+  width: 50%;
+  h3 {
+    font-size: 2rem;
+  }
+  .btn {
+    border-color: #A7731E;
+    background: black;
+    color: white;
+    font-size: 0.75rem;
+    &:hover {
+      color: black;
+      background: #A7731E;
+      border-color: #A7731E;
+    }
+  }
+  h3, .btn {
+    margin-top: 1rem;
+  }
+  @media screen and (max-width: $mobile) {
+    width: 100%;
+    h3 {
+      font-size: 1.5rem;
+    }
+    .btn {
+      width: 100%;
+    }
+  }
+}
+
+// Hub items
 .whatsOn__hubItems {
   display: flex;
   justify-content: space-between;
@@ -58,18 +96,17 @@
     padding-top: 60%;
   }
 }
+
+
 /*=============================================
 =            WHATSON PAGE            =
 =============================================*/
-
 .passionImg {
   padding: 0 !important;
   .section__inner {
     padding: 0 !important;
   }
 }
-
-
 .whatsOn__kv {
   max-height: 450px;
   height: 57vh;
@@ -79,7 +116,6 @@
   display: flex;
   align-items: center;
   //background: url('https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/header/Dog_Sigh_Banner_D_v2.jpg');
-
   @media screen and (max-width: $mobile) {
     height: 30vh;
   }

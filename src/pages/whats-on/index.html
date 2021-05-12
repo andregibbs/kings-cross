@@ -16,6 +16,16 @@
     </div>
   </section>
 
+  <div class="whatsOn__booking_panels">
+    <div class="whatsOn__booking_panel whatsOn__booking_panel--workspace">
+      <img class="whatsOn__booking_panel_image" src="https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/KX-landing-KV-static-PC.jpg"/>
+      <h3>Book a workspace</h3>
+      <a class="btn btn--primary" id="launch-qudini">Book Yours Now</a>
+    </div>
+  </div>
+
+  {{> components/common/kxQudiniBooking}}
+
   {{> components/kxClosed variation="whats-on" }}
 
   <div class="whatsOn__hubItems">
@@ -31,7 +41,7 @@
   {{/each}}
   </div>
 
-  <section class="section eventFilter">
+  <section class="section eventFilter" >
     <div class="section__inner">
       <div class="eventFilter__header">
         <div class="eventFilter__header__title">
@@ -139,18 +149,6 @@
     <div class="section__inner">
       <div class="events__container"></div>
       <span class="events__noResults">No results available</span>
-
-      <!-- <span class="events__noResults">
-          At Samsung KX, the wellbeing of our employees and guests is our key priority.
-
-          In light of the rapidly changing situation, we have cancelled all events at Samsung KX until further notice. We are actively monitoring the situation and following guidance from the UK Government.
-
-          Samsung product support remains available at
-          <a style="font-size: inherit;" href="https://www.samsung.com/uk/support" target="_blank">https://www.samsung.com/uk/support</a>
-
-          We sincerely apologise for any inconvenience caused.
-      </span> -->
-
       <span class="events__showMore">SHOW MORE</span>
     </div>
   </section>

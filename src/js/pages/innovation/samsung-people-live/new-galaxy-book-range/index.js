@@ -41,10 +41,10 @@ const SCHEDULE = [
     mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/kv-mob-v2.jpg'
   },
   {
-    liveDate: [2021,5,12,18,30],
-    endDate: [2021,5,12,19,30],
+    liveDate: [2021,5,12,18,0],
+    endDate: [2021,5,12,19,0],
     showID: 'gddP9JrzwxtO5s2XdJ8M',
-    title: 'Wednesday 12th Jan - 6.30PM',
+    title: 'Wednesday 12th May - 6.00PM',
     poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/Samsung_People_KV_2.jpg',
     mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/kv-mob-v2.jpg'
   }

@@ -1,0 +1,408 @@
+@import '../calendar';
+
+/* SERVICES.SCSS copy (support) */
+
+.kxQudiniBooking {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.kxQudiniBooking__screen {
+  display: none;
+}
+.kxQudiniBooking .loading {
+  display: none;
+}
+
+.kxQudiniBooking .calendar {
+  @media screen and (max-width: $mobile) {
+    .arrow {
+      top: 50%;
+      &.left {
+        left: 5px;
+      }
+      &.right {
+        right: 5px;
+      }
+    }
+  }
+}
+//
+
+.kxQudiniBooking, .journey,  {
+  padding-top: 0 !important;
+  position: relative;
+
+  // input types
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select,
+  textarea {
+    flex-basis: 40%;
+    margin: 20px 20px;
+    padding: 12px 30px;
+    @media screen and (max-width: $desktop) {
+      margin: get-desktop-vw(20) get-desktop-vw(20);
+      padding: get-desktop-vw(12) get-desktop-vw(30);
+    }
+    @media screen and (max-width: $mobile) {
+      margin: get-mobile-vw(8) get-mobile-vw(8);
+      padding: get-mobile-vw(12) get-mobile-vw(30);
+      flex-basis: unset;
+      width: 40%;
+    }
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  input[type="tel"]:invalid:not(:placeholder-shown),
+  input[type="email"]:invalid:not(:placeholder-shown) {
+    color: $warning;
+    outline: 2px solid $warning;
+
+    &::placeholder {
+      color: $warning;
+    }
+  }
+  // end input types
+
+  .section__inner {
+    padding-top: 0 !important;
+    &#one-to-one-description {
+      text-align: center;
+      h4, p {
+        margin-bottom: 1em;
+      }
+      a {
+        font-size: 1em;
+      }
+    }
+    &#confirmation {
+      position: relative;
+      padding: 40px !important;
+      text-align: center;
+
+      .time-selected,
+      .confirmation__header {
+        margin-top: 35px;
+        margin-bottom: 5px;
+      }
+
+      .confirmation__reference {
+        margin: 70px 0;
+        @media screen and (max-width: $desktop) {
+          margin: get-desktop-vw(70) 0;
+        }
+        @media screen and (max-width: $mobile) {
+          margin: get-mobile-vw(70) 0;
+        }
+      }
+    }
+    // strip out 121 stuff
+    &#confirmation {
+      .confirmation-121--show {
+        display: none;
+      }
+      &.confirmation-121 {
+        .confirmation__reference {
+          margin: 0;
+        }
+        .time-selected {
+          margin-top: 0;
+        }
+        .confirmation-121--show {
+          display: block;
+        }
+        .confirmation-121--hide {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .device-info {
+    flex-direction: column;
+    text-align: center;
+
+    h3 {
+      margin: 80px 0;
+      @media screen and (max-width: $desktop) {
+        margin: get-desktop-vw(80) 0;
+      }
+      @media screen and (max-width: $mobile) {
+        margin: get-mobile-vw(80) 0;
+      }
+    }
+
+    &__row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      a {
+        margin: 0 20px;
+        text-align: left;
+        @media screen and (max-width: $desktop) {
+          margin: 0 get-desktop-vw(20);
+        }
+        @media screen and (max-width: $mobile) {
+          display: none;
+        }
+        margin: 20px 20px;
+        padding: 12px 30px;
+        @media screen and (max-width: $desktop) {
+          margin: get-desktop-vw(20) get-desktop-vw(20);
+          padding: get-desktop-vw(12) get-desktop-vw(30);
+        }
+        @media screen and (max-width: $mobile) {
+          margin: get-mobile-vw(8) get-mobile-vw(8);
+          padding: get-mobile-vw(12) get-mobile-vw(30);
+          flex-basis: unset;
+          width: 40%;
+        }
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
+
+      * {
+        flex-basis: 40%;
+        @media screen and (max-width: $mobile) {
+          flex-basis: unset;
+          width: 40%;
+          flex-grow: 1;
+        }
+      }
+
+      select{
+        option{
+          color: black;
+        }
+      }
+    }
+
+    //
+    // #oneToOne-device-notes-header {
+    //   width: 83%;
+    //   margin: 20px auto 0;
+    //   text-align: left;
+    //   font-weight: normal;
+    //   display: none;
+    //   @media screen and (max-width: $desktop) {
+    //     margin: get-desktop-vw(20) auto 0;
+    //   }
+    //   @media screen and (max-width: $mobile) {
+    //     margin: get-mobile-vw(20) get-mobile-vw(8) get-mobile-vw(8);
+    //     width: 100%;
+    //   }
+    // }
+
+    textarea {
+      width: 83%;
+      height: 200px;
+      margin: 20px auto;
+      @media screen and (max-width: $desktop) {
+        margin: get-desktop-vw(20) auto;
+        height: get-desktop-vw(200);
+      }
+      @media screen and (max-width: $mobile) {
+        margin: get-mobile-vw(8) get-mobile-vw(8);
+        height: get-mobile-vw(200);
+        width: 100%;
+      }
+    }
+  }
+
+  .device-info__row > * {
+    width: 40%;
+  }
+  .details {
+    &__title,
+    &__time {
+      text-align: center;
+    }
+
+    &__time {
+      margin: 30px 0;
+      @media screen and (max-width: $desktop) {
+        margin: get-desktop-vw(30) 0;
+      }
+      @media screen and (max-width: $mobile) {
+        margin: get-mobile-vw(30) 0;
+      }
+    }
+
+    &__form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__fields {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 24px 0;
+    }
+    &__checkboxes,
+    &__disclaimer {
+      width: 650px;
+      margin: 0 50px;
+      @media screen and (max-width: $desktop) {
+        width: get-desktop-vw(650);
+        margin: 0 get-desktop-vw(50);
+      }
+      @media screen and (max-width: $mobile) {
+        width: get-mobile-vw(650);
+        margin: 0 get-mobile-vw(50);
+      }
+    }
+
+    // Show/Hide Zoom policy. Hide regular disclaimer if one-to-one visible
+    &__disclaimer#one-to-one-policy {
+      display: none;
+      &.visible {
+        display: block;
+      }
+      &.visible + .details__disclaimer {
+        display: none;
+      }
+    }
+  }
+
+  &.pink {
+    a {
+      color: $pink;
+    }
+    .line {
+      background-color: $pink;
+    }
+    .booking-line {
+      background-color: $pink;
+    }
+  }
+  &.coral {
+    a {
+      color: $coral;
+    }
+    .line {
+      background-color: $coral;
+    }
+    .booking-line {
+      background-color: $coral;
+    }
+  }
+  &.cyan {
+    a {
+      color: $cyan;
+    }
+    .line {
+      background-color: $cyan;
+    }
+    .booking-line {
+      background-color: $cyan;
+    }
+  }
+  &.orange {
+    a {
+      color: $orange;
+    }
+    .line {
+      background-color: $orange;
+    }
+    .booking-line {
+      background-color: $orange;
+    }
+  }
+
+  .booking-line {
+    width: 7680px;
+    height: 1px;
+    position: absolute;
+    background-color: $orange;
+    left: -3110px;
+
+    &--top {
+      top: -20px;
+    }
+
+    &--bot {
+      bottom: -20px;
+    }
+  }
+
+  .close{
+    display: block !important;
+    top: 0px;
+    @media screen and (max-width: $desktop) {
+      right: get-desktop-vw(64);
+    }
+
+    @media screen and (max-width: $mobile) {
+      right: get-mobile-vw(16);
+      top: 0.65em;
+    }
+  }
+
+  &.progress {
+    cursor: progress;
+  }
+}
+
+@keyframes flash__btn--pink {
+  50% {
+    border-color: red;
+    color: red;
+  }
+  100% {
+    border-color: $pink;
+    color: white;
+  }
+}
+@keyframes flash__btn--cyan {
+  50% {
+    border-color: red;
+    color: red;
+  }
+  100% {
+    border-color: $cyan;
+    color: white;
+  }
+}
+@keyframes flash__btn--orange {
+  50% {
+    border-color: red;
+    color: red;
+  }
+  100% {
+    border-color: unset;
+    color: $orange;
+  }
+}
+
+#navigation {
+  justify-content: center;
+  opacity: 0;
+  height: 0;
+  visibility: hidden;
+  display: flex;
+  transition: opacity ease-in-out 0.5s;
+  button {
+    margin: 0 25px;
+    @media screen and (max-width: $desktop) {
+      margin: get-desktop-vw(0) get-desktop-vw(25);
+    }
+    @media screen and (max-width: $mobile) {
+      margin: get-mobile-vw(0) get-mobile-vw(25);
+    }
+    &.flash--pink{
+      animation: flash__btn--pink 1s;
+    }
+    &.flash--cyan{
+      animation: flash__btn--cyan 1s;
+    }
+    &.flash--orange{
+      animation: flash__btn--orange 1s;
+    }
+  }
+}
