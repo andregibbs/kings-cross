@@ -20,14 +20,22 @@ function KX_WhatsOn() {
       bookingURL: 'https://bookings.qudini.com/booking-widget/booker/slots/7AVF4H59LMX/4375/68910/0',
       bookingProductID: '68910',
       bookingJourney: KXQudiniBooking.Screens_NoDeviceInfo,
-      bookingColor: '#A7731E'
+      bookingColor: '#FFBC4B'
     }
   }
 
-  document.querySelector('#launch-qudini').addEventListener('click', () => {
+  const launchWorkspace = document.querySelector('#launch-workspace')
+  // remove any active buttons after cancel
+  qudiniBooking.onJourneyCancel = () => {
+    [launchWorkspace].forEach(el => {
+      el.removeAttribute('active')
+    })
+  }
+  // booking flow launch
+  launchWorkspace.addEventListener('click', () => {
     qudiniBooking.start(QudiniFlow.workspace)
+    launchWorkspace.setAttribute('active','')
   })
-
 }
 
 if (document.readyState === "complete" || (document.readyState !== "loading" && !document.documentElement.doScroll)) {

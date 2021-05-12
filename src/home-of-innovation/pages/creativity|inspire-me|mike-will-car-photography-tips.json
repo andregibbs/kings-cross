@@ -1,0 +1,55 @@
+{
+	"title": "Inspire Me: 5 tips for taking stand-out car shots on a smartphone by Mike Will",
+	"description": "",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/inspire-me/3_mike_will.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/inspire-me/3_mike_will_th.jpg",
+	"group": "inspire-me",
+  "hidden": true,
+	"sort": 3,
+	"meta": {
+		"icon": "video",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 5,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "youtube",
+				"content": "TZhdGz6Mmgo",
+				"poster": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/inspire-me/3_mike_will.jpg",
+				"alt": ""
+			},
+			"style": {
+				"desktop": "top",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "5 tips for taking stand-out car shots on a smartphone by Mike Will"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Welcome to Inspire Me. A series of tutorials led by industry experts across photography, gaming and travel, designed to upskill and inspire you to dive into new passions.",
+						"Leading content creator Mike Will shares his secrets behind standout, automotive photography. This 3-minute tutorial teaches you how to set up your <a href=\"https://www.samsung.com/uk/smartphones/galaxy-s21-5g/buy/\">Samsung Galaxy S21 5G Ultra</a> for expertly capturing cars, including shooting different angles, customising the camera to Pro Mode, setting up grid lines and shooting in RAW."
+					]
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "episodes",
+			"id": "inspire-me",
+			"title": "More episodes",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
+}

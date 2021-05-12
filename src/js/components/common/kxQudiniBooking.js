@@ -5,53 +5,6 @@ No individual booking process included, all controled by args
 
 */
 
-/*
-
-styles
-
-.kxQudiniBooking a,
-.kxQudiniBooking .line,
-.kxQudiniBooking .booking-line {
-color: `${color}`;
-}
-
-.kxQudiniBooking .calendar .calendar__choice {
-border: `${color}`;
-}
-.kxQudiniBooking .calendar .calendar__choice:hover {
-background-color: `${color}`; // fix opacity
-}
-.kxQudiniBooking .calendar .calendar--selected {
-background-color: `${color}`;
-}
-.kxQudiniBooking .calendar .calendar--selected:hover {
-background-color: `${color}`; // fix opacity
-}
-.kxQudiniBooking .calendar .loading__bounce{
-border: 2px solid `${color}`;
-}
-
-.calendar.orange{
-
-.calendar__choice{
-border: 3px solid $orange;
-&:hover{
-background-color: rgba($color: $orange, $alpha: 0.5);
-}
-}
-.calendar--selected{
-background-color: $orange;
-&:hover {
-background-color: $orange;
-}
-}
-.loading__bounce{
-border: 2px solid $orange;
-}
-}
-
-*/
-
 import calendar from '../calendar'
 import checkIMEI from '../../util/CheckIMEI'
 
@@ -571,6 +524,12 @@ export class KXQudiniBooking {
     const comp = this // component
     comp.elements.close.style.visibility = "hidden";
     comp.elements.close.style.opacity = 0;
+
+    // component event emitted to capture above
+    if (this.onJourneyCancel) {
+      this.onJourneyCancel()
+    }
+
     $j(comp.booking.journey[comp.state.stage]).slideUp({
       duration: 400, start: function () {
         comp.elements.navigation.style.visibility = 'hidden';

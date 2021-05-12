@@ -9,31 +9,61 @@
 
 @import "../../components/common/kxQudiniBooking";
 
-
+.whatsOn__visit {
+  h2 {
+    text-align: center;
+    margin: 1rem 0 3rem 0;
+    @media screen and (max-width: $mobile) {
+      margin-bottom: 1rem;
+    }
+  }
+}
 .whatsOn__booking_panels {
   display: flex;
-  padding: 2rem;
-  background-image: red;
+  margin: 2rem 0;
 }
 
 .whatsOn__booking_panel {
   width: 50%;
-  h3 {
-    font-size: 2rem;
+  .whatsOn__booking_panel_image {
+    width: 100%;
+    background-size:cover;
+    background-position: center;
+    padding-top: 40%;
+  }
+  p {
+    font-size: 0.75rem;
+    line-height: 2;
+    text-align: left;
+    margin: 0 1rem;
+    span {
+      font-size: 0.85em !important;
+      color: #999;
+    }
   }
   .btn {
-    border-color: #A7731E;
+    border-color: #FFBC4B;
     background: black;
     color: white;
     font-size: 0.75rem;
+    margin: 0 auto;
+    &[active] {
+      background-color: #4d4d4d;
+      border-color: #4d4d4d;
+    }
     &:hover {
       color: black;
-      background: #A7731E;
-      border-color: #A7731E;
+      background: #FFBC4B;
+      border-color: #FFBC4B;
     }
   }
-  h3, .btn {
-    margin-top: 1rem;
+  h3, .btn, p {
+    margin: 1rem 1rem 0;
+  }
+  @media screen and (min-width: $mobile + 1) {
+    h3 {
+      margin-top: 2rem;
+    }
   }
   @media screen and (max-width: $mobile) {
     width: 100%;
@@ -41,7 +71,7 @@
       font-size: 1.5rem;
     }
     .btn {
-      width: 100%;
+      width: auto;
     }
   }
 }
