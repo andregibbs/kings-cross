@@ -5,6 +5,7 @@
 	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/400x255_2.jpg",
   "group": "samsung-people-live",
   "sort": 1,
+  "hidden": true,
 	"meta": {
 		"icon": "video",
 		"tags": []
