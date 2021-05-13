@@ -42,7 +42,6 @@ export default class HoiBambuser {
     products.forEach(({ ref: sku, id: productId, url: publicUrl }) => {
       let productData = skuData[sku]
       // console.log('hydrate', productData, skuData, sku, publicUrl)
-
       if (productData !== undefined) {
         player.updateProduct(productId, factory => {
           // if the page is loaded on qa, swap out the public url host with p6
@@ -60,7 +59,7 @@ export default class HoiBambuser {
                 .sizes(s => [s()
                   .name(productData.product_display_name)
                   .sku(sku)
-                  .price(pr => pr.current(`£${productData.price_info[0].msrp_price.value}`))
+                  .price(pr => pr.current(`${productData.price_info[0].msrp_price.value}`))
                 ])
               ])
             )
@@ -72,7 +71,7 @@ export default class HoiBambuser {
   onShoppingReady(player) {
 
     player.configure({
-      currency: ' ',
+      currency: 'GBP',
       locale: 'en-GB',
     });
 

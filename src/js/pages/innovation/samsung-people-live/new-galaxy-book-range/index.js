@@ -45,6 +45,7 @@ const SCHEDULE = [
     endDate: [2021,5,12,19,0],
     showID: 'gddP9JrzwxtO5s2XdJ8M',
     title: 'Wednesday 12th May - 6.00PM',
+    reminderDate: "May 12, 2021 18:00",
     poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/Samsung_People_KV_2.jpg',
     mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/kv-mob-v2.jpg'
   }
@@ -119,10 +120,6 @@ class SamsungLive {
     // get shows based on current time
     let { currentShow, nextShow } = this.getShows()
 
-    // console.log({currentShow, nextShow})
-
-    // return;
-
     // if no current show but a next, use next for kv
     if (nextShow && !currentShow) {
       currentShow = nextShow
@@ -172,7 +169,6 @@ class SamsungLive {
   }
 
   renderAddToCalendar(showData) {
-
     const templateData = {
       "title": "Samsung People Live: New Galaxy Book Range",
       "start": showData.reminderDate,
@@ -180,7 +176,6 @@ class SamsungLive {
       "address": window.location.href,
       "duration": 60
     }
-
     calendarTarget.innerHTML = ''
     calendarTarget.insertAdjacentHTML('beforeend', hoiAddToCalendarTemplate(templateData))
     new HOIAddToCalendar(calendarTarget.querySelector('.hoiAddToCalendar'))
@@ -192,7 +187,7 @@ class SamsungLive {
 
   getCurrentTime() {
     const now = DateTime.local()
-    // if date param exists (format YYYY/MM/DD/HH/SS)
+    // if date param exists (format ?date=YYYY-MM-DD-HH-SS ?date=2021-05-12-17-45)
     let manualDate = getParam('date') || false
     if (manualDate) {
       manualDate = manualDate.split('-')
@@ -240,13 +235,14 @@ class SamsungLive {
     // current show is one previous to next or the last in schedule
     let currentShow = nextShow ? SCHEDULE[SCHEDULE.indexOf(nextShow) - 1] : SCHEDULE[SCHEDULE.length - 1]
 
-    // if (nextShow) {
-    //   let nextShowTime = DateTime.local(...nextShow.liveDate).setZone("GMT")
-    //   // if the next show starts within 30 mins, use as current
-    //   if (Interval.fromDateTimes(currentTime, nextShowTime).length('minutes') < 30) {
-    //     currentShow = nextShow
-    //   }
-    // }
+    // if there is a next show
+    if (nextShow) {
+      let nextShowTime = DateTime.local(...nextShow.liveDate).setZone("GMT")
+      // if the next show starts within 30 mins, use as current
+      if (Interval.fromDateTimes(currentTime, nextShowTime).length('minutes') < 30) {
+        currentShow = nextShow
+      }
+    }
 
     if (!currentShow) {
       currentShow = nextShow
