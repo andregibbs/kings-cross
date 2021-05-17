@@ -2,7 +2,10 @@ $digit-size: 5.5rem;
 $digit-size-m: 11vw;
 
 .kxCountdown {
-
+  margin: 0 1rem;
+  h3 {
+    padding: 0 1rem;
+  }
 }
 
 .kxCountdown__groups {
@@ -33,6 +36,9 @@ $digit-size-m: 11vw;
     transform: translate(-50%, 0);
     @media screen and (max-width: 768px) {
       top: calc(#{$digit-size-m} + 1rem);
+    }
+    @media screen and (min-width: 1440px) {
+      font-size: 2rem;
     }
   }
 }

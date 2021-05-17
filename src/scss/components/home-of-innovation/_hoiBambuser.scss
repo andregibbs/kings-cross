@@ -116,6 +116,14 @@
   h4 + h2 {
     margin-top: 0;
   }
+  // v2
+  .hoiBambuser__Description {
+    margin-bottom: 0.5em;
+    font-size: 1.2em;
+  }
+  .hoiBambuser__NextSteam {
+    margin-bottom: 0.5em;
+  }
   @media screen and (min-width: $mobile + 1) {
     width: 40%;
     margin: auto 0;
@@ -142,6 +150,15 @@
     // .btn {
     //   padding: 1em 2em;
     // }
+    //v2
+    .hoiBambuser__Description {
+      font-size: 1em;
+      margin-bottom: 1em;
+    }
+    .hoiBambuser__NextSteam {
+      display: flex;
+      margin-bottom: 1em;
+    }
   }
 
   @media screen and (min-width: 1440px) {

@@ -12,15 +12,20 @@
   </style>
   <div class="hoiBambuser__Body">
     <div>
-      <h1>Samsung<br/>People</h1>
+      <h1>Samsung <br>People</h1>
       {{>live_icon}}
     </div>
-    {{#if live}}
-    {{else lastShow}}
-    {{else}}
-      <h4>Next Stream:</h4>
+    <div class="hoiBambuser__NextSteam">
+      {{#if live}}
+      {{else lastShow}}
+      {{else}}
+        <h4>Next Stream:</h4>
+      {{/if}}
+      <h2>{{title}}</h2>
+    </div>
+    {{#if description}}
+      <p class="hoiBambuser__Description">{{description}}</p>
     {{/if}}
-    <h2>{{title}}</h2>
 
     {{#if unsupported}}
     {{else}}

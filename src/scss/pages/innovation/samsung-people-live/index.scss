@@ -1,0 +1,123 @@
+@import '../../../bootstrap';
+
+@import "../../../mixins/clearfix";
+@import "../../../mixins/typography";
+@import "../../../mixins/vw";
+
+@import '../../../home-of-innovation/vars';
+@import '../../../components/home-of-innovation/content';
+
+.samsung-people-live {
+  @import '../../../components/home-of-innovation/typography';
+  @import '../../../components/home-of-innovation/hoiKv';
+  @import '../../../components/home-of-innovation/hoiShare';
+  @import '../../../components/home-of-innovation/hoiImagePanelLinks';
+  @import '../../../components/home-of-innovation/hoiBambuser';
+  @import '../../../components/home-of-innovation/hoiHeadline';
+  @import '../../../components/home-of-innovation/hoiBreadcrumbs';
+  @import '../../../components/home-of-innovation/hoiWrapper';
+  @import '../../../components/home-of-innovation/hoiParagraphs';
+  @import '../../../components/common/kxCountdown';
+  @import '../../../components/home-of-innovation/hoiAddToCalendar';
+}
+
+
+.samsung-people-live {
+  .hoiKv__Media:after {
+    padding-bottom: 23.89%;
+    @media screen and (max-width: 768px) {
+      padding-bottom: 128.4% !important;
+    }
+  }
+}
+
+.hoiContent {
+  a:not(.btn) {
+    color: #00C3B2;
+  }
+}
+
+
+.hoiWrapper.spl__Countdown {
+  margin: 0 auto !important;
+  #countdown-target {
+    margin: 2.5em auto 10em;
+    @media screen and (max-width: 768px) {
+      margin: 2.5em auto 7em;
+    }
+  }
+}
+
+// New styles, might be applied site wide
+.hoiBreadcrumbs {
+  .hoiBreadcrumbs__Link {
+    color: white !important;
+    letter-spacing: 1px;
+  }
+}
+.hoiKv .hoiKv__Components p {
+  font-family: "SamsungSharpSans", sans-serif;
+  font-weight: normal;
+  font-size: 1.2em;
+}
+
+// Signposts
+.spl__Signposts {
+  display: flex;
+  padding: $spacing-mobile;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.spl__Signpost {
+  width: 100%;
+  margin-bottom: 1rem;
+  .spl__SignpostImage {
+    width: 100%;
+    padding-top: 35.5%;
+    background-repeat: no-repeat;
+    // background-position: left 1em center;
+    background-size: cover;
+    border-radius: 5px;
+  }
+  .spl__SignpostBody {
+    padding: 1.5rem;
+    h4 {
+      font-size: 1.75em;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      letter-spacing: 0.5px;
+      font-size: 1em;
+      line-height: 2;
+      margin-bottom: 1.5rem;
+    }
+    .btn {
+      margin: 0 auto;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .spl__Signpost .spl__SignpostBody {
+    padding: 1rem;
+    h4 {
+      font-size: 3em;
+    }
+    p {
+      font-size: 1.5em;
+      line-height: 1.8;
+    }
+  }
+}
+@media screen and (min-width: $mobile + 1) {
+  .spl__Signposts {
+    padding: $spacing-desktop;
+    flex-wrap: nowrap;
+  }
+  .spl__Signpost {
+    margin-bottom: 0;
+    width: calc(50% - #{$spacing-desktop / 3});
+  }
+}

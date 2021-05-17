@@ -32,22 +32,49 @@ const SCHEDULE = [
   //   mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/kv-mob-v2.jpg'
   // },
   {
-    liveDate: [2021,5,10,18,30],
-    endDate: [2021,5,10,19,30],
-    showID: 'bvrAXXf47M4CcLttvBAQ',
-    reminderDate: "May 10, 2021 18:30",
-    title: 'Monday 10th May - 6.30PM',
-    poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/Samsung_People_KV_2.jpg',
-    mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/kv-mob-v2.jpg'
+    liveDate: [2021,5,14,20,0],
+    endDate: [2021,5,14,20,30],
+    showID: 'f96ItF4eDlUttIPe90MW',
+    reminderDate: "May 14, 2021 20:00",
+    title: 'Friday 14th May - 8PM',
+    poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/galaxy-book/live_computing_D.png',
+    mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/galaxy-book/live_computing_m.png'
   },
   {
-    liveDate: [2021,5,12,18,0],
-    endDate: [2021,5,12,19,0],
-    showID: 'gddP9JrzwxtO5s2XdJ8M',
-    title: 'Wednesday 12th May - 6.00PM',
-    reminderDate: "May 12, 2021 18:00",
-    poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/Samsung_People_KV_2.jpg',
-    mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/kv-mob-v2.jpg'
+    liveDate: [2021,5,15,20,0],
+    endDate: [2021,5,15,20,30],
+    showID: 'iB2hno1lXZUMYvOOUQx0',
+    reminderDate: "May 15, 2021 20:00",
+    title: 'Saturday 15th May - 8PM',
+    poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/galaxy-book/live_computing_D.png',
+    mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/galaxy-book/live_computing_m.png'
+  },
+  {
+    liveDate: [2021,5,17,20,0],
+    endDate: [2021,5,17,20,30],
+    showID: '6zKctrsCn8emfrCh7AsE',
+    reminderDate: "May 17, 2021 20:00",
+    title: 'Monday 17th May - 8PM',
+    poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/galaxy-book/live_computing_D.png',
+    mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/galaxy-book/live_computing_m.png'
+  },
+  {
+    liveDate: [2021,5,18,20,0],
+    endDate: [2021,5,18,20,30],
+    showID: 'VCGJ7ZT2xJ8p3VtEBFlE',
+    reminderDate: "May 18, 2021 20:00",
+    title: 'Tuesday 18th May - 8PM',
+    poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/galaxy-book/live_computing_D.png',
+    mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/galaxy-book/live_computing_m.png'
+  },
+  {
+    liveDate: [2021,5,19,20,0],
+    endDate: [2021,5,19,20,30],
+    showID: 'VCGJ7ZT2xJ8p3VtEBFlE',
+    reminderDate: "May 19, 2021 20:00",
+    title: 'Wednesday 19th May - 8PM',
+    poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/galaxy-book/live_computing_D.png',
+    mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/galaxy-book/live_computing_m.png'
   }
 ]
 
@@ -68,7 +95,7 @@ class SamsungLive {
     this.countdown = false
     this.update()
 
-    // debug for now, change for countdown / update method
+    // for countdown / update method
     this.updateInterval = setInterval(() => {
       this.update()
       if (this.countdown) {
@@ -130,10 +157,10 @@ class SamsungLive {
     if (
       JSON.stringify(this.currentShow) !== JSON.stringify(currentShow)
     ) {
+
       this.currentShow = JSON.parse(JSON.stringify(currentShow))
       this.renderHeader(currentShow, nextShow)
-
-      this.renderAddToCalendar(currentShow)
+      this.renderAddToCalendar(nextShow)
 
 
       if (currentShow.ended && nextShow) {
@@ -169,6 +196,10 @@ class SamsungLive {
   }
 
   renderAddToCalendar(showData) {
+    console.log('calendar', showData.reminderDate)
+    if (!showData.reminderDate) {
+      return
+    }
     const templateData = {
       "title": "Samsung People Live: New Galaxy Book Range",
       "start": showData.reminderDate,

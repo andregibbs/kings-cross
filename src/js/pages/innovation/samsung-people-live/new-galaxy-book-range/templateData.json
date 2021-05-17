@@ -1,20 +1,19 @@
 {
-  "title": "testy",
   "panels": [
     {
-      "title": "Samsung People",
-      "sub": "Chat live with our friendly Samsung People",
-      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/signpost_2.jpg",
+      "title": "Meet Samsung People",
+      "sub": "Whatever you're looking for on Samsung.com, Samsung People are here to help you make the right choice. Enjoy live video demos and get expert advice, all from the comfort of home.",
+      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/galaxy-book/Samsung_people_signpost.png",
       "alt": "",
       "link": "https://www.samsung.com/uk/samsung-people/",
       "cta": "LEARN MORE"
     },
     {
-      "title": "Galaxy Unpacked 2021",
-      "sub": "Discover our latest products",
-      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/signpost_1.jpg",
+      "title": "Introducing the new Galaxy Books",
+      "sub": "Get up close and personal with the powerful and versatile Galaxy Book Pro 360 with Super AMOLED screen, and the ultra-thin and portable Galaxy Book Pro, offering smartphone-like mobility.**",
+      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/galaxy-book/Galaxy_Book_signpost.png",
       "alt": "",
-      "link": "https://www.samsung.com/uk/smartphones/galaxy-s21-5g/purchase/",
+      "link": "https://www.samsung.com/uk/galaxy-book/",
       "cta": "LEARN MORE"
     }
   ],
@@ -23,7 +22,18 @@
       "large": true
     },
     "text": [
-      "Join our Samsung People Live at Samsung KX to learn more about our amazing new products, the Galaxy S21 Ultra 5G, Galaxy Buds Pro and Galaxy SmartTag"
+      "Every day at 8pm. Friday 14th to Wednesday 19th May (excluding Sunday)."
+    ]
+  },
+  "sub_2": {
+    "text": [
+      "Join us for an interactive demonstration of the new Galaxy Book, Galaxy Book Pro and Galaxy Book Pro 360, live from Samsung KX. Ask our experts questions and get an exclusive discount code to use on Samsung.com.*"
+    ]
+  },
+  "tc": {
+    "text": [
+      "*Purchase from Samsung Shop Online until 31/5/21. Cannot be used in conjunction with any other offer code. Available on the new Galaxy Book Pro and Galaxy Book Pro 360. Limited availability only. T&Cs apply.",
+      "**Based on laptop with 11th Gen Intel® Core™ Processor and Intel® Evo™ Platform as of May 2021."
     ]
   },
   "breadcrumbs": [
@@ -43,5 +53,21 @@
       "url": "/uk/explore/kings-cross/innovation/samsung-people-live/new-galaxy-book-range",
       "title": "New Galaxy Book Range"
     }
-  ]
+  ],
+  "related": {
+    "type": "link-list",
+    "title": "Previous Events",
+    "items": [
+      {
+        "title": "Samsung People Live",
+        "url": "/uk/explore/kings-cross/innovation/samsung-people-live/",
+        "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/galaxy-book/Standard_people_tile.png"
+      },
+      {
+        "title": "Watch Samsung People Live: Galaxy 21 Range",
+        "url": "/uk/explore/kings-cross/innovation/samsung-people-live/galaxy-s21-range",
+        "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/galaxy-book/Standard_people_tile.png"
+      }
+    ]
+  }
 }

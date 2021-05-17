@@ -26,87 +26,87 @@ const SCHEDULE = [
   //   showID: '1JySqY77y0inrbcvMsi5',
   //   title: 'Wednesday 27th Jan - 4PM',
   //   poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/Samsung_People_KV_slimmer.jpg',
-  //   mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/kv-mob-v2.jpg'
+  //   mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/s21-mob.jpg'
   // },
   {
     liveDate: [2021,1,29,16,0],
     endDate: [2021,1,29,17,0],
     showID: 'IsnK3F6ydfiouXDf7JQW',
     title: 'Friday 29th Jan - 4PM',
-    poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/Samsung_People_KV_2.jpg',
-    mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/kv-mob-v2.jpg'
+    poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/s21-desk.jpg',
+    mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/s21-mob.jpg'
   },
   {
     liveDate: [2021,1,29,18,0],
     endDate: [2021,1,29,19,0],
     showID: 'gddP9JrzwxtO5s2XdJ8M',
     title: 'Friday 29th Jan - 6PM',
-    poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/Samsung_People_KV_2.jpg',
-    mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/kv-mob-v2.jpg'
+    poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/s21-desk.jpg',
+    mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/s21-mob.jpg'
   },
   {
     liveDate: [2021,1,30,16,0],
     endDate: [2021,1,30,17,0],
     showID: 'luvHC3kxbxL5FrDI4Qr5',
     title: 'Saturday 30th Jan - 4PM',
-    poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/Samsung_People_KV_2.jpg',
-    mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/kv-mob-v2.jpg'
+    poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/s21-desk.jpg',
+    mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/s21-mob.jpg'
   },
   {
     liveDate: [2021,1,30,18,0],
     endDate: [2021,1,30,19,0],
     showID: 'isGp8tJe9U6E3BOzHQXX',
     title: 'Saturday 30th Jan - 6PM',
-    poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/Samsung_People_KV_2.jpg',
-    mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/kv-mob-v2.jpg'
+    poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/s21-desk.jpg',
+    mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/s21-mob.jpg'
   },
   {
     liveDate: [2021,1,31,18,0],
     endDate: [2021,1,31,19,0],
     showID: 'Rl8XPj26Kqjzf94ymAq8',
     title: 'Sunday 31st Jan - 6PM',
-    poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/Samsung_People_KV_2.jpg',
-    mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/kv-mob-v2.jpg'
+    poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/s21-desk.jpg',
+    mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/s21-mob.jpg'
   },
   {
     liveDate: [2021,2,1,18,0],
     endDate: [2021,2,1,19,0],
     showID: 'UzHzyAYmcIo8chaj5Zgj',
     title: 'Monday 1st Feb - 6PM',
-    poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/Samsung_People_KV_2.jpg',
-    mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/kv-mob-v2.jpg'
+    poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/s21-desk.jpg',
+    mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/s21-mob.jpg'
   },
   {
     liveDate: [2021,2,2,18,0],
     endDate: [2021,2,2,19,0],
     showID: 'C39aCg3ivxYOF109h2vh',
     title: 'Tuesday 2nd Feb - 6PM',
-    poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/Samsung_People_KV_2.jpg',
-    mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/kv-mob-v2.jpg'
+    poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/s21-desk.jpg',
+    mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/s21-mob.jpg'
   },
   {
     liveDate: [2021,2,3,18,0],
     endDate: [2021,2,3,19,0],
     showID: '7Lx6bnrOliURO68Ubfpr',
     title: 'Wednesday 3rd Feb - 6PM',
-    poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/Samsung_People_KV_2.jpg',
-    mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/kv-mob-v2.jpg'
+    poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/s21-desk.jpg',
+    mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/s21-mob.jpg'
   },
   {
     liveDate: [2021,2,4,18,0],
     endDate: [2021,2,4,19,0],
     showID: 'V25CqDYCST7HcXUllNmg',
     title: 'Thursday 4th Feb - 6PM',
-    poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/Samsung_People_KV_2.jpg',
-    mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/kv-mob-v2.jpg'
+    poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/s21-desk.jpg',
+    mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/s21-mob.jpg'
   },
   {
     liveDate: [2021,2,5,18,0],
     endDate: [2021,2,5,19,0],
     showID: 'XzmJlIb3k2PcoF7Jfexf',
     title: 'Friday 5th Feb - 6PM',
-    poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/Samsung_People_KV_2.jpg',
-    mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/kv-mob-v2.jpg'
+    poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/s21-desk.jpg',
+    mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/s21-mob.jpg'
   }
 ]
 
@@ -144,7 +144,7 @@ class SamsungLive {
       unsupported: true,
       title: 'Sorry this browser is currently unsupported',
       poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/Samsung_People_KV_slimmer.jpg',
-      mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/kv-mob-v2.jpg'
+      mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/s21-mob.jpg'
     }))
   }
 
