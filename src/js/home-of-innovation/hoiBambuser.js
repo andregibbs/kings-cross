@@ -40,8 +40,8 @@ export default class HoiBambuser {
 
   hydrateProducts(player, products, skuData) {
     products.forEach(({ ref: sku, id: productId, url: publicUrl }) => {
-      let productData = skuData[sku]
-      // console.log('hydrate', productData, skuData, sku, publicUrl)
+      // find specific sku data from api
+      let productData = skuData.find(data => data.code.toLowerCase() === sku.toLowerCase())
       if (productData !== undefined) {
         player.updateProduct(productId, factory => {
           // if the page is loaded on qa, swap out the public url host with p6
@@ -51,15 +51,15 @@ export default class HoiBambuser {
           return factory.inheritFromPlaceholder()
             .publicUrl(publicUrl)
             .product(p => p
-              .name(productData.product_display_name)
+              .name(productData.name)
               .sku(sku)
               .variations(v => [v()
-                .name(productData.product_display_name)
+                .name(productData.name)
                 .sku(sku)
                 .sizes(s => [s()
-                  .name(productData.product_display_name)
+                  .name(productData.name)
                   .sku(sku)
-                  .price(pr => pr.current(`${productData.price_info[0].msrp_price.value}`))
+                  .price(pr => pr.current(`${productData.price.value}`))
                 ])
               ])
             )
@@ -80,7 +80,10 @@ export default class HoiBambuser {
       const skus = event.products.map(p => p.ref)
       this.fetchSKUData(skus)
         .then(skuData => {
-          this.hydrateProducts(player, event.products, skuData.products)
+          this.hydrateProducts(player, event.products, skuData)
+        })
+        .catch(e => {
+          console.log('fetch err', e)
         })
 
     })
@@ -180,7 +183,9 @@ export default class HoiBambuser {
 function fetchProductData(skus) {
   // host name for qa / live
   const hostname = window.location.hostname == 'p6-qa.samsung.com' ? 'p6-qa.samsung.com' : 'www.samsung.com';
-  return fetch(`https://${hostname}/uk/api/v4/configurator/syndicated-product-linear?skus=${skus}`)
+  // return fetch(`https://${hostname}/uk/api/v4/configurator/syndicated-product-linear?skus=${skus}`)
+  // use new hybris api
+  return fetch(`https://p1-smn2-api-cdn.shop.samsung.com/tokocommercewebservices/v2/uk/products?fields=FULL&productCodes=${skus}`)
     .then((response) => {
       return response.json()
       // callback(response.data);
