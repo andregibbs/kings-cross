@@ -48,16 +48,18 @@ export default class HoiBambuser {
           if (window.location.hostname === "p6-qa.samsung.com") {
             publicUrl = publicUrl.replace('www.samsung.com','p6-qa.samsung.com')
           }
+          // remove any product spec from the product name
+          const nameWithoutDetail = productData.name.replace(new RegExp(/(\(.*\))/,'gm'),'').trim()
           return factory.inheritFromPlaceholder()
             .publicUrl(publicUrl)
             .product(p => p
-              .name(productData.name)
+              .name(nameWithoutDetail)
               .sku(sku)
               .variations(v => [v()
-                .name(productData.name)
+                .name(nameWithoutDetail)
                 .sku(sku)
                 .sizes(s => [s()
-                  .name(productData.name)
+                  .name(nameWithoutDetail)
                   .sku(sku)
                   .price(pr => pr.current(`${productData.price.value}`))
                 ])
@@ -166,10 +168,10 @@ export default class HoiBambuser {
             trackEvent(TRACKING.CATEGORY, TRACKING.ACTION, TRACKING.prefix(`${TRACKING.CALENDAR}:${shareType}`))
             break;
           default:
-            console.log('untracked tracking point', trackingEvent,  trackingData)
+            // console.log('untracked tracking point', trackingEvent,  trackingData)
         }
       default:
-        console.log('untracked event', trackingEvent,  trackingData)
+        // console.log('untracked event', trackingEvent,  trackingData)
         /*
           CANT TRACK
           min/max chat
