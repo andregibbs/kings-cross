@@ -12,10 +12,6 @@ function KX_WhatsOn() {
   // existing whasts on page script
   fetchData(whatson);
 
-  // fetchData(data => {
-  //   console.log('whatson', data)
-  // })
-
   const qudiniBooking = new KXQudiniBooking() // start single instance, update with .start()
 
   const QudiniFlow = {
