@@ -135,10 +135,7 @@ export default function calendar(URL, type, allEvents) {
 		//For every date
 		for (var dateInd = 0; dateInd < 5; dateInd++) {
       // skip if no data at index
-      if (!data[dateInd]) {
-        break
-      }
-			if (!data[dateInd].unAvailable ) {
+			if (!!data[dateInd] && !data[dateInd].unAvailable ) {
 				//Format date
 				var date = new Date(data[dateInd].date);
 				// var dateFormatted = days[date.getDay()] + " " + date.getDate() + " " + months[date.getMonth()] + " " + date.getFullYear();
@@ -180,7 +177,8 @@ export default function calendar(URL, type, allEvents) {
 				}
 
 
-			} else {
+			} else if (data[dateInd]) {
+
 				var date = new Date(data[dateInd].date);
 
 				// var dateFormatted = days[date.getDay()] + " " + date.getDate() + " " + months[date.getMonth()] + " " + date.getFullYear();
@@ -193,7 +191,20 @@ export default function calendar(URL, type, allEvents) {
 
 				$j(".calendar__choice").last().addClass("calendar--unavailable");
 
-			}
+			} else {
+        // no api data for date, so fill in using current calendar selected date + index
+        
+        const placeholderDate = new Date(selectedDate).setDate(selectedDate.getDate() + dateInd)
+        var placeholderDateFormatted = moment(placeholderDate).format('ddd Do MMMM');
+
+				$j(".calendar__container").append(handleTemplate("dateColumn", { "dateFormatted": placeholderDateFormatted, "index": dateInd, "date": moment(placeholderDate).format('YYYY-MM-DD') }));
+
+				$j(".calendar__choices").last().append(handleTemplate("slot", { "time": "No slots", "available": false }));
+
+				$j(".calendar__choice").last().addClass("calendar--unavailable");
+
+
+      }
 		}
 
 		calendarRestart = true;
