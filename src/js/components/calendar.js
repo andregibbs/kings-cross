@@ -8,8 +8,6 @@ export default function calendar(URL, type, allEvents) {
 
 	customevent();
 
-  // console.log('aaaaa', URL)
-
 	var unlock = new CustomEvent("unlock");
 	var lock = new CustomEvent("lock");
 
@@ -27,12 +25,19 @@ export default function calendar(URL, type, allEvents) {
 	const shortDays = days.map((a) => a.slice(0, 3))
 	const shortMonths = months.map((a) => a.slice(0, 3))
 
-	doLog("???");
+  var selectedDate = new Date();
+	var currentDate = new Date();
+
+  const eventsInitiated = false
 
 	document.getElementById("calendar").addEventListener("changeURL", function (e) {
 		URL = e.detail.url;
 
     // console.log('change url', URL)
+
+    // reset dates on url change
+    selectedDate = new Date();
+    currentDate = new Date();
 
 		doLog("got activated");
 
@@ -65,8 +70,7 @@ export default function calendar(URL, type, allEvents) {
 
 	document.getElementById("calendar").setAttribute("ready", "true");
 
-	var selectedDate = new Date();
-	var currentDate = new Date();
+
 
 
 
@@ -130,7 +134,11 @@ export default function calendar(URL, type, allEvents) {
 
 		//For every date
 		for (var dateInd = 0; dateInd < 5; dateInd++) {
-			if (!data[dateInd].unAvailable) {
+      // skip if no data at index
+      if (!data[dateInd]) {
+        break
+      }
+			if (!data[dateInd].unAvailable ) {
 				//Format date
 				var date = new Date(data[dateInd].date);
 				// var dateFormatted = days[date.getDay()] + " " + date.getDate() + " " + months[date.getMonth()] + " " + date.getFullYear();
@@ -198,7 +206,6 @@ export default function calendar(URL, type, allEvents) {
 		document.getElementsByClassName("arrow right")[0].addEventListener("click", function () {
 			appointmentStartTime = "";
 			document.getElementById("next").dispatchEvent(lock);
-
 
 			next.classList.remove("active");
 			if (window.innerWidth > 768) {
@@ -378,5 +385,7 @@ export default function calendar(URL, type, allEvents) {
 	window.addEventListener('resize', function () {
 		handleResize();
 	})
+
+  return true
 
 }

@@ -12,13 +12,19 @@ function KX_WhatsOn() {
   // existing whasts on page script
   fetchData(whatson);
 
+  // fetchData(data => {
+  //   console.log('whatson', data)
+  // })
+
   const qudiniBooking = new KXQudiniBooking() // start single instance, update with .start()
 
   const QudiniFlow = {
     workspace: {
       bookingName: 'workspace',
+      bookingTitle: 'Hot Desk Booking',
       bookingURL: 'https://bookings.qudini.com/booking-widget/booker/slots/7AVF4H59LMX/4375/68910/0',
       bookingProductID: '68910',
+      bookingWorkflowID: '7AVF4H59LMX',
       bookingJourney: KXQudiniBooking.Screens_NoDeviceInfo,
       bookingColor: '#FFBC4B'
     }

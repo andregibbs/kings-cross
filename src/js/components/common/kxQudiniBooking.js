@@ -25,7 +25,8 @@ export class KXQudiniBooking {
       close: document.querySelector('.kxQudiniBooking__close'),
       colorSelector: document.getElementById("color-selector"),
       modelSelector: document.getElementById("model-selector"),
-      styleContainer: document.querySelector('.kxQudiniBooking__style')
+      styleContainer: document.querySelector('.kxQudiniBooking__style'),
+      confirmationTitle: document.querySelector('#confirmation-title')
     }
 
     // Component State
@@ -51,7 +52,8 @@ export class KXQudiniBooking {
       productId: null,
       queueId: null,
       journey: [],
-      color: null
+      color: null,
+      bookingWorkflowID: null,
     }
 
     this.populateDeviceData()
@@ -60,8 +62,7 @@ export class KXQudiniBooking {
   }
 
   // Main method to initiate qudini booking
-  start({bookingName, bookingURL, bookingProductID, bookingJourney, bookingColor}) {
-    // console.log('kxQudiniBooking start', { bookingName, bookingURL, bookingProductID })
+  start({bookingName, bookingURL, bookingProductID, bookingJourney, bookingColor, bookingWorkflowID, bookingTitle}) {
     if (this.state.active && bookingName === this.booking.name) {
       return
     } else if (this.state.active && bookingName != this.booking.name) {
@@ -73,10 +74,12 @@ export class KXQudiniBooking {
 
     // new args for setting bookings
     this.booking.name = bookingName // name, replace category
+    this.booking.title = bookingTitle
     this.booking.url = bookingURL
     this.booking.productId = bookingProductID
     this.booking.color = bookingColor
     this.booking.queueId = null // replace state.productId
+    this.booking.bookingWorkflowID = bookingWorkflowID
 
     // maybe make optional/changable
     this.booking.journey = bookingJourney || [
@@ -178,7 +181,10 @@ export class KXQudiniBooking {
     .kxQudiniBooking .calendar .calendar--selected:hover {
       background-color: ${color}; // fix opacity
     }
-    .kxQudiniBooking.checkbox__container input:checked ~ .checkbox {
+    .kxQudiniBooking .checkbox__container input:checked ~ .checkbox {
+      background-color: ${color};
+    }
+    .kxQudiniBooking .booking-line {
       background-color: ${color};
     }
     `
@@ -190,8 +196,8 @@ export class KXQudiniBooking {
   // send call to mmake booking
   makeBooking() {
     const comp = this;
-    if (!state.requestInit) {
-      state.requestInit = true;
+    if (!this.state.requestInit) {
+      this.state.requestInit = true;
 
       var name = document.getElementById("name").value;
       var surname = document.getElementById("surname").value;
@@ -227,7 +233,7 @@ export class KXQudiniBooking {
         url: "https://bookings.qudini.com/booking-widget/booker/book",
         data: JSON.stringify(
           {
-            'queueId': this.booking.queueId,//Make dynamic
+            'queueId': comp.booking.queueId,//Make dynamic
             'bookingStartTime': bookingData.time,
             'bookingStartTimeString': bookingData.time,
             'firstName': bookingData.name,
@@ -235,8 +241,8 @@ export class KXQudiniBooking {
             'emailAddress': bookingData.email,
             'mobileNumber': bookingData.phone, // has a backend check, has to be a legitimate number
             'notes': bookingData.notes,
-            'productId': this.booking.productId, //Make dynamic
-            'bwIdentifier': "IZ0LYUJL6B0",
+            'productId': comp.booking.productId, //Make dynamic
+            'bwIdentifier': comp.booking.bookingWorkflowID,
             "marketingOptInSMS": true,
             "sendSms": true,
             'postCode': bookingData.postCode
@@ -246,19 +252,24 @@ export class KXQudiniBooking {
           var successMessages = ["success", "ok"];
           comp.elements.main.classList.remove("progress");
           if ((successMessages.indexOf(data ? data.status : "R@ND0M") != -1 || successMessages.indexOf(data.status) != -1) && data.bookingRef) {
+
             document.getElementById("ref").innerText = data.bookingRef;
 
-            comp.booking.journey[state.stage].style.display = "";
-            comp.state.stage++;
-            comp.booking.journey[state.stage].style.display = "block";
+            comp.elements.confirmationTitle.innerText = `${comp.booking.title} Confirmation`
 
-            compo.elements.nextBtn.innerText = "NEXT";
+            comp.booking.journey[comp.state.stage].style.display = "";
+            comp.state.stage++;
+            comp.booking.journey[comp.state.stage].style.display = "block";
+
+            comp.elements.nextBtn.innerText = "NEXT";
 
             comp.elements.navigation.style.height = 0;
             comp.elements.navigation.style.opacity = 0;
             comp.elements.navigation.style.visibility = 'hidden';
 
-            sendUnlock();
+            comp.elements.main.classList.remove("progress");
+
+            comp.sendUnlock();
 
             if (ga) {
               var gaId = (location.host == 'qaweb-shop.samsung.com') ? "UA-101298876-1" : "UA-100137701-12";
