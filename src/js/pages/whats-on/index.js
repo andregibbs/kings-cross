@@ -26,8 +26,9 @@ function KX_WhatsOn() {
     }
   }
 
+  // WORKSPACE
   const launchWorkspace = document.querySelector('#launch-workspace')
-  // remove any active buttons after cancel
+  // remove any active buttons after qudini booking cancel
   qudiniBooking.onJourneyCancel = () => {
     [launchWorkspace].forEach(el => {
       el.removeAttribute('active')
@@ -35,9 +36,71 @@ function KX_WhatsOn() {
   }
   // booking flow launch
   launchWorkspace.addEventListener('click', () => {
-    qudiniBooking.start(QudiniFlow.workspace)
-    launchWorkspace.setAttribute('active','')
+    // close qudini if already open
+    if (launchWorkspace.getAttribute('active') !== null) {
+      launchWorkspace.removeAttribute('active')
+      return qudiniBooking.cancelJourney()
+    }
+    // hide f1 table before showing calendar
+    let startDelay = 0
+    if (f1IsActive()) {
+      hideF1Table()
+      startDelay = 600
+    }
+    // delay qudini open if f1 active
+    setTimeout(() => {
+      qudiniBooking.start(QudiniFlow.workspace)
+      launchWorkspace.setAttribute('active','')
+    }, startDelay)
   })
+
+  // F1
+  const openF1Times = document.querySelector('#open-f1-times')
+  const closeF1Times = document.querySelector('#close-f1-times')
+  const f1TimesEl = document.querySelector('.whatsOn__f1')
+  function showF1Table() {
+    openF1Times.setAttribute('active', '')
+    // get table height to animate container
+    const f1TableHeight = document.querySelector('#f1-wrap').offsetHeight
+    // set active and height
+    f1TimesEl.setAttribute('active', '')
+    f1TimesEl.style.height = `${f1TableHeight}px`
+  }
+  function hideF1Table() {
+    openF1Times.removeAttribute('active')
+    f1TimesEl.removeAttribute('active')
+    f1TimesEl.style.height = `0`
+  }
+  function f1IsActive() {
+    return f1TimesEl.getAttribute('active') !== null
+  }
+  // handle f1 open/close
+  closeF1Times.addEventListener('click', hideF1Table)
+  // f1 times open
+  openF1Times.addEventListener('click', () => {
+    // close any qudini booking before opening f1
+    let openDelay = 0
+    if (qudiniBooking.state.active) {
+      qudiniBooking.cancelJourney()
+      openDelay = 600;
+    }
+    // if already active, close
+    if (f1IsActive()) {
+      return hideF1Table()
+    }
+    // scroll to table
+    setTimeout(() => {
+      $j("html, body").animate({ scrollTop: $j('#f1-wrap').offset().top - 150 }, 600);
+      showF1Table()
+    }, openDelay)
+  })
+
+  // delay resize listener to avoid initial resize event
+  setTimeout(() => {
+    window.addEventListener('resize', () => {
+      showF1Table()
+    })
+  }, 1000)
 }
 
 if (document.readyState === "complete" || (document.readyState !== "loading" && !document.documentElement.doScroll)) {

@@ -33,10 +33,39 @@
         </p>
         <a class="btn btn--primary" id="launch-workspace">Book Yours Now</a>
       </div>
+
+      <div class="whatsOn__booking_panel">
+        <div
+          class="whatsOn__booking_panel_image"
+          style="background-image:url(https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/whats-on/f1_side_view.jpg);">
+        </div>
+        <h3 class="fz30">Racing Car Simulator Experience</h3>
+        <p class="fz18">
+          Take a ride on Samsung’s state-of-the-art racing simulator and compete against professional drivers for a place on the leader board, or simply sit back and select  ‘passenger mode’ to be taken for an adrenalin-pumping spin.<br>
+          <span>Height restrictions apply.</span>
+        </p>
+        <a class="btn btn--primary" id="open-f1-times">View current leader board</a>
+      </div>
     </div>
   </section>
 
   {{> components/common/kxQudiniBooking}}
+
+  <div class="section whatsOn__f1">
+    <div id="f1-wrap">
+      <div id="close-f1-times" class="whatsOn__f1_close close"></div>
+      <h2 class="whatsOn__f1_title fz36">{{pageTemplateData.whats_on.f1_title}}</h2>
+      <table class="whatsOn__f1_table">
+        {{#each pageTemplateData.whats_on.f1_times}}
+          <tr class="whatsOn__f1_row-{{index-plus @index}}">
+            <td class="whatsOn__f1_place">#{{index-plus @index}}</td>
+            <td class="whatsOn__f1_name">{{this.name}}</td>
+            <td class="whatsOn__f1_time">{{this.time}}</td>
+          </tr>
+        {{/each}}
+      </table>
+    </div>
+  </div>
 
   {{> components/kxClosed variation="whats-on" }}
 
@@ -53,7 +82,7 @@
   {{/each}}
   </div>
 
-  <section class="section eventFilter" >
+  <section class="section eventFilter">
     <div class="section__inner">
       <div class="eventFilter__header">
         <div class="eventFilter__header__title">

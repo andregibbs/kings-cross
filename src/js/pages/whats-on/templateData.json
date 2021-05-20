@@ -1,4 +1,27 @@
 {
+  "f1_title": "Leader Board - Week 2",
+  "f1_times": [
+    {
+      "name": "Racer Name",
+      "time": "1:20:04"
+    },
+    {
+      "name": "Racer Name",
+      "time": "1:20:04"
+    },
+    {
+      "name": "Racer Name",
+      "time": "1:20:04"
+    },
+    {
+      "name": "Racer Name",
+      "time": "1:20:04"
+    },
+    {
+      "name": "Racer Name",
+      "time": "1:20:04"
+    }
+  ],
   "hubList": [
     {
       "title": "Editing Sessions",

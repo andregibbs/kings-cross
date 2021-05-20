@@ -70,7 +70,7 @@ const SCHEDULE = [
   {
     liveDate: [2021,5,19,20,0],
     endDate: [2021,5,19,20,30],
-    showID: 'VCGJ7ZT2xJ8p3VtEBFlE',
+    showID: 'jsS58kE24lLIQfFmWp7X',
     reminderDate: "May 19, 2021 20:00",
     title: 'Wednesday 19th May - 8PM',
     poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/galaxy-book/live_computing_D.png',

@@ -226,7 +226,11 @@ if (typeof module !== 'undefined') {
       })
     })
 
-    // keep incase bulk time calculation is needed
+    Handlebars.registerHelper("index-plus", function(value, options) {
+      return parseInt(value) + 1;
+    });
+
+    // not used, keep incase bulk time calculation is needed
     Handlebars.registerHelper('readingTime', function (context) {
 
       const keysToCapture = ['copy', 'text']
