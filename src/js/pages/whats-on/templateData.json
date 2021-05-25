@@ -1,25 +1,25 @@
 {
-  "f1_title": "Leader Board - Week 2",
+  "f1_title": "Leader Board",
   "f1_times": [
     {
-      "name": "Racer Name",
-      "time": "1:20:04"
+      "name": "Dan",
+      "time": "2:19:04"
     },
     {
-      "name": "Racer Name",
-      "time": "1:20:04"
+      "name": "Jess",
+      "time": "2:20:36"
     },
     {
-      "name": "Racer Name",
-      "time": "1:20:04"
+      "name": "Meg",
+      "time": "2:21:10"
     },
     {
-      "name": "Racer Name",
-      "time": "1:20:04"
+      "name": "Hilary",
+      "time": "2:22:05"
     },
     {
-      "name": "Racer Name",
-      "time": "1:20:04"
+      "name": "Lee",
+      "time": "2:22:07"
     }
   ],
   "hubList": [

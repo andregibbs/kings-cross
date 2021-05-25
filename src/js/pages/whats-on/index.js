@@ -95,6 +95,31 @@ function KX_WhatsOn() {
     }, openDelay)
   })
 
+  // F1 Terms
+  const f1TermsLaunch = document.querySelector('#f1-terms-launch')
+  const f1TermsClose = document.querySelector('#f1-terms-close')
+  const f1TermsContainer = document.querySelector('#f1-terms-container')
+  const f1TermsEl = document.querySelector('.f1Terms')
+  const f1TermsBody = document.querySelector('.f1Terms__body')
+  f1TermsLaunch.addEventListener('click', () => {
+    const termsState = !!f1TermsContainer.getAttribute('active')
+    if (termsState) {
+      f1TermsContainer.removeAttribute('active')
+    } else {
+      f1TermsContainer.setAttribute('active', '')
+    }
+  })
+  f1TermsClose.addEventListener('click', () => {
+    f1TermsContainer.removeAttribute('active')
+  })
+  f1TermsEl.addEventListener('click', () => {
+    console.log('bg')
+    f1TermsContainer.removeAttribute('active')
+  })
+  f1TermsBody.addEventListener('click', e => {
+    e.stopPropagation()
+  })
+
   // delay resize listener to avoid initial resize event
   setTimeout(() => {
     window.addEventListener('resize', () => {

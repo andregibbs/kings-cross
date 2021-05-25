@@ -24,7 +24,7 @@
       <div class="whatsOn__booking_panel">
         <div
           class="whatsOn__booking_panel_image"
-          style="background-image:url(https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/whats-on/spaces-workspace.png);">
+          style="background-image:url(https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/whats-on/Bookable2.jpg);">
         </div>
         <h3 class="fz30">Hot Desk at Samsung KX</h3>
         <p class="fz18">
@@ -37,12 +37,13 @@
       <div class="whatsOn__booking_panel">
         <div
           class="whatsOn__booking_panel_image"
-          style="background-image:url(https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/whats-on/f1_side_view.jpg);">
+          style="background-image:url(https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/whats-on/F1_signpost.jpg);">
         </div>
         <h3 class="fz30">Racing Car Simulator Experience</h3>
         <p class="fz18">
           Take a ride on Samsung’s state-of-the-art racing simulator and compete against professional drivers for a place on the leader board, or simply sit back and select  ‘passenger mode’ to be taken for an adrenalin-pumping spin.<br>
-          <span>Height restrictions apply.</span>
+          <span>Height restrictions apply.</span><br>
+          <span>For full terms & conditions please see <a id="f1-terms-launch">here.</a>
         </p>
         <a class="btn btn--primary" id="open-f1-times">View current leader board</a>
       </div>
@@ -67,6 +68,10 @@
     </div>
   </div>
 
+  <div id="f1-terms-container">
+    {{> components/whatsOnF1Terms}}
+  </div>
+
   {{> components/kxClosed variation="whats-on" }}
 
   <div class="whatsOn__hubItems">
@@ -76,7 +81,7 @@
       ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:whats-on:hub-link:{{this.title}}"
       data-omni-type="microsite" data-omni="kings-cross:whats-on:hub-link:{{this.title}}"
       href="{{this.url}}">
-      <div class="whatsOn__hubItemImage" style="background-image:url({{this.image}})"></div>
+      <div class="whatsOn__hubItemImage" style="background-image:url({{this.image}})" role="img" aria-label="{{this.title}}"></div>
       <span>{{this.title}}</span>
     </a>
   {{/each}}

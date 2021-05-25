@@ -21,7 +21,8 @@
 // workspace / f1 panels
 .whatsOn__booking_panels {
   display: flex;
-  margin: 2rem 0;
+  margin: 2rem auto;
+  max-width: 1440px;
   @media screen and (max-width: $mobile) {
     flex-wrap: wrap;
   }
@@ -114,7 +115,7 @@
   }
   .whatsOn__f1_close {
     pointer-events: all;
-    opacity: 1;
+    opacity: 1 !important;
   }
   .whatsOn__f1_title {
     opacity: 1;
@@ -125,6 +126,10 @@
   pointer-events: none;
   visibility: visible !important;
   transition: 0.3s ease-in-out;
+  opacity: 0 !important;
+  &:hover {
+    opacity: 0 !important;
+  }
 }
 
 .whatsOn__f1_title {
@@ -142,9 +147,10 @@
   max-width: 960px;
   margin: auto;
   position: relative;
-  padding-bottom: 3em;
+  border-collapse: initial;
+  padding-bottom: 3em !important;
   @media screen and (min-width: $mobile + 1) {
-    padding-bottom: 6em;
+    padding-bottom: 6em !important;
   }
 
   tr {
@@ -198,6 +204,17 @@
 }
 
 
+// f1 terms elements
+#f1-terms-launch {
+  color: #FFBC4B;
+  cursor: pointer;
+}
+#f1-terms-container {
+  display: none;
+}
+#f1-terms-container[active] {
+  display: block;
+}
 
 
 
@@ -206,6 +223,8 @@
   display: flex;
   justify-content: space-between;
   padding: 2rem;
+  margin: 0 auto;
+  max-width: 1440px;
 }
 
 .whatsOn__hubItem {

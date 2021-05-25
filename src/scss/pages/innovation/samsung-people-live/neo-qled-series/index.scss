@@ -1,0 +1,111 @@
+@import '../index';
+
+
+.samsung-people-live {
+  .btn {
+    background-color: #97D653;
+    border-color: #97D653;
+    &:hover {
+      color: #97D653;
+    }
+  }
+  .hoiKv__Components p {
+    margin-bottom: 0.5rem !important;
+  }
+}
+
+.hoiBambuser {
+  .hoiBambuser__Body {
+    height: 100%;
+    width: 60%;
+    h1 {
+      font-size: 3.5vw;
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+    .hoiBambuser__NextSteam {
+      display: block;
+      margin-bottom: 0.5em;
+      h4, h2 {
+        font-size: 2.2vw;
+        display: inline-block;
+        margin-bottom: 0;
+      }
+      h4 {
+        margin-right: 0.25rem;
+      }
+    }
+    br {
+      display: none;
+    }
+    .hoiBambuser__Launch {
+      margin-top: auto;
+    }
+    @media screen and (min-width: 1440px) {
+      h1 {
+        font-size: 2.8rem;
+      }
+      .hoiBambuser__LiveIcon {
+        width: 5rem;
+      }
+      .hoiBambuser__NextSteam {
+        h4, h2 {
+          font-size: 1.8rem;
+        }
+      }
+    }
+    @media screen and (max-width: 768px) {
+      h1 {
+        font-size: 6.5vw;
+        margin-bottom: 0.5em;
+      }
+
+      .hoiBambuser__Launch {
+        max-width: none;
+        margin-top: 1rem;
+      }
+      .hoiBambuser__LiveIcon {
+        width: 16vw;
+        margin-left: 8vw;
+      }
+      .hoiBambuser__NextSteam {
+        margin-bottom: 1em;
+        h4, h2 {
+          display: block;
+          font-size: 4.8vw;
+        }
+        h2 {
+          font-size: 4vw;
+          margin-bottom: 0;
+        }
+      }
+      width: 100%;
+      padding-bottom: 14vw;
+    }
+  }
+  .hoiBambuser__LiveIcon {
+    margin: 0 0 0 0.5vw !important;
+    vertical-align: top !important;
+  }
+  .hoiBambuser__Launch:hover {
+    .hoiBambuser__LaunchIcon svg path {
+      fill: #97D653;
+    }
+  }
+}
+
+
+
+.spl__Terms {
+  margin-bottom: 0 !important;
+  p {
+    font-size: 0.8rem;
+    @media screen and (max-width: 768px) {
+      font-size: 1em;
+    }
+  }
+}
+
+.spl_LightCopy p {
+  font-family: "SamsungOne", sans-serif !important;
+}

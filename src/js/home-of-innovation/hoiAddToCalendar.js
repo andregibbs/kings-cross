@@ -33,7 +33,7 @@ class HOIAddToCalendar {
     function attr(key) {
       return mainEl.getAttribute(`data-${key}`);
     }
-    ['title','description','address','start','end', 'duration'].forEach(key => {
+    ['title','description','address','start','end','duration'].forEach(key => {
       const value = attr(key)
       if (value) {
         switch (key) {

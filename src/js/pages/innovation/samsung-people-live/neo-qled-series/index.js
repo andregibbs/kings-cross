@@ -1,4 +1,4 @@
-// Live Stream v2 (dont replicate, use neo-qled)
+// Live Stream v3
 
 import '../../../../bootstrap.js'
 
@@ -24,59 +24,58 @@ import HOIAddToCalendar from '../../../../home-of-innovation/hoiAddToCalendar'
 const hoiAddToCalendarTemplate = require('../../../../../templates/partials/home-of-innovation/hoiAddToCalendar.hbs');
 const calendarTarget = document.querySelector('#hoi-add-to-calendar-target')
 
+const debugTemplate = require('../../../../../templates/partials/components/samsung-live/debug.hbs')
+
+const MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+
 const SCHEDULE = [
-  // {
-  //   liveDate: [2021,1,27,16,0],
-  //   endDate: [2021,1,27,17,0],
-  //   showID: '1JySqY77y0inrbcvMsi5',
-  //   title: 'Wednesday 27th Jan - 4PM',
-  //   poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/Samsung_People_KV_slimmer.jpg',
-  //   mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/kv-mob-v2.jpg'
-  // },
   {
-    liveDate: [2021,5,14,20,0],
-    endDate: [2021,5,14,20,30],
-    showID: 'f96ItF4eDlUttIPe90MW',
-    reminderDate: "May 14, 2021 20:00",
-    title: 'Friday 14th May - 8PM',
-    poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/galaxy-book/live_computing_D.png',
-    mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/galaxy-book/live_computing_m.png'
+    liveDate: [2021,5,25,16,0],
+    endDate: [2021,5,25,16,30],
+    showID: '3FQnEdORqIssriZJFuwZ',
+    title: 'Tuesday 25th May - 4PM',
+    poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/neo-qled-series/Neo_KV_D_3.jpg',
+    mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/neo-qled-series/Neo_kv_M.jpg'
   },
   {
-    liveDate: [2021,5,15,20,0],
-    endDate: [2021,5,15,20,30],
-    showID: 'iB2hno1lXZUMYvOOUQx0',
-    reminderDate: "May 15, 2021 20:00",
-    title: 'Saturday 15th May - 8PM',
-    poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/galaxy-book/live_computing_D.png',
-    mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/galaxy-book/live_computing_m.png'
+    liveDate: [2021,5,26,17,0],
+    endDate: [2021,5,26,17,30],
+    showID: 'B1TGylfLA4UGn3pAy2jV',
+    title: 'Wednesday 26th May - 5PM',
+    poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/neo-qled-series/Neo_KV_D_3.jpg',
+    mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/neo-qled-series/Neo_kv_M.jpg'
   },
   {
-    liveDate: [2021,5,17,20,0],
-    endDate: [2021,5,17,20,30],
-    showID: '6zKctrsCn8emfrCh7AsE',
-    reminderDate: "May 17, 2021 20:00",
-    title: 'Monday 17th May - 8PM',
-    poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/galaxy-book/live_computing_D.png',
-    mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/galaxy-book/live_computing_m.png'
+    liveDate: [2021,5,27,17,0],
+    endDate: [2021,5,27,17,30],
+    showID: '7xyO1oxDDzmEfMCyqBWc',
+    title: 'Thursday 27th May - 5PM',
+    poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/neo-qled-series/Neo_KV_D_3.jpg',
+    mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/neo-qled-series/Neo_kv_M.jpg'
   },
   {
-    liveDate: [2021,5,18,20,0],
-    endDate: [2021,5,18,20,30],
-    showID: 'VCGJ7ZT2xJ8p3VtEBFlE',
-    reminderDate: "May 18, 2021 20:00",
-    title: 'Tuesday 18th May - 8PM',
-    poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/galaxy-book/live_computing_D.png',
-    mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/galaxy-book/live_computing_m.png'
+    liveDate: [2021,5,28,17,0],
+    endDate: [2021,5,28,17,30],
+    showID: '1IizQc6iLsglKIctZifE',
+    title: 'Friday 28th May - 5PM',
+    poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/neo-qled-series/Neo_KV_D_3.jpg',
+    mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/neo-qled-series/Neo_kv_M.jpg'
   },
   {
-    liveDate: [2021,5,19,20,0],
-    endDate: [2021,5,19,20,30],
-    showID: 'jsS58kE24lLIQfFmWp7X',
-    reminderDate: "May 19, 2021 20:00",
-    title: 'Wednesday 19th May - 8PM',
-    poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/galaxy-book/live_computing_D.png',
-    mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/galaxy-book/live_computing_m.png'
+    liveDate: [2021,5,29,17,0],
+    endDate: [2021,5,29,17,30],
+    showID: '5xDU0jmr50F1CDPisSLF',
+    title: 'Saturday 29th May - 5PM',
+    poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/neo-qled-series/Neo_KV_D_3.jpg',
+    mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/neo-qled-series/Neo_kv_M.jpg'
+  },
+  {
+    liveDate: [2021,5,30,17,0],
+    endDate: [2021,5,30,17,30],
+    showID: 'PtVMjNjvF5hFlegvKqBj',
+    title: 'Sunday 30th May - 5PM',
+    poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/neo-qled-series/Neo_KV_D_3.jpg',
+    mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/neo-qled-series/Neo_kv_M.jpg'
   }
 ]
 
@@ -105,7 +104,40 @@ class SamsungLive {
       }
     }, 1000)
 
+    const debugMode = getParam('debug') || false
+    if (debugMode) {
+      this.renderDebugMenu()
+    }
+
     HOIShare()
+
+  }
+
+  renderDebugMenu() {
+
+    function linkString(date) {
+      return `${window.location.pathname}?debug=true&date=${date.toFormat('yyyy-L-d-HH-m')}`
+    }
+    const shows = SCHEDULE.map((show) => {
+      const showDate = DateTime.local(...show.liveDate)
+      const showEndDate = DateTime.local(...show.endDate)
+      show.readableStart = showDate.toFormat('ccc d LLL yyyy - HH:mm')
+      show.readableEnd = showEndDate.toFormat('ccc d LLL yyyy - HH:mm')
+      show.links = {}
+      show.links.liveminus30 = linkString(showDate.minus({minutes: 30}))
+      show.links.liveminus5 = linkString(showDate.minus({minutes: 5}))
+      show.links.live = linkString(showDate)
+      show.links.endminus5 = linkString(showEndDate.minus({minutes: 5}))
+      show.links.end = linkString(showEndDate)
+      return show
+    })
+
+    document.body.insertAdjacentHTML('beforeend', debugTemplate({
+      reset: `${window.location.pathname}?debug=true`,
+      trueTime: DateTime.local().toFormat('ccc d LLL yyyy - HH:mm'),
+      pageTime: this.getCurrentTime().toFormat('ccc d LLL yyyy - HH:mm'),
+      shows
+    }))
 
   }
 
@@ -162,8 +194,7 @@ class SamsungLive {
 
       this.currentShow = JSON.parse(JSON.stringify(currentShow))
       this.renderHeader(currentShow, nextShow)
-      this.renderAddToCalendar(nextShow)
-
+      this.renderAddToCalendar(nextShow, currentShow)
 
       if (currentShow.ended && nextShow) {
         this.renderCountdown(nextShow)
@@ -174,7 +205,6 @@ class SamsungLive {
         countdownTarget.innerHTML = ''
       }
     }
-
 
     if (this.currentShow.live) {
       countdownTarget.setAttribute('hidden','')
@@ -197,14 +227,22 @@ class SamsungLive {
 
   }
 
-  renderAddToCalendar(showData) {
-    console.log('calendar', showData.reminderDate)
-    if (!showData.reminderDate) {
+  renderAddToCalendar(nextShow, currentShow) {
+    let showData = nextShow || currentShow
+    if (!showData || showData.ended || showData.live) {
       return
     }
+    // construct reminder date from live date
+    const month = MONTHS[showData.liveDate[1]-1]
+    const day = showData.liveDate[2]
+    const year = showData.liveDate[0]
+    const hour = showData.liveDate[3]
+    const minute = ("00" + showData.liveDate[4]).substr(-2,2)
+    const madeDate = `${month} ${day}, ${year} ${hour}:${minute}`
+
     const templateData = {
       "title": "Samsung People Live: New Galaxy Book Range",
-      "start": showData.reminderDate,
+      "start": madeDate,
       "description": "Join our Samsung People Live at Samsung KX to learn more about our amazing new products, the Galaxy S21 Ultra 5G, Galaxy Buds Pro and Galaxy SmartTag",
       "address": window.location.href,
       "duration": 60
@@ -256,7 +294,6 @@ class SamsungLive {
   }
 
   getShows() {
-
     const currentTime = this.getCurrentTime()
     let nextShow = SCHEDULE.find(item => {
       const itemTime = DateTime.local(...item.liveDate).setZone("GMT")

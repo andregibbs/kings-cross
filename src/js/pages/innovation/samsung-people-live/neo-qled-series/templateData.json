@@ -1,0 +1,72 @@
+{
+  "panels": [
+    {
+      "title": "Meet Samsung People",
+      "sub": "Whatever you're looking for on Samsung.com, Samsung People are here to help you make the right choice. Enjoy live video demos and get expert advice, all from the comfort of home.",
+      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/galaxy-book/Samsung_people_signpost.png",
+      "alt": "",
+      "link": "https://www.samsung.com/uk/samsung-people/",
+      "cta": "LEARN MORE"
+    },
+    {
+      "title": "Introducing Neo QLED",
+      "sub": "Breathtaking brightness, extreme blacks and exquisite picture detail. Transform your viewing experience with ultra-slim Samsung Neo QLED TVs featuring next-generation Quantum Matrix Technology and epic 3D audio.",
+      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/neo-qled-series/Neo_signpost_2.jpg",
+      "alt": "",
+      "link": "https://www.samsung.com/uk/tvs/qled-tv/highlights/",
+      "cta": "LEARN MORE"
+    }
+  ],
+  "sub": {
+    "style": {
+      "large": true
+    },
+    "text": [
+      "Every day at 5pm. Weds 26th – Sun 30th May"
+    ]
+  },
+  "sub_2": {
+    "text": [
+      "Join us for an interactive demonstration of the brand new Neo QLED TV range. You can ask our experts any questions, and we’ll also be sharing some amazing special offers."
+    ]
+  },
+  "breadcrumbs": [
+    {
+      "url": "/uk/explore/kings-cross/",
+      "title": "Home"
+    },
+    {
+      "url": "/uk/explore/kings-cross/innovation/",
+      "title": "Innovation"
+    },
+    {
+      "url": "/uk/explore/kings-cross/innovation/samsung-people-live/",
+      "title": "Samsung People Live"
+    },
+    {
+      "url": "/uk/explore/kings-cross/innovation/samsung-people-live/neo-qled-series",
+      "title": "Neo QLED Seriess"
+    }
+  ],
+  "related": {
+    "type": "link-list",
+    "title": "Previous Events",
+    "items": [
+      {
+        "title": "Samsung People Live",
+        "url": "/uk/explore/kings-cross/innovation/samsung-people-live/",
+        "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/galaxy-book/Standard_people_tile.png"
+      },
+      {
+        "title": "Watch Samsung People Live: Galaxy 21 Range",
+        "url": "/uk/explore/kings-cross/innovation/samsung-people-live/galaxy-s21-range",
+        "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/galaxy-book/Standard_people_tile.png"
+      },
+      {
+        "title": "Watch Samsung People Live: New Galaxy Book Range",
+        "url": "/uk/explore/kings-cross/innovation/samsung-people-live/new-galaxy-book-range",
+        "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/galaxy-book/Standard_computing_tile.png"
+      }
+    ]
+  }
+}

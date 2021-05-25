@@ -1,0 +1,87 @@
+<div class="SamsungLiveDebug" draggable="true">
+  <h2>Samsung Live Debug</h2>
+  <hr>
+  <a class="purp-button" href="{{reset}}">Reset Time</a><br>
+  <label class="purp-button" for="hide-check">Toggle Schedule Visibility</label><input id="hide-check" type="checkbox" name="hide-check"/>
+  <div class="SamsungLiveDebug__body">
+    <hr>
+    <strong>True Time:</strong> {{trueTime}}<br>
+    <strong>Page Time:</strong> {{pageTime}}
+    <hr>
+    <h2>Schedule</h2>
+    {{#each shows}}
+      <div class="SamsungLiveDebug__show">
+        <strong>#{{index-plus @index}}</strong><br>
+        <strong>{{title}}</strong><br>
+        <strong>Bambuser ID: {{showID}}</strong><br>
+        <strong>Start Date:</strong> {{readableStart}}<br>
+        <strong>End Date:</strong> {{readableEnd}}<br>
+        <hr>
+        <div class="SamsungLiveDebug__show_links">
+          <a href="{{links.liveminus30}}">Live (-30min)</a>
+          <a href="{{links.liveminus5}}">Live (-5min)</a>
+          <a href="{{links.live}}">Live</a>
+          <a href="{{links.endminus5}}">End (-5min)</a>
+          <a href="{{links.end}}">End</a>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</div>
+
+<style>
+.SamsungLiveDebug {
+  padding: 0.5rem;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  width: 300px;
+  z-index: 200000;
+  background: #f4f4f4;
+  font-size: 0.8em;
+  border: 2px solid black;
+}
+.SamsungLiveDebug__body {
+  overflow: scroll;
+  max-height: 400px;
+  margin-top: 0.5em
+}
+.SamsungLiveDebug hr {
+  display: block;
+}
+.SamsungLiveDebug h2 {
+  font-size: 1em;
+}
+.SamsungLiveDebug__show {
+  padding: 0.5em;
+  border: 1px solid #666;
+  background: rgba(0,0,0,0.05);
+  margin-bottom: 1em;
+}
+.SamsungLiveDebug__show_links {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25em;
+}
+.SamsungLiveDebug__show_links a, .SamsungLiveDebug .purp-button {
+  display: block;
+  margin-bottom: 0.25em;
+  padding: 0.25em;
+  background: #5034a2;
+  border-radius: 3px;
+  border-style: outset;
+  border-width: 2px;
+  color: white;
+  text-align: center;
+}
+.SamsungLiveDebug .purp-button {
+  margin-bottom: 0;
+  display: inline-block;
+}
+.SamsungLiveDebug__show_links a:hover {
+  background: #6743d2;
+}
+#hide-check:checked + .SamsungLiveDebug__body {
+  display: none;
+}
+</style>
