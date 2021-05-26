@@ -1,6 +1,8 @@
 import '../../bootstrap.js'
-import whatson from '../../components/whatson';
-import fetchData from '../../util/Events';
+// import whatson from '../../components/whatson';
+// import fetchData from '../../util/Events';
+
+import QudiniEvents from '../../components/qudiniEvents';
 
 import KXQudiniBooking from '../../components/common/kxQudiniBooking'
 
@@ -10,7 +12,10 @@ import KXQudiniBooking from '../../components/common/kxQudiniBooking'
 
 function KX_WhatsOn() {
   // existing whasts on page script
-  fetchData(whatson);
+  // fetchData(whatson);
+
+  new QudiniEvents()
+  return
 
   const qudiniBooking = new KXQudiniBooking() // start single instance, update with .start()
 

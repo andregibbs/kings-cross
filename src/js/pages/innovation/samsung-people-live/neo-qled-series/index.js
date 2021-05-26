@@ -30,14 +30,6 @@ const MONTHS = ["January", "February", "March", "April", "May", "June", "July", 
 
 const SCHEDULE = [
   {
-    liveDate: [2021,5,25,16,0],
-    endDate: [2021,5,25,16,30],
-    showID: '3FQnEdORqIssriZJFuwZ',
-    title: 'Tuesday 25th May - 4PM',
-    poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/neo-qled-series/Neo_KV_D_3.jpg',
-    mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/neo-qled-series/Neo_kv_M.jpg'
-  },
-  {
     liveDate: [2021,5,26,17,0],
     endDate: [2021,5,26,17,30],
     showID: 'B1TGylfLA4UGn3pAy2jV',
