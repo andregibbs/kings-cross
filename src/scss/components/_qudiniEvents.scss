@@ -1,0 +1,336 @@
+.qudiniEvents {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.qudiniEvents__header {
+  padding-bottom: 2rem;
+}
+
+.qudiniEvents__filter-group {
+  display: flex;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  justify-content: center;
+
+  > * {
+    margin-right: 0.5rem;
+  }
+  > *:last-child {
+    margin-right: 0;
+  }
+  @media screen and (max-width: $mobile) {
+    padding: 0;
+  }
+}
+
+.qudiniEvents__date {
+  @media screen and (max-width: $mobile) {
+    flex-wrap: wrap;
+    input {
+      margin-right: 0;
+      margin-bottom: 1.75rem;
+      width: 100%;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.qudiniEvents__category {
+  label {
+    display: flex;
+    align-items: center;
+    font-size: 0.8em;
+    text-transform: uppercase;
+  }
+  @media screen and (max-width: $mobile) {
+    display: block;
+    label {
+      height: 28px;
+      font-size: 1em;
+    }
+  }
+  // toggle switch for filters
+  input:checked + label .qudiniSwitch {
+    .qudiniSwitch__before {
+      margin-left: 21px;
+    }
+    .qudiniSwitch__after {
+      left: 0px;
+      opacity: 1;
+    }
+  }
+}
+
+.qudiniEvents__type {
+  display: flex;
+  label {
+    display: flex;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #333;
+    border-radius: 0.5rem;
+    padding: 1rem 0;
+    cursor: pointer;
+
+    &:hover {
+      border-color: white;
+      background-color: #333;
+    }
+
+    svg {
+      width: 3em;
+      margin-right: 1.5rem;
+    }
+  }
+  input:checked + label {
+    border-color: white;
+    background-color: #333;
+  }
+
+  @media screen and (max-width: $mobile) {
+    display: block;
+    label {
+      width: 100%;
+      font-size: 0.75rem;
+      svg {
+        width: 1.5rem;
+        margin-right: 0.75rem;
+      }
+    }
+  }
+
+
+}
+
+.qudiniEvents__body {
+  overflow: hidden;
+  transition: height 0.5s ease-in-out;
+}
+
+.qudiniEvents__body,
+.qudiniEvents__loader {
+  will-change: height;
+}
+
+.qudiniEvents__loader {
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  overflow: hidden;
+  font-family: 'SamsungSharpSans', sans-serif;
+  transition: height 0.5s ease-in-out;
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    transition: 0.5s ease-in-out;
+    animation: loader_spin 0.6s infinite linear;
+    background: conic-gradient(rgba(0,119,200,0.9) 10%, rgba(0,195,178,0.9) 35%, rgba(255,181,70,0.9) 60%, rgba(255,67,55,0.9) 85%);
+    filter: blur(2px);
+  }
+}
+
+@keyframes loader_spin {
+  from {
+    transform:rotate(0deg);
+  }
+  to {
+    transform:rotate(360deg);
+  }
+}
+
+.qudiniEvents__events {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 0;
+
+  @media screen and (max-width: $mobile) {
+    justify-content: space-between;
+  }
+}
+
+// Events Item
+.qudiniEventsItem {
+  &:before {
+    content: '';
+    display: block;
+    padding-top: 150%;
+  }
+  border-top: 5px solid red;
+  width: 100%;
+  margin: 0.5rem;
+  background-color: #111;
+  background: linear-gradient(135deg, rgba(0,119,200,0.5) 0%, rgba(0,195,178,0.5) 33%, rgba(255,181,70,0.5) 66%, rgba(255,67,55,0.5) 100%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  max-width: 180px;
+  transition: opacity 0.25s ease-in-out;
+  opacity: 0;
+
+  @media screen and (max-width: $mobile) {
+    max-width: calc(50% - 0.5rem);
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+}
+
+.qudiniEventsItem__body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 5px);
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+
+  .qudiniEventsItem__datetime,
+  .qudiniEventsItem__title {
+    margin-bottom: 0.25em;
+    font-size: inherit;
+  }
+  .qudiniEventsItem__title {
+    font-size: 1.1em;
+    font-family: SamsungSharpSans, sans-serif;
+  }
+  .qudiniEventsItem__categories {
+    margin-top: auto;
+
+    span {
+      padding: 0.25em;
+      border: 1px solid white;
+      border-radius: 0.25rem;
+      text-transform: capitalize;
+    }
+  }
+}
+
+// States
+.qudiniEvents__body[events] {
+  .qudiniEvents__loader {
+    height: 0;
+    transition: height 0.5s ease-in-out;
+    &:before {
+      opacity: 0;
+      transform: scale(0);
+    }
+  }
+  .qudiniEvents__events {
+    height: auto;
+    transition: height 0.25s 0.5s ease-in-out;
+  }
+  .qudiniEventsItem {
+    opacity: 1;
+  }
+}
+
+// toggle switch
+.qudiniSwitch {
+  width: 40px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 0px solid #000;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 20px;
+  margin-right: 0.5em;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+
+  @media screen and (max-width: $mobile) {
+    margin-right: 0.75rem;
+  }
+
+  .qudiniSwitch__before {
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: #fff;
+    z-index: 20;
+    border-color: #0c0c0c;
+    border-width: 3px;
+    border-style: solid;
+    -webkit-transition: margin-left 0.2s ease;
+    transition: margin-left 0.2s ease;
+  }
+
+  .qudiniSwitch__after {
+    display: block;
+    width: 40px;
+    height: 20px;
+    background-color: #fff;
+    position: absolute;
+    border-radius: 20px;
+    /* left: calc(-100%); */
+    top: 0;
+    opacity: 0;
+    z-index: 10;
+    -webkit-transition: left 0.2s ease;
+    transition: left 0.2s ease;
+  }
+}
+
+// input styless
+.qudiniEvents {
+  input[type="date"] {
+    font-size: 1rem;
+    background: black;
+    color: white;
+    padding: 0.5rem;
+    border: 1px solid #333;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    overflow: visible;
+    border-radius: 0.5rem;
+    @media screen and (max-width: $mobile) {
+      font-size: 0.8rem;
+      &:before {
+        font-size: 1em;
+      }
+    }
+    &:focus {
+      border-color: white;
+    }
+    &:before {
+      content: attr(placeholder);
+      position: absolute;
+      transform: translateY(-150%);
+      font-size: 0.75em;
+      text-transform: none;
+      top: 0;
+      color: #999;
+    }
+  }
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    // background: white;
+  }
+  input[type="checkbox"] {
+    display: block;
+  }
+  // input[type="radio"],
+  //   appearance: auto;
+  // }
+}

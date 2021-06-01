@@ -1,0 +1,86 @@
+<div class="qudiniEvents section">
+
+  <div class="qudiniEvents__header">
+    <div class="qudiniEvents__date qudiniEvents__filter-group">
+      <input placeholder="Start Date" type="date" id="filter-date-start"/>
+      <input placeholder="End Date" type="date" id="filter-date-end"/>
+    </div>
+
+    <div class="qudiniEvents__category qudiniEvents__filter-group">
+      <input type="checkbox" id="filter-category-entertainment"/><label for="filter-category-entertainment">{{>toggle color="#0077C8"}}Entertainment</label>
+      <input type="checkbox" id="filter-category-innovation"/><label for="filter-category-innovation">{{>toggle color="#00C3B2"}}Tech & Innovation</label>
+      <input type="checkbox" id="filter-category-creativity"/><label for="filter-category-creativity">{{>toggle color="#FF4337"}}Creativity</label>
+      <input type="checkbox" id="filter-category-lifestyle"/><label for="filter-category-lifestyle">{{>toggle color="#FFB546"}}Lifestyle & Wellbeing</label>
+    </div>
+
+    <div class="qudiniEvents__type qudiniEvents__filter-group">
+      <input type="radio" id="filter-type-virtual" name="filter-type" value="virtual">
+      <label for="filter-type-virtual">{{>virtual_icon}}Virtual events</label>
+      <input type="radio" id="filter-type-live" name="filter-type" value="live">
+      <label for="filter-type-live">{{>live_icon}}Live events</label>
+      <input type="radio" id="filter-type-alwayson" name="filter-type" value="alwayson">
+      <label for="filter-type-alwayson">{{>alwayson_icon}}Always on</label>
+    </div>
+  </div>
+
+  <div class="qudiniEvents__body" id="qudini-events-body">
+    <div class="qudiniEvents__loader" id="qudini-events-loader"></div>
+    <div class="qudiniEvents__events" id="qudini-events-target"></div>
+  </div>
+
+</div>
+
+{{#*inline "toggle"}}
+<!-- <div class="toggle_switch"> -->
+  <div class="qudiniSwitch">
+    <div class="qudiniSwitch__before"></div>
+    <div class="qudiniSwitch__after" style="background-color:{{color}};"></div>
+  </div>
+<!-- </div> -->
+{{/inline}}
+
+{{#*inline "live_icon"}}
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127.877 115.889">
+  <path d="M233.885,233.989h-9.99v-4a7.992,7.992,0,1,0-15.985,0v4H147.967v-4a7.992,7.992,0,1,0-15.985,0v4h-9.99A8,8,0,0,0,114,241.981V329.9a8,8,0,0,0,7.992,7.992H233.885a8,8,0,0,0,7.992-7.992V241.981a8,8,0,0,0-7.992-7.992Zm-21.979-4a4,4,0,0,1,7.992,0v11.989a4,4,0,1,1-7.992,0Zm-75.927,0a4,4,0,0,1,7.992,0v11.989a4,4,0,1,1-7.992,0ZM118,241.981a4,4,0,0,1,4-4h9.99v4a7.992,7.992,0,1,0,15.985,0v-4H207.91v4a7.992,7.992,0,1,0,15.985,0v-4h9.99a4,4,0,0,1,4,4v11.989H118Zm0,87.916V257.966H237.881v53.948H223.894a8,8,0,0,0-7.992,7.993v13.987h-93.91a4,4,0,0,1-4-4Zm117.06-13.987L219.9,331.068V319.906a4,4,0,0,1,4-4Zm-1.171,17.983H222.724l15.157-15.157V329.9a4,4,0,0,1-4,4Zm0,0" transform="translate(-114 -222)" fill="#fff"/>
+  <path d="M276.736,383.783l-16.562-2.408-7.407-15.008a2,2,0,0,0-3.583,0l-7.407,15.008-16.562,2.408a2,2,0,0,0-1.109,3.408l11.985,11.681-2.829,16.495a2,2,0,0,0,2.9,2.107l14.814-7.788c16.112,8.47,15.039,8.017,15.742,8.017a2,2,0,0,0,1.97-2.336l-2.828-16.495,11.985-11.683a2,2,0,0,0-1.109-3.407Zm-14.418,12.961a2,2,0,0,0-.575,1.768l2.323,13.54c-13.168-6.922-12.385-6.622-13.09-6.622s.078-.3-13.09,6.622l2.323-13.54a2,2,0,0,0-.575-1.768l-9.838-9.59,13.6-1.976a2,2,0,0,0,1.5-1.093l6.08-12.319,6.08,12.319a2,2,0,0,0,1.5,1.093l13.6,1.976Zm0,0" transform="translate(-187.037 -317.549)" fill="#fff"/>
+</svg>
+{{/inline}}
+
+{{#*inline "virtual_icon"}}
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115.889 115.889">
+  <path d="M224.456,265.566h-16.3V216.675A12.689,12.689,0,0,0,195.484,204H148.4a12.689,12.689,0,0,0-12.675,12.675v16.3h-16.3A5.438,5.438,0,0,0,114,238.4v25.351a5.438,5.438,0,0,0,5.432,5.432h16.3v38.026A12.689,12.689,0,0,0,148.4,319.889h47.08a12.689,12.689,0,0,0,12.675-12.675v-5.432h16.3a5.438,5.438,0,0,0,5.432-5.432V271a5.438,5.438,0,0,0-5.432-5.432Zm-85.106-48.891a9.064,9.064,0,0,1,9.054-9.054h47.08a9.064,9.064,0,0,1,9.054,9.054v48.891h-3.622V216.675a5.438,5.438,0,0,0-5.432-5.432h-5.432a5.427,5.427,0,0,0-5.432,5.432,1.813,1.813,0,0,1-1.811,1.811H161.08a1.806,1.806,0,0,1-1.811-1.811,5.438,5.438,0,0,0-5.432-5.432H148.4a5.438,5.438,0,0,0-5.432,5.432v16.3h-3.621Zm45.269,48.891a1.812,1.812,0,0,0-1.28,3.091l6.182,6.182a1.8,1.8,0,0,1,.531,1.28v20.23a5.438,5.438,0,0,0,5.432,5.432h1.811v5.432a1.813,1.813,0,0,1-1.811,1.811H148.4a1.813,1.813,0,0,1-1.811-1.811V269.188H148.4a5.438,5.438,0,0,0,5.432-5.432v-20.23a1.8,1.8,0,0,1,.531-1.28l6.182-6.182a1.812,1.812,0,0,0-1.28-3.091H146.594v-16.3a1.813,1.813,0,0,1,1.811-1.811h5.432a1.813,1.813,0,0,1,1.811,1.811,5.427,5.427,0,0,0,5.432,5.432h21.729a5.438,5.438,0,0,0,5.432-5.432,1.806,1.806,0,0,1,1.811-1.811h5.432a1.813,1.813,0,0,1,1.811,1.811v48.891Zm-67-1.811V238.4a1.813,1.813,0,0,1,1.811-1.811H154.9l-3.091,3.091a5.4,5.4,0,0,0-1.591,3.842v20.228a1.813,1.813,0,0,1-1.811,1.811H119.432a1.813,1.813,0,0,1-1.811-1.811Zm86.917,43.458a9.064,9.064,0,0,1-9.054,9.054H148.4a9.064,9.064,0,0,1-9.054-9.054V269.188h3.621v38.026a5.438,5.438,0,0,0,5.432,5.432h47.08a5.438,5.438,0,0,0,5.432-5.432v-5.432h3.622Zm21.729-10.865a1.813,1.813,0,0,1-1.811,1.811H195.484a1.813,1.813,0,0,1-1.811-1.811V276.12a5.393,5.393,0,0,0-1.591-3.841l-3.091-3.091h35.466A1.813,1.813,0,0,1,226.267,271Zm0,0" transform="translate(-114 -204)" fill="#fff"/>
+  <path d="M399.621,463.811A1.811,1.811,0,1,1,397.811,462a1.811,1.811,0,0,1,1.811,1.811Zm0,0" transform="translate(-310.894 -384.137)" fill="#fff"/>
+  <path d="M429.622,463.811A1.811,1.811,0,1,1,427.811,462a1.812,1.812,0,0,1,1.811,1.811Zm0,0" transform="translate(-331.84 -384.137)" fill="#fff"/>
+  <path d="M459.621,463.811A1.811,1.811,0,1,1,457.811,462a1.811,1.811,0,0,1,1.811,1.811Zm0,0" transform="translate(-352.787 -384.137)" fill="#fff"/>
+  <path d="M165.729,336.481a7.253,7.253,0,0,0-10.865-6.273,7.242,7.242,0,0,0-9.031,11.087c.049.055.1.118,7.751,7.769a1.81,1.81,0,0,0,2.56,0c7.646-7.651,7.7-7.713,7.746-7.763a7.24,7.24,0,0,0,1.838-4.821Zm-4.518,2.384c-.341.346-3.6,3.611-6.347,6.358-2.747-2.749-6.011-6.017-6.347-6.358a3.621,3.621,0,0,1,5.112-5.107,1.812,1.812,0,0,0,2.471,0,3.621,3.621,0,0,1,5.111,5.107Zm0,0" transform="translate(-134.946 -291.438)" fill="#fff"/>
+  <path d="M333.621,229.811A1.811,1.811,0,1,1,331.811,228a1.811,1.811,0,0,1,1.811,1.811Zm0,0" transform="translate(-264.813 -220.757)" fill="#fff"/>
+  <path d="M277.811,231.622h9.054a1.811,1.811,0,0,0,0-3.622h-9.054a1.811,1.811,0,0,0,0,3.622Zm0,0" transform="translate(-227.109 -220.757)" fill="#fff"/>
+  <path d="M252,529.811a1.811,1.811,0,0,0,1.811,1.811h28.972a1.811,1.811,0,0,0,0-3.622H253.811A1.811,1.811,0,0,0,252,529.811Zm0,0" transform="translate(-210.352 -430.218)" fill="#fff"/>
+</svg>
+{{/inline}}
+
+{{#*inline "alwayson_icon"}}
+<svg viewBox="0 0 127.88 115.89" xmlns="http://www.w3.org/2000/svg">
+  <path transform="translate(-114 -222)" d="m233.88 233.99h-9.99v-4a7.992 7.992 0 1 0-15.985 0v4h-59.943v-4a7.992 7.992 0 1 0-15.985 0v4h-9.99a8 8 0 0 0-7.992 7.992v87.919a8 8 0 0 0 7.992 7.992h111.89a8 8 0 0 0 7.992-7.992v-87.919a8 8 0 0 0-7.992-7.992zm-21.979-4a4 4 0 0 1 7.992 0v11.989a4 4 0 1 1-7.992 0zm-75.927 0a4 4 0 1 1 7.992 0v11.989a4 4 0 1 1-7.992 0zm-17.979 11.992a4 4 0 0 1 4-4h9.99v4a7.992 7.992 0 1 0 15.985 0v-4h59.935v4a7.992 7.992 0 1 0 15.985 0v-4h9.99a4 4 0 0 1 4 4v11.989h-119.88zm0 87.916v-71.931h119.88v53.948h-13.987a8 8 0 0 0-7.992 7.992v13.987h-93.91a4 4 0 0 1-4-4zm117.06-13.987-15.16 15.158v-11.162a4 4 0 0 1 4-4zm-1.171 17.983h-11.165l15.157-15.157v11.164a4 4 0 0 1-4 4z" fill="#fff"/>
+  <path transform="translate(-264.78 -380.62)" d="m340.06 459.81" fill="#fff"/>
+  <g transform="translate(11.822 43.538)">
+    <path transform="translate(-149.5 -352.74)" d="M176.141,379.38H149.5V352.739h26.641Zm-22.312-4.329h17.983V357.068H153.829Z" fill="#fff"/>
+  </g>
+  <g transform="translate(50.411 44.371)">
+    <path transform="translate(-265.38 -355.24)" d="m292.02 381.88h-26.641v-26.641h26.641zm-22.312-4.329h17.983v-17.983h-17.983z" fill="#fff"/>
+  </g>
+  <g transform="translate(89.001 44.371)">
+    <path transform="translate(-381.26 -355.24)" d="M407.9,381.88H381.258V355.239H407.9Zm-22.312-4.329H403.57V359.568H385.587Z" fill="#fff"/>
+  </g>
+  <g transform="translate(11.915 77.031)">
+    <path transform="translate(-149.78 -453.31)" d="m176.42 479.95h-26.641v-26.641h26.641zm-22.312-4.329h17.983v-17.983h-17.983z" fill="#fff"/>
+  </g>
+  <g transform="translate(50.504 77.863)">
+    <path transform="translate(-265.66 -455.81)" d="m292.3 482.45h-26.642v-26.641h26.642zm-22.312-4.329h17.982v-17.983h-17.983z" fill="#fff"/>
+  </g>
+  <g transform="translate(89.093 77.863)" fill="#fff">
+    <path transform="translate(-381.54 -455.81)" d="m398.34 478.12h-12.476v-17.982h17.983v11.718h4.329v-16.048h-26.641v26.641h16.8z"/>
+    <path transform="translate(-424.34 -498.61)" d="m445.7 525.25h5.272v-5.273z"/>
+  </g>
+</svg>
+{{/inline}}

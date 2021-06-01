@@ -82,7 +82,7 @@
 
   &__tiles {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     // margin: 100px 0px; // adjustment for coronavirus message
     margin: 50px 0 50px; // adjustment for coronavirus message
     text-align:center;
@@ -133,16 +133,16 @@
         }
       }
 
-      &:nth-child(2) {
-        margin: 0 100px;
-        @media screen and (max-width: $desktop) {
-          margin: 0 get-desktop-vw(100);
-        }
-
-        @media screen and (max-width: $mobile) {
-          margin: get-mobile-vw(100) 0;
-        }
-      }
+      // &:nth-child(2) {
+      //   margin: 0 100px;
+      //   @media screen and (max-width: $desktop) {
+      //     margin: 0 get-desktop-vw(100);
+      //   }
+      //
+      //   @media screen and (max-width: $mobile) {
+      //     margin: get-mobile-vw(100) 0;
+      //   }
+      // }
 
       @media screen and (max-width: $mobile) {
         text-align: center;

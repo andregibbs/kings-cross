@@ -43,6 +43,7 @@
     },
     {
       "type": "group",
+      "dynamic": "episodes",
       "id": "samsung-people-live",
       "title": "All Events",
       "style": {

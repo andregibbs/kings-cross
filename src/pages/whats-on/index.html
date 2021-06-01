@@ -4,11 +4,6 @@
 
   {{>bootstrap/header-components page="whats-on"}}
 
-  <!-- CSS for dataPicker -->
-  <!-- <link rel="stylesheet" href="/{{ config.site }}{{ config.subfolder }}/css/librarys/jquery-ui-1.12.1.custom/jquery-ui.min.css">
-		<link rel="stylesheet" href="/{{ config.site }}{{ config.subfolder }}/css/librarys/jquery-ui-1.12.1.custom/jquery-ui.structure.min.css">
-		<link rel="stylesheet" href="/{{ config.site }}{{ config.subfolder }}/css/librarys/jquery-ui-1.12.1.custom/jquery-ui.theme.min.css"> -->
-
   <section class="section whatsOn__kv">
     <div class="section__inner">
       <h1 class="h1-hidden">Follow Your Passion</h1>
@@ -16,7 +11,7 @@
     </div>
   </section>
 
-
+  {{>components/qudiniEvents/index}}
 
   <section class="section whatsOn__visit">
     <h2 class="fz36">Visit Samsung KX</h2>
@@ -95,11 +90,10 @@
   {{/each}}
   </div>
 
-  <section class="section eventFilter">
+  <!-- <section class="section eventFilter">
     <div class="section__inner">
       <div class="eventFilter__header">
         <div class="eventFilter__header__title">
-          <!-- hidden h1 for seo -->
           <h2>Follow Your Passion</h2>
         </div>
         <div class="eventFilter__header__toggle">
@@ -205,7 +199,7 @@
       <span class="events__noResults">No results available</span>
       <span class="events__showMore">SHOW MORE</span>
     </div>
-  </section>
+  </section> -->
 
   {{>bootstrap/footer-components page="whats-on"}}
 

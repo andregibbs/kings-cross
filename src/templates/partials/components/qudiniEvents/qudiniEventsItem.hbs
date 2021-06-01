@@ -1,0 +1,24 @@
+<div class="qudiniEventsItem"
+  style="transition-delay:{{transitionDelay}};
+    {{#if imageURL}}background-image:url({{imageURL}});{{/if}}
+    border-color: {{color}};
+  ">
+
+  <div class="qudiniEventsItem__body">
+    <div class="qudiniEventsItem__datetime">
+      {{readableDate}}
+    </div>
+    <div class="qudiniEventsItem__title">
+      {{title}}
+    </div>
+
+    {{#if properties.categories}}
+      <div class="qudiniEventsItem__categories">
+        {{#each properties.categories}}
+        <span>{{this}}</span>
+        {{/each}}
+      </div>
+    {{/if}}
+  </div>
+
+</div>

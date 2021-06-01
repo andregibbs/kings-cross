@@ -6,7 +6,6 @@ import doLogFunction from '../dev/doLog';
 var doLog = doLogFunction();
 
 export default function whatson(events) {
-
 	let counter = 0;
 	const passion = getUrlVars()["passions"];
 	let numberEventsToShow = 24;
@@ -18,12 +17,13 @@ export default function whatson(events) {
 
 	let filterOpen = false;
 
-	let spantext = document.getElementsByClassName("eventFilter__header__toggle")[0].getElementsByTagName("span")[0];
+	// let spantext = document.getElementsByClassName("eventFilter__header__toggle")[0].getElementsByTagName("span")[0];
 
   // remove initial private events
   events = events.filter((event) => {
     return !event.extra.private
   })
+
 
 	// =================================================
 	// DataPicker and filters

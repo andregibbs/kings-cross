@@ -235,8 +235,15 @@ export default function fetchData(callback) {
         // check if string is valid json
         if (IsJsonString(bits[1])) {
           event.extra = IsJsonString(bits[1]);
-          event.extra['passionColor'] = getPassionColor(event.extra.passions[0]);
-          event.extra['eventtypeName'] = getSuitableName(event.extra.eventtype);
+
+          if (event.extra.passions) {
+            event.extra['passionColor'] = getPassionColor(event.extra.passions[0]);
+          } else {
+            event.extra['passionColor'] = "#003DFF"
+          }
+          if (event.extra.eventtype) {
+            event.extra['eventtypeName'] = getSuitableName(event.extra.eventtype);
+          }
         } else {
           doLog("Rejected", bits[1]);
           event.extra = false;

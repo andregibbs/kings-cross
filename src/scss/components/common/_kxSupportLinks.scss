@@ -94,16 +94,17 @@
   }
 
   // center tile
-  &:nth-child(2) {
-    margin: 0 100px;
-    @media screen and (max-width: $desktop) {
-      margin: 0 get-desktop-vw(100);
-    }
-
-    @media screen and (max-width: $mobile) {
-      margin: get-mobile-vw(100) 0;
-    }
-  }
+  // hide for no setup
+  // &:nth-child(2) {
+  //   margin: 0 100px;
+  //   @media screen and (max-width: $desktop) {
+  //     margin: 0 get-desktop-vw(100);
+  //   }
+  //
+  //   @media screen and (max-width: $mobile) {
+  //     margin: get-mobile-vw(100) 0;
+  //   }
+  // }
 
   // mobile tile query
   @media screen and (max-width: $mobile) {

@@ -1,12 +1,16 @@
 @import '../../bootstrap';
 @import "../../components/kxClosed";
-@import "../../vendor/jquery-ui-1.12.1.custom/jquery-ui.min";
-@import "../../vendor/jquery-ui-1.12.1.custom/jquery-ui.structure.min";
-@import "../../vendor/jquery-ui-1.12.1.custom/jquery-ui.theme.min";
-@import "../../vendor/animate/animate";
-@import "../../components/datePicker";
+
+
+// can probably remove the date picker/jquery shit
+// @import "../../vendor/jquery-ui-1.12.1.custom/jquery-ui.min";
+// @import "../../vendor/jquery-ui-1.12.1.custom/jquery-ui.structure.min";
+// @import "../../vendor/jquery-ui-1.12.1.custom/jquery-ui.theme.min";
+// @import "../../vendor/animate/animate";
+// @import "../../components/datePicker";
 
 @import "../../components/common/kxQudiniBooking";
+@import "../../components/qudiniEvents";
 
 .whatsOn__visit {
   h2 {
@@ -97,7 +101,6 @@
 }
 
 // f1 laptimes
-
 .section.whatsOn__f1 {
   padding-top: 0;
   padding-bottom: 0;
@@ -203,7 +206,6 @@
   }
 }
 
-
 // f1 terms elements
 #f1-terms-launch {
   color: #FFBC4B;
@@ -215,8 +217,6 @@
 #f1-terms-container[active] {
   display: block;
 }
-
-
 
 // Hub items
 .whatsOn__hubItems {
@@ -681,72 +681,72 @@
   }
 }
 
-.toggle_switch {
-  text-transform: uppercase;
-  color: #ddd;
-  font-size: 16px;
-  cursor: default;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-
-  .switch-button.selected {
-    .before {
-      margin-left: 21px;
-    }
-    .after {
-      left: 0px;
-      opacity: 1;
-    }
-  }
-
-  .switch-button {
-    width: 40px;
-    height: 20px;
-    background-color: rgba(255, 255, 255, 0.3);
-    border: 0px solid #000;
-    display: inline-block;
-    vertical-align: middle;
-    border-radius: 20px;
-    position: relative;
-    margin-left: 4px;
-    margin-right: 15px;
-    cursor: pointer;
-    -webkit-transition: background-color 0.2s ease;
-    transition: background-color 0.2s ease;
-
-    .before {
-      position: absolute;
-      top: -3px;
-      left: -3px;
-      width: 26px;
-      height: 26px;
-      border-radius: 50%;
-      background-color: #fff;
-      z-index: 20;
-      border-color: #0c0c0c;
-      border-width: 3px;
-      border-style: solid;
-      -webkit-transition: margin-left 0.2s ease;
-      transition: margin-left 0.2s ease;
-    }
-
-    .after {
-      display: block;
-      width: 40px;
-      height: 20px;
-      background-color: #fff;
-      position: absolute;
-      border-radius: 20px;
-      /* left: calc(-100%); */
-      top: 0;
-      opacity: 0;
-      z-index: 10;
-      -webkit-transition: left 0.2s ease;
-      transition: left 0.2s ease;
-    }
-  }
-}
+// .toggle_switch {
+//   text-transform: uppercase;
+//   color: #ddd;
+//   font-size: 16px;
+//   cursor: default;
+//   -webkit-user-select: none;
+//   -moz-user-select: none;
+//   -ms-user-select: none;
+//   user-select: none;
+//
+//   .switch-button.selected {
+//     .before {
+//       margin-left: 21px;
+//     }
+//     .after {
+//       left: 0px;
+//       opacity: 1;
+//     }
+//   }
+//
+//   .switch-button {
+//     width: 40px;
+//     height: 20px;
+//     background-color: rgba(255, 255, 255, 0.3);
+//     border: 0px solid #000;
+//     display: inline-block;
+//     vertical-align: middle;
+//     border-radius: 20px;
+//     position: relative;
+//     margin-left: 4px;
+//     margin-right: 15px;
+//     cursor: pointer;
+//     -webkit-transition: background-color 0.2s ease;
+//     transition: background-color 0.2s ease;
+//
+//     .before {
+//       position: absolute;
+//       top: -3px;
+//       left: -3px;
+//       width: 26px;
+//       height: 26px;
+//       border-radius: 50%;
+//       background-color: #fff;
+//       z-index: 20;
+//       border-color: #0c0c0c;
+//       border-width: 3px;
+//       border-style: solid;
+//       -webkit-transition: margin-left 0.2s ease;
+//       transition: margin-left 0.2s ease;
+//     }
+//
+//     .after {
+//       display: block;
+//       width: 40px;
+//       height: 20px;
+//       background-color: #fff;
+//       position: absolute;
+//       border-radius: 20px;
+//       /* left: calc(-100%); */
+//       top: 0;
+//       opacity: 0;
+//       z-index: 10;
+//       -webkit-transition: left 0.2s ease;
+//       transition: left 0.2s ease;
+//     }
+//   }
+// }
 
 /*=====  End of WHATSON PAGE  ======*/
