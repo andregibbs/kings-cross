@@ -1,9 +1,10 @@
-// Live Stream v3 (/bespoke = v4)
+// Live Stream v4
 
 import '../../../../bootstrap.js'
 
 import { DateTime, Interval } from 'luxon';
 import getParam from '../../../../../js/components/getParam'
+import KXEnv from '../../../../../js/util/KXEnv'
 
 const Handlebars = require("hbsfy/runtime");
 // Handlebars.registerPartial('playIcon', require('../../../../templates/partials/svg/play.hbs'))
@@ -28,46 +29,138 @@ const debugTemplate = require('../../../../../templates/partials/components/sams
 
 const MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 
-const SCHEDULE = [
+const DESKTOP_POSTER = 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/neo-qled-series/Neo_KV_D_3.jpg'
+const MOBILE_POSTER = 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/neo-qled-series/Neo_kv_M.jpg'
+
+let SCHEDULE = [
   {
-    liveDate: [2021,5,26,17,0],
-    endDate: [2021,5,26,17,30],
-    showID: 'B1TGylfLA4UGn3pAy2jV',
-    title: 'Wednesday 26th May - 5PM',
-    poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/neo-qled-series/Neo_KV_D_3.jpg',
-    mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/neo-qled-series/Neo_kv_M.jpg'
+    liveDate: [2021,6,8,15,0],
+    endDate: [2021,6,8,15,30],
+    showID: 'obbLfll5x0D97hIhuQBR',
+    title: 'Tuesday 8th June - 3PM',
+    poster: DESKTOP_POSTER,
+    mobile_poster: MOBILE_POSTER,
+    test: true
   },
   {
-    liveDate: [2021,5,27,17,0],
-    endDate: [2021,5,27,17,30],
-    showID: '7xyO1oxDDzmEfMCyqBWc',
-    title: 'Thursday 27th May - 5PM',
-    poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/neo-qled-series/Neo_KV_D_3.jpg',
-    mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/neo-qled-series/Neo_kv_M.jpg'
+    liveDate: [2021,6,9,17,0],
+    endDate: [2021,6,9,17,30],
+    showID: 'srT0J0ztKyuOV1Lwra19',
+    title: 'Wednesday 9th June - 7PM',
+    poster: DESKTOP_POSTER,
+    mobile_poster: MOBILE_POSTER
   },
   {
-    liveDate: [2021,5,28,17,0],
-    endDate: [2021,5,28,17,30],
-    showID: '1IizQc6iLsglKIctZifE',
-    title: 'Friday 28th May - 5PM',
-    poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/neo-qled-series/Neo_KV_D_3.jpg',
-    mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/neo-qled-series/Neo_kv_M.jpg'
+    liveDate: [2021,6,12,17,0],
+    endDate: [2021,6,12,17,30],
+    showID: '0O3kEnVDX0tLBSupFSSl',
+    title: 'Saturday 12th June - 7PM',
+    poster: DESKTOP_POSTER,
+    mobile_poster: MOBILE_POSTER
   },
   {
-    liveDate: [2021,5,29,17,0],
-    endDate: [2021,5,29,17,30],
-    showID: '5xDU0jmr50F1CDPisSLF',
-    title: 'Saturday 29th May - 5PM',
-    poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/neo-qled-series/Neo_KV_D_3.jpg',
-    mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/neo-qled-series/Neo_kv_M.jpg'
+    liveDate: [2021,6,13,17,0],
+    endDate: [2021,6,13,17,30],
+    showID: '4K3i6vFjC3wFgl5wLpMz',
+    title: 'Sunday 13th June - 7PM',
+    poster: DESKTOP_POSTER,
+    mobile_poster: MOBILE_POSTER
   },
   {
-    liveDate: [2021,5,30,17,0],
-    endDate: [2021,5,30,17,30],
-    showID: 'PtVMjNjvF5hFlegvKqBj',
-    title: 'Sunday 30th May - 5PM',
-    poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/neo-qled-series/Neo_KV_D_3.jpg',
-    mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/neo-qled-series/Neo_kv_M.jpg'
+    liveDate: [2021,6,16,17,0],
+    endDate: [2021,6,16,17,30],
+    showID: 'BXDZMcVV8sjNjS3ZHMPk',
+    title: 'Wednesday 16th June - 7PM',
+    poster: DESKTOP_POSTER,
+    mobile_poster: MOBILE_POSTER
+  },
+  {
+    liveDate: [2021,6,19,17,0],
+    endDate: [2021,6,19,17,30],
+    showID: 'xvT8mGI6xBtZPR19ypbx',
+    title: 'Saturday 19th June - 7PM',
+    poster: DESKTOP_POSTER,
+    mobile_poster: MOBILE_POSTER
+  },
+  {
+    liveDate: [2021,6,20,17,0],
+    endDate: [2021,6,20,17,30],
+    showID: 'qk3qX9zAxVYz6qlEqZXf',
+    title: 'Sunday 20th June - 7PM',
+    poster: DESKTOP_POSTER,
+    mobile_poster: MOBILE_POSTER
+  },
+  {
+    liveDate: [2021,6,23,17,0],
+    endDate: [2021,6,23,17,30],
+    showID: '6RrErGR8ofbvu4y1R7Da',
+    title: 'Wednesday 23rd June - 7PM',
+    poster: DESKTOP_POSTER,
+    mobile_poster: MOBILE_POSTER
+  },
+  {
+    liveDate: [2021,6,26,17,0],
+    endDate: [2021,6,26,17,30],
+    showID: '7x4jluWSBMgLpZKod6i1',
+    title: 'Saturday 26th June - 7PM',
+    poster: DESKTOP_POSTER,
+    mobile_poster: MOBILE_POSTER
+  },
+  {
+    liveDate: [2021,6,27,17,0],
+    endDate: [2021,6,27,17,30],
+    showID: 'F1R1W8IXxhQk6Udm0TLv',
+    title: 'Sunday 27th June - 7PM',
+    poster: DESKTOP_POSTER,
+    mobile_poster: MOBILE_POSTER
+  },
+  {
+    liveDate: [2021,6,30,17,0],
+    endDate: [2021,6,30,17,30],
+    showID: 'fszbWAGZdS0gcdzMcSq0',
+    title: 'Wednesday 30th June - 7PM',
+    poster: DESKTOP_POSTER,
+    mobile_poster: MOBILE_POSTER
+  },
+  {
+    liveDate: [2021,7,3,17,0],
+    endDate: [2021,7,3,17,30],
+    showID: 'XoSW6W8GgddS9UgPczeO',
+    title: 'Saturday 3rd June - 7PM',
+    poster: DESKTOP_POSTER,
+    mobile_poster: MOBILE_POSTER
+  },
+  {
+    liveDate: [2021,7,4,17,0],
+    endDate: [2021,7,4,17,30],
+    showID: 'vPALqLOQVErfEowO769h',
+    title: 'Sunday 4th June - 7PM',
+    poster: DESKTOP_POSTER,
+    mobile_poster: MOBILE_POSTER
+  },
+  {
+    liveDate: [2021,7,7,17,0],
+    endDate: [2021,7,7,17,30],
+    showID: 'CNPIrGCbtdKmO8QJSeHw',
+    title: 'Wednesday 7th June - 7PM',
+    poster: DESKTOP_POSTER,
+    mobile_poster: MOBILE_POSTER
+  },
+  {
+    liveDate: [2021,7,10,17,0],
+    endDate: [2021,7,10,17,30],
+    showID: 'SAbVuzMBv88EQPBTNWOj',
+    title: 'Saturday 10th June - 7PM',
+    poster: DESKTOP_POSTER,
+    mobile_poster: MOBILE_POSTER
+  },
+  {
+    liveDate: [2021,7,11,17,0],
+    endDate: [2021,7,11,17,30],
+    showID: 'AZBe8j5Zp3eLd7Bam4jT',
+    title: 'Saturday 11th June - 7PM',
+    poster: DESKTOP_POSTER,
+    mobile_poster: MOBILE_POSTER
   }
 ]
 
@@ -80,6 +173,11 @@ class SamsungLive {
     if (isIE11) {
       this.renderUnsupportedHeader()
       return
+    }
+
+    // filter test events if live
+    if (KXEnv.live) {
+      SCHEDULE = SCHEDULE.filter(event => !event.test)
     }
 
     this.pageInitiateTime = DateTime.local()

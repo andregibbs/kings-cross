@@ -1,6 +1,10 @@
 .qudiniEvents {
   max-width: 1440px;
   margin: 0 auto;
+
+  @media screen and (max-width: $mobile) {
+    padding-top: 2rem !important;
+  }
 }
 
 .qudiniEvents__header {

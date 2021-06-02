@@ -324,7 +324,7 @@ class QudiniEvents {
           event.properties = properties
           event.color = (event.properties.categories && event.properties.categories.length > 0) ? QudiniEvents.CATEGORY_COLORS[event.properties.categories[0]] : QudiniEvents.CATEGORY_COLORS.default
           // dates/readables
-          const eventDate = DateTime.fromISO(event.startISO)
+          const eventDate = DateTime.fromISO(event.startISO).setZone('utc')
           const isToday = eventDate.diffNow('day').toObject().days <= 0
           event.luxonDate = eventDate
           event.readableDate = `${isToday ? 'Today': eventDate.toFormat('d LLLL')} | ${eventDate.toFormat('H:mm')}`
