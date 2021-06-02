@@ -36,6 +36,11 @@ import { DateTime } from 'luxon'
 const QUDINI_EVENTS_ENDPOINT = 'https://bookings.qudini.com/booking-widget/event/events/';
 const qudiniEventsItemTemplate = require('../../templates/partials/components/qudiniEvents/qudiniEventsItem.hbs');
 
+const SHOW_MAX = {
+  desktop: 8,
+  mobile: 4
+}
+
 class QudiniEvents {
 
   constructor(series = QudiniEvents.ALL_SERIES) {
@@ -48,6 +53,7 @@ class QudiniEvents {
     this.eventsBody = this.el.querySelector('#qudini-events-body')
     this.eventsLoader = this.el.querySelector('#qudini-events-loader')
     this.eventsTarget = this.el.querySelector('#qudini-events-target')
+    this.showMoreEvents = this.el.querySelector('#qudini-events-more')
 
     this.eventFilters = {
       startDate: false,
@@ -56,25 +62,29 @@ class QudiniEvents {
       type: false
     }
 
+    // update on resize
+    this.isMobile = window.innerWidth <= 768
+
     this.fetchEvents(series)
       .then(eventData => {
         console.log({eventData})
         this.events = eventData
         // delay initial render
         setTimeout(this.renderEvents.bind(this), 1000)
-        this.filterEventListeners()
+        this.eventListeners()
       })
   }
 
-  filterEventListeners() {
+  eventListeners() {
     const filterDateStart = document.querySelector('#filter-date-start')
     const filterDateEnd = document.querySelector('#filter-date-end')
     const filterCategoryCheckboxes = document.querySelectorAll('.qudiniEvents__category input[type="checkbox"]')
     const filterTypeRadios = document.querySelectorAll('.qudiniEvents__type input[type="radio"]')
 
+    // function for change of date
     function filterDateChange(type, event) {
       let isValid = event.target.validity.valid
-      const dateObj = DateTime.fromSQL(event.target.value)
+      let dateObj = DateTime.fromSQL(event.target.value)
 
       if (isValid) {
         // compare new start to end filter
@@ -82,6 +92,7 @@ class QudiniEvents {
           // if start is before end, set start to end date
           if (dateObj.diff(this.eventFilters.endDate, 'days').toObject().days > 0) {
             isValid = false
+            dateObj = this.eventFilters.endDate
             event.target.value = this.eventFilters.endDate.toFormat('yyyy-LL-dd')
           }
         }
@@ -90,6 +101,7 @@ class QudiniEvents {
           // if end is before start, set end to start date
           if (dateObj.diff(this.eventFilters.startDate, 'days').toObject().days < 0) {
             isValid = false
+            dateObj = this.eventFilters.startDate
             event.target.value = this.eventFilters.startDate.toFormat('yyyy-LL-dd')
           }
         }
@@ -100,12 +112,14 @@ class QudiniEvents {
       event.target.setAttribute('valid', isValid)
     }
 
+    // function for change of category
     function filterCategoryChange() {
       const checkedCategoryCheckboxes = Array.from(document.querySelectorAll('.qudiniEvents__category input[type="checkbox"]:checked'))
       this.eventFilters.category = checkedCategoryCheckboxes.map(el => el.id.replace('filter-category-',''))
       this.afterFilterUpdate()
     }
 
+    // function for change of event type
     function filterTypeChange(e) {
       const selectedType = e.target.id.replace('filter-type-','')
       // condition for only always on
@@ -138,15 +152,28 @@ class QudiniEvents {
     filterTypeRadios.forEach(input => {
       input.addEventListener('change', filterTypeChange.bind(this))
     })
+
+    this.showMoreEvents.addEventListener('click', this.renderMore.bind(this))
+
+    window.addEventListener('resize', this.handleResize.bind(this))
+
+  }
+
+  handleResize() {
+    this.isMobile = window.innerWidth <= 768
+    this.eventsBody.style.height = `${this.eventsTarget.offsetHeight}px`
   }
 
   afterFilterUpdate() {
     this.renderEvents()
   }
 
+  getEventsToRender(startFromIndex = 0) {
+    // sort by date
+    let filteredEvents = this.events.sort((a,b) => a.luxonDate - b.luxonDate)
 
-  getFilteredEvents() {
-    return this.events.filter(event => {
+    // filter by filters
+    filteredEvents = filteredEvents.filter(event => {
       // console.log(event)
       let includeEvent = true
 
@@ -159,7 +186,7 @@ class QudiniEvents {
         }
       }
 
-      if (this.eventFilters.type) {
+      if (this.eventFilters.type && includeEvent) {
         if (event.type) {
           includeEvent = event.type === this.eventFilters.type
         } else {
@@ -167,38 +194,89 @@ class QudiniEvents {
         }
       }
 
-      // if (this.eventFilters.startDate) {
-      //   if (this.)
-      // }
+      if (this.eventFilters.startDate && includeEvent) {
+        if (event.luxonDate >= this.eventFilters.startDate) {
+          includeEvent = true
+        } else {
+          includeEvent = false
+        }
+      }
+
+      if (this.eventFilters.endDate && includeEvent) {
+        if (event.luxonDate <= this.eventFilters.endDate.plus({days: 1})) {
+          includeEvent = true
+        } else {
+          includeEvent = false
+        }
+      }
 
       return includeEvent
 
     })
+
+    // slice by show max
+    const eventsToRender = filteredEvents.slice(startFromIndex, startFromIndex + (this.isMobile ? SHOW_MAX.mobile : SHOW_MAX.desktop))
+
+    // return full filtered list and then sliced render list to compare totals
+    return {
+      eventsToRender,
+      filteredEvents
+    }
+
   }
 
+  // initial render
   renderEvents() {
     // handle filters
-    this.eventsBody.style.height = `2.5rem` // wrap loader then get inner loader height
+    this.eventsBody.style.height = `3.5rem` // wrap loader then get inner loader height
     this.eventsBody.removeAttribute('events')
+    this.eventsBody.setAttribute('loading', '')
 
-    const eventsToRender = this.getFilteredEvents()
+    const { eventsToRender } = this.getEventsToRender()
 
     setTimeout(() => {
 
       this.eventsTarget.innerHTML = ''
 
       eventsToRender.forEach((event, i) => {
-        event.transitionDelay = `${0.35 + (0.1 * i)}s`
+        event.animationDelay = `${0.35 + (0.1 * i)}s`
         this.eventsTarget.insertAdjacentHTML('beforeend', qudiniEventsItemTemplate(event))
       });
 
+      this.eventsBody.removeAttribute('loading')
       setTimeout(() => {
         this.eventsBody.setAttribute('events','')
         this.eventsBody.style.height = `${this.eventsTarget.offsetHeight}px`
-      }, 350)
+        this.afterRender()
+      }, 300)
 
-    }, 250)
+    }, 300)
 
+  }
+
+  // subsequent renders
+  renderMore() {
+    const renderedEvents = this.eventsTarget.querySelectorAll('.qudiniEventsItem')
+    const { eventsToRender } = this.getEventsToRender(renderedEvents.length)
+
+    eventsToRender.forEach((event, i) => {
+      event.animationDelay = `${0.1 + (0.1 * i)}s`
+      this.eventsTarget.insertAdjacentHTML('beforeend', qudiniEventsItemTemplate(event))
+    });
+
+    this.eventsBody.style.height = `${this.eventsTarget.offsetHeight}px`
+    this.afterRender()
+  }
+
+  // after any event render
+  afterRender() {
+    const { filteredEvents } = this.getEventsToRender()
+    const renderedEvents = this.eventsTarget.querySelectorAll('.qudiniEventsItem')
+    if (renderedEvents.length < filteredEvents.length) {
+      this.showMoreEvents.setAttribute('active', '')
+    } else {
+      this.showMoreEvents.removeAttribute('active')
+    }
   }
 
   // maybe extract this method to replace Events.js
@@ -248,6 +326,7 @@ class QudiniEvents {
           // dates/readables
           const eventDate = DateTime.fromISO(event.startISO)
           const isToday = eventDate.diffNow('day').toObject().days <= 0
+          event.luxonDate = eventDate
           event.readableDate = `${isToday ? 'Today': eventDate.toFormat('d LLLL')} | ${eventDate.toFormat('H:mm')}`
           return event
         })

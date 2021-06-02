@@ -100,6 +100,18 @@
   }
 }
 
+.btn--whatson {
+  border-color: #FFBC4B;
+  background: black;
+  color: white;
+  font-size: 0.75rem;
+  &:hover {
+    color: black;
+    background: #FFBC4B;
+    border-color: #FFBC4B;
+  }
+}
+
 // f1 laptimes
 .section.whatsOn__f1 {
   padding-top: 0;

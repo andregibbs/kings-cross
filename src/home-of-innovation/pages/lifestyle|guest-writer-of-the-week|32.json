@@ -1,0 +1,135 @@
+{
+	"title": "5 ways to connect in compact spaces on-the-go",
+	"description": "",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/32/camper_van_2_thumbnail.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/32/camper_van_2_thumbnail.jpg",
+	"group": "guest-writer-of-the-week",
+	"sort": 32,
+	"contentLength": {
+		"length": 6,
+		"unit": "mins"
+	},
+	"meta": {
+		"icon": "article",
+		"tags": []
+	},
+	"components": [
+		{
+			"type": "css-snippet",
+			"content": ".hoiContent small { font-size: 0.75rem; }"
+		},
+		{
+			"type": "kv",
+			"media": {
+				"type": "image",
+				"content": "{{lifestyle|guest-writer-of-the-week|32[image]}}",
+				"alt": "{{lifestyle|guest-writer-of-the-week|32[alt]}}"
+			},
+			"style": {
+				"desktop": "right",
+				"mobile": "bottom"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "{{lifestyle|guest-writer-of-the-week|32[title]}}"
+				}
+			]
+		},
+		{
+			"type": "wrapper",
+			"components": [
+				{
+					"type": "paragraphs",
+					"text": [
+						"<em>Most travel this year has naturally been staycations and as part of this, camper van adventures are on the up. This is perhaps the most compact of travelling spaces - yet people are still jumping on the #vanlife trend. Nevertheless, we’re still a technology-dependent generation and most people want to stay connected whilst on the road. Travel journalist Amira Arasteh shows you how to optimise the use of your gadgets to create and edit content remotely.</em>"
+					]
+				},
+        {
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/32/camper_van_2.jpg",
+					"alt": ""
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"There’s something exhilarating and liberating about packing your bags in a van and driving off into the distance, switching up your route and itinerary whenever you want. A staycation is not to be thought of as restricting, but as an opportunity to see the beauty the UK has to offer. With all these picturesque scenes, there will definitely be Instagrammable moments and memories to blog about - it’s the ultimate opportunity to get some #content. But with such little space available, how do you create an on-the-road office or editing suite in the most optimal fashion?"
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "2 in 1 design",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"When you geek out on gadgets, it’s quite hard to decide which ones are coming travelling with you. Most of us find ourselves having to choose between devices but the <a href=\"https://www.samsung.com/uk/pc/galaxy-book/galaxy-book-pro/buy/\">Samsung Galaxy Book Pro 360</a> offers a 2-in-1 solution. Both a laptop and a tablet, you can optimise your compact workspace on-the-go - without sacrificing space or quality. There’s no need to worry about storage space either as the Galaxy Book Pro 360 comes with additional storage slots - saving and maintaining your files has never been easier."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Small and compact wins the race",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Normally when going on a trip, people want to leave their laptops at home - bulk is never best. However, the <a href=\"https://www.samsung.com/uk/pc/galaxy-book/galaxy-book-pro/buy/\">Galaxy Book Pro 360</a> is our thinnest and lightest laptop yet and despite its smartphone-like mobility, you don’t have to worry about its lack of durability. The laptop/tablet is tough with military-grade durability. You can fit this into your bag easily and not have it take up too much space in the camper van when you unpack your belongings."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Upload and edit in your own time",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"One of the problems with bringing gadgets on the go is that as brilliant as technology is, we are restricted to the battery life of our tools. You’ve spent all day taking photographs and now it’s time to edit and then upload your content. Thanks to the long-lasting, fast-charging battery, your <a href=\"https://www.samsung.com/uk/pc/galaxy-book/galaxy-book-pro/buy/\">Samsung Galaxy Book Pro 360</a> will stay powered up so you can get on with your work from start to finish, without worrying about the dreaded low battery sign. What’s more, it comes with a pocket-sized USB-C fast charger, so you’ll never be caught out."
+					]
+				},
+        {
+          "type": "headline",
+          "copy": "Stay connected across devices",
+          "level": "3"
+        },
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/32/05_galaxybookpro360_lifestyle.jpg",
+					"alt": ""
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"We’re so used to having our various gadgets at our disposal - laptop, phone, tablet. Everything is just there. This changes when you embark upon a trip as it becomes notoriously difficult to get everything packed in a bag for your camper van living quarters. But thanks to the Samsung ecosystem, you can create on-the-go using other Samsung devices to support your work. It’s never been easier to pair your devices together. Pair your <a href=\"https://www.samsung.com/uk/pc/galaxy-book/galaxy-book-pro/buy/\">Galaxy Book Pro 360</a> and Galaxy Buds by simply opening the case near your laptop and you’re ready to go. This is particularly useful when you need to avoid disturbing your travelling companion."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Movie night",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"The AMOLED display on the <a href=\"https://www.samsung.com/uk/pc/galaxy-book/galaxy-book-pro/buy/\">Galaxy Book Pro 360</a> offers up the same vivid colours, contrast, and responsiveness as your Galaxy phone’s display. This is great for those days when you need entertaining whilst the weather is temperamental or you simply fancy a little screen time, as you can play games and watch movies with ease. It also has a less harmful blue light so you can do all of this without worrying about straining your eyes.",
+						"<br>",
+						"<strong>By Amira Arasteh.</strong>",
+						"<em>Amira is a freelance lifestyle journalist, frequently writing for the likes of Stylist, Refinery 29 and Time Out. Whilst her speciality is travel, she also loves all things fashion, food and beauty.</em>"
+					]
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "more-articles",
+			"id": "guest-writer-of-the-week",
+			"title": "More articles",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
+}

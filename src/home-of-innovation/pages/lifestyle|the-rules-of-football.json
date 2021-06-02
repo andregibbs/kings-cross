@@ -1,0 +1,83 @@
+{
+	"title": "The Rules of Football",
+	"description": "",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/the-rules-of-football/kv.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/the-rules-of-football/thumb.jpg",
+	"meta": {
+		"icon": "video",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 10,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "image",
+				"content": "{{lifestyle|the-rules-of-football[image]}}",
+				"alt": "{{lifestyle|the-rules-of-football[alt]}}"
+			},
+			"style": {
+				"desktop": "top",
+				"mobile": "bottom"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "The Rules of Football"
+				}
+			]
+		},
+		{
+			"type": "wrapper",
+			"components": [
+				{
+					"type": "paragraphs",
+					"text": [
+						"Frequently perplexed by the rules of football?",
+            "Well, you're not alone as over 85% of Brits are often left confused by the likes of the offside rule or calling a handball and the reasons that VAR is used.",
+            "To help puzzled Brits get to grips with the rules of the game, ex-England footballer and pundit Karen Carney has teamed up with Samsung KX to launch The Rules of Football, a content series that demystifies and explains the rules that leave Brits most confused, shot entirely in 8K using the <a href=\"https://www.samsung.com/uk/smartphones/galaxy-s21-ultra-5g/\">Samsung Galaxy S21</a>.",
+            "The series features Karen explaining the top 10 trickiest rules of the game, as voted for by Brits, including how red and yellow cards are used, when penalties are retaken and the offside rule.",
+            "The <a href=\"https://www.samsung.com/uk/tvs/qled-tv/highlights/\">Samsung Neo QLED 8K</a> range has been designed for you to create an unparalleled and ultra-detailed 8K viewing experience meaning football games have never been so clear."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "The Rules of Football - Episode 1",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Karen takes us through the top 5 most confusing rules of the game including the offside and handball rules, when and why VAR is used and what counts as a red or yellow card offence. "
+					]
+				},
+        {
+					"type": "youtube",
+					"content": "WcBd7izBseE",
+					"poster": ""
+        },
+        {
+					"type": "headline",
+					"copy": "The Rules of Football - Episode 2",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Following the first episode, Karen explains the back pass rule, what makes a freekick direct or indirect and clarifies what a referee is and isn’t allowed to do."
+					]
+				},
+        {
+					"type": "youtube",
+					"content": "nhL0ss-GLVw",
+					"poster": ""
+        }
+
+			]
+		}
+	]
+}

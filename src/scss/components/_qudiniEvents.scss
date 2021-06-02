@@ -119,6 +119,7 @@
 
 .qudiniEvents__loader {
   height: 2.5rem;
+  margin-bottom: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -151,6 +152,7 @@
   }
 }
 
+// main events list
 .qudiniEvents__events {
   display: flex;
   flex-wrap: wrap;
@@ -159,6 +161,29 @@
 
   @media screen and (max-width: $mobile) {
     justify-content: space-between;
+  }
+}
+
+// load more btn
+.qudiniEvents__more {
+  padding: 2rem;
+  .btn {
+    margin: 0 auto;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease-in-out;
+    background-color: black;
+    border-color: #FFBC4B;
+    &:hover {
+      background-color: #FFBC4B;
+      color: black;
+      border-color: #FFBC4B;
+    }
+  }
+
+  .btn[active] {
+    opacity: 1;
+    pointer-events: all;
   }
 }
 
@@ -179,13 +204,32 @@
   background-repeat: no-repeat;
   position: relative;
   max-width: 180px;
-  transition: opacity 0.25s ease-in-out;
+  // transition: opacity 0.3s ease-in-out;
+  animation: itemFade 0.3s ease-in-out forwards;
   opacity: 0;
-
+  color: white !important;
   @media screen and (max-width: $mobile) {
     max-width: calc(50% - 0.5rem);
     margin: 0;
     margin-bottom: 1rem;
+  }
+}
+
+@keyframes itemFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes itemFadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }
 
@@ -222,6 +266,12 @@
 }
 
 // States
+.qudiniEvents__body[loading] {
+  .qudiniEventsItem {
+    animation: itemFadeOut 0.15s ease-in-out forwards;
+    animation-delay: 0s !important;
+  }
+}
 .qudiniEvents__body[events] {
   .qudiniEvents__loader {
     height: 0;
@@ -236,7 +286,7 @@
     transition: height 0.25s 0.5s ease-in-out;
   }
   .qudiniEventsItem {
-    opacity: 1;
+    // opacity: 1;
   }
 }
 

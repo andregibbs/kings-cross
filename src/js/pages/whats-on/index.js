@@ -15,7 +15,6 @@ function KX_WhatsOn() {
   // fetchData(whatson);
 
   new QudiniEvents()
-  return
 
   const qudiniBooking = new KXQudiniBooking() // start single instance, update with .start()
 
