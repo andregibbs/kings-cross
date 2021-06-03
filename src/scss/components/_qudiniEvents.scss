@@ -1,14 +1,11 @@
 .qudiniEvents {
   max-width: 1440px;
   margin: 0 auto;
+  padding-top: 0 !important;
 
   @media screen and (max-width: $mobile) {
     padding-top: 2rem !important;
   }
-}
-
-.qudiniEvents__header {
-  padding-bottom: 2rem;
 }
 
 .qudiniEvents__filter-group {
@@ -79,6 +76,7 @@
     border: 1px solid #333;
     border-radius: 0.5rem;
     padding: 1rem 0;
+    margin-bottom: 1rem;
     cursor: pointer;
 
     &:hover {
@@ -358,6 +356,7 @@
     position: relative;
     overflow: visible;
     border-radius: 0.5rem;
+    min-height: 44px;
     @media screen and (max-width: $mobile) {
       font-size: 0.8rem;
       &:before {
@@ -383,6 +382,10 @@
   }
   input[type="checkbox"] {
     display: block;
+  }
+  input[type="checkbox"],
+  input[type="radio"] {
+    display: none;
   }
   // input[type="radio"],
   //   appearance: auto;

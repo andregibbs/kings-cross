@@ -1,0 +1,86 @@
+{
+  "kv": {
+    "media": {
+      "type": "image",
+      "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/KX-KVsEpisode5-KV-PC.jpg",
+      "alt": ""
+    },
+    "style": {
+      "desktop": "top",
+      "mobile": "top",
+      "ratios": {
+        "desktop": 30,
+        "mobile": 70
+      }
+    },
+    "components": [
+      {
+        "type": "class-container",
+        "class": "kv-overlay",
+        "components": [
+          {
+            "type": "headline",
+            "copy": "Introducing Samsung KX Neo QLED VAR Challenge"
+          },
+          {
+            "type": "paragraphs",
+            "style": {
+              "large": true
+            },
+            "text": [
+              "Have you got the eye for an offside rule? Could you spot a penalty a mile off? Think you could be called up as referee for the pending summer of sport?"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "headline",
+        "copy": "Your change to win a Neo QLED TV*"
+      }
+    ]
+  },
+  "body": {
+    "components": [
+      {
+        "type": "paragraphs",
+        "style": {
+          "large": true
+        },
+        "text": [
+          "<strong>Following on from the Rules of Football, Samsung KX is calling on all have-a-go heroes to step up to the plate to see if they really know more than the ref!</strong>",
+          "The Samsung KX Neo VAR Challenge wants you to step into the shoes of a referee and review some of the most controversial VAR decisions over the last few years – all reshot in 8K detail.",
+          "The immersive experience at Samsung KX highlights the 8K quality and superior detail of the new Samsung Neo QLED 8K TV which in turn will help in making a VAR decision much easier to call.",
+          "The Neo QLED VAR challenge at Samsung KX is open to members of the public, free of charge from June 8th until XXX, with all visitors to the experience in with a chance to win a Neo QLED TV*.",
+          "<strong>For those unable to visit KX to be in with the chance of winning the TV, you can check out the scenarios for yourself below.</strong>"
+        ]
+      },
+      {
+        "type": "headline",
+        "level": "2",
+        "copy": "See if you can beat the VAR"
+      }
+    ]
+  },
+  "footer": {
+    "components": [
+      {
+        "type": "buttons",
+        "items": [
+          {
+            "copy": "View Terms & Conditions"
+          }
+        ]
+      }
+    ]
+  },
+  "signposts": [
+    {
+      "title": "The Rules of Football",
+      "sub": "The series features Karen explaining the top 10 trickiest rules of the game, as voted for by Brits, including how red and yellow cards are used, when penalties are retaken and the offside rule.",
+      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/the-rules-of-football/thumb.jpg",
+      "alt": "",
+      "link": "/uk/explore/kings-cross/lifestyle/the-rules-of-football",
+      "cta": "WATCH NOW"
+    }
+  ]
+}

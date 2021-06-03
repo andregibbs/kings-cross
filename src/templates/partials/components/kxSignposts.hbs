@@ -1,0 +1,21 @@
+<div class="kxSignposts">
+{{#each items }}
+  <div class="kxSignposts__Item">
+    <div class="kxSignposts__Item_Image" style="background-image:url({{image}})"></div>
+    <div class="kxSignposts__Item_Body">
+      <h4>{{title}}</h4>
+      <p>{{sub}}</p>
+      <a
+        class="btn btn--primary btn--primary--coral"
+        href="{{link}}"
+        data-omni-type="microsite"
+        data-omni="uk:kings-cross:samsung-people-live:signpost:{{title}}"
+        ga-ca="microsite"
+        ga-ac="feature"
+        ga-la="uk:kings-cross:samsung-people-live:signpost:{{title}}">
+        {{cta}}
+      </a>
+    </div>
+  </div>
+{{/each}}
+</div>

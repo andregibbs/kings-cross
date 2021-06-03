@@ -1,0 +1,328 @@
+@import '../../bootstrap';
+
+@import "../../mixins/clearfix";
+@import "../../mixins/typography";
+@import "../../mixins/vw";
+
+@import '../../home-of-innovation/vars';
+@import '../../components/home-of-innovation/content';
+
+@import '../../components/kxSignposts';
+
+.varChallengePage {
+  @import '../../components/home-of-innovation/typography';
+  @import '../../components/home-of-innovation/hoiKv';
+  @import '../../components/home-of-innovation/hoiShare';
+  @import '../../components/home-of-innovation/hoiMedia';
+  @import '../../components/home-of-innovation/hoiHeadline';
+  @import '../../components/home-of-innovation/hoiWrapper';
+  @import '../../components/home-of-innovation/hoiParagraphs';
+}
+
+.varChallengePage .hoiKv {
+  position: relative;
+  .kv-overlay {
+    height: 30vw;
+    position: absolute;
+    top: 0;
+    z-index: 20;
+    left: 0;
+    padding: 2rem;
+    max-width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media screen and (max-width: 768px) {
+      max-width: 100%;
+      height: 70vw;
+      padding: 1rem;
+    }
+  }
+}
+
+.varChallengePage__body {
+  .hoiWrapper {
+    margin-bottom: 0;
+  }
+  h2 {
+    margin: 0 auto;
+  }
+}
+
+.varChallengePage__footer {
+  .btn {
+    @extend .btn--small;
+    width: 150px;
+  }
+  .hoiWrapper:before {
+    content: '*'
+  }
+}
+
+.varChallenge {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.varChallenge__question {}
+
+
+.varChallenge__body {
+  position: relative;
+  &:before {
+    content: '';
+    padding-bottom: 56.6%;
+    display: block;
+  }
+}
+
+.varChallenge__view {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  transition: opacity 0.3s ease-in-out;
+  h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    @media screen and (max-width: $mobile) {
+      font-size: 1.5rem;
+    }
+  }
+  p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    max-width: 600px;
+    @media screen and (max-width: $mobile) {
+      font-size: 0.75rem;
+    }
+  }
+}
+
+.varChallenge__progress {
+  z-index: 21;
+  pointer-events: none;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  display: flex;
+  @media screen and (max-width: $mobile) {
+    top: 0.5rem;
+    left: 0.5rem;
+  }
+}
+.varChallenge__progress_item {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 0.25rem;
+  border-radius: 50%;
+  animation: progress_item 1s ease-in-out forwards;
+  opacity: 0;
+  transform: scale(0);
+
+  @media screen and (max-width: $mobile) {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  &:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    animation: progress_item 0.2s 1s ease-in-out forwards;
+    transform: scale(0.75);
+    opacity: 0;
+  }
+  &--correct:before {
+    background: linear-gradient(135deg, rgba(87,213,78,1) 0%, rgba(78,191,70,1) 100%);
+  }
+  &--incorrect:before {
+    background: linear-gradient(135deg, rgba(213,78,78,1) 0%, rgba(187,69,69,1) 100%);
+  }
+}
+
+@keyframes progress_item {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+// Question View
+.varChallenge__question {
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: transparent;
+}
+
+// animation for backgroun color swipe, used on questions and outro
+.varChallenge__view--swipe {
+  overflow: hidden;
+  .varChallenge__view_body {
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+  }
+  &:before {
+    content: '';
+    width: 200%;
+    position: absolute;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    transform-origin: center;
+    background-color: rgba(255, 188, 81, 1);
+    z-index: 0;
+    transform: rotate(-35deg) translate3d(0%, 110%, 0);
+  }
+}
+
+.varChallenge__view_body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(0,0,0,0.3);
+  padding: 2rem;
+}
+
+@mixin swipe-animation {
+  opacity: 1;
+  &.varChallenge__view--swipe:before {
+    transition: transform 1s ease-in-out;
+    transform: rotate(-45deg) translate3d(0,-110%,0);
+  }
+  .varChallenge__view_body {
+    transition-delay: 0.8s;
+    opacity: 1;
+  }
+}
+
+.varChallenge__question[active] {
+  pointer-events: all;
+  @include swipe-animation;
+}
+
+.varChallenge__answers {
+  display: flex;
+}
+.varChallenge__answer {
+  @extend .btn--var-yellow;
+  margin-right: 1rem;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+
+
+// initial vuee states
+#var-intro {
+  z-index: 20;
+  background-color: rgba(0,0,0,0.5);
+}
+
+#var-intro[animate-swipe] {
+  @include swipe-animation;
+}
+
+#var-start {
+  display: none;
+}
+
+#var-questions {
+  z-index: 19;
+}
+
+#var-video {
+  pointer-events: none;
+  padding: 0;
+}
+
+#var-outro {
+  background-color: #111;
+  pointer-events: none;
+  opacity: 0;
+  p span {
+    font-size: 1rem;
+  }
+}
+
+.varChallenge[ready] {
+  #var-loading {
+    display: none;
+  }
+  #var-start {
+    display: block;
+  }
+}
+
+.varChallenge[started] {
+  // #var-video {
+  //   pointer-events: none;
+  // }
+  #var-intro {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.varChallenge[ended] {
+  #var-questions {
+    pointer-events: none;
+  }
+  #var-outro {
+    opacity: 1;
+    pointer-events: all;
+    @include swipe-animation;
+  }
+}
+
+// misc
+
+.cheil-static .btn--var {
+  @extend .btn;
+  @extend .btn--primary;
+  // font-size: 1rem;
+  background: #57d54e;
+  border-color: #57d54e;
+  @media screen and (max-width: $mobile) {
+    font-size: 0.75rem;
+  }
+  &:hover {
+    background: white;
+    color: #57d54e;
+    border-color: #57d54e;
+  }
+}
+
+.cheil-static .btn--var-yellow {
+  @extend .btn--var;
+  background: rgba(255, 188, 81, 1);
+  border-color: rgba(255, 188, 81, 1);
+  &:hover {
+    color: rgba(255, 188, 81, 1);
+    border-color: rgba(255, 188, 81, 1);
+  }
+}

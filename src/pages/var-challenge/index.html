@@ -1,0 +1,66 @@
+{{>bootstrap/header}}
+
+<section class="cheil-static varChallengePage">
+
+  {{>bootstrap/header-components page="var-challenge"}}
+
+  {{>home-of-innovation/hoiKv pageTemplateData.var_challenge.kv}}
+
+  <div class="varChallengePage__body">
+    {{>home-of-innovation/hoiWrapper pageTemplateData.var_challenge.body}}
+  </div>
+
+  <!-- MAIN VAR COMPONENT HTML -->
+  <div class="varChallenge section">
+
+    <div class="varChallenge__body">
+
+      <div id="var-progress" class="varChallenge__progress"></div>
+
+      <div class="varChallenge__view varChallenge__view--swipe" id="var-intro">
+        <div class="varChallenge__view_body">
+          <h3>VAR Challenge</h3>
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          </p>
+          <div id="var-loading">Loading</div>
+          <button class="btn--var" id="var-start">Start</button>
+        </div>
+      </div>
+
+      <div class="varChallenge__view" id="var-questions"></div>
+
+      <video
+        preload="auto"
+        playsinline
+        id="var-video"
+        class="varChallenge__view"
+        src="https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/var-challenge/var-720p.mp4">
+      </video>
+
+      <div class="varChallenge__view  varChallenge__view--swipe" id="var-outro">
+        <div class="varChallenge__view_body">
+          <h3>Congratulations/Oh Dear</h3>
+          <p>
+            You Scored <span id="var-outro-score"></span>
+          </p>
+          <button class="btn--var" id="var-restart">Restart</button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- END MAIN VAR COMPONENT HTML -->
+
+  {{>components/kxSignposts items=pageTemplateData.var_challenge.signposts}}
+
+  <div class="varChallengePage__footer">
+    {{>home-of-innovation/hoiWrapper pageTemplateData.var_challenge.footer}}
+  </div>
+
+  {{>bootstrap/footer-components page="var-challenge"}}
+
+</section>
+
+{{>bootstrap/footer}}

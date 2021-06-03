@@ -161,7 +161,7 @@ class QudiniEvents {
 
   handleResize() {
     this.isMobile = window.innerWidth <= 768
-    this.eventsBody.style.height = `${this.eventsTarget.offsetHeight}px`
+    this.eventsBody.style.height = `calc(${this.eventsTarget.offsetHeight}px + 1rem)`
   }
 
   afterFilterUpdate() {
@@ -246,7 +246,7 @@ class QudiniEvents {
       this.eventsBody.removeAttribute('loading')
       setTimeout(() => {
         this.eventsBody.setAttribute('events','')
-        this.eventsBody.style.height = `${this.eventsTarget.offsetHeight}px`
+        this.eventsBody.style.height = `calc(${this.eventsTarget.offsetHeight}px + 1rem)`
         this.afterRender()
       }, 300)
 
