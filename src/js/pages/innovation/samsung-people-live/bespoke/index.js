@@ -29,8 +29,9 @@ const debugTemplate = require('../../../../../templates/partials/components/sams
 
 const MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 
-const DESKTOP_POSTER = 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/neo-qled-series/Neo_KV_D_3.jpg'
-const MOBILE_POSTER = 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/neo-qled-series/Neo_kv_M.jpg'
+// KV IMAGES
+const DESKTOP_POSTER = 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/bespoke/Neo_KV_D.jpg'
+const MOBILE_POSTER = 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/bespoke/Neo_kv_M.jpg'
 
 let SCHEDULE = [
   {

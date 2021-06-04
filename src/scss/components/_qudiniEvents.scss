@@ -1,7 +1,6 @@
 .qudiniEvents {
   max-width: 1440px;
   margin: 0 auto;
-  padding-top: 0 !important;
 
   @media screen and (max-width: $mobile) {
     padding-top: 2rem !important;
@@ -86,6 +85,7 @@
 
     svg {
       width: 3em;
+      height: 3em;
       margin-right: 1.5rem;
     }
   }
@@ -129,6 +129,7 @@
   overflow: hidden;
   font-family: 'SamsungSharpSans', sans-serif;
   transition: height 0.5s ease-in-out;
+
   &:before {
     content: '';
     display: block;
@@ -139,9 +140,11 @@
     height: 2.5rem;
     border-radius: 50%;
     transition: 0.5s ease-in-out;
-    animation: loader_spin 0.6s infinite linear;
-    background: conic-gradient(rgba(0,119,200,0.9) 10%, rgba(0,195,178,0.9) 35%, rgba(255,181,70,0.9) 60%, rgba(255,67,55,0.9) 85%);
-    filter: blur(2px);
+    // animation: loader_spin 0.6s infinite linear;
+    // background: conic-gradient(rgba(0,119,200,0.9) 10%, rgba(0,195,178,0.9) 35%, rgba(255,181,70,0.9) 60%, rgba(255,67,55,0.9) 85%);
+    background-image: url(https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/icon/2021-loader.gif);
+    background-size: cover;
+    // filter: blur(2px);
   }
 }
 

@@ -17,6 +17,13 @@
   align-items: center;
   justify-content: center;
   padding: 5rem 1rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image:url(https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/whats-on/whats_on_desktop.jpg);
+  @media screen and (max-width: $mobile) {
+    background-image:url(https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/whats-on/whats_on_Mob.jpg);
+  }
   h1 {
     text-align: center;
     font-size: 2rem;

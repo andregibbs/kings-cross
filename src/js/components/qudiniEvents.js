@@ -124,12 +124,7 @@ class QudiniEvents {
       const selectedType = e.target.id.replace('filter-type-','')
       // condition for only always on
       if (selectedType === 'alwayson') {
-        // emit event this is clicked, used to scroll to position in parent page
         // dont trigger update after filtering here as were not messsing with the actual events
-        if (this.onEventTypeChange) {
-          this.onEventTypeChange(selectedType)
-        }
-        console.log(this)
         this.eventFilters.type = false
       } else if (selectedType === this.eventFilters.type) {
         // revert if clicking the same one
@@ -138,6 +133,10 @@ class QudiniEvents {
       } else {
         this.eventFilters.type = selectedType
         this.afterFilterUpdate()
+      }
+      // emit event this is clicked, used to scroll to position in parent page
+      if (this.onEventTypeChange) {
+        this.onEventTypeChange(selectedType)
       }
     }
 

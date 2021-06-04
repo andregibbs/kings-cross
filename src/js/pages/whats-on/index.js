@@ -14,7 +14,7 @@ function KX_WhatsOn() {
   // existing whasts on page script
   // fetchData(whatson);
 
-  new QudiniEvents()
+  const qudiniEvents = new QudiniEvents()
 
   const qudiniBooking = new KXQudiniBooking() // start single instance, update with .start()
 
@@ -27,6 +27,17 @@ function KX_WhatsOn() {
       bookingWorkflowID: '7AVF4H59LMX',
       bookingJourney: KXQudiniBooking.Screens_NoDeviceInfo,
       bookingColor: '#FFBC4B'
+    }
+  }
+
+  // Qudini Events scroll
+  qudiniEvents.onEventTypeChange = (eventType) => {
+    const target = document.querySelector('.whatsOn__visit').offsetTop
+    if (eventType === 'alwayson') {
+      window.scrollTo({
+        top: target,
+        behavior: 'smooth'
+      });
     }
   }
 
