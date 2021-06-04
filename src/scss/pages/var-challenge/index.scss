@@ -52,7 +52,7 @@
 .varChallengePage__footer {
   .btn {
     @extend .btn--small;
-    width: 150px;
+    width: 150px !important;
   }
   .hoiWrapper:before {
     content: '*'

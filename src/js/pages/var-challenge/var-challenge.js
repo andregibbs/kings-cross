@@ -1,4 +1,5 @@
 import getParam from '../../../js/components/getParam'
+import { DateTime } from 'luxon';
 
 class VarChallengeComponent {
   constructor() {
@@ -62,28 +63,6 @@ class VarChallengeComponent {
     this.videoEl.load()
     // setup event listeners
     this.eventListeners()
-
-
-    // youtube
-    // let videoReady = this.youtubeReady.bind(this)
-    // let onStateChange = this.youtubeStateChange.bind(this)
-    // this.youtubeInstance = new YT.Player(this.videoEl, {
-    //   videoId: "fIYiC2Q5m_k",
-    //   height: '100%',
-    //   width: '100%',
-    //   playerVars: {
-    //     showinfo: 0,
-    //     controls: 0,
-    //     autohide: 1,
-    //     modestbranding: 1
-    //   },
-    //   events: {
-    //     videoReady,
-    //     onStateChange
-    //   }
-    // })
-    // // timeout for video progress
-    // this.videoProgressInterval = null
 
   }
 
@@ -156,31 +135,20 @@ class VarChallengeComponent {
     this.videoEl.addEventListener('timeupdate', this.trackProgress.bind(this))
 
     this.videoEl.addEventListener('ended', this.endChallenge.bind(this))
-  }
 
-  // youtube events
-  // youtubeReady() {
-  //   console.log('vid ready')
-  //   this.componentEl.setAttribute('ready', '')
-  // }
-  //
-  // youtubeStateChange(e) {
-  //   switch (e.data) {
-  //     case YT.PlayerState.PLAYING:
-  //       this.videoProgressInterval = setInterval(this.trackProgress.bind(this), 1000)
-  //       break;
-  //     case YT.PlayerState.PAUSED:
-  //     case YT.PlayerState.ENDED:
-  //       clearInterval(this.videoProgressInterval)
-  //       break;
-  //     default:
-  //   }
-  // }
+  }
 
   endChallenge() {
     const scoreEl = this.componentEl.querySelector('#var-outro-score')
-    const score = this.answerResponses.map((answer, index) => this.cuePoints[index].answer === answer).length // calc score
+    const copyEl = this.componentEl.querySelector('#var-outro-copy')
+    // works on the basis if first five cues being questions
+    const score = this.answerResponses.map((answer, index) => this.cuePoints[index].answer === answer).filter(x => x === true).length // calc score
     scoreEl.innerText = `${score} / ${this.answerResponses.length}` // set score
+
+    // change the copy on and after the 7th june
+    if (DateTime.local() >= DateTime.fromObject({year: 2021, month:6, day:7}) || getParam('copy')) {
+      copyEl.innerText = `Why not head down to KX to have another go in person and be in with the chance to get a new Samsung Neo QLED 8K TV for £1*`
+    }
     this.componentEl.setAttribute('ended', '')
     this.introEl.removeAttribute('animate-swipe')
   }
@@ -205,9 +173,11 @@ class VarChallengeComponent {
     // this.cuePointIndex = 4
     // this.videoEl.currentTime = 283
     // this.videoEl.playbackRate = 5;
+
+    // fast mode
     const fastMode = getParam('fast') || false
     if (fastMode) {
-      this.videoEl.playbackRate = 4;
+      this.videoEl.playbackRate = 5;
     }
 
     this.videoEl.play()

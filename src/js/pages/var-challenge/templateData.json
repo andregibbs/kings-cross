@@ -2,7 +2,7 @@
   "kv": {
     "media": {
       "type": "image",
-      "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/5g-podcast/KX-KVsEpisode5-KV-PC.jpg",
+      "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/var-challenge/Temp_KV_darker.jpg",
       "alt": ""
     },
     "style": {
@@ -67,7 +67,8 @@
         "type": "buttons",
         "items": [
           {
-            "copy": "View Terms & Conditions"
+            "copy": "View Terms & Conditions",
+            "id": "launch-terms"
           }
         ]
       }
