@@ -19,6 +19,7 @@
         "scroll": true
       },
       "items": [
+        "var-challenge",
         "innovation|samsung-people-live|bespoke",
         "lifestyle|the-rules-of-football",
         "lifestyle|guest-writer-of-the-week|32",
@@ -191,6 +192,22 @@
         "innovation|taste-of-tomorrow|eat-pro-green-green-lab-sara-kiyo-popowa",
         "innovation|taste-of-tomorrow|how-to-bottle-garden",
         "innovation|taste-of-tomorrow|how-to-bucketponic"
+      ]
+    },
+    {
+      "type": "link-list-id",
+      "hidden": true,
+      "dynamic": "",
+      "title": "",
+      "title_link": {
+        "cta": "",
+        "url": "/uk/explore/kings-cross"
+      },
+      "style": {
+        "scroll": true
+      },
+      "items": [
+        "var-challenge"
       ]
     }
   ]
