@@ -310,8 +310,9 @@ $search-change-duration: 0.5s;
 
 
 .GFW-Banner {
-    height: 58px;
+    // height: 59px;
     display: flex;
+    position: relative;
 
     h2 {
       text-align: center;
@@ -320,8 +321,10 @@ $search-change-duration: 0.5s;
       margin-bottom: 0;
       font-size: 1.5rem;
       z-index: 99;
-      background-image: url(https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/slimbanner_D.png);
-      background-size: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
 
       a {
         color: white;
@@ -338,6 +341,7 @@ $search-change-duration: 0.5s;
 }
 
 
+
 @media screen and (max-width: $tablet) {
   .GFW-Banner {
   height: 45px;
@@ -347,6 +351,7 @@ $search-change-duration: 0.5s;
     text-align: left;
     padding: 7px;
     font-size: 1rem;
+    background-size: 100%;
 
     br {
       display: block;
@@ -359,9 +364,9 @@ $search-change-duration: 0.5s;
   .GFW-Banner {
   height: 34px;
 
-  h2 {
-    font-size: 0.8rem;
-    padding: 5px;
-  }
+    h2 {
+      font-size: 0.8rem;
+      padding: 5px;
+    }
   }
 }

@@ -19,7 +19,6 @@
         "scroll": true
       },
       "items": [
-        "var-challenge",
         "innovation|samsung-people-live|bespoke",
         "lifestyle|the-rules-of-football",
         "lifestyle|guest-writer-of-the-week|32",
@@ -56,6 +55,7 @@
         "hideIcon": true
       },
       "items": [
+        "creativity|wild-writing",
         "creativity|personal-branding",
         "creativity|inspire-me",
         "lifestyle|restaurants-from-home",
@@ -122,6 +122,7 @@
         "scroll": true
       },
       "items": [
+        "creativity|wild-writing",
         "creativity|inspire-me|mike-will-car-photography-tips",
         "creativity|personal-branding|how-to-rebrand-your-online-presence",
         "creativity|inspire-me|starting-youtube-channel-tips",
@@ -192,22 +193,6 @@
         "innovation|taste-of-tomorrow|eat-pro-green-green-lab-sara-kiyo-popowa",
         "innovation|taste-of-tomorrow|how-to-bottle-garden",
         "innovation|taste-of-tomorrow|how-to-bucketponic"
-      ]
-    },
-    {
-      "type": "link-list-id",
-      "hidden": true,
-      "dynamic": "",
-      "title": "",
-      "title_link": {
-        "cta": "",
-        "url": "/uk/explore/kings-cross"
-      },
-      "style": {
-        "scroll": true
-      },
-      "items": [
-        "var-challenge"
       ]
     }
   ]

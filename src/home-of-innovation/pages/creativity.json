@@ -13,6 +13,7 @@
         "scroll": true
       },
       "items": [
+        "creativity|wild-writing",
         "creativity|personal-branding|how-to-rebrand-your-online-presence",
         "creativity|inspire-me|starting-youtube-channel-tips",
         "creativity|personal-branding|improving-your-professional-online-presence-ash-jones-top-3-tips",
@@ -87,6 +88,15 @@
       "dynamic": "british-museum",
       "id": "british-museum",
       "title": "British Museum"
+    },
+    {
+      "type": "group",
+      "style": {
+        "scroll": true
+      },
+      "dynamic": "wild-writing",
+      "id": "wild-writing",
+      "title": "Wild Writing"
     },
     {
       "type": "link-list-id",
