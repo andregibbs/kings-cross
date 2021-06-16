@@ -34,6 +34,10 @@
 			"components": [
 				{
 					"type": "wrapper",
+					"style": {
+						"align": "left",
+						"full": true
+					},
 					"components": [
 						{
 							"type": "paragraphs",
@@ -49,7 +53,7 @@
 							"items": [
 								{
 									"copy": "Book Tickets",
-									"url": "https://p6-qa.samsung.com/uk/explore/kings-cross/whats-on/event/?id=JZ6ZAN2ZW5P"
+									"url": "https://www.samsung.com/uk/explore/kings-cross/whats-on/event/?id=JZ6ZAN2ZW5P"
 								}
 							]
 						}

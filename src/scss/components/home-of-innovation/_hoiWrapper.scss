@@ -43,6 +43,9 @@
       object-fit: contain;
     }
   }
+  .hoiWrapper--full {
+    padding: 0 $spacing-desktop;
+  }
   .hoiWrapper .hoiWrapper {
     margin: $spacing-desktop calc(#{$spacing-desktop} / 2);
   }
