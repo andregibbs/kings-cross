@@ -90,15 +90,6 @@
       "title": "British Museum"
     },
     {
-      "type": "group",
-      "style": {
-        "scroll": true
-      },
-      "dynamic": "wild-writing",
-      "id": "wild-writing",
-      "title": "Wild Writing"
-    },
-    {
       "type": "link-list-id",
       "dynamic": "creativity-features",
       "title": "Central Saint Martins",
@@ -108,6 +99,15 @@
       "items": [
         "creativity|central-saint-martins"
       ]
+    },
+    {
+      "type": "group",
+      "style": {
+        "scroll": true
+      },
+      "dynamic": "wild-writing",
+      "id": "wild-writing",
+      "title": "Wild Writing"
     }
   ]
 }
