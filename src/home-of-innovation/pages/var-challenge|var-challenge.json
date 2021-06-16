@@ -1,0 +1,37 @@
+{
+	"title": "VAR Challenge",
+	"hideBreadcrumbs": true,
+	"description": "",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/dance-like-a-pro/Perri_Kiely_Workshop.jpg",
+	"alt": "",
+	"url": "https://www.samsung.com/uk/explore/kings-cross/var-challenge/",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/dance-like-a-pro/Perri_Kiely_Thumb.jpg",
+	"meta": {
+		"icon": "video",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 5,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "image",
+				"content": "{{var-challenge[image]}}",
+				"url": "{{var-challenge[url]}}"
+			},
+			"style": {
+				"desktop": "top",
+				"mobile": "bottom"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Lorem ispum"
+				}
+			]
+		}
+	]
+}

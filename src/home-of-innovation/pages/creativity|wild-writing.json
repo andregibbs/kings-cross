@@ -1,41 +1,74 @@
 {
-    "title": "Wild Writing",
-    "description": "",
-    "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/wild-writing/01_SAMSUNG_MARS_Banner_1440x650_V2.jpg",
-    "alt": "",
-    "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/wild-writing/01_SAMSUNG_MARS_Thumbnail_250x400_V2.jpg",
-    "meta": {
-      "icon": "series",
-      "tags": []
-    },
-    "components": [
-      {
-        "type": "kv",
-        "media": {
-          "type": "image",
-          "content": "{{creativity|wild-writing[image]}}",
-          "alt": "{{creativity|wild-writing[alt]}}"
-        },
-        "style": {
-          "desktop": "left",
-          "mobile": "top"
-        },
-        "components": [
-          {
-            "type": "headline",
-            "copy": "{{creativity|wild-writing[title]}}"
+	"title": "Wild Writing",
+	"description": "",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/wild-writing/01_SAMSUNG_MARS_Banner_1440x650_V2.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/wild-writing/01_SAMSUNG_MARS_Thumbnail_250x400_V2.jpg",
+    "group": "wild-writing",
+    "sort": 1,
+	"meta": {
+		"icon": "article",
+		"tags": []
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "image",
+				"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/wild-writing/01_SAMSUNG_MARS_Banner_1440x650_V2.jpg",
+				"alt": ""
+			},
+			"style": {
+				"desktop": "top",
+				"mobile": "bottom"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Wild Writing"
+				}
+			]
+		},
+		{
+			"type": "class-container",
+			"components": [
+				{
+					"type": "wrapper",
+					"style": {
+						"align": "left",
+						"full": true
+					},
+					"components": [
+						{
+							"type": "paragraphs",
+							"text": [
+								"Whatever your writing style, a journey to the wild with the <a href='https://www.samsung.com/uk/pc/galaxy-book/galaxy-book-pro/buy'>Galaxy Book Pro 360</a> can unleash your creativity with its true to life writing experience and on-the-go capabilities.",
+                                "To celebrate time outside, we’ve partnered with spoken-word artist George the Poet, our host Chelcee Grimes and one creative writer to show us why writing outdoors is so creatively fruitful.",
+                                "Themed around their love of the great outdoors, our talent explore creative writing on the Samsung Galaxy Book whilst in the wildest areas of London.",
+                                "Book your tickets now for our live panel discussion on the benefits of working outdoors."
+							]
+						},
+						{
+							"type": "buttons",
+							"items": [
+								{
+									"copy": "Book Tickets",
+									"url": "https://www.samsung.com/uk/explore/kings-cross/whats-on/event/?id=JZ6ZAN2ZW5P"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+        {
+            "type": "group",
+            "dynamic": "episodes",
+            "id": "wild-writing",
+            "title": "Episodes",
+            "style": {
+              "scroll": true
+            }
           }
-        ]
-      },
-      {
-        "type": "group",
-        "dynamic": "episodes",
-        "id": "wild-writing",
-        "title": "Episodes",
-        "style": {
-            "scroll": true
-        }
-    }
-    ]
-  }
-  
+	]
+}

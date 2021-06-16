@@ -101,13 +101,16 @@
       ]
     },
     {
-      "type": "group",
+      "type": "link-list-id",
+      "dynamic": "wild-writing",
+      "id": "wild-writing",
+      "title": "Wild Writing",
       "style": {
         "scroll": true
       },
-      "dynamic": "wild-writing",
-      "id": "wild-writing",
-      "title": "Wild Writing"
+      "items": [
+        "creativity|wild-writing"
+      ]
     }
   ]
 }
