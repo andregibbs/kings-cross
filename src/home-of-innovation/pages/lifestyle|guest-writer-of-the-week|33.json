@@ -1,0 +1,91 @@
+{
+	"title": "How cloud gaming has enabled this passion to be for everyone, lowering barrier to entry for pros and casual gamers alike",
+	"description": "",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/33/33-KV.png",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/33/33-KV.png",
+	"group": "guest-writer-of-the-week",
+	"sort": 33,
+	"contentLength": {
+		"length": 5,
+		"unit": "mins"
+	},
+	"meta": {
+		"icon": "article",
+		"tags": []
+	},
+	"components": [
+		{
+			"type": "css-snippet",
+			"content": ".hoiContent small { font-size: 0.75rem; }"
+		},
+		{
+			"type": "kv",
+			"media": {
+				"type": "image",
+				"content": "{{lifestyle|guest-writer-of-the-week|33[image]}}",
+				"alt": "{{lifestyle|guest-writer-of-the-week|33[alt]}}"
+			},
+			"style": {
+				"desktop": "right",
+				"mobile": "bottom"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "{{lifestyle|guest-writer-of-the-week|33[title]}}"
+				}
+			]
+		},
+		{
+			"type": "wrapper",
+			"components": [
+				{
+					"type": "paragraphs",
+					"text": [
+						"Cloud gaming is the future. Infrastructure is rolling out across the world that bolsters connectivity like never before. Remote working – and playing – is the future. Thanks to services rolled out by the major console platforms and tech companies, cloud gaming is now a viable option for serious gamers and casual hobbyists alike. In essence, the revolutionary technology that powers cloud gaming (largely leveraging the power of 5G) allows users to stream and play their favourite games directly from the cloud, instead of being tied to their living room or bedroom and a dedicated gaming device. To put it simply; we’re starting to move beyond consoles.",
+                        "Over the past few years, we’ve entered a gaming renaissance: games are getting bigger, better and are living on for far longer than they have done in the past. The days of the singular boxed product you’d pick up off the shelf are numbered: even the traditional big hitters like Battlefield and Call of Duty are eyeing up longer-running, more customer-driven ‘games as a service’ models. FIFA publisher EA alone managed to secure at least $2 billion from games as a service transaction alone in 2018<a href='https://www.gamesindustry.biz/articles/2018-10-19-ea-and-activisions-usd79bn-games-as-a-service-growth' target=_blank><sup>1<sup></a>",
+                        "The hyperactive popularity of Fortnite instigated a tidal shift in gaming, with many developers now eyeing up a singular platform to keep gamers engaged over the course of multiple years – practically every major publisher in the gaming industry is primed to have at least one ‘games as a service’ platform by the end of the year (and why not? It’s estimated the ‘games as a service’ industry has at least tripled the games industry’s overall value!<a href='https://www.vg247.com/2017/10/11/the-games-as-a-service-trend-has-tripled-the-industrys-value-report/' target=_blank><sup>2<sup></a>"
+					]
+				},
+                {
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/33/33-Fortnite.jpg",
+					"alt": "",
+                    "credit": "Fortnite is making a multiverse in its own right and attracting gamers at home and on the go. <strong>Source: Epic</strong>"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"But a single user in a single place isn’t worth as much as one that’s out and about, still signing in to – say – acquire their Destiny 2 daily bonus or polish off that Genshin Impact weekly quest out and about. Between the meteoric rise of games as a service – games that reward you for logging in multiple times per week – and the proliferation of streaming platforms offered out by major tech companies, it’s easy to see why gaming is enjoying its biggest peak since the heady arcade days of the 80s: it’s cool again, and it’s accessible to everyone.","Developers, eager to keep their players interested wherever they may roam, are making their games playable and enjoyable on multiple devices. You can enjoy the same quality experience on your phone on the Tube, for example, as you can on your console that’s hooked up to your 4K TV. But in the same way that some consoles are better than others, so are some mobile devices. Take the Samsung Galaxy Tab S7 FE 5G, for example; being a tablet that supports 5G, gamers eager to carry on their Gears 5 session on the go, for example, will experience shorter latency times, less jitter, and less packet loss in mobile gaming. To put it simply… it’ll play just like you’re hooked up to your broadband modem at home.",  
+                        "And whilst phone gaming is handy for some things – pulling your Samsung Galaxy S21 Ultra 5G out of your pocket and having a quick blast on Minecraft still feels, somehow, like magic – that’s never going to give you a particularly immersive experience. To really make gaming on the go worth it, you want a slightly larger screen: something that’s really going to show off just how far gaming graphics have come in the last few years alone. To that end, a tablet really comes into its own; the Samsung Galaxy Tab S7 FE 5G boasts a 12.4 display, and the screen (which supports up to 1600 x 2560-pixel resolution) will show off even the most cinematic triple-A experiences without any effort. Given that only the most top-end triple-A titles at the moment support Dolby Atmos, you’ll be able to enjoy prestige audio quality on-the-go (and maybe even be the envy of your friends with a certain hard-to-acquire home console…)",
+                        "If you’re the kind of gamer that likes to run multiple services at once – maybe you want to log into Destiny 2 for some digital housekeeping before jetting off to Fortnite to help your kid complete that pesky timed challenge that runs out in a few hours – you’ll be pleased to know that the Snapdragon 750G chipset and 4GB RAM on the base model will support you, even if you’re a patron of all the major streaming platforms, and like to use them all at once!",
+                        "Given that a lot of mobile devices are subject to heavy battery drain when gaming (it makes sense; it’s a lot of data to send and receive whilst putting the display and audio drivers to task, too), any serious gamer on the go is going to need a sturdy battery to see them through any given level at a time. Armed with a 10,090 mAh battery, the Samsung Galaxy Tab S7 FE 5G can give you a decent 4+ hours running a standard cloud gaming app. That should be more than enough for you to grind out a few levels and finish off that stubborn boss you’ve been grappling for days."
+                       
+					]
+				},
+                {
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/33/33-KV.png",
+					"alt": ""
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Cloud gaming, and a much more interconnected gaming future, is inevitable <a href='https://venturebeat.com/2021/04/29/how-5g-is-turning-cloud-gaming-into-growth-opportunities/' target=_blank><sup>3<sup></a>.  The biggest tech companies – even those outside of the gaming industry – are starting to muscle in on a very lucrative and popular industry. What began as a more niche way to enjoy video games, available only to those in cities with access to high-speed mobile connections, is quickly becoming democratized and available to everyone. From the most hardcore console gamer to the parent with only a passing interest in what their child is playing, gaming has quickly become available to everyone, everywhere. And with a powerful, gaming-focused tablet on your side, you can join a legion of pan-global gamers, eagerly awaiting whatever this industry leading the way in the creative arts does next.",
+                        "<em>Dom Peppiatt is a veteran video games critic and consultant copywriter that has appeared in publications ranging from Daily Star to The Guardian. Passionate about games and the greater good they can achieve, you can currently find him writing news at VG247, investigating esports at Red Bull and putting features together for NME.</em>"
+					]
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "more-articles",
+			"id": "guest-writer-of-the-week",
+			"title": "More articles",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
+}
