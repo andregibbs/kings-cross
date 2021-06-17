@@ -27,6 +27,7 @@
     "mini-svg-data-uri": "^1.2.3",
     "natives": "^1.1.6",
     "number.isnan": "^0.1.1",
+    "sass": "^1.35.1",
     "slick-carousel": "^1.8.1",
     "svg-browserify": "0.0.2",
     "whatwg-fetch": "^3.0.0"
