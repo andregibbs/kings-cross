@@ -1,11 +1,11 @@
 {
-	"title": "Wild Writing: Behind the scenes",
+	"title": "Wild Writing: George the Poet",
 	"description": "",
 	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/wild-writing/02_SAMSUNG_MARS_Banner_1440x650_V2.jpg",
 	"alt": "",
 	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/wild-writing/02_SAMSUNG_MARS_Thumbnail_250x400_V2.jpg",
     "group": "wild-writing",
-    "sort": 1,
+    "sort": 3,
 	"meta": {
 		"icon": "article",
 		"tags": []
@@ -25,7 +25,7 @@
 			"components": [
 				{
 					"type": "headline",
-					"copy": "Wild Writing: Behind the scenes"
+					"copy": "Wild Writing: George the Poet"
 				}
 			]
 		},
@@ -42,7 +42,7 @@
 						{
 							"type": "paragraphs",
 							"text": [
-								"Watch exclusive behind the scenes action of George the Poet as he embarks on his creative journey through Epping Forest with the new Galaxy Book Pro 360.",
+								"With the outdoors as his site of creative engagement, award winning spoken-word artist George the Poet explores Epping Forest for the day. Soaking in inspiration from the great outdoors and taking notes throughout on the Galaxy Book Pro, George shares his exclusive poem, all inspired by the great outdoors.",
 
 								"<a href='https://www.samsung.com/uk/pc/galaxy-book/galaxy-book-pro/buy/'>https://www.samsung.com/uk/pc/galaxy-book/galaxy-book-pro/buy/</a>"
 							]

@@ -1,9 +1,9 @@
 {
 	"title": "Wild Writing",
 	"description": "",
-	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/wild-writing/01_SAMSUNG_MARS_Banner_1440x650_V2.jpg",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/wild-writing/03_SAMSUNG_MARS_Banner_1440x650_V3.jpg",
 	"alt": "",
-	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/wild-writing/01_SAMSUNG_MARS_Thumbnail_250x400_V2.jpg",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/wild-writing/03_SAMSUNG_MARS_Thumbnail_250x400_V3.jpg",
     "group": "wild-writing",
     "sort": 1,
 	"meta": {
@@ -15,7 +15,7 @@
 			"type": "kv",
 			"media": {
 				"type": "image",
-				"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/wild-writing/01_SAMSUNG_MARS_Banner_1440x650_V2.jpg",
+				"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/wild-writing/03_SAMSUNG_MARS_Banner_1440x650_V3.jpg",
 				"alt": ""
 			},
 			"style": {
@@ -25,7 +25,7 @@
 			"components": [
 				{
 					"type": "headline",
-					"copy": "Wild Writing"
+					"copy": "Wild Writing: A guide to getting creative outdoors"
 				}
 			]
 		},
@@ -43,7 +43,7 @@
 							"type": "paragraphs",
 							"text": [
 								"Whatever your writing style, a journey to the wild with the <a href='https://www.samsung.com/uk/pc/galaxy-book/galaxy-book-pro/buy'>Galaxy Book Pro 360</a> can unleash your creativity with its true to life writing experience and on-the-go capabilities.",
-                                "To celebrate time outside, we’ve partnered with spoken-word artist George the Poet, our host Chelcee Grimes and one creative writer to show us why writing outdoors is so creatively fruitful.",
+                                "To celebrate time outside, we’ve partnered with spoken-word artist George the Poet, our host Chelcee Grimes and outdoors adventurer Alastair Humphreys to show us why writing outdoors is so creatively fruitful.",
                                 "Themed around their love of the great outdoors, our talent explore creative writing on the Samsung Galaxy Book whilst in the wildest areas of London.",
                                 "Book your tickets now for our live panel discussion on the benefits of working outdoors."
 							]
