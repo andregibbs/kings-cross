@@ -4,18 +4,23 @@
 	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/wild-writing/02_SAMSUNG_MARS_Banner_1440x650_V2.jpg",
 	"alt": "",
 	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/wild-writing/02_SAMSUNG_MARS_Thumbnail_250x400_V2.jpg",
-    "group": "wild-writing",
-    "sort": 3,
+  "group": "wild-writing",
+  "sort": 1,
 	"meta": {
-		"icon": "article",
+		"icon": "video",
 		"tags": []
+	},
+  "contentLength": {
+		"length": 2,
+		"unit": "mins"
 	},
 	"components": [
 		{
 			"type": "kv",
 			"media": {
-				"type": "image",
-				"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/wild-writing/02_SAMSUNG_MARS_Banner_1440x650_V2.jpg",
+				"type": "youtube",
+        "content": "ZcWmu9bUkVQ",
+				"poster": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/wild-writing/02_SAMSUNG_MARS_Banner_1440x650_V2.jpg",
 				"alt": ""
 			},
 			"style": {
@@ -34,17 +39,11 @@
 			"components": [
 				{
 					"type": "wrapper",
-					"style": {
-						"align": "left",
-						"full": true
-					},
 					"components": [
 						{
 							"type": "paragraphs",
 							"text": [
-								"With the outdoors as his site of creative engagement, award winning spoken-word artist George the Poet explores Epping Forest for the day. Soaking in inspiration from the great outdoors and taking notes throughout on the Galaxy Book Pro, George shares his exclusive poem, all inspired by the great outdoors.",
-
-								"<a href='https://www.samsung.com/uk/pc/galaxy-book/galaxy-book-pro/buy/'>https://www.samsung.com/uk/pc/galaxy-book/galaxy-book-pro/buy/</a>"
+								"With the outdoors as his site of creative engagement, award winning spoken-word artist George the Poet explores Epping Forest for the day. Soaking in inspiration from the great outdoors and taking notes throughout on the <a href='https://www.samsung.com/uk/pc/galaxy-book/galaxy-book-pro/buy/'>Galaxy Book Pro</a>, George shares his exclusive poem, all inspired by the great outdoors."
 							]
 						}
 					]

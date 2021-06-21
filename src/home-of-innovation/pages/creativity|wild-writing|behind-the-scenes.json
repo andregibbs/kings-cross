@@ -4,8 +4,8 @@
 	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/wild-writing/02_SAMSUNG_MARS_Banner_1440x650_V2.jpg",
 	"alt": "",
 	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/wild-writing/02_SAMSUNG_MARS_Thumbnail_250x400_V2.jpg",
-    "group": "wild-writing",
-    "sort": 2,
+  "group": "wild-writing",
+  "sort": 2,
 	"meta": {
 		"icon": "video",
 		"tags": []
@@ -21,7 +21,7 @@
 				"type": "youtube",
 				"content": "nxcjkz30e04",
 				"poster": "{{creativity|wild-writing|behind-the-scenes[image]}}",
-				"alt": ""
+				"alt": "George the Poet pictured from the torso upwards, sitting down and looking at the camera in front of a black background"
 			},
 			"style": {
 				"desktop": "top",
@@ -40,15 +40,13 @@
 				{
 					"type": "wrapper",
 					"style": {
-						"align": "left",
-						"full": true
+						"align": "left"
 					},
 					"components": [
 						{
 							"type": "paragraphs",
 							"text": [
 								"Watch exclusive behind the scenes action of George the Poet as he embarks on his creative journey through Epping Forest with the new Galaxy Book Pro 360.",
-
 								"<a href='https://www.samsung.com/uk/pc/galaxy-book/galaxy-book-pro/buy/'>https://www.samsung.com/uk/pc/galaxy-book/galaxy-book-pro/buy/</a>"
 							]
 						}
