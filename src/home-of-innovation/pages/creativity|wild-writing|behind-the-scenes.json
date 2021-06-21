@@ -5,17 +5,22 @@
 	"alt": "",
 	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/wild-writing/02_SAMSUNG_MARS_Thumbnail_250x400_V2.jpg",
     "group": "wild-writing",
-    "sort": 1,
+    "sort": 2,
 	"meta": {
-		"icon": "article",
+		"icon": "video",
 		"tags": []
+	},
+	"contentLength": {
+		"length": 2,
+		"unit": "mins"
 	},
 	"components": [
 		{
 			"type": "kv",
 			"media": {
-				"type": "image",
-				"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/wild-writing/02_SAMSUNG_MARS_Banner_1440x650_V2.jpg",
+				"type": "youtube",
+				"content": "nxcjkz30e04",
+				"poster": "{{creativity|wild-writing|behind-the-scenes[image]}}",
 				"alt": ""
 			},
 			"style": {
