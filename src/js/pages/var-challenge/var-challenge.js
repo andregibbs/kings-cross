@@ -16,35 +16,35 @@ class VarChallengeComponent {
     this.cuePointIndex = 0
     this.cuePoints = [
       {
-        time: 29.4,
+        time: 68.8,
         resultTime: 72.511687,
         question: 'Handball?',
         answers: ['Yes', 'No'],
         answer: 1 // index of answer array
       },
       {
-        time: 91.5,
+        time: 134,
         resultTime: 137.302714,
         question: 'Handball?',
         answers: ['Yes', 'No'],
         answer: 0
       },
       {
-        time: 158.1,
+        time: 193.4,
         resultTime: 197.357724,
         question: 'Penalty?',
         answers: ['Yes', 'No'],
         answer: 1
       },
       {
-        time: 216.8,
+        time: 263.6,
         resultTime: 267.154452,
         question: 'Foul?',
         answers: ['Yes', 'No'],
         answer: 1
       },
       {
-        time: 283,
+        time: 316.3,
         resultTime: 319.533193,
         question: 'Offside?',
         answers: ['Yes', 'No'],
@@ -71,7 +71,7 @@ class VarChallengeComponent {
   trackProgress() {
     const { currentTime } = this.videoEl
     const currentCue = this.cuePoints[this.cuePointIndex]
-    // console.log('progress', currentTime, this.cuePointIndex)
+    // console.log('progress', currentCue, currentTime, this.cuePointIndex)
 
     if (!currentCue) return // last cue
 
@@ -145,10 +145,12 @@ class VarChallengeComponent {
     const score = this.answerResponses.map((answer, index) => this.cuePoints[index].answer === answer).filter(x => x === true).length // calc score
     scoreEl.innerText = `${score} / ${this.answerResponses.length}` // set score
 
-    // change the copy on and after the 7th june
-    if (DateTime.local() >= DateTime.fromObject({year: 2021, month:6, day:7}) || getParam('copy')) {
-      copyEl.innerText = `Why not head down to KX to have another go in person and be in with the chance to get a new Samsung Neo QLED 8K TV for £1*`
-    }
+    // HANDOVER OUTRO COPY CHANGE - change the copy on and after the 7th june
+
+    // if (DateTime.local() >= DateTime.fromObject({year: 2021, month:6, day:7}) || getParam('copy')) {
+    //   copyEl.innerText = `Why not head down to KX to have another go in person and be in with the chance to get a new Samsung Neo QLED 8K TV for £1*`
+    // }
+
     this.componentEl.setAttribute('ended', '')
     this.introEl.removeAttribute('animate-swipe')
   }
@@ -158,11 +160,17 @@ class VarChallengeComponent {
     this.videoEl.currentTime = 0
     this.answerResponses = []
     this.videoEl.playbackRate = 1
+    // reset asked flag from trackProgress
+    this.cuePoints.forEach((cue, i) => {
+      if (cue.asked) {
+        delete cue.asked
+      }
+    })
+
     this.componentEl.removeAttribute('ended')
     this.componentEl.removeAttribute('started')
 
     this.introEl.setAttribute('animate-swipe', '')
-    // this.startChallenge()
   }
 
   startChallenge() {
@@ -193,7 +201,13 @@ class VarChallengeComponent {
             <h3>${cue.question}</h3>
             <div class="varChallenge__answers">
               ${cue.answers.map((answer, answerIndex) => {
-                return `<button class="varChallenge__answer" data-cue-index="${cueIndex}" data-answer-index="${answerIndex}">${answer}</button>`
+                return `<button
+                ga-ca="microsite"
+                ga-ac="feature"
+                ga-la="uk:kings-cross:var-challenge:challenge-q${cueIndex+1}-${answer}"
+                data-omni-type="microsite"
+                data-omni="uk:kings-cross:var-challenge:challenge-q${cueIndex+1}-${answer}"
+                class="varChallenge__answer" data-cue-index="${cueIndex}" data-answer-index="${answerIndex}">${answer}</button>`
               }).join(' ')}
             </div>
           </div>

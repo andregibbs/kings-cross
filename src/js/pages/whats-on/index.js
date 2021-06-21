@@ -128,7 +128,6 @@ function KX_WhatsOn() {
     f1TermsContainer.removeAttribute('active')
   })
   f1TermsEl.addEventListener('click', () => {
-    console.log('bg')
     f1TermsContainer.removeAttribute('active')
   })
   f1TermsBody.addEventListener('click', e => {

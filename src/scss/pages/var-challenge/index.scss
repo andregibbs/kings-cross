@@ -42,22 +42,38 @@
 
 .varChallengePage__body {
   .hoiWrapper {
+    margin-top: 0;
     margin-bottom: 0;
   }
   h2 {
-    margin: 0 auto;
+    margin: 0 auto !important;
+  }
+}
+
+.varChallengePage__body.varChallengePage__body--padbot {
+  .hoiWrapper {
+    margin-top: 0;
+    margin-bottom: 6rem;
   }
 }
 
 .varChallengePage__footer {
+  display: none; // HANDOVER remove to show terms button
+  .hoiWrapper {
+    margin: 1rem auto 3rem;
+  }
   .btn {
     @extend .btn--small;
     width: 150px !important;
+    margin: 0 auto;
   }
   .hoiWrapper:before {
-    content: '*'
+    // content: '*'
   }
 }
+
+
+/* START VAR CHALLENGE STYLES */
 
 .varChallenge {
   max-width: 1080px;

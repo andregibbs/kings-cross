@@ -7,7 +7,7 @@
   {{>home-of-innovation/hoiKv pageTemplateData.var_challenge.kv}}
 
   <div class="varChallengePage__body">
-    {{>home-of-innovation/hoiWrapper pageTemplateData.var_challenge.body}}
+    {{>home-of-innovation/hoiWrapper pageTemplateData.var_challenge.title}}
   </div>
 
   <!-- MAIN VAR COMPONENT HTML -->
@@ -17,11 +17,21 @@
 
       <div id="var-progress" class="varChallenge__progress"></div>
 
+
       <div class="varChallenge__view varChallenge__view--swipe" id="var-intro">
         <div class="varChallenge__view_body">
           <h3>VAR Challenge</h3>
+          <p>
+            Step into the shoes of a referee and have your say on VAR
+          </p>
           <div id="var-loading">Loading</div>
-          <button class="btn--var" id="var-start">Start</button>
+          <button
+            ga-ca="microsite"
+            ga-ac="feature"
+            ga-la="uk:kings-cross:var-challenge:challenge-start"
+            data-omni-type="microsite"
+            data-omni="uk:kings-cross:var-challenge:challenge-start"
+            class="btn--var" id="var-start">Start</button>
         </div>
       </div>
 
@@ -39,9 +49,15 @@
         <div class="varChallenge__view_body">
           <h3>You scored <span id="var-outro-score"></span></h3>
           <p id="var-outro-copy">
-            Why not head down to KX from 9th June to have another go in person*
+            Why not head down to KX from 9th June to have another go in person
           </p>
-          <button class="btn--var" id="var-restart">Play Again</button>
+          <button
+            ga-ca="microsite"
+            ga-ac="feature"
+            ga-la="uk:kings-cross:var-challenge:challenge-play-again"
+            data-omni-type="microsite"
+            data-omni="uk:kings-cross:var-challenge:challenge-play-again"
+            class="btn--var" id="var-restart">Play Again</button>
         </div>
       </div>
 
@@ -50,13 +66,17 @@
   </div>
   <!-- END MAIN VAR COMPONENT HTML -->
 
-  {{>components/kxSignposts items=pageTemplateData.var_challenge.signposts}}
-
-  {{>termsConditions}}
+  <div class="varChallengePage__body  varChallengePage__body--padbot">
+    {{>home-of-innovation/hoiWrapper pageTemplateData.var_challenge.body}}
+  </div>
 
   <div class="varChallengePage__footer">
     {{>home-of-innovation/hoiWrapper pageTemplateData.var_challenge.footer}}
   </div>
+
+  {{>components/kxSignposts items=pageTemplateData.var_challenge.signposts}}
+
+  {{>termsConditions}}
 
   {{>bootstrap/footer-components page="var-challenge"}}
 
