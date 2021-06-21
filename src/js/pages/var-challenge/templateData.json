@@ -20,22 +20,14 @@
         "components": [
           {
             "type": "headline",
-            "copy": "Introducing Samsung KX Neo QLED VAR Challenge"
-          },
-          {
-            "type": "paragraphs",
-            "style": {
-              "large": true
-            },
-            "text": [
-              "Have you got the eye for an offside rule? Could you spot a penalty a mile off? Think you could be called up as referee for the pending summer of sport?"
-            ]
+            "copy": "Neo QLED VAR Challenge"
           }
         ]
       },
       {
         "type": "headline",
-        "copy": "Your change to win a Neo QLED TV*"
+        "level": "4",
+        "copy": "Have you got the eye for an offside rule? Could you spot a penalty a mile off? Think you could be called up as referee for the pending summer of sport?"
       }
     ]
   },
@@ -50,14 +42,18 @@
           "<strong>Following on from the Rules of Football, Samsung KX is calling on all have-a-go heroes to step up to the plate to see if they really know more than the ref!</strong>",
           "The Samsung KX Neo VAR Challenge wants you to step into the shoes of a referee and review some of the most controversial VAR decisions over the last few years – all reshot in 8K detail.",
           "The immersive experience at Samsung KX highlights the 8K quality and superior detail of the new Samsung Neo QLED 8K TV which in turn will help in making a VAR decision much easier to call.",
-          "The Neo QLED VAR challenge at Samsung KX is open to members of the public, free of charge from June 8th until XXX, with all visitors to the experience in with a chance to win a Neo QLED TV*.",
-          "<strong>For those unable to visit KX to be in with the chance of winning the TV, you can check out the scenarios for yourself below.</strong>"
+          "The Neo QLED VAR challenge at Samsung KX is open to members of the public, free of charge from Wednesday June 9<sup>th</sup> until Sunday 20<sup>th</sup> June",
+          "<strong>For those unable to visit KX, you can check out the scenarios for yourself above.</strong>"
         ]
-      },
+      }
+    ]
+  },
+  "title": {
+    "components": [
       {
         "type": "headline",
         "level": "2",
-        "copy": "See if you can beat the VAR"
+        "copy": "See if you can beat VAR"
       }
     ]
   },

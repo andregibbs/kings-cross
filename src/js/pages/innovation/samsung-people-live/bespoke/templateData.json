@@ -22,12 +22,22 @@
       "large": true
     },
     "text": [
-      "Every Weds, Sat & Sun @ 5pm from 9th June – 18th July"
+      "Every Weds, Sat & Sun @ 5.30pm from 9th June – 11th July"
     ]
   },
   "sub_2": {
     "text": [
-      "Join our live broadcast to see a demonstration of the brand new Bespoke fridge, along with an interactive Q&A session with our product experts. You will also receive an exclusive offer on the day. Broadcasts will run every Weds, Sat & Sun from 9th June – 18th July."
+      "Join our live broadcast to see a demonstration of the brand new Bespoke fridge, along with an interactive Q&A session with our product experts. You will also receive an exclusive offer on the day.* Broadcasts will run every Weds, Sat & Sun from 9th June – 11th July."
+    ]
+  },
+  "footer": {
+    "components": [
+      {
+        "type": "paragraphs",
+        "text": [
+          "*Purchase from Samsung Shop Online. Savings based on regular Samsung.com price. Unique Code to be used at checkout and the discount will automatically be applied when one, two or more qualifying products, accumulative promos can be applied. While stocks last. T&Cs apply"
+        ]
+      }
     ]
   },
   "breadcrumbs": [

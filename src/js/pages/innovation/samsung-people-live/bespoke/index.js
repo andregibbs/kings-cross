@@ -44,122 +44,122 @@ let SCHEDULE = [
     test: true
   },
   {
-    liveDate: [2021,6,9,17,0],
-    endDate: [2021,6,9,17,30],
+    liveDate: [2021,6,9,17,30],
+    endDate: [2021,6,9,18,0],
     showID: 'srT0J0ztKyuOV1Lwra19',
-    title: 'Wednesday 9th June - 7PM',
+    title: 'Wednesday 9th June - 5.30PM',
     poster: DESKTOP_POSTER,
     mobile_poster: MOBILE_POSTER
   },
   {
-    liveDate: [2021,6,12,17,0],
-    endDate: [2021,6,12,17,30],
+    liveDate: [2021,6,12,17,30],
+    endDate: [2021,6,12,18,0],
     showID: '0O3kEnVDX0tLBSupFSSl',
-    title: 'Saturday 12th June - 7PM',
+    title: 'Saturday 12th June - 5.30PM',
     poster: DESKTOP_POSTER,
     mobile_poster: MOBILE_POSTER
   },
   {
-    liveDate: [2021,6,13,17,0],
-    endDate: [2021,6,13,17,30],
+    liveDate: [2021,6,13,17,30],
+    endDate: [2021,6,13,18,0],
     showID: '4K3i6vFjC3wFgl5wLpMz',
-    title: 'Sunday 13th June - 7PM',
+    title: 'Sunday 13th June - 5.30PM',
     poster: DESKTOP_POSTER,
     mobile_poster: MOBILE_POSTER
   },
   {
-    liveDate: [2021,6,16,17,0],
-    endDate: [2021,6,16,17,30],
+    liveDate: [2021,6,16,17,30],
+    endDate: [2021,6,16,18,0],
     showID: 'BXDZMcVV8sjNjS3ZHMPk',
-    title: 'Wednesday 16th June - 7PM',
+    title: 'Wednesday 16th June - 5.30PM',
     poster: DESKTOP_POSTER,
     mobile_poster: MOBILE_POSTER
   },
   {
-    liveDate: [2021,6,19,17,0],
-    endDate: [2021,6,19,17,30],
+    liveDate: [2021,6,19,17,30],
+    endDate: [2021,6,19,18,0],
     showID: 'xvT8mGI6xBtZPR19ypbx',
-    title: 'Saturday 19th June - 7PM',
+    title: 'Saturday 19th June - 5.30PM',
     poster: DESKTOP_POSTER,
     mobile_poster: MOBILE_POSTER
   },
   {
-    liveDate: [2021,6,20,17,0],
-    endDate: [2021,6,20,17,30],
+    liveDate: [2021,6,20,17,30],
+    endDate: [2021,6,20,18,0],
     showID: 'qk3qX9zAxVYz6qlEqZXf',
-    title: 'Sunday 20th June - 7PM',
+    title: 'Sunday 20th June - 5.30PM',
     poster: DESKTOP_POSTER,
     mobile_poster: MOBILE_POSTER
   },
   {
-    liveDate: [2021,6,23,17,0],
-    endDate: [2021,6,23,17,30],
+    liveDate: [2021,6,23,17,30],
+    endDate: [2021,6,23,18,0],
     showID: '6RrErGR8ofbvu4y1R7Da',
-    title: 'Wednesday 23rd June - 7PM',
+    title: 'Wednesday 23rd June - 5.30PM',
     poster: DESKTOP_POSTER,
     mobile_poster: MOBILE_POSTER
   },
   {
-    liveDate: [2021,6,26,17,0],
-    endDate: [2021,6,26,17,30],
+    liveDate: [2021,6,26,17,30],
+    endDate: [2021,6,26,18,0],
     showID: '7x4jluWSBMgLpZKod6i1',
-    title: 'Saturday 26th June - 7PM',
+    title: 'Saturday 26th June - 5.30PM',
     poster: DESKTOP_POSTER,
     mobile_poster: MOBILE_POSTER
   },
   {
-    liveDate: [2021,6,27,17,0],
-    endDate: [2021,6,27,17,30],
+    liveDate: [2021,6,27,17,30],
+    endDate: [2021,6,27,18,0],
     showID: 'F1R1W8IXxhQk6Udm0TLv',
-    title: 'Sunday 27th June - 7PM',
+    title: 'Sunday 27th June - 5.30PM',
     poster: DESKTOP_POSTER,
     mobile_poster: MOBILE_POSTER
   },
   {
-    liveDate: [2021,6,30,17,0],
-    endDate: [2021,6,30,17,30],
+    liveDate: [2021,6,30,17,30],
+    endDate: [2021,6,30,18,0],
     showID: 'fszbWAGZdS0gcdzMcSq0',
-    title: 'Wednesday 30th June - 7PM',
+    title: 'Wednesday 30th June - 5.30PM',
     poster: DESKTOP_POSTER,
     mobile_poster: MOBILE_POSTER
   },
   {
-    liveDate: [2021,7,3,17,0],
-    endDate: [2021,7,3,17,30],
+    liveDate: [2021,7,3,17,30],
+    endDate: [2021,7,3,18,0],
     showID: 'XoSW6W8GgddS9UgPczeO',
-    title: 'Saturday 3rd June - 7PM',
+    title: 'Saturday 3rd July - 5.30PM',
     poster: DESKTOP_POSTER,
     mobile_poster: MOBILE_POSTER
   },
   {
-    liveDate: [2021,7,4,17,0],
-    endDate: [2021,7,4,17,30],
+    liveDate: [2021,7,4,17,30],
+    endDate: [2021,7,4,18,0],
     showID: 'vPALqLOQVErfEowO769h',
-    title: 'Sunday 4th June - 7PM',
+    title: 'Sunday 4th July - 5.30PM',
     poster: DESKTOP_POSTER,
     mobile_poster: MOBILE_POSTER
   },
   {
-    liveDate: [2021,7,7,17,0],
-    endDate: [2021,7,7,17,30],
+    liveDate: [2021,7,7,17,30],
+    endDate: [2021,7,7,18,0],
     showID: 'CNPIrGCbtdKmO8QJSeHw',
-    title: 'Wednesday 7th June - 7PM',
+    title: 'Wednesday 7th July - 5.30PM',
     poster: DESKTOP_POSTER,
     mobile_poster: MOBILE_POSTER
   },
   {
-    liveDate: [2021,7,10,17,0],
-    endDate: [2021,7,10,17,30],
+    liveDate: [2021,7,10,17,30],
+    endDate: [2021,7,10,18,0],
     showID: 'SAbVuzMBv88EQPBTNWOj',
-    title: 'Saturday 10th June - 7PM',
+    title: 'Saturday 10th July - 5.30PM',
     poster: DESKTOP_POSTER,
     mobile_poster: MOBILE_POSTER
   },
   {
-    liveDate: [2021,7,11,17,0],
-    endDate: [2021,7,11,17,30],
+    liveDate: [2021,7,11,17,30],
+    endDate: [2021,7,11,18,0],
     showID: 'AZBe8j5Zp3eLd7Bam4jT',
-    title: 'Saturday 11th June - 7PM',
+    title: 'Saturday 11th July - 5.30PM',
     poster: DESKTOP_POSTER,
     mobile_poster: MOBILE_POSTER
   }
@@ -332,9 +332,9 @@ class SamsungLive {
     const madeDate = `${month} ${day}, ${year} ${hour}:${minute}`
 
     const templateData = {
-      "title": "Samsung People Live: New Galaxy Book Range",
+      "title": "Samsung People Live: Bespoke",
       "start": madeDate,
-      "description": "Join our Samsung People Live at Samsung KX to learn more about our amazing new products, the Galaxy S21 Ultra 5G, Galaxy Buds Pro and Galaxy SmartTag",
+      "description": "Join our live broadcast to see a demonstration of the brand new Bespoke fridge, along with an interactive Q&A session with our product experts.",
       "address": window.location.href,
       "duration": 60
     }
