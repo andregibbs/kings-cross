@@ -100,69 +100,69 @@ let SCHEDULE = [
     mobile_poster: MOBILE_POSTER
   },
   {
-    liveDate: [2021,6,26,17,30],
-    endDate: [2021,6,26,18,0],
+    liveDate: [2021,6,28,17,0],
+    endDate: [2021,6,28,17,30],
     showID: '7x4jluWSBMgLpZKod6i1',
-    title: 'Saturday 26th June - 5.30PM',
+    title: 'Monday 28th June - 5PM',
     poster: DESKTOP_POSTER,
     mobile_poster: MOBILE_POSTER
   },
   {
-    liveDate: [2021,6,27,17,30],
-    endDate: [2021,6,27,18,0],
+    liveDate: [2021,6,29,17,0],
+    endDate: [2021,6,29,17,30],
     showID: 'F1R1W8IXxhQk6Udm0TLv',
-    title: 'Sunday 27th June - 5.30PM',
+    title: 'Tuesday 29th June - 5PM',
     poster: DESKTOP_POSTER,
     mobile_poster: MOBILE_POSTER
   },
   {
-    liveDate: [2021,6,30,17,30],
-    endDate: [2021,6,30,18,0],
+    liveDate: [2021,7,2,17,0],
+    endDate: [2021,7,2,17,30],
     showID: 'fszbWAGZdS0gcdzMcSq0',
-    title: 'Wednesday 30th June - 5.30PM',
+    title: 'Friday 2nd July - 5PM',
     poster: DESKTOP_POSTER,
     mobile_poster: MOBILE_POSTER
   },
   {
-    liveDate: [2021,7,3,17,30],
-    endDate: [2021,7,3,18,0],
+    liveDate: [2021,7,5,17,0],
+    endDate: [2021,7,5,17,30],
     showID: 'XoSW6W8GgddS9UgPczeO',
-    title: 'Saturday 3rd July - 5.30PM',
+    title: 'Monday 5th July - 5PM',
     poster: DESKTOP_POSTER,
     mobile_poster: MOBILE_POSTER
   },
   {
-    liveDate: [2021,7,4,17,30],
-    endDate: [2021,7,4,18,0],
+    liveDate: [2021,7,6,17,0],
+    endDate: [2021,7,6,17,30],
     showID: 'vPALqLOQVErfEowO769h',
-    title: 'Sunday 4th July - 5.30PM',
+    title: 'Tuesday 6th July - 5PM',
     poster: DESKTOP_POSTER,
     mobile_poster: MOBILE_POSTER
   },
   {
-    liveDate: [2021,7,7,17,30],
-    endDate: [2021,7,7,18,0],
+    liveDate: [2021,7,9,17,0],
+    endDate: [2021,7,9,17,30],
     showID: 'CNPIrGCbtdKmO8QJSeHw',
-    title: 'Wednesday 7th July - 5.30PM',
-    poster: DESKTOP_POSTER,
-    mobile_poster: MOBILE_POSTER
-  },
-  {
-    liveDate: [2021,7,10,17,30],
-    endDate: [2021,7,10,18,0],
-    showID: 'SAbVuzMBv88EQPBTNWOj',
-    title: 'Saturday 10th July - 5.30PM',
-    poster: DESKTOP_POSTER,
-    mobile_poster: MOBILE_POSTER
-  },
-  {
-    liveDate: [2021,7,11,17,30],
-    endDate: [2021,7,11,18,0],
-    showID: 'AZBe8j5Zp3eLd7Bam4jT',
-    title: 'Saturday 11th July - 5.30PM',
+    title: 'Friday 9th July - 5PM',
     poster: DESKTOP_POSTER,
     mobile_poster: MOBILE_POSTER
   }
+  // {
+  //   liveDate: [2021,7,10,17,30],
+  //   endDate: [2021,7,10,18,0],
+  //   showID: 'SAbVuzMBv88EQPBTNWOj',
+  //   title: 'Saturday 10th July - 5.30PM',
+  //   poster: DESKTOP_POSTER,
+  //   mobile_poster: MOBILE_POSTER
+  // },
+  // {
+  //   liveDate: [2021,7,11,17,30],
+  //   endDate: [2021,7,11,18,0],
+  //   showID: 'AZBe8j5Zp3eLd7Bam4jT',
+  //   title: 'Saturday 11th July - 5.30PM',
+  //   poster: DESKTOP_POSTER,
+  //   mobile_poster: MOBILE_POSTER
+  // }
 ]
 
 class SamsungLive {
@@ -250,7 +250,9 @@ class SamsungLive {
       showData.title = nextShow.title
       showData.poster = nextShow.poster
       showData.mobile_poster = nextShow.mobile_poster
-      showData.cta = `<span>Watch Previous Stream:</span> ${currentShow.title}`
+      // showData.cta = `<span>Watch Previous Stream:</span> ${currentShow.title}`
+      showData.cta = `Replay Live Demo`
+      showData.nextStreamCopy = `Next Live Stream on Bespoke Fridges<br>`
     } else if (nextShow.soon) {
       // if next show is soon, show that instead
       showData = nextShow

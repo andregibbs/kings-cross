@@ -19,7 +19,11 @@
       {{#if live}}
       {{else lastShow}}
       {{else}}
-        <h4>Next Stream:</h4>
+        {{#if nextStreamCopy}}
+          <h4>{{{nextStreamCopy}}}</h4>
+        {{else}}
+          <h4>Next Stream:</h4>
+        {{/if}}
       {{/if}}
       <h2>{{title}}</h2>
     </div>

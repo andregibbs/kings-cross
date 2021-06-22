@@ -10,7 +10,7 @@
 		"icon": "video",
 		"tags": []
 	},
-	"contentLength": {
+  "contentLength": {
 		"length": 2,
 		"unit": "mins"
 	},
