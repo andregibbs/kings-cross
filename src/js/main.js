@@ -150,7 +150,7 @@ $j(document).ready(function () {
 
 		case "/uk/explore/kings-cross/support/":
 			fetchData(function (allEvents) {
-				calendar("https://bookings.qudini.com/booking-widget/booker/slots/IZ0LYUJL6B0/4375/62764/0", "appointment", allEvents);
+				calendar("https://bookings.qudini.com/booking-widget/booker/slots/IZ0LYUJL6B0/4375/62764/0", "appointment");
 			});
 			//Support goes last!
 			support();

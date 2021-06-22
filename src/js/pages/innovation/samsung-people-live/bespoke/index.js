@@ -33,6 +33,8 @@ const MONTHS = ["January", "February", "March", "April", "May", "June", "July", 
 const DESKTOP_POSTER = 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/bespoke/Neo_KV_D.jpg'
 const MOBILE_POSTER = 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/bespoke/Neo_kv_M.jpg'
 
+let STEAM_DURATION = 30 // mins
+
 let SCHEDULE = [
   {
     liveDate: [2021,6,8,15,0],
@@ -253,6 +255,7 @@ class SamsungLive {
       // showData.cta = `<span>Watch Previous Stream:</span> ${currentShow.title}`
       showData.cta = `Replay Live Demo`
       showData.nextStreamCopy = `Next Live Stream on Bespoke Fridges<br>`
+      showData.duration = `${STEAM_DURATION} mins`
     } else if (nextShow.soon) {
       // if next show is soon, show that instead
       showData = nextShow
@@ -338,7 +341,7 @@ class SamsungLive {
       "start": madeDate,
       "description": "Join our live broadcast to see a demonstration of the brand new Bespoke fridge, along with an interactive Q&A session with our product experts.",
       "address": window.location.href,
-      "duration": 60
+      "duration": STEAM_DURATION
     }
     calendarTarget.innerHTML = ''
     calendarTarget.insertAdjacentHTML('beforeend', hoiAddToCalendarTemplate(templateData))

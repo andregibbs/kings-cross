@@ -69,6 +69,20 @@
   max-width: 18rem;
 }
 
+.hoiBambuser__ContentTime {
+  @extend .hoiKv__ContentTime;
+  left: 1.5rem;
+  bottom: 2rem;
+  right: auto;
+
+  @media screen and (min-width: $mobile + 1) {
+    top: 1.5rem;
+    right: 1.5rem;
+    bottom: auto;
+    left: auto;
+  }
+}
+
 @keyframes icon-pulse {
   0%, 100% {
     transform: scale(1);
