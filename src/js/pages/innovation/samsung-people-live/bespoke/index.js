@@ -30,10 +30,10 @@ const debugTemplate = require('../../../../../templates/partials/components/sams
 const MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 
 // KV IMAGES
-const DESKTOP_POSTER = 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/bespoke/Neo_KV_D.jpg'
-const MOBILE_POSTER = 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/bespoke/Neo_kv_M.jpg'
+const DESKTOP_POSTER = 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/bespoke/LiveSamsungPeople_1440x344_Desktop_V1.jpg'
+const MOBILE_POSTER = 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/bespoke/Neo_kv_Mobile_V1.jpg'
 
-let STEAM_DURATION = 30 // mins
+const STEAM_DURATION = 15 // mins
 
 let SCHEDULE = [
   {
