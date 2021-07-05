@@ -1,0 +1,54 @@
+{
+	"title": "Inspire Me: How to plan a staycation with Postcards by Hannah",
+	"description": "",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/inspire-me/Hannah_KV.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/inspire-me/hannah_thumb.jpg",
+	"group": "inspire-me",
+	"sort": 4,
+	"meta": {
+		"icon": "video",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 5,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "youtube",
+				"content": "7zL-UJfvZYc",
+				"poster": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/inspire-me/Hannah_KV.jpg",
+				"alt": ""
+			},
+			"style": {
+				"desktop": "top",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "How to plan a staycation with Postcards by Hannah"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+            "Welcome to the Inspire Me. A series of tutorials led by industry experts across photography, gaming and travel, designed to upskill and inspire you to dive into new passions.",
+            "Hannah Brotherton is the award-winning travel blogger and country living content creator behind the highly followed Instagram accounts Postcards by Hannah and Instabritain. Having worked in the travel industry for years, Hannah shares her top tips and tricks on how to plan the ultimate staycation in the UK, with the help of Samsung's new <a href=\"https://www.samsung.com/uk/pc/galaxy-book/galaxy-book-pro/buy/?modelCode=NP950QDB-KB1UK&cid=UK_PPC_4559977276_Eval:+Product_Galaxy+Book+Pro+360_Exact_Core_Exact\">Galaxy Book Pro 360</a>. From using social media to discover new locations, to finding accommodation tailored to your needs, tune in for the best travel hacks to use this summer."
+					]
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "episodes",
+			"id": "inspire-me",
+			"title": "More episodes",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
+}

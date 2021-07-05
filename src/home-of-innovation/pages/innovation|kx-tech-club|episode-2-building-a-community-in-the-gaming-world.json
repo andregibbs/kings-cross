@@ -1,0 +1,54 @@
+{
+	"title": "KX Tech Club: Building a Community in the Gaming World",
+	"description": ".",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/kx-tech-pages/2/01_Samsung_Tech_Club_BANNER_1440x810.jpg",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/kx-tech-pages/2/03_Samsung_Tech_Club_Thumbnails_400x255.jpg",
+	"group": "kx-tech-club",
+  "hidden": true,
+	"sort": 2,
+	"meta": {
+		"icon": "video",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 5,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "youtube",
+				"content": "orIj9uG2SfA",
+				"poster": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/kx-tech-pages/2/01_Samsung_Tech_Club_BANNER_1440x810.jpg",
+				"alt": ""
+			},
+			"style": {
+				"desktop": "top",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "KX Tech Club: Building a Community in the Gaming World"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+            "Session 2 of KX Tech Club sees hosts Rebel Book Club team up with community gaming platform Gaymers iNC, video gamer Elz the Witch, and a member of the Samsung KX team to discuss all things gaming, tech, and community. Whereas once gaming was seen as a solo activity, gamers have found themselves building friendships and relationships with like-minded people across the world, as gaming has become about more than just games.",
+            "In this session, the panel discuss how gaming community platforms have grown, how gaming for many has turned into business, and look at some of the best gaming tech available to gamers, such as the <a href=\"https://www.samsung.com/uk/smartphones/galaxy-s21-5g/\">S21 Ultra 5G</a> for mobile gaming, and the <a href=\"https://www.samsung.com/uk/monitors/gaming/dqhd-monitor-with-1000r-curved-display-49-inch-lc49g93tssuxen/\">Odyssey G9 monitors</a> for those looking to get the perfect at home set-up."
+					]
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "articles",
+			"style": {
+				"scroll": true
+			},
+			"id": "kx-tech-club",
+			"title": "Articles"
+		}
+	]
+}

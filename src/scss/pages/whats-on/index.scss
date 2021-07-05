@@ -124,6 +124,59 @@
   }
 }
 
+.whatsOn__booking_panel--full {
+  width: 100%;
+  margin-right: 0;
+  @media screen and (min-width: $mobile + 1) {
+    .whatsOn__booking_panel_body {
+      width: 50%;
+    }
+  }
+}
+
+.panel--workstations-instore {
+  .whatsOn__booking_panels {
+    margin-top: 0;
+  }
+  .whatsOn__booking_panel_body {
+    width: 100%;
+    @media screen and (min-width: $mobile + 1) {
+      margin-right: 1rem;
+      width: 50%;
+    }
+  }
+  .whatsOn__booking_panel_body_wrap {
+    @media screen and (min-width: $mobile + 1) {
+      display: flex;
+    }
+  }
+  .whatsOn__booking_panel_quote {
+    text-align: center;
+    width: 100%;
+    @media screen and (min-width: $mobile + 1) {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    span {
+      font-size: 1rem;
+      font-family: SamsungSharpSans;
+      @media screen and (min-width: $mobile + 1) {
+        font-size: 1.8rem;
+        max-width: 400px;
+      }
+    }
+  }
+  .whatsOn__booking_panel_image {
+    background-image: url('https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/whats-on/workstations-2-1260x450.jpg');
+    @media screen and (min-width: $mobile + 1) {
+      padding-top: 20%;
+      background-image: url('https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/whats-on/workstations-2-2560x450.jpg');
+    }
+  }
+}
+
 .btn--whatson {
   border-color: #FFBC4B;
   background: black;

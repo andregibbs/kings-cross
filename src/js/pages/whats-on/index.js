@@ -137,7 +137,9 @@ function KX_WhatsOn() {
   // delay resize listener to avoid initial resize event
   setTimeout(() => {
     window.addEventListener('resize', () => {
-      showF1Table()
+      if (openF1Times.getAttribute('active') != null) {
+        showF1Table()
+      }
     })
   }, 1000)
 }
