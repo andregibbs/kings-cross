@@ -1,20 +1,8 @@
-{{#if config.staging}}
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
-  <body>
-{{else}}
-  <!--#include virtual="/uk/aem/header-pdp.html"-->
-{{/if}}
+{{>bootstrap/header}}
 
 <section class="cheil-static">
 
-	{{>stylesheet }}
-
-	{{>components/common/kxNav/main }}
+	{{>bootstrap/header-components page="whats-on/event"}}
 
 	<section class="singleEvent">
 		<!-- To be populated with JS -->
@@ -189,21 +177,12 @@
 		</div>
 	</section>
 
-	{{>components/common/findKx }}
-
-	{{>components/socialMedia }}
+  {{>bootstrap/footer-components page="whats-on/event"}}
 
 	{{>templateScripts/event/singleEvent }}
 	{{>templateScripts/booking/book }}
 	{{>templateScripts/event/eventTile }}
 
-	{{>scripts }}
-
 </section>
 
-{{#if config.staging}}
-  </body>
-</html>
-{{else}}
-<!--#include virtual="/uk/aem/footer-pdp.html"-->
-{{/if}}
+{{>bootstrap/footer}}

@@ -1,6 +1,8 @@
 /*
 
-  QudiniEvents Viewer
+  QudiniEvents Viewer Component
+
+  *** this.fetchEvents now abstracted to util/FetchQudiniEvents ***
 
   * Qudini description structure
 
@@ -293,7 +295,10 @@ class QudiniEvents {
       if (!properties) return {description}
       // try catch parsing data as json
       try { JSON.parse(properties) }
-      catch (e) { return {description, properties: false} }
+      catch (e) {
+        console.log('qudini description properties error', e)
+        return {description, properties: false}
+      }
       // return json
       return {description, properties: JSON.parse(properties)}
     }

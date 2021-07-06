@@ -65,7 +65,7 @@ export default function bookingRefFetcher(AllEvents) {
 
     function bookingReceived(_bookingData) {
       loading.done(1);
-      doLog(bookingData);
+      doLog(_bookingData);
       bookingData = _bookingData
 
       $j.get({
@@ -105,6 +105,10 @@ export default function bookingRefFetcher(AllEvents) {
         ui.inputScreen.style.display = "none";
         ui.bookingScreen.style.display = "block";
 
+        // hide address if webinar, maybe update with webinar url
+        if (eventData.isWebinar) {
+          $j('.request__event').hide()
+        }
 
         if (bookingData.status == "CANCELLED") {
             showCancelled(eventData);

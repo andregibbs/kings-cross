@@ -7,7 +7,7 @@
 		</div>
 
 		<section class="event__header section__inner">
-			
+
 			<div class="event__header__top">
 				[[#unless externalbookinglink ]]
 				<div class="event__header__top__left">
@@ -15,18 +15,18 @@
 						[[ startDate ]] | [[ startTime ]]
 					</span>
 					<span class="action-capacity limited action">
-						
+
 						<span class="action-btn limited__availability">
 						[[ limitedAvailability ]]
 					</span>
-					
-					</span>
-					
 
-					
+					</span>
+
+
+
 				</div>[[/unless]]
-			
-			
+
+
 
 				{{!-- [[#if sponsor]]<span id="sponsor-mobile">Brought to you by [[ capitalize sponsor ]]</span>[[/if]] --}}
 				[[#if externalbookinglink ]]
@@ -61,31 +61,31 @@
 
 
 						[[#if reoccurring ]]
-												
+
 							[[else]]
 							<span class=" event-sold-out">Oops! Looks like this event is now sold out. Not to worry, you can sign up below to keep updated on our other upcoming events.</span>
 						[[/if]]
-						
-					{{!-- [[#if externalbookinglink ]]						
-							
+
+					{{!-- [[#if externalbookinglink ]]
+
 							[[#if reoccurring]]
-								
+
 							[[/if]]
 						[[else]]
 						[[#if reoccurring ]]
-												
+
 							[[else]]
 							<span class="tile-desc event-sold-out">Oops! Looks like this event is now sold out. Not to worry, you can sign up below to keep updated on our other upcoming events.</span>
 						[[/if]]
 						[[/if]] --}}
 
-					
+
 					</div>
 					<div class="event_details">
 						[[#if sponsor ]]<div class="event__header-sponsor"><span id="sponsor">Brought to you by [[ capitalize sponsor ]]</span></div>[[/if]]
 						<p class="event__header-date">[[ startDate ]]<br>[[ startTime ]] - [[ endTime ]]</p>
 						[[#unless externalbookinglink ]]
-						
+
 						<div class="limited action">
 							<p class="event__header-date limited__availability action-btn">[[ limitedAvailability ]]</p>
 						</div>
@@ -96,17 +96,17 @@
 				<section class="event__section">
 					<div class="event__content-book action">
 
-						[[#if externalbookinglink ]]						
-							<a ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:[[ title ]]_book-now" data-omni-type="microsite" data-omni="uk:kings-cross:event-page:[[ title ]]:book-now" href="[[externalbookinglink]]" class="link-book btn btn--primary" target="_blank">{{#ifCond @root.config.closed true}}Learn more{{else}}book now{{/ifCond}}</a>							
+						[[#if externalbookinglink ]]
+							<a ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:[[ title ]]_book-now" data-omni-type="microsite" data-omni="uk:kings-cross:event-page:[[ title ]]:book-now" href="[[externalbookinglink]]" class="link-book btn btn--primary" target="_blank">{{#ifCond @root.config.closed true}}Learn more{{else}}[[#if singleBookingCTA]][[singleBookingCTA]][[else]]book now[[/if]]{{/ifCond}}</a>
 							[[#if reoccurring]]
-								<button ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:[[ dash title ]]_other-times" data-omni-type="microsite" data-omni="uk:kings-cross:event-page:[[ dash title ]]:other-times" class="action-btn btn btn--secondary changeTime">Other Times</button>								
+								<button ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:[[ dash title ]]_other-times" data-omni-type="microsite" data-omni="uk:kings-cross:event-page:[[ dash title ]]:other-times" class="action-btn btn btn--secondary changeTime">Other Times</button>
 							[[/if]]
 						[[else]]
 						[[#if reoccurring ]]
-							<button ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:[[ dash title ]]_book-tickets" data-omni-type="microsite" data-omni="uk:kings-cross:event-page:[[ dash title ]]:book-tickets" class="action-btn btn btn--primary">book tickets</button>
-							<button ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:[[ dash title ]]_other-times" data-omni-type="microsite" data-omni="uk:kings-cross:event-page:[[ dash title ]]:other-times" class="action-btn btn btn--secondary changeTime">Other Times</button>							
+							<button ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:[[ dash title ]]_book-tickets" data-omni-type="microsite" data-omni="uk:kings-cross:event-page:[[ dash title ]]:book-tickets" class="action-btn btn btn--primary">[[#if singleBookingCTA]][[singleBookingCTA]][[else]]book tickets[[/if]]</button>
+							<button ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:[[ dash title ]]_other-times" data-omni-type="microsite" data-omni="uk:kings-cross:event-page:[[ dash title ]]:other-times" class="action-btn btn btn--secondary changeTime">Other Times</button>
 							[[else]]
-							<button ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:[[ dash title ]]_book-tickets" data-omni-type="microsite" data-omni="uk:kings-cross:event-page:[[ dash title ]]:book-tickets" class="action-btn btn btn--primary">book tickets</button>
+							<button ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:[[ dash title ]]_book-tickets" data-omni-type="microsite" data-omni="uk:kings-cross:event-page:[[ dash title ]]:book-tickets" class="action-btn btn btn--primary">[[#if singleBookingCTA]][[singleBookingCTA]][[else]]book tickets[[/if]]</button>
 							<a href="https://a3p.eucdm.samsung.com/webApp/samAPP581?lang=en_GB" data-lity class=" btn btn--secondary event-popup">Update me</a>
 						[[/if]]
 						[[/if]]

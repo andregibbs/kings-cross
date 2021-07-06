@@ -113,8 +113,9 @@
   &__img {
     max-width: 50%;
     min-height: 400px;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
     width: 100%;
 
     @media screen and (max-width: $desktop) {

@@ -1,0 +1,56 @@
+@import '../../../bootstrap';
+
+@import '../../../components/templateScripts/singleEvent';
+@import '../../../components/templateScripts/eventTile';
+@import '../../../components/book';
+
+@import '../../../components/common/kxEventTile';
+
+/*=============================================
+=            Event Page            =
+=============================================*/
+
+.relatedEvents {
+  box-shadow: 0px -15px 16px -6px #000;
+  padding-top: 0 !important;
+  position: relative;
+  background: #0c0c0c;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+
+    &__see {
+      cursor: pointer;
+    }
+
+    h2 {
+      font-size: em(30);
+    }
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: $mobile) {
+      justify-content: space-around;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      //Heights to be the same as .eventTile
+      //   height: get-mobile-vw(300);
+      height: 230px;
+      max-height: 230px;
+      overflow-y: hidden;
+    }
+
+    &--fewerThanFourEvents {
+      justify-content: space-evenly;
+    }
+    .eventTile:first-of-type {
+      margin-left: 0;
+    }
+  }
+}
+
+/*=====  End of Event Page  ======*/

@@ -2,7 +2,14 @@
   style="
     background-image: url({{ image }})
     background-size: cover;
-    border-top: solid 11px {{#if extra}}{{ extra.passionColor }}{{/if}}
+    border-top: solid 11px
+      {{#if properties}}
+        {{#if properties.color}}
+          {{properties.color}}
+        {{/if}}
+      {{else}}
+        {{#if extra}}{{ extra.passionColor }}{{/if}}
+      {{/if}}
   ">
 	<a
     ga-ca="microsite"
@@ -17,7 +24,7 @@
 				<span class="kxEventTile__tile-date">{{ startDate }} | {{ startTime }}</span>
 			<h3 class="kxEventTile__tile-title">{{ title }}</h3>
 			</div>
-
+      {{json this}}
 			<div class="kxEventTile__content__bottom">
 				{{#each suitablesName }}
 				<span class="kxEventTile__tile-suitable">{{ this }}</span>
