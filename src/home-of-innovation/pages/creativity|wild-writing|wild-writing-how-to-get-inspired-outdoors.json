@@ -1,0 +1,63 @@
+{
+	"title": "Wild Writing: How to get inspired outdoors",
+	"description": "",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/wild-writing/wild-writing-how-to-get-inspired-outdoors/03_Samsung_Web_ProjectName_V1_1440x650.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/wild-writing/wild-writing-how-to-get-inspired-outdoors/03_Samsung_Web_ProjectName_V1_250x400.jpg",
+  "group": "wild-writing",
+  "sort": 4,
+	"meta": {
+		"icon": "video",
+		"tags": []
+	},
+  "contentLength": {
+		"length": 2,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "youtube",
+        "content": "ZcWmu9bUkVQ",
+				"poster": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/wild-writing/wild-writing-how-to-get-inspired-outdoors/03_Samsung_Web_ProjectName_V1_1440x650.jpg",
+				"alt": ""
+			},
+			"style": {
+				"desktop": "top",
+				"mobile": "bottom"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Wild Writing: How to get inspired outdoors"
+				}
+			]
+		},
+		{
+			"type": "class-container",
+			"components": [
+				{
+					"type": "wrapper",
+					"components": [
+						{
+							"type": "paragraphs",
+							"text": [
+								"Lacking inspiration and a creative boost? Join our KX host Chelcee Grimes and outdoors adventurer and writer Alastair Humphreys as they discuss their top tips and tricks on how to get creative. Within the session, Chelcee and Alistair take a barge trip down Regents Canal, showing you how to get your creative juices flowing with the help of the new <a href=\"https://www.samsung.com/uk/pc/galaxy-book/galaxy-book-pro/buy/\">Galaxy Book Pro.</a>"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "episodes",
+			"id": "wild-writing",
+			"title": "Episodes",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
+}

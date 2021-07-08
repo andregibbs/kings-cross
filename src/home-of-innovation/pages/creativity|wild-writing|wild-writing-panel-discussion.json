@@ -1,0 +1,63 @@
+{
+	"title": "Wild Writing: Creatives in conversation",
+	"description": "",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/wild-writing/wild-writing-panel-discussion/03_SAMSUNG_MARS_Banner_1440x650_V3.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/wild-writing/wild-writing-panel-discussion/03_SAMSUNG_MARS_Thumbnail_250x400_V3.jpg",
+  "group": "wild-writing",
+  "sort": 5,
+	"meta": {
+		"icon": "video",
+		"tags": []
+	},
+  "contentLength": {
+		"length": 2,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "youtube",
+        "content": "ZcWmu9bUkVQ",
+				"poster": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/wild-writing/wild-writing-panel-discussion/03_SAMSUNG_MARS_Banner_1440x650_V3.jpg",
+				"alt": ""
+			},
+			"style": {
+				"desktop": "top",
+				"mobile": "bottom"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Wild Writing: Creatives in conversation"
+				}
+			]
+		},
+		{
+			"type": "class-container",
+			"components": [
+				{
+					"type": "wrapper",
+					"components": [
+						{
+							"type": "paragraphs",
+							"text": [
+								"Join our KX host Chelcee Grimes, spoken-word artist George the Poet and outdoors adventurer and writer Alastair Humphreys as they discuss their love of the great outdoors and what inspires them most when it comes to the creative process, live at Samsung KX."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "episodes",
+			"id": "wild-writing",
+			"title": "Episodes",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
+}
