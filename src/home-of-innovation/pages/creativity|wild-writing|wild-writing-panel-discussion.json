@@ -1,11 +1,12 @@
 {
 	"title": "Wild Writing: Creatives in conversation",
 	"description": "",
-	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/wild-writing/wild-writing-panel-discussion/03_SAMSUNG_MARS_Banner_1440x650_V3.jpg",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/wild-writing/wild-writing-panel-discussion/01-SAMSUNG_MARS_HeadShots_V3_400x255_George_Chelcee_Alastair.jpg",
 	"alt": "",
 	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/wild-writing/wild-writing-panel-discussion/03_SAMSUNG_MARS_Thumbnail_250x400_V3.jpg",
   "group": "wild-writing",
   "sort": 5,
+  "hidden": true,
 	"meta": {
 		"icon": "video",
 		"tags": []

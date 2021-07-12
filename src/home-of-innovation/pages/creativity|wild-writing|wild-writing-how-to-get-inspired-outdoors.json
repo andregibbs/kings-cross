@@ -3,9 +3,10 @@
 	"description": "",
 	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/wild-writing/wild-writing-how-to-get-inspired-outdoors/03_Samsung_Web_ProjectName_V1_1440x650.jpg",
 	"alt": "",
-	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/wild-writing/wild-writing-how-to-get-inspired-outdoors/03_Samsung_Web_ProjectName_V1_250x400.jpg",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/wild-writing/wild-writing-how-to-get-inspired-outdoors/01-SAMSUNG_MARS_HeadShots_V3_400x255_Chelcee_Alastair.jpg",
   "group": "wild-writing",
   "sort": 4,
+  "hidden": true,
 	"meta": {
 		"icon": "video",
 		"tags": []
