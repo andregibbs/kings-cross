@@ -1,0 +1,47 @@
+{
+	"title": "Samsung KX partners with Patrick McDowell to unveil slow fashion looks of the future",
+	"description": "",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/slow-fashion-catwalk.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/slow-fashion-catwalk.jpg",
+	"group": "graduate-fashion-week-student-blog",
+  "hidden": true,
+	"sort": 6,
+	"meta": {
+		"icon": "article",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 4,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "image",
+				"content": "{{creativity|graduate-fashion-week|student-blog|slow-fashion-catwalk[image]}}",
+				"alt": ""
+			},
+			"style": {
+				"desktop": "right",
+				"mobile": "bottom"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Samsung KX partners with Patrick McDowell to unveil slow fashion looks of the future"
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "episodes",
+			"id": "graduate-fashion-week-student-blog",
+			"title": "Articles",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
+}
