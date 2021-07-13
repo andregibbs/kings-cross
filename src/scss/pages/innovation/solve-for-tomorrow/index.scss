@@ -18,7 +18,7 @@
   @import '../../../components/home-of-innovation/hoiAddToCalendar';
   // @import '../../../components/home-of-innovation/hoiImagePanelLinks';
   // @import '../../../components/home-of-innovation/hoiBambuser';
-  // @import '../../../components/home-of-innovation/hoiBreadcrumbs';
+  @import '../../../components/home-of-innovation/hoiBreadcrumbs';
   // @import '../../../components/common/kxCountdown';
 }
 
@@ -36,6 +36,24 @@
 
 .solveForTomorrowPage {
 
+  .hoiWrapper {
+    a:not(.btn) {
+      color: #5ADC52;
+    }
+  }
+
+  .hoiBreadcrumbs {
+    height: 50px;
+    align-items: center;
+    display: flex;
+    .hoiBreadcrumbs__Link {
+      color: white !important;
+      letter-spacing: 1px;
+      margin-bottom: 0;
+      white-space: nowrap;
+    }
+  }
+
   .hoiKV {
     overflow: hidden;
   }
@@ -48,9 +66,9 @@
       display: none;
     }
     &[active] {
-      height: calc(100vh - 50px); // minus nav height
+      height: calc(100vh - 100px); // minus nav height + breadcrumbs height
       @media screen and (max-width: $mobile) {
-        height: calc(60vh - 50px); // minus nav height
+        height: calc(60vh - 100px); // minus nav height + breadcrumbs height
       }
       .hoiKv__MediaImage {
         pointer-events: none;

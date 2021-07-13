@@ -12,7 +12,7 @@ const ADD_TO_CALENDAR = {
 }
 
 const TWITCH = {
-  CHANNEL:'gamesdonequick',
+  CHANNEL:'pokerstars247',
   TARGET_ELEMENT: 'twitch-embed-target'
 }
 

@@ -1,4 +1,18 @@
 {
+  "breadcrumbs": [
+    {
+      "url": "/uk/explore/kings-cross/",
+      "title": "Home"
+    },
+    {
+      "url": "/uk/explore/kings-cross/innovation/",
+      "title": "Innovation"
+    },
+    {
+      "url": "/uk/explore/kings-cross/innovation/solve-for-tomorrow/",
+      "title": "Samsung Solve for Tomorrow: Future Talks"
+    }
+  ],
   "body": {
     "components": [
       {
@@ -21,6 +35,17 @@
         "type": "paragraphs",
         "text": [
           "<br><strong>Want to ask a questions live?</strong><br/>Join the Solve for Tomorrow Community on Discord and submit your questions directly to the experts via our #sustainability channel."
+        ]
+      }
+    ]
+  },
+  "body2": {
+    "components": [
+      {
+        "type": "paragraphs",
+        "text": [
+          "<br/>",
+          "More information on Solve for Tomorrow and the different ways you can get involved can be found <a href=\"https://www.samsung.com/uk/solvefortomorrow/\">here.</a>"
         ]
       }
     ]

@@ -79,7 +79,7 @@ export default function upcomingEvents( events, topicId, currentEvent ) {
       if (!sorted_dates[i]) {
         continue;
       }
-      console.log('aaa', sorted_dates[i])
+      // console.log('aaa', sorted_dates[i])
       const options = {
         identifier: sorted_dates[i].identifier,
         groupSize:  sorted_dates[i].maxGroupSize,

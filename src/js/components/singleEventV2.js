@@ -6,6 +6,9 @@ import upcomingEvents from "./upcomingEventsV2";
 import getUrlVars from "./getUrlVars";
 import createDropDown from "./createDropDown";
 import doLogFunction from '../dev/doLog';
+
+import FetchQudiniEvents from '../util/FetchQudiniEvents';
+
 var doLog = doLogFunction();
 
 export default function singleEvent(events) {
@@ -22,7 +25,8 @@ export default function singleEvent(events) {
   // Populating event details from query string
   // =================================================
 
-  let seriesIdsAsInts = []
+  // let seriesIdsAsInts = []
+  let eventIds = []
 
   // $j.get({
   //   url: "https://bookings.qudini.com/booking-widget/event/series/" + kxConfig.seriesId,
@@ -33,62 +37,80 @@ export default function singleEvent(events) {
   // script has to pull in both series types to fetch their ids,
   // this is checked against the series id of the single event data from the url
 
-  function getSeriesData(seriesId, cb, data) {
-    return $j.get("https://bookings.qudini.com/booking-widget/event/series/" + seriesId, {
-      'timezone': "Europe/London",
-      'isoCurrentDate': isoCurrentDate.toISOString()
-    })
-  }
+  // function getSeriesData(seriesId, cb, data) {
+  //   return $j.get("https://bookings.qudini.com/booking-widget/event/series/" + seriesId, {
+  //     'timezone': "Europe/London",
+  //     'isoCurrentDate': isoCurrentDate.toISOString()
+  //   })
+  // }
+  //
+  // $j.when(getSeriesData(kxConfig.seriesId), getSeriesData(kxConfig.seriesId_Webinars))
+  //   .then((seriesData, webinarsData) => {
+  //     seriesIdsAsInts.push(seriesData[0].id)
+  //     seriesIdsAsInts.push(webinarsData[0].id)
+  //     seriesReceived()
+  //   })
+  //
+  FetchQudiniEvents().then(events => {
+    // eventIds = events.map(e => e.identifier)
+    const eventData = events.find(e => e.identifier === id)
+    if (!eventData) {
+      if (window.location.host.indexOf('p6-eu') > -1) {
+        // dont redirect on p6 editor
+        return
+      }
+      var currentUrlSplitbySlash = window.location.href.split("/");
+      window.location.href = currentUrlSplitbySlash
+        .slice(0, currentUrlSplitbySlash.length - 2)
+        .join("/") + "/";
+      return
+    }
+    eventReceived(eventData)
+  })
 
-  $j.when(getSeriesData(kxConfig.seriesId), getSeriesData(kxConfig.seriesId_Webinars))
-    .then((seriesData, webinarsData) => {
-      seriesIdsAsInts.push(seriesData[0].id)
-      seriesIdsAsInts.push(webinarsData[0].id)
-      seriesReceived()
-    })
-
-  function seriesReceived(seriesData) {
-      // get the Integer value for the current series as this is returned by the event API - we need to check below that the event is valid for the series
-    $j.get({
-      url: "https://bookings.qudini.com/booking-widget/event/eventId/" + id,
-      data: {
-        timezone: "Europe/London",
-        isoCurrentDate: isoCurrentDate.toISOString()
-      },
-      success: eventReceived
-    })
-  }
+  // function seriesReceived(seriesData) {
+  //
+  //     // get the Integer value for the current series as this is returned by the event API - we need to check below that the event is valid for the series
+  //   $j.get({
+  //     url: "https://bookings.qudini.com/booking-widget/event/eventId/" + id,
+  //     data: {
+  //       timezone: "Europe/London",
+  //       isoCurrentDate: isoCurrentDate.toISOString()
+  //     },
+  //     success: eventReceived
+  //   })
+  // }
 
   function eventReceived(data) {
     eventDetails = data;
 
     topicId = data.topic.id;
 
-    function sortEventExtra(event) {
-      if (event.description) {
-        var bits = event.description.split("||");
-
-        event.description = bits[0];
-        if (bits.length > 1) {
-          bits[1] = bits[1].replace(/"/gi, '"').replace(/"/gi, '"');
-          event.extra = JSON.parse(bits[1]);
-        } else {
-          event.extra = {};
-        }
-      }
-    }
+    // function sortEventExtra(event) {
+    //   if (event.description) {
+    //     var bits = event.description.split("||");
+    //
+    //     event.description = bits[0];
+    //     if (bits.length > 1) {
+    //       bits[1] = bits[1].replace(/"/gi, '"').replace(/"/gi, '"');
+    //       event.extra = JSON.parse(bits[1]);
+    //     } else {
+    //       event.extra = {};
+    //     }
+    //   }
+    // }
 
     //simple percentage calculation
     function per(current, orig) { return (current/orig*100) }
     //if limited, return true
     function limited(percentage) { return percentage < 30 && percentage > 0 ? true : false; }
 
-    sortEventExtra(data);
+    // sortEventExtra(data);
 
-    console.log('asddsa', data)
 
     eventId = data.id;
-    if (seriesIdsAsInts.indexOf(data.seriesId) > -1) {
+
+    // if (retrievedEvents.find(e => data.identifier) > -1) {
       const options = {
         identifier: data.identifier,
         groupSize: data.maxGroupSize,
@@ -118,10 +140,10 @@ export default function singleEvent(events) {
         limitedAvailability: limited(per(data.slotsAvailable, data.maxReservations)) && !data.hasPassed ? "limited tickets remaining" : "",
         //TEST BELOW
         // limitedAvailability: limited(per(29, 100)) ? "limited tickets remaining" : "",
-        youtube: data.extra.youtubeid,
-        externalbookinglink: data.extra.externalbookinglink,
-        sponsor: "" || data.extra.sponsor,
-        singleBookingCTA: data.extra.singleBookingCTA ? data.extra.singleBookingCTA : false
+        youtube: data.properties && data.properties.youtubeid ? data.properties.youtubeid : false,
+        externalbookinglink: data.properties.externalbookinglink,
+        sponsor: "" || data.properties.sponsor,
+        singleBookingCTA: data.properties.singleBookingCTA ? data.properties.singleBookingCTA : false
       };
 
       if (options.sponsor == "timeout") {
@@ -133,8 +155,8 @@ export default function singleEvent(events) {
 
       }
 
-      if (data.extra.instagramhashtag) {
-        instagramHashTag = data.extra.instagramhashtag;
+      if (data.properties.instagramhashtag) {
+        instagramHashTag = data.properties.instagramhashtag;
       }
       var startTime = moment(data.startISO).utc();
       var bookOptions = {
@@ -305,14 +327,14 @@ export default function singleEvent(events) {
           // }
         });
       }
-    } else {
-      // redirect to whats-on page
-      var currentUrlSplitbySlash = window.location.href.split("/");
-      window.location.href =
-        currentUrlSplitbySlash
-          .slice(0, currentUrlSplitbySlash.length - 2)
-          .join("/") + "/";
-    }
+    // } else {
+    //   // redirect to whats-on page
+    //   var currentUrlSplitbySlash = window.location.href.split("/");
+    //   // window.location.href =
+    //   //   currentUrlSplitbySlash
+    //   //     .slice(0, currentUrlSplitbySlash.length - 2)
+    //   //     .join("/") + "/";
+    // }
   }
 
 
@@ -431,8 +453,8 @@ export default function singleEvent(events) {
 
     eventId = $j('.change__time.selected').data('id');
 
-    doLog(eventDetails.extra.externalbookinglink);
-    if (eventDetails.extra.externalbookinglink && $j('.change__time.selected').data('link')) {
+    doLog(eventDetails.properties.externalbookinglink);
+    if (eventDetails.properties.externalbookinglink && $j('.change__time.selected').data('link')) {
       window.open($j('.change__time.selected').data('link'), '_blank');
       return;
     } else {
@@ -623,7 +645,6 @@ export default function singleEvent(events) {
         fail: function (err) {
           $j(".book__form-submit").attr("disabled", false);
           $j(".cm-configurator-loader").hide();
-          console.log("aaaaa", err)
           doLog(err);
         }
       });

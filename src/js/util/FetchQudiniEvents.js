@@ -36,13 +36,16 @@ import { DateTime } from 'luxon'
 
 const QUDINI_EVENTS_ENDPOINT = 'https://bookings.qudini.com/booking-widget/event/events/';
 
-export function FetchQudiniEvents(seriesConfigArray){
+export function FetchQudiniEvents(seriesConfigArray = FetchQudiniEvents.ALL_SERIES){
   // create fetch url
   function makeFetchUrl({seriesID, isoCurrentDate}) {
     return `${QUDINI_EVENTS_ENDPOINT}${seriesID}?timezone=Europe/London&isoCurrentDate=${isoCurrentDate}`
   }
   // extract description data
   function extractDescriptionData(descriptionString, identifier) {
+    if (!descriptionString) {
+      return {description: '', properties: {}}
+    }
     const split = descriptionString.split("||")
     const description = split[0] || false
     const properties = split[1]
@@ -71,7 +74,7 @@ export function FetchQudiniEvents(seriesConfigArray){
     // map returned api data array for each series
     const transformedSeriesData = seriesData.map((seriesEvents, index) => {
       const seriesType = seriesConfigArray[index].name
-      console.log({seriesEvents, seriesType})
+      // console.log({seriesEvents, seriesType})
       // map the series events
       return seriesEvents.map(event => {
         // make transforms to event object
@@ -120,9 +123,16 @@ FetchQudiniEvents.VIRTUAL_SERIES = {
   test_id: "CMPWXUYK8II"
 }
 
+FetchQudiniEvents.SOLVE_FOR_TOMORROW_SERIES = {
+  name: "virtual",
+  live_id: "G652T9ZFBR8",
+  test_id: "RCCRPTGL9DO"
+}
+
 FetchQudiniEvents.ALL_SERIES = [
   FetchQudiniEvents.LIVE_SERIES,
-  FetchQudiniEvents.VIRTUAL_SERIES
+  FetchQudiniEvents.VIRTUAL_SERIES,
+  FetchQudiniEvents.SOLVE_FOR_TOMORROW_SERIES
 ]
 
 export default FetchQudiniEvents

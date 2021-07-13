@@ -34,9 +34,12 @@
 
 import KXEnv from '../util/KXEnv'
 import { DateTime } from 'luxon'
+import FetchQudiniEvents from '../util/FetchQudiniEvents';
 
 const QUDINI_EVENTS_ENDPOINT = 'https://bookings.qudini.com/booking-widget/event/events/';
 const qudiniEventsItemTemplate = require('../../templates/partials/components/qudiniEvents/qudiniEventsItem.hbs');
+
+
 
 const SHOW_MAX = {
   desktop: 8,
@@ -67,9 +70,9 @@ class QudiniEvents {
     // update on resize
     this.isMobile = window.innerWidth <= 768
 
-    this.fetchEvents(series)
+    FetchQudiniEvents()
       .then(eventData => {
-        console.log({eventData})
+        // console.log({eventData})
         this.events = eventData
         // delay initial render
         setTimeout(this.renderEvents.bind(this), 1000)
@@ -316,7 +319,7 @@ class QudiniEvents {
       // map returned api data array for each series
       const transformedSeriesData = seriesData.map((seriesEvents, index) => {
         const seriesType = seriesConfigArray[index].name
-        console.log({seriesEvents, seriesType})
+        // console.log({seriesEvents, seriesType})
         // map the series events
         return seriesEvents.map(event => {
           // make transforms to event object
