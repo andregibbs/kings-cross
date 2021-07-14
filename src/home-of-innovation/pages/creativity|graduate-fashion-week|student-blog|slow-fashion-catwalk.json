@@ -19,8 +19,9 @@
 		{
 			"type": "kv",
 			"media": {
-				"type": "image",
-				"content": "{{creativity|graduate-fashion-week|student-blog|slow-fashion-catwalk[image]}}",
+				"type": "youtube",
+				"content": "fk4J0KoY5wI",
+        "poster": "{{creativity|graduate-fashion-week|student-blog|slow-fashion-catwalk[image]}}",
 				"alt": ""
 			},
 			"style": {
