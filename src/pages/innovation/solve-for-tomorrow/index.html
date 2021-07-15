@@ -27,7 +27,11 @@
           <button class="btn" id="launch-video">Watch Now</button>
         </div>
       </div>
-      <div id="twitch-embed-target"></div>
+      <!-- <div id="twitch-embed-target"></div> -->
+      {{> home-of-innovation/hoiMediaYoutube
+          class="hoiKv__MediaVideo"
+          content=pageTemplateData.innovation_solve_for_tomorrow.youtubeID
+      }}
     </div>
     <div class="hoiKv__Components">
       {{> home-of-innovation/hoiHeadline copy="Future Talks: Designing for a sustainable future"}}
@@ -39,7 +43,7 @@
   </div>
 
   <div class="hoiWrapper">
-    {{> home-of-innovation/components pageTemplateData.innovation_solve_for_tomorrow.body}}
+        {{> home-of-innovation/components pageTemplateData.innovation_solve_for_tomorrow.body}}
     <br/>
     <a
       class="discordButton" href="https://discord.gg/samsunguksft" target="_blank"
@@ -50,7 +54,7 @@
       data-omni="uk:kings-cross:innovation:solve-for-tomorrow:discord-link">
       {{>discord_svg}}
     </a>
-    
+
     {{> home-of-innovation/components pageTemplateData.innovation_solve_for_tomorrow.body2}}
   </div>
 
