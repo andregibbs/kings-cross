@@ -1,0 +1,57 @@
+{
+	"title": "Just One Charge: Transform your content creation with the A Series",
+	"description": "Join Chelcee Grimes and viral sensation Jeremy Lynch as they explore all those relatable phone battery moments. From nightmare stories about phone battery running low to the benefits of creating content on the go, they put the Galaxy A Series to the test.",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/entertainment/a-series/01_Samsung_Web_A-Series_V1_1440x810.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/entertainment/a-series/01_Samsung_Web_A-Series_V1_480x480.jpg",
+	"group": "a-series",
+	"sort": 1,
+	"meta": {
+		"icon": "video",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 20,
+		"unit": "mins"
+	},
+	"components": [
+    {
+			"type": "kv",
+			"media": {
+				"type": "image",
+				"content": "{{entertainment|a-series|just-one-charge[image]}}",
+				"alt": ""
+			},
+			"style": {
+				"desktop": "top",
+				"mobile": "bottom"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Just One Charge: Transform your content creation with the A Series"
+				}
+			]
+		},
+		{
+			"type": "wrapper",
+			"components": [
+				{
+					"type": "paragraphs",
+					"text": [
+						"Join Chelcee Grimes and viral sensation Jeremy Lynch as they explore all those relatable phone battery moments. From nightmare stories about phone battery running low to the benefits of creating content on the go, they put the Galaxy A Series to the test."
+					]
+				}
+			]
+		},
+    {
+			"type": "group",
+			"dynamic": "episodes",
+			"id": "a-series",
+			"title": "Episodes",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
+}
