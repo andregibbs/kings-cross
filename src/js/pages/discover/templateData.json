@@ -55,5 +55,28 @@
       "anchor": "0",
       "background-position-mobile": "63% center"
     }
+  ],
+  "f1_title": "Leader Board",
+  "f1_times": [
+    {
+      "name": "Nick R",
+      "time": "1:27:575"
+    },
+    {
+      "name": "Dominic W",
+      "time": "1:30:404"
+    },
+    {
+      "name": "Tobias R",
+      "time": "1:30:947"
+    },
+    {
+      "name": "David R",
+      "time": "1:34:960"
+    },
+    {
+      "name": "Christian E",
+      "time": "1:37:105"
+    }
   ]
 }

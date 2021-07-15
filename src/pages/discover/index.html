@@ -133,6 +133,46 @@
 
   <section class="section">
     <div class="section__inner">
+      <div class="whatsOn__booking_panel">
+        <div
+          class="whatsOn__booking_panel_image"
+          style="background-image:url(https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/whats-on/F1_signpost.jpg);">
+        </div>
+        <h3 class="fz30">Racing Car Simulator Experience</h3>
+        <p class="fz18">
+          In June 2021 Samsung KX invited people to take a ride on a state-of-the-art racing simulator and compete against professional drivers for a place on the leader board. The results are in!<br>
+          <span>For full terms & conditions please see <a id="f1-terms-launch">here.</a></span>
+        </p>
+        <a
+          class="btn btn--primary" id="open-f1-times"
+          ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:whats-on:view-f1-leaderboard"
+          data-omni-type="microsite" data-omni="kings-cross:whats-on:view-f1-leaderboard"
+          >Final leaderboard</a>
+      </div>
+      <div class="section whatsOn__f1">
+        <div id="f1-wrap">
+          <div id="close-f1-times" class="whatsOn__f1_close close"></div>
+          <h2 class="whatsOn__f1_title fz36">{{pageTemplateData.discover.f1_title}}</h2>
+          <table class="whatsOn__f1_table">
+            {{#each pageTemplateData.discover.f1_times}}
+              <tr class="whatsOn__f1_row-{{index-plus @index}}">
+                <td class="whatsOn__f1_place">#{{index-plus @index}}</td>
+                <td class="whatsOn__f1_name">{{this.name}}</td>
+                <td class="whatsOn__f1_time">{{this.time}}</td>
+              </tr>
+            {{/each}}
+          </table>
+        </div>
+      </div>
+
+      <div id="f1-terms-container">
+        {{> components/whatsOnF1Terms}}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section__inner">
       {{> discover-header
         title="Videos / Podcasts / Articles"
         sub="Watch Online Content"
@@ -206,22 +246,22 @@
 
   <script type="text/javascript">
     // garbage required to insert veview slideshow
-    function checkJQuery() {
-      // if our main script has loaded and $j variable is accessible
-      if (typeof $j !== 'undefined') {
-        // assign to global jQuery (required by veview)
-        window.jQuery = $j
-        // insert script
-        var el = document.createElement('script')
-        el.src = "https://widget.veview.com/customers/www.samsung.com/gb/js/veview.widget.js",
-        document.querySelector('.cheil-static').appendChild(el)
-      } else {
-        // recheck
-        setTimeout(checkJQuery, 500)
-      }
-    }
-    // initial check
-    checkJQuery()
+    // function checkJQuery() {
+    //   // if our main script has loaded and $j variable is accessible
+    //   if (typeof $j !== 'undefined') {
+    //     // assign to global jQuery (required by veview)
+    //     window.jQuery = $j
+    //     // insert script
+    //     var el = document.createElement('script')
+    //     el.src = "https://widget.veview.com/customers/www.samsung.com/gb/js/veview.widget.js",
+    //     document.querySelector('.cheil-static').appendChild(el)
+    //   } else {
+    //     // recheck
+    //     setTimeout(checkJQuery, 500)
+    //   }
+    // }
+    // // initial check
+    // checkJQuery()
   </script>
 
 </section>

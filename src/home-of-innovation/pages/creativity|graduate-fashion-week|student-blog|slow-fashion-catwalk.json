@@ -21,11 +21,11 @@
 			"media": {
 				"type": "youtube",
 				"content": "fk4J0KoY5wI",
-        "poster": "{{creativity|graduate-fashion-week|student-blog|slow-fashion-catwalk[image]}}",
+        "poster": "",
 				"alt": ""
 			},
 			"style": {
-				"desktop": "right",
+				"desktop": "top",
 				"mobile": "bottom"
 			},
 			"components": [
@@ -35,6 +35,41 @@
 				}
 			]
 		},
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "paragraphs",
+          "text": [
+            "With six in 10 young adults keen to leave fast fashion behind, Samsung KX partnered with leading designer Patrick McDowell, to unveil the hottest slow fashion trends, straight from the Graduate Fashion Week 2021 (GFW) catwalk.",
+            "Boasting eleven looks in total, the event was held privately in the space on Thursday 17^th^ June and captured with the <a href=\"https://www.samsung.com/uk/smartphones/galaxy-s21-5g/buy/\">Samsung Galaxy S21 Ultra 5G</a>, bringing to life the intricate details of each bespoke piece via the epic Dual-Tele camera lens system and 108MP pro sensor.",
+            "With Patrick being a key GFW ambassador and thought leader, he hosted the catwalk alongside leading eco-fashion enthusiasts Samata Pattinson (<a target=\"_blank\" href=\"https://www.rcgdglobal.com\">Red Carpet, Green Dress</a>) and Hannah Carter (<a target=\"_blank\" href=\"https://www.lovenotlandfill.org\">Love Not Landfill</a>); forming the ultimate panel to crown the slow style revolution.",
+            "The talent of tomorrow behind the Slow Catwalk’s showstopping designs:"
+          ]
+        },
+        {
+          "type": "html-list",
+          "items": [
+            "Cerys Jones, University of Huddersfield",
+            "Beth Cadbury, Northumbria University",
+            "Farhad Ali, Salford University",
+            "Karolina Karpavicicute, The University for the Creative Arts",
+            "Max Telford, Northumbria University",
+            "Menna Angharad Evans, Cardiff School of Art & Design",
+            "Akiiho Ka, Oska Institute of Fashion",
+            "Maria Enrica Affinita, Accademia Costume E Moda",
+            "Sara Carney, Northumbria University",
+            "Sing Ying Lim, Cambridge School of Visual & Performing Arts"
+          ]
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Watch this exclusive behind-the-scenes video of the Slow Catwalk at Samsung KX, or read the the full story <a href=\"https://news.samsung.com/uk/with-60-of-young-adults-keen-to-ditch-fast-fashion-here-are-the-top-trends-to-slow-down-your-style-habits\">here</a>."
+          ]
+        }
+      ]
+    },
 		{
 			"type": "group",
 			"dynamic": "episodes",
