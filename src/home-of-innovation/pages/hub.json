@@ -59,7 +59,7 @@
         "hideIcon": true
       },
       "items": [
-        "entertainment|a-series",
+        "entertainment|just-one-charge",
         "creativity|wild-writing",
         "creativity|personal-branding",
         "creativity|inspire-me",
@@ -159,8 +159,7 @@
         "scroll": true
       },
       "items": [
-        "entertainment|a-series|just-one-charge",
-        "entertainment|a-series|just-one-charge-phone-battery-fails",
+        "entertainment|just-one-charge-phone-battery-fails",
         "entertainment|lunch-and-listen|reclaim-lunchbreak",
         "entertainment|lunch-and-listen|bring-back-play-ep-2",
         "entertainment|lunch-and-listen|bring-back-play",
