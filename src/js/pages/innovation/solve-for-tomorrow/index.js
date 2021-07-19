@@ -1,6 +1,7 @@
 import '../../../bootstrap.js'
 
 import HOIAddToCalendar from '../../../home-of-innovation/hoiAddToCalendar'
+import { createYoutubeInstance, loadYoutubeAPI } from '../../../home-of-innovation/utils'
 const hoiAddToCalendarTemplate = require('../../../../templates/partials/home-of-innovation/hoiAddToCalendar.hbs');
 const calendarTarget = document.querySelector('#hoi-add-to-calendar-target')
 
@@ -26,14 +27,28 @@ const ELEMENTS = {
 
 class SolveForTomorrow {
   constructor() {
+    this.youtubeInstance = null
     this.renderAddToCalendar()
-    // this.renderTwitchEmbed()
+    this.renderYoutube()
     this.eventListeners()
+  }
+
+  renderYoutube() {
+    loadYoutubeAPI().then(() => {
+      const youtubeMedias = [].slice.call(document.querySelectorAll('.hoiMedia--youtube'))
+      youtubeMedias.forEach((element) => {
+        this.youtubeInstance = createYoutubeInstance(element)
+      })
+    })
   }
 
   eventListeners() {
     ELEMENTS.LAUNCH_BUTTON.addEventListener('click', () => {
-      this.renderTwitchEmbed()
+
+      // manually set youtube media state
+      document.querySelector('.hoiMedia__State').setAttribute('data-state', 'playing')
+      this.youtubeInstance.playVideo()
+
       ELEMENTS.KV_MEDIA.setAttribute('active', '')
       setTimeout(() => {
 
@@ -48,22 +63,22 @@ class SolveForTomorrow {
     })
   }
 
-  renderTwitchEmbed() {
-    if (!Twitch) {
-      console.log('no twitch')
-      return setTimeout(this.renderTwitchEmbed.bind(this), 1000)
-    }
-
-    new Twitch.Embed(TWITCH.TARGET_ELEMENT, {
-      width: '100%',
-      height: '100%',
-      channel: TWITCH.CHANNEL,
-      layout: 'video',
-      // autoplay: false,
-      // Only needed if this page is going to be embedded on other websites
-      parent: ["kings-cross.samsung.com", "p6-qa.samsung.com", "samsung.com"]
-    });
-  }
+  // renderTwitchEmbed() {
+  //   if (!Twitch) {
+  //     console.log('no twitch')
+  //     return setTimeout(this.renderTwitchEmbed.bind(this), 1000)
+  //   }
+  //
+  //   new Twitch.Embed(TWITCH.TARGET_ELEMENT, {
+  //     width: '100%',
+  //     height: '100%',
+  //     channel: TWITCH.CHANNEL,
+  //     layout: 'video',
+  //     // autoplay: false,
+  //     // Only needed if this page is going to be embedded on other websites
+  //     parent: ["kings-cross.samsung.com", "p6-qa.samsung.com", "samsung.com"]
+  //   });
+  // }
 
   renderAddToCalendar() {
     const templateData = {
@@ -79,6 +94,4 @@ class SolveForTomorrow {
   }
 }
 
-
-console.log('aaaaa')
 new SolveForTomorrow()
