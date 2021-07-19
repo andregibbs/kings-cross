@@ -1,9 +1,9 @@
 {
 	"title": "Wild Writing: Behind the scenes",
 	"description": "",
-	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/wild-writing/02_Samsung_Web_ProjectName_V1_1440x650.jpg",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/wild-writing/02_Samsung_Web_ProjectName_V1_1440x810.jpg",
 	"alt": "",
-	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/wild-writing/02_Samsung_Web_ProjectName_V1_400x255.jpg",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/wild-writing/02_Samsung_Web_WildWriting_V1_400x290.jpg",
   "group": "wild-writing",
   "sort": 2,
 	"meta": {
@@ -46,8 +46,7 @@
 						{
 							"type": "paragraphs",
 							"text": [
-								"Watch exclusive behind the scenes action of George the Poet as he embarks on his creative journey through Epping Forest with the new Galaxy Book Pro 360.",
-								"<a href='https://www.samsung.com/uk/pc/galaxy-book/galaxy-book-pro/buy/'>https://www.samsung.com/uk/pc/galaxy-book/galaxy-book-pro/buy/</a>"
+								"Watch exclusive behind the scenes action of George the Poet as he embarks on his creative journey through Epping Forest with the new <a href=\"https://www.samsung.com/uk/pc/galaxy-book/galaxy-book-pro/buy/\">Galaxy Book Pro 360.</a>"
 							]
 						}
 					]
