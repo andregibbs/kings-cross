@@ -11,15 +11,16 @@
 		"tags": []
 	},
 	"contentLength": {
-		"length": 20,
+		"length": 2,
 		"unit": "mins"
 	},
 	"components": [
     {
 			"type": "kv",
 			"media": {
-				"type": "image",
-				"content": "{{entertainment|just-one-charge[image]}}",
+				"type": "youtube",
+				"content": "PDIOF-_7t5o",
+				"poster": "{{entertainment|just-one-charge[image]}}",
 				"alt": ""
 			},
 			"style": {
