@@ -44,15 +44,6 @@
 					]
 				}
 			]
-		},
-    {
-			"type": "group",
-			"dynamic": "episodes",
-			"id": "just-one-charge",
-			"title": "Episodes",
-			"style": {
-				"scroll": true
-			}
 		}
 	]
 }
