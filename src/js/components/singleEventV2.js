@@ -51,7 +51,7 @@ export default function singleEvent(events) {
   //     seriesReceived()
   //   })
   //
-  FetchQudiniEvents().then(events => {
+  FetchQudiniEvents(FetchQudiniEvents.ALL_SERIES, false).then(events => {
     // eventIds = events.map(e => e.identifier)
     const eventData = events.find(e => e.identifier === id)
     if (!eventData) {

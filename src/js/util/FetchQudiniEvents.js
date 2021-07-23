@@ -36,7 +36,7 @@ import { DateTime } from 'luxon'
 
 const QUDINI_EVENTS_ENDPOINT = 'https://bookings.qudini.com/booking-widget/event/events/';
 
-export function FetchQudiniEvents(seriesConfigArray = FetchQudiniEvents.ALL_SERIES){
+export function FetchQudiniEvents(seriesConfigArray = FetchQudiniEvents.ALL_SERIES, filterPrivate = true){
   // create fetch url
   function makeFetchUrl({seriesID, isoCurrentDate}) {
     return `${QUDINI_EVENTS_ENDPOINT}${seriesID}?timezone=Europe/London&isoCurrentDate=${isoCurrentDate}`
@@ -97,7 +97,7 @@ export function FetchQudiniEvents(seriesConfigArray = FetchQudiniEvents.ALL_SERI
     // filter private events
     const filteredEventData = flattenedEventData.filter(event => !event.properties.private)
     // return filtered array
-    return filteredEventData
+    return filterPrivate ? filteredEventData : flattenedEventData
   })
   .catch(console.log)
 }
