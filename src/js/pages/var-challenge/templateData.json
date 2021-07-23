@@ -40,10 +40,7 @@
         },
         "text": [
           "<strong>Following on from the Rules of Football, Samsung KX is calling on all have-a-go heroes to step up to the plate to see if they really know more than the ref!</strong>",
-          "The Samsung KX Neo VAR Challenge wants you to step into the shoes of a referee and review some of the most controversial VAR decisions over the last few years – all reshot in 8K detail.",
-          "The immersive experience at Samsung KX highlights the 8K quality and superior detail of the new Samsung Neo QLED 8K TV which in turn will help in making a VAR decision much easier to call.",
-          "The Neo QLED VAR challenge at Samsung KX is open to members of the public, free of charge from Wednesday June 9<sup>th</sup> until Sunday 20<sup>th</sup> June",
-          "<strong>For those unable to visit KX, you can check out the scenarios for yourself above.</strong>"
+          "The Samsung KX Neo VAR Challenge wants you to step into the shoes of a referee and review some of the most controversial VAR decisions over the last few years – all reshot in 8K detail."
         ]
       }
     ]
@@ -54,19 +51,6 @@
         "type": "headline",
         "level": "2",
         "copy": "See if you can beat VAR"
-      }
-    ]
-  },
-  "footer": {
-    "components": [
-      {
-        "type": "buttons",
-        "items": [
-          {
-            "copy": "View Terms & Conditions",
-            "id": "launch-terms"
-          }
-        ]
       }
     ]
   },
