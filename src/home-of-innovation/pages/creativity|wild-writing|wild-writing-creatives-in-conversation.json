@@ -3,16 +3,15 @@
 	"description": "",
 	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/wild-writing/wild-writing-panel-discussion/03_SAMSUNG_MARS_Banner_1440x810_V3.jpg",
 	"alt": "",
-	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/wild-writing/wild-writing-panel-discussion/SAMSUNG_MARS_400x290_V3.jpg",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/wild-writing/SAMSUNG_MARS_400x290_V3.jpg",
   "group": "wild-writing",
   "sort": 4,
-  "hidden": true,
 	"meta": {
 		"icon": "video",
 		"tags": []
 	},
   "contentLength": {
-		"length": 2,
+		"length": 10,
 		"unit": "mins"
 	},
 	"components": [
