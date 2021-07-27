@@ -1,0 +1,145 @@
+{
+	"title": "How to Throw the Perfect Al Fresco Party",
+	"description": "",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/34/Lemon-alfresco_1440x1440.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/34/thumbnail_255x255.jpg",
+	"group": "guest-writer-of-the-week",
+	"sort": 34,
+	"contentLength": {
+		"length": 5,
+		"unit": "mins"
+	},
+	"meta": {
+		"icon": "article",
+		"tags": []
+	},
+	"components": [
+		{
+			"type": "css-snippet",
+			"content": ".hoiContent small { font-size: 0.75rem; }"
+		},
+		{
+			"type": "kv",
+			"media": {
+				"type": "image",
+				"content": "{{lifestyle|guest-writer-of-the-week|34[image]}}",
+				"alt": "{{lifestyle|guest-writer-of-the-week|34[alt]}}"
+			},
+			"style": {
+				"desktop": "right",
+				"mobile": "bottom"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "{{lifestyle|guest-writer-of-the-week|34[title]}}"
+				}
+			]
+		},
+		{
+			"type": "wrapper",
+			"components": [
+				{
+					"type": "paragraphs",
+					"text": [
+						"It can be all too easy to wilt under pressure when you have to entertain in the heat, however hosting in the great outdoors needn’t be complicated. Here, Freelance Journalist Luciana Bellini shares her top tips for throwing a simple summer soirée."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Simplicity is Key",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"With the hotter weather, it’s time to focus on dishes that don’t need cooking but can easily be thrown together from the contents of your fridge – think homemade hummus, tomato and mozzarella with basil, melon and prosciutto or a seasonal salad. The <a href='https://www.samsung.com/uk/refrigerators/bespoke-refrigerator/' target=_blank>Samsung Bespoke Refrigerator</a> is ideal for storing all your ingredients and comes with compartments that can be converted from fridge to freezer and vice versa, depending on just how many frozen Margaritas you’re planning on serving. It also has an in-built Beverage Center and Dual Ice Maker, making mixing cocktails a breeze. "
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Keep Things Seasonal",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"The fresher the ingredients, the better they’re going to taste, and it doesn’t get fresher than seasonal, home-grown produce. Luckily for us, the UK summer produces some of the year’s finest haul – for starters, aubergine, beetroot, broad beans, courgettes, fennel and radishes are just some of the mouth-watering options that are at their very best at this time of year, giving plenty of options for zingy salads. When it comes to meat, this is the season for lamb and venison, while wild salmon and crab are great seafood choices. For pudding, it’s all about the berries, with blueberries, strawberries and raspberries bursting with flavour right now. "
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Be Organised",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Try to do as much of the food prep in advance wherever possible, so you can actually relax and enjoy your guests when they arrive. Pick dishes that can mostly be prepared beforehand and require only a few simple steps to assemble, like tossing and dressing a salad or putting together a charcuterie board, which can be done while you all chat and catch up. "
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/34/Lemon-alfresco_1440x1440.jpg",
+					"alt": ""
+				},
+				{
+					"type": "headline",
+					"copy": "Make the Most of your Outdoor Space",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"There’s nothing lovelier than eating al fresco, especially when the sun-dappled daylight stretches long into the night during the summer. Being outside instantly makes everyone feel more relaxed and will also ensure your guests don’t hover around trying to help all night. If you can, just use candles to light the space – it gives off an enchanting flickering glow that feels much more intimate than anything you can achieve indoors."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Pay Attention to Details",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Dressing up the table and creating a special environment doesn’t have to be costly or time-consuming. With summer in full bloom, there are plenty of ways to decorate with what we have around us – instead of spending a fortune on fancy flowers, snip some greenery from the garden or create a centrepiece out of a bowl of lemons. Give your jug of water some extra pizzazz by adding a sprig of mint to it and scent your table by creating little posies made up of fresh herbs – rosemary and eucalyptus work particularly well for this. If you do want to invest in some showstopping flowers, make an early morning visit to the New Covent Garden Flower Market, where you can buy amazing blooms at wholesale prices."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Add a Personal Touch",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"When entertaining, it’s always nice to think about throwing in an element that reveals some of your personality. Are you an avid collector of vintage glassware? Use those to serve the drinks. Love dressing up? Come up with a theme for the night and ask all your guests to arrive wearing something that ties in with it. Have an arty side? Create hand-written place cards and menus for the party. All of these things are instant ice-breakers and will make your guests feel more at home. You can also take personal touches a step further by switching up the panels of your Samsung Bespoke Refrigerator. There’s 14 colours and three different finishes to choose from, so why not go for fun pastels in the summer, and darker hues in the winter. "
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/34/Bespoke_Lifestyle_1440x1440.jpg",
+					"alt": ""
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"<br>",
+						"<strong>By Luciana Bellini.</strong>",
+						"<em>Luciana is a freelance journalist, specialising in luxury, lifestyle, food and travel. She writes for numerous titles including Tatler, the Telegraph and Glamour magazine.</em>"
+					]
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "more-articles",
+			"id": "guest-writer-of-the-week",
+			"title": "More articles",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
+}
