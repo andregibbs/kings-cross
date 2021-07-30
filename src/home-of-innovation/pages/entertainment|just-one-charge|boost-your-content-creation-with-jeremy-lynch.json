@@ -1,0 +1,58 @@
+{
+	"title": "Just One Charge: Boost your content creation with Jeremy Lynch",
+	"description": "Find out how to get more followers, stay one step ahead of the algorithm and become a social media sensation with expert tips and tricks from Jeremy Lynch.",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/entertainment/just-one-charge/03_Samsung_Web_A-Series_V1_1440x650.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/entertainment/just-one-charge/05_Samsung_Web_A-Series_V1_400x290.jpg",
+	"group": "just-one-charge",
+	"sort": 2,
+	"meta": {
+		"icon": "video",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 2,
+		"unit": "mins"
+	},
+	"components": [
+    {
+			"type": "kv",
+			"media": {
+				"type": "youtube",
+				"content": "Sxhuys08eM8",
+				"poster": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/entertainment/just-one-charge/03_Samsung_Web_A-Series_V1_1440x650.jpg",
+				"alt": ""
+			},
+			"style": {
+				"desktop": "top",
+				"mobile": "bottom"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Just One Charge: Boost your content creation with Jeremy Lynch"
+				}
+			]
+		},
+		{
+			"type": "wrapper",
+			"components": [
+				{
+					"type": "paragraphs",
+					"text": [
+						"Find out how to get more followers, stay one step ahead of the algorithm and become a social media sensation with expert tips and tricks from Jeremy Lynch."
+					]
+				}
+			]
+		},
+    {
+			"type": "group",
+			"dynamic": "episodes",
+			"id": "just-one-charge",
+			"title": "Episodes",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
+}
