@@ -1,0 +1,53 @@
+{
+	"title": "Inspire Me: Nailing the Instagram Reel with Tomas Miliniavicius",
+	"description": "Instagram Reels",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/inspire-me/KV_tomas_1440x810.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/inspire-me/Thumb_tomas800x510.jpg",
+	"group": "inspire-me",
+	"sort": 5,
+	"meta": {
+		"icon": "video",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 4,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "youtube",
+				"content": "QU2aTTxnArI",
+				"poster": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/inspire-me/KV_tomas_1440x810.jpg",
+				"alt": ""
+			},
+			"style": {
+				"desktop": "top",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Nailing the Instagram Reel with Tomas Miliniavicius "
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Street photographer Tomas Miliniavicius teaches how to create engaging reels using the <a target=_blank href='https://www.samsung.com/uk/smartphones/galaxy-s21-5g/buy/'>Samsung Galaxy S21 Ultra 5G</a>. From snapping in Pro-Mode, editing on the <a target=_blank href='https://www.samsung.com/uk/pc/galaxy-book/galaxy-book-pro-360-15inch-i7-16gb-512gb-np950qdb-kb1uk/'>Samsung Galaxy Book Pro 360</a>, to posting on social media, this tutorial will have you utilising symmetry and reflection that guarantees unique, thumb-stopping reels."
+					]
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "episodes",
+			"id": "inspire-me",
+			"title": "More episodes",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
+}
