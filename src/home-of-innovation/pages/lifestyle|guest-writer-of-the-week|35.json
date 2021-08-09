@@ -1,0 +1,120 @@
+{
+	"title": "How to get the most out of your long-haul flight",
+	"description": "Getting the most out of your long-haul flight",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/35/KV.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/35/Thumbnail.jpg",
+	"group": "guest-writer-of-the-week",
+	"sort": 35,
+	"contentLength": {
+		"length": 5,
+		"unit": "mins"
+	},
+	"meta": {
+		"icon": "article",
+		"tags": []
+	},
+	"components": [
+		{
+			"type": "css-snippet",
+			"content": ".hoiContent small { font-size: 0.75rem; }"
+		},
+		{
+			"type": "kv",
+			"media": {
+				"type": "image",
+				"content": "{{lifestyle|guest-writer-of-the-week|35[image]}}",
+				"alt": "{{lifestyle|guest-writer-of-the-week|35[alt]}}"
+			},
+			"style": {
+				"desktop": "right",
+				"mobile": "bottom"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "{{lifestyle|guest-writer-of-the-week|35[title]}}"
+				}
+			]
+		},
+		{
+			"type": "wrapper",
+			"components": [
+				{
+					"type": "paragraphs",
+					"text": [
+						"After a handful of months trapped indoors, and another handful (and a half) of being restricted, long-haul flights have become a luxury we can’t afford to grumble about. Here, freelance journalist Rebecca Baio shares her tips on how to get the most out of your long-haul flight.",
+						"So, a holiday awaits, afterall. An actual holiday! We’re talking distant coastlines, tropical mountains and sun-speckled lakes. Or, just a chance to finally hug that faraway family member. All in reward for just 6 - 24 hours in transit. Sure, that latter number is a tad wince-worthy, but we can bear it, right?",
+						"Yes. We can. But why is it that our holiday only really starts the moment we step off the plane? What if the flight itself became something to look forward to? A chance to unwind, rest, and maybe even tick off the to-do list. Well, that would be a gamechanger, wouldn’t it?",
+						"Here are some tips to bring that holiday joy forward, and really make the most of your long-haul flight."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Treat yourself to an in-flight facial",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"For some warm-blooded folk, 6+ hours in an air-conditioned plane might sound magnificent. But guess what? Your skin disagrees. That’s why we suggest product planning - to shield and protect skin from the moisture-sapping effects of airplane aircon. Don’t know where to start? When it comes to skin-quenching ingredients, hyaluronic acid is the queen, and Dr Sturm’s The Glow Kit contains one of the best hyaluronic acid serums around. The kit includes six other travel-sized treats too with a moisture-protecting foam cleanser being one. Plus, a gentle scrub and - a must when it comes to facials - a hydra-boosting mask. What’s the routine? Cleanse, then scrub, apply a few drops of hyaluronic serum to your freshly-cleansed face, then top with a generous layer of the ultra-hydrating mask before catching some winks. You’ll wake to your glowiest skin yet. Oh, and it would be rude not to take a selfie on your <a href='https://www.samsung.com/uk/smartphones/galaxy-s21-5g/buy/?modelCode=SM-G998BZKGEUA&cid=UK_PPC_6388038105_FF~Eval:Brand%2BProd_ProjectU_Tease_KS~BAP_BS~IM_PR~SMART_SB~S21_OB~SALES_FS~LHQ_AI~N_MT~EXA_CA~KEW&gclid=CjwKCAjw9aiIBhA1EiwAJ_GTSn_N8u8yYBr9NJn-U01R7bgw_Kachp6MpQ3bXfZ3EMg5mScwx0HVpBoCVoEQAvD_BwE&gclsrc=aw.ds' target=_blank>Samsung Galaxy S21 Ultra 5G</a>, too. The device’s 4K front camera is your best chance of capturing (and sharing) your holiday-ready, fresh-faced glow."
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "Read, read, and read some more",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Looking forward to chomping through a good novel by the pool? Why not two, three, or even four? This is 2021 after all and packing your curated library doesn’t mean stolen luggage space. In fact, with Samsung Galaxy S21 Ultra 5G, you’re offered up to 512GB storage capacity, unrivalled battery life (praise be!), plus 5G downloading power in case of any last-minute reads you wish to virtually add to your hand luggage. So, bring enough books for the pool and plane. The extra-sized screen makes for easy reading too. And parents - why not add something for the kids? With its tougher-than-tough Gorilla Glass, you’ll feel confident putting your Samsung phone-turned-book in tiny hands."
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/35/Sunglasses.jpg",
+					"alt": ""
+				},
+				{
+					"type": "headline",
+					"copy": "And return...",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"You’ve been scrolling (of course), and finally managed to find the perfect holiday shot. Everyone’s looking in the same direction, a full set of smiles are on show, and - thanks to your advanced pro-grade camera system - you’ve got a high definition 4K picture that's ready to blow up, print out, and mount on the wall at home. And then you spot it - a stranger who somehow managed to step into the frame just at the wrong moment. Wish you could wave a magic wand and make them disappear? Well, wish granted. Use that return flight to tuck into your Samsung Galaxy S21 Ultra 5G toolbox of new AI-powered features that puts the power of editing in your hands. Use your magic wand (aka the S Pen) for perfecting those details, and voila - no more unwanted additions. While you’re at it, why not create a holiday album? It’ll be ready to send to the printers (and that overseas family member) before you even land."
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/guest-writer-of-the-week/35/Product.jpg",
+					"alt": ""
+				},
+				{
+					"type": "headline",
+					"copy": "What a productive flight.",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"<br>",
+						"<strong>By Rebecca Baio</strong>",
+						"<em>Rebecca is a freelance journalist, specialising in travel, lifestyle and beauty. She writes for numerous titles including The Sunday Times Style, Glamour and Harrods Magazine.</em>"
+					]
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "more-articles",
+			"id": "guest-writer-of-the-week",
+			"title": "More articles",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
+}
