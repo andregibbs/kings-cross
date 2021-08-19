@@ -1,0 +1,89 @@
+{
+  "panels": [
+    {
+      "title": "Get ready to unfold your world",
+      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/galaxy-unpacked/tile_fold.png",
+      "alt": "A folded and an unfolded Samsung Z Fold 3 5G smartphones standing upright with an S Pen on a reflective white background",
+      "link": "http://www.samsung.com/uk/smartphones/galaxy-z-fold3-5g/purchase/",
+      "cta": "LEARN MORE"
+    },
+    {
+      "title": "We've rethought the phone. Now it's a statement",
+      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/galaxy-unpacked/tile_flip.png",
+      "alt": "An unfolded Samsung Galaxy Z Flip 3 phone displaying a colourful image on screen while resting on a reflective white background.",
+      "link": "https://www.samsung.com/uk/smartphones/galaxy-z-flip3-5g/purchase/",
+      "cta": "LEARN MORE"
+    }
+  ],
+  "sub": {
+    "style": {
+      "large": true
+    },
+    "text": [
+      "Join us live at 6pm on Thurs 19th Aug"
+    ]
+  },
+  "sub_2": {
+    "text": [
+      "Watch The Tech Chap put the new Galaxy Z Fold3 and Z Flip3 to the test live from Samsung KX. Join us to take advantage of an exclusive offer*."
+    ]
+  },
+  "footer": {
+    "components": [
+      {
+        "type": "paragraphs",
+        "text": [
+          "*Purchase from Samsung Shop Online by 21st August 23:59. Apply code at checkout to redeem. Limited to one code per transaction. Discount code capped at 300 orders. While stocks last."
+        ],
+        "_text": [
+          "*Purchase from Samsung Shop Online by 21st August 23:59. Apply code at checkout to redeem. Limited to one code per transaction. Discount code capped at 300 orders. While stocks last.",
+          "**Purchase from Samsung Shop Online by 27th August 23:59. Apply code at checkout to redeem. Limited to one code per transaction. Discount code capped at 300 orders. While stocks last."
+        ]
+      }
+    ]
+  },
+  "breadcrumbs": [
+    {
+      "url": "/uk/explore/kings-cross/",
+      "title": "Home"
+    },
+    {
+      "url": "/uk/explore/kings-cross/innovation/",
+      "title": "Innovation"
+    },
+    {
+      "url": "/uk/explore/kings-cross/innovation/samsung-people-live/",
+      "title": "Samsung People Live"
+    },
+    {
+      "url": "/uk/explore/kings-cross/innovation/samsung-people-live/galaxy-unpacked",
+      "title": "Galaxy Unpacked"
+    }
+  ],
+  "related": {
+    "type": "link-list",
+    "title": "Previous Events",
+    "items": [
+      {
+        "title": "Samsung People Live",
+        "url": "/uk/explore/kings-cross/innovation/samsung-people-live/",
+        "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/galaxy-book/Standard_people_tile.png"
+      },
+      {
+        "title": "Watch Samsung People Live: Galaxy 21 Range",
+        "url": "/uk/explore/kings-cross/innovation/samsung-people-live/galaxy-s21-range",
+        "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/galaxy-book/Standard_people_tile.png"
+      },
+      {
+        "title": "Watch Samsung People Live: New Galaxy Book Range",
+        "url": "/uk/explore/kings-cross/innovation/samsung-people-live/new-galaxy-book-range",
+        "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/galaxy-book/Standard_computing_tile.png"
+      },
+      {
+        "title": "Watch Samsung People Live: Neo QLED Series",
+        "url": "/uk/explore/kings-cross/innovation/samsung-people-live/neo-qled-series",
+        "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/neo-qled-series/Neo_Hub_Tile_Landscape.jpg"
+      }
+    ]
+  }
+}

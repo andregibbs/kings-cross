@@ -1,0 +1,311 @@
+@import '../index';
+
+
+.samsung-people-live {
+  .hoiKv__Components p   {
+    margin-bottom: 0.5rem !important;
+  }
+}
+
+.hoiKv {
+  margin-bottom: 4vw;
+  .btn {
+    background-color: #FF4337;
+    border-color: #FF4337;
+    border-radius: 3px;
+    &:hover {
+      color: #FF4337;
+      svg path {
+        fill: #FF4337 !important;
+      }
+    }
+  }
+  .hoiKv__Media:after {
+    padding-bottom: 46.25% !important;
+  }
+  .hoiBambuser__NextSteam {
+    display: none !important;
+  }
+  .hoiBambuser__LiveIcon {
+    margin-left: 0 !important;
+  }
+  .hoiBambuser__HtmlTitles {
+    padding-top: 2vw;
+    * {
+      color: black;
+    }
+    img {
+      width: 250px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-top: -5px;
+      @media screen and (max-width: 768px) {
+        width: 175px;
+        display: block;
+        margin-top: -10px;
+      }
+    }
+    h2 {
+      margin-top: 2vw;
+      font-size: 2rem;
+      @media screen and (max-width: 768px) {
+        margin-top: 1vw;
+        font-size: 1rem;
+      }
+    }
+    p strong {
+      font-size: 1.25rem;
+      padding: 0.5rem;
+      @media screen and (max-width: 768px) {
+        font-size: inherit;
+        padding: 0;
+        font-weight: normal;
+      }
+
+    }
+  }
+  .hoiBambuser__ContentTime {
+    display: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    .hoiBambuser {
+      background-size: 90% auto;
+      background-repeat: no-repeat;
+      background-position: bottom -10vw center;
+      background-image: url(https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/galaxy-unpacked/m_kv.jpg) !important;
+    }
+    .hoiBambuser__Body {
+      padding: 6vw;
+    }
+    .hoiKv__Media:after {
+      padding-bottom: 145% !important;
+      background-color: #f1f1f1;
+    }
+    .hoiKv__Components {
+      padding: 6vw;
+      width: 100%;
+    }
+    .hoiBambuser__Launch {
+      margin-top: auto;
+    }
+  }
+}
+
+#second-stream,
+#third-stream {
+  .hoiKv__Media:after {
+    background: black;
+    padding-bottom: 33% !important;
+  }
+  .hoiBambuser__LiveIcon {
+    display: none;
+  }
+  .hoiBambuser {
+    background-size: 45%;
+    background-repeat: no-repeat;
+    background-position: right 4vw center;
+  }
+  .hoiBambuser__Body {
+    width: 50%;
+    justify-content: center;
+  }
+  .hoiBambuser__HtmlTitles {
+    padding-top: 0;
+    * {
+      color: white;
+    }
+  }
+  .hoiBambuser__ContentTime {
+    display: none;
+  }
+  h2 {
+    margin: 0 0 1vw;
+    font-size: 1.8rem;
+  }
+  .hoiBambuser__Launch {
+    margin-top: 4vw;
+  }
+  @media screen and (max-width: 768px) {
+    .hoiKv__Media:after {
+      padding-bottom: 100% !important;
+    }
+    .hoiBambuser__Body {
+      width: 100%;
+      justify-content: flex-start;
+      h2 {
+        font-size: 0.8rem;
+      }
+    }
+    .hoiBambuser {
+      background-size: 80%;
+      background-repeat: no-repeat;
+      background-position: center bottom 4vw;
+      background-image: url(https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/galaxy-unpacked/fold.jpg) !important;
+    }
+  }
+}
+
+#third-stream {
+  .hoiBambuser {
+    background-position: left 4vw center;
+
+  }
+  .hoiBambuser__Body {
+    width: 50%;
+    left: 50%;
+  }
+  @media screen and (max-width: 768px) {
+    .hoiBambuser__Body {
+      left: 0;
+      width: 100%;
+      justify-content: flex-start;
+    }
+    .hoiBambuser {
+      background-size: 80%;
+      background-repeat: no-repeat;
+      background-position: center bottom 4vw;
+      background-image: url(https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/galaxy-unpacked/flip.jpg) !important;
+    }
+  }
+}
+
+.spl__Signposts {
+  margin-top: 8vw;
+}
+.spl__Signpost {
+  position: relative;
+  background-color: #0D0E0F;
+  .btn {
+    border-color: #395bcf;
+    background-color: transparent;
+    margin: auto auto 0 0 !important;
+    &:hover {
+      color: #395bcf;
+    }
+  }
+  .spl__SignpostBody {
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .spl__SignpostImage {
+    width: 50%;
+    right: 0;
+    bottom: 0;
+    top: -10%;
+    position: absolute;
+    margin-top: -10%;
+    background-size: contain;
+    background-position: bottom right;
+  }
+  @media screen and (max-width: 768px) {
+    h4 {
+      font-size: 2em !important;
+    }
+  }
+}
+
+#spl-share {
+  margin-bottom: 6vw;
+}
+
+.hoiBambuser {
+  .hoiBambuser__Body {
+    height: 100%;
+    width: 60%;
+    h1 {
+      font-size: 3.5vw;
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+    .hoiBambuser__NextSteam {
+      display: block;
+      margin-bottom: 0.5em;
+      h4, h2 {
+        font-size: 2.2vw;
+        display: inline-block;
+        margin-bottom: 0;
+      }
+      h4 {
+        margin-right: 0.25rem;
+      }
+    }
+    br {
+      display: none;
+    }
+    .hoiBambuser__Launch {
+      margin-top: 2vw;
+    }
+    @media screen and (min-width: 1440px) {
+      h1 {
+        font-size: 2.8rem;
+      }
+      .hoiBambuser__LiveIcon {
+        width: 9vw;
+        margin-left: 0;
+      }
+      .hoiBambuser__NextSteam {
+        h4, h2 {
+          font-size: 1.8rem;
+        }
+      }
+    }
+    @media screen and (max-width: 768px) {
+      h1 {
+        font-size: 6.5vw;
+        margin-bottom: 0.5em;
+      }
+
+      .hoiBambuser__Launch {
+        max-width: none;
+        margin-top: 1rem;
+      }
+      .hoiBambuser__LiveIcon {
+        width: 16vw;
+        height: 2rem;
+      }
+      .hoiBambuser__NextSteam {
+        margin-bottom: 1em;
+        h4, h2 {
+          display: block;
+          font-size: 4.8vw;
+        }
+        h2 {
+          font-size: 4vw;
+          margin-bottom: 0;
+        }
+      }
+      width: 100%;
+      padding-bottom: 14vw;
+    }
+  }
+  .hoiBambuser__LiveIcon {
+    width: 8rem;
+    height: 7rem;
+    margin: 0 !important;
+    vertical-align: top !important;
+  }
+  .hoiBambuser__Launch:hover {
+    .hoiBambuser__LaunchIcon svg path {
+      fill: #97D653;
+    }
+  }
+}
+
+
+
+.spl__Terms {
+  margin-bottom: 0 !important;
+  p {
+    font-size: 0.8rem;
+    @media screen and (max-width: 768px) {
+      font-size: 1em;
+    }
+  }
+}
+
+.spl_LightCopy p {
+  font-family: "SamsungOne", sans-serif !important;
+}
