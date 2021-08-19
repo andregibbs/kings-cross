@@ -1,0 +1,18 @@
+{
+	"__notes": "this file is for use in the hoi dynamic data deployment. this page is built as static page, not a 'home of innovation' page",
+  "title": "Galaxy Unpacked",
+	"description": "Watch live streams from Samsung experts to learn more about new releases like the Galaxy Z Fold 3, plus get your questions answered instantly with our Live Chat.",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/galaxy-unpacked/filp_fold_Tile.jpg",
+  "group": "samsung-people-live",
+  "sort": 5,
+	"meta": {
+		"icon": "video",
+		"tags": []
+	},
+	"components": [
+    {
+      "type": "headline",
+      "copy": "This page should be built using 'gulp' instead of 'gulp hoi-dev'"
+    }
+  ]
+}
