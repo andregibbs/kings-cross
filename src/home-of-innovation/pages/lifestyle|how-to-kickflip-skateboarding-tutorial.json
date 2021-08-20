@@ -1,0 +1,44 @@
+{
+	"title": "Learning the Kickflip with Stefani Nurding",
+	"description": "Instagram Reels",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/stefani-nurding-kickflip/kv.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/stefani-nurding-kickflip/thumbnail.jpg",
+	"meta": {
+		"icon": "video",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 5,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "youtube",
+				"content": "3bMtsbc8TsY",
+				"poster": "{{lifestyle|how-to-kickflip-skateboarding-tutorial[image]}}",
+				"alt": ""
+			},
+			"style": {
+				"desktop": "top",
+				"mobile": "bottom"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Learning the Kickflip with Stefani Nurding "
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+                        "Pro-skater Stefani Nurding teaches the art of perfecting balance, body positioning and timing in order to nail the Kickflip trick, with just a board in one hand and the brand-new <a href='https://www.samsung.com/uk/smartphones/galaxy-z-flip3-5g/buy/'> Samsung Galaxy Z Flip3 </a>  in the other. Stefani uses the Galaxy Z Flip3 to film the entire tutorial, capturing the sharpest angles in Flex mode and showcasing the Multi Window function for ultimate content creation, from scrolling YouTube for inspiration, to uploading Instagram and TikTok posts simultaneously."
+                    ]
+            
+          
+				}
+			]
+		}
+	]
+}
