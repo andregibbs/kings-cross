@@ -38,8 +38,8 @@ const STEAM_DURATION = 30 // mins
 // replace this obj with one of the other streams when they need switching
 let SCHEDULE = [
   {
-    cta: "Join The Live Stream",
-    htmlTitles: "<h1>Galaxy Z Fold3 | Z Flip3:</h1><p><strong>up close and personal with <img src=\"https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/galaxy-unpacked/tech-chap-black.png\"/></strong></p><h2>Join us live at 6pm on Thurs 19th Aug</h2><p>Watch The Tech Chap put the new Galaxy Z Fold3 and Z Flip3 to the test live from Samsung KX. Join us to take advantage of an exclusive offer*.</p>",
+    cta: "Replay Live Stream",
+    htmlTitles: "<h1>Galaxy Z Fold3 | Z Flip3:</h1><p><strong>up close and personal with <img src=\"https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/galaxy-unpacked/tech-chap-black.png\"/></strong></p><p>Watch The Tech Chap put the new Galaxy Z Fold3 and Z Flip3 to the test, live from Samsung KX</p>",
     liveDate: [2021,8,19,18,0],
     endDate: [2021,8,19,18,30],
     showID: 'SCchjSiois0vyyxIKI5G',

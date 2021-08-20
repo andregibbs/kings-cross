@@ -4,7 +4,7 @@
 	"description": "Watch live streams from Samsung experts to learn more about new releases like the Galaxy Z Fold 3, plus get your questions answered instantly with our Live Chat.",
 	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/galaxy-unpacked/filp_fold_Tile.jpg",
   "group": "samsung-people-live",
-  "sort": 5,
+  "sort": 1,
 	"meta": {
 		"icon": "video",
 		"tags": []

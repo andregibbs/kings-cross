@@ -4,7 +4,7 @@
 	"description": "Watch live streams from Samsung experts to learn more about new releases like the Galaxy S21, plus get your questions answered instantly with our Live Chat.",
 	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/galaxy-book/Standard_computing_tile.png",
   "group": "samsung-people-live",
-  "sort": 2,
+  "sort": 4,
 	"meta": {
 		"icon": "video",
 		"tags": []
