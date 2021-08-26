@@ -38,43 +38,88 @@ const STEAM_DURATION = 30 // mins
 // replace this obj with one of the other streams when they need switching
 let SCHEDULE = [
   {
-    cta: "Replay Live Stream",
-    htmlTitles: "<h1>Galaxy Z Fold3 | Z Flip3:</h1><p><strong>up close and personal with <img src=\"https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/galaxy-unpacked/tech-chap-black.png\"/></strong></p><p>Watch The Tech Chap put the new Galaxy Z Fold3 and Z Flip3 to the test, live from Samsung KX</p>",
-    liveDate: [2021,8,19,18,0],
-    endDate: [2021,8,19,18,30],
-    showID: 'SCchjSiois0vyyxIKI5G',
-    title: 'Thursday 19th August - 6PM',
+    htmlTitles: "<h1>Galaxy Z Flip3:</h1><<p><strong>up close and personal at Samsung KX</strong><p><h2>Join us live at 7pm on Weds 25th Aug</h2><p>Watch our product experts dive into the detail of the brand new Galaxy Z Flip3. Join the live Q&A and take advantage of an exclusive offer**.</p>",
+    liveDate: [2021,8,25,19,0],
+    endDate: [2021,8,25,19,30],
+    showID: 'I0cfX2SQ7ucDLYXWIUsb',
+    title: 'Wednesday 25th August - 7PM',
     duration: '30 mins',
     poster: DESKTOP_POSTER,
     mobile_poster: MOBILE_POSTER,
-    alt: 'S Pen & Samsung Fold 3 standing unfolded on a white background next to Samsung Flip 3 displaying a message on the front screen'
+    cta: `Join The Live Stream`,
+    alt: 'Samsung Z Flip 3 front camera & display screen showing a woman taking a selfie and a red \'live\' icon in the top left corner'
   }
 ]
 
+// stream 1 og
+// {
+//   cta: "Replay Live Stream",
+//   htmlTitles: "<h1>Galaxy Z Fold3 | Z Flip3:</h1><p><strong>up close and personal with <img src=\"https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/galaxy-unpacked/tech-chap-black.png\"/></strong></p><h2>Join us live at 6pm on Thurs 19th Aug</h2><p>Watch The Tech Chap put the new Galaxy Z Fold3 and Z Flip3 to the test live from Samsung KX. Join us to take advantage of an exclusive offer*.</p>",
+//   liveDate: [2021,8,19,18,0],
+//   endDate: [2021,8,19,18,30],
+//   showID: 'SCchjSiois0vyyxIKI5G',
+//   title: 'Thursday 19th August - 6PM',
+//   duration: '30 mins',
+//   poster: DESKTOP_POSTER,
+//   mobile_poster: MOBILE_POSTER,
+//   alt: 'S Pen & Samsung Fold 3 standing unfolded on a white background next to Samsung Flip 3 displaying a message on the front screen'
+// }
+
+// stream 2 og
+// {
+//   htmlTitles: "<h1>Galaxy Z Fold3:</h1><h2>up close and personal at Samsung KX</h2><p>Join us live at 6pm on Weds 25th Aug</p>",
+//   liveDate: [2021,8,25,18,0],
+//   endDate: [2021,8,25,18,30],
+//   showID: 'dn5OP3AKOXv9WFuAvobK',
+//   title: 'Wednesday 25th August - 6PM',
+//   duration: '30 mins',
+//   poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/galaxy-unpacked/fold_2.jpg',
+//   mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/galaxy-unpacked/fold.jpg',
+//   cta: `Join The Live Stream`,
+//   alt: 'Close up of Samsung Galaxy Z Fold3 5G camera lens and flashlight with a red \'live\' icon in the top left corner'
+// }
+
+// stream 3 og
+
+// {
+//   htmlTitles: "<h1>Galaxy Z Flip3:</h1><h2>up close and personal at Samsung KX</h2><p>Join us live at 7pm on Weds 25th Aug</p>",
+//   liveDate: [2021,8,25,19,0],
+//   endDate: [2021,8,25,19,30],
+//   showID: 'I0cfX2SQ7ucDLYXWIUsb',
+//   title: 'Wednesday 25th August - 7PM',
+//   duration: '30 mins',
+//   poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/galaxy-unpacked/flip_2.jpg',
+//   mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/galaxy-unpacked/flip.jpg',
+//   cta: `Join The Live Stream`,
+//   alt: 'Samsung Z Flip 3 front camera & display screen showing a woman taking a selfie and a red \'live\' icon in the top left corner'
+// }
+
+const THIRD_STREAM = {
+  cta: "Replay Live Stream",
+  htmlTitles: "<h1>Galaxy Z Fold3 | Z Flip3:</h1><h2>Join us live at 6pm on Thurs 19th Aug</h2><p>Watch The Tech Chap put the new Galaxy Z Fold3 and Z Flip3 to the test live from Samsung KX. Join us to take advantage of an exclusive offer*.</p>",
+  liveDate: [2021,8,19,18,0],
+  endDate: [2021,8,19,18,30],
+  showID: 'SCchjSiois0vyyxIKI5G',
+  title: 'Thursday 19th August - 6PM',
+  duration: '30 mins',
+  poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/galaxy-unpacked/flip_2.jpg',
+  mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/galaxy-unpacked/flip.jpg',
+  alt: 'Samsung Z Flip 3 front camera & display screen showing a woman taking a selfie and a red \'live\' icon in the top left corner'
+}
+
 const SECOND_STREAM = {
-  htmlTitles: "<h1>Galaxy Z Fold3:</h1><h2>up close and personal at Samsung KX</h2><p>Join us live at 6pm on Weds 25th Aug</p>",
+  htmlTitles: "<h1>Galaxy Z Fold3:</h1><h2>Join us live at 6pm on Weds 25th Aug</h2><p>Watch our product experts unfold the features of the brand new Galaxy Z Fold3. Join the live Q&A and take advantage of an exclusive offer**.</p>",
   liveDate: [2021,8,25,18,0],
   endDate: [2021,8,25,18,30],
   showID: 'dn5OP3AKOXv9WFuAvobK',
   title: 'Wednesday 25th August - 6PM',
   duration: '30 mins',
+  // poster: DESKTOP_POSTER,
+  // mobile_poster: MOBILE_POSTER,
   poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/galaxy-unpacked/fold_2.jpg',
   mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/galaxy-unpacked/fold.jpg',
-  cta: `Join The Live Stream`,
-  alt: 'Close up of Samsung Galaxy Z Fold3 5G camera lens and flashlight with a red \'live\' icon in the top left corner'
-}
-
-const THIRD_STREAM = {
-  htmlTitles: "<h1>Galaxy Z Flip3:</h1><h2>up close and personal at Samsung KX</h2><p>Join us live at 7pm on Weds 25th Aug</p>",
-  liveDate: [2021,8,25,19,0],
-  endDate: [2021,8,25,19,30],
-  showID: 'I0cfX2SQ7ucDLYXWIUsb',
-  title: 'Wednesday 25th August - 7PM',
-  duration: '30 mins',
-  poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/galaxy-unpacked/flip_2.jpg',
-  mobile_poster: 'https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-people-live/galaxy-unpacked/flip.jpg',
-  cta: `Join The Live Stream`,
-  alt: 'Samsung Z Flip 3 front camera & display screen showing a woman taking a selfie and a red \'live\' icon in the top left corner'
+  cta: "Replay Live Stream",
+  alt: 'S Pen & Samsung Fold 3 standing unfolded on a white background next to Samsung Flip 3 displaying a message on the front screen'
 }
 
 class SamsungLive {

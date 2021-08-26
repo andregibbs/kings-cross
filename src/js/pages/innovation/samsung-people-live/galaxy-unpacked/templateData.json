@@ -32,10 +32,10 @@
     "components": [
       {
         "type": "paragraphs",
-        "text": [
+        "_text": [
           "*Purchase from Samsung Shop Online by 21st August 23:59. Apply code at checkout to redeem. Limited to one code per transaction. Discount code capped at 300 orders. While stocks last."
         ],
-        "_text": [
+        "text": [
           "*Purchase from Samsung Shop Online by 21st August 23:59. Apply code at checkout to redeem. Limited to one code per transaction. Discount code capped at 300 orders. While stocks last.",
           "**Purchase from Samsung Shop Online by 27th August 23:59. Apply code at checkout to redeem. Limited to one code per transaction. Discount code capped at 300 orders. While stocks last."
         ]
