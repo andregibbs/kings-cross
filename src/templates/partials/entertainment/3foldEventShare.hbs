@@ -1,0 +1,26 @@
+<div class="hoiShare {{#if no-margin}}hoiShare--no-margin{{/if}}">
+
+  <a class="hoiShare__Link" id="twitter" href="https://twitter.com/intent/tweet?text=https://www.samsung.com/uk/explore/kings-cross/entertainment/samsung-3fold-event-featuring-yungblud/" title="Share On Twitter" target="_blank"
+    data-omni-type="microsite" data-omni="uk:kings-cross:{{@root.title}}:share-twitter"
+    ga-ca="microsite" ga-la="kings-cross:{{@root.title}}:share-twitter"
+    >
+    {{> svg/twitter }}
+  </a>
+
+  <a class="hoiShare__Link" id="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.samsung.com/uk/explore/kings-cross/entertainment/samsung-3fold-event-featuring-yungblud/" title="Share On Facebook" target="_blank"
+    data-omni-type="microsite" data-omni="uk:kings-cross:{{@root.title}}:share-facebook"
+    ga-ca="microsite" ga-la="kings-cross:{{@root.title}}:share-facebook">
+    {{> svg/facebook }}
+  </a>
+
+  <a class="hoiShare__Link" id="share" href="#" title="Share Link" target="_blank"
+    data-omni-type="microsite" data-omni="uk:kings-cross:{{@root.title}}:share-twitter"
+    ga-ca="microsite" ga-la="kings-cross:{{@root.title}}:share-link">
+    {{> svg/share }}
+  </a>
+
+  <p class="hoiShare__Feedback">
+    Link copied to clipboard
+  </p>
+
+</div>

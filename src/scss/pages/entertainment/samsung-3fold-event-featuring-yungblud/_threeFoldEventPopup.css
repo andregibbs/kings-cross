@@ -1,0 +1,130 @@
+
+.threeFoldEventPopup {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+    top: 0;
+    left: -200%;
+    z-index: 12345;
+    padding: 3rem 0 0;
+    display: none;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+
+    @media screen and (min-width: $mobile + 1) {
+        padding: 4rem 2rem 2rem;
+    }
+}
+
+/** Light box popup styles **/
+.threeFoldEventVideoPopup {
+
+    .hoiKv__MediaImage {
+
+        max-width: 1280px;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        
+    }
+}
+
+.threeFoldEventImgPopup {
+
+    .hoiKv__MediaImage {
+
+        max-width: 960px;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+
+    }
+
+
+}
+/** Light box popup styles **/
+
+
+
+
+/** images to load for popup **/
+.threeFoldEventPopupImgsMob,
+.threeFoldEventPopupImgs,
+.threeFoldEventPopupVideoPosterImgs,
+.threeFoldEventPopupVideos {
+    display: none;
+    opacity: 0;
+}
+
+
+
+/*.threeFoldEventPopupImg {
+
+    width: 100%;
+    height: auto;
+    max-width: 1440px;
+    margin:0 auto;
+
+     @media screen and (max-width: $mobile) {
+        max-width: 720px;
+       
+    }
+
+
+}*/
+
+
+.threeFoldEventPopup[open] {
+    pointer-events: all;
+    opacity: 1;
+    display: block;
+    left: 0;
+}
+
+.threeFoldEventImagePopup__close{
+    // background: white;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 0.6rem;
+    right: 0.5rem;
+    color: white !important;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+
+
+    @media screen and (min-width: $mobile + 1) {
+        right: 2rem;
+        top: 1rem;
+    }
+}
+
+
+
+.threeFoldEventVideoPopup__close {
+    // background: white;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 0.6rem;
+    right: 0.5rem;
+    color: white !important;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+
+
+    @media screen and (min-width: $mobile + 1) {
+        right: 2rem;
+        top: 1rem;
+    }
+}

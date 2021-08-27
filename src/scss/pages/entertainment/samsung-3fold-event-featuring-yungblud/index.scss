@@ -6,3 +6,713 @@
 
 @import '../../../home-of-innovation/vars';
 @import '../../../components/home-of-innovation/content';
+
+@import "./threeFoldEventPopup";
+
+.threeFoldEvent {
+
+  @import '../../../components/home-of-innovation/typography';
+  @import '../../../components/home-of-innovation/hoiKv';
+  @import '../../../components/home-of-innovation/hoiShare';
+  //@import '../../../components/home-of-innovation/hoiHeadline';
+  //@import '../../../components/home-of-innovation/hoiWrapper';
+  //@import '../../../components/home-of-innovation/hoiParagraphs';
+  //@import '../../../components/home-of-innovation/hoiAddToCalendar';
+  // @import '../../../components/home-of-innovation/hoiImagePanelLinks';
+  // @import '../../../components/home-of-innovation/hoiBambuser';
+  //@import '../../../components/home-of-innovation/hoiBreadcrumbs';
+  //@import '../../../components/home-of-innovation/hoiMedia';
+  // @import '../../../components/common/kxCountdown';
+
+  	.hoiKv {
+
+	    width: 100%;
+	    max-width: 1440px;
+	    margin: 0 auto;
+
+	    .hoiKv__MediaImage {
+
+	    	position: relative;
+
+		    video {
+		    	max-width: 100%;
+		    	height: auto;
+		    	margin: 0 auto;
+
+		    	&.kvVideo__mobile {
+					display: none;
+				}
+
+				&.kvVideo__desktop {
+					display: block;
+				}
+
+				@media screen and (max-width: $mobile) {
+
+
+					&.kvVideo__mobile {
+						display: block;
+					}
+
+					&.kvVideo__desktop {
+						display: none;
+					}
+
+				}
+		    }
+	    }
+
+	}
+
+}
+
+
+.threeFoldEvent {
+
+	a {
+		&.threeFoldEventImagePopup__close,
+		&.threeFoldEventVideoPopup__close
+		{
+			font-size: 2rem;
+		}
+	}
+
+	.midSection {
+
+
+		&.desktopWrapper {
+			display: block;
+			max-width: 1440px;
+    		margin: 0 auto;
+			position: relative;
+
+			img {
+				width: 100%;
+				height: auto;
+			}
+
+			/*.videoTop {
+				 z-index: 4;
+			     position: absolute;
+			     top: 0px; 
+			     left:2vw;
+			     
+
+			     &__overlay {
+			     	width: 39vw;
+				    height: 32vw;
+				    cursor: pointer;
+				    @media screen and (min-width: $desktop) {
+					    width: 550px;
+	    				height: 460px;
+    				}
+			     }
+			}
+
+			.videoBottom {
+				z-index: 4;
+			    position: absolute;
+			    bottom: 5vw;
+			    right: 6vw;
+			    @media screen and (min-width: $desktop) {
+				    right: 80px;
+	    			bottom: 114px;
+    			}
+
+
+			    &__overlay {
+					width: 33vw;
+				    height: 27vw;
+				    cursor: pointer;
+				    @media screen and (min-width: $desktop) {
+					    width: 484px;
+	    				height: 340px;
+    				}
+
+			    }
+			}
+*/
+
+			.bottomLayer {
+
+				/*position: absolute;*/
+				
+				z-index: 0;
+
+				.mid-bg {
+					position: relative;
+
+					figure {
+
+					}
+
+					.topText {
+						position: absolute;
+						top: 3vw;
+					    left: 43%;
+					    padding-top: 2%;
+					    width: 50%;
+					    @media screen and (min-width: $desktop) {
+						    top: 50px;
+	    				}
+
+					}
+
+				}
+
+				.bottom-bg {
+					position: relative;
+
+					.bottomText {
+						position: absolute;
+						bottom: 5vw;
+					    padding-left: 19%;
+					    width: 58%;
+					    @media screen and (min-width: $desktop) {
+						    bottom: 100px;
+	    				}
+					}
+
+				}
+
+			}
+
+			.middleLayer {
+
+				position: absolute;
+				z-index: 1;
+				top: 0px;
+
+				.flex-grid {
+
+					&-container {
+						display: flex;
+						flex-wrap: nowrap;
+						position: relative;
+						max-width: 1440px;
+						margin: 0 auto;
+					}
+
+					&-cell {
+
+						flex: 1;
+						cursor: pointer;
+
+						&.top-image {
+							cursor: default;
+						}
+
+						&.w19 {
+
+							width: 19%;
+							flex: 0 0 19%;
+
+						}
+
+						&.w25 {
+
+							width: 25%;
+							flex: 0 0 25%;
+							
+						}
+
+						&.w27 {
+
+							width: 27%;
+							flex: 0 0 27%;
+							
+						}
+
+						&.w29 {
+
+							width: 29%;
+							flex: 0 0 29%;
+							
+						}
+
+						&.w40 {
+
+							width: 40%;
+							flex: 0 0 40%;
+							padding-left: 2vw;
+							
+						}
+
+						&.w44 {
+
+							width: 44%;
+							flex: 0 0 44%;
+							
+						}
+
+						&.w56 {
+
+							width: 56%;
+							flex: 0 0 56%;
+							
+						}
+
+						&.w50 {
+
+							width: 50%;
+							flex: 0 0 150%;
+
+						}
+
+						&.w100 {
+
+							width: 100%;
+							flex: 0 0 100%;
+
+						}
+
+
+					}
+
+
+
+				}
+
+
+			}
+
+			.topLayer {
+
+				position: absolute;
+				z-index: 2;
+				top: 0px;
+				pointer-events: none;
+
+
+			}
+
+
+			
+
+		}
+
+		&.mobileWrapper {
+			display: none;
+			max-width: 768px;
+    		margin: 0 auto;
+			position: relative;
+
+			img {
+				width: 100%;
+				height: auto;
+			}
+
+			.videoBottom {
+				z-index: 4;
+			    position: absolute;
+			    bottom: 26vw;
+			    right: 5vw;
+			    @media screen and (min-width: $mobile) {
+				    display:none;
+    			}
+
+
+			    &__overlay {
+					width: 90vw;
+				    height: 75vw;
+				    cursor: pointer;
+				    @media screen and (min-width: $mobile) {
+					    display:none;
+    				}
+
+			    }
+			}
+
+			/*.videoTop {
+				 z-index: 4;
+			     position: absolute;
+			     top: 0px; 
+			     left:2vw;
+
+			     &__overlay {
+			     	width: 35vw;
+				    height: 29vw;
+				    background: red;
+				    cursor: pointer;
+				    opacity: 0.2;
+			     }
+			}
+
+			.videoBottom {
+				z-index: 4;
+			    position: absolute;
+			    bottom: 5vw;
+			    right: 7vw;
+
+			    &__overlay {
+					width: 30vw;
+				    height: 21vw;
+				    background: red;
+				    cursor: pointer;
+				    opacity: 0.2;
+
+			    }
+			}*/
+
+
+			.bottomLayer {
+				z-index: 0px;
+				padding-top: 48vw;
+
+				
+
+				.mid-bg {
+
+					position: relative;
+					margin: 0 auto;
+					max-width: 768px;
+					width: 100%;
+					height: auto;
+
+					/*.col1 {
+						width: 16%;
+						height: auto;
+					}
+
+					.col2 {
+						width: 68%;
+						height: auto;
+					}
+
+					.col3 {
+						width: 16%;
+						height: auto;
+					}*/
+
+				}
+
+				.flex-grid {
+
+					&-container {
+						display: flex;
+						flex-wrap: nowrap;
+						position: relative;
+						max-width: 768px;
+						margin: 0 auto;
+					}
+
+					&-cell {
+
+						flex: 1;
+
+						&.w100 {
+
+							width: 100%;
+							flex: 0 0 100%;
+
+							.bottomText,
+							{
+								padding: 20px 4% 20px;
+							}
+						}
+					}
+				}
+
+			}
+
+
+
+			.middleLayer {
+
+				position: absolute;
+				z-index: 1;
+				top: 0px;
+
+				.flex-grid {
+
+					&-container {
+						display: flex;
+						flex-wrap: nowrap;
+						position: relative;
+						max-width: 768px;
+						margin: 0 auto;
+					}
+
+					&-cell {
+
+						flex: 1;
+						cursor: pointer;
+
+						&.top-image {
+							cursor: default;
+						}
+
+						&.w100 {
+
+							width: 100%;
+							flex: 0 0 100%;
+
+							.bottomText,
+							.topText {
+								padding: 0px 4% 20px;
+							}
+						}
+
+						&.w84 {
+
+							width: 85%;
+							flex: 0 0 85%;
+							margin: 0 auto;
+
+							.topText {
+								padding-bottom: 20px;
+							}
+						}
+
+						&.w33 {
+
+							width: 33%;
+							flex: 0 0 33%;
+							
+						}
+
+						&.w34 {
+
+							width: 34%;
+							flex: 0 0 34%;
+
+							
+						}
+
+									
+
+
+					}
+
+
+
+				}
+
+
+			}
+
+
+			.topLayer {
+
+				position: absolute;
+				z-index: 2;
+				top: 0px;
+				width: 100%;
+				pointer-events: none;
+				
+
+				.mid-bg {
+					position: relative;
+					display: flex;
+					flex-wrap: nowrap;
+					position: relative;
+					max-width: 768px;
+					margin: 0 auto;
+
+					.col1 {
+						width: 23%;
+						flex: 0 0 23%;
+						padding-top: 80vw;
+					}
+
+					.col2 {
+						width: 54%;
+						flex: 0 0 54%;
+						
+					}
+
+					.col3 {
+						width: 23%;
+						flex: 0 0 23%;
+						padding-top: 12vw;
+					}
+				}
+
+				.flex-grid {
+
+					&-container {
+						display: flex;
+						flex-wrap: nowrap;
+						position: relative;
+						max-width: 768px;
+						margin: 0 auto;
+						padding-top: 32vw;
+					}
+
+					&-cell {
+
+						flex: 1;
+
+						&.w84 {
+
+							width: 85%;
+							flex: 0 0 85%;
+							margin: 0 auto;
+
+							.topText {
+								padding-bottom: 20px;
+							}
+						}
+					}
+				}
+
+			}
+
+
+
+
+		}
+
+
+
+		@media screen and (max-width: $mobile) {
+
+			&.mobileWrapper {
+				display: block;
+			}
+
+			&.desktopWrapper {
+				display: none;
+			}
+
+		}
+
+	}
+
+
+	.bottomBannerWarapper {
+		max-width: 1440px;
+		width: 100%;
+		margin: 0 auto;
+		position: relative;
+		display: flex;
+		padding: 6% 4% 0%;
+		
+		@media screen and (max-width: $mobile) {
+
+			display: block;
+			padding: 2%;
+
+		}
+
+		.col1,
+		.col2  {
+			
+			width: 49%;
+			position: relative;
+			height: 21vw;
+
+			@media screen and (min-width: $desktop) {
+
+				height: 300px;
+
+			}
+
+			@media screen and (max-width: $mobile) {
+
+				width: 96%;
+			    margin: 8% 2%;
+			    height: 42vw;
+
+			}
+
+			.productImg {
+				position: absolute;
+				right: 0px;
+				width: 100%;
+				height: auto;
+				max-width: 330px;
+				width: 47%;
+				height: auto;
+				max-height: 30vw;
+
+				@media screen and (min-width: $desktop) {
+
+					max-height: 310px;
+
+				}
+			}
+
+			
+
+			.copyDiv {
+				background: #0d0e0f;
+				width: 100%;
+				position: absolute;
+				bottom: 2vw;
+    			top: 1.5vw;
+
+    			@media screen and (max-width: $mobile) {
+    				bottom: 2vw;
+    			}
+
+    			@media screen and (min-width: $desktop) {
+
+					bottom: 24px;
+    				top: 20px;
+
+				}
+    			
+
+    			.copyWrapp {
+    			    position: absolute;
+				    bottom: 2vw;
+				    left: 3vw;
+    				width: 19vw;
+
+    				@media screen and (max-width: $mobile) {
+    					width: 45vw;
+    					bottom: 3vw;
+				    	left: 6vw;
+    				}
+
+    				@media screen and (min-width: $desktop) {
+
+    					bottom: 30px;
+    					left: 30px;
+    					width: 280px;
+
+    				}
+
+				    .title {
+				    	line-height: 1.2;
+				    }
+    			}
+
+			}
+
+			
+
+			
+
+		}
+
+		.col1 {
+			margin-right: 2%;
+			
+		}
+
+		/*.col2 {
+			.productImg {
+				max-width: 255px;
+				width: 40%;
+				height: auto;
+			}
+		}*/
+
+
+
+
+
+
+		@media screen and (max-width: $mobile) {
+
+
+		}
+
+
+	}
+
+
+
+}

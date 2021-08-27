@@ -215,6 +215,18 @@
           border-color: $white;
         }
       }
+      &--darkblue {
+        border-color: $darkblue;
+        background-color: transparent;
+        color: $white;
+        &:hover {
+          border-color: $darkblue;
+          color: $darkblue;
+          background-color: $white;
+        }
+      }
+
+      darkblue
       &--coral {
         border-color: $coral;
         background-color: $coral;
