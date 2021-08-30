@@ -1,6 +1,8 @@
 import '../../../bootstrap.js'
 //import 'slick-carousel'
 
+import { createYoutubeInstance, loadYoutubeAPI } from '../../../home-of-innovation/utils'
+
 
 function ThreeFoldEventPopup() {
     // reset scroll
@@ -74,50 +76,74 @@ function ThreeFoldEventPopup() {
 
 
     //Video attach events
-    const popupVidPosterImgWrapper = document.querySelector('.threeFoldEventPopupVideoPosterImgs')
-    const popupVidPosterLinks = [].slice.call(popupVidPosterImgWrapper.querySelectorAll("link"))
+ /*   const popupVidPosterImgWrapper = document.querySelector('.threeFoldEventPopupVideoPosterImgs')
+    const popupVidPosterLinks = [].slice.call(popupVidPosterImgWrapper.querySelectorAll("link"))*/
 
-    const popupVidWrapper = document.querySelector('.threeFoldEventPopupVideos')
-    const popupVidLinks = [].slice.call(popupVidWrapper.querySelectorAll("link"))
+   /* const popupVidWrapper = document.querySelector('.threeFoldEventPopupVideos')
+    const popupVidLinks = [].slice.call(popupVidWrapper.querySelectorAll("link"))*/
 
     const popupVideoEle = document.querySelectorAll('.threeFoldEventVideoPopup .threeFoldEventVideo')
+    const player = popupVideoEle[0]
+    /*const player = popupVideoEle[0].find("iframe").get(0);*/
     const elVideoPopup = document.querySelector('.threeFoldEventVideoPopup')
     const itemsVideoThumb = [].slice.call(elWrapper.querySelectorAll('.threeFoldVideoPopup__item'))
 
-    itemsVideoThumb.forEach((itemVideoThumb, index) => {
+   itemsVideoThumb.forEach((itemVideoThumb, index) => {
         itemVideoThumb.addEventListener('click', () => {
-            itemVideoThumbClicked(index)
+            //itemVideoThumbClicked(index)
+            setupVideoPopup();
         })
     })
    
 
-    function itemVideoThumbClicked(index) {
+    /*function itemVideoThumbClicked(index) {
         const itemVideoThumb = itemsVideoThumb[index]
         setupVideoPopup(itemVideoThumb)
-    }
+    }*/
 
 
-    function setupVideoPopup(itemVideoThumb) {
+    function setupVideoPopup() {
 
         //const imgPath = elImgPopup.getAttribute('data-img-path')
-        const videoIndex = parseInt(itemVideoThumb.getAttribute('data-index'))
+        //const videoIndex = parseInt(itemVideoThumb.getAttribute('data-index'))
 
-        const vidPosterImagepath = popupVidPosterLinks[videoIndex-1].getAttribute('href')
-        const vidPath = popupVidLinks[videoIndex-1].getAttribute('href')
+       //const vidPosterImagepath = popupVidPosterLinks[videoIndex-1].getAttribute('href')
+        //const vidPath = popupVidLinks[videoIndex-1].getAttribute('href')
         
-        popupVideoEle[0].setAttribute('poster', vidPosterImagepath)
-        popupVideoEle[0].setAttribute('src', vidPath)
+        //popupVideoEle[0].setAttribute('poster', vidPosterImagepath)
+        //popupVideoEle[0].setAttribute('src', vidPath)
+
+        /*loadYoutubeAPI().then(() => {
+          const youtubeMedias = [].slice.call(document.querySelectorAll('.hoiMedia--youtube'))
+          youtubeMedias.forEach((element) => {
+            this.youtubeInstance = createYoutubeInstance(element)
+          })
+        })*/
+        
+
         elVideoPopup.setAttribute('open','')
 
         document.querySelector('.threeFoldEventVideoPopup__close').addEventListener('click', () => {
           
             // hide modal
-            popupVideoEle[0].pause();
+            //popupVideoEle[0].pause();
+            postMessageToPlayer(player, {
+              "event": "command",
+              "func": "pauseVideo"
+            });
             elVideoPopup.removeAttribute('open')
 
         })
 
     }
+
+    // POST commands to YouTube or Vimeo API
+    function postMessageToPlayer(player, command){
+      if (player == null || command == null) return;
+      player.contentWindow.postMessage(JSON.stringify(command), "*");
+    }  
+
+
 
 
 
