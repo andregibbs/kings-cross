@@ -4,7 +4,8 @@ import HOIShare from '../../../home-of-innovation/hoiShare';
 
 import ThreeFoldEventPopup from './threeFoldEventPopup';
 
-//import Scroll from './scroll';
+
+import Scroll from './scrollTo';
 
 
 class Samsung3Fold {
@@ -12,11 +13,48 @@ class Samsung3Fold {
 
 		HOIShare()
 		 
-		this.parallax()
+		//this.parallax()
 
 	}
+	
+
+	/*goToSection(section, anim) {
+		gsap.to(window, {
+			scrollTo: {y: section, autoKill: false},
+			duration: 1
+		});
+
+		if(anim) {
+			anim.restart();
+		}
+	}
+
 
 	parallax() {
+
+		let $this = this;
+
+		document.addEventListener('DOMContentLoaded', () => {
+		
+			document.querySelectorAll(".slide").forEach(section => {
+				ScrollTrigger.create({
+					trigger: section,
+					onEnter: () => $this.goToSection(section),
+				});
+
+				ScrollTrigger.create({
+					trigger: section,
+					start: "bottom bottom",
+					onEnterBack: () => $this.goToSection(section),
+				});
+			});
+
+		});
+*/
+
+
+
+
 
 		/*const parallax = document.getElementById("parallax");
 
@@ -49,8 +87,37 @@ class Samsung3Fold {
 			}
 		});*/
 
+		//console.log(com.greensock.plugins.ScrollToPlugin.version);
 
-	}
+		/*document.addEventListener('DOMContentLoaded', () => {
+
+			let controller = new ScrollMagic.Controller();
+
+			let timeline = new TimelineMax();
+			timeline
+			.to('#topKVVideo', 6, {
+				y: -700
+			}, '-=6')
+			.to('#middleSection', 6, {
+				y:-300
+			}, '-=6')
+			.to('#bottomBanner', 6, {
+				y:-100
+			}, '-=6')
+
+			let scene = new ScrollMagic.Scene({
+				triggerElement: 'section',
+				duration: '200%',
+				triggerHook: 0
+			})
+			.setTween(timeline)
+			.setPin('section')
+			.addTo(controller);
+
+		})
+
+
+	}*/
 }
 
 
