@@ -14,16 +14,9 @@ function ThreeFoldEventPopup() {
 
     const elWrapper = document.querySelector('.threeFoldEvent')
     const itemsImgThumb = [].slice.call(elWrapper.querySelectorAll('.threeFoldImgPopup__item'))
-    
-
-    
 
     const popupImgWrapper = document.querySelector('.threeFoldEventPopupImgs')
     const popupImages = [].slice.call(popupImgWrapper.querySelectorAll("img"))
-
-  /*  const popupMobImgWrapper = document.querySelector('.threeFoldEventPopupImgsMob')
-    const popupMobImages = [].slice.call(popupMobImgWrapper.querySelectorAll("img"))*/
-
 
     //Image attach events
     itemsImgThumb.forEach((itemImgThumb, index) => {
@@ -41,24 +34,9 @@ function ThreeFoldEventPopup() {
 
     function setupImgPopup(itemImgThumb) {
 
-        //const imgPath = elImgPopup.getAttribute('data-img-path')
         const imgIndex = parseInt(itemImgThumb.getAttribute('data-index'))
-       // const view = itemImgThumb.getAttribute('data-view')
         const imagepath = popupImages[imgIndex-1].getAttribute('src')
-        
-        /*let imagepath = '';
 
-        if (view == 'desktop') {
-
-            imagepath = popupImages[imgIndex-1].getAttribute('src')
-        
-        } else {
-
-            imagepath = popupMobImages[imgIndex-1].getAttribute('src')
-
-        }*/
-
-        
         popupImg[0].setAttribute('src', imagepath)
         elImgPopup.setAttribute('open','')
 
@@ -72,65 +50,42 @@ function ThreeFoldEventPopup() {
     }
 
 
-
-
-
-    //Video attach events
- /*   const popupVidPosterImgWrapper = document.querySelector('.threeFoldEventPopupVideoPosterImgs')
-    const popupVidPosterLinks = [].slice.call(popupVidPosterImgWrapper.querySelectorAll("link"))*/
-
-   /* const popupVidWrapper = document.querySelector('.threeFoldEventPopupVideos')
-    const popupVidLinks = [].slice.call(popupVidWrapper.querySelectorAll("link"))*/
-
     const popupVideoEle = document.querySelectorAll('.threeFoldEventVideoPopup .threeFoldEventVideo')
     const player = popupVideoEle[0]
     /*const player = popupVideoEle[0].find("iframe").get(0);*/
+    const iframeVideoEle = document.querySelector('#threeFoldEventVideoIframe') 
     const elVideoPopup = document.querySelector('.threeFoldEventVideoPopup')
     const itemsVideoThumb = [].slice.call(elWrapper.querySelectorAll('.threeFoldVideoPopup__item'))
 
    itemsVideoThumb.forEach((itemVideoThumb, index) => {
         itemVideoThumb.addEventListener('click', () => {
             //itemVideoThumbClicked(index)
-            setupVideoPopup();
+            const youtubeId = itemVideoThumb.getAttribute('data-youtubeId')
+            setupVideoPopup(youtubeId);
         })
     })
-   
-
-    /*function itemVideoThumbClicked(index) {
-        const itemVideoThumb = itemsVideoThumb[index]
-        setupVideoPopup(itemVideoThumb)
-    }*/
 
 
-    function setupVideoPopup() {
+    function setupVideoPopup(youtubeId) {
 
-        //const imgPath = elImgPopup.getAttribute('data-img-path')
-        //const videoIndex = parseInt(itemVideoThumb.getAttribute('data-index'))
+        //https://www.youtube.com/embed/QeUFb8thax0?loop=0&playlist=QeUFb8thax0&autoplay=0&enablejsapi=1
 
-       //const vidPosterImagepath = popupVidPosterLinks[videoIndex-1].getAttribute('href')
-        //const vidPath = popupVidLinks[videoIndex-1].getAttribute('href')
-        
-        //popupVideoEle[0].setAttribute('poster', vidPosterImagepath)
-        //popupVideoEle[0].setAttribute('src', vidPath)
+        let youtubeVideoUrl = "https://www.youtube.com/embed/QeUFb8thax0?loop=0&playlist="+youtubeId+"&autoplay=0&enablejsapi=1"
 
-        /*loadYoutubeAPI().then(() => {
-          const youtubeMedias = [].slice.call(document.querySelectorAll('.hoiMedia--youtube'))
-          youtubeMedias.forEach((element) => {
-            this.youtubeInstance = createYoutubeInstance(element)
-          })
-        })*/
-        
+        iframeVideoEle.setAttribute('src', youtubeVideoUrl)
 
         elVideoPopup.setAttribute('open','')
 
         document.querySelector('.threeFoldEventVideoPopup__close').addEventListener('click', () => {
           
             // hide modal
-            //popupVideoEle[0].pause();
             postMessageToPlayer(player, {
               "event": "command",
               "func": "pauseVideo"
             });
+
+            iframeVideoEle.removeAttribute('src')
+
             elVideoPopup.removeAttribute('open')
 
         })
