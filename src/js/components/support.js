@@ -409,25 +409,55 @@ export default function support() {
     }
 
     function initDeviceGrabs() {
-        var url = "https://spreadsheets.google.com/feeds/list/1sVUkiE2351zGssyybR27Xb7vck3n5mZZCkZD6pb7zcc/1/public/values?alt=json";
+
+        // fetch('https://docs.google.com/spreadsheets/d/1KqL07sKnQQUBM5vwI--wp614ICA3dmhPEZQ8D43a_DE/gviz/tq?tqx=out:json')
+        //   .then(r => r.json())
+        //   .then(json => {
+        //     console.log('json', json)
+        //   })
+        //   .catch(e => {
+        //     console.log(e)
+        //   })
+
+        var url = "https://docs.google.com/spreadsheets/d/1KqL07sKnQQUBM5vwI--wp614ICA3dmhPEZQ8D43a_DE/gviz/tq?tqx=out:json";
         $j.ajax({
             url: url,
-            dataType: "jsonp",
+            // dataType: "json",
             success: function (data) {
+                let transformed = data.replace(/(^.*google\.visualization\.Query\.setResponse\(|\);$)/gs,'')
+
+                data = JSON.parse(transformed)
                 var devices = [];
-                for (var x = 0; x < data.feed.entry.length; x++) {
-                    var entry = data.feed.entry[x];
-                    devices.push({
-                        name: entry.gsx$devicename.$t,
-                        model: entry.gsx$devicemodel.$t,
-                        screen: entry.gsx$screen.$t,
-                        rcamera: entry.gsx$rearcamera.$t,
-                        fcamera: entry.gsx$frontcamera.$t,
-                        battery: entry.gsx$battery.$t,
-                        usb: entry.gsx$usbconnector.$t,
-                        colors: entry.gsx$colour.$t
-                    });
-                }
+
+                console.log({data})
+                data.table.rows.forEach((row) => {
+                  let rowData = row.c.map(col => col ? col.v : false)
+                  let [
+                    name, model,
+                    colors, screen,
+                    rcamera, fcamera,
+                    usb, battery,
+                  ] = rowData
+                  devices.push({
+                    name, model,
+                    colors, screen,
+                    rcamera, fcamera,
+                    usb, battery,
+                  })
+                })
+                // for (var x = 0; x < data.feed.entry.length; x++) {
+                //     var entry = data.feed.entry[x];
+                //     devices.push({
+                //         name: entry.gsx$devicename.$t,
+                //         model: entry.gsx$devicemodel.$t,
+                //         screen: entry.gsx$screen.$t,
+                //         rcamera: entry.gsx$rearcamera.$t,
+                //         fcamera: entry.gsx$frontcamera.$t,
+                //         battery: entry.gsx$battery.$t,
+                //         usb: entry.gsx$usbconnector.$t,
+                //         colors: entry.gsx$colour.$t
+                //     });
+                // }
 
                 var selectorList = document.getElementById("model-selector");
 
@@ -449,6 +479,7 @@ export default function support() {
             },
             error: function (err) {
                 //doLog(err);
+                console.log(err)
             }
 
         });
@@ -677,11 +708,12 @@ export default function support() {
         }
 
         if (this.selectedIndex != 0) {
-            var deviceColors = $j(this).find(":selected").data("colors").split(", ");
+            console.log($j(this).find(":selected").data("colors"))
+            var deviceColors = $j(this).find(":selected").data("colors").split(",");
             for (var clr = 0; clr < deviceColors.length; clr++) {
                 var color = document.createElement("option");
-                color.value = deviceColors[clr];
-                color.innerText = deviceColors[clr];
+                color.value = deviceColors[clr].trim();
+                color.innerText = deviceColors[clr].trim();
                 colorBox.appendChild(color);
             }
         }

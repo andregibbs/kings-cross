@@ -1,49 +1,12 @@
 {{>bootstrap/header}}
 
-<!--script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script-->
-
-<!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollToPlugin.min.js" integrity="sha512-1OG9UO4krPizjtz/c9iDbjCqtXznBYdJeD4ccPaYfJHzC6F1qoQ3P1bgQ3J8lgCoK5qGVCqsY4+/RKjLDzITVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js" integrity="sha512-DlTk2PLUinhBupE89kHOJTt11QqbRMQVlbb26XVDvp4D1kt0fRvQJslvZnTelRJHq6yK0tIPCR7cul8+9Blz0g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script> -->
-
-<!--script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js" integrity="sha512-5/OHwmQzDSBS0Ous4/hlYoWLHd06/d2r7LdKZQVBXOA6PvOqWVXtdboiLTU7lQTGyVoKVTNkwi0ol4gHGlw5ww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
-
-<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script-->
-
-
-
-
-
-<!-- <script type="text/javascript" src="../../js/pages/entertainment/samsung-3fold-event-featuring-yungblud/gsap3/gsap.min.js"></script> 
-<script type="text/javascript" src="../../js/pages/entertainment/samsung-3fold-event-featuring-yungblud/scrollmagic/uncompressed/ScrollMagic.js"></script>
-<script type="text/javascript" src="../../js/pages/entertainment/samsung-3fold-event-featuring-yungblud/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
-<script type="text/javascript" src="../../js/pages/entertainment/samsung-3fold-event-featuring-yungblud/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>-->
-
-
-
-<!-- <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js'></script>
- -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/ScrollToPlugin.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/ScrollTrigger.min.js'></script>
 
-
-<!--script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js" integrity="sha512-5/OHwmQzDSBS0Ous4/hlYoWLHd06/d2r7LdKZQVBXOA6PvOqWVXtdboiLTU7lQTGyVoKVTNkwi0ol4gHGlw5ww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
-<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script-->
- 
-
 <section class="cheil-static threeFoldEvent slides-container">
 
   {{>bootstrap/header-components page="entertainment/samsung-3fold-event-featuring-yungblud"}}
-
-
-  
 
     <!-- Popup Imgage -->
 
@@ -87,65 +50,19 @@
     <div class="threeFoldEventPopup threeFoldEventVideoPopup">
     
         <a class="threeFoldEventVideoPopup__close">&#10005</a>
-        <!-- <div class="hoiKv hoiKv--d-top hoiKv--m-top"> -->
-     
-            <!-- <div class="hoiKv__MediaImage"> -->
-                 <!-- <video class="threeFoldEventVideo"  preload="metadata" controls="" playsinline="" poster="" ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:samsung-3fold-event-featuring-yungblud:play-video" data-omni-type="microsite" data-omni="uk:kings-cross:samsung-3fold-event-featuring-yungblud:play-video" src="" type="video/mp4">
-                Your browser does not support the video tag.
-                </video> -->
 
-              <div class="iframeWrapper">
+        
+        <div class="iframeWrapper">
+       
+            <iframe id="threeFoldEventVideoIframe"  class="threeFoldEventVideo" src="" title="YouTube video player" frameborder="0" allow="accelerometer; enablejsapi; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-                <!-- <iframe class="threeFoldEventVideo" style="position: absolute; left: 0px; right: 0px; width: 100%; height: 100%; max-width: 1280px; margin: 0 auto;" class="embed-player sft-video__iframe" src="https://www.youtube.com/embed/83ydTWnhOsA?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; enablejsapi; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-                "
-                <iframe  class="threeFoldEventVideo" src="https://www.youtube.com/embed/QeUFb8thax0?loop=0&playlist=QeUFb8thax0&autoplay=0&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; enablejsapi; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
 
-
-
-              </div>
-
-            <!-- </div> -->
-
-       <!--  </div> -->
-
-    </div>
-<!-- 
-    <div class="threeFoldEventPopupVideoPosterImgs">
-
-        <link rel="preload" href="https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/school/NAS-vid-thumbnail-btn.jpg" as="image" >
 
     </div>
 
-    <div class="threeFoldEventPopupVideos">
-
-        <link rel="preload" href="https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/school/SAMSUNG-NAS-WRAP-V1-compressed.mp4" as="video" type="video/mp4">
-
-    </div>
- -->
 
 
-
-
-    <!-- <div class="threeFoldEventPopupImgsMob">
-
-        <img src="https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-3fold-event/720x555-1.png" />
-        <img src="https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-3fold-event/720x555-2.png" />
-        <img src="https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-3fold-event/720x555-3.png" />
-        <img src="https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-3fold-event/720x555-4.png" />
-        <img src="https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-3fold-event/720x555-5.png" />
-        <img src="https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-3fold-event/720x555-6.png" />
-        <img src="https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-3fold-event/720x555-7.png" />
-        <img src="https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-3fold-event/720x555-8.png" />
-        <img src="https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-3fold-event/720x555-9.png" />
-        <img src="https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-3fold-event/720x555-10.png" />
-        <img src="https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-3fold-event/720x555-11.png" />
-        <img src="https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-3fold-event/720x555-12.png" />
-        <img src="https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-3fold-event/720x555-13.png" />
-        <img src="https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-3fold-event/720x555-14.png" />
-        <img src="https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-3fold-event/720x555-15.png" />
-
-
-    </div> -->
 
 
 <!-- Intro Kv -->
@@ -241,9 +158,10 @@
 
                 </div> -->
 
-  				<div class="flex-grid-cell w40 top-image parallax">
 
-  					<img src="https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-3fold-event/KXLaunch-comingsoon.png" title="top video" />
+  				<div class="flex-grid-cell w40 top-image parallax threeFoldVideoPopup__item" data-youtubeId="SMU8zrLv43Q">
+
+  					<img src="https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-3fold-event/KXhero3.png" title="top video" />
 
   				</div>
 
@@ -339,8 +257,8 @@
                 <div class="flex-grid-cell w56">
                 &nbsp;
                 </div>
-                <!--  -->
-                <div class="flex-grid-cell w44 threeFoldVideoPopup__item" data-index="1" data-view='mobile' data-index="1" ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:entertainment:samsung-3fold-event-featuring-yungblud:bottom_video_image_click" data-omni-type="microsite" data-omni="uk:kings-cross:entertainment:samsung-3fold-event-featuring-yungblud:bottom_video_image_click">
+                
+                <div class="flex-grid-cell w44 threeFoldVideoPopup__item" data-youtubeId="QeUFb8thax0" data-view='mobile' data-index="1" ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:entertainment:samsung-3fold-event-featuring-yungblud:bottom_video_image_click" data-omni-type="microsite" data-omni="uk:kings-cross:entertainment:samsung-3fold-event-featuring-yungblud:bottom_video_image_click">
 
                     <img src="https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-3fold-event/desktop/bottom_video-v1.png" title="bottom video" /> 
 
@@ -434,9 +352,9 @@
 
         <div class="flex-grid-container parallax">
 
-          <div class="flex-grid-cell w84 top-image">
+          <div class="flex-grid-cell w84 top-image threeFoldVideoPopup__item" data-youtubeId="SMU8zrLv43Q">
 
-                <img src="https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-3fold-event/KXLaunch-comingsoon.png" title="top video" />
+                <img src="https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/samsung-3fold-event/KXhero3.png" title="top video" />
           </div>
 
         </div>
@@ -559,7 +477,7 @@
 
     <div class="videoBottom">
       
-        <div class="videoBottom__overlay threeFoldVideoPopup__item" data-index="1" data-view="mobile" ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:entertainment:samsung-3fold-event-featuring-yungblud:bottom_video_image_click" data-omni-type="microsite" data-omni="uk:kings-cross:entertainment:samsung-3fold-event-featuring-yungblud:bottom_video_image_click">
+        <div class="videoBottom__overlay threeFoldVideoPopup__item" data-youtubeId="QeUFb8thax0" data-view="mobile" ga-ca="microsite" ga-ac="feature" ga-la="kings-cross:entertainment:samsung-3fold-event-featuring-yungblud:bottom_video_image_click" data-omni-type="microsite" data-omni="uk:kings-cross:entertainment:samsung-3fold-event-featuring-yungblud:bottom_video_image_click">
           &nbsp;
         </div>
 
