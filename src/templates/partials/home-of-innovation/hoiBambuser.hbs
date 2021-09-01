@@ -2,6 +2,10 @@
   class="hoiBambuser"
   showID="{{showID}}"
   style="background-image:url({{poster}})"
+  {{#if alt}}
+    role="image"
+    aria-label="{{alt}}"
+  {{/if}}
 >
   <style>
     @media screen and (max-width: 768px) {
@@ -12,8 +16,17 @@
   </style>
   <div class="hoiBambuser__Body">
     <div>
-      <h1>Samsung <br>People</h1>
+      {{#if htmlTitles}}
+      {{else}}
+        <h1>Samsung <br>People</h1>
+      {{/if}}
       {{>live_icon}}
+
+      {{#if htmlTitles}}
+        <div class="hoiBambuser__HtmlTitles">
+          {{{htmlTitles}}}
+        </div>
+      {{/if}}
     </div>
     <div class="hoiBambuser__NextSteam">
       {{#if live}}
