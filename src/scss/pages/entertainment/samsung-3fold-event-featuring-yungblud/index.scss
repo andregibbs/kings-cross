@@ -24,11 +24,17 @@
   //@import '../../../components/home-of-innovation/hoiMedia';
   // @import '../../../components/common/kxCountdown';
 
+
+
+
+
   	.hoiKv {
 
 	    width: 100%;
 	    max-width: 1440px;
+	    height: auto;
 	    margin: 0 auto;
+
 
 	    .hoiKv__MediaImage {
 
@@ -37,6 +43,7 @@
 		    video {
 		    	max-width: 100%;
 		    	height: auto;
+		    	height: 48vw;
 		    	margin: 0 auto;
 
 		    	&.kvVideo__mobile {
@@ -47,8 +54,15 @@
 					display: block;
 				}
 
+				@media screen and (min-width: $desktop) {
+
+			    	height: 810px;
+
+			    }
+
 				@media screen and (max-width: $mobile) {
 
+					height: 55vw;
 
 					&.kvVideo__mobile {
 						display: block;
@@ -213,6 +227,7 @@
 
 							width: 19%;
 							flex: 0 0 19%;
+							top: 0px;
 
 						}
 
@@ -220,6 +235,7 @@
 
 							width: 25%;
 							flex: 0 0 25%;
+							top: 0px;
 
 						}
 
@@ -227,6 +243,7 @@
 
 							width: 27%;
 							flex: 0 0 27%;
+							top: 0px;
 
 						}
 
@@ -234,6 +251,7 @@
 
 							width: 29%;
 							flex: 0 0 29%;
+							top: 0px;
 
 						}
 
@@ -242,6 +260,7 @@
 							width: 40%;
 							flex: 0 0 40%;
 							padding-left: 2vw;
+							top: 0px;
 
 						}
 
@@ -249,6 +268,7 @@
 
 							width: 44%;
 							flex: 0 0 44%;
+							top: 0px;
 
 						}
 
@@ -256,6 +276,7 @@
 
 							width: 56%;
 							flex: 0 0 56%;
+							top: 0px;
 
 						}
 
@@ -263,6 +284,7 @@
 
 							width: 50%;
 							flex: 0 0 150%;
+							top: 0px;
 
 						}
 
@@ -270,6 +292,7 @@
 
 							width: 100%;
 							flex: 0 0 100%;
+							top: 0px;
 
 						}
 

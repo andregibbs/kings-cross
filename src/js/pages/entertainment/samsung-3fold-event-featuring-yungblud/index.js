@@ -4,7 +4,8 @@ import HOIShare from '../../../home-of-innovation/hoiShare';
 
 import ThreeFoldEventPopup from './threeFoldEventPopup';
 
-//import Scroll from './scroll';
+
+import Scroll from './scrollTo';
 
 
 class Samsung3Fold {
@@ -12,10 +13,9 @@ class Samsung3Fold {
 	constructor() {
 
 		HOIShare()
-		 
 
 	}
-
+	
 }
 
 
