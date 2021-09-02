@@ -14,9 +14,9 @@ function ThreeFoldEventPopup() {
 
     const elWrapper = document.querySelector('.threeFoldEvent')
     const itemsImgThumb = [].slice.call(elWrapper.querySelectorAll('.threeFoldImgPopup__item'))
-    
 
-    
+
+
 
     const popupImgWrapper = document.querySelector('.threeFoldEventPopupImgs')
     const popupImages = [].slice.call(popupImgWrapper.querySelectorAll("img"))
@@ -31,7 +31,7 @@ function ThreeFoldEventPopup() {
             itemImgThumbClicked(index)
         })
     })
-   
+
 
     function itemImgThumbClicked(index) {
         const itemImgThumb = itemsImgThumb[index]
@@ -45,25 +45,25 @@ function ThreeFoldEventPopup() {
         const imgIndex = parseInt(itemImgThumb.getAttribute('data-index'))
        // const view = itemImgThumb.getAttribute('data-view')
         const imagepath = popupImages[imgIndex-1].getAttribute('src')
-        
+
         /*let imagepath = '';
 
         if (view == 'desktop') {
 
             imagepath = popupImages[imgIndex-1].getAttribute('src')
-        
+
         } else {
 
             imagepath = popupMobImages[imgIndex-1].getAttribute('src')
 
         }*/
 
-        
+
         popupImg[0].setAttribute('src', imagepath)
         elImgPopup.setAttribute('open','')
 
         document.querySelector('.threeFoldEventImagePopup__close').addEventListener('click', () => {
-          
+
             // hide modal
             elImgPopup.removeAttribute('open')
 
@@ -88,13 +88,49 @@ function ThreeFoldEventPopup() {
     const elVideoPopup = document.querySelector('.threeFoldEventVideoPopup')
     const itemsVideoThumb = [].slice.call(elWrapper.querySelectorAll('.threeFoldVideoPopup__item'))
 
-   itemsVideoThumb.forEach((itemVideoThumb, index) => {
-        itemVideoThumb.addEventListener('click', () => {
-            //itemVideoThumbClicked(index)
-            setupVideoPopup();
-        })
+    // itemsVideoThumb.forEach((itemVideoThumb, index) => {
+    //   itemVideoThumb.addEventListener('click', () => {
+    //     //itemVideoThumbClicked(index)
+    //     setupVideoPopup();
+    //   })
+    // })
+
+    const videoPopup = document.querySelector('#popup-video')
+    const videoPopupPlayer = document.querySelector('#popup-video iframe')
+    const launchVideoPopup = [].slice.call(document.querySelectorAll('.launchPopup'))
+    const closeVideoPopup = document.querySelector('#popup-video-close')
+    closeVideoPopup.addEventListener('click', (e) => {
+      videoPopup.removeAttribute('open')
+      postMessageToPlayer(videoPopupPlayer, {
+        "event": "command",
+        "func": "pauseVideo"
+      });
     })
-   
+    launchVideoPopup.forEach(el => {
+      el.addEventListener('click', (e) => {
+        videoPopup.setAttribute('open','')
+      })
+    })
+
+
+
+    const secondVideoPopup = document.querySelector('#popup-video-top')
+    const secondVideoPopupPlayer = document.querySelector('#popup-video-top iframe')
+    const launchSecondVideoPopupEls = [].slice.call(document.querySelectorAll('.launchPopupTop'))
+    const closeSecondVideoPopup = document.querySelector('#popup-video-close-top')
+    closeSecondVideoPopup.addEventListener('click', (e) => {
+      secondVideoPopup.removeAttribute('open')
+      postMessageToPlayer(secondVideoPopupPlayer, {
+        "event": "command",
+        "func": "pauseVideo"
+      });
+    })
+    launchSecondVideoPopupEls.forEach(el => {
+      el.addEventListener('click', (e) => {
+        secondVideoPopup.setAttribute('open','')
+      })
+    })
+
 
     /*function itemVideoThumbClicked(index) {
         const itemVideoThumb = itemsVideoThumb[index]
@@ -109,7 +145,7 @@ function ThreeFoldEventPopup() {
 
        //const vidPosterImagepath = popupVidPosterLinks[videoIndex-1].getAttribute('href')
         //const vidPath = popupVidLinks[videoIndex-1].getAttribute('href')
-        
+
         //popupVideoEle[0].setAttribute('poster', vidPosterImagepath)
         //popupVideoEle[0].setAttribute('src', vidPath)
 
@@ -119,12 +155,12 @@ function ThreeFoldEventPopup() {
             this.youtubeInstance = createYoutubeInstance(element)
           })
         })*/
-        
+
 
         elVideoPopup.setAttribute('open','')
 
         document.querySelector('.threeFoldEventVideoPopup__close').addEventListener('click', () => {
-          
+
             // hide modal
             //popupVideoEle[0].pause();
             postMessageToPlayer(player, {
@@ -141,7 +177,7 @@ function ThreeFoldEventPopup() {
     function postMessageToPlayer(player, command){
       if (player == null || command == null) return;
       player.contentWindow.postMessage(JSON.stringify(command), "*");
-    }  
+    }
 
 
 

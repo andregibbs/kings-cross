@@ -73,6 +73,11 @@
 
 .threeFoldEvent {
 
+  .launchPopupTop,
+  .launchPopup {
+    cursor: pointer !important;
+  }
+
 	a {
 		&.threeFoldEventImagePopup__close,
 		&.threeFoldEventVideoPopup__close
@@ -99,9 +104,9 @@
 			/*.videoTop {
 				 z-index: 4;
 			     position: absolute;
-			     top: 0px; 
+			     top: 0px;
 			     left:2vw;
-			     
+
 
 			     &__overlay {
 			     	width: 39vw;
@@ -137,12 +142,12 @@
 			    }
 			}
 */
-	
+
 
 			.bottomLayer {
 
 				/*position: absolute;*/
-				
+
 				z-index: 0;
 
 				.mid-bg {
@@ -219,21 +224,21 @@
 
 							width: 25%;
 							flex: 0 0 25%;
-							
+
 						}
 
 						&.w27 {
 
 							width: 27%;
 							flex: 0 0 27%;
-							
+
 						}
 
 						&.w29 {
 
 							width: 29%;
 							flex: 0 0 29%;
-							
+
 						}
 
 						&.w40 {
@@ -241,21 +246,21 @@
 							width: 40%;
 							flex: 0 0 40%;
 							padding-left: 2vw;
-							
+
 						}
 
 						&.w44 {
 
 							width: 44%;
 							flex: 0 0 44%;
-							
+
 						}
 
 						&.w56 {
 
 							width: 56%;
 							flex: 0 0 56%;
-							
+
 						}
 
 						&.w50 {
@@ -328,7 +333,7 @@
 			/*.videoTop {
 				 z-index: 4;
 			     position: absolute;
-			     top: 0px; 
+			     top: 0px;
 			     left:2vw;
 
 			     &__overlay {
@@ -361,7 +366,7 @@
 				z-index: 0px;
 				padding-top: 48vw;
 
-				
+
 
 				.mid-bg {
 
@@ -470,7 +475,7 @@
 
 							width: 33%;
 							flex: 0 0 33%;
-							
+
 						}
 
 						&.w34 {
@@ -478,10 +483,10 @@
 							width: 34%;
 							flex: 0 0 34%;
 
-							
+
 						}
 
-									
+
 
 
 					}
@@ -501,7 +506,7 @@
 				top: 0px;
 				width: 100%;
 				pointer-events: none;
-				
+
 
 				.mid-bg {
 					position: relative;
@@ -520,7 +525,7 @@
 					.col2 {
 						width: 54%;
 						flex: 0 0 54%;
-						
+
 					}
 
 					.col3 {
@@ -589,7 +594,7 @@
 		position: relative;
 		display: flex;
 		padding: 6% 4% 0%;
-		
+
 		@media screen and (max-width: $mobile) {
 
 			display: block;
@@ -599,7 +604,7 @@
 
 		.col1,
 		.col2  {
-			
+
 			width: 49%;
 			position: relative;
 			height: 21vw;
@@ -635,7 +640,7 @@
 				}
 			}
 
-			
+
 
 			.copyDiv {
 				background: #0d0e0f;
@@ -654,7 +659,7 @@
     				top: 20px;
 
 				}
-    			
+
 
     			.copyWrapp {
     			    position: absolute;
@@ -683,15 +688,15 @@
 
 			}
 
-			
 
-			
+
+
 
 		}
 
 		.col1 {
 			margin-right: 2%;
-			
+
 		}
 
 		/*.col2 {
