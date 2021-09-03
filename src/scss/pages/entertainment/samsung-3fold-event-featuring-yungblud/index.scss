@@ -24,11 +24,17 @@
   //@import '../../../components/home-of-innovation/hoiMedia';
   // @import '../../../components/common/kxCountdown';
 
+
+
+
+
   	.hoiKv {
 
 	    width: 100%;
 	    max-width: 1440px;
+	    height: auto;
 	    margin: 0 auto;
+
 
 	    .hoiKv__MediaImage {
 
@@ -37,6 +43,7 @@
 		    video {
 		    	max-width: 100%;
 		    	height: auto;
+		    	height: 48vw;
 		    	margin: 0 auto;
 
 		    	&.kvVideo__mobile {
@@ -47,8 +54,15 @@
 					display: block;
 				}
 
+				@media screen and (min-width: $desktop) {
+
+			    	height: 810px;
+
+			    }
+
 				@media screen and (max-width: $mobile) {
 
+					height: 55vw;
 
 					&.kvVideo__mobile {
 						display: block;
@@ -72,6 +86,11 @@
 
 
 .threeFoldEvent {
+
+  .launchPopupTop,
+  .launchPopup {
+    cursor: pointer !important;
+  }
 
 	a {
 		&.threeFoldEventImagePopup__close,
@@ -99,9 +118,9 @@
 			/*.videoTop {
 				 z-index: 4;
 			     position: absolute;
-			     top: 0px; 
+			     top: 0px;
 			     left:2vw;
-			     
+
 
 			     &__overlay {
 			     	width: 39vw;
@@ -137,12 +156,12 @@
 			    }
 			}
 */
-	
+
 
 			.bottomLayer {
 
 				/*position: absolute;*/
-				
+
 				z-index: 0;
 
 				.mid-bg {
@@ -204,14 +223,11 @@
 						flex: 1;
 						cursor: pointer;
 
-						&.top-image {
-							cursor: default;
-						}
-
 						&.w19 {
 
 							width: 19%;
 							flex: 0 0 19%;
+							top: 0px;
 
 						}
 
@@ -219,21 +235,24 @@
 
 							width: 25%;
 							flex: 0 0 25%;
-							
+							top: 0px;
+
 						}
 
 						&.w27 {
 
 							width: 27%;
 							flex: 0 0 27%;
-							
+							top: 0px;
+
 						}
 
 						&.w29 {
 
 							width: 29%;
 							flex: 0 0 29%;
-							
+							top: 0px;
+
 						}
 
 						&.w40 {
@@ -241,27 +260,31 @@
 							width: 40%;
 							flex: 0 0 40%;
 							padding-left: 2vw;
-							
+							top: 0px;
+
 						}
 
 						&.w44 {
 
 							width: 44%;
 							flex: 0 0 44%;
-							
+							top: 0px;
+
 						}
 
 						&.w56 {
 
 							width: 56%;
 							flex: 0 0 56%;
-							
+							top: 0px;
+
 						}
 
 						&.w50 {
 
 							width: 50%;
 							flex: 0 0 150%;
+							top: 0px;
 
 						}
 
@@ -269,6 +292,7 @@
 
 							width: 100%;
 							flex: 0 0 100%;
+							top: 0px;
 
 						}
 
@@ -328,7 +352,7 @@
 			/*.videoTop {
 				 z-index: 4;
 			     position: absolute;
-			     top: 0px; 
+			     top: 0px;
 			     left:2vw;
 
 			     &__overlay {
@@ -361,7 +385,7 @@
 				z-index: 0px;
 				padding-top: 48vw;
 
-				
+
 
 				.mid-bg {
 
@@ -470,7 +494,7 @@
 
 							width: 33%;
 							flex: 0 0 33%;
-							
+
 						}
 
 						&.w34 {
@@ -478,10 +502,10 @@
 							width: 34%;
 							flex: 0 0 34%;
 
-							
+
 						}
 
-									
+
 
 
 					}
@@ -501,7 +525,7 @@
 				top: 0px;
 				width: 100%;
 				pointer-events: none;
-				
+
 
 				.mid-bg {
 					position: relative;
@@ -520,7 +544,7 @@
 					.col2 {
 						width: 54%;
 						flex: 0 0 54%;
-						
+
 					}
 
 					.col3 {
@@ -589,7 +613,7 @@
 		position: relative;
 		display: flex;
 		padding: 6% 4% 0%;
-		
+
 		@media screen and (max-width: $mobile) {
 
 			display: block;
@@ -599,7 +623,7 @@
 
 		.col1,
 		.col2  {
-			
+
 			width: 49%;
 			position: relative;
 			height: 21vw;
@@ -635,7 +659,7 @@
 				}
 			}
 
-			
+
 
 			.copyDiv {
 				background: #0d0e0f;
@@ -654,7 +678,7 @@
     				top: 20px;
 
 				}
-    			
+
 
     			.copyWrapp {
     			    position: absolute;
@@ -683,15 +707,15 @@
 
 			}
 
-			
 
-			
+
+
 
 		}
 
 		.col1 {
 			margin-right: 2%;
-			
+
 		}
 
 		/*.col2 {

@@ -19,8 +19,13 @@
         "scroll": true
       },
       "items": [
+<<<<<<< HEAD
         "lifestyle|guest-writer-of-the-week|36",
+=======
+        "entertainment|samsung-3fold-event-featuring-yungblud",
+>>>>>>> 382dcd85999dabca8f03ca8deaecb81a784fd55a
         "lifestyle|how-to-kickflip-skateboarding-tutorial",
+        "innovation|samsung-people-live|galaxy-unpacked",
         "lifestyle|guest-writer-of-the-week|35",
         "creativity|inspire-me|mastering-the-instagram-reels",
         "entertainment|just-one-charge|boost-your-content-creation-with-jeremy-lynch",
@@ -56,7 +61,7 @@
         "hideIcon": true
       },
       "items": [
-        
+
         "entertainment|just-one-charge",
         "creativity|wild-writing",
         "creativity|personal-branding",
@@ -163,6 +168,7 @@
         "scroll": true
       },
       "items": [
+        "entertainment|samsung-3fold-event-featuring-yungblud",
         "entertainment|just-one-charge|boost-your-content-creation-with-jeremy-lynch",
         "entertainment|just-one-charge|phone-battery-fails",
         "entertainment|lunch-and-listen|reclaim-lunchbreak",
