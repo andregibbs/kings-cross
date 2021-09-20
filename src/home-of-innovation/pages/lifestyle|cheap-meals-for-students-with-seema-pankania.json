@@ -1,0 +1,45 @@
+{
+	"title": "Student-savvy £1 meals with Seema Pankhania",
+	"description": "Instagram Reels",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/cheap-meals-for-students-with-seema-pankania/KV2.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/cheap-meals-for-students-with-seema-pankania/Thumb.jpg",
+	"meta": {
+		"icon": "video",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 5,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "youtube",
+				"content": "a7Jmk0Q3RCs",
+				"poster": "{{lifestyle|cheap-meals-for-students-with-seema-pankania[image]}}",
+				"alt": ""
+			},
+			"style": {
+				"desktop": "top",
+				"mobile": "bottom"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Student-savvy £1 meals with Seema Pankhania"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Mob Kitchen’s food producer Seema Pankhania shows students how to rustle up a delicious Michelin Star-inspired dish, with a price tag of just £1 per person! Seema uses the <a href='https://www.samsung.com/uk/smartphones/galaxy-s21-5g/buy/'> Galaxy S21 Ultra 5G </a> to film the entire tutorial, capturing every detail with its Quad Rear Camera, whilst also giving her expert tips and tricks for how best to capture and edit food content for maximum effect on TikTok."
+                        
+                    ]
+            
+          
+				}
+			]
+		}
+	]
+}
