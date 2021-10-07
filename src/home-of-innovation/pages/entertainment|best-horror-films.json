@@ -1,0 +1,156 @@
+{
+    "title": "The Scares: Six Horror Movies with Something to Say",
+    "description": "The Scares: Six Horror Movies with Something to Say",
+    "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/entertainment/best-horror-movies/KVimg.jpg",
+    "alt": "",
+    "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/entertainment/best-horror-movies/Thumbn.jpg",
+    "group": "guest-writer-of-the-week",
+    "sort": 39,
+    "contentLength": {
+        "length": 7,
+        "unit": "mins"
+    },
+    "meta": {
+        "icon": "article",
+        "tags": []
+    },
+    "components": [
+        {
+            "type": "css-snippet",
+            "content": ".hoiContent small { font-size: 0.75rem; }"
+        },
+        {
+            "type": "kv",
+            "media": {
+                "type": "image",
+                "content": "{{entertainment|best-horror-films[image]}}",
+                "alt": "{{entertainment|best-horror-films[alt]}}"
+            },
+            "style": {
+                "desktop": "right",
+                "mobile": "bottom"
+            },
+            "components": [
+                {
+                    "type": "headline",
+                    "copy": "{{entertainment|best-horror-films[title]}}"
+                }
+            ]
+        },
+        {
+            "type": "wrapper",
+            "components": [
+               
+                {
+                    "type": "paragraphs",
+                    "text": [
+                        "Horror is a genre with greater depths than many give it credit for. Sure, we love to thrill at the jump scares and squeal at the hideous monsters, but a great horror movie is one that stays with you long after the adrenalin ebbs away. Much like <a href=' https://www.samsung.com/uk/tvs/qled-tv/qn900a-85-inch-neo-qled-8k-smart-tv-qe85qn900atxxu/'> QN900A Neo QLED 8K HDR Smart TV</a>, with its edge-to-edge Infinity Screen, 8K picture and immersive 3D audio, the best horrors draw you further into the experience. They have something truly interesting and insightful going on beneath their shock-and-gore surface.",                        
+                        
+                        "Here we highlight some of the smartest, most insightful scare-fests, from classics to contemporary chillers."
+                        
+                        
+                       
+                    ]
+                },
+                
+                
+                {
+                    "type": "headline",
+                    "copy": "Dawn of the Dead (1978) <span style='font-size:22px;vertical-align:baseline;'>(Rated 18)</span>",
+                    "level": "3"
+                },
+				
+                {
+                    "type": "paragraphs",
+                    "text": [
+                        "Director George A. Romero’s sequel to his ground-breaking 1968 film, Night of the Living Dead, takes place in a cavernous shopping mall. An obvious place for his protagonists to hole up during the zombie apocalypse: they have everything they need to survive… And more! But that doesn’t stop the undead from gathering there, as if driven by a dimly remembered urge to buy stuff.   ",
+                        "Like, Night of the Living Dead, before it, Dawn of the Dead matches its scares with social commentary. Except this time, it’s a critique of modern consumerism, which reminds us that endlessly spending money on shiny new things is surely no way to live."
+                    ]
+                },
+                {
+                    "type": "headline",
+                    "copy": "Alien (1979) <span style='font-size:22px;vertical-align:baseline;'>(Rated 18)</span>",
+                    "level": "3"
+                },
+                {
+                    "type": "paragraphs",
+                    "text": [
+                        "This franchise-spawning sci-fi horror not only gave cinema one of its greatest monsters – the drooling, brain-eating extra-terrestrial of the title – but also provided a timely view on the exploitation of regular, blue-collar workers by the corporations which employ them.  ",
+                        "“The Company” is the true monster of the film, deliberately exposing the crew of star-freighter The Nostromo (disgruntled at how they’re being treated even before the blood starts spilling) to a deadly life-form, purely for the sake of profit."
+                    ]
+                },
+                {
+                    "type": "headline",
+                    "copy": "The Fly (1986) <span style='font-size:22px;'>(Rated 18)</span>",
+                    "level": "3"
+                },
+                {
+                    "type": "paragraphs",
+                    "text": [
+                        "David Cronenberg’s icky body-horror remake of the 1958 classic involves scientist Seth Brundle (Jeff Goldblum) slowly, agonisingly metamorphosing into a human-fly hybrid after a teleportation experiment goes wrong. The timing of the film’s release led to it being seen by many as offering a pointed metaphor for the AIDS epidemic in Brundle’s physical disintegration, but the director himself disagreed. “It was really much more about the inevitability of deterioration and death,” Cronenberg said. “That’s where the movie got a lot of its power from. Anybody can relate to it.” "
+                    ]
+                },
+                {
+                    "type": "headline",
+                    "copy": "Candyman (1992) <span style='font-size:22px;vertical-align:baseline;'>(Rated 18)</span>",
+                    "level": "3"
+                },
+                
+                {
+                    "type": "paragraphs",
+                    "text": [
+                        "Though very effectively remade by Nia Da Costa this year, the original Clive Barker adaptation (directed by Bernard Rose) has lost little of its power. Setting its scares against the backdrop of Chicago’s Cabrini-Green public housing development rather than a typical leafy suburb enabled it to highlight how poor Black Americans have been segregated into substandard living conditions. It’s also telling that the film’s hook-handed supernatural stalker is revealed to have been killed by a lynch mob – for daring to fall in love with a white woman."
+                    ]
+                },
+                
+                
+                {
+                    "type": "headline",
+                    "copy": "Get Out (2017) <span style='font-size:22px;vertical-align:baseline;'>(Rated 15)</span>",
+                    "level": "3"
+                },
+                {
+                    "type": "paragraphs",
+                    "text": [
+                        "Jordan Peele’s “social thriller” is hardly the first genre film to tackle racism, but what marks it out is the way it deals not so much with overt prejudice and atrocity, but with the ever-present, suburban brand of ‘casual’ racism, exercised even by people who might consider themselves liberals. ",
+                        "Its main character Chris (Daniel Kaluuya) is drawn into a deadly trap by the family of his white girlfriend (Allison Williams), whose smiles and platitudes belie a terrifying plot to rob him of his very humanity. They may profess to be on his side, but in truth they see him as little more than a useful vessel rather than anyone of inherent worth. "
+                    ]
+                },
+                {
+                    "type": "headline",
+                    "copy": "His House (2020) <span style='font-size:22px;vertical-align:baseline;'>(Rated 15)</span>",
+                    "level": "3"
+                },
+                {
+                    "type": "paragraphs",
+                    "text": [
+                        "Most haunted house movies begin with a new, ‘ideal’ family home that harbours a nasty, hidden intent. But His House is different, throwing a traumatised, destitute refugee couple from South Sudan (Wunmi Mosaku and Sope Dirisu) into a rundown residence in London, where they are terrorised by a spectral presence. ",
+                        "Made by first-time filmmaker Remi Weekes, the film deftly explores the refugee experience in the UK, while also weaving a great, scare-packed mystery: if the “night witch” stalking them is seeking repayment for a debt, what exactly do they owe?"
+                    ]
+                },
+                {
+                    "type": "image",
+                    "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/entertainment/best-horror-movies/Image1-min.PNG",
+                    "alt": ""
+                },
+                {
+                    "type": "paragraphs",
+                    "text": [
+                        "<br>",
+                        "<strong>By Dan Jolin</strong>",
+                        "<em>Dan Jolin is a freelance film journalist and contributing editor to Empire, the world’s biggest movie magazine. He also writes for Time Out, Screen International and Propstore.com, among other publications and websites. When he’s not immersed in cinema, Dan writes about his other passion, board games, and is the editor and co-founder of board-gaming magazine Senet. He lives in the Chiltern Hills just outside London, where he likes to pound the trails on his mountain bike and create cosmic-disco mixtapes. He can be found on Twitter as @DanJolin.</em>"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "group",
+            "dynamic": "more-articles",
+            "id": "guest-writer-of-the-week",
+            "title": "More articles",
+            "style": {
+                "scroll": true
+            }
+        }
+    ]
+}
