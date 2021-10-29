@@ -1,0 +1,61 @@
+{
+	"title": "How To Plan A Trip To Europe ",
+	"description": "Join influencer What Stacy Did and discover how to plan a short trip abroad using the Samsung Galaxy Z Fold3 5G at Samsung Kings Cross.",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/how-to-plan-trip-to-europe/cover.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/how-to-plan-trip-to-europe/cover.jpg",
+	"group": "inspire-me",
+	"sort": 6,
+	"meta": {
+		"icon": "video",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 7,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "youtube",
+				"content": "uWx5Z12bfNU",
+				"poster": "",
+				"alt": ""
+			},
+			"style": {
+				"desktop": "top",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "How To Plan A Trip To Europe",
+					"level": "2"
+				  },
+				  {
+					"type": "headline",
+					"copy": "Join influencer 'What Stacy Did' to discover how to plan a short trip abroad using the Samsung Galaxy Z Fold3 5G.",
+					"level": "6"
+				  },
+				{
+					"type": "paragraphs",
+					"text": [
+						"This tutorial is created by travel photographer, Stacy Cartledge, who runs 'What Stacy Did' - a popular travel blog which showcases the dreamiest destinations and hidden gems with inspiring guides and itineraries. In the clip, Stacy shares her top tips for planning and booking a European trip away using a <a href='https://www.samsung.com/uk/smartphones/galaxy-z-fold3-5g/'>Samsung Galaxy Z Fold3</a>, including how to use the multi-view function, where you can open, change and arrange the layout of up to three apps when unfolded - perfect for multitasking. ",
+						"Stacy also explains how the large 7.6in screen enables you to flex your skills across two screens, giving you twice the control and opportunity to capture and share your trip whilst away!",
+						"This tutorial is a must-watch for anyone planning a last-minute getaway."
+					]
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "episodes",
+			"id": "inspire-me",
+			"title": "More episodes",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
+}

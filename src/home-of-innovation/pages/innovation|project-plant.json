@@ -1,0 +1,178 @@
+{
+	"title": "Project Plant: The UK’s First Urban-Farm-To-Table Pizzeria, Bringing Together Tech And Small Space Growing",
+	"description": "Project Plant: The UK’s First Urban-Farm-To-Table Pizzeria, Bringing Together Tech And Small Space Growing",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/project-plant/imagee2.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/project-plant/imagee2.jpg",
+	
+	"contentLength": {
+		"length": 5,
+		"unit": "mins"
+	},
+	"meta": {
+		"icon": "article",
+		"tags": []
+	},
+	"components": [
+		{
+			"type": "css-snippet",
+			"content": ".hoiContent small { font-size: 0.75rem; }"
+		},
+		{
+			"type": "kv",
+			"media": {
+				"type": "image",
+				"content": "{{innovation|project-plant[image]}}",
+				"alt": "{{innovation|project-plant[alt]}}"
+			},
+			"style": {
+				"desktop": "right",
+				"mobile": "bottom"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "{{innovation|project-plant[title]}}"
+				}
+			]
+		},
+		{
+			"type": "wrapper",
+			"components": [
+				
+				{
+					"type": "paragraphs",
+					"text": [
+						"Research by Samsung UK revealed almost two thirds (63%) of Brits are being inspired to grow more of their own food and plants at home. This comes following the pandemic which rooted the nation back into nature through daily walks and more time spent outside. Gen Z in particular are proving themselves to be the next green-fingered generation, with almost three quarters (72%) of 18-24 year olds tending to mini crops or plants at home to have access to fresher food (37%), save money (35%) and do their bit for the planet (33%).",
+						"However, for some the urban farming inspiration has yet to strike with barriers to growing at home including a lack of light (32%) and forgetting to tend to plants (32%). With this in mind, 40% cited they would welcome digital reminders via apps and 28% would benefit from a connected hub to switch on growing lamps during colder months. Overall, a huge 74% of Brits state they believe technology can assist with growing our own food and plants from home with 45% currently using tech to do so; from adapting nutrients (60%), to controlling temperature (55%), and moisture (52%). This showcases a widespread trend of the nation turning to tech to solve its plant-based mishaps."
+						
+					]
+				},
+				
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/project-plant/image6.jpeg",
+					"alt": ""
+				},
+				
+				{
+					"type": "paragraphs",
+					"text": [
+						"Samsung UK is acknowledging this trend having launched an exciting new initiative with the UK’s first urban-farm-to-table-pizzeria, Project Plant. Powered by Samsung technology and supported by partners, <a href='https://purezza.co.uk'>Purezza</a>, the award-winning plant-based pizzeria, and <a href='http://www.greenlab.org'>Green Lab</a>, an innovation centre which finds sustainable solutions to complex urban food, water and waste challenges, the initiative explores how our roots in connectivity and tech can inspire the way we all select, grow and consume food."
+						
+						
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/project-plant/imagee10.jpg",
+					"alt": ""
+				},
+				
+				{
+					"type": "paragraphs",
+					"text": [
+						"Project Plant brought to life a functioning urban farm, with a futuristic twist. Visitors were able to encounter a series of immersive domes in which crops of mushrooms, tomatoes, basil, and rocket had been growing in East London. Moving through the space, they learnt about the produce and interacted with our Galaxy tablets to control the conditions of each ecosystem: exploring the colour of the lights in the tomato domes; regulating the irrigation of the two metre towers of leafy greens; and even listening to the sound of crops as they grow - all showing how tech can influence and assist small space growing."
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/project-plant/imagee3.jpg",
+					"alt": ""
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Visitors were encouraged to harvest their own crops of tomato, rocket, basil, and mushroom before handing them over to pizza partners, Purezza, who cooked their very own plant-based pizza to perfection on site."
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/project-plant/imagee5.jpg",
+					"alt": ""
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"The initiative is an eye-opener into how connected technology can support small space growing, to help facilitate little changes that make a big difference to how and where plants can be grown (no tractor required).",
+						"Through Project Plant, Samsung is challenging us to reconsider how we grow, shop and eat, encouraging everyone to #DoWhatYouCant. Now, that’s a noble cause we can all get behind!"
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/project-plant/imagee8.jpg",
+					"alt": ""
+				},
+				{
+					"type": "headline",
+					"copy": "So, why is Urban Agriculture important?",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Conventional farming practices depend on finite resources including land, clean water, soil and fossil fuel to grow and transport food. Urban Agriculture reinvents our use of these resources allowing food to be grown 24/7, 365 days a year and smart technology minimises resource use and lowers environmental impacts. The outcome is access to a range of safe, fresh, healthy and nutritious local food. Project Plant showed visitors how we can learn from large scale urban agricultural farming and use it to support tech inspired small space growing. ",
+						"At Project Plant we grew all our crops using tech right from the start. But before we jump to our crops let's step back to explain: Hydroponics, Aquaponics, Aeroponics - What is the difference?",
+						"Hydroponics feeds crop roots with a water solution that has the nutrients they require added to it.",
+						"There are two main systems of hydroponics: ",
+						"• Ebb and Flow involves a repeated timed cycle of pumping the nutrient solution into the grow tray and then letting it drain away <br>• Nutrient Film Technique has a constant flow of the nutrient solution washing into the grow tray ",
+						"Aquaponics is a neat and circular way to grow food using the effluent fish produce",
+						"• The fish waste includes nutrients good for growing plants <br>• Plant roots contain bacteria that extract these nutrients from the water pumped over them and clean the water at the same time <br>• The water can then be returned to the fish tank, and the process starts all over again.",
+						"Aeroponics involves the roots of the plant being suspended in the air with a fine mist of nutrient solution is sprayed over them"
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/project-plant/image2.jpg",
+					"alt": ""
+				},
+				{
+					"type": "headline",
+					"copy": "Want to know how you can get started in your own home?",
+					"level": "3"
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/project-plant/imagee1.jpg",
+					"alt": ""
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Hydroponic Basil and Rocket Microgreens",
+						"Two of the easiest plants for beginners to grow using hydroponics are basil and microgreens such as rocket. Growing hydroponically means that there is no soil in which the plants grow. Instead the plants are grown in stacked units with the roots fed by a nutrient rich solution. All you need to do is pick a hydroponic at home kit which is the right size for your home.",
+						"For rocket microgreens, a growing mat is placed into trays which are stacked on suitably spaced rows in an indoor controlled environment. The mat holds the seeds in place as a nutrient solution is washed over them carefully and regularly. The levels of humidity, temperature, pH and artificial LED lighting are carefully controlled to create the best conditions for growth. It takes around 10 days to go from seed to harvest.",
+						"Basil is also well suited to being grown hydroponically: quick growing varieties can go from seed to harvest in around 28 days, with slower growing varieties taking up to 8-10 weeks. You can grow basil from either cuttings or seeds. As well as the correct pH range, Basil needs at least 14 hours of sunlight a day. Basil is sensitive to heat and humidity, so growing indoors in a controlled environment helps to ensure a high yield all year round."
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/project-plant/imagee4.jpg",
+					"alt": ""
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Indoor Mushroom Farming",
+						"Growing mushrooms has become popular in urban agriculture as they can be grown stacked in small spaces. Mushrooms require minimum light and can grow on discarded waste such as coffee grounds and cardboard. To grow Oyster mushrooms from start to finish takes around 3-4 weeks and are as local as you can get!",
+						"There are several steps to Oyster mushroom farming:",
+						"• The first step is to have a suitable compost.<br>• Straw or used coffee grounds are perfect for this.<br>• The mushroom spawn is added to the compost and placed in a plastic bag.<br>• The bag is left in a warm and dark place until it starts to fruit and then it is moved to a spot with fresh air and a little light.<br>• As the mushrooms grow, they almost double in size each day.<br>• When the edge of the cap begins to turn upwards, they are ready to harvest. "
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/project-plant/imagee7.jpg",
+					"alt": ""
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Hydroponic Tomatoes",
+						"Growing tomatoes without soil may seem like a strange concept. However, it is perfectly possible using a technique called hydroponics. Instead of the potato roots being in soil, in hydroponics, the roots are fed by water with the nutrients necessary for growing already added. Growing hydroponically means an efficient use of nutrients and water uptake along with high yields and no limit on seasonality.",
+						"Controlled indoor environments combined with the use of smart technology ensures that the temperature, humidity, PH levels and the amount of light received by the tomatoes are optimal for crop growth. Growing indoors requires the use of artificial LED lighting for up to 16-18 hours a day. As the tomato plants are grown stacked creating tomato varieties optimised for this, including bunched fruiting are being researched."
+					]
+				}
+			]
+		}
+	]
+}

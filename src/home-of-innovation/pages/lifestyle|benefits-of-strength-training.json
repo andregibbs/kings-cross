@@ -1,0 +1,141 @@
+{
+    "title": "Why Strength Training is the Key to Every Fitness Goal ",
+    "description": "Why Strength Training is the Key to Every Fitness Goal",
+    "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/benefits-of-strength-training/MainKX.jpg",
+    "alt": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/benefits-of-strength-training/Thumb.jpg",
+    "thumb": "",
+    "group": "guest-writer-of-the-week",
+    "sort": 40,
+    "contentLength": {
+        "length": 5,
+        "unit": "mins"
+    },
+    "meta": {
+        "icon": "article",
+        "tags": []
+    },
+    "components": [
+        {
+            "type": "css-snippet",
+            "content": ".hoiContent small { font-size: 0.75rem; }"
+        },
+        {
+            "type": "kv",
+            "media": {
+                "type": "image",
+                "content": "{{lifestyle|benefits-of-strength-training[image]}}",
+                "alt": "{{lifestyle|benefits-of-strength-training[alt]}}"
+            },
+            "style": {
+                "desktop": "top",
+                "mobile": "bottom"
+            },
+            "components": [
+                {
+                    "type": "headline",
+                    "copy": "Why Strength Training is the Key to Every Fitness Goal"
+                },
+                {
+                    "type": "paragraphs",
+                    "text": [
+                        "Whether you're after weight loss, a 5 km PB, or simply just good health and longevity, strength training will help get you there."
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "wrapper",
+            "components": [
+                
+                {
+                    "type": "paragraphs",
+                    "text": [
+                        "While cardio is often touted as the holy grail of exercise and good health, it’s certainly not the be-all and end-all. You’ve likely heard the World Health Organisation and other health bodies recommend 75-150 minutes of vigorous or moderate aerobic (cardiovascular) activity per week, but did you know that their guidelines include strength training too? At least 2 days per week for adults 18-64 for additional health benefits.",
+                        "Strength training (also called resistance or weight training) is exercise designed to help build muscular strength and endurance. It’s often performed with equipment like weights, resistance bands, or gym machines, but it doesn’t need to be — exercising using your own body weight as resistance counts too. As such, it doesn’t mean you’ll need to start doing circuits on the gym floor: most good exercise classes or boot camps will contain a measure of resistance work, as do certain forms of yoga. Pilates or barre are excellent options too. ",
+                        "Overwhelmed? Don’t be – hitting those targets becomes a whole lot easier when you have a device like the <a href='https://www.samsung.com/uk/watches/galaxy-watch/galaxy-watch4-black-lte-sm-r875fzkaeua/?cid=UK_PPC_1294187870_FF~Eval:Brand%2BProd_GalaxyWatch4_KS~BAP_BS~IM_PR~WEARSMART_SB~GWATCH_OB~SALES_FS~LHQ_AI~N_MT~EXA_CA~KEW&&msclkid=4d570b36dd7f1601cc676a58530fb37a&gclid=4d570b36dd7f1601cc676a58530fb37a&gclsrc=3p.ds'>Samsung Galaxy Watch4</a> on your wrist. Designed for versatile all-day use, the brand-new device boasts an enhanced processor and richer displays, not to mention 40 hours<sup>*</sup> of battery life and an impressive 16GB of storage<sup>**</sup>. It even supports more than 90 exercises for a more accurate report of your workouts (including a variety of resistance training options).",
+                        "Even better: The Galaxy Watch4’s host of new features are perfectly placed to help you track and measure the plethora of benefits that come with regular strength training. So, what are those strength training benefits exactly? And how can they help you hit health and fitness goals unrelated to muscular strength? Let’s get into it. "
+                       
+                    ]
+                },
+                {
+                    "type": "headline",
+                    "copy": "Weight management",
+                    "level": "3"
+                },
+                {
+                    "type": "paragraphs",
+                    "text": [
+                        "Cardio is often presented as the best way to exercise if weight loss is your goal, thanks to the calorie-torching power of heart rate-raising workouts. However, strength training may be a more sustainable solution. According to a 2017 study, weight training comes out on top when it comes to fat loss, thanks to its ability to increase muscle mass.",
+                        "More muscle mass means a higher basal metabolic rate (BMR), the calories your body burns at rest. Maintain that lean muscle, and you’ve got a boosted metabolism for life. So while a run or spin class might provide a higher calorie burn than a slow and steady strength workout – as your trusty Galaxy Watch4 will be able to tell you with its workout and heart rate-tracking features – the latter will be more beneficial when it comes to weight management in the long-term. Thankfully, your Galaxy Watch4 will be able to keep you clued up on the fruits of your labours in the strength arena too, thanks to its all-new body composition tool. With it, you’ll be able to monitor changes in fat mass, as well as the all-important BMR. "
+                    ]
+                },
+                {
+                    "type": "headline",
+                    "copy": "Run faster – and prevent injury",
+                    "level": "3"
+                },
+                {
+                    "type": "paragraphs",
+                    "text": [
+                        "If you can’t quite beat your current 5km PB no matter how much you hit the pavement, it might to time to supplement your runs with strength workouts.",
+                        "Contrary to popular belief, stronger muscles aren’t the only outcome of strength training. It can also help strengthen your connective tissue – like ligaments and tendons – and improve your coordination, stability, and power. All that, plus stronger muscles, translates to faster, more efficient runs, and a decreased risk of injury. Bonus: your runs will start to feel easier too.",
+                        
+                        "<p style='font-size:10px'>WileyOnlineLibrary Research. 2017. Effect of Exercise type <a href='https://onlinelibrary.wiley.com/doi/abs/10.1002/oby.21977'>https://onlinelibrary.wiley.com/doi/abs/10.1002/oby.21977</a> </p>"
+                    ]
+                },
+                {
+                    "type": "image",
+                    "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/benefits-of-strength-training/Image1.jpg",
+                    "alt": ""
+                },
+                {
+                    "type": "headline",
+                    "copy": "Guard against bone loss",
+                    "level": "3"
+                },
+                {
+                    "type": "paragraphs",
+                    "text": [
+                        "The health of your bones might not be something you’ve given much thought to, but it’s well worth considering, particularly as you age. By the time you hit 30, your bone density starts to decline with each passing decade. Low bone density – and osteoporosis – means an increased risk of bone fractures from falls or sudden impact. Good news though: strength training can help you increase your bone density, no matter your age. The stress it places on the musculoskeletal system essentially spurs bone-building cells into action.",
+                        "Again, the Galaxy Watch4 can help you track your progress here – skeletal muscle is just another metric the device can help you track, helping you paint a clearer picture of your health as a whole. "
+                        
+                        
+                    ]
+                },
+                {
+                    "type": "headline",
+                    "copy": "Improve quality of life",
+                    "level": "3"
+                },
+                {
+                    "type": "paragraphs",
+                    "text": [
+                        "Fitness goals aren’t the only aspect of your life that strength training can improve. Stronger muscles and bones, increased stability, decreased injury risk, and more, mean so much in your day-to-day life. Think hoisting heavy shopping bags, dashing for the bus and actually catching it – or just the simple pleasure of playing with your children in the back garden. ",
+                        "Keep exercising, and these benefits mean a happy, active life into your 50s, 60s, 70s, and beyond.",
+                        
+                        "<p style='font-size:10px'><sup>*</sup> Actual battery life may vary depending on network environment, usage patterns and other factors. </p><br><p style='font-size:10px'><sup>**</sup> Memory size: User memory is less than the total memory due to storage of the operating system and software used to operate the phones features. Actual user memory will vary depending on the mobile phone operator and may change after software upgrades are performed. </p><br>"
+                    ]
+                },
+                
+                {
+                    "type": "paragraphs",
+                    "text": [
+                        "<br>",
+                        "<strong>By Kirsti Buick </strong>",
+                        "<em>Kirsti is a freelance health and fitness journalist and qualified personal trainer</em>"
+                    ]
+                }
+            ]
+        },
+
+        {
+            "type": "group",
+            "dynamic": "more-articles",
+            "id": "guest-writer-of-the-week",
+            "title": "More articles",
+            "style": {
+                "scroll": true
+            }
+        }
+    ]
+}
