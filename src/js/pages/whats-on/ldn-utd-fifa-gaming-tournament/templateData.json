@@ -1,0 +1,38 @@
+{
+  
+  "breadcrumbs": [
+    {
+      "url": "/uk/explore/kings-cross/",
+      "title": "Home"
+    },
+    {
+      "url": "/uk/explore/kings-cross/whats-on",
+      "title": "Innovation"
+    },
+    {
+      "url": "/uk/explore/kings-cross/innovation/ldn-utd-fifa-gaming-tournament/",
+      "title": "Samsung KX & LDN UTD present: All Access Gaming"
+    }
+  ],
+  "body": {
+    "components": [
+      {
+        "type": "paragraphs",
+        "text": [
+          "In partnership with LDN UTD, the esports organisation that unites professional esports and grassroots gaming with healthy lifestyle and social issues, Samsung KX will host the ultimate gaming tournament live at KX."
+        ]
+      }
+    ]
+  },
+  "body2": {
+    "components": [
+      {
+        "type": "paragraphs",
+        "text": [
+          "<br/>",
+          "More information on Solve for Tomorrow and the different ways you can get involved can be found <a href=\"https://www.samsung.com/uk/solvefortomorrow/\">here.</a>"
+        ]
+      }
+    ]
+  }
+}
