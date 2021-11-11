@@ -58,7 +58,7 @@ function init() {
       HOIYoutubeLiveChat()
 
       // fetch dynamic opening times
-      // new FindKX()
+      new FindKX()
 
       new HOILinkListHoverManager()
 
