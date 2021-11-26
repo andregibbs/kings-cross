@@ -1,0 +1,55 @@
+{
+	"title": "Inspire Me: Top tips for shooting street style photography with Tomas Milinavicius",
+	"description": "Inspire Me: Top tips for shooting street style photography with Tomas Milinavicius",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/how-to-plan-trip-to-europe/cover.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/inspire-me/Thu.jpg",
+	"group": "inspire-me",
+	"sort": 8,
+	"meta": {
+		"icon": "video",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 7,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "youtube",
+				"content": "AOuzMkADYII",
+				"poster": "",
+				"alt": ""
+			},
+			"style": {
+				"desktop": "top",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Inspire Me: Top tips for shooting street style photography with Tomas Milinavicius",
+					"level": "2"
+				  },
+				  
+				{
+					"type": "paragraphs",
+					"text": [
+						"Photographer Tomas Milinavicius shares his top tips for shooting street style photography using the <a href='https://www.samsung.com/uk/smartphones/galaxy-z-flip3-5g/buy/'>Samsung Galaxy Z Flip3</a>. When he’s out shooting photography in the streets, there are things he’s always keeping an eye out for to get those crisp looking shots – from symmetry to capturing imagery from different perspectives. Checkout his tips to feel inspired! "
+					]
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "episodes",
+			"id": "inspire-me",
+			"title": "More episodes",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
+}

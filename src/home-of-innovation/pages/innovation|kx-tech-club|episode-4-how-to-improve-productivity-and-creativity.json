@@ -5,7 +5,7 @@
     "alt": "",
     "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/kx-tech-pages/4/Thumbnail.png",
     "group": "kx-tech-club",
-    "hidden": true,
+    
     "sort": 4,
     "meta": {
       "icon": "article",
@@ -50,7 +50,7 @@
           },
           {
             "type": "headline",
-            "copy": "KX Tech Club: Episode 1 - Process (How to stay productive)",
+            "copy": "Episode 1 - Process (How to stay productive)",
             "level": "2"
           },
           {
@@ -61,12 +61,12 @@
           },
           {
             "type": "youtube",
-            "content": "5gO8gv04IdU",
-			"poster": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/kx-tech-pages/3/Episode11.png"
+            "content": "aN3-l0YWO-0"
+			
           },
           {
             "type": "headline",
-            "copy": "KX Tech Club: Episode 2 - Pressure (How to find balance)  ",
+            "copy": "Episode 2 - Pressure (How to find balance)  ",
             "level": "2"
           },
           {
@@ -77,12 +77,11 @@
           },
           {
             "type": "youtube",
-            "content": "_hpe5-Ioq60",
-			"poster": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/kx-tech-pages/3/Episode22.png"
+            "content": "epQ3kiV7KQ8"
           },
           {
             "type": "headline",
-            "copy": "KX Tech Club: Episode 3 - Tech + Creativity (How to use tech effectively) ",
+            "copy": "Episode 3 - Tech + Creativity (How to use tech effectively) ",
             "level": "2"
           },
           {
@@ -93,8 +92,8 @@
           },
           {
             "type": "youtube",
-            "content": "EZkUNHpouZQ",
-			"poster": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/kx-tech-pages/3/Episode33.png"
+            "content": "pUvJPWm__zA"
+			
           }
         ]
       },
