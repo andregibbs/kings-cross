@@ -1,0 +1,119 @@
+{
+	"title": "Your 3-Step Declutter Guide",
+	"description": "If healthy space equals healthy mind, we’re here to help you get both…",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/cleaning-tips-for-healthy-living/KVJ.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/cleaning-tips-for-healthy-living/ThumbJJ.jpg",
+	
+	"meta": {
+		"icon": "article",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 7,
+		"unit": "mins"
+	},
+	"components": [
+        {
+            "type": "css-snippet",
+            "content": ".hoiContent small { font-size: 0.75rem; }"
+        },
+        {
+			"type": "kv",
+			"media": {
+				"type": "image",
+                "content": "{{lifestyle|cleaning-tips-for-healthy-living[image]}}",
+                "alt": "{{lifestyle|cleaning-tips-for-healthy-living[alt]}}"
+			},
+			"style": {
+				"desktop": "right",
+				"mobile": "top"
+			},
+            "components": [
+                {
+                    "type": "headline",
+                    "copy": "Your 3-Step Declutter Guide"
+                },
+                {
+                    "type": "paragraphs",
+                    "text": [
+                        "If healthy space equals healthy mind, we’re here to help you get both…"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "wrapper",
+            "components": [
+                
+                {
+					"type": "paragraphs",
+					"text": [
+						"Hosting family and friends whether it’s for the festive season or just the holidays is a great way to boost your mood and feel better. But did you know, that cleaning your home for the arrival of your guests is another great way to lift your mood?", 
+						"That’s right! Scientists have claimed that having a clean and tidy home is actually very beneficial for both our physical and mental health. In fact, better sleep, better relationships, and improved focus are just some of the great benefits that come with having a tidy living space. ",
+						"The brain releases dopamine also known as the happy hormone when you engage in activities such as cleaning, meaning you’ll genuinely feel good afterwards, too. ",
+						"But, with packed social diaries, and the desire to snuggle under the covers as the temperatures drop down, it can be hard to get started. Add in fallen pine needles, specks of glitter from cards and decorations and gingerbread crumbs from getting ready for the festive season, working out where to start can seem like a tricky task. ",
+						"If you’re feeling overwhelmed, don’t worry, the <a href='https://www.samsung.com/uk/vacuum-cleaners/robot/'>Samsung Jet Bot range</a> is the perfect solution to your pre & post celebration clean!",
+						"Here are our top, easy-to-do, keep-tidy tips…"
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/cleaning-tips-for-healthy-living/Image11.jpg",
+					"alt": ""
+				},
+				{
+					"type": "headline",
+					"copy": "TIP ONE: Declutter first",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"It might sound obvious, but it’s one of the biggest mistakes we all make when it comes to tidying our homes. There’s simply no point in cleaning everything you have because you might not want to keep everything. ", 
+						"Over time, we all inevitably accumulate more belongings. But, as it’s so gradual, it’s easy to become blind to how packed your shelves, wardrobe or living space may be. That’s why it’s a good idea to take stock every so often. After all, that famous book trilogy that you used to read once a year, may no longer be to your liking. "
+						
+					]
+				},
+				{
+					"type": "headline",
+					"copy": "TIP TWO: Tidy groups of objects together ",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Want to clean up by starting in the living room, moving to the study, then the bedroom…? Stop right there. Another common mistake according to tidy queen, Marie Kondo, is that we want to tidy drawer by drawer, room by room. But in fact, it’s more productive to group objects together instead. So rather than just doing a room at a time, gather all your books and sort them together. Next, you could gather all the laundry from all the various rooms that might need doing and so on… "
+						
+					]
+				},
+				{
+					"type": "image",
+					"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/cleaning-tips-for-healthy-living/Image22.jpg",
+					"alt": ""
+				},
+				{
+					"type": "headline",
+					"copy": "TIP THREE: Start from the top",
+					"level": "3"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Gravity doesn’t just make apples fall from trees, but your dirt and dust will also descend down when dislodged. That’s why it’s always best to start cleaning surfaces in height order before finishing with the floors. Luckily, once picture frames and furniture surfaces are dusted, you can pop the kettle on and put your feet up as the Samsung Jet Bot AI+ robot vacuum with built in Clean Station will take care of the rest. Featuring cutting edge Object Recognition technology, the Jet Bot, effortlessly glides around furniture, festive decorations and even small wires, to vacuum up dirt and debris with ease. Meanwhile, the advanced 5-layered filtration system will remove fine dust and allergens. Leaving you to enjoy time with the family and attend more urgent matters…. Like what time the turkey needs to go into the oven."
+						
+					]
+				},
+				{
+                    "type": "paragraphs",
+                    "text": [
+                        "<br>",
+                        "<strong>By Farzana Ali </strong>",
+                        "<em>Farzana is a London-based freelance lifestyle and wellness journalist who is obsessed with all-white interiors. </em>"
+                    ]
+                }
+            ]
+        }
+      
+    ]
+}

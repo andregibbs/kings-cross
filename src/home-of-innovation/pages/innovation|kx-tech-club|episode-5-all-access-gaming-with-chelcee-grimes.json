@@ -1,0 +1,117 @@
+{
+    "title": "Samsung KX & LDN UTD presents: All Access Gaming",
+    "description": "Samsung KX & LDN UTD presents: All Access Gaming",
+    "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/kx-tech-pages/5/KV1.png",
+    "alt": "",
+    "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/kx-tech-pages/5/thumb.png",
+    "group": "kx-tech-club",
+    
+    "sort": 5,
+    "meta": {
+      "icon": "article",
+      "tags": []
+    },
+    "contentLength": {
+      "length": 10,
+      "unit": "mins"
+    },
+    "components": [
+      {
+        "type": "css-snippet",
+        "content": ".hoiWrapper { margin-top: 0 !important; } .hoiKv__Media:after { padding-bottom: 33% !important; } .hoiWrapper h2 { margin-bottom: 0 !important;} .hoiWrapper h5 { margin-top: 0 !important; }"
+      },
+      {
+        "type": "kv",
+        "media": {
+          "type": "image",
+          "content": "{{innovation|kx-tech-club|episode-5-all-access-gaming-with-chelcee-grimes[image]}}",
+          "alt": ""
+        },
+        "style": {
+          "desktop": "top",
+          "mobile": "top"
+        },
+        "components": [
+          {
+            "type": "headline",
+            "copy": "Samsung KX & LDN UTD presents: All Access Gaming"
+          }
+        ]
+      },
+      {
+        "type": "wrapper",
+        "components": [
+
+          {
+            "type": "paragraphs",
+            "text": [
+              "Hosted live at Samsung KX in partnership with LDN UTD, the esports organisation that unites professional esports and grassroots gaming with lifestyle and social issues. We invited some of the biggest gamers and content creators to share their advice, tips for healthy living as well as connecting with fans and competing against each other in ultimate head-to-head battles. Watch highlights from the day, plus three exclusive interviews with our KX host Chelcee Grimes below.",
+              "All Access Gaming showcased the <a href='https://www.samsung.com/uk/monitors/gaming/odyssey-crg9-49-inch-120hz-freesync-curved-lc49rg90ssrxxu/'>Samsung CRG9 Dual-QHD Curved Monitor</a>, providing a super ultra-wide aspect ratio that let our gamers view more content in superfine detail. Its curved screen space is equivalent to two 27-inch QHD displays side by side, delivering a wider view for winning play."
+            ]
+          },
+          {
+            "type": "youtube",
+            "content": "Qp_3al23EA4"
+			
+          },
+          {
+            "type": "headline",
+            "copy": "Episode 1: Sunpi Interview",
+            "level": "2"
+          },
+          {
+            "type": "paragraphs",
+            "text": [
+				" Watch Sunpi discuss with Chelcee how she got into gaming, her top tips for becoming a content creator and how to balance fitness with gaming to improve your performance. "
+			]
+          },
+          {
+            "type": "youtube",
+            "content": "w6fLjXO6dQo"
+			
+          },
+          {
+            "type": "headline",
+            "copy": "Episode 2: Connor Ball Interview  ",
+            "level": "2"
+          },
+          {
+            "type": "paragraphs",
+            "text": [
+				" Connor Ball discusses his love for gaming, the importance of a routine and how gaming has helped his mental health. "
+			]
+          },
+          {
+            "type": "youtube",
+            "content": "c9F82XIDMYQ"
+          },
+          {
+            "type": "headline",
+            "copy": "Episode 3: Itani Interview ",
+            "level": "2"
+          },
+          {
+            "type": "paragraphs",
+            "text": [
+				"Itani and Chelcee talk about how gaming has changed his life and why keeping fit is so important to his performance as well as his health. "
+			]
+          },
+          {
+            "type": "youtube",
+            "content": "a-4j1GkMhC4"
+			
+          }
+        ]
+      },
+      {
+          "type": "group",
+          "dynamic": "articles",
+          "style": {
+              "scroll": true
+          },
+          "id": "kx-tech-club",
+          "title": "Articles"
+      }
+
+    ]
+  }

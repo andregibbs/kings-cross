@@ -1,0 +1,65 @@
+{
+    "title": "Abi Clarke Awkward Christmas Sketch",
+    "description": "Abi Clarke Awkward Christmas Sketch",
+    "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/entertainment/best-horror-movies/KVimg.jpg",
+    "alt": "",
+    "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/entertainment/best-horror-movies/Thumbn.jpg",
+    "group": "guest-writer-of-the-week",
+    "sort": 39,
+    "contentLength": {
+        "length": 7,
+        "unit": "mins"
+    },
+    "meta": {
+        "icon": "video",
+        "tags": []
+    },
+    "components": [
+        {
+            "type": "css-snippet",
+            "content": ".hoiContent small { font-size: 0.75rem; }"
+        },
+        {
+            "type": "kv",
+            "media": {
+                "type": "youtube",
+				"content": "Sxhuys08eM8",
+				"poster": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/entertainment/just-one-charge/03_Samsung_Web_A-Series_V1_1440x650.jpg",
+				"alt": ""
+            },
+            "style": {
+                "desktop": "top",
+                "mobile": "bottom"
+            },
+            "components": [
+                {
+                    "type": "headline",
+                    "copy": "{{entertainment|best-horror-films[title]}}"
+                }
+            ]
+        },
+        {
+            "type": "wrapper",
+            "components": [
+               
+                
+                
+                
+                {
+                    "type": "headline",
+                    "copy": "'The Type of School Friends you Catch Up with at Christmas', by Abi Clarke",
+                    "level": "3"
+                },
+				
+                {
+                    "type": "paragraphs",
+                    "text": [
+                        "TikTok content creator and comedian, Abi Clarke, presents a sketch on the type of school friends people catch up with at Christmas. Shot exclusively on the Samsung Galaxy Z Flip3 at Samsung KX, Abi’s sketch acts as a guide for anticipating any awkward social moments this festive season."
+                        
+                    ]
+                }
+              
+            ]
+        }
+    ]
+}
