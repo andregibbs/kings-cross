@@ -19,6 +19,7 @@
         "scroll": true
       },
       "items": [
+        "innovation|kx-tech-club|episode-5-stay-connected-through-technology",
         "innovation|kx-tech-club|episode-5-all-access-gaming-with-chelcee-grimes",
         "creativity|inspire-me|street-photography-tips",
         "creativity|inspire-me|how-to-throw-cocktail-party-ideas",
@@ -49,16 +50,7 @@
         "var-challenge",
         "lifestyle|the-rules-of-football",
         "lifestyle|guest-writer-of-the-week|32",
-        "innovation|samsung-people-live|neo-qled-series",
-        "lifestyle|guest-writer-of-the-week|31",
-        "innovation|samsung-people-live|new-galaxy-book-range",
-        "creativity|inspire-me|mike-will-car-photography-tips",
-        "lifestyle|guest-writer-of-the-week|30",
-        "lifestyle|dance-like-a-pro",
-        "innovation|kx-tech-club|episode-1-work-from-phone",
-        "lifestyle|relaxing-with-roman",
-        "lifestyle|guest-writer-of-the-week|29",
-        "lifestyle|guest-writer-of-the-week|28"
+        "innovation|samsung-people-live|neo-qled-series"
       ]
     },
     {
@@ -71,7 +63,6 @@
         "hideIcon": true
       },
       "items": [
-
         "entertainment|just-one-charge",
         "creativity|wild-writing",
         "creativity|personal-branding",
@@ -109,6 +100,7 @@
         "scroll": true
       },
       "items": [
+
         "lifestyle|benefits-of-strength-training",
         "lifestyle|daily-fitness-tips-with-kirsti-buick",
         "lifestyle|cheap-meals-for-students-with-seema-pankania",
@@ -216,6 +208,7 @@
         "scroll": true
       },
       "items": [
+        "innovation|kx-tech-club|episode-5-stay-connected-through-technology",
         "innovation|kx-tech-club|episode-5-all-access-gaming-with-chelcee-grimes",
         "innovation|kx-tech-club|episode-4-how-to-improve-productivity-and-creativity",
         "innovation|project-plant",
@@ -232,10 +225,7 @@
         "innovation|5g-podcast|interactive-yoga-pants",
         "innovation|connected-christmas|marcelino-sambe",
         "innovation|5g-podcast|smart-rubbish",
-        "innovation|taste-of-tomorrow|hydroponic-time-lapse",
-        "innovation|taste-of-tomorrow|eat-pro-green-green-lab-sara-kiyo-popowa",
-        "innovation|taste-of-tomorrow|how-to-bottle-garden",
-        "innovation|taste-of-tomorrow|how-to-bucketponic"
+        "innovation|taste-of-tomorrow|hydroponic-time-lapse"
       ]
     }
   ]

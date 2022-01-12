@@ -1,11 +1,10 @@
 {
-	"title": "How to throw the ultimate festive cocktail party"
-	,
+	"title": "How to throw the ultimate festive cocktail party",
 	"description": "How to throw the ultimate festive cocktail party",
 	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/inspire-me/how-to-throw-cocktail-party-ideas/KV.jpg",
 	"alt": "",
 	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/inspire-me/how-to-throw-cocktail-party-ideas/Thumb.jpg",
-	"group": "inspire-me",
+	"group": "guest-writer-of-the-week",
 	"sort": 7,
 	"meta": {
 		"icon": "article",
@@ -40,9 +39,9 @@
 		},{
 			"type": "wrapper",
 			"components": [
-	
-				
-				  
+
+
+
 				{
 					"type": "paragraphs",
 					"text": [
@@ -124,7 +123,7 @@
 				}
 			]
 		  },
-		
+
 		{
 			"type": "group",
 			"dynamic": "episodes",
