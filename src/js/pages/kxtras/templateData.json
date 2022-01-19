@@ -1,6 +1,26 @@
 {
   "products": [
     {
+      "title": "Galaxy Z Fold3",
+      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/kxtras/product/_0003_fold3.png",
+      "url": "https://www.samsung.com/uk/smartphones/galaxy-z-fold3-5g/buy/"
+    },
+    {
+      "title": "Galaxy Z Flip3",
+      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/kxtras/product/_0002_flip3.png",
+      "url": "https://www.samsung.com/uk/smartphones/galaxy-z-flip3-5g/buy/"
+    },
+    {
+      "title": "Galaxy Watch 4 Classic",
+      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/kxtras/product/_0001_watch4.png",
+      "url": "https://www.samsung.com/uk/watches/galaxy-watch/galaxy-watch4-classic-black-bt-sm-r890nzkaeua/buy/"
+    },
+    {
+      "title": "Galaxy Buds 2",
+      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/kxtras/product/_0000_buds2.png",
+      "url": "https://www.samsung.com/uk/audio-sound/galaxy-buds/galaxy-buds2-olive-sm-r177nzgaeua/"
+    },
+    {
       "title": "Galaxy S21 Ultra 5G",
       "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/kxtras/product/21_Ultra.png",
       "url": "https://www.samsung.com/uk/smartphones/galaxy-s21-5g/buy/"
@@ -24,26 +44,6 @@
       "title": "Galaxy S20FE 5G",
       "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/kxtras/product_S20FE.png",
       "url": "https://www.samsung.com/uk/smartphones/galaxy-s20/buy/?modelCode=SM-G780FZBDEUA/"
-    },
-    {
-      "title": "Galaxy Z Fold2 5G",
-      "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/kxtras/product_ZFold.png",
-      "url": "https://www.samsung.com/uk/smartphones/galaxy-z-fold2/buy/"
-    },
-    {
-      "title": "Galaxy Z Flip 5G",
-      "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/kxtras/product_ZFlip.png",
-      "url": "https://www.samsung.com/uk/smartphones/galaxy-z-flip/buy/"
-    },
-    {
-      "title": "Galaxy Buds Live",
-      "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/kxtras/product_buds.png",
-      "url": "https://www.samsung.com/uk/wearables/galaxy-buds-live-r180/SM-R180NZNAEUA/buy/"
-    },
-    {
-      "title": "Galaxy Watch3",
-      "image": "https://images.samsung.com/is/image/samsung/p5/uk/explore/kings-cross/kxtras/product_Watch3.png",
-      "url": "https://www.samsung.com/uk/wearables/galaxy-watch3-r845/SM-R845FZKAEUA/buy/"
     },
     {
       "title": "Galaxy Tab S7",
