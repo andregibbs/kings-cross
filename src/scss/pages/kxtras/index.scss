@@ -319,19 +319,12 @@
         padding-top: 12.2%;
       }
     }
-    // background: $coral;
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
-    // flex-direction: column;
-    // padding: 1rem;
-    // h3, h4 {
-    //   margin-bottom: 0.5rem;
-    // }
-    // .KXtras__collect_banner_disclaimer {
-    //   font-size: 0.8em;
-    // }
   }
+}
+
+.KXtras__section--goodies,
+.KXtras__section--explore {
+
   .KXtras__explore_items {
     .hoiList__Item {
       margin-bottom: 0;
@@ -381,6 +374,8 @@
     }
   }
 }
+
+
 
 // Setup Section
 .KXtras__section--setup {

@@ -50,5 +50,79 @@
       "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/kxtras/product/TabS7.png",
       "url": "https://www.samsung.com/uk/tablets/galaxy-tab-s7-plus-5g-t976/SM-T976BZNAEUA/buy/"
     }
+  ],
+  "goodies" : [
+    {
+      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/kxtras/goodies2/_0014_Copy-of-KXPROD17-POD.png" ,
+      "url": false
+    },
+    {
+      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/kxtras/goodies2/_0000_Copy-of-KXPROD01.png" ,
+      "url": false
+    },
+    {
+      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/kxtras/goodies2/_0005_Copy-of-KXPROD06.png" ,
+      "url": false
+    },
+    {
+      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/kxtras/goodies2/_0001_Copy-of-KXPROD02.png" ,
+      "url": false
+    },
+    {
+      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/kxtras/goodies2/_0015_Copy-of-KXPROD42-POD.png" ,
+      "url": false
+    },
+    {
+      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/kxtras/goodies2/_0004_Copy-of-KXPROD05.png" ,
+      "url": false
+    },
+    {
+      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/kxtras/goodies2/_0006_Group-1.png" ,
+      "url": false
+    },
+    {
+      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/kxtras/goodies2/_0011_Copy-of-KXPROD14-POD-.png" ,
+      "url": false
+    },
+    {
+      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/kxtras/goodies2/_0013_Copy-of-KXPROD16-POD.png" ,
+      "url": false
+    },
+    {
+      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/kxtras/goodies2/_0012_Copy-of-KXPROD15-POD.png" ,
+      "url": false
+    },
+    {
+      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/kxtras/goodies2/_0010_Copy-of-KXPROD13.png" ,
+      "url": false
+    },
+    {
+      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/kxtras/goodies2/_0002_Copy-of-KXPROD03.png" ,
+      "url": false
+    },
+    {
+      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/kxtras/goodies2/_0007_Copy-of-KXPROD09-POD.png" ,
+      "url": false
+    },
+    {
+      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/kxtras/goodies2/_0009_Copy-of-KXPROD12.png" ,
+      "url": false
+    },
+    {
+      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/kxtras/goodies2/_0003_Copy-of-KXPROD04.png" ,
+      "url": false
+    },
+    {
+      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/kxtras/goodies2/_0016_Copy-of-KXPROD47.png" ,
+      "url": false
+    },
+    {
+      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/kxtras/goodies2/_0008_Copy-of-KXPROD11-BOX-.png" ,
+      "url": false
+    },
+    {
+      "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/kxtras/goodies2/_0018_Layer-1.png",
+      "url": false
+    }
   ]
 }

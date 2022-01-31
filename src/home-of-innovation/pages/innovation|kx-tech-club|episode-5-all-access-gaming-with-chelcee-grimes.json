@@ -4,9 +4,6 @@
     "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/kx-tech-pages/5/KV1.png",
     "alt": "",
     "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/kx-tech-pages/5/thumb.png",
-    "group": "kx-tech-club",
-    
-    "sort": 5,
     "meta": {
       "icon": "article",
       "tags": []
@@ -52,7 +49,7 @@
           {
             "type": "youtube",
             "content": "Qp_3al23EA4"
-			
+
           },
           {
             "type": "headline",
@@ -68,7 +65,7 @@
           {
             "type": "youtube",
             "content": "w6fLjXO6dQo"
-			
+
           },
           {
             "type": "headline",
@@ -99,7 +96,7 @@
           {
             "type": "youtube",
             "content": "a-4j1GkMhC4"
-			
+
           }
         ]
       },

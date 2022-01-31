@@ -79,14 +79,18 @@
           </div>
           <h2>Want something a little more with your purchase?</h2>
           <p>
-            Receive complimentary goodies*, exclusive set up service and full switch over when you purchase in-store or
-            collect at Samsung KX.
+            Receive one of the exclusive gifts below*, personal device setup and full switch over when you purchase in-store or click and collect from Samsung KX.
           </p>
           <p class="KXtras__goodies_disclaimer">
-            * subject to availability.
+            * Subject to availability.
           </p>
+
         </div>
       </div>
+      {{>home-of-innovation/hoiLinkList
+        class="KXtras__explore_items  hoiLinkList--scroll"
+        items=pageTemplateData.kxtras.goodies
+      }}
       <div class="KXtras__image  KXtras__image--arrows">
         <!-- <div class="KXtras__image_arrow  KXtras__image_arrow--left"></div>
         <div class="KXtras__image_arrow  KXtras__image_arrow--right"></div> -->
