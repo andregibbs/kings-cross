@@ -4,8 +4,8 @@ const AWS = require('aws-sdk');
 const chalk = require('chalk')
 
 const REGION = 'eu-west-2';
-const AWS_ACCESS_KEY_ID = 'AKIAJKZN5DXUYODHENKA';
-const AWS_SECRET_ACCESS_KEY = '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';
+const AWS_ACCESS_KEY_ID = 'AKIAR67JJICY7FCFDQXR';
+const AWS_SECRET_ACCESS_KEY = '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';
 
 const BUCKET = 'kxuploads';
 const FOLDER = 'home-of-innovation-dynamic/';
