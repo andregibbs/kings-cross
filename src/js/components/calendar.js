@@ -193,7 +193,7 @@ export default function calendar(URL, type, allEvents) {
 
 			} else {
         // no api data for date, so fill in using current calendar selected date + index
-        
+
         const placeholderDate = new Date(selectedDate).setDate(selectedDate.getDate() + dateInd)
         var placeholderDateFormatted = moment(placeholderDate).format('ddd Do MMMM');
 

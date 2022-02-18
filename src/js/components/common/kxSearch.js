@@ -218,6 +218,9 @@ export default class KXSearch {
         // render event results
         if (eventResults.length) {
           eventResults.forEach(eventObj => {
+            // make uk date
+            let splitDate = eventObj.startDate.split('/')
+            eventObj.startDate = splitDate[1]+'/'+splitDate[0]+'/'+splitDate[2]
             this.eventResultsTarget.insertAdjacentHTML('beforeend', eventItemTemplate(eventObj))
           });
         }

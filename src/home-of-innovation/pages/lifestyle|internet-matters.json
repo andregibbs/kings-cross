@@ -29,6 +29,7 @@
     },
     {
       "type": "group",
+      "dynamic": "episodes",
       "id": "internet-matters",
       "title": "Articles",
       "style": {

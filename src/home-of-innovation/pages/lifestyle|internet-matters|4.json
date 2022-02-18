@@ -1,0 +1,93 @@
+{
+	"title": "Creating respectful relationships online: The Online Together Project- in Partnership with Internet Matters",
+	"description": "",
+	"image": "{{lifestyle|internet-matters[image]}}",
+	"alt": "{{lifestyle|internet-matters[alt]}}",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/internet-matters/IM_4_KV.jpg",
+	"group": "internet-matters",
+	"sort": 4,
+  "hidden": true,
+	"meta": {
+		"icon": "video",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 28,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "youtube",
+				"content": "_G4Dlt5EQts"
+			},
+			"style": {
+				"desktop": "top",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "{{lifestyle|internet-matters|4[title]}}"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Welcome to Samsung and Internet Matters exclusive online safety series, offering expert tips and advice on how to make the digital world a safe and exciting place for children!",
+						"In the last of this three-part series, you’ll get advice on in-built safety tools available on Samsung products and third party online safety apps that can support you in managing your child’s online safety."
+					]
+				}
+			]
+		},
+		{
+			"type": "wrapper",
+			"components": [
+				{
+					"type": "paragraphs",
+					"text": [
+						"From gaming to entertainment, respect is a key part of creating a safe space for everyone online. In celebration of Safer Internet Day, this lunch and learn with Internet Matters is designed to demonstrate how new interactive tool, The Online Together Project, developed in partnership with Internet Matters can help all young people, their parents, and carers, to develop critical thinking skills and encourage a positive and inclusive culture online.",
+            "In this 30-minute webinar we cover:"
+					]
+				},
+        {
+          "type": "html-list",
+          "items": [
+            "Creating positive online reputations - how we can help young people of all ages to develop the skills and confidence to thrive online",
+            "A demonstration of The Online Together Project Tool and how to use it to facilitate learning and conversation around the subject matter together with children or young people"
+          ]
+        },
+        {
+					"type": "paragraphs",
+					"text": [
+						"Who is it for:"
+					]
+				},
+        {
+          "type": "html-list",
+          "items": [
+            "Parents and carers of young peopleaged under 5-11, 11-13, and 14-16 (the tool is split into 3 age-appropriate ranges)"
+          ]
+        },
+				{
+					"type": "buttons",
+					"items": [
+						{
+							"copy": "Learn More",
+							"url": "https://www.internetmatters.org/the-online-together-project/",
+							"target": "_blank"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "group",
+			"id": "internet-matters",
+			"title": "Other episodes",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
+}

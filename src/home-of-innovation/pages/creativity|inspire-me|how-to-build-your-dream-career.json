@@ -1,0 +1,54 @@
+{
+	"title": "How to build your dream career with Derin Adetosoye",
+	"description": "",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/inspire-me/9_thumb.png",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/inspire-me/9_thumb.png",
+	"group": "inspire-me",
+	"sort": 9,
+	"meta": {
+		"icon": "video",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 5,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "youtube",
+				"content": "NozaL_MK1GQ",
+				"poster": "",
+				"alt": ""
+			},
+			"style": {
+				"desktop": "top",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "How to build your dream career with Derin Adetosoye"
+				},
+				{
+					"type": "paragraphs",
+					"text": [
+						"Welcome to Inspire Me. A series of tutorials led by industry experts across photography, gaming and travel, designed to upskill and inspire you to dive into new passions.",
+						"Join Formula E presenter & content creator Derin Adetosoye to discover how to build your dream career with the help of the <a href=\"https://www.samsung.com/uk/smartphones/galaxy-z-fold3-5g/purchase/\">Samsung Galaxy Z Fold3 5G</a> at Samsung KX."
+					]
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "episodes",
+			"id": "inspire-me",
+			"title": "More episodes",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
+}
