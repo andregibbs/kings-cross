@@ -6,7 +6,6 @@
 	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/internet-matters/IM_4_KV.jpg",
 	"group": "internet-matters",
 	"sort": 4,
-  "hidden": true,
 	"meta": {
 		"icon": "video",
 		"tags": []
@@ -20,7 +19,8 @@
 			"type": "kv",
 			"media": {
 				"type": "youtube",
-				"content": "_G4Dlt5EQts"
+				"content": "_G4Dlt5EQts",
+        "poster": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/internet-matters/Samsung_SID_WebBanner_KV.jpg"
 			},
 			"style": {
 				"desktop": "top",
@@ -34,8 +34,7 @@
 				{
 					"type": "paragraphs",
 					"text": [
-						"Welcome to Samsung and Internet Matters exclusive online safety series, offering expert tips and advice on how to make the digital world a safe and exciting place for children!",
-						"In the last of this three-part series, you’ll get advice on in-built safety tools available on Samsung products and third party online safety apps that can support you in managing your child’s online safety."
+						"Welcome to Samsung and Internet Matters exclusive online safety series, offering expert tips and advice on how to make the digital world a safe and exciting place for children!"
 					]
 				}
 			]
@@ -46,7 +45,7 @@
 				{
 					"type": "paragraphs",
 					"text": [
-						"From gaming to entertainment, respect is a key part of creating a safe space for everyone online. In celebration of Safer Internet Day, this lunch and learn with Internet Matters is designed to demonstrate how new interactive tool, The Online Together Project, developed in partnership with Internet Matters can help all young people, their parents, and carers, to develop critical thinking skills and encourage a positive and inclusive culture online.",
+						"From gaming to entertainment, respect is a key part of creating a safe space for everyone online. In celebration of Safer Internet Day, this lunch and learn with Internet Matters is designed to demonstrate how our new interactive tool, The Online Together Project, developed in partnership with Internet Matters can help all young people, their parents, and carers, to develop critical thinking skills and encourage a positive and inclusive culture online.",
             "In this 30-minute webinar we cover:"
 					]
 				},
@@ -66,7 +65,7 @@
         {
           "type": "html-list",
           "items": [
-            "Parents and carers of young peopleaged under 5-11, 11-13, and 14-16 (the tool is split into 3 age-appropriate ranges)"
+            "Parents and carers of young people aged under 5-11, 11-13, and 14-16 (the tool is split into 3 age-appropriate ranges)"
           ]
         },
 				{
@@ -83,6 +82,7 @@
 		},
 		{
 			"type": "group",
+      "dynamic": "episodes",
 			"id": "internet-matters",
 			"title": "Other episodes",
 			"style": {

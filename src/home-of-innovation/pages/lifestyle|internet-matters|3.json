@@ -64,6 +64,7 @@
 		},
 		{
 			"type": "group",
+      "dynamic": "episodes",
 			"id": "internet-matters",
 			"title": "Other episodes",
 			"style": {
