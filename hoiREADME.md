@@ -461,6 +461,26 @@ The HOI component templates are stored under `templates/partials/home-of-innovat
 
 TODO: might be worth moving some of these around so the files of similar types arent in wildly different directories.
 
+## Scraping/Deploying pages
+
+Pages need to be scraped for deployment to AEM, this means running a bookmarklet on the local development page to extract the HTML/CSS and Javascript code.
+
+```
+javascript:void((function(){var e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','https://s3-eu-west-1.amazonaws.com/aem-scraper/aem-source-scraper-2019.js?r=%27+Math.random()*99999999);document.body.appendChild(e)})());
+```
+
+The scraper tool can be added as a bookmarklet within your browsers bookmark bar. (Chrome recommended).
+
+With the local page built using `gulp hoi-dev`. The code can be extracted ready to copy to AEM
+
+Within the AEM page that matches the path of the page you are building, the code must be copied to the Static Component selected from the AEM components list. Once dragged into the page, the component can be clicked on the display a modal with three tabs.
+The HTML/CSS code should be copied into the `Body (HTML)` tab, and the JS code into `Footer (Javascript)`
+
+Once pasted into the component, the page can be published to QA for checking over and then Live to deploy on the production site. This is done by selecting `Start Workflow` from the top menu of the editor window and selecting either `Samsung Direct QA Workflow` to push to QA and `Samsung Direct Workflow` for live.
+
+Remember to run the dynamic data deployment to either staging of live after creating pages that have dynamic data associated with them.
+
+
 ## TODOS
 
 1. Fix up gulp task to prevent failures when files missing, not building if non hoi scss change etc
