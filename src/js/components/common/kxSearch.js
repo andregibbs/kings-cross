@@ -221,6 +221,7 @@ export default class KXSearch {
             // make uk date
             let splitDate = eventObj.startDate.split('/')
             eventObj.startDate = splitDate[1]+'/'+splitDate[0]+'/'+splitDate[2]
+            console.log(eventObj)
             this.eventResultsTarget.insertAdjacentHTML('beforeend', eventItemTemplate(eventObj))
           });
         }
