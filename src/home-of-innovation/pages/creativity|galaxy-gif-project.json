@@ -1,0 +1,67 @@
+{
+	"title": "The Galaxy GIF Project",
+	"description": "",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/galaxy-gif-project/galaxy-gif-project-kv.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/galaxy-gif-project/galaxy-gif-project-kv.jpg",
+	"meta": {
+		"icon": "video",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 5,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "youtube",
+				"content": "NozaL_MK1GQ",
+				"poster": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/galaxy-gif-project/galaxy-gif-project-kv.jpg",
+				"alt": ""
+			},
+			"style": {
+				"desktop": "top",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "The Galaxy GIF Project"
+				}
+			]
+		},
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "paragraphs",
+          "text": [
+            "We teamed up with expert in emotions and Emily in Paris star, Lucien Laviscount, to create a new film in which the actor portrays a range of emotions, from anguish to elation, in a feat of facial gymnastics and acting prowess as the world celebrates 35 years of the GIF.",
+            "A recent survey of 3,000 Brits found we get angry four times a day, laugh seven times a day and cry at least three times a week – so it’s no wonder over 2 million GIFs are sent each day to communicate our feelings.",
+            "Lucien managed to convey 31 different emotions and expressions in just 60 seconds. Somewhat more than the 21 basic expressions scientists currently believe we can compute instantly.",
+            "The film, captured on the new <a href=\"https://www.samsung.com/uk/smartphones/galaxy-s22-ultra/\">Samsung Galaxy S22 Ultra</a>, was shot in one single-take with Lucien displaying emotions ranging from anger to joy, and love to lust.",
+            "Through The Galaxy GIF Project, spearheaded by Vyvyan Evans, PHD and Professor of Linguistics, we want to prove that humans can now convey and understand more emotions or expressions than any other time in history thanks to technological improvements such as the GIFs.",
+            "To get involved and create your own GIF capturing a full range of emotions head down to Samsung KX, where the new Galaxy GIF Project immersive experience, powered by the new <a href=\" https://www.samsung.com/uk/smartphones/galaxy-s22/\">Samsung Galaxy S22</a> series with Nightography, making the emotions you capture on photo and video pop even in low light conditions."
+          ]
+        },
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "Lucien Laviscount - 60 Seconds of Emotions"
+        },
+        {
+          "type": "paragraph",
+          "text": [
+            "Watch Lucien Laviscount, star of Emily in Paris, showcase the full spectrum of human emotion in just 60 seconds."
+          ]
+        },
+        {
+          "type": "youtube",
+          "content": "A544I_KNqqw"
+        }
+      ]
+    }
+	]
+}
