@@ -1,24 +1,20 @@
 {
 	"title": "The Galaxy GIF Project",
 	"description": "",
-	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/galaxy-gif-project/galaxy-gif-project-kv.jpg",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/galaxy-gif-project/the_galaxy_gif_project_tile.png",
 	"alt": "",
-	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/galaxy-gif-project/galaxy-gif-project-kv.jpg",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/galaxy-gif-project/the_galaxy_gif_project_tile.png",
 	"meta": {
 		"icon": "video",
 		"tags": []
-	},
-	"contentLength": {
-		"length": 5,
-		"unit": "mins"
 	},
 	"components": [
 		{
 			"type": "kv",
 			"media": {
-				"type": "youtube",
-				"content": "NozaL_MK1GQ",
-				"poster": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/galaxy-gif-project/galaxy-gif-project-kv.jpg",
+				"type": "image",
+				"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/galaxy-gif-project/the_galaxy_gif_project_banner.png",
+				"poster": "",
 				"alt": ""
 			},
 			"style": {
@@ -43,7 +39,7 @@
             "Lucien managed to convey 31 different emotions and expressions in just 60 seconds. Somewhat more than the 21 basic expressions scientists currently believe we can compute instantly.",
             "The film, captured on the new <a href=\"https://www.samsung.com/uk/smartphones/galaxy-s22-ultra/\">Samsung Galaxy S22 Ultra</a>, was shot in one single-take with Lucien displaying emotions ranging from anger to joy, and love to lust.",
             "Through The Galaxy GIF Project, spearheaded by Vyvyan Evans, PHD and Professor of Linguistics, we want to prove that humans can now convey and understand more emotions or expressions than any other time in history thanks to technological improvements such as the GIFs.",
-            "To get involved and create your own GIF capturing a full range of emotions head down to Samsung KX, where the new Galaxy GIF Project immersive experience, powered by the new <a href=\" https://www.samsung.com/uk/smartphones/galaxy-s22/\">Samsung Galaxy S22</a> series with Nightography, making the emotions you capture on photo and video pop even in low light conditions."
+            "To get involved and create your own GIF capturing a full range of emotions, head down to Samsung KX where the new Galaxy GIF Project immersive experience is, powered by the new <a href=\" https://www.samsung.com/uk/smartphones/galaxy-s22/\">Samsung Galaxy S22</a> series with Nightography. Making the emotions you capture on photo and video pop, even in low light conditions."
           ]
         },
         {
@@ -59,7 +55,7 @@
         },
         {
           "type": "youtube",
-          "content": "A544I_KNqqw"
+          "content": "FY6kPplvc8Q"
         }
       ]
     }
