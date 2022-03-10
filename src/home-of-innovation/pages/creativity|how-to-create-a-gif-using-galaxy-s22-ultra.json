@@ -1,13 +1,9 @@
 {
 	"title": "The Galaxy GIF Project",
 	"description": "",
-	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/galaxy-gif-project/the_galaxy_gif_project_banner-V2.png",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/galaxy-gif-project/the_galaxy_gif_project_banner-V2.pn",
 	"alt": "",
 	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/galaxy-gif-project/the_galaxy_gif_project_tile-V2.png",
-	"meta": {
-		"icon": "video",
-		"tags": []
-	},
 	"contentLength": {
 		"length": 5,
 		"unit": "mins"
