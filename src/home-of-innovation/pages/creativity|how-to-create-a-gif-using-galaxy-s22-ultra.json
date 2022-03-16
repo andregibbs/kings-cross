@@ -12,9 +12,9 @@
 		{
 			"type": "kv",
 			"media": {
-				"type": "youtube",
-				"content": "NozaL_MK1GQ",
-				"poster": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/galaxy-gif-project/galaxy-gif-project-kv.jpg",
+				"type": "image",
+				"content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/galaxy-gif-project/the_galaxy_gif_project_banner.png",
+				"poster": "",
 				"alt": ""
 			},
 			"style": {
