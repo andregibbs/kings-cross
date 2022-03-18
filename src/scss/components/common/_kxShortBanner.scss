@@ -1,0 +1,13 @@
+.kxShortBanner {
+	position: relative;
+	width: 100vw;
+	height: auto; 
+	background: #cfcdcf;
+	z-index:600;
+
+	&-copy {
+		font-size: 30px; 
+		text-align: center;
+		padding: 10px;
+	}
+}
