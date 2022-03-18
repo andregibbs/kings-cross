@@ -11,6 +11,13 @@
     {
       "type": "search"
     },
+    	{
+					"type": "paragraphs",
+					"text": [
+						"Great things happen when you take a break. From lathering yourself in cream to losing yourself in poetry - Munya Chawawa, Katherine Ryan, Amelia Dimoldenberg and Reggie Yates give us an insight into the private pastimes that spark their creativity. All in exclusive unseen footage from the Samsung KX Lunch & Listen hosted by Clara Amfo.",
+						"Samsung KX’s all new series Lunch & Listen wants you to reclaim your lunch break. Hosted by Clara Amfo, this fun and engaging two-part series sees special guests Katherine Ryan, Munya Chawawa, Reggie Yates and Amelia Dimoldenberg reveal their hidden hobbies as they reveal how they reclaim their free time - inspiring you to do the same."
+					]
+      },
     {
       "type": "link-list-id",
       "dynamic": "latest",
