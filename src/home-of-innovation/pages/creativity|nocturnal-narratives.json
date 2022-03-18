@@ -1,0 +1,108 @@
+{
+  "title": "Nocturnal Narratives",
+  "description": "Watch three short films directed by Will Robson-Scott, shot entirely on the new Samsung Galaxy S22 Ultra.",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/kx-tech-pages/5-2/05_Samsung_Tech_Club_Social_V1_1440x810.png",
+  "alt": "",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/kx-tech-pages/5-2/06_Samsung_Tech_Club_Social_V1_400x255.jpg",
+  "sort": 5,
+  "meta": {
+    "icon": "series",
+    "tags": []
+  },
+  "contentLength": {
+    "length": 10,
+    "unit": "mins"
+  },
+  "components": [
+    {
+      "type": "css-snippet",
+      "content": ".hoiWrapper { margin-top: 0 !important; } .hoiKv__Media:after { padding-bottom: 33% !important; } .hoiWrapper h2 { margin-bottom: 0 !important;} .hoiWrapper h5 { margin-top: 0 !important; }"
+    },
+    {
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "{{innovation|kx-tech-club|episode-5-stay-connected-through-technology[image]}}",
+        "alt": ""
+      },
+      "style": {
+        "desktop": "top",
+        "mobile": "top"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "Watch three short films directed by Will Robson-Scott, shot entirely on the new Samsung Galaxy S22 Ultra.  "
+        }
+      ]
+    },
+    {
+      "type": "wrapper",
+      "components": [
+
+        {
+          "type": "paragraphs",
+          "text": [
+            "Using the S22 Ultra's Nightography features, these films uncover three unique individuals or collectives, whose passion involves them being awake when most are not. Discover their after-hours craft and hear what drives them to be up at the dead of night."
+          ]
+        },
+        {
+          "type": "headline",
+          "copy": "The Hijabi Boxer",
+          "level": "2"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Safiyyah Syeed, otherwise known as 'The Hijabi Boxer', is one of the few Muslims to wear a hijab during her fights. She aims to break stereotypes in sport and has empowered other young women to do the same. Her rigorous schedule means that she is training when most are still sleeping."
+          ]
+        },
+        {
+          "type": "youtube",
+          "content": "zOcYc_hBcm4"
+
+        },
+        {
+          "type": "headline",
+          "copy": "Keep Hush",
+          "level": "2"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Keep Hush is an underground dance music platform. The collective runs weekly parties showcasing the latest underground dance music, which are live streamed around the globe. The founders, Fred and Freddy's, aim is to build and continue to lift the music community through projects and their events."
+          ]
+        },
+        {
+          "type": "youtube",
+          "content": "TEvGhTiNsCA"
+        },
+        {
+          "type": "headline",
+          "copy": "My Lady Garden",
+          "level": "2"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "My Lady Garden is a Dalston based florist. Influenced by sights and surroundings from her travels across the globe, founder Kai creates bold and sculptural arrangements that push the boundaries of conventional floristry. Her restless experimentation requires her to work early mornings and late nights to be ready for opening hours."
+          ]
+        },
+        {
+          "type": "youtube",
+          "content": "9hh2_i8QmbA"
+
+        }
+      ]
+    },
+    {
+			"type": "group",
+			"dynamic": "more-episodes",
+			"id": "innovation-sessions",
+			"title": "More episodes",
+			"style": {
+				"scroll": true
+			}
+		}
+  ]
+}
