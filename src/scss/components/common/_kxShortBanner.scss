@@ -1,13 +1,80 @@
 .kxShortBanner {
-	position: relative;
+  position: relative;
 	width: 100vw;
-	height: auto; 
-	background: #cfcdcf;
+	height: 65px; 
+  background: rgb(0,110,191);
+  background: linear-gradient(90deg, rgba(0,110,191,1) 0%, rgba(0,178,227,1) 100%);
 	z-index:600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &-img_right{
+    display: none;
+    @media screen and (max-width: $mobile){
+      display: flex;
+      align-items: flex-end;
+      height: 100%;
+    }
+    img {
+    }
+  }
+
+  &-logo{
+    img{
+      object-fit: contain;
+      padding-left:20px;
+      height: 40px;
+      @media screen and (max-width: $mobile){
+        display: none;
+      }
+    }
+  }
 
 	&-copy {
-		font-size: 30px; 
+		font-size: 18px; 
 		text-align: center;
 		padding: 10px;
+    font-family: "SamsungSharpSans";
+
+    a{
+      color: white;
+      text-decoration: underline;
+    }
+
+    @media screen and (max-width: $mobile){
+      padding: 10px 0px;
+      font-size: calc(40/1440 * 100vw);
+      width: 90%;
+      margin: auto;
+    }
 	}
+
+  &-img_left{
+    align-items: flex-end;
+    display: flex;
+    height: 100%;
+    @media screen and (max-width: $mobile){
+      display: none;
+    }
+    img {
+      // height: 30px;
+    }
+    
+  }
+
+  &-logo_right{
+    align-items: flex-end;
+    display: flex;
+    height: 100%;
+    display: none;
+
+    @media screen and (max-width: $mobile){
+      display: flex;
+    }
+    img{
+      height: 25px;
+      object-fit: contain;
+    }
+  }
 }
