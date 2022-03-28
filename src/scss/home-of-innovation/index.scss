@@ -40,6 +40,8 @@
       height: 100%;
     }
     img {
+      height: 60px;
+       object-fit: cover;
     }
   }
 
@@ -62,13 +64,17 @@
 
     a{
       color: white;
+      font-size: 18px; 
       text-decoration: underline;
+      @media screen and (max-width: $mobile){
+        font-size: calc(40/1440 * 100vw);
+      }
     }
 
     @media screen and (max-width: $mobile){
       padding: 10px 0px;
       font-size: calc(40/1440 * 100vw);
-      width: 90%;
+      width: 80%;
       margin: auto;
     }
 	}
@@ -81,7 +87,8 @@
       display: none;
     }
     img {
-      // height: 30px;
+       height: 60px;
+       object-fit: cover;
     }
     
   }

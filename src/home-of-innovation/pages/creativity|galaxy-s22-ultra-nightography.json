@@ -1,9 +1,9 @@
 {
-  "title": "Nocturnal Narratives",
-  "description": "Watch three short films directed by Will Robson-Scott, shot entirely on the new Samsung Galaxy S22 Ultra.",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/kx-tech-pages/5-2/05_Samsung_Tech_Club_Social_V1_1440x810.png",
+  "title": "Galaxy S22 Ultra Nightography | Samsung KX | Samsung UK",
+  "description": "Watch three short films directed by Will Robson-Scott, shot entirely on the Samsung Galaxy S22 Ultra at Samsung KX.",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/SamsungKX_Banner.jpg",
   "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/innovation/kx-tech-pages/5-2/06_Samsung_Tech_Club_Social_V1_400x255.jpg",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/SamsungKX_Thumbnail.jpg",
   "sort": 5,
   "meta": {
     "icon": "series",
@@ -32,7 +32,7 @@
       "components": [
         {
           "type": "headline",
-          "copy": "Watch three short films directed by Will Robson-Scott, shot entirely on the new Samsung Galaxy S22 Ultra.  "
+          "copy": ""
         }
       ]
     },
@@ -43,6 +43,7 @@
         {
           "type": "paragraphs",
           "text": [
+            "Watch three short films directed by Will Robson-Scott, shot entirely on the new Samsung Galaxy S22 Ultra.",
             "Using the S22 Ultra's Nightography features, these films uncover three unique individuals or collectives, whose passion involves them being awake when most are not. Discover their after-hours craft and hear what drives them to be up at the dead of night."
           ]
         },
