@@ -1,0 +1,93 @@
+{
+	"title": "Iframe Test",
+	"description": "Iframe test page",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/behind-the-scenes/Graduatefashionweek-8.jpg",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/behind-the-scenes/Graduatefashionweek-8.jpg",
+	"sort": 6,
+	"meta": {
+		"icon": "video",
+		"tags": []
+	},
+	"contentLength": {
+		"length": 2,
+		"unit": "mins"
+	},
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				"type": "video",
+				"content": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/behind-the-scenes/SamsungKX_GFW_Final_v2_h264.mp4",
+				"poster": "{{creativity|graduate-fashion-week|behind-the-scenes[image]}}",
+				"alt": ""
+			},
+			"style": {
+				"desktop": "top",
+				"mobile": "bottom"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Iframe test page"
+				}
+			]
+		},
+		{
+			"type": "wrapper",
+			"components": [
+				{
+					"type": "paragraphs",
+					"style": {
+						"large": true
+					},
+					"text": [
+						"Samsung iframe test"
+					]
+				},
+				{
+					"type": "iframe",
+					"src": "https://vimeo.com/event/1908378/embed"
+				},
+				{
+					"type": "paragraphs",
+					"style": {
+						"large": true
+					},
+					"text": [
+						"Samsung iframe test 2"
+					]
+				},
+				{
+					"type": "iframe",
+					"src": "https://vimeo.com/event/1908378/embed"
+				}
+			]
+		},
+		{
+			"type": "link-list",
+			"title": "Check out the products used in the videos here",
+			"items": [
+				{
+					"title": "The Sero",
+					"url": "https://www.samsung.com/uk/tvs/the-sero-ls05t/",
+					"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/behind-the-scenes/Samsung-Lifestyle-TV-The-Sero.jpg"
+				},
+				{
+					"title": "Galaxy S20 FE",
+					"url": "https://www.samsung.com/uk/smartphones/galaxy-s20/buy/?modelCode=SM-G780FZBDEUA",
+					"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/graduate-fashion-week/behind-the-scenes/Galaxy_S20_FE_Cloud_Navy.jpg"
+				}
+			]
+		},
+		{
+			"type": "group",
+			"dynamic": "episodes",
+			"id": "graduate-fashion-week",
+			"title": "Episodes",
+			"style": {
+				"scroll": true
+			}
+		}
+	]
+}

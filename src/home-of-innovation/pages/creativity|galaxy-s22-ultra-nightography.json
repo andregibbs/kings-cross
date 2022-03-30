@@ -1,28 +1,27 @@
 {
-  "title": "Galaxy S22 Ultra Nightography | Samsung KX | Samsung UK",
+  "title": "Nocturnal Narratives",
   "description": "Watch three short films directed by Will Robson-Scott, shot entirely on the Samsung Galaxy S22 Ultra at Samsung KX.",
-  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/SamsungKX_Banner.jpg",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/hero_films.jpg",
   "alt": "",
-  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/SamsungKX_Thumbnail.jpg",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/hero_films_thumb.jpg",
   "sort": 5,
   "meta": {
     "icon": "series",
     "tags": []
   },
-  "contentLength": {
-    "length": 10,
-    "unit": "mins"
-  },
   "components": [
+   
     {
       "type": "css-snippet",
       "content": ".hoiWrapper { margin-top: 0 !important; } .hoiKv__Media:after { padding-bottom: 33% !important; } .hoiWrapper h2 { margin-bottom: 0 !important;} .hoiWrapper h5 { margin-top: 0 !important; }"
     },
+    
     {
       "type": "kv",
       "media": {
         "type": "image",
-        "content": "{{innovation|kx-tech-club|episode-5-stay-connected-through-technology[image]}}",
+        "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/hero_films.jpg",
+				"poster": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/hero_films_thumb.jpg",
         "alt": ""
       },
       "style": {
@@ -32,21 +31,23 @@
       "components": [
         {
           "type": "headline",
-          "copy": ""
+          "copy": "Nocturnal Narratives"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Watch three short films directed by Will Robson-Scott, shot entirely on the new <a href=\"https://www.samsung.com/uk/smartphones/galaxy-s22-ultra/buy/\">Samsung Galaxy S22 Ultra</a>.",
+            "Using the S22 Ultra's Nightography features, these films uncover three unique individuals or collectives, whose passion involves them being awake when most are not. Discover their after-hours craft and hear what drives them to be up at the dead of night."
+          ]
         }
       ]
     },
+     
     {
       "type": "wrapper",
       "components": [
 
-        {
-          "type": "paragraphs",
-          "text": [
-            "Watch three short films directed by Will Robson-Scott, shot entirely on the new Samsung Galaxy S22 Ultra.",
-            "Using the S22 Ultra's Nightography features, these films uncover three unique individuals or collectives, whose passion involves them being awake when most are not. Discover their after-hours craft and hear what drives them to be up at the dead of night."
-          ]
-        },
+      
         {
           "type": "headline",
           "copy": "The Hijabi Boxer",
@@ -60,7 +61,7 @@
         },
         {
           "type": "youtube",
-          "content": "zOcYc_hBcm4"
+          "content": "y1Kn-rIIdKk"
 
         },
         {
@@ -76,7 +77,7 @@
         },
         {
           "type": "youtube",
-          "content": "TEvGhTiNsCA"
+          "content": "Sen2G_mYaG0"
         },
         {
           "type": "headline",
@@ -91,19 +92,34 @@
         },
         {
           "type": "youtube",
-          "content": "9hh2_i8QmbA"
+          "content": "BqB2pXbwMIg"
 
-        }
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "Take your filmmaking to the next level and capture the night with the new Samsung S22 Ultra."
+          ]
+        },
+        {
+					"type": "buttons",
+					"items": [
+						{
+							"copy": "Discover More",
+							"url": "https://www.samsung.com/uk/smartphones/galaxy-s22-ultra/buy/?modelCode=SM-S908BZKDEUB&cid=UK_PPC_4586843643_FF~Eval:Brand%2BProd_Smartphones-Galaxy-S22-Ultra_KS~BAP_BS~IM_PR~SMART_SB~A+SERIES_OB~SALES_FS~LHQ_AI~N_MT~none_CA~n/a&gclid=CjwKCAjwxOCRBhA8EiwA0X8hi-d7W5qU87mBqO2wfRjgLbTz-OHMrnJ1w6vFQ1iW3ItEWb1tnHJZexoCf14QAvD_BwE&gclsrc=aw.ds"
+						}
+					]
+				}
       ]
     },
     {
-			"type": "group",
-			"dynamic": "more-episodes",
-			"id": "innovation-sessions",
-			"title": "More episodes",
-			"style": {
-				"scroll": true
-			}
-		}
+      "type": "group",
+      "dynamic": "more-articles",
+      "id": "guest-writer-of-the-week",
+      "title": "More articles",
+      "style": {
+          "scroll": true
+      }
+    }
   ]
 }
