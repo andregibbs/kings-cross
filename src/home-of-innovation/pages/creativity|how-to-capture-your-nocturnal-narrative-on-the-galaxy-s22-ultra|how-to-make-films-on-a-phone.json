@@ -1,0 +1,57 @@
+{
+  "title": "How To Make Films On A Phone",
+  "description": "Want to level up your filmmaking skills with the S22 Ultra’s nightography features? Watch as Will Robson-Scott and our Samsung KX expert gives us insider knowledge on how to utilise your S22 device and capture your own unique perspective - even if you’re not an expert videographer or photographer!",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/hero_films.jpg",
+  "alt": "",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/hero_films_thumb.jpg",
+  "group":"how-to-capture",
+  "meta": {
+    "icon": "series",
+    "tags": []
+  },
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/hero_films.jpg",
+				"poster": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/hero_films_thumb.jpg",
+        "alt": ""
+      },
+      "style": {
+        "desktop": "top",
+        "mobile": "top"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "copy": "How To Make Films On A Phone"
+        }
+      ]
+    },
+    {
+      "type":"wrapper",
+      "components":[
+
+     
+        {
+          "type": "paragraphs",
+          "text": [
+            "Want to level up your filmmaking skills with the <a href=\"https://www.samsung.com/uk/smartphones/galaxy-s22-ultra/buy/\">S22 Ultra</a>’s nightography features? Watch as Will Robson-Scott and our Samsung KX expert gives us insider knowledge on how to utilise your S22 device and capture your own unique perspective - even if you’re not an expert videographer or photographer!"
+          ]
+        },
+        {
+          "type": "youtube",
+          "content": "8Dy780SclS8"
+        }
+       
+      ]
+    },
+    {
+      "type": "group",
+      "dynamic": "episodes",
+      "title": "How to capture your nocturnal narrative on the Galaxy S22 Ultra",
+      "id": "how-to-capture"
+    }
+  ]
+}

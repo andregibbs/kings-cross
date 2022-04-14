@@ -5,6 +5,7 @@
   "alt": "",
   "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/hero_films_thumb.jpg",
   "sort": 5,
+  "group":"how-to-capture",
   "meta": {
     "icon": "series",
     "tags": []
@@ -114,12 +115,9 @@
     },
     {
       "type": "group",
-      "dynamic": "more-articles",
-      "id": "guest-writer-of-the-week",
-      "title": "More articles",
-      "style": {
-          "scroll": true
-      }
+      "dynamic": "episodes",
+      "title": "How to capture your nocturnal narrative on the Galaxy S22 Ultra",
+      "id": "how-to-capture"
     }
   ]
 }
