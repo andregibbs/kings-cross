@@ -3,12 +3,17 @@
     "description": "",
     "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/hero_films.jpg",
     "alt": "",
-    "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/hero_films_thumb.jpg",
+    "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/hero_films_thumb_series.jpg",
     "meta": {
       "icon": "series",
       "tags": []
     },
     "components": [
+      {
+        "type": "css-snippet",
+        "content": ".hoiWrapper { margin-top: 0 !important; } .hoiKv__Media:after { padding-bottom: 33% !important; } .hoiWrapper h2 { margin-bottom: 0 !important;} .hoiWrapper h5 { margin-top: 0 !important; }"
+      },
+    
       {
         "type": "kv",
         "style": {
@@ -28,7 +33,7 @@
           {
             "type": "paragraphs",
             "text": [
-              "Want to level up your filmmaking skills with the S22 Ultra’s nightography features? Watch as Will Robson-Scott and our Samsung KX expert gives us insider knowledge on how to utilise your S22 device and capture your own unique perspective - even if you’re not an expert videographer or photographer!"
+              "Want to level up your filmmaking skills with the <a href=\"https://www.samsung.com/uk/smartphones/galaxy-s22-ultra/buy/\">S22 Ultra's</a> nightography features? Watch as Will Robson-Scott and our Samsung KX expert gives us insider knowledge on how to utilise your S22 device and capture your own unique perspective - even if you’re not an expert videographer or photographer!"
             ]
           }
         ]

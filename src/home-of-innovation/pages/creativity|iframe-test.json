@@ -14,6 +14,7 @@
 		"unit": "mins"
 	},
 	"components": [
+	
 		{
 			"type": "kv",
 			"media": {
@@ -37,7 +38,12 @@
 			"type": "wrapper",
 			"components": [
 				{
+					"type": "css-snippet",
+					"content": ".hoiParagraphs > p > iframe{margin-left:25%;}"
+				  },
+				{
 					"type": "paragraphs",
+					"id":"test",
 					"style": {
 						"large": true
 					},
@@ -46,8 +52,10 @@
 					]
 				},
 				{
-					"type": "iframe",
-					"src": "https://vimeo.com/event/1908378/embed"
+					"type": "paragraphs",
+					"text": [
+						"<iframe src='https://vimeo.com/event/1908378/embed' width='640' height='360' frameborder='0' allow='autoplay; fullscreen' allowfullscreen></iframe>"
+					]
 				},
 				{
 					"type": "paragraphs",
