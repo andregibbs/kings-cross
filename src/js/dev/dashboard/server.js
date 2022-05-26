@@ -39,7 +39,7 @@ class DashboardServer {
     app.use(cors())
 
     app.get('/', (req, res) => {
-      res.send('Hello World!')
+      res.send(this.pages)
     })
 
     app.get('/config', (req, res) => {
