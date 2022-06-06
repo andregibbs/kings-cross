@@ -40,7 +40,8 @@
             "The film, captured on the new <a href=\"https://www.samsung.com/uk/smartphones/galaxy-s22-ultra/\">Samsung Galaxy S22 Ultra</a>, was shot in one single-take with Lucien displaying emotions ranging from anger to joy, and love to lust.",
             "Through The Galaxy GIF Project, spearheaded by Vyvyan Evans, PHD and Professor of Linguistics, we want to prove that humans can now convey and understand more emotions or expressions than any other time in history thanks to technological improvements such as the GIFs.",
             "To get involved and create your own GIF capturing a full range of emotions, head down to Samsung KX where the new Galaxy GIF Project immersive experience is, powered by the new <a href='https://www.samsung.com/uk/smartphones/galaxy-s22/'>Samsung Galaxy S22</a> series with Nightography. Making the emotions you capture on photo and video pop, even in low light conditions.",
-            "By creating and sharing your Galaxy GIF at Samsung KX, you can be in with a chance to win a Samsung Galaxy S22 Ultra or a Tab S8 Ultra. <a href='https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/terms.pdf' target='_blank' download='Terms_And_Conditions'>Terms & Conditions apply.</a>"
+            "<p style='font-size: 24px'>By creating and sharing your Galaxy GIF at Samsung KX, you can be in with a chance to win a Samsung Galaxy S22 Ultra or a Tab S8 Ultra.* Don’t miss out, the prize draw is running from the 1st June 2022 until the 30th June 2022.</p>",
+            "To learn more about the full Terms & Conditions click <a href='https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/terms.pdf' target='_blank' download='Terms_And_Conditions'>here</a>."
           ]
         },
         {
@@ -57,6 +58,12 @@
         {
           "type": "youtube",
           "content": "FY6kPplvc8Q"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "*Terms and conditions apply."
+          ]
         }
       ]
     }

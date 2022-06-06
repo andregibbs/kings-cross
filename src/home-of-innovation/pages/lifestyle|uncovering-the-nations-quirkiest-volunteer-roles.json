@@ -1,0 +1,129 @@
+{
+	"title": "Uncovering the Nation’s Quirkiest Volunteer Roles with DoIt and Laura Tobin",
+	"description": "",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/uncovering-the-nations-quirkiest-volunteer-roles/thumbnail.png",
+	"alt": "",
+	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/uncovering-the-nations-quirkiest-volunteer-roles/thumbnail.png",
+	"components": [
+		{
+			"type": "kv",
+			"media": {
+				
+					"type": "paragraphs",
+					"text": "<iframe title='vimeo-player' src='https://player.vimeo.com/video/715508100?h=353ae67154' width='640' height='360' frameborder='0' allowfullscreen></iframe>"
+				
+			},
+
+
+			"style": {
+				"desktop": "top",
+				"mobile": "top"
+			},
+			"components": [
+				{
+					"type": "headline",
+					"copy": "Uncovering the Nation’s Quirkiest Volunteer Roles with DoIt and Laura Tobin"
+				}
+			]
+		},
+    {
+      "type": "css-snippet",
+      "content": "a{color:red}",
+      "__notes": "css snippet to align key visual image (desktop only)"
+    },
+    {
+      "type": "wrapper",
+      "components": [
+        {
+          "type": "paragraphs",
+          "text": [
+            "With almost half (45%) of young adults wanting to get into volunteering, but nearly a quarter unsure of where to start, we have partnered with DoIt and TV presenter & meteorologist Laura Tobin, to inspire the nation throughout National Volunteer Week and beyond.",
+            "Forget what you thought volunteering was, here you can discover the depth and breadth of dream opportunities and how to get involved.",
+            "Want to find out more about potential volunteering roles within your area? Head down to Samsung’s Volunteering Fair at Samsung KX where charities will be on hand to talk through their full offerings and guests can sign up to their dream role on the spot. You can book your spot <a href='/uk/explore/kings-cross/whats-on/event/?id=33FYDA6XXSR'> here</a>.",
+            "<img src='https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/uncovering-the-nations-quirkiest-volunteer-roles/body-image.jpg' style='padding-left:0px'></img>"
+          ]
+        },
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "Get inspired by some of DoIt’s existing roles"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "<p style='font-size:22px; font-weight:bold'>Puppy Parent</p>",
+            "Puppy raising is an essential element in the development of a future guide dog. The role includes taking care of them for the first 12-16 months of life, laying the foundations for them to be a strong guide dog in later life.",
+            "<p style='font-size:22px; font-weight:bold'>Confidence Coach</p>",
+            "Focussed on supporting younger members of communities with their self-esteem, Confidence Coaches help others to create a brighter future for themselves by providing a listening ear and working with individuals to empower them to reach their goals.",
+            "<p style='font-size:22px; font-weight:bold'>Swimming Buddy</p>",
+            "If you enjoy swimming and are looking to build relationships with your community, then becoming a swimming buddy could be right up your street. You’ll have the opportunity to accompany adults with learning disabilities on trips to their local pool.",
+            "<p style='font-size:22px; font-weight:bold'>Woodland Worker</p>",
+            "Those that love being outdoors may be interested in being a Woodland Worker, an opportunity which requires you to engage the public with details of the local wildlife.",
+            "<p style='font-size:22px; font-weight:bold'>Positive Podcaster</p>", 
+            "Have you ever wondered what it would be like to chat about the things you love with friends and have the world laugh along with you? Look no further – this role is an opportunity where you’ll get the chance to create podcasts, discuss your hobbies, debate about public affairs and so much more.",
+            "<p style='font-size:22px; font-weight:bold'>Sight Guardian</p>",
+            "This service aims to support the visually impaired community by building up a network of people who are up for a friendly chat, and this can all be done from the comfort of their own home.",
+            "Click <a href='https://doit.life/discover'>here</a> to find out more about the roles available."
+          ]
+        },
+        {
+          "type": "headline",
+          "level": "3",
+          "copy": "As a volunteering enthusiast, Laura Tobin gives her top tips for getting involved with your local community"
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+            "<p style='font-size:22px; font-weight:bold'>1. Tap into your passions</p>", 
+            "Passion is contagious, especially when it's rooted in purpose. It's so important that you invest your time in something that brings you fulfilment. Meet new people, learn a new skill or contribute to your community. In this fast-paced digital world there is a surge of fresh opportunities to complement a whole range of interests.",  
+            "<p style='font-size:22px; font-weight:bold'>2. Do your background research</p>",
+            "For example, how much time can you offer your desired position versus how much they are requesting? If flexibility is one of your considerations, you’ll find there are plenty of roles you can do from home on your smartphone or laptop.", 
+            "<p style='font-size:22px; font-weight:bold'>3. Make use of all the resources available</p>",
+            "If you’re struggling to find out what is out there, online platforms such as DoIt can be really helpful in showing opportunities from a whole network of charities, to match your local area and interests."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "link-list-id",
+      "dynamic": "latest",
+      "title": "Articles",
+      "style": {
+        "scroll": true
+      },
+      "items": [
+        "lifestyle|uncovering-the-nations-quirkiest-volunteer-roles",
+        "creativity|how-to-capture-your-nocturnal-narrative-on-the-galaxy-s22-ultra|how-to-make-films-on-a-phone",
+        "creativity|how-to-capture-your-nocturnal-narrative-on-the-galaxy-s22-ultra|galaxy-s22-ultra-nightography",
+        "creativity|how-to-create-a-gif-using-galaxy-s22-ultra",
+        "creativity|inspire-me|how-to-build-your-dream-career",
+        "innovation|kx-tech-club|episode-5-stay-connected-through-technology",
+        "innovation|kx-tech-club|episode-5-all-access-gaming-with-chelcee-grimes",
+        "creativity|inspire-me|street-photography-tips",
+        "creativity|inspire-me|how-to-throw-cocktail-party-ideas",
+        "innovation|kx-tech-club|episode-4-how-to-improve-productivity-and-creativity",
+        "lifestyle|benefits-of-strength-training",
+        "creativity|inspire-me|how-to-plan-trip-to-europe-with-what-stacy-did",
+        "innovation|project-plant",
+        "entertainment|best-horror-films",
+        "lifestyle|daily-fitness-tips-with-kirsti-buick",
+        "lifestyle|cheap-meals-for-students-with-seema-pankania",
+        "innovation|kx-tech-club|episode-3-how-to-communicate-in-photos",
+        "entertainment|best-mobile-games-for-commuting",
+        "lifestyle|digital-dna-test-with-lawrence-chaney",
+        "entertainment|samsung-3fold-event-featuring-yungblud",
+        "lifestyle|guest-writer-of-the-week|36",
+        "lifestyle|how-to-kickflip-skateboarding-tutorial",
+        "innovation|samsung-people-live|galaxy-s22",
+        "innovation|samsung-people-live|galaxy-unpacked",
+        "lifestyle|guest-writer-of-the-week|35",
+        "creativity|inspire-me|mastering-the-instagram-reels",
+        "entertainment|just-one-charge|boost-your-content-creation-with-jeremy-lynch",
+        "lifestyle|guest-writer-of-the-week|34",
+        "entertainment|just-one-charge|phone-battery-fails",
+        "creativity|graduate-fashion-week|student-blog|slow-fashion-catwalk",
+        "creativity|wild-writing|wild-writing-how-to-get-inspired-outdoors"
+      ]
+    }
+	]
+}
