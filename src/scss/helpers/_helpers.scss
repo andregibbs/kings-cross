@@ -375,6 +375,10 @@
         background-color: $cyan;
       }
 
+      input:checked ~ .checkbox__coral {
+        background-color: $coral;
+      }
+
       input:checked ~ .checkbox:after {
         display: block;
       }

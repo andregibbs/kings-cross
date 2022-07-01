@@ -9,9 +9,9 @@
 			"type": "kv",
 			"media": {
 				
-					"type": "paragraphs",
-					"text": "<iframe title='vimeo-player' src='https://player.vimeo.com/video/715508100?h=353ae67154' width='640' height='360' frameborder='0' allowfullscreen></iframe>"
-				
+					"type": "youtube",
+					"content": "-i54EZtedCs",
+          "poster": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/uncovering-the-nations-quirkiest-volunteer-roles/KV-Header.png"
 			},
 
 
@@ -26,11 +26,6 @@
 				}
 			]
 		},
-    {
-      "type": "css-snippet",
-      "content": "a{color:red}",
-      "__notes": "css snippet to align key visual image (desktop only)"
-    },
     {
       "type": "wrapper",
       "components": [
@@ -52,7 +47,7 @@
           "type": "paragraphs",
           "text": [
             "<p style='font-size:22px; font-weight:bold'>Puppy Parent</p>",
-            "Puppy raising is an essential element in the development of a future guide dog. The role includes taking care of them for the first 12-16 months of life, laying the foundations for them to be a strong guide dog in later life.",
+            "Puppy raising is an essential element in the development of a future assistance dog. The role includes taking care of them for the first 12-16 months of life, laying the foundations for them to be a strong assistance dog in later life.",
             "<p style='font-size:22px; font-weight:bold'>Confidence Coach</p>",
             "Focussed on supporting younger members of communities with their self-esteem, Confidence Coaches help others to create a brighter future for themselves by providing a listening ear and working with individuals to empower them to reach their goals.",
             "<p style='font-size:22px; font-weight:bold'>Swimming Buddy</p>",

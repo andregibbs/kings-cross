@@ -19,7 +19,7 @@
       "type": "paragraphs",
       "id": "livestream-html-paragraph",
       "text": [
-        "<div class=\"livestream-wrapper\"><div class=\"livestream-iframe\"><iframe title=\"livestream\" src=\"https://vimeo.com/event/1908378/embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen></iframe></div><div class=\"livestream-title\"><h4>Tips, News And Topics in Tech</h4><p>Tune in to our live streams every Tuesday and Thursday at 1pm, to find out the latest in tech and how to get the most ouf of your device. Live from Samsung KX.</p></div></div><div class=\"livestream-popup\" style=\"display:none\"><div><span class=\"close-icon\"></span><iframe title=\"livestream\" src=\"https://vimeo.com/event/1908378/embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen></iframe></div></div><style>.livestream-wrapper{margin:0 auto;max-width:1440px;display:flex;flex-direction:column;padding-left:2.5em;padding-right:2.5em;margin:2.5em 0}.livestream-wrapper div{padding:0}.livestream-iframe iframe{width:100%;min-height:50vw}.livestream-iframe{flex:1;margin-bottom:2.5em}.livestream-title{flex:1;display:flex;flex-direction:column;align-items:flex-start;justify-content:center}.livestream-popup{position:fixed;background:#000000db;width:100vw;height:100vh;top:0;left:0;z-index:9999;display:flex;justify-content:center;align-items:center}.livestream-popup div{width:90vw;height:50vh;max-width:800px;display:flex;justify-content:center;align-items:center;position:relative;z-index:9999}.livestream-popup div iframe{width:100%;height:100%}.livestream-popup .close-icon{position:absolute;right:40px;top:40px;width:22px;height:22px;opacity:1;transition:.2s color;cursor:pointer}.livestream-popup .close-icon:hover{filter:brightness(1000%)}.livestream-popup .close-icon:after,.livestream-popup .close-icon:before{position:absolute;left:15px;content:' ';height:33px;width:2px;background-color:#b2b2b2}.livestream-popup .close-icon:before{transform:rotate(45deg)}.livestream-popup .close-icon:after{transform:rotate(-45deg)}.overlay-wrapper{width:100%;height:100%;display:flex;justify-content:center;align-items:center;position:absolute;left:0;top:0}.playable-container{width:auto;border-radius:100%;padding:10px 12px 10px 14px;border:4px solid #fff;background:#0000009c}.playable-overlay{content:'';display:block;box-sizing:border-box;width:0;height:21px;border-color:transparent transparent transparent #fff;transition:.1s all ease;cursor:pointer;border-style:double;border-width:0 0 0 60px;border-style:solid;border-width:10px 0 10px 14px}body.remove-scroll,html.remove-scroll{overflow:hidden}@media (min-width:769px){.livestream-wrapper{flex-direction:row}.livestream-wrapper .livestream-title{padding:0 30px}.livestream-iframe{margin-bottom:0}.livestream-iframe iframe{width:100%;min-height:350px}.livestream-popup .close-icon{right:5px;top:5px;width:32px;height:32px}}</style><script>function waitFor(e,t){document.querySelectorAll(e).length<e.length?setTimeout(waitFor.bind(null,e,t),50):t()}waitFor(['a[href=\"https://vimeo.com/event/1908378/embed\"]'],(function(){const e=document.querySelector(\".livestream-popup\"),t=e.querySelector(\"span\"),n=()=>{const t=e.querySelector(\"iframe\");e.style.display=\"none\",t.setAttribute(\"src\",t.getAttribute(\"src\")),l(!1)},l=function(e){e?(document.body.classList.add(\"remove-scroll\"),document.documentElement.classList.add(\"remove-scroll\")):(document.body.classList.remove(\"remove-scroll\"),document.documentElement.classList.remove(\"remove-scroll\"))};t.addEventListener(\"click\",n),e.addEventListener(\"click\",n);document.querySelector(\"#livestream-carousel\").nextElementSibling.nextElementSibling.nextElementSibling.querySelectorAll(\"a\").forEach((function(t){(e=>{const t=document.createElement(\"span\");t.innerHTML='<span class=\"playable-container\"><span class=\"playable-overlay\"></span></span>',t.classList.add(\"overlay-wrapper\"),e.appendChild(t)})(t.querySelector(\".hoiList__ItemImageWrap\")),t.addEventListener(\"click\",(function(n){n.preventDefault();const r=t.getAttribute(\"href\");e.querySelector(\"iframe\").setAttribute(\"src\",r),e.style.display=\"flex\",l(!0)}))}))}),1500)</script>"
+        "<div class=\"livestream-wrapper\"><div class=\"livestream-iframe\"><iframe title=\"livestream\" src=\"https://vimeo.com/event/1908378/embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen></iframe></div><div class=\"livestream-title\"><h4>Tips, News And Topics in Tech</h4><p>Tune in to our live streams every Tuesday and Thursday at 1pm, to find out the latest in tech and how to get the most ouf of your device. Live from Samsung KX.</p></div></div><div class=\"livestream-popup\" style=\"display:none\"><div><span class=\"close-icon\"></span><iframe title=\"livestream\" src=\"https://vimeo.com/event/1908378/embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen></iframe></div></div><style>.livestream-wrapper{margin:0 auto;max-width:1440px;display:flex;flex-direction:column;padding-left:2.5em;padding-right:2.5em;margin:2.5em 0}.livestream-wrapper div{padding:0}.livestream-iframe iframe{width:100%;min-height:50vw}.livestream-iframe{flex:1;margin-bottom:2.5em}.livestream-title{flex:1;display:flex;flex-direction:column;align-items:flex-start;justify-content:center}.livestream-popup{position:fixed;background:#000000db;width:100vw;height:100vh;top:0;left:0;z-index:9999;display:flex;justify-content:center;align-items:center}.livestream-popup div{width:90vw;height:50vh;max-width:800px;display:flex;justify-content:center;align-items:center;position:relative;z-index:9999}.livestream-popup div iframe{width:100%;height:100%}.livestream-popup .close-icon{position:absolute;right:40px;top:40px;width:22px;height:22px;opacity:1;transition:.2s color;cursor:pointer}.livestream-popup .close-icon:hover{filter:brightness(1000%)}.livestream-popup .close-icon:after,.livestream-popup .close-icon:before{position:absolute;left:15px;content:\" \";height:33px;width:2px;background-color:#b2b2b2}.livestream-popup .close-icon:before{transform:rotate(45deg)}.livestream-popup .close-icon:after{transform:rotate(-45deg)}.overlay-wrapper{width:100%;height:100%;display:flex;justify-content:center;align-items:center;position:absolute;left:0;top:0}.playable-container{width:auto;border-radius:100%;padding:10px 12px 10px 14px;border:4px solid #fff;background:#0000009c}.extra-hyperlink{color:#ff4337;width:100%;font-size:12px;display:-webkit-box;display:-ms-flexbox;display:flex;font-family:SamsungSharpSans,arial,sans-serif;margin-bottom:0;white-space:initial;padding:calc(2.5em / 4);padding-top:0;font-size:calc(16 / 1440 * 100vw)}.playable-overlay{content:\"\";display:block;box-sizing:border-box;width:0;height:21px;border-color:transparent transparent transparent #fff;transition:.1s all ease;cursor:pointer;border-style:double;border-width:0 0 0 60px;border-style:solid;border-width:10px 0 10px 14px}body.remove-scroll,html.remove-scroll{overflow:hidden}.product-link{color:#ff4337}@media (min-width:769px){.livestream-wrapper{flex-direction:row}.livestream-wrapper .livestream-title{padding:0 30px}.livestream-iframe{margin-bottom:0}.livestream-iframe iframe{width:100%;min-height:350px}.livestream-popup .close-icon{right:5px;top:5px;width:32px;height:32px}}</style><script>function waitFor(e,t){document.querySelectorAll(e).length<e.length?setTimeout(waitFor.bind(null,e,t),50):t()}waitFor(['a[href=\"https://player.vimeo.com/video/709151657\"]'],(function(){const e=document.querySelector(\".livestream-popup\"),t=e.querySelector(\"span\"),l=()=>{const t=e.querySelector(\"iframe\");e.style.display=\"none\",t.setAttribute(\"src\",t.getAttribute(\"src\")),n(!1)},n=function(e){e?(document.body.classList.add(\"remove-scroll\"),document.documentElement.classList.add(\"remove-scroll\")):(document.body.classList.remove(\"remove-scroll\"),document.documentElement.classList.remove(\"remove-scroll\"))};t.addEventListener(\"click\",l),e.addEventListener(\"click\",l);document.querySelector(\"#livestream-carousel\").nextElementSibling.nextElementSibling.nextElementSibling.querySelectorAll(\"a\").forEach((function(t){(e=>{const t=document.createElement(\"span\");t.innerHTML='<span class=\"playable-container\"><span class=\"playable-overlay\"></span></span>',t.classList.add(\"overlay-wrapper\"),e.appendChild(t)})(t.querySelector(\".hoiList__ItemImageWrap\")),t.addEventListener(\"click\",(function(l){l.preventDefault();const r=t.getAttribute(\"href\");e.querySelector(\"iframe\").setAttribute(\"src\",r),e.style.display=\"flex\",n(!0)}))}))}),1500)</script>"
       ]
     },
     {
@@ -30,6 +30,57 @@
         "scroll": true
       },
       "items": [
+        {
+          "title": "Tips & Tricks: Creative photo editing with Galaxy",
+          "url": "https://player.vimeo.com/video/723336415",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/vumbnail723336415.jpg"
+        },
+        {
+          "title": "Topics in Tech: Connected Kitchen Cooking",
+          "url": "https://player.vimeo.com/video/724854025",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/vumbnail724854025.jpg"
+        },
+        {
+          "title": "Topics in Tech: Smarter Homes with SmartThings",
+          "url": "https://player.vimeo.com/video/718685875",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/vumbnail718685875.jpg"
+        },
+        {
+          "title": "Topics in Tech: Digital Wellbeing",
+          "url": "https://player.vimeo.com/video/713254243",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/vumbnail713254243.jpg"
+        },
+        {
+          "title": "Tips and Tricks: Social Storytelling",
+          "url": "https://player.vimeo.com/video/714057661",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/vumbnail714057661.jpg"
+        },
+        {
+          "title": "Topics in Tech: Online Safety for the Family",
+          "url": "https://player.vimeo.com/video/715567556",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/vumbnail715567556.jpg"
+        },
+        {
+          "title": "Tips & Tricks: Picking the Perfect Buds",
+          "url": "https://player.vimeo.com/video/716380162",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/vumbnail716380162.jpg"
+        },
+        {
+          "title": "Topics in Tech: ONE UI 4.1",
+          "url": "https://player.vimeo.com/video/717881677",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/DefaultThumb.jpg"
+        },
+        {
+          "title": "Tips & Tricks: Picking the Perfect Samsung TV",
+          "url": "https://player.vimeo.com/video/720221957",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/DefaultThumb.jpg"
+        },
+        {
+          "title": "Tips & Tricks: Samsung Notes Masterclass",
+          "url": "https://player.vimeo.com/video/722500140",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/vumbnail722500140.jpg"
+        },
+
         {
           "title": "Tips and Tricks: S Pen on the S22 Ultra",
           "url": "https://player.vimeo.com/video/709151657",
@@ -65,6 +116,7 @@
         "scroll": true
       },
       "items": [
+        "creativity|flex-your-flip",
         "lifestyle|uncovering-the-nations-quirkiest-volunteer-roles",
         "creativity|how-to-capture-your-nocturnal-narrative-on-the-galaxy-s22-ultra|how-to-make-films-on-a-phone",
         "creativity|how-to-capture-your-nocturnal-narrative-on-the-galaxy-s22-ultra|galaxy-s22-ultra-nightography",
@@ -186,6 +238,7 @@
         "scroll": true
       },
       "items": [
+        "creativity|flex-your-flip",
         "creativity|how-to-capture-your-nocturnal-narrative-on-the-galaxy-s22-ultra|how-to-make-films-on-a-phone",
         "creativity|how-to-capture-your-nocturnal-narrative-on-the-galaxy-s22-ultra|galaxy-s22-ultra-nightography",
         "creativity|how-to-create-a-gif-using-galaxy-s22-ultra",
