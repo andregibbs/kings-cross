@@ -5,329 +5,329 @@
   "hideBreadcrumbs": true,
   "hidden": true,
   "theme": {
-    "color": "white"
+      "color": "white"
   },
   "components": [
-    {
-      "type": "search"
-    },
-    {
-      "type": "css-snippet",
-      "content": ".header-vimeo{display:flex;}"
-    },
-    {
-      "type": "paragraphs",
-      "id": "livestream-html-paragraph",
-      "text": [
-        "<div class=\"livestream-wrapper\"><div class=\"livestream-iframe\"><iframe title=\"livestream\" src=\"https://vimeo.com/event/1908378/embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen></iframe></div><div class=\"livestream-title\"><h4>Tips, News And Topics in Tech</h4><p>Tune in to our live streams every Tuesday and Thursday at 1pm, to find out the latest in tech and how to get the most ouf of your device. Live from Samsung KX.</p></div></div><div class=\"livestream-popup\" style=\"display:none\"><div><span class=\"close-icon\"></span><iframe title=\"livestream\" src=\"https://vimeo.com/event/1908378/embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen></iframe></div></div><style>.livestream-wrapper{margin:0 auto;max-width:1440px;display:flex;flex-direction:column;padding-left:2.5em;padding-right:2.5em;margin:2.5em 0}.livestream-wrapper div{padding:0}.livestream-iframe iframe{width:100%;min-height:50vw}.livestream-iframe{flex:1;margin-bottom:2.5em}.livestream-title{flex:1;display:flex;flex-direction:column;align-items:flex-start;justify-content:center}.livestream-popup{position:fixed;background:#000000db;width:100vw;height:100vh;top:0;left:0;z-index:9999;display:flex;justify-content:center;align-items:center}.livestream-popup div{width:90vw;height:50vh;max-width:800px;display:flex;justify-content:center;align-items:center;position:relative;z-index:9999}.livestream-popup div iframe{width:100%;height:100%}.livestream-popup .close-icon{position:absolute;right:40px;top:40px;width:22px;height:22px;opacity:1;transition:.2s color;cursor:pointer}.livestream-popup .close-icon:hover{filter:brightness(1000%)}.livestream-popup .close-icon:after,.livestream-popup .close-icon:before{position:absolute;left:15px;content:\" \";height:33px;width:2px;background-color:#b2b2b2}.livestream-popup .close-icon:before{transform:rotate(45deg)}.livestream-popup .close-icon:after{transform:rotate(-45deg)}.overlay-wrapper{width:100%;height:100%;display:flex;justify-content:center;align-items:center;position:absolute;left:0;top:0}.playable-container{width:auto;border-radius:100%;padding:10px 12px 10px 14px;border:4px solid #fff;background:#0000009c}.extralink{color:#ff4337!important}.playable-overlay{content:\"\";display:block;box-sizing:border-box;width:0;height:21px;border-color:transparent transparent transparent #fff;transition:.1s all ease;cursor:pointer;border-style:double;border-width:0 0 0 60px;border-style:solid;border-width:10px 0 10px 14px}body.remove-scroll,html.remove-scroll{overflow:hidden}.product-link{color:#ff4337}@media (min-width:769px){.livestream-wrapper{flex-direction:row}.livestream-wrapper .livestream-title{padding:0 30px}.livestream-iframe{margin-bottom:0}.livestream-iframe iframe{width:100%;min-height:350px}.livestream-popup .close-icon{right:5px;top:5px;width:32px;height:32px}}</style><script>function waitFor(e,t){document.querySelectorAll(e).length<e.length?setTimeout(waitFor.bind(null,e,t),50):t()}waitFor(['a[href=\"https://player.vimeo.com/video/709151657\"]'],(function(){const e=document.querySelector(\".livestream-popup\"),t=e.querySelector(\"span\"),s=()=>{const t=e.querySelector(\"iframe\");e.style.display=\"none\",t.setAttribute(\"src\",t.getAttribute(\"src\")),a(!1)},a=function(e){e?(document.body.classList.add(\"remove-scroll\"),document.documentElement.classList.add(\"remove-scroll\")):(document.body.classList.remove(\"remove-scroll\"),document.documentElement.classList.remove(\"remove-scroll\"))};[{id:\"709151657\",copy:\"Discover the S22 range and the S pen\",link:\"https://www.samsung.com/uk/smartphones/galaxy-s22/\"},{id:\"708198151\",copy:\"Discover the Frame TV\",link:\"https://www.samsung.com/uk/lifestyle-tvs/the-frame/highlights/\"},{id:\"709060462\",copy:\"Discover the Galaxy Book range\",link:\"https://www.samsung.com/uk/galaxy-book/?product1=np930qed-kb1uk&product2=np930xed-kb1uk&product3=np730qed-kb2uk\"},{id:\"713254243\",copy:\"Discover the Galaxy Watch4\",link:\"https://www.samsung.com/uk/watches/galaxy-watch/galaxy-watch4-black-bt-sm-r870nzkaeua/\"},{id:\"714057661\",copy:\"Discover our range of smartphones\",link:\"https://www.samsung.com/uk/smartphones/?product1=sm-s908bzkgeub&product2=sm-f711bzebeua&product3=sm-g990blgdeua\"},{id:\"715567556\",copy:\"Discover the Galaxy S22 Ultra\",link:\"https://www.samsung.com/uk/smartphones/galaxy-s22-ultra/\"},{id:\"716380162\",copy:\"Discover our range of Galaxy Buds\",link:\"https://www.samsung.com/uk/audio-sound/\"},{id:\"717881677\",copy:\"Discover the Galaxy Flip3\",link:\"https://www.samsung.com/uk/smartphones/galaxy-z-flip3-5g/\"},{id:\"720221957\",copy:\"Discover our range of TVs\",link:\"https://www.samsung.com/uk/tvs/\"},{id:\"722500140\",copy:\"Discover the Galaxy Tab S8\",link:\"https://www.samsung.com/uk/tablets/galaxy-tab-s/galaxy-tab-s8-5g-graphite-128gb-sm-x706bzaaeub/\"},{id:\"718685875\",copy:\"Discover SmartThings\",link:\"https://www.samsung.com/uk/smartthings/\"},{id:\"723336415\",copy:\"Discover the Galaxy S22 Ultra\",link:\"https://www.samsung.com/uk/smartphones/galaxy-s22-ultra/\"},{id:\"724854025\",copy:\"Discover the Family Hub\",link:\"https://www.samsung.com/uk/refrigerators/side-by-side/rs8000nc-side-by-side-refrigerator-with-family-hub-591l-silver-rs6ha8891sl-eu/\"}].forEach((({id:e,copy:t,link:s})=>{((e,t,s)=>{document.querySelectorAll(\".hoiLinkList--scroll\")[1].querySelectorAll(\".hoiList__Item\").forEach((function(a){if(a.href.includes(e)){const e=document.createElement(\"h6\");e.classList.add(\"hoiList__ItemTitle\"),e.style.display=\"block\",e.innerHTML=`${t}&nbsp;<span class=\"extralink\">here</span>`,a.append(e),a.querySelector(\".extralink\").addEventListener(\"click\",(function(e){e.preventDefault(),e.stopPropagation(),window.location.replace(s)}))}}))})(e,t,s)}));t.addEventListener(\"click\",s),e.addEventListener(\"click\",s);document.querySelector(\"#livestream-carousel\").nextElementSibling.nextElementSibling.nextElementSibling.querySelectorAll(\"a\").forEach((function(t){(e=>{const t=document.createElement(\"span\");t.innerHTML='<span class=\"playable-container\"><span class=\"playable-overlay\"></span></span>',t.classList.add(\"overlay-wrapper\"),e.appendChild(t)})(t.querySelector(\".hoiList__ItemImageWrap\")),t.addEventListener(\"click\",(function(s){s.preventDefault();const o=t.getAttribute(\"href\");e.querySelector(\"iframe\").setAttribute(\"src\",o),e.style.display=\"flex\",a(!0)}))}))}),1500)</script>"
-      ]
-    },
-    {
-      "type": "link-list",
-      "title": "Tips, News And Topics In Tech",
-      "id": "livestream-carousel",
-      "style": {
-        "scroll": true
+      {
+          "type": "search"
       },
-      "items": [
-        {
-          "title": "Tips & Tricks: Creative photo editing with Galaxy",
-          "url": "https://player.vimeo.com/video/723336415",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/vumbnail723336415.jpg"
-        },
-        {
-          "title": "Topics in Tech: Connected Kitchen Cooking",
-          "url": "https://player.vimeo.com/video/724854025",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/vumbnail724854025.jpg"
-        },
-        {
-          "title": "Topics in Tech: Smarter Homes with SmartThings",
-          "url": "https://player.vimeo.com/video/718685875",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/vumbnail718685875.jpg"
-        },
-        {
-          "title": "Topics in Tech: Digital Wellbeing",
-          "url": "https://player.vimeo.com/video/713254243",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/vumbnail713254243.jpg"
-        },
-        {
-          "title": "Tips and Tricks: Social Storytelling",
-          "url": "https://player.vimeo.com/video/714057661",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/vumbnail714057661.jpg"
-        },
-        {
-          "title": "Topics in Tech: Online Safety for the Family",
-          "url": "https://player.vimeo.com/video/715567556",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/vumbnail715567556.jpg"
-        },
-        {
-          "title": "Tips & Tricks: Picking the Perfect Buds",
-          "url": "https://player.vimeo.com/video/716380162",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/vumbnail716380162.jpg"
-        },
-        {
-          "title": "Topics in Tech: ONE UI 4.1",
-          "url": "https://player.vimeo.com/video/717881677",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/DefaultThumb.jpg"
-        },
-        {
-          "title": "Tips & Tricks: Picking the Perfect Samsung TV",
-          "url": "https://player.vimeo.com/video/720221957",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/DefaultThumb.jpg"
-        },
-        {
-          "title": "Tips & Tricks: Samsung Notes Masterclass",
-          "url": "https://player.vimeo.com/video/722500140",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/vumbnail722500140.jpg"
-        },
+      {
+          "type": "css-snippet",
+          "content": ".header-vimeo{display:flex;}"
+      },
+      {
+          "type": "paragraphs",
+          "id": "livestream-html-paragraph",
+          "text": [
+              "<div class=\"livestream-wrapper\"><div class=\"livestream-iframe\"><iframe title=\"livestream\" src=\"https://vimeo.com/event/1908378/embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen></iframe></div><div class=\"livestream-title\"><h4>Tips, News And Topics in Tech</h4><p>Tune in to our live streams every Tuesday and Thursday at 1pm, to find out the latest in tech and how to get the most ouf of your device. Live from Samsung KX.</p></div></div><div class=\"livestream-popup\" style=\"display:none\"><div><span class=\"close-icon\"></span><iframe title=\"livestream\" src=\"https://vimeo.com/event/1908378/embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen></iframe></div></div><style>.livestream-wrapper{margin:0 auto;max-width:1440px;display:flex;flex-direction:column;padding-left:2.5em;padding-right:2.5em;margin:2.5em 0}.livestream-wrapper div{padding:0}.livestream-iframe iframe{width:100%;min-height:50vw}.livestream-iframe{flex:1;margin-bottom:2.5em}.livestream-title{flex:1;display:flex;flex-direction:column;align-items:flex-start;justify-content:center}.livestream-popup{position:fixed;background:#000000db;width:100vw;height:100vh;top:0;left:0;z-index:9999;display:flex;justify-content:center;align-items:center}.livestream-popup div{width:90vw;height:50vh;max-width:800px;display:flex;justify-content:center;align-items:center;position:relative;z-index:9999}.livestream-popup div iframe{width:100%;height:100%}.livestream-popup .close-icon{position:absolute;right:40px;top:40px;width:22px;height:22px;opacity:1;transition:.2s color;cursor:pointer}.livestream-popup .close-icon:hover{filter:brightness(1000%)}.livestream-popup .close-icon:after,.livestream-popup .close-icon:before{position:absolute;left:15px;content:\" \";height:33px;width:2px;background-color:#b2b2b2}.livestream-popup .close-icon:before{transform:rotate(45deg)}.livestream-popup .close-icon:after{transform:rotate(-45deg)}.overlay-wrapper{width:100%;height:100%;display:flex;justify-content:center;align-items:center;position:absolute;left:0;top:0}.playable-container{width:auto;border-radius:100%;padding:10px 12px 10px 14px;border:4px solid #fff;background:#0000009c}.extralink{color:#ff4337!important}.playable-overlay{content:\"\";display:block;box-sizing:border-box;width:0;height:21px;border-color:transparent transparent transparent #fff;transition:.1s all ease;cursor:pointer;border-style:double;border-width:0 0 0 60px;border-style:solid;border-width:10px 0 10px 14px}body.remove-scroll,html.remove-scroll{overflow:hidden}.product-link{color:#ff4337}@media (min-width:769px){.livestream-wrapper{flex-direction:row}.livestream-wrapper .livestream-title{padding:0 30px}.livestream-iframe{margin-bottom:0}.livestream-iframe iframe{width:100%;min-height:350px}.livestream-popup .close-icon{right:5px;top:5px;width:32px;height:32px}}</style><script>function waitFor(e,t){document.querySelectorAll(e).length<e.length?setTimeout(waitFor.bind(null,e,t),50):t()}waitFor(['a[href=\"https://player.vimeo.com/video/709151657\"]'],(function(){const e=document.querySelector(\".livestream-popup\"),t=e.querySelector(\"span\"),s=()=>{const t=e.querySelector(\"iframe\");e.style.display=\"none\",t.setAttribute(\"src\",t.getAttribute(\"src\")),a(!1)},a=function(e){e?(document.body.classList.add(\"remove-scroll\"),document.documentElement.classList.add(\"remove-scroll\")):(document.body.classList.remove(\"remove-scroll\"),document.documentElement.classList.remove(\"remove-scroll\"))};[{id:\"709151657\",copy:\"Discover the S22 range and the S pen\",link:\"https://www.samsung.com/uk/smartphones/galaxy-s22/\"},{id:\"708198151\",copy:\"Discover the Frame TV\",link:\"https://www.samsung.com/uk/lifestyle-tvs/the-frame/highlights/\"},{id:\"709060462\",copy:\"Discover the Galaxy Book range\",link:\"https://www.samsung.com/uk/galaxy-book/?product1=np930qed-kb1uk&product2=np930xed-kb1uk&product3=np730qed-kb2uk\"},{id:\"713254243\",copy:\"Discover the Galaxy Watch4\",link:\"https://www.samsung.com/uk/watches/galaxy-watch/galaxy-watch4-black-bt-sm-r870nzkaeua/\"},{id:\"714057661\",copy:\"Discover our range of smartphones\",link:\"https://www.samsung.com/uk/smartphones/?product1=sm-s908bzkgeub&product2=sm-f711bzebeua&product3=sm-g990blgdeua\"},{id:\"715567556\",copy:\"Discover the Galaxy S22 Ultra\",link:\"https://www.samsung.com/uk/smartphones/galaxy-s22-ultra/\"},{id:\"716380162\",copy:\"Discover our range of Galaxy Buds\",link:\"https://www.samsung.com/uk/audio-sound/\"},{id:\"717881677\",copy:\"Discover the Galaxy Flip3\",link:\"https://www.samsung.com/uk/smartphones/galaxy-z-flip3-5g/\"},{id:\"720221957\",copy:\"Discover our range of TVs\",link:\"https://www.samsung.com/uk/tvs/\"},{id:\"722500140\",copy:\"Discover the Galaxy Tab S8\",link:\"https://www.samsung.com/uk/tablets/galaxy-tab-s/galaxy-tab-s8-5g-graphite-128gb-sm-x706bzaaeub/\"},{id:\"718685875\",copy:\"Discover SmartThings\",link:\"https://www.samsung.com/uk/smartthings/\"},{id:\"723336415\",copy:\"Discover the Galaxy S22 Ultra\",link:\"https://www.samsung.com/uk/smartphones/galaxy-s22-ultra/\"},{id:\"724854025\",copy:\"Discover the Family Hub\",link:\"https://www.samsung.com/uk/refrigerators/side-by-side/rs8000nc-side-by-side-refrigerator-with-family-hub-591l-silver-rs6ha8891sl-eu/\"}].forEach((({id:e,copy:t,link:s})=>{((e,t,s)=>{document.querySelectorAll(\".hoiLinkList--scroll\")[1].querySelectorAll(\".hoiList__Item\").forEach((function(a){if(a.href.includes(e)){const e=document.createElement(\"h6\");e.classList.add(\"hoiList__ItemTitle\"),e.style.display=\"block\",e.innerHTML=`${t}&nbsp;<span class=\"extralink\">here</span>`,a.append(e),a.querySelector(\".extralink\").addEventListener(\"click\",(function(e){e.preventDefault(),e.stopPropagation(),window.location.replace(s)}))}}))})(e,t,s)}));t.addEventListener(\"click\",s),e.addEventListener(\"click\",s);document.querySelector(\"#livestream-carousel\").nextElementSibling.nextElementSibling.nextElementSibling.querySelectorAll(\"a\").forEach((function(t){(e=>{const t=document.createElement(\"span\");t.innerHTML='<span class=\"playable-container\"><span class=\"playable-overlay\"></span></span>',t.classList.add(\"overlay-wrapper\"),e.appendChild(t)})(t.querySelector(\".hoiList__ItemImageWrap\")),t.addEventListener(\"click\",(function(s){s.preventDefault();const o=t.getAttribute(\"href\");e.querySelector(\"iframe\").setAttribute(\"src\",o),e.style.display=\"flex\",a(!0)}))}))}),1500)</script>"
+          ]
+      },
+      {
+          "type": "link-list",
+          "title": "Tips, News And Topics In Tech",
+          "id": "livestream-carousel",
+          "style": {
+              "scroll": true
+          },
+          "items": [
+              {
+                  "title": "Tips & Tricks: Creative photo editing with Galaxy",
+                  "url": "https://player.vimeo.com/video/723336415",
+                  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/vumbnail723336415.jpg"
+              },
+              {
+                  "title": "Topics in Tech: Connected Kitchen Cooking",
+                  "url": "https://player.vimeo.com/video/724854025",
+                  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/vumbnail724854025.jpg"
+              },
+              {
+                  "title": "Topics in Tech: Smarter Homes with SmartThings",
+                  "url": "https://player.vimeo.com/video/718685875",
+                  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/vumbnail718685875.jpg"
+              },
+              {
+                  "title": "Topics in Tech: Digital Wellbeing",
+                  "url": "https://player.vimeo.com/video/713254243",
+                  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/vumbnail713254243.jpg"
+              },
+              {
+                  "title": "Tips and Tricks: Social Storytelling",
+                  "url": "https://player.vimeo.com/video/714057661",
+                  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/vumbnail714057661.jpg"
+              },
+              {
+                  "title": "Topics in Tech: Online Safety for the Family",
+                  "url": "https://player.vimeo.com/video/715567556",
+                  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/vumbnail715567556.jpg"
+              },
+              {
+                  "title": "Tips & Tricks: Picking the Perfect Buds",
+                  "url": "https://player.vimeo.com/video/716380162",
+                  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/vumbnail716380162.jpg"
+              },
+              {
+                  "title": "Topics in Tech: ONE UI 4.1",
+                  "url": "https://player.vimeo.com/video/717881677",
+                  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/DefaultThumb.jpg"
+              },
+              {
+                  "title": "Tips & Tricks: Picking the Perfect Samsung TV",
+                  "url": "https://player.vimeo.com/video/720221957",
+                  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/DefaultThumb.jpg"
+              },
+              {
+                  "title": "Tips & Tricks: Samsung Notes Masterclass",
+                  "url": "https://player.vimeo.com/video/722500140",
+                  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/vumbnail722500140.jpg"
+              },
 
-        {
-          "title": "Tips and Tricks: S Pen on the S22 Ultra",
-          "url": "https://player.vimeo.com/video/709151657",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/vumbnail1.jpg"
-        },
-        {
-          "title": "Topics In Tech: Art, Tech and NFT’s",
-          "url": "https://player.vimeo.com/video/708198151",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/vumbnail2.jpg"
-        },
-        {
-          "title": "Tips and Tricks: Choosing the laptop for you",
-          "url": "https://player.vimeo.com/video/709060462",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/vumbnail3.jpg"
-        },
-        {
-          "title": "Topics In Tech: AR and VR",
-          "url": "https://player.vimeo.com/video/710770242",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/vumbnail4.jpg"
-        },
-        {
-          "title": "Tips & Tricks: Customizing your Galaxy",
-          "url": "https://vimeo.com/event/1908378/embed",
-          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/vumbnail5.jpg"
-        }
-      ]
-    },
-    {
-      "type": "link-list-id",
-      "dynamic": "latest",
-      "title": "Latest",
-      "style": {
-        "scroll": true
+              {
+                  "title": "Tips and Tricks: S Pen on the S22 Ultra",
+                  "url": "https://player.vimeo.com/video/709151657",
+                  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/vumbnail1.jpg"
+              },
+              {
+                  "title": "Topics In Tech: Art, Tech and NFT’s",
+                  "url": "https://player.vimeo.com/video/708198151",
+                  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/vumbnail2.jpg"
+              },
+              {
+                  "title": "Tips and Tricks: Choosing the laptop for you",
+                  "url": "https://player.vimeo.com/video/709060462",
+                  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/vumbnail3.jpg"
+              },
+              {
+                  "title": "Topics In Tech: AR and VR",
+                  "url": "https://player.vimeo.com/video/710770242",
+                  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/vumbnail4.jpg"
+              },
+              {
+                  "title": "Tips & Tricks: Customizing your Galaxy",
+                  "url": "https://vimeo.com/event/1908378/embed",
+                  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/vumbnail5.jpg"
+              }
+          ]
       },
-      "items": [
-        "creativity|samsung-grassroots-football-academy",
-        "creativity|flex-your-flip",
-        "lifestyle|uncovering-the-nations-quirkiest-volunteer-roles",
-        "creativity|how-to-capture-your-nocturnal-narrative-on-the-galaxy-s22-ultra|how-to-make-films-on-a-phone",
-        "creativity|how-to-capture-your-nocturnal-narrative-on-the-galaxy-s22-ultra|galaxy-s22-ultra-nightography",
-        "creativity|how-to-create-a-gif-using-galaxy-s22-ultra",
-        "creativity|inspire-me|how-to-build-your-dream-career",
-        "innovation|kx-tech-club|episode-5-stay-connected-through-technology",
-        "innovation|kx-tech-club|episode-5-all-access-gaming-with-chelcee-grimes",
-        "creativity|inspire-me|street-photography-tips",
-        "creativity|inspire-me|how-to-throw-cocktail-party-ideas",
-        "innovation|kx-tech-club|episode-4-how-to-improve-productivity-and-creativity",
-        "lifestyle|benefits-of-strength-training",
-        "creativity|inspire-me|how-to-plan-trip-to-europe-with-what-stacy-did",
-        "innovation|project-plant",
-        "entertainment|best-horror-films",
-        "lifestyle|daily-fitness-tips-with-kirsti-buick",
-        "lifestyle|cheap-meals-for-students-with-seema-pankania",
-        "innovation|kx-tech-club|episode-3-how-to-communicate-in-photos",
-        "entertainment|best-mobile-games-for-commuting",
-        "lifestyle|digital-dna-test-with-lawrence-chaney",
-        "entertainment|samsung-3fold-event-featuring-yungblud",
-        "lifestyle|guest-writer-of-the-week|36",
-        "lifestyle|how-to-kickflip-skateboarding-tutorial",
-        "innovation|samsung-people-live|galaxy-s22",
-        "innovation|samsung-people-live|galaxy-unpacked",
-        "lifestyle|guest-writer-of-the-week|35",
-        "creativity|inspire-me|mastering-the-instagram-reels",
-        "entertainment|just-one-charge|boost-your-content-creation-with-jeremy-lynch",
-        "lifestyle|guest-writer-of-the-week|34",
-        "entertainment|just-one-charge|phone-battery-fails",
-        "creativity|graduate-fashion-week|student-blog|slow-fashion-catwalk",
-        "creativity|wild-writing|wild-writing-how-to-get-inspired-outdoors"
-      ]
-    },
-    {
-      "type": "link-list-id",
-      "dynamic": "new-series",
-      "title": "Series",
-      "style": {
-        "scroll": true,
-        "size": "square",
-        "hideIcon": true
+      {
+          "type": "link-list-id",
+          "dynamic": "latest",
+          "title": "Latest",
+          "style": {
+              "scroll": true
+          },
+          "items": [
+              "creativity|samsung-grassroots-football-academy",
+              "creativity|flex-your-flip",
+              "lifestyle|uncovering-the-nations-quirkiest-volunteer-roles",
+              "creativity|how-to-capture-your-nocturnal-narrative-on-the-galaxy-s22-ultra|how-to-make-films-on-a-phone",
+              "creativity|how-to-capture-your-nocturnal-narrative-on-the-galaxy-s22-ultra|galaxy-s22-ultra-nightography",
+              "creativity|how-to-create-a-gif-using-galaxy-s22-ultra",
+              "creativity|inspire-me|how-to-build-your-dream-career",
+              "innovation|kx-tech-club|episode-5-stay-connected-through-technology",
+              "innovation|kx-tech-club|episode-5-all-access-gaming-with-chelcee-grimes",
+              "creativity|inspire-me|street-photography-tips",
+              "creativity|inspire-me|how-to-throw-cocktail-party-ideas",
+              "innovation|kx-tech-club|episode-4-how-to-improve-productivity-and-creativity",
+              "lifestyle|benefits-of-strength-training",
+              "creativity|inspire-me|how-to-plan-trip-to-europe-with-what-stacy-did",
+              "innovation|project-plant",
+              "entertainment|best-horror-films",
+              "lifestyle|daily-fitness-tips-with-kirsti-buick",
+              "lifestyle|cheap-meals-for-students-with-seema-pankania",
+              "innovation|kx-tech-club|episode-3-how-to-communicate-in-photos",
+              "entertainment|best-mobile-games-for-commuting",
+              "lifestyle|digital-dna-test-with-lawrence-chaney",
+              "entertainment|samsung-3fold-event-featuring-yungblud",
+              "lifestyle|guest-writer-of-the-week|36",
+              "lifestyle|how-to-kickflip-skateboarding-tutorial",
+              "innovation|samsung-people-live|galaxy-s22",
+              "innovation|samsung-people-live|galaxy-unpacked",
+              "lifestyle|guest-writer-of-the-week|35",
+              "creativity|inspire-me|mastering-the-instagram-reels",
+              "entertainment|just-one-charge|boost-your-content-creation-with-jeremy-lynch",
+              "lifestyle|guest-writer-of-the-week|34",
+              "entertainment|just-one-charge|phone-battery-fails",
+              "creativity|graduate-fashion-week|student-blog|slow-fashion-catwalk",
+              "creativity|wild-writing|wild-writing-how-to-get-inspired-outdoors"
+          ]
       },
-      "items": [
-        "creativity|how-to-capture-your-nocturnal-narrative-on-the-galaxy-s22-ultra",
-        "entertainment|just-one-charge",
-        "creativity|wild-writing",
-        "creativity|personal-branding",
-        "creativity|inspire-me",
-        "lifestyle|restaurants-from-home",
-        "innovation|samsung-people-live",
-        "innovation|connected-christmas",
-        "innovation|next-level-gaming",
-        "creativity|yfa-creative-labs",
-        "innovation|5g-podcast",
-        "lifestyle|guest-writer-of-the-week",
-        "innovation|product-demos|s20fe",
-        "innovation|taste-of-tomorrow",
-        "creativity|graduate-fashion-week|student-blog",
-        "creativity|graduate-fashion-week",
-        "entertainment|lunch-and-listen",
-        "creativity|innovation-sessions",
-        "entertainment|game-dev-london-podcast",
-        "lifestyle|tips-and-trikx",
-        "creativity|editing-sessions",
-        "lifestyle|cat-meffan",
-        "innovation|science-museum",
-        "lifestyle|internet-matters"
-      ]
-    },
-    {
-      "type": "link-list-id",
-      "dynamic": "lifestyle",
-      "title": "Lifestyle & Wellbeing",
-      "title_link": {
-        "cta": "See more",
-        "url": "/uk/explore/kings-cross/lifestyle"
+      {
+          "type": "link-list-id",
+          "dynamic": "new-series",
+          "title": "Series",
+          "style": {
+              "scroll": true,
+              "size": "square",
+              "hideIcon": true
+          },
+          "items": [
+              "creativity|how-to-capture-your-nocturnal-narrative-on-the-galaxy-s22-ultra",
+              "entertainment|just-one-charge",
+              "creativity|wild-writing",
+              "creativity|personal-branding",
+              "creativity|inspire-me",
+              "lifestyle|restaurants-from-home",
+              "innovation|samsung-people-live",
+              "innovation|connected-christmas",
+              "innovation|next-level-gaming",
+              "creativity|yfa-creative-labs",
+              "innovation|5g-podcast",
+              "lifestyle|guest-writer-of-the-week",
+              "innovation|product-demos|s20fe",
+              "innovation|taste-of-tomorrow",
+              "creativity|graduate-fashion-week|student-blog",
+              "creativity|graduate-fashion-week",
+              "entertainment|lunch-and-listen",
+              "creativity|innovation-sessions",
+              "entertainment|game-dev-london-podcast",
+              "lifestyle|tips-and-trikx",
+              "creativity|editing-sessions",
+              "lifestyle|cat-meffan",
+              "innovation|science-museum",
+              "lifestyle|internet-matters"
+          ]
       },
-      "style": {
-        "scroll": true
+      {
+          "type": "link-list-id",
+          "dynamic": "lifestyle",
+          "title": "Lifestyle & Wellbeing",
+          "title_link": {
+              "cta": "See more",
+              "url": "/uk/explore/kings-cross/lifestyle"
+          },
+          "style": {
+              "scroll": true
+          },
+          "items": [
+              "lifestyle|uncovering-the-nations-quirkiest-volunteer-roles",
+              "lifestyle|benefits-of-strength-training",
+              "lifestyle|daily-fitness-tips-with-kirsti-buick",
+              "lifestyle|cheap-meals-for-students-with-seema-pankania",
+              "lifestyle|digital-dna-test-with-lawrence-chaney",
+              "lifestyle|guest-writer-of-the-week|36",
+              "lifestyle|how-to-kickflip-skateboarding-tutorial",
+              "lifestyle|guest-writer-of-the-week|35",
+              "lifestyle|guest-writer-of-the-week|34",
+              "lifestyle|the-rules-of-football",
+              "lifestyle|guest-writer-of-the-week|32",
+              "lifestyle|guest-writer-of-the-week|31",
+              "lifestyle|dance-like-a-pro",
+              "lifestyle|relaxing-with-roman",
+              "lifestyle|guest-writer-of-the-week|29",
+              "lifestyle|guest-writer-of-the-week|28",
+              "lifestyle|michel-roux-jnr",
+              "lifestyle|guest-writer-of-the-week|27",
+              "lifestyle|kx-community|mindfulness",
+              "lifestyle|transformative-spring-beauty-trends",
+              "lifestyle|guest-writer-of-the-week|26",
+              "lifestyle|guest-writer-of-the-week|25",
+              "lifestyle|guest-writer-of-the-week|24",
+              "lifestyle|restaurants-from-home|hoppers",
+              "lifestyle|guest-writer-of-the-week|23",
+              "lifestyle|guest-writer-of-the-week|22"
+          ]
       },
-      "items": [
-        "lifestyle|uncovering-the-nations-quirkiest-volunteer-roles",
-        "lifestyle|benefits-of-strength-training",
-        "lifestyle|daily-fitness-tips-with-kirsti-buick",
-        "lifestyle|cheap-meals-for-students-with-seema-pankania",
-        "lifestyle|digital-dna-test-with-lawrence-chaney",
-        "lifestyle|guest-writer-of-the-week|36",
-        "lifestyle|how-to-kickflip-skateboarding-tutorial",
-        "lifestyle|guest-writer-of-the-week|35",
-        "lifestyle|guest-writer-of-the-week|34",
-        "lifestyle|the-rules-of-football",
-        "lifestyle|guest-writer-of-the-week|32",
-        "lifestyle|guest-writer-of-the-week|31",
-        "lifestyle|dance-like-a-pro",
-        "lifestyle|relaxing-with-roman",
-        "lifestyle|guest-writer-of-the-week|29",
-        "lifestyle|guest-writer-of-the-week|28",
-        "lifestyle|michel-roux-jnr",
-        "lifestyle|guest-writer-of-the-week|27",
-        "lifestyle|kx-community|mindfulness",
-        "lifestyle|transformative-spring-beauty-trends",
-        "lifestyle|guest-writer-of-the-week|26",
-        "lifestyle|guest-writer-of-the-week|25",
-        "lifestyle|guest-writer-of-the-week|24",
-        "lifestyle|restaurants-from-home|hoppers",
-        "lifestyle|guest-writer-of-the-week|23",
-        "lifestyle|guest-writer-of-the-week|22"
-      ]
-    },
-    {
-      "type": "link-list-id",
-      "dynamic": "creativity",
-      "title": "Creativity",
-      "title_link": {
-        "cta": "See more",
-        "url": "/uk/explore/kings-cross/creativity"
+      {
+          "type": "link-list-id",
+          "dynamic": "creativity",
+          "title": "Creativity",
+          "title_link": {
+              "cta": "See more",
+              "url": "/uk/explore/kings-cross/creativity"
+          },
+          "style": {
+              "scroll": true
+          },
+          "items": [
+              "creativity|samsung-grassroots-football-academy",
+              "creativity|how-to-capture-your-nocturnal-narrative-on-the-galaxy-s22-ultra|how-to-make-films-on-a-phone",
+              "creativity|how-to-capture-your-nocturnal-narrative-on-the-galaxy-s22-ultra|galaxy-s22-ultra-nightography",
+              "creativity|how-to-create-a-gif-using-galaxy-s22-ultra",
+              "creativity|inspire-me|how-to-build-your-dream-career",
+              "creativity|inspire-me|street-photography-tips",
+              "creativity|inspire-me|how-to-throw-cocktail-party-ideas",
+              "creativity|inspire-me|how-to-plan-trip-to-europe-with-what-stacy-did",
+              "creativity|inspire-me|mastering-the-instagram-reels",
+              "creativity|graduate-fashion-week|student-blog|slow-fashion-catwalk",
+              "creativity|wild-writing|wild-writing-how-to-get-inspired-outdoors",
+              "creativity|inspire-me|how-to-plan-a-staycation",
+              "creativity|graduate-fashion-week|student-blog|cerys-jones",
+              "creativity|wild-writing",
+              "creativity|inspire-me|mike-will-car-photography-tips",
+              "creativity|personal-branding|how-to-rebrand-your-online-presence",
+              "creativity|inspire-me|starting-youtube-channel-tips",
+              "creativity|personal-branding|improving-your-professional-online-presence-ash-jones-top-3-tips",
+              "creativity|personal-branding|psychology-of-a-portrait",
+              "creativity|personal-branding|ashley-verse-5-photography-tips",
+              "creativity|personal-branding|professional-portraits-on-the-s21",
+              "creativity|central-saint-martins|three-dimensional-home-map",
+              "creativity|inspire-me|smartphone-telephoto-lens-photography-tips",
+              "creativity|yfa-creative-labs|framing-composition",
+              "creativity|yfa-creative-labs|slow-motion-filmmaking"
+          ]
       },
-      "style": {
-        "scroll": true
+      {
+          "type": "link-list-id",
+          "dynamic": "entertainment",
+          "title": "Entertainment",
+          "title_link": {
+              "cta": "See more",
+              "url": "/uk/explore/kings-cross/entertainment"
+          },
+          "style": {
+              "scroll": true
+          },
+          "items": [
+              "entertainment|best-horror-films",
+              "entertainment|best-mobile-games-for-commuting",
+              "entertainment|samsung-3fold-event-featuring-yungblud",
+              "entertainment|just-one-charge|boost-your-content-creation-with-jeremy-lynch",
+              "entertainment|just-one-charge|phone-battery-fails",
+              "entertainment|lunch-and-listen|reclaim-lunchbreak",
+              "entertainment|lunch-and-listen|bring-back-play-ep-2",
+              "entertainment|lunch-and-listen|bring-back-play",
+              "entertainment|connected-living",
+              "entertainment|game-dev-london-podcast|12",
+              "entertainment|game-dev-london-podcast|11",
+              "entertainment|game-dev-london-podcast|10",
+              "creativity|innovation-sessions|adam-gemili-rachel-ama-get-fit-get-cooking",
+              "creativity|innovation-sessions|elz-barney-career-advice",
+              "creativity|innovation-sessions|clara-amfo-making-a-podcast",
+              "creativity|innovation-sessions|gal-dem-motivation-creativity",
+              "creativity|innovation-sessions|george-the-poet-podcast-creation"
+          ]
       },
-      "items": [
-        "creativity|samsung-grassroots-football-academy",
-        "creativity|how-to-capture-your-nocturnal-narrative-on-the-galaxy-s22-ultra|how-to-make-films-on-a-phone",
-        "creativity|how-to-capture-your-nocturnal-narrative-on-the-galaxy-s22-ultra|galaxy-s22-ultra-nightography",
-        "creativity|how-to-create-a-gif-using-galaxy-s22-ultra",
-        "creativity|inspire-me|how-to-build-your-dream-career",
-        "creativity|inspire-me|street-photography-tips",
-        "creativity|inspire-me|how-to-throw-cocktail-party-ideas",
-        "creativity|inspire-me|how-to-plan-trip-to-europe-with-what-stacy-did",
-        "creativity|inspire-me|mastering-the-instagram-reels",
-        "creativity|graduate-fashion-week|student-blog|slow-fashion-catwalk",
-        "creativity|wild-writing|wild-writing-how-to-get-inspired-outdoors",
-        "creativity|inspire-me|how-to-plan-a-staycation",
-        "creativity|graduate-fashion-week|student-blog|cerys-jones",
-        "creativity|wild-writing",
-        "creativity|inspire-me|mike-will-car-photography-tips",
-        "creativity|personal-branding|how-to-rebrand-your-online-presence",
-        "creativity|inspire-me|starting-youtube-channel-tips",
-        "creativity|personal-branding|improving-your-professional-online-presence-ash-jones-top-3-tips",
-        "creativity|personal-branding|psychology-of-a-portrait",
-        "creativity|personal-branding|ashley-verse-5-photography-tips",
-        "creativity|personal-branding|professional-portraits-on-the-s21",
-        "creativity|central-saint-martins|three-dimensional-home-map",
-        "creativity|inspire-me|smartphone-telephoto-lens-photography-tips",
-        "creativity|yfa-creative-labs|framing-composition",
-        "creativity|yfa-creative-labs|slow-motion-filmmaking"
-      ]
-    },
-    {
-      "type": "link-list-id",
-      "dynamic": "entertainment",
-      "title": "Entertainment",
-      "title_link": {
-        "cta": "See more",
-        "url": "/uk/explore/kings-cross/entertainment"
-      },
-      "style": {
-        "scroll": true
-      },
-      "items": [
-        "entertainment|best-horror-films",
-        "entertainment|best-mobile-games-for-commuting",
-        "entertainment|samsung-3fold-event-featuring-yungblud",
-        "entertainment|just-one-charge|boost-your-content-creation-with-jeremy-lynch",
-        "entertainment|just-one-charge|phone-battery-fails",
-        "entertainment|lunch-and-listen|reclaim-lunchbreak",
-        "entertainment|lunch-and-listen|bring-back-play-ep-2",
-        "entertainment|lunch-and-listen|bring-back-play",
-        "entertainment|connected-living",
-        "entertainment|game-dev-london-podcast|12",
-        "entertainment|game-dev-london-podcast|11",
-        "entertainment|game-dev-london-podcast|10",
-        "creativity|innovation-sessions|adam-gemili-rachel-ama-get-fit-get-cooking",
-        "creativity|innovation-sessions|elz-barney-career-advice",
-        "creativity|innovation-sessions|clara-amfo-making-a-podcast",
-        "creativity|innovation-sessions|gal-dem-motivation-creativity",
-        "creativity|innovation-sessions|george-the-poet-podcast-creation"
-      ]
-    },
-    {
-      "type": "link-list-id",
-      "dynamic": "innovation",
-      "title": "Tech & Innovation",
-      "title_link": {
-        "cta": "See more",
-        "url": "/uk/explore/kings-cross/innovation"
-      },
-      "style": {
-        "scroll": true
-      },
-      "items": [
-        "innovation|kx-tech-club|episode-5-stay-connected-through-technology",
-        "innovation|kx-tech-club|episode-5-all-access-gaming-with-chelcee-grimes",
-        "innovation|kx-tech-club|episode-4-how-to-improve-productivity-and-creativity",
-        "innovation|project-plant",
-        "innovation|kx-tech-club|episode-3-how-to-communicate-in-photos",
-        "innovation|samsung-people-live|bespoke",
-        "innovation|samsung-people-live|neo-qled-series",
-        "innovation|samsung-people-live|new-galaxy-book-range",
-        "innovation|connected-christmas|recipe-spice-up-your-connected-christmas",
-        "innovation|connected-christmas|connected-christmas-festive-cheer-to-your-ear",
-        "innovation|connected-christmas|marcelino-sambe-connected-christmas-ballet",
-        "innovation|next-level-gaming|deadly-pro-gaming-secrets",
-        "innovation|next-level-gaming|wolfiez-pro-gaming-secrets",
-        "innovation|next-level-gaming|meet-the-game-changers",
-        "innovation|5g-podcast|interactive-yoga-pants",
-        "innovation|connected-christmas|marcelino-sambe",
-        "innovation|5g-podcast|smart-rubbish",
-        "innovation|taste-of-tomorrow|hydroponic-time-lapse"
-      ]
-    }
+      {
+          "type": "link-list-id",
+          "dynamic": "innovation",
+          "title": "Tech & Innovation",
+          "title_link": {
+              "cta": "See more",
+              "url": "/uk/explore/kings-cross/innovation"
+          },
+          "style": {
+              "scroll": true
+          },
+          "items": [
+              "innovation|kx-tech-club|episode-5-stay-connected-through-technology",
+              "innovation|kx-tech-club|episode-5-all-access-gaming-with-chelcee-grimes",
+              "innovation|kx-tech-club|episode-4-how-to-improve-productivity-and-creativity",
+              "innovation|project-plant",
+              "innovation|kx-tech-club|episode-3-how-to-communicate-in-photos",
+              "innovation|samsung-people-live|bespoke",
+              "innovation|samsung-people-live|neo-qled-series",
+              "innovation|samsung-people-live|new-galaxy-book-range",
+              "innovation|connected-christmas|recipe-spice-up-your-connected-christmas",
+              "innovation|connected-christmas|connected-christmas-festive-cheer-to-your-ear",
+              "innovation|connected-christmas|marcelino-sambe-connected-christmas-ballet",
+              "innovation|next-level-gaming|deadly-pro-gaming-secrets",
+              "innovation|next-level-gaming|wolfiez-pro-gaming-secrets",
+              "innovation|next-level-gaming|meet-the-game-changers",
+              "innovation|5g-podcast|interactive-yoga-pants",
+              "innovation|connected-christmas|marcelino-sambe",
+              "innovation|5g-podcast|smart-rubbish",
+              "innovation|taste-of-tomorrow|hydroponic-time-lapse"
+          ]
+      }
   ]
 }
