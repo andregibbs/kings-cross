@@ -1,0 +1,41 @@
+{
+  "title": "British Museum Copy",
+  "description": "",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/BM-720x720.jpg",
+  "alt": "",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/british-museum/BM-720x720.jpg",
+  "meta": {
+    "icon": "series",
+    "tags": []
+  },
+  "components": [
+    {
+      "type": "kv",
+      "media": {
+        "type": "image",
+        "content": "{{creativity|british-museum[image]}}",
+        "alt": "{{creativity|british-museum[alt]}}"
+      },
+      "style": {
+        "desktop": "left",
+        "mobile": "top"
+      },
+      "components": [
+        {
+          "type": "headline",
+          "level": "1",
+          "copy": "{{creativity|british-museum[title]}}"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "dynamic": "learn-more",
+      "id": "british-museum",
+      "title": "Learn more",
+      "style": {
+        "scroll": true
+      }
+    }
+  ]
+}
