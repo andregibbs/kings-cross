@@ -1,19 +1,8 @@
 {
 	"title": "How to create best TV viewing set up",
 	"description": "Learn how to create the ultimate TV viewing set-up this summer, powered by the Samsung Neo QLED 4K QN95B at Samsung KX.",
-	"image": "{{lifestyle|internet-matters[image]}}",
-	"alt": "{{lifestyle|internet-matters[alt]}}",
+	"image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/how-to-create-ultimate-tv-viewing-set-up/image.png",
 	"thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/lifestyle/how-to-create-ultimate-tv-viewing-set-up/image.png",
-	"group": "internet-matters",
-	"sort": 4,
-	"meta": {
-		"icon": "video",
-		"tags": []
-	},
-	"contentLength": {
-		"length": 28,
-		"unit": "mins"
-	},
 	"components": [
 		{
 			"type": "kv",
@@ -56,7 +45,7 @@
        
         {
           "type": "headline",
-		  "level": "2",
+		  "level": "3",
           "copy": 
             "Tune out of the daily distractions and into that must-see show: Dr. Soph’s Guide To The Ultimate Sofa Escape This Summer"
         },
@@ -93,58 +82,51 @@
 				"10. Watch re-runs of your favourite show to boost productivity",
 				"Ambient noise, such as the sounds you hear when you work from a coffee shop, have been shown to increase productivity for many of us. So, when you need to focus, put a great episode of your favourite show on in the background at a low volume, or play the show to listen through your <a href= 'https://www.samsung.com/uk/audio-sound/galaxy-buds/galaxy-buds-pro-violet-sm-r190nzvaeua/'> Galaxy Buds</a>, and notice your attention span increase. "
 
-				
-				
-				
-			
+			]
+		}				
 			]
 		},
-			{
-				"type": "link-list-id",
-				"dynamic": "latest",
-				"title": "Articles",
-				"style": {
-				  "scroll": true
-				},
-				"items": [
-				  "lifestyle|uncovering-the-nations-quirkiest-volunteer-roles",
-				  "creativity|how-to-capture-your-nocturnal-narrative-on-the-galaxy-s22-ultra|how-to-make-films-on-a-phone",
-				  "creativity|how-to-capture-your-nocturnal-narrative-on-the-galaxy-s22-ultra|galaxy-s22-ultra-nightography",
-				  "creativity|how-to-create-a-gif-using-galaxy-s22-ultra",
-				  "creativity|inspire-me|how-to-build-your-dream-career",
-				  "innovation|kx-tech-club|episode-5-stay-connected-through-technology",
-				  "innovation|kx-tech-club|episode-5-all-access-gaming-with-chelcee-grimes",
-				  "creativity|inspire-me|street-photography-tips",
-				  "creativity|inspire-me|how-to-throw-cocktail-party-ideas",
-				  "innovation|kx-tech-club|episode-4-how-to-improve-productivity-and-creativity",
-				  "lifestyle|benefits-of-strength-training",
-				  "creativity|inspire-me|how-to-plan-trip-to-europe-with-what-stacy-did",
-				  "innovation|project-plant",
-				  "entertainment|best-horror-films",
-				  "lifestyle|daily-fitness-tips-with-kirsti-buick",
-				  "lifestyle|cheap-meals-for-students-with-seema-pankania",
-				  "innovation|kx-tech-club|episode-3-how-to-communicate-in-photos",
-				  "entertainment|best-mobile-games-for-commuting",
-				  "lifestyle|digital-dna-test-with-lawrence-chaney",
-				  "entertainment|samsung-3fold-event-featuring-yungblud",
-				  "lifestyle|guest-writer-of-the-week|36",
-				  "lifestyle|how-to-kickflip-skateboarding-tutorial",
-				  "innovation|samsung-people-live|galaxy-s22",
-				  "innovation|samsung-people-live|galaxy-unpacked",
-				  "lifestyle|guest-writer-of-the-week|35",
-				  "creativity|inspire-me|mastering-the-instagram-reels",
-				  "entertainment|just-one-charge|boost-your-content-creation-with-jeremy-lynch",
-				  "lifestyle|guest-writer-of-the-week|34",
-				  "entertainment|just-one-charge|phone-battery-fails",
-				  "creativity|graduate-fashion-week|student-blog|slow-fashion-catwalk",
-				  "creativity|wild-writing|wild-writing-how-to-get-inspired-outdoors"
-				
-				]
-			}
-		
-				
+		{
+			"type": "link-list-id",
+			"dynamic": "latest",
+			"title": "Articles",
+			"style": {
+			  "scroll": true
+			},
+			"items": [
+			  "lifestyle|uncovering-the-nations-quirkiest-volunteer-roles",
+			  "creativity|how-to-capture-your-nocturnal-narrative-on-the-galaxy-s22-ultra|how-to-make-films-on-a-phone",
+			  "creativity|how-to-capture-your-nocturnal-narrative-on-the-galaxy-s22-ultra|galaxy-s22-ultra-nightography",
+			  "creativity|how-to-create-a-gif-using-galaxy-s22-ultra",
+			  "creativity|inspire-me|how-to-build-your-dream-career",
+			  "innovation|kx-tech-club|episode-5-stay-connected-through-technology",
+			  "innovation|kx-tech-club|episode-5-all-access-gaming-with-chelcee-grimes",
+			  "creativity|inspire-me|street-photography-tips",
+			  "creativity|inspire-me|how-to-throw-cocktail-party-ideas",
+			  "innovation|kx-tech-club|episode-4-how-to-improve-productivity-and-creativity",
+			  "lifestyle|benefits-of-strength-training",
+			  "creativity|inspire-me|how-to-plan-trip-to-europe-with-what-stacy-did",
+			  "innovation|project-plant",
+			  "entertainment|best-horror-films",
+			  "lifestyle|daily-fitness-tips-with-kirsti-buick",
+			  "lifestyle|cheap-meals-for-students-with-seema-pankania",
+			  "innovation|kx-tech-club|episode-3-how-to-communicate-in-photos",
+			  "entertainment|best-mobile-games-for-commuting",
+			  "lifestyle|digital-dna-test-with-lawrence-chaney",
+			  "entertainment|samsung-3fold-event-featuring-yungblud",
+			  "lifestyle|guest-writer-of-the-week|36",
+			  "lifestyle|how-to-kickflip-skateboarding-tutorial",
+			  "innovation|samsung-people-live|galaxy-s22",
+			  "innovation|samsung-people-live|galaxy-unpacked",
+			  "lifestyle|guest-writer-of-the-week|35",
+			  "creativity|inspire-me|mastering-the-instagram-reels",
+			  "entertainment|just-one-charge|boost-your-content-creation-with-jeremy-lynch",
+			  "lifestyle|guest-writer-of-the-week|34",
+			  "entertainment|just-one-charge|phone-battery-fails",
+			  "creativity|graduate-fashion-week|student-blog|slow-fashion-catwalk",
+			  "creativity|wild-writing|wild-writing-how-to-get-inspired-outdoors"
+			
 			]
 		}
-		
 	]
 }
