@@ -34,7 +34,7 @@
           "components": [
             {
               "type": "css-snippet",
-              "content": ".hoiLinkList__ScrollArrow{ color:white !important; } .hoiKv__Media:after { padding-bottom: 33% !important; } .hoiWrapper h2 { margin-bottom: 0 !important;} .hoiWrapper h5 { margin-top: 0 !important; }"
+              "content": ".hoiLinkList_ScrollArrow{ color:white !important; } .hoiKv_Media:after { padding-bottom: 33% !important; } .hoiWrapper h2 { margin-bottom: 0 !important;} .hoiWrapper h5 { margin-top: 0 !important; }"
             },
             {
               "type": "css-snippet",
