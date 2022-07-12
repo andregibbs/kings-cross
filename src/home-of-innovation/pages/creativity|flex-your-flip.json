@@ -50,12 +50,12 @@
                     "text": [
                         "<script> document.getElementById('hte-scroll').addEventListener('click',(e)=>{e.preventDefault(); document.getElementById('how-to-enter').scrollIntoView({behavior: 'smooth'})})</script>",
                         "<img src='https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/flex-your-flip/MGM_KV.jpg'>",
-                        "Love your smartphone? Want the chance to win some epic Samsung tech and accessories just for showing it off to your friends? You’ve come to the right place.",
-                        "If you own a Samsung smartphone, share with us, and your friends, what it is you love about it. In return, you could win a Galaxy Watch4, a pair of Galaxy Buds2, or even some Z Flip3 accessories.",
+                        "Love your Galaxy Z Flip3 smartphone? Want the chance to win some epic Samsung tech and accessories just for showing it off to your friends? You’ve come to the right place.",
+                        "If you own a Galaxy Z Flip3 smartphone, share with us, and your friends, what it is you love about it. In return, you could win a Galaxy Watch4, a pair of Galaxy Buds2, or even some Z Flip3 accessories.",
                         "If you’re all about on-the-go creativity, you could show us how you use Flex Mode to set up and film almost anywhere hands-free.",
                         "You could flex on your friends by taking a selfie straight from the cover screen.",
                         "Or you could even show us how it fits into your favourite bum bag – perfect for festival season.",
-                        "Whatever it is you love about your smartphone, we want to see it.<span id='how-to-enter'></span>"
+                        "Whatever it is you love about your Galaxy Z Flip3 smartphone, we want to see it.<span id='how-to-enter'></span>"
                     ]
                 },
                 {
@@ -66,10 +66,10 @@
                 {
                     "type":"paragraphs",
                     "text":[
-                      "To be in with a shot, share your videos of you flexing your Galaxy Z Flip3 to TikTok and use #FlexYourFlip.",
-                      "Alternatively, if you’re not on TikTok (where have you been?) then share your photos or videos to Facebook, Instagram or Twitter using #FlexYourFlip and tag us @SamsungUK.",
-                      "You’ve only got until 20th July 2022 to enter, so don’t miss out on your chance to win",
-                      "To learn more about the full Terms & Conditions click <a href='https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/flex-your-flip/terms.pdf'>here</a>."
+                      "To be in with a shot, share your videos of you flexing your Samsung smartphone to TikTok and use #FlexYourFlip.",
+                      "Alternatively, if you’re not on TikTok (where have you been?) then share your photos or videos to Instagram using #FlexYourFlip and tag us @SamsungUK.",
+                      "You’ve only got until 20th July 2022 to enter, so don’t miss out on your chance to win.",
+                      "To learn more about the full Terms & Conditions click <a href='https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/flex-your-flip/terms_and_conditions.pdf'>here</a>."
                     ]
                 }
             ]
