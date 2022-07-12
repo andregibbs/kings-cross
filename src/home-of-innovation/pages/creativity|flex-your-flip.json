@@ -1,120 +1,120 @@
 {
-    "title": "#FlexYourFlip To Win Samsung Tech",
-    "description": "Love your Samsung Galaxy Z Flip3? #FlexYourFlip for your chance to win more epic Samsung tech. Competition closes 20th July 2022. Ts&Cs apply.",
-    "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/flex-your-flip/MGM_Thumb.jpg",
-    "alt": "",
-    "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/flex-your-flip/MGM_Thumb.jpg",
-    "components": [
-        {
-            "type": "kv",
-            "media": {
-                "type": "video",
-                "content": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/flex-your-flip/KV-Video.mp4",
-                "alt": ""
-            },
-            "style": {
-                "desktop": "left",
-                "mobile": "top"
-            },
-            "components": [
-                {
-                    "type": "headline",
-                    "copy": "#FlexYourFlip for your chance to win epic Samsung tech"
-                },
-                {
-                    "type": "paragraphs",
-                    "text": [
-                        "Love your <a href='https://www.samsung.com/uk/smartphones/galaxy-z-flip3-5g/'>Galaxy Z Flip3</a>? #FlexYourFlip for your chance to win more epic Samsung tech. Galaxy Buds2, Galaxy Watch4 and a Flip3 Silicone case are all yours to win if you're one of our 10 lucky entrants. Discover more on <a href='' id='hte-scroll'>how to enter today</a>. Terms and Conditions apply."
-                    ]
-                }
-            ]
-        },
-        {
-            "type": "wrapper",
-            "components": [
+  "title": "#FlexYourFlip To Win Samsung Tech",
+  "description": "Love your Samsung Galaxy Z Flip3? #FlexYourFlip for your chance to win more epic Samsung tech. Competition closes 20th July 2022. Ts&Cs apply.",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/flex-your-flip/MGM_Thumb.jpg",
+  "alt": "",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/flex-your-flip/MGM_Thumb.jpg",
+  "components": [
+      {
+          "type": "kv",
+          "media": {
+              "type": "video",
+              "content": "https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/flex-your-flip/KV-Video.mp4",
+              "alt": ""
+          },
+          "style": {
+              "desktop": "left",
+              "mobile": "top"
+          },
+          "components": [
               {
-                "type": "css-snippet",
-                "content": ".hoiLinkList__ScrollArrow{ color:white !important; } .hoiKv__Media:after { padding-bottom: 33% !important; } .hoiWrapper h2 { margin-bottom: 0 !important;} .hoiWrapper h5 { margin-top: 0 !important; }"
+                  "type": "headline",
+                  "copy": "#FlexYourFlip for your chance to win epic Samsung tech"
               },
               {
-                "type": "css-snippet",
-                "content": "@media screen and (max-width: 768px){.hoiKv__Media{height:0;padding-bottom:100%}}"
+                  "type": "paragraphs",
+                  "text": [
+                      "Love your <a href='https://www.samsung.com/uk/smartphones/galaxy-z-flip3-5g/'>Galaxy Z Flip3</a>? #FlexYourFlip for your chance to win more epic Samsung tech. Galaxy Buds2, Galaxy Watch4 and a Flip3 Silicone case are all yours to win if you're one of our 10 lucky entrants. Discover more on <a href='' id='hte-scroll'>how to enter today</a>. Terms and Conditions apply."
+                  ]
+              }
+          ]
+      },
+      {
+          "type": "wrapper",
+          "components": [
+            {
+              "type": "css-snippet",
+              "content": ".hoiLinkList__ScrollArrow{ color:white !important; } .hoiKv__Media:after { padding-bottom: 33% !important; } .hoiWrapper h2 { margin-bottom: 0 !important;} .hoiWrapper h5 { margin-top: 0 !important; }"
+            },
+            {
+              "type": "css-snippet",
+              "content": "@media screen and (max-width: 768px){.hoiKv__Media{height:0;padding-bottom:100%}}"
+            },
+            {
+              "type":"headline",
+              "copy":"#FlexYourFlip to win",
+              "level":"2"
+            },
+              {
+                  "type": "paragraphs",
+                  "text": [
+                      "<script> document.getElementById('hte-scroll').addEventListener('click',(e)=>{e.preventDefault(); document.getElementById('how-to-enter').scrollIntoView({behavior: 'smooth'})})</script>",
+                      "<img src='https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/flex-your-flip/MGM_KV.jpg'>",
+                      "Love your Galaxy Z Flip3 smartphone? Want the chance to win some epic Samsung tech and accessories just for showing it off to your friends? You’ve come to the right place.",
+                      "If you own a Galaxy Z Flip3 smartphone, share with us, and your friends, what it is you love about it. In return, you could win a Galaxy Watch4, a pair of Galaxy Buds2, or even some Z Flip3 accessories.",
+                      "If you’re all about on-the-go creativity, you could show us how you use Flex Mode to set up and film almost anywhere hands-free.",
+                      "You could flex on your friends by taking a selfie straight from the cover screen.",
+                      "Or you could even show us how it fits into your favourite bum bag – perfect for festival season.",
+                      "Whatever it is you love about your Galaxy Z Flip3 smartphone, we want to see it.<span id='how-to-enter'></span>"
+                  ]
               },
               {
                 "type":"headline",
-                "copy":"#FlexYourFlip to win",
+                "copy":"How to enter",
                 "level":"2"
               },
-                {
-                    "type": "paragraphs",
-                    "text": [
-                        "<script> document.getElementById('hte-scroll').addEventListener('click',(e)=>{e.preventDefault(); document.getElementById('how-to-enter').scrollIntoView({behavior: 'smooth'})})</script>",
-                        "<img src='https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/flex-your-flip/MGM_KV.jpg'>",
-                        "Love your smartphone? Want the chance to win some epic Samsung tech and accessories just for showing it off to your friends? You’ve come to the right place.",
-                        "If you own a Samsung smartphone, share with us, and your friends, what it is you love about it. In return, you could win a Galaxy Watch4, a pair of Galaxy Buds2, or even some Z Flip3 accessories.",
-                        "If you’re all about on-the-go creativity, you could show us how you use Flex Mode to set up and film almost anywhere hands-free.",
-                        "You could flex on your friends by taking a selfie straight from the cover screen.",
-                        "Or you could even show us how it fits into your favourite bum bag – perfect for festival season.",
-                        "Whatever it is you love about your smartphone, we want to see it.<span id='how-to-enter'></span>"
-                    ]
-                },
-                {
-                  "type":"headline",
-                  "copy":"How to enter",
-                  "level":"2"
-                },
-                {
-                    "type":"paragraphs",
-                    "text":[
-                      "To be in with a shot, share your videos of you flexing your Galaxy Z Flip3 to TikTok and use #FlexYourFlip.",
-                      "Alternatively, if you’re not on TikTok (where have you been?) then share your photos or videos to Facebook, Instagram or Twitter using #FlexYourFlip and tag us @SamsungUK.",
-                      "You’ve only got until 20th July 2022 to enter, so don’t miss out on your chance to win",
-                      "To learn more about the full Terms & Conditions click <a href='https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/flex-your-flip/terms.pdf'>here</a>."
-                    ]
-                }
-            ]
-        },
-        {
-          "type": "link-list-id",
-          "dynamic": "latest",
-          "title": "Articles",
-          "style": {
-            "scroll": true
-          },
-          "items": [
-            "creativity|flex-your-flip",
-            "lifestyle|uncovering-the-nations-quirkiest-volunteer-roles",
-            "creativity|how-to-capture-your-nocturnal-narrative-on-the-galaxy-s22-ultra|how-to-make-films-on-a-phone",
-            "creativity|how-to-capture-your-nocturnal-narrative-on-the-galaxy-s22-ultra|galaxy-s22-ultra-nightography",
-            "creativity|how-to-create-a-gif-using-galaxy-s22-ultra",
-            "creativity|inspire-me|how-to-build-your-dream-career",
-            "innovation|kx-tech-club|episode-5-stay-connected-through-technology",
-            "innovation|kx-tech-club|episode-5-all-access-gaming-with-chelcee-grimes",
-            "creativity|inspire-me|street-photography-tips",
-            "creativity|inspire-me|how-to-throw-cocktail-party-ideas",
-            "innovation|kx-tech-club|episode-4-how-to-improve-productivity-and-creativity",
-            "lifestyle|benefits-of-strength-training",
-            "creativity|inspire-me|how-to-plan-trip-to-europe-with-what-stacy-did",
-            "innovation|project-plant",
-            "entertainment|best-horror-films",
-            "lifestyle|daily-fitness-tips-with-kirsti-buick",
-            "lifestyle|cheap-meals-for-students-with-seema-pankania",
-            "innovation|kx-tech-club|episode-3-how-to-communicate-in-photos",
-            "entertainment|best-mobile-games-for-commuting",
-            "lifestyle|digital-dna-test-with-lawrence-chaney",
-            "entertainment|samsung-3fold-event-featuring-yungblud",
-            "lifestyle|guest-writer-of-the-week|36",
-            "lifestyle|how-to-kickflip-skateboarding-tutorial",
-            "innovation|samsung-people-live|galaxy-s22",
-            "innovation|samsung-people-live|galaxy-unpacked",
-            "lifestyle|guest-writer-of-the-week|35",
-            "creativity|inspire-me|mastering-the-instagram-reels",
-            "entertainment|just-one-charge|boost-your-content-creation-with-jeremy-lynch",
-            "lifestyle|guest-writer-of-the-week|34",
-            "entertainment|just-one-charge|phone-battery-fails",
-            "creativity|graduate-fashion-week|student-blog|slow-fashion-catwalk",
-            "creativity|wild-writing|wild-writing-how-to-get-inspired-outdoors"
+              {
+                  "type":"paragraphs",
+                  "text":[
+                    "To be in with a shot, share your videos of you flexing your Samsung smartphone to TikTok and use #FlexYourFlip.",
+                    "Alternatively, if you’re not on TikTok (where have you been?) then share your photos or videos to Instagram using #FlexYourFlip and tag us @SamsungUK.",
+                    "You’ve only got until 20th July 2022 to enter, so don’t miss out on your chance to win.",
+                    "To learn more about the full Terms & Conditions click <a href='https://images.samsung.com/is/content/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/flex-your-flip/terms_and_conditions.pdf'>here</a>."
+                  ]
+              }
           ]
-        }
-    ]
+      },
+      {
+        "type": "link-list-id",
+        "dynamic": "latest",
+        "title": "Articles",
+        "style": {
+          "scroll": true
+        },
+        "items": [
+          "creativity|flex-your-flip",
+          "lifestyle|uncovering-the-nations-quirkiest-volunteer-roles",
+          "creativity|how-to-capture-your-nocturnal-narrative-on-the-galaxy-s22-ultra|how-to-make-films-on-a-phone",
+          "creativity|how-to-capture-your-nocturnal-narrative-on-the-galaxy-s22-ultra|galaxy-s22-ultra-nightography",
+          "creativity|how-to-create-a-gif-using-galaxy-s22-ultra",
+          "creativity|inspire-me|how-to-build-your-dream-career",
+          "innovation|kx-tech-club|episode-5-stay-connected-through-technology",
+          "innovation|kx-tech-club|episode-5-all-access-gaming-with-chelcee-grimes",
+          "creativity|inspire-me|street-photography-tips",
+          "creativity|inspire-me|how-to-throw-cocktail-party-ideas",
+          "innovation|kx-tech-club|episode-4-how-to-improve-productivity-and-creativity",
+          "lifestyle|benefits-of-strength-training",
+          "creativity|inspire-me|how-to-plan-trip-to-europe-with-what-stacy-did",
+          "innovation|project-plant",
+          "entertainment|best-horror-films",
+          "lifestyle|daily-fitness-tips-with-kirsti-buick",
+          "lifestyle|cheap-meals-for-students-with-seema-pankania",
+          "innovation|kx-tech-club|episode-3-how-to-communicate-in-photos",
+          "entertainment|best-mobile-games-for-commuting",
+          "lifestyle|digital-dna-test-with-lawrence-chaney",
+          "entertainment|samsung-3fold-event-featuring-yungblud",
+          "lifestyle|guest-writer-of-the-week|36",
+          "lifestyle|how-to-kickflip-skateboarding-tutorial",
+          "innovation|samsung-people-live|galaxy-s22",
+          "innovation|samsung-people-live|galaxy-unpacked",
+          "lifestyle|guest-writer-of-the-week|35",
+          "creativity|inspire-me|mastering-the-instagram-reels",
+          "entertainment|just-one-charge|boost-your-content-creation-with-jeremy-lynch",
+          "lifestyle|guest-writer-of-the-week|34",
+          "entertainment|just-one-charge|phone-battery-fails",
+          "creativity|graduate-fashion-week|student-blog|slow-fashion-catwalk",
+          "creativity|wild-writing|wild-writing-how-to-get-inspired-outdoors"
+        ]
+      }
+  ]
 }
