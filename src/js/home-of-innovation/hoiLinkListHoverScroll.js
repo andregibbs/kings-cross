@@ -86,7 +86,7 @@ export default class HOILinkListHoverManager {
 
   constructor() {
     this.instances = [].slice.call(document.querySelectorAll('.hoiLinkList--scroll')).map(element => {
-
+ console.log('hello');
       return new HOILinkListHoverScroll(element)
 
     })

@@ -1,0 +1,158 @@
+{
+  "title": "Wildlife Photography Tips & Tricks",
+  "description": "Level up on your wildlife photography skills & learn how capture amazing nocturnal wildlife shots with your Galaxy S22 at Samsung KX.",
+  "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/how-to-create-ultimate-tv-viewing-set-up/Thumbnail.png",
+  "alt": "",
+  "thumb": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/how-to-create-ultimate-tv-viewing-set-up/Thumbnail.png",
+  "meta": {
+    "icon": "image",
+    "tags": []
+  },
+  "components": [
+    {
+      "type": "css-snippet",
+      "content": ".hoiWrapper { margin-top: 0 !important; margin-bottom: 2rem !important; } @media screen and (min-width: 1441px) { .hoiList__Item {margin-right: 20px;}} .hoiKv__Media:after { padding-bottom: 33% !important; } .hoiWrapper h2 { margin-bottom: 0 !important;} .hoiWrapper h5 { margin-top: 0 !important; }"
+    },
+
+      {
+            "type": "kv",
+            "media": {
+                "type": "youtube",
+                "content": "c9z1zkQH0mo",
+                "poster": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/how-to-create-ultimate-tv-viewing-set-up/KV_Header_Banner.png"
+            },
+      "style": {
+        "desktop": "top",
+        "mobile": "bottom"
+      },
+	  "components": [
+			{
+			"type": "headline",
+			"level": "1",
+			"copy": "How to take pictures of urban wildlife using the Samsung Galaxy S22"
+			}
+   
+       
+      ]
+    },
+    {
+      "type": "wrapper",
+      "components": [
+       { 
+          "type": "headline",
+		  "level": "3",
+         "copy": [ "Using the S22’s Night Mode function to capture lowlight photography of the wildlife on your doorstep"]
+        },
+        {
+          "type": "paragraphs",
+          "text": [
+           	"We enlisted the help of two wildlife photographers, Ian Wood and Kyle Moore, to go on a hunt in their local areas to capture some snaps of the wildlife we can find just outside the door, using the <a href ='https://www.samsung.com/uk/smartphones/galaxy-s22-ultra/buy/'> Samsung Galaxy S22 Ultra</a>.", 
+			"Despite a recent survey of 2,000 Brits revealing that three quarters have never seen an owl and 47% haven’t seen a hedgehog in the wild, UK cities are rich with wildlife making critters now more discoverable than ever.",
+			"The research also identifies the UK’s most seldom spotted creatures with beavers, the elusive pine marten and the nocturnal bird the nightjar topping the list. ", 
+			"TV and radio presenter Angellica Bell joined our snappers to create a how to guide on spotting and safely capturing photography of British wildlife using the Galaxy S22 and its Nightography using night mode and Pro camera functions."
+          ]
+        }
+        
+      ]
+    },
+    {
+      "type": "gallery",
+      "items": [
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/how-to-create-ultimate-tv-viewing-set-up/G1.png",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/how-to-create-ultimate-tv-viewing-set-up/G1.png"
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/how-to-create-ultimate-tv-viewing-set-up/G2.png",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/how-to-create-ultimate-tv-viewing-set-up/G2.png"
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/how-to-create-ultimate-tv-viewing-set-up/G3.png",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/how-to-create-ultimate-tv-viewing-set-up/G3.png"
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/how-to-create-ultimate-tv-viewing-set-up/G4.png",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/how-to-create-ultimate-tv-viewing-set-up/G4.png"
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/how-to-create-ultimate-tv-viewing-set-up/G5.png",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/how-to-create-ultimate-tv-viewing-set-up/G5.png"
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/how-to-create-ultimate-tv-viewing-set-up/G6_1.png",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/how-to-create-ultimate-tv-viewing-set-up/G6_1.png"
+        },
+    
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/how-to-create-ultimate-tv-viewing-set-up/G7.png",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/how-to-create-ultimate-tv-viewing-set-up/G7.png"
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/how-to-create-ultimate-tv-viewing-set-up/G8.png",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/how-to-create-ultimate-tv-viewing-set-up/G8.png"
+        },
+     
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/how-to-create-ultimate-tv-viewing-set-up/G10.png",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/how-to-create-ultimate-tv-viewing-set-up/G10.png"
+        },
+        {
+          "type": "image",
+          "content": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/how-to-create-ultimate-tv-viewing-set-up/G11.png",
+          "image": "https://images.samsung.com/is/image/samsung/assets/uk/explore/kings-cross/home-of-innovation/creativity/how-to-create-ultimate-tv-viewing-set-up/G11.png"
+        }
+      ]
+    },
+    {
+			"type": "link-list-id",
+			"dynamic": "latest",
+			"title": "Articles",
+			"style": {
+			  "scroll": true
+			},
+			"items": [
+			  "lifestyle|uncovering-the-nations-quirkiest-volunteer-roles",
+			  "creativity|how-to-capture-your-nocturnal-narrative-on-the-galaxy-s22-ultra|how-to-make-films-on-a-phone",
+			  "creativity|how-to-capture-your-nocturnal-narrative-on-the-galaxy-s22-ultra|galaxy-s22-ultra-nightography",
+			  "creativity|how-to-create-a-gif-using-galaxy-s22-ultra",
+			  "creativity|inspire-me|how-to-build-your-dream-career",
+			  "innovation|kx-tech-club|episode-5-stay-connected-through-technology",
+			  "innovation|kx-tech-club|episode-5-all-access-gaming-with-chelcee-grimes",
+			  "creativity|inspire-me|street-photography-tips",
+			  "creativity|inspire-me|how-to-throw-cocktail-party-ideas",
+			  "innovation|kx-tech-club|episode-4-how-to-improve-productivity-and-creativity",
+			  "lifestyle|benefits-of-strength-training",
+			  "creativity|inspire-me|how-to-plan-trip-to-europe-with-what-stacy-did",
+			  "innovation|project-plant",
+			  "entertainment|best-horror-films",
+			  "lifestyle|daily-fitness-tips-with-kirsti-buick",
+			  "lifestyle|cheap-meals-for-students-with-seema-pankania",
+			  "innovation|kx-tech-club|episode-3-how-to-communicate-in-photos",
+			  "entertainment|best-mobile-games-for-commuting",
+			  "lifestyle|digital-dna-test-with-lawrence-chaney",
+			  "entertainment|samsung-3fold-event-featuring-yungblud",
+			  "lifestyle|guest-writer-of-the-week|36",
+			  "lifestyle|how-to-kickflip-skateboarding-tutorial",
+			  "innovation|samsung-people-live|galaxy-s22",
+			  "innovation|samsung-people-live|galaxy-unpacked",
+			  "lifestyle|guest-writer-of-the-week|35",
+			  "creativity|inspire-me|mastering-the-instagram-reels",
+			  "entertainment|just-one-charge|boost-your-content-creation-with-jeremy-lynch",
+			  "lifestyle|guest-writer-of-the-week|34",
+			  "entertainment|just-one-charge|phone-battery-fails",
+			  "creativity|graduate-fashion-week|student-blog|slow-fashion-catwalk",
+			  "creativity|wild-writing|wild-writing-how-to-get-inspired-outdoors"
+			
+			]
+		}
+  ]
+}
